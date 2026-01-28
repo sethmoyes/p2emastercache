@@ -11,20 +11,20 @@
 ### Common Items (10)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Candle | 0 | 1 cp | ![Candle](https://2e.aonprd.com/Images/Treasure/Candle.webp) |
-| Scroll of Magic Missile (1st) | 1 | 4 gp | ![Scroll of Magic Missile (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
-| Scroll of Comprehend Language (2nd) | 3 | 12 gp | ![Scroll of Comprehend Language (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
-| Scroll of Sanctuary (1st) | 1 | 4 gp | ![Scroll of Sanctuary (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
-| Spellbook (Blank) | 0 | 1 gp | ![Spellbook (Blank)](https://2e.aonprd.com/Images/Treasure/Book.webp) |
-| Alchemist's Fire (Lesser) | 1 | 3 gp | ![Alchemist's Fire (Lesser)](https://2e.aonprd.com/Images/Treasure/Alchemists_Fire.webp) |
+| Compass | 0 | 1 gp | ![Compass](https://2e.aonprd.com/Images/Treasure/Compass.webp) |
 | Scroll of Bless (1st) | 1 | 4 gp | ![Scroll of Bless (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
-| Lantern (Hooded) | 0 | 7 sp | ![Lantern (Hooded)](https://2e.aonprd.com/Images/Treasure/Lantern.webp) |
-| Scroll of Fear (1st) | 1 | 4 gp | ![Scroll of Fear (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
-| Beverages (Mug of Ale) | 0 | 1 cp | ![Beverages (Mug of Ale)](https://2e.aonprd.com/Images/Treasure/Beverages.webp) |
+| Wand of Magic Missile (1st, 1 charge) | 1 | 6 gp | ![Wand of Magic Missile (1st, 1 charge)](https://2e.aonprd.com/Images/Treasure/Wand.webp) |
+| Alchemist's Fire (Lesser) | 1 | 3 gp | ![Alchemist's Fire (Lesser)](https://2e.aonprd.com/Images/Treasure/Alchemists_Fire.webp) |
+| Thunderstone (Lesser) | 1 | 3 gp | ![Thunderstone (Lesser)](https://2e.aonprd.com/Images/Treasure/Thunderstone.webp) |
+| Scroll of Heal (1st) | 1 | 4 gp | ![Scroll of Heal (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Tanglefoot Bag (Lesser) | 1 | 3 gp | ![Tanglefoot Bag (Lesser)](https://2e.aonprd.com/Images/Treasure/Tanglefoot_Bag.webp) |
+| Writing Set | 0 | 1 gp | ![Writing Set](https://2e.aonprd.com/Images/Treasure/Writing_Set.webp) |
+| Scroll of Mage Armor (1st) | 1 | 4 gp | ![Scroll of Mage Armor (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Comprehend Language (2nd) | 3 | 12 gp | ![Scroll of Comprehend Language (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
 
 ### Uncommon Items (2)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Scroll of Invisibility (2nd) | 3 | 12 gp | ![Scroll of Invisibility (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
-| Scroll of Darkvision (2nd) | 3 | 12 gp | ![Scroll of Darkvision (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Potion of Darkvision | 2 | 7 gp | ![Potion of Darkvision](https://2e.aonprd.com/Images/Treasure/Potion_Of_Darkvision.webp) |
+| Lesser Healing Potion | 3 | 12 gp | ![Lesser Healing Potion](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) |
 

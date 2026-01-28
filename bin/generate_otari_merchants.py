@@ -35,10 +35,19 @@ def parse_equipment_md(filename):
         if not name or name == 'Name' or len(name) < 2:
             continue
         
-        # Find rarity (usually in column 4)
-        rarity = parts[4].lower() if len(parts) > 4 else ''
-        if 'common' not in rarity and 'uncommon' not in rarity and 'rare' not in rarity:
-            rarity = 'common'  # Default to common
+        # Find rarity - check multiple columns
+        rarity = 'common'  # Default
+        for i in range(3, min(7, len(parts))):
+            part_lower = parts[i].lower()
+            if 'uncommon' in part_lower:
+                rarity = 'uncommon'
+                break
+            elif 'rare' in part_lower and 'uncommon' not in part_lower:
+                rarity = 'rare'
+                break
+            elif 'common' in part_lower:
+                rarity = 'common'
+                break
         
         # Find category (usually in column 5 or 6)
         category = ''
@@ -83,23 +92,21 @@ def parse_equipment_md(filename):
         }
         
         # Categorize based on category and name
-        rarity_key = 'common' if 'common' in rarity else ('uncommon' if 'uncommon' in rarity else 'rare')
-        
-        if 'weapon' in category or 'base weapons' in category or any(w in name.lower() for w in ['sword', 'axe', 'bow', 'crossbow', 'dagger', 'spear', 'mace', 'hammer', 'arrow', 'bolt', 'dart']):
-            items['weapons'][rarity_key].append(item)
+        if 'weapon' in category or 'base weapons' in category or any(w in name.lower() for w in ['sword', 'axe', 'bow', 'crossbow', 'dagger', 'spear', 'mace', 'hammer', 'arrow', 'bolt', 'dart', 'javelin']):
+            items['weapons'][rarity].append(item)
         elif 'armor' in category or any(a in name.lower() for a in ['armor', 'mail', 'plate', 'leather', 'chain']):
-            items['armor'][rarity_key].append(item)
+            items['armor'][rarity].append(item)
         elif 'alchemical' in category or 'alchemist' in name.lower():
-            items['alchemical'][rarity_key].append(item)
+            items['alchemical'][rarity].append(item)
         elif 'scroll' in category.lower() or 'scroll' in name.lower():
-            items['scrolls'][rarity_key].append(item)
+            items['scrolls'][rarity].append(item)
         elif 'adventuring' in category or 'gear' in category or any(g in category for g in ['tool', 'equipment', 'clothing']):
-            items['adventuring'][rarity_key].append(item)
+            items['adventuring'][rarity].append(item)
         elif 'consumable' in category or 'held' in category or 'worn' in category or 'potion' in name.lower() or 'elixir' in name.lower():
-            items['magical'][rarity_key].append(item)
+            items['magical'][rarity].append(item)
         else:
             # Default to adventuring gear for misc items
-            items['adventuring'][rarity_key].append(item)
+            items['adventuring'][rarity].append(item)
     
     return items
 
@@ -159,6 +166,26 @@ def get_manual_items():
             {'name': 'Smokestick (Lesser)', 'level': 1, 'price': '3 gp'},
             {'name': 'Tanglefoot Bag (Lesser)', 'level': 1, 'price': '3 gp'},
             {'name': 'Thunderstone (Lesser)', 'level': 1, 'price': '3 gp'},
+        ],
+        'market_uncommon': [
+            # Uncommon weapons
+            {'name': 'Dogslicer', 'level': 0, 'price': '1 sp'},
+            {'name': 'Katar', 'level': 0, 'price': '3 sp'},
+            {'name': 'Nunchaku', 'level': 0, 'price': '2 sp'},
+            {'name': 'Shuriken (10)', 'level': 0, 'price': '1 sp'},
+            {'name': 'Tonfa', 'level': 0, 'price': '1 sp'},
+            # Uncommon armor
+            {'name': 'Armored Skirt', 'level': 0, 'price': '2 gp'},
+            {'name': 'Lamellar Armor', 'level': 1, 'price': '3 gp'},
+            # Uncommon adventuring gear
+            {'name': 'Grappling Arrow', 'level': 1, 'price': '3 sp'},
+            {'name': 'Grappling Bolt', 'level': 1, 'price': '3 sp'},
+            {'name': 'Tracking Tag', 'level': 1, 'price': '5 sp'},
+            {'name': 'Waterproof Carrying Case', 'level': 1, 'price': '5 sp'},
+            {'name': 'Earplugs', 'level': 0, 'price': '1 sp'},
+            {'name': 'Shield Sconce', 'level': 1, 'price': '5 sp'},
+            {'name': 'Marked Playing Cards', 'level': 0, 'price': '1 gp'},
+            {'name': 'Wax Key Blank', 'level': 0, 'price': '1 gp'},
         ]
     }
 
@@ -175,7 +202,25 @@ def generate_inventory(categories, items, num_common=10, num_uncommon_range=(1,4
     if manual_items:
         manual = get_manual_items()
         
-        # Mix of manual and parsed items for common
+        # Handle market-specific manual items
+        if manual_items == 'market':
+            # Get all common items from parsed data
+            all_common = []
+            for cat in categories:
+                if cat in items:
+                    all_common.extend(items[cat]['common'])
+            
+            if all_common:
+                inventory['common'] = random.sample(all_common, min(num_common, len(all_common)))
+            
+            # Get uncommon from manual market items
+            num_uncommon = num_uncommon_range[1] if isinstance(num_uncommon_range, tuple) else num_uncommon_range
+            if 'market_uncommon' in manual:
+                inventory['uncommon'] = random.sample(manual['market_uncommon'], min(num_uncommon, len(manual['market_uncommon'])))
+            
+            return inventory
+        
+        # Mix of manual and parsed items for common (for Wrin's Wonders, etc.)
         common_pool = []
         if 'scrolls' in categories and 'scrolls_common' in manual:
             common_pool.extend(manual['scrolls_common'])
@@ -193,7 +238,7 @@ def generate_inventory(categories, items, num_common=10, num_uncommon_range=(1,4
             inventory['common'] = random.sample(common_pool, min(num_common, len(common_pool)))
         
         # Get uncommon items
-        num_uncommon = random.randint(num_uncommon_range[0], num_uncommon_range[1])
+        num_uncommon = random.randint(num_uncommon_range[0], num_uncommon_range[1]) if isinstance(num_uncommon_range, tuple) else num_uncommon_range
         uncommon_pool = []
         if 'scrolls' in categories and 'scrolls_uncommon' in manual:
             uncommon_pool.extend(manual['scrolls_uncommon'])
@@ -224,7 +269,7 @@ def generate_inventory(categories, items, num_common=10, num_uncommon_range=(1,4
         )
     
     # Get uncommon items
-    num_uncommon = random.randint(num_uncommon_range[0], num_uncommon_range[1])
+    num_uncommon = random.randint(num_uncommon_range[0], num_uncommon_range[1]) if isinstance(num_uncommon_range, tuple) else num_uncommon_range
     uncommon_filtered = [i for i in all_uncommon if i['level'] >= 1]
     if uncommon_filtered:
         inventory['uncommon'] = random.sample(
@@ -337,7 +382,7 @@ if __name__ == "__main__":
             'description': "Part open-air farmer's market, part log-cabin trading post. Keeleno pays handsomely for wolf pelts, as a wolf-like monster slew his wife years ago, and he hopes to one day acquire the skin of her killer.",
             'specialties': "All adventuring gear, light armor, and simple weapons",
             'categories': ['weapons', 'armor', 'adventuring', 'alchemical', 'magical'],
-            'use_manual': False,
+            'use_manual': 'market',  # Use market-specific manual items for uncommon
             'num_common': 75,
             'num_uncommon': 15,
             'special': ["Keeleno pays 5 gp per wolf pelt (double normal price)"],

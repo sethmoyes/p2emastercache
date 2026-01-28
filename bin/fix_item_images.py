@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 """
 Fix item images with known Archives of Nethys URLs
+Falls back to Google Images search, then DeviantArt Pathfinder gallery
 """
 import re
+import urllib.parse
+import requests
+import random
+from bs4 import BeautifulSoup
+import time
 
 # Manual mapping of common items to their correct image URLs
 # Using the ACTUAL working URLs from Archives of Nethys (tested)
@@ -91,11 +97,77 @@ def normalize_item_name(name):
     name = name.lower().strip()
     return name
 
-def find_image_url(item_name):
-    """Find the correct image URL for an item"""
+def get_google_image_url(item_name):
+    """Try to get first Google Images result for item"""
+    try:
+        search_query = f"{item_name} fantasy art dnd"
+        encoded_query = urllib.parse.quote(search_query)
+        search_url = f"https://www.google.com/search?q={encoded_query}&tbm=isch"
+        
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        
+        response = requests.get(search_url, headers=headers, timeout=5)
+        if response.status_code == 200:
+            # Try to extract first image URL from the page
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # Google Images uses various formats, try multiple approaches
+            img_tags = soup.find_all('img')
+            for img in img_tags[1:]:  # Skip first (Google logo)
+                src = img.get('src') or img.get('data-src')
+                if src and src.startswith('http') and 'google' not in src:
+                    return src
+            
+            # Alternative: look for image URLs in script tags
+            scripts = soup.find_all('script')
+            for script in scripts:
+                if script.string and 'http' in str(script.string):
+                    # Look for image URLs in the script content
+                    urls = re.findall(r'https?://[^\s"\'<>]+\.(?:jpg|jpeg|png|webp)', str(script.string))
+                    if urls:
+                        return urls[0]
+        
+        return None
+    except Exception as e:
+        print(f"  Warning: Google Images search failed for '{item_name}': {e}")
+        return None
+
+def get_deviantart_random_image():
+    """Get a random image from DeviantArt Pathfinder gallery"""
+    try:
+        url = "https://www.deviantart.com/pathfinder-art/gallery"
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        
+        response = requests.get(url, headers=headers, timeout=5)
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # DeviantArt uses various image containers
+            img_tags = soup.find_all('img')
+            valid_images = []
+            
+            for img in img_tags:
+                src = img.get('src')
+                if src and ('images-wixmp' in src or 'deviantart.net' in src) and not any(x in src for x in ['avatar', 'icon', 'logo']):
+                    valid_images.append(src)
+            
+            if valid_images:
+                return random.choice(valid_images)
+        
+        return None
+    except Exception as e:
+        print(f"  Warning: DeviantArt fallback failed: {e}")
+        return None
+
+def find_image_url(item_name, use_fallbacks=True):
+    """Find the correct image URL for an item with fallback chain"""
     normalized = normalize_item_name(item_name)
     
-    # Direct match
+    # PRIMARY: Direct match from known URLs
     if normalized in ITEM_IMAGE_MAP:
         return ITEM_IMAGE_MAP[normalized]
     
@@ -104,19 +176,40 @@ def find_image_url(item_name):
         if key in normalized:
             return url
     
-    # Default fallback - try to construct a generic URL with .webp
+    # Try to construct a generic Archives of Nethys URL
     clean_name = normalized.replace(' ', '_')
-    # Remove parentheses and special chars
     clean_name = re.sub(r'[^a-zA-Z0-9_]', '', clean_name)
     clean_name = clean_name.title()
     
     # Guess category
     if any(word in normalized for word in ['sword', 'axe', 'hammer', 'spear', 'bow', 'dagger', 'weapon', 'arrow', 'bolt', 'chain', 'staff', 'club']):
-        return f'https://2e.aonprd.com/Images/Weapons/{clean_name}.webp'
+        aon_url = f'https://2e.aonprd.com/Images/Weapons/{clean_name}.webp'
     elif any(word in normalized for word in ['armor', 'shield', 'mail', 'breastplate', 'leather', 'hide', 'scale', 'buckler']):
-        return f'https://2e.aonprd.com/Images/Armor/{clean_name}.webp'
+        aon_url = f'https://2e.aonprd.com/Images/Armor/{clean_name}.webp'
     else:
-        return f'https://2e.aonprd.com/Images/Treasure/{clean_name}.webp'
+        aon_url = f'https://2e.aonprd.com/Images/Treasure/{clean_name}.webp'
+    
+    # If not using fallbacks, return the guessed URL
+    if not use_fallbacks:
+        return aon_url
+    
+    # BACKUP: Try Google Images search
+    print(f"  Trying Google Images for: {item_name}")
+    google_url = get_google_image_url(item_name)
+    if google_url:
+        print(f"  ✓ Found Google Image")
+        return google_url
+    
+    # BACKUP BACKUP: Random DeviantArt Pathfinder image
+    print(f"  Trying DeviantArt fallback...")
+    deviantart_url = get_deviantart_random_image()
+    if deviantart_url:
+        print(f"  ✓ Using DeviantArt image")
+        return deviantart_url
+    
+    # Final fallback: return the guessed Archives of Nethys URL
+    print(f"  Using guessed Archives of Nethys URL")
+    return aon_url
 
 def fix_images_in_file(input_file, output_file):
     """Fix all image URLs in a markdown file"""
