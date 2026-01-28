@@ -52,6 +52,15 @@ def parse_equipment_md(filename):
         if not name or not price or name == 'Name':
             continue
         
+        # Fix price format - ensure it has currency denomination
+        if price and not any(curr in price.lower() for curr in ['gp', 'sp', 'cp']):
+            # If price is just a number or letter, skip it (malformed data)
+            if len(price) <= 2 and not price.isdigit():
+                continue
+            # If it's a number without currency, assume gp
+            if price.replace('.', '').isdigit():
+                price = f"{price} gp"
+        
         item = {
             'name': name,
             'level': level,
@@ -137,13 +146,33 @@ def get_manual_items():
             {'name': 'Cold Iron Weapon Blanch', 'level': 2, 'price': '6 gp'},
             {'name': 'Religious Symbol (Silver)', 'level': 0, 'price': '2 gp'},
             {'name': 'Religious Symbol (Wooden)', 'level': 0, 'price': '1 sp'},
+            {'name': 'Everburning Torch', 'level': 1, 'price': '15 gp'},
+            {'name': 'Chalk (10 pieces)', 'level': 0, 'price': '1 cp'},
+            {'name': 'Compass', 'level': 0, 'price': '1 gp'},
+            {'name': 'Spellbook (Blank)', 'level': 0, 'price': '1 gp'},
+            {'name': 'Formula Book (Blank)', 'level': 0, 'price': '1 gp'},
+            {'name': 'Mirror', 'level': 0, 'price': '1 gp'},
+            {'name': 'Lantern (Bull\'s-Eye)', 'level': 0, 'price': '1 gp'},
+            {'name': 'Lantern (Hooded)', 'level': 0, 'price': '7 sp'},
         ],
         'magical_uncommon': [
             {'name': 'Wand of Heal (1st, 3 charges)', 'level': 3, 'price': '18 gp'},
             {'name': 'Wand of Burning Hands (1st, 2 charges)', 'level': 2, 'price': '12 gp'},
             {'name': 'Lesser Healing Potion', 'level': 3, 'price': '12 gp'},
+            {'name': 'Potion of Water Breathing', 'level': 3, 'price': '11 gp'},
+            {'name': 'Potion of Darkvision', 'level': 2, 'price': '7 gp'},
+        ],
+        'alchemical_common': [
+            {'name': 'Alchemist\'s Fire (Lesser)', 'level': 1, 'price': '3 gp'},
+            {'name': 'Antidote (Lesser)', 'level': 1, 'price': '3 gp'},
+            {'name': 'Antiplague (Lesser)', 'level': 1, 'price': '3 gp'},
+            {'name': 'Elixir of Life (Minor)', 'level': 1, 'price': '3 gp'},
+            {'name': 'Smokestick (Lesser)', 'level': 1, 'price': '3 gp'},
+            {'name': 'Tanglefoot Bag (Lesser)', 'level': 1, 'price': '3 gp'},
+            {'name': 'Thunderstone (Lesser)', 'level': 1, 'price': '3 gp'},
         ]
     }
+
 
 def generate_inventory(categories, items, num_common=10, num_uncommon_range=(1,4), rare_chance=0.1, manual_items=None):
     """Generate inventory from specified categories"""
@@ -157,22 +186,33 @@ def generate_inventory(categories, items, num_common=10, num_uncommon_range=(1,4
     if manual_items:
         manual = get_manual_items()
         
-        # Get common items
+        # Mix of manual and parsed items for common
+        common_pool = []
         if 'scrolls' in categories and 'scrolls_common' in manual:
-            inventory['common'].extend(random.sample(manual['scrolls_common'], min(10, len(manual['scrolls_common']))))
+            common_pool.extend(manual['scrolls_common'])
         if 'magical' in categories and 'magical_common' in manual:
-            remaining = 10 - len(inventory['common'])
-            if remaining > 0:
-                inventory['common'].extend(random.sample(manual['magical_common'], min(remaining, len(manual['magical_common']))))
+            common_pool.extend(manual['magical_common'])
+        if 'alchemical' in categories and 'alchemical_common' in manual:
+            common_pool.extend(manual['alchemical_common'])
+        
+        # Add some parsed items too for variety
+        for cat in categories:
+            if cat in items and cat not in ['scrolls', 'magical', 'alchemical']:
+                common_pool.extend(items[cat]['common'][:5])  # Add up to 5 from each category
+        
+        if common_pool:
+            inventory['common'] = random.sample(common_pool, min(num_common, len(common_pool)))
         
         # Get uncommon items
         num_uncommon = random.randint(num_uncommon_range[0], num_uncommon_range[1])
+        uncommon_pool = []
         if 'scrolls' in categories and 'scrolls_uncommon' in manual:
-            inventory['uncommon'].extend(random.sample(manual['scrolls_uncommon'], min(num_uncommon, len(manual['scrolls_uncommon']))))
+            uncommon_pool.extend(manual['scrolls_uncommon'])
         if 'magical' in categories and 'magical_uncommon' in manual:
-            remaining = num_uncommon - len(inventory['uncommon'])
-            if remaining > 0:
-                inventory['uncommon'].extend(random.sample(manual['magical_uncommon'], min(remaining, len(manual['magical_uncommon']))))
+            uncommon_pool.extend(manual['magical_uncommon'])
+        
+        if uncommon_pool:
+            inventory['uncommon'] = random.sample(uncommon_pool, min(num_uncommon, len(uncommon_pool)))
         
         return inventory
     
@@ -297,7 +337,7 @@ if __name__ == "__main__":
             'proprietor': "Wrin Sivinxi (CG female tiefling elf oddities merchant 5)",
             'description': "This odd, domed building is always open. Wrin is a bit unusual, seeing menace in every corner and truths in the constellations above, but she's eager to get to know adventurers and show off the many magical trinkets in her collection.",
             'specialties': "Adventuring gear and magic items",
-            'categories': ['magical', 'scrolls'],
+            'categories': ['magical', 'scrolls', 'adventuring', 'alchemical'],
             'use_manual': True,
             'inventory': None
         },
@@ -318,7 +358,7 @@ if __name__ == "__main__":
             'proprietor': "Morlibint (wizard 5) and his husband Yinyasmera",
             'description': "The wizard Morlibint specializes in fanciful fiction, but he and his husband also sell textbooks, teaching tools, and scrolls. Morlibint is incredibly well-read and can help the heroes decipher tomes in ancient or unusual languages. He eagerly purchases rare books the heroes come across in their adventures.",
             'specialties': "Books, scrolls, and knowledge",
-            'categories': ['scrolls'],
+            'categories': ['scrolls', 'adventuring'],
             'use_manual': True,
             'services': [
                 "Translation of ancient/unusual languages: 5-20 gp depending on complexity",
