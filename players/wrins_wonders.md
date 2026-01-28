@@ -11,7 +11,7 @@
 ### Common Items (10)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Compass | 0 | 1 gp | ![Compass](https://2e.aonprd.com/Images/Treasure/Compass.webp) |
+| Compass | 0 | 1 gp | ![Compass](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr5Sx35UTmAJiVgRx9QBYpRDcbKuniLyMW0oj5cQ7yQQ-2cZzOEX0MO106mw&s) |
 | Scroll of Bless (1st) | 1 | 4 gp | ![Scroll of Bless (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
 | Wand of Magic Missile (1st, 1 charge) | 1 | 6 gp | ![Wand of Magic Missile (1st, 1 charge)](https://2e.aonprd.com/Images/Treasure/Wand.webp) |
 | Alchemist's Fire (Lesser) | 1 | 3 gp | ![Alchemist's Fire (Lesser)](https://2e.aonprd.com/Images/Treasure/Alchemists_Fire.webp) |
@@ -25,6 +25,6 @@
 ### Uncommon Items (2)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Potion of Darkvision | 2 | 7 gp | ![Potion of Darkvision](https://2e.aonprd.com/Images/Treasure/Potion_Of_Darkvision.webp) |
+| Potion of Darkvision | 2 | 7 gp | ![Potion of Darkvision](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGeSg3NtFpj-obPxeS0_bujaF0_mBMsvYEVVZ5EAt2emRW9w8wLj-BdfO-wg&s) |
 | Lesser Healing Potion | 3 | 12 gp | ![Lesser Healing Potion](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) |
 

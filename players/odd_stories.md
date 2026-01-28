@@ -13,12 +13,12 @@
 |------|-------|-------|-------|
 | Basic Crafter's Book | 0 | 1 sp | ![Basic Crafter's Book](https://2e.aonprd.com/Images/Treasure/Book.webp) |
 | Scroll of Magic Missile (1st) | 1 | 4 gp | ![Scroll of Magic Missile (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
-| Beverages (Mug of Ale) | 0 | 1 cp | ![Beverages (Mug of Ale)](https://2e.aonprd.com/Images/Treasure/Beverages.webp) |
+| Beverages (Mug of Ale) | 0 | 1 cp | ![Beverages (Mug of Ale)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ml1kK1t49VNdISw5a30DOqo22RtppFHdRgxD1r4B2M7IyhINVYiGr4Zjyg&s) |
 | Scroll of Command (1st) | 1 | 4 gp | ![Scroll of Command (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
 | Scroll of Grease (1st) | 1 | 4 gp | ![Scroll of Grease (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
-| Cloth (Wool Cloth, 1 square yard) | 0 | 1 cp | ![Cloth (Wool Cloth, 1 square yard)](https://2e.aonprd.com/Images/Treasure/Cloth.webp) |
-| Candle | 0 | 1 cp | ![Candle](https://2e.aonprd.com/Images/Treasure/Candle.webp) |
-| Clay | 0 | 1 cp | ![Clay](https://2e.aonprd.com/Images/Treasure/Clay.webp) |
+| Cloth (Wool Cloth, 1 square yard) | 0 | 1 cp | ![Cloth (Wool Cloth, 1 square yard)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcmjkaA5bWMBtimCPddwaAK0idY697IGsXvKfBmNTDcB8iX3IZy6fM0in5Fus&s) |
+| Candle | 0 | 1 cp | ![Candle](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnK3GztFF25txZ6zMcni9eWszCwv1jR-6a0b_J33gL6N9yWp3YPylk9eCFaD4&s) |
+| Clay | 0 | 1 cp | ![Clay](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4aCJI5NQ2CWpRNu7eBqVxmIThSaWQBYUAwYPzVyKEHpwebDar3MkTvAZBmA&s) |
 | Scroll of Mage Armor (1st) | 1 | 4 gp | ![Scroll of Mage Armor (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
 | Scroll of Sanctuary (1st) | 1 | 4 gp | ![Scroll of Sanctuary (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
 

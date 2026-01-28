@@ -211,8 +211,14 @@ def find_image_url(item_name, use_fallbacks=True):
     print(f"  Using guessed Archives of Nethys URL")
     return aon_url
 
-def fix_images_in_file(input_file, output_file):
-    """Fix all image URLs in a markdown file"""
+def fix_images_in_file(input_file, output_file, use_fallbacks=False):
+    """Fix all image URLs in a markdown file
+    
+    Args:
+        input_file: Path to input markdown file
+        output_file: Path to output markdown file
+        use_fallbacks: If True, use Google Images and DeviantArt fallbacks for unknown items
+    """
     with open(input_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
     
@@ -231,12 +237,16 @@ def fix_images_in_file(input_file, output_file):
                 price = match.group(3).strip()
                 
                 # Get correct image URL
-                new_url = find_image_url(item_name)
+                new_url = find_image_url(item_name, use_fallbacks=use_fallbacks)
                 
                 # Reconstruct line with new URL
                 new_line = f"| {item_name} | {level} | {price} | ![{item_name}]({new_url}) |\n"
                 output_lines.append(new_line)
                 fixed_count += 1
+                
+                # Small delay if using web fallbacks to avoid rate limiting
+                if use_fallbacks:
+                    time.sleep(0.5)
             else:
                 output_lines.append(line)
         else:
@@ -252,6 +262,12 @@ if __name__ == "__main__":
     import sys
     import glob
     
+    use_fallbacks = '--fallbacks' in sys.argv
+    if use_fallbacks:
+        sys.argv.remove('--fallbacks')
+        print("Using web fallbacks (Google Images + DeviantArt)")
+        print("Note: This will be slower due to web requests\n")
+    
     if len(sys.argv) > 1:
         # Handle multiple files or patterns
         if sys.argv[1] == '--dir':
@@ -264,7 +280,7 @@ if __name__ == "__main__":
             for input_file in files:
                 # Replace IMAGE_PLACEHOLDER or fix existing URLs
                 print(f"\nFixing images in {input_file}...")
-                fix_images_in_file(input_file, input_file)  # Overwrite in place
+                fix_images_in_file(input_file, input_file, use_fallbacks=use_fallbacks)
             print("\n✓ All files processed!")
         else:
             # Single file mode
@@ -272,12 +288,15 @@ if __name__ == "__main__":
             output_file = sys.argv[2] if len(sys.argv) > 2 else input_file
             
             print(f"Fixing images in {input_file}...")
-            fix_images_in_file(input_file, output_file)
+            fix_images_in_file(input_file, output_file, use_fallbacks=use_fallbacks)
             print("Done!")
     else:
         print("Usage:")
-        print("  python fix_item_images.py <input_file> [output_file]")
-        print("  python fix_item_images.py --dir [directory]")
+        print("  python fix_item_images.py <input_file> [output_file] [--fallbacks]")
+        print("  python fix_item_images.py --dir [directory] [--fallbacks]")
+        print("\nOptions:")
+        print("  --fallbacks    Use Google Images and DeviantArt fallbacks for unknown items")
         print("\nExamples:")
         print("  python fix_item_images.py players/wrins_wonders.md")
         print("  python fix_item_images.py --dir players")
+        print("  python fix_item_images.py --dir players --fallbacks")
