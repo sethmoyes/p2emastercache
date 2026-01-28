@@ -228,19 +228,21 @@ def fix_images_in_file(input_file, output_file, use_fallbacks=False):
     for line in lines:
         # Check if line contains an image (either with URL or placeholder)
         if '![' in line and ('](https://' in line or '](IMAGE_PLACEHOLDER)' in line):
-            # Extract item name and current URL
-            match = re.search(r'\| ([^|]+) \| ([^|]+) \| ([^|]+) \| !\[([^\]]+)\]\(([^)]+)\)', line)
+            # Try new format with Details column first
+            match = re.search(r'\| ([^|]+) \| ([^|]+) \| ([^|]+) \| \[View\]\(([^)]+)\) \| !\[([^\]]+)\]\(([^)]+)\)', line)
             
             if match:
+                # New format with Details column
                 item_name = match.group(1).strip()
                 level = match.group(2).strip()
                 price = match.group(3).strip()
+                details_url = match.group(4).strip()
                 
                 # Get correct image URL
                 new_url = find_image_url(item_name, use_fallbacks=use_fallbacks)
                 
                 # Reconstruct line with new URL
-                new_line = f"| {item_name} | {level} | {price} | ![{item_name}]({new_url}) |\n"
+                new_line = f"| {item_name} | {level} | {price} | [View]({details_url}) | ![{item_name}]({new_url}) |\n"
                 output_lines.append(new_line)
                 fixed_count += 1
                 
@@ -248,7 +250,27 @@ def fix_images_in_file(input_file, output_file, use_fallbacks=False):
                 if use_fallbacks:
                     time.sleep(0.5)
             else:
-                output_lines.append(line)
+                # Try old format without Details column
+                match = re.search(r'\| ([^|]+) \| ([^|]+) \| ([^|]+) \| !\[([^\]]+)\]\(([^)]+)\)', line)
+                
+                if match:
+                    item_name = match.group(1).strip()
+                    level = match.group(2).strip()
+                    price = match.group(3).strip()
+                    
+                    # Get correct image URL
+                    new_url = find_image_url(item_name, use_fallbacks=use_fallbacks)
+                    
+                    # Reconstruct line with new URL (old format)
+                    new_line = f"| {item_name} | {level} | {price} | ![{item_name}]({new_url}) |\n"
+                    output_lines.append(new_line)
+                    fixed_count += 1
+                    
+                    # Small delay if using web fallbacks to avoid rate limiting
+                    if use_fallbacks:
+                        time.sleep(0.5)
+                else:
+                    output_lines.append(line)
         else:
             output_lines.append(line)
     

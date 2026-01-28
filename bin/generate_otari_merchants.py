@@ -352,28 +352,34 @@ def write_merchant_file(merchant_data, output_dir='players'):
         # Common items
         if merchant_data['inventory']['common']:
             f.write(f"### Common Items ({len(merchant_data['inventory']['common'])})\n")
-            f.write("| Item | Level | Price | Image |\n")
-            f.write("|------|-------|-------|-------|\n")
+            f.write("| Item | Level | Price | Details | Image |\n")
+            f.write("|------|-------|-------|---------|-------|\n")
             for item in merchant_data['inventory']['common']:
-                f.write(f"| {item['name']} | {item['level']} | {item['price']} | ![{item['name']}](IMAGE_PLACEHOLDER) |\n")
+                item_url = get_aon_equipment_url(item['name'])
+                f.write(f"| {item['name']} | {item['level']} | {item['price']} | [View]({item_url}) | ![{item['name']}](IMAGE_PLACEHOLDER) |\n")
+                time.sleep(0.3)  # Small delay to avoid rate limiting
             f.write("\n")
         
         # Uncommon items
         if merchant_data['inventory']['uncommon']:
             f.write(f"### Uncommon Items ({len(merchant_data['inventory']['uncommon'])})\n")
-            f.write("| Item | Level | Price | Image |\n")
-            f.write("|------|-------|-------|-------|\n")
+            f.write("| Item | Level | Price | Details | Image |\n")
+            f.write("|------|-------|-------|---------|-------|\n")
             for item in merchant_data['inventory']['uncommon']:
-                f.write(f"| {item['name']} | {item['level']} | {item['price']} | ![{item['name']}](IMAGE_PLACEHOLDER) |\n")
+                item_url = get_aon_equipment_url(item['name'])
+                f.write(f"| {item['name']} | {item['level']} | {item['price']} | [View]({item_url}) | ![{item['name']}](IMAGE_PLACEHOLDER) |\n")
+                time.sleep(0.3)  # Small delay to avoid rate limiting
             f.write("\n")
         
         # Rare items
         if merchant_data['inventory']['rare']:
             f.write(f"### Rare Items ({len(merchant_data['inventory']['rare'])})\n")
-            f.write("| Item | Level | Price | Image |\n")
-            f.write("|------|-------|-------|-------|\n")
+            f.write("| Item | Level | Price | Details | Image |\n")
+            f.write("|------|-------|-------|---------|-------|\n")
             for item in merchant_data['inventory']['rare']:
-                f.write(f"| {item['name']} | {item['level']} | {item['price']} | ![{item['name']}](IMAGE_PLACEHOLDER) |\n")
+                item_url = get_aon_equipment_url(item['name'])
+                f.write(f"| {item['name']} | {item['level']} | {item['price']} | [View]({item_url}) | ![{item['name']}](IMAGE_PLACEHOLDER) |\n")
+                time.sleep(0.3)  # Small delay to avoid rate limiting
             f.write("\n")
         
         # Special notes
