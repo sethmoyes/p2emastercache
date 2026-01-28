@@ -463,6 +463,118 @@ if __name__ == "__main__":
             'categories': [],  # Service only, no inventory
             'use_manual': False,
             'inventory': {'common': [], 'uncommon': [], 'rare': []}
+        },
+        {
+            'name': "Blades for Glades",
+            'subtitle': "Otari's primary smithy",
+            'proprietor': "Carman Rajani (expert blacksmith)",
+            'description': "Otari's primary smithy sells armor and weapons in addition to saws and axes for the lumber industry. The forge is always hot and Carman is always busy, but she takes pride in quality work.",
+            'specialties': "Weapons, armor, and tools",
+            'categories': ['weapons', 'armor', 'adventuring'],
+            'use_manual': False,
+            'num_common': 30,
+            'num_uncommon': 10,
+            'services': [
+                "Weapon/Armor repair: 10% of item cost",
+                "Custom orders: +25% cost, 1d6 days",
+                "Sharpening: 5 sp per weapon"
+            ],
+            'inventory': None
+        },
+        {
+            'name': "Crow's Casks",
+            'subtitle': "Brewery and tavern",
+            'proprietor': "Temmin 'Crow' Brassbuckle (jovial halfling brewer)",
+            'description': "A brewery and tavern popular among local farmers and merchants. Known for excellent ales and a warm atmosphere. Crow is always happy to share local gossip over a pint.",
+            'specialties': "Food, drink, and lodging",
+            'services': [
+                "Ale (mug): 1 cp",
+                "Ale (pitcher): 5 cp",
+                "Fine wine (bottle): 1 gp",
+                "Meal (common): 3 cp",
+                "Meal (good): 1 sp",
+                "Lodging (common room): 1 sp per night",
+                "Lodging (private room): 5 sp per night"
+            ],
+            'categories': [],
+            'use_manual': False,
+            'inventory': {'common': [], 'uncommon': [], 'rare': []}
+        },
+        {
+            'name': "Crook's Nook",
+            'subtitle': "Sailors' tavern and bridge",
+            'proprietor': "Tamily Tanderveil (retired sailor)",
+            'description': "A sailors' tavern built as a bridge across the Osprey River. Popular with sailors, fishermen, and anyone with a taste for adventure stories. The food is hearty and the drinks are strong.",
+            'specialties': "Food, drink, and sailor's tales",
+            'services': [
+                "Grog (mug): 2 cp",
+                "Rum (shot): 5 cp",
+                "Sailor's stew: 5 cp",
+                "Fish and chips: 1 sp",
+                "Lodging (hammock): 5 cp per night",
+                "Lodging (bunk): 2 sp per night",
+                "Sailor rumors and information: Free with drinks"
+            ],
+            'categories': [],
+            'use_manual': False,
+            'inventory': {'common': [], 'uncommon': [], 'rare': []}
+        },
+        {
+            'name': "The Rowdy Rockfish",
+            'subtitle': "A surprisingly calm and quiet tavern",
+            'proprietor': "Aaric (calm, contemplative bartender)",
+            'description': "Despite its name, The Rowdy Rockfish is surprisingly calm and quiet. Aaric keeps the peace with a steady hand and wise words. A favorite of scholars and those seeking a peaceful drink.",
+            'specialties': "Quiet atmosphere and quality drinks",
+            'services': [
+                "House wine: 5 sp",
+                "Imported spirits: 1-5 gp",
+                "Cheese plate: 2 sp",
+                "Meal (fine): 5 sp",
+                "Lodging (quiet room): 1 gp per night",
+                "Private meeting room: 5 gp per evening"
+            ],
+            'categories': [],
+            'use_manual': False,
+            'inventory': {'common': [], 'uncommon': [], 'rare': []}
+        },
+        {
+            'name': "Otari Fishery",
+            'subtitle': "Fishery, shipyard, and entertainment venue",
+            'proprietor': "Mendi Grantham (shipwright and fisher)",
+            'description': "Fishery and shipyard by day, gathering place for games and entertainment by night. Mendi runs a tight ship and knows everything about boats and the waters around Otari.",
+            'specialties': "Fish, boats, and maritime services",
+            'services': [
+                "Fresh fish: 1-5 sp per pound",
+                "Boat rental (rowboat): 5 sp per day",
+                "Boat rental (sailing boat): 2 gp per day",
+                "Boat repair: Varies by damage",
+                "Fishing gear rental: 1 sp per day",
+                "Maritime charts: 5-20 gp"
+            ],
+            'categories': ['adventuring'],
+            'use_manual': False,
+            'num_common': 15,
+            'inventory': None
+        },
+        {
+            'name': "Dawnflower Library",
+            'subtitle': "Library and temple to Sarenrae",
+            'proprietor': "Vandy Banderdash (cleric of Sarenrae)",
+            'description': "A large library and temple to Sarenrae, with shrines to many other deities. Vandy is welcoming to all seekers of knowledge and offers healing services to those in need.",
+            'specialties': "Religious services, healing, and knowledge",
+            'categories': ['scrolls', 'magical'],
+            'use_manual': True,
+            'num_common': 8,
+            'num_uncommon': 3,
+            'services': [
+                "Healing (1st level): 4 gp",
+                "Healing (2nd level): 12 gp",
+                "Remove Disease: 12 gp",
+                "Restoration: 12 gp",
+                "Research assistance: 1-10 gp depending on topic",
+                "Religious ceremonies: Donation based"
+            ],
+            'inventory': None
         }
     ]
     
