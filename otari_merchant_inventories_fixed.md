@@ -18,37 +18,37 @@
 ### Common Magical Items (10)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Scroll of Magic Missile (1st) | 1 | 4 gp | ![Scroll of Magic Missile (1st)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Heal (1st) | 1 | 4 gp | ![Scroll of Heal (1st)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Mage Armor (1st) | 1 | 4 gp | ![Scroll of Mage Armor (1st)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Grease (1st) | 1 | 4 gp | ![Scroll of Grease (1st)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Bless (1st) | 1 | 4 gp | ![Scroll of Bless (1st)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Wand of Magic Missile (1st, 1 charge) | 1 | 6 gp | ![Wand of Magic Missile (1st, 1 charge)](https://2e.aonprd.com/Images/Equipment/Wand.png) |
-| Holy Water | 1 | 3 gp | ![Holy Water](https://2e.aonprd.com/Images/Equipment/HolyWater.png) |
-| Silver Weapon Blanch | 2 | 6 gp | ![Silver Weapon Blanch](https://2e.aonprd.com/Images/Equipment/WeaponBlanch.png) |
-| Cold Iron Weapon Blanch | 2 | 6 gp | ![Cold Iron Weapon Blanch](https://2e.aonprd.com/Images/Equipment/WeaponBlanch.png) |
-| Religious Symbol (Silver) | 0 | 2 gp | ![Religious Symbol (Silver)](https://2e.aonprd.com/Images/Equipment/ReligiousSymbol.png) |
+| Scroll of Magic Missile (1st) | 1 | 4 gp | ![Scroll of Magic Missile (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Heal (1st) | 1 | 4 gp | ![Scroll of Heal (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Mage Armor (1st) | 1 | 4 gp | ![Scroll of Mage Armor (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Grease (1st) | 1 | 4 gp | ![Scroll of Grease (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Bless (1st) | 1 | 4 gp | ![Scroll of Bless (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Wand of Magic Missile (1st, 1 charge) | 1 | 6 gp | ![Wand of Magic Missile (1st, 1 charge)](https://2e.aonprd.com/Images/Treasure/Wand.webp) |
+| Holy Water | 1 | 3 gp | ![Holy Water](https://2e.aonprd.com/Images/Treasure/Holy_Water.webp) |
+| Silver Weapon Blanch | 2 | 6 gp | ![Silver Weapon Blanch](https://2e.aonprd.com/Images/Treasure/Weapon_Blanch.webp) |
+| Cold Iron Weapon Blanch | 2 | 6 gp | ![Cold Iron Weapon Blanch](https://2e.aonprd.com/Images/Treasure/Weapon_Blanch.webp) |
+| Religious Symbol (Silver) | 0 | 2 gp | ![Religious Symbol (Silver)](https://2e.aonprd.com/Images/Treasure/Religious_Symbol.webp) |
 
 ### Uncommon Magical Items (3)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Scroll of Invisibility (2nd) | 3 | 12 gp | ![Scroll of Invisibility (2nd)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Restoration (2nd) | 3 | 12 gp | ![Scroll of Restoration (2nd)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Wand of Heal (1st, 3 charges) | 3 | 18 gp | ![Wand of Heal (1st, 3 charges)](https://2e.aonprd.com/Images/Equipment/Wand.png) |
+| Scroll of Invisibility (2nd) | 3 | 12 gp | ![Scroll of Invisibility (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Restoration (2nd) | 3 | 12 gp | ![Scroll of Restoration (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Wand of Heal (1st, 3 charges) | 3 | 18 gp | ![Wand of Heal (1st, 3 charges)](https://2e.aonprd.com/Images/Treasure/Wand.webp) |
 
 ### Common Adventuring Gear (10)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Backpack | 0 | 1 sp | ![Backpack](https://2e.aonprd.com/Images/Equipment/Backpack.png) |
-| Bedroll | 0 | 2 cp | ![Bedroll](https://2e.aonprd.com/Images/Equipment/Bedroll.png) |
-| Rope (50 ft) | 0 | 5 sp | ![Rope (50 ft)](https://2e.aonprd.com/Images/Equipment/Rope.png) |
-| Grappling Hook | 0 | 1 sp | ![Grappling Hook](https://2e.aonprd.com/Images/Equipment/GrapplingHook.png) |
-| Torch (5) | 0 | 5 cp | ![Torch (5)](https://2e.aonprd.com/Images/Equipment/Torch.png) |
-| Waterskin | 0 | 5 cp | ![Waterskin](https://2e.aonprd.com/Images/Equipment/Waterskin.png) |
-| Rations (1 week) | 0 | 4 sp | ![Rations (1 week)](https://2e.aonprd.com/Images/Equipment/Rations.png) |
-| Flint and Steel | 0 | 5 cp | ![Flint and Steel](https://2e.aonprd.com/Images/Equipment/FlintAndSteel.png) |
-| Chalk (10) | 0 | 1 cp | ![Chalk (10)](https://2e.aonprd.com/Images/Equipment/Chalk.png) |
-| Piton (10) | 0 | 1 sp | ![Piton (10)](https://2e.aonprd.com/Images/Equipment/Piton.png) |
+| Backpack | 0 | 1 sp | ![Backpack](https://2e.aonprd.com/Images/Treasure/Backpack.webp) |
+| Bedroll | 0 | 2 cp | ![Bedroll](https://2e.aonprd.com/Images/Treasure/Bedroll.webp) |
+| Rope (50 ft) | 0 | 5 sp | ![Rope (50 ft)](https://2e.aonprd.com/Images/Treasure/Rope.webp) |
+| Grappling Hook | 0 | 1 sp | ![Grappling Hook](https://2e.aonprd.com/Images/Treasure/Grappling_Hook.webp) |
+| Torch (5) | 0 | 5 cp | ![Torch (5)](https://2e.aonprd.com/Images/Treasure/Torch.webp) |
+| Waterskin | 0 | 5 cp | ![Waterskin](https://2e.aonprd.com/Images/Treasure/Waterskin.webp) |
+| Rations (1 week) | 0 | 4 sp | ![Rations (1 week)](https://2e.aonprd.com/Images/Treasure/Rations.webp) |
+| Flint and Steel | 0 | 5 cp | ![Flint and Steel](https://2e.aonprd.com/Images/Treasure/Flint_and_Steel.webp) |
+| Chalk (10) | 0 | 1 cp | ![Chalk (10)](https://2e.aonprd.com/Images/Treasure/Chalk.webp) |
+| Piton (10) | 0 | 1 sp | ![Piton (10)](https://2e.aonprd.com/Images/Treasure/Piton.webp) |
 
 ---
 
@@ -64,50 +64,50 @@
 ### Common Weapons (10)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Longsword | 0 | 1 gp | ![Longsword](https://2e.aonprd.com/Images/Weapons/Longsword.png) |
-| Shortsword | 0 | 9 sp | ![Shortsword](https://2e.aonprd.com/Images/Weapons/Shortsword.png) |
-| Spear | 0 | 1 sp | ![Spear](https://2e.aonprd.com/Images/Weapons/Spear.png) |
-| Shortbow | 0 | 3 gp | ![Shortbow](https://2e.aonprd.com/Images/Weapons/Shortbow.png) |
-| Crossbow | 0 | 3 gp | ![Crossbow](https://2e.aonprd.com/Images/Weapons/HeavyCrossbow.png) |
-| Dagger | 0 | 2 sp | ![Dagger](https://2e.aonprd.com/Images/Weapons/Dagger.png) |
-| Club | 0 | 1 sp | ![Club](https://2e.aonprd.com/Images/Weapons/Club.png) |
-| Staff | 0 | 0 sp | ![Staff](https://2e.aonprd.com/Images/Weapons/Staff.png) |
-| Arrows (10) | 0 | 1 sp | ![Arrows (10)](https://2e.aonprd.com/Images/Weapons/Arrows.png) |
-| Bolts (10) | 0 | 1 sp | ![Bolts (10)](https://2e.aonprd.com/Images/Weapons/Bolts.png) |
+| Longsword | 0 | 1 gp | ![Longsword](https://2e.aonprd.com/Images/Weapons/Longsword.webp) |
+| Shortsword | 0 | 9 sp | ![Shortsword](https://2e.aonprd.com/Images/Weapons/Shortsword.webp) |
+| Spear | 0 | 1 sp | ![Spear](https://2e.aonprd.com/Images/Weapons/Spear.webp) |
+| Shortbow | 0 | 3 gp | ![Shortbow](https://2e.aonprd.com/Images/Weapons/Shortbow.webp) |
+| Crossbow | 0 | 3 gp | ![Crossbow](https://2e.aonprd.com/Images/Weapons/Heavy_Crossbow.webp) |
+| Dagger | 0 | 2 sp | ![Dagger](https://2e.aonprd.com/Images/Weapons/Dagger.webp) |
+| Club | 0 | 1 sp | ![Club](https://2e.aonprd.com/Images/Weapons/Club.webp) |
+| Staff | 0 | 0 sp | ![Staff](https://2e.aonprd.com/Images/Weapons/Staff.webp) |
+| Arrows (10) | 0 | 1 sp | ![Arrows (10)](https://2e.aonprd.com/Images/Weapons/Arrows.webp) |
+| Bolts (10) | 0 | 1 sp | ![Bolts (10)](https://2e.aonprd.com/Images/Weapons/Bolts.webp) |
 
 ### Common Light Armor (10)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Leather Armor | 0 | 2 gp | ![Leather Armor](https://2e.aonprd.com/Images/Armor/LeatherArmor.png) |
-| Studded Leather Armor | 0 | 3 gp | ![Studded Leather Armor](https://2e.aonprd.com/Images/Armor/StuddedLeatherArmor.png) |
-| Chain Shirt | 0 | 5 gp | ![Chain Shirt](https://2e.aonprd.com/Images/Armor/ChainShirt.png) |
-| Hide Armor | 0 | 2 gp | ![Hide Armor](https://2e.aonprd.com/Images/Armor/HideArmor.png) |
-| Padded Armor | 0 | 2 sp | ![Padded Armor](https://2e.aonprd.com/Images/Armor/PaddedArmor.png) |
-| Wooden Shield | 0 | 1 gp | ![Wooden Shield](https://2e.aonprd.com/Images/Armor/WoodenShield.png) |
-| Steel Shield | 0 | 2 gp | ![Steel Shield](https://2e.aonprd.com/Images/Armor/SteelShield.png) |
-| Buckler | 0 | 1 gp | ![Buckler](https://2e.aonprd.com/Images/Armor/Buckler.png) |
-| Explorer's Clothing | 0 | 1 sp | ![Explorer's Clothing](https://2e.aonprd.com/Images/Equipment/ExplorersClothing.png) |
-| Winter Clothing | 0 | 4 sp | ![Winter Clothing](https://2e.aonprd.com/Images/Equipment/WinterClothing.png) |
+| Leather Armor | 0 | 2 gp | ![Leather Armor](https://2e.aonprd.com/Images/Armor/Leather_Armor.webp) |
+| Studded Leather Armor | 0 | 3 gp | ![Studded Leather Armor](https://2e.aonprd.com/Images/Armor/Studded_Leather_Armor.webp) |
+| Chain Shirt | 0 | 5 gp | ![Chain Shirt](https://2e.aonprd.com/Images/Armor/Chain_Shirt.webp) |
+| Hide Armor | 0 | 2 gp | ![Hide Armor](https://2e.aonprd.com/Images/Armor/Hide_Armor.webp) |
+| Padded Armor | 0 | 2 sp | ![Padded Armor](https://2e.aonprd.com/Images/Armor/Padded_Armor.webp) |
+| Wooden Shield | 0 | 1 gp | ![Wooden Shield](https://2e.aonprd.com/Images/Armor/Wooden_Shield.webp) |
+| Steel Shield | 0 | 2 gp | ![Steel Shield](https://2e.aonprd.com/Images/Armor/Steel_Shield.webp) |
+| Buckler | 0 | 1 gp | ![Buckler](https://2e.aonprd.com/Images/Armor/Buckler.webp) |
+| Explorer's Clothing | 0 | 1 sp | ![Explorer's Clothing](https://2e.aonprd.com/Images/Treasure/Explorers_Clothing.webp) |
+| Winter Clothing | 0 | 4 sp | ![Winter Clothing](https://2e.aonprd.com/Images/Treasure/Winter_Clothing.webp) |
 
 ### Common Adventuring Gear (10)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Backpack | 0 | 1 sp | ![Backpack](https://2e.aonprd.com/Images/Equipment/Backpack.png) |
-| Bedroll | 0 | 2 cp | ![Bedroll](https://2e.aonprd.com/Images/Equipment/Bedroll.png) |
-| Rope (50 ft) | 0 | 5 sp | ![Rope (50 ft)](https://2e.aonprd.com/Images/Equipment/Rope.png) |
-| Waterskin | 0 | 5 cp | ![Waterskin](https://2e.aonprd.com/Images/Equipment/Waterskin.png) |
-| Rations (1 week) | 0 | 4 sp | ![Rations (1 week)](https://2e.aonprd.com/Images/Equipment/Rations.png) |
-| Torch (5) | 0 | 5 cp | ![Torch (5)](https://2e.aonprd.com/Images/Equipment/Torch.png) |
-| Lantern (Hooded) | 0 | 7 sp | ![Lantern (Hooded)](https://2e.aonprd.com/Images/Equipment/Lantern.png) |
-| Oil (1 pint) | 0 | 1 cp | ![Oil (1 pint)](https://2e.aonprd.com/Images/Equipment/Oil.png) |
-| Tent (Pup) | 0 | 8 sp | ![Tent (Pup)](https://2e.aonprd.com/Images/Equipment/Tent.png) |
-| Fishing Tackle | 0 | 8 sp | ![Fishing Tackle](https://2e.aonprd.com/Images/Equipment/FishingTackle.png) |
+| Backpack | 0 | 1 sp | ![Backpack](https://2e.aonprd.com/Images/Treasure/Backpack.webp) |
+| Bedroll | 0 | 2 cp | ![Bedroll](https://2e.aonprd.com/Images/Treasure/Bedroll.webp) |
+| Rope (50 ft) | 0 | 5 sp | ![Rope (50 ft)](https://2e.aonprd.com/Images/Treasure/Rope.webp) |
+| Waterskin | 0 | 5 cp | ![Waterskin](https://2e.aonprd.com/Images/Treasure/Waterskin.webp) |
+| Rations (1 week) | 0 | 4 sp | ![Rations (1 week)](https://2e.aonprd.com/Images/Treasure/Rations.webp) |
+| Torch (5) | 0 | 5 cp | ![Torch (5)](https://2e.aonprd.com/Images/Treasure/Torch.webp) |
+| Lantern (Hooded) | 0 | 7 sp | ![Lantern (Hooded)](https://2e.aonprd.com/Images/Treasure/Lantern.webp) |
+| Oil (1 pint) | 0 | 1 cp | ![Oil (1 pint)](https://2e.aonprd.com/Images/Treasure/Oil.webp) |
+| Tent (Pup) | 0 | 8 sp | ![Tent (Pup)](https://2e.aonprd.com/Images/Treasure/Tent.webp) |
+| Fishing Tackle | 0 | 8 sp | ![Fishing Tackle](https://2e.aonprd.com/Images/Treasure/Fishing_Tackle.webp) |
 
 ### Uncommon Items (2)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Climbing Kit | 0 | 5 sp | ![Climbing Kit](https://2e.aonprd.com/Images/Equipment/ClimbingKit.png) |
-| Healer's Tools | 0 | 5 gp | ![Healer's Tools](https://2e.aonprd.com/Images/Equipment/HealersTools.png) |
+| Climbing Kit | 0 | 5 sp | ![Climbing Kit](https://2e.aonprd.com/Images/Treasure/Climbing_Kit.webp) |
+| Healer's Tools | 0 | 5 gp | ![Healer's Tools](https://2e.aonprd.com/Images/Treasure/Healers_Tools.webp) |
 
 **Special:** Keeleno pays 5 gp per wolf pelt (double normal price)
 
@@ -125,24 +125,24 @@
 ### Common Scrolls (10)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Scroll of Detect Magic (Cantrip) | 1 | 3 gp | ![Scroll of Detect Magic (Cantrip)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Read Aura (Cantrip) | 1 | 3 gp | ![Scroll of Read Aura (Cantrip)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Magic Missile (1st) | 1 | 4 gp | ![Scroll of Magic Missile (1st)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Heal (1st) | 1 | 4 gp | ![Scroll of Heal (1st)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Mage Armor (1st) | 1 | 4 gp | ![Scroll of Mage Armor (1st)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Grease (1st) | 1 | 4 gp | ![Scroll of Grease (1st)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Bless (1st) | 1 | 4 gp | ![Scroll of Bless (1st)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Comprehend Language (2nd) | 3 | 12 gp | ![Scroll of Comprehend Language (2nd)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Basic Crafter's Book | 0 | 1 sp | ![Basic Crafter's Book](https://2e.aonprd.com/Images/Equipment/Book.png) |
-| Writing Set | 0 | 1 gp | ![Writing Set](https://2e.aonprd.com/Images/Equipment/WritingSet.png) |
+| Scroll of Detect Magic (Cantrip) | 1 | 3 gp | ![Scroll of Detect Magic (Cantrip)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Read Aura (Cantrip) | 1 | 3 gp | ![Scroll of Read Aura (Cantrip)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Magic Missile (1st) | 1 | 4 gp | ![Scroll of Magic Missile (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Heal (1st) | 1 | 4 gp | ![Scroll of Heal (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Mage Armor (1st) | 1 | 4 gp | ![Scroll of Mage Armor (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Grease (1st) | 1 | 4 gp | ![Scroll of Grease (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Bless (1st) | 1 | 4 gp | ![Scroll of Bless (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Comprehend Language (2nd) | 3 | 12 gp | ![Scroll of Comprehend Language (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Basic Crafter's Book | 0 | 1 sp | ![Basic Crafter's Book](https://2e.aonprd.com/Images/Treasure/Book.webp) |
+| Writing Set | 0 | 1 gp | ![Writing Set](https://2e.aonprd.com/Images/Treasure/Writing_Set.webp) |
 
 ### Uncommon Scrolls (4)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Scroll of Invisibility (2nd) | 3 | 12 gp | ![Scroll of Invisibility (2nd)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Restoration (2nd) | 3 | 12 gp | ![Scroll of Restoration (2nd)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Dispel Magic (2nd) | 3 | 12 gp | ![Scroll of Dispel Magic (2nd)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
-| Scroll of Darkvision (2nd) | 3 | 12 gp | ![Scroll of Darkvision (2nd)](https://2e.aonprd.com/Images/Equipment/Scroll.png) |
+| Scroll of Invisibility (2nd) | 3 | 12 gp | ![Scroll of Invisibility (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Restoration (2nd) | 3 | 12 gp | ![Scroll of Restoration (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Dispel Magic (2nd) | 3 | 12 gp | ![Scroll of Dispel Magic (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Darkvision (2nd) | 3 | 12 gp | ![Scroll of Darkvision (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
 
 **Special Services:**
 - Translation of ancient/unusual languages: 5-20 gp depending on complexity
