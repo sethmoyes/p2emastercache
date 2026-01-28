@@ -100,7 +100,7 @@ def normalize_item_name(name):
 def get_google_image_url(item_name):
     """Try to get first Google Images result for item"""
     try:
-        search_query = f"{item_name} fantasy art dnd"
+        search_query = f"REDDIT: dnd fantasy item {item_name}"
         encoded_query = urllib.parse.quote(search_query)
         search_url = f"https://www.google.com/search?q={encoded_query}&tbm=isch"
         
