@@ -20,12 +20,12 @@
 | Scroll of Sanctuary (1st) | 1 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Sanctuary) | ![Scroll of Sanctuary (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
 | Smokestick (Lesser) | 1 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Smokestick) | ![Smokestick (Lesser)](https://2e.aonprd.com/Images/Treasure/Smokestick.webp) |
 | Basic Crafter's Book | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Basic%20Crafter%27s%20Book) | ![Basic Crafter's Book](https://2e.aonprd.com/Images/Treasure/Book.webp) |
-| Compass | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Compass) | ![Compass](https://2e.aonprd.com/Images/Treasure/Compass.webp) |
+| Compass | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Compass) | ![Compass](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHIBwVPrAJib4eJfJvq8n96DjfPT4hoVkjrw57xS46zvb5NSOhlHuKEW-ZSg&s) |
 
 ### Uncommon Items (3)
 | Item | Level | Price | Details | Image |
 |------|-------|-------|---------|-------|
 | Scroll of Darkvision (2nd) | 3 | 12 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Darkvision) | ![Scroll of Darkvision (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
-| Potion of Darkvision | 2 | 7 gp | [View](https://2e.aonprd.com/Search.aspx?query=Potion%20of%20Darkvision) | ![Potion of Darkvision](https://2e.aonprd.com/Images/Treasure/Potion_Of_Darkvision.webp) |
+| Potion of Darkvision | 2 | 7 gp | [View](https://2e.aonprd.com/Search.aspx?query=Potion%20of%20Darkvision) | ![Potion of Darkvision](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbo0SfVjtrXgRsbLWqI5QcjaBeqUckQLhKZm1QUxIVVq3yB0AKPfWrkeOB1w&s) |
 | Scroll of Dispel Magic (2nd) | 3 | 12 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Dispel%20Magic) | ![Scroll of Dispel Magic (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
 
