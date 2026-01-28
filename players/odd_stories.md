@@ -11,24 +11,23 @@
 ### Common Items (10)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Scroll of Comprehend Language (2nd) | 3 | 12 gp | ![Scroll of Comprehend Language (2nd)](IMAGE_PLACEHOLDER) |
-| Writing Set | 0 | 1 gp | ![Writing Set](IMAGE_PLACEHOLDER) |
-| Basic Crafter's Book | 0 | 1 sp | ![Basic Crafter's Book](IMAGE_PLACEHOLDER) |
-| Scroll of Bless (1st) | 1 | 4 gp | ![Scroll of Bless (1st)](IMAGE_PLACEHOLDER) |
-| Scroll of Command (1st) | 1 | 4 gp | ![Scroll of Command (1st)](IMAGE_PLACEHOLDER) |
-| Scroll of Fear (1st) | 1 | 4 gp | ![Scroll of Fear (1st)](IMAGE_PLACEHOLDER) |
-| Scroll of Detect Magic (Cantrip) | 1 | 3 gp | ![Scroll of Detect Magic (Cantrip)](IMAGE_PLACEHOLDER) |
-| Scroll of Sanctuary (1st) | 1 | 4 gp | ![Scroll of Sanctuary (1st)](IMAGE_PLACEHOLDER) |
-| Scroll of Read Aura (Cantrip) | 1 | 3 gp | ![Scroll of Read Aura (Cantrip)](IMAGE_PLACEHOLDER) |
-| Scroll of Grease (1st) | 1 | 4 gp | ![Scroll of Grease (1st)](IMAGE_PLACEHOLDER) |
+| Scroll of Comprehend Language (2nd) | 3 | 12 gp | ![Scroll of Comprehend Language (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Grease (1st) | 1 | 4 gp | ![Scroll of Grease (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Heal (1st) | 1 | 4 gp | ![Scroll of Heal (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Candle | 0 | 1 cp | ![Candle](https://2e.aonprd.com/Images/Treasure/Candle.webp) |
+| Scroll of Mage Armor (1st) | 1 | 4 gp | ![Scroll of Mage Armor (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Clay | 0 | 1 cp | ![Clay](https://2e.aonprd.com/Images/Treasure/Clay.webp) |
+| Scroll of Command (1st) | 1 | 4 gp | ![Scroll of Command (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Read Aura (Cantrip) | 1 | 3 gp | ![Scroll of Read Aura (Cantrip)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Basic Crafter's Book | 0 | 1 sp | ![Basic Crafter's Book](https://2e.aonprd.com/Images/Treasure/Book.webp) |
+| Writing Set | 0 | 1 gp | ![Writing Set](https://2e.aonprd.com/Images/Treasure/Writing_Set.webp) |
 
-### Uncommon Items (4)
+### Uncommon Items (3)
 | Item | Level | Price | Image |
 |------|-------|-------|-------|
-| Scroll of Restoration (2nd) | 3 | 12 gp | ![Scroll of Restoration (2nd)](IMAGE_PLACEHOLDER) |
-| Scroll of Darkvision (2nd) | 3 | 12 gp | ![Scroll of Darkvision (2nd)](IMAGE_PLACEHOLDER) |
-| Scroll of Dispel Magic (2nd) | 3 | 12 gp | ![Scroll of Dispel Magic (2nd)](IMAGE_PLACEHOLDER) |
-| Scroll of See Invisibility (2nd) | 3 | 12 gp | ![Scroll of See Invisibility (2nd)](IMAGE_PLACEHOLDER) |
+| Scroll of Darkvision (2nd) | 3 | 12 gp | ![Scroll of Darkvision (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Dispel Magic (2nd) | 3 | 12 gp | ![Scroll of Dispel Magic (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Invisibility (2nd) | 3 | 12 gp | ![Scroll of Invisibility (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
 
 **Services:**
 - Translation of ancient/unusual languages: 5-20 gp depending on complexity

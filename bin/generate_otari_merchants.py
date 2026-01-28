@@ -26,40 +26,54 @@ def parse_equipment_md(filename):
             continue
         
         parts = [p.strip() for p in line.split('|')]
-        if len(parts) < 10:
+        if len(parts) < 9:
             continue
         
         name = parts[1]
-        rarity = parts[4].lower()
-        category = parts[6].lower()
-        level_str = parts[8]
-        price = parts[9]
         
-        # Parse level
-        try:
-            if level_str and level_str.strip():
-                level = int(level_str.strip().split()[0])
-            else:
-                level = 0
-        except:
+        # Skip if no valid name
+        if not name or name == 'Name' or len(name) < 2:
             continue
+        
+        # Find rarity (usually in column 4)
+        rarity = parts[4].lower() if len(parts) > 4 else ''
+        if 'common' not in rarity and 'uncommon' not in rarity and 'rare' not in rarity:
+            rarity = 'common'  # Default to common
+        
+        # Find category (usually in column 5 or 6)
+        category = ''
+        for i in range(5, min(8, len(parts))):
+            if parts[i]:
+                category = parts[i].lower()
+                break
+        
+        # Find level and price - they can be in different positions
+        level = 0
+        price = ''
+        
+        for i in range(7, min(len(parts), 10)):
+            part = parts[i].strip()
+            if not part:
+                continue
+            
+            # Try to parse as level
+            if not price and part.isdigit() and int(part) <= 20:
+                try:
+                    level = int(part)
+                except:
+                    pass
+            # Check if it's a price
+            elif any(curr in part.lower() for curr in ['gp', 'sp', 'cp']):
+                price = part
+                break
         
         # Filter for levels -1 to 4
         if level < -1 or level > 4:
             continue
         
-        # Skip if no name or price
-        if not name or not price or name == 'Name':
+        # Skip if no price found
+        if not price:
             continue
-        
-        # Fix price format - ensure it has currency denomination
-        if price and not any(curr in price.lower() for curr in ['gp', 'sp', 'cp']):
-            # If price is just a number or letter, skip it (malformed data)
-            if len(price) <= 2 and not price.isdigit():
-                continue
-            # If it's a number without currency, assume gp
-            if price.replace('.', '').isdigit():
-                price = f"{price} gp"
         
         item = {
             'name': name,
@@ -68,49 +82,24 @@ def parse_equipment_md(filename):
             'rarity': rarity
         }
         
-        # Categorize
-        if 'weapon' in category or 'base weapons' in category:
-            if 'common' in rarity:
-                items['weapons']['common'].append(item)
-            elif 'uncommon' in rarity:
-                items['weapons']['uncommon'].append(item)
-            elif 'rare' in rarity:
-                items['weapons']['rare'].append(item)
-        elif 'armor' in category:
-            if 'common' in rarity:
-                items['armor']['common'].append(item)
-            elif 'uncommon' in rarity:
-                items['armor']['uncommon'].append(item)
-            elif 'rare' in rarity:
-                items['armor']['rare'].append(item)
-        elif 'alchemical' in category:
-            if 'common' in rarity:
-                items['alchemical']['common'].append(item)
-            elif 'uncommon' in rarity:
-                items['alchemical']['uncommon'].append(item)
-            elif 'rare' in rarity:
-                items['alchemical']['rare'].append(item)
+        # Categorize based on category and name
+        rarity_key = 'common' if 'common' in rarity else ('uncommon' if 'uncommon' in rarity else 'rare')
+        
+        if 'weapon' in category or 'base weapons' in category or any(w in name.lower() for w in ['sword', 'axe', 'bow', 'crossbow', 'dagger', 'spear', 'mace', 'hammer', 'arrow', 'bolt', 'dart']):
+            items['weapons'][rarity_key].append(item)
+        elif 'armor' in category or any(a in name.lower() for a in ['armor', 'mail', 'plate', 'leather', 'chain']):
+            items['armor'][rarity_key].append(item)
+        elif 'alchemical' in category or 'alchemist' in name.lower():
+            items['alchemical'][rarity_key].append(item)
         elif 'scroll' in category.lower() or 'scroll' in name.lower():
-            if 'common' in rarity:
-                items['scrolls']['common'].append(item)
-            elif 'uncommon' in rarity:
-                items['scrolls']['uncommon'].append(item)
-            elif 'rare' in rarity:
-                items['scrolls']['rare'].append(item)
-        elif 'adventuring' in category or 'gear' in category:
-            if 'common' in rarity:
-                items['adventuring']['common'].append(item)
-            elif 'uncommon' in rarity:
-                items['adventuring']['uncommon'].append(item)
-            elif 'rare' in rarity:
-                items['adventuring']['rare'].append(item)
-        elif 'consumable' in category or 'held' in category or 'worn' in category:
-            if 'common' in rarity:
-                items['magical']['common'].append(item)
-            elif 'uncommon' in rarity:
-                items['magical']['uncommon'].append(item)
-            elif 'rare' in rarity:
-                items['magical']['rare'].append(item)
+            items['scrolls'][rarity_key].append(item)
+        elif 'adventuring' in category or 'gear' in category or any(g in category for g in ['tool', 'equipment', 'clothing']):
+            items['adventuring'][rarity_key].append(item)
+        elif 'consumable' in category or 'held' in category or 'worn' in category or 'potion' in name.lower() or 'elixir' in name.lower():
+            items['magical'][rarity_key].append(item)
+        else:
+            # Default to adventuring gear for misc items
+            items['adventuring'][rarity_key].append(item)
     
     return items
 
@@ -347,8 +336,10 @@ if __name__ == "__main__":
             'proprietor': "Keeleno Lathenar (dour, humorless human merchant)",
             'description': "Part open-air farmer's market, part log-cabin trading post. Keeleno pays handsomely for wolf pelts, as a wolf-like monster slew his wife years ago, and he hopes to one day acquire the skin of her killer.",
             'specialties': "All adventuring gear, light armor, and simple weapons",
-            'categories': ['weapons', 'armor', 'adventuring'],
+            'categories': ['weapons', 'armor', 'adventuring', 'alchemical', 'magical'],
             'use_manual': False,
+            'num_common': 75,
+            'num_uncommon': 15,
             'special': ["Keeleno pays 5 gp per wolf pelt (double normal price)"],
             'inventory': None
         },
@@ -391,11 +382,18 @@ if __name__ == "__main__":
     print("\nGenerating merchant inventories...")
     for merchant in merchants:
         if merchant['categories']:
+            num_common = merchant.get('num_common', 10)
+            num_uncommon = merchant.get('num_uncommon', (1, 4))
+            
+            # Convert single number to range tuple
+            if isinstance(num_uncommon, int):
+                num_uncommon = (num_uncommon, num_uncommon)
+            
             merchant['inventory'] = generate_inventory(
                 merchant['categories'],
                 items,
-                num_common=10,
-                num_uncommon_range=(1, 4),
+                num_common=num_common,
+                num_uncommon_range=num_uncommon,
                 rare_chance=0.1,
                 manual_items=merchant.get('use_manual', False)
             )
