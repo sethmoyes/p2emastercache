@@ -11,22 +11,22 @@
 ### Common Items (10)
 | Item | Level | Price | Details | Image |
 |------|-------|-------|---------|-------|
-| Scroll of Command (1st) | 1 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Command) | ![Scroll of Command (1st)](IMAGE_PLACEHOLDER) |
-| Scroll of Read Aura (Cantrip) | 1 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Read%20Aura) | ![Scroll of Read Aura (Cantrip)](IMAGE_PLACEHOLDER) |
-| Writing Set | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Writing%20Set) | ![Writing Set](IMAGE_PLACEHOLDER) |
-| Scroll of Comprehend Language (2nd) | 3 | 12 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Comprehend%20Language) | ![Scroll of Comprehend Language (2nd)](IMAGE_PLACEHOLDER) |
-| Scroll of Grease (1st) | 1 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Grease) | ![Scroll of Grease (1st)](IMAGE_PLACEHOLDER) |
-| Cloth (Wool Cloth, 1 square yard) | 0 | 1 cp | [View](https://2e.aonprd.com/Search.aspx?query=Cloth) | ![Cloth (Wool Cloth, 1 square yard)](IMAGE_PLACEHOLDER) |
-| Scroll of Mage Armor (1st) | 1 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Mage%20Armor) | ![Scroll of Mage Armor (1st)](IMAGE_PLACEHOLDER) |
-| Candle | 0 | 1 cp | [View](https://2e.aonprd.com/Search.aspx?query=Candle) | ![Candle](IMAGE_PLACEHOLDER) |
-| Scroll of Bless (1st) | 1 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Bless) | ![Scroll of Bless (1st)](IMAGE_PLACEHOLDER) |
-| Basic Crafter's Book | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Basic%20Crafter%27s%20Book) | ![Basic Crafter's Book](IMAGE_PLACEHOLDER) |
+| Scroll of Command (1st) | 1 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Command) | ![Scroll of Command (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Read Aura (Cantrip) | 1 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Read%20Aura) | ![Scroll of Read Aura (Cantrip)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Writing Set | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Writing%20Set) | ![Writing Set](https://2e.aonprd.com/Images/Treasure/Writing_Set.webp) |
+| Scroll of Comprehend Language (2nd) | 3 | 12 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Comprehend%20Language) | ![Scroll of Comprehend Language (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Grease (1st) | 1 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Grease) | ![Scroll of Grease (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Cloth (Wool Cloth, 1 square yard) | 0 | 1 cp | [View](https://2e.aonprd.com/Search.aspx?query=Cloth) | ![Cloth (Wool Cloth, 1 square yard)](https://2e.aonprd.com/Images/Treasure/Cloth.webp) |
+| Scroll of Mage Armor (1st) | 1 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Mage%20Armor) | ![Scroll of Mage Armor (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Candle | 0 | 1 cp | [View](https://2e.aonprd.com/Search.aspx?query=Candle) | ![Candle](https://2e.aonprd.com/Images/Treasure/Candle.webp) |
+| Scroll of Bless (1st) | 1 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Bless) | ![Scroll of Bless (1st)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Basic Crafter's Book | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Basic%20Crafter%27s%20Book) | ![Basic Crafter's Book](https://2e.aonprd.com/Images/Treasure/Book.webp) |
 
 ### Uncommon Items (2)
 | Item | Level | Price | Details | Image |
 |------|-------|-------|---------|-------|
-| Scroll of Invisibility (2nd) | 3 | 12 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Invisibility) | ![Scroll of Invisibility (2nd)](IMAGE_PLACEHOLDER) |
-| Scroll of Restoration (2nd) | 3 | 12 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Restoration) | ![Scroll of Restoration (2nd)](IMAGE_PLACEHOLDER) |
+| Scroll of Invisibility (2nd) | 3 | 12 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Invisibility) | ![Scroll of Invisibility (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
+| Scroll of Restoration (2nd) | 3 | 12 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Restoration) | ![Scroll of Restoration (2nd)](https://2e.aonprd.com/Images/Treasure/Scroll.webp) |
 
 **Services:**
 - Translation of ancient/unusual languages: 5-20 gp depending on complexity
