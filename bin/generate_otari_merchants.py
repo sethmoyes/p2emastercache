@@ -297,7 +297,8 @@ if __name__ == "__main__":
             'proprietor': "Wrin Sivinxi (CG female tiefling elf oddities merchant 5)",
             'description': "This odd, domed building is always open. Wrin is a bit unusual, seeing menace in every corner and truths in the constellations above, but she's eager to get to know adventurers and show off the many magical trinkets in her collection.",
             'specialties': "Adventuring gear and magic items",
-            'categories': ['magical', 'adventuring', 'scrolls'],
+            'categories': ['magical', 'scrolls'],
+            'use_manual': True,
             'inventory': None
         },
         {
@@ -307,6 +308,7 @@ if __name__ == "__main__":
             'description': "Part open-air farmer's market, part log-cabin trading post. Keeleno pays handsomely for wolf pelts, as a wolf-like monster slew his wife years ago, and he hopes to one day acquire the skin of her killer.",
             'specialties': "All adventuring gear, light armor, and simple weapons",
             'categories': ['weapons', 'armor', 'adventuring'],
+            'use_manual': False,
             'special': ["Keeleno pays 5 gp per wolf pelt (double normal price)"],
             'inventory': None
         },
@@ -316,7 +318,8 @@ if __name__ == "__main__":
             'proprietor': "Morlibint (wizard 5) and his husband Yinyasmera",
             'description': "The wizard Morlibint specializes in fanciful fiction, but he and his husband also sell textbooks, teaching tools, and scrolls. Morlibint is incredibly well-read and can help the heroes decipher tomes in ancient or unusual languages. He eagerly purchases rare books the heroes come across in their adventures.",
             'specialties': "Books, scrolls, and knowledge",
-            'categories': ['scrolls', 'magical'],
+            'categories': ['scrolls'],
+            'use_manual': True,
             'services': [
                 "Translation of ancient/unusual languages: 5-20 gp depending on complexity",
                 "Purchases rare books at 50% of value, resells at 150%",
@@ -339,6 +342,7 @@ if __name__ == "__main__":
                 "Express Service: Double delivery cost, half the time"
             ],
             'categories': [],  # Service only, no inventory
+            'use_manual': False,
             'inventory': {'common': [], 'uncommon': [], 'rare': []}
         }
     ]
@@ -352,7 +356,8 @@ if __name__ == "__main__":
                 items,
                 num_common=10,
                 num_uncommon_range=(1, 4),
-                rare_chance=0.1
+                rare_chance=0.1,
+                manual_items=merchant.get('use_manual', False)
             )
         
         write_merchant_file(merchant)
