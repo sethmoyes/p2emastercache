@@ -73,7 +73,7 @@
 | Cloth (wool cloth, 1 Bulk) | 0 | 4 sp | ![Cloth (wool cloth, 1 Bulk)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxDDqYZ_06F4uoXnOpiks3zelRrWzU_HQS9PR-VjXiT1_f9jUuhvUJN2skfw&s) |
 | Chest | 0 | 6 sp | ![Chest](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS69hpmlxYsXFXvHxN8Qs8o8ScYRuT5E5qCW1Rv0GzgrjvH_XxiFkvjW8uKVF8&s) |
 | Clothing (Fine) | 0 | 2 gp | ![Clothing (Fine)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJIqxwULCKVIjuzM4NqpcCY5XYNEMCgkyx3moVqu7xhPLrP9jGlzKj2SWPxA0&s) |
-| Hammer | 0 | 1 sp | ![Hammer](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSheoqb115XdpPU5Kbfp0oW9sdakSq6oOhHTha-Jt2QHCKPjeLv8VPVqSNlza0&s) |
+| Hammer | 0 | 1 sp | ![Hammer](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ_6MA1BE1kPw1Bxg8ff8hr4Qf0OXr8ioq6rZZushqqVUPt2zbDqJfTZXpWGA&s) |
 | Wooden Taws | 0 | 1 sp (price for 10) | ![Wooden Taws](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYYGGR7Inw7lF_AsI6fFIT7S_iB2twGwkfa1C5T0GIvuvLBTmQC3NZtcRJ0UY&s) |
 | Paint Set | 0 | 1 gp | ![Paint Set](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlQYrvQD6E7xNQ-RH0QCV3KneLjuHfYRpir2bYLnL4d_rTWB1ecCk2mbbsdw&s) |
 | Bedroll | 0 | 2 cp | ![Bedroll](https://2e.aonprd.com/Images/Treasure/Bedroll.webp) |

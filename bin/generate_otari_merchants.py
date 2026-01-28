@@ -6,6 +6,43 @@ Based on Abomination Vaults Player's Guide
 import random
 import re
 import os
+import requests
+from bs4 import BeautifulSoup
+import urllib.parse
+import time
+
+def get_aon_equipment_url(item_name):
+    """Search Google for Archives of Nethys equipment page URL"""
+    try:
+        # Clean up item name for search
+        clean_name = re.sub(r'\([^)]*\)', '', item_name).strip()
+        search_query = f"{clean_name} p2e archives of nethys"
+        encoded_query = urllib.parse.quote(search_query)
+        search_url = f"https://www.google.com/search?q={encoded_query}"
+        
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        
+        response = requests.get(search_url, headers=headers, timeout=5)
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # Look for Archives of Nethys links
+            for link in soup.find_all('a', href=True):
+                href = link['href']
+                if '2e.aonprd.com/Equipment.aspx' in href:
+                    # Extract the actual URL from Google's redirect
+                    match = re.search(r'(https://2e\.aonprd\.com/Equipment\.aspx\?ID=\d+)', href)
+                    if match:
+                        return match.group(1)
+        
+        # Fallback: construct a search URL
+        return f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_name)}"
+    except Exception as e:
+        # If search fails, return a search URL
+        clean_name = re.sub(r'\([^)]*\)', '', item_name).strip()
+        return f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_name)}"
 
 def parse_equipment_md(filename):
     """Parse equipment.md and return items by category and rarity"""
