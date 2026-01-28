@@ -127,8 +127,8 @@ def fix_images_in_file(input_file, output_file):
     fixed_count = 0
     
     for line in lines:
-        # Check if line contains an image
-        if '![' in line and '](https://' in line:
+        # Check if line contains an image (either with URL or placeholder)
+        if '![' in line and ('](https://' in line or '](IMAGE_PLACEHOLDER)' in line):
             # Extract item name and current URL
             match = re.search(r'\| ([^|]+) \| ([^|]+) \| ([^|]+) \| !\[([^\]]+)\]\(([^)]+)\)', line)
             
@@ -157,14 +157,34 @@ def fix_images_in_file(input_file, output_file):
 
 if __name__ == "__main__":
     import sys
+    import glob
     
     if len(sys.argv) > 1:
-        input_file = sys.argv[1]
-        output_file = sys.argv[2] if len(sys.argv) > 2 else input_file.replace('.md', '_fixed.md')
+        # Handle multiple files or patterns
+        if sys.argv[1] == '--dir':
+            # Process all .md files in a directory
+            directory = sys.argv[2] if len(sys.argv) > 2 else 'players'
+            pattern = f"{directory}/*.md"
+            files = glob.glob(pattern)
+            
+            print(f"Processing {len(files)} files in {directory}/...")
+            for input_file in files:
+                # Replace IMAGE_PLACEHOLDER or fix existing URLs
+                print(f"\nFixing images in {input_file}...")
+                fix_images_in_file(input_file, input_file)  # Overwrite in place
+            print("\n✓ All files processed!")
+        else:
+            # Single file mode
+            input_file = sys.argv[1]
+            output_file = sys.argv[2] if len(sys.argv) > 2 else input_file
+            
+            print(f"Fixing images in {input_file}...")
+            fix_images_in_file(input_file, output_file)
+            print("Done!")
     else:
-        input_file = "otari_merchant_inventories.md"
-        output_file = "otari_merchant_inventories_fixed.md"
-    
-    print(f"Fixing images in {input_file}...")
-    fix_images_in_file(input_file, output_file)
-    print("Done!")
+        print("Usage:")
+        print("  python fix_item_images.py <input_file> [output_file]")
+        print("  python fix_item_images.py --dir [directory]")
+        print("\nExamples:")
+        print("  python fix_item_images.py players/wrins_wonders.md")
+        print("  python fix_item_images.py --dir players")
