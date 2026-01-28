@@ -1,5 +1,11 @@
 # Crook's Nook
 
+<div align="center">
+
+![Proprietor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5UM1pd8wRF31VwI5UM_Awp9bzrRA3srk1h15-GNmUFUHJ07AHaukYIP_hL58&s)
+
+</div>
+
 *Sailors' tavern and bridge*
 
 **Proprietor:** Tamily Tanderveil (retired sailor)
@@ -8,29 +14,28 @@
 
 **Specialties:** Food, drink, and sailor's tales
 
-### Common Items (20)
+### Common Items (19)
 | Item | Level | Price | Details | Image |
 |------|-------|-------|---------|-------|
-| Repair Toolkit (Superb) | 3 | 25 gp | [View](https://2e.aonprd.com/Search.aspx?query=Repair%20Toolkit) | ![Repair Toolkit (Superb)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHhXVn9KgJ7RVTTkjy2d0MlDY7d4PsSxkI_Q-9q77lHATiUV5BYLw89tNXfqQ&s) |
+| Flint and Steel | 0 | 5 cp | [View](https://2e.aonprd.com/Search.aspx?query=Flint%20and%20Steel) | ![Flint and Steel](https://2e.aonprd.com/Images/Treasure/Flint_and_Steel.webp) |
+| Researcher (Level 1; trained) | 0 | 4 gp (per day) | [View](https://2e.aonprd.com/Search.aspx?query=Researcher) | ![Researcher (Level 1; trained)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_3I-c-DFHboT70L-MPNKglhQ-40sh2wW8bmV1waO_PtqGEZm3jJUGoECXlA&s) |
+| Clothing (Desert) | 0 | 4 sp | [View](https://2e.aonprd.com/Search.aspx?query=Clothing) | ![Clothing (Desert)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS56TTHozkClixdQfn8hsI7OTHUq0bfiuTQFrTmj2Q8QZ2QsuCTx4WDW8Hd2A&s) |
+| Religious Symbol (Silver) | 0 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Religious%20Symbol) | ![Religious Symbol (Silver)](https://2e.aonprd.com/Images/Treasure/Religious_Symbol.webp) |
+| Meal (Fine Dining) | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Meal) | ![Meal (Fine Dining)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1MuYIgGye5w1UIVIFikj6Im2bGYN_KhQ1gIP5psBDW9a9LNhMWdHeKNF7&s) |
+| Dyes and Ink | 0 | 1 sp (per vial) | [View](https://2e.aonprd.com/Search.aspx?query=Dyes%20and%20Ink) | ![Dyes and Ink](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXWEo52yt58Yuc_4l7cGUA8ooytMg3PbiJy1Hvw0JhjKaBW1SDdHQ8edS0VA&s) |
+| Waffle Iron (Imprint) | 1 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Waffle%20Iron) | ![Waffle Iron (Imprint)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgPBHkUAFBvLTPsaas58b_M3aOibcI4jR5s2sq9owYO5ZFco6uqEQbSwWoAA&s) |
+| Corrective Lenses | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Corrective%20Lenses) | ![Corrective Lenses](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKoCw0tdPluNw674OGPgYV-3Z1d70BW7Nulzg0JTLzkRlsLI2HVZUgEpgUuQ&s) |
 | Marked Playing Cards | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Marked%20Playing%20Cards) | ![Marked Playing Cards](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKxXJr21xqfBwmQ23yDtq3WtUwicHsmFobb2EFAo98fjqOPTtvAWr_DUMgCQ&s) |
-| Writing Set (Extra Ink and Paper) | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Writing%20Set) | ![Writing Set (Extra Ink and Paper)](https://2e.aonprd.com/Images/Treasure/Writing_Set.webp) |
-| Pig | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Pig) | ![Pig](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2SrVrRoaO5v0C0Q1pr_ixoFAd6ma6-IhbDIwXSNL_g9ejoB28n7-zKsjP3w&s) |
-| Map (Geographical Map) | 0 | 20 gp | [View](https://2e.aonprd.com/Search.aspx?query=Map) | ![Map (Geographical Map)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4_PKatv8RjYZC_iIZJZisQZaaqti5jrx6Kzhy9AORBkmnT84dnkGgaW4qdw&s) |
-| Barding (Light; Large) | 0 | 20 gp | [View](https://2e.aonprd.com/Search.aspx?query=Barding) | ![Barding (Light; Large)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE5mvYysNvEWMgAf_uec4vHQOQw_fW0X64D-ler_c9L3Pe4NmeYGnwEDUBaw&s) |
-| Periscope | 2 | 25 gp | [View](https://2e.aonprd.com/Search.aspx?query=Periscope) | ![Periscope](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPb3SUDh6Q4oj8IlnDFNZGpAW_2dLkRrXQIXXE5qmplk999Qcqy8Ck3IWgQg&s) |
-| Beverages (Keg of Ale) | 0 | 2 sp | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) | ![Beverages (Keg of Ale)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT37Twg6LbEgw23pjOEiJqLmscqUEIRqy5xSCwqPmhKwxrMeVDj3dDRIPlL0ig&s) |
-| Trundle Wheel | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Trundle%20Wheel) | ![Trundle Wheel](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAQDzwh5oqQ73KJROf-tyw4Ifl3pxucNJOL8UEgqFZQjqgmfguk-fT7c1w-XQ&s) |
-| Fetters (Average) | 4 | 30 gp | [View](https://2e.aonprd.com/Search.aspx?query=Fetters) | ![Fetters (Average)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl92MINFqJOfNMdn7csdZjuCI6GYvP1_BvnZAVjbY81EoCbOLKpRWEQ3pvaw&s) |
-| Chalk | 0 | 1 cp (10 pieces) | [View](https://2e.aonprd.com/Search.aspx?query=Chalk) | ![Chalk](https://2e.aonprd.com/Images/Treasure/Chalk.webp) |
-| Common		Animals and Gear	Animals	0	10 gp | 0 | 10 gp | [View](https://2e.aonprd.com/Search.aspx?query=Common%09%09Animals%20and%20Gear%09Animals%090%0910%20gp) | ![Common		Animals and Gear	Animals	0	10 gp](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHel43U-2XGJ62kakC-DfdLfPWT_7Z7LqOt47_ga8JRBkw7npR3CSo5daNVA&s) |
-| Barding (Light; Small or Medium) | 0 | 10 gp | [View](https://2e.aonprd.com/Search.aspx?query=Barding) | ![Barding (Light; Small or Medium)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAVDBwgbcBF0UziKZ-qn6qDpHuubrXw-8N0DJ23Ey1YXyjO8GCMlodWUSkCw&s) |
-| Puzzle Box (Complex) | 1 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Puzzle%20Box) | ![Puzzle Box (Complex)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYniBPFfAFtqAdMEko5UzFtPPo9RjSoKRsN1X51liCOekFcBQ_QMuV6VVczw&s) |
-| Tower Shield | 0 | 10 gp | [View](https://2e.aonprd.com/Search.aspx?query=Tower%20Shield) | ![Tower Shield](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw2CS5ZfN46-eJbdMHvNLhJ3y-PBr-1_q0m0rfkBPEL777vOdk4qAn0CMj3g&s) |
-| Researcher (Level 6) | 0 | 40 gp (per day) | [View](https://2e.aonprd.com/Search.aspx?query=Researcher) | ![Researcher (Level 6)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxSD3IroQscWP2-Ul5L86jBd8Sr9p34h1MXbI4-JFn-yYRa6FeYOBxHFDH8Q&s) |
-| Marbles | 0 | 2 sp | [View](https://2e.aonprd.com/Search.aspx?query=Marbles) | ![Marbles](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVFZOZ_4i1wwW8efcQxPAsyxxPwlQLxwD6xQZbGSVqksNyhOJpNm17_jrzZq0&s) |
-| Healer's Toolkit | 0 | 5 gp | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) | ![Healer's Toolkit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXBEO728G0Q2ellbcWoPXrQxNzDZPxr0V6nXNsvvRwCs4DPsIF1-7T6q6P1yU&s) |
-| Sifting Pan | 0 | 3 sp | [View](https://2e.aonprd.com/Search.aspx?query=Sifting%20Pan) | ![Sifting Pan](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe2frpsnQHYTtdjMy7woQkL2dOHv-o8IQcxv6AjmMbcBaWk9EdKmquMhDZ3Gk&s) |
-| Thieves' Toolkit (Infiltrator Picks) | 3 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Thieves%27%20Toolkit) | ![Thieves' Toolkit (Infiltrator Picks)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplcPNJsajw7JjoOB_MjeMJd1w3Cpoj8CjBY9AG4EeRbAxhFmjpgIzxkkNrp8&s) |
+| Spellcasting (6th rank) | 0 | 160 gp (plus any cost required to cast the specific spell) | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) | ![Spellcasting (6th rank)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMpA7r8g_yH-CJmmiQr4FIPZMQqNmRfa_UAxBvjc4bX3ezs8vaCeLGda-5Gd0&s) |
+| Weapons	Base Weapons	0	3 gp	1 | 0 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Weapons%09Base%20Weapons%090%093%20gp%091) | ![Weapons	Base Weapons	0	3 gp	1](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJoMlOvlsn6i00xF_S86RfIcS5rl75rWssl4nqbkN0C7sEsE-e04ovQZKolA&s) |
+| Splint | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Splint) | ![Splint](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCwxRwen0CUtN8y0TFOzmSmKlT6GWUG5bGsBK-1Eq1ucyVaxwWb2Cen12V7w&s) |
+| Frog | 0 | 2 sp | [View](https://2e.aonprd.com/Search.aspx?query=Frog) | ![Frog](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwbB8D925gkE1C9EkdrSdmrrHH145nyPyYhK15vEjc5d4tG4nXhjb-Fv-H6w&s) |
+| Harness | 0 | 8 sp | [View](https://2e.aonprd.com/Search.aspx?query=Harness) | ![Harness](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzkWxgCItawsAooBHYk6qjeT-yvRqH3zOC5LZPsL8SbS8gtW8MIbhgYaI2_C8&s) |
+| Toy Carriage (Windup) | 2 | 5 gp | [View](https://2e.aonprd.com/Search.aspx?query=Toy%20Carriage) | ![Toy Carriage (Windup)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAcsAT01bJyp_ByGQM58VWcPOP3P6oBHtB_kI5TCgG86C_6TtGY--LLvSRZw&s) |
+| Floating Camouflage Blind | 4 | 225 gp | [View](https://2e.aonprd.com/Search.aspx?query=Floating%20Camouflage%20Blind) | ![Floating Camouflage Blind](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpqiGqllMbazuu9DXwMxZr7t5KHBxcVcr1ThqGdNzTpXYGi-jPpX9KcaB28J4&s) |
+| Hireling (Skilled) | 0 | 5 sp (per day) | [View](https://2e.aonprd.com/Search.aspx?query=Hireling) | ![Hireling (Skilled)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRldOBkldS52uhgZna2lPp22mnTptuV5kh2_zZVNFH8L1D1WTLM26CUkSkOBw&s) |
+| Disguise Kit (Elite) | 3 | 40 gp | [View](https://2e.aonprd.com/Search.aspx?query=Disguise%20Kit) | ![Disguise Kit (Elite)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEJkzs61qQscKvAog9HxJmqVh51fWfdOgzCaIrrfVpkeizxuGOt8jVMxRBlE&s) |
+| Clothing (Explorer's) | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Clothing) | ![Clothing (Explorer's)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ_-LYzngGcOaUA_F19fE-DkYmIMh4D4a9PmQWWb1RqmsScxakS0ujMo--pgQ&s) |
 
 **Services:**
 - Grog (mug): 2 cp

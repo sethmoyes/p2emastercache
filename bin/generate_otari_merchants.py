@@ -243,9 +243,11 @@ def generate_inventory(categories, items, num_common=10, num_uncommon_range=(1,4
         if manual_items == 'market':
             # Get all common items from parsed data
             all_common = []
+            all_rare = []
             for cat in categories:
                 if cat in items:
                     all_common.extend(items[cat]['common'])
+                    all_rare.extend(items[cat]['rare'])
             
             if all_common:
                 inventory['common'] = random.sample(all_common, min(num_common, len(all_common)))
@@ -255,10 +257,17 @@ def generate_inventory(categories, items, num_common=10, num_uncommon_range=(1,4
             if 'market_uncommon' in manual:
                 inventory['uncommon'] = random.sample(manual['market_uncommon'], min(num_uncommon, len(manual['market_uncommon'])))
             
+            # 10% chance for rare items
+            if random.random() < 0.1 and all_rare:
+                rare_level4 = [i for i in all_rare if i['level'] == 4]
+                if rare_level4:
+                    inventory['rare'] = [random.choice(rare_level4)]
+            
             return inventory
         
         # Mix of manual and parsed items for common (for Wrin's Wonders, etc.)
         common_pool = []
+        all_rare = []
         if 'scrolls' in categories and 'scrolls_common' in manual:
             common_pool.extend(manual['scrolls_common'])
         if 'magical' in categories and 'magical_common' in manual:
@@ -268,8 +277,10 @@ def generate_inventory(categories, items, num_common=10, num_uncommon_range=(1,4
         
         # Add some parsed items too for variety
         for cat in categories:
-            if cat in items and cat not in ['scrolls', 'magical', 'alchemical']:
-                common_pool.extend(items[cat]['common'][:5])  # Add up to 5 from each category
+            if cat in items:
+                if cat not in ['scrolls', 'magical', 'alchemical']:
+                    common_pool.extend(items[cat]['common'][:5])  # Add up to 5 from each category
+                all_rare.extend(items[cat]['rare'])
         
         if common_pool:
             inventory['common'] = random.sample(common_pool, min(num_common, len(common_pool)))
@@ -284,6 +295,12 @@ def generate_inventory(categories, items, num_common=10, num_uncommon_range=(1,4
         
         if uncommon_pool:
             inventory['uncommon'] = random.sample(uncommon_pool, min(num_uncommon, len(uncommon_pool)))
+        
+        # 10% chance for rare items
+        if random.random() < 0.1 and all_rare:
+            rare_level4 = [i for i in all_rare if i['level'] == 4]
+            if rare_level4:
+                inventory['rare'] = [random.choice(rare_level4)]
         
         return inventory
     
@@ -314,8 +331,8 @@ def generate_inventory(categories, items, num_common=10, num_uncommon_range=(1,4
             min(num_uncommon, len(uncommon_filtered))
         )
     
-    # Rare items
-    if random.random() < rare_chance:
+    # 10% chance for rare items
+    if random.random() < 0.1:
         rare_level4 = [i for i in all_rare if i['level'] == 4]
         if rare_level4:
             inventory['rare'] = [random.choice(rare_level4)]
@@ -329,6 +346,47 @@ def sanitize_filename(name):
     safe = re.sub(r'[-\s]+', '_', safe)
     return safe
 
+def get_proprietor_image(proprietor_text):
+    """Get image for proprietor from Google Images search"""
+    try:
+        # Extract name from proprietor text (e.g., "Wrin Sivinxi (CG female...)" -> "Wrin Sivinxi")
+        name_match = re.match(r'^([^(]+)', proprietor_text)
+        if not name_match:
+            return None
+        
+        name = name_match.group(1).strip()
+        search_query = f"pathfinder {name}"
+        encoded_query = urllib.parse.quote(search_query)
+        search_url = f"https://www.google.com/search?q={encoded_query}&tbm=isch"
+        
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        
+        response = requests.get(search_url, headers=headers, timeout=5)
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # Try to extract first image URL
+            img_tags = soup.find_all('img')
+            for img in img_tags[1:]:  # Skip first (Google logo)
+                src = img.get('src') or img.get('data-src')
+                if src and src.startswith('http') and 'google' not in src:
+                    return src
+            
+            # Alternative: look for image URLs in script tags
+            scripts = soup.find_all('script')
+            for script in scripts:
+                if script.string and 'http' in str(script.string):
+                    urls = re.findall(r'https?://[^\s"\'<>]+\.(?:jpg|jpeg|png|webp)', str(script.string))
+                    if urls:
+                        return urls[0]
+        
+        return None
+    except Exception as e:
+        print(f"  Warning: Could not fetch proprietor image for '{proprietor_text}': {e}")
+        return None
+
 def write_merchant_file(merchant_data, output_dir='players'):
     """Write individual merchant file"""
     filename = sanitize_filename(merchant_data['name']) + '.md'
@@ -336,6 +394,21 @@ def write_merchant_file(merchant_data, output_dir='players'):
     
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(f"# {merchant_data['name']}\n\n")
+        
+        # Add proprietor image if available
+        if 'proprietor' in merchant_data:
+            print(f"  Fetching proprietor image for {merchant_data['name']}...")
+            proprietor_img = get_proprietor_image(merchant_data['proprietor'])
+            if proprietor_img:
+                f.write(f"<div align=\"center\">\n\n")
+                f.write(f"![Proprietor]({proprietor_img})\n\n")
+                f.write(f"</div>\n\n")
+            else:
+                # Placeholder if image fetch fails
+                f.write(f"<div align=\"center\">\n\n")
+                f.write(f"![Proprietor](PROPRIETOR_IMAGE_PLACEHOLDER)\n\n")
+                f.write(f"</div>\n\n")
+            time.sleep(0.5)  # Small delay to avoid rate limiting
         
         if 'subtitle' in merchant_data:
             f.write(f"*{merchant_data['subtitle']}*\n\n")
@@ -416,6 +489,8 @@ if __name__ == "__main__":
             'specialties': "Adventuring gear and magic items",
             'categories': ['magical', 'scrolls', 'adventuring', 'alchemical'],
             'use_manual': True,
+            'num_common': random.randint(5, 20),
+            'num_uncommon': random.randint(1, 7),
             'services': [
                 "Spellcasting Services: Price varies by spell level and complexity (GM discretion)",
                 "Spell Learning/Training: Price negotiable based on spell level (GM discretion)",
@@ -433,7 +508,7 @@ if __name__ == "__main__":
             'categories': ['weapons', 'armor', 'adventuring', 'alchemical', 'magical'],
             'use_manual': 'market',  # Use market-specific manual items for uncommon
             'num_common': 75,
-            'num_uncommon': 15,
+            'num_uncommon': random.randint(1, 7),
             'special': ["Keeleno pays 5 gp per wolf pelt (double normal price)"],
             'inventory': None
         },
@@ -445,6 +520,8 @@ if __name__ == "__main__":
             'specialties': "Books, scrolls, and knowledge",
             'categories': ['scrolls', 'adventuring'],
             'use_manual': True,
+            'num_common': random.randint(5, 20),
+            'num_uncommon': random.randint(1, 7),
             'services': [
                 "Spellcasting Services: Price varies by spell level and complexity (GM discretion)",
                 "Spell Learning/Training: Price negotiable based on spell level (GM discretion)",
@@ -482,7 +559,7 @@ if __name__ == "__main__":
             'categories': ['weapons', 'armor'],
             'use_manual': False,
             'num_common': random.randint(5, 20),
-            'num_uncommon': random.randint(3, 8),
+            'num_uncommon': random.randint(1, 7),
             'services': [
                 "Weapon/Armor repair: 10% of item cost",
                 "Custom orders: +25% cost, 1d6 days",
@@ -499,6 +576,7 @@ if __name__ == "__main__":
             'categories': ['adventuring'],
             'use_manual': False,
             'num_common': random.randint(5, 20),
+            'num_uncommon': random.randint(1, 7),
             'services': [
                 "Ale (mug): 1 cp",
                 "Ale (pitcher): 5 cp",
@@ -519,6 +597,7 @@ if __name__ == "__main__":
             'categories': ['adventuring'],
             'use_manual': False,
             'num_common': random.randint(5, 20),
+            'num_uncommon': random.randint(1, 7),
             'services': [
                 "Grog (mug): 2 cp",
                 "Rum (shot): 5 cp",
@@ -539,6 +618,7 @@ if __name__ == "__main__":
             'categories': ['adventuring'],
             'use_manual': False,
             'num_common': random.randint(5, 20),
+            'num_uncommon': random.randint(1, 7),
             'services': [
                 "House wine: 5 sp",
                 "Imported spirits: 1-5 gp",
@@ -558,6 +638,7 @@ if __name__ == "__main__":
             'categories': ['adventuring'],
             'use_manual': False,
             'num_common': random.randint(5, 20),
+            'num_uncommon': random.randint(1, 7),
             'services': [
                 "Fresh fish: 1-5 sp per pound",
                 "Boat rental (rowboat): 5 sp per day",
@@ -577,7 +658,7 @@ if __name__ == "__main__":
             'categories': ['scrolls', 'magical'],
             'use_manual': True,
             'num_common': random.randint(5, 20),
-            'num_uncommon': random.randint(2, 5),
+            'num_uncommon': random.randint(1, 7),
             'services': [
                 "Healing (1st level): 4 gp",
                 "Healing (2nd level): 12 gp",

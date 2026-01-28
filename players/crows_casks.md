@@ -1,5 +1,11 @@
 # Crow's Casks
 
+<div align="center">
+
+![Proprietor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNL3DP6oF2auyBnHNEPqg4obq_N2K6qk7D7aJpQsaKqi7JNRrykqhpEcr95nk&s)
+
+</div>
+
 *Brewery and tavern*
 
 **Proprietor:** Temmin 'Crow' Brassbuckle (jovial halfling brewer)
@@ -8,28 +14,21 @@
 
 **Specialties:** Food, drink, and lodging
 
-### Common Items (19)
+### Common Items (12)
 | Item | Level | Price | Details | Image |
 |------|-------|-------|---------|-------|
-| Clothing (Desert) | 0 | 4 sp | [View](https://2e.aonprd.com/Search.aspx?query=Clothing) | ![Clothing (Desert)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS56TTHozkClixdQfn8hsI7OTHUq0bfiuTQFrTmj2Q8QZ2QsuCTx4WDW8Hd2A&s) |
-| Exquisite Surprise Doll | 2 | 10 gp | [View](https://2e.aonprd.com/Search.aspx?query=Exquisite%20Surprise%20Doll) | ![Exquisite Surprise Doll](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-odddu0rcThpMu6FtgUPUbbbpK-hsjC46Q33mS_vESlXM5GgFKw3UeuzgDqo&s) |
-| Mirror | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Mirror) | ![Mirror](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRskre_4_MIl-y78_t3ZJ11AZZNPhgFB7Li-aCW6_cK_r3zsa6mbvAtXUkM1xM&s) |
-| Griffon Cane | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Griffon%20Cane) | ![Griffon Cane](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnmup4Dz_OxnpCmVCYdTpvhxOttdkF4VsaRRVne_1ntk9h-2-9r5s7jxzcIA&s) |
-| Musical Instrument (Virtuoso Heavy) | 3 | 100 gp | [View](https://2e.aonprd.com/Search.aspx?query=Musical%20Instrument) | ![Musical Instrument (Virtuoso Heavy)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdFfO75CFt1GmuO6JWjoWvw6IDN_y7S2r8acxf31mxfTRc1J7BpCn4JGVYGkk&s) |
-| Animal Call | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Animal%20Call) | ![Animal Call](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Mt8hhvUV91zciBzYBj20JtdUBzxcV_hHwkmFM7ciWXh5M3BtT9jyHYaONg&s) |
-| Lantern (Hooded) | 0 | 7 sp | [View](https://2e.aonprd.com/Search.aspx?query=Lantern) | ![Lantern (Hooded)](https://2e.aonprd.com/Images/Treasure/Lantern.webp) |
-| Badger | 0 | 1 gp, 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Badger) | ![Badger](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWRAtaGjzWVLIUUwqGppcgMVeoNDGJVbvL1GNrK0PwjVTWktkqPIpaMLq-UYs&s) |
-| Prosthesis | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Prosthesis) | ![Prosthesis](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9bttomWy2xadnVTGtlCKysuM24NDnW3IZhmX5Lhzqpe4xTUEqH7ThECGbvpg&s) |
-| Musical Instrument (Handheld) | 0 | 8 sp | [View](https://2e.aonprd.com/Search.aspx?query=Musical%20Instrument) | ![Musical Instrument (Handheld)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdFfO75CFt1GmuO6JWjoWvw6IDN_y7S2r8acxf31mxfTRc1J7BpCn4JGVYGkk&s) |
-| Waffle Iron | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Waffle%20Iron) | ![Waffle Iron](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgPBHkUAFBvLTPsaas58b_M3aOibcI4jR5s2sq9owYO5ZFco6uqEQbSwWoAA&s) |
-| Fixer (Expert Councelor) | 0 | 2 gp (per hour) | [View](https://2e.aonprd.com/Search.aspx?query=Fixer) | ![Fixer (Expert Councelor)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxSD3IroQscWP2-Ul5L86jBd8Sr9p34h1MXbI4-JFn-yYRa6FeYOBxHFDH8Q&s) |
-| Religious Text | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Religious%20Text) | ![Religious Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ova0x-SaQApfD0dRTtFl88tYKEzW69iP1YnKmbSQpQSr8y3Auf2k0zg3TC8&s) |
-| Religious Symbol (Wooden) | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Religious%20Symbol) | ![Religious Symbol (Wooden)](https://2e.aonprd.com/Images/Treasure/Religious_Symbol.webp) |
-| Thieves' Toolkit (Replacement Picks) | 0 | 3 sp | [View](https://2e.aonprd.com/Search.aspx?query=Thieves%27%20Toolkit) | ![Thieves' Toolkit (Replacement Picks)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfVZL7cR4nBYWmBQ5MqhxHlj-DstL9mFd6EnH6gOFzpNQLwNr15Vb3Ouq7Lg&s) |
+| Bedroll | 0 | 2 cp | [View](https://2e.aonprd.com/Search.aspx?query=Bedroll) | ![Bedroll](https://2e.aonprd.com/Images/Treasure/Bedroll.webp) |
+| Mask (Ordinary) | 0 | 5 cp | [View](https://2e.aonprd.com/Search.aspx?query=Mask) | ![Mask (Ordinary)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLzotVsYsNeF4gQfhirDBrtOVFHqZravfKMtt7fN174iiJhLgv4bhPitr574&s) |
+| Snare Kit (Specialist) | 3 | 55 gp | [View](https://2e.aonprd.com/Search.aspx?query=Snare%20Kit) | ![Snare Kit (Specialist)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzDWHKTAhpy4deMA6qLFq51D9TRhMHisxx9SKvIWFu3ELvzouwqCKlqdEsYOE&s) |
+| Lizard (X's) | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Lizard) | ![Lizard (X's)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpWfa-PFf-gCi3uT3-CPLwZdsgjLkHhZNIVinn6-q-nEYh9bdy2gNKFPO9iQ&s) |
+| Surprise Doll | 1 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Surprise%20Doll) | ![Surprise Doll](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGs96Ah-iUXGbQ5mEe2GkTaXqFMtso1wBKgAN8TOdpBGdOUl2TOdNjoXNiaT4&s) |
+| Concealed Sheath | 3 | 25 gp | [View](https://2e.aonprd.com/Search.aspx?query=Concealed%20Sheath) | ![Concealed Sheath](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK1MCRFCK-6Q8AtmDwWO_QPD2Fp7QU9CY1_Z33TcgWjhnobp1H3Ofi9EnmRw&s) |
+| Fixer (Basic Informant) | 0 | 5 sp (per hour) | [View](https://2e.aonprd.com/Search.aspx?query=Fixer) | ![Fixer (Basic Informant)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqJrC4qgisqqmN9kd-4Lk91xs24VuZjNI3_yHgx60cF4brHhdnBrKFBihkFuk&s) |
+| Musical Instrument (Virtuoso Handheld) | 3 | 50 gp | [View](https://2e.aonprd.com/Search.aspx?query=Musical%20Instrument) | ![Musical Instrument (Virtuoso Handheld)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC61UxjhzgYG40TNv4yq0BAII6oySEPz6ONfQYz4r0Rv4OGZFfBtGqjzNGTQ&s) |
+| Weapons	Base Weapons	0	6 sp	1 | 0 | 6 sp (per bushel) | [View](https://2e.aonprd.com/Search.aspx?query=Weapons%09Base%20Weapons%090%096%20sp%091) | ![Weapons	Base Weapons	0	6 sp	1](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDIdyCzsPG3A9ueb59ZhVnZB1Qk_Kt1H8RHvl_jEIP2_n5XFNrIs20zDSlXA&s) |
+| Oilskin Pouch | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Oilskin%20Pouch) | ![Oilskin Pouch](https://2e.aonprd.com/Images/Treasure/Oil.webp) |
 | Clothing (Explorer's) | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Clothing) | ![Clothing (Explorer's)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ_-LYzngGcOaUA_F19fE-DkYmIMh4D4a9PmQWWb1RqmsScxakS0ujMo--pgQ&s) |
-| Lodging (Bed, for 1) | 0 | 1 sp (per day) | [View](https://2e.aonprd.com/Search.aspx?query=Lodging) | ![Lodging (Bed, for 1)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSK94QkrX_Q2kHORbr7yHpLabvOGCgAaw9Mt4Hi6hVlaBAt3U5ji04queJK8Q&s) |
-| Map (Political Map) | 0 | 20 gp | [View](https://2e.aonprd.com/Search.aspx?query=Map) | ![Map (Political Map)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc7O1loOlwPkca7W2J7sgT85mnUIUjsj616HJietHI4llWM-MN0cypLm94_w&s) |
-| Hourglass | 0 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Hourglass) | ![Hourglass](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6HIKbTT5XZ7zi9gi8a0Ws0SGMyZDBwwggVdZO2sA5GlNgt1BqRqh261mO41o&s) |
+| Hearing Aid (Magical) | 0 | 5 gp | [View](https://2e.aonprd.com/Search.aspx?query=Hearing%20Aid) | ![Hearing Aid (Magical)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GS39qStjnNNio1d7-317eqV4xwm4rgmOOM3XJOK0bm53qKx9V9hAIwpgVoI&s) |
 
 **Services:**
 - Ale (mug): 1 cp

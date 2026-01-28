@@ -1,5 +1,11 @@
 # Otari Fishery
 
+<div align="center">
+
+![Proprietor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy_Do3wRV-eVrAr91BO-JVdjav5INGw7vfr7m2dmCZAYtvlW59Vrv5uYYgnw&s)
+
+</div>
+
 *Fishery, shipyard, and entertainment venue*
 
 **Proprietor:** Mendi Grantham (shipwright and fisher)
@@ -8,25 +14,20 @@
 
 **Specialties:** Fish, boats, and maritime services
 
-### Common Items (16)
+### Common Items (11)
 | Item | Level | Price | Details | Image |
 |------|-------|-------|---------|-------|
-| Animal Bed | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Animal%20Bed) | ![Animal Bed](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyu22CydFG-KMoQ-vQb2ahNERUUvVpeHSgE-LtuDDRihRQnYWbJBWb8IoVa0&s) |
-| Cat | 0 | 3 cp | [View](https://2e.aonprd.com/Search.aspx?query=Cat) | ![Cat](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1USCJIgZEGdizf7KA0yWmmPkFaodffTwWlIrudpSTI6TyRNREBQ6R3_kDjmY&s) |
-| Steel Shield | 0 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Steel%20Shield) | ![Steel Shield](https://2e.aonprd.com/Images/Armor/Steel_Shield.webp) |
-| Toy Carriage | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Toy%20Carriage) | ![Toy Carriage](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJipClHuEoxoCKzvlba0fq8uHah0e03MYyA896h2JKtexDkOMvAOlurgHeVg&s) |
-| Portable Animal Blind | 2 | 20 gp | [View](https://2e.aonprd.com/Search.aspx?query=Portable%20Animal%20Blind) | ![Portable Animal Blind](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbl-A2iSxybvmwxKWy7J9zca6Lf7rS-uVCNW-n_mAmtb7Bw3GzC79uX6ZkpDg&s) |
-| Prosthesis | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Prosthesis) | ![Prosthesis](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROAH-CfWkixUoD1Z73o1J-KGQZB57ApMlf9jAOVmQbG2jyMdaQZh9q66trlRQ&s) |
-| Catch Pole | 0 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Catch%20Pole) | ![Catch Pole](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6HJAVOZWoN95zwmU2ENv3WvnWHTDKaN5q8yoGJwpA2bA6bxIWUf_jJnwryw&s) |
-| Disguise Kit (Elite) | 3 | 40 gp | [View](https://2e.aonprd.com/Search.aspx?query=Disguise%20Kit) | ![Disguise Kit (Elite)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEJkzs61qQscKvAog9HxJmqVh51fWfdOgzCaIrrfVpkeizxuGOt8jVMxRBlE&s) |
-| Meal (Square) | 0 | 3 cp | [View](https://2e.aonprd.com/Search.aspx?query=Meal) | ![Meal (Square)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFMKQMqayAiP3VjB8_QN7mXXxTVWyiIZlrE0edw0ZD84LG2Auk2DcAcyMTmy0&s) |
-| Stone Object (Low-Grade) | 0 | 1 sp (per Bulk) | [View](https://2e.aonprd.com/Search.aspx?query=Stone%20Object) | ![Stone Object (Low-Grade)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmPz8LLX1mVuXXTeDBAIC3b3qQQhpMU6VXKNz1CybqoUCNSblD9eZNlvVShw&s) |
-| Manacles (Simple) | 1 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Manacles) | ![Manacles (Simple)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZjccsG7Um_0YL50qvkgfOP_xzLYE32OxiN52y33a_8KjmMBpr_xBJ6Bediw&s) |
-| Tower Shield | 0 | 10 gp | [View](https://2e.aonprd.com/Search.aspx?query=Tower%20Shield) | ![Tower Shield](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw2CS5ZfN46-eJbdMHvNLhJ3y-PBr-1_q0m0rfkBPEL777vOdk4qAn0CMj3g&s) |
-| Weapons	Base Weapons	0	3 gp	2 | 0 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Weapons%09Base%20Weapons%090%093%20gp%092) | ![Weapons	Base Weapons	0	3 gp	2](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2KfAcd-mdCUrk9edindFMK923DdhVCFf3eTilxGdT_B9P83gjq-EvoPaZhg&s) |
-| Saddlebags | 0 | 2 sp | [View](https://2e.aonprd.com/Search.aspx?query=Saddlebags) | ![Saddlebags](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYyDt-uSMvPqqb39sFAxsf2b1o2X_tRO7ZiFwvh-hoiqp1iPhVhWVQQ2lTdw&s) |
-| Tear-Away Clothing | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Tear-Away%20Clothing) | ![Tear-Away Clothing](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkce5lG08SCuCRnV3-8MVJFtu4jJEI70Xou044BSqKUbQrNYm55G-7OLJ0Uc&s) |
-| Floating Camouflage Blind | 4 | 225 gp | [View](https://2e.aonprd.com/Search.aspx?query=Floating%20Camouflage%20Blind) | ![Floating Camouflage Blind](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpqiGqllMbazuu9DXwMxZr7t5KHBxcVcr1ThqGdNzTpXYGi-jPpX9KcaB28J4&s) |
+| Opossum, domestic | 0 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Opossum%2C%20domestic) | ![Opossum, domestic](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMy63puxUpTrH7sT7lygCVAOdWpPFpk_UXJJ9ofT5X77a6AyGxcc7Ujcq_Kw&s) |
+| Dyes and Ink | 0 | 1 sp (per vial) | [View](https://2e.aonprd.com/Search.aspx?query=Dyes%20and%20Ink) | ![Dyes and Ink](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXWEo52yt58Yuc_4l7cGUA8ooytMg3PbiJy1Hvw0JhjKaBW1SDdHQ8edS0VA&s) |
+| Axolotl | 0 | 40 gp | [View](https://2e.aonprd.com/Search.aspx?query=Axolotl) | ![Axolotl](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl8UHN3Fe9TxbkjR19qIt5fUTLOGyUThjuSd_vL8zKOUE-bi9w8G6WEqy1id8&s) |
+| Spellcasting (9th rank) | 0 | 1,800 gp (plus any cost required to cast the specific spell) | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) | ![Spellcasting (9th rank)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNaNuCOPs__FZLVzZMNBrZRwJaMp4KFOXprmPC7V-AagG3dyylU0dVar8Zqw&s) |
+| Cane | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Cane) | ![Cane](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkXVXgRbxorVWRUKD3gsV2vvcgMk21uj0jPH8oeIhRBARAA5jPyDNQhGPuAw&s) |
+| Detective's Kit | 3 | 25 gp | [View](https://2e.aonprd.com/Search.aspx?query=Detective%27s%20Kit) | ![Detective's Kit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiOs7M9h3DivWov2VbVOJWcVW0XQQzXphhlvb6l_vRK2G7VpivihQon11LQ&s) |
+| Mask (Ordinary) | 0 | 5 cp | [View](https://2e.aonprd.com/Search.aspx?query=Mask) | ![Mask (Ordinary)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLzotVsYsNeF4gQfhirDBrtOVFHqZravfKMtt7fN174iiJhLgv4bhPitr574&s) |
+| Compass | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Compass) | ![Compass](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHIBwVPrAJib4eJfJvq8n96DjfPT4hoVkjrw57xS46zvb5NSOhlHuKEW-ZSg&s) |
+| Writing Set | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Writing%20Set) | ![Writing Set](https://2e.aonprd.com/Images/Treasure/Writing_Set.webp) |
+| Cat (Galtan Orange) | 0 | 10 gp | [View](https://2e.aonprd.com/Search.aspx?query=Cat) | ![Cat (Galtan Orange)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHPSSZmK1mj4G3-KN-Bp8EG5pS6OJhXsTSdUGKkzUUQoWjKnds5GTwuKmHyI&s) |
+| Common		Vehicles		1	50 gp | 1 | 60 gp | [View](https://2e.aonprd.com/Search.aspx?query=Common%09%09Vehicles%09%091%0950%20gp) | ![Common		Vehicles		1	50 gp](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_WwF6Px5Vr95CaG97wxckkpO5DHpdUiJc8V7cjAF1HNvjHgPlVqnbygo3UQ&s) |
 
 **Services:**
 - Fresh fish: 1-5 sp per pound

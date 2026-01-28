@@ -1,5 +1,11 @@
 # Gallentine Deliveries
 
+<div align="center">
+
+![Proprietor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1-a54if0qtKYof9YFMQbsh7yu7zVFAdAlYbVhy6frxtDck83XCK31R39eDQ&s)
+
+</div>
+
 *Fastest and most reliable delivery service*
 
 **Proprietor:** Oloria Gallentine (seventh-generation Otari citizen)

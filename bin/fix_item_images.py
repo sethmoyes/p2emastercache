@@ -97,6 +97,57 @@ def normalize_item_name(name):
     name = name.lower().strip()
     return name
 
+def get_proprietor_image_from_file(filepath):
+    """Extract proprietor name from file and search for image"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Find proprietor line
+        match = re.search(r'\*\*Proprietor:\*\* (.+)', content)
+        if not match:
+            return None
+        
+        proprietor_text = match.group(1)
+        
+        # Extract name from proprietor text
+        name_match = re.match(r'^([^(]+)', proprietor_text)
+        if not name_match:
+            return None
+        
+        name = name_match.group(1).strip()
+        search_query = f"pathfinder {name}"
+        encoded_query = urllib.parse.quote(search_query)
+        search_url = f"https://www.google.com/search?q={encoded_query}&tbm=isch"
+        
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        
+        response = requests.get(search_url, headers=headers, timeout=5)
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # Try to extract first image URL
+            img_tags = soup.find_all('img')
+            for img in img_tags[1:]:  # Skip first (Google logo)
+                src = img.get('src') or img.get('data-src')
+                if src and src.startswith('http') and 'google' not in src:
+                    return src
+            
+            # Alternative: look for image URLs in script tags
+            scripts = soup.find_all('script')
+            for script in scripts:
+                if script.string and 'http' in str(script.string):
+                    urls = re.findall(r'https?://[^\s"\'<>]+\.(?:jpg|jpeg|png|webp)', str(script.string))
+                    if urls:
+                        return urls[0]
+        
+        return None
+    except Exception as e:
+        print(f"  Warning: Could not fetch proprietor image: {e}")
+        return None
+
 def get_google_image_url(item_name):
     """Try to get first Google Images result for item"""
     try:
@@ -224,9 +275,22 @@ def fix_images_in_file(input_file, output_file, use_fallbacks=False):
     
     output_lines = []
     fixed_count = 0
+    proprietor_fixed = False
     
     for line in lines:
-        # Check if line contains an image (either with URL or placeholder)
+        # Check for proprietor image placeholder
+        if 'PROPRIETOR_IMAGE_PLACEHOLDER' in line and not proprietor_fixed:
+            print(f"  Fixing proprietor image...")
+            proprietor_img = get_proprietor_image_from_file(input_file)
+            if proprietor_img:
+                line = line.replace('PROPRIETOR_IMAGE_PLACEHOLDER', proprietor_img)
+                print(f"  ✓ Found proprietor image")
+            proprietor_fixed = True
+            output_lines.append(line)
+            time.sleep(0.5)
+            continue
+        
+        # Check if line contains an item image (either with URL or placeholder)
         if '![' in line and ('](https://' in line or '](IMAGE_PLACEHOLDER)' in line):
             # Try new format with Details column first
             match = re.search(r'\| ([^|]+) \| ([^|]+) \| ([^|]+) \| \[View\]\(([^)]+)\) \| !\[([^\]]+)\]\(([^)]+)\)', line)
