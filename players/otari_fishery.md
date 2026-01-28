@@ -8,24 +8,25 @@
 
 **Specialties:** Fish, boats, and maritime services
 
-### Common Items (15)
+### Common Items (16)
 | Item | Level | Price | Details | Image |
 |------|-------|-------|---------|-------|
+| Animal Bed | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Animal%20Bed) | ![Animal Bed](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyu22CydFG-KMoQ-vQb2ahNERUUvVpeHSgE-LtuDDRihRQnYWbJBWb8IoVa0&s) |
+| Cat | 0 | 3 cp | [View](https://2e.aonprd.com/Search.aspx?query=Cat) | ![Cat](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1USCJIgZEGdizf7KA0yWmmPkFaodffTwWlIrudpSTI6TyRNREBQ6R3_kDjmY&s) |
+| Steel Shield | 0 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Steel%20Shield) | ![Steel Shield](https://2e.aonprd.com/Images/Armor/Steel_Shield.webp) |
+| Toy Carriage | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Toy%20Carriage) | ![Toy Carriage](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJipClHuEoxoCKzvlba0fq8uHah0e03MYyA896h2JKtexDkOMvAOlurgHeVg&s) |
+| Portable Animal Blind | 2 | 20 gp | [View](https://2e.aonprd.com/Search.aspx?query=Portable%20Animal%20Blind) | ![Portable Animal Blind](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbl-A2iSxybvmwxKWy7J9zca6Lf7rS-uVCNW-n_mAmtb7Bw3GzC79uX6ZkpDg&s) |
+| Prosthesis | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Prosthesis) | ![Prosthesis](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROAH-CfWkixUoD1Z73o1J-KGQZB57ApMlf9jAOVmQbG2jyMdaQZh9q66trlRQ&s) |
+| Catch Pole | 0 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Catch%20Pole) | ![Catch Pole](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6HJAVOZWoN95zwmU2ENv3WvnWHTDKaN5q8yoGJwpA2bA6bxIWUf_jJnwryw&s) |
+| Disguise Kit (Elite) | 3 | 40 gp | [View](https://2e.aonprd.com/Search.aspx?query=Disguise%20Kit) | ![Disguise Kit (Elite)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEJkzs61qQscKvAog9HxJmqVh51fWfdOgzCaIrrfVpkeizxuGOt8jVMxRBlE&s) |
+| Meal (Square) | 0 | 3 cp | [View](https://2e.aonprd.com/Search.aspx?query=Meal) | ![Meal (Square)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFMKQMqayAiP3VjB8_QN7mXXxTVWyiIZlrE0edw0ZD84LG2Auk2DcAcyMTmy0&s) |
+| Stone Object (Low-Grade) | 0 | 1 sp (per Bulk) | [View](https://2e.aonprd.com/Search.aspx?query=Stone%20Object) | ![Stone Object (Low-Grade)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmPz8LLX1mVuXXTeDBAIC3b3qQQhpMU6VXKNz1CybqoUCNSblD9eZNlvVShw&s) |
 | Manacles (Simple) | 1 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Manacles) | ![Manacles (Simple)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZjccsG7Um_0YL50qvkgfOP_xzLYE32OxiN52y33a_8KjmMBpr_xBJ6Bediw&s) |
-| Opossum, domestic | 0 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Opossum%2C%20domestic) | ![Opossum, domestic](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMy63puxUpTrH7sT7lygCVAOdWpPFpk_UXJJ9ofT5X77a6AyGxcc7Ujcq_Kw&s) |
-| Merchant's Scale | 0 | 2 sp | [View](https://2e.aonprd.com/Search.aspx?query=Merchant%27s%20Scale) | ![Merchant's Scale](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNgs7L3xR7ZvcOZVVgW0t6FBIkHzB9TJpw58Qj_AN7ZSkamMtygBpmmbM6D9Y&s) |
-| Spyglass | 0 | 20 gp | [View](https://2e.aonprd.com/Search.aspx?query=Spyglass) | ![Spyglass](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMhAR-FEwrye9vEC1Y2XIzf6p-SiVYMAqNtUA3eKiyOqSPVtI4GhdaAyGrsQ&s) |
-| Fixer (Expert Councelor) | 0 | 2 gp (per hour) | [View](https://2e.aonprd.com/Search.aspx?query=Fixer) | ![Fixer (Expert Councelor)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxSD3IroQscWP2-Ul5L86jBd8Sr9p34h1MXbI4-JFn-yYRa6FeYOBxHFDH8Q&s) |
-| Beverages (Pot of Coffee or Tea) | 0 | 2 cp | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) | ![Beverages (Pot of Coffee or Tea)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBrJNeIJdz6rt4u7h-CDcbUTsa3RKy89WGGtZIjUmuVlGSfDznZgdKmfOLbkA&s) |
-| Cradle Minder | 0 | 50 gp | [View](https://2e.aonprd.com/Search.aspx?query=Cradle%20Minder) | ![Cradle Minder](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiveRz06MwjJdPILOZs3_Z8movNfs9lLb5smjn5WzydYuWaB7h8QUSCb6hmw&s) |
-| Beverages (Mug of Ale) | 0 | 1 cp | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) | ![Beverages (Mug of Ale)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYTOp6-uyCASY9IjVNTPy3qhKrlLSacE2Gxxzyxjk9MDUiLUjx1TbMxoazhI&s) |
-| Beverages (Keg of Ale) | 0 | 2 sp | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) | ![Beverages (Keg of Ale)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT37Twg6LbEgw23pjOEiJqLmscqUEIRqy5xSCwqPmhKwxrMeVDj3dDRIPlL0ig&s) |
-| Feed (Standard) | 0 | 1 cp (1 week) | [View](https://2e.aonprd.com/Search.aspx?query=Feed) | ![Feed (Standard)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR49ZWVlJGUE8nbnjIjtAj15bo8eNIVoGG6Dnm_Dmr-M8TfJUGQGE2dmF6pBXU&s) |
-| Disguise Kit (Replacement Cosmetics) | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Disguise%20Kit) | ![Disguise Kit (Replacement Cosmetics)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSH8sdXUryvHbYJAWT5ggGghYZFhE4zg1fLYkY053O-P8a4_zuFbvHvy7c2A&s) |
-| Bird | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Bird) | ![Bird](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxJs45ij_nJzd2Ei2cjEy_OoanPyULwL0ikqfEiQwDyZnZ8dr0WeNePUh1V2Y&s) |
-| Fetters (Average) | 4 | 30 gp | [View](https://2e.aonprd.com/Search.aspx?query=Fetters) | ![Fetters (Average)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl92MINFqJOfNMdn7csdZjuCI6GYvP1_BvnZAVjbY81EoCbOLKpRWEQ3pvaw&s) |
-| Formula Book (Blank) | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Formula%20Book) | ![Formula Book (Blank)](https://2e.aonprd.com/Images/Treasure/Book.webp) |
-| Tank (Stationary) | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Tank) | ![Tank (Stationary)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCzO-GPV2FZ5IhElpqGMMKLdknGQhqAe7bshl9V6C7PJugj6__Br0cAM8EQ&s) |
+| Tower Shield | 0 | 10 gp | [View](https://2e.aonprd.com/Search.aspx?query=Tower%20Shield) | ![Tower Shield](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw2CS5ZfN46-eJbdMHvNLhJ3y-PBr-1_q0m0rfkBPEL777vOdk4qAn0CMj3g&s) |
+| Weapons	Base Weapons	0	3 gp	2 | 0 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Weapons%09Base%20Weapons%090%093%20gp%092) | ![Weapons	Base Weapons	0	3 gp	2](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2KfAcd-mdCUrk9edindFMK923DdhVCFf3eTilxGdT_B9P83gjq-EvoPaZhg&s) |
+| Saddlebags | 0 | 2 sp | [View](https://2e.aonprd.com/Search.aspx?query=Saddlebags) | ![Saddlebags](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYyDt-uSMvPqqb39sFAxsf2b1o2X_tRO7ZiFwvh-hoiqp1iPhVhWVQQ2lTdw&s) |
+| Tear-Away Clothing | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Tear-Away%20Clothing) | ![Tear-Away Clothing](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkce5lG08SCuCRnV3-8MVJFtu4jJEI70Xou044BSqKUbQrNYm55G-7OLJ0Uc&s) |
+| Floating Camouflage Blind | 4 | 225 gp | [View](https://2e.aonprd.com/Search.aspx?query=Floating%20Camouflage%20Blind) | ![Floating Camouflage Blind](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpqiGqllMbazuu9DXwMxZr7t5KHBxcVcr1ThqGdNzTpXYGi-jPpX9KcaB28J4&s) |
 
 **Services:**
 - Fresh fish: 1-5 sp per pound

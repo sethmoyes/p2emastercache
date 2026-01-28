@@ -416,6 +416,12 @@ if __name__ == "__main__":
             'specialties': "Adventuring gear and magic items",
             'categories': ['magical', 'scrolls', 'adventuring', 'alchemical'],
             'use_manual': True,
+            'services': [
+                "Spellcasting Services: Price varies by spell level and complexity (GM discretion)",
+                "Spell Learning/Training: Price negotiable based on spell level (GM discretion)",
+                "Magical item identification: 1-10 gp depending on complexity",
+                "Astrological readings: 5 sp - 5 gp"
+            ],
             'inventory': None
         },
         {
@@ -440,9 +446,12 @@ if __name__ == "__main__":
             'categories': ['scrolls', 'adventuring'],
             'use_manual': True,
             'services': [
+                "Spellcasting Services: Price varies by spell level and complexity (GM discretion)",
+                "Spell Learning/Training: Price negotiable based on spell level (GM discretion)",
                 "Translation of ancient/unusual languages: 5-20 gp depending on complexity",
                 "Purchases rare books at 50% of value, resells at 150%",
-                "Can special order specific books (1d6 days, +50% cost)"
+                "Can special order specific books (1d6 days, +50% cost)",
+                "Research assistance: 1-10 gp depending on topic"
             ],
             'inventory': None
         },
@@ -470,10 +479,10 @@ if __name__ == "__main__":
             'proprietor': "Carman Rajani (expert blacksmith)",
             'description': "Otari's primary smithy sells armor and weapons in addition to saws and axes for the lumber industry. The forge is always hot and Carman is always busy, but she takes pride in quality work.",
             'specialties': "Weapons, armor, and tools",
-            'categories': ['weapons', 'armor', 'adventuring'],
+            'categories': ['weapons', 'armor'],
             'use_manual': False,
-            'num_common': 30,
-            'num_uncommon': 10,
+            'num_common': random.randint(5, 20),
+            'num_uncommon': random.randint(3, 8),
             'services': [
                 "Weapon/Armor repair: 10% of item cost",
                 "Custom orders: +25% cost, 1d6 days",
@@ -487,6 +496,9 @@ if __name__ == "__main__":
             'proprietor': "Temmin 'Crow' Brassbuckle (jovial halfling brewer)",
             'description': "A brewery and tavern popular among local farmers and merchants. Known for excellent ales and a warm atmosphere. Crow is always happy to share local gossip over a pint.",
             'specialties': "Food, drink, and lodging",
+            'categories': ['adventuring'],
+            'use_manual': False,
+            'num_common': random.randint(5, 20),
             'services': [
                 "Ale (mug): 1 cp",
                 "Ale (pitcher): 5 cp",
@@ -496,9 +508,7 @@ if __name__ == "__main__":
                 "Lodging (common room): 1 sp per night",
                 "Lodging (private room): 5 sp per night"
             ],
-            'categories': [],
-            'use_manual': False,
-            'inventory': {'common': [], 'uncommon': [], 'rare': []}
+            'inventory': None
         },
         {
             'name': "Crook's Nook",
@@ -506,6 +516,9 @@ if __name__ == "__main__":
             'proprietor': "Tamily Tanderveil (retired sailor)",
             'description': "A sailors' tavern built as a bridge across the Osprey River. Popular with sailors, fishermen, and anyone with a taste for adventure stories. The food is hearty and the drinks are strong.",
             'specialties': "Food, drink, and sailor's tales",
+            'categories': ['adventuring'],
+            'use_manual': False,
+            'num_common': random.randint(5, 20),
             'services': [
                 "Grog (mug): 2 cp",
                 "Rum (shot): 5 cp",
@@ -515,9 +528,7 @@ if __name__ == "__main__":
                 "Lodging (bunk): 2 sp per night",
                 "Sailor rumors and information: Free with drinks"
             ],
-            'categories': [],
-            'use_manual': False,
-            'inventory': {'common': [], 'uncommon': [], 'rare': []}
+            'inventory': None
         },
         {
             'name': "The Rowdy Rockfish",
@@ -525,6 +536,9 @@ if __name__ == "__main__":
             'proprietor': "Aaric (calm, contemplative bartender)",
             'description': "Despite its name, The Rowdy Rockfish is surprisingly calm and quiet. Aaric keeps the peace with a steady hand and wise words. A favorite of scholars and those seeking a peaceful drink.",
             'specialties': "Quiet atmosphere and quality drinks",
+            'categories': ['adventuring'],
+            'use_manual': False,
+            'num_common': random.randint(5, 20),
             'services': [
                 "House wine: 5 sp",
                 "Imported spirits: 1-5 gp",
@@ -533,9 +547,7 @@ if __name__ == "__main__":
                 "Lodging (quiet room): 1 gp per night",
                 "Private meeting room: 5 gp per evening"
             ],
-            'categories': [],
-            'use_manual': False,
-            'inventory': {'common': [], 'uncommon': [], 'rare': []}
+            'inventory': None
         },
         {
             'name': "Otari Fishery",
@@ -543,6 +555,9 @@ if __name__ == "__main__":
             'proprietor': "Mendi Grantham (shipwright and fisher)",
             'description': "Fishery and shipyard by day, gathering place for games and entertainment by night. Mendi runs a tight ship and knows everything about boats and the waters around Otari.",
             'specialties': "Fish, boats, and maritime services",
+            'categories': ['adventuring'],
+            'use_manual': False,
+            'num_common': random.randint(5, 20),
             'services': [
                 "Fresh fish: 1-5 sp per pound",
                 "Boat rental (rowboat): 5 sp per day",
@@ -551,9 +566,6 @@ if __name__ == "__main__":
                 "Fishing gear rental: 1 sp per day",
                 "Maritime charts: 5-20 gp"
             ],
-            'categories': ['adventuring'],
-            'use_manual': False,
-            'num_common': 15,
             'inventory': None
         },
         {
@@ -564,8 +576,8 @@ if __name__ == "__main__":
             'specialties': "Religious services, healing, and knowledge",
             'categories': ['scrolls', 'magical'],
             'use_manual': True,
-            'num_common': 8,
-            'num_uncommon': 3,
+            'num_common': random.randint(5, 20),
+            'num_uncommon': random.randint(2, 5),
             'services': [
                 "Healing (1st level): 4 gp",
                 "Healing (2nd level): 12 gp",
