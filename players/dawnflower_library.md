@@ -12,25 +12,21 @@
 
 **Specialties:** Religious texts, scrolls, and holy items
 
-## Common Items (8)
+## Common Items (5)
 
 | Image | Name | Level | Price | Rarity | Category | Type |
 |-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Flask%20of%20Fellowship) | Flask of Fellowship | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Shadow) | Shadow (Major) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Euphoric%20Loop) | Euphoric Loop | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Shard%20of%20the%20Third%20Seal) | Shard of the Third Seal | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Kirin%20Echo%20Chime) | Kirin Echo Chime | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Exploding%20Shield) | Exploding Shield | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Mask%20of%20Uncanny%20Breath) | Mask of Uncanny Breath | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Bravery%20Baldric) | Bravery Baldric (Flight) | 0 | 0 gp | Common | N/A | Adventuring |
+| ![What Doors We Open](https://2e.aonprd.com/Images/Rules/Rules444.png) | What Doors We Open | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Warhammer](https://2e.aonprd.com/Images/Monsters/GraveknightCaptain.png) | Warhammer | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Fiendbreaker (Artifact)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Fiendbreaker (Artifact) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Sighting%20Shot) | Sighting Shot | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Vaporous%20Pipe) | Vaporous Pipe | 0 | 0 gp | Common | N/A | Adventuring |
 
-## Uncommon Items (2)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type |
 |-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Moderate%20Necrotic%20Cap) | Moderate Necrotic Cap | 0 | 0 gp | Uncommon | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Major%20Irritating%20Seedpod) | Major Irritating Seedpod | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Boughshatter) | Boughshatter | 0 | 0 gp | Uncommon | N/A | Adventuring |
 
 ## Services
 

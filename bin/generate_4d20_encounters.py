@@ -16,6 +16,32 @@ def load_lore(filename):
     with open(filename, 'r', encoding='utf-8') as f:
         return f.read()
 
+def load_creature_lore():
+    """Load creature lore from JSON"""
+    try:
+        with open('etc/creature_lore.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
+
+def get_creature_lore_text(creature_name, creature_lore_db):
+    """Get lore for a specific creature from the database"""
+    # Try exact match first
+    if creature_name in creature_lore_db:
+        return creature_lore_db[creature_name]['lore']
+    
+    # Try without level indicators
+    clean_name = re.sub(r'\(Level \d+\)', '', creature_name).strip()
+    if clean_name in creature_lore_db:
+        return creature_lore_db[clean_name]['lore']
+    
+    # Try partial match
+    for key in creature_lore_db.keys():
+        if key.lower() in creature_name.lower() or creature_name.lower() in key.lower():
+            return creature_lore_db[key]['lore']
+    
+    return None
+
 def get_equipment_by_level(equipment, level, rarity='common'):
     filtered = [e for e in equipment if e['level'] == level and e['rarity'] == rarity]
     return filtered if filtered else [e for e in equipment if e['level'] == max(0, level-1) and e['rarity'] == rarity]
@@ -209,7 +235,7 @@ def generate_development(template, difficulty):
 # Import the massive encounter pools
 from encounter_pools import DEADLY_POOL, DIFFICULT_POOL, MODERATE_POOL, EASY_POOL, NPC_POOL
 
-def generate_combat_encounter(roll, difficulty, equipment, inner_sea_lore, players_guide_lore):
+def generate_combat_encounter(roll, difficulty, equipment, inner_sea_lore, players_guide_lore, creature_lore_db):
     """Select random encounter from appropriate pool with EXTENSIVE detail"""
     pool_map = {
         'DEADLY': DEADLY_POOL,
@@ -275,8 +301,17 @@ def generate_combat_encounter(roll, difficulty, equipment, inner_sea_lore, playe
     
     coins = random.randint(level * 2, level * 5)
     
-    # Get lore from both sources
-    inner_sea_snippet = extract_lore_snippet(inner_sea_lore, encounter_template.get('lore_keywords', ['Fogfen']))
+    # Get creature-specific lore if available, otherwise use fallback
+    creature_name = encounter_template['name']
+    creature_lore_text = get_creature_lore_text(creature_name, creature_lore_db)
+    
+    if creature_lore_text:
+        # Use creature lore from PathfinderWiki
+        inner_sea_snippet = creature_lore_text
+    else:
+        # Fallback to generic Inner Sea lore
+        inner_sea_snippet = extract_lore_snippet(inner_sea_lore, encounter_template.get('lore_keywords', ['Fogfen']))
+    
     otari_connection = get_otari_connection_combat()  # Use combat-specific connection
     gm_notes = generate_gm_notes(encounter_template, difficulty)
     developments = generate_development(encounter_template, difficulty)
@@ -422,7 +457,7 @@ def write_markdown(encounters, output_file):
                 f.write(f"**Creature:** {t['name']} (Level {enc['difficulty'].split()[0].lower()}, {t.get('description', 'Dangerous foe')})\n\n")
                 f.write(f"**Stats:** HP: {t['hp']} | AC: {t['ac']} | Fort: {t['fort']} | Reflex: {t['reflex']} | Will: {t['will']}\n\n")
                 
-                f.write(f"#### Lore Connection (Inner Sea Region):\n\n")
+                f.write(f"#### Creature Lore (PathfinderWiki):\n\n")
                 f.write(f"{enc['inner_sea_lore']}\n\n")
                 
                 f.write(f"#### Otari Connection (Players Guide):\n\n")
@@ -448,10 +483,12 @@ if __name__ == "__main__":
     equipment = load_json("etc/equipment.json")
     inner_sea_lore = load_lore("etc/inner_sea_region.md")
     players_guide_lore = load_lore("etc/players_guide.md")
+    creature_lore_db = load_creature_lore()
     
     print(f"  Equipment: {len(equipment)} items")
     print(f"  Inner Sea Lore: {len(inner_sea_lore)} chars")
     print(f"  Players Guide: {len(players_guide_lore)} chars")
+    print(f"  Creature Lore: {len(creature_lore_db)} creatures")
     print(f"  Encounter pools: {len(DEADLY_POOL)} deadly, {len(DIFFICULT_POOL)} difficult,", end=" ")
     print(f"{len(MODERATE_POOL)} moderate, {len(EASY_POOL)} easy, {len(NPC_POOL)} NPCs")
     
@@ -473,7 +510,7 @@ if __name__ == "__main__":
         if diff == 'LORE ONLY':
             enc = generate_lore_encounter(roll, inner_sea_lore, players_guide_lore)
         else:
-            enc = generate_combat_encounter(roll, diff, equipment, inner_sea_lore, players_guide_lore)
+            enc = generate_combat_encounter(roll, diff, equipment, inner_sea_lore, players_guide_lore, creature_lore_db)
         
         encounters.append(enc)
     
