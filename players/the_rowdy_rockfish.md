@@ -17,12 +17,12 @@
 ### Common Items (6)
 | Item | Level | Price | Details | Image |
 |------|-------|-------|---------|-------|
-| Common		Vehicles		1	50 gp | 1 | 60 gp | [View](https://2e.aonprd.com/Search.aspx?query=Common%09%09Vehicles%09%091%0950%20gp) | ![Common		Vehicles		1	50 gp](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_WwF6Px5Vr95CaG97wxckkpO5DHpdUiJc8V7cjAF1HNvjHgPlVqnbygo3UQ&s) |
-| Fetters (Simple) | 2 | 5 gp | [View](https://2e.aonprd.com/Search.aspx?query=Fetters) | ![Fetters (Simple)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl92MINFqJOfNMdn7csdZjuCI6GYvP1_BvnZAVjbY81EoCbOLKpRWEQ3pvaw&s) |
-| Transportation (Sailing Ship) | 0 | 6 cp (per 5 miles) | [View](https://2e.aonprd.com/Search.aspx?query=Transportation) | ![Transportation (Sailing Ship)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRynHAt5g2TU4_mp-yvQp7hjTlkU1C0Itfx5lR5GDVrULZhDzEFa6QQoEIl0iA&s) |
-| Spellcasting (1st rank) | 0 | 3 gp (plus any cost required to cast the specific spell) | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) | ![Spellcasting (1st rank)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_3I-c-DFHboT70L-MPNKglhQ-40sh2wW8bmV1waO_PtqGEZm3jJUGoECXlA&s) |
-| Lizard (X's) | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Lizard) | ![Lizard (X's)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpWfa-PFf-gCi3uT3-CPLwZdsgjLkHhZNIVinn6-q-nEYh9bdy2gNKFPO9iQ&s) |
-| Tent (Four-Person) | 0 | 5 gp | [View](https://2e.aonprd.com/Search.aspx?query=Tent) | ![Tent (Four-Person)](https://2e.aonprd.com/Images/Treasure/Tent.webp) |
+| Mirror | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Mirror) | ![Mirror](IMAGE_PLACEHOLDER) |
+| Meal (Square) | 0 | 3 cp | [View](https://2e.aonprd.com/Search.aspx?query=Meal) | ![Meal (Square)](IMAGE_PLACEHOLDER) |
+| Transportation (Carriage) | 0 | 2 sp (per 5 miles) | [View](https://2e.aonprd.com/Search.aspx?query=Transportation) | ![Transportation (Carriage)](IMAGE_PLACEHOLDER) |
+| Squirrel | 0 | 7 sp | [View](https://2e.aonprd.com/Search.aspx?query=Squirrel) | ![Squirrel](IMAGE_PLACEHOLDER) |
+| Formula Book (Blank) | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Formula%20Book) | ![Formula Book (Blank)](IMAGE_PLACEHOLDER) |
+| Healer's Toolkit (Expanded) | 3 | 50 gp | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) | ![Healer's Toolkit (Expanded)](IMAGE_PLACEHOLDER) |
 
 **Services:**
 - House wine: 5 sp

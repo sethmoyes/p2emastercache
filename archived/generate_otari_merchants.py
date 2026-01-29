@@ -10,6 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 import urllib.parse
 import time
+import json
 
 def get_aon_equipment_url(item_name):
     """Search Google for Archives of Nethys equipment page URL"""
@@ -44,8 +45,12 @@ def get_aon_equipment_url(item_name):
         clean_name = re.sub(r'\([^)]*\)', '', item_name).strip()
         return f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_name)}"
 
-def parse_equipment_md(filename):
-    """Parse equipment.md and return items by category and rarity"""
+def load_equipment_json(filename):
+    """Load equipment from JSON file"""
+    with open(filename, 'r', encoding='utf-8') as f:
+        all_items = json.load(f)
+    
+    # Organize by type and rarity
     items = {
         'weapons': {'common': [], 'uncommon': [], 'rare': []},
         'armor': {'common': [], 'uncommon': [], 'rare': []},
@@ -55,94 +60,22 @@ def parse_equipment_md(filename):
         'scrolls': {'common': [], 'uncommon': [], 'rare': []}
     }
     
-    with open(filename, 'r', encoding='utf-8') as f:
-        lines = f.readlines()
-    
-    for line in lines[7:]:  # Skip header
-        if not line.strip() or line.startswith('|---'):
-            continue
+    for item in all_items:
+        item_type = item['type']
+        rarity = item['rarity']
         
-        parts = [p.strip() for p in line.split('|')]
-        if len(parts) < 9:
-            continue
-        
-        name = parts[1]
-        
-        # Skip if no valid name
-        if not name or name == 'Name' or len(name) < 2:
-            continue
-        
-        # Find rarity - check multiple columns
-        rarity = 'common'  # Default
-        for i in range(3, min(7, len(parts))):
-            part_lower = parts[i].lower()
-            if 'uncommon' in part_lower:
-                rarity = 'uncommon'
-                break
-            elif 'rare' in part_lower and 'uncommon' not in part_lower:
-                rarity = 'rare'
-                break
-            elif 'common' in part_lower:
-                rarity = 'common'
-                break
-        
-        # Find category (usually in column 5 or 6)
-        category = ''
-        for i in range(5, min(8, len(parts))):
-            if parts[i]:
-                category = parts[i].lower()
-                break
-        
-        # Find level and price - they can be in different positions
-        level = 0
-        price = ''
-        
-        for i in range(7, min(len(parts), 10)):
-            part = parts[i].strip()
-            if not part:
-                continue
-            
-            # Try to parse as level
-            if not price and part.isdigit() and int(part) <= 20:
-                try:
-                    level = int(part)
-                except:
-                    pass
-            # Check if it's a price
-            elif any(curr in part.lower() for curr in ['gp', 'sp', 'cp']):
-                price = part
-                break
-        
-        # Filter for levels -1 to 4
-        if level < -1 or level > 4:
-            continue
-        
-        # Skip if no price found
-        if not price:
-            continue
-        
-        item = {
-            'name': name,
-            'level': level,
-            'price': price,
-            'rarity': rarity
-        }
-        
-        # Categorize based on category and name
-        if 'weapon' in category or 'base weapons' in category or any(w in name.lower() for w in ['sword', 'axe', 'bow', 'crossbow', 'dagger', 'spear', 'mace', 'hammer', 'arrow', 'bolt', 'dart', 'javelin']):
+        # Map types to categories
+        if item_type == 'weapon':
             items['weapons'][rarity].append(item)
-        elif 'armor' in category or any(a in name.lower() for a in ['armor', 'mail', 'plate', 'leather', 'chain']):
+        elif item_type == 'armor':
             items['armor'][rarity].append(item)
-        elif 'alchemical' in category or 'alchemist' in name.lower():
+        elif item_type == 'alchemical':
             items['alchemical'][rarity].append(item)
-        elif 'scroll' in category.lower() or 'scroll' in name.lower():
+        elif item_type == 'scroll':
             items['scrolls'][rarity].append(item)
-        elif 'adventuring' in category or 'gear' in category or any(g in category for g in ['tool', 'equipment', 'clothing']):
-            items['adventuring'][rarity].append(item)
-        elif 'consumable' in category or 'held' in category or 'worn' in category or 'potion' in name.lower() or 'elixir' in name.lower():
+        elif item_type == 'magical':
             items['magical'][rarity].append(item)
-        else:
-            # Default to adventuring gear for misc items
+        elif item_type == 'adventuring':
             items['adventuring'][rarity].append(item)
     
     return items
@@ -473,8 +406,8 @@ def write_merchant_file(merchant_data, output_dir='players'):
     return filepath
 
 if __name__ == "__main__":
-    print("Parsing equipment database...")
-    items = parse_equipment_md("etc/equipment.md")
+    print("Loading equipment database...")
+    items = load_equipment_json("etc/equipment.json")
     
     # Create output directory if it doesn't exist
     os.makedirs('players', exist_ok=True)

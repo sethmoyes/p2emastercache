@@ -14,20 +14,19 @@
 
 **Specialties:** Fish, boats, and maritime services
 
-### Common Items (11)
+### Common Items (10)
 | Item | Level | Price | Details | Image |
 |------|-------|-------|---------|-------|
-| Opossum, domestic | 0 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Opossum%2C%20domestic) | ![Opossum, domestic](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMy63puxUpTrH7sT7lygCVAOdWpPFpk_UXJJ9ofT5X77a6AyGxcc7Ujcq_Kw&s) |
-| Dyes and Ink | 0 | 1 sp (per vial) | [View](https://2e.aonprd.com/Search.aspx?query=Dyes%20and%20Ink) | ![Dyes and Ink](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXWEo52yt58Yuc_4l7cGUA8ooytMg3PbiJy1Hvw0JhjKaBW1SDdHQ8edS0VA&s) |
-| Axolotl | 0 | 40 gp | [View](https://2e.aonprd.com/Search.aspx?query=Axolotl) | ![Axolotl](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl8UHN3Fe9TxbkjR19qIt5fUTLOGyUThjuSd_vL8zKOUE-bi9w8G6WEqy1id8&s) |
-| Spellcasting (9th rank) | 0 | 1,800 gp (plus any cost required to cast the specific spell) | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) | ![Spellcasting (9th rank)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNaNuCOPs__FZLVzZMNBrZRwJaMp4KFOXprmPC7V-AagG3dyylU0dVar8Zqw&s) |
-| Cane | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Cane) | ![Cane](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkXVXgRbxorVWRUKD3gsV2vvcgMk21uj0jPH8oeIhRBARAA5jPyDNQhGPuAw&s) |
-| Detective's Kit | 3 | 25 gp | [View](https://2e.aonprd.com/Search.aspx?query=Detective%27s%20Kit) | ![Detective's Kit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiOs7M9h3DivWov2VbVOJWcVW0XQQzXphhlvb6l_vRK2G7VpivihQon11LQ&s) |
-| Mask (Ordinary) | 0 | 5 cp | [View](https://2e.aonprd.com/Search.aspx?query=Mask) | ![Mask (Ordinary)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLzotVsYsNeF4gQfhirDBrtOVFHqZravfKMtt7fN174iiJhLgv4bhPitr574&s) |
-| Compass | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Compass) | ![Compass](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHIBwVPrAJib4eJfJvq8n96DjfPT4hoVkjrw57xS46zvb5NSOhlHuKEW-ZSg&s) |
-| Writing Set | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Writing%20Set) | ![Writing Set](https://2e.aonprd.com/Images/Treasure/Writing_Set.webp) |
-| Cat (Galtan Orange) | 0 | 10 gp | [View](https://2e.aonprd.com/Search.aspx?query=Cat) | ![Cat (Galtan Orange)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHPSSZmK1mj4G3-KN-Bp8EG5pS6OJhXsTSdUGKkzUUQoWjKnds5GTwuKmHyI&s) |
-| Common		Vehicles		1	50 gp | 1 | 60 gp | [View](https://2e.aonprd.com/Search.aspx?query=Common%09%09Vehicles%09%091%0950%20gp) | ![Common		Vehicles		1	50 gp](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_WwF6Px5Vr95CaG97wxckkpO5DHpdUiJc8V7cjAF1HNvjHgPlVqnbygo3UQ&s) |
+| Backpack | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Backpack) | ![Backpack](IMAGE_PLACEHOLDER) |
+| Fox | 0 | 8 sp | [View](https://2e.aonprd.com/Search.aspx?query=Fox) | ![Fox](IMAGE_PLACEHOLDER) |
+| Fishing Tackle (Professional) | 3 | 20 gp | [View](https://2e.aonprd.com/Search.aspx?query=Fishing%20Tackle) | ![Fishing Tackle (Professional)](IMAGE_PLACEHOLDER) |
+| Brass Ear | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Brass%20Ear) | ![Brass Ear](IMAGE_PLACEHOLDER) |
+| Cat | 0 | 3 cp | [View](https://2e.aonprd.com/Search.aspx?query=Cat) | ![Cat](IMAGE_PLACEHOLDER) |
+| Compass (Lensatic) | 3 | 20 gp | [View](https://2e.aonprd.com/Search.aspx?query=Compass) | ![Compass (Lensatic)](IMAGE_PLACEHOLDER) |
+| Researcher (Level 5) | 0 | 20 gp (per day) | [View](https://2e.aonprd.com/Search.aspx?query=Researcher) | ![Researcher (Level 5)](IMAGE_PLACEHOLDER) |
+| Artisan's Toolkit | 0 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Artisan%27s%20Toolkit) | ![Artisan's Toolkit](IMAGE_PLACEHOLDER) |
+| Repair Toolkit | 0 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Repair%20Toolkit) | ![Repair Toolkit](IMAGE_PLACEHOLDER) |
+| Rations | 0 | 4 sp (1 week) | [View](https://2e.aonprd.com/Search.aspx?query=Rations) | ![Rations](IMAGE_PLACEHOLDER) |
 
 **Services:**
 - Fresh fish: 1-5 sp per pound
