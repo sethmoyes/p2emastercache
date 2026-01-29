@@ -2,39 +2,59 @@
 
 <div align="center">
 
-![Proprietor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSthtB0g6T5UNh7sf6c6bPZab7O0-HuuglgOp5FziXmOlXMLc0gmq_5NTz7Dk&s)
+![Proprietor](IMAGE_PLACEHOLDER)
 
 </div>
 
-*Bookshop specializing in fiction, textbooks, and scrolls*
+*Bookshop and scroll emporium*
 
-**Proprietor:** Morlibint (wizard 5) and his husband Yinyasmera
+**Proprietor:** Morlibint (NG male gnome bookseller 3)
 
-**Description:** The wizard Morlibint specializes in fanciful fiction, but he and his husband also sell textbooks, teaching tools, and scrolls. Morlibint is incredibly well-read and can help the heroes decipher tomes in ancient or unusual languages. He eagerly purchases rare books the heroes come across in their adventures.
+**Specialties:** Books, scrolls, and writing supplies
 
-**Specialties:** Books, scrolls, and knowledge
+## Common Items (25)
 
-### Common Items (5)
-| Item | Level | Price | Details | Image |
-|------|-------|-------|---------|-------|
-| Basic Crafter's Book | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Basic%20Crafter%27s%20Book) | ![Basic Crafter's Book](IMAGE_PLACEHOLDER) |
-| Scroll of Fear (1st) | 1 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Fear) | ![Scroll of Fear (1st)](IMAGE_PLACEHOLDER) |
-| Chalk | 0 | 1 cp (10 pieces) | [View](https://2e.aonprd.com/Search.aspx?query=Chalk) | ![Chalk](IMAGE_PLACEHOLDER) |
-| Beverages (Mug of Ale) | 0 | 1 cp | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) | ![Beverages (Mug of Ale)](IMAGE_PLACEHOLDER) |
-| Cloth (Wool Cloth, 1 square yard) | 0 | 1 cp | [View](https://2e.aonprd.com/Search.aspx?query=Cloth) | ![Cloth (Wool Cloth, 1 square yard)](IMAGE_PLACEHOLDER) |
+| Name | Level | Price | Rarity | Category | Type | Link |
+|------|-------|-------|--------|----------|------|-------|
+| Wand of Noisome Acid (6th-Rank Spell) | 0 | 0 gp | common |  | magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Noisome%20Acid) |
+| Reinforcing Rune (Lesser) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune) |
+| Scene Stealer's Tunic | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Scene%20Stealer%27s%20Tunic) |
+| Musical Instrument (Heavy) | 0 | 16 | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Musical%20Instrument) |
+| Magic Armor (+1 Resilient) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Armor) |
+| Sargassum Phial | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sargassum%20Phial) |
+| Wind at Your Back | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wind%20at%20Your%20Back) |
+| Magnifying Scope (Major) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magnifying%20Scope) |
+| Crown of Witchcraft (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Crown%20of%20Witchcraft) |
+| Lock (Good) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lock) |
+| Beastmaster's Sigil (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beastmaster%27s%20Sigil) |
+| Torrent Spellgun (Moderate) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Torrent%20Spellgun) |
+| Wand of Wearying Dance | 0 | 0 gp | common |  | magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Wearying%20Dance) |
+| Cube of Recall | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cube%20of%20Recall) |
+| Autoload Leathers | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Autoload%20Leathers) |
+| Sparking Spellgun (Moderate) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sparking%20Spellgun) |
+| Staff of Healing | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Healing) |
+| Potion of Shared Life | 0 | 0 gp | common |  | magical | [View](https://2e.aonprd.com/Search.aspx?query=Potion%20of%20Shared%20Life) |
+| Force Tiles | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Force%20Tiles) |
+| Shell of Easy Breathing | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shell%20of%20Easy%20Breathing) |
+| Stabling | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stabling) |
+| Researcher (Level 3; expert) | 0 | 0 gp | common | Researcher | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Researcher) |
+| Flyssa | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Flyssa) |
+| Ranging Shot | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ranging%20Shot) |
+| Map (Political Map) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Map) |
 
-### Uncommon Items (3)
-| Item | Level | Price | Details | Image |
-|------|-------|-------|---------|-------|
-| Scroll of Dispel Magic (2nd) | 3 | 12 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Dispel%20Magic) | ![Scroll of Dispel Magic (2nd)](IMAGE_PLACEHOLDER) |
-| Scroll of Invisibility (2nd) | 3 | 12 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Invisibility) | ![Scroll of Invisibility (2nd)](IMAGE_PLACEHOLDER) |
-| Scroll of Darkvision (2nd) | 3 | 12 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Darkvision) | ![Scroll of Darkvision (2nd)](IMAGE_PLACEHOLDER) |
+## Uncommon Items (4)
 
-**Services:**
-- Spellcasting Services: Price varies by spell level and complexity (GM discretion)
-- Spell Learning/Training: Price negotiable based on spell level (GM discretion)
-- Translation of ancient/unusual languages: 5-20 gp depending on complexity
-- Purchases rare books at 50% of value, resells at 150%
-- Can special order specific books (1d6 days, +50% cost)
-- Research assistance: 1-10 gp depending on topic
+| Name | Level | Price | Rarity | Category | Type | Link |
+|------|-------|-------|--------|----------|------|-------|
+| Covenant Tea | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Covenant%20Tea) |
+| Staff of Sieges | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Sieges) |
+| Queasy Lantern (Lesser) | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Queasy%20Lantern) |
+| Greater Antifungal Salve | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Greater%20Antifungal%20Salve) |
+
+## Services
+
+- Spellcasting Services: Price varies by spell level (GM discretion)
+- Spell Learning/Training: Price negotiable (GM discretion)
+- Book copying and restoration: 1-5 gp per page
+- Research assistance: 5 gp per day
 

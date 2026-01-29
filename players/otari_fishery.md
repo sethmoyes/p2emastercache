@@ -2,37 +2,52 @@
 
 <div align="center">
 
-![Proprietor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy_Do3wRV-eVrAr91BO-JVdjav5INGw7vfr7m2dmCZAYtvlW59Vrv5uYYgnw&s)
+![Proprietor](IMAGE_PLACEHOLDER)
 
 </div>
 
-*Fishery, shipyard, and entertainment venue*
+*Fresh fish and fishing supplies*
 
-**Proprietor:** Mendi Grantham (shipwright and fisher)
+**Proprietor:** Lillia Dusklight (NG female human fisher 2)
 
-**Description:** Fishery and shipyard by day, gathering place for games and entertainment by night. Mendi runs a tight ship and knows everything about boats and the waters around Otari.
+**Specialties:** Fresh fish, fishing gear, and rope
 
-**Specialties:** Fish, boats, and maritime services
+## Common Items (15)
 
-### Common Items (10)
-| Item | Level | Price | Details | Image |
-|------|-------|-------|---------|-------|
-| Backpack | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Backpack) | ![Backpack](IMAGE_PLACEHOLDER) |
-| Fox | 0 | 8 sp | [View](https://2e.aonprd.com/Search.aspx?query=Fox) | ![Fox](IMAGE_PLACEHOLDER) |
-| Fishing Tackle (Professional) | 3 | 20 gp | [View](https://2e.aonprd.com/Search.aspx?query=Fishing%20Tackle) | ![Fishing Tackle (Professional)](IMAGE_PLACEHOLDER) |
-| Brass Ear | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Brass%20Ear) | ![Brass Ear](IMAGE_PLACEHOLDER) |
-| Cat | 0 | 3 cp | [View](https://2e.aonprd.com/Search.aspx?query=Cat) | ![Cat](IMAGE_PLACEHOLDER) |
-| Compass (Lensatic) | 3 | 20 gp | [View](https://2e.aonprd.com/Search.aspx?query=Compass) | ![Compass (Lensatic)](IMAGE_PLACEHOLDER) |
-| Researcher (Level 5) | 0 | 20 gp (per day) | [View](https://2e.aonprd.com/Search.aspx?query=Researcher) | ![Researcher (Level 5)](IMAGE_PLACEHOLDER) |
-| Artisan's Toolkit | 0 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Artisan%27s%20Toolkit) | ![Artisan's Toolkit](IMAGE_PLACEHOLDER) |
-| Repair Toolkit | 0 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Repair%20Toolkit) | ![Repair Toolkit](IMAGE_PLACEHOLDER) |
-| Rations | 0 | 4 sp (1 week) | [View](https://2e.aonprd.com/Search.aspx?query=Rations) | ![Rations](IMAGE_PLACEHOLDER) |
+| Name | Level | Price | Rarity | Category | Type | Link |
+|------|-------|-------|--------|----------|------|-------|
+| Blasting Stone (Major) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blasting%20Stone) |
+| Ghostcracker | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ghostcracker) |
+| Artisan's Toolkit (Sterling) | 0 | 2 | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Artisan%27s%20Toolkit) |
+| Handwraps of Mighty Blows (+2 greater striking) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Handwraps%20of%20Mighty%20Blows) |
+| Chair of Inventions | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chair%20of%20Inventions) |
+| Comprehension Elixir (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comprehension%20Elixir) |
+| Blight Bomb (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blight%20Bomb) |
+| Tank (Traveling) | 0 | 0 gp | common | Animal Caretaking Gear | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tank) |
+| Doll | 0 | L | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Doll) |
+| Agents of Edgewatch | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Agents%20of%20Edgewatch) |
+| Machete | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Machete) |
+| Compound Eyes | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Compound%20Eyes) |
+| Anima Robe | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Anima%20Robe) |
+| Disguise Kit (Elite) | 0 | L | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Disguise%20Kit) |
+| Tales in Timber | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tales%20in%20Timber) |
 
-**Services:**
-- Fresh fish: 1-5 sp per pound
-- Boat rental (rowboat): 5 sp per day
-- Boat rental (sailing boat): 2 gp per day
-- Boat repair: Varies by damage
-- Fishing gear rental: 1 sp per day
-- Maritime charts: 5-20 gp
+## Uncommon Items (7)
+
+| Name | Level | Price | Rarity | Category | Type | Link |
+|------|-------|-------|--------|----------|------|-------|
+| Dragonplate | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dragonplate) |
+| Chalice of Justice | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chalice%20of%20Justice) |
+| Season of Ghosts | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Season%20of%20Ghosts) |
+| Bomb Launcher | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bomb%20Launcher) |
+| Chimera Flail | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chimera%20Flail) |
+| Chameleon Suit | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chameleon%20Suit) |
+| Wovenwood Shield (True) | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wovenwood%20Shield) |
+
+## Services
+
+- Fresh fish: 1 cp - 5 sp depending on type
+- Fishing lessons: 5 sp per hour
+- Boat rental: 5 sp per day
+- Net repair: 1 sp
 

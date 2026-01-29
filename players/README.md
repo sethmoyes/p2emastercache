@@ -2,38 +2,55 @@
 
 This directory contains individual merchant inventory files for the town of Otari, based on the Abomination Vaults Player's Guide.
 
-## Individual Merchant Files
+## Merchant Files
 
-Each merchant has their own file with complete inventory, personality, and special services:
+Each merchant has their own file with complete inventory, proprietor information, and services:
 
-- **wrins_wonders.md** - Wrin Sivinxi's magical items and scrolls shop
-- **otari_market.md** - Keeleno Lathenar's general goods market
+### Magical & Specialty Shops
+- **wrins_wonders.md** - Wrin Sivinxi's magical items, scrolls, wands, potions, and alchemical goods
 - **odd_stories.md** - Morlibint's bookshop and scroll emporium
-- **gallentine_deliveries.md** - Oloria Gallentine's delivery and special order service
+- **dawnflower_library.md** - Vandy Banderdash's temple library with religious texts and scrolls
 
-## Legacy Combined Files
+### General Goods
+- **otari_market.md** - Keeleno Lathenar's general goods market (all types)
+- **blades_for_glades.md** - Jorsk Hinterclaw's weapons and armor shop
 
-These files contain all merchants in one document (older format):
+### Taverns & Inns
+- **crows_casks.md** - Crow's tavern and general store
+- **crooks_nook.md** - Crook's seedy tavern and flophouse
+- **the_rowdy_rockfish.md** - Tamily Tanderveil's lively tavern and inn
 
-- **otari_merchant_inventories.md** - All Otari merchants combined
-- **merchant_inventories.md** - Generic merchants (non-Otari)
+### Specialty Services
+- **gallentine_deliveries.md** - Gallentine's courier and delivery service
+- **otari_fishery.md** - Lillia Dusklight's fresh fish and fishing supplies
 
 ## Generating New Merchants
 
-To generate fresh merchant inventories with separate files:
+To generate fresh merchant inventories:
 
 ```bash
-python bin/generate_otari_merchants.py
-python bin/fix_item_images.py --dir players
+python bin/generate_merchants.py
 ```
 
 This will:
-1. Create individual `.md` files for each merchant
-2. Add proper image URLs from Archives of Nethys
+1. Create individual `.md` files for each merchant with randomized inventories
+2. Include all equipment details (Name, Level, Price, Rarity, Category, Type)
+3. Add direct search links to Archives of Nethys for each item
+4. Include proprietor information and available services
+5. Randomize common items (15-50 depending on shop type)
+6. Randomize uncommon items (1-7 per shop)
+7. 10% chance for rare items (level 4)
 
-## Image URLs
+## Merchant Categories
 
-All items include image links in `.webp` format from Archives of Nethys:
-- Weapons: `https://2e.aonprd.com/Images/Weapons/[Item_Name].webp`
-- Armor: `https://2e.aonprd.com/Images/Armor/[Item_Name].webp`
-- Treasure/Items: `https://2e.aonprd.com/Images/Treasure/[Item_Name].webp`
+Merchants are categorized by the types of items they sell:
+
+- **All Types**: Otari Market
+- **Magical/Alchemical/Adventuring**: Wrin's Wonders, Odd Stories, Dawnflower Library
+- **Weapons/Armor Only**: Blades for Glades
+- **Adventuring Gear Only**: Taverns (Crow's Casks, Crook's Nook, Rowdy Rockfish), Otari Fishery
+- **Services Only**: Gallentine Deliveries
+
+## Item Links
+
+All items include direct search links to Archives of Nethys (2e.aonprd.com) for easy reference and image lookup.

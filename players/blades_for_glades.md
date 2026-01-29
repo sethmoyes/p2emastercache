@@ -2,43 +2,60 @@
 
 <div align="center">
 
-![Proprietor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkduka56oFIyRr9CVaqavT6parAxFNFkdB_RrGjwwVUwYlWAs_seXPk2HD6w&s)
+![Proprietor](IMAGE_PLACEHOLDER)
 
 </div>
 
-*Otari's primary smithy*
+*Weaponsmith and armorer*
 
-**Proprietor:** Carman Rajani (expert blacksmith)
+**Proprietor:** Jorsk Hinterclaw (LN male dwarf weaponsmith 4)
 
-**Description:** Otari's primary smithy sells armor and weapons in addition to saws and axes for the lumber industry. The forge is always hot and Carman is always busy, but she takes pride in quality work.
+**Specialties:** Weapons and armor of all types
 
-**Specialties:** Weapons, armor, and tools
+## Common Items (35)
 
-### Common Items (19)
-| Item | Level | Price | Details | Image |
-|------|-------|-------|---------|-------|
-| Spray Pellet | 0 | 1 sp (price for 10) | [View](https://2e.aonprd.com/Search.aspx?query=Spray%20Pellet) | ![Spray Pellet](IMAGE_PLACEHOLDER) |
-| Wooden Breastplate | 0 | 6 gp | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Breastplate) | ![Wooden Breastplate](IMAGE_PLACEHOLDER) |
-| Half Plate | 1 | 18 gp | [View](https://2e.aonprd.com/Search.aspx?query=Half%20Plate) | ![Half Plate](IMAGE_PLACEHOLDER) |
-| Hammer | 0 | 1 sp | [View](https://2e.aonprd.com/Search.aspx?query=Hammer) | ![Hammer](IMAGE_PLACEHOLDER) |
-| Steel Shield | 0 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Steel%20Shield) | ![Steel Shield](IMAGE_PLACEHOLDER) |
-| Crossbow | 0 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Crossbow) | ![Crossbow](IMAGE_PLACEHOLDER) |
-| 8-Round Magazine | 0 | 2 sp | [View](https://2e.aonprd.com/Search.aspx?query=8-Round%20Magazine) | ![8-Round Magazine](IMAGE_PLACEHOLDER) |
-| Lattice Armor | 0 | 6 gp | [View](https://2e.aonprd.com/Search.aspx?query=Lattice%20Armor) | ![Lattice Armor](IMAGE_PLACEHOLDER) |
-| Tower Shield | 0 | 10 gp | [View](https://2e.aonprd.com/Search.aspx?query=Tower%20Shield) | ![Tower Shield](IMAGE_PLACEHOLDER) |
-| Chain | 0 | 4 gp (10 ft.) | [View](https://2e.aonprd.com/Search.aspx?query=Chain) | ![Chain](IMAGE_PLACEHOLDER) |
-| Hand Crossbow | 0 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Hand%20Crossbow) | ![Hand Crossbow](IMAGE_PLACEHOLDER) |
-| Blowgun Darts | 0 | 5 cp (price for 10) | [View](https://2e.aonprd.com/Search.aspx?query=Blowgun%20Darts) | ![Blowgun Darts](IMAGE_PLACEHOLDER) |
-| Scale Mail | 0 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scale%20Mail) | ![Scale Mail](IMAGE_PLACEHOLDER) |
-| Wheelbarrow | 0 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Wheelbarrow) | ![Wheelbarrow](IMAGE_PLACEHOLDER) |
-| Studded Leather Armor | 0 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Studded%20Leather%20Armor) | ![Studded Leather Armor](IMAGE_PLACEHOLDER) |
-| Arrows | 0 | 1 sp (price for 10) | [View](https://2e.aonprd.com/Search.aspx?query=Arrows) | ![Arrows](IMAGE_PLACEHOLDER) |
-| Cold Iron Buckler (Low-Grade) | 2 | 30 gp | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Buckler) | ![Cold Iron Buckler (Low-Grade)](IMAGE_PLACEHOLDER) |
-| Bolts | 0 | 1 sp (price for 10) | [View](https://2e.aonprd.com/Search.aspx?query=Bolts) | ![Bolts](IMAGE_PLACEHOLDER) |
-| Hide Armor | 0 | 2 gp | [View](https://2e.aonprd.com/Search.aspx?query=Hide%20Armor) | ![Hide Armor](IMAGE_PLACEHOLDER) |
+| Name | Level | Price | Rarity | Category | Type | Link |
+|------|-------|-------|--------|----------|------|-------|
+| Lattice Armor | 0 | 2 | common | Base Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Lattice%20Armor) |
+| Cold Iron Armor (High-Grade) | 0 | 0 gp | common | Precious Material Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
+| Hand Crossbow | 0 | L | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=Hand%20Crossbow) |
+| Half Plate | 0 | 3 | common | Base Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Half%20Plate) |
+| Breastplate | 0 | 2 | common | Base Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Breastplate) |
+| Arrows | 0 | L | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=Arrows) |
+| Wooden Shield | 0 | 1 | common | Base Shields | armor | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Shield) |
+| Splint Mail | 0 | 3 | common | Base Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Splint%20Mail) |
+| Leather Armor | 0 | 1 | common | Base Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Leather%20Armor) |
+| Bolts (Phalanx Piercer) | 0 | L | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=Bolts) |
+| Cold Iron Armor (Standard-Grade) | 0 | 0 gp | common | Precious Material Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
+| Blowgun Darts | 0 | L | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=Blowgun%20Darts) |
+| Spray Pellet | 0 | L | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=Spray%20Pellet) |
+| Tower Shield | 0 | 4 | common | Base Shields | armor | [View](https://2e.aonprd.com/Search.aspx?query=Tower%20Shield) |
+| Cold Iron Buckler (Low-Grade) | 0 | L | common | Precious Material Shields | armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Buckler) |
+| Alchemical Bomb | 0 | L | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=Alchemical%20Bomb) |
+| Shield Bash | 0 | 0 gp | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=Shield%20Bash) |
+| Unarmored | 0 | 0 gp | common | Base Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Unarmored) |
+| Wooden Taws | 0 | L | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Taws) |
+| Cold Iron Armor (Low-Grade) | 0 | 0 gp | common | Precious Material Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
+| Bolts | 0 | L | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=Bolts) |
+| Scale Mail | 0 | 2 | common | Base Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Scale%20Mail) |
+| Silver Armor (High-Grade) | 0 | 0 gp | common | Precious Material Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Silver%20Armor) |
+| Heavy Crossbow | 0 | 2 | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=Heavy%20Crossbow) |
+| Sling Bullets | 0 | L | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=Sling%20Bullets) |
+| Steel Shield | 0 | 1 | common | Base Shields | armor | [View](https://2e.aonprd.com/Search.aspx?query=Steel%20Shield) |
+| Crossbow | 0 | 1 | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=Crossbow) |
+| Buckler | 0 | L | common | Base Shields | armor | [View](https://2e.aonprd.com/Search.aspx?query=Buckler) |
+| Silver Armor (Standard-Grade) | 0 | 0 gp | common | Precious Material Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Silver%20Armor) |
+| Heavy Rondache | 0 | 1 | common | Base Shields | armor | [View](https://2e.aonprd.com/Search.aspx?query=Heavy%20Rondache) |
+| Silver Armor (Low-Grade) | 0 | 0 gp | common | Precious Material Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Silver%20Armor) |
+| Studded Leather Armor | 0 | 1 | common | Base Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Studded%20Leather%20Armor) |
+| Hide Armor | 0 | 2 | common | Base Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Hide%20Armor) |
+| 8-Round Magazine | 0 | L | common | Base Weapons | weapon | [View](https://2e.aonprd.com/Search.aspx?query=) |
+| Wooden Breastplate | 0 | 2 | common | Base Armor | armor | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Breastplate) |
 
-**Services:**
-- Weapon/Armor repair: 10% of item cost
-- Custom orders: +25% cost, 1d6 days
-- Sharpening: 5 sp per weapon
+## Services
+
+- Weapon sharpening: 5 sp
+- Armor repair: 1-5 gp depending on damage
+- Custom weapon crafting: Price negotiable (GM discretion)
+- Weapon engraving: 1 gp
 

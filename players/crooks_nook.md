@@ -2,43 +2,55 @@
 
 <div align="center">
 
-![Proprietor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5UM1pd8wRF31VwI5UM_Awp9bzrRA3srk1h15-GNmUFUHJ07AHaukYIP_hL58&s)
+![Proprietor](IMAGE_PLACEHOLDER)
 
 </div>
 
-*Sailors' tavern and bridge*
+*Seedy tavern and flophouse*
 
-**Proprietor:** Tamily Tanderveil (retired sailor)
+**Proprietor:** Crook (NE male half-orc tavernkeeper 3)
 
-**Description:** A sailors' tavern built as a bridge across the Osprey River. Popular with sailors, fishermen, and anyone with a taste for adventure stories. The food is hearty and the drinks are strong.
+**Specialties:** Cheap lodging and questionable goods
 
-**Specialties:** Food, drink, and sailor's tales
+## Common Items (20)
 
-### Common Items (15)
-| Item | Level | Price | Details | Image |
-|------|-------|-------|---------|-------|
-| Bandalore | 0 | 5 cp | [View](https://2e.aonprd.com/Search.aspx?query=Bandalore) | ![Bandalore](IMAGE_PLACEHOLDER) |
-| Stone Object (Low-Grade) | 0 | 1 sp (per Bulk) | [View](https://2e.aonprd.com/Search.aspx?query=Stone%20Object) | ![Stone Object (Low-Grade)](IMAGE_PLACEHOLDER) |
-| Fixer (Basic Informant) | 0 | 5 sp (per hour) | [View](https://2e.aonprd.com/Search.aspx?query=Fixer) | ![Fixer (Basic Informant)](IMAGE_PLACEHOLDER) |
-| Cloth (Linen) | 0 | 6 sp | [View](https://2e.aonprd.com/Search.aspx?query=Cloth) | ![Cloth (Linen)](IMAGE_PLACEHOLDER) |
-| Loaded Dice | 1 | 5 gp | [View](https://2e.aonprd.com/Search.aspx?query=Loaded%20Dice) | ![Loaded Dice](IMAGE_PLACEHOLDER) |
-| Researcher (Level 2) | 0 | 6 gp (per day) | [View](https://2e.aonprd.com/Search.aspx?query=Researcher) | ![Researcher (Level 2)](IMAGE_PLACEHOLDER) |
-| Common		Vehicles		1	50 gp | 1 | 60 gp | [View](https://2e.aonprd.com/Search.aspx?query=Common%09%09Vehicles%09%091%0950%20gp) | ![Common		Vehicles		1	50 gp](IMAGE_PLACEHOLDER) |
-| Weapons	Base Weapons	0	3 gp	1 | 0 | 3 gp, 5 sp (+ per pound) | [View](https://2e.aonprd.com/Search.aspx?query=Weapons%09Base%20Weapons%090%093%20gp%091) | ![Weapons	Base Weapons	0	3 gp	1](IMAGE_PLACEHOLDER) |
-| Dyes and Ink | 0 | 1 sp (per vial) | [View](https://2e.aonprd.com/Search.aspx?query=Dyes%20and%20Ink) | ![Dyes and Ink](IMAGE_PLACEHOLDER) |
-| Map (Weather Map) | 0 | 50 gp | [View](https://2e.aonprd.com/Search.aspx?query=Map) | ![Map (Weather Map)](IMAGE_PLACEHOLDER) |
-| Spider | 0 | 2 sp | [View](https://2e.aonprd.com/Search.aspx?query=Spider) | ![Spider](IMAGE_PLACEHOLDER) |
-| Disguise Kit (Elite Cosmetics) | 3 | 5 sp | [View](https://2e.aonprd.com/Search.aspx?query=Disguise%20Kit) | ![Disguise Kit (Elite Cosmetics)](IMAGE_PLACEHOLDER) |
-| Fetters (Simple) | 2 | 5 gp | [View](https://2e.aonprd.com/Search.aspx?query=Fetters) | ![Fetters (Simple)](IMAGE_PLACEHOLDER) |
-| Squirrel | 0 | 7 sp | [View](https://2e.aonprd.com/Search.aspx?query=Squirrel) | ![Squirrel](IMAGE_PLACEHOLDER) |
-| Beverages (Keg of Ale) | 0 | 2 sp | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) | ![Beverages (Keg of Ale)](IMAGE_PLACEHOLDER) |
+| Name | Level | Price | Rarity | Category | Type | Link |
+|------|-------|-------|--------|----------|------|-------|
+| Eternal Eruption of Droskar's Crag | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eternal%20Eruption%20of%20Droskar%27s%20Crag) |
+| Crooner's Cravat | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Crooner%27s%20Cravat) |
+| Warhammer | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warhammer) |
+| Meal (Poor) | 0 | L | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Meal) |
+| Mail of Luck | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mail%20of%20Luck) |
+| Researcher (Level 4) | 0 | 0 gp | common | Researcher | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Researcher) |
+| Cage | 0 | 0 gp | common | Animal Caretaking Gear | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cage) |
+| Surprise Doll (Exquisite) | 0 | L | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Surprise%20Doll) |
+| Sparkwarden | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sparkwarden) |
+| Olfactory Obfuscator | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Olfactory%20Obfuscator) |
+| Pilferer's Gloves | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Pilferer%27s%20Gloves) |
+| Walking Cauldron | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Walking%20Cauldron) |
+| Clubhead Poison | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clubhead%20Poison) |
+| Artevil Suspension | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Artevil%20Suspension) |
+| Healer's Toolkit | 0 | 1 | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
+| White Cleome's Eye | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=White%20Cleome%27s%20Eye) |
+| Discord Fulu | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Discord%20Fulu) |
+| Agents of Edgewatch | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Agents%20of%20Edgewatch) |
+| Sword Cane | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sword%20Cane) |
+| Bewitching Bloom (Cherry Blossom) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bewitching%20Bloom) |
 
-**Services:**
-- Grog (mug): 2 cp
-- Rum (shot): 5 cp
-- Sailor's stew: 5 cp
-- Fish and chips: 1 sp
-- Lodging (hammock): 5 cp per night
-- Lodging (bunk): 2 sp per night
-- Sailor rumors and information: Free with drinks
+## Uncommon Items (5)
+
+| Name | Level | Price | Rarity | Category | Type | Link |
+|------|-------|-------|--------|----------|------|-------|
+| Harmona Gun | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Harmona%20Gun) |
+| Greater Feral Linguist | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Greater%20Feral%20Linguist) |
+| Material Essence Disruptor (Greater) | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Material%20Essence%20Disruptor) |
+| Ablative Armor Plating (Moderate) | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ablative%20Armor%20Plating) |
+| Blade Launcher | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blade%20Launcher) |
+
+## Services
+
+- Meals: 1 cp (poor quality)
+- Lodging: 3 cp (floor space) to 3 sp (shared room)
+- Ale: 1 cp (watered down)
+- Black market contacts: 5-50 gp (GM discretion)
 

@@ -2,41 +2,56 @@
 
 <div align="center">
 
-![Proprietor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4LGoBjIicSXI6V6xsXPin8zZFJBDIgWTLxQ0l1X7kE7R7A5VWWA9kRNStSw&s)
+![Proprietor](IMAGE_PLACEHOLDER)
 
 </div>
 
-*Library and temple to Sarenrae*
+*Temple library and scriptorium*
 
-**Proprietor:** Vandy Banderdash (cleric of Sarenrae)
+**Proprietor:** Vandy Banderdash (LG female halfling cleric of Sarenrae 5)
 
-**Description:** A large library and temple to Sarenrae, with shrines to many other deities. Vandy is welcoming to all seekers of knowledge and offers healing services to those in need.
+**Specialties:** Religious texts, scrolls, and holy items
 
-**Specialties:** Religious services, healing, and knowledge
+## Common Items (20)
 
-### Common Items (8)
-| Item | Level | Price | Details | Image |
-|------|-------|-------|---------|-------|
-| Wand of Magic Missile (1st, 1 charge) | 1 | 6 gp | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Magic%20Missile) | ![Wand of Magic Missile (1st, 1 charge)](IMAGE_PLACEHOLDER) |
-| Scroll of Mage Armor (1st) | 1 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Mage%20Armor) | ![Scroll of Mage Armor (1st)](IMAGE_PLACEHOLDER) |
-| Cold Iron Weapon Blanch | 2 | 6 gp | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Weapon%20Blanch) | ![Cold Iron Weapon Blanch](IMAGE_PLACEHOLDER) |
-| Everburning Torch | 1 | 15 gp | [View](https://2e.aonprd.com/Search.aspx?query=Everburning%20Torch) | ![Everburning Torch](IMAGE_PLACEHOLDER) |
-| Formula Book (Blank) | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Formula%20Book) | ![Formula Book (Blank)](IMAGE_PLACEHOLDER) |
-| Mirror | 0 | 1 gp | [View](https://2e.aonprd.com/Search.aspx?query=Mirror) | ![Mirror](IMAGE_PLACEHOLDER) |
-| Scroll of Magic Missile (1st) | 1 | 4 gp | [View](https://2e.aonprd.com/Search.aspx?query=Scroll%20of%20Magic%20Missile) | ![Scroll of Magic Missile (1st)](IMAGE_PLACEHOLDER) |
-| Holy Water | 1 | 3 gp | [View](https://2e.aonprd.com/Search.aspx?query=Holy%20Water) | ![Holy Water](IMAGE_PLACEHOLDER) |
+| Name | Level | Price | Rarity | Category | Type | Link |
+|------|-------|-------|--------|----------|------|-------|
+| Animal Staff | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Animal%20Staff) |
+| Heartening Missive (Turtle) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Heartening%20Missive) |
+| Frogskin Tincture | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Frogskin%20Tincture) |
+| Poisonous Dagger | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Poisonous%20Dagger) |
+| Wand of Widening (6th-rank Spell) | 0 | 0 gp | common |  | magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Widening) |
+| Lantern (Hooded) | 0 | L | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lantern) |
+| Weapon Shot (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Weapon%20Shot) |
+| Armbands of Athleticism (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Armbands%20of%20Athleticism) |
+| Rooting (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rooting) |
+| Ghost Courier Fulu | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ghost%20Courier%20Fulu) |
+| Wand Cane | 0 | 0 gp | common |  | magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20Cane) |
+| Flaming Star (Major) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Flaming%20Star) |
+| Blazons of Shared Power | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blazons%20of%20Shared%20Power) |
+| Clawed Bracers | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clawed%20Bracers) |
+| Torrent Spellgun (Moderate) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Torrent%20Spellgun) |
+| Moonlit Spellgun (Major) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moonlit%20Spellgun) |
+| Atlatl | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Atlatl) |
+| Staff-Storing Shield | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff-Storing%20Shield) |
+| Agents of Edgewatch | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Agents%20of%20Edgewatch) |
+| Ring of Swimming | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ring%20of%20Swimming) |
 
-### Uncommon Items (2)
-| Item | Level | Price | Details | Image |
-|------|-------|-------|---------|-------|
-| Wand of Heal (1st, 3 charges) | 3 | 18 gp | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Heal) | ![Wand of Heal (1st, 3 charges)](IMAGE_PLACEHOLDER) |
-| Potion of Darkvision | 2 | 7 gp | [View](https://2e.aonprd.com/Search.aspx?query=Potion%20of%20Darkvision) | ![Potion of Darkvision](IMAGE_PLACEHOLDER) |
+## Uncommon Items (5)
 
-**Services:**
-- Healing (1st level): 4 gp
-- Healing (2nd level): 12 gp
-- Remove Disease: 12 gp
-- Restoration: 12 gp
-- Research assistance: 1-10 gp depending on topic
-- Religious ceremonies: Donation based
+| Name | Level | Price | Rarity | Category | Type | Link |
+|------|-------|-------|--------|----------|------|-------|
+| Dragon's Blood Pudding (Lesser) | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dragon%27s%20Blood%20Pudding) |
+| Staff of Final Rest | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Final%20Rest) |
+| Greater Flowing Water | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Greater%20Flowing%20Water) |
+| Hodag Leather | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hodag%20Leather) |
+| Sai | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sai) |
+
+## Services
+
+- Spellcasting Services: Price varies by spell level (GM discretion)
+- Healing: 1-20 gp depending on severity
+- Remove curse/disease: 10-50 gp (GM discretion)
+- Research assistance: Free for worshippers, 2 gp per day for others
+- Blessings: Donation-based
 
