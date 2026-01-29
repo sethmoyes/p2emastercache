@@ -12,21 +12,28 @@
 
 **Specialties:** Fresh fish, fishing gear, and rope
 
-## Common Items (3)
+## Common Items (11)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Choker of Elocution (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Choker%20of%20Elocution) |
-| 🖼️ | Giant Wasp Venom | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Giant%20Wasp%20Venom) |
-| 🖼️ | Trollhound Pick | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Trollhound%20Pick) |
+| 🖼️ | Sleuth's Pipe | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sleuth%27s%20Pipe) |
+| 🖼️ | Watch of Lost Ages | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Watch%20of%20Lost%20Ages) |
+| ![Fan of the Four Winds](https://2e.aonprd.com/Images/Treasure/Fan_Of_The_Four_Winds.webp) | Fan of the Four Winds | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fan%20of%20the%20Four%20Winds) |
+| 🖼️ | Memory Guitar | 4 | 100 gp | Common | Held Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Memory%20Guitar) |
+| ![Inventor's Chair](https://2e.aonprd.com/Images/Treasure/Inventors_Chair.webp) | Inventor's Chair | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Chair) |
+| 🖼️ | Skysunder | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Skysunder) |
+| ![Fortune's Favor](https://2e.aonprd.com/Images/Treasure/Fortunes_Favor.webp) | Fortune's Favor | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fortune%27s%20Favor) |
+| ![Phistophilus Fiddle](https://2e.aonprd.com/Images/Treasure/Phistophilus_Fiddle.webp) | Phistophilus Fiddle | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Phistophilus%20Fiddle) |
+| 🖼️ | Hongrui's Gratitude | 3 | 60 gp | Common | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hongrui%27s%20Gratitude) |
+| 🖼️ | Nyctessa's Staff | 4 | 90 gp | Common | Staves | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nyctessa%27s%20Staff) |
+| 🖼️ | Thresholds of Truth | 0 | 5 sp | Common | Other | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thresholds%20of%20Truth) |
 
-## Uncommon Items (3)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Crystal Ball (Obsidian)](https://2e.aonprd.com/Images/Treasure/Crystal_Ball.webp) | Crystal Ball (Obsidian) | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Crystal%20Ball) |
-| 🖼️ | Black Scorpion Stingmace | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Black%20Scorpion%20Stingmace) |
-| 🖼️ | Season of Ghosts | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Season%20of%20Ghosts) |
+| 🖼️ | Glider | 0 | 15 gp | Uncommon | Vehicles | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glider) |
+| 🖼️ | Bullhook | 3 | 55 gp | Uncommon | Held Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bullhook) |
 
 ## Services
 

@@ -12,28 +12,31 @@
 
 **Specialties:** Cheap lodging and questionable goods
 
-## Common Items (11)
+## Common Items (7)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Staff of Healing (Greater)](https://2e.aonprd.com/Images/Treasure/Staff_Of_Healing.webp) | Staff of Healing (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Healing) |
-| 🖼️ | Wheelbarrow | 0 | 5 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheelbarrow) |
-| 🖼️ | Longspear | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Longspear) |
-| 🖼️ | Veiled Figurehead (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Veiled%20Figurehead) |
-| 🖼️ | Mask of Mercy | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mask%20of%20Mercy) |
-| 🖼️ | Jaws of the Grogrisant | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Jaws%20of%20the%20Grogrisant) |
-| 🖼️ | Dragonbone Arrowhead | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dragonbone%20Arrowhead) |
-| 🖼️ | Admonishing Band | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Admonishing%20Band) |
-| 🖼️ | Shining Symbol (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shining%20Symbol) |
-| 🖼️ | Splinter Spear (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Splinter%20Spear) |
-| 🖼️ | Ouroboros Flail (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ouroboros%20Flail) |
+| ![Inventor's Chair](https://2e.aonprd.com/Images/Treasure/Inventors_Chair.webp) | Inventor's Chair | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Chair) |
+| 🖼️ | Thresholds of Truth | 0 | 5 sp | Common | Other | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thresholds%20of%20Truth) |
+| 🖼️ | Nyctessa's Staff | 4 | 90 gp | Common | Staves | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nyctessa%27s%20Staff) |
+| 🖼️ | Sleuth's Pipe | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sleuth%27s%20Pipe) |
+| 🖼️ | Skysunder | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Skysunder) |
+| ![Phistophilus Fiddle](https://2e.aonprd.com/Images/Treasure/Phistophilus_Fiddle.webp) | Phistophilus Fiddle | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Phistophilus%20Fiddle) |
+| 🖼️ | Hongrui's Gratitude | 3 | 60 gp | Common | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hongrui%27s%20Gratitude) |
 
-## Uncommon Items (2)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Horsechopper | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Horsechopper) |
-| 🖼️ | Lesser Flowing Water | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lesser%20Flowing%20Water) |
+| 🖼️ | Slippery Ribbon | 1 | 12 gp | Uncommon | Consumables | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Slippery%20Ribbon) |
+| 🖼️ | Steadyfoot Tassel | 2 | 30 gp | Uncommon | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Steadyfoot%20Tassel) |
+| 🖼️ | Fingerprinting Kit | 3 | 30 gp | Uncommon | Adventuring Gear | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fingerprinting%20Kit) |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Warpglass Chunk | 0 | 800 gp | Rare | Materials | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warpglass%20Chunk) |
 
 ## Services
 

@@ -16,31 +16,25 @@
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Fist | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fist) |
-| 🖼️ | Ouroboros Flail (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ouroboros%20Flail) |
-| 🖼️ | Tailor's Boll | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tailor%27s%20Boll) |
-| 🖼️ | Sky King's Tomb | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sky%20King%27s%20Tomb) |
-| 🖼️ | Ebon Fulcrum Lens | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ebon%20Fulcrum%20Lens) |
-| ![Mortalis Coin](https://2e.aonprd.com/Images/Treasure/Mortalis_Coin.webp) | Mortalis Coin | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mortalis%20Coin) |
-| 🖼️ | Eye Slash (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eye%20Slash) |
-| 🖼️ | Crown of the Kobold King | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Crown%20of%20the%20Kobold%20King) |
-| 🖼️ | Boozy Bottle | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Boozy%20Bottle) |
-| 🖼️ | Lance | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lance) |
-| 🖼️ | Retrieval Prism | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Retrieval%20Prism) |
+| 🖼️ | Memory Guitar | 4 | 100 gp | Common | Held Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Memory%20Guitar) |
+| ![Phistophilus Fiddle](https://2e.aonprd.com/Images/Treasure/Phistophilus_Fiddle.webp) | Phistophilus Fiddle | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Phistophilus%20Fiddle) |
+| 🖼️ | Hongrui's Gratitude | 3 | 60 gp | Common | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hongrui%27s%20Gratitude) |
+| 🖼️ | Watch of Lost Ages | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Watch%20of%20Lost%20Ages) |
+| 🖼️ | Sleuth's Pipe | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sleuth%27s%20Pipe) |
+| 🖼️ | Thresholds of Truth | 0 | 5 sp | Common | Other | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thresholds%20of%20Truth) |
+| 🖼️ | Nyctessa's Staff | 4 | 90 gp | Common | Staves | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nyctessa%27s%20Staff) |
+| 🖼️ | Skysunder | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Skysunder) |
+| ![Fortune's Favor](https://2e.aonprd.com/Images/Treasure/Fortunes_Favor.webp) | Fortune's Favor | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fortune%27s%20Favor) |
+| ![Fan of the Four Winds](https://2e.aonprd.com/Images/Treasure/Fan_Of_The_Four_Winds.webp) | Fan of the Four Winds | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fan%20of%20the%20Four%20Winds) |
+| ![Inventor's Chair](https://2e.aonprd.com/Images/Treasure/Inventors_Chair.webp) | Inventor's Chair | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Chair) |
 
 ## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Torrent Snare | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Torrent%20Snare) |
-| 🖼️ | Shuriken | 0 | 1 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shuriken) |
-| 🖼️ | Scarab Cuirass | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Scarab%20Cuirass) |
-
-## Rare Items (1)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Nosoi Charm (Greater) | 0 | 0 gp | Rare | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nosoi%20Charm) |
+| 🖼️ | Handcuffs (Average) | 3 | 30 gp | Uncommon | Adventuring Gear | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Handcuffs) |
+| 🖼️ | Fingerprinting Kit | 3 | 30 gp | Uncommon | Adventuring Gear | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fingerprinting%20Kit) |
+| 🖼️ | Psychopomp Mask | 1 | 5 gp | Uncommon | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Psychopomp%20Mask) |
 
 ## Services
 

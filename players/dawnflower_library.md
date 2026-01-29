@@ -12,24 +12,29 @@
 
 **Specialties:** Religious texts, scrolls, and holy items
 
-## Common Items (8)
+## Common Items (11)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Smoked Goggles | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Smoked%20Goggles) |
-| 🖼️ | Bravery Baldric (Healthful, Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bravery%20Baldric) |
-| 🖼️ | Snare Kit (Specialist) | 0 | 2 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Snare%20Kit) |
-| 🖼️ | Praying Mantis | 0 | 0 gp | Common | Animals | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Praying%20Mantis) |
-| 🖼️ | Wyrm's Wingspan | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wyrm%27s%20Wingspan) |
-| 🖼️ | Detonating Gears Snare | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Detonating%20Gears%20Snare) |
-| 🖼️ | Map (Pictorial Map) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Map) |
-| 🖼️ | Staff of the Desert Winds | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Desert%20Winds) |
+| 🖼️ | Nyctessa's Staff | 4 | 90 gp | Common | Staves | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nyctessa%27s%20Staff) |
+| 🖼️ | Thresholds of Truth | 0 | 5 sp | Common | Other | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thresholds%20of%20Truth) |
+| ![Inventor's Chair](https://2e.aonprd.com/Images/Treasure/Inventors_Chair.webp) | Inventor's Chair | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Chair) |
+| 🖼️ | Sleuth's Pipe | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sleuth%27s%20Pipe) |
+| ![Fortune's Favor](https://2e.aonprd.com/Images/Treasure/Fortunes_Favor.webp) | Fortune's Favor | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fortune%27s%20Favor) |
+| 🖼️ | Skysunder | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Skysunder) |
+| 🖼️ | Watch of Lost Ages | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Watch%20of%20Lost%20Ages) |
+| ![Fan of the Four Winds](https://2e.aonprd.com/Images/Treasure/Fan_Of_The_Four_Winds.webp) | Fan of the Four Winds | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fan%20of%20the%20Four%20Winds) |
+| ![Phistophilus Fiddle](https://2e.aonprd.com/Images/Treasure/Phistophilus_Fiddle.webp) | Phistophilus Fiddle | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Phistophilus%20Fiddle) |
+| 🖼️ | Hongrui's Gratitude | 3 | 60 gp | Common | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hongrui%27s%20Gratitude) |
+| 🖼️ | Memory Guitar | 4 | 100 gp | Common | Held Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Memory%20Guitar) |
 
-## Uncommon Items (1)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Bladed Diabolo | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bladed%20Diabolo) |
+| 🖼️ | Spirit Trap | 2 | 5 gp | Uncommon | Snares | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spirit%20Trap) |
+| 🖼️ | Bullhook | 3 | 55 gp | Uncommon | Held Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bullhook) |
+| 🖼️ | Psychopomp Mask | 1 | 5 gp | Uncommon | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Psychopomp%20Mask) |
 
 ## Services
 

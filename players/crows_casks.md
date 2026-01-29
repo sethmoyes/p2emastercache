@@ -12,37 +12,27 @@
 
 **Specialties:** Food, drink, and basic adventuring supplies
 
-## Common Items (13)
+## Common Items (11)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Pocket Stage | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Pocket%20Stage) |
-| 🖼️ | Staff of the Dead (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Dead) |
-| 🖼️ | Leaper's Elixir (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Leaper%27s%20Elixir) |
-| 🖼️ | Adaptive Cogwheel | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Adaptive%20Cogwheel) |
-| ![Wemmuth Trinket](https://2e.aonprd.com/Images/Treasure/Wemmuth_Trinket.webp) | Wemmuth Trinket | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wemmuth%20Trinket) |
-| 🖼️ | Mercurial Mantle | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mercurial%20Mantle) |
-| 🖼️ | Alchemist's Lab (Expanded) | 0 | 6 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Alchemist%27s%20Lab) |
-| 🖼️ | Indomitable Keepsake | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Indomitable%20Keepsake) |
-| 🖼️ | Dinosaur | 0 | 0 gp | Common | Animals | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dinosaur) |
-| 🖼️ | Beastmaster's Sigil | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beastmaster%27s%20Sigil) |
-| 🖼️ | Obsidian Goggles | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Obsidian%20Goggles) |
-| 🖼️ | Magnetic Suit | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magnetic%20Suit) |
-| 🖼️ | Fungal Walk Musk | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fungal%20Walk%20Musk) |
+| 🖼️ | Sleuth's Pipe | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sleuth%27s%20Pipe) |
+| 🖼️ | Skysunder | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Skysunder) |
+| ![Fortune's Favor](https://2e.aonprd.com/Images/Treasure/Fortunes_Favor.webp) | Fortune's Favor | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fortune%27s%20Favor) |
+| ![Fan of the Four Winds](https://2e.aonprd.com/Images/Treasure/Fan_Of_The_Four_Winds.webp) | Fan of the Four Winds | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fan%20of%20the%20Four%20Winds) |
+| 🖼️ | Nyctessa's Staff | 4 | 90 gp | Common | Staves | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nyctessa%27s%20Staff) |
+| 🖼️ | Memory Guitar | 4 | 100 gp | Common | Held Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Memory%20Guitar) |
+| ![Inventor's Chair](https://2e.aonprd.com/Images/Treasure/Inventors_Chair.webp) | Inventor's Chair | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Chair) |
+| ![Phistophilus Fiddle](https://2e.aonprd.com/Images/Treasure/Phistophilus_Fiddle.webp) | Phistophilus Fiddle | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Phistophilus%20Fiddle) |
+| 🖼️ | Watch of Lost Ages | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Watch%20of%20Lost%20Ages) |
+| 🖼️ | Thresholds of Truth | 0 | 5 sp | Common | Other | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thresholds%20of%20Truth) |
+| 🖼️ | Hongrui's Gratitude | 3 | 60 gp | Common | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hongrui%27s%20Gratitude) |
 
-## Uncommon Items (3)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Thorn Whip | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thorn%20Whip) |
-| 🖼️ | Quick Runner's Shirt (Greater) | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Quick%20Runner%27s%20Shirt) |
-| 🖼️ | Scorpion Whip | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Scorpion%20Whip) |
-
-## Rare Items (1)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Nosoi Charm (Greater) | 0 | 0 gp | Rare | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nosoi%20Charm) |
+| 🖼️ | Slippery Ribbon | 1 | 12 gp | Uncommon | Consumables | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Slippery%20Ribbon) |
 
 ## Services
 

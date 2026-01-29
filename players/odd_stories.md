@@ -12,31 +12,29 @@
 
 **Specialties:** Books, scrolls, and writing supplies
 
-## Common Items (13)
+## Common Items (6)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Horn of Exorcism | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Horn%20of%20Exorcism) |
-| 🖼️ | Conducting | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Conducting) |
-| 🖼️ | Feed (Unique) | 0 | 0 gp | Common | Animal Caretaking Gear | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Feed) |
-| 🖼️ | Thieves' Toolkit (Infiltrator) | 0 | 5 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thieves%27%20Toolkit) |
-| 🖼️ | Troubadour's Cap | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Troubadour%27s%20Cap) |
-| 🖼️ | Sparking Spellgun (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sparking%20Spellgun) |
-| 🖼️ | Man-Feller | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Man-Feller) |
-| 🖼️ | Horns of Naraga | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Horns%20of%20Naraga) |
-| 🖼️ | Brass Ear | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Brass%20Ear) |
-| ![Armory Bracelet (Minor)](https://2e.aonprd.com/Images/Treasure/Armory_Bracelet.webp) | Armory Bracelet (Minor) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Armory%20Bracelet) |
-| 🖼️ | Beastmaster's Sigil | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beastmaster%27s%20Sigil) |
-| ![Earthbreaker](https://2e.aonprd.com/Images/Weapons/Earthbreaker.webp) | Earthbreaker | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Earthbreaker) |
-| 🖼️ | Lich Dust | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lich%20Dust) |
+| 🖼️ | Hongrui's Gratitude | 3 | 60 gp | Common | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hongrui%27s%20Gratitude) |
+| ![Inventor's Chair](https://2e.aonprd.com/Images/Treasure/Inventors_Chair.webp) | Inventor's Chair | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Chair) |
+| 🖼️ | Sleuth's Pipe | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sleuth%27s%20Pipe) |
+| ![Phistophilus Fiddle](https://2e.aonprd.com/Images/Treasure/Phistophilus_Fiddle.webp) | Phistophilus Fiddle | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Phistophilus%20Fiddle) |
+| ![Fan of the Four Winds](https://2e.aonprd.com/Images/Treasure/Fan_Of_The_Four_Winds.webp) | Fan of the Four Winds | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fan%20of%20the%20Four%20Winds) |
+| 🖼️ | Nyctessa's Staff | 4 | 90 gp | Common | Staves | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nyctessa%27s%20Staff) |
 
-## Uncommon Items (3)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Double-Barreled Pistol | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Double-Barreled%20Pistol) |
-| 🖼️ | Wovenwood Shield (Major) | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wovenwood%20Shield) |
-| 🖼️ | Kols's Oath | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Kols%27s%20Oath) |
+| 🖼️ | Extraction Cauldron | 4 | 85 gp | Uncommon | Other | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Extraction%20Cauldron) |
+| 🖼️ | Fingerprinting Kit | 3 | 30 gp | Uncommon | Adventuring Gear | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fingerprinting%20Kit) |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Bag of Weasels | 4 | 5 sp | Rare | Cursed Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bag%20of%20Weasels) |
 
 ## Services
 
