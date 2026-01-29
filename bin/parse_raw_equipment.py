@@ -97,8 +97,8 @@ def parse_raw_equipment(filename):
                         i += 1
                         continue
                     
-                    # Only level 0-4
-                    if level < 0 or level > 4:
+                    # Only level -1 to 5
+                    if level < -1 or level > 5:
                         i += 1
                         continue
                     
@@ -143,7 +143,7 @@ if __name__ == "__main__":
     print("Parsing raw equipment data...")
     items = parse_raw_equipment("etc/equipment.md")
     
-    print(f"\nFound {len(items)} items (level 0-4)")
+    print(f"\nFound {len(items)} items (level -1 to 5)")
     
     # Show first 10
     print("\nFirst 10 items:")

@@ -12,29 +12,39 @@
 
 **Specialties:** Books, scrolls, and writing supplies
 
-## Common Items (6)
+## Common Items (15)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Hongrui's Gratitude | 3 | 60 gp | Common | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hongrui%27s%20Gratitude) |
-| ![Inventor's Chair](https://2e.aonprd.com/Images/Treasure/Inventors_Chair.webp) | Inventor's Chair | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Chair) |
-| 🖼️ | Sleuth's Pipe | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sleuth%27s%20Pipe) |
-| ![Phistophilus Fiddle](https://2e.aonprd.com/Images/Treasure/Phistophilus_Fiddle.webp) | Phistophilus Fiddle | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Phistophilus%20Fiddle) |
-| ![Fan of the Four Winds](https://2e.aonprd.com/Images/Treasure/Fan_Of_The_Four_Winds.webp) | Fan of the Four Winds | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fan%20of%20the%20Four%20Winds) |
-| 🖼️ | Nyctessa's Staff | 4 | 90 gp | Common | Staves | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nyctessa%27s%20Staff) |
+| 🖼️ | Shiver | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shiver) |
+| ![Armory Bracelet (Major)](https://2e.aonprd.com/Images/Treasure/Armory_Bracelet.webp) | Armory Bracelet (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Armory%20Bracelet) |
+| ![Mail of Luck](https://2e.aonprd.com/Images/Treasure/Mail_Of_Luck.webp) | Mail of Luck | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mail%20of%20Luck) |
+| 🖼️ | Magnetic Suit (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magnetic%20Suit) |
+| 🖼️ | Eternal Eruption of Blackpeak | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eternal%20Eruption%20of%20Blackpeak) |
+| 🖼️ | Trinity Geode (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Trinity%20Geode) |
+| 🖼️ | Trackless (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Trackless) |
+| 🖼️ | Thorn Triad (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thorn%20Triad) |
+| 🖼️ | Unifying Emblem (Shadde-Quah) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Unifying%20Emblem) |
+| 🖼️ | Loaded Dice | 0 | 5 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Loaded%20Dice) |
+| 🖼️ | Medusa's Scream (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Medusa%27s%20Scream) |
+| 🖼️ | Glue Bomb (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glue%20Bomb) |
+| 🖼️ | Cloth (Wool Cloth, 1 square yard) | 0 | 6 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cloth) |
+| 🖼️ | Spear | 0 | 9 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spear) |
+| 🖼️ | Energy-Resistant (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Energy-Resistant) |
 
-## Uncommon Items (2)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Extraction Cauldron | 4 | 85 gp | Uncommon | Other | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Extraction%20Cauldron) |
-| 🖼️ | Fingerprinting Kit | 3 | 30 gp | Uncommon | Adventuring Gear | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fingerprinting%20Kit) |
+| 🖼️ | Spring Heel | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spring%20Heel) |
+| 🖼️ | Apparatus of the Octopus | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Apparatus%20of%20the%20Octopus) |
+| 🖼️ | Bag of Cats | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bag%20of%20Cats) |
 
 ## Rare Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Bag of Weasels | 4 | 5 sp | Rare | Cursed Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bag%20of%20Weasels) |
+| 🖼️ | Deep Sea Plate | 0 | 0 gp | Rare | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Deep%20Sea%20Plate) |
 
 ## Services
 

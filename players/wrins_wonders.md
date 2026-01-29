@@ -12,30 +12,24 @@
 
 **Specialties:** Scrolls, wands, potions, alchemical items, and adventuring gear
 
-## Common Items (13)
+## Common Items (6)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Zerk | 4 | 20 gp | Common | Alchemical Items | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Zerk) |
-| 🖼️ | Sleuth's Pipe | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sleuth%27s%20Pipe) |
-| ![Inventor's Chair](https://2e.aonprd.com/Images/Treasure/Inventors_Chair.webp) | Inventor's Chair | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Chair) |
-| 🖼️ | Watch of Lost Ages | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Watch%20of%20Lost%20Ages) |
-| ![Fortune's Favor](https://2e.aonprd.com/Images/Treasure/Fortunes_Favor.webp) | Fortune's Favor | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fortune%27s%20Favor) |
-| 🖼️ | False Flayleaf | 2 | 5 gp | Common | Alchemical Items | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=False%20Flayleaf) |
-| 🖼️ | Shiver | 3 | 10 gp | Common | Alchemical Items | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Shiver) |
-| 🖼️ | Toad Tears | 2 | 6 gp | Common | Alchemical Items | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Toad%20Tears) |
-| 🖼️ | Flayleaf | 0 | 1 gp | Common | Alchemical Items | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Flayleaf) |
-| 🖼️ | Thresholds of Truth | 0 | 5 sp | Common | Other | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thresholds%20of%20Truth) |
-| 🖼️ | Hongrui's Gratitude | 3 | 60 gp | Common | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hongrui%27s%20Gratitude) |
-| 🖼️ | Memory Guitar | 4 | 100 gp | Common | Held Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Memory%20Guitar) |
-| 🖼️ | Alcohol | 0 | 1 cp (or more) | Common | Alchemical Items | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Alcohol) |
+| 🖼️ | Gi | 0 | 9 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gi) |
+| 🖼️ | Wand of Mercy (3rd-Rank Spell) | 0 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mercy) |
+| ![Dancer's Spear](https://2e.aonprd.com/Images/Weapons/Dancers_Spear.webp) | Dancer's Spear | 0 | 9 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dancer%27s%20Spear) |
+| 🖼️ | Dimension Shot | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dimension%20Shot) |
+| ![Crystal Shards (Moderate)](https://2e.aonprd.com/Images/Treasure/Crystal_Shards.webp) | Crystal Shards (Moderate) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Crystal%20Shards) |
+| 🖼️ | Nyctessa's Staff | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nyctessa%27s%20Staff) |
 
-## Uncommon Items (2)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Psychopomp Mask | 1 | 5 gp | Uncommon | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Psychopomp%20Mask) |
-| 🖼️ | Blaze | 2 | 7 gp | Uncommon | Alchemical Items | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Blaze) |
+| 🖼️ | Cane Pistol (Melee) | 0 | 5 sp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cane%20Pistol) |
+| 🖼️ | Black Powder (Keg) | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Black%20Powder) |
+| 🖼️ | Wand of Teeming Ghosts (8th-Rank Spell) | 0 | 0 gp | Uncommon | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Teeming%20Ghosts) |
 
 ## Services
 

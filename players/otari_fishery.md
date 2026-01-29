@@ -12,28 +12,27 @@
 
 **Specialties:** Fresh fish, fishing gear, and rope
 
-## Common Items (11)
+## Common Items (10)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Sleuth's Pipe | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sleuth%27s%20Pipe) |
-| 🖼️ | Watch of Lost Ages | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Watch%20of%20Lost%20Ages) |
-| ![Fan of the Four Winds](https://2e.aonprd.com/Images/Treasure/Fan_Of_The_Four_Winds.webp) | Fan of the Four Winds | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fan%20of%20the%20Four%20Winds) |
-| 🖼️ | Memory Guitar | 4 | 100 gp | Common | Held Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Memory%20Guitar) |
-| ![Inventor's Chair](https://2e.aonprd.com/Images/Treasure/Inventors_Chair.webp) | Inventor's Chair | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Chair) |
-| 🖼️ | Skysunder | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Skysunder) |
-| ![Fortune's Favor](https://2e.aonprd.com/Images/Treasure/Fortunes_Favor.webp) | Fortune's Favor | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fortune%27s%20Favor) |
-| ![Phistophilus Fiddle](https://2e.aonprd.com/Images/Treasure/Phistophilus_Fiddle.webp) | Phistophilus Fiddle | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Phistophilus%20Fiddle) |
-| 🖼️ | Hongrui's Gratitude | 3 | 60 gp | Common | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hongrui%27s%20Gratitude) |
-| 🖼️ | Nyctessa's Staff | 4 | 90 gp | Common | Staves | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nyctessa%27s%20Staff) |
-| 🖼️ | Thresholds of Truth | 0 | 5 sp | Common | Other | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thresholds%20of%20Truth) |
+| ![Gauntlet Bow](https://2e.aonprd.com/Images/Weapons/Gauntlet_Bow.webp) | Gauntlet Bow | 0 | 9 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gauntlet%20Bow) |
+| ![Bracers of Devotion](https://2e.aonprd.com/Images/Treasure/Bracers_Of_Devotion.webp) | Bracers of Devotion | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bracers%20of%20Devotion) |
+| 🖼️ | Kite | 0 | 9 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Kite) |
+| 🖼️ | Basic Face Mask | 0 | 6 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Basic%20Face%20Mask) |
+| 🖼️ | Conduit Shot (Moderate) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Conduit%20Shot) |
+| 🖼️ | Earthglide Cloak | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Earthglide%20Cloak) |
+| ![Spell Echo Shot](https://2e.aonprd.com/Images/Treasure/Spell_Echo_Shot.webp) | Spell Echo Shot | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Echo%20Shot) |
+| 🖼️ | Fixer (Basic Councelor) | 0 | 7 sp | Common | Fixer | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fixer) |
+| 🖼️ | Wolliped Fleece | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wolliped%20Fleece) |
+| 🖼️ | Fluid Form Staff | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fluid%20Form%20Staff) |
 
 ## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Glider | 0 | 15 gp | Uncommon | Vehicles | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glider) |
-| 🖼️ | Bullhook | 3 | 55 gp | Uncommon | Held Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bullhook) |
+| 🖼️ | Staff of the Unblinking Eye | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Unblinking%20Eye) |
+| 🖼️ | Psychic Brigandine | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Psychic%20Brigandine) |
 
 ## Services
 

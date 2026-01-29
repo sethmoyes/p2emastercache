@@ -17,14 +17,15 @@ for item in equipment:
 
 print(f"Items with no/bad price: {len(no_price_items)}")
 
-# Fix first 50
+# Fix first 500
 fixed_count = 0
-for item in no_price_items[:50]:
+for item in no_price_items[:500]:
     # Random price between 5 sp (0.5 gp) and 1 gp
     price_options = ['5 sp', '6 sp', '7 sp', '8 sp', '9 sp', '1 gp']
     item['price'] = random.choice(price_options)
     fixed_count += 1
-    print(f"  Fixed: {item['name']} -> {item['price']}")
+    if fixed_count <= 20:
+        print(f"  Fixed: {item['name']} -> {item['price']}")
 
 print(f"\nFixed {fixed_count} items")
 

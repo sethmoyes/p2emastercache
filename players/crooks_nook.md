@@ -12,31 +12,28 @@
 
 **Specialties:** Cheap lodging and questionable goods
 
-## Common Items (7)
+## Common Items (12)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Inventor's Chair](https://2e.aonprd.com/Images/Treasure/Inventors_Chair.webp) | Inventor's Chair | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Chair) |
-| 🖼️ | Thresholds of Truth | 0 | 5 sp | Common | Other | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thresholds%20of%20Truth) |
-| 🖼️ | Nyctessa's Staff | 4 | 90 gp | Common | Staves | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nyctessa%27s%20Staff) |
-| 🖼️ | Sleuth's Pipe | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sleuth%27s%20Pipe) |
-| 🖼️ | Skysunder | 4 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Skysunder) |
-| ![Phistophilus Fiddle](https://2e.aonprd.com/Images/Treasure/Phistophilus_Fiddle.webp) | Phistophilus Fiddle | 3 | 5 sp | Common | Relics | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Phistophilus%20Fiddle) |
-| 🖼️ | Hongrui's Gratitude | 3 | 60 gp | Common | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hongrui%27s%20Gratitude) |
+| 🖼️ | Piton | 0 | 8 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Piton) |
+| 🖼️ | Masquerade Scarf | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Masquerade%20Scarf) |
+| ![Weapon Shot (Major)](https://2e.aonprd.com/Images/Treasure/Weapon_Shot.webp) | Weapon Shot (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Weapon%20Shot) |
+| 🖼️ | Energizing Treat | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Energizing%20Treat) |
+| ![Earthbreaker](https://2e.aonprd.com/Images/Weapons/Earthbreaker.webp) | Earthbreaker | 0 | 7 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Earthbreaker) |
+| 🖼️ | Venom Glands | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Venom%20Glands) |
+| 🖼️ | Trackless | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Trackless) |
+| 🖼️ | Tooth and Claw Tattoo | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tooth%20and%20Claw%20Tattoo) |
+| 🖼️ | Origin Unguent | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Origin%20Unguent) |
+| 🖼️ | Smother Shroud | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Smother%20Shroud) |
+| 🖼️ | Reading Ring | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reading%20Ring) |
+| 🖼️ | Swarmeater's Clasp | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Swarmeater%27s%20Clasp) |
 
-## Uncommon Items (3)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Slippery Ribbon | 1 | 12 gp | Uncommon | Consumables | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Slippery%20Ribbon) |
-| 🖼️ | Steadyfoot Tassel | 2 | 30 gp | Uncommon | Worn Items | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Steadyfoot%20Tassel) |
-| 🖼️ | Fingerprinting Kit | 3 | 30 gp | Uncommon | Adventuring Gear | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fingerprinting%20Kit) |
-
-## Rare Items (1)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Warpglass Chunk | 0 | 800 gp | Rare | Materials | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warpglass%20Chunk) |
+| 🖼️ | Spring-Loaded Net Launcher | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spring-Loaded%20Net%20Launcher) |
 
 ## Services
 

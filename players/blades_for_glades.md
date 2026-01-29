@@ -12,22 +12,23 @@
 
 **Specialties:** Weapons and armor of all types
 
-## Common Items (5)
+## Common Items (13)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Fiend's Hunger | 4 | 100 gp | Common | Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Fiend%27s%20Hunger) |
-| 🖼️ | Ugly Cute's Gift | 4 | 60 gp | Common | Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Ugly%20Cute%27s%20Gift) |
-| 🖼️ | Exquisite Sword Cane | 4 | 90 gp | Common | Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Exquisite%20Sword%20Cane) |
-| 🖼️ | Exquisite Sword Cane Sheath | 0 | 5 sp | Common | Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Exquisite%20Sword%20Cane%20Sheath) |
-| 🖼️ | Sparkblade | 3 | 70 gp | Common | Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Sparkblade) |
-
-## Uncommon Items (2)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Nightstick | 0 | 1 gp | Uncommon | Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Nightstick) |
-| 🖼️ | Sun Shot | 0 | 1 sp (price for 10) | Uncommon | Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Sun%20Shot) |
+| 🖼️ | Heavy Rondache | 0 | 1 gp | Common | Base Shields | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Heavy%20Rondache) |
+| 🖼️ | Cold Iron Armor (Standard-Grade) | 0 | 0 gp | Common | Precious Material Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
+| 🖼️ | Cold Iron Armor (Low-Grade) | 0 | 0 gp | Common | Precious Material Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
+| 🖼️ | Silver Armor (Low-Grade) | 0 | 0 gp | Common | Precious Material Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Silver%20Armor) |
+| 🖼️ | Scale Mail | 0 | 2 gp | Common | Base Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Scale%20Mail) |
+| 🖼️ | Arrows | 0 | 1 gp | Common | Base Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Arrows) |
+| 🖼️ | Cold Iron Armor (High-Grade) | 0 | 0 gp | Common | Precious Material Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
+| ![Lattice Armor](https://2e.aonprd.com/Images/Armor/Lattice_Armor.webp) | Lattice Armor | 0 | 2 gp | Common | Base Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Lattice%20Armor) |
+| 🖼️ | 8-Round Magazine | 0 | 5 sp | Common | Base Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=) |
+| 🖼️ | Wooden Shield | 0 | 1 gp | Common | Base Shields | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Shield) |
+| 🖼️ | Hide Armor | 0 | 2 gp | Common | Base Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Hide%20Armor) |
+| 🖼️ | Blowgun Darts | 0 | 1 gp | Common | Base Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Blowgun%20Darts) |
+| 🖼️ | Shield Bash | 0 | 0 gp | Common | Base Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Shield%20Bash) |
 
 ## Services
 
