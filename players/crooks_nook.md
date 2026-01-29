@@ -12,30 +12,28 @@
 
 **Specialties:** Cheap lodging and questionable goods
 
-## Common Items (14)
+## Common Items (5)
 
 | Image | Name | Level | Price | Rarity | Category | Type |
 |-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Wheel%20Spikes) | Wheel Spikes | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Prosthesis) | Prosthesis | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Acid%20Flask) | Acid Flask (Major) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Puzzle%20Box) | Puzzle Box (Simple) | 0 | 5 sp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Veiled%20Figurehead) | Veiled Figurehead | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Miogimo%27s%20Mask) | Miogimo's Mask | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Glamorous%20Buckler) | Glamorous Buckler | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Elemental%20Power) | Staff of Elemental Power | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Deadly%20Slashing%20Claws) | Deadly Slashing Claws | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Beverages) | Beverages (Bottle of Wine) | 0 | 5 sp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Mocker%27s%20Swazzle) | Mocker's Swazzle | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Leaper%27s%20Elixir) | Leaper's Elixir (Lesser) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Marvelous%20Medicines) | Marvelous Medicines | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Reverberating%20Stone) | Reverberating Stone | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Sparkwarden](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Sparkwarden | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Battle Axe](https://2e.aonprd.com/Images/Monsters/Warmorger.webp) | Battle Axe | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Reflected Moonlight Fulu](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Reflected Moonlight Fulu | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Moonlit Spellgun (Lesser)](https://2e.aonprd.com/Images/Treasure/Moonlit_Spellgun.webp) | Moonlit Spellgun (Lesser) | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Unifying Emblem (Sklar-Quah)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Unifying Emblem (Sklar-Quah) | 0 | 0 gp | Common | N/A | Adventuring |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type |
 |-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Familiar%20Satchel) | Familiar Satchel | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| ![Backpack Balloon](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Backpack Balloon | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| ![Architect's Pattern Book](https://2e.aonprd.com/Images/Ancestries/Minotaur02.webp) | Architect's Pattern Book | 0 | 0 gp | Uncommon | N/A | Adventuring |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type |
+|-------|------|-------|-------|--------|----------|------|
+| ![Digly's Oil of Sympathy (Greater)](https://2e.aonprd.com/Images/Ancestries/Icons/Tanuki_Icon.png) | Digly's Oil of Sympathy (Greater) | 0 | 0 gp | Rare | N/A | Adventuring |
 
 ## Services
 

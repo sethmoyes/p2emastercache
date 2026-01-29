@@ -16,31 +16,30 @@
 
 | Image | Name | Level | Price | Rarity | Category | Type |
 |-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Bristling%20Spines) | Bristling Spines (Moderate) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Eye%20of%20the%20Unseen) | Eye of the Unseen | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Obsidian%20Goggles) | Obsidian Goggles (Major) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Atlatl) | Atlatl | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Obsidian%20Goggles) | Obsidian Goggles | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Transportation) | Transportation (Carriage) | 0 | 0 gp | Common | Transportation | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Daredevil%20Boots) | Daredevil Boots (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Sleeves%20of%20Storage) | Sleeves of Storage | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Fluid%20Form%20Staff) | Fluid Form Staff (Major) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) | Magic Wand (5th-rank Spell) | 0 | 0 gp | Common | N/A | Magical |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Gray%20Maiden%20Plate) | Gray Maiden Plate | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Unholy%20Plate) | Unholy Plate | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Swordstealer Shield](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Swordstealer Shield | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Wand of Widening (2nd-rank Spell)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Wand of Widening (2nd-rank Spell) | 0 | 0 gp | Common | N/A | Magical |
+| ![Antiplague (Greater)](https://2e.aonprd.com/Images/Treasure/Antiplague.webp) | Antiplague (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Spellcasting (5th rank)](https://2e.aonprd.com/Images/Classes/Iconic_Seoni.png) | Spellcasting (5th rank) | 0 | 0 gp | Common | Spellcasting | Adventuring |
+| ![Map (Political Map)](https://2e.aonprd.com/Images/Rules/Rules444.png) | Map (Political Map) | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Clown Monarch](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Clown Monarch | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Longspear](https://2e.aonprd.com/Images/Monsters/Phalanx_Formation.webp) | Longspear | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Veiled Figurehead (Greater)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Veiled Figurehead (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Broadspear](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Broadspear | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Pheromone Flare (Greater)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Pheromone Flare (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Staff of Control](https://2e.aonprd.com/Images/Treasure/Staff_of_Power.webp) | Staff of Control | 0 | 0 gp | Common | N/A | Adventuring |
+| ![Cloth (Cotton)](https://2e.aonprd.com/Images/Treasure/Cloister_Robe.webp) | Cloth (Cotton) | 0 | 0 gp | Common | N/A | Adventuring |
 
-## Uncommon Items (2)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type |
 |-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Stupor%20Poison) | Stupor Poison | 0 | 0 gp | Uncommon | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Toadskin%20Salve) | Toadskin Salve (Major) | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| ![Staff of the Black Desert](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Staff of the Black Desert | 0 | 0 gp | Uncommon | N/A | Adventuring |
 
 ## Rare Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type |
 |-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Electromuscular%20Stimulator) | Electromuscular Stimulator | 0 | 0 gp | Rare | N/A | Adventuring |
+| ![Sunken Pistol](https://2e.aonprd.com/Images/Weapons/Dragon_Mouth_Pistol.webp) | Sunken Pistol | 0 | 0 gp | Rare | N/A | Adventuring |
 
 ## Services
 

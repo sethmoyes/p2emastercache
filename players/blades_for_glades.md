@@ -12,20 +12,15 @@
 
 **Specialties:** Weapons and armor of all types
 
-## Common Items (10)
+## Common Items (5)
 
 | Image | Name | Level | Price | Rarity | Category | Type |
 |-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Crossbow) | Crossbow | 0 | 1 gp | Common | Base Weapons | Weapon |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Buckler) | Buckler | 0 | 5 sp | Common | Base Shields | Armor |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) | Cold Iron Armor (Standard-Grade) | 0 | 0 gp | Common | Precious Material Armor | Armor |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Alchemical%20Bomb) | Alchemical Bomb | 0 | 5 sp | Common | Base Weapons | Weapon |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Blowgun%20Darts) | Blowgun Darts | 0 | 5 sp | Common | Base Weapons | Weapon |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Silver%20Armor) | Silver Armor (Low-Grade) | 0 | 0 gp | Common | Precious Material Armor | Armor |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Bolts) | Bolts (Phalanx Piercer) | 0 | 5 sp | Common | Base Weapons | Weapon |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Buckler) | Cold Iron Buckler (Low-Grade) | 0 | 5 sp | Common | Precious Material Shields | Armor |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Silver%20Armor) | Silver Armor (High-Grade) | 0 | 0 gp | Common | Precious Material Armor | Armor |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Splint%20Mail) | Splint Mail | 0 | 3 gp | Common | Base Armor | Armor |
+| ![Hand Crossbow](https://2e.aonprd.com/Images/Weapons/Gauntlet_Bow.webp) | Hand Crossbow | 0 | 5 sp | Common | Base Weapons | Weapon |
+| ![Blowgun Darts](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Blowgun Darts | 0 | 5 sp | Common | Base Weapons | Weapon |
+| ![Steel Shield](https://2e.aonprd.com/Images/Treasure/Clockwork_Shield.webp) | Steel Shield | 0 | 1 gp | Common | Base Shields | Armor |
+| ![Cold Iron Buckler (Low-Grade)](https://2e.aonprd.com/Images/Ancestries/Icons/Dromaar_Icon.png) | Cold Iron Buckler (Low-Grade) | 0 | 5 sp | Common | Precious Material Shields | Armor |
+| ![Half Plate](https://2e.aonprd.com/Images/Armor/Hellknight_Half_Plate.webp) | Half Plate | 0 | 3 gp | Common | Base Armor | Armor |
 
 ## Services
 
