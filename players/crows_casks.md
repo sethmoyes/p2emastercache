@@ -14,309 +14,37 @@
 
 ## Common Items (20)
 
-### Chalk
-
-![Chalk](https://www.google.com/search?q=site%3A2e.aonprd.com%20Chalk&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Chalk)
-
----
-
-### Handwraps of Mighty Blows (+1 striking)
-
-![Handwraps of Mighty Blows (+1 striking)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Handwraps%20of%20Mighty%20Blows&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Handwraps%20of%20Mighty%20Blows)
-
----
-
-### Feed (Standard)
-
-![Feed (Standard)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Feed&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** Animal Caretaking Gear | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Feed)
-
----
-
-### Lion's Armor
-
-![Lion's Armor](https://www.google.com/search?q=site%3A2e.aonprd.com%20Lion%27s%20Armor&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Lion%27s%20Armor)
-
----
-
-### Navigator's Star
-
-![Navigator's Star](https://www.google.com/search?q=site%3A2e.aonprd.com%20Navigator%27s%20Star&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Navigator%27s%20Star)
-
----
-
-### Mustard Powder
-
-![Mustard Powder](https://www.google.com/search?q=site%3A2e.aonprd.com%20Mustard%20Powder&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Mustard%20Powder)
-
----
-
-### Nightmare Vapor
-
-![Nightmare Vapor](https://www.google.com/search?q=site%3A2e.aonprd.com%20Nightmare%20Vapor&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Nightmare%20Vapor)
-
----
-
-### Cloister Robe (Moderate)
-
-![Cloister Robe (Moderate)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Cloister%20Robe&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Cloister%20Robe)
-
----
-
-### Waterskin
-
-![Waterskin](https://www.google.com/search?q=site%3A2e.aonprd.com%20Waterskin&tbm=isch)
-
-**Level:** 0 | **Price:** 5 sp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Waterskin)
-
----
-
-### Spry Sinews (Greater)
-
-![Spry Sinews (Greater)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Spry%20Sinews&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Spry%20Sinews)
-
----
-
-### Crystal Shards (Moderate)
-
-![Crystal Shards (Moderate)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Crystal%20Shards&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Crystal%20Shards)
-
----
-
-### Lodging (Floor Space)
-
-![Lodging (Floor Space)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Lodging&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Lodging)
-
----
-
-### Kirin Echo Chime
-
-![Kirin Echo Chime](https://www.google.com/search?q=site%3A2e.aonprd.com%20Kirin%20Echo%20Chime&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Kirin%20Echo%20Chime)
-
----
-
-### Spellcasting (4th rank)
-
-![Spellcasting (4th rank)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Spellcasting&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** Spellcasting | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Spellcasting)
-
----
-
-### Crown of the Kobold King
-
-![Crown of the Kobold King](https://www.google.com/search?q=site%3A2e.aonprd.com%20Crown%20of%20the%20Kobold%20King&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Crown%20of%20the%20Kobold%20King)
-
----
-
-### Depth Charge (II)
-
-![Depth Charge (II)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Depth%20Charge&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Depth%20Charge)
-
----
-
-### Alluring Lantern
-
-![Alluring Lantern](https://www.google.com/search?q=site%3A2e.aonprd.com%20Alluring%20Lantern&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Alluring%20Lantern)
-
----
-
-### Tracking Fulu
-
-![Tracking Fulu](https://www.google.com/search?q=site%3A2e.aonprd.com%20Tracking%20Fulu&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Tracking%20Fulu)
-
----
-
-### Mantle of the Amazing Health
-
-![Mantle of the Amazing Health](https://www.google.com/search?q=site%3A2e.aonprd.com%20Mantle%20of%20the%20Amazing%20Health&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Mantle%20of%20the%20Amazing%20Health)
-
----
-
-### Handwraps of Mighty Blows (+1)
-
-![Handwraps of Mighty Blows (+1)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Handwraps%20of%20Mighty%20Blows&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Handwraps%20of%20Mighty%20Blows)
-
----
-
-
-## Uncommon Items (5)
-
-### Storm Herald
-
-![Storm Herald](https://www.google.com/search?q=site%3A2e.aonprd.com%20Storm%20Herald&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Storm%20Herald)
-
----
-
-### Greater Flowing Water
-
-![Greater Flowing Water](https://www.google.com/search?q=site%3A2e.aonprd.com%20Greater%20Flowing%20Water&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Greater%20Flowing%20Water)
-
----
-
-### Sigil of the First Clan
-
-![Sigil of the First Clan](https://www.google.com/search?q=site%3A2e.aonprd.com%20Sigil%20of%20the%20First%20Clan&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Sigil%20of%20the%20First%20Clan)
-
----
-
-### Lesser Portable Seal
-
-![Lesser Portable Seal](https://www.google.com/search?q=site%3A2e.aonprd.com%20Lesser%20Portable%20Seal&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Lesser%20Portable%20Seal)
-
----
-
-### Adamantine Shield (High-Grade)
-
-![Adamantine Shield (High-Grade)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Adamantine%20Shield&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Adamantine%20Shield)
-
----
-
+| Image | Name | Level | Price | Rarity | Category | Type |
+|-------|------|-------|-------|--------|----------|------|
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Pheromone%20Flare) | Pheromone Flare (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Ice%20Boat) | Ice Boat | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Maw%20of%20Hungry%20Shadows) | Maw of Hungry Shadows | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Merchant%27s%20Scale) | Merchant's Scale | 0 | 5 sp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Dread%20Blindfold) | Dread Blindfold | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Whisperer%20of%20Souls) | Whisperer of Souls | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Unifying%20Emblem) | Unifying Emblem (Lyrune-Quah) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Messenger%20Missive) | Messenger Missive (Multiple) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Unending%20Itch) | Unending Itch | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Probing%20Cane) | Probing Cane | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Animal%20Nip) | Animal Nip (Lesser) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Adze) | Adze | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Fishing%20Tackle) | Fishing Tackle (Professional) | 0 | 1 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Harpoon) | Harpoon | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Full%20Plate) | Full Plate | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Bewildering%20Spellgun) | Bewildering Spellgun | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Vaultbreaker%27s%20Harness) | Vaultbreaker's Harness | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Goz%20Mask) | Goz Mask (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Curtain%20Call) | Curtain Call | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Axolotl) | Axolotl | 0 | 0 gp | Common | Animals | Adventuring |
+
+## Uncommon Items (4)
+
+| Image | Name | Level | Price | Rarity | Category | Type |
+|-------|------|-------|-------|--------|----------|------|
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Rope%20Dart) | Rope Dart | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Implacable) | Implacable | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Clockwork%20Megaphone) | Clockwork Megaphone | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Book%20of%20Translation) | Book of Translation (Standard) | 0 | 0 gp | Uncommon | N/A | Adventuring |
 
 ## Services
 

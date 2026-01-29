@@ -14,237 +14,35 @@
 
 ## Common Items (15)
 
-### Shadow (Major)
-
-![Shadow (Major)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Shadow&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Shadow)
-
----
-
-### Butterfly or Moth
-
-![Butterfly or Moth](https://www.google.com/search?q=site%3A2e.aonprd.com%20Butterfly%20or%20Moth&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** Animals | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Butterfly%20or%20Moth)
-
----
-
-### Dragonbone Arrowhead
-
-![Dragonbone Arrowhead](https://www.google.com/search?q=site%3A2e.aonprd.com%20Dragonbone%20Arrowhead&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Dragonbone%20Arrowhead)
-
----
-
-### Cayden's Tankard
-
-![Cayden's Tankard](https://www.google.com/search?q=site%3A2e.aonprd.com%20Cayden%27s%20Tankard&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Cayden%27s%20Tankard)
-
----
-
-### Dragon Handwraps
-
-![Dragon Handwraps](https://www.google.com/search?q=site%3A2e.aonprd.com%20Dragon%20Handwraps&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Dragon%20Handwraps)
-
----
-
-### Composite Longbow
-
-![Composite Longbow](https://www.google.com/search?q=site%3A2e.aonprd.com%20Composite%20Longbow&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Composite%20Longbow)
-
----
-
-### Dazzling Rosary
-
-![Dazzling Rosary](https://www.google.com/search?q=site%3A2e.aonprd.com%20Dazzling%20Rosary&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Dazzling%20Rosary)
-
----
-
-### Ochre Fulcrum Lens
-
-![Ochre Fulcrum Lens](https://www.google.com/search?q=site%3A2e.aonprd.com%20Ochre%20Fulcrum%20Lens&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Ochre%20Fulcrum%20Lens)
-
----
-
-### Boots of Bounding (Greater)
-
-![Boots of Bounding (Greater)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Boots%20of%20Bounding&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Boots%20of%20Bounding)
-
----
-
-### Hexing Jar
-
-![Hexing Jar](https://www.google.com/search?q=site%3A2e.aonprd.com%20Hexing%20Jar&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Hexing%20Jar)
-
----
-
-### Sap
-
-![Sap](https://www.google.com/search?q=site%3A2e.aonprd.com%20Sap&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Sap)
-
----
-
-### Detonating Gears Snare
-
-![Detonating Gears Snare](https://www.google.com/search?q=site%3A2e.aonprd.com%20Detonating%20Gears%20Snare&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Detonating%20Gears%20Snare)
-
----
-
-### Reinforcing Rune (Moderate)
-
-![Reinforcing Rune (Moderate)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Reinforcing%20Rune&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune)
-
----
-
-### Buzzsaw Axe (Major)
-
-![Buzzsaw Axe (Major)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Buzzsaw%20Axe&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Buzzsaw%20Axe)
-
----
-
-### Cat
-
-![Cat](https://www.google.com/search?q=site%3A2e.aonprd.com%20Cat&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** Animals | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Cat)
-
----
-
-
-## Uncommon Items (4)
-
-### Arquebus
-
-![Arquebus](https://www.google.com/search?q=site%3A2e.aonprd.com%20Arquebus&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Arquebus)
-
----
-
-### Nostalgic Pot
-
-![Nostalgic Pot](https://www.google.com/search?q=site%3A2e.aonprd.com%20Nostalgic%20Pot&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Nostalgic%20Pot)
-
----
-
-### Queasy Lantern (Lesser)
-
-![Queasy Lantern (Lesser)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Queasy%20Lantern&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Queasy%20Lantern)
-
----
-
-### Malleable Mixture (Lesser)
-
-![Malleable Mixture (Lesser)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Malleable%20Mixture&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Malleable%20Mixture)
-
----
-
+| Image | Name | Level | Price | Rarity | Category | Type |
+|-------|------|-------|-------|--------|----------|------|
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Dinosaur) | Dinosaur | 0 | 0 gp | Common | Animals | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Pilferer%27s%20Gloves) | Pilferer's Gloves | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Hunter%27s%20Dawn) | Hunter's Dawn | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Raiment) | Raiment | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Magical%20Prosthetic%20Eye) | Magical Prosthetic Eye | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Wheel%20Blades) | Wheel Blades | 0 | 0 gp | Common | Mobility Devices | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Protection) | Staff of Protection (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Marvelous%20Medicines) | Marvelous Medicines | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Comprehension%20Elixir) | Comprehension Elixir (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Eternal%20Eruption) | Eternal Eruption | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Carver-Cutter) | Carver-Cutter | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Retrieval%20Prism) | Retrieval Prism (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Paws%20of%20the%20Grogrisant) | Paws of the Grogrisant | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Stage%20Fright%20Missive) | Stage Fright Missive | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Cooling%20Elixir) | Cooling Elixir (Lesser) | 0 | 0 gp | Common | N/A | Adventuring |
+
+## Uncommon Items (7)
+
+| Image | Name | Level | Price | Rarity | Category | Type |
+|-------|------|-------|-------|--------|----------|------|
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Dreadsmoke%20Thurible) | Dreadsmoke Thurible | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Spider%20Gun) | Spider Gun (Major) | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Stanching) | Stanching (Major) | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Tarantula%20Ampoule) | Tarantula Ampoule | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Skeptic%27s%20Elixir) | Skeptic's Elixir (Moderate) | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Pummeling%20Snare) | Pummeling Snare | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Cindergrass%20Cloak) | Cindergrass Cloak | 0 | 0 gp | Uncommon | N/A | Adventuring |
 
 ## Services
 

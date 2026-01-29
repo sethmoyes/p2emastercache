@@ -14,273 +14,36 @@
 
 ## Common Items (20)
 
-### Depth Charge (III)
-
-![Depth Charge (III)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Depth%20Charge&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Depth%20Charge)
-
----
-
-### Meteor Hammer
-
-![Meteor Hammer](https://www.google.com/search?q=site%3A2e.aonprd.com%20Meteor%20Hammer&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Meteor%20Hammer)
-
----
-
-### Darkvision Elixir (Lesser)
-
-![Darkvision Elixir (Lesser)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Darkvision%20Elixir&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Darkvision%20Elixir)
-
----
-
-### Smoking Sword
-
-![Smoking Sword](https://www.google.com/search?q=site%3A2e.aonprd.com%20Smoking%20Sword&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Smoking%20Sword)
-
----
-
-### Beverages (Bottle of Fine Wine)
-
-![Beverages (Bottle of Fine Wine)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Beverages&tbm=isch)
-
-**Level:** 0 | **Price:** 5 sp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Beverages)
-
----
-
-### Origin Unguent
-
-![Origin Unguent](https://www.google.com/search?q=site%3A2e.aonprd.com%20Origin%20Unguent&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Origin%20Unguent)
-
----
-
-### Backfire Mantle (Greater)
-
-![Backfire Mantle (Greater)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Backfire%20Mantle&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Backfire%20Mantle)
-
----
-
-### Fetters (Good)
-
-![Fetters (Good)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Fetters&tbm=isch)
-
-**Level:** 0 | **Price:** 5 sp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Fetters)
-
----
-
-### Tooth and Claw Tattoo (Greater)
-
-![Tooth and Claw Tattoo (Greater)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Tooth%20and%20Claw%20Tattoo&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Tooth%20and%20Claw%20Tattoo)
-
----
-
-### Magnetite Scope
-
-![Magnetite Scope](https://www.google.com/search?q=site%3A2e.aonprd.com%20Magnetite%20Scope&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Magnetite%20Scope)
-
----
-
-### Dragon Bile
-
-![Dragon Bile](https://www.google.com/search?q=site%3A2e.aonprd.com%20Dragon%20Bile&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Dragon%20Bile)
-
----
-
-### Versatile Tinderbox
-
-![Versatile Tinderbox](https://www.google.com/search?q=site%3A2e.aonprd.com%20Versatile%20Tinderbox&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Versatile%20Tinderbox)
-
----
-
-### Staff of Nature's Cunning (Major)
-
-![Staff of Nature's Cunning (Major)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Staff%20of%20Nature%27s%20Cunning&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Nature%27s%20Cunning)
-
----
-
-### Artisan's Toolkit
-
-![Artisan's Toolkit](https://www.google.com/search?q=site%3A2e.aonprd.com%20Artisan%27s%20Toolkit&tbm=isch)
-
-**Level:** 0 | **Price:** 2 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Artisan%27s%20Toolkit)
-
----
-
-### Whelming Scrimshaw
-
-![Whelming Scrimshaw](https://www.google.com/search?q=site%3A2e.aonprd.com%20Whelming%20Scrimshaw&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Whelming%20Scrimshaw)
-
----
-
-### Tailor's Boll
-
-![Tailor's Boll](https://www.google.com/search?q=site%3A2e.aonprd.com%20Tailor%27s%20Boll&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Tailor%27s%20Boll)
-
----
-
-### Peacemaker
-
-![Peacemaker](https://www.google.com/search?q=site%3A2e.aonprd.com%20Peacemaker&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Peacemaker)
-
----
-
-### Dancing Scarf
-
-![Dancing Scarf](https://www.google.com/search?q=site%3A2e.aonprd.com%20Dancing%20Scarf&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Dancing%20Scarf)
-
----
-
-### Fearless Sash
-
-![Fearless Sash](https://www.google.com/search?q=site%3A2e.aonprd.com%20Fearless%20Sash&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Fearless%20Sash)
-
----
-
-### Repair Toolkit (Superb)
-
-![Repair Toolkit (Superb)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Repair%20Toolkit&tbm=isch)
-
-**Level:** 0 | **Price:** 1 gp | **Rarity:** Common
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Repair%20Toolkit)
-
----
-
-
-## Uncommon Items (2)
-
-### Moderate Antifungal Salve
-
-![Moderate Antifungal Salve](https://www.google.com/search?q=site%3A2e.aonprd.com%20Moderate%20Antifungal%20Salve&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Moderate%20Antifungal%20Salve)
-
----
-
-### Rubbing Set
-
-![Rubbing Set](https://www.google.com/search?q=site%3A2e.aonprd.com%20Rubbing%20Set&tbm=isch)
-
-**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
-
-**Category:** N/A | **Type:** Adventuring
-
-[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Rubbing%20Set)
-
----
-
+| Image | Name | Level | Price | Rarity | Category | Type |
+|-------|------|-------|-------|--------|----------|------|
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Repair%20Toolkit) | Repair Toolkit (Superb) | 0 | 1 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Climbing%20Kit) | Climbing Kit | 0 | 1 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Spiritual%20Warhorn) | Spiritual Warhorn (Major) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Tear-Away%20Clothing) | Tear-Away Clothing | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Barding) | Barding (Light; Small or Medium) | 0 | 2 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Sky%20Chariot%20Armored) | Sky Chariot, Armored | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Beverages) | Beverages (Mug of Ale) | 0 | 5 sp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Holy%20Chain) | Holy Chain | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Broadleaf%20Shield) | Broadleaf Shield | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Ursine%20Avenger%20Hood) | Ursine Avenger Hood | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Broadleaf%20Shield) | Broadleaf Shield (Major) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Horrid%20Figurine) | Horrid Figurine | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Acid%20Flask) | Acid Flask (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Spacious%20Pouch) | Spacious Pouch (Type I) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Armbands%20of%20the%20Gorgon) | Armbands of the Gorgon | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Clown%20Monarch) | Clown Monarch | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Artisan%27s%20Toolkit) | Artisan's Toolkit (Sterling) | 0 | 2 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Superior%20Catch%20Pole) | Superior Catch Pole | 0 | 1 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Corrosive%20Engravings) | Corrosive Engravings | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Sky%20King%27s%20Tomb) | Sky King's Tomb | 0 | 0 gp | Common | N/A | Adventuring |
+
+## Uncommon Items (3)
+
+| Image | Name | Level | Price | Rarity | Category | Type |
+|-------|------|-------|-------|--------|----------|------|
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Aeon%20Stone) | Aeon Stone (Delaying) | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Taljjae%20Tassel) | Taljjae Tassel | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Shrapnel%20Snare) | Shrapnel Snare | 0 | 0 gp | Uncommon | N/A | Adventuring |
 
 ## Services
 

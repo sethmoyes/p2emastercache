@@ -156,9 +156,10 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
             f.write("| Image | Name | Level | Price | Rarity | Category | Type |\n")
             f.write("|-------|------|-------|-------|--------|----------|------|\n")
             
-            for item in inventory['uncommon']:
+            total = len(inventory['uncommon'])
+            for idx, item in enumerate(inventory['uncommon'], 1):
                 # Get image URL
-                print(f"  Fetching image for: {item['name']}")
+                print(f"  [{idx}/{total}] {item['name'][:40]}")
                 image_url = get_image_from_aon(item['name'])
                 
                 # Fix and capitalize fields
@@ -178,7 +179,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 
                 f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} |\n")
                 
-                time.sleep(0.5)
+                time.sleep(0.2)
             
             f.write("\n")
         
@@ -188,9 +189,10 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
             f.write("| Image | Name | Level | Price | Rarity | Category | Type |\n")
             f.write("|-------|------|-------|-------|--------|----------|------|\n")
             
-            for item in inventory['rare']:
+            total = len(inventory['rare'])
+            for idx, item in enumerate(inventory['rare'], 1):
                 # Get image URL
-                print(f"  Fetching image for: {item['name']}")
+                print(f"  [{idx}/{total}] {item['name'][:40]}")
                 image_url = get_image_from_aon(item['name'])
                 
                 # Fix and capitalize fields
@@ -210,7 +212,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 
                 f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} |\n")
                 
-                time.sleep(0.5)
+                time.sleep(0.2)
             
             f.write("\n")
         
