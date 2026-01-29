@@ -12,28 +12,32 @@
 
 **Specialties:** Scrolls, wands, potions, alchemical items, and adventuring gear
 
-## Common Items (12)
+## Common Items (15)
 
-| Image | Name | Level | Price | Rarity | Category | Type |
-|-------|------|-------|-------|--------|----------|------|
-| ![Emberheart](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Emberheart | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Leaf Weave](https://2e.aonprd.com/Images/Ancestries/Icons/Ardande_Icon.png) | Leaf Weave | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Researcher (Level 2)](https://2e.aonprd.com/Images/Monsters/Obsessive_Researcher.webp) | Researcher (Level 2) | 0 | 0 gp | Common | Researcher | Adventuring |
-| ![Reinforcing Rune (Major)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Reinforcing Rune (Major) | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Topology Protoplasm](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Topology Protoplasm | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Mercurial Mantle](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Mercurial Mantle | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Staff of Fire](https://2e.aonprd.com/Images/Treasure/Staff_Of_Fire.webp) | Staff of Fire | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Desolation Locket (Major)](https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png) | Desolation Locket (Major) | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Mask (Rubber)](https://2e.aonprd.com/Images/Ancestries/Icons/Ardande_Icon.png) | Mask (Rubber) | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Map (Local Map)](https://2e.aonprd.com/Images/Rules/Rules444.png) | Map (Local Map) | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Writing Set (Extra Ink and Paper)](https://2e.aonprd.com/Images/Ancestries/Icons/Ardande_Icon.png) | Writing Set (Extra Ink and Paper) | 0 | 5 sp | Common | N/A | Adventuring |
-| ![Catching](https://2e.aonprd.com/Images/Treasure/Catch_Pole.webp) | Catching | 0 | 0 gp | Common | N/A | Adventuring |
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| ![Handwraps of Mighty Blows (+3 greater striking)](https://2e.aonprd.com/Images/Treasure/Handwraps_Of_Mighty_Blows.webp) | Handwraps of Mighty Blows (+3 greater striking) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Handwraps%20of%20Mighty%20Blows) |
+| 🖼️ | Shadow | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shadow) |
+| 🖼️ | Magic Armor (+3 Major Resilient) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Armor) |
+| 🖼️ | Charm of Resistance (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Charm%20of%20Resistance) |
+| 🖼️ | Obsidian Goggles (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Obsidian%20Goggles) |
+| 🖼️ | Dragonbone Arrowhead | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dragonbone%20Arrowhead) |
+| 🖼️ | Glue Bomb (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glue%20Bomb) |
+| 🖼️ | Ranseur | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ranseur) |
+| ![Mail of Luck](https://2e.aonprd.com/Images/Treasure/Mail_Of_Luck.webp) | Mail of Luck | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mail%20of%20Luck) |
+| ![Primeval Mistletoe (Greater)](https://2e.aonprd.com/Images/Treasure/Primeval_Mistletoe.webp) | Primeval Mistletoe (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Primeval%20Mistletoe) |
+| 🖼️ | Animal Nip (Lesser) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Animal%20Nip) |
+| 🖼️ | Full Plate | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Full%20Plate) |
+| 🖼️ | Daredevil Boots | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Daredevil%20Boots) |
+| 🖼️ | Scythe | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Scythe) |
+| 🖼️ | Alchemist's Haversack | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Alchemist%27s%20Haversack) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
-| Image | Name | Level | Price | Rarity | Category | Type |
-|-------|------|-------|-------|--------|----------|------|
-| ![Replacement Filter (Level 1)](https://2e.aonprd.com/Images/Ancestries/Icons/Ardande_Icon.png) | Replacement Filter (Level 1) | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Long Air Repeater | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Long%20Air%20Repeater) |
+| 🖼️ | Silhouette Cloak | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Silhouette%20Cloak) |
 
 ## Services
 

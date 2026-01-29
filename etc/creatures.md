@@ -1,0 +1,3410 @@
+# Pathfinder 2e Creatures Database
+
+Source: Archives of Nethys
+
+| Name | Creature Family | Source | Rarity | Size | Trait | Level | HP | AC | Fort | Reflex | Will | Perception | Sense | Speed |
+|------|-----------------|--------|--------|------|-------|-------|----|----|------|--------|------|------------|-------|-------|
+| "Lucky" Lanks |  | Pathfinder #179: Cradle of Quartz pg. 24 |  | Unique | Halfling, Humanoid, Unique |  | 5 | 70 | 20 | +9 | +15 | +12 | 25 feet | Aapoph Granitescale |
+| Serpentfolk |  | Monster Core pg. 304 1.1 |  | Common | Humanoid, Mutant, Serpentfolk |  | 6 | 120 | 24 | +16 | +14 | +11 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Aapoph Serpentfolk | Serpentfolk | Monster Core pg. 303 1.1 |  | Common | Humanoid, Mutant, Serpentfolk |  | 3 | 60 | 18 | +10 | +7 | +6 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Aasimar Redeemer | Planar Scion | Bestiary pg. 263 |  | Common | Aasimar, Human, Humanoid |  | 5 | 73 | 23 | +12 | +8 | +11 | darkvision | 20 feet |
+| Abandoned Zealot |  | Bestiary 3 pg. 8 |  | Common | Incorporeal, Spirit, Undead |  | 6 | 75 ( negative healing ) | 22 | +10 | +14 | +16 | darkvision, lifesense 60 feet, sense apostate | fly 40 feet |
+| Abberton Ruffian |  | Pathfinder #151: The Show Must Go On pg. 9 |  | Common | Human, Humanoid |  | -1 | 8 | 13 | +5 | +5 | +2 | 25 feet | Abbot of Abadar |
+| Devotee |  | NPC Core pg. 28 |  | Common | Human, Humanoid |  | 1 | 15 | 14 | +3 | +4 | +11 | 25 feet | Abbot Tsujon |
+| Pathfinder #168: King of the Mountain pg. 15 | Unique	Medium | Humanoid, Samsaran, Unique |  | 18 | low-light vision |  |  |  |  |  |  |  | 40 feet | Abendego Brute |
+| Pathfinder #171: Hurricane's Howl pg. 37 | Common	Medium | Human, Humanoid |  | 8 | 25 feet | Abendego Jailer |  |  |  |  |  |  | Pathfinder #171: Hurricane's Howl pg. 42 | Common	Medium |
+| Human, Humanoid | 10	175	30	+20	+21	+17	+19 | 20 feet | Abendego Priest |  | Pathfinder #171: Hurricane's Howl pg. 46 |  | Common | Medium |  |  |  |  | Human, Humanoid | 11	175	30	+20	+21	+17	+22 |
+| 25 feet | Abridan Ashau | Shadows at Sundown pg. 26 |  | Unique | Human, Humanoid, Unique |  | 10 | 190 | 28 | +13 | +15 | +18 | 25 feet | Abrikandilu |
+| Demon |  | Pathfinder #151: The Show Must Go On pg. 81 |  | Common | Demon, Fiend |  | 4 | 70 | 19 | +15 | +9 | +7 | darkvision | 25 feet |
+| Abrikandilu | Demon | Monster Core 2 pg. 91 |  | Common | Demon, Fiend, Unholy |  | 4 | 70 | 19 | +14 | +9 | +7 | darkvision | 25 feet |
+| Abstalar Zantus |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 11 |  | Unique | Human, Humanoid, Unique |  | 7 | 115 | 22 | +13 | +11 | +15 | 25 feet | Abysium Horror |
+| Elemental, Metal |  | Rage of Elements pg. 158 2.0 |  | Common | Elemental, Metal |  | 10 | 215 | 29 | +21 | +19 | +17 | darkvision | 30 feet, climb 20 feet |
+| Accursed Forge-Spurned |  | Pathfinder #148: Fires of the Haunted City pg. 32 |  | Unique | Fire, Undead, Unique |  | 15 | 285 (eternal damnation, negative healing ) | 37 | +28 | +24 | +25 | darkvision | 20 feet |
+| Accuser Agent | Official | NPC Core pg. 118 |  | Common | Human, Humanoid |  | 9 | 115 | 28 | +15 | +19 | +19 | (21 to Sense Motive) | 25 feet |
+| Acolyte of Iomedae | Devotee | NPC Core pg. 29 |  | Common | Human, Humanoid |  | 1 | 15 | 15 | +2 | +5 | +9 | 25 feet | Acolyte of Nethys |
+| Devotees |  | Gamemastery Guide pg. 212 |  | Common | Human, Humanoid |  | 1 | 16 | 15 | +2 | +5 | +9 | 25 feet | Acolyte Of Pharasma |
+| Shadows at Sundown pg. 35 | Uncommon	Medium | Human, Humanoid, Uncommon |  | 1 | 25 feet | Acrobat |  |  |  |  |  |  | Performer | NPC Core pg. 124 |
+| Common	Medium | Human, Humanoid | 2	30	18	+8	+11	+4	+6 |  |  | 30 feet | Adachros |  |  |  |  |  |  | Ennosite | Bestiary 3 pg. 95 |
+| Uncommon	Large | Astral, Uncommon | 13	225	34	+24	+21	+26	+22 |  |  | thoughtsense (imprecise) 120 feet |  |  |  |  |  |  |  | 40 feet, fly 40 feet | Adamant Sentinel |
+| Monster Core 2 pg. 8 | Rare	Huge | Construct, Mindless, Rare |  | 18 | darkvision |  |  |  |  |  |  |  | 30 feet | Adamantine Archdragon |
+| Dragon, Adamantine |  | Draconic Codex pg. 42 |  | Rare | Dragon, Primal, Rare |  | 21 | 400 | 45 | +40 | +32 | +35 | darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 120 feet | 50 feet, burrow 60 feet, fly 200 feet |
+| Adept | Mystic | NPC Core pg. 96 |  | Common | Human, Humanoid |  | -1 | 8 | 14 | +2 | +4 | +6 | 25 feet | Adhukait |
+| Asura |  | Bestiary 3 pg. 22 |  | Common | Asura, Fiend |  | 7 | 130 | 25 | +15 | +17 | +13 | darkvision | 40 feet |
+| Adimar Scarnetti |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 128 |  | Unique | Beast, Human, Humanoid, Unique, Werecreature |  | 8 | 130 | 27 | +14 | +18 | +15 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Adlet |  | Monster Core 2 pg. 9 |  | Common | Cold, Humanoid |  | 9 | 180 | 29 | +20 | +22 | +16 | low-light vision, scent (imprecise) 30 feet | 40 feet |
+| Adrivallo |  | Pathfinder #152: Legacy of the Lost God pg. 49 |  | Unique | Fey, Unique |  | 10 | 210 | 28 | +18 | +17 | +14 | low-light vision | 35 feet |
+| Adult Adamantine Dragon | Dragon, Adamantine | Monster Core pg. 109 1.1 |  | Common | Dragon, Primal |  | 13 | 220 | 33 | +25 | +20 | +23 | darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 90 feet | 30 feet, burrow 40 feet, fly 150 feet |
+| Adult Barrage Dragon | Dragon, Barrage | Draconic Codex pg. 106 |  | Common | Arcane, Dragon |  | 12 | 220 | 32 | +19 | +25 | +22 | ironsense (precise) 30 feet | 50 feet, fly 120 feet |
+| Adult Bog Dragon | Dragon, Bog | Draconic Codex pg. 110 |  | Common | Amphibious, Dragon, Primal |  | 11 | 200 | 30 | +22 | +18 | +23 | darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 90 feet | 30 feet, burrow 25 feet, fly 80 feet, swim 40 feet; swamp passage |
+| Adult Brine Dragon | Dragon, Brine | Draconic Codex pg. 114 |  | Common | Aquatic, Dragon, Elemental, Primal, Water |  | 12 | 270 | 32 | +25 | +22 | +20 | (24 to Sense Motive) aquatic echolocation 120 feet, darkvision | 30 feet, swim 150 feet, fly 120 feet |
+| Adult Cinder Dragon | Dragon, Cinder | Monster Core 2 pg. 118 |  | Common | Dragon, Fire, Primal |  | 14 | 310 | 35 | +27 | +23 | +25 | darkvision, scent (imprecise) 60 feet, smoke vision | 50 feet, fly 150 feet |
+| Adult Cloud Dragon | Dragon, Cloud | Draconic Codex pg. 118 |  | Common | Air, Dragon, Primal |  | 14 | 255 | 36 | +25 | +23 | +27 | darkvision, mist vision, scent (imprecise) 60 feet | 50 feet, fly 160 feet |
+| Adult Conspirator Dragon | Dragon, Conspirator | Monster Core pg. 111 1.1 |  | Common | Dragon, Occult |  | 12 | 215 | 33 | +20 | +21 | +25 | (25 to Sense Motive) darkvision, scent (imprecise) 60 feet | 40 feet, climb 40 feet, fly 140 feet |
+| Adult Coral Dragon | Dragon, Coral | Monster Core 2 pg. 121 |  | Common | Amphibious, Dragon, Primal |  | 12 | 215 | 32 | +25 | +20 | +21 | darkvision, wavesense (imprecise) 60 feet | 30 feet, fly 50 feet, swim 100 |
+| Adult Crystal Dragon | Dragon, Crystal | Draconic Codex pg. 122 |  | Common | Dragon, Earth, Primal |  | 11 | 190 | 31 | +24 | +18 | +22 | darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 60 feet | 40 feet, fly 150 feet |
+| Adult Delight Dragon | Dragon, Delight | Draconic Codex pg. 126 |  | Common | Divine, Dragon, Holy |  | 14 | 240 | 36 | +24 | +27 | +25 | lifesense (imprecise) 30 feet, scent (imprecise) 60 feet, whimsysense (imprecise) 60 feet | 50 feet, fly 140 feet |
+| Adult Despair Dragon | Dragon, Despair | Monster Core 2 pg. 123 |  | Common | Dragon, Occult |  | 13 | 220 | 33 | +21 | +23 | +25 | darkvision, fearsense (imprecise) 60 feet, scent (imprecise) 60 feet | 50 feet, fly 150 feet |
+| Adult Diabolic Dragon | Dragon, Diabolic | Monster Core pg. 113 1.1 |  | Common | Divine, Dragon, Unholy |  | 15 | 285 | 36 | +29 | +25 | +26 | greater darkvision, scent (imprecise) 60 feet, smoke vision | 60 feet, fly 150 feet |
+| Adult Empyreal Dragon | Dragon, Empyreal | Monster Core pg. 115 1.1 |  | Common | Divine, Dragon, Holy |  | 14 | 250 | 36 | +24 | +24 | +26 | darkvision, lifesense (imprecise) 30 feet, scent (imprecise) 60 feet | 70 feet, fly 180 feet |
+| Adult Executor Dragon | Dragon, Executor | Draconic Codex pg. 132 |  | Common | Divine, Dragon |  | 13 | 235 | 33 | +25 | +23 | +28 | darkvision, lifesense (imprecise) 30 feet, scent (imprecise) 60 feet | 70 feet, fly 150 feet |
+| Adult Forest Dragon | Dragon, Forest | Draconic Codex pg. 136 |  | Common | Dragon, Elemental, Primal, Wood |  | 14 | 260 | 36 | +25 | +22 | +27 | darkvision, scent (imprecise) 60 feet | 40 feet, fly 120 feet; woodland passage |
+| Adult Fortune Dragon | Dragon, Fortune | Monster Core pg. 118 1.1 |  | Common | Arcane, Dragon |  | 14 | 230 | 36 | +24 | +27 | +24 | darkvision, scent (imprecise) 60 feet | 70 feet, fly 140 feet |
+| Adult Horned Dragon | Dragon, Horned | Monster Core pg. 120 1.1 |  | Common | Amphibious, Dragon, Primal |  | 12 | 215 | 34 | +20 | +22 | +23 | darkvision, scent (imprecise) 60 feet | 40 feet, fly 160 feet, swim 40 feet; forest passage, trackless journey |
+| Adult Magma Dragon | Dragon, Magma | Pathfinder #148: Fires of the Haunted City pg. 80 |  | Rare | Dragon, Fire, Rare |  | 13 | 270 | 34 | +26 | +21 | +23 | darkvision, scent (imprecise) 60 feet | 40 feet, fly 140 feet; magma swim 40 feet |
+| Adult Magma Dragon | Dragon, Magma | Draconic Codex pg. 140 |  | Common | Dragon, Fire, Primal |  | 13 | 270 | 33 | +25 | +21 | +23 | darkvision, scent (imprecise) 60 feet | 40 feet, burrow 40 feet, fly 140 feet; magma burrow |
+| Adult Mirage Dragon | Dragon, Mirage | Monster Core pg. 122 1.1 |  | Common | Arcane, Dragon |  | 13 | 235 | 33 | +22 | +23 | +25 | darkvision, illusion sense, scent (imprecise) 60 feet | 50 feet, climb 30 feet, fly 150 feet |
+| Adult Mocking Dragon | Dragon, Mocking | Draconic Codex pg. 144 |  | Common | Dragon, Occult |  | 12 | 215 | 32 | +20 | +25 | +22 | darkvision | 30 feet, fly 150 feet |
+| Adult Oath Dragon | Dragon, Oath | Draconic Codex pg. 148 |  | Common | Divine, Dragon |  | 14 | 255 | 36 | +25 | +22 | +28 | darkvision, scent (imprecise) 60 feet | 60 feet, fly 140 feet |
+| Adult Omen Dragon | Dragon, Omen | Monster Core pg. 124 1.1 |  | Common | Dragon, Occult |  | 11 | 185 | 30 | +20 | +19 | +23 | darkvision, scent (imprecise) 60 feet | 50 feet, fly 130 feet |
+| Adult Phase Dragon | Dragon, Phase | Monster Core 2 pg. 125 |  | Common | Arcane, Dragon |  | 13 | 180 | 33 | +20 | +25 | +24 | darkvision, scent (imprecise) 60 feet | 50 feet, fly 150 feet |
+| Adult Requiem Dragon | Dragon, Requiem | Monster Core 2 pg. 127 |  | Common | Divine, Dragon |  | 15 | 270 | 36 | +26 | +23 | +29 | darkvision, lifesense 90 feet, scent (imprecise) 60 feet, status sight | 50 feet, fly 150 feet, swim 50 feet |
+| Adult Resurrection Dragon | Dragon, Resurrection | Monster Core 2 pg. 129 |  | Common | Divine, Dragon |  | 12 | 230 | 32 | +21 | +20 | +25 | darkvision, scent (imprecise) 60 feet | 40 feet, fly 160 feet |
+| Adult Rime Dragon | Dragon, Rime | Draconic Codex pg. 152 |  | Common | Cold, Dragon, Primal |  | 10 | 175 | 29 | +22 | +16 | +19 | darkvision, scent (imprecise) 60 feet, snow vision | 40 feet, fly 100 feet, swim 30 feet |
+| Adult Rune Dragon | Dragon, Rune | Monster Core 2 pg. 132 |  | Common | Arcane, Dragon |  | 14 | 255 | 36 | +25 | +23 | +27 | darkvision, magic sense (imprecise) 60 feet, scent (imprecise) 60 feet | 70 feet, fly 140 feet |
+| Adult Sage Dragon | Dragon, Sage | Draconic Codex pg. 156 |  | Common | Dragon, Occult |  | 13 | 230 | 34 | +22 | +24 | +26 | darkvision | 25 feet, fly 60 feet |
+| Adult Sea Dragon | Dragon, Sea | Draconic Codex pg. 160 |  | Common | Amphibious, Arcane, Dragon, Water |  | 12 | 225 | 32 | +22 | +25 | +20 | darkvision, wavesense (imprecise) 60 feet | 40 feet, fly 120 feet, swim 60 feet; water walk |
+| Adult Sky Dragon | Dragon, Sky | Draconic Codex pg. 164 |  | Common | Divine, Dragon, Electricity, Metal |  | 13 | 235 | 34 | +23 | +21 | +26 | darkvision, mist vision, scent (imprecise) 60 feet | 40 feet, fly 140 feet |
+| Adult Sovereign Dragon | Dragon, Sovereign | Draconic Codex pg. 168 |  | Common | Dragon, Earth, Occult |  | 15 | 275 | 37 | +27 | +23 | +29 | darkvision, sanctified sight, scent (imprecise) 60 feet | 50 feet, fly 150 feet |
+| Adult Stormcrown Dragon | Dragon, Stormcrown | Draconic Codex pg. 172 |  | Common | Dragon, Electricity, Primal |  | 13 | 254 | 34 | +23 | +26 | +20 | darkvision, motionsense (precise) 60 feet, scent (imprecise) 60 feet | 50 feet, fly 150 feet |
+| Adult Time Dragon | Dragon, Time | Draconic Codex pg. 176 |  | Uncommon | Arcane, Dragon, Uncommon |  | 15 | 342 | 36 | +30 | +25 | +27 | (28 initiative) detect magic, greater darkvision | 50 feet, fly 150 feet |
+| Adult Umbral Dragon | Dragon, Umbral | Draconic Codex pg. 180 |  | Uncommon | Dragon, Occult, Shadow, Uncommon |  | 15 | 275 | 36 | +27 | +24 | +27 | greater darkvision, voidsense (precise) 60 feet | 50 feet, fly 180 feet |
+| Adult Underworld Dragon | Dragon, Underworld | Draconic Codex pg. 184 |  | Common | Arcane, Dragon, Fire |  | 11 | 195 | 31 | +23 | +18 | +22 | darkvision, scent (imprecise) 60 feet, smoke vision | 40 feet, burrow 40 feet, fly 80 feet |
+| Adult Vizier Dragon | Dragon, Vizier | Draconic Codex pg. 188 |  | Common | Dragon, Occult |  | 15 | 300 | 36 | +27 | +25 | +29 | darkvision, scent (imprecise) 60 feet | 50 feet, fly 180 feet, swim 50 feet |
+| Adult Vorpal Dragon | Dragon, Vorpal | Draconic Codex pg. 192 |  | Common | Arcane, Dragon, Metal |  | 13 | 230 | 34 | +26 | +20 | +23 | darkvision, scent (imprecise) 90 feet | 30 feet, fly 150 feet |
+| Adult Wailing Dragon | Dragon, Wailing | Draconic Codex pg. 196 |  | Common | Arcane, Dragon |  | 10 | 215 | 29 | +19 | +22 | +17 | darkvision, echolocation (precise) 120 feet | 35 feet, fly 100 feet |
+| Adult Whisper Dragon | Dragon, Whisper | Monster Core 2 pg. 134 |  | Common | Dragon, Occult |  | 11 | 190 | 31 | +21 | +19 | +24 | (23 to Sense Motive) darkvision, scent (imprecise) 60 feet | 50 feet, fly 170 feet |
+| Adult Wish Dragon | Dragon, Wish | Draconic Codex pg. 200 |  | Common | Arcane, Dragon |  | 14 | 260 | 35 | +24 | +24 | +28 | darkvision, scent (imprecise) 60 feet | 40 feet, climb 40 feet, fly 140 feet |
+| Advisor | Courtier | NPC Core pg. 14 |  | Common | Human, Humanoid |  | 5 | 60 | 21 | +8 | +11 | +14 | 25 feet | Aecora Silverfire |
+| Kingmaker Adventure Path pg. 269 | Unique	Large | Beast, Unique |  | 7 | darkvision |  |  |  |  |  |  |  | 40 feet | Aeolaeka |
+| Azata |  | Monster Core pg. 35 1.1 |  | Common | Azata, Celestial, Earth, Holy |  | 12 | 250 | 33 | +25 | +20 | +23 | darkvision, tremorsense (precise) 60 feet | 25 feet, burrow 25 feet; earth glide |
+| Aeon Stone Swarm |  | Pathfinder #215: To Blot Out the Sun pg. 82 |  | Common | Construct, Swarm |  | 9 | 110 | 25 | +16 | +21 | +16 | darkvision | fly 40 feet |
+| Aesra | Archon | Monster Core pg. 27 1.1 |  | Common | Archon, Celestial, Holy |  | 7 | 100 | 27 | +17 | +11 | +15 | darkvision | 30 feet, fly 60 feet |
+| Afziaka Brute | Afziaka | Pathfinder #185: A Taste of Ashes pg. 82 |  | Uncommon | Animal, Mindless, Uncommon |  | 6 | 120 | 23 | +16 | +14 | +12 | darkvision, scent (imprecise) 30 feet | 40 feet |
+| Afziaka Stalker | Afziaka | Pathfinder #185: A Taste of Ashes pg. 82 |  | Uncommon | Animal, Mindless, Uncommon |  | 12 | 250 | 32 | +22 | +25 | +18 | darkvision, scent (imprecise) 30 feet | 40 feet |
+| Agadaz | Devil | Pathfinder #205: Singer, Stalker, Skinsaw Man pg. 86 |  | Uncommon | Devil, Fiend, Uncommon, Unholy |  | 4 | 50 | 20 | +12 | +14 | +10 | greater darkvision | 25 feet |
+| Agai |  | Kingmaker Adventure Path pg. 264 |  | Unique | Gnome, Humanoid, Spriggan, Unique |  | 9 | 155 | 28 | +17 | +21 | +19 | low-light vision | 20 feet |
+| Aghash | Div | Monster Core 2 pg. 111 |  | Common | Div, Fiend, Unholy |  | 4 | 75 | 19 | +9 | +10 | +12 | greater darkvision | 25 feet |
+| Agile Warrior |  | Pathfinder #166: Despair on Danger Island pg. 23 |  | Uncommon | Human, Humanoid, Uncommon |  | 13 | 180 | 35 | +22 | +26 | +21 | 35 feet | Agradaemon |
+| Daemon |  | Pathfinder #162: Ruins of the Radiant Siege pg. 79 |  | Rare | Daemon, Fiend, Fire, Rare |  | 19 | 400 | 45 | +31 | +36 | +31 | darkvision, smoke vision | 40 feet, climb 40 feet |
+| Agyra |  | War of Immortals pg. 189 |  | Unique | Beast, Kaiju, Mythic, Unique |  | 23 | 475 | 49 | +37 | +40 | +34 | darkvision, stormsight | 40 feet, fly 60 feet |
+| Ahuizotl |  | Monster Core 2 pg. 20 |  | Uncommon | Amphibious, Beast, Uncommon |  | 6 | 105 | 23 | +17 | +13 | +13 | darkvision | 25 feet, swim 35 feet |
+| Ahvothian |  | The Slithering pg. 62 |  | Uncommon | Fiend, Uncommon |  | 7 | 160 | 25 | +18 | +12 | +15 | darkvision | 30 feet; freedom of movement |
+| Aigamuxa |  | Monster Core 2 pg. 21 |  | Uncommon | Giant, Humanoid, Uncommon |  | 8 | 140 | 27 | +19 | +16 | +13 | scent (imprecise) 30 feet | 30 feet |
+| Ainamuuren |  | Monsters of Myth pg. 9 |  | Unique | Cold, Humanoid, Unique |  | 14 | 259 | 33 | +25 | +22 | +27 | darkvision, scent (imprecise) 30 feet | 35 feet |
+| Ainamuuren (Corrupted) |  | Gatewalkers (Hardcover) pg. 272 |  | Unique | Cold, Humanoid, Unique |  | 12 | 215 | 32 | +23 | +22 | +23 | darkvision, scent (imprecise) 30 feet | 35 feet |
+| Air Scamp | Elemental, Scamp | Monster Core pg. 146 1.1 |  | Common | Air, Elemental |  | 1 | 12 ( fast healing 2 (in open air)) | 16 | +3 | +9 | +7 | darkvision, fog vision | 20 feet, fly 40 feet |
+| Air Wisp | Elemental, Wisp | Monster Core 2 pg. 152 |  | Common | Air, Elemental |  | 0 | 12 | 16 | +3 | +9 | +4 | darkvision | fly 40 feet |
+| Aiudara Wraith | Wraith | Pathfinder #150: Broken Promises pg. 78 |  | Rare | Astral, Incorporeal, Rare, Undead, Wraith |  | 18 | 300 ( negative healing ) | 45 | +33 | +37 | +33 | darkvision, lifesense 60 feet | fly 60 feet; instantaneous movement |
+| Aiuvarin Elementalist | Elf | Monster Core pg. 151 1.1 |  | Common | Aiuvarin, Elf, Human, Humanoid |  | 2 | 20 | 17 | +5 | +11 | +8 | low-light vision | 30 feet |
+| Aiuvarin Translator | Elf | NPC Core pg. 178 |  | Common | Aiuvarin, Elf, Human |  | 0 | 12 | 14 | +2 | +6 | +9 | low-light vision | 25 feet |
+| Aives The Smoke Dragon |  | Pathfinder #152: Legacy of the Lost God pg. 16 |  | Unique | Humanoid, Tiefling, Unique |  | 4 | 56 | 21 | +9 | +14 | +9 | darkvision | 25 feet |
+| Ajbal Kimon |  | Pathfinder #171: Hurricane's Howl pg. 86 |  | Unique | Human, Humanoid, Unique |  | 13 | 225 | 34 | +21 | +24 | +23 | 20 feet | Akashti |
+| Nindoru |  | Pathfinder #198: No Breath to Cry pg. 82 |  | Rare | Fiend, Nindoru, Rare |  | 10 | 175 | 29 | +17 | +21 | +19 | darkvision | 25 feet |
+| Akata |  | Bestiary 2 pg. 13 2.0 |  | Rare | Aberration, Rare |  | 1 | 15 | 16 | +9 | +5 | +6 | darkvision, no hearing, scent (imprecise) 30 feet | 30 feet, climb 15 feet |
+| Akhana | Aeon | Monster Core pg. 10 1.1 |  | Common | Aeon, Monitor |  | 12 | 225 | 32 | +23 | +22 | +23 | darkvision, lifesense 120 feet | fly 60 feet |
+| Akila Stormheel |  | Pathfinder #167: Ready? Fight! pg. 38 |  | Unique | Halfling, Humanoid, Unique |  | 13 | 230 | 34 | +22 | +26 | +20 | low-light vision | 35 feet |
+| Akiros Ismort |  | Kingmaker Adventure Path pg. 180 |  | Unique | Human, Humanoid, Unique |  | 3 | 53 | 18 | +11 | +8 | +7 | 25 feet | Akizendri |
+| Protean |  | Monster Core 2 pg. 258 |  | Common | Monitor, Protean |  | 3 | 40 ( fast healing 1) | 19 | +6 | +11 | +10 | darkvision, entropy sense (imprecise) 30 feet | 25 feet, fly 25 feet, swim 25 feet; unfettered movement |
+| Akki |  | Pathfinder #218: Titanbane pg. 38 |  | Unique | Humanoid, Mythic, Tengu, Unique |  | 8 | 170 | 24 | +21 | +16 | +14 | low-light vision | 35 feet |
+| Akrida |  | Pathfinder #179: Cradle of Quartz pg. 39 |  | Unique | Animal, Mutant, Unique |  | 4 | 60 | 21 | +12 | +11 | +11 | darkvision, scent (imprecise) 30 feet | 20 feet, burrow 10 feet |
+| Akuzhail |  | Kingmaker Adventure Path pg. 247 |  | Unique | Beast, Mutant, Unique |  | 10 | 195 | 29 | +21 | +17 | +19 | darkvision, scent (imprecise) 30 feet | 25 feet, fly 40 feet, bloom stride |
+| Alak Stagram |  | Pathfinder #145: Hellknight Hill pg. 19 |  | Unique | Human, Humanoid, Unique |  | 2 | 34 | 20 | +9 | +7 | +5 | 20 feet | Alapolo |
+| Pathfinder #174: Shadows of the Ancients pg. 80 | Rare	Medium | Fey, Rare, Shadow |  | 17 | low-light vision |  |  |  |  |  |  |  | 40 feet | Alasen |
+| Kingmaker Adventure Path pg. 389 | Unique	Large | Beast, Human, Humanoid, Unique, Werecreature |  | 14 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet | Alate Ant |
+| Gigantic Ant |  | Pathfinder #174: Shadows of the Ancients pg. 72 |  | Rare | Beast, Rare |  | 16 | 295 | 39 | +24 | +30 | +28 | darkvision, scent (imprecise) 60 feet | 40 feet, climb 20 feet, fly 40 feet |
+| Albino Giant Bat | Bat | Crown of the Kobold King pg. 108 |  | Common | Animal |  | 5 | 72 | 22 | +15 | +12 | +11 | echolocation (precise) 40 feet, low-light vision | 15 feet, fly 30 feet |
+| Algea | Psychopomp | Malevolence pg. 70 |  | Common | Monitor, Psychopomp, Swarm |  | 11 | 144 | 30 | +18 | +24 | +22 | darkvision, lifesense 60 feet, see magic | 15 feet, fly 40 feet |
+| Loading... | Algriever | Pathfinder #199: To Bloom Below the Web pg. 82 |  | Uncommon | Beast, Spirit, Uncommon |  | 9 | 155 | 27 | +15 | +17 | +21 | darkvision | 30 feet, climb 30 feet |
+| Alicorn | Unicorn | Howl of the Wild pg. 191 2.1 |  | Rare | Beast, Fey, Holy, Rare |  | 15 | 320 | 36 | +26 | +26 | +29 | darkvision, scent (imprecise) 30 feet | 40 feet, fly 80 feet |
+| Aliriel |  | Shadows at Sundown pg. 47 |  | Unique | Shadow, Undead, Unique, Vampire |  | 15 | 210 (coffin restoration, fast healing 15 , negative healing ) | 37 | +25 | +29 | +27 | darkvision | 25 feet, fly 25 feet |
+| Aliver "Pillbug" Podiker |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 98 |  | Common | Human, Humanoid |  | 7 | 125 | 21 | +16 | +13 | +16 | 25 feet | Alktherisa and Omprisgor |
+| Prey for Death pg. 86 | Unique	Huge | Monitor, Protean, Unique |  | 19 | entropy sense (imprecise) 60 feet, darkvision |  |  |  |  |  |  |  | 40 feet, fly 50 feet, swim 40 feet; unfettered movement | Loading... |
+| Aller Rosk |  | Pathfinder #163: Ruins of Gauntlight pg. 43 |  | Unique | Ghoul, Undead, Unique |  | 5 | 75 (negative healing) | 22 | +14 | +12 | +10 | darkvision | 30 feet, burrow 5 feet |
+| Allosaurus | Dinosaur | Monster Core 2 pg. 108 |  | Common | Animal, Dinosaur |  | 7 | 120 | 24 | +18 | +15 | +12 | low-light vision, scent (imprecise) 60 feet | 40 feet |
+| Almiraj |  | Howl of the Wild pg. 124 2.1 |  | Uncommon | Animal, Uncommon |  | 4 | 63 | 20 | +14 | +11 | +8 | tremorsense (imprecise) 40 feet | 35 feet, burrow 25 feet |
+| Aluum Enforcer | Aluum | Pathfinder #149: Against the Scarlet Triad pg. 82 |  | Uncommon | Construct, Mindless, Uncommon |  | 10 | 145 | 30 | +21 | +18 | +15 | darkvision | 25 feet |
+| Alyce Quinley |  | Pathfinder #201: Pactbreaker pg. 91 |  | Unique | Human, Humanoid, Unique |  | 6 | 95 | 25 | +15 | +11 | +14 | 30 feet | Alzira Mustanir |
+| Pathfinder #213: Thirst for Blood pg. 58 | Unique	Medium | Beast, Beastkin, Elf, Human, Humanoid, Unholy, Unique |  | 3 | darkvision |  |  |  |  |  |  |  | 30 feet | Amalgamite |
+| Bestiary 3 pg. 14 | Rare	Medium | Aberration, Rare |  | 13 | low-light vision |  |  |  |  |  |  |  | 25 feet | Loading... |
+| Ambrost Mugland |  | Pathfinder #179: Cradle of Quartz pg. 88 |  | Unique | Halfling, Humanoid, Unique |  | 8 | 140 | 26 | +15 | +19 | +17 | 25 feet | Ambush Copse |
+| Monster Core 2 pg. 24 | Common	Huge | Elemental, Plant, Wood |  | 13 | tremorsense 30 feet |  |  |  |  |  |  |  | 30 feet | Amelekana |
+| Gatewalkers (Hardcover) pg. 246 | Uncommon	Large | Amphibious, Beast, Uncommon |  | 4 | lifesense 100 feet |  |  |  |  |  |  |  | 20 feet, swim 20 feet | Ameon Trask |
+| Kingmaker Adventure Path pg. 298 | Unique	Medium | Human, Humanoid, Unique |  | 10 | 25 feet | Amihan |  |  |  |  |  |  | Pathfinder #167: Ready? Fight! pg. 40 | Rare	Medium |
+| Human, Humanoid, Rare | 15	275	37	+25	+28	+21	+21 | 25 feet | Amiri (Level 1) |  | Kingmaker Companion Guide pg. 7 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 1	22	18	+7	+5	+5	+5 |
+| (expert) | 25 feet | Amiri (Level 11) |  |  | Kingmaker Companion Guide pg. 8 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 11	195	31	+22	+20	+17	+16 |
+| (expert) | 35 feet | Ammut |  |  | Pathfinder #155: Lord of the Black Sands pg. 77 |  | Rare | Huge |  |  |  |  | Fiend, Rare | 18	350	41	+35	+27	+28	+33 |
+| darkvision, scent (imprecise) 30 feet, true seeing | 50 feet, burrow 30 feet | Amnerion |  |  | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 88 |  | Unique | Gargantuan |  |  |  |  | Gigas, Humanoid, Mythic, Unique | 22	540	48	+39	+33	+36	+43 |
+| darkvision, lifesense 100 feet, truesight | 35 feet; realm step | Amoeba Swarm |  |  | Ooze |  |  |  |  |  |  |  | Monster Core 2 pg. 240 | Common	Large |
+| Amphibious, Mindless, Ooze, Swarm | 1	35	9	+8	+1	+3	+3 | motion sense 60 feet, no vision |  |  | 5 feet, climb 5 feet, swim 10 feet | Amphisbaena |  |  |  |  |  |  | Monster Core 2 pg. 25 | Common	Medium |
+| Animal | 4	70	20	+11	+14	+8	+11 | tremorsense 60 feet |  |  | 25 feet, climb 25 feet, swim 25 feet | Anadi Elder |  |  |  |  |  |  | Anadi | The Mwangi Expanse pg. 291 2.0, Pathfinder #145: Hellknight Hill pg. 85 |
+| Uncommon	Medium | Anadi, Humanoid, Uncommon | 6	95	23	+11	+14	+17	+15 |  |  | 25 feet, climb 25 feet | Anadi Fateweaver |  |  |  |  |  |  | Anadi | Pathfinder #169: Kindled Magic pg. 79 |
+| Uncommon	Medium | Anadi, Humanoid, Uncommon | 5	75	21	+9	+12	+15	+14 |  |  | 25 feet, climb 25 feet | Anadi Hunter |  |  |  |  |  |  | Anadi | The Mwangi Expanse pg. 209 2.0, Pathfinder #145: Hellknight Hill pg. 84 |
+| Uncommon	Medium | Anadi, Humanoid, Uncommon | 2	27	17	+4	+10	+7	+9 |  |  | 25 feet, climb 25 feet | Anadi Lurker |  |  |  |  |  |  | Anadi | Pathfinder #169: Kindled Magic pg. 78 |
+| Uncommon	Medium | Anadi, Humanoid, Uncommon | 3	45	19	+7	+11	+9	+11 |  |  | 25 feet, climb 25 feet | Anadi Sage |  |  |  |  |  |  | Anadi | The Mwangi Expanse pg. 290 2.0, Pathfinder #145: Hellknight Hill pg. 85 |
+| Uncommon	Medium | Anadi, Humanoid, Uncommon | 4	58	20	+8	+11	+14	+12 |  |  | 25 feet, climb 25 feet | Anadi Seeker |  |  |  |  |  |  | Anadi | Pathfinder #169: Kindled Magic pg. 78 |
+| Uncommon	Medium | Anadi, Humanoid, Uncommon | 1	20	15	+4	+10	+7	+7 |  |  | 25 feet, climb 25 feet | Anancus |  |  |  |  |  |  | Elephant | Bestiary 2 pg. 116 2.0 |
+| Common	Huge | Animal | 8	170	25	+19	+14	+16	+16 |  |  | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 40 feet | Loading... |
+| Loading... | Ancient Adamantine Dragon | Dragon, Adamantine |  |  | Monster Core pg. 109 1.1 |  | Uncommon | Gargantuan |  |  |  |  | Dragon, Primal, Uncommon | 18	300	41	+32	+26	+29	+30 |
+| darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 120 feet | 40 feet, burrow 50 feet, fly 180 feet | Ancient Barrage Dragon |  |  | Dragon, Barrage |  |  |  |  |  |  |  | Draconic Codex pg. 107 | Uncommon	Huge |
+| Arcane, Dragon, Uncommon | 17	340	39	+26	+32	+29	+29 | ironsense (precise) 30 feet |  |  | 50 feet, fly 120 feet | Ancient Bog Dragon |  |  |  |  |  |  | Dragon, Bog | Draconic Codex pg. 111 |
+| Uncommon	Gargantuan | Amphibious, Dragon, Primal, Uncommon | 16	335	38	+29	+25	+30	+29 |  |  | darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 120 feet |  |  |  |  |  |  |  | 40 feet, burrow 30 feet, fly 100 feet, swim 60 feet; swamp passage | Ancient Brine Dragon |
+| Dragon, Brine |  | Draconic Codex pg. 115 |  | Uncommon | Aquatic, Dragon, Elemental, Primal, Uncommon, Water |  | 17 | 395 | 39 | +32 | +29 | +30 | (31 to Sense Motive) aquatic echolocation 120 feet, greater darkvision | 35 feet, swim 180 feet, fly 150 feet |
+| Ancient Cinder Dragon | Dragon, Cinder | Monster Core 2 pg. 119 |  | Uncommon | Dragon, Fire, Primal, Uncommon |  | 19 | 425 | 42 | +34 | +30 | +32 | darkvision, scent (imprecise) 60 feet, smoke vision | 60 feet, fly 180 feet |
+| Ancient Cloud Dragon | Dragon, Cloud | Draconic Codex pg. 119 |  | Uncommon | Air, Dragon, Primal, Uncommon |  | 19 | 355 | 43 | +34 | +30 | +36 | darkvision, mist vision, scent (imprecise) 60 feet | 60 feet, fly 160 feet |
+| Ancient Conspirator Dragon | Dragon, Conspirator | Monster Core pg. 112 1.1 |  | Uncommon | Dragon, Occult, Uncommon |  | 17 | 345 | 40 | +27 | +28 | +32 | (32 to Sense Motive) darkvision, scent (imprecise) 60 feet | 50 feet, climb 50 feet, fly 200 feet |
+| Ancient Coral Dragon | Dragon, Coral | Monster Core 2 pg. 121 |  | Uncommon | Amphibious, Dragon, Primal, Uncommon |  | 17 | 315 | 39 | +32 | +27 | +28 | darkvision, wavesense (imprecise) 60 feet (page 363) | 50 feet, fly 60 feet, swim 120 feet |
+| Ancient Crystal Dragon | Dragon, Crystal | Draconic Codex pg. 123 |  | Uncommon | Dragon, Earth, Primal, Uncommon |  | 16 | 290 | 39 | +30 | +25 | +28 | darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 60 feet | 50 feet, fly 150 feet |
+| Ancient Delight Dragon | Dragon, Delight | Draconic Codex pg. 126 |  | Uncommon | Divine, Dragon, Holy, Uncommon |  | 19 | 325 | 43 | +31 | +35 | +32 | lifesense (imprecise) 30 feet, scent (imprecise) 60 feet, whimsysense (imprecise) 120 feet | 60 feet, fly 160 feet |
+| Ancient Despair Dragon | Dragon, Despair | Monster Core 2 pg. 124 |  | Uncommon | Dragon, Occult, Uncommon |  | 18 | 325 | 41 | +28 | +30 | +32 | darkvision, fearsense (precise) 60 feet, scent (imprecise) 60 feet | 60 feet, fly 180 feet |
+| Ancient Diabolic Dragon | Dragon, Diabolic | Monster Core pg. 114 1.1 |  | Uncommon | Divine, Dragon, Uncommon, Unholy |  | 20 | 390 | 44 | +36 | +32 | +32 | greater darkvision, scent (imprecise) 60 feet, smoke vision | 70 feet, fly 180 feet |
+| Ancient Empyreal Dragon | Dragon, Empyreal | Monster Core pg. 116 1.1 |  | Uncommon | Divine, Dragon, Holy, Uncommon |  | 19 | 350 | 43 | +31 | +31 | +35 | darkvision, lifesense (imprecise) 30 feet, scent (imprecise) 60 feet | 80 feet, fly 200 feet |
+| Ancient Executor Dragon | Dragon, Executor | Draconic Codex pg. 133 |  | Uncommon | Divine, Dragon, Uncommon |  | 18 | 335 | 42 | +32 | +30 | +35 | darkvision, lifesense (imprecise) 30 feet, scent (imprecise) 60 feet | 80 feet, fly 150 feet |
+| Ancient Forest Dragon | Dragon, Forest | Draconic Codex pg. 136 |  | Uncommon | Dragon, Elemental, Primal, Uncommon, Wood |  | 19 | 375 | 43 | +32 | +29 | +35 | darkvision, scent (imprecise) 60 feet | 40 feet, fly 160 feet; woodland passage |
+| Ancient Fortune Dragon | Dragon, Fortune | Monster Core pg. 118 1.1 |  | Uncommon | Arcane, Dragon, Uncommon |  | 19 | 300 | 43 | +31 | +34 | +32 | darkvision, scent (imprecise) 60 feet | 80 feet, fly 180 feet |
+| Ancient Horned Dragon | Dragon, Horned | Monster Core pg. 121 1.1 |  | Uncommon | Amphibious, Dragon, Primal, Uncommon |  | 17 | 315 | 41 | +30 | +29 | +32 | darkvision, scent (imprecise) 60 feet | 50 feet, fly 200 feet, swim 50 feet; forest passage, trackless journey |
+| Ancient Magma Dragon | Dragon, Magma | Pathfinder #148: Fires of the Haunted City pg. 81 |  | Rare | Dragon, Fire, Rare |  | 18 | 390 | 42 | +33 | +31 | +30 | darkvision, scent (imprecise) 60 feet | 50 feet, fly 200 feet; magma swim 50 feet |
+| Ancient Magma Dragon | Dragon, Magma | Draconic Codex pg. 140 |  | Uncommon | Dragon, Fire, Primal, Uncommon |  | 18 | 380 | 42 | +33 | +28 | +30 | darkvision, scent (imprecise) 60 feet | 50 feet, burrow 50 feet, fly 200 feet; magma burrow |
+| Ancient Mirage Dragon | Dragon, Mirage | Monster Core pg. 123 1.1 |  | Uncommon | Arcane, Dragon, Uncommon |  | 18 | 345 | 41 | +28 | +29 | +33 | darkvision, illusion sense, scent (imprecise) 60 feet | 60 feet, climb 40 feet, fly 180 feet |
+| Ancient Mocking Dragon | Dragon, Mocking | Draconic Codex pg. 145 |  | Uncommon | Dragon, Occult, Uncommon |  | 17 | 325 | 39 | +27 | +32 | +29 | darkvision | 40 feet, fly 180 feet |
+| Ancient Oath Dragon | Dragon, Oath | Draconic Codex pg. 148 |  | Uncommon | Divine, Dragon, Uncommon |  | 19 | 375 | 43 | +32 | +29 | +37 | darkvision, scent (imprecise) 60 feet | 60 feet, fly 180 feet |
+| Ancient Omen Dragon | Dragon, Omen | Monster Core pg. 125 1.1 |  | Uncommon | Dragon, Occult, Uncommon |  | 16 | 280 | 38 | +27 | +28 | +29 | darkvision, scent (imprecise) 60 feet | 60 feet, fly 180 feet |
+| Ancient Phase Dragon | Dragon, Phase | Monster Core 2 pg. 126 |  | Uncommon | Arcane, Dragon, Uncommon |  | 18 | 250 | 41 | +27 | +32 | +31 | darkvision, scent (imprecise) 60 feet | 60 feet, fly 180 feet |
+| Ancient Requiem Dragon | Dragon, Requiem | Monster Core 2 pg. 128 |  | Uncommon | Divine, Dragon, Uncommon |  | 20 | 370 | 44 | +33 | +30 | +36 | darkvision, lifesense 120 feet, scent (imprecise) 60 feet, status sight | 60 feet, fly 180 feet, swim 60 feet |
+| Ancient Resurrection Dragon | Dragon, Resurrection | Monster Core 2 pg. 130 |  | Uncommon | Divine, Dragon, Uncommon |  | 17 | 320 | 39 | +28 | +27 | +32 | darkvision, scent (imprecise) 60 feet | 50 feet, fly 200 feet |
+| Ancient Rime Dragon | Dragon, Rime | Draconic Codex pg. 153 |  | Uncommon | Cold, Dragon, Primal, Uncommon |  | 15 | 275 | 37 | +32 | +25 | +29 | darkvision, scent (imprecise) 60 feet, snow vision | 60 feet, fly 120 feet, swim 40 feet |
+| Ancient Rivener | Ikeshti | Pathfinder #173: Doorway to the Red Star pg. 86 |  | Common | Humanoid, Ikeshti |  | 14 | 280 | 35 | +27 | +25 | +22 | 30 feet | Ancient Rune Dragon |
+| Dragon, Rune |  | Monster Core 2 pg. 133 |  | Uncommon | Arcane, Dragon, Uncommon |  | 19 | 355 | 43 | +32 | +30 | +34 | darkvision, magic sense (imprecise) 60 feet, scent (imprecise) 60 feet | 80 feet, fly 180 feet |
+| Ancient Sage Dragon | Dragon, Sage | Draconic Codex pg. 157 |  | Uncommon | Dragon, Occult, Uncommon |  | 18 | 330 | 42 | +27 | +31 | +33 | darkvision, detect magic | 25 feet, fly 90 feet |
+| Ancient Sea Dragon | Dragon, Sea | Draconic Codex pg. 160 |  | Uncommon | Amphibious, Arcane, Dragon, Uncommon, Water |  | 17 | 350 | 39 | +29 | +32 | +27 | darkvision, wavesense (imprecise) 60 feet | 50 feet, fly 140 feet, swim 70 feet; water walk |
+| Ancient Skaveling |  | Pathfinder #184: The Ghouls Hunger pg. 63 |  | Unique | Undead, Unique |  | 15 | 270 | 37 | +25 | +27 | +29 | darkvision, echolocation 60 feet | 15 feet, fly 30 feet |
+| Ancient Sky Dragon | Dragon, Sky | Draconic Codex pg. 164 |  | Uncommon | Divine, Dragon, Electricity, Metal, Uncommon |  | 18 | 335 | 42 | +31 | +28 | +32 | darkvision, mist vision, scent (imprecise) 60 feet | 60 feet, fly 160 feet |
+| Ancient Sovereign Dragon | Dragon, Sovereign | Draconic Codex pg. 168 |  | Uncommon | Dragon, Earth, Occult, Uncommon |  | 20 | 410 | 45 | +35 | +31 | +36 | darkvision, scent (imprecise) 60 feet, sanctified sight | 60 feet, fly 180 feet |
+| Ancient Stormcrown Dragon | Dragon, Stormcrown | Draconic Codex pg. 172 |  | Uncommon | Dragon, Electricity, Primal, Uncommon |  | 18 | 360 | 42 | +33 | +33 | +30 | darkvision, motionsense (precise) 120 feet, scent (imprecise) 60 feet | 60 feet, fly 180 feet |
+| Ancient Time Dragon | Dragon, Time | Draconic Codex pg. 176 |  | Uncommon | Arcane, Dragon, Uncommon |  | 20 | 470 | 44 | +38 | +32 | +35 | (36 initiative) detect magic, greater darkvision | 60 feet, fly 180 feet |
+| Ancient Tupilaq |  | Gatewalkers (Hardcover) pg. 188 |  | Unique | Construct, Unique |  | 11 | 145 | 32 | +22 | +20 | +18 | darkvision | 40 feet, swim 40 feet |
+| Ancient Umbral Dragon | Dragon, Umbral | Draconic Codex pg. 181 |  | Uncommon | Dragon, Occult, Shadow, Uncommon |  | 20 | 375 | 44 | +34 | +31 | +34 | greater darkvision, voidsense (precise) 60 feet | 60 feet, fly 200 feet |
+| Ancient Underworld Dragon | Dragon, Underworld | Draconic Codex pg. 184 |  | Uncommon | Arcane, Dragon, Fire, Uncommon |  | 16 | 295 | 39 | +30 | +25 | +28 | darkvision, scent (imprecise) 60 feet, smoke vision | 40 feet, burrow 60 feet, fly 80 feet |
+| Ancient Vizier Dragon | Dragon, Vizier | Draconic Codex pg. 188 |  | Uncommon | Dragon, Occult, Uncommon |  | 20 | 450 | 44 | +35 | +33 | +39 | darkvision, scent (imprecise) 80 feet | 60 feet, fly 200 feet, swim 60 feet |
+| Ancient Vorpal Dragon | Dragon, Vorpal | Draconic Codex pg. 192 |  | Uncommon | Arcane, Dragon, Metal, Uncommon |  | 18 | 330 | 42 | +36 | +30 | +33 | darkvision, scent (imprecise) 120 feet | 25 feet, fly 180 feet |
+| Ancient Wailing Dragon | Dragon, Wailing | Draconic Codex pg. 196 |  | Uncommon | Arcane, Dragon, Uncommon |  | 15 | 33 | 36 | +26 | +29 | +24 | darkvision, echolocation (precise) 120 feet | 45 feet, fly 110 feet |
+| Ancient Whisper Dragon | Dragon, Whisper | Monster Core 2 pg. 135 |  | Uncommon | Dragon, Occult, Uncommon |  | 16 | 290 | 39 | +28 | +26 | +30 | (30 to Sense Motive) darkvision, scent (imprecise) 60 feet | 60 feet, fly 200 feet |
+| Ancient Wish Dragon | Dragon, Wish | Draconic Codex pg. 200 |  | Uncommon | Arcane, Dragon, Uncommon |  | 19 | 360 | 42 | +31 | +31 | +35 | darkvision, scent (imprecise) 60 feet | 50 feet, climb 50 feet, fly 200 feet |
+| Ancient Wisp |  | Kingmaker Adventure Path pg. 364 |  | Rare | Aberration, Air, Rare |  | 10 | 130 | 33 | +16 | +23 | +20 | darkvision | fly 50 feet |
+| Andera Paldreen |  | Pathfinder #152: Legacy of the Lost God pg. 88 |  | Unique | Human, Humanoid, Unique |  | 10 | 175 | 30 | +21 | +16 | +21 | 20 feet | Android Infiltrator |
+| Android |  | Bestiary 3 pg. 16 |  | Rare | Android, Humanoid, Rare |  | 2 | 28 | 18 | +8 | +10 | +4 | (+5 to Sense Motive) low-light vision | 25 feet |
+| Loading... | Angazhani | Bestiary 3 pg. 17 |  | Common | Beast |  | 8 | 180 | 26 | +19 | +16 | +14 | darkvision | 25 feet, climb 25 feet |
+| Angelic Chorus | Angel | Battlecry! pg. 172 |  | Uncommon | Angel, Celestial, Holy, Troop, Uncommon |  | 12 | 210 (4 segments) | 32 | +19 | +22 | +25 | darkvision | 30 feet, fly 40 feet; troop movement |
+| Loading... | Loading... | Anguish Siktempora |  |  | Siktempora |  |  |  |  |  |  |  | Pathfinder #204: Stage Fright pg. 89 | Rare	Medium |
+| Rare, Siktempora, Time | 13	180	34	+24	+22	+26	+26 | darkvision |  |  | 10 feet, fly 40 feet | Anguished Flame |  |  |  |  |  |  | Monster Core 2 pg. 30 | Common	Large |
+| Elemental, Fire, Light | 13	260	33	+22	+24	+25	+28 | 30 feet, fly 60 feet | Animate Dream |  | Monster Core 2 pg. 31 |  | Uncommon | Medium |  |  |  |  | Dream, Incorporeal, Uncommon | 8	110	24	+15	+18	+14	+16 |
+| darkvision | fly 40 feet | Animated Armor |  |  | Animated Object |  |  |  |  |  |  |  | Monster Core pg. 18 1.1 | Common	Medium |
+| Construct, Mindless | 2	20	17	+10	+3	+4	+6 | darkvision |  |  | 20 feet | Animated Army |  |  |  |  |  |  | Battlecry! pg. 173 | Common	Gargantuan |
+| Construct, Mindless, Troop | 8	120 (4 segments)	27	+16	+14	+13	+13 | darkvision |  |  | 20 feet; troop movement | Animated Axe |  |  |  |  |  |  | Pathfinder #198: No Breath to Cry pg. 60 | Common	Tiny |
+| Construct, Mindless | 5	65	23	+11	+13	+7	+9 | darkvision |  |  | fly 20 feet | Animated Bamboo Figure |  |  |  |  |  |  | Animated Handcraft | Tian Xia World Guide pg. 279 |
+| Common	Medium | Construct, Mindless | 2	30	18	+9	+10	+6	+8 |  |  | darkvision |  |  |  |  |  |  |  | 30 feet, climb 15 feet | Animated Blades |
+| Pathfinder #175: Broken Tusk Moon pg. 32 | Uncommon	Tiny | Construct, Mindless, Uncommon |  | -1 | darkvision |  |  |  |  |  |  |  | fly 15 feet | Animated Broom |
+| Animated Object |  | Monster Core pg. 18 1.1 |  | Common | Construct, Mindless |  | -1 | 6 | 15 | +3 | +6 | +3 | darkvision | 15 feet |
+| Animated Colossus | Animated Object | Monster Core 2 pg. 33 |  | Common | Construct, Mindless |  | 15 | 245 | 39 | +31 | +21 | +19 | darkvision | 50 feet |
+| Animated Dragonstorms |  | Pathfinder #150: Broken Promises pg. 10 |  | Rare | Construct, Mindless, Rare |  | 18 | 255 | 42 | +33 | +30 | +27 | darkvision | 30 feet |
+| Animated Fireplace |  | Pathfinder #182: Graveclaw pg. 14 |  | Unique | Construct, Mindless, Unique |  | 5 | 65 | 24 | +15 | +6 | +8 | darkvision | 15 feet |
+| Animated Furnace | Animated Object | Monster Core 2 pg. 32 |  | Common | Construct, Mindless |  | 9 | 135 | 30 | +21 | +11 | +13 | darkvision | 15 feet |
+| Animated Kite | Animated Handcraft | Tian Xia World Guide pg. 278 |  | Common | Construct, Mindless |  | 0 | 15 | 15 | +4 | +9 | +4 | darkvision | fly 30 ft |
+| Animated Silverware Swarm | Animated Object | Monster Core 2 pg. 32 |  | Common | Construct, Mindless, Swarm |  | 1 | 14 | 16 | +9 | +8 | +3 | darkvision | 20 feet |
+| Animated Silverware Swarm | Animated Object | Bestiary 3 pg. 18 |  | Common | Construct, Mindless, Swarm |  | 1 | 14 | 16 | +9 | +8 | +3 | darkvision | 20 feet |
+| Animated Statue | Animated Object | Monster Core pg. 19 1.1 |  | Common | Construct, Mindless |  | 3 | 35 | 19 | +12 | +5 | +5 | darkvision | 20 feet |
+| Animated Tea Cart |  | Pathfinder #183: Field of Maidens pg. 51 |  | Uncommon | Construct, Mindless, Uncommon |  | 8 | 120 | 28 | +16 | +18 | +12 | darkvision | 25 feet |
+| Animated Treasure Swarm |  | Pathfinder #215: To Blot Out the Sun pg. 64 |  | Uncommon | Construct, Mindless, Swarm, Uncommon |  | 7 | 85 | 25 | +15 | +15 | +9 | darkvision | 30 feet |
+| Animated Trebuchet | Animated Object | Monster Core 2 pg. 33 |  | Common | Construct, Mindless |  | 13 | 200 | 36 | +29 | +19 | +17 | darkvision | 20 feet |
+| Animated Wine Vessel | Animated Handcraft | Tian Xia World Guide pg. 279 |  | Common | Construct, Mindless |  | 3 | 45 | 19 | +11 | +7 | +7 | darkvision | 15 feet |
+| Anjelique Loveless |  | Pathfinder #180: The Smoking Gun pg. 86 |  | Unique | Changeling, Elf, Humanoid, Unique |  | 11 | 200 | 30 | +24 | +26 | +21 | low-light vision | 25 feet |
+| Ankhrav | Ankhrav | Monster Core pg. 20 1.1 |  | Common | Animal |  | 3 | 40 | 18 | +12 | +8 | +7 | darkvision, tremorsense (imprecise) 60 feet | 25 feet, burrow 20 feet |
+| Ankhrav Hive Mother | Ankhrav | Monster Core pg. 20 1.1 |  | Uncommon | Animal, Uncommon |  | 8 | 120 | 29 | +18 | +15 | +14 | darkvision, tremorsense (imprecise) 90 feet | 25 feet, burrow 20 feet |
+| Ankou Assassin |  | Kingmaker Adventure Path pg. 462 |  | Rare | Fey, Rare |  | 17 | 333 | 40 | +28 | +32 | +29 | lifesense 120 feet, low-light vision | fly 75 feet |
+| Ankylosaurus | Dinosaur | Monster Core pg. 98 1.1 |  | Common | Animal, Dinosaur |  | 6 | 90 | 26 | +16 | +10 | +12 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Annamede Belavarah |  | Kingmaker Adventure Path pg. 225 |  | Unique | Human, Humanoid, Unique |  | 8 | 120 | 26 | +14 | +18 | +16 | 25 feet | Anoreth Zorillen |
+| Pathfinder #215: To Blot Out the Sun pg. 30 | Uncommon	Medium | Human, Humanoid, Uncommon |  | 8 | 25 feet | Loading... |  |  |  |  |  |  | Loading... | Loading... |
+| Anvaca |  | Pathfinder #215: To Blot Out the Sun pg. 53 |  | Unique | Construct, Humanoid, Poppet, Unique |  | 9 | 170 | 26 | +16 | +21 | +15 | darkvision | 25 feet, climb 20 feet |
+| Aolaz |  | Monster Core pg. 22 1.1 |  | Rare | Construct, Rare |  | 18 | 255 | 42 | +35 | +27 | +31 | low-light vision, flawless hearing | 50 feet, fly, water walk |
+| Aoyin |  | Tian Xia World Guide pg. 280 |  | Rare | Animal, Rare |  | 10 | 210 | 29 | +22 | +18 | +16 | bloodsense (precise) 60 feet, low-light vision, scent (precise) 30 feet | 40 feet; mountain stride |
+| Aphorite Sharpshooter | Nephilim | Monster Core 2 pg. 255 |  | Common | Human, Humanoid, Nephilim |  | 4 | 60 | 21 | +10 | +12 | +8 | darkvision | 20 feet |
+| Apothecary | Healer | NPC Core pg. 60 |  | Common | Human, Humanoid |  | -1 | 8 | 14 | +8 | +3 | +5 | 25 feet | Apothecary Bee |
+| Howl of the Wild pg. 125 2.1 | Common	Tiny | Animal |  | 7 | darkvision, potionsight (precise) 60 feet |  |  |  |  |  |  |  | 10 feet, climb 10 feet, fly 50 feet | Apothecary's Cabinet |
+| Gatewalkers (Hardcover) pg. 81 | Rare	Large | Construct, Mindless, Rare |  | 6 | darkvision |  |  |  |  |  |  |  | 15 feet | Apprentice |
+| Artisan |  | NPC Core pg. 8 |  | Common | Human, Humanoid |  | -1 | 8 | 14 | +5 | +6 | +2 | 25 feet | Apprentice Magician Clique |
+| Battlecry! pg. 173 | Common	Gargantuan | Human, Humanoid, Troop |  | 5 | 25 feet; troop movement | Aqudel |  |  |  |  |  |  | Alghollthu | Monster Core 2 pg. 22 |
+| Uncommon	Large | Aberration, Aquatic, Uncommon | 7	120	24	+18	+11	+16	+18 |  |  | darkvision |  |  |  |  |  |  |  | 10 feet, swim 60 feet | Ararda |
+| Blightburn Genies |  | Pathfinder #155: Lord of the Black Sands pg. 79 |  | Rare | Earth, Elemental, Genie, Rare |  | 18 | 280 | 43 | +33 | +30 | +31 | darkvision, detect magic, tremorsense (imprecise) 60 feet | 30 feet, burrow 45 feet, fly 20 feet; earth glide |
+| Arbiter | Aeon | Monster Core pg. 8 1.1 |  | Common | Aeon, Monitor |  | 1 | 22 | 16 | +5 | +7 | +7 | darkvision, locate aeon | 20 feet, fly 40 feet |
+| Arboreal Archive | Arboreal | Monster Core 2 pg. 34 |  | Common | Plant, Wood |  | 12 | 230 | 33 | +23 | +17 | +27 | low-light vision, tremorsense (imprecise) 60 feet | 25 feet |
+| Arboreal Copse |  | Battlecry! pg. 173 |  | Uncommon | Plant, Troop, Uncommon, Wood |  | 9 | 150 (4 segments) | 27 | +20 | +16 | +18 | low-light vision | 25 feet; troop movement |
+| Arboreal Reaper | Arboreal | Monster Core 2 pg. 34 |  | Common | Plant, Wood |  | 7 | 130 | 24 | +17 | +13 | +15 | low-light vision | 25 feet |
+| Arboreal Regent | Arboreal | Monster Core pg. 25 1.1 |  | Common | Plant, Wood |  | 8 | 150 | 26 | +20 | +11 | +16 | low-light vision | 25 feet |
+| Arboreal Sapling | Arboreal | Pathfinder #201: Pactbreaker pg. 82 |  | Common | Plant |  | 2 | 35 | 17 | +11 | +6 | +9 | low-light vision | 20 feet |
+| Arboreal Sapstriker | Arboreal | Pathfinder #201: Pactbreaker pg. 83 |  | Common | Plant |  | 6 | 115 | 23 | +17 | +11 | +16 | low-light vision, scent (imprecise) 60 feet | 25 feet |
+| Arboreal Shepherd | Arboreal | Pathfinder #201: Pactbreaker pg. 82 |  | Common | Plant |  | 5 | 80 | 22 | +12 | +10 | +14 | low-light vision | 25 feet |
+| Arboreal Snag |  | Pathfinder #182: Graveclaw pg. 80 |  | Uncommon | Mindless, Uncommon, Undead |  | 3 | 45 ( negative healing ) | 19 | +12 | +6 | +8 | darkvision | 20 feet |
+| Arboreal Tar Tree |  | Pathfinder #177: Burning Tundra pg. 31 |  | Rare | Plant, Rare, Undead |  | 9 | 175 ( negative healing ) | 28 | +21 | +15 | +18 | darkvision | 20 feet |
+| Arboreal Warden | Arboreal | Monster Core pg. 24 1.1 |  | Common | Plant, Wood |  | 4 | 75 | 20 | +13 | +9 | +11 | low-light vision | 25 feet |
+| Loading... | Archer Regiment | Military |  |  | Battlecry! pg. 174 |  | Common | Gargantuan |  |  |  |  | Human, Humanoid, Troop | 12	210 (4 segments)	32	+19	+25	+22	+22 |
+| 25 feet; troop movement | Archer Sentry | Official |  |  | NPC Core pg. 111 |  | Common | Medium |  |  |  |  | Human, Humanoid | 2	30	17	+7	+10	+7	+11 |
+| 25 feet | Archery Specialist | Pathfinder #166: Despair on Danger Island pg. 24 |  | Uncommon | Human, Humanoid, Uncommon |  | 13 | 190 | 35 | +22 | +26 | +19 | 25 feet | Archon Bastion |
+| Archon |  | Battlecry! pg. 174 |  | Uncommon | Archon, Celestial, Holy, Troop, Uncommon |  | 16 | 300 (4 segments) | 37 | +30 | +25 | +28 | darkvision | 30 feet, fly 60 feet; troop movement |
+| Arctic Bloom |  | Gatewalkers (Hardcover) pg. 247 |  | Uncommon | Mindless, Plant, Uncommon |  | 8 | 170 | 24 | +19 | +11 | +13 | pheromones (precise) 20 feet, tremorsense (imprecise) 120 feet, no vision | 10 feet, climb 10 feet |
+| Ardande Gardener | Geniekin | Rage of Elements pg. 217 2.0 |  | Common | Ardande, Human, Humanoid |  | 1 | 17 | 16 | +4 | +6 | +9 | low-light vision | 25 feet |
+| Ardande Ghost |  | Pathfinder #203 Shepherd of Decay pg. 50 |  | Rare | Ghost, Incorporeal, Rare, Spirit, Undead, Unholy, Wood |  | 11 | 150 ( rejuvenation , void healing ) | 30 | +22 | +24 | +15 | darkvision | fly 25 feet |
+| Ardissa Prendergant |  | Pathfinder #175: Broken Tusk Moon pg. 39 |  | Unique | Human, Humanoid, Unique |  | 3 | 45 | 18 | +6 | +9 | +11 | 25 feet | Ardissa's Porters |
+| Pathfinder #175: Broken Tusk Moon pg. 39 | Rare	Medium | Dwarf, Humanoid, Rare |  | 0 | darkvision |  |  |  |  |  |  |  | 20 feet | Argorth |
+| Monster Core 2 pg. 40 | Common	Huge | Aberration, Mindless |  | 11 | bloodsense (precise) 120 feet, no vision, scent (imprecise) 60 feet |  |  |  |  |  |  |  | 30 feet, burrow 20 feet, climb 20 feet, swim 30 feet | Argyrzei |
+| Nindoru |  | Pathfinder #199: To Bloom Below the Web pg. 84 |  | Common | Fiend, Nindoru |  | 13 | 240 | 34 | +23 | +24 | +21 | cursesense, darkvision | 25 feet |
+| Arika Avertin |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 119 |  | Unique | Human, Humanoid, Unique |  | 6 | 78 | 21 | +10 | +13 | +10 | 25 feet | Armag |
+| Kingmaker Adventure Path pg. 592 | Unique	Medium | Human, Humanoid, Unique |  | 14 | 30 feet | Arms Dealer |  |  |  |  |  |  | Maverick | NPC Core pg. 76 |
+| Common	Medium | Human, Humanoid | 2	28	17	+6	+7	+9	+9 |  |  | (11 to Sense Motive) |  |  |  |  |  |  |  | 25 feet | Arms Of Balance |
+| Pathfinder #167: Ready? Fight! pg. 33 | Uncommon	Medium | Human, Humanoid, Uncommon |  | 15 | 45 feet | Army Ant Swarm |  |  |  |  |  |  | Ant | Monster Core pg. 21 1.1 |
+| Common	Large | Animal, Swarm | 5	55	21	+13	+11	+9	+11 |  |  | darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 30 feet, climb 30 feet | Loading... |
+| Arrester Squadron | Official | NPC Core pg. 118 |  | Common | Human, Humanoid, Troop |  | 8 | 135 (4 segments) | 27 | +18 | +13 | +17 | 25 feet; troop movement | Arskuva The Gnasher |
+| Pathfinder #154: Siege of the Dinosaurs pg. 55 | Unique	Medium | Minion, Undead, Unique |  | 12 | darkvision |  |  |  |  |  |  |  | 25 feet | Artillerist |
+| Engineer |  | NPC Core pg. 44 |  | Common | Human, Humanoid |  | 3 | 45 | 18 | +8 | +12 | +6 | (10 if the artillerist is crewing a siege weapon) | 25 feet |
+| Artus Rodrivan |  | Pathfinder #167: Ready? Fight! pg. 35 |  | Unique | Elf, Human, Humanoid, Unique |  | 15 | 330 | 35 | +25 | +29 | +26 | 25 feet | Loading... |
+| Asanbosam |  | The Mwangi Expanse pg. 293 2.0, Pathfinder #146: Cult of Cinders pg. 80 |  | Common | Humanoid |  | 6 | 95 | 24 | +15 | +17 | +10 | darkvision | 35 feet, climb 20 feet |
+| Ascendant Griffon | Griffon | Howl of the Wild pg. 157 2.1 |  | Rare | Animal, Rare |  | 11 | 210 | 30 | +21 | +24 | +18 | darkvision, scent (imprecise) 120 feet | 25 feet, fly 40 feet |
+| Ascended Disciple |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 101 |  | Common | Human, Humanoid |  | 5 | 90 | 20 | +11 | +10 | +13 | 25 feet | Ash Giant |
+| Giant |  | Monster Core 2 pg. 163 |  | Common | Giant, Humanoid |  | 11 | 240 | 30 | +23 | +18 | +21 | low-light vision | 30 feet |
+| Ashen Swale |  | Pathfinder #176: Lost Mammoth Valley pg. 88 |  | Unique | Human, Humanoid, Unique |  | 7 | 120 | 23 | +18 | +12 | +15 | 25 feet | Ashrin |
+| Pathfinder #195: Heavy is the Crown pg. 38 | Unique	Medium | Humanoid, Munavri, Unique |  | 9 | darkvision |  |  |  |  |  |  |  | 25 feet | Asmerelli |
+| Pathfinder #200: Seven Dooms for Sandpoint pg. 73 | Common	Small | Halfling, Humanoid |  | 6 | 25 feet | Aso Berang |  |  |  |  |  |  | Tian Xia World Guide pg. 281 | Rare	Large |
+| Rare, Spirit | 12	260	32	+25	+25	+27	+23 | darkvision, scent (imprecise) 120 feet |  |  | 35 feet, climb 25 feet | Asp Of Grief |  |  |  |  |  |  | Rage of Elements pg. 150 2.0 | Common	Small |
+| Beast, Elemental, Metal | 10	150	31	+15	+21	+21	+21 | low-light vision, magnetic vision |  |  | 20 feet, fly 50 feet | Assassin |  |  |  |  |  |  | Criminal | NPC Core pg. 23 |
+| Common	Medium | Human, Humanoid | 8	130	26	+12	+19	+14	+16 |  |  | 25 feet, swift sneak | Assassin Vine |  |  |  |  |  |  | Bestiary 2 pg. 26 2.0 | Common	Large |
+| Mindless, Plant | 3	68	18	+10	+7	+8	+10 | tremorsense 30 feet, low-light vision |  |  | 5 feet | Assault Alloy |  |  |  |  |  |  | Monster Core 2 pg. 41 | Common	Small |
+| Elemental, Metal | 13	240	31	+20	+26	+23	+26 | darkvision |  |  | 30 feet | Astradaemon |  |  |  |  |  |  | Daemon | Monster Core pg. 75 1.1 |
+| Common	Large | Daemon, Fiend, Unholy | 16	240	39	+27	+30	+26	+28 |  |  | darkvision, lifesense 30 feet, truesight |  |  |  |  |  |  |  | 60 feet, fly 60 feet | Astronomer |
+| Scholar |  | NPC Core pg. 139 |  | Common | Human, Humanoid |  | 2 | 23 | 15 | +6 | +5 | +9 | 25 feet | Athach |
+| Bestiary 2 pg. 27 2.0 | Common	Huge | Giant, Humanoid |  | 12 | darkvision |  |  |  |  |  |  |  | 40 feet | Athamaru Hunter |
+| Athamaru |  | Monster Core pg. 30 1.1 |  | Common | Aquatic, Athamaru, Humanoid |  | 3 | 38 | 20 | +7 | +10 | +9 | low-light vision | 10 feet, swim 40 feet; smooth swimmer |
+| Atrixyl |  | Monster Core 2 pg. 46 |  | Rare | Aberration, Rare |  | 11 | 190 | 31 | +24 | +21 | +18 | darkvision; true sin scent (precise) 60 feet | 30 feet, climb 30 feet |
+| Attic Whisperer |  | Monster Core 2 pg. 47 |  | Common | Undead, Unholy |  | 4 | 60 ( void healing ) | 21 | +8 | +13 | +12 | darkvision | 20 feet |
+| Auchs |  | Kingmaker Adventure Path pg. 178 |  | Unique | Human, Humanoid, Unique |  | 2 | 40 | 15 | +12 | +5 | +3 | 25 feet | Loading... |
+| Augnagar | Qlippoth | Monster Core pg. 281 1.1 |  | Uncommon | Fiend, Qlippoth, Uncommon, Unholy |  | 14 | 225 | 36 | +28 | +23 | +25 | darkvision, scent (imprecise) 30 feet, truesight | 40 feet, climb 40 feet, fly 40 feet |
+| Augrael |  | Pathfinder #163: Ruins of Gauntlight pg. 35 |  | Unique | Ghoul, Undead, Unique |  | 3 | 48 (negative healing) | 18 | +8 | +12 | +10 | darkvision | 30 feet, burrow 5 feet, climb 20 feet |
+| Augur | Velstrac | Pathfinder #147: Tomorrow Must Burn pg. 82 |  | Uncommon | Fiend, Uncommon, Velstrac |  | 1 | 14 | 17 | +4 | +10 | +7 | darkvision, painsight | 20 feet, fly 40 feet |
+| Augur | Velstrac | Monster Core 2 pg. 344 |  | Common | Fiend, Unholy, Velstrac |  | 1 | 15 | 17 | +4 | +10 | +7 | greater darkvision, painsight | 20 feet, fly 40 feet |
+| Aukashungi Swarm |  | Pathfinder #154: Siege of the Dinosaurs pg. 50 |  | Uncommon | Aberration, Amphibious, Swarm, Uncommon |  | 10 | 210 | 28 | +17 | +24 | +13 | greater darkvision, tremorsense (imprecise) 30 feet | 35 feet, burrow 35 feet |
+| Aurochs |  | Pathfinder #207: Resurrection Flood pg. 82 |  | Common | Animal |  | 3 | 42 | 18 | +12 | +9 | +6 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Aurochs Herd |  | Pathfinder #208: Hoof, Cinder, and Storm pg. 82 |  | Common | Animal, Troop |  | 7 | 150 (16 squares) | 24 | +18 | +12 | +12 | low-light vision, scent (imprecise) 60 feet | 25 feet; troop movement |
+| Aurosrath |  | Shining Kingdoms pg. 176 |  | Uncommon | Metal, Uncommon, Undead, Unholy |  | 5 | 95 | 19 | +14 | +9 | +13 | darkvision | 25 feet |
+| Aurumvorax |  | Bestiary 2 pg. 29 2.0 |  | Common | Animal |  | 9 | 170 | 28 | +19 | +17 | +16 | darkvision, scent (imprecise) 30 feet | 35 feet, burrow 10 feet |
+| Auzmere | Dero | Pathfinder #214: The Broken Palace pg. 13 |  | Unique | Dero, Humanoid, Unique |  | 4 | 55 | 21 | +11 | +13 | +7 | darkvision | 20 feet |
+| Loading... | Avarek | Pathfinder #159: All or Nothing pg. 80 |  | Uncommon | Amphibious, Fey, Uncommon |  | 8 | 150 | 26 | +16 | +19 | +16 | darkvision | 20 feet, climb 20 feet, swim 50 feet |
+| Avatar of the Lantern King |  | Kingmaker Adventure Path pg. 600 |  | Unique | Fey, Fire, Unique |  | 24 | 500 | 54 | +36 | +39 | +41 | darkvision, true seeing | fly 60 feet |
+| Avatar Of Walkena |  | Pathfinder #172: Secrets of the Temple City pg. 60 |  | Rare | Divine, Humanoid, Rare |  | 17 | 380 | 40 | +31 | +25 | +31 | greater darkvision, smoke vision | 60 feet, air walk |
+| Avathrael Realmshaper |  | Pathfinder #202: Severed at the Root pg. 88 |  | Unique | Dragon, Plant, Shadow, Unique |  | 12 | 214 | 32 | +21 | +19 | +25 | greater darkvision, scent (imprecise) 60 feet, shadowsense (vague) 250 feet | 40 feet, fly 100 feet; woodland stride |
+| Avuncular Professor | Scholar | NPC Core pg. 140 |  | Common | Human, Humanoid |  | 5 | 75 | 21 | +12 | +11 | +15 | 25 feet | Awakened Tree |
+| Arboreal |  | Monster Core pg. 25 1.1 |  | Common | Plant, Wood |  | 6 | 100 | 22 | +16 | +9 | +13 | low-light vision | 20 feet |
+| Axiomite | Aeon | Monster Core pg. 9 1.1 |  | Common | Aeon, Monitor |  | 8 | 155 | 26 | +13 | +16 | +18 | darkvision | 25 feet |
+| Ayavah |  | Pathfinder Adventure Path #219: Lord of the Trinity Star pg. 93 |  | Unique | Humanoid, Nephilim, Unique |  | 11 | 195 | 29 | +17 | +21 | +21 | darkvision | 25 feet |
+| Ayngavhaul | Devil | Monster Core 2 pg. 101 |  | Common | Devil, Fiend, Unholy |  | 13 | 240 | 34 | +23 | +20 | +26 | greater darkvision | 15 feet, fly 30 feet |
+| Azarketi Crab Catcher | Azarketi | Monster Core pg. 31 1.1 |  | Common | Aquatic, Azarketi, Humanoid |  | 0 | 15 | 16 | +6 | +9 | +3 | 25 feet; swim 25 feet | Azarketi Explorer |
+| Azarketi |  | Bestiary 3 pg. 26 |  | Common | Amphibious, Azarketi, Humanoid |  | 2 | 30 | 18 | +10 | +7 | +6 | low-light vision | 20 feet, swim 30 feet |
+| Azarketi Sailor | Azarketi | Absalom, City of Lost Omens pg. 396 |  | Common | Amphibious, Azarketi, Humanoid |  | 2 | 30 | 18 | +8 | +11 | +5 | 25 feet; swim 25 feet | Azarketi Tide Tamer |
+| Azarketi |  | Monster Core pg. 31 1.1 |  | Common | Aquatic, Azarketi, Humanoid |  | 7 | 115 | 25 | +15 | +18 | +12 | 25 feet; swim 25 feet | Azarpal |
+| Pathfinder #204: Stage Fright pg. 84 | Uncommon	Medium | Fey, Uncommon |  | 13 | low-light vision |  |  |  |  |  |  |  | 30 feet, burrow 15 feet | Azer |
+| Bestiary 3 pg. 27 | Common	Medium | Elemental, Fire, Humanoid |  | 2 | darkvision |  |  |  |  |  |  |  | 20 feet | Azhana |
+| Pathfinder #201: Pactbreaker pg. 84 | Uncommon	Small | Fey, Uncommon |  | 3 | low-light vision |  |  |  |  |  |  |  | 25 feet | Azi |
+| Pathfinder #176: Lost Mammoth Valley pg. 54 | Common	Medium | Human, Humanoid |  | 8 | 25 feet | Azmakian Effigy |  |  |  |  |  |  | Pathfinder #182: Graveclaw pg. 81 | Rare	Large |
+| Construct, Fiend, Rare | 7	110	25	+18	+12	+15	+15 | darkvision |  |  | 30 feet | Azuretzi |  |  |  |  |  |  | Protean | Monster Core pg. 271 1.1 |
+| Common	Small | Monitor, Protean | 5	65 ( fast healing 2)	22	+11	+15	+11	+11 |  |  | darkvision, entropy sense (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet, fly 25 feet, swim 25 feet; unfettered movement | Ba'aupa Mdoudu |
+| Pathfinder #172: Secrets of the Temple City pg. 80 | Common	Medium | Beast |  | 13 | darkvision, skeleton sense 60 feet, tremorsense (imprecise) 30 feet |  |  |  |  |  |  |  | 30 feet, burrow 20 feet | Baatamidar |
+| Pathfinder #162: Ruins of the Radiant Siege pg. 76 | Rare	Medium | Monitor, Rare |  | 21 | darkvision, true seeing |  |  |  |  |  |  |  | fly 70 feet, swim 50 feet | Baccali Alpaca |
+| Travel Guide pg. 99 | Common	Medium | Animal |  | 0 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 35 feet | Badger |
+| Badger |  | Monster Core 2 pg. 54 |  | Common | Animal |  | 0 | 15 | 15 | +8 | +5 | +6 | low-light vision, scent (imprecise) 30 feet | 25 feet, burrow 10 feet |
+| Bakeneko |  | Pathfinder #197: Let the Leaves Fall pg. 82 |  | Rare | Beast, Rare |  | 3 | 35 | 20 | +8 | +7 | +4 | darkvision, scent (imprecise) 30 feet | 40 feet |
+| Balisse | Angel | Monster Core pg. 15 1.1 |  | Common | Angel, Celestial, Holy |  | 8 | 145 | 26 | +16 | +12 | +18 | (20 to detect lies and illusions) darkvision | 30 feet, fly 40 feet |
+| Loading... | Ban-Niang "Granny" Hu | Pathfinder #196: The Summer That Never Was pg. 90 |  | Unique | Human, Humanoid, Unique |  | 5 | 75 | 20 | +10 | +10 | +13 | 25 feet | Bandersnatch |
+| Bandersnatch |  | Monster Core pg. 36 1.1 |  | Rare | Beast, Rare, Tane |  | 17 | 335 ( fast healing 15) | 41 | +32 | +30 | +27 | darkvision, scent (precise) 120 feet | 50 feet, climb 20 feet |
+| Bandit | Criminal | NPC Core pg. 18 |  | Common | Human, Humanoid |  | 2 | 30 | 19 | +7 | +9 | +6 | 25 feet; forest passage | Bandit Gang |
+| Criminal |  | NPC Core pg. 22 |  | Common | Human, Humanoid, Troop |  | 7 | 120 (4 segments) | 24 | +15 | +16 | +13 | 25 feet; forest passage, troop movement | Banshee |
+| Monster Core pg. 37 1.1 | Uncommon	Medium | Ghost, Spirit, Uncommon, Undead, Unholy |  | 17 | hears heartbeats (imprecise) 60 feet, darkvision |  |  |  |  |  |  |  | fly 60 feet | Baobhan Sith |
+| Bestiary 2 pg. 33 2.0 | Uncommon	Medium | Fey, Uncommon |  | 6 | low-light vision |  |  |  |  |  |  |  | 25 feet | Baomal |
+| Monster Core 2 pg. 55 | Common	Gargantuan | Aberration, Aquatic |  | 20 | darkvision, scent (imprecise) 80 feet |  |  |  |  |  |  |  | 50 feet, swim 80 feet | Barbtongued Wyvern |
+| Kingmaker Adventure Path pg. 469 | Rare	Huge | Dragon, Rare |  | 18 | darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 30 feet, fly 100 feet | Barded Manticore |
+| Manticore |  | Howl of the Wild pg. 173 2.1 |  | Rare | Beast, Rare |  | 18 | 440 | 42 | +32 | +30 | +29 | darkvision, scent (imprecise) 60 feet | 40 feet, fly 45 feet |
+| Barghest |  | Monster Core pg. 38 1.1 |  | Common | Beast, Unholy |  | 4 | 50 | 20 | +11 | +12 | +8 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Bargott |  | Pathfinder #176: Lost Mammoth Valley pg. 33 |  | Unique | Fey, Nymph, Plant, Unique |  | 3 | 70 | 18 | +8 | +11 | +7 | darkvision | 35 feet |
+| Barkeep | Publicans | Gamemastery Guide pg. 238 |  | Common | Human, Humanoid |  | 1 | 25 | 14 | +7 | +3 | +6 | 25 feet | Barking Stag |
+| Pathfinder #156: The Apocalypse Prophet pg. 40 | Rare	Large | Animal, Rare |  | 13 | low-light vision |  |  |  |  |  |  |  | 45 feet | Barnacle Ghoul |
+| Ghoul |  | Pathfinder #159: All or Nothing pg. 83 |  | Uncommon | Ghoul, Uncommon, Undead |  | 9 | 155 ( negative healing ) | 28 | +16 | +21 | +17 | darkvision | 25 feet, climb 10 feet, swim 40 feet |
+| Barrage Archdragon | Dragon, Barrage | Draconic Codex pg. 107 |  | Rare | Arcane, Dragon, Rare |  | 20 | 440 | 45 | +33 | +39 | +36 | ironsense (precise) 30 feet | 50 feet, fly 120 feet |
+| Barrister | Official | NPC Core pg. 108 |  | Common | Human, Humanoid |  | -1 | 8 | 13 | +3 | +3 | +12 | 25 feet | Barushak Il-Varashma |
+| Pathfinder #147: Tomorrow Must Burn pg. 44 | Unique	Medium | Human, Humanoid, Unique |  | 11 | 25 feet | Basidirond |  |  |  |  |  |  | Bestiary 2 pg. 34 2.0 | Common	Medium |
+| Fungus, Mindless | 5	80	22	+13	+11	+12	+8 | low-light vision, tremorsense (imprecise) 30 feet |  |  | 20 feet | Basilisk |  |  |  |  |  |  | Basilisk | Monster Core pg. 39 1.1 |
+| Common	Medium | Beast | 5	75	22	+14	+8	+11	+11 |  |  | darkvision |  |  |  |  |  |  |  | 20 feet | Basiri, Wellspring Keeper |
+| Pathfinder #186: Ghost King's Rage pg. 38 | Unique	Large | Aquatic, Skeleton, Undead, Unique |  | 19 | darkvision, true seeing |  |  |  |  |  |  |  | 35 feet, swim 40 feet | Bastion Archon |
+| Archon |  | Bestiary 2 pg. 24 2.0 |  | Rare | Archon, Celestial, Rare |  | 20 | 280 ( fast healing 30 ) | 47 | +38 | +31 | +34 | darkvision, true seeing | 70 feet; air walk |
+| Batkin Guard | Werecreature | Pathfinder #213: Thirst for Blood pg. 88 |  | Uncommon | Beast, Beastkin, Human, Humanoid, Uncommon |  | 1 | 20 | 15 | +7 | +7 | +3 | 25 feet | Loading... |
+| Bauble Beast |  | Bestiary 3 pg. 28 |  | Uncommon | Beast, Earth, Uncommon |  | 6 | 100 | 23 | +15 | +12 | +15 | darkvision | 30 feet, climb 10 feet |
+| Baykok |  | Bestiary 3 pg. 29 |  | Common | Undead |  | 9 | 200 ( negative healing ) | 27 | +20 | +19 | +15 | darkvision | 30 feet, fly 40 feet |
+| Beast Eidolon |  | NPC Core pg. 219 |  | Common | Beast, Eidolon |  | 10 | 180 | 29 | +19 | +18 | +19 | darkvision, low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Beast Tamer | Performer | NPC Core pg. 128 |  | Common | Human, Humanoid |  | 4 | 55 | 20 | +10 | +7 | +12 | 25 feet | Beaver |
+| Beaver |  | Pathfinder #176: Lost Mammoth Valley pg. 82 |  | Common | Animal |  | -1 | 8 | 15 | +7 | +4 | +4 | low-light vision, scent (imprecise) 30 feet | 15 feet, swim 25 feet |
+| Bebilith |  | Bestiary 2 pg. 37 2.0 |  | Common | Beast, Fiend |  | 10 | 200 | 30 | +22 | +19 | +19 | darkvision, scent demons 60 feet, scent (imprecise) 30 feet | 35 feet, climb 15 feet |
+| Bee Borer | Gigantic Bee | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 82 |  | Uncommon | Animal, Mindless, Uncommon |  | 3 | 40 | 18 | +12 | +9 | +6 | darkvision, scent (imprecise) 60 feet | 20 feet, climb 20 feet |
+| Beetle Carapace | Skeleton | Monster Core 2 pg. 289 |  | Common | Mindless, Skeleton, Undead, Unholy |  | 6 | 90 ( void healing ) | 24 | +16 | +13 | +10 | darkvision | 20 feet, fly 20 feet |
+| Beggar | Downtrodden | NPC Core pg. 40 |  | Common | Human, Humanoid |  | -1 | 10 | 14 | +4 | +7 | +3 | 25 feet | Behemoth Hippopotamus |
+| Hippopotamus |  | Monster Core 2 pg. 191 |  | Common | Animal |  | 10 | 190 | 29 | +22 | +17 | +19 | low-light vision, scent (imprecise) 30 feet | 35 feet, swim 35 feet |
+| Behir |  | Bestiary 2 pg. 38 2.0 |  | Common | Beast, Electricity |  | 8 | 140 | 27 | +19 | +16 | +15 | darkvision | 30 feet, climb 15 feet |
+| Beiran Frosthunt |  | Shining Kingdoms pg. 177 |  | Common | Cold, Fey, Troop |  | 3 | 54 (4 segments) | 18 | +6 | +12 | +9 | 25 feet, fly 30 feet; troop movement | Belcorra Haruvex |
+| Pathfinder #165: Eyes of Empty Death pg. 87 | Unique	Medium | Ghost, Incorporeal, Spirit, Undead, Unique |  | 12 | darkvision, magic sense |  |  |  |  |  |  |  | fly 25 feet | Belker |
+| Elemental, Air |  | Bestiary 2 pg. 106 2.0 |  | Common | Air, Elemental |  | 6 | 78 | 25 | +13 | +17 | +12 | darkvision, smoke vision | 25 feet, fly 40 feet |
+| Loading... | Belmazog | Pathfinder #146: Cult of Cinders pg. 77 |  | Unique | Acid, Amphibious, Boggard, Dragon, Humanoid, Unique |  | 9 | 145 | 28 | +18 | +16 | +18 | darkvision, scent (imprecise) 60 feet | 40 feet, swim 40 feet |
+| Benthic Reaver |  | Impossible Lands pg. 324 |  | Unique | Cold, Undead, Unique |  | 21 | 500 ( negative healing ) | 46 | +38 | +35 | +33 | darkvision, true seeing | 30 feet, swim 60 feet |
+| Benthic Worm | Cave Worm | Monster Core pg. 56 1.1 |  | Common | Amphibious, Animal |  | 15 | 320 | 35 | +32 | +20 | +23 | darkvision, tremorsense (imprecise) 100 feet | 40 feet, burrow 40 feet, swim 60 feet |
+| Berberoka |  | Monster Core 2 pg. 57 |  | Common | Giant, Humanoid |  | 15 | 310 | 36 | +29 | +23 | +24 | darkvision, scent (imprecise) 60 feet | 30 feet, swim 30 feet; 15 feet while waterlogged |
+| Besieged Logging Crew |  | Pathfinder #201: Pactbreaker pg. 35 |  | Common | Human, Humanoid, Troop |  | 4 | 60 | 18 | +12 | +9 | +10 | 25 feet; troop movement | Betobeto-San |
+| Monster Core 2 pg. 58 | Uncommon	Medium | Incorporeal, Shadow, Spirit, Uncommon |  | 12 | greater darkvision, fearsense (precise) 60 feet |  |  |  |  |  |  |  | 40 feet | Loading... |
+| Loading... | Loading... | Bharlen Sajor |  |  | Pathfinder #171: Hurricane's Howl pg. 27 |  | Unique | Medium |  |  |  |  | Undead, Unique | 11	190 ( negative healing , rejuvenation)	32	+22	+24	+18	+21 |
+| darkvision | 25 feet | Bhazrade And Klanthor |  |  | Pathfinder #165: Eyes of Empty Death pg. 33 |  | Unique | Medium |  |  |  |  | Drow, Elf, Humanoid, Unique | 9	110	27	+15	+19	+18	+18 |
+| darkvision | 30 feet | Bhuta |  |  | Book of the Dead pg. 76 |  | Common | Medium |  |  |  |  | Incorporeal, Undead | 11	175 ( negative healing )	30	+18	+24	+22	+22 |
+| darkvision | fly 30 feet | Bibliodaemon |  |  | Daemon |  |  |  |  |  |  |  | Shining Kingdoms pg. 179 | Uncommon	Medium |
+| Daemon, Fiend, Uncommon, Unholy | 8	130	26	+15	+16	+19	+18 | darkvision, thoughtsense (imprecise) 60 feet |  |  | 25 feet | Bida |  |  |  |  |  |  | Pathfinder #146: Cult of Cinders pg. 81 | Uncommon	Huge |
+| Dragon, Uncommon | 8	135	27	+18	+15	+18	+15 | darkvision, scent (imprecise) 30 feet |  |  | 40 feet, climb 20 feet, fly 60 feet | Big Boss Goblin |  |  |  |  |  |  | Goblin | NPC Core pg. 188 |
+| Common	Small | Goblin, Humanoid | 6	100	22	+17	+11	+14	+16 |  |  | darkvision |  |  |  |  |  |  |  | 25 feet | Bikkhasura |
+| Asura |  | Monster Core 2 pg. 44 |  | Common | Asura, Spirit, Unholy |  | 20 | 380 | 44 | +35 | +32 | +32 | darkvision, scent (imprecise) 60 feet, truesight | 40 feet, climb 40 feet, fly 40 feet, swim 40 feet |
+| Bill-Band | Halfling | NPC Core pg. 190 |  | Common | Halfling, Humanoid, Troop |  | 5 | 90 (4 segments) | 20 | +13 | +12 | +8 | keen eyes | 25 feet; overwhelming scrum, troop movement |
+| Biloko Reaver |  | Pathfinder #172: Secrets of the Temple City pg. 36 |  | Uncommon | Fey, Uncommon |  | 10 | 175 | 29 | +19 | +21 | +19 | low-light vision, scent (imprecise) 30 feet | 20 feet |
+| Biloko Veteran | Biloko | The Mwangi Expanse pg. 294 2.0, Pathfinder #146: Cult of Cinders pg. 82 |  | Common | Fey |  | 4 | 58 | 21 | +8 | +14 | +11 | low-light vision, scent (imprecise) 30 feet | 20 feet |
+| Biloko Warrior | Biloko | The Mwangi Expanse pg. 294 2.0, Pathfinder #146: Cult of Cinders pg. 82 |  | Common | Fey |  | 1 | 19 | 16 | +4 | +7 | +7 | low-light vision, scent (imprecise) 30 feet | 20 feet |
+| Binumir |  | Pathfinder #157: Devil at the Dreaming Palace pg. 82 |  | Common | Incorporeal, Spirit, Undead |  | 3 | 25 ( negative healing ) | 19 | +9 | +12 | +8 | darkvision | fly 25 feet |
+| Bishop Keppira D'bear |  | Shadows at Sundown pg. 26 |  | Unique | Shadow, Undead, Unique, Vampire |  | 11 | 150 (coffin restoration, fast healing 10 , negative healing ) | 31 | +20 | +24 | +22 | greater darkvision | 25 feet |
+| Bison |  | Monster Core 2 pg. 59 |  | Common | Animal |  | 4 | 70 | 20 | +13 | +11 | +8 | scent (imprecise) 60 feet | 30 feet |
+| Bitter Truth Bandit |  | Pathfinder #153: Life's Long Shadows pg. 17 |  | Rare | Human, Humanoid, Rare |  | 6 | 95 | 22 | +15 | +16 | +10 | 30 feet, mobility | Black Bear |
+| Bear |  | Bestiary 2 pg. 36 2.0 |  | Common | Animal |  | 2 | 32 | 18 | +11 | +8 | +5 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Black Belt | Martial Artist | NPC Core pg. 73 |  | Common | Human, Humanoid |  | 12 | 220 | 32 | +23 | +23 | +20 | 40 feet | Black Scorpion |
+| Scorpion |  | Bestiary 2 pg. 234 2.0 |  | Common | Animal |  | 15 | 275 | 38 | +29 | +25 | +25 | darkvision, tremorsense (imprecise) 90 feet | 50 feet |
+| Black Tear Cutthroat |  | Kingmaker Adventure Path pg. 26 |  | Uncommon | Human, Humanoid, Uncommon |  | -1 | 8 | 15 | +5 | +7 | +2 | 25 feet | Blackfrost Guecubu |
+| Gatewalkers (Hardcover) pg. 163 | Rare	Medium | Cold, Earth, Rare, Undead |  | 8 | darkvision, tremorsense (imprecise) 60 feet |  |  |  |  |  |  |  | 25 feet, burrow 15 feet; tundra glide | Blackfrost Prophet |
+| Blackfrost Dead |  | Gatewalkers (Hardcover) pg. 249 |  | Rare | Cold, Rare, Undead |  | 9 | 180 ( void healing ) | 28 | +20 | +18 | +18 | darkvision, scent (imprecise) 30 feet | 30 feet; ice climb 30 feet |
+| Blackfrost Zombie | Blackfrost Dead | Gatewalkers (Hardcover) pg. 248 |  | Rare | Cold, Mindless, Rare, Undead, Zombie |  | 6 | 120 ( void healing ) | 23 | +16 | +12 | +8 | darkvision | 20 feet; ice climb 20 feet |
+| Loading... | Loading... | Loading... | Blasphemer of Zon-Kuthon |  | Devotee |  |  |  |  |  |  |  | NPC Core pg. 29 | Common	Medium |
+| Human, Humanoid | 2	35	17	+6	+7	+10	+8 | 25 feet | Bleachling Survivor |  | Gnome |  |  |  |  |  |  |  | NPC Core pg. 182 | Uncommon	Small |
+| Gnome, Humanoid, Uncommon | 2	34	17	+5	+8	+12	+8 | low-light vision |  |  | 25 feet | Blighted Speaker in Spores |  |  |  |  |  |  | Pathfinder #203 Shepherd of Decay pg. 85 | Rare	Large |
+| Fungus, Mutant, Rare | 13	250	32	+23	+20	+27	+25 | darkvision, sporesight (imprecise) 120 feet |  |  | 40 feet; fly | Blindheim |  |  |  |  |  |  | Bestiary 2 pg. 39 2.0 | Common	Small |
+| Animal | 2	27	18	+9	+9	+5	+9 | darkvision |  |  | 25 feet, climb 15 feet, swim 15 feet | Blink Dog |  |  |  |  |  |  | Bestiary 2 pg. 40 2.0 | Uncommon	Medium |
+| Beast, Uncommon | 2	30	18	+8	+10	+11	+8 | darkvision, scent (imprecise) 30 feet |  |  | 35 feet | Blisterwell Oathrisen |  |  |  |  |  |  | Pathfinder #208: Hoof, Cinder, and Storm pg. 83 | Uncommon	Medium |
+| Uncommon, Undead | 7	110 ( void healing )	26	+18	+14	+15	+15 | darkvision |  |  | 20 feet | Blizzardborn |  |  |  |  |  |  | Elemental, Water | Monster Core 2 pg. 151 |
+| Common	Medium | Cold, Elemental, Water | 6	105	24	+16	+12	+14	+14 |  |  | darkvision, snow vision |  |  |  |  |  |  |  | 25 feet, ice burrow 20 feet | Blodeuwedd |
+| Bestiary 2 pg. 41 2.0 | Uncommon	Medium | Fey, Plant, Uncommon |  | 6 | low-light vision |  |  |  |  |  |  |  | 25 feet | Blood Boar |
+| Pathfinder #147: Tomorrow Must Burn pg. 76 | Common	Medium | Animal |  | 6 | bloodsense 60 feet, low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 40 feet | Blood Hag |
+| Hag |  | Monster Core 2 pg. 188 |  | Common | Hag, Humanoid |  | 8 | 155 | 26 | +14 | +17 | +17 | bloodsense (imprecise) 90 feet, darkvision | 25 feet |
+| Blood Ooze | Ooze | The Fall of Plaguestone pg. 63 |  | Common | Mindless, Ooze |  | 4 | 90 | 12 | +15 | +6 | +6 | motion sense 60 feet, no vision | 10 feet, climb 10 feet |
+| Blood Painter |  | Monster Core 2 pg. 60 |  | Common | Aberration |  | 9 | 155 | 27 | +16 | +19 | +17 | bloodsense (imprecise) 60 feet, darkvision | 30 feet, climb 15 feet |
+| Blood Wolf |  | Pathfinder #151: The Show Must Go On pg. 43 |  | Uncommon | Animal, Fiend, Uncommon |  | 3 | 50 | 18 | +11 | +9 | +7 | darkvision, scent (imprecise) 30 feet | 30 feet |
+| Loading... | Bloodfog | Prey for Death pg. 110 |  | Rare | Aberration, Rare |  | 17 | 250 | 41 | +29 | +33 | +27 | darkvision, sense blood (precise) 60 feet | fly 40 feet |
+| Bloodlash Bush | Deadly Flora | The Fall of Plaguestone pg. 62 |  | Common | Plant |  | 2 | 35 | 16 | +10 | +8 | +6 | tremorsense (imprecise) 30 feet | 20 feet |
+| Loading... | Bloodseeker Swarm | Bloodseeker |  |  | Pathfinder #194: Cult of the Cave Worm pg. 84 |  | Uncommon | Medium |  |  |  |  | Animal, Swarm, Uncommon | 3	36	20	+6	+12	+6	+8 |
+| darkvision, scent (imprecise) 60 feet | 10 feet, fly 30 feet | Bloodshroud |  |  | Pathfinder #184: The Ghouls Hunger pg. 82 |  | Uncommon | Medium |  |  |  |  | Uncommon, Undead | 13	210 ( negative healing )	33	+20	+26	+23	+23 |
+| darkvision, lifesense 60 feet | fly 30 feet | Bloodsiphon |  |  | Pathfinder #163: Ruins of Gauntlight pg. 23 |  | Unique | Medium |  |  |  |  | Amphibious, Undead, Unique | 4	80 (negative healing)	19	+11	+7	+11	+10 |
+| tremorsense 30 feet | 10 feet, swim 20 feet | Bloody Blade Mercenary |  |  | Pathfinder #145: Hellknight Hill pg. 50 |  | Common | Medium |  |  |  |  | Half-Orc, Human, Humanoid, Orc | 1	19	18	+6	+9	+4	+6 |
+| 25 feet | Bloody Hands | Servitors of Gorum |  |  | Prey for Death pg. 114 |  | Unique | Large |  |  |  |  | Amphibious, Demon, Fiend, Unique | 16	300	39	+30	+24	+28	+28 |
+| darkvision | 30 feet, swim 30 feet | Bloom Cultist |  |  | Kingmaker Adventure Path pg. 240 |  | Rare | Medium |  |  |  |  | Human, Humanoid, Rare | 5	75	22	+11	+12	+15	+13 |
+| 25 feet | Bloom Of Lamashtu | Kingmaker Adventure Path pg. 611 |  | Unique | Fiend, Plant, Unique |  | 10 | 210 | 27 | +21 | +16 | +19 | low-light vision, tremorsense (precise) 30 feet | 5 feet |
+| Bloom Wyvern |  | Kingmaker Adventure Path pg. 224 |  | Unique | Dragon, Unique |  | 8 | 135 | 27 | +18 | +13 | +16 | darkvision, scent (imprecise) 30 feet | 20 feet, fly 60 feet |
+| Bloomborn Athach |  | Kingmaker Adventure Path pg. 434 |  | Rare | Giant, Humanoid, Rare |  | 17 | 375 | 40 | +33 | +30 | +31 | darkvision | 40 feet |
+| Blooming Guardian |  | Howl of the Wild pg. 128 2.1 |  | Common | Beast |  | 15 | 360 | 36 | +32 | +23 | +25 | low-light vision, scent (imprecise) 40 feet | 50 feet |
+| Blue Viper |  | Pathfinder #166: Despair on Danger Island pg. 63 |  | Unique | Humanoid, Ratfolk, Unique |  | 14 | 260 | 34 | +27 | +28 | +22 | low-light vision | 25 feet |
+| Blue Viper (Level 16) |  | Pathfinder #167: Ready? Fight! pg. 36 |  | Unique | Humanoid, Ratfolk, Unique |  | 16 | 300 | 36 | +30 | +29 | +24 | low-light vision | 25 feet |
+| Blue Viper (Level 20) |  | Pathfinder #168: King of the Mountain pg. 54 |  | Unique | Humanoid, Ratfolk, Unique |  | 20 | 366 | 44 | +30 | +36 | +33 | low-light vision | 25 feet |
+| Blue-Ringed Octopus | Octopus | Bestiary 2 pg. 187 2.0 |  | Common | Animal, Aquatic |  | 0 | 15 | 16 | +3 | +9 | +6 | low-light vision | swim 25 feet |
+| Loading... | Boar | Boar |  |  | Monster Core pg. 43 1.1 |  | Common | Medium |  |  |  |  | Animal | 2	40	15	+10	+5	+8	+8 |
+| low-light vision, scent (imprecise) 30 feet | 40 feet | Bodach |  |  | Monster Core 2 pg. 61 |  | Uncommon | Medium |  |  |  |  | Fey, Uncommon | 6	110	23	+14	+12	+17	+14 |
+| low-light vision | 25 feet, climb 10 feet | Bodak |  |  | Bestiary 2 pg. 42 2.0 |  | Uncommon | Medium |  |  |  |  | Uncommon, Undead | 8	160 ( negative healing )	27	+13	+16	+19	+17 |
+| darkvision, lifesense 60 feet | 20 feet | Bodyguard |  |  | Mercenary |  |  |  |  |  |  |  | NPC Core pg. 82 | Common	Medium |
+| Human, Humanoid | 1	25	16	+8	+7	+4	+8 | 25 feet | Bog Archdragon |  | Dragon, Bog |  |  |  |  |  |  |  | Draconic Codex pg. 111 | Rare	Gargantuan |
+| Amphibious, Dragon, Primal, Rare | 19	415	42	+33	+29	+34	+33 | greater darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 120 feet |  |  | 50 feet, burrow 40 feet, fly 120 feet, swim 60 feet; swamp passage | Bog Mummy |  |  |  |  |  |  | Mummy | Bestiary 2 pg. 177 2.0 |
+| Common	Medium | Mummy, Undead | 5	85 ( negative healing )	21	+13	+9	+14	+12 |  |  | darkvision, tremorsense (imprecise) 30 feet |  |  |  |  |  |  |  | 20 feet; burrow 15 feet | Bog Mummy Amalgamation |
+| Pathfinder #171: Hurricane's Howl pg. 20 | Unique	Large | Mummy, Undead, Unique |  | 9 | darkvision, tremorsense (imprecise) 30 feet |  |  |  |  |  |  |  | 20 feet; burrow 15 feet | Bog Mummy Cultist |
+| Mummy |  | Kingmaker Adventure Path pg. 102 |  | Rare | Mummy, Rare, Undead |  | 9 | 135 ( negative healing ) | 28 | +19 | +16 | +21 | darkvision, tremorsense (imprecise) 30 feet | 20 feet, burrow 15 feet |
+| Bog Strider |  | Bestiary 2 pg. 43 2.0 |  | Uncommon | Aberration, Uncommon |  | 2 | 30 | 18 | +8 | +10 | +8 | darkvision, wavesense 120 feet | 25 feet, swim 20 feet |
+| Bogey | Bogeyman | Pathfinder #152: Legacy of the Lost God pg. 78 |  | Uncommon | Fey, Uncommon |  | 3 | 35 | 20 | +7 | +12 | +8 | low-light vision | 30 feet |
+| Bogeyman | Bogeyman | Pathfinder #152: Legacy of the Lost God pg. 79 |  | Uncommon | Fey, Uncommon |  | 10 | 175 ( fast healing 10) | 30 | +16 | +23 | +19 | low-light vision | 30 feet; mobility |
+| Boggard Cultist | Boggard | Kingmaker Adventure Path pg. 95 |  | Rare | Amphibious, Boggard, Humanoid, Rare |  | 8 | 135 | 27 | +14 | +17 | +18 | darkvision | 20 feet, swim 25 feet; swamp stride |
+| Boggard Dreadknot | Boggard | Battlecry! pg. 175 |  | Common | Amphibious, Animal, Boggard, Human, Humanoid, Troop |  | 10 | 180 (4 segments) | 29 | +21 | +19 | +16 | low-light vision | 25 feet, swim 25 feet; troop movement |
+| Boggard Guard | Boggard | Pathfinder Game Night: Dawn of the Frogs (Deluxe Adventure) pg. 26 |  | Common | Amphibious, Boggard, Humanoid |  | -1 | 9 | 14 | +7 | +4 | +3 | darkvision | 20 feet, swim 25 feet; swamp passage |
+| Boggard Hunter |  | Pathfinder #171: Hurricane's Howl pg. 34 |  | Common | Amphibious, Boggard, Humanoid |  | 7 | 140 | 24 | +18 | +15 | +12 | darkvision | 20 feet, swim 25 feet; swamp stride |
+| Boggard Scout | Boggard | Pathfinder Game Night: Dawn of the Frogs (Deluxe Adventure) pg. 11, Monster Core pg. 44 1.1 |  | Common | Amphibious, Boggard, Humanoid |  | 1 | 24 | 16 | +9 | +5 | +7 | darkvision | 20 feet, swim 25 feet; swamp passage |
+| Boggard Scouting Party | Boggard | Battlecry! pg. 175 |  | Common | Amphibious, Boggard, Humanoid, Troop |  | 6 | 90 (4 segments) | 23 | +17 | +14 | +11 | darkvision | 20 feet, swim 25 feet; troop movement |
+| Boggard Swampseer | Boggard | Monster Core pg. 45 1.1 |  | Common | Amphibious, Boggard, Humanoid |  | 3 | 40 | 18 | +9 | +7 | +11 | darkvision | 20 feet, swim 25 feet; swamp passage |
+| Boggard Warden |  | Kingmaker Adventure Path pg. 155 |  | Rare | Amphibious, Boggard, Humanoid, Rare |  | 9 | 160 | 28 | +18 | +19 | +17 | darkvision | 20 feet, swim 25 feet; swamp stride |
+| Boggard Warrior | Boggard | Monster Core pg. 44 1.1 |  | Common | Amphibious, Boggard, Humanoid |  | 2 | 38 | 17 | +10 | +5 | +8 | darkvision | 20 feet, swim 25 feet; swamp passage |
+| Bogwid |  | Monster Core pg. 46 1.1 |  | Common | Aberration |  | 5 | 100 | 20 | +15 | +12 | +8 | darkvision | 25 feet, climb 20 feet, swim 20 feet |
+| Boiling Spring | Elemental, Water | Rage of Elements pg. 181 2.0 |  | Common | Aquatic, Elemental, Fire, Water |  | 13 | 255 | 34 | +23 | +26 | +20 | darkvision, steam vision | fly 30 feet, swim 80 feet |
+| Bolan Nogasso |  | Gatewalkers (Hardcover) pg. 274 |  | Unique | Human, Humanoid, Unique |  | 2 | 40 | 18 | +8 | +8 | +11 | 20 feet | Loading... |
+| Loading... | Bone Croupier | Book of the Dead pg. 77, Pathfinder #151: The Show Must Go On pg. 80 |  | Uncommon | Uncommon, Undead |  | 5 | 50 ( negative healing ) | 22 | +9 | +14 | +14 | darkvision | 25 feet |
+| Bone Gladiator |  | Abomination Vaults Hardcover pg. 106 |  | Unique | Mindless, Skeleton, Undead, Unique |  | 7 | 105 (negative healing) | 24 | +17 | +13 | +13 | darkvision | 30 feet |
+| Bone Mother | Ratfolk | NPC Core pg. 211 |  | Common | Humanoid, Ratfolk |  | 6 | 80 | 23 | +12 | +13 | +15 | low-light vision | 25 feet; swarming |
+| Bone Prophet | Serpentfolk | Monster Core pg. 305 1.1 |  | Common | Humanoid, Serpentfolk |  | 8 | 115 | 27 | +14 | +15 | +19 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Bone Scavenger | Kholo | NPC Core pg. 196 |  | Common | Humanoid, Kholo |  | 0 | 16 | 16 | +3 | +6 | +3 | low-light vision | 25 feet |
+| Bone Shard Toughs |  | Pathfinder #181: Zombie Feast pg. 35 |  | Uncommon | Human, Humanoid, Uncommon |  | 0 | 20 | 15 | +6 | +7 | +4 | 25 feet | Bone Ship |
+| Bestiary 3 pg. 34 | Rare	Gargantuan | Rare, Undead |  | 18 | darkvision |  |  |  |  |  |  |  | swim 40 feet | Bone Skipper Swarm |
+| Bone Skipper |  | Pathfinder #158: Sixty Feet Under pg. 80 |  | Uncommon | Animal, Swarm, Uncommon |  | 6 | 120 | 24 | +14 | +17 | +12 | darkvision, bonesense (imprecise) 30 feet | 25 feet, fly 40 feet |
+| Bone Warrior |  | Pathfinder #176: Lost Mammoth Valley pg. 35 |  | Rare | Human, Humanoid, Rare |  | 4 | 65 | 21 | +13 | +11 | +7 | 25 feet | Bonebleacher Bugbear |
+| Pathfinder #203 Shepherd of Decay pg. 54 | Rare	Medium | Bugbear, Humanoid, Rare |  | 12 | darkvision, scent (30 feet) |  |  |  |  |  |  |  | 25 feet | Bore Worm Swarm |
+| Bore Worm |  | Bestiary 3 pg. 36 |  | Common | Animal, Swarm |  | 5 | 60 | 20 | +15 | +12 | +8 | tremorsense (imprecise) 60 feet | 15 feet, burrow 30 feet |
+| Boss Skrawng |  | Pathfinder #163: Ruins of Gauntlight pg. 11 |  | Unique | Fey, Gremlin, Unique |  | 1 | 24 | 16 | +4 | +9 | +8 | darkvision, scent (imprecise) 30 feet | 20 feet, climb 20 feet |
+| Bosun | Seafarer | NPC Core pg. 147 |  | Common | Human, Humanoid |  | 3 | 45 | 18 | +6 | +11 | +8 | 25 feet | Bottlenose Dolphin |
+| Dolphin |  | Monster Core pg. 103 1.1 |  | Common | Animal |  | 0 | 16 | 15 | +6 | +7 | +5 | aquatic echolocation 120 feet, low-light vision | swim 60 feet |
+| Bounty Hunter | Mercenary | NPC Core pg. 82 |  | Common | Human, Humanoid |  | 4 | 60 | 21 | +9 | +12 | +11 | 25 feet | Brainchild |
+| Monster Core 2 pg. 62 | Rare	Large | Illusion, Mental, Rare |  | 11 | darkvision |  |  |  |  |  |  |  | 30 feet, fly 30 feet | Bralani |
+| Azata |  | Bestiary 2 pg. 30 2.0 |  | Common | Azata, Celestial |  | 6 | 120 | 24 | +13 | +17 | +12 | darkvision | 30 feet, fly 80 feet |
+| Bramble Champion Construct |  | Pathfinder #169: Kindled Magic pg. 41 |  | Rare | Construct, Mindless, Rare |  | 3 | 45 | 20 | +10 | +10 | +8 | low-light vision | 20 feet |
+| Loading... | Bregdi | Pathfinder #159: All or Nothing pg. 81 |  | Uncommon | Animal, Aquatic, Uncommon |  | 9 | 180 | 27 | +20 | +18 | +17 | low-light vision, scent (imprecise) 30 feet | 20 feet, swim 40 feet |
+| Briargeist | Verdorite | Pathfinder #211: The Secret of Deathstalk Tower pg. 86 |  | Rare | Incorporeal, Rare, Spirit, Undead |  | 15 | 240 ( void healing ) | 35 | +22 | +27 | +29 | darkvision | fly 30 feet |
+| Loading... | Brimorak | Demon |  |  | Monster Core pg. 77 1.1 |  | Common | Medium |  |  |  |  | Demon, Fiend, Unholy | 5	80	22	+15	+12	+10	+12 |
+| darkvision, smoke vision | 30 feet | Brine Archdragon |  |  | Dragon, Brine |  |  |  |  |  |  |  | Draconic Codex pg. 115 | Rare	Gargantuan |
+| Aquatic, Dragon, Elemental, Primal, Rare, Water | 20	460	44	+37	+33	+35	+36 | (38 to Sense Motive) aquatic echolocation 120 feet, greater darkvision |  |  | 40 feet, swim 180 feet, fly 180 feet | Brine Shark |  |  |  |  |  |  | Elemental, Water | Monster Core pg. 148 1.1 |
+| Common	Medium | Aquatic, Elemental, Water | 3	45	19	+9	+11	+6	+8 |  |  | darkvision |  |  |  |  |  |  |  | 15 feet, swim 50 feet | Bristle Boar |
+| Pathfinder #207: Resurrection Flood pg. 83 | Common	Medium | Animal |  | 3 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 40 feet | Bristled Reef Shark |
+| Pathfinder #216: The Acropolis Pyre pg. 84 | Common	Medium | Animal, Aquatic |  | 1 | blood scent, scent (imprecise) 100 feet |  |  |  |  |  |  |  | swim 35 feet | Loading... |
+| Brontosaurus | Dinosaur | Monster Core pg. 100 1.1 |  | Common | Animal, Dinosaur |  | 10 | 220 | 28 | +21 | +14 | +16 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Bronwyl Holloward |  | Pathfinder #194: Cult of the Cave Worm pg. 61 |  | Unique | Duergar, Dwarf, Humanoid, Unique |  | 8 | 135 | 25 | +16 | +13 | +17 | darkvision | 30 feet |
+| Brood Leech Swarm | Leech | Monster Core 2 pg. 212 |  | Common | Amphibious, Animal, Swarm |  | 4 | 50 | 19 | +12 | +11 | +9 | tremorsense 30 feet | 5 feet, swim 20 feet |
+| Brownie |  | Monster Core 2 pg. 63 |  | Common | Fey |  | 1 | 21 | 16 | +4 | +9 | +9 | low-light vision | 20 feet |
+| Brughadatch | Brughadatch | Pathfinder #154: Siege of the Dinosaurs pg. 78 |  | Common | Amphibious, Fey |  | 10 | 210 | 30 | +22 | +16 | +20 | darkvision | 25 feet, swim 25 feet |
+| Brush Thylacine | Thylacine | Kingmaker Adventure Path pg. 609 |  | Uncommon | Animal, Uncommon |  | 2 | 30 | 18 | +9 | +10 | +6 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Bshez “Sand Claws” Shak |  | Pathfinder #149: Against the Scarlet Triad pg. 34 |  | Unique | Human, Humanoid, Unique |  | 17 | 330 | 40 | +29 | +32 | +27 | 30 feet | Bugaboo |
+| Bogeyman |  | Pathfinder #152: Legacy of the Lost God pg. 78 |  | Uncommon | Fey, Uncommon |  | 6 | 95 | 24 | +11 | +17 | +14 | low-light vision | 30 feet; mobility |
+| Bugbear Prowler | Bugbear | Monster Core pg. 47 1.1 |  | Common | Bugbear, Humanoid |  | 2 | 34 | 17 | +9 | +8 | +5 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Bugbear Tormentor | Bugbear | Monster Core pg. 47 1.1 |  | Common | Bugbear, Humanoid |  | 3 | 44 | 20 | +9 | +10 | +6 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Bugul Noz |  | Pathfinder #153: Life's Long Shadows pg. 76 |  | Rare | Fey, Rare |  | 12 | 200 | 31 | +22 | +25 | +23 | darkvision | 25 feet; forest jaunt |
+| Bul-Gae |  | Tian Xia World Guide pg. 282 |  | Common | Beast, Cold, Fire |  | 14 | 255 | 33 | +28 | +22 | +25 | greater darkvision, scent (imprecise) 60 feet | 40 feet |
+| Bulbous Blood Ooze | Ooze | Pathfinder #215: To Blot Out the Sun pg. 55 |  | Uncommon | Mindless, Ooze, Uncommon |  | 6 | 140 | 14 | +19 | +8 | +8 | motion sense 60 feet, no vision | 10 feet, climb 10 feet |
+| Loading... | Bull of Zagresh | War Beast |  |  | Pathfinder #209: Destroyer's Doom pg. 86 |  | Common | Huge |  |  |  |  | Animal | 7	140	23	+18	+12	+15	+15 |
+| low-light vision | 30 feet | Loading... | Burglar |  | Criminal |  |  |  |  |  |  |  | NPC Core pg. 20 | Common	Medium |
+| Human, Humanoid | 4	60	21	+7	+12	+10	+10 | (11 to find traps) |  |  | 30 feet | Burnbearer |  |  |  |  |  |  | Pathfinder #175: Broken Tusk Moon pg. 23 | Uncommon	Medium |
+| Human, Humanoid, Uncommon | -1	8	15	+6	+5	+4	+6 | 25 feet | Burning Mammoth Commando |  | Pathfinder #177: Burning Tundra pg. 52 |  | Rare | Medium |  |  |  |  | Human, Humanoid, Rare | 7	120	25	+17	+15	+13	+15 |
+| 25 feet | Burning Mammoth Hunters | Pathfinder #175: Broken Tusk Moon pg. 17 |  | Uncommon | Human, Humanoid, Uncommon |  | 0 | 15 | 16 | +4 | +7 | +7 | 25 feet | Burning Mammoth Longshield |
+| Pathfinder #175: Broken Tusk Moon pg. 25 | Uncommon	Medium | Human, Humanoid, Uncommon |  | 1 | 20 feet | Burning Mammoth Reaver |  |  |  |  |  |  | Pathfinder #175: Broken Tusk Moon pg. 54 | Rare	Medium |
+| Human, Humanoid, Rare | 2	30	18	+9	+8	+6	+8 | 25 feet | Buso |  | Bestiary 3 pg. 39 |  | Common | Medium |  |  |  |  | Humanoid | 3	48	18	+9	+6	+8	+8 |
+| low-light vision | 25 feet | Butterfly Blade Warrior |  |  | Pathfinder #166: Despair on Danger Island pg. 60 |  | Uncommon | Medium |  |  |  |  | Human, Humanoid, Uncommon | 13	235	33	+26	+23	+20	+23 |
+| 25 feet | Bythos | Aeon |  |  | Monster Core 2 pg. 12 |  | Uncommon | Large |  |  |  |  | Aeon, Monitor, Uncommon | 16	245	39	+25	+26	+30	+30 |
+| darkvision | fly 35 feet | Cacodaemon |  |  | Daemon |  |  |  |  |  |  |  | Monster Core pg. 72 1.1 | Common	Tiny |
+| Daemon, Fiend, Unholy | 1	22	16	+7	+8	+6	+6 | darkvision |  |  | 5 feet, fly 40 feet | Loading... |  |  |  |  |  |  | Cadaverous Rake | Book of the Dead pg. 78 |
+| Uncommon	Medium | Uncommon, Undead | 8	125 ( negative healing )	27	+16	+20	+12	+16 |  |  | (18 to initiative) darkvision |  |  |  |  |  |  |  | 30 feet | Cairn Linnorm |
+| Linnorm |  | Bestiary 2 pg. 166 2.0 |  | Uncommon | Dragon, Uncommon |  | 18 | 360 | 43 | +34 | +30 | +26 | darkvision, scent (imprecise) 60 feet, true seeing | 35 feet, climb 40 feet, fly 100 feet, swim 40 feet; freedom of movement |
+| Cairn Wight | Wight | Bestiary 2 pg. 292 2.0 |  | Uncommon | Uncommon, Undead, Wight |  | 4 | 67 | 20 | +12 | +10 | +11 | darkvision | 25 feet |
+| Calathgar |  | Bestiary 2 pg. 45 2.0 |  | Common | Cold, Plant |  | 4 | 75 | 21 | +10 | +13 | +10 | darkvision, scent 30 feet | 20 feet, climb 20 feet |
+| Calcifda |  | Pathfinder #177: Burning Tundra pg. 40 |  | Unique | Earth, Fey, Unique |  | 10 | 140 | 31 | +19 | +17 | +23 | gemsight | 25 feet, burrow 25 feet; earth glide |
+| Caldera Oni | Oni | Monster Core pg. 254 1.1 |  | Common | Fire, Giant, Humanoid, Oni |  | 14 | 315 | 35 | +28 | +25 | +23 | greater darkvision | 40 feet, fly 40 feet |
+| Caligni Assassin | Caligni | Pathfinder #194: Cult of the Cave Worm pg. 85 |  | Rare | Caligni, Humanoid, Rare, Shadow |  | 8 | 135 | 27 | +16 | +18 | +12 | greater darkvision | 40 feet |
+| Caligni Caller | Caligni | Monster Core 2 pg. 65 |  | Common | Caligni, Humanoid |  | 6 | 80 | 24 | +9 | +15 | +11 | greater darkvision, light blindness | 25 feet |
+| Caligni Dancer | Caligni | Monster Core pg. 48 1.1 |  | Common | Caligni, Humanoid |  | 1 | 18 (final dance) | 17 | +7 | +9 | +4 | greater darkvision, light blindness | 25 feet |
+| Caligni Defender |  | Pathfinder #165: Eyes of Empty Death pg. 35 |  | Rare | Caligni, Humanoid, Rare |  | 8 | 125 | 28 | +13 | +19 | +16 | greater darkvision | 25 feet |
+| Caligni Hunter | Caligni | Monster Core pg. 49 1.1 |  | Common | Caligni, Humanoid |  | 4 | 60 (final fate) | 21 | +10 | +13 | +8 | greater darkvision, light blindness | 25 feet |
+| Caligni Skulker | Caligni | Monster Core pg. 48 1.1 |  | Common | Caligni, Humanoid |  | 2 | 30 (final night) | 19 | +9 | +10 | +6 | greater darkvision, light blindness | 25 feet |
+| Caligni Slayer | Caligni | Bestiary 2 pg. 46 2.0 |  | Uncommon | Caligni, Humanoid, Uncommon |  | 3 | 45 (death implosion) | 19 | +9 | +12 | +6 | greater darkvision | 25 feet |
+| Caligni Vanguard | Caligni | Monster Core 2 pg. 64 |  | Uncommon | Caligni, Humanoid, Uncommon |  | 5 | 50 | 24 | +14 | +8 | +11 | echolocation 60 feet, no vision | 25 feet |
+| Calikang |  | Monster Core 2 pg. 66, Pathfinder #149: Against the Scarlet Triad pg. 84 |  | Uncommon | Humanoid, Uncommon |  | 12 | 235 | 31 | +23 | +22 | +20 | darkvision, truesight | 35 feet |
+| Calmont |  | Pathfinder #145: Hellknight Hill pg. 27 |  | Unique | Halfling, Humanoid, Unique |  | 3 | 35 | 20 | +6 | +11 | +6 | keen eyes | 25 feet |
+| Camarach |  | Pathfinder #162: Ruins of the Radiant Siege pg. 77 |  | Uncommon | Monitor, Uncommon |  | 17 | 320 | 40 | +31 | +26 | +29 | darkvision, thoughtsense (imprecise) 120 feet | fly 60 feet, swim 60 feet |
+| Camazotz Cultist |  | Pathfinder #213: Thirst for Blood pg. 34 |  | Uncommon | Human, Humanoid, Uncommon |  | 0 | 16 | 14 | +7 | +5 | +4 | 25 feet | Camel |
+| Monster Core 2 pg. 67 | Common	Large | Animal |  | 1 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 35 feet | Candlaron's Echo |
+| Pathfinder #150: Broken Promises pg. 56 | Common	Medium | Ghost, Incorporeal, Spirit |  | 21 | darkvision |  |  |  |  |  |  |  | fly 25 feet | Canker Cultist |
+| Pathfinder #163: Ruins of Gauntlight pg. 41 | Uncommon	Medium | Ghoul, Uncommon, Undead |  | 3 | darkvision |  |  |  |  |  |  |  | 30 feet, burrow 5 feet | Loading... |
+| Capritellix |  | Rage of Elements pg. 151 2.0 |  | Rare | Elemental, Metal, Rare |  | 17 | 290 | 39 | +31 | +29 | +30 | darkvision | fly 60 feet |
+| Capstan Swabbie |  | Gatewalkers (Hardcover) pg. 250 |  | Uncommon | Construct, Mindless, Uncommon |  | 7 | 115 | 25 | +17 | +12 | +10 | darkvision | 20 feet |
+| Captain of the Guard | Official | NPC Core pg. 115 |  | Common | Human, Humanoid |  | 6 | 95 | 24 | +14 | +12 | +15 | 20 feet | Captain Salah |
+| Gatewalkers (Hardcover) pg. 37 | Unique	Large | Beast, Centaur, Humanoid, Unique |  | 3 | darkvision |  |  |  |  |  |  |  | 40 feet | Carbuncle |
+| Monster Core 2 pg. 68 | Rare	Tiny | Beast, Rare |  | 1 | darkvision, treasure sense (imprecise) 500 feet |  |  |  |  |  |  |  | 15 feet | Carman Rajani |
+| Pathfinder #164: Hands of the Devil pg. 86 | Unique	Medium | Human, Humanoid, Unique |  | 6 | 25 feet | Carnivorous Blob |  |  |  |  |  |  | Ooze | Monster Core 2 pg. 243 |
+| Common	Gargantuan | Mindless, Ooze | 13	300	20	+25	+14	+19	+23 |  |  | motion sense 240 feet, no vision |  |  |  |  |  |  |  | 20 feet, climb 20 feet, swim 20 feet | Carnivorous Crystal |
+| Pathfinder #148: Fires of the Haunted City pg. 76 | Common	Medium | Earth, Mindless, Ooze |  | 11 | motion sense 60 feet, no vision |  |  |  |  |  |  |  | 10 feet, climb 10 feet | Carnotaurus |
+| Dinosaur |  | Howl of the Wild pg. 137 2.1 |  | Common | Animal, Dinosaur |  | 7 | 145 | 24 | +17 | +15 | +13 | low-light vision, scent (imprecise) 30 feet | 30 feet |
+| Carrion Golem | Golem | Bestiary 2 pg. 128 2.0 |  | Uncommon | Construct, Golem, Mindless, Uncommon |  | 4 | 60 | 19 | +13 | +8 | +10 | darkvision | 25 feet |
+| Carved Beast | Elemental, Wood | Rage of Elements pg. 208 2.0 |  | Common | Elemental, Plant, Wood |  | 6 | 92 | 22 | +13 | +9 | +17 | 25 feet | Cassisian |
+| Angel |  | Monster Core pg. 14 1.1 |  | Common | Angel, Celestial, Holy |  | 1 | 20 | 16 | +7 | +6 | +4 | darkvision | fly 40 feet |
+| Castaway | Seafarer | NPC Core pg. 148 |  | Common | Human, Humanoid |  | 5 | 80 | 21 | +14 | +13 | +11 | 30 feet | Castoroides |
+| Beaver |  | Pathfinder #176: Lost Mammoth Valley pg. 82 |  | Common | Animal |  | 3 | 45 | 19 | +12 | +6 | +8 | low-light vision, scent (imprecise) 30 feet | 20 feet, swim 20 feet |
+| Castruccio Irovetti |  | Kingmaker Adventure Path pg. 593 |  | Unique | Human, Humanoid, Unique |  | 16 | 300 | 39 | +28 | +31 | +26 | darkvision, see invisibility | 30 feet |
+| Cat Sith |  | Pathfinder #153: Life's Long Shadows pg. 77 |  | Uncommon | Fey, Uncommon |  | 6 | 110 | 23 | +14 | +17 | +14 | low-light vision | 35 feet |
+| Cataclysm Beetle |  | Pathfinder #174: Shadows of the Ancients pg. 40 |  | Rare | Beast, Rare |  | 18 | 340 | 44 | +35 | +26 | +30 | darkvision, scent (imprecise) 60 feet | 30 feet, climb 20 feet |
+| Catfolk Name Collector | Catfolk | NPC Core pg. 172 |  | Common | Catfolk, Humanoid |  | 6 | 70 | 24 | +11 | +14 | +13 | low-light vision, spiritsense (imprecise) 30 feet | 25 feet |
+| Catfolk Pouncer | Catfolk | Monster Core pg. 52 1.1 |  | Common | Catfolk, Humanoid |  | 1 | 17 | 17 | +6 | +9 | +4 | low-light vision | 30 feet |
+| Catoblepas |  | Monster Core 2 pg. 69 |  | Common | Beast |  | 12 | 215 | 33 | +24 | +20 | +22 | darkvision | 35 feet, swim 20 feet |
+| Catrina | Psychopomp | Monster Core 2 pg. 263 |  | Common | Monitor, Psychopomp |  | 5 | 75 | 22 | +11 | +12 | +13 | darkvision, lifesense 60 feet | 25 feet |
+| Caulborn | Ennosite | Bestiary 3 pg. 94 |  | Uncommon | Astral, Uncommon |  | 7 | 105 | 24 | +12 | +15 | +18 | thoughtsense (precise) 120 feet, no vision | 25 feet |
+| Loading... | Caustic Wraith | Pathfinder #203 Shepherd of Decay pg. 16 |  | Uncommon | Incorporeal, Uncommon, Undead, Unholy, Wraith |  | 9 | 130 ( void healing ) | 28 | +16 | +19 | +21 | darkvision, lifesense 60 feet | fly 40 feet |
+| Cauthooj |  | Monster Core pg. 53 1.1 |  | Common | Beast |  | 12 | 215 | 33 | +25 | +20 | +18 | thoughtsense (imprecise) 60 feet | 35 feet |
+| Cave Bear | Bear | Monster Core pg. 41 1.1 |  | Common | Animal |  | 6 | 95 | 24 | +16 | +11 | +13 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Cave Fisher |  | Bestiary 2 pg. 49 2.0 |  | Common | Animal |  | 2 | 30 | 18 | +9 | +9 | +7 | darkvision | 15 feet, climb 15 feet |
+| Cave Giant | Giant | Monster Core 2 pg. 162 |  | Common | Giant, Humanoid |  | 6 | 110 | 23 | +17 | +13 | +11 | darkvision | 35 feet |
+| Cave Scorpion | Scorpion | Bestiary 2 pg. 234 2.0 |  | Common | Animal |  | 1 | 20 | 16 | +6 | +9 | +5 | darkvision, tremorsense (imprecise) 30 feet | 30 feet, climb 15 feet |
+| Cave Worm | Cave Worm | Monster Core pg. 54 1.1 |  | Common | Animal |  | 13 | 270 | 32 | +28 | +21 | +21 | darkvision, tremorsense (imprecise) 100 feet | 40 feet, burrow 40 feet, swim 20 feet |
+| Cavern Troll | Troll | Monster Core 2 pg. 328 |  | Common | Earth, Giant, Humanoid, Troll |  | 6 | 135 | 22 | +16 | +13 | +9 | darkvision | 25 feet, burrow 20 feet, climb 20 feet |
+| Cavnakash |  | Pathfinder #151: The Show Must Go On pg. 88 |  | Unique | Humanoid, Unique, Xulgath |  | 5 | 83 | 22 | +13 | +10 | +15 | darkvision | 20 feet |
+| Cecaelia Trapper | Cecaelia | Bestiary 3 pg. 45 |  | Common | Amphibious, Humanoid |  | 5 | 53 | 24 | +10 | +15 | +11 | darkvision, wavesense (imprecise) 10 feet | 20 feet, swim 35 feet |
+| Celestial Menagerie Bruiser |  | Pathfinder #152: Legacy of the Lost God pg. 47 |  | Common | Human, Humanoid |  | 8 | 135 | 27 | +16 | +15 | +13 | 25 feet | Loading... |
+| Centaur Herbalist | Centaur | Monster Core pg. 58 1.1 |  | Common | Beast, Centaur, Humanoid |  | 3 | 36 | 18 | +8 | +9 | +10 | darkvision | 40 feet |
+| Centaur Scout |  | Kingmaker Adventure Path pg. 267 |  | Rare | Beast, Rare |  | 5 | 75 | 22 | +11 | +12 | +15 | darkvision | 40 feet |
+| Centipede Swarm | Centipede | Monster Core pg. 59 1.1 |  | Common | Animal, Swarm |  | 3 | 30 | 18 | +8 | +11 | +5 | darkvision, tremorsense (imprecise) 30 feet | 30 feet, climb 30 feet |
+| Cephal Lorentus |  | Kingmaker Adventure Path pg. 280 |  | Unique | Undead, Unique |  | 9 | 140 ( negative healing ) | 28 | +15 | +15 | +21 | darkvision | 25 feet |
+| Loading... | Chafkhem | Pathfinder #164: Hands of the Devil pg. 19 |  | Unique | Mummy, Undead, Unique |  | 8 | 135 (negative healing) | 26 | +15 | +16 | +17 | darkvision | 20 feet |
+| Chained Norn | Norn | Claws of the Tyrant pg. 96 |  | Unique | Undead, Unique |  | 20 | 375 ( void healing ) | 46 | +34 | +30 | +38 | detect magic, greater darkvision, lifesense 120 feet, truesight | 35 feet, fly 35 feet |
+| Chakanaj | Sahkil | Night of the Gray Death pg. 70 |  | Common | Fiend, Sahkil |  | 14 | 300 | 36 | +22 | +28 | +25 | (+29 to Sense Motive) darkvision, true seeing | 10 feet, fly 40 feet |
+| Champion Automaton | Automaton | Monster Core 2 pg. 49 |  | Rare | Automaton, Construct, Rare |  | 10 | 170 | 29 | +21 | +19 | +17 | darkvision | 25 feet, climb 15 feet |
+| Champion of Rovagug | Villain | NPC Core pg. 156 |  | Common | Human, Humanoid, Unholy |  | 5 | 70 | 25 | +12 | +8 | +10 | 20 feet | Champion of Shelyn |
+| Devotee |  | NPC Core pg. 32 |  | Common | Holy, Human, Humanoid |  | 7 | 120 | 25 | +15 | +12 | +15 | 20 feet | Loading... |
+| Chandriu Invisar |  | Pathfinder #163: Ruins of Gauntlight pg. 50 |  | Unique | Ghost, Incorporeal, Spirit, Undead, Unique |  | 6 | 64 (negative healing, rejuvenation) | 23 | +12 | +17 | +11 | darkvision | fly 25 feet |
+| Changeling Exile | Changeling | Monster Core pg. 60 1.1 |  | Common | Changeling, Human, Humanoid |  | 3 | 45 | 19 | +7 | +8 | +11 | darkvision | 25 feet |
+| Chaos Falcon | Elemental Bird | Howl of the Wild pg. 143 2.1 |  | Rare | Air, Beast, Electricity, Fire, Rare, Water |  | 10 | 180 | 29 | +19 | +22 | +16 | darkvision, stormsight | 25 feet, fly 50 feet |
+| Charau-ka |  | Pathfinder #145: Hellknight Hill pg. 37 |  | Common | Charau-ka, Humanoid |  | 1 | 18 | 18 | +7 | +8 | +4 | darkvision, scent (imprecise) 30 feet | 25 feet, climb 25 feet |
+| Charau-ka Acolyte of Angazhan | Charau-ka | The Mwangi Expanse pg. 297 2.0, Pathfinder #146: Cult of Cinders pg. 85 |  | Common | Charau-ka, Humanoid |  | 3 | 45 | 19 | +8 | +7 | +11 | darkvision, scent (imprecise) 30 feet | 25 feet, climb 25 feet |
+| Charau-ka Butcher | Charau-ka | The Mwangi Expanse pg. 297 2.0, Pathfinder #146: Cult of Cinders pg. 85 |  | Common | Charau-ka, Humanoid |  | 6 | 95 | 21 | +16 | +12 | +13 | darkvision, scent (imprecise) 30 feet | 25 feet, climb 25 feet |
+| Charau-ka Dragon Priest |  | Pathfinder #146: Cult of Cinders pg. 59 |  | Uncommon | Charau-ka, Dragon, Fire, Humanoid, Uncommon |  | 6 | 90 | 23 | +14 | +12 | +15 | darkvision, scent (imprecise) 30 feet | 25 feet, climb 25 feet |
+| Charau-Ka Shrieker Crew | Charau-ka | Battlecry! pg. 175 |  | Common | Charau-ka, Humanoid, Troop |  | 8 | 135 (4 segments) | 26 | +15 | +19 | +15 | darkvision, scent (imprecise) 30 feet | 25 feet, climb 25 feet; troop movement |
+| Charau-ka Warrior | Charau-ka | The Mwangi Expanse pg. 296 2.0, Pathfinder #146: Cult of Cinders pg. 84 |  | Common | Charau-ka, Humanoid |  | 1 | 20 | 16 | +7 | +8 | +4 | darkvision, scent (imprecise) 30 feet | 25 feet, climb 25 feet |
+| Charghar |  | Pathfinder #181: Zombie Feast pg. 84 |  | Uncommon | Incorporeal, Spirit, Uncommon, Undead |  | 4 | 35 ( negative healing ) | 20 | +8 | +12 | +10 | darkvision, lifesense 60 feet | fly 25 feet |
+| Charlatan | Criminal | NPC Core pg. 20 |  | Common | Human, Humanoid |  | 3 | 40 | 18 | +5 | +8 | +10 | 25 feet | Charming Scoundrel |
+| Firebrands |  | Character Guide pg. 118 2.0 |  | Common | Gnome, Humanoid |  | 4 | 54 | 21 | +9 | +13 | +9 | low-light vision | 25 feet |
+| Charnel Creation |  | Monster Core pg. 61 1.1 |  | Uncommon | Construct, Mindless, Uncommon |  | 8 | 140 | 26 | +18 | +14 | +15 | darkvision | 25 feet |
+| Chattering Jaws | Animated Bones | Pathfinder #181: Zombie Feast pg. 82 |  | Uncommon | Construct, Mindless, Uncommon |  | -1 | 8 | 13 | +3 | +6 | +3 | darkvision | 20 feet |
+| Chea | No-Prep Character: Chea | Unique	Medium |  |  | Beast, Beastkin, Humanoid, Unique |  | 9 | 155 | 27 | +18 | +21 | +15 | 40 feet | Chernasardo Ranger |
+| Claws of the Tyrant pg. 44 | Uncommon	Medium | Humanoid, Uncommon |  | 7 | 25 feet | Chernobue |  |  |  |  |  |  | Qlippoth | Bestiary 2 pg. 214 2.0 |
+| Uncommon	Large | Fiend, Qlippoth, Uncommon | 12	220	33	+23	+18	+25	+25 |  |  | greater darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 30 feet; air walk | Chertus Jheed |
+| Pathfinder #200: Seven Dooms for Sandpoint pg. 121 | Unique	Medium | Fungus, Human, Humanoid, Unique |  | 7 | 30 feet | Chetamog |  |  |  |  |  |  | Pathfinder #201: Pactbreaker pg. 86 | Common	Large |
+| Animal | 2	32	18	+7	+10	+6	+8 | low-light vision, scent (imprecise) 30 feet |  |  | 40 feet, climb 30 feet | Chew Spider |  |  |  |  |  |  | Kingmaker Adventure Path pg. 69 | Unique	Large |
+| Animal, Swarm, Unique | 2	22	18	+6	+10	+4	+6 | darkvision, web sense |  |  | 20 feet, climb 20 feet | Chief Sootscale |  |  |  |  |  |  | Kingmaker Adventure Path pg. 129 | Unique	Small |
+| Humanoid, Kobold, Unique | 2	33	18	+5	+10	+9	+7 | darkvision |  |  | 25 feet | Child of Urgathoa |  |  |  |  |  |  | Book of the Dead pg. 79 | Rare	Large |
+| Rare, Undead | 8	165 ( negative healing )	27	+14	+15	+18	+18 | darkvision |  |  | fly 40 feet | Children Of Mhar |  |  |  |  |  |  | Pathfinder #156: The Apocalypse Prophet pg. 78 | Uncommon	Huge |
+| Aberration, Uncommon | 18	420	42	+34	+30	+26	+30 | greater darkvision, smoke vision |  |  | 40 feet, climb 40 feet | Chimera |  |  |  |  |  |  | Chimera | Monster Core pg. 62 1.1 |
+| Uncommon	Large | Beast, Uncommon | 8	135	27	+18	+16	+14	+16 |  |  | darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet, fly 40 feet | Chimeric Manticore |
+| Pathfinder #179: Cradle of Quartz pg. 31 | Rare	Large | Beast, Rare, Zombie |  | 7 | darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet, fly 40 feet | Chimpanzee Visitant |
+| Visitant |  | Pathfinder #152: Legacy of the Lost God pg. 83 |  | Common | Animal, Undead |  | 3 | 55 ( negative healing ) | 18 | +8 | +11 | +10 | darkvision, lifesense (imprecise) 60 feet | 25 feet |
+| Choker |  | Bestiary 2 pg. 51 2.0 |  | Common | Aberration |  | 2 | 28 | 18 | +7 | +10 | +7 | darkvision | 20 feet, climb 15 feet |
+| Choral | Angel | Monster Core pg. 15 1.1 |  | Common | Angel, Celestial, Holy |  | 6 | 100 | 24 | +10 | +14 | +16 | darkvision | 30 feet, fly 40 feet |
+| Loading... | Chromatic Ooze | Ooze |  |  | Pathfinder #174: Shadows of the Ancients pg. 81 |  | Rare | Large |  |  |  |  | Mindless, Ooze, Rare | 18	550	28	+33	+16	+20	+30 |
+| motion sense 240 feet, no vision | 20 feet, climb 20 feet, swim 20 feet | Chronicler |  |  | Explorer |  |  |  |  |  |  |  | NPC Core pg. 54 | Common	Medium |
+| Human, Humanoid | 3	45	18	+8	+9	+10	+12 | 25 feet | Chupacabra |  | Monster Core pg. 63 1.1 |  | Common | Small |  |  |  |  | Beast | 3	45	18	+9	+11	+7	+9 |
+| darkvision | 25 feet | Loading... | Chyzaedu |  | Bestiary 3 pg. 46 |  | Rare | Gargantuan |  |  |  |  | Aberration, Rare | 10	135	30	+18	+15	+23	+21 |
+| darkvision, tremorsense (imprecise) 60 feet | 25 feet, burrow 20 feet, climb 20 feet | Cinder Archdragon |  |  | Dragon, Cinder |  |  |  |  |  |  |  | Draconic Codex pg. 46 | Rare	Gargantuan |
+| Dragon, Fire, Primal, Rare | 22	525	47	+38	+34	+36	+39 | darkvision, scent (imprecise) 60 feet, smoke vision |  |  | 70 feet, fly 210 feet | Cinder Rat |  |  |  |  |  |  | Elemental, Fire | Monster Core pg. 144 1.1 |
+| Common	Small | Elemental, Fire | 3	45	18	+9	+12	+6	+9 |  |  | darkvision, smoke vision |  |  |  |  |  |  |  | 40 feet | City Guard Squadron |
+| Official |  | NPC Core pg. 114 |  | Common | Human, Humanoid, Troop |  | 5 | 75 (4 segments) | 22 | +14 | +9 | +11 | 25 feet; city passage, troop movement | Loading... |
+| Claws Of Time |  | Pathfinder #179: Cradle of Quartz pg. 41 |  | Unique | Aberration, Time, Unique |  | 10 | 150 | 30 | +17 | +21 | +19 | greater darkvision, lamp vision 30 feet | 30 feet, fly 30 feet |
+| Clay Effigy |  | Monster Core pg. 64 1.1 |  | Uncommon | Construct, Mindless, Uncommon |  | 10 | 175 | 29 | +23 | +16 | +17 | darkvision | 20 feet |
+| Cleansed Cultist |  | Kingmaker Companion Guide pg. 78 |  | Rare | Human, Humanoid, Rare |  | 6 | 100 | 24 | +12 | +16 | +14 | 25 feet | Loading... |
+| Clockwork Amalgam | Clockworks | Pathfinder #161: Belly of the Black Whale pg. 81 |  | Rare | Clockwork, Construct, Mindless, Rare |  | 20 | 455 | 43 | +34 | +35 | +28 | 30 feet | Clockwork Assassin |
+| Clockworks |  | Pathfinder #160: Assault on Hunting Lodge Seven pg. 82 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | 13 | 230 | 34 | +23 | +29 | +19 | darkvision, smoke vision | 30 feet, climb 20 feet |
+| Clockwork Belimarius |  | Rusthenge pg. 47 |  | Unique | Clockwork, Construct, Mindless, Unique |  | 4 | 45 | 20 | +11 | +12 | +8 | darkvision | 25 feet |
+| Clockwork Brewer | Clockworks | Pathfinder #178: Punks in a Powderkeg pg. 84 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | 3 | 40 | 18 | +8 | +10 | +8 | darkvision | 25 feet |
+| Clockwork Buccaneer | Clockworks | Pathfinder #180: The Smoking Gun pg. 80 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | 9 | 140 | 28 | +17 | +21 | +15 | darkvision | 25 feet |
+| Clockwork Cannoneer | Clockworks | Impossible Lands pg. 325 |  | Rare | Clockwork, Construct, Mindless, Rare |  | 15 | 250 | 38 | +27 | +29 | +23 | darkvision | 25 feet |
+| Clockwork Clock Tower | Clockworks | Pathfinder #174: Shadows of the Ancients pg. 81 |  | Rare | Clockwork, Construct, Mindless, Rare |  | 20 | 325 | 48 | +36 | +33 | +31 | darkvision | 40 feet |
+| Clockwork Corpse |  | Pathfinder #215: To Blot Out the Sun pg. 10 |  | Rare | Clockwork, Construct, Mindless, Rare, Undead, Unholy |  | 5 | 75 | 20 | +15 | +11 | +8 | darkvision | 20 feet |
+| Clockwork Disposer | Clockworks | Pathfinder #179: Cradle of Quartz pg. 80 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | 5 | 70 | 21 | +12 | +15 | +9 | darkvision | 25 feet |
+| Clockwork Door Warden | Clockworks | Pathfinder #179: Cradle of Quartz pg. 80 |  | Rare | Clockwork, Construct, Mindless, Rare |  | 4 | 50 | 20 | +10 | +8 | +14 | darkvision | 25 feet |
+| Clockwork Dragon | Clockwork | Monster Core 2 pg. 72 |  | Rare | Clockwork, Construct, Mindless, Rare |  | 16 | 265 | 39 | +30 | +28 | +25 | darkvision | 40 feet, fly 120 feet |
+| Clockwork Fabricator | Clockworks | Pathfinder #178: Punks in a Powderkeg pg. 85 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | 4 | 50 | 19 | +10 | +11 | +9 | darkvision | 25 feet |
+| Clockwork Gunner |  | Pathfinder #179: Cradle of Quartz pg. 61 |  | Unique | Clockwork, Construct, Mindless, Unique |  | 8 | 100 | 26 | +14 | +18 | +16 | darkvision | 25 feet |
+| Clockwork Handler | Clockworks | Pathfinder #178: Punks in a Powderkeg pg. 83 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | 1 | 16 | 16 | +10 | +7 | +6 | darkvision | 25 feet |
+| Clockwork Hunter | Clockworks | Pathfinder #178: Punks in a Powderkeg pg. 82 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | 0 | 12 | 18 | +2 | +8 | +5 | darkvision | 25 feet, climb 25 feet |
+| Clockwork Infantry | Clockworks | Battlecry! pg. 176 |  | Uncommon | Clockwork, Construct, Mindless, Troop, Uncommon |  | 11 | 195 (4 segments) | 30 | +24 | +21 | +18 | darkvision | 25 feet; troop movement |
+| Clockwork Mage | Clockwork | Monster Core 2 pg. 72 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | 9 | 115 | 27 | +17 | +19 | +17 | darkvision | 25 feet |
+| Clockwork Puppeteer | Clockworks | Pathfinder #180: The Smoking Gun pg. 81 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | 12 | 205 | 33 | +22 | +25 | +19 | darkvision | 25 feet, climb 25 feet |
+| Clockwork Rifler |  | Pathfinder #182: Graveclaw pg. 44 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | 6 | 80 | 24 | +16 | +15 | +12 | darkvision | 25 feet |
+| Clockwork Runner Pack | Clockworks | Battlecry! pg. 176 |  | Uncommon | Clockwork, Construct, Mindless, Troop, Uncommon |  | 5 | 75 (4 segments) | 21 | +9 | +15 | +9 | darkvision | 30 feet, climb 20 feet; troop movement |
+| Clockwork Sentry | Clockworks | Pathfinder #215: To Blot Out the Sun pg. 83 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | 8 | 115 | 26 | +16 | +13 | +16 | darkvision, see the unseen | 25 feet |
+| Clockwork Serpent | Clockworks | Pathfinder #200: Seven Dooms for Sandpoint pg. 188 |  | Rare | Clockwork, Construct, Mindless, Rare |  | 8 | 110 | 27 | +15 | +17 | +16 | darkvision | 30 feet |
+| Clockwork Serpent Spy | Clockworks | Rusthenge pg. 44 |  | Rare | Clockwork, Construct, Mindless, Rare |  | 1 | 15 | 19 | +3 | +9 | +6 | low-light vision | 25 feet |
+| Clockwork Shambler Horde |  | Pathfinder #180: The Smoking Gun pg. 31 |  | Uncommon | Construct, Mindless, Troop, Uncommon, Zombie |  | 9 | 240 | 25 | +21 | +16 | +17 | darkvision | 20 feet; troop movement |
+| Clockwork Soldier | Clockwork | Monster Core 2 pg. 71 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | 6 | 80 | 24 | +16 | +14 | +12 | darkvision | 25 feet |
+| Clockwork Sphinx | Clockworks | Pathfinder #179: Cradle of Quartz pg. 81 |  | Rare | Clockwork, Construct, Mindless, Rare |  | 8 | 130 | 26 | +18 | +16 | +13 | darkvision | 25 feet, fly 25 feet |
+| Clockwork Spy | Clockwork | Monster Core 2 pg. 70 |  | Uncommon | Clockwork, Construct, Mindless, Uncommon |  | -1 | 7 | 15 | +2 | +7 | +4 | low-light vision | 25 feet, fly 25 feet |
+| Cloud Archdragon | Dragon, Cloud | Draconic Codex pg. 119 |  | Rare | Air, Dragon, Primal, Rare |  | 22 | 475 | 48 | +39 | +36 | +43 | darkvision, mist vision, scent (imprecise) 60 feet | 60 feet, fly 160 feet |
+| Cloud Giant | Giant | Monster Core pg. 167 1.1 |  | Common | Air, Giant, Humanoid |  | 11 | 220 | 30 | +25 | +18 | +21 | cloudsight, low-light vision, scent (imprecise) 30 feet | 30 feet |
+| Cloudsplitter |  | Pathfinder #168: King of the Mountain pg. 19 |  | Unique | Air, Fire, Phantom, Spirit, Unique |  | 18 | 335 | 42 | +28 | +32 | +30 | greater darkvision, scent (imprecise) 60 feet | 60 feet |
+| Coarti | Devil | Monster Core pg. 87 1.1 |  | Common | Devil, Fiend, Unholy |  | 7 | 110 | 24 | +13 | +17 | +15 | greater darkvision | 25 feet, fly 40 feet |
+| Cobblebone Swarm |  | Pathfinder #181: Zombie Feast pg. 85 |  | Rare | Earth, Rare, Swarm, Undead |  | 3 | 30 ( negative healing ) | 19 | +9 | +11 | +8 | lifesense 40 feet | 20 feet, fly 5 feet |
+| Cobbleswarm | Cobble Mite | Bestiary 3 pg. 52, Pathfinder #157: Devil at the Dreaming Palace pg. 83 |  | Common | Aberration, Earth, Swarm |  | 2 | 20 | 16 | +8 | +10 | +7 | no vision, tremorsense (precise) 40 feet | 20 feet, burrow 10 feet |
+| Cockatrice |  | Monster Core pg. 66 1.1 |  | Common | Beast |  | 3 | 45 | 17 | +8 | +11 | +6 | darkvision | 20 feet, fly 40 feet |
+| Cockroach Swarm | Cockroach | Monster Core 2 pg. 76 |  | Common | Animal, Swarm |  | 2 | 26 | 18 | +9 | +10 | +6 | darkvision, scent (imprecise) 60 feet | 20 feet, climb 20 feet, fly 15 feet |
+| Cocoon Of Lucid Potential |  | In Darkness pg. 17 |  | Unique | Aberration, Unique |  | 13 | 290 | 33 | +26 | +20 | +29 | 0 feet | Coil Spy |
+| Serpentfolk |  | Monster Core pg. 304 1.1 |  | Common | Humanoid, Serpentfolk |  | 4 | 48 | 22 | +9 | +12 | +10 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Coiled Conifer | Blight Bonded | Pathfinder #203 Shepherd of Decay pg. 81 |  | Rare | Elemental, Mutant, Plant, Rare, Wood |  | 13 | 238 | 34 | +26 | +22 | +19 | darkvision, tremorsense (imprecise) 120 feet | 20 feet |
+| Coldmire Pond | Elemental, Water | Rage of Elements pg. 180 2.0 |  | Common | Aquatic, Elemental, Water |  | 8 | 135 | 27 | +16 | +19 | +13 | darkvision | 20 feet, swim 50 feet |
+| Coloxus | Demon | Pathfinder #200: Seven Dooms for Sandpoint pg. 189 |  | Common | Demon, Fiend |  | 12 | 270 | 33 | +22 | +25 | +18 | darkvision, scent (imprecise) 30 feet | 25 feet, fly 30 feet |
+| Combat Engineer | Military | NPC Core pg. 88 |  | Common | Human, Humanoid |  | 1 | 20 | 15 | +8 | +5 | +7 | 25 feet | Combusted |
+| Book of the Dead pg. 80 | Common	Medium | Fire, Undead |  | 3 | darkvision |  |  |  |  |  |  |  | 25 feet | Commander Arsiella Dei |
+| Knights of Lastwall |  | Claws of the Tyrant pg. 122 |  | Unique | Aiuvarin, Elf, Human, Humanoid, Unique |  | 9 | 155 | 28 | +15 | +19 | +21 | low-light vision | 30 feet |
+| Common Eurypterid | Eurypterid | Bestiary 3 pg. 97 |  | Common | Amphibious, Animal |  | -1 | 9 | 15 | +7 | +4 | +2 | low-light vision, wavesense (imprecise) 30 feet | 30 feet, swim 30 feet |
+| Commoner | Laborer | NPC Core pg. 66 |  | Common | Human, Humanoid |  | -1 | 10 | 13 | +6 | +3 | +3 | 25 feet | Loading... |
+| Compsognathus | Dinosaur | Monster Core pg. 96 1.1 |  | Common | Animal, Dinosaur |  | -1 | 8 | 15 | +4 | +7 | +4 | low-light vision, scent (imprecise) 30 feet | 30 feet, swim 15 feet |
+| Compsognathus Swarm | Dinosaur | Monster Core 2 pg. 106 |  | Common | Animal, Dinosaur, Swarm |  | 3 | 40 | 19 | +8 | +12 | +7 | low-light vision, scent (imprecise) 30 feet | 30 feet, swim 15 feet |
+| Con Rit |  | Monster Core pg. 67 1.1 |  | Common | Animal, Aquatic |  | 7 | 100 | 27 | +17 | +14 | +10 | darkvision | 10 feet, swim 60 feet |
+| Concert Frog | Frog | Howl of the Wild pg. 151 2.1 |  | Common | Animal |  | 8 | 150 (frog, 25 (froglets)) | 27 | +19 | +13 | +16 | darkvision | 25 feet, swim 25 feet |
+| Conductor | Velstrac | Pathfinder #215: To Blot Out the Sun pg. 88 |  | Common | Fiend, Velstrac |  | 9 | 130 | 25 | +18 | +21 | +18 | greater darkvision, painsight | Conqueror Worm |
+| Night of the Gray Death pg. 66 | Rare	Gargantuan | Aberration, Rare |  | 21 | greater darkvision, tremorsense (imprecise) 100 feet, true seeing |  |  |  |  |  |  |  | 40 feet, burrow 30 feet; air walk | Conscript Squad |
+| Military |  | NPC Core pg. 89 |  | Common | Human, Humanoid, Troop |  | 3 | 54 (4 segments) | 18 | +11 | +9 | +6 | 25 feet; troop movement | Consonite Choir |
+| Bestiary 3 pg. 53 | Uncommon	Gargantuan | Earth, Elemental, Swarm, Uncommon |  | 13 | darkvision, echolocation (precise) 120 feet |  |  |  |  |  |  |  | 10 feet, fly 40 feet | Conspiracist |
+| Villain |  | NPC Core pg. 152 |  | Common | Human, Humanoid |  | 0 | 15 | 14 | +4 | +6 | +10 | 25 feet | Conspirator Archdragon |
+| Dragon, Conspirator |  | Draconic Codex pg. 50 |  | Rare | Dragon, Occult, Rare |  | 20 | 450 | 44 | +32 | +34 | +36 | (38 to Sense Motive) darkvision, scent (imprecise) 60 feet | 60 feet, climb 60 feet, fly 220 feet |
+| Construction Worker | Laborer | NPC Core pg. 70 |  | Common | Human, Humanoid |  | 2 | 35 | 17 | +11 | +6 | +7 | 25 feet | Contemplative |
+| Contemplative of Ashok |  | Pathfinder #173: Doorway to the Red Star pg. 80 |  | Uncommon | Aberration, Uncommon |  | 2 | 32 | 19 | +4 | +9 | +10 | darkvision, thoughtsense (imprecise) 30 feet | 5 feet, fly 25 feet |
+| Contemplative Meditant | Contemplative of Ashok | Pathfinder #173: Doorway to the Red Star pg. 80 |  | Rare | Aberration, Rare |  | 15 | 275 | 38 | +21 | +27 | +29 | darkvision, thoughtsense 60 feet | 5 feet, fly 25 feet |
+| Contemplative Mentor | Contemplative of Ashok | Pathfinder #173: Doorway to the Red Star pg. 81 |  | Rare | Aberration, Rare |  | 18 | 335 | 44 | +24 | +30 | +33 | darkvision, thoughtsense 100 feet | 5 feet, fly 30 feet |
+| Convergent Giant Eagle |  | Pathfinder #156: The Apocalypse Prophet pg. 13 |  | Rare | Beast, Rare |  | 15 | 290 | 37 | +25 | +27 | +21 | low-light vision | 10 feet, fly 60 feet |
+| Convergent Kendley Nathrael |  | Pathfinder #156: The Apocalypse Prophet pg. 86 |  | Unique | Elf, Human, Humanoid, Unique |  | 19 | 440 | 41 | +33 | +29 | +32 | 25 feet | Convergent Soldier |
+| Pathfinder #156: The Apocalypse Prophet pg. 14 | Rare	Medium | Human, Humanoid, Rare |  | 16 | 25 feet | Loading... |  |  |  |  |  |  | Loading... | Coral Archdragon |
+| Dragon, Coral |  | Draconic Codex pg. 54 |  | Rare | Amphibious, Dragon, Primal, Rare |  | 21 | 400 | 45 | +38 | +33 | +34 | darkvision, wavesense (imprecise) 60 feet | 60 feet, fly 80 feet, swim 140 feet |
+| Coral Capuchin |  | Bestiary 3 pg. 54 |  | Common | Amphibious, Beast |  | 1 | 20 | 16 | +4 | +9 | +8 | darkvision | 25 feet, climb 15 feet, fly 15 feet, swim 15 feet |
+| Coralclaw |  | Pathfinder #216: The Acropolis Pyre pg. 85 |  | Uncommon | Animal, Aquatic, Uncommon |  | 2 | 30 | 18 | +8 | +11 | +5 | darkvision, scent (imprecise) 60 feet | 20 feet, swim 15 feet |
+| Corax |  | Kingmaker Adventure Path pg. 71 |  | Unique | Human, Humanoid, Unique |  | 3 | 55 | 16 | +10 | +8 | +8 | 25 feet | Corbayrant |
+| Shining Kingdoms pg. 178 | Rare	Huge | Beast, Fey, Plant, Rare |  | 16 | blindsight (precise) 100 feet |  |  |  |  |  |  |  | 40 feet, climb 40 feet | Corn Leshy Throng |
+| Leshy |  | NPC Core pg. 201 |  | Common | Leshy, Plant, Troop |  | 4 | 54 (4 segments) | 21 | +8 | +13 | +10 | low-light vision | 25 feet; troop movement |
+| Cornugon | Devil | Bestiary 2 pg. 76 2.0, Pathfinder #149: Against the Scarlet Triad pg. 87 |  | Common | Devil, Fiend |  | 16 | 300 | 38 | +31 | +26 | +26 | greater darkvision | 25 feet, fly 50 feet |
+| Corpselight | Will-o'-Wisp | Claws of the Tyrant pg. 24 |  | Rare | Rare, Undead |  | 2 | 40 ( void healing ) | 17 | +5 | +10 | +7 | corpse sense (precise) 30 feet, darkvision | 25 feet, fly 25 feet (wisp form only) |
+| Corpseroot |  | Book of the Dead pg. 81 |  | Common | Undead |  | 11 | 225 ( negative healing ) | 30 | +24 | +18 | +18 | darkvision | 20 feet |
+| Corrosive Lizard |  | Pathfinder #151: The Show Must Go On pg. 45 |  | Uncommon | Animal, Fiend, Uncommon |  | 2 | 30 | 18 | +10 | +8 | +5 | darkvision, scent (imprecise) 30 feet | 30 feet, swim 30 feet |
+| Corrupt Guards |  | Pathfinder #148: Fires of the Haunted City pg. 27 |  | Rare | Dwarf, Humanoid, Rare |  | 12 | 215 | 32 | +24 | +20 | +21 | darkvision | 20 feet |
+| Corrupt Shieldmarshal |  | Pathfinder #180: The Smoking Gun pg. 7 |  | Uncommon | Humanoid, Uncommon |  | 7 | 120 | 25 | +15 | +18 | +12 | (20 to Sense Motive or vs. Conceal An Object) | 25 feet |
+| Corrupted Priest |  | Pathfinder #151: The Show Must Go On pg. 39 |  | Unique | Human, Humanoid, Unique |  | 3 | 45 | 17 | +8 | +5 | +11 | 25 feet | Corrupted Relic |
+| Bestiary 3 pg. 55 | Rare	Medium | Incorporeal, Rare, Spirit, Undead |  | 4 | darkvision, lifesense (imprecise) 60 feet |  |  |  |  |  |  |  | fly 30 feet | Corrupted Retainer |
+| Pathfinder #151: The Show Must Go On pg. 35 | Common	Medium | Human, Humanoid |  | 2 | 25 feet | Counteflora |  |  |  |  |  |  | Pathfinder #153: Life's Long Shadows pg. 78 | Common	Large |
+| Plant | 10	220	29	+22	+20	+14	+18 | tremorsense (imprecise) 60 feet |  |  | 25 feet | Court Historian |  |  |  |  |  |  | Courtier | NPC Core pg. 12 |
+| Common	Medium | Human, Humanoid | -1	7	13	+3	+5	+9	+7 |  |  | 25 feet | Court Jester |  |  |  |  |  |  | Performer | NPC Core pg. 129 |
+| Common	Medium | Human, Humanoid | 10	170	29	+16	+19	+22	+21 |  |  | 30 feet | Courtesan |  |  |  |  |  |  | Courtier | NPC Core pg. 13 |
+| Common	Medium | Human, Humanoid | 2	25	17	+6	+7	+11	+9 |  |  | (13 to Sense Motive) |  |  |  |  |  |  |  | 25 feet | Coven Aspirant |
+| Mystic |  | NPC Core pg. 97 |  | Common | Human, Humanoid |  | 2 | 35 | 15 | +7 | +7 | +9 | 25 feet | Crag Linnorm |
+| Linnorm |  | Monster Core pg. 220 1.1 |  | Uncommon | Dragon, Fire, Uncommon |  | 14 | 270 | 37 | +28 | +24 | +22 | darkvision, scent (imprecise) 60 feet, truesight | 35 feet, fly 100 feet, swim 60 feet; unfettered movement |
+| Cranium Preserver |  | Pathfinder #180: The Smoking Gun pg. 82 |  | Rare | Construct, Rare |  | 10 | 220 | 28 | +22 | +16 | +19 | darkvision | 25 feet |
+| Crawling Hand | Crawling hand | Monster Core pg. 68 1.1 |  | Common | Undead, Unholy |  | -1 | 8 ( void healing ) | 12 | +2 | +5 | +2 | lifesense 30 feet, tremorsense (imprecise) 30 feet | 30 feet, climb 30 feet |
+| Crawling Hand Swarm |  | Pathfinder #176: Lost Mammoth Valley pg. 38 |  | Common | Swarm, Undead |  | 5 | 60 ( negative healing ) | 21 | +11 | +15 | +9 | lifesense 30 feet, tremorsense (imprecise) 30 feet | 30 feet, climb 30 feet |
+| Crawling Slurry | Ooze | Pathfinder #174: Shadows of the Ancients pg. 82 |  | Rare | Acid, Mindless, Ooze, Rare |  | 16 | 300 | 30 | +28 | +31 | +20 | motion sense 60 feet, no vision | 30 feet, climb 20 feet |
+| Creeping Clot | Ooze | Pathfinder #214: The Broken Palace pg. 83 |  | Uncommon | Amphibious, Mindless, Ooze, Uncommon |  | 5 | 150 | 12 | +15 | +4 | +7 | amphibious motion sense (precise) 60 feet, no vision | 20 feet, climb 15 feet, swim 30 feet |
+| Creeping Cone Swarm | Blight Bonded | Pathfinder #203 Shepherd of Decay pg. 80 |  | Common | Elemental, Mutant, Plant, Swarm, Wood |  | 10 | 135 | 29 | +22 | +19 | +16 | darkvision, tremorsense (imprecise) 60 feet | 25 feet, climb 20 feet |
+| Creeping Crone |  | Pathfinder #182: Graveclaw pg. 82 |  | Rare | Rare, Undead |  | 11 | 210 ( negative healing ) | 30 | +21 | +18 | +24 | darkvision | 20 feet |
+| Creeping Evil | Ooze | Gatewalkers (Hardcover) pg. 251 |  | Uncommon | Mindless, Ooze, Uncommon, Unholy |  | 8 | 185 | 16 | +20 | +12 | +13 | motion sense 60 (precise) feet, no vision | 20 feet, climb 20 feet |
+| Crime Kingpin | Criminal | NPC Core pg. 24 |  | Common | Human, Humanoid |  | 12 | 250 | 32 | +23 | +23 | +22 | (24 to Sense Motive) | 25 feet |
+| Crimson Acolyte |  | Pathfinder #173: Doorway to the Red Star pg. 62 |  | Rare | Human, Humanoid, Rare |  | 13 | 235 | 34 | +21 | +25 | +23 | 30 feet | Crimson Worm Statue |
+| Pathfinder #194: Cult of the Cave Worm pg. 60 | Uncommon	Large | Construct, Mindless, Uncommon |  | 7 | darkvision |  |  |  |  |  |  |  | 30 feet | Crocodile |
+| Crocodile |  | Monster Core pg. 69 1.1 |  | Common | Animal |  | 2 | 30 | 17 | +9 | +7 | +5 | low-light vision | 20 feet, swim 25 feet |
+| Crooked Coffin Brewer |  | Pathfinder #181: Zombie Feast pg. 55 |  | Uncommon | Human, Humanoid, Uncommon |  | 1 | 25 | 14 | +8 | +6 | +4 | 25 feet | Crossroads Guardian |
+| Bestiary 3 pg. 59 | Rare	Medium | Fey, Rare |  | 7 | recognize hero |  |  |  |  |  |  |  | 25 feet, swim 25 feet | Crowded Veil |
+| Pathfinder #212: A Voice in the Blight pg. 80 | Rare	Medium | Fiend, Fungus, Rare, Unholy |  | 14 | darkvision, tremorsense (precise) 120 feet |  |  |  |  |  |  |  | 20 feet; fly 30 feet | Crownbound Constellation |
+| Gatewalkers (Hardcover) pg. 252 | Uncommon	Huge | Astral, Uncommon |  | 8 | darkvision |  |  |  |  |  |  |  | 40 feet | Crucidaemon |
+| Daemon |  | Pathfinder #149: Against the Scarlet Triad pg. 85 |  | Common | Daemon, Fiend |  | 15 | 225 | 38 | +26 | +30 | +26 | darkvision, detect alignment (good only), lifesense 30 feet | 50 feet, air walk |
+| Crying Cicada |  | Howl of the Wild pg. 134 2.1 |  | Common | Animal |  | 3 | 48 | 19 | +10 | +12 | +7 | darkvision | 15 feet, fly 30 feet |
+| Crystal Archdragon | Dragon, Crystal | Draconic Codex pg. 123 |  | Rare | Dragon, Earth, Primal, Rare |  | 19 | 350 | 43 | +35 | +29 | +33 | darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 60 feet | 60 feet, fly 180 feet |
+| Loading... | Loading... | Loading... | Cu Sith |  | Pathfinder #153: Life's Long Shadows pg. 79 |  | Uncommon | Large |  |  |  |  | Fey, Uncommon | 7	140	24	+15	+17	+16	+16 |
+| low-light vision, scent (imprecise) 30 feet | 40 feet | Cuckoo Hag |  |  | Hag |  |  |  |  |  |  |  | Monster Core pg. 191 1.1 | Common	Medium |
+| Hag, Humanoid | 9	170	28	+16	+19	+18	+18 | darkvision |  |  | 25 feet | Cuetzmonquali |  |  |  |  |  |  | Monsters of Myth pg. 16 | Unique	Huge |
+| Beast, Fire, Unique | 17	360	40	+32	+29	+26	+32 | greater darkvision, scent (imprecise) 60 feet, smoke vision |  |  | 40 feet, climb 30 feet, fly 20 feet | Culdewen |  |  |  |  |  |  | Bestiary 2 pg. 57 2.0 | Uncommon	Small |
+| Amphibious, Fey, Uncommon | 7	105	25	+14	+18	+13	+15 | low-light vision |  |  | 40 feet, swim 40 feet | Loading... |  |  |  |  |  |  | Cult Leader | Mystic |
+| NPC Core pg. 100 | Common	Medium | Human, Humanoid |  | 7 | 25 feet | Cultist |  |  |  |  |  |  | Mystic | NPC Core pg. 97 |
+| Common	Medium | Human, Humanoid | 1	20	17	+7	+8	+4	+4 |  |  | 25 feet | Cultist Troop |  |  |  |  |  |  | Pathfinder #194: Cult of the Cave Worm pg. 19 | Common	Gargantuan |
+| Fey, Troop | 5	90 (16 squares)	21	+15	+12	+11	+15 | low-light vision |  |  | 25 feet; troop movement | Cunning Fox |  |  |  |  |  |  | Spirit Guide | Monster Core 2 pg. 304 |
+| Common	Small | Beast, Incorporeal, Spirit | 1	15	16	+5	+8	+7	+9 |  |  | darkvision |  |  |  |  |  |  |  | 40 feet | Curse Monger |
+| Mystic |  | NPC Core pg. 104 |  | Rare | Human, Humanoid, Rare |  | 14 | 230 | 35 | +23 | +25 | +26 | 25 feet | Cursed Guardian |
+| Kingmaker Adventure Path pg. 62 | Unique	Large | Beast, Unique |  | 4 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 35 feet | Cursed King |
+| Impossible Lands pg. 525 | Common	Medium | Mummy, Undead |  | 10 | darkvision |  |  |  |  |  |  |  | 25 feet | Cyclops |
+| Cyclops |  | Monster Core pg. 70 1.1 |  | Uncommon | Giant, Humanoid, Uncommon |  | 5 | 80 | 21 | +13 | +8 | +12 | low-light vision | 30 feet |
+| Cyclops Bully |  | Pathfinder #171: Hurricane's Howl pg. 48 |  | Uncommon | Giant, Humanoid, Uncommon |  | 9 | 155 | 28 | +21 | +15 | +17 | low-light vision | 30 feet |
+| Cyclops Seeker | Cyclops | Pathfinder #218: Titanbane pg. 82 |  | Rare | Giant, Humanoid, Rare |  | 10 | 175 | 29 | +18 | +16 | +21 | low-light vision | 30 feet |
+| Cyclops Zombie |  | Kingmaker Adventure Path pg. 275 |  | Common | Mindless, Undead, Zombie |  | 7 | 160 ( negative healing ) | 21 | +16 | +9 | +12 | darkvision | 25 feet |
+| Cythnigot | Qlippoth | Monster Core pg. 280 1.1 |  | Uncommon | Fiend, Qlippoth, Uncommon, Unholy |  | 1 | 14 | 16 | +9 | +6 | +5 | darkvision | 30 feet, fly 40 feet |
+| Cythnophorian |  | Pathfinder #201: Pactbreaker pg. 87 |  | Unique | Fungus, Plant, Unique |  | 8 | 161 | 27 | +18 | +14 | +12 | darkvision, lifesense 30 feet | 15 feet |
+| D'ziriak |  | Monster Core 2 pg. 142 |  | Common | Aberration, Shadow |  | 3 | 45 | 18 | +6 | +12 | +10 | darkvision | 25 feet |
+| Daelum |  | Pathfinder #179: Cradle of Quartz pg. 82 |  | Rare | Construct, Rare |  | 4 | 76 | 21 | +13 | +11 | +9 | darkvision | 25 feet |
+| Daeodon | Boar | Monster Core pg. 43 1.1 |  | Common | Animal |  | 4 | 60 | 21 | +13 | +9 | +10 | low-light vision, scent (imprecise) 30 feet | 40 feet |
+| Dalgyal Gwishin |  | Pathfinder #197: Let the Leaves Fall pg. 83 |  | Uncommon | Incorporeal, Uncommon, Undead |  | 5 | 58 (negative healing) | 21 | +9 | +15 | +12 | lifesense (precise) 120 feet, no vision | fly 40 feet |
+| Dalos |  | Pathfinder #148: Fires of the Haunted City pg. 77 |  | Uncommon | Earth, Fey, Fire, Uncommon |  | 13 | 240 | 34 | +27 | +19 | +23 | low-light vision | 30 feet, burrow 20 feet, climb 20 feet |
+| Damibwa |  | Pathfinder #170: Spoken on the Song Wind pg. 80 |  | Common | Animal |  | 4 | 62 | 21 | +11 | +14 | +8 | echolocation 60 feet, low-light vision | 30 feet, swim 30 feet |
+| Danava Titan | Titan | Monster Core 2 pg. 321 |  | Rare | Humanoid, Rare, Titan, Water |  | 23 | 470 | 49 | +41 | +37 | +37 | darkvision, truesight, wavesense (imprecise) 100 feet | 50 feet, fly 50 feet, swim 40 feet; water walk |
+| Dancer | Performer | NPC Core pg. 124 |  | Common | Human, Humanoid |  | 1 | 20 | 16 | +6 | +8 | +3 | 25 feet | Dancing Night Parade |
+| Pathfinder #168: King of the Mountain pg. 41 | Unique	Gargantuan | Spirit, Troop, Unique |  | 19 | darkvision |  |  |  |  |  |  |  | 25 feet; troop movement | Dandasuka |
+| Rakshasa |  | Bestiary pg. 274 |  | Common | Fiend, Rakshasa |  | 5 | 60 | 23 | +12 | +13 | +10 | darkvision | 25 feet, climb 20 feet |
+| Danva |  | Pathfinder #214: The Broken Palace pg. 88 |  | Unique | Aberration, Unique |  | 6 | 92 | 23 | +16 | +12 | +13 | darkvision | 25 feet |
+| Daqqanoenyent | Beheaded | Book of the Dead pg. 75 |  | Rare | Rare, Undead |  | 9 | 170 ( negative healing ) | 28 | +21 | +17 | +15 | darkvision | 15 feet, fly 30 feet |
+| Darg |  | Kingmaker Adventure Path pg. 106 |  | Unique | Earth, Giant, Humanoid, Unique |  | 12 | 250 | 33 | +24 | +19 | +22 | low-light vision | 35 feet |
+| Daring Danika |  | Pathfinder #151: The Show Must Go On pg. 28 |  | Unique | Human, Humanoid, Unique |  | 2 | 30 | 17 | +7 | +9 | +7 | 25 feet | Darivan |
+| Kingmaker Adventure Path pg. 594 | Unique	Medium | Human, Humanoid, Orc, Unique |  | 10 | darkvision |  |  |  |  |  |  |  | 25 feet | Dark Naga |
+| Naga |  | Bestiary pg. 242 |  | Uncommon | Aberration, Uncommon |  | 7 | 115 | 27 | +15 | +17 | +15 | mind reading 30 feet, darkvision | 30 feet |
+| Dark Talon Kobold | Kobold | Crown of the Kobold King pg. 59 |  | Rare | Humanoid, Kobold, Rare |  | 2 | 26 | 19 | +9 | +10 | +6 | darkvision | 25 feet |
+| Darkmantle |  | Crown of the Kobold King pg. 118 |  | Uncommon | Beast, Uncommon |  | 1 | 20 | 15 | +7 | +7 | +4 | darkvision, tremorsense (precise) 60 feet | 15 feet, fly 25 feet |
+| Darricus Stallit |  | Pathfinder #152: Legacy of the Lost God pg. 57 |  | Unique | Human, Humanoid, Unique |  | 8 | 122 | 28 | +14 | +15 | +15 | sharp eyes | 25 feet |
+| Davik Nettles |  | Kingmaker Adventure Path pg. 67 |  | Unique | Undead, Unique |  | 4 | 70 | 19 | +12 | +11 | +10 | darkvision | 25 feet, swim 25 feet |
+| Loading... | Deadly Mantis | Mantis |  |  | Monster Core pg. 229 1.1 |  | Common | Gargantuan |  |  |  |  | Animal | 11	220	31	+24	+20	+18	+20 |
+| darkvision | 50 feet, climb 50 feet | Death Coach |  |  | Book of the Dead pg. 86 |  | Uncommon | Huge |  |  |  |  | Incorporeal, Spirit, Uncommon, Undead | 14	228 ( negative healing )	35	+22	+28	+24	+26 |
+| darkvision, lifesense 60 feet | 60 feet, fly 60 feet; soulbound gallop | Death Drider |  |  | Pathfinder #155: Lord of the Black Sands pg. 35 |  | Uncommon | Large |  |  |  |  | Uncommon, Undead | 13	235 ( negative healing )	34	+24	+26	+23	+24 |
+| darkvision | 30 feet, climb 30 feet | Deathless Acolyte of Urgathoa |  |  | Deathless Acolyte |  |  |  |  |  |  |  | Book of the Dead pg. 88 | Common	Medium |
+| Undead | 3	36 ( negative healing )	17	+7	+7	+11	+9 | darkvision |  |  | 25 feet | Deathless Hierophant of Urgathoa |  |  |  |  |  |  | Deathless Acolyte | Book of the Dead pg. 88 |
+| Uncommon	Medium | Uncommon, Undead | 7	87 ( negative healing )	23	+13	+13	+17	+15 |  |  | darkvision |  |  |  |  |  |  |  | 25 feet | Deathless Pirate |
+| Skeleton |  | Pathfinder #218: Titanbane pg. 13 |  | Uncommon | Skeleton, Uncommon, Undead, Unholy |  | 7 | 130 ( void healing ) | 24 | +18 | +12 | +12 | darkvision | 25 feet |
+| Deathless Zealot of Zagresh | Deathless Acolyte | Pathfinder #209: Destroyer's Doom pg. 84 |  | Uncommon | Uncommon, Undead |  | 9 | 120 ( void healing ) | 26 | +16 | +16 | +21 | darkvision | 25 feet |
+| Decapod Dinghy |  | Howl of the Wild pg. 135 2.1 |  | Common | Amphibious, Beast |  | 8 | 145 | 28 | +18 | +15 | +15 | tremorsense (imprecise) 30 feet, wavesense (imprecise) 30 feet | 30 feet, climb 25 feet, swim 25 feet |
+| Deck Crew |  | Pathfinder #218: Titanbane pg. 6 |  | Common | Humanoid |  | 6 | 70 | 23 | +13 | +16 | +11 | 25 feet | Decrepit Mummy |
+| Mummy |  | Book of the Dead pg. 130 |  | Common | Mummy, Undead |  | 2 | 40 ( negative healing ) | 17 | +6 | +7 | +10 | darkvision | 20 feet |
+| Deculi |  | Pathfinder #148: Fires of the Haunted City pg. 78 |  | Common | Beast |  | 12 | 215 | 33 | +21 | +26 | +18 | infrared vision 60 feet, no vision | 30 feet, climb 30 feet, fly 50 feet; walk in shadow |
+| Dedicated Druid | Primalist | NPC Core pg. 134 |  | Common | Human, Humanoid |  | 7 | 100 | 24 | +12 | +13 | +15 | lifesense (imprecise) 30 feet | 25 feet |
+| Deep One | Deep One | Monster Core 2 pg. 88 |  | Common | Amphibious, Humanoid |  | 1 | 24 | 16 | +9 | +4 | +8 | darkvision, wavesense (precise) 30 feet | 25 feet, swim 40 feet |
+| Deep One Elder | Deep One | Monster Core 2 pg. 89 |  | Uncommon | Amphibious, Humanoid, Uncommon, Unholy |  | 14 | 260 | 36 | +27 | +22 | +26 | darkvision, wavesense 120 feet | 30 feet, swim 50 feet |
+| Deep One Hybrid | Deep One | Monster Core 2 pg. 88 |  | Common | Human, Humanoid |  | 1 | 20 | 16 | +7 | +5 | +9 | low-light vision | 25 feet, swim 30 feet |
+| Loading... | Defaced Naiad Queen | Kingmaker Adventure Path pg. 471 |  | Rare | Amphibious, Fey, Nymph, Rare, Water |  | 15 | 230 | 38 | +27 | +30 | +26 | low-light vision | 30 feet |
+| Deg |  | Pathfinder #215: To Blot Out the Sun pg. 90 |  | Unique | Dero, Humanoid, Shadow, Unique |  | 9 | 170 | 27 | +15 | +21 | +15 | darkvision | 20 feet |
+| Degholau | Demon | Pathfinder #210: Whispers in the Dirt pg. 82 |  | Uncommon | Demon, Fiend, Uncommon, Unholy |  | 13 | 290 | 33 | +23 | +26 | +20 | greater darkvision | 35 feet, burrow 15 feet |
+| Deianire |  | Pathfinder #218: Titanbane pg. 17 |  | Unique | Ghost, Incorporeal, Spirit, Undead, Unholy, Unique |  | 7 | 80 (rejuvenation, void healing ) | 25 | +15 | +18 | +17 | darkvision | fly 25 feet |
+| Deific Champion of Iomedae | Devotee | NPC Core pg. 36 |  | Rare | Holy, Human, Humanoid, Rare |  | 12 | 220 | 33 | +23 | +19 | +22 | 20 feet | Deific Vessel of Urgathoa |
+| Devotee |  | NPC Core pg. 37 |  | Common | Divine, Human, Humanoid, Unholy |  | 15 | 300 | 35 | +28 | +24 | +26 | lifesense 60 feet | 25 feet, fly 25 feet |
+| Deimavigga | Devil | Monster Core 2 pg. 102 |  | Common | Devil, Fiend, Unholy |  | 17 | 285 | 40 | +27 | +29 | +32 | (36 to Sense Motive) greater darkvision | 30 feet, fly 40 feet |
+| Deinonychus | Dinosaur | Monster Core pg. 97 1.1 |  | Common | Animal, Dinosaur |  | 2 | 30 | 17 | +10 | +9 | +5 | low-light vision, scent (imprecise) 30 feet | 30 feet |
+| Deinonychus Pack | Dinosaur | Battlecry! pg. 175 |  | Common | Animal, Dinosaur, Troop |  | 7 | 120 (4 segments) | 24 | +18 | +15 | +12 | low-light vision, scent (imprecise) 30 feet | 30 feet; troop movement |
+| Deinosuchus | Crocodile | Monster Core pg. 69 1.1 |  | Common | Animal |  | 9 | 175 | 26 | +20 | +16 | +15 | low-light vision | 30 feet, swim 40 feet |
+| Delamar Gianvin |  | Pathfinder #152: Legacy of the Lost God pg. 16 |  | Unique | Human, Humanoid, Unique |  | 6 | 90 | 24 | +11 | +17 | +14 | 30 feet | Delight Archdragon |
+| Dragon, Delight |  | Draconic Codex pg. 127 |  | Rare | Divine, Dragon, Holy, Rare |  | 22 | 400 (can't kill fun) | 48 | +35 | +40 | +36 | lifesense (imprecise) 30 feet, scent (imprecise) 60 feet, whimsysense (imprecise) 180 feet | 80 feet, fly 200 feet |
+| Deluded Mob | Villain | NPC Core pg. 155 |  | Common | Human, Humanoid, Troop |  | 4 | 75 (4 segments) | 19 | +12 | +9 | +7 | 25 feet; troop movement | Demilich |
+| Lich |  | Bestiary pg. 222 |  | Rare | Rare, Undead |  | 15 | 220 ( negative healing ) | 38 | +23 | +27 | +23 | darkvision, true seeing | fly 30 feet |
+| Demolitionist | Engineer | NPC Core pg. 45 |  | Common | Human, Humanoid |  | 4 | 60 | 20 | +11 | +13 | +6 | 25 feet | Demonbane Warrior |
+| Elf |  | NPC Core pg. 179 |  | Common | Elf, Humanoid |  | 5 | 76 | 22 | +11 | +13 | +11 | low-light vision | 30 feet |
+| Loading... | Loading... | Demonologist |  |  | Mystic |  |  |  |  |  |  |  | NPC Core pg. 100 | Common	Medium |
+| Human, Humanoid | 7	100	22	+13	+12	+15	+15 | 25 feet | Deniigi |  | Gatewalkers (Hardcover) pg. 282 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 4	75	21	+14	+11	+8	+12 |
+| 25 feet | Denizen Of Leng | Monster Core 2 pg. 96 |  | Common | Aberration, Dream |  | 8 | 100 (planar fast healing 5) | 27 | +16 | +19 | +17 | darkvision | 30 feet |
+| Departmental Chair | Scholar | NPC Core pg. 141 |  | Common | Human, Humanoid |  | 7 | 115 | 24 | +13 | +14 | +18 | 25 feet | Derghodaemon |
+| Daemon |  | Bestiary 2 pg. 59 2.0 |  | Common | Daemon, Fiend |  | 12 | 240 | 33 | +21 | +24 | +22 | darkvision, scent (imprecise) 60 feet | 35 feet |
+| Loading... | Dero Magister | Dero |  |  | Monster Core pg. 85 1.1 |  | Uncommon | Small |  |  |  |  | Dero, Humanoid, Uncommon | 5	65	22	+10	+13	+10	+8 |
+| darkvision | 20 feet | Dero Punk |  |  | Dero |  |  |  |  |  |  |  | Pathfinder #214: The Broken Palace pg. 10 | Uncommon	Small |
+| Dero, Humanoid, Uncommon | 0	15	15	+4	+7	+0	+2 | darkvision |  |  | 20 feet | Dero Sentry |  |  |  |  |  |  | Pathfinder #215: To Blot Out the Sun pg. 8 | Uncommon	Small |
+| Dero, Humanoid, Uncommon | 5	75	21	+15	+12	+8	+10 | darkvision |  |  | 20 feet | Dero Stalker |  |  |  |  |  |  | Dero | Monster Core pg. 84 1.1 |
+| Common	Small | Dero, Humanoid | 2	30	18	+7	+10	+3	+5 |  |  | darkvision |  |  |  |  |  |  |  | 20 feet | Dero Strangler |
+| Dero |  | Monster Core pg. 84 1.1 |  | Common | Dero, Humanoid |  | 3 | 45 | 19 | +10 | +8 | +6 | darkvision | 20 feet |
+| Desa-Desa |  | Gatewalkers (Hardcover) pg. 254 |  | Uncommon | Animal, Uncommon |  | 2 | 34 | 18 | +5 | +11 | +8 | low-light vision | 40 feet, climb 20 feet |
+| Loading... | Desert Drake | Drake |  |  | Monster Core pg. 133 1.1 |  | Common | Large |  |  |  |  | Dragon, Earth | 8	135	27	+17	+15	+13	+15 |
+| darkvision, sandstorm sight, scent (imprecise) 30 feet | 20 feet; burrow 20 feet (sand only), fly 50 feet | Desert Giant |  |  | Giant |  |  |  |  |  |  |  | Monster Core 2 pg. 162 | Common	Large |
+| Giant, Humanoid | 6	185	27	+18	+21	+15	+19 | 40 feet | Desert Manticore |  | Manticore |  |  |  |  |  |  |  | Howl of the Wild pg. 172 2.1 | Uncommon	Large |
+| Beast, Uncommon | 12	270	33	+25	+22	+22	+22 | darkvision, scent (imprecise) 60 feet |  |  | 30 feet, fly 40 feet | Desert's Howl |  |  |  |  |  |  | Monsters of Myth pg. 22 | Unique	Huge |
+| Aberration, Unique | 19	330	43	+38	+32	+29	+33 | greater darkvision, fear scent 120 feet |  |  | 50 feet, climb 25 feet, fly 20 feet, swim 35 feet | Desiak |  |  |  |  |  |  | Pathfinder #176: Lost Mammoth Valley pg. 53 | Unique	Medium |
+| Aberration, Human, Unique | 8	135	27	+16	+18	+13	+16 | low-light vision |  |  | 25 feet | Despair Archdragon |  |  |  |  |  |  | Dragon, Despair | Draconic Codex pg. 58 |
+| Rare	Gargantuan | Dragon, Occult, Rare | 22	415	47	+34	+36	+38	+38 |  |  | greater darkvision, fearsense (precise) 60 feet, scent (imprecise) 60 feet |  |  |  |  |  |  |  | 60 feet, fly 180 feet | Loading... |
+| Despot | Villain | NPC Core pg. 157 |  | Common | Human, Humanoid |  | 5 | 60 | 21 | +9 | +9 | +13 | 25 feet | Destiny Tempest |
+| Monster Core 2 pg. 97 | Common	Medium | Air, Elemental |  | 13 | greater darkvision |  |  |  |  |  |  |  | 25 feet, fly 60 feet; swiftness | Destrachan |
+| Bestiary 2 pg. 71 2.0 | Common	Large | Aberration |  | 8 | echolocation 120 feet, no vision |  |  |  |  |  |  |  | 25 feet | Devasance |
+| Pathfinder #212: A Voice in the Blight pg. 83 | Rare	Medium | Incorporeal, Rare, Unholy, Void |  | 16 | greater darkvision, lifesense 60 feet |  |  |  |  |  |  |  | fly 30 feet | Devil's Disciple |
+| Pathfinder #200: Seven Dooms for Sandpoint pg. 69 | Uncommon	Medium | Human, Humanoid, Uncommon |  | 2 | 25 feet | Devourer |  |  |  |  |  |  | Bestiary 2 pg. 78 2.0, Pathfinder #148: Fires of the Haunted City pg. 79 | Uncommon	Large |
+| Uncommon, Undead | 11	175 ( negative healing )	31	+20	+18	+24	+22 | darkvision |  |  | 30 feet, fly 30 feet | Dewdrop Jelly |  |  |  |  |  |  | Elemental, Water | Rage of Elements pg. 180 2.0 |
+| Common	Small | Aquatic, Elemental, Water | 1	20	16	+7	+10	+4	+7 |  |  | darkvision |  |  |  |  |  |  |  | fly 20 feet, swim 50 feet | Dewey Daystar |
+| Pathfinder #178: Punks in a Powderkeg pg. 46 | Unique	Small | Leshy, Plant, Unique |  | 2 | low-light vision |  |  |  |  |  |  |  | 25 feet | Dezullon |
+| Monster Core pg. 94 1.1 | Common	Medium | Plant |  | 10 | low-light vision |  |  |  |  |  |  |  | 25 feet; climb 30 feet | Dezullon Thicket |
+| Battlecry! pg. 177 | Common	Gargantuan | Plant, Troop |  | 15 | low-light vision |  |  |  |  |  |  |  | 25 feet; troop movement | Dhampir Wizard |
+| Dhampir |  | Monster Core pg. 95 1.1 |  | Common | Dhampir, Human, Humanoid |  | 2 | 22 ( void healing ) | 17 | +4 | +7 | +6 | darkvision | 25 feet |
+| Diabolic Archdragon | Dragon, Diabolic | Draconic Codex pg. 62 |  | Rare | Divine, Dragon, Rare, Unholy |  | 23 | 480 | 48 | +40 | +36 | +36 | greater darkvision, scent (imprecise) 60 feet, smoke vision | 80 feet, fly 200 feet |
+| Dibrasgorth |  | Monster Core 2 pg. 104 |  | Uncommon | Aberration, Amphibious, Uncommon |  | 13 | 250 | 33 | +26 | +20 | +23 | darkvision 120 feet, planar sight 120 feet, see the unseen | 20 feet, swim 40 feet |
+| Dig-Widget |  | Monster Core 2 pg. 105 |  | Common | Construct, Mindless |  | 5 | 65 | 22 | +10 | +14 | +7 | darkvision, tremorsense (imprecise) 30 feet | 30 feet, burrow 15 feet |
+| Dimari-Diji |  | Pathfinder #172: Secrets of the Temple City pg. 86 |  | Unique | Plant, Unique |  | 25 | 550 | 52 | +42 | +36 | +48 | low-light vision, tremorsense (imprecise) 120 feet | 40 feet; freedom of movement |
+| Dingetooth |  | Kingmaker Adventure Path pg. 121 |  | Unique | Fey, Gremlin, Unique |  | 1 | 25 | 16 | +3 | +8 | +5 | darkvision, scent (imprecise) 30 feet | 20 feet; climb 20 feet |
+| Dire Wolf | Wolf | Monster Core pg. 350 1.1 |  | Common | Animal |  | 3 | 50 | 18 | +11 | +8 | +8 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Dirge Piper | Zombie | Pathfinder #181: Zombie Feast pg. 89 |  | Rare | Rare, Undead, Zombie |  | 3 | 95 ( negative healing ) | 16 | +11 | +4 | +7 | darkvision | 25 feet |
+| Dismemberment Table |  | Crown of the Kobold King pg. 104 |  | Common | Construct, Mindless |  | 5 | 56 | 22 | +13 | +11 | +9 | darkvision | 25 feet |
+| Diver | Seafarer | NPC Core pg. 148 |  | Common | Human, Humanoid |  | 3 | 50 | 17 | +9 | +12 | +6 | 25 feet, swim 30 feet | Divine Warden Of Arazni |
+| Divine Warden |  | Claws of the Tyrant pg. 73 |  | Uncommon | Construct, Divine, Mindless, Uncommon |  | 16 | 290 | 37 | +30 | +28 | +33 | darkvision | 25 feet |
+| Divine Warden Of Brigh | Divine Warden | Pathfinder Bestiary 3 Bonus Monster |  | Uncommon | Clockwork, Construct, Divine, Mindless, Uncommon |  | 10 | 135 | 28 | +18 | +20 | +18 | darkvision | 25 feet |
+| Divine Warden Of Haagenti | Divine Warden | Pathfinder #200: Seven Dooms for Sandpoint pg. 20 |  | Uncommon | Construct, Mindless, Uncommon |  | 4 | 45 | 20 | +13 | +7 | +9 | darkvisiondarkvision | 30 feet |
+| Divine Warden Of Iomedae | Divine Warden | Claws of the Tyrant pg. 71 |  | Uncommon | Construct, Divine, Mindless, Uncommon |  | 16 | 290 | 37 | +30 | +28 | +33 | darkvision | 25 feet |
+| Divine Warden Of Nethys | Divine Warden | Bestiary 3 pg. 73 |  | Uncommon | Construct, Mindless, Uncommon |  | 5 | 60 | 22 | +15 | +9 | +11 | darkvision | 30 feet |
+| Divine Warden Of Pharasma | Divine Warden | Monster Core 2 pg. 115 |  | Uncommon | Construct, Mindless, Uncommon |  | 6 | 95 | 24 | +17 | +11 | +14 | darkvision | 30 feet |
+| Divoynik |  | Monster Core 2 pg. 116 |  | Uncommon | Aberration, Uncommon |  | 3 | 45 | 18 | +6 | +10 | +11 | darkvision | 25 feet |
+| Dmiri Yoltosha |  | Pathfinder #145: Hellknight Hill pg. 51 |  | Unique | Hobgoblin, Humanoid, Unique |  | 4 | 52 | 22 | +10 | +12 | +9 | darkvision | 25 feet |
+| Doblagub | Brughadatch | Pathfinder #154: Siege of the Dinosaurs pg. 79 |  | Common | Amphibious, Fey |  | 13 | 250 | 35 | +23 | +18 | +26 | darkvision, true seeing | 10 feet, swim 10 feet |
+| Dockhand | Laborer | NPC Core pg. 66 |  | Common | Human, Humanoid |  | 0 | 20 | 14 | +7 | +5 | +3 | 25 feet | Doldrums Heap |
+| Sargassum Heap |  | Monster Core pg. 295 1.1 |  | Common | Amphibious, Plant |  | 9 | 300 | 16 | +21 | +18 | +15 | wavesense (precise) 120 feet | 20 feet, climb 20 feet, swim 40 feet |
+| Domovoi | House Spirit | Monster Core 2 pg. 194 |  | Common | Fey |  | 2 | 35 | 17 | +5 | +9 | +11 | tremorsense (imprecise) within their entire bound home | 20 feet |
+| Doorwarden |  | Pathfinder #145: Hellknight Hill pg. 86 |  | Uncommon | Construct, Uncommon |  | 5 | 60 | 22 | +12 | +7 | +10 | low-light vision; _see invisibility_ | 20 feet |
+| Loading... | Doprillu | Monster Core 2 pg. 117 |  | Common | Aberration |  | 14 | 260 | 35 | +27 | +28 | +24 | darkvision, see the unseen | 40 feet, climb 40 feet |
+| Doru | Div | Monster Core 2 pg. 110 |  | Common | Div, Fiend, Unholy |  | 1 | 20 | 16 | +4 | +9 | +7 | greater darkvision | 15 feet, fly 30 feet |
+| Dovan From Nisroch |  | Kingmaker Adventure Path pg. 179 |  | Unique | Human, Humanoid, Unique |  | 2 | 30 | 18 | +7 | +10 | +6 | 25 feet | Dracolisk |
+| Basilisk |  | Bestiary 2 pg. 35 2.0 |  | Uncommon | Beast, Dragon, Uncommon |  | 9 | 155 | 28 | +20 | +17 | +18 | darkvision, tremorsense (imprecise) 30 feet | 20 feet, fly 40 feet |
+| Draconal | Agathion | Monster Core 2 pg. 18 |  | Common | Agathion, Celestial, Holy |  | 20 | 370 | 45 | +34 | +31 | +38 | darkvision | 30 feet, fly 90 feet |
+| Loading... | Dragon Turtle | Monster Core pg. 126 1.1 |  | Common | Amphibious, Dragon |  | 9 | 140 | 29 | +19 | +15 | +17 | darkvision | 20 feet, swim 30 feet |
+| Loading... | Dragonblood Occultist | Dragonblood |  |  | Monster Core 2 pg. 136 |  | Rare | Medium |  |  |  |  | Dragonblood, Human, Humanoid, Rare | 3	35	18	+6	+9	+12	+10 |
+| 25 feet | Dragonscarred Dead | Pathfinder #148: Fires of the Haunted City pg. 82 |  | Uncommon | Fire, Uncommon, Undead |  | 13 | 210 | 33 | +25 | +20 | +22 | darkvision, guardian sense | 25 feet |
+| Dragonshard Guardian |  | Pathfinder #150: Broken Promises pg. 79 |  | Unique | Construct, Unique |  | 22 | 430 | 48 | +39 | +36 | +33 | darkvision, true seeing | 30 feet |
+| Dragonstorm Fire Giant |  | Pathfinder #150: Broken Promises pg. 12 |  | Rare | Giant, Humanoid, Rare |  | 18 | 400 | 42 | +33 | +27 | +30 | low-light vision | 35 feet |
+| Drainberry Bush |  | Monster Core 2 pg. 139 |  | Uncommon | Plant, Uncommon |  | 7 | 135 | 23 | +17 | +13 | +13 | lifesense 120 feet | 25 feet, climb 20 feet |
+| Loading... | Drake Courser | Pathfinder #167: Ready? Fight! pg. 13 |  | Uncommon | Cold, Dragon, Uncommon |  | 12 | 230 | 32 | +23 | +25 | +18 | darkvision, scent (imprecise) 30 feet, snow vision | 35 feet, fly 65 feet, swim 35 feet, ice climb 35 feet |
+| Drake Flight | Drake | Battlecry! pg. 178 |  | Uncommon | Dragon, Troop, Uncommon |  | 13 | 240 (4 segments, Thresholds 160 (3 segments), 80 (2 segments)) | 33 | +26 | +23 | +20 | darkvision, scent (imprecise) 30 feet | 20 feet, fly 50 feet; troop movement |
+| Drake Skeleton | Skeleton | Book of the Dead pg. 148 |  | Common | Mindless, Skeleton, Undead |  | 8 | 130 ( negative healing ) | 26 | +16 | +14 | +12 | darkvision | 20 feet, fly 40 feet |
+| Dramofir |  | Bestiary 3 pg. 86 |  | Uncommon | Aberration, Dream, Uncommon |  | 14 | 290 | 35 | +22 | +26 | +30 | greater darkvision | 25 feet, fly 25 feet |
+| Draugr |  | Monster Core 2 pg. 140 |  | Common | Undead, Water |  | 2 | 35 ( void healing ) | 17 | +11 | +6 | +7 | darkvision | 25 feet, swim 25 feet |
+| Draxie | Sprite | Monster Core pg. 322 1.1 |  | Common | Fey, Sprite |  | 3 | 45 | 19 | +6 | +11 | +8 | low-light vision | 15 feet, fly 40 feet |
+| Drazmorg the Damned |  | Crown of the Kobold King pg. 92 |  | Unique | Undead, Unique, Wight |  | 8 | 115 ( negative healing ) | 23 | +13 | +15 | +17 | darkvision | fly 25 feet |
+| Loading... | Dread Roc | Pathfinder #166: Despair on Danger Island pg. 30 |  | Rare | Animal, Rare |  | 15 | 290 | 36 | +28 | +25 | +24 | low-light vision | 20 feet, fly 60 feet |
+| Loading... | Dreadsong Dancer | Pathfinder #158: Sixty Feet Under pg. 81 |  | Rare | Fiend, Rare |  | 8 | 160 | 27 | +13 | +19 | +16 | darkvision | 25 feet |
+| Dream Spider | Spider | Monster Core 2 pg. 302 |  | Common | Animal |  | 0 | 15 | 16 | +5 | +7 | +4 | darkvision, web sense | 25 feet, climb 25 feet |
+| Dreamscraper |  | Gatewalkers (Hardcover) pg. 255 |  | Uncommon | Aberration, Dream, Uncommon |  | 7 | 115 | 24 | +12 | +18 | +15 | darkvision | 20 feet, fly 40 feet; unfettered movement |
+| Drelev Guard |  | Kingmaker Adventure Path pg. 304 |  | Uncommon | Human, Humanoid, Uncommon |  | 8 | 135 | 27 | +18 | +14 | +16 | 25 feet | Drenchdead |
+| Pathfinder #172: Secrets of the Temple City pg. 81 | Uncommon	Medium | Uncommon, Undead, Water |  | 12 | darkvision, wavesense (precise) 60 feet |  |  |  |  |  |  |  | 20 feet, swim 35 feet | Dreshkan |
+| Fleshwarp |  | Pathfinder #164: Hands of the Devil pg. 78 |  | Uncommon | Aberration, Construct, Uncommon |  | 4 | 72 | 20 | +10 | +13 | +11 | darkvision | 30 feet, climb 30 feet |
+| Loading... | Drill Sergeant | Military |  |  | NPC Core pg. 93 |  | Common | Medium |  |  |  |  | Human, Humanoid | 8	120	25	+14	+15	+20	+16 |
+| 25 feet | Driver | Engineer |  |  | NPC Core pg. 43 |  | Common | Medium |  |  |  |  | Human, Humanoid | 2	28	18	+6	+8	+6	+8 |
+| 25 feet | Dromaar Company | Battlecry! pg. 178 |  | Common | Dromaar, Human, Humanoid, Orc, Troop |  | 6 | 90 (4 segments) | 23 | +14 | +17 | +11 | darkvision | 25 feet; troop movement |
+| Dromaar Lorekeeper | Orc | NPC Core pg. 207 |  | Common | Dromaar, Human, Humanoid, Orc |  | 5 | 70 | 21 | +9 | +12 | +13 | low-light vision | 25 feet |
+| Dromaar Mountaineer | Orc | Monster Core pg. 259 1.1 |  | Common | Dromaar, Human, Humanoid, Orc |  | 2 | 28 | 19 | +7 | +9 | +8 | darkvision | 25 feet |
+| Loading... | Dronuk | Prey for Death pg. 65 |  | Unique | Dwarf, Humanoid, Nephilim, Unique |  | 17 | 330 | 39 | +31 | +29 | +26 | darkvision | 25 feet |
+| Drover | Laborer | NPC Core pg. 67 |  | Common | Human, Humanoid |  | 0 | 18 | 15 | +6 | +6 | +5 | 25 feet | Loading... |
+| Loading... | Loading... | Loading... | Loading... |  | Loading... | Drowned Mummy |  |  |  |  |  |  | Mummy | Pathfinder #186: Ghost King's Rage pg. 81 |
+| Rare	Medium | Amphibious, Mummy, Rare, Undead | 17	330 ( negative healing )	38	+29	+28	+32	+30 |  |  | aquatic echolocation 120 feet, darkvision |  |  |  |  |  |  |  | 25 feet, swim 40 feet | Drthak |
+| Dischoran |  | Howl of the Wild pg. 140 2.1 |  | Common | Beast |  | 6 | 110 | 23 | +14 | +17 | +11 | no vision, sensitive echolocation (precise) 120 feet | 20 feet, swim 40 feet |
+| Druid Circle |  | Battlecry! pg. 179 |  | Common | Human, Humanoid, Troop |  | 12 | 210 (4 segments) | 32 | +19 | +22 | +25 | 25 feet; troop movement | Druid Initiate |
+| Performer |  | NPC Core pg. 547 |  | Common | Human, Humanoid |  | 1 | 18 | 15 | +5 | +4 | +9 | 25 feet | Drunkard |
+| Downtrodden |  | NPC Core pg. 41 |  | Common | Human, Humanoid |  | 2 | 40 | 17 | +10 | +8 | +6 | 25 feet | Drusilla |
+| Pathfinder #182: Graveclaw pg. 9 | Unique	Medium | Fey, Unique |  | 7 | darkvision, scent (imprecise) 60 feet |  |  |  |  |  |  |  | 30 feet | Loading... |
+| Druulbach |  | Pathfinder #203 Shepherd of Decay pg. 19 |  | Unique | Amphibious, Giant, Humanoid, Unique, Water |  | 12 | 230 | 32 | +25 | +20 | +23 | low-light vision | 35 feet, swim 20 feet |
+| Dryad | Nymph | Monster Core pg. 244 1.1 |  | Common | Fey, Nymph, Plant, Wood |  | 3 | 55 | 17 | +6 | +11 | +10 | low-light vision | 25 feet |
+| Dryad Queen | Nymph | Monster Core pg. 247 1.1 |  | Uncommon | Fey, Nymph, Plant, Uncommon, Wood |  | 13 | 220 | 35 | +24 | +26 | +24 | low-light vision | 30 feet |
+| Duende |  | Bestiary 3 pg. 87 |  | Uncommon | Earth, Fey, Uncommon |  | 2 | 35 | 17 | +6 | +9 | +9 | darkvision, tremorsense (imprecise) 60 feet | 25 feet |
+| Duergar Slave Lord |  | Pathfinder #148: Fires of the Haunted City pg. 50 |  | Rare | Duergar, Dwarf, Humanoid, Rare |  | 13 | 240 | 35 | +21 | +28 | +23 | darkvision | 25 feet |
+| Duhgik | No-Prep Character: Duhgik | Unique	Small |  |  | Humanoid, Kobold, Unique |  | 6 | 66 | 24 | +11 | +17 | +14 | darkvision | 30 |
+| Dulac |  | Pathfinder #165: Eyes of Empty Death pg. 9 |  | Unique | Caligni, Humanoid, Unique |  | 9 | 155 | 28 | +15 | +18 | +20 | greater darkvision | 25 feet |
+| Dullahan |  | Monster Core pg. 134 1.1 |  | Uncommon | Uncommon, Undead, Unholy |  | 7 | 95 ( fast healing 5 ) | 28 | +13 | +15 | +17 | lifesense 60 feet | 20 feet |
+| Duneshaker Solifugid | Solifugid | Bestiary 2 pg. 246 2.0, Pathfinder #149: Against the Scarlet Triad pg. 89 |  | Common | Animal |  | 18 | 340 | 42 | +31 | +33 | +28 | darkvision, tremorsense (imprecise) 30 feet | 50 feet, burrow 25 feet, climb 25 feet |
+| Durnolith | Woodwarp | Pathfinder #202: Severed at the Root pg. 87 |  | Uncommon | Aberration, Plant, Uncommon |  | 9 | 150 | 28 | +21 | +16 | +16 | low-light vision | 25 feet |
+| Duskwalker Ghost Hunter | Planar Scion | Monster Core pg. 266 1.1 |  | Uncommon | Duskwalker, Human, Humanoid, Uncommon |  | 4 | 56 | 21 | +9 | +12 | +10 | darkvision | 25 feet |
+| Dust Bunny Swarm | Foolish Housekeeping and Other Articles | Rare	Large |  |  | Construct, Rare, Swarm |  | 1 | 16 | 13 | +7 | +5 | +3 | 30 feet | Dust Mephit |
+| Elemental, Mephit |  | Bestiary 2 pg. 112 2.0 |  | Uncommon | Air, Earth, Elemental, Uncommon |  | 1 | 16 ( fast healing 2 (in dust or sand)) | 17 | +6 | +9 | +5 | darkvision | 20 feet, fly 35 feet |
+| Dvorovoi | House Spirit | Monster Core 2 pg. 194 |  | Common | Fey |  | 3 | 44 | 18 | +10 | +9 | +7 | tremorsense (imprecise) within their entire bound yard | 30 feet |
+| Dwandek |  | Pathfinder #173: Doorway to the Red Star pg. 32 |  | Unique | Undead, Unique |  | 17 | 270 ( negative healing , rejuvenation) | 40 | +31 | +27 | +30 | darkvision | 25 feet, fly 25 feet |
+| Dwarf Battalion | Dwarf | NPC Core pg. 175 |  | Common | Dwarf, Humanoid, Troop |  | 6 | 105 (4 segments) | 22 | +16 | +11 | +13 | darkvision | 20 feet; troop movement |
+| Dwarf General | Dwarf | NPC Core pg. 176 |  | Common | Dwarf, Humanoid |  | 8 | 150 | 26 | +18 | +14 | +16 | darkvision | 20 feet |
+| Dwarf Longshot Squad | Dwarf | Battlecry! pg. 179 |  | Common | Dwarf, Humanoid, Troop |  | 10 | 180 (4 segments) | 29 | +19 | +22 | +16 | darkvision | 20 feet; troop movement |
+| Dwarf Smith | Dwarf | NPC Core pg. 174 |  | Common | Dwarf, Humanoid |  | 0 | 12 | 14 | +6 | +3 | +5 | darkvision | 20 feet |
+| Dwarf Stonecaster | Dwarf | Monster Core pg. 135 1.1 |  | Common | Dwarf, Humanoid |  | 4 | 70 | 20 | +11 | +8 | +14 | darkvision, tremorsense (imprecise) 10 feet | 20 feet |
+| Dwarf Warrior | Dwarf | Monster Core pg. 135 1.1 |  | Common | Dwarf, Humanoid |  | 1 | 20 | 17 | +8 | +3 | +5 | darkvision | 20 feet |
+| Dweomercat |  | Monster Core 2 pg. 141 |  | Uncommon | Beast, Uncommon |  | 7 | 100 | 25 | +12 | +17 | +17 | darkvision, detect magic, scent (imprecise) 30 feet | 35 feet |
+| Dybbuk |  | Monster Core pg. 136 1.1 |  | Uncommon | Incorporeal, Spirit, Uncommon, Undead, Unholy |  | 15 | 175 ( void healing ) | 35 | +21 | +28 | +29 | darkvision | fly 50 feet |
+| Dynamo | Engineer | NPC Core pg. 48 |  | Uncommon | Human, Humanoid, Uncommon |  | 8 | 145 | 26 | +14 | +17 | +14 | 20 feet | Dyzallin Shraen |
+| Pathfinder #155: Lord of the Black Sands pg. 86 | Unique	Medium | Mummy, Undead, Unique |  | 19 | darkvision |  |  |  |  |  |  |  | 25 feet | Eagle |
+| Eagle |  | Monster Core pg. 137 1.1 |  | Common | Animal |  | -1 | 6 | 15 | +4 | +6 | +2 | low-light vision | 10 feet, fly 60 feet |
+| Earth Scamp | Elemental, Scamp | Monster Core pg. 146 1.1 |  | Common | Earth, Elemental |  | 1 | 20 ( fast healing 2 (while underground)) | 15 | +8 | +4 | +3 | darkvision, tremorsense (imprecise) 30 feet | 20 feet, burrow 20 feet, fly 15 feet |
+| Earth Wisp | Elemental, Wisp | Monster Core 2 pg. 152 |  | Common | Earth, Elemental |  | 0 | 15 | 15 | +7 | +5 | +4 | darkvision, tremorsense (imprecise) 30 feet | 20 feet, burrow 20 feet |
+| Earthen Destrier | Elemental, Earth | Monster Core 2 pg. 146 |  | Common | Earth, Elemental |  | 4 | 75 | 20 | +14 | +9 | +10 | darkvision, tremorsense (imprecise) 60 feet | 50 feet, burrow 30 feet; earth glide |
+| Eberark |  | Pathfinder #159: All or Nothing pg. 82 |  | Common | Beast, Fire |  | 10 | 275 | 30 | +22 | +19 | +16 | low-light vision, scent (imprecise) 30 feet | 40 feet |
+| Echosyvne | Palinthanos | Pathfinder #206: Bring the House Down pg. 87 |  | Rare | Incorporeal, Palinthanos, Rare, Undead, Unholy |  | 18 | 255 ( void healing ) | 39 | +24 | +33 | +31 | darkvision | fly 30 feet |
+| Ecorche |  | Book of the Dead pg. 90 |  | Common | Undead |  | 16 | 275 | 38 | +27 | +30 | +27 | darkvision | 25 feet |
+| Ectoplasmic Amalgam |  | Pathfinder #186: Ghost King's Rage pg. 34 |  | Rare | Rare, Undead |  | 15 | 320 ( negative healing ) | 37 | +25 | +29 | +23 | darkvision | 25 feet |
+| Edgrin Galesong |  | Crown of the Kobold King pg. 51 |  | Unique | Halfling, Humanoid, Unique |  | 2 | 32 | 17 | +8 | +8 | +5 | 25 feet | Edolpho Phinelli |
+| Pathfinder Encounter: Phinelli's Miracle Elixir | Unique	Medium | Elf, Half-Elf, Human, Humanoid, Unique |  | 3 | low-light vision |  |  |  |  |  |  |  | 30 feet | Egarhowl |
+| Palinthanos |  | Pathfinder #206: Bring the House Down pg. 86 |  | Rare | Incorporeal, Palinthanos, Rare, Undead, Unholy |  | 17 | 235 ( void healing ) | 38 | +25 | +32 | +29 | darkvision, scent (imprecise) 30 feet | fly 30 feet |
+| Einherji | Aesir | Monster Core 2 pg. 14 |  | Common | Aesir, Monitor |  | 10 | 175 | 30 | +22 | +18 | +17 | darkvision | 40 feet |
+| Einherji Host |  | Prey for Death pg. 111 |  | Rare | Aesir, Monitor, Rare, Troop |  | 15 | 270 | 35 | +29 | +23 | +25 | darkvision | 40 feet; troop movement |
+| Ekene | Threshold of Knowledge Pregenerated Characters | Threshold of Knowledge pg. 11 |  | Unique | Elf, Humanoid, Unique |  | 1 | 16 | 19 | +5 | +9 | +6 | low-light vision | 30 feet |
+| Ekujae Guardians |  | Pathfinder #146: Cult of Cinders pg. 11 |  | Common | Elf, Humanoid |  | 2 | 26 | 19 | +6 | +9 | +6 | low-light vision | 30 feet |
+| Ekundayo (Level 1) |  | Kingmaker Companion Guide pg. 21 |  | Unique | Human, Humanoid, Unique |  | 1 | 21 | 18 | +7 | +9 | +4 | (expert) | 25 feet |
+| Ekundayo (Level 6) |  | Kingmaker Companion Guide pg. 22 |  | Unique | Human, Humanoid, Unique |  | 6 | 92 | 23 | +13 | +14 | +12 | (expert) | 25 feet |
+| Ekundayo's Dog |  | Kingmaker Companion Guide pg. 22 |  | Unique | Animal, Minion, Unique |  | 6 | 60 | 22 | +13 | +14 | +12 | low-light vision, scent(imprecise) 30 feet | 40 feet |
+| Elananx |  | Monster Core pg. 139 1.1 |  | Common | Fey, Fire |  | 6 | 95 | 24 | +12 | +16 | +12 | darkvision | 30 feet |
+| Elasmosaurus |  | Monster Core 2 pg. 143 |  | Common | Animal |  | 7 | 125 | 25 | +17 | +13 | +16 | low-light vision, scent (imprecise) 30 feet | 5 feet, swim 35 feet |
+| Elder Cauthooj |  | Pathfinder #166: Despair on Danger Island pg. 49 |  | Rare | Beast, Rare |  | 14 | 255 | 36 | +28 | +23 | +21 | thoughtsense (imprecise) 60 feet | 40 feet |
+| Elder Child Of Belcorra |  | Pathfinder #165: Eyes of Empty Death pg. 14 |  | Rare | Mummy, Rare, Undead |  | 9 | 155 (negative healing) | 28 | +15 | +18 | +20 | darkvision, tremorsense (imprecise) 30 feet | 20 feet; burrow 15 feet |
+| Elder Elemental Tsunami |  | Kingmaker Adventure Path pg. 429 |  | Common | Aquatic, Elemental, Water |  | 14 | 260 | 36 | +26 | +28 | +23 | darkvision | 35 feet, swim 100 feet |
+| Loading... | Loading... | Elder Thing |  |  | Elder Thing |  |  |  |  |  |  |  | Gatewalkers (Hardcover) pg. 256 | Rare	Medium |
+| Aberration, Amphibious, Rare | 5	90	21	+15	+9	+12	+14 | darkvision |  |  | 25 feet, fly 20 feet, swim 30 feet | Elder Thing Researcher |  |  |  |  |  |  | Gatewalkers (Hardcover) pg. 257 | Rare	Medium |
+| Aberration, Amphibious, Rare | 10	218	29	+19	+17	+21	+21 | darkvision |  |  | 25 feet, fly 20 feet, swim 30 feet | Elder Wyrmwraith |  |  |  |  |  |  | Wyrmwraith | Pathfinder #150: Broken Promises pg. 85 |
+| Rare	Gargantuan | Dragon, Incorporeal, Rare, Undead, Wraith | 23	450 ( negative healing )	49	+32	+38	+42	+40 |  |  | darkvision, lifesense 120 feet |  |  |  |  |  |  |  | 50 feet, fly 100 feet | Elder Wyrmwraith |
+| Wyrmwraith |  | Draconic Codex pg. 203 |  | Rare | Dragon, Incorporeal, Rare, Undead, Unholy, Wraith |  | 23 | 400 ( void healing ) | 48 | +37 | +40 | +45 | darkvision, lifesense 120 feet | 50 feet, fly 100 feet |
+| Eldritch Emeritus | Scholar | NPC Core pg. 143 |  | Common | Human, Humanoid |  | 17 | 290 | 39 | +27 | +27 | +32 | 25 feet, teleport 50 feet | Electric Eel |
+| Eel |  | Monster Core pg. 138 1.1 |  | Common | Aquatic |  | 1 | 18 | 16 | +7 | +7 | +4 | low-light vision | 5 feet, swim 30 feet |
+| Elemental Avalanche | Elemental, Earth | Monster Core pg. 143 1.1 |  | Common | Earth, Elemental |  | 11 | 215 | 32 | +26 | +17 | +21 | darkvision, tremorsense (imprecise) 90 feet | 25 feet, burrow 25 feet; earth glide |
+| Elemental Hurricane | Elemental, Air | Monster Core pg. 141 1.1 |  | Common | Air, Elemental |  | 11 | 140 | 32 | +19 | +24 | +18 | darkvision | fly 100 feet; swiftness |
+| Elemental Inferno | Elemental, Fire | Monster Core pg. 145 1.1 |  | Common | Elemental, Fire |  | 11 | 210 (explosion) | 31 | +21 | +23 | +19 | darkvision, smoke vision | 70 feet |
+| Elemental Thicket | Elemental, Wood | Rage of Elements pg. 210 2.0 |  | Common | Elemental, Plant, Wood |  | 11 | 240 | 28 | +20 | +13 | +25 | 25 feet, burrow 25 feet, climb 25 feet | Elemental Tsunami |
+| Elemental, Water |  | Monster Core pg. 149 1.1 |  | Common | Aquatic, Elemental, Water |  | 11 | 195 | 31 | +21 | +22 | +19 | darkvision | 35 feet, swim 100 feet |
+| Elemental Vessel, Water | Elemental, Water | Pathfinder #161: Belly of the Black Whale pg. 82 |  | Uncommon | Aquatic, Elemental, Uncommon, Water |  | 16 | 225 | 40 | +30 | +28 | +22 | 35 feet, swim 100 feet | Elephant |
+| Elephant |  | Monster Core pg. 150 1.1 |  | Common | Animal |  | 7 | 130 | 23 | +18 | +11 | +13 | low-light vision, scent (imprecise) 30 feet | 40 feet |
+| Eleukas | No-Prep Character: Eleukas | Unique	Medium |  |  | Human, Humanoid, Unique |  | 2 | 32 | 19 | +11 | +9 | +6 | 20 feet | Elf Ranger |
+| Elf |  | Monster Core pg. 151 1.1 |  | Common | Elf, Humanoid |  | 1 | 17 | 16 | +4 | +10 | +7 | low-light vision | 30 feet; unimpeded journey |
+| Elga Verniex |  | Kingmaker Adventure Path pg. 76 |  | Unique | Human, Humanoid, Unique |  | 6 | 90 | 21 | +10 | +14 | +15 | 20 feet | Elk |
+| Elk |  | Kingmaker Adventure Path pg. 608, Pathfinder #176: Lost Mammoth Valley pg. 85 |  | Common | Animal |  | 1 | 20 | 16 | +9 | +7 | +5 | low-light vision, scent (imprecise) 30 feet | 40 feet |
+| Eloko | Biloko | The Mwangi Expanse pg. 295 2.0, Pathfinder #146: Cult of Cinders pg. 83 |  | Common | Fey |  | 7 | 115 | 25 | +12 | +18 | +15 | low-light vision, scent (imprecise) 30 feet | 20 feet |
+| Elven Court Guard | Elf | NPC Core pg. 180 |  | Common | Elf, Humanoid |  | 13 | 225 | 35 | +20 | +27 | +23 | plus vigilance | 30 feet |
+| Elysian Sheep |  | Pathfinder #156: The Apocalypse Prophet pg. 32 |  | Rare | Animal, Rare |  | 7 | 140 | 25 | +15 | +18 | +12 | low-light vision | 40 feet |
+| Elysian Titan | Titan | Pathfinder #156: The Apocalypse Prophet pg. 82 |  | Rare | Humanoid, Rare, Titan |  | 21 | 400 | 46 | +37 | +34 | +35 | darkvision, true seeing | 40 feet; air walk |
+| Elysian Titan | Titan | Monster Core 2 pg. 320 |  | Rare | Humanoid, Rare, Titan |  | 21 | 400 | 46 | +37 | +34 | +35 | darkvision, truesight | 40 feet, fly 40 feet |
+| Emaliza Zandivar |  | Pathfinder #150: Broken Promises pg. 86 |  | Unique | Human, Humanoid, Unique |  | 20 | 375 | 45 | +30 | +33 | +36 | 25 feet, fly 30 feet. | Ember Fox |
+| Elemental, Fire |  | Monster Core 2 pg. 148 |  | Common | Elemental, Fire |  | 2 | 35 | 17 | +6 | +10 | +8 | darkvision | 30 feet |
+| Emorga All-Seer |  | Pathfinder #201: Pactbreaker pg. 92 |  | Unique | Animal, Unique |  | 9 | 170 | 29 | +20 | +15 | +20 | (11 for initiative) low-light vision, scent (imprecise) 30 feet | 10 feet, swim 20 feet |
+| Emperor Bird |  | Pathfinder #145: Hellknight Hill pg. 87 |  | Uncommon | Animal, Uncommon |  | 2 | 27 | 18 | +6 | +9 | +7 | 15 feet, fly 20 feet | Emperor Cobra |
+| Snake |  | Monster Core 2 pg. 295 |  | Common | Animal |  | 5 | 80 | 21 | +15 | +11 | +9 | low-light vision, scent (imprecise) 30 feet | 25 feet, climb 25 feet, swim 25 feet |
+| Empress Bore Worm | Bore Worm | Bestiary 3 pg. 37 |  | Common | Animal |  | 7 | 140 | 23 | +18 | +14 | +11 | tremorsense (imprecise) 60 feet | 25 feet, burrow 40 feet |
+| Empyreal Archdragon | Dragon, Empyreal | Draconic Codex pg. 66 |  | Rare | Divine, Dragon, Holy, Rare |  | 23 | 450 | 49 | +36 | +36 | +40 | darkvision, lifesense (imprecise) 30 feet, scent (imprecise) 60 feet | 90 feet, fly 220 feet |
+| Enchanting Ritualist | Mystic | NPC Core pg. 105 |  | Uncommon | Human, Humanoid, Uncommon |  | 18 | 320 | 40 | +27 | +28 | +33 | 25 feet | Encymion |
+| Pathfinder #218: Titanbane pg. 41 | Unique	Large | Beast, Unique |  | 9 | darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet, fly 40 feet | Loading... |
+| Engelidis |  | Kingmaker Adventure Path pg. 393 |  | Unique | Aberration, Unique |  | 16 | 290 | 40 | +25 | +30 | +28 | darkvision | 25 feet, swim 15 feet |
+| Engerra | Agathion | Claws of the Tyrant pg. 114 |  | Uncommon | Agathion, Celestial, Holy, Uncommon |  | 9 | 152 | 27 | +16 | +18 | +20 | darkvision | 25 feet, fly 30 feet |
+| Enigmatic Conspiracist | Mystic | NPC Core pg. 98 |  | Common | Human, Humanoid |  | 4 | 60 | 21 | +8 | +12 | +12 | (12 to Sense Motive) | 25 feet |
+| Enormous Dragonfly | Dragonfly | Kingmaker Adventure Path pg. 99 |  | Common | Animal |  | 9 | 165 | 27 | +17 | +21 | +14 | darkvision, wavesense (imprecise) 30 feet | 20 feet, fly 60 feet |
+| Enormous Flame Drake |  | Kingmaker Adventure Path pg. 85 |  | Unique | Dragon, Fire, Unique |  | 8 | 140 | 27 | +18 | +16 | +16 | darkvision, scent (imprecise) 30 feet, smoke vision | Envoy |
+| Courtier |  | NPC Core pg. 12 |  | Common | Human, Humanoid |  | 0 | 12 | 13 | +2 | +3 | +11 | (13 to Sense Motive) | 25 feet |
+| Eobald |  | Kingmaker Companion Guide pg. 53 |  | Unique | Human, Humanoid, Unique |  | 5 | 60 | 18 | +11 | +8 | +13 | 25 feet | Loading... |
+| Equendia |  | Gatewalkers (Hardcover) pg. 184 |  | Unique | Cold, Mummy, Unholy, Unique |  | 11 | 175 ( void healing ) | 31 | +22 | +21 | +21 | darkvision | 20 feet |
+| Equestrian Constable | Official | NPC Core pg. 113 |  | Common | Human, Humanoid |  | 4 | 60 | 21 | +14 | +8 | +10 | 25 feet | Eremite |
+| Velstrac |  | Monster Core 2 pg. 348 |  | Common | Fiend, Unholy, Velstrac |  | 20 | 375 | 45 | +37 | +32 | +34 | greater darkvision, painsight, truesight | 30 feet, fly 50 feet |
+| Loading... | Eron Of Jandelay | Pathfinder Adventure Path #219: Lord of the Trinity Star pg. 88 |  | Rare | Monitor, Mythic, Rare |  | 13 | 200 ( fast healing 20) | 34 | +24 | +22 | +27 | darkvision | 30 feet, climb 30 feet, fly 120 feet; unfettered movement |
+| Eseneth | Psychopomp | Monster Core 2 pg. 265 |  | Common | Monitor, Psychopomp |  | 17 | 290 | 39 | +28 | +32 | +27 | darkvision, lifesense 120 feet | 25 feet, fly 40 feet; unfettered movement |
+| Eshmok | Demon | Pathfinder #210: Whispers in the Dirt pg. 83 |  | Uncommon | Demon, Fiend, Fungus, Uncommon, Unholy |  | 9 | 200 | 27 | +16 | +19 | +18 | darkvision | 25 feet, fly 35 feet |
+| Esipil | Sahkil | Monster Core 2 pg. 274 |  | Common | Fiend, Sahkil, Unholy |  | 1 | 15 | 17 | +7 | +9 | +5 | darkvision | 30 feet |
+| Esobok | Psychopomp | Monster Core 2 pg. 262 |  | Common | Monitor, Psychopomp |  | 3 | 55 | 18 | +11 | +8 | +8 | darkvision, lifesense 60 feet, scent (imprecise) 60 feet | 30 feet |
+| Ether Spider |  | Monster Core 2 pg. 154 |  | Common | Beast, Ethereal |  | 5 | 75 | 21 | +12 | +15 | +10 | darkvision | 40 feet, climb 20 feet |
+| Ether Sprite | Sprite | Pathfinder #194: Cult of the Cave Worm pg. 89 |  | Common | Fey |  | -1 | 8 | 14 | +1 | +6 | +3 | 10 feet, fly 40 feet | Ether Sprite Swarm |
+| Sprite |  | Pathfinder #194: Cult of the Cave Worm pg. 89 |  | Common | Fey, Swarm |  | 3 | 32 | 19 | +5 | +11 | +7 | low-light vision | 10 feet, fly 40 feet |
+| Ethereal Sailor |  | Grand Bazaar pg. 77 |  | Common | Mindless |  | 6 | 60 | 25 | +8 | +14 | +8 | darkvision | fly 30 feet |
+| Loading... | Loading... | Etward Ritalson |  |  | Gatewalkers (Hardcover) pg. 276 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 9	140	28	+16	+18	+20	+18 |
+| 25 feet | Eumenid | Stygian Guardian |  |  | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 86 |  | Uncommon | Medium |  |  |  |  | Monitor, Uncommon | 6	80	24	+12	+17	+13	+18 |
+| darkvision, lifesense 60 feet | 30 feet, fly 30 feet | Eunemvro |  |  | Bestiary 3 pg. 96 |  | Uncommon | Medium |  |  |  |  | Humanoid, Positive, Uncommon | 5	78	22	+13	+14	+11	+11 |
+| darkvision | 35 feet | Loading... | Evangelist |  | Velstrac |  |  |  |  |  |  |  | Pathfinder #147: Tomorrow Must Burn pg. 83 | Uncommon	Medium |
+| Fiend, Uncommon, Velstrac | 6	90	24	+15	+14	+11	+13 | darkvision, painsight |  |  | 25 feet | Evangelist |  |  |  |  |  |  | Velstrac | Monster Core 2 pg. 346 |
+| Common	Medium | Fiend, Unholy, Velstrac | 6	90	24	+15	+14	+11	+13 |  |  | greater darkvision, painsight |  |  |  |  |  |  |  | 25 feet | Everburning Mammoths |
+| Pathfinder #177: Burning Tundra pg. 56 | Rare	Medium | Rare, Undead |  | 8 | darkvision |  |  |  |  |  |  |  | 30 feet | Evindra |
+| Kingmaker Adventure Path pg. 365 | Unique	Medium | Aquatic, Fey, Unique, Water |  | 13 | low-light vision |  |  |  |  |  |  |  | 25 feet, swim 50 feet | Evora Yarket |
+| Pathfinder #152: Legacy of the Lost God pg. 52 | Unique	Medium | Human, Humanoid, Orc, Unique |  | 7 | low-light vision |  |  |  |  |  |  |  | 35 feet | Excorion |
+| Book of the Dead pg. 91, Pathfinder #158: Sixty Feet Under pg. 82 | Uncommon	Medium | Uncommon, Undead |  | 7 | darkvision |  |  |  |  |  |  |  | 35 feet | Executioner |
+| Official |  | NPC Core pg. 116 |  | Common | Human, Humanoid |  | 6 | 105 | 23 | +15 | +12 | +14 | 25 feet | Executor Archdragon |
+| Dragon, Executor |  | Draconic Codex pg. 133 |  | Rare | Divine, Dragon, Rare |  | 21 | 400 | 45 | +35 | +33 | +38 | darkvision, lifesense (imprecise) 30 feet, scent (imprecise) 60 feet | 90 feet, fly 150 feet |
+| Exiled Revolutionary | Mercenary | NPC Core pg. 85 |  | Common | Human, Humanoid |  | 10 | 140 | 28 | +17 | +20 | +17 | (20 to Sense Motive) | 25 feet |
+| Exorcist |  | Pathfinder #198: No Breath to Cry pg. 48 |  | Rare | Human, Humanoid, Rare |  | 8 | 135 | 24 | +15 | +14 | +18 | 25 feet | Expedition Leader |
+| Explorer |  | NPC Core pg. 58 |  | Common | Human, Humanoid |  | 9 | 160 | 27 | +21 | +18 | +15 | 25 feet | Experienced Hound |
+| NPC Core pg. 219 | Common	Medium | Animal |  | 7 | low-light vision, scent (imprecise) 60 feet |  |  |  |  |  |  |  | 35 feet | Exscinder |
+| Archon |  | Monster Core 2 pg. 37 |  | Rare | Archon, Celestial, Holy, Rare |  | 13 | 240 | 33 | +23 | +21 | +25 | darkvision | 30 feet, fly 50 feet |
+| Exthenios |  | Pathfinder #218: Titanbane pg. 19 |  | Unique | Mythic, Skeleton, Undead, Unique |  | 9 | 110 ( void healing ) | 27 | +18 | +21 | +18 | darkvision | 25 feet |
+| Exuberant Apprentice | Scholar | NPC Core pg. 140 |  | Common | Human, Humanoid |  | 4 | 65 | 20 | +10 | +10 | +8 | 25 feet | Eyelet |
+| Eyelet |  | Pathfinder #202: Severed at the Root pg. 82 |  | Rare | Beast, Rare |  | 1 | 20 | 15 | +5 | +10 | +7 | darkvision | 5 feet, fly 40 feet |
+| Eyelet Swarm | Eyelet | Pathfinder #202: Severed at the Root pg. 82 |  | Rare | Beast, Rare, Swarm |  | 7 | 90 | 24 | +12 | +18 | +15 | darkvision | 5 feet, fly 40 feet |
+| Eylthia |  | Pathfinder #218: Titanbane pg. 46 |  | Unique | Humanoid, Mythic, Unique |  | 10 | 175 | 29 | +19 | +22 | +20 | darkvision | 25 feet |
+| Eylthia's Basilisk |  | Pathfinder #218: Titanbane pg. 47 |  | Common | Beast |  | 7 | 115 | 25 | +17 | +12 | +16 | 20 feet | Loading... |
+| Faceless Butcher |  | Pathfinder #154: Siege of the Dinosaurs pg. 80 |  | Uncommon | Humanoid, Uncommon |  | 11 | 175 | 31 | +23 | +22 | +20 | darkvision | 25 feet |
+| Facetbound Cascader | Facetbound | Pathfinder #185: A Taste of Ashes pg. 85 |  | Rare | Rare, Undead |  | 16 | 280 ( negative healing ) | 38 | +25 | +26 | +28 | darkvision | 25 feet |
+| Facetbound Nullifier | Facetbound | Pathfinder #185: A Taste of Ashes pg. 84 |  | Rare | Rare, Undead |  | 15 | 305 ( negative healing ) | 38 | +26 | +22 | +24 | darkvision | 25 feet, fly 25 feet |
+| Fading Fox | Fox | Bestiary 3 pg. 102 |  | Common | Animal |  | 2 | 25 | 21 | +7 | +10 | +7 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Fafnheir |  | Monsters of Myth pg. 28 |  | Unique | Dragon, Unique |  | 24 | 500 | 51 | +42 | +36 | +38 | darkvision, scent (imprecise) 120 feet, true seeing | 50 feet, burrow 25 feet, fly 160 feet, swim 80 feet; freedom of movement |
+| Failed Prophet | Failed Prophet | Shining Kingdoms pg. 181 |  | Rare | Construct, Rare |  | 10 | 175 | 30 | +20 | +17 | +23 | darkvision, wealthsense (imprecise) 60 feet | 25 feet |
+| Faithless Ecclesiarch | Herexen | Book of the Dead pg. 112 |  | Uncommon | Uncommon, Undead |  | 6 | 93 ( negative healing ) | 21 | +12 | +13 | +16 | darkvision | 25 feet |
+| Fallen Acolyte |  | Rusthenge pg. 22 |  | Uncommon | Human, Humanoid, Uncommon |  | 0 | 15 | 15 | +6 | +2 | +6 | 20 feet | Fallen Champion |
+| Herexen |  | Book of the Dead pg. 113 |  | Uncommon | Uncommon, Undead |  | 8 | 130 ( negative healing ) | 28 | +19 | +14 | +17 | darkvision | 25 feet |
+| Falrok |  | Pathfinder #148: Fires of the Haunted City pg. 46 |  | Unique | Ghoul, Undead, Unique |  | 14 | 250 ( negative healing ) | 37 | +26 | +29 | +23 | darkvision | 30 feet, burrow 20 feet |
+| False Devil |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 83 |  | Unique | Beast, Unique |  | 8 | 145 | 26 | +16 | +18 | +15 | darkvision | 25 feet, fly 50 feet |
+| False Governor |  | Pathfinder #199: To Bloom Below the Web pg. 14 |  | Rare | Fiend, Nindoru, Rare |  | 12 | 220 | 32 | +20 | +24 | +22 | darkvision | 25 feet |
+| False Priest | Mystic | NPC Core pg. 98 |  | Common | Human, Humanoid |  | 4 | 50 | 21 | +11 | +12 | +10 | 25 feet | False Priestess |
+| Kingmaker Companion Guide pg. 91 | Rare	Medium | Human, Humanoid, Rare |  | 7 | 25 feet | Fangtooth School |  |  |  |  |  |  | Fish | Howl of the Wild pg. 149 2.1 |
+| Common	Large | Animal, Aquatic, Swarm | 3	40	18	+11	+10	+9	+11 |  |  | low-light vision, scent (imprecise) 120 feet, wavesense (precise) 15 feet |  |  |  |  |  |  |  | swim 30 feet | Farmer |
+| Laborer |  | NPC Core pg. 67 |  | Common | Human, Humanoid |  | 0 | 18 | 14 | +7 | +5 | +4 | 25 feet | Loading... |
+| Favored Thrall |  | Pathfinder #215: To Blot Out the Sun pg. 25 |  | Uncommon | Human, Humanoid, Uncommon |  | 4 | 60 | 18 | +9 | +14 | +6 | 25 feet | Loading... |
+| Faydhaan | Genie | Monster Core pg. 158 1.1 |  | Common | Elemental, Genie, Water |  | 9 | 145 | 28 | +17 | +18 | +18 | (18 to Sense Motive) darkvision, wavesense (imprecise) 60 feet | 25 feet, swim 40 feet |
+| Faydhaan Shuyookh | Genie | Rage of Elements pg. 182 2.0 |  | Rare | Elemental, Genie, Rare, Water |  | 14 | 240 | 36 | +23 | +27 | +25 | (25 to Sense Motive) | 25 feet, swim 60 feet |
+| Feathered Bear | Spirit Guide | Monster Core 2 pg. 305 |  | Common | Beast, Incorporeal, Spirit |  | 10 | 160 | 29 | +21 | +16 | +18 | darkvision, scent (imprecise) 60 feet | 35 feet |
+| Fen Mosquito Swarm |  | Monster Core 2 pg. 228 |  | Common | Animal, Swarm |  | 3 | 30 | 18 | +8 | +11 | +5 | darkvision | 5 feet, fly 25 feet |
+| Fen Pudding |  | Kingmaker Adventure Path pg. 317 |  | Rare | Amphibious, Mindless, Ooze, Rare |  | 12 | 300 | 20 | +26 | +11 | +16 | motion sense 60 feet, no vision | 20 feet, swim 20 feet |
+| Fence | Criminal | NPC Core pg. 21 |  | Common | Human, Humanoid |  | 5 | 70 | 20 | +9 | +12 | +15 | 25 feet | Loading... |
+| Ferrous Butterfly | Elemental, Metal | Rage of Elements pg. 152 2.0 |  | Common | Elemental, Metal |  | 1 | 20 | 15 | +6 | +9 | +5 | darkvision | 5 feet, fly 40 feet |
+| Ferrugon | Devil | Monster Core 2 pg. 100 |  | Common | Devil, Fiend, Unholy |  | 12 | 190 | 33 | +24 | +20 | +21 | greater darkvision | 25 feet, fly 40 feet |
+| Festering Gnasher | Beheaded | Book of the Dead pg. 74 |  | Common | Undead |  | 1 | 18 ( negative healing ) | 16 | +4 | +9 | +6 | darkvision | 15 feet, fly 25 feet |
+| Festrog |  | Monster Core 2 pg. 155 |  | Common | Undead |  | 1 | 25 ( void healing ) | 15 | +7 | +7 | +6 | darkvision | 30 feet |
+| Fetch Behemoth | Fetch | Kingmaker Adventure Path pg. 613 |  | Rare | Fey, Plant, Rare |  | 20 | 460 | 44 | +37 | +32 | +34 | darkvision | 35 feet, air walk |
+| Fetch Stalker | Fetch | Kingmaker Adventure Path pg. 612 |  | Rare | Fey, Plant, Rare |  | 18 | 350 | 42 | +35 | +30 | +28 | darkvision | 35 feet, air walk |
+| Fetchling Scout | Fetchling | Monster Core 2 pg. 156 |  | Common | Fetchling, Humanoid, Shadow |  | 1 | 20 | 16 | +5 | +9 | +5 | darkvision | 25 feet |
+| Fey Dragonet | Dragonet | Monster Core pg. 127 1.1 |  | Uncommon | Dragon, Fey, Uncommon |  | 2 | 30 | 18 | +5 | +12 | +11 | darkvision | 15 feet, fly 40 feet, swim 20 feet |
+| Fiddling Bones |  | Book of the Dead pg. 92 |  | Common | Undead |  | 3 | 30 ( negative healing ) | 18 | +6 | +12 | +9 | darkvision | 25 feet |
+| Fiend Caller | Villain | NPC Core pg. 153 |  | Rare | Human, Humanoid, Rare, Unholy |  | 3 | 35 | 17 | +7 | +9 | +8 | 25 feet | Fiendish Flock |
+| Pathfinder #200: Seven Dooms for Sandpoint pg. 161 | Rare	Large | Animal, Rare, Swarm |  | 7 | darkvision |  |  |  |  |  |  |  | 10 feet, fly 40 feet | Filth Fire |
+| Elemental, Fire |  | Monster Core 2 pg. 148 |  | Common | Elemental, Fire |  | 4 | 70 | 21 | +12 | +13 | +9 | darkvision, smoke vision | 25 feet |
+| Fionn |  | Kingmaker Companion Guide pg. 18 |  | Common | Cold, Incorporeal, Spirit, Undead |  | 13 | 175 ( negative healing , rejuvenation) | 32 | +19 | +22 | +24 | darkvision | fly 30 feet |
+| Fire Giant | Giant | Monster Core pg. 166 1.1 |  | Common | Fire, Giant, Humanoid |  | 10 | 175 | 31 | +23 | +16 | +18 | low-light vision | 25 feet |
+| Fire Jellyfish Swarm | Jellyfish | Monster Core 2 pg. 200 |  | Common | Animal, Aquatic, Mindless, Swarm |  | 6 | 155 | 13 | +16 | +15 | +10 | low-light vision | swim 20 feet |
+| Fire Scamp | Elemental, Scamp | Monster Core pg. 147 1.1 |  | Common | Elemental, Fire |  | 1 | 16 ( fast healing 2 (while touching fire)) | 17 | +3 | +9 | +7 | darkvision, smoke vision | 20 feet, fly 25 feet |
+| Fire Wisp | Elemental, Wisp | Monster Core 2 pg. 153 |  | Common | Elemental, Fire |  | 0 | 15 | 15 | +6 | +7 | +4 | darkvision, smoke vision | 40 feet, fly 15 feet |
+| Fire-Pot Ubanu |  | Pathfinder #170: Spoken on the Song Wind pg. 91 |  | Unique | Human, Humanoid, Unique |  | 8 | 140 | 26 | +17 | +19 | +13 | 25 feet | Loading... |
+| Firehoof Minotaur | Minotaur | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 85 |  | Uncommon | Beast, Fire, Humanoid, Uncommon |  | 7 | 140 | 24 | +17 | +12 | +14 | darkvision, smoke vision | 25 feet |
+| Firewyrm | Elemental, Fire | Monster Core pg. 144 1.1 |  | Common | Elemental, Fire |  | 9 | 165 (explosion) | 28 | +18 | +20 | +15 | darkvision, smoke vision | 60 feet |
+| First-Class Infantry | Military | Battlecry! pg. 180 |  | Common | Human, Humanoid, Troop |  | 13 | 240 (4 segments) | 33 | +26 | +23 | +20 | 20 feet; troop movement | Fisher |
+| Laborer |  | NPC Core pg. 68 |  | Common | Human, Humanoid |  | 0 | 15 | 14 | +7 | +6 | +4 | (8 to spot fish) | 25 feet |
+| Five-Color Orchid Mantis | Orchid Mantis | Tian Xia World Guide pg. 293 |  | Uncommon | Beast, Uncommon |  | 9 | 137 | 27 | +19 | +21 | +16 | darkvision | 50 feet, climb 25 feet, fly 25 feet |
+| Fjord Linnorm | Linnorm | Bestiary 2 pg. 165 2.0 |  | Uncommon | Amphibious, Dragon, Uncommon |  | 16 | 315 | 40 | +30 | +28 | +24 | darkvision, scent (imprecise) 60 feet, true seeing | 35 feet, fly 75 feet, swim 50 feet; freedom of movement |
+| Flamboyant Thief | Criminal | NPC Core pg. 25 |  | Rare | Human, Humanoid, Rare |  | 15 | 225 | 37 | +23 | +30 | +26 | 30 feet | Flame Drake |
+| Drake |  | Monster Core pg. 129 1.1 |  | Common | Dragon, Fire |  | 5 | 75 | 22 | +12 | +10 | +10 | darkvision, scent (imprecise) 30 feet, smoke vision | 20 feet, fly 50 feet |
+| Flaming Skull | Beheaded | Monster Core 2 pg. 56 |  | Common | Mindless, Undead, Unholy |  | 2 | 30 ( void healing ) | 18 | +5 | +10 | +7 | darkvision | 15 feet, fly 30 feet |
+| Flash Beetle | Beetle | Monster Core pg. 42 1.1 |  | Common | Animal |  | -1 | 6 | 16 | +5 | +8 | +4 | low-light vision | 20 feet, fly 15 feet |
+| Flea Swarm | Flea | Pathfinder #151: The Show Must Go On pg. 83 |  | Common | Animal, Swarm |  | 5 | 55 | 18 | +15 | +16 | +6 | low-light vision, scent (imprecise) 30 feet | 30 feet |
+| Fleshforged Conformer | Fleshforged | Impossible Lands pg. 327 |  | Common | Aberration |  | 8 | 145 | 26 | +17 | +18 | +13 | darkvision | 25 feet |
+| Fleshforged Dreadnought | Fleshforged | Impossible Lands pg. 328 |  | Rare | Construct, Mindless, Rare |  | 18 | 300 | 42 | +35 | +28 | +27 | darkvision | 30 feet |
+| Fleshwarp Amalgam | Fleshwarp | Battlecry! pg. 180 |  | Uncommon | Aberration, Mindless, Troop, Uncommon |  | 8 | 135 (4 segments) | 26 | +19 | +14 | +13 | darkvision | 30 feet; troop movement |
+| Fleshwarper | Villain | NPC Core pg. 159 |  | Common | Human, Humanoid |  | 7 | 110 | 24 | +15 | +15 | +15 | 25 feet | Flickerwisp |
+| Will-o'-Wisp |  | Pathfinder #163: Ruins of Gauntlight pg. 83 |  | Uncommon | Aberration, Air, Uncommon |  | 2 | 18 | 20 | +6 | +10 | +7 | darkvision | fly 25 feet |
+| Floating Femur | Animated Bones | Pathfinder #181: Zombie Feast pg. 82 |  | Uncommon | Construct, Mindless, Uncommon |  | -1 | 7 | 14 | +4 | +6 | +3 | darkvision | fly 25 feet |
+| Floodslain Orc | Floodslain Creature | Pathfinder #207: Resurrection Flood pg. 85 |  | Common | Amphibious, Undead |  | 3 | 44 ( void healing ) | 17 | +12 | +9 | +6 | darkvision | 25 feet, swim 25 feet |
+| Flumph |  | Bestiary 3 pg. 100 |  | Common | Aberration |  | 1 | 17 | 17 | +5 | +9 | +8 | darkvision | 5 feet, fly 25 feet |
+| Fluxwraith |  | Book of the Dead pg. 93 |  | Rare | Incorporeal, Rare, Spirit, Undead |  | 17 | 250 ( negative healing ) | 39 | +25 | +34 | +30 | darkvision 60 feet, lifesense (imprecise) 60 feet | fly 40 feet |
+| Flying Mountain Kaminari |  | Pathfinder #168: King of the Mountain pg. 23 |  | Rare | Humanoid, Kami, Rare |  | 18 | 320 | 42 | +30 | +33 | +27 | 25 feet, fly 60 feet; stormflight | Flynkett |
+| Howl of the Wild pg. 150 2.1 | Common	Small | Animal |  | 3 | low-light vision |  |  |  |  |  |  |  | 25 feet, climb 15 feet | Flytrap Leshy |
+| Leshy |  | Bestiary 2 pg. 161 2.0 |  | Common | Leshy, Plant |  | 4 | 72 | 20 | +9 | +12 | +13 | darkvision | 25 feet |
+| Fogfisher |  | Pathfinder #214: The Broken Palace pg. 85 |  | Rare | Aberration, Rare |  | 4 | 50 | 20 | +8 | +12 | +13 | mist vision | 10 feet, fly 25 feet |
+| Follower Of Shumfallow |  | Pathfinder #178: Punks in a Powderkeg pg. 25 |  | Rare | Fungus, Leshy, Rare |  | -1 | 8 | 15 | +5 | +7 | +2 | darkvision | 25 feet |
+| Foolish Hunters |  | Crown of the Kobold King pg. 25 |  | Common | Human, Humanoid |  | -1 | 10 | 16 | +5 | +7 | +3 | 25 feet | Forager |
+| Explorer |  | NPC Core pg. 52 |  | Common | Human, Humanoid |  | 1 | 20 | 15 | +5 | +8 | +8 | (11 to notice flora and fauna) | 25 feet |
+| Foras |  | Kingmaker Adventure Path pg. 595 |  | Unique | Human, Humanoid, Unique |  | 19 | 355 | 43 | +31 | +31 | +35 | unseen sight | 25 feet |
+| Forest Archdragon | Dragon, Forest | Draconic Codex pg. 137 |  | Rare | Dragon, Elemental, Primal, Rare, Wood |  | 22 | 480 | 48 | +36 | +32 | +39 | darkvision, scent (imprecise) 60 feet | 50 feet, fly 200 feet; woodland passage |
+| Forest Troll | Troll | Monster Core pg. 330 1.1 |  | Common | Giant, Humanoid, Troll, Wood |  | 5 | 125 | 20 | +17 | +11 | +7 | darkvision | 30 feet |
+| Forge-Spurned |  | Crown of the Kobold King pg. 119, Pathfinder #148: Fires of the Haunted City pg. 83 |  | Uncommon | Fire, Uncommon, Undead |  | 5 | 75 (eternal damnation, negative healing ) | 22 | +15 | +9 | +11 | darkvision | 20 feet |
+| Forgotten Dead |  | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 81 |  | Uncommon | Shadow, Uncommon |  | 4 | 65 | 20 | +10 | +14 | +9 | darkvision | 25 feet |
+| Forlorn Artist | Elf | NPC Core pg. 178 |  | Common | Elf, Humanoid |  | 2 | 26 | 18 | +3 | +9 | +9 | (9 to notice unusual artwork) low-light vision | 25 feet |
+| Formian Mageslayer | Formian | Pathfinder #173: Doorway to the Red Star pg. 83 |  | Rare | Formian, Mutant, Rare |  | 16 | 240 | 38 | +25 | +28 | +30 | darkvision, scent (imprecise) 30 feet, tremorsense 60 feet | 30 feet, fly 30 feet |
+| Formian Queen | Formian | Pathfinder #173: Doorway to the Red Star pg. 84 |  | Uncommon | Formian, Uncommon |  | 17 | 255 | 40 | +34 | +26 | +31 | darkvision, scent (imprecise) 60 feet, tremorsense 60 feet | 10 feet |
+| Formian Worker | Formian | Pathfinder #173: Doorway to the Red Star pg. 82 |  | Common | Formian |  | 1 | 20 | 16 | +8 | +4 | +6 | darkvision, scent (imprecise) 30 feet | 30 feet, burrow 5 feet |
+| Fortune Archdragon | Dragon, Fortune | Draconic Codex pg. 70 |  | Rare | Arcane, Dragon, Rare |  | 23 | 400 | 49 | +36 | +39 | +37 | darkvision, scent (imprecise) 60 feet | 90 feet, fly 200 feet |
+| Fortune Eater |  | Bestiary 3 pg. 101 |  | Rare | Incorporeal, Rare, Spirit, Undead |  | 7 | 100 ( negative healing , rejuvenation) | 25 | +15 | +17 | +13 | darkvision | fly 30 feet |
+| Four-Tooth |  | Pathfinder #194: Cult of the Cave Worm pg. 46 |  | Unique | Duergar, Dwarf, Humanoid, Unique |  | 7 | 120 | 25 | +18 | +13 | +15 | darkvision | 20 feet |
+| Loading... | Freshly Bloomed Basilisk | Kingmaker Adventure Path pg. 229 |  | Unique | Beast, Unique |  | 9 | 188 | 26 | +21 | +14 | +18 | darkvision | 20 feet |
+| Froghemoth |  | Bestiary 2 pg. 122 2.0 |  | Uncommon | Aberration, Amphibious, Uncommon |  | 13 | 285 | 32 | +26 | +21 | +23 | darkvision, otherworldly vision 30 feet | 20 feet, swim 30 feet |
+| Froglegs |  | Pathfinder #170: Spoken on the Song Wind pg. 91 |  | Unique | Grippli, Humanoid, Unique |  | 8 | 135 | 27 | +14 | +18 | +16 | darkvision | 30 feet, climb 20 feet |
+| Frost Drake | Drake | Monster Core pg. 132 1.1 |  | Common | Cold, Dragon |  | 7 | 115 | 25 | +17 | +15 | +14 | darkvision, scent (imprecise) 30 feet, snow vision | 20 feet; burrow 20 feet (snow only), climb 20 feet (ice only), fly 50 feet; ice stride |
+| Frost Giant | Giant | Monster Core pg. 165 1.1 |  | Common | Cold, Giant, Humanoid |  | 9 | 150 | 29 | +23 | +16 | +16 | low-light vision | 30 feet; ice stride |
+| Frost Roc |  | Prey for Death pg. 113 |  | Rare | Beast, Cold, Rare |  | 14 | 300 | 34 | +28 | +24 | +23 | darkvision | 15 feet, fly 60 feet |
+| Frost Worm |  | Bestiary 2 pg. 123 2.0 |  | Common | Animal, Cold |  | 12 | 225 | 33 | +24 | +22 | +20 | darkvision | 25 feet, burrow 10 feet |
+| Frostripper |  | Prey for Death pg. 26 |  | Uncommon | Beast, Uncommon |  | 13 | 232 | 34 | +26 | +20 | +22 | darkvision, scent (imprecise) 60 feet | 40 feet, swim 20 feet, trackless step |
+| Fuath | Gremlin | Monster Core 2 pg. 177 |  | Common | Aquatic, Fey, Gremlin |  | 1 | 18 | 16 | +5 | +9 | +6 | darkvision | 20 feet, swim 30 feet |
+| Fulthrethu | Alghollthu | Pathfinder #214: The Broken Palace pg. 82 |  | Common | Aberration, Amphibious |  | 5 | 75 | 22 | +9 | +14 | +12 | darkvision | 20 feet, swim 30 feet |
+| Fuming Sludge |  | The Slithering pg. 63 |  | Uncommon | Mindless, Ooze, Uncommon |  | 7 | 160 | 16 | +18 | +8 | +11 | chemical sense 60 feet, no vision | 20 feet, climb 20 feet |
+| Fungus Leshy | Leshy | Monster Core pg. 217 1.1 |  | Common | Fungus, Leshy |  | 2 | 30 | 19 | +8 | +10 | +6 | darkvision | 25 feet |
+| Fungus Tyrant |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 190 |  | Rare | Fiend, Fungus, Rare |  | 9 | 180 | 27 | +21 | +17 | +19 | darkvision | 20 feet |
+| Furnerico |  | Pathfinder #204: Stage Fright pg. 85 |  | Rare | Aberration, Rare |  | 14 | 320 | 33 | +28 | +23 | +24 | scent (precise) 60 feet | 15 feet, climb 30 feet |
+| Gadgeteer | Engineer | NPC Core pg. 46 |  | Common | Human, Humanoid |  | 6 | 95 | 23 | +11 | +16 | +14 | 25 feet | Gaetane |
+| Kingmaker Adventure Path pg. 359 | Unique	Medium | Beast, Human, Humanoid, Unique, Werecreature |  | 14 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet | Gahlepod |
+| Brughadatch |  | Pathfinder #154: Siege of the Dinosaurs pg. 78 |  | Common | Amphibious, Fey |  | 7 | 140 | 24 | +17 | +19 | +14 | darkvision, scent (imprecise) 30 feet | 10 feet, swim 35 feet |
+| Gale Frenzy |  | Pathfinder #218: Titanbane pg. 83 |  | Rare | Air, Beast, Humanoid, Rare, Troop |  | 9 | 150 (4 segments) | 28 | +15 | +20 | +17 | darkvision | 20 feet, fly 60 feet; troop movement |
+| Gallowdead |  | Book of the Dead pg. 94 |  | Common | Undead |  | 15 | 280 ( negative healing ) | 37 | +28 | +25 | +27 | darkvision | 25 feet |
+| Galudu |  | Pathfinder #165: Eyes of Empty Death pg. 36 |  | Unique | Caligni, Humanoid, Unique |  | 11 | 195 (death motes) | 30 | +18 | +21 | +22 | greater darkvision | 25 feet |
+| Galvo |  | Bestiary 3 pg. 103 |  | Common | Aberration, Amphibious |  | 9 | 158 | 27 | +18 | +21 | +15 | darkvision | 20 feet, swim 30 feet |
+| Gambling Companion | Tengu | NPC Core pg. 212 |  | Common | Humanoid, Tengu |  | 3 | 46 | 18 | +6 | +12 | +9 | (14 to Sense Motive) low-light vision | 25 feet |
+| Gambulami |  | Pathfinder #172: Secrets of the Temple City pg. 37 |  | Unique | Fey, Unique |  | 11 | 200 | 31 | +24 | +20 | +21 | low-light vision, scent (imprecise) 30 feet | 20 feet |
+| Gamekeeper | Explorer | NPC Core pg. 56 |  | Common | Human, Humanoid |  | 6 | 95 | 23 | +17 | +13 | +12 | 25 feet | Gancanagh |
+| Azata |  | Monster Core pg. 32 1.1 |  | Common | Azata, Celestial, Holy |  | 4 | 75 | 21 | +9 | +13 | +11 | darkvision | 30 feet |
+| Gang Leader | Villain | NPC Core pg. 160 |  | Common | Human, Humanoid |  | 7 | 110 | 24 | +13 | +17 | +12 | 30 feet | Ganzi Martial Artist |
+| Nephilim |  | Monster Core 2 pg. 254 |  | Common | Human, Humanoid, Nephilim |  | 3 | 36 | 20 | +7 | +11 | +9 | low-light vision | 35 feet |
+| Garadasura | Asura | Monster Core 2 pg. 44 |  | Common | Asura, Spirit, Unholy |  | 11 | 200 ( fast healing 5 ) | 30 | +24 | +20 | +19 | darkvision | 40 feet, swim 30 feet |
+| Gargoyle | Gargoyle | Monster Core pg. 155 1.1 |  | Common | Beast, Earth |  | 4 | 40 | 21 | +13 | +10 | +10 | darkvision | 25 feet, fly 40 feet |
+| Gargoyle Wing | Gargoyle | Battlecry! pg. 181 |  | Common | Beast, Earth, Troop |  | 9 | 150 (4 segments) | 28 | +20 | +17 | +17 | darkvision | 25 feet, fly 40 feet; troop movement |
+| Garrholdion |  | Claws of the Tyrant pg. 115 |  | Rare | Construct, Incorporeal, Mindless, Rare |  | 20 | 350 | 46 | +36 | +27 | +30 | darkvision, truesight | 25 feet, fly 25 feet |
+| Garuda |  | Monster Core 2 pg. 159 |  | Common | Celestial, Holy |  | 9 | 160 | 27 | +20 | +19 | +16 | darkvision | 25 feet, fly 60 feet |
+| Gashadokuro |  | Book of the Dead pg. 95, Pathfinder #148: Fires of the Haunted City pg. 84 |  | Uncommon | Uncommon, Undead |  | 13 | 230 ( negative healing ) | 33 | +26 | +21 | +24 | darkvision | 25 feet |
+| Gathlain Wanderer | Gathlain | Bestiary 3 pg. 105 |  | Uncommon | Fey, Plant, Uncommon |  | 1 | 14 | 17 | +5 | +9 | +6 | low-light vision | 20 feet, fly 30 feet |
+| Gau Cho Rong |  | Tian Xia World Guide pg. 283 |  | Uncommon | Beast, Uncommon |  | 4 | 50 | 20 | +8 | +13 | +6 | darkvision | Gavergash |
+| Pathfinder Adventure Path #219: Lord of the Trinity Star pg. 49 | Unique	Large | Cold, Giant, Humanoid, Mythic, Troll, Unique |  | 14 | darkvision |  |  |  |  |  |  |  | 30 feet | Gbahali |
+| Pathfinder #170: Spoken on the Song Wind pg. 81 | Uncommon	Huge | Beast, Uncommon |  | 9 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 40 feet, swim 30 feet; powerful jumper | Gedovius |
+| Kingmaker Adventure Path pg. 391 | Unique	Medium | Beast, Earth, Unique |  | 16 | darkvision |  |  |  |  |  |  |  | 25 feet, fly 40 feet | Geff |
+| Pathfinder #215: To Blot Out the Sun pg. 39 | Uncommon	Small | Dero, Humanoid, Uncommon |  | 6 | darkvision |  |  |  |  |  |  |  | 20 feet | Loading... |
+| Geist |  | Book of the Dead pg. 96 |  | Common | Incorporeal, Undead |  | 9 | 120 ( negative healing ) | 26 | +13 | +20 | +17 | darkvision | fly 30 feet |
+| Loading... | Gendarme | Official |  |  | NPC Core pg. 117 |  | Common | Medium |  |  |  |  | Human, Humanoid | 8	120	26	+19	+14	+17	+19 |
+| 25 feet | General Avinash Jurrg | Kingmaker Adventure Path pg. 385 |  | Unique | Giant, Oni, Shapechanger, Unique |  | 14 | 225 | 36 | +28 | +24 | +24 | darkvision, low-light vision | 30 feet, fly 30 feet |
+| Gennayn | Genie | Rage of Elements pg. 226 2.0 |  | Common | Elemental, Genie |  | 2 | 30 | 17 | +4 | +10 | +8 | darkvision | 15 feet, fly 15 feet |
+| Gerhard Pendergrast |  | Pathfinder #146: Cult of Cinders pg. 37 |  | Unique | Human, Humanoid, Unique |  | 8 | 135 | 26 | +17 | +16 | +11 | 30 feet | Loading... |
+| Loading... | Ghast | Ghoul |  |  | Bestiary pg. 169 |  | Common | Medium |  |  |  |  | Ghoul, Undead | 2	30 ( negative healing )	18	+6	+10	+8	+8 |
+| darkvision | 30 feet, burrow 5 feet | Ghast Cultists |  |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 137 |  | Rare | Medium |  |  |  |  | Ghoul, Rare, Undead | 7	115 (negative healing)	25	+11	+15	+18	+18 |
+| darkvision | 30 feet, burrow 5 feet | Ghast Outlaw |  |  | Pathfinder #183: Field of Maidens pg. 45 |  | Uncommon | Medium |  |  |  |  | Ghoul, Uncommon, Undead | 9	155 ( negative healing )	28	+18	+20	+16	+15 |
+| darkvision | 30 feet, burrow 5 feet | Ghastly Bear |  |  | Pathfinder #147: Tomorrow Must Burn pg. 50 |  | Unique | Large |  |  |  |  | Ghoul, Undead, Unique | 9	135 ( negative healing )	27	+19	+14	+16	+16 |
+| darkvision, scent (imprecise) 30 feet | 35 feet | Ghiasi The Unraveler |  |  | Pathfinder #185: A Taste of Ashes pg. 91 |  | Unique | Medium |  |  |  |  | Shadow, Unique | 17	285	40	+25	+34	+29	+34 |
+| darkvision | 25 feet, fly 35 feet; swift steps, tenebral form | Loading... | Ghodrak The Quick |  | Gatewalkers (Hardcover) pg. 83 |  | Unique | Medium |  |  |  |  | Goblin, Humanoid, Unique | 5	80	22	+12	+15	+9	+15 |
+| darkvision | 25 feet | Gholdako |  |  | Book of the Dead pg. 97 |  | Rare | Huge |  |  |  |  | Rare, Undead | 10	215 ( negative healing )	27	+21	+17	+14	+16 |
+| darkvision | 30 feet | Ghonhatine |  |  | Fleshwarp |  |  |  |  |  |  |  | Bestiary 2 pg. 119 2.0 | Common	Large |
+| Aberration | 10	175	30	+22	+17	+19	+19 | darkvision, scent (imprecise) 30 feet |  |  | 35 feet | Ghoran Manipulator |  |  |  |  |  |  | Ghoran | Bestiary 3 pg. 106 |
+| Rare	Medium | Ghoran, Humanoid, Plant, Rare | 3	45	18	+8	+8	+11	+9 |  |  | low-light vision |  |  |  |  |  |  |  | 25 feet | Ghost Ape |
+| Ethereal Wildlife |  | Howl of the Wild pg. 146 2.1 |  | Uncommon | Beast, Ethereal, Uncommon |  | 4 | 65 | 20 | +14 | +10 | +12 | darkvision, scent (imprecise) 30 feet | 30 feet, climb 30 feet |
+| Ghost Commoner | Ghost | Monster Core pg. 161 1.1 |  | Common | Ghost, Incorporeal, Spirit, Undead, Unholy |  | 4 | 30 (rejuvenation, void healing ) | 20 | +8 | +11 | +8 | darkvision | fly 25 feet |
+| Ghost Mage | Ghost | Monster Core pg. 161 1.1 |  | Common | Ghost, Incorporeal, Spirit, Undead, Unholy |  | 10 | 135 (rejuvenation, void healing ) | 27 | +16 | +19 | +22 | darkvision | fly 25 feet |
+| Ghost Monk |  | Pathfinder #166: Despair on Danger Island pg. 15 |  | Common | Ghost, Incorporeal, Spirit, Undead |  | 9 | 115 ( negative healing , rejuvenation) | 25 | +15 | +19 | +21 | darkvision | fly 40 feet |
+| Ghost Pirate Captain | Ghost | Book of the Dead pg. 101 |  | Common | Ghost, Incorporeal, Spirit, Undead |  | 8 | 100 ( negative healing , rejuvenation) | 26 | +14 | +18 | +15 | darkvision | fly 25 feet |
+| Ghostly Guard |  | Kingmaker Adventure Path pg. 461 |  | Rare | Ghost, Incorporeal, Rare, Spirit, Undead |  | 15 | 210 ( negative healing , rejuvenation) | 35 | +23 | +27 | +29 | darkvision | fly 30 feet |
+| Ghostly Mob | Ghost | Monster Core 2 pg. 161 |  | Uncommon | Ghost, Incorporeal, Troop, Uncommon, Undead, Unholy |  | 8 | 105 (4 segments, rejuvenation, void healing ) | 25 | +15 | +14 | +18 | darkvision | fly 25 feet; troop movement |
+| Ghoul Antipaladin | Ghoul | Pathfinder #184: The Ghouls Hunger pg. 84 |  | Uncommon | Ghoul, Uncommon, Undead |  | 9 | 155 ( negative healing ) | 29 | +21 | +15 | +18 | darkvision | 20 feet |
+| Ghoul Crocodile |  | Pathfinder #182: Graveclaw pg. 32 |  | Uncommon | Amphibious, Ghoul, Uncommon, Undead |  | 4 | 60 ( negative healing ) | 20 | +14 | +11 | +8 | corpse scent (imprecise), darkvision | 20 feet, swim 25 feet |
+| Ghoul Gnawer | Ghoul | Pathfinder #184: The Ghouls Hunger pg. 23 |  | Uncommon | Ghoul, Uncommon, Undead |  | 11 | 190 ( negative healing ) | 28 | +18 | +21 | +24 | darkvision | 30 feet |
+| Ghoul Razorclaw | Ghoul | Pathfinder #184: The Ghouls Hunger pg. 85 |  | Uncommon | Ghoul, Uncommon, Undead |  | 13 | 230 ( negative healing ) | 34 | +20 | +26 | +23 | darkvision | 40 feet, climb 30 feet |
+| Ghoul Soldier | Ghoul | Monster Core pg. 163 1.1 |  | Common | Ghoul, Undead, Unholy |  | 2 | 28 ( void healing ) | 17 | +8 | +8 | +6 | darkvision | 25 feet, burrow 5 feet |
+| Ghoul Stalker | Ghoul | Monster Core pg. 163 1.1 |  | Common | Ghoul, Undead, Unholy |  | 1 | 16 ( void healing ) | 17 | +4 | +9 | +5 | darkvision | 25 feet, burrow 5 feet |
+| Ghul |  | Book of the Dead pg. 106 |  | Common | Genie, Ghul, Undead |  | 5 | 85 ( negative healing ) | 21 | +13 | +10 | +13 | darkvision, scent (imprecise) 30 feet | 30 feet, climb 20 feet |
+| Giant Amoeba | Ooze | Monster Core 2 pg. 241 |  | Common | Amphibious, Mindless, Ooze |  | 1 | 45 | 8 | +7 | +3 | +5 | motion sense 60 feet, no vision | 10 feet, climb 10 feet, swim 10 feet |
+| Giant Anaconda | Snake | Monster Core pg. 317 1.1 |  | Common | Animal |  | 8 | 175 | 25 | +20 | +17 | +15 | low-light vision, scent (imprecise) 60 feet | 30 feet, climb 30 feet, swim 30 feet |
+| Giant Animated Statue | Animated Object | Monster Core pg. 19 1.1 |  | Common | Construct, Mindless |  | 7 | 100 | 26 | +17 | +10 | +9 | darkvision | 30 feet |
+| Giant Ant | Ant | Monster Core pg. 21 1.1 |  | Common | Animal |  | 2 | 30 | 18 | +10 | +7 | +5 | darkvision, scent (imprecise) 30 feet | 40 feet, climb 20 feet |
+| Giant Ant Army | Ant | Battlecry! pg. 181 |  | Common | Animal, Troop |  | 7 | 120 (4 segments) | 24 | +17 | +14 | +12 | darkvision, scent (imprecise) 30 feet | 40 feet, climb 20 feet; troop movement |
+| Giant Aukashungi | Aukashungi | Pathfinder #154: Siege of the Dinosaurs pg. 77 |  | Uncommon | Aberration, Amphibious, Uncommon |  | 14 | 300 | 36 | +28 | +25 | +21 | greater darkvision | 25 feet, burrow 25 feet |
+| Giant Badger | Badger | Monster Core 2 pg. 54 |  | Common | Animal |  | 2 | 30 | 18 | +10 | +6 | +8 | low-light vision, scent (imprecise) 30 feet | 25 feet, burrow 10 feet |
+| Giant Bat | Bat | Monster Core pg. 40 1.1 |  | Common | Animal |  | 2 | 30 | 18 | +9 | +8 | +7 | echolocation (precise) 40 feet, low-light vision | 15 feet, fly 30 feet |
+| Giant Bloodseeker | Bloodseeker | Pathfinder #194: Cult of the Cave Worm pg. 84 |  | Uncommon | Animal, Uncommon |  | 2 | 25 | 19 | +6 | +11 | +6 | darkvision, scent (imprecise) 60 feet | 10 feet, fly 40 feet |
+| Giant Bone Skipper | Bone Skipper | Pathfinder #158: Sixty Feet Under pg. 80 |  | Uncommon | Animal, Uncommon |  | 7 | 115 | 25 | +15 | +17 | +15 | darkvision, bonesense (imprecise) 30 feet | 25 feet, fly 40 feet |
+| Giant Centipede | Centipede | Monster Core pg. 59 1.1 |  | Common | Animal |  | -1 | 8 | 15 | +7 | +6 | +2 | darkvision | 30 feet, climb 30 feet |
+| Giant Chameleon | Lizard | Monster Core 2 pg. 216 |  | Common | Animal |  | 3 | 60 | 18 | +8 | +12 | +8 | low-light vision | 30 feet, climb 20 feet |
+| Giant Cockroach | Cockroach | Monster Core 2 pg. 76 |  | Common | Animal |  | 1 | 20 | 16 | +6 | +8 | +4 | darkvision, scent (imprecise) 60 feet | 25 feet, climb 25 feet, fly 15 feet |
+| Giant Coppermouth | Galvanoscale | Howl of the Wild pg. 152 2.1 |  | Common | Animal |  | 7 | 115 | 25 | +15 | +18 | +12 | low-light vision, greater electrolocation 20 feet, scent (imprecise) 30 feet | 30 feet, climb 20 feet, swim 20 feet |
+| Giant Crab | Crab | Monster Core 2 pg. 77 |  | Common | Animal, Aquatic |  | 2 | 25 | 18 | +7 | +9 | +7 | darkvision | 25 feet, swim 15 feet |
+| Giant Crawling Hand | Crawling hand | Monster Core pg. 68 1.1 |  | Common | Undead, Unholy |  | 5 | 75 ( void healing ) | 22 | +13 | +11 | +10 | lifesense 30 feet, tremorsense (imprecise) 30 feet | 20 feet |
+| Giant Dragonfly | Dragonfly | Monster Core 2 pg. 138 |  | Common | Animal |  | 4 | 60 | 21 | +12 | +14 | +9 | darkvision, wavesense (imprecise) 30 feet | 20 feet, fly 60 feet |
+| Giant Dragonfly Nymph | Dragonfly | Monster Core 2 pg. 138 |  | Common | Animal, Aquatic |  | 3 | 45 | 19 | +11 | +9 | +6 | low-light vision, wavesense(imprecise) 30 feet | 10 feet, swim 30 feet |
+| Giant Eagle | Eagle | Monster Core pg. 137 1.1 |  | Common | Beast |  | 3 | 45 | 17 | +6 | +11 | +9 | low-light vision | 10 feet, fly 60 feet |
+| Giant Fangtooth | Fish | Howl of the Wild pg. 149 2.1 |  | Common | Animal, Aquatic |  | 4 | 75 | 20 | +14 | +11 | +8 | low-light vision, scent (imprecise) 120 feet, wavesense (precise) 30 feet | swim 35 feet |
+| Giant Flea | Flea | Pathfinder #151: The Show Must Go On pg. 83 |  | Common | Animal |  | 3 | 50 | 19 | +12 | +12 | +4 | low-light vision, scent (imprecise) 30 feet | 30 feet |
+| Giant Fly | Fly | Monster Core 2 pg. 157 |  | Common | Animal |  | 1 | 20 | 16 | +6 | +9 | +6 | darkvision, tremorsense (imprecise) 30 feet | 20 feet, climb 20 feet, fly 40 feet |
+| Loading... | Giant Flytrap | Flytrap |  |  | Monster Core pg. 154 1.1 |  | Common | Huge |  |  |  |  | Mindless, Plant | 10	185	29	+21	+17	+15	+17 |
+| tremorsense (imprecise) 60 feet | 25 feet | Giant Frilled Lizard |  |  | Lizard |  |  |  |  |  |  |  | Monster Core pg. 225 1.1 | Common	Large |
+| Animal | 5	75	22	+13	+12	+9	+11 | low-light vision, scent (imprecise) 30 feet |  |  | 30 feet, climb 30 feet | Giant Frog |  |  |  |  |  |  | Frog | Monster Core 2 pg. 158, Pathfinder Game Night: Dawn of the Frogs (Deluxe Adventure) pg. 29 |
+| Common	Medium | Animal | 1	30	15	+8	+7	+5	+7 |  |  | low-light vision |  |  |  |  |  |  |  | 25 feet, swim 25 feet | Giant Gecko |
+| Lizard |  | Monster Core pg. 224 1.1 |  | Common | Animal |  | 1 | 20 | 16 | +6 | +10 | +5 | low-light vision | 30 feet, climb 30 feet |
+| Giant Hermit Crab | Crab | Bestiary 3 pg. 57 |  | Common | Amphibious, Animal |  | 5 | 114 | 21 | +15 | +9 | +9 | darkvision, tremorsense (imprecise) 15 feet | 20 feet, climb 10 feet, swim 15 feet |
+| Giant Hippocampus | Hippocampus | Monster Core pg. 196 1.1 |  | Common | Animal, Aquatic |  | 8 | 170 | 27 | +18 | +16 | +14 | darkvision, scent (imprecise) 30 feet | 10 feet, swim 80 feet |
+| Giant Jellyfish | Jellyfish | Monster Core 2 pg. 200 |  | Common | Animal, Aquatic, Mindless |  | 7 | 165 | 15 | +17 | +15 | +1 | darkvision | swim 20 feet |
+| Giant Leech | Leech | Monster Core 2 pg. 212 |  | Common | Amphibious, Animal |  | 2 | 32 | 17 | +9 | +7 | +5 | tremorsense 30 feet | 5 feet, swim 20 feet |
+| Giant Longlegs | Longlegs | Pathfinder #200: Seven Dooms for Sandpoint pg. 192 |  | Uncommon | Animal, Uncommon |  | 3 | 50 | 18 | +10 | +10 | +6 | darkvision | 30 feet, climb 30 feet |
+| Giant Maggot | Fly | Monster Core 2 pg. 157 |  | Common | Animal |  | 0 | 15 | 13 | +9 | +3 | +3 | no vision, tremorsense 30 feet | 10 feet |
+| Giant Mantis | Mantis | Monster Core pg. 229 1.1 |  | Common | Animal |  | 3 | 40 | 18 | +10 | +12 | +7 | darkvision | 25 feet, climb 25 feet, fly 20 feet |
+| Giant Mining Bee | Giant Bee | Pathfinder #169: Kindled Magic pg. 80 |  | Common | Animal |  | 2 | 30 | 18 | +9 | +11 | +5 | darkvision, tremorsense (imprecise) 30 feet | 20 feet, burrow 10 feet, fly 40 feet |
+| Giant Monitor Lizard | Lizard | Monster Core pg. 224 1.1 |  | Common | Animal |  | 2 | 36 | 16 | +9 | +8 | +5 | low-light vision, scent (imprecise) 30 feet | 30 feet, swim 30 feet |
+| Giant Moray Eel | Eel | Monster Core pg. 138 1.1 |  | Common | Animal, Aquatic |  | 5 | 65 | 21 | +14 | +13 | +9 | low-light vision, scent (imprecise) 30 feet | 10 feet, swim 40 feet |
+| Giant Mosquito | Mosquito | Monster Core 2 pg. 228 |  | Common | Animal |  | 6 | 80 | 24 | +14 | +17 | +12 | darkvision, scent (imprecise) 60 feet | 20 feet, fly 50 feet |
+| Giant Octopus | Octopus | Monster Core pg. 248 1.1 |  | Common | Animal, Aquatic |  | 8 | 135 | 27 | +16 | +17 | +15 | low-light vision | 15 feet, swim 40 feet; compression |
+| Giant Opossum | Opossum | Monster Core 2 pg. 244 |  | Common | Animal |  | 2 | 35 | 17 | +11 | +8 | +5 | low-light vision, scent (imprecise) 30 feet | 30 feet, climb 20 feet |
+| Giant Orchid Mantis | Orchid Mantis | Tian Xia World Guide pg. 292 |  | Common | Animal |  | 2 | 30 | 18 | +9 | +10 | +6 | low-light vision | 40 feet, climb 20 feet, fly 20 feet |
+| Loading... | Loading... | Giant Rat |  |  | Rat |  |  |  |  |  |  |  | Monster Core pg. 288 1.1 | Common	Small |
+| Animal | -1	8	15	+6	+7	+3	+5 | low-light vision, scent (imprecise) 30 feet |  |  | 30 feet, climb 10 feet | Giant Scorpion |  |  |  |  |  |  | Scorpion | Monster Core pg. 298 1.1 |
+| Common	Large | Animal | 3	45	18	+12	+9	+7	+9 |  |  | darkvision, tremorsense (imprecise) 60 feet |  |  |  |  |  |  |  | 40 feet | Loading... |
+| Giant Silverfish | Silverfish | Pathfinder #169: Kindled Magic pg. 84 |  | Uncommon | Animal, Uncommon |  | 0 | 17 | 15 | +7 | +8 | +5 | darkvision | 40 feet, climb 20 feet |
+| Loading... | Giant Slug | Bestiary 2 pg. 244 2.0 |  | Common | Animal |  | 8 | 165 | 25 | +21 | +11 | +14 | no hearing, scent (imprecise) 60 feet | 20 feet, climb 15 feet |
+| Giant Snapping Turtle | Turtle | Bestiary 2 pg. 269 2.0 |  | Common | Animal |  | 9 | 170 | 28 | +19 | +15 | +19 | low-light vision, scent (imprecise) 30 feet | 20 feet, swim 40 feet |
+| Giant Solifugid | Solifugid | Bestiary 2 pg. 246 2.0, Pathfinder #149: Against the Scarlet Triad pg. 89 |  | Common | Animal |  | 1 | 20 | 16 | +6 | +8 | +4 | darkvision | 35 feet, climb 25 feet |
+| Giant Squid | Squid | Bestiary 2 pg. 254 2.0 |  | Common | Animal, Aquatic |  | 9 | 155 | 28 | +15 | +18 | +21 | darkvision | swim 40 feet |
+| Giant Stag Beetle | Beetle | Monster Core pg. 42 1.1 |  | Common | Animal |  | 4 | 55 | 22 | +13 | +9 | +8 | darkvision | 20 feet, fly 20 feet |
+| Giant Swamp Fly | Fly | Pathfinder Game Night: Dawn of the Frogs (Deluxe Adventure) pg. 19 |  | Common | Animal |  | 1 | 20 | 17 | +6 | +9 | +6 | darkvision | 20 feet, climb 20 feet, fly 40 feet |
+| Giant Tapir |  | Pathfinder #175: Broken Tusk Moon pg. 87 |  | Common | Animal |  | 2 | 30 | 18 | +11 | +7 | +6 | low-light vision, scent (imprecise) 30 feet | 25 feet; splayed toes |
+| Giant Tarantula | Spider | Monster Core pg. 321 1.1 |  | Common | Animal |  | 6 | 135 | 21 | +15 | +13 | +10 | darkvision | 30 feet, climb 30 feet |
+| Giant Tardigrade | Tardigrade | Howl of the Wild pg. 187 2.1 |  | Common | Amphibious, Animal |  | 9 | 120 | 23 | +23 | +16 | +16 | tremorsense (imprecise) 30 ft | 25 feet, climb 25 feet |
+| Giant Tick | Tick | Bestiary 2 pg. 260 2.0 |  | Common | Animal |  | 1 | 20 | 16 | +9 | +6 | +4 | darkvision | 15 feet, climb 15 feet |
+| Giant Toad | Toad | Bestiary 2 pg. 261 2.0 |  | Common | Animal |  | 2 | 36 | 17 | +9 | +8 | +6 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Giant Trapdoor Spider | Spider | Kingmaker Adventure Path pg. 56 |  | Uncommon | Animal, Uncommon |  | 2 | 28 | 18 | +8 | +11 | +7 | darkvision | 30 feet, climb 30 feet |
+| Giant Tsetse Fly | Fly | Pathfinder #169: Kindled Magic pg. 81 |  | Common | Animal |  | 2 | 30 | 18 | +7 | +11 | +5 | blood scent, scent (imprecise) 60 feet | 10 feet, fly 40 feet |
+| Giant Viper | Snake | Monster Core pg. 317 1.1 |  | Common | Animal |  | 2 | 26 | 17 | +8 | +11 | +6 | low-light vision, scent (imprecise) 30 feet | 20 feet, climb 20 feet, swim 20 feet |
+| Loading... | Giant Wasp | Wasp |  |  | Monster Core pg. 343 1.1 |  | Common | Large |  |  |  |  | Animal | 3	45	17	+9	+11	+6	+8 |
+| darkvision | 20 feet, fly 40 feet | Giant Whiptail Centipede |  |  | Centipede |  |  |  |  |  |  |  | Bestiary 2 pg. 50 2.0 | Common	Huge |
+| Animal | 3	45	19	+11	+9	+7	+9 | darkvision |  |  | 30 feet, climb 30 feet | Giant Wolverine |  |  |  |  |  |  | Wolverine | Bestiary 2 pg. 295 2.0 |
+| Common	Large | Animal | 4	65	21	+13	+11	+9	+9 |  |  | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet, climb 10 feet | Giant Worker Bee |
+| Giant Bee |  | Pathfinder #169: Kindled Magic pg. 80 |  | Common | Animal |  | 0 | 16 | 16 | +6 | +9 | +3 | darkvision | 20 feet, fly 40 feet |
+| Gibbering Mouther |  | Bestiary pg. 176 |  | Common | Aberration |  | 5 | 120 | 21 | +15 | +12 | +10 | darkvision | 10 feet, swim 20 feet |
+| Gibtanius | Gibtas | Pathfinder #164: Hands of the Devil pg. 81 |  | Uncommon | Aberration, Uncommon |  | 8 | 140 | 28 | +20 | +15 | +16 | darkvision, scent (imprecise) 30 feet | 30 feet |
+| Gibtas Bounder | Gibtas | Pathfinder #164: Hands of the Devil pg. 80 |  | Uncommon | Aberration, Uncommon |  | 5 | 76 | 22 | +13 | +13 | +11 | darkvision, scent (imprecise) 30 feet | 30 feet |
+| Gibtas Spawn Swarm | Gibtas | Pathfinder #164: Hands of the Devil pg. 80 |  | Uncommon | Aberration, Swarm, Uncommon |  | 6 | 70 | 23 | +14 | +17 | +12 | darkvision, scent (imprecise) 30 feet | 20 feet |
+| Gigantic Bee Drone | Gigantic Bee | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 82 |  | Uncommon | Animal, Uncommon |  | 4 | 60 | 20 | +14 | +12 | +7 | darkvision | 20 feet, fly 40 feet |
+| Gigantic Bee Guard | Gigantic Bee | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 88 |  | Uncommon | Animal, Uncommon |  | 4 | 60 | 21 | +14 | +12 | +8 | darkvision, scent (imprecise) 50 feet | 20 feet, fly 40 feet |
+| Gigantic Bee Royal Guardian | Gigantic Bee | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 83 |  | Rare | Animal, Rare |  | 6 | 115 | 23 | +17 | +11 | +14 | darkvision, scent (imprecise) 30 feet | 20 feet, fly 30 feet |
+| Gilded Gunner Assassin |  | Pathfinder #179: Cradle of Quartz pg. 57 |  | Rare | Humanoid, Rare |  | 5 | 75 | 22 | +13 | +15 | +12 | 25 feet | Gilded Gunner Goon |
+| Pathfinder #179: Cradle of Quartz pg. 19 | Uncommon	Medium | Human, Humanoid, Uncommon |  | 4 | 25 feet | Gilded Gunner Safecracker |  |  |  |  |  |  | Pathfinder #179: Cradle of Quartz pg. 57 | Rare	Medium |
+| Humanoid, Rare | 5	65	20	+10	+14	+10	+12 | 25 feet | Gimmerling |  | Monster Core pg. 170 1.1 |  | Common | Small |  |  |  |  | Fey | 12	235	34	+22	+25	+19	+21 |
+| hungersense (imprecise) 30 feet, low-light vision | 30 feet; trickster's step | Ginjana Mindkeeper |  |  | Pathfinder #153: Life's Long Shadows pg. 86 |  | Unique | Small |  |  |  |  | Dero, Humanoid, Unique | 11	195	31	+14	+18	+12	+22 |
+| darkvision | 20 feet; light step, mobility | Girtablilu Seer |  |  | Girtablilu |  |  |  |  |  |  |  | Monster Core 2 pg. 167 | Common	Large |
+| Beast, Girtablilu, Humanoid | 12	210	33	+22	+19	+25	+25 | darkvision, tremorsense (imprecise) 60 feet |  |  | 40 feet | Girtabliu Sentry |  |  |  |  |  |  | Girtablilu | Monster Core 2 pg. 166 |
+| Common	Large | Beast, Girtablilu, Humanoid | 8	160	27	+20	+16	+12	+18 |  |  | darkvision, tremorsense (imprecise) 60 feet |  |  |  |  |  |  |  | 40 feet | Giylea |
+| Archon |  | Monster Core pg. 29 1.1 |  | Rare | Archon, Celestial, Holy, Rare |  | 16 | 230 | 41 | +26 | +31 | +28 | darkvision, truesight | fly 50 feet |
+| Glacial Worm | Cave Worm | Pathfinder #194: Cult of the Cave Worm pg. 67 |  | Uncommon | Amphibious, Animal, Uncommon |  | 16 | 370 (cold healing) | 36 | +30 | +22 | +22 | darkvision, tremorsense (imprecise) 100 feet | 40 feet, burrow 40 feet, swim 20 feet |
+| Glass Elephant |  | Pathfinder #180: The Smoking Gun pg. 50 |  | Unique | Clockwork, Construct, Mindless, Unique |  | 12 | 245 | 32 | +25 | +19 | +17 | darkvision | 45 feet |
+| Glass Golem | Golem | Bestiary 2 pg. 131 2.0 |  | Uncommon | Construct, Golem, Mindless, Uncommon |  | 8 | 135 | 26 | +17 | +16 | +14 | darkvision | 25 feet |
+| Glaz “Brick Blaster” Nixbrix |  | Pathfinder #178: Punks in a Powderkeg pg. 88 |  | Unique | Humanoid, Unique |  | 4 | 60 | 24 | +10 | +14 | +9 | low-light vision | 20 feet, climb 30 feet |
+| Gliminal |  | Bestiary 3 pg. 114 |  | Rare | Incorporeal, Positive, Rare, Spirit |  | 9 | 160 | 27 | +19 | +21 | +16 | darkvision, lifesense 60 feet | fly 60 feet |
+| Glimmervine |  | Gatewalkers (Hardcover) pg. 258 |  | Uncommon | Mindless, Plant, Uncommon |  | 4 | 90 | 21 | +14 | +8 | +11 | tremorsense (precise) 60 feet | 10 feet |
+| Glitterspore |  | Pathfinder #202: Severed at the Root pg. 83 |  | Uncommon | Fungus, Mindless, Swarm, Uncommon |  | 8 | 105 | 24 | +19 | +16 | +13 | no vision, tremorsense (precise) 60 feet | 20 feet, fly 25 feet |
+| Globetrotting Scholar | Scholar | NPC Core pg. 142 |  | Common | Human, Humanoid |  | 13 | 235 | 33 | +23 | +26 | +20 | 25 feet | Globster |
+| Monster Core pg. 171 1.1 | Common	Large | Aquatic, Ooze |  | 5 | 15 feet, swim 30 feet | Glorkus |  |  |  |  |  |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 15 | Unique	Small |
+| Ghoul, Undead, Unique | 4	59 (negative healing)	21	+10	+10	+12	+12 | darkvision |  |  | 30 feet, burrow 5 feet | Glormungost |  |  |  |  |  |  | Pathfinder #214: The Broken Palace pg. 67 | Unique	Medium |
+| Undead, Unholy, Unique, Vampire | 6	66 ( coffin restoration , fast healing 7, void healing )	24	+12	+14	+10	+10 | darkvision |  |  | 25 feet, climb 25 feet | Gluttondark Babau |  |  |  |  |  |  | Pathfinder #152: Legacy of the Lost God pg. 23 | Common	Medium |
+| Demon, Fiend | 7	135	26	+16	+18	+15	+15 | darkvision, see invisibility |  |  | 25 feet | Loading... |  |  |  |  |  |  | Gluttonworm | Pathfinder #173: Doorway to the Red Star pg. 85 |
+| Uncommon	Gargantuan | Beast, Uncommon | 19	445	41	+35	+29	+32	+32 |  |  | darkvision, tremorsense (imprecise) 100 feet |  |  |  |  |  |  |  | 30 feet, burrow 40 feet (in sand or loose soil only) | Glutu |
+| Rusthenge pg. 53 | Unique	Medium | Amphibious, Boggard, Humanoid, Unique |  | 3 | darkvision |  |  |  |  |  |  |  | 20 feet, swim 25 feet; swamp stride | Glyptodon |
+| Pathfinder #175: Broken Tusk Moon pg. 82 | Common	Large | Animal |  | 5 | scent (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet | Gnagrif |
+| Gremlin |  | Pathfinder #169: Kindled Magic pg. 83 |  | Uncommon | Fey, Gremlin, Uncommon |  | 2 | 35 | 18 | +9 | +10 | +5 | darkvision | 20 feet, burrow 10 feet, climb 10 feet |
+| Gnokesh | Archon | Monster Core 2 pg. 36 |  | Common | Archon, Celestial, Holy |  | 5 | 70 | 21 | +9 | +12 | +15 | darkvision | 25 feet, fly 25 feet |
+| Gnome Bard | Gnome | Monster Core pg. 172 1.1 |  | Common | Gnome, Humanoid |  | 1 | 16 | 16 | +5 | +7 | +9 | low-light vision | 25 feet |
+| Gnome Cannon Corps | Gnome | Battlecry! pg. 182 |  | Common | Gnome, Humanoid, Troop |  | 7 | 120 (4 segments) | 24 | +12 | +15 | +18 | low-light vision | 25 feet; troop movement |
+| Gnome Conservationist | Gnome | NPC Core pg. 184 |  | Common | Gnome, Humanoid |  | 6 | 100 | 23 | +17 | +11 | +14 | low-light vision | 25 feet |
+| Gnome Daredevil | Gnome | NPC Core pg. 183 |  | Common | Gnome, Humanoid |  | 2 | 30 | 18 | +8 | +12 | +5 | low-light vision | 25 feet |
+| Gnome Philomath | Gnome | NPC Core pg. 182 |  | Common | Gnome, Humanoid |  | -1 | 7 | 12 | +2 | +5 | +8 | low-light vision | 25 feet |
+| Goblin Bat-Dog |  | Kingmaker Companion Guide pg. 64 |  | Rare | Animal, Mutant, Rare |  | 3 | 53 | 18 | +10 | +12 | +7 | low-light vision, scent (imprecise) 30 feet | 40 feet, fly 40 feet |
+| Goblin Chef | Goblin | NPC Core pg. 186 |  | Common | Goblin, Humanoid |  | 1 | 24 | 16 | +10 | +6 | +5 | darkvision | 25 feet |
+| Goblin Commando | Goblin | Monster Core pg. 174 1.1 |  | Common | Goblin, Humanoid |  | 1 | 18 | 17 | +7 | +8 | +5 | darkvision | 25 feet |
+| Goblin Dog |  | Monster Core pg. 176 1.1 |  | Common | Animal |  | 1 | 17 | 15 | +8 | +8 | +5 | low-light vision, scent (imprecise) 30 feet | 40 feet |
+| Goblin Get Gang | Goblin | NPC Core pg. 187 |  | Common | Goblin, Humanoid, Troop |  | 5 | 90 (4 segments) | 21 | +13 | +14 | +9 | darkvision | 25 feet; troop movement |
+| Goblin Pyro | Goblin | Monster Core pg. 175 1.1 |  | Common | Goblin, Humanoid |  | 1 | 15 | 17 | +5 | +9 | +4 | darkvision | 25 feet |
+| Goblin Rabble | Goblin | Battlecry! pg. 182 |  | Common | Goblin, Humanoid, Troop |  | 4 | 60 (4 segments) | 20 | +11 | +14 | +8 | darkvision | 30 feet; troop movement |
+| Goblin Scavenger | Goblin | NPC Core pg. 186 |  | Common | Goblin, Humanoid |  | 4 | 70 | 21 | +9 | +11 | +13 | darkvision | 25 feet |
+| Goblin Shark | Shark | Howl of the Wild pg. 179 2.1 |  | Common | Animal, Aquatic |  | 5 | 85 | 21 | +16 | +11 | +10 | blood scent, electrolocation 20 feet, scent (imprecise) 100 feet | swim 20 feet |
+| Goblin Snake | Goblin Snake | Monster Core 2 pg. 168 |  | Common | Aberration, Goblin |  | 1 | 15 | 17 | +7 | +10 | +4 | darkvision, scent (imprecise) 30 feet | 25 feet, burrow 5 feet, swim 20 feet |
+| Goblin War Chanter | Goblin | Monster Core pg. 175 1.1 |  | Common | Goblin, Humanoid |  | 1 | 16 | 17 | +7 | +8 | +5 | darkvision | 25 feet |
+| Goblin Warrior | Goblin | Monster Core pg. 174 1.1 |  | Common | Goblin, Humanoid |  | -1 | 6 | 16 | +5 | +7 | +3 | darkvision | 25 feet |
+| Gobmob Snake | Goblin Snake | Monster Core 2 pg. 168 |  | Uncommon | Aberration, Goblin, Mutant, Uncommon |  | 4 | 60 | 21 | +12 | +13 | +8 | darkvision, scent (imprecise) 30 feet | 25 feet, burrow 5 feet, swim 20 feet |
+| God Caller | Mystic | NPC Core pg. 102 |  | Common | Human, Humanoid |  | 10 | 150 | 29 | +18 | +16 | +19 | 25 feet | Gogiteth |
+| Monster Core pg. 177 1.1 | Common	Large | Aberration |  | 12 | darkvision |  |  |  |  |  |  |  | 40 feet, climb 30 feet | Gokeki |
+| Gatewalkers (Hardcover) pg. 259 | Uncommon	Medium | Animal, Uncommon |  | 3 | low-light vision |  |  |  |  |  |  |  | 15 feet, climb 15 feet | Gold Defender |
+| Pathfinder #172: Secrets of the Temple City pg. 49 | Rare	Huge | Construct, Golem, Mindless, Rare |  | 13 | darkvision |  |  |  |  |  |  |  | 20 feet | Gold Defender Garrison |
+| Pathfinder #172: Secrets of the Temple City pg. 50 | Rare	Gargantuan | Construct, Mindless, Rare, Troop |  | 13 | darkvision |  |  |  |  |  |  |  | 20 feet; troop movement | Gold Tank Investor |
+| Pathfinder #178: Punks in a Powderkeg pg. 14 | Uncommon	Medium | Human, Humanoid, Uncommon |  | -1 | 25 feet | Goldpebble |  |  |  |  |  |  | Shining Kingdoms pg. 182 | Common	Large |
+| Aquatic, Beast | 5	90	21	+15	+12	+9	+9 | darkvision, low-light vision, wavesense (imprecise) 60 feet |  |  | 25 feet, swim 25 feet | Golem |  |  |  |  |  |  | Golem | Monster Core 2 pg. 169 |
+| Common	Large | Construct, Earth, Holy | 8	170	25	+19	+12	+16	+16 |  |  | 20 feet | Golgopo |  |  |  |  |  |  | Pathfinder #171: Hurricane's Howl pg. 80 | Uncommon	Small |
+| Construct, Uncommon | 8	130	26	+18	+16	+14	+16 | low-light vision |  |  | 15 feet, climb 15 feet | Goliath Spider |  |  |  |  |  |  | Spider | Monster Core pg. 321 1.1 |
+| Common	Gargantuan | Animal | 11	220	30	+25	+21	+17	+22 |  |  | darkvision, web sense |  |  |  |  |  |  |  | 45 feet, climb 30 feet | Gomwai |
+| Pathfinder #166: Despair on Danger Island pg. 48 | Unique	Medium | Goblin, Humanoid, Unique |  | 12 | darkvision |  |  |  |  |  |  |  | 25 feet | Gongorinan |
+| Qlippoth |  | Monster Core pg. 281 1.1 |  | Uncommon | Fiend, Qlippoth, Uncommon, Unholy |  | 11 | 205 | 31 | +24 | +21 | +20 | darkvision | 40 feet, climb 40 feet, fly 40 feet; unfettered movement |
+| Gorgon |  | Bestiary 2 pg. 132 2.0 |  | Uncommon | Beast, Uncommon |  | 8 | 135 | 28 | +18 | +13 | +17 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Gorilla | Ape | Monster Core pg. 23 1.1 |  | Common | Animal |  | 3 | 45 | 18 | +12 | +9 | +6 | low-light vision, scent (imprecise) 30 feet | 30 feet, climb 30 feet |
+| Gorlak |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 71 |  | Common | Giant, Humanoid |  | 7 | 130 | 23 | +17 | +11 | +14 | darkvision | 25 feet |
+| Gorumite Infantry |  | Prey for Death pg. 27 |  | Unique | Human, Humanoid, Troop, Unique |  | 14 | 255 (16 squares) | 36 | +27 | +22 | +24 | 20 feet; troop movement | Gorumite Veteran |
+| Prey for Death pg. 25 | Uncommon	Medium | Human, Humanoid, Uncommon |  | 12 | 20 feet | Gorumite Warpriest |  |  |  |  |  |  | Prey for Death pg. 25 | Uncommon	Medium |
+| Human, Humanoid, Uncommon | 12	212	32	+22	+20	+24	+23 | 25 feet | Gosreg |  | Dominion of the Black |  |  |  |  |  |  |  | Monster Core pg. 107 1.1 | Uncommon	Medium |
+| Aberration, Uncommon | 11	195	31	+18	+23	+22	+21 | darkvision, thoughtsense 60 feet |  |  | 25 feet | Gourd Leshy |  |  |  |  |  |  | Leshy | Monster Core pg. 217 1.1 |
+| Common	Small | Leshy, Plant | 1	20	17	+5	+9	+7	+5 |  |  | low-light vision |  |  |  |  |  |  |  | 25 feet | Gourd Leshy Witch |
+| Leshy |  | NPC Core pg. 202 |  | Common | Leshy, Plant |  | 6 | 80 | 22 | +11 | +14 | +14 | low-light vision | 25 feet |
+| Grabbles |  | Kingmaker Adventure Path pg. 125 |  | Unique | Fey, Gremlin, Unique |  | 2 | 35 | 18 | +7 | +10 | +5 | darkvision, scent (imprecise) 30 feet | 20 feet; climb 20 feet |
+| Grace “The Rhino” Owano |  | Pathfinder #183: Field of Maidens pg. 86 |  | Unique | Human, Humanoid, Unique |  | 10 | 175 | 29 | +21 | +19 | +16 | 30 feet | Loading... |
+| Grand Inquisitor | Official | NPC Core pg. 121 |  | Common | Human, Humanoid |  | 15 | 215 | 38 | +26 | +20 | +28 | (31 to Sense Motive) | 25 feet |
+| Grandfather Mantis |  | Pathfinder #167: Ready? Fight! pg. 35 |  | Unique | Minion, Monitor, Spirit, Unique |  | 15 | 300 | 36 | +26 | +30 | +25 | 35 feet, climb 35 feet | Grandmaster |
+| Martial Artist |  | NPC Core pg. 74 |  | Common | Human, Humanoid |  | 17 | 310 | 40 | +28 | +32 | +27 | lifesense (imprecise) 60 feet | 50 feet |
+| Granite Glyptodont | Elemental, Earth | Monster Core 2 pg. 147 |  | Common | Earth, Elemental |  | 8 | 145 | 27 | +18 | +13 | +17 | darkvision, tremorsense (imprecise) 90 feet | 30 feet, burrow 20 feet; earth glide |
+| Granite Vulture |  | Pathfinder #181: Zombie Feast pg. 46 |  | Rare | Fiend, Rare |  | 2 | 28 | 18 | +6 | +8 | +10 | darkvision, scent (imprecise) 30 feet | 20 feet, fly 25 feet |
+| Grappling Spirit |  | Book of the Dead pg. 107 |  | Uncommon | Incorporeal, Spirit, Uncommon, Undead |  | 9 | 125 ( negative healing ) | 27 | +19 | +19 | +15 | darkvision | fly 60 feet |
+| Loading... | Grauladon | Pathfinder #145: Hellknight Hill pg. 88 |  | Uncommon | Dragon, Uncommon |  | 2 | 35 | 17 | +12 | +6 | +7 | darkvision, scent (imprecise) 30 feet | 20 feet, swim 30 feet |
+| Grave Hag | Hag | Pathfinder #182: Graveclaw pg. 85 |  | Uncommon | Hag, Humanoid, Uncommon |  | 9 | 155 | 28 | +19 | +16 | +18 | darkvision | 25 feet |
+| Grave Karina |  | Pathfinder #172: Secrets of the Temple City pg. 31 |  | Rare | Beast, Fiend, Rare |  | 11 | 240 | 30 | +21 | +24 | +19 | darkvision, smoke vision | 10 feet, fly 50 feet |
+| Grave Robber | Criminal | NPC Core pg. 18 |  | Common | Human, Humanoid |  | 1 | 20 | 15 | +7 | +7 | +5 | 25 feet | Grave Spinosaurus |
+| Pathfinder #166: Despair on Danger Island pg. 32 | Unique	Gargantuan | Animal, Dinosaur, Unique |  | 15 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 40 feet, swim 30 feet | Gravedigger |
+| Laborer |  | NPC Core pg. 69 |  | Common | Human, Humanoid |  | 1 | 20 | 15 | +8 | +4 | +7 | 25 feet | Graveknight |
+| Graveknight |  | Monster Core pg. 179 1.1 |  | Common | Graveknight, Undead, Unholy |  | 10 | 175 (rejuvenation, void healing (page 360)) | 31 | +21 | +19 | +18 | darkvision | 25 feet |
+| Graveknight Captain | Graveknight | Monster Core 2 pg. 172 |  | Uncommon | Uncommon, Undead, Unholy |  | 6 | 90 (rejuvenation, void healing ) | 24 | +16 | +14 | +13 | darkvision | 25 feet |
+| Graveknight Champion | Graveknight | Monster Core 2 pg. 173 |  | Uncommon | Uncommon, Undead, Unholy |  | 15 | 275 (rejuvenation, void healing ) | 38 | +28 | +26 | +25 | darkvision | 25 feet |
+| Graveknight Warmaster | Graveknight | Monster Core 2 pg. 172 |  | Uncommon | Uncommon, Undead, Unholy |  | 14 | 255 (rejuvenation, void healing ) | 37 | +27 | +24 | +24 | darkvision | 25 feet |
+| Graveshell |  | Pathfinder #145: Hellknight Hill pg. 89 |  | Uncommon | Beast, Uncommon |  | 1 | 20 | 17 | +8 | +2 | +4 | darkvision, wavesense (imprecise) 30 feet | 20 feet, swim 20 feet |
+| Gray Death |  | Night of the Gray Death pg. 68 |  | Rare | Incorporeal, Rare, Spirit, Undead |  | 20 | 330 | 44 | +31 | +35 | +33 | darkvision, lifesense 1,000 feet | fly 60 feet |
+| Gray Gardener Assassin |  | Night of the Gray Death pg. 20 |  | Rare | Human, Humanoid, Rare |  | 14 | 255 | 36 | +22 | +27 | +26 | 25 feet | Gray Gardener Director General |
+| Night of the Gray Death pg. 21 | Rare	Medium | Human, Humanoid, Rare |  | 16 | 25 feet | Gray Gardener Enforcer |  |  |  |  |  |  | Night of the Gray Death pg. 14 | Rare	Medium |
+| Human, Humanoid, Mortic, Rare | 17	350 ( negative healing )	39	+26	+27	+30	+28 | darkvision |  |  | 25 feet | Gray Ooze |  |  |  |  |  |  | Ooze | Bestiary 2 pg. 194 2.0 |
+| Common	Medium | Mindless, Ooze | 4	60	14	+12	+10	+8	+8 |  |  | motion sense 60 feet, no vision |  |  |  |  |  |  |  | 10 feet, climb 10 feet | Gray Worm |
+| Cave Worm |  | Pathfinder #194: Cult of the Cave Worm pg. 67 |  | Rare | Beast, Rare |  | 11 | 248 ( negative healing ) | 28 | +24 | +16 | +19 | blood scent, darkvision, tremorsense (imprecise) 100 feet | 20 feet, burrow 40 feet |
+| Graylok Ambusher |  | Pathfinder #177: Burning Tundra pg. 21 |  | Uncommon | Cold, Giant, Humanoid, Uncommon |  | 8 | 130 | 26 | +16 | +19 | +13 | low-light vision | 30 feet; ice stride |
+| Graylok Artillerist |  | Pathfinder #177: Burning Tundra pg. 19 |  | Uncommon | Cold, Giant, Humanoid, Uncommon |  | 8 | 100 | 26 | +19 | +16 | +13 | low-light vision | 30 feet; ice stride |
+| Graylok Gatebreaker |  | Pathfinder #177: Burning Tundra pg. 20 |  | Uncommon | Cold, Giant, Humanoid, Uncommon |  | 8 | 130 | 28 | +21 | +14 | +14 | low-light vision | 25 feet; ice stride |
+| Great Cyclops | Cyclops | Monster Core pg. 71 1.1 |  | Uncommon | Giant, Humanoid, Mutant, Uncommon |  | 12 | 235 | 32 | +25 | +19 | +22 | low-light vision | 40 feet |
+| Great Grodair |  | Pathfinder #170: Spoken on the Song Wind pg. 59 |  | Unique | Amphibious, Beast, Fey, Unique, Water |  | 7 | 130 | 23 | +18 | +12 | +14 | darkvision | 25 feet, swim 50 feet |
+| Great Ironbill | War Beast | Pathfinder #209: Destroyer's Doom pg. 86 |  | Common | Animal |  | 5 | 58 | 22 | +9 | +15 | +10 | low-light vision | 20 feet, fly 40 feet |
+| Great White Shark | Shark | Monster Core pg. 307 1.1 |  | Common | Animal, Aquatic |  | 4 | 60 | 21 | +12 | +10 | +9 | blood scent, scent (imprecise) 100 feet | swim 40 feet |
+| Loading... | Greater Chimera | Chimera |  |  | Howl of the Wild pg. 133 2.1 |  | Rare | Huge |  |  |  |  | Beast, Rare | 13	235	33	+26	+23	+20	+23 |
+| darkvision, scent (imprecise) 30 feet | 25 feet, fly 40 feet | Greater Hell Hound |  |  | Hell Hound |  |  |  |  |  |  |  | Monster Core pg. 194 1.1 | Common	Large |
+| Beast, Fiend, Fire, Unholy | 9	150	28	+21	+19	+16	+19 | darkvision, scent (imprecise) 120 feet |  |  | 40 feet | Greater Nightmare |  |  |  |  |  |  | Nightmare | Monster Core pg. 238 1.1 |
+| Common	Huge | Beast, Fiend, Unholy | 11	200	31	+25	+24	+21	+22 |  |  | darkvision |  |  |  |  |  |  |  | 60 feet, fly 120 feet | Greater Shadow |
+| Shadow |  | Monster Core pg. 306 1.1 |  | Common | Incorporeal, Undead, Unholy |  | 7 | 75 ( void healing ) | 24 | +11 | +18 | +15 | darkvision | fly 30 feet |
+| Greedspawn Soldiers |  | Pathfinder Adventure Path #219: Lord of the Trinity Star pg. 17 |  | Rare | Aberration, Rare |  | 10 | 180 | 30 | +22 | +19 | +17 | darkvision, sin scent (imprecise) 30 feet | 30 feet |
+| Green Man |  | Monster Core 2 pg. 174 |  | Rare | Leshy, Plant, Rare |  | 24 | 525 | 51 | +43 | +39 | +42 | darkvision, plantsense 60 feet | 40 feet, climb 40 feet |
+| Green Monkey | Spirit Guide | Gatewalkers (Hardcover) pg. 268 |  | Uncommon | Beast, Incorporeal, Spirit, Uncommon |  | 3 | 50 | 19 | +6 | +12 | +9 | darkvision | 30 feet, climb 30 feet |
+| Loading... | Grendel | Bestiary 2 pg. 136 2.0 |  | Unique | Humanoid, Unique |  | 19 | 360 | 44 | +36 | +32 | +31 | darkvision, keen hearing 120 feet | 40 feet |
+| Grick |  | Crown of the Kobold King pg. 120, Pathfinder #157: Devil at the Dreaming Palace pg. 35 |  | Uncommon | Aberration, Uncommon |  | 3 | 35 | 20 | +7 | +10 | +10 | darkvision, scent (imprecise) 30 feet | 25 feet, climb 20 feet |
+| Griffon | Griffon | Monster Core pg. 182 1.1 |  | Common | Animal |  | 4 | 60 | 21 | +13 | +13 | +7 | darkvision, scent (imprecise) 60 feet | 25 feet, fly 60 feet |
+| Grig | Sprite | Bestiary pg. 308 |  | Common | Fey, Sprite |  | 1 | 20 | 17 | +6 | +9 | +9 | low-light vision | 25 feet, fly 30 feet |
+| Grigori |  | Kingmaker Adventure Path pg. 596 |  | Unique | Human, Humanoid, Unique |  | 7 | 110 | 23 | +12 | +15 | +18 | 25 feet | Grikkitog |
+| Monster Core pg. 183 1.1 | Common	Huge | Aberration, Earth |  | 14 | darkvision, manifold vision, tremorsense (imprecise) 30 feet |  |  |  |  |  |  |  | 20 feet; burrow 20 feet, earth glide | Grim Reaper |
+| Grim Reaper |  | Monster Core pg. 184 1.1 |  | Unique | Undead, Unholy, Unique |  | 21 | 320 (death's grace, void healing ) | 47 | +37 | +41 | +38 | darkvision, see the unseen, status sight, truesight | 50 feet, fly 75 feet |
+| Grimbal |  | Crown of the Kobold King pg. 76 |  | Unique | Ghost, Incorporeal, Spirit, Undead, Unique |  | 6 | 75 ( negative healing , rejuvenation) | 22 | +10 | +16 | +13 | darkvision | fly 25 feet |
+| Grimple | Gremlin | Monster Core 2 pg. 176 |  | Common | Fey, Gremlin |  | -1 | 9 | 14 | +5 | +7 | +4 | low-light vision | 10 feet, climb 20 feet, fly 20 feet |
+| Grimstalker |  | Bestiary 2 pg. 137 2.0 |  | Common | Fey |  | 5 | 60 | 22 | +9 | +15 | +12 | low-light vision | 40 feet, climb 20 feet; woodland stride |
+| Grindylow |  | Monster Core pg. 186 1.1 |  | Common | Aberration, Amphibious |  | 0 | 14 | 15 | +6 | +7 | +5 | darkvision | 10 feet, swim 25 feet |
+| Grioth Cultist | Grioth | Monster Core 2 pg. 179 |  | Rare | Grioth, Humanoid, Rare |  | 3 | 40 | 18 | +7 | +10 | +10 | greater darkvision, echolocation (precise) 20 feet | 25 feet, fly 30 feet |
+| Grioth Scout | Grioth | Monster Core 2 pg. 179 |  | Uncommon | Grioth, Humanoid, Uncommon |  | 3 | 18 | 16 | +5 | +9 | +7 | greater darkvision, echolocation (precise) 20 feet | 25 feet, fly 30 feet |
+| Grippli Archer | Grippli | Pathfinder #146: Cult of Cinders pg. 87 |  | Common | Grippli, Humanoid |  | 3 | 44 | 20 | +9 | +11 | +10 | darkvision | 25 feet, climb 20 feet |
+| Grippli Greenspeaker | Grippli | Pathfinder #146: Cult of Cinders pg. 87 |  | Common | Grippli, Humanoid |  | 5 | 71 | 21 | +10 | +13 | +13 | darkvision | 25 feet, climb 20 feet |
+| Grippli Jinxer | Grippli | Pathfinder #170: Spoken on the Song Wind pg. 83 |  | Common | Grippli, Humanoid |  | 6 | 95 | 23 | +12 | +14 | +16 | darkvision | 25 feet, climb 20 feet; jungle stride |
+| Grippli Scout | Grippli | Pathfinder #146: Cult of Cinders pg. 86 |  | Common | Grippli, Humanoid |  | 1 | 20 | 18 | +7 | +9 | +6 | darkvision | 25 feet, climb 20 feet |
+| Grippli Skirmisher | Grippli | Pathfinder #170: Spoken on the Song Wind pg. 82 |  | Common | Grippli, Humanoid |  | 4 | 60 | 22 | +11 | +14 | +9 | darkvision | 25 feet, climb 20 feet; jungle stride |
+| Grisantian Lion |  | Monster Core 2 pg. 180 |  | Rare | Beast, Primal, Rare |  | 12 | 215 | 32 | +25 | +22 | +19 | low-light vision, scent (imprecise) 60 feet | 35 feet, climb 20 feet |
+| Gristleburst | No-Prep Character: Gristleburst | Unique	Small |  |  | Goblin, Humanoid, Unique |  | 2 | 30 | 18 | +10 | +8 | +6 | 25 feet | Gritblight |
+| Pathfinder #203 Shepherd of Decay pg. 84 | Rare	Large | Earth, Elemental, Rare |  | 13 | darkvision, blight sense (precise) 60 feet, tremorsense (imprecise) 120 feet, grit vision |  |  |  |  |  |  |  | 30 feet, burrow 30 feet; earth glide | Grizzer |
+| Pathfinder #210: Whispers in the Dirt pg. 84 | Rare	Medium | Fey, Rare |  | 10 | darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 40 feet, climb 40 feet, swim 20 feet | Grizzly Bear |
+| Bear |  | Monster Core pg. 41 1.1 |  | Common | Animal |  | 3 | 59 | 17 | +12 | +6 | +8 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Grodair |  | Monster Core 2 pg. 181 |  | Common | Amphibious, Beast, Fey, Water |  | 5 | 90 | 20 | +15 | +9 | +11 | darkvision | 25 feet, swim 50 feet |
+| Grogrisant |  | Monsters of Myth pg. 34 |  | Unique | Beast, Primal, Unique |  | 16 | 295 | 38 | +30 | +28 | +25 | darkvision, low-light vision, scent (imprecise) 60 feet | 40 feet, climb 20 feet |
+| Gromog |  | Kingmaker Adventure Path pg. 28 |  | Unique | Giant, Humanoid, Unique |  | 2 | 28 | 16 | +11 | +4 | +5 | blinded | 25 feet |
+| Grootslang |  | The Mwangi Expanse pg. 298 2.0 |  | Uncommon | Beast, Uncommon |  | 16 | 370 | 38 | +30 | +27 | +26 | darkvision, scent (imprecise) 60 feet | 40 feet, swim 30 feet |
+| Groplit |  | Pathfinder #175: Broken Tusk Moon pg. 83 |  | Uncommon | Amphibious, Animal, Uncommon |  | 0 | 16 | 16 | +6 | +7 | +4 | darkvision | 25 feet, swim 20 feet |
+| Grothlut | Fleshwarp | Monster Core pg. 152 1.1 |  | Common | Aberration, Mindless |  | 3 | 50 | 17 | +11 | +5 | +7 | darkvision | 20 feet |
+| Grouloop |  | Pathfinder #171: Hurricane's Howl pg. 33 |  | Unique | Amphibious, Boggard, Humanoid, Unique |  | 9 | 185 | 27 | +18 | +15 | +21 | darkvision | 20 feet, swim 25 feet; swamp stride |
+| Grusk The Pusk |  | Pathfinder #214: The Broken Palace pg. 25 |  | Unique | Demon, Fiend, Unholy, Unique |  | 4 | 70 | 20 | +13 | +8 | +11 | darkvision | 20 feet |
+| Guard | Official | NPC Core pg. 110 |  | Common | Human, Humanoid |  | 1 | 20 | 16 | +7 | +5 | +5 | (8 to find concealed objects) | 25 feet |
+| Guard Dog | Dog | Monster Core pg. 102 1.1 |  | Common | Animal |  | -1 | 8 | 15 | +5 | +7 | +4 | low-light vision, scent (imprecise) 30 feet | 30 feet |
+| Loading... | Guecubu | Bestiary 3 pg. 126 |  | Uncommon | Earth, Uncommon, Undead |  | 8 | 110 ( negative healing ) | 27 | +17 | +16 | +15 | darkvision, tremorsense (imprecise) 60 feet | 25 feet, burrow 15 feet; earth glide |
+| Gug |  | Monster Core 2 pg. 184 |  | Common | Aberration |  | 10 | 175 | 30 | +22 | +17 | +19 | darkvision | 40 feet, climb 20 feet |
+| Guhdggi | Nindoru | Pathfinder #197: Let the Leaves Fall pg. 86 |  | Rare | Fiend, Nindoru, Rare |  | 5 | 80 | 21 | +13 | +9 | +14 | darkvision | 15 feet |
+| Guide | Explorer | NPC Core pg. 55 |  | Common | Human, Humanoid |  | 4 | 60 | 20 | +14 | +8 | +11 | 25 feet | Guildmaster |
+| Artisan |  | NPC Core pg. 9 |  | Common | Human, Humanoid |  | 8 | 135 | 26 | +14 | +14 | +17 | 25 feet | Guillotine Golem |
+| Golem |  | Night of the Gray Death pg. 32 |  | Rare | Construct, Golem, Mindless, Rare |  | 18 | 270 | 42 | +33 | +28 | +29 | darkvision | 20 feet |
+| Guloval | Agathion | Pathfinder #183: Field of Maidens pg. 81 |  | Uncommon | Agathion, Celestial, Uncommon |  | 12 | 250 | 32 | +22 | +21 | +24 | darkvision | 25 feet, burrow 20 feet |
+| Gulzash |  | Pathfinder #164: Hands of the Devil pg. 35 |  | Unique | Humanoid, Unique, Xulgath |  | 4 | 72 | 20 | +11 | +10 | +13 | darkvision | 30 feet |
+| Loading... | Gunmarshal | Pathfinder #178: Punks in a Powderkeg pg. 57 |  | Uncommon | Humanoid, Uncommon |  | 2 | 30 | 18 | +10 | +10 | +4 | 25 feet | Gunpowder Ooze |
+| Ooze |  | Impossible Lands pg. 334 |  | Common | Mindless, Ooze |  | 14 | 400 | 29 | +28 | +21 | +24 | motion sense 120 feet, no vision | 20 feet, climb 20 feet |
+| Gunsmith | Engineer | NPC Core pg. 42 |  | Common | Human, Humanoid |  | 1 | 16 | 16 | +5 | +8 | +6 | 25 feet | Gunwitch |
+| Maverick |  | NPC Core pg. 78 |  | Rare | Human, Humanoid, Rare |  | 7 | 90 | 23 | +12 | +15 | +15 | 25 feet | Loading... |
+| Gurglegut |  | Pathfinder #199: To Bloom Below the Web pg. 54 |  | Unique | Humanoid, Unique |  | 12 | 216 | 32 | +23 | +20 | +23 | low-light vision | 25 feet |
+| Gurija |  | Kingmaker Adventure Path pg. 207 |  | Unique | Giant, Troll, Unique |  | 5 | 95 | 21 | +13 | +13 | +11 | darkvision | 30 feet |
+| Gurlunk |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 56 |  | Unique | Goblin, Humanoid, Unique |  | 4 | 60 | 21 | +10 | +12 | +11 | darkvision | 25 feet |
+| Gurtlekep |  | Crown of the Kobold King pg. 34 |  | Common | Humanoid, Kobold |  | 2 | 30 | 18 | +10 | +8 | +5 | darkvision | 25 feet |
+| Guthallath |  | Monster Core pg. 187 1.1 |  | Rare | Construct, Rare |  | 19 | 325 | 43 | +38 | +32 | +30 | darkvision, truesight | 40 feet, burrow 50 feet |
+| Gutter Ooze | Ooze | Monster Core 2 pg. 240 |  | Common | Mindless, Ooze |  | -1 | 20 | 7 | +8 | +3 | +5 | motion sense 30 feet, no vision | 10 feet, swim 10 feet |
+| Gylou | Devil | Monster Core pg. 91 1.1 |  | Common | Devil, Fiend, Unholy |  | 14 | 240 | 36 | +22 | +25 | +28 | greater darkvision, truesight | 35 feet, climb 35 feet |
+| Loading... | Hadrinnex | Monster Core 2 pg. 185 |  | Uncommon | Aberration, Uncommon |  | 8 | 120 | 27 | +18 | +13 | +17 | darkvision | 40 feet |
+| Hadrosaurid | Dinosaur | Monster Core pg. 98 1.1 |  | Common | Animal, Dinosaur |  | 4 | 60 | 21 | +12 | +10 | +11 | low-light vision, scent (imprecise) 30 feet | 30 feet |
+| Hagegraf Royal Guard | Duergar | Pathfinder #194: Cult of the Cave Worm pg. 86 |  | Uncommon | Duergar, Dwarf, Humanoid, Uncommon |  | 5 | 90 | 22 | +14 | +11 | +14 | darkvision, iron mind | 20 feet |
+| Halbrux Far-Sight |  | Pathfinder #171: Hurricane's Howl pg. 88 |  | Unique | Giant, Humanoid, Unique |  | 11 | 195 | 30 | +23 | +17 | +21 | low-light vision | 30 feet |
+| Halfling Head Chef | Halfling | NPC Core pg. 190 |  | Common | Halfling, Humanoid |  | 2 | 36 | 17 | +8 | +7 | +7 | (15 to smell and taste) keen eyes, scent (imprecise) 30 feet | 25 feet |
+| Halfling Lucky Draw | Halfling | Battlecry! pg. 182 |  | Common | Halfling, Humanoid, Troop |  | 8 | 135 (4 segments) | 26 | +13 | +16 | +19 | 25 feet; troop movement | Halfling Smuggler |
+| Halfling |  | NPC Core pg. 191 |  | Common | Halfling, Humanoid |  | 6 | 95 | 23 | +12 | +16 | +13 | keen eyes | 25 feet |
+| Halfling Street Watcher | Halfling | Monster Core pg. 192 1.1 |  | Common | Halfling, Humanoid |  | -1 | 8 | 15 | +3 | +8 | +5 | 25 feet | Halfling Troublemaker |
+| Halfling |  | Monster Core pg. 192 1.1 |  | Common | Humanoid |  | 1 | 18 | 16 | +4 | +10 | +7 | 30 feet | Halfling Yarnspinner |
+| Halfling |  | NPC Core pg. 192 |  | Common | Halfling, Humanoid |  | 7 | 110 | 24 | +11 | +15 | +18 | keen eyes | 25 feet |
+| Halspin the Stung |  | Pathfinder #167: Ready? Fight! pg. 40 |  | Unique | Catfolk, Humanoid, Unique |  | 15 | 250 | 35 | +26 | +28 | +26 | low-light vision | 25 feet, climb 10 feet |
+| Hamatula | Devil | Bestiary 2 pg. 74 2.0 |  | Common | Devil, Fiend |  | 11 | 165 | 31 | +23 | +20 | +20 | greater darkvision | 25 feet, fly 30 feet |
+| Hana's Hundreds |  | Pathfinder #166: Despair on Danger Island pg. 51 |  | Unique | Human, Humanoid, Troop, Unique |  | 15 | 270 | 37 | +29 | +23 | +23 | 30 feet | Haniver |
+| Gremlin |  | Monster Core 2 pg. 176 |  | Common | Amphibious, Fey, Gremlin |  | -1 | 8 | 15 | +4 | +7 | +3 | darkvision | 10 feet, fly 20 feet, swim 20 feet |
+| Hannis Drelev |  | Kingmaker Adventure Path pg. 597 |  | Unique | Human, Humanoid, Unique |  | 12 | 220 | 33 | +23 | +25 | +18 | 25 feet | Loading... |
+| Loading... | Happs Bydon | Kingmaker Adventure Path pg. 167 |  | Unique | Human, Humanoid, Unique |  | 0 | 17 | 15 | +6 | +7 | +4 | 25 feet | Harbor Seal |
+| Seal |  | Howl of the Wild pg. 178 2.1 |  | Common | Animal |  | 2 | 30 | 17 | +9 | +11 | +5 | darkvision, scent (imprecise) 20 feet, whisker sense 30 feet | 15 feet, swim 30 feet |
+| Harbormaster | Official | NPC Core pg. 111 |  | Common | Human, Humanoid |  | 3 | 45 | 18 | +8 | +10 | +8 | 25 feet | Hardhead Mole |
+| Howl of the Wild pg. 158 2.1 | Common	Small | Animal |  | 0 | low-light vision, tremorsense (imprecise) 30 feet |  |  |  |  |  |  |  | 20 feet, burrow 20 feet | Hargulka |
+| Kingmaker Adventure Path pg. 598 | Unique	Large | Giant, Troll, Unique |  | 8 | darkvision |  |  |  |  |  |  |  | 30 feet | Harlo Krant |
+| Book of the Dead pg. 210 | Unique	Medium | Undead, Unique, Zombie |  | 4 | darkvision |  |  |  |  |  |  |  | 25 feet | Harmona |
+| Bestiary 3 pg. 132 | Uncommon	Tiny | Fey, Uncommon |  | 11 | low-light vision |  |  |  |  |  |  |  | 10 feet, fly 60 feet | Harmony In Agony |
+| Pathfinder #184: The Ghouls Hunger pg. 60 | Unique	Medium | Undead, Unique, Vampire |  | 13 | darkvision |  |  |  |  |  |  |  | 25 feet, climb 25 feet | Harpy |
+| Monster Core pg. 193 1.1 | Common	Medium | Air, Beast, Humanoid |  | 5 | darkvision |  |  |  |  |  |  |  | 20 feet, fly 60 feet | Loading... |
+| Loading... | Harrow Doll | Pathfinder #154: Siege of the Dinosaurs pg. 81 |  | Uncommon | Construct, Uncommon |  | 8 | 120 | 26 | +16 | +16 | +17 | darkvision | 25 feet |
+| Harrow Reader | Mystic | NPC Core pg. 96 |  | Common | Human, Humanoid |  | -1 | 8 | 14 | +3 | +6 | +10 | 25 feet | Harvest Regiment |
+| Rage of Elements pg. 214 2.0 | Common	Gargantuan | Elemental, Plant, Troop, Wood |  | 8 | low-light vision |  |  |  |  |  |  |  | 25 feet; troop movement | Hateful Hermit |
+| Kingmaker Adventure Path pg. 74 | Unique	Medium | Human, Humanoid, Unique |  | 5 | 25 feet; trackless step | Hateful Loggers |  |  |  |  |  |  | Pathfinder #201: Pactbreaker pg. 41 | Common	Medium |
+| Human, Humanoid | 4	70	20	+14	+12	+8	+11 | 25 feet | Loading... |  | Headless Xulgath |  |  |  |  |  |  |  | Pathfinder #153: Life's Long Shadows pg. 50 | Unique	Large |
+| Humanoid, Unique, Xulgath | 11	195	29	+24	+20	+22	+20 | motion sense, no vision |  |  | 20 feet | Heart-Eating Vulture |  |  |  |  |  |  | Pathfinder #197: Let the Leaves Fall pg. 30 | Unique	Large |
+| Beast, Unique | 4	68	21	+13	+11	+8	+10 | low-light vision |  |  | 10 feet, fly 35 feet | Heavy Cavalry |  |  |  |  |  |  | Military | NPC Core pg. 92 |
+| Common	Gargantuan | Animal, Human, Humanoid, Troop | 7	105 (4 segments)	25	+17	+13	+14	+14 |  |  | 40 feet; troop movement | Hegessik |  |  |  |  |  |  | Protean | Pathfinder #162: Ruins of the Radiant Siege pg. 80 |
+| Common	Large | Monitor, Protean | 15	250 ( fast healing 10)	37	+26	+23	+29	+29 |  |  | darkvision, entropy sense (imprecise) 60 feet |  |  |  |  |  |  |  | 30 feet, fly 30 feet, swim 30 feet; freedom of movement | Hegremon |
+| Pathfinder #177: Burning Tundra pg. 86 | Unique	Large | Cold, Giant, Humanoid, Unique |  | 13 | low-light vision |  |  |  |  |  |  |  | 30 feet, climb 15 feet; ice stride | Heh Shan-Bao |
+| Pathfinder #198: No Breath to Cry pg. 89 | Unique	Medium | Human, Humanoid, Unique |  | 9 | 25 feet | Heh Shan-Bao (Murderous Fiendish Vessel) |  |  |  |  |  |  | Pathfinder #199: To Bloom Below the Web pg. 88 | Common	Medium |
+| Fiend, Illusion, Mental | 13	180	35	+24	+25	+21	+23 | darkvision |  |  | 20 feet, fly 20 feet | Hekatonkheires Titan |  |  |  |  |  |  | Titan | Monster Core 2 pg. 322 |
+| Rare	Gargantuan | Aberration, Rare, Titan | 24	500	52	+44	+40	+37	+43 |  |  | darkvision, truesight |  |  |  |  |  |  |  | 60 feet, fly 60 feet; unfettered movement | Loading... |
+| Helg Eats-The-Eaters |  | Pathfinder #154: Siege of the Dinosaurs pg. 86 |  | Unique | Aberration, Unique |  | 15 | 275 | 37 | +29 | +23 | +26 | darkvision | 40 feet, climb 20 feet |
+| Heliocoprion | Shark | Howl of the Wild pg. 179 2.1 |  | Uncommon | Animal, Aquatic, Uncommon |  | 10 | 230 | 28 | +22 | +19 | +16 | blood scent, scent (imprecise) 100 feet | swim 60 feet |
+| Hell Hound | Hell Hound | Monster Core pg. 194 1.1 |  | Common | Beast, Fiend, Fire, Unholy |  | 3 | 40 | 17 | +9 | +10 | +7 | darkvision, scent (imprecise) 60 feet | 40 feet |
+| Hell Hound Pack | Hell Hound | Battlecry! pg. 183 |  | Common | Beast, Fiend, Fire, Troop, Unholy |  | 8 | 135 (4 segments) | 26 | +16 | +17 | +14 | darkvision, scent (imprecise) 60 feet | 40 feet; troop movement |
+| Hellbound Attorney | Devil | Monster Core 2 pg. 99 |  | Uncommon | Devil, Fiend, Human, Humanoid, Uncommon, Unholy |  | 4 | 60 | 20 | +9 | +12 | +13 | greater darkvision | 20 feet |
+| Hellcat |  | Monster Core 2 pg. 190 |  | Common | Beast, Fiend, Unholy |  | 7 | 110 | 25 | +15 | +17 | +12 | darkvision, scent (imprecise) 30 feet | 35 feet |
+| Hellcrown |  | Pathfinder #145: Hellknight Hill pg. 90 |  | Uncommon | Uncommon, Undead |  | 1 | 20 ( negative healing ) | 16 | +4 | +6 | +10 | darkvision | fly 25 feet |
+| Hellknight Armiger | Hellknights | Character Guide pg. 120 2.0 |  | Common | Dwarf, Humanoid |  | 4 | 75 | 22 | +12 | +10 | +10 | darkvision | 20 feet; ignores 5 feet of reduction from being encumbered |
+| Hellknight Cavalry Brigade | Military | NPC Core pg. 93 |  | Common | Animal, Human, Humanoid, Troop |  | 8 | 135 (4 segments) | 27 | +18 | +13 | +16 | 40 feet; trailblazing stride, troop movement | Hellknight Paravicar |
+| Hellknights |  | Character Guide pg. 121 2.0 |  | Common | Human, Humanoid |  | 11 | 145 | 30 | +19 | +19 | +24 | 25 feet | Hellshadow |
+| Pathfinder #204: Stage Fright pg. 86 | Rare	Large | Fiend, Incorporeal, Rare, Undead, Unholy |  | 13 | darkvision |  |  |  |  |  |  |  | fly 40 feet | Hellwasp Swarm |
+| Bestiary 3 pg. 133 | Common	Large | Fiend, Swarm |  | 8 | darkvision |  |  |  |  |  |  |  | 20 feet; fly 40 feet | Loading... |
+| Herecite of Zevgavizeb | Herecite | Pathfinder #153: Life's Long Shadows pg. 80 |  | Uncommon | Uncommon, Undead |  | 10 | 200 ( negative healing ) | 30 | +19 | +20 | +22 | darkvision, detect alignment (good only) | 30 feet |
+| Herexen | Herexen | Monster Core pg. 195 1.1 |  | Uncommon | Uncommon, Undead, Unholy |  | 2 | 30 ( void healing (page 360)) | 17 | +5 | +8 | +10 | darkvision | 25 feet |
+| Hermean Mutant |  | Pathfinder #150: Broken Promises pg. 40 |  | Rare | Aberration, Mutant, Rare |  | 19 | 380 | 43 | +36 | +28 | +27 | darkvision | 30 feet |
+| Hermit Crab Swarm | Crab | Monster Core 2 pg. 77 |  | Common | Amphibious, Animal, Swarm |  | 4 | 42 | 20 | +13 | +10 | +7 | darkvision, tremorsense (imprecise) 15 feet | 30 feet, swim 15 feet |
+| Hero Hunter | Villain | NPC Core pg. 162 |  | Common | Human, Humanoid |  | 13 | 230 | 33 | +22 | +25 | +21 | 25 feet, climb 10 feet | Hesperid |
+| Nymph |  | Monster Core 2 pg. 236 |  | Common | Fey, Light, Nymph |  | 9 | 175 | 27 | +15 | +21 | +19 | low-light vision | 30 feet, fly 60 feet |
+| Hesperid Queen | Nymph | Monster Core 2 pg. 239 |  | Uncommon | Fey, Leshy, Nymph, Uncommon |  | 19 | 305 | 44 | +31 | +36 | +34 | low-light vision | 30 feet, fly 90 feet |
+| Heuberk Thropp |  | Pathfinder #147: Tomorrow Must Burn pg. 7 |  | Unique | Human, Humanoid, Unique |  | 9 | 155 | 28 | +21 | +15 | +18 | 25 feet | Hexmoth |
+| Hexmoth |  | Howl of the Wild pg. 159 2.1 |  | Common | Animal |  | 8 | 105 | 27 | +19 | +16 | +11 | arcanosense (precise) 120 feet | 20 feet, fly 40 feet |
+| Hexworm | Hexmoth | Howl of the Wild pg. 159 2.1 |  | Common | Animal |  | 4 | 45 | 20 | +11 | +14 | +6 | arcanosense (precise) 60 feet | 20 feet |
+| Hezle |  | Pathfinder #146: Cult of Cinders pg. 50 |  | Unique | Humanoid, Kobold, Unique |  | 8 | 122 | 27 | +14 | +18 | +16 | darkvision | 25 feet |
+| Loading... | Loading... | High Priest of Pharasma |  |  | Devotee |  |  |  |  |  |  |  | NPC Core pg. 33 | Common	Medium |
+| Human, Humanoid | 9	150	26	+16	+17	+21	+20 | 25 feet | High Roller |  | Maverick |  |  |  |  |  |  |  | NPC Core pg. 79 | Common	Medium |
+| Human, Humanoid | 11	150	30	+17	+24	+22	+22 | (26 for Sense Motive) |  |  | 25 feet | Hill Giant |  |  |  |  |  |  | Giant | Bestiary pg. 170 |
+| Common	Large | Earth, Giant, Humanoid | 7	140	24	+17	+12	+13	+13 |  |  | low-light vision |  |  |  |  |  |  |  | 35 feet | Hill Giant Butcher |
+| Kingmaker Adventure Path pg. 110 | Rare	Large | Earth, Giant, Humanoid, Rare |  | 14 | low-light vision |  |  |  |  |  |  |  | 35 feet | Hillstomper |
+| Kingmaker Adventure Path pg. 114 | Unique	Huge | Animal, Unique |  | 11 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 45 feetVariant mammoth | Hippocampus |
+| Hippocampus |  | Monster Core pg. 196 1.1 |  | Common | Animal, Aquatic |  | 1 | 24 | 15 | +9 | +4 | +6 | darkvision, scent (imprecise) 30 feet | 5 feet, swim 40 feet |
+| Hippogriff |  | Monster Core pg. 197 1.1 |  | Common | Animal |  | 2 | 32 | 18 | +8 | +9 | +6 | darkvision, scent (imprecise) 30 feet | 30 feet, fly 65 feet |
+| Hippopotamus | Hippopotamus | Monster Core 2 pg. 191 |  | Common | Animal |  | 5 | 85 | 21 | +15 | +9 | +11 | low-light vision, scent (imprecise) 30 feet | 25 feet, swim 20 feet |
+| Hippopotamus Topiary | Living Topiary | Monster Core 2 pg. 215 |  | Common | Plant |  | 11 | 220 | 30 | +24 | +21 | +18 | branchlocation (precise) 30 feet, low-light vision, scent (imprecise) 60 feet | 25 feet, swim 30 feet; walk through plants |
+| Hobgoblin Archer | Hobgoblin | Monster Core pg. 199 1.1 |  | Common | Hobgoblin, Humanoid |  | 4 | 50 | 23 | +10 | +12 | +8 | darkvision | 25 feet |
+| Hobgoblin Battalion | Hobgoblin | NPC Core pg. 194 |  | Common | Hobgoblin, Humanoid, Troop |  | 6 | 90 (4 segments) | 23 | +15 | +12 | +14 | darkvision | 25 feet; troop movement |
+| Hobgoblin General | Hobgoblin | Monster Core pg. 199 1.1 |  | Common | Hobgoblin, Humanoid |  | 6 | 90 | 25 | +12 | +15 | +13 | darkvision | 25 feet |
+| Hobgoblin Soldier | Hobgoblin | Monster Core pg. 198 1.1 |  | Common | Hobgoblin, Humanoid |  | 1 | 20 | 18 | +5 | +6 | +5 | darkvision | 25 feet |
+| Hobgoblin Spellbreaker | Hobgoblin | NPC Core pg. 194 |  | Common | Hobgoblin, Humanoid |  | 3 | 50 | 18 | +12 | +6 | +9 | darkvision, arcane magic sense (imprecise) 60 feet | 25 feet |
+| Hobgoblin Vanguard | Hobgoblin | NPC Core pg. 195 |  | Common | Hobgoblin, Humanoid |  | 8 | 150 | 27 | +19 | +13 | +16 | darkvision | 20 feet |
+| Hobgoblin Veteran Regiment | Hobgoblin | Battlecry! pg. 183 |  | Common | Hobgoblin, Humanoid, Troop |  | 9 | 150 (4 segments) | 27 | +19 | +15 | +19 | darkvision | 25 feet; troop movement |
+| Hobji |  | Pathfinder #175: Broken Tusk Moon pg. 45 |  | Unique | Humanoid, Morlock, Unique |  | 3 | 45 | 19 | +8 | +11 | +9 | darkvision | 30 feet, climb 20 feet |
+| Hodag |  | Monster Core 2 pg. 192 |  | Uncommon | Beast, Uncommon |  | 6 | 90 | 24 | +17 | +14 | +12 | darkvision, scent (imprecise) 30 feet | 25 feet, burrow 15 feet |
+| Holdfast |  | Howl of the Wild pg. 160 2.1 |  | Common | Animal |  | 4 | 55 | 20 | +13 | +12 | +8 | low-light vision, scent (imprecise) 30 feet, tremorsense (imprecise) 30 feet | 30 feet, burrow 20 feet |
+| Hollow Hush |  | Pathfinder #155: Lord of the Black Sands pg. 39 |  | Unique | Aberration, Unique |  | 18 | 355 | 41 | +31 | +30 | +35 | tremorsense (imprecise) 60 feet | 40 feet; air walk |
+| Hollow Husks |  | Pathfinder #183: Field of Maidens pg. 26 |  | Rare | Mindless, Rare, Undead, Zombie |  | 5 | 130 ( negative healing ) | 20 | +15 | +9 | +11 | darkvision | 25 feet |
+| Hollow Serpent |  | Book of the Dead pg. 114 |  | Common | Undead |  | 15 | 280 ( negative healing ) | 37 | +26 | +30 | +24 | darkvision, lifesense 60 feet, scent (imprecise) 60 feet | 50 feet, climb 50 feet; freedom of movement |
+| Homunculus |  | Monster Core pg. 200 1.1 |  | Common | Construct |  | 0 | 17 | 17 | +2 | +7 | +3 | darkvision | 15 feet, fly 40 feet |
+| Hong Meigui |  | Pathfinder #199: To Bloom Below the Web pg. 21 |  | Unique | Undead, Unique, Vampire |  | 10 | 128 (fast healing 10, negative healing, one more breath) | 29 | +20 | +15 | +22 | breathsense (precise) 60 feet, darkvision | 20 feet, rigor mortis |
+| Hooklimb Xulgath |  | Pathfinder #153: Life's Long Shadows pg. 55 |  | Rare | Humanoid, Rare, Xulgath |  | 10 | 190 | 29 | +21 | +21 | +16 | darkvision | 25 feet, climb 25 feet |
+| Hooktongue |  | Kingmaker Adventure Path pg. 97 |  | Unique | Amphibious, Animal, Unique |  | 14 | 275 | 35 | +27 | +25 | +23 | darkvision | 20 feet, swim 50 feet |
+| Hooktongue Hydra |  | Kingmaker Adventure Path pg. 103 |  | Unique | Beast, Unique |  | 13 | 240 ((body), hydra regeneration 15 HP 45 (head), head regrowth) | 34 | +25 | +24 | +22 | low-light vision, scent (imprecise) 30 feet | 25 feet, swim 25 feet |
+| Hooplamander |  | Howl of the Wild pg. 161 2.1 |  | Common | Beast |  | 5 | 78 | 21 | +12 | +15 | +9 | scent (imprecise) 30 feet | 25 feet (40 feet in Wheels Up) |
+| Hopping Head | Haunted Clockwork | Tian Xia World Guide pg. 286 |  | Common | Clockwork, Construct |  | 1 | 25 | 14 | +5 | +10 | +7 | darkvision | 20 feet |
+| Horagnamon |  | Kingmaker Adventure Path pg. 254 |  | Unique | Animal, Minion, Unique |  | 8 | 100 | 28 | +13 | +20 | +16 | low-light vision | 10 feet, fly 40 feet |
+| Horde Lich | Lich | Book of the Dead pg. 121 |  | Rare | Rare, Undead |  | 15 | 250 ( negative healing , rejuvenation) | 35 | +21 | +27 | +27 | darkvision | 25 feet |
+| Horned Archdragon | Dragon, Horned | Draconic Codex pg. 74 |  | Rare | Amphibious, Dragon, Primal, Rare |  | 21 | 400 | 47 | +36 | +35 | +38 | darkvision, scent (imprecise) 60 feet | 60 feet, fly 240 feet, swim 60 feet; forest passage, trackless journey |
+| Hound Archon | Archon | Bestiary 2 pg. 22 2.0 |  | Common | Archon, Celestial |  | 4 | 70 | 22 | +14 | +8 | +11 | darkvision | 35 feet |
+| Hound Of Tindalos |  | Monster Core 2 pg. 183 |  | Rare | Aberration, Rare, Time |  | 7 | 90 | 25 | +13 | +17 | +15 | greater darkvision | 30 feet, fly 30 feet |
+| Hound Topiary | Living Topiary | Monster Core 2 pg. 214 |  | Common | Plant |  | 3 | 50 | 18 | +12 | +9 | +6 | low-light vision, scent (imprecise) 40 feet | 30 feet; walk through plants |
+| House Drake | Dragonet | Monster Core 2 pg. 137 |  | Common | Dragon |  | 1 | 15 | 17 | +6 | +8 | +10 | darkvision, scent (imprecise) 30 feet | 15 feet, fly 40 feet |
+| Howling Spawn |  | Monsters of Myth pg. 23 |  | Rare | Aberration, Rare |  | 11 | 175 | 31 | +24 | +21 | +18 | darkvision, fear scent 60 feet | 35 feet, climb 20 feet, fly 15 feet, swim 30 feet |
+| Hrungul Ironeye |  | Pathfinder #195: Heavy is the Crown pg. 55 |  | Unique | Dwarf, Humanoid, Unique |  | 8 | 140 | 26 | +18 | +14 | +16 | darkvision | 20 feet |
+| Hryngar Assassin | Duergar | Pathfinder #195: Heavy is the Crown pg. 86 |  | Uncommon | Duergar, Dwarf, Humanoid, Uncommon |  | 7 | 115 | 25 | +15 | +17 | +12 | darkvision | 25 feet; climb 10 feet |
+| Hryngar Battlepriest | Duergar | Pathfinder #195: Heavy is the Crown pg. 43 |  | Common | Duergar, Dwarf, Humanoid |  | 9 | 155 | 29 | +18 | +15 | +21 | darkvision | 20 feet |
+| Hryngar Bombardier | Hryngar | Monster Core pg. 202 1.1 |  | Common | Dwarf, Hryngar, Humanoid |  | 1 | 20 | 18 | +7 | +8 | +4 | darkvision | 20 feet |
+| Hryngar Breccia Squad | Duergar | Pathfinder #195: Heavy is the Crown pg. 87 |  | Uncommon | Duergar, Dwarf, Humanoid, Troop, Uncommon |  | 9 | 150 | 28 | +20 | +15 | +18 | darkvision | 20 feet; troop movement |
+| Hryngar Forgepriest | Duergar | Pathfinder #194: Cult of the Cave Worm pg. 87 |  | Common | Duergar, Dwarf, Humanoid |  | 6 | 99 | 23 | +14 | +11 | +15 | darkvision | 20 feet |
+| Hryngar King's Agent | Duergar | Pathfinder #194: Cult of the Cave Worm pg. 86 |  | Rare | Duergar, Dwarf, Humanoid, Rare |  | 5 | 78 | 21 | +10 | +13 | +14 | darkvision | 25 feet |
+| Hryngar Sharpshooter | Hryngar | Monster Core pg. 202 1.1 |  | Common | Dwarf, Hryngar, Humanoid |  | 0 | 18 | 15 | +7 | +7 | +4 | darkvision | 20 feet |
+| Hryngar Taskmaster | Hryngar | Monster Core pg. 203 1.1 |  | Common | Dwarf, Hryngar, Humanoid |  | 2 | 30 | 18 | +8 | +4 | +8 | darkvision | 20 feet |
+| Huldra |  | Bestiary 3 pg. 138 |  | Uncommon | Fey, Uncommon |  | 4 | 70 | 21 | +9 | +14 | +11 | darkvision, scent (imprecise) 60 feet | 30 feet |
+| Huldrin Skolsdottir |  | Pathfinder #167: Ready? Fight! pg. 42 |  | Unique | Human, Humanoid, Unique |  | 14 | 280 | 34 | +26 | +25 | +27 | 20 feet | Humanitarian Hermit |
+| Healer |  | NPC Core pg. 63 |  | Common | Human, Humanoid |  | 9 | 150 | 26 | +18 | +16 | +19 | 25 feet | Hummingbird |
+| Pathfinder #167: Ready? Fight! pg. 39 | Unique	Medium | Gnoll, Humanoid, Unique |  | 13 | darkvision |  |  |  |  |  |  |  | 25 feet | Hungering Growths |
+| Pathfinder #183: Field of Maidens pg. 13 | Uncommon	Small | Aberration, Uncommon |  | 7 | darkvision |  |  |  |  |  |  |  | 15 feet | Hungry Ghost |
+| Ghost |  | Monster Core 2 pg. 160 |  | Common | Ghost, Incorporeal, Spirit, Undead, Unholy |  | 6 | 60 (rejuvenation, void healing ) | 23 | +12 | +15 | +15 | darkvision | fly 25 feet |
+| Hunter | Explorer | NPC Core pg. 57 |  | Common | Human, Humanoid |  | 7 | 115 | 25 | +12 | +17 | +15 | 25 feet | Hunter Wight |
+| Wight |  | Book of the Dead pg. 168 |  | Uncommon | Uncommon, Undead, Wight |  | 7 | 112 ( negative healing ) | 24 | +13 | +17 | +14 | darkvision | 25 feet |
+| Hunting Spider |  | Pathfinder Game Night: Dawn of the Frogs (Deluxe Adventure) pg. 28 |  | Common | Animal |  | 1 | 16 | 17 | +6 | +9 | +5 | darkvision, web sense | 25 feet, climb 25 feet |
+| Hunting Spider | Spider | Monster Core pg. 320 1.1 |  | Common | Animal |  | 1 | 16 | 17 | +6 | +9 | +5 | darkvision, web sense | 25 feet, climb 25 feet |
+| Loading... | Husk Zombie | Zombie |  |  | Book of the Dead pg. 170 |  | Common | Medium |  |  |  |  | Undead, Zombie | 2	55 ( negative healing )	17	+7	+9	+7	+5 |
+| darkvision | 25 feet | Hyaenodon |  |  | Hyena |  |  |  |  |  |  |  | Monster Core pg. 205 1.1 | Common	Large |
+| Animal | 3	45	18	+10	+8	+7	+9 | low-light vision, scent (imprecise) 30 feet |  |  | 40 feet | Hyakume |  |  |  |  |  |  | Monster Core 2 pg. 196 | Uncommon	Large |
+| Aberration, Uncommon | 15	275	36	+23	+25	+29	+29 | darkvision |  |  | 25 feet | Hydra |  |  |  |  |  |  | Hydra | Monster Core pg. 204 1.1 |
+| Common	Huge | Beast | 6	90 (body, head regrowth)	23	+15	+12	+10	+17 |  |  | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet, swim 25 feet | Hyena |
+| Hyena |  | Monster Core pg. 205 1.1 |  | Common | Animal |  | 1 | 20 | 16 | +7 | +8 | +4 | low-light vision, scent (imprecise) 30 feet | 40 feet |
+| Hymmir Urath |  | Crown of the Kobold King pg. 82 |  | Unique | Ghoul, Undead, Unique |  | 5 | 80 ( negative healing ) | 21 | +9 | +15 | +13 | darkvision | 30 feet, burrow 5 feet |
+| Loading... | Hyrune Loxenna | Pathfinder #184: The Ghouls Hunger pg. 90 |  | Unique | Undead, Unique, Vampire |  | 15 | 240 (coffin restoration, fast healing 15 , negative healing ) | 37 | +27 | +25 | +29 | darkvision | 25 feet, climb 25 feet |
+| Hārakasura | Asura | Monster Core 2 pg. 43 |  | Common | Asura, Spirit, Unholy |  | 7 | 130 | 25 | +15 | +17 | +13 | darkvision | 40 feet |
+| I |  | Pathfinder #179: Cradle of Quartz pg. 35 |  | Unique | Aberration, Unique |  | 7 | 110 | 25 | +14 | +12 | +14 | darkvision, tremorsense (imprecise) 30 feet | 25 feet, burrow 25 feet |
+| I'iko Dragon |  | Pathfinder #170: Spoken on the Song Wind pg. 84 |  | Uncommon | Amphibious, Dragon, Uncommon |  | 6 | 110 | 23 | +14 | +17 | +10 | darkvision, scent (imprecise) 30 feet | 30 feet, climb 30 feet, fly 60 feet, swim 30 feet |
+| Iapholi (NPC) |  | Pathfinder #218: Titanbane pg. 89 |  | Unique | Human, Humanoid, Mythic, Nephilim, Unique |  | 7 | 126 | 24 | +15 | +13 | +17 | darkvision | 30 feet |
+| Iazmilor |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 89 |  | Common | Grioth, Humanoid |  | 8 | 145 | 26 | +14 | +16 | +18 | greater darkvision, echolocation (precise) 30 feet | 25 feet, fly 30 feet |
+| Iblydan Hind |  | Pathfinder #216: The Acropolis Pyre pg. 86 |  | Rare | Beast, Rare |  | 4 | 62 | 21 | +11 | +14 | +8 | low-light vision, scent (imprecise) 30 feet | 50 feet |
+| Ibrique |  | Shadows at Sundown pg. 36 |  | Unique | Ghoul, Undead, Unique |  | 13 | 200 | 35 | +25 | +28 | +21 | darkvision | 25 feet, burrow 10 feet |
+| Ibrium |  | Pathfinder #180: The Smoking Gun pg. 88 |  | Unique | Human, Humanoid, Unique |  | 10 | 145 | 28 | +16 | +19 | +22 | 25 feet | Ice Golem |
+| Golem |  | Bestiary 2 pg. 129 2.0 |  | Uncommon | Cold, Construct, Golem, Mindless, Uncommon |  | 5 | 80 | 21 | +15 | +11 | +9 | darkvision | 25 feet |
+| Ice Linnorm | Linnorm | Monster Core pg. 221 1.1 |  | Uncommon | Cold, Dragon, Uncommon |  | 17 | 330 | 41 | +32 | +28 | +27 | darkvision, scent (imprecise) 60 feet, truesight | 35 feet, fly 100 feet, swim 40 feet; unfettered movement |
+| Ice Mephit | Elemental, Mephit | Bestiary 2 pg. 112 2.0 |  | Uncommon | Air, Elemental, Uncommon, Water |  | 1 | 18 ( fast healing 2 (when touching ice or snow)) | 17 | +5 | +9 | +3 | darkvision | 20 feet, fly 25 feet |
+| Ice Mummy | Mummy | Book of the Dead pg. 131 |  | Uncommon | Cold, Mummy, Uncommon, Undead |  | 8 | 130 ( negative healing ) | 26 | +16 | +13 | +18 | darkvision, snow vision | 20 feet |
+| Ice Troll | Troll | Monster Core 2 pg. 328 |  | Common | Cold, Giant, Troll |  | 4 | 90 | 19 | +13 | +10 | +8 | darkvision | 30 feet; ice passage |
+| Iceberg Clam |  | Monster Core 2 pg. 197 |  | Common | Aquatic, Elemental, Water |  | 13 | 240 | 31 | +26 | +23 | +20 | darkvision, wavesense 120 feet | 5 feet, swim 30 feet |
+| Icewyrm | Elemental, Water | Monster Core 2 pg. 151 |  | Common | Amphibious, Cold, Elemental, Water |  | 10 | 185 | 30 | +20 | +21 | +17 | darkvision | 25 feet, ice burrow 20 feet, swim 60 feet |
+| Ichor Slinger |  | Book of the Dead pg. 115 |  | Uncommon | Uncommon, Undead |  | 4 | 65 ( negative healing ) | 20 | +12 | +11 | +10 | darkvision | 25 feet |
+| Icicle Snake | Elemental, Water | Monster Core 2 pg. 150 |  | Common | Cold, Elemental, Water |  | 2 | 35 | 18 | +8 | +9 | +5 | darkvision | 25 feet, climb 20 feet |
+| Id Ooze | Ooze | Crown of the Kobold King pg. 121 |  | Rare | Amphibious, Ooze, Rare |  | 7 | 105 | 21 | +15 | +13 | +17 | motion sense 60 feet, no vision | 10 feet, climb 10 feet, swim 20 feet |
+| Idebilor |  | Pathfinder #214: The Broken Palace pg. 63 |  | Unique | Undead, Unholy, Unique, Vampire |  | 7 | 112 ( void healing ) | 25 | +15 | +13 | +17 | darkvision | 40 feet, climb 20 feet |
+| Idovik |  | Pathfinder #176: Lost Mammoth Valley pg. 89 |  | Unique | Beast, Eidolon, Unique |  | 7 | 125 | 24 | +17 | +11 | +15 | darkvision, scent (imprecise) 30 feet | 40 feet |
+| Iffdahsil |  | Pathfinder #155: Lord of the Black Sands pg. 81 |  | Unique | Aberration, Undead, Unique |  | 21 | 380 ( fast healing 30 , negative healing ) | 43 | +39 | +36 | +35 | darkvision, lifesense (imprecise) 60 feet, scent (imprecise) 60 feet, tremorsense (imprecise) 60 feet | 40 feet, burrow 40 feet, climb 25 feet |
+| Ifrit | Genie | Monster Core pg. 159 1.1 |  | Common | Elemental, Fire, Genie |  | 9 | 175 | 28 | +18 | +17 | +20 | darkvision | 25 feet |
+| Ifrit Pyrochemist | Geniekin | Bestiary 2 pg. 200 2.0 |  | Common | Human, Humanoid, Ifrit |  | 1 | 18 | 18 | +5 | +6 | +3 | 25 feet | Ifrit Shuyookh |
+| Genie |  | Rage of Elements pg. 129 2.0 |  | Rare | Elemental, Fire, Genie, Rare |  | 14 | 300 | 36 | +26 | +23 | +27 | darkvision | 25 feet, fly 35 feet |
+| Iguanodon | Dinosaur | Monster Core 2 pg. 107 |  | Common | Animal, Dinosaur |  | 6 | 95 | 24 | +16 | +12 | +14 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Ijda | Nindoru | Pathfinder #197: Let the Leaves Fall pg. 89 |  | Common | Fiend, Nindoru |  | 6 | 100 | 23 | +15 | +13 | +12 | darkvision | 30 feet |
+| Ijhyeojin | Sahkil | Tian Xia World Guide pg. 297 |  | Common | Fiend, Sahkil, Unholy |  | 14 | 310 | 35 | +22 | +25 | +28 | darkvision, lifesense 60 feet | 30 feet |
+| Ikeshti Brood-Minder | Ikeshti | Pathfinder #173: Doorway to the Red Star pg. 86 |  | Common | Humanoid, Ikeshti |  | 2 | 30 | 18 | +9 | +10 | +5 | 30 feet | Ilakni |
+| Gatewalkers (Hardcover) pg. 167 | Unique	Medium | Aberration, Humanoid, Unique |  | 11 | darkvision |  |  |  |  |  |  |  | 25 feet, burrow 25 feet (through blackfrost ice only) | Loading... |
+| Ileosa's Shell |  | Shadows at Sundown pg. 49 |  | Unique | Undead, Unique |  | 13 | 235 ( negative healing ) | 34 | +22 | +26 | +24 | greater darkvision | 25 feet |
+| Ilgreth |  | Pathfinder #150: Broken Promises pg. 57 |  | Unique | Human, Humanoid, Unique |  | 20 | 350 | 28 | +17 | +19 | +19 | 25 feet | Ilora Nuski |
+| Kingmaker Adventure Path pg. 112 | Unique	Medium | Human, Humanoid, Unique |  | 12 | 30 feet | Ilssrah Embermead |  |  |  |  |  |  | Pathfinder #148: Fires of the Haunted City pg. 88 | Unique	Medium |
+| Dwarf, Humanoid, Unique | 15	270	40	+27	+24	+30	+29 | darkvision |  |  | 25 feet | Ilthuliak |  |  |  |  |  |  | Kingmaker Adventure Path pg. 455 | Unique	Gargantuan |
+| Acid, Amphibious, Dragon, Unique | 21	450	47	+38	+35	+35	+37 | darkvision, scent (imprecise) 60 feet |  |  | 70 feet, fly 180 feet, swim 70 feet | Ilverani Sentry |  |  |  |  |  |  | Gatewalkers (Hardcover) pg. 162 | Rare	Medium |
+| Elf, Humanoid, Rare | 7	115	25	+15	+17	+15	+17 | low-light vision |  |  | 25 feet | Imeckus Stroon |  |  |  |  |  |  | Kingmaker Adventure Path pg. 311 | Unique	Medium |
+| Human, Humanoid, Unique | 12	210	33	+21	+23	+22	+25 | 25 feet | Imentesh |  | Protean |  |  |  |  |  |  |  | Monster Core 2 pg. 260 | Common	Large |
+| Monitor, Protean | 10	175 ( fast healing 5)	30	+21	+19	+17	+19 | darkvision, entropy sense (imprecise) 60 feet |  |  | 25 feet, fly 25 feet, swim 25 feet; unfettered movement | Immense Mandragora |  |  |  |  |  |  | Kingmaker Adventure Path pg. 450 | Unique	Gargantuan |
+| Plant, Unique | 20	400	43	+34	+31	+35	+33 | blood scent, low-light visionLanguages Abyssal, Aklo, Common, Sylvan |  |  | 40 feet, burrow 10 feet, climb 40 feet | Immolis |  |  |  |  |  |  | Gatewalkers (Hardcover) pg. 262 | Uncommon	Medium |
+| Beast, Uncommon | 3	50	19	+6	+12	+9	+12 | heatsense 120 feet |  |  | 40 feet, climb 40 feet | Immortal Ichor |  |  |  |  |  |  | Pathfinder #149: Against the Scarlet Triad pg. 88 | Rare	Medium |
+| Ooze, Rare | 15	350	26	+30	+20	+29	+20 | motion sense 60 feet, no vision |  |  | 20 feet, fly 20 feet | Immortal Trickster |  |  |  |  |  |  | War of Immortals pg. 183 | Unique	Medium |
+| Beast, Humanoid, Mythic, Spirit, Unique | 11	198	31	+21	+26	+23	+24 | darkvision |  |  | 30 feet | Imp |  |  |  |  |  |  | Monster Core pg. 206 1.1 | Common	Tiny |
+| Fiend, Unholy | 1	15	17	+5	+9	+7	+7 | darkvision |  |  | 20 feet, fly 30 feet | Imperfect Automaton |  |  |  |  |  |  | Monsters of Myth pg. 125 | Rare	Medium |
+| Automaton, Construct, Rare | 6	85	23	+16	+11	+14	+12 | darkvision |  |  | 25 feet | Imprecasia |  |  |  |  |  |  | Pathfinder #199: To Bloom Below the Web pg. 83 | Uncommon	Medium |
+| Fey, Uncommon | 11	180	31	+18	+23	+21	+23 | darkvision, scent curse |  |  | 25 feet, fly 25 feet | Imugi |  |  |  |  |  |  | Tian Xia World Guide pg. 287 | Uncommon	Large |
+| Amphibious, Dragon, Uncommon, Water | 7	135	24	+12	+19	+14	+13 | darkvision, scent (imprecise) 60 feet |  |  | 40 feet, swim 60 feet | Imvath |  |  |  |  |  |  | Demon | Pathfinder #212: A Voice in the Blight pg. 81 |
+| Rare	Large | Demon, Fiend, Rare, Unholy | 19	400	43	+33	+31	+35	+33 |  |  | darkvision, truesight |  |  |  |  |  |  |  | 30 feet, fly 30 feet | Incutilis |
+| Monster Core 2 pg. 198 | Uncommon	Tiny | Aberration, Amphibious, Uncommon |  | 2 | darkvision |  |  |  |  |  |  |  | 5 feet, climb 5 feet, swim 40 feet | Infantry Soldier |
+| Military |  | NPC Core pg. 88 |  | Common | Human, Humanoid |  | 2 | 28 | 18 | +9 | +6 | +6 | 25 feet | Infernal Registrar |
+| Official |  | NPC Core pg. 119 |  | Rare | Human, Humanoid, Rare, Unholy |  | 10 | 180 | 27 | +19 | +16 | +33 | (33 to Sense Motive) | 25 feet |
+| Ingnovim |  | Pathfinder #150: Broken Promises pg. 39 |  | Unique | Human, Humanoid, Unique |  | 19 | 350 | 43 | +35 | +29 | +32 | 25 feet | Ingnovim's Assistants |
+| Pathfinder #150: Broken Promises pg. 40 | Rare	Medium | Human, Humanoid, Rare |  | 17 | 30 feet | Inizkar |  |  |  |  |  |  | Pathfinder #213: Thirst for Blood pg. 90 | Unique	Medium |
+| Humanoid, Lizardfolk, Unique | 4	42	20	+7	+9	+12	+9 | 25 feet, swim 15 feet | Inizra Arumelo |  | Pathfinder #150: Broken Promises pg. 88 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 20	375	46	+36	+33	+31	+36 |
+| 30 feet | Inkdrop | Animated Handcraft |  |  | Tian Xia World Guide pg. 278 |  | Common | Tiny |  |  |  |  | Construct, Mindless | -1	15	7	+2	+6	+5	+6 |
+| darkvision | 10 feet, climb 10 feet | Loading... | Innkeeper |  | Laborer |  |  |  |  |  |  |  | NPC Core pg. 69 | Common	Medium |
+| Human, Humanoid | 1	20	14	+7	+3	+9	+7 | 25 feet | Innumma |  | Gatewalkers (Hardcover) pg. 283 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 4	55	20	+10	+10	+13	+12 |
+| 25 feet | Inspector | Official |  |  | NPC Core pg. 112 |  | Common | Medium |  |  |  |  | Human, Humanoid | 3	40	19	+5	+10	+12	+12 |
+| (15 to Sense Motive, Seek, or Search) | 25 feet | Intellect Assemblage |  |  | Pathfinder #186: Ghost King's Rage pg. 80 |  | Rare | Medium |  |  |  |  | Construct, Rare | 19	355	43	+35	+32	+29	+29 |
+| thoughtsense 100 feet, no vision | 40 feet | Interlocutor |  |  | Velstrac |  |  |  |  |  |  |  | Pathfinder #147: Tomorrow Must Burn pg. 84 | Uncommon	Large |
+| Fiend, Uncommon, Velstrac | 12	215	33	+23	+21	+26	+24 | darkvision, painsight |  |  | 40 feet | Interlocutor |  |  |  |  |  |  | Velstrac | Monster Core 2 pg. 347 |
+| Common	Large | Fiend, Unholy, Velstrac | 12	215	33	+23	+21	+26	+24 |  |  | greater darkvision, painsight |  |  |  |  |  |  |  | 40 feet | Interrogator |
+| Villain |  | NPC Core pg. 158 |  | Common | Human, Humanoid |  | 6 | 90 | 22 | +12 | +12 | +11 | 25 feet | Invidiak |
+| Demon |  | Pathfinder #211: The Secret of Deathstalk Tower pg. 87 |  | Uncommon | Demon, Fiend, Incorporeal, Uncommon, Unholy |  | 7 | 90 | 23 | +14 | +17 | +13 | darkvision | fly 30 feet |
+| Iobane Magi |  | Pathfinder #173: Doorway to the Red Star pg. 21 |  | Common | Human, Humanoid |  | 13 | 235 | 33 | +25 | +23 | +24 | Iobane vision | 25 feet |
+| Ioton | Ennosite | Bestiary 3 pg. 92 |  | Common | Astral, Incorporeal |  | 0 | 14 | 14 | +7 | +6 | +3 | thoughtsense (imprecise) 60 feet | fly 30 feet |
+| Irahkatu |  | Kingmaker Adventure Path pg. 96 |  | Unique | Amphibious, Beast, Unique |  | 13 | 235 | 34 | +25 | +21 | +20 | darkvision | 25 feet, swim 35 feet |
+| Iridescent Elephant |  | Pathfinder #152: Legacy of the Lost God pg. 80 |  | Uncommon | Animal, Uncommon |  | 7 | 110 | 21 | +16 | +9 | +14 | scent (imprecise) 30 feet | 40 feet |
+| Irkem Dresh |  | Pathfinder #178: Punks in a Powderkeg pg. 17 |  | Unique | Dwarf, Humanoid, Unique |  | 3 | 37 | 19 | +8 | +9 | +8 | 25 feet | Irlgaunt |
+| Monster Core 2 pg. 199 | Common	Large | Aberration, Earth |  | 13 | darkvision |  |  |  |  |  |  |  | 30 feet, climb 30 feet; stone step | Irnakurse |
+| Fleshwarp |  | Monster Core pg. 153 1.1 |  | Common | Aberration |  | 9 | 152 | 28 | +20 | +18 | +16 | darkvision | 15 feet |
+| Iron Hag | Hag | Monster Core pg. 190 1.1 |  | Common | Hag, Humanoid |  | 6 | 80 | 24 | +16 | +12 | +14 | darkvision | 40 feet |
+| Iron Taviah |  | Pathfinder #182: Graveclaw pg. 88 |  | Unique | Hag, Humanoid, Unique |  | 6 | 85 | 24 | +16 | +11 | +14 | darkvision | 20 feet |
+| Iron Warden |  | Monster Core pg. 207 1.1 |  | Uncommon | Construct, Mindless, Uncommon |  | 13 | 190 | 33 | +26 | +19 | +22 | darkvision | 20 feet |
+| Ironclad Annihilator Beetle |  | Pathfinder #174: Shadows of the Ancients pg. 49 |  | Rare | Beast, Rare |  | 21 | 400 | 49 | +38 | +32 | +35 | darkvision | 30 feet, fly 30 feet |
+| Iroran Mummy | Mummy | Book of the Dead pg. 132 |  | Rare | Mummy, Rare, Undead |  | 10 | 190 ( negative healing ) | 31 | +18 | +21 | +21 | darkvision | 30 feet |
+| Irovetti's Fetch |  | Kingmaker Adventure Path pg. 492 |  | Unique | Fey, Unique |  | 20 | 440 | 44 | +37 | +32 | +34 | darkvision | 35 feet, air walk |
+| Irriseni Owlbear | Owlbear | Travel Guide pg. 99 |  | Common | Animal |  | 5 | 85 | 23 | +15 | +9 | +13 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Iruxi Masked Mummer | Lizardfolk | NPC Core pg. 205 |  | Common | Humanoid, Lizardfolk |  | 9 | 155 | 27 | +15 | +19 | +18 | 25 feet, swim 20 feet | Iruxi Ossature |
+| Book of the Dead pg. 116 | Common	Medium | Lizardfolk, Undead |  | 5 | darkvision, lifesense 30 feet |  |  |  |  |  |  |  | 20 feet, swim 10 feet | Ishti |
+| Pathfinder #149: Against the Scarlet Triad pg. 47 | Unique	Large | Beast, Unique |  | 18 | darkvision |  |  |  |  |  |  |  | 40 feet, climb 40 feet, fly 40 feet, swim 40 feet | Island Oni |
+| Oni |  | Monster Core pg. 254 1.1 |  | Common | Giant, Humanoid, Oni, Water |  | 17 | 390 | 38 | +26 | +28 | +34 | greater darkvision, mist vision | 40 feet, fly 40 feet, swim 50 feet; water walk |
+| Isqulug |  | Bestiary 2 pg. 149 2.0 |  | Uncommon | Aberration, Amphibious, Uncommon |  | 11 | 230 | 31 | +24 | +20 | +18 | greater darkvision, host scent 30 feet | 25 feet, swim 25 feet; swamp stride |
+| Loading... | Ivarsa | Pathfinder #177: Burning Tundra pg. 88 |  | Unique | Human, Humanoid, Unique |  | 12 | 212 | 33 | +24 | +22 | +19 | 25 feet | Ixamè |
+| Pathfinder #171: Hurricane's Howl pg. 22 | Unique	Large | Air, Dragon, Elemental, Undead, Unique |  | 10 | darkvision, mist vision, scent (imprecise) 60 feet |  |  |  |  |  |  |  | 40 feet, fly 140 feet; cloud walk | Izfiitar |
+| Protean |  | Monster Core 2 pg. 261 |  | Common | Monitor, Protean |  | 20 | 360 ( fast healing 20) | 44 | +33 | +36 | +38 | darkvision, entropy sense (imprecise) 120 feet | 40 feet, fly 50 feet, swim 40 feet; unfettered movement |
+| Izurran |  | Pathfinder #202: Severed at the Root pg. 22 |  | Unique | Catfolk, Humanoid, Unique |  | 9 | 140 | 25 | +18 | +18 | +21 | low-light vision | 30 feet |
+| Jaathoom | Genie | Monster Core pg. 157 1.1 |  | Common | Air, Elemental, Genie |  | 5 | 55 | 22 | +9 | +14 | +11 | darkvision | 25 feet, fly 40 feet |
+| Loading... | Jabali | Genie |  |  | Monster Core pg. 158 1.1 |  | Common | Large |  |  |  |  | Earth, Elemental, Genie | 7	110	25	+18	+12	+15	+15 |
+| darkvision, tremorsense (imprecise) 60 feet | 25 feet, burrow 45 feet, climb 20 feet; earth glide | Loading... | Jabberwock |  | Bestiary 2 pg. 150 2.0 |  | Rare | Huge |  |  |  |  | Dragon, Rare, Tane | 23	500	49	+39	+37	+40	+40 |
+| darkvision, scent 120 feet, true seeing | 35 feet, fly 60 feet | Jackal Guard |  |  | Pathfinder #172: Secrets of the Temple City pg. 9 |  | Uncommon | Medium |  |  |  |  | Human, Humanoid, Uncommon | 10	180	29	+21	+18	+18	+19 |
+| 30 feet | Jafaki | Pathfinder #164: Hands of the Devil pg. 88 |  | Unique | Aberration, Seugathi, Unique |  | 8 | 100 | 26 | +14 | +18 | +16 | darkvision, tremorsense 30 feet | 25 feet |
+| Jaggaki |  | Pathfinder #147: Tomorrow Must Burn pg. 52 |  | Uncommon | Uncommon, Undead |  | 13 | 200 ( negative healing , rejuvenation) | 34 | +21 | +21 | +22 | darkvision | 35 feet |
+| Jaggedbriar Hag |  | Kingmaker Companion Guide pg. 54 |  | Unique | Hag, Humanoid, Unique |  | 7 | 92 | 25 | +15 | +15 | +17 | darkvision | 40 feet |
+| Jah-Tohl | Dominion of the Black | Monster Core pg. 106 1.1 |  | Uncommon | Aberration, Uncommon |  | 8 | 140 | 26 | +15 | +13 | +18 | darkvision, thoughtsense 60 feet | 25 feet, fly 30 feet |
+| Jahsi |  | Pathfinder #146: Cult of Cinders pg. 11 |  | Unique | Elf, Humanoid, Unique |  | 8 | 135 | 28 | +16 | +17 | +15 | low-light vision | 30 feet |
+| Jaiban |  | Pathfinder #166: Despair on Danger Island pg. 41 |  | Unique | Beast, Unique |  | 15 | 170 | 36 | +29 | +23 | +25 | darkvision, scent (imprecise) 30 feet | 30 feet, swim 30 feet |
+| Jailer | Official | NPC Core pg. 112 |  | Common | Human, Humanoid |  | 3 | 45 | 18 | +8 | +10 | +7 | (10 to find concealed objects) | 25 feet |
+| Jaleen |  | Pathfinder #151: The Show Must Go On pg. 9 |  | Unique | Human, Humanoid, Unique |  | 1 | 27 | 14 | +9 | +4 | +7 | 25 feet | Jamandi Aldori |
+| Kingmaker Adventure Path pg. 599 | Unique	Medium | Elf, Human, Humanoid, Unique |  | 14 | low-light vision |  |  |  |  |  |  |  | 25 feet | Jann |
+| Genie |  | Monster Core pg. 156 1.1 |  | Common | Air, Earth, Elemental, Fire, Genie, Metal, Water, Wood |  | 4 | 60 | 20 | +10 | +10 | +13 | darkvision | 25 feet, fly 15 feet |
+| Jann Shuyookh | Genie | Rage of Elements pg. 227 2.0 |  | Uncommon | Air, Earth, Elemental, Fire, Genie, Metal, Uncommon, Water, Wood |  | 9 | 155 | 27 | +19 | +17 | +18 | darkvision | 25 feet, fly 20 feet |
+| Japalisura | Asura | Bestiary 3 pg. 23 |  | Common | Asura, Fiend |  | 12 | 235 | 33 | +20 | +25 | +20 | darkvision, see invisibility | 40 feet |
+| Jarelle Kaldrian |  | Pathfinder #163: Ruins of Gauntlight pg. 40 |  | Unique | Ghost, Incorporeal, Spirit, Undead, Unique |  | 5 | 48 (negative healing, rejuvenation) | 21 | +9 | +14 | +12 | darkvision | fly 25 feet |
+| Jaul Mezmin |  | Pathfinder #163: Ruins of Gauntlight pg. 59 |  | Unique | Beast, Human, Humanoid, Unique, Werecreature |  | 6 | 120 | 24 | +12 | +14 | +16 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Jaul's Wolf |  | Pathfinder #163: Ruins of Gauntlight pg. 60 |  | Unique | Animal, Unique |  | 4 | 60 | 21 | +10 | +13 | +9 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Jekkajak |  | Crown of the Kobold King pg. 62 |  | Unique | Humanoid, Kobold, Unique |  | 4 | 60 | 21 | +10 | +13 | +9 | darkvision | 25 feet |
+| Jellico Bounce-Bounce |  | Pathfinder #151: The Show Must Go On pg. 28 |  | Unique | Human, Humanoid, Unique |  | 2 | 32 | 17 | +7 | +9 | +6 | 30 feet | Jervis Stoot |
+| Pathfinder #200: Seven Dooms for Sandpoint pg. 131 | Unique	Medium | Ghost, Incorporeal, Spirit, Undead, Unique |  | 11 | darkvision |  |  |  |  |  |  |  | fly 25 feet | Jesseri The Hailstorm |
+| Pathfinder #177: Burning Tundra pg. 52 | Unique	Medium | Human, Humanoid, Unique |  | 10 | 25 feet | Jewel |  |  |  |  |  |  | Kingmaker Adventure Path pg. 313 | Unique	Tiny |
+| Animal, Minion, Unique | 1	60	29	+17	+21	+19	+21 | low-light vision, scent (imprecise) 30 feet |  |  | 30 feet | Ji-Yook (Gumiho Form) |  |  |  |  |  |  | Pathfinder #168: King of the Mountain pg. 47 | Unique	Medium |
+| Humanoid, Kitsune, Unique, Zombie | 18	331	42	+27	+34	+29	+29 | darkvision, emotionsense |  |  | 25 feet; waylay | Ji-yook (Level 13) |  |  |  |  |  |  | Pathfinder #167: Ready? Fight! pg. 26 | Unique	Medium |
+| Humanoid, Kitsune, Unique | 13	190	35	+20	+26	+20	+26 | low-light vision |  |  | 25 feet | Ji-yook (Level 9) |  |  |  |  |  |  | Pathfinder #166: Despair on Danger Island pg. 11 | Unique	Medium |
+| Humanoid, Kitsune, Unique | 9	130	29	+15	+19	+16	+19 | low-light vision |  |  | 25 feet | Jiidon |  |  |  |  |  |  | Tian Xia World Guide pg. 288 | Uncommon	Tiny |
+| Beast, Uncommon | 3	40	19	+12	+13	+9	+10 | darkvision |  |  | 30 feet, climb 10 feet | Loading... |  |  |  |  |  |  | Jin Durwhimmer | Kingmaker Adventure Path pg. 245 |
+| Unique	Small | Ghost, Incorporeal, Spirit, Undead, Unique | 9	120 ( negative healing , rejuvenation)	25	+15	+19	+19	+19 |  |  | darkvision |  |  |  |  |  |  |  | fly 25 feet | Jin-Hae |
+| Pathfinder #168: King of the Mountain pg. 18 | Unique	Medium | Ethereal, Phantom, Spirit, Unique |  | 18 | 40 feet | Jinkin |  |  |  |  |  |  | Gremlin | Monster Core pg. 181 1.1 |
+| Common	Tiny | Fey, Gremlin | 1	19	15	+6	+10	+7	+7 |  |  | darkvision |  |  |  |  |  |  |  | 30 feet | Jinx Eater |
+| Tengu |  | NPC Core pg. 212 |  | Common | Humanoid, Tengu |  | 4 | 65 | 21 | +8 | +14 | +11 | low-light vision | 25 feet |
+| Jitterbone Contortionist | Mortic | Book of the Dead pg. 126 |  | Rare | Halfling, Humanoid, Mortic, Rare |  | 4 | 56 ( negative healing ) | 20 | +10 | +14 | +10 | darkvision | 25 feet; compression |
+| Joon-seo |  | Pathfinder #167: Ready? Fight! pg. 41 |  | Unique | Humanoid, Samsaran, Unique |  | 15 | 250 | 35 | +26 | +26 | +28 | 25 feet | Jordus Munt |
+| Pathfinder #200: Seven Dooms for Sandpoint pg. 105 | Common	Medium | Human, Humanoid |  | 8 | 25 feet | Jorogumo |  |  |  |  |  |  | Monster Core 2 pg. 201, Pathfinder #160: Assault on Hunting Lodge Seven pg. 83 | Uncommon	Medium |
+| Humanoid, Uncommon | 13	270	33	+22	+23	+26	+26 | darkvision |  |  | 30 feet, swim 30 feet | Joseung Saja |  |  |  |  |  |  | Psychopomp | Tian Xia World Guide pg. 296 |
+| Common	Medium | Monitor, Psychopomp | 14	250	35	+25	+25	+28	+28 |  |  | darkvision, lifesense 60 feet |  |  |  |  |  |  |  | 25 feet | Jotunborn Sage |
+| Jotunborn |  | Monster Core 2 pg. 202 |  | Rare | Giant, Humanoid, Jotunborn, Rare |  | 2 | 26 | 16 | +8 | +4 | +9 | low-light vision | 25 feet |
+| Jotund Troll | Troll | Monster Core 2 pg. 330 |  | Rare | Giant, Humanoid, Mutant, Rare, Troll, Wood |  | 15 | 360 | 35 | +31 | +24 | +23 | darkvision | 30 feet, climb 20 feet |
+| Jubilost Narthropple (Level 1) |  | Kingmaker Companion Guide pg. 33 |  | Unique | Fey, Gnome, Humanoid, Unique |  | 1 | 18 | 16 | +7 | +7 | +4 | (expert) low-light vision | 25 feet |
+| Jubilost Narthropple (Level 8) |  | Kingmaker Companion Guide pg. 33 |  | Unique | Fey, Gnome, Humanoid, Unique |  | 8 | 104 | 25 | +15 | +15 | +14 | (expert) low-light vision | 25 feet |
+| Judge | Official | NPC Core pg. 108 |  | Common | Human, Humanoid |  | -1 | 5 | 13 | +5 | +1 | +12 | (15 to Sense Motive) | 25 feet |
+| Juggernaut | Engineer | NPC Core pg. 49 |  | Rare | Human, Humanoid, Rare |  | 13 | 250 | 33 | +25 | +19 | +21 | darkvision | 20 feet |
+| Juggler | Performer | NPC Core pg. 125 |  | Common | Human, Humanoid |  | 2 | 30 | 17 | +6 | +11 | +7 | 25 feet | Jungle Drake |
+| Drake |  | Monster Core pg. 130 1.1 |  | Common | Dragon, Wood |  | 6 | 90 | 23 | +17 | +13 | +11 | darkvision, scent (imprecise) 30 feet | 20 feet, fly 50 feet; forest passage |
+| Jurgrindor |  | Kingmaker Adventure Path pg. 31 |  | Unique | Cold, Giant, Humanoid, Unique |  | 3 | 50 (currently 25) | 17 | +12 | +6 | +9 | low-light vision | 30 feet |
+| Juspix Rammel |  | Pathfinder #167: Ready? Fight! pg. 42 |  | Unique | Halfling, Humanoid, Unique |  | 14 | 240 | 33 | +22 | +27 | +27 | keen eyes | 25 feet |
+| Juvenile Boar |  | Pathfinder #151: The Show Must Go On pg. 20 |  | Common | Animal |  | 0 | 16 | 15 | +9 | +3 | +5 | low-light vision, scent (imprecise) 30 feet | 30 feet |
+| Juvenile Cave Worm | Cave Worm | Pathfinder #195: Heavy is the Crown pg. 84 |  | Uncommon | Animal, Uncommon |  | 8 | 170 | 26 | +20 | +14 | +10 | darkvision, tremorsense (imprecise) 100 feet | 30 feet, burrow 30 feet, swim 20 feet |
+| Jyoti |  | Monster Core 2 pg. 203 |  | Common | Fire, Humanoid, Vitality |  | 9 | 155 | 28 | +15 | +18 | +21 | darkvision | 25 feet, fly 60 feet |
+| K'nonna |  | The Mwangi Expanse pg. 299 2.0 |  | Common | Aberration |  | 8 | 140 | 26 | +19 | +11 | +11 | darkvision, scent (imprecise) 60 feet | 30 feet |
+| K.H.W.'s Echo |  | Dark Archive pg. 214 |  | Unique | Human, Humanoid, Unique |  | 14 | 280 | 36 | +23 | +24 | +28 | 25 feet | Kaava Stalker |
+| Kaava |  | The Mwangi Expanse pg. 300 2.0 |  | Common | Humanoid |  | 1 | 20 | 16 | +5 | +9 | +7 | low-light vision | 30 feet |
+| Kadamel | Archon | Monster Core 2 pg. 39 |  | Common | Archon, Celestial, Holy |  | 17 | 300 | 40 | +29 | +26 | +32 | darkvision, truesight | 25 feet, fly 50 feet |
+| Kadlaka |  | Pathfinder #175: Broken Tusk Moon pg. 84 |  | Rare | Beast, Rare |  | 4 | 60 | 21 | +8 | +13 | +14 | low-light vision | 25 feet, fly 50 feet |
+| Kagekuma | Nindoru | Pathfinder #198: No Breath to Cry pg. 83 |  | Rare | Fiend, Nindoru, Rare |  | 8 | 135 | 25 | +15 | +16 | +18 | darkvision | 25 feet (or 15 feet with bundle) |
+| Kalaggi Nakutu | Threshold of Knowledge Pregenerated Characters | Threshold of Knowledge pg. 12 |  | Unique | Human, Humanoid, Unique |  | 1 | 21 | 18 | +7 | +9 | +5 | 25 feet | Kalakaigh |
+| Demon |  | Pathfinder #214: The Broken Palace pg. 84 |  | Uncommon | Demon, Fiend, Uncommon, Unholy |  | 6 | 130 | 23 | +11 | +17 | +14 | darkvision, fear scent (precise) 30 feet | 30 feet |
+| Kalavakus | Demon | Pathfinder #147: Tomorrow Must Burn pg. 77 |  | Common | Demon, Fiend |  | 10 | 200 | 30 | +21 | +17 | +19 | darkvision | 25 feet |
+| Kaleb Valdemar's Body |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 145 |  | Unique | Aberration, Human, Humanoid, Unique |  | 12 | 112 | 20 | +15 | +12 | +23 | lifesense 60 feet | 25 feet |
+| Kallas Devil |  | Monsters of Myth pg. 46 |  | Unique | Amphibious, Hag, Humanoid, Unique |  | 9 | 180 | 27 | +16 | +19 | +20 | darkvision, lifesense (imprecise) 30 feet, wavesense (imprecise) 30 feet | 30 feet, swim 30 feet |
+| Kandirvek |  | Pathfinder Adventure Path #219: Lord of the Trinity Star pg. 42 |  | Unique | Dragon, Occult, Unique |  | 14 | 252 | 35 | +26 | +27 | +28 | darkvision, scent (imprecise) 60 feet | 50 feet, fly 160 feet |
+| Kaneepo The Slim |  | Gatewalkers (Hardcover) pg. 278 |  | Unique | Fey, Unique |  | 4 | 80 | 20 | +9 | +14 | +14 | 30 feet | Kangaroo |
+| Bestiary 3 pg. 146 | Common	Medium | Animal |  | 0 | scent (imprecise) 60 feet |  |  |  |  |  |  |  | 35 feet | Kanker |
+| Pathfinder #200: Seven Dooms for Sandpoint pg. 194 | Unique	Medium | Ghoul, Undead, Unique |  | 12 | darkvision |  |  |  |  |  |  |  | 30 feet, burrow 5 feet | Loading... |
+| Kannitri |  | Pathfinder #166: Despair on Danger Island pg. 19 |  | Unique | Ghost, Incorporeal, Spirit, Undead, Unique |  | 13 | 175 ( negative healing , rejuvenation) | 33 | +19 | +24 | +25 | darkvision | fly 40 feet |
+| Kanya | Azata | Monster Core pg. 34 1.1 |  | Common | Azata, Celestial, Holy |  | 7 | 135 | 25 | +14 | +16 | +16 | darkvision | 25 feet, fly 45 feet |
+| Kapmek |  | Crown of the Kobold King pg. 60 |  | Unique | Humanoid, Kobold, Unique |  | 4 | 60 | 21 | +10 | +12 | +9 | darkvision | 25 feet |
+| Kapoacinth |  | Pathfinder #182: Graveclaw pg. 28 |  | Common | Aquatic, Beast, Earth |  | 4 | 40 | 20 | +13 | +9 | +10 | darkvision | 25 feet, swim 40 feet |
+| Kappa |  | Monster Core 2 pg. 208 |  | Common | Amphibious, Beast |  | 2 | 35 | 17 | +7 | +10 | +7 | darkvision | 15 feet, swim 40 feet |
+| Kareq |  | Gatewalkers (Hardcover) pg. 263 |  | Uncommon | Animal, Uncommon |  | 5 | 95 | 22 | +15 | +13 | +10 | low-light vision | 40 feet, climb 20 feet |
+| Kargstaad |  | Kingmaker Adventure Path pg. 448 |  | Unique | Cold, Giant, Humanoid, Unique |  | 19 | 360 ( fast healing 20) | 43 | +35 | +31 | +33 | low-light visionLanguages Aklo, Common, Jotun, Sylvan | 30 feet; ice stride |
+| Kargstaad's Giant |  | Kingmaker Adventure Path pg. 434 |  | Rare | Cold, Giant, Humanoid, Rare |  | 15 | 270 ( fast healing 15) | 37 | +29 | +25 | +25 | low-light vision | 30 feet; ice stride |
+| Karina |  | The Mwangi Expanse pg. 301 2.0 |  | Common | Beast, Fiend |  | 5 | 95 | 21 | +12 | +15 | +10 | darkvision | 10 feet, fly 40 feet |
+| Karkadann | Unicorn | Howl of the Wild pg. 190 2.1 |  | Common | Beast, Fey, Holy |  | 7 | 120 | 25 | +17 | +14 | +14 | darkvision, scent (imprecise) 30 feet | 45 feet |
+| Karumzek | Karumzek | Pathfinder #171: Hurricane's Howl pg. 81 |  | Uncommon | Aberration, Uncommon |  | 4 | 60 | 21 | +12 | +12 | +8 | darkvision, poison sense (precise) 30 feet | 40 feet, climb 30 feet |
+| Karumzek Swarm | Karumzek | Pathfinder #171: Hurricane's Howl pg. 81 |  | Uncommon | Aberration, Swarm, Uncommon |  | 11 | 175 | 30 | +21 | +24 | +18 | darkvision, poison sense (precise) 30 feet | 40 feet, climb 30 feet |
+| Kas Xi Rai |  | Pathfinder #167: Ready? Fight! pg. 23 |  | Unique | Human, Humanoid, Unique |  | 17 | 300 | 38 | +26 | +32 | +29 | 50 feet, climb 35 feet | Loading... |
+| Kasesh |  | Impossible Lands pg. 330 |  | Uncommon | Earth, Elemental, Uncommon |  | 3 | 35 | 19 | +8 | +9 | +10 | darkvision, tremorsense (imprecise) 60 feet | 20 feet, burrow 20 feet; earth glide |
+| Kashrishi Evaluator |  | Impossible Lands pg. 331 |  | Rare | Kashrishi, Rare |  | 4 | 50 | 20 | +8 | +10 | +13 | 25 feet | Katpaskir |
+| Demon |  | Monster Core 2 pg. 94 |  | Common | Demon, Fiend, Unholy |  | 18 | 415 | 41 | +35 | +29 | +30 | darkvision, see the unseen, warp sense | 35 feet, burrow 15 feet, fly 35 feet; unfettered movement |
+| Keeper Of Ancorato |  | Pathfinder #213: Thirst for Blood pg. 29 |  | Unique | Beast, Incorporeal, Spirit, Unique |  | 10 | 160 | 29 | +21 | +16 | +18 | darkvision, wavesense (imprecise) 120 feet | fly 20 feet, swim 40 feet |
+| Keketar | Protean | Monster Core pg. 272 1.1 |  | Common | Monitor, Protean |  | 17 | 260 ( fast healing 10) | 40 | +30 | +28 | +34 | entropy sense (imprecise) 60 feet, darkvision | 40 feet, fly 50 feet, swim 40 feet; unfettered movement |
+| Loading... | Kelda Halrig | Pathfinder #148: Fires of the Haunted City pg. 87 |  | Unique | Dwarf, Humanoid, Unique |  | 8 | 135 | 24 | +19 | +13 | +16 | darkvision | 20 feet |
+| Kellid Graveknight |  | Kingmaker Adventure Path pg. 401 |  | Rare | Rare, Undead |  | 14 | 255 ( negative healing , rejuvenation) | 37 | +24 | +25 | +27 | darkvisiondarkvision | 25 feet |
+| Kelpie |  | Monster Core 2 pg. 209 |  | Common | Amphibious, Fey |  | 4 | 60 | 21 | +11 | +12 | +14 | low-light vision | 35 feet, swim 35 feet |
+| Loading... | Loading... | Kepgeda the Hag-Nailed |  |  | Pathfinder #181: Zombie Feast pg. 90 |  | Unique | Medium |  |  |  |  | Changeling, Human, Humanoid, Unique | 5	75	20	+12	+11	+12	+12 |
+| darkvision | 25 feet | Kereek |  |  | Kingmaker Adventure Path pg. 196 |  | Unique | Small |  |  |  |  | Humanoid, Kobold, Unique | 5	85	21	+11	+14	+17	+12 |
+| darkvision | 25 feet | Keribos |  |  | Stygian Guardian |  |  |  |  |  |  |  | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 87 | Uncommon	Large |
+| Beastkin, Monitor, Uncommon | 6	100	23	+16	+13	+11	+18 | darkvision, scent (imprecise) 60 feet |  |  | 35 feet | Kerinelopas |  |  |  |  |  |  | Pathfinder #218: Titanbane pg. 28 | Unique	Large |
+| Aberration, Mythic, Unique | 9	155	27	+16	+19	+17	+19 | bloodsense (imprecise) 60 feet, darkvision |  |  | 25 feet, climb 15 feet | Kerinza |  |  |  |  |  |  | Pathfinder #183: Field of Maidens pg. 88 | Unique	Medium |
+| Humanoid, Unique | 12	235	32	+18	+23	+21	+23 | darkvision |  |  | 30 feet | Kerrdremak |  |  |  |  |  |  | Crown of the Kobold King pg. 54 | Unique	Small |
+| Humanoid, Kobold, Unique | 1	20	15	+6	+7	+5	+5 | darkvision |  |  | 25 feet | Keznin Nevarmo |  |  |  |  |  |  | Night of the Gray Death pg. 8 | Unique	Medium |
+| Humanoid, Tengu, Unique | 9	150	26	+15	+18	+21	+18 | low-light vision |  |  | 25 feet | Khasprickle |  |  |  |  |  |  | Pathfinder #202: Severed at the Root pg. 90 | Unique	Small |
+| Fey, Unique | 9	155	28	+16	+22	+19	+21 | low-light vision |  |  | 25 feet | Khefak Scuttler |  |  |  |  |  |  | Khefak | Pathfinder #173: Doorway to the Red Star pg. 87 |
+| Uncommon	Small | Animal, Uncommon | -1	7	15	+7	+5	+2	+4 |  |  | darkvision, tremorsense (imprecise) 60 feet |  |  |  |  |  |  |  | 20 feet, burrow 5 feet, climb 20 feet | Kholo Bonekeeper |
+| Kholo |  | Monster Core pg. 209 1.1 |  | Common | Humanoid, Kholo |  | 3 | 45 | 19 | +8 | +6 | +10 | low-light vision | 25 feet |
+| Kholo Hunter | Kholo | Monster Core pg. 208 1.1 |  | Common | Humanoid, Kholo |  | 2 | 29 | 18 | +8 | +7 | +7 | darkvision | 25 feet |
+| Kholo Outrider | Kholo | NPC Core pg. 197 |  | Common | Humanoid, Kholo |  | 7 | 120 | 25 | +14 | +18 | +13 | low-light vision | 30 feet |
+| Kholo Pragmatist | Kholo | NPC Core pg. 196 |  | Common | Humanoid, Kholo |  | 1 | 22 | 16 | +4 | +6 | +8 | low-light vision | 25 feet |
+| Kholo Sergeant | Kholo | Monster Core pg. 209 1.1 |  | Common | Humanoid, Kholo |  | 4 | 60 | 21 | +12 | +10 | +8 | darkvision | 25 feet |
+| Khravgodon | Opossum | Monster Core 2 pg. 244 |  | Common | Animal |  | 9 | 160 | 27 | +20 | +18 | +16 | low-light vision, scent (imprecise) 30 feet | 30 feet, burrow 15 feet, climb 15 feet |
+| Khurfel |  | Pathfinder #165: Eyes of Empty Death pg. 88 |  | Unique | Humanoid, Unique, Urdefhan |  | 10 | 200 (negative healing) | 28 | +20 | +19 | +22 | greater darkvision | 25 feet |
+| Ki Adept |  | Pathfinder #166: Despair on Danger Island pg. 24 |  | Uncommon | Human, Humanoid, Uncommon |  | 13 | 230 | 33 | +23 | +23 | +23 | 30 feet | Kieragan Skross |
+| Crown of the Kobold King pg. 105 | Unique	Medium | Undead, Unique |  | 8 | darkvision |  |  |  |  |  |  |  | 25 feet | Kilia Mwibo |
+| Pathfinder #172: Secrets of the Temple City pg. 84 | Uncommon	Huge | Plant, Uncommon |  | 15 | emotion sense 60 feet |  |  |  |  |  |  |  | 25 feet | Kimenhul |
+| Sahkil |  | Monster Core 2 pg. 278 |  | Common | Fiend, Sahkil, Unholy |  | 20 | 425 | 45 | +33 | +32 | +35 | darkvision, truesight | 45 feet, climb 25 feet |
+| Kimilekki |  | Pathfinder #156: The Apocalypse Prophet pg. 17 |  | Unique | Demon, Fiend, Unique |  | 17 | 380 | 40 | +32 | +25 | +30 | darkvision, true seeing | 35 feet |
+| King Harral |  | Pathfinder #148: Fires of the Haunted City pg. 42 |  | Unique | Undead, Unique |  | 14 | 195 ( negative healing , rejuvenation) | 35 | +22 | +24 | +28 | darkvision | 25 feet |
+| King Merlokrep |  | Crown of the Kobold King pg. 109 |  | Unique | Humanoid, Kobold, Unique |  | 8 | 140 | 26 | +14 | +18 | +16 | darkvision | 25 feet |
+| King Vesket |  | Kingmaker Adventure Path pg. 140 |  | Unique | Humanoid, Lizardfolk, Unique |  | 6 | 115 | 23 | +15 | +15 | +12 | 25 feet, swim 20 feet | Kinzaruk |
+| Elemental, Metal |  | Rage of Elements pg. 154 2.0 |  | Common | Elemental, Metal |  | 3 | 45 | 19 | +8 | +11 | +7 | darkvision | fly 10 feet (can't ascend more than 5 feet off the ground) |
+| Kirin |  | Bestiary 3 pg. 148 |  | Rare | Air, Beast, Fire, Rare |  | 7 | 115 | 25 | +13 | +17 | +15 | darkvision, scent (imprecise) 60 feet | 40 feet |
+| Kirosthrek |  | Pathfinder #156: The Apocalypse Prophet pg. 88 |  | Unique | Humanoid, Unique, Xulgath |  | 20 | 375 | 45 | +31 | +33 | +36 | darkvision, thoughtsense (imprecise) 60 | 25 feet, fly 35 feet (from fly) |
+| Kiru |  | Pathfinder #170: Spoken on the Song Wind pg. 27 |  | Unique | Human, Humanoid, Unique |  | 3 | 45 | 20 | +7 | +11 | +9 | low-light vision | 30 feet |
+| Kishi |  | Bestiary 3 pg. 149, Pathfinder #146: Cult of Cinders pg. 88 |  | Common | Fey |  | 8 | 138 | 25 | +13 | +18 | +17 | low-light vision | 25 feet |
+| Kithangian | Demon | Monster Core 2 pg. 92, Gatewalkers (Hardcover) pg. 253 |  | Common | Demon, Fiend, Unholy |  | 9 | 180 | 27 | +20 | +15 | +19 | darkvision | 30 feet |
+| Kitsune Trickster | Kitsune | Monster Core 2 pg. 210 |  | Common | Humanoid, Kitsune |  | 2 | 25 | 18 | +6 | +10 | +8 | 25 feet | Kizidhar |
+| Genie |  | Rage of Elements pg. 212 2.0 |  | Uncommon | Elemental, Genie, Plant, Uncommon, Wood |  | 6 | 110 | 22 | +17 | +13 | +12 | darkvision | 25 feet, climb 15 feet; parting the trees |
+| Kizidhar Shuyookh | Genie | Rage of Elements pg. 213 2.0 |  | Rare | Elemental, Genie, Plant, Rare, Wood |  | 11 | 220 | 30 | +24 | +20 | +20 | darkvision | 25 feet, climb 25 feet; parting the trees |
+| Klacktel |  | Pathfinder #212: A Voice in the Blight pg. 86 |  | Rare | Mindless, Rare, Swarm, Undead, Unholy, Void |  | 20 | 360 ( void healing ) | 46 | +39 | +30 | +32 | darkvision, lifesense 120 feet | 50 feet, climb 30 feet, swim 20 feet |
+| Knight | Courtier | NPC Core pg. 16 |  | Common | Human, Humanoid |  | 7 | 110 | 25 | +14 | +14 | +13 | 25 feet | Knight Reclaimant |
+| Knights of Lastwall |  | Claws of the Tyrant pg. 44 |  | Common | Humanoid |  | 8 | 135 | 27 | +19 | +14 | +16 | 25 feet | Knurr Ragnulf |
+| Rusthenge pg. 33 | Unique	Medium | Dwarf, Humanoid, Unique |  | 2 | darkvision |  |  |  |  |  |  |  | 20 feet | Kob Moleg |
+| Kingmaker Adventure Path pg. 352 | Unique	Large | Earth, Giant, Humanoid, Unique |  | 16 | low-light vision |  |  |  |  |  |  |  | 35 feet | Kobold Cavern Mage |
+| Kobold |  | Monster Core pg. 211 1.1 |  | Common | Humanoid, Kobold |  | 2 | 20 | 16 | +5 | +6 | +7 | darkvision | 25 feet |
+| Kobold Earth Diver | Kobold | NPC Core pg. 199 |  | Common | Humanoid, Kobold |  | 4 | 60 | 20 | +8 | +14 | +11 | darkvision, tremorsense (imprecise) 10 feet | 25 feet, burrow 10 feet |
+| Kobold Egg Guardian | Kobold | NPC Core pg. 198 |  | Common | Humanoid, Kobold |  | 3 | 48 | 19 | +9 | +12 | +6 | darkvision | 25 feet |
+| Kobold Scout | Kobold | Monster Core pg. 210 1.1 |  | Common | Humanoid, Kobold |  | 1 | 16 | 16 | +5 | +9 | +6 | darkvision | 25 feet |
+| Kobold Trap Squad | Kobold | Battlecry! pg. 184 |  | Common | Humanoid, Kobold, Troop |  | 4 | 60 (4 segments) | 20 | +8 | +14 | +11 | darkvision | 25 feet; troop movement |
+| Kobold Trapper | Kobold | NPC Core pg. 198 |  | Common | Humanoid, Kobold |  | 2 | 32 | 18 | +5 | +11 | +8 | (9 to Seek for traps) darkvision | 25 feet |
+| Kobold Tunnelrunner | Kobold | Pathfinder Encounter: Heaving Kobolds |  | Uncommon | Humanoid, Kobold, Uncommon |  | 0 | 16 | 16 | +6 | +9 | +4 | darkvision | 25 feet |
+| Kobold Warrior | Kobold | Monster Core pg. 210 1.1 |  | Common | Humanoid, Kobold |  | -1 | 7 | 16 | +3 | +7 | +3 | darkvision | 25 feet |
+| Kodama | Kami | Monster Core 2 pg. 205 |  | Common | Kami, Spirit, Wood |  | 5 | 95 | 21 | +12 | +11 | +13 | darkvision | 20 feet |
+| Kokogiak |  | Bestiary 3 pg. 151 |  | Common | Beast |  | 12 | 215 | 33 | +25 | +19 | +21 | darkvision, scent (imprecise) 60 feet | 40 feet, swim 20 feet; trackless step |
+| Kolbo |  | Pathfinder #170: Spoken on the Song Wind pg. 49 |  | Unique | Dwarf, Humanoid, Unique |  | 6 | 115 | 24 | +16 | +14 | +13 | darkvision | 20 feet |
+| Loading... | Loading... | Kongamato |  |  | Bestiary 3 pg. 152 |  | Uncommon | Large |  |  |  |  | Dragon, Uncommon | 11	190	30	+22	+20	+19	+19 |
+| darkvision | 30 feet, fly 130 feet, swim 30 feet | Korog |  |  | Kingmaker Adventure Path pg. 403 |  | Unique | Medium |  |  |  |  | Undead, Unique | 16	295 ( negative healing , rejuvenation)	39	+30	+27	+27	+29 |
+| darkvision | 25 feet | Korred |  |  | Bestiary 2 pg. 155 2.0 |  | Uncommon | Small |  |  |  |  | Fey, Uncommon | 4	65	21	+10	+13	+10	+12 |
+| low-light vision | 25 feet | Kothogaz, Dance Of Disharmony |  |  | Spawn of Rovagug |  |  |  |  |  |  |  | Monsters of Myth pg. 52 | Unique	Gargantuan |
+| Beast, Unique | 21	400	49	+32	+39	+35	+41 | darkvision, scent (imprecise) 120 feet |  |  | 80 feet, fly 60 feet, swim 60 feet | Koto Zekora |  |  |  |  |  |  | Pathfinder #166: Despair on Danger Island pg. 55 | Unique	Large |
+| Fiend, Giant, Humanoid, Oni, Unique | 17	295	39	+31	+26	+25	+30 | darkvision |  |  | 30 feet, fly 30 feet | Kovintus Geomancer |  |  |  |  |  |  | Kovintus | Bestiary 3 pg. 153 |
+| Common	Medium | Humanoid, Kovintus | 3	40	18	+8	+8	+11	+11 |  |  | low-light vision |  |  |  |  |  |  |  | 25 feet | Kragala |
+| Pathfinder #164: Hands of the Devil pg. 35 | Unique	Medium | Duergar, Dwarf, Humanoid, Unique |  | 4 | darkvision |  |  |  |  |  |  |  | 20 feet | Kraken |
+| Monster Core pg. 212 1.1 | Uncommon	Gargantuan | Aquatic, Beast, Uncommon |  | 18 | darkvision |  |  |  |  |  |  |  | 10 feet, swim 40 feet | Kralgurn |
+| Pathfinder #148: Fires of the Haunted City pg. 31 | Unique	Medium | Duergar, Dwarf, Humanoid, Unique |  | 14 | darkvision |  |  |  |  |  |  |  | 25 feet | Krampus |
+| Bestiary 3 pg. 154 | Unique	Large | Humanoid, Unique |  | 21 | blizzard sight, scent (imprecise) 60 feet, see invisibility |  |  |  |  |  |  |  | 60 feet; air walk, snowstep | Krampus Celebrant |
+| Monsters of Myth pg. 58 | Rare	Medium | Humanoid, Rare |  | 8 | darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet; snowstride | Loading... |
+| Kreekoss |  | Pathfinder #170: Spoken on the Song Wind pg. 53 |  | Unique | Beast, Fiend, Unique |  | 6 | 95 | 24 | +11 | +16 | +14 | low-light vision | 10 feet, fly 60 feet |
+| Kreeth-Ni |  | Pathfinder #179: Cradle of Quartz pg. 38 |  | Unique | Fey, Sprite, Unique |  | 3 | 40 | 19 | +7 | +11 | +12 | (13 to Seek creatures using hearing), low-light vision | 10 feet, fly 40 feet |
+| Kressle |  | Kingmaker Adventure Path pg. 170 |  | Unique | Human, Humanoid, Unique |  | 1 | 22 | 15 | +8 | +7 | +6 | 25 feet | Loading... |
+| Krooth |  | Monster Core pg. 213 1.1 |  | Common | Amphibious, Animal |  | 8 | 150 | 26 | +20 | +17 | +14 | low-light vision, scent (imprecise) 60 feet | 40 feet, swim 30 feet |
+| Kuchisake-Onna |  | Bestiary 3 pg. 156 |  | Rare | Aberration, Rare |  | 14 | 252 | 36 | +22 | +28 | +24 | darkvision | 30 feet |
+| Kun |  | Tian Xia World Guide pg. 289 |  | Uncommon | Aquatic, Beast, Cold, Uncommon, Unholy |  | 14 | 230 | 36 | +29 | +24 | +23 | darkvision, light blindness, wavesense 60 feet | swim 40 feet |
+| Kundal |  | Kingmaker Adventure Path pg. 190 |  | Unique | Beast, Human, Humanoid, Undine, Unique, Werecreature |  | 7 | 140 | 25 | +16 | +13 | +17 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Kuribu | Angel | Monster Core 2 pg. 26 |  | Common | Angel, Celestial, Holy |  | 3 | 45 | 17 | +6 | +11 | +9 | darkvision | 25 feet, fly 25 feet |
+| Kurnugian Jackal |  | Troubles in Otari pg. 61 |  | Uncommon | Beast, Uncommon |  | 6 | 98 | 23 | +14 | +17 | +11 | low-light vision, scent (imprecise) 60 feet | 35 feet |
+| Kurobozu |  | Bestiary 3 pg. 157 |  | Uncommon | Uncommon, Undead |  | 6 | 90 ( negative healing ) | 24 | +12 | +16 | +14 | darkvision | 35 feet |
+| Kurshkin |  | Pathfinder #169: Kindled Magic pg. 86 |  | Unique | Fey, Gremlin, Unique |  | 3 | 50 | 19 | +8 | +11 | +8 | (+2 to hear things) darkvision | 25 feet |
+| Kushtaka |  | Bestiary 3 pg. 158 |  | Common | Amphibious, Beast |  | 4 | 40 | 21 | +8 | +13 | +12 | darkvision, scent (imprecise) 30 feet | 25 feet, swim 40 feet |
+| Kuworsys |  | Monsters of Myth pg. 64 |  | Unique | Aberration, Unique |  | 12 | 213 | 34 | +22 | +22 | +27 | (26 vs traps) infect scent (imprecise) 60 feet | 35 feet, climb 35 feet |
+| Kvernknurr |  | Gatewalkers (Hardcover) pg. 264 |  | Uncommon | Amphibious, Fey, Uncommon, Water |  | 5 | 80 | 22 | +15 | +12 | +9 | low-light vision | 30 feet |
+| Loading... | Lacedon | Ghoul |  |  | Book of the Dead pg. 104 |  | Common | Medium |  |  |  |  | Amphibious, Ghoul, Undead | 2	32 ( negative healing )	18	+7	+10	+7	+7 |
+| corpse scent (imprecise), darkvision | 25 feet, swim 30 feet | Lacridaemon |  |  | Daemon |  |  |  |  |  |  |  | Monster Core 2 pg. 78 | Common	Medium |
+| Daemon, Fiend, Unholy | 3	45	18	+9	+12	+6	+9 | darkvision |  |  | 30 feet | Lady Siccale |  |  |  |  |  |  | Vampire | Claws of the Tyrant pg. 93 |
+| Unique	Medium | Undead, Unholy, Unique, Vampire | 19	360 (coffin restoration, fast healing15, void healing )	43	+35	+38	+35	+32 |  |  | darkvision |  |  |  |  |  |  |  | 25 feet, climb 25 feet | Lady's Whisper |
+| Pathfinder #165: Eyes of Empty Death pg. 49 | Unique	Medium | Undead, Unique |  | 11 | darkvision, see invisibility, true seeing |  |  |  |  |  |  |  | 25 feet | Lagofir |
+| Pathfinder #176: Lost Mammoth Valley pg. 86 | Uncommon	Large | Animal, Uncommon |  | 3 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 30 feet, swim 30 feet | Lamia |
+| Lamia |  | Monster Core pg. 214 1.1 |  | Common | Beast, Humanoid |  | 6 | 95 | 24 | +12 | +15 | +15 | darkvision | 40 feet |
+| Lamia Matriarch | Lamia | Monster Core pg. 215 1.1 |  | Common | Beast, Humanoid |  | 8 | 135 | 27 | +13 | +18 | +17 | darkvision | 30 feet, climb 30 feet, swim 30 feet |
+| Lamp Blighter |  | Shining Kingdoms pg. 183 |  | Common | Fey |  | 6 | 75 | 23 | +11 | +17 | +14 | darkvision, low-light vision | 15 feet, fly 45 feet |
+| Lampad | Nymph | Monster Core 2 pg. 236 |  | Common | Earth, Fey, Nymph |  | 5 | 85 | 21 | +11 | +14 | +12 | darkvision | 25 feet, climb 25 feet (on stone only) |
+| Lampad Queen | Nymph | Monster Core 2 pg. 237 |  | Uncommon | Earth, Fey, Nymph, Uncommon |  | 15 | 235 | 38 | +26 | +29 | +25 | darkvision | 30 feet, climb 30 feet (on stone only) |
+| Loading... | Lantondo | Pathfinder #167: Ready? Fight! pg. 35 |  | Unique | Construct, Unique, Wyrwood |  | 15 | 275 | 36 | +24 | +26 | +27 | 25 feet | Larabay |
+| Monster Core 2 pg. 211 | Common	Medium | Fey |  | 11 | low-light vision |  |  |  |  |  |  |  | 30 feet, fly 35 feet | Laruhao |
+| Pathfinder #168: King of the Mountain pg. 41 | Unique	Medium | Humanoid, Unique |  | 19 | darkvision |  |  |  |  |  |  |  | 25 feet | Larval Cave Worm Brood |
+| Cave Worm |  | Pathfinder #195: Heavy is the Crown pg. 85 |  | Rare | Animal, Rare, Swarm |  | 10 | 220 | 27 | +21 | +19 | +12 | darkvision, tremorsense (imprecise) 100 feet | 30 feet, burrow 30 feet, swim 20 feet |
+| Larval Ofalth | Ofalth | Monster Core pg. 249 1.1 |  | Common | Aberration |  | 4 | 60 | 20 | +11 | +9 | +9 | darkvision | 25 feet |
+| Lasheeli Aminda |  | Pathfinder #183: Field of Maidens pg. 90 |  | Unique | Aasimar, Human, Humanoid, Unique |  | 10 | 127 | 27 | +16 | +19 | +19 | darkvision | 30 feet |
+| Laslunn |  | Pathfinder #147: Tomorrow Must Burn pg. 87 |  | Unique | Gnoll, Humanoid, Unique |  | 13 | 235 | 35 | +23 | +25 | +22 | darkvision | 25 feet |
+| Last Guard |  | Claws of the Tyrant pg. 77 |  | Uncommon | Incorporeal, Spirit, Troop, Uncommon, Undead, Unholy |  | 20 | 330 (4 segments, rejuvenation, void healing ) | 45 | +34 | +36 | +31 | darkvision, lifesense 60 feet | fly 40 feet; troop movement |
+| Loading... | Lava Spitter | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 84 |  | Rare | Construct, Elemental, Fire, Rare |  | 4 | 60 (fiery healing) | 20 | +11 | +14 | +8 | darkvision, smoke vision | 25 feet |
+| Lawbringer Warpriest | Nephilim | Monster Core pg. 267 1.1 |  | Uncommon | Human, Humanoid, Nephilim, Uncommon |  | 5 | 64 | 23 | +12 | +8 | +12 | darkvision | 20 feet |
+| Lazurite-Infused Stone Golem |  | Pathfinder #148: Fires of the Haunted City pg. 45 |  | Rare | Construct, Golem, Mindless, Rare |  | 12 | 195 | 33 | +25 | +19 | +20 | 20 feet | Leadsmith |
+| Pathfinder #180: The Smoking Gun pg. 9 | Uncommon	Medium | Dwarf, Humanoid, Uncommon |  | 5 | darkvision |  |  |  |  |  |  |  | 20 feet | Leaf Leshy |
+| Leshy |  | Monster Core pg. 216 1.1 |  | Common | Leshy, Plant |  | 0 | 15 (Weaknesses fire 2) | 18 | +6 | +6 | +4 | low-light vision | 25 feet; Glide |
+| Leandrus |  | Pathfinder #151: The Show Must Go On pg. 28 |  | Unique | Animal, Minion, Unique |  | 2 | 30 | 18 | +8 | +8 | +5 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Leaping Thief | Catfolk | NPC Core pg. 172 |  | Common | Catfolk, Humanoid |  | 3 | 38 | 20 | +7 | +11 | +7 | low-light vision | 25 feet, climb 10 feet |
+| Leather Cap | Leshy | Pathfinder Game Night: Dawn of the Frogs (Deluxe Adventure) pg. 20 |  | Common | Fungus, Leshy |  | 2 | 30 | 18 | +8 | +10 | +6 | darkvision | 25 feet |
+| Ledalusca |  | Bestiary 3 pg. 159 |  | Common | Cold, Elemental, Water |  | 2 | 40 | 17 | +8 | +9 | +6 | darkvision | 25 feet, swim 30 feet |
+| Ledorick Banyan |  | Pathfinder #154: Siege of the Dinosaurs pg. 88 |  | Unique | Human, Humanoid, Unique |  | 14 | 260 | 36 | +28 | +26 | +22 | (26 when using for initiative) | 25 feet |
+| Legbreaker | Criminal | NPC Core pg. 21 |  | Common | Human, Humanoid |  | 6 | 110 | 23 | +15 | +15 | +12 | 30 feet | Leiko |
+| Gatewalkers (Hardcover) pg. 39 | Unique	Medium | Shadow, Unique |  | 4 | darkvision |  |  |  |  |  |  |  | 25 feet, fly 35 feet; swift steps, tenebral form | Lekmek |
+| Crown of the Kobold King pg. 57 | Unique	Small | Humanoid, Kobold, Unique |  | 3 | darkvision |  |  |  |  |  |  |  | 25 feet | Leng Envoy |
+| Kingmaker Adventure Path pg. 416 | Rare	Medium | Aberration, Dream, Rare |  | 18 | darkvision |  |  |  |  |  |  |  | 30 feet | Leng Ghoul |
+| Ghoul |  | Bestiary 3 pg. 107 |  | Uncommon | Dream, Ghoul, Uncommon, Undead |  | 10 | 180 ( negative healing ) | 29 | +18 | +21 | +19 | darkvision | 25 feet, burrow 25 feet, climb 25 feet |
+| Leng Spider |  | Bestiary 2 pg. 157 2.0 |  | Uncommon | Aberration, Dream, Uncommon |  | 13 | 235 ( fast healing 10) | 34 | +22 | +26 | +24 | darkvision, detect magic, greater web sense | 40 feet, climb 40 feet; air walk |
+| Leopard | Cat | Monster Core pg. 50 1.1 |  | Common | Animal |  | 2 | 30 | 18 | +8 | +10 | +5 | low-light vision, scent (imprecise) 30 feet | 30 feet, climb 20 feet |
+| Leopard Seal | Seal | Howl of the Wild pg. 178 2.1 |  | Common | Animal |  | 4 | 65 | 20 | +12 | +14 | +8 | darkvision, scent (imprecise) 40 feet, whisker sense 60 feet | 15 feet, swim 40 feet |
+| Leprechaun |  | Monster Core 2 pg. 213 |  | Common | Fey |  | 2 | 25 | 18 | +8 | +11 | +10 | low-light vision | 30 feet |
+| Lerritan |  | Bestiary 2 pg. 159 2.0 |  | Common | Earth, Elemental, Fire |  | 21 | 490 | 46 | +38 | +34 | +36 | low-light vision | 50 feet |
+| Leshy Mob | Leshy | Pathfinder #203 Shepherd of Decay pg. 82 |  | Common | Leshy, Plant, Troop |  | 11 | 195 (16 squares) | 30 | +23 | +19 | +21 | low-light vision | 25 feet; troop movement |
+| Lesser Death | Grim Reaper | Monster Core pg. 185 1.1 |  | Rare | Rare, Undead, Unholy |  | 16 | 255 (death's grace, void healing ) | 39 | +30 | +33 | +32 | darkvision, see the unseen, status sight, truesight | 50 feet, fly 40 feet |
+| Lesser Jabberwock |  | Kingmaker Adventure Path pg. 440 |  | Rare | Dragon, Rare, Tane |  | 21 | 430 | 47 | +38 | +33 | +36 | darkvision, scent 120 feet, true seeing | 35 feet, fly 60 feet |
+| Lesser Manifestation Of Dahak |  | Pathfinder #150: Broken Promises pg. 16 |  | Unique | Dragon, Fire, Unique |  | 22 | 500 | 50 | +36 | +33 | +39 | darkvision, scent (imprecise) 60 feet, smoke vision | 60 feet, fly 240 feet |
+| Lesser Shadow Scamp |  | Pathfinder #213: Thirst for Blood pg. 18 |  | Common | Elemental, Shadow |  | 0 | 10 ( fast healing 2 (in shadow)) | 15 | +3 | +9 | +7 | darkvision | 20 feet, fly 40 feet |
+| Leucrotta |  | Bestiary 2 pg. 162 2.0 |  | Common | Beast |  | 5 | 85 | 21 | +15 | +9 | +11 | darkvision, scent (imprecise) 30 feet | 50 feet, climb 25 feet |
+| Leukodaemon | Daemon | Monster Core pg. 74 1.1 |  | Common | Daemon, Fiend, Unholy |  | 9 | 155 | 28 | +15 | +21 | +19 | darkvision, plaguesense (imprecise) 60 feet | 25 feet, fly 40 feet |
+| Leukodaemon Plague | Daemon | Battlecry! pg. 184 |  | Common | Daemon, Fiend, Troop, Unholy |  | 14 | 255 (4 segments) | 35 | +22 | +25 | +28 | darkvision, plaguesense (imprecise) 60 feet | 25 feet, fly 40 feet; troop movement |
+| Levaloch | Devil | Monster Core 2 pg. 99 |  | Common | Construct, Devil, Fiend, Unholy |  | 7 | 105 | 25 | +17 | +14 | +12 | greater darkvision | 30 feet, climb 30 feet |
+| Leviathan Louse |  | Pathfinder #218: Titanbane pg. 84 |  | Rare | Beast, Earth, Metal, Rare |  | 8 | 135 | 26 | +17 | +15 | +14 | darkvision, tremorsense (imprecise) 60 feet | 25 feet, burrow 20 feet |
+| Leydroth |  | Bestiary 2 pg. 163 2.0 |  | Uncommon | Beast, Uncommon |  | 17 | 315 | 40 | +32 | +30 | +28 | darkvision, magic sense (imprecise) 60 feet | 50 feet |
+| Librarian | Scholar | NPC Core pg. 138 |  | Common | Human, Humanoid |  | -1 | 6 | 13 | +2 | +3 | +7 | 25 feet | Lich |
+| Lich |  | Monster Core pg. 219 1.1 |  | Rare | Rare, Undead, Unholy |  | 12 | 190 ( void healing , rejuvenation) | 31 | +17 | +21 | +23 | darkvision | 25 feet |
+| Lich Legion | Lich | Battlecry! pg. 185 |  | Rare | Rare, Troop, Undead, Unholy |  | 18 | 330 (4 segments, mass rejuvenation, void healing ) | 41 | +27 | +30 | +33 | darkvision | 25 feet; troop movement |
+| Lickweed |  | Kingmaker Companion Guide pg. 62 |  | Unique | Goblin, Humanoid, Unique |  | 4 | 65 | 20 | +9 | +12 | +14 | darkvision | 25 feet |
+| Loading... | Lightning Turtle | Galvanoscale |  |  | Howl of the Wild pg. 153 2.1 |  | Common | Large |  |  |  |  | Animal | 12	190	34	+25	+19	+22	+22 |
+| low-light vision, greater electrolocation 20 feet | 15 feet, swim 30 feet | Lignified Adamantine Golem |  |  | Pathfinder #174: Shadows of the Ancients pg. 16 |  | Rare | Large |  |  |  |  | Construct, Golem, Mindless, Rare | 17	255 (repair mode)	40	+31	+25	+27	+26 |
+| darkvision | 30 feet | Line Infantry |  |  | Military |  |  |  |  |  |  |  | NPC Core pg. 90 | Common	Gargantuan |
+| Human, Humanoid, Troop | 6	96 (4 segments)	24	+15	+14	+13	+13 | 20 feet; troop movement | Lintwerth |  | Kingmaker Adventure Path pg. 310 |  | Unique | Small |  |  |  |  | Air, Earth, Elemental, Unique | 11	180 ( fast healing 10 (in dust or sand))	32	+18	+24	+22	+22 |
+| darkvision | 20 feet, fly 35 feet | Linzi (Level 1) |  |  | Kingmaker Companion Guide pg. 45 |  | Unique | Small |  |  |  |  | Halfling, Humanoid, Unique | 1	15	17	+4	+6	+6	+6 |
+| (expert) keen eyes | 25 feet | Linzi (Level 7) |  |  | Kingmaker Companion Guide pg. 45 |  | Unique | Small |  |  |  |  | Halfling, Humanoid, Unique | 7	76	25	+12	+16	+13	+13 |
+| (expert) keen eyes | 30 feet | Lion |  |  | Cat |  |  |  |  |  |  |  | Monster Core pg. 50 1.1 | Common	Large |
+| Animal | 3	45	18	+9	+10	+7	+9 | low-light vision, scent (imprecise) 30 feet Skills Acrobatics 8, Athletics 9, Stealth 10 |  |  | 30 feet | Lion Visitant |  |  |  |  |  |  | Visitant | Pathfinder #152: Legacy of the Lost God pg. 83 |
+| Common	Large | Animal, Undead | 5	95 ( negative healing )	22	+9	+11	+15	+13 |  |  | darkvision, lifesense (imprecise) 60 feet |  |  |  |  |  |  |  | 30 feet | Lisavet |
+| No-Prep Character: Lisavet | Unique	Medium | Human, Humanoid, Unique |  | 2 | 25 feet | Loading... |  |  |  |  |  |  | Little Man in the Woods | Book of the Dead pg. 124 |
+| Rare	Small | Rare, Undead | 6	95 ( negative healing )	24	+13	+17	+12	+12 |  |  | darkvision |  |  |  |  |  |  |  | 25 feet | Living Boulder |
+| Elemental, Earth |  | Monster Core 2 pg. 146 |  | Common | Earth, Elemental |  | 2 | 35 | 17 | +10 | +5 | +8 | darkvision, tremorsense 30 feet | 20 feet, burrow 20 feet; earth glide |
+| Living Grove | Elemental, Wood | Rage of Elements pg. 207 2.0 |  | Common | Elemental, Plant, Wood |  | 5 | 90 | 24 | +12 | +7 | +15 | tremorsense 30 feet | 20 feet |
+| Living Landslide | Elemental, Earth | Monster Core pg. 142 1.1 |  | Common | Earth, Elemental |  | 5 | 90 | 21 | +15 | +8 | +10 | darkvision, tremorsense (imprecise) 60 feet | 25 feet, burrow 25 feet; earth glide |
+| Living Lodestone | Elemental, Metal | Rage of Elements pg. 155 2.0 |  | Common | Elemental, Metal |  | 6 | 95 | 23 | +14 | +13 | +16 | darkvision | 20 feet; hover |
+| Living Magma | Elemental, Fire | Rage of Elements pg. 129 2.0 |  | Common | Elemental, Fire |  | 13 | 250 | 35 | +26 | +20 | +22 | darkvision | 40 feet, swim 60 feet (in lava only) |
+| Living Sap |  | Pathfinder #146: Cult of Cinders pg. 89 |  | Uncommon | Mindless, Ooze, Uncommon |  | 6 | 175 | 13 | +18 | +7 | +5 | motion sense 60 feet, no vision | 10 feet, climb 10 feet |
+| Living Statues |  | Pathfinder #218: Titanbane pg. 60 |  | Common | Construct, Mindless |  | 5 | 75 (construct armor) | 23 | +16 | +9 | +9 | darkvision | 20 feet |
+| Living Tar | Ooze | Monster Core pg. 257 1.1 |  | Common | Mindless, Ooze |  | 7 | 165 | 14 | +18 | +6 | +11 | motion sense (precise) 60 feet, no vision | 20 feet, climb 20 feet |
+| Living Thunderclap | Elemental, Air | Monster Core 2 pg. 144 |  | Common | Air, Elemental |  | 4 | 50 | 21 | +10 | +12 | +9 | darkvision | fly 50 feet; swiftness |
+| Living Waterfall | Elemental, Water | Monster Core pg. 148 1.1 |  | Common | Aquatic, Elemental, Water |  | 5 | 90 | 20 | +14 | +12 | +10 | darkvision | 20 feet, swim 60 feet |
+| Living Whirlwind | Elemental, Air | Monster Core pg. 140 1.1 |  | Common | Air, Elemental |  | 5 | 50 | 24 | +9 | +16 | +10 | darkvision | fly 50 feet; swiftness |
+| Living Wildfire | Elemental, Fire | Monster Core pg. 144 1.1 |  | Common | Elemental, Fire |  | 5 | 80 (explosion) | 22 | +11 | +15 | +10 | darkvision, smoke vision | 50 feet |
+| Living-Sun Spire |  | Pathfinder #172: Secrets of the Temple City pg. 57 |  | Common | Construct, Mindless |  | 13 | 200 | 36 | +29 | +19 | +17 | darkvision | 20 feet |
+| Lizardfolk Defender | Lizardfolk | Monster Core pg. 226 1.1 |  | Common | Humanoid, Lizardfolk |  | 1 | 21 | 16 | +8 | +7 | +5 | 25 feet, swim 15 feet | Lizardfolk Scout |
+| Lizardfolk |  | Monster Core pg. 227 1.1 |  | Common | Humanoid, Lizardfolk |  | 1 | 17 | 17 | +6 | +8 | +6 | 25 feet, swim 20 feet | Lizardfolk Stargazer |
+| Lizardfolk |  | Monster Core pg. 227 1.1 |  | Common | Humanoid, Lizardfolk |  | 2 | 30 | 17 | +7 | +6 | +10 | 25 feet, swim 20 feet | Lizardfolk Warrior |
+| Kingmaker Adventure Path pg. 139 | Uncommon	Medium | Humanoid, Lizardfolk, Uncommon |  | 2 | 25 feet, swim 15 feet | Llorona |  |  |  |  |  |  | Book of the Dead pg. 125 | Common	Medium |
+| Incorporeal, Spirit, Undead | 12	165 ( negative healing , rejuvenation)	32	+19	+23	+20	+20 | darkvision |  |  | fly 60 feet | Lloyd The Leaper |  |  |  |  |  |  | Pathfinder #201: Pactbreaker pg. 50 | Unique	Small |
+| Fey, Unique | 8	135	26	+13	+20	+15	+17 | low-light vision |  |  | 40 feet | Loakan |  |  |  |  |  |  | Pathfinder #170: Spoken on the Song Wind pg. 28 | Unique	Medium |
+| Humanoid, Lizardfolk, Unique | 6	100	23	+11	+14	+13	+13 | 25 feet, swim 15 feet | Loan Shark |  | Criminal |  |  |  |  |  |  |  | NPC Core pg. 19 | Common	Medium |
+| Human, Humanoid | 2	25	18	+7	+6	+10	+8 | 25 feet | Loblobi |  | Pathfinder #175: Broken Tusk Moon pg. 85 |  | Uncommon | Small |  |  |  |  | Fey, Uncommon | 1	25	16	+4	+9	+8	+6 |
+| low-light vision | 20 feet, fly 30 feet | Local Herbalist |  |  | Healer |  |  |  |  |  |  |  | NPC Core pg. 60 | Common	Medium |
+| Human, Humanoid | 1	24	13	+8	+5	+9	+7 | 25 feet | Logger |  | Kingmaker Adventure Path pg. 71 |  | Common | Medium |  |  |  |  | Human, Humanoid | 0	20	13	+8	+5	+6	+6 |
+| 25 feet | Lomok | Pathfinder #177: Burning Tundra pg. 57 |  | Unique | Aasimar, Human, Humanoid, Unique |  | 11 | 210 | 30 | +20 | +18 | +23 | low-light vision | 20 feet |
+| Lomori Sprout |  | Rage of Elements pg. 215 2.0 |  | Rare | Aeon, Plant, Rare, Wood |  | 3 | 50 | 17 | +6 | +11 | +8 | darkvision | 30 feet, climb 20 feet |
+| Long-Horned Bison |  | Pathfinder #176: Lost Mammoth Valley pg. 83 |  | Common | Animal |  | 6 | 110 | 23 | +17 | +12 | +12 | scent (imprecise) 60 feet | 35 feet |
+| Long-Horned Bison Beheaded |  | Pathfinder #176: Lost Mammoth Valley pg. 15 |  | Uncommon | Mindless, Uncommon, Undead |  | 2 | 32 ( negative healing ) | 18 | +7 | +10 | +5 | darkvision | 15 feet, fly 30 feet |
+| Loading... | Loreavor | Ennosite |  |  | Shadows at Sundown pg. 56 |  | Rare | Small |  |  |  |  | Astral, Rare | 9	155	28	+15	+21	+19	+19 |
+| thoughtsense (imprecise) 60 feet | 20 feet, fly 20 feet | Lorthact |  |  | Shadows at Sundown pg. 62 |  | Unique | Medium |  |  |  |  | Devil, Fiend, Unique | 16	300	38	+28	+30	+25	+27 |
+| greater darkvision | 25 feet, fly 20 feet | Losko |  |  | Pathfinder #214: The Broken Palace pg. 19 |  | Unique | Medium |  |  |  |  | Skeleton, Undead, Unholy, Unique | 5	58 ( void healing )	22	+13	+9	+11	+11 |
+| darkvision | 25 feet | Loading... | Lovelorn |  | Monster Core 2 pg. 217 |  | Uncommon | Tiny |  |  |  |  | Uncommon, Undead, Unholy | 4	60 ( void healing )	21	+9	+13	+12	+10 |
+| (12 to Sense Motive) darkvision, lifesense 30 feet | 25 feet, climb 25 feet | Lucky Courser |  |  | Catfolk |  |  |  |  |  |  |  | NPC Core pg. 173 | Common	Medium |
+| Catfolk, Humanoid | 8	140	27	+17	+18	+14	+18 | low-light vision, scent (imprecise) 30 feet |  |  | 25 feet | Luminous Ooze |  |  |  |  |  |  | Pathfinder #151: The Show Must Go On pg. 85 | Common	Small |
+| Mindless, Ooze | 4	80	11	+11	+3	+6	+6 | motion sense 60 feet, no vision |  |  | 25 feet, climb 15 feet | Lunar Naga |  |  |  |  |  |  | Naga | Bestiary 2 pg. 178 2.0 |
+| Uncommon	Large | Aberration, Uncommon | 6	100	24	+15	+16	+17	+16 |  |  | darkvision |  |  |  |  |  |  |  | 25 feet | Lurker In Light |
+| Bestiary 2 pg. 169 2.0 | Common	Small | Fey |  | 5 | low-light vision |  |  |  |  |  |  |  | 25 feet, fly 25 feet | Lusca |
+| Pathfinder #161: Belly of the Black Whale pg. 83 | Uncommon	Gargantuan | Aberration, Aquatic, Uncommon |  | 17 | blood scent, darkvision, scent (imprecise) 100 feet |  |  |  |  |  |  |  | 10 feet, swim 50 feet | Lyrakien |
+| Azata |  | Monster Core pg. 32 1.1 |  | Common | Azata, Celestial, Holy |  | 1 | 25 | 17 | +4 | +7 | +6 | darkvision | 25 feet, fly 50 feet |
+| Loading... | Lyrt Cozurn | Pathfinder #154: Siege of the Dinosaurs pg. 40 |  | Unique | Incorporeal, Spirit, Undead, Unique |  | 15 | 280 ( negative healing ) | 35 | +19 | +28 | +29 | darkvision | fly 50 feet |
+| Maalya |  | Pathfinder #167: Ready? Fight! pg. 40 |  | Rare | Human, Humanoid, Rare |  | 15 | 275 | 37 | +25 | +28 | +21 | 25 feet | Maestro |
+| Performer |  | NPC Core pg. 130 |  | Common | Human, Humanoid |  | 11 | 180 | 30 | +18 | +24 | +21 | 25 feet | Mafika Ayuwari |
+| Pathfinder #167: Ready? Fight! pg. 38 | Unique	Medium | Human, Humanoid, Unique |  | 17 | 25 feet | Maftet Guardian |  |  |  |  |  |  | Monster Core 2 pg. 218 | Common	Medium |
+| Humanoid, Maftet | 6	90	23	+14	+15	+12	+14 | darkvision |  |  | 30 feet, fly 40 feet | Mage For Hire |  |  |  |  |  |  | Mercenary | NPC Core pg. 82 |
+| Common	Medium | Aiuvarin, Human, Humanoid | 3	30	17	+8	+9	+10	+7 |  |  | 25 feet | Mage Killer |  |  |  |  |  |  | Mercenary | NPC Core pg. 84 |
+| Common	Medium | Human, Humanoid | 8	145	25	+16	+17	+16	+16 |  |  | 25 feet | Mage Knight |  |  |  |  |  |  | Military | NPC Core pg. 94 |
+| Common	Medium | Human, Humanoid | 10	140	29	+18	+13	+21	+17 |  |  | 20 feet | Mage of Many Styles |  |  |  |  |  |  | Pathfinder #166: Despair on Danger Island pg. 25 | Uncommon	Medium |
+| Human, Humanoid, Uncommon | 13	220	32	+22	+23	+21	+22 | 25 feet | Magma Archdragon |  | Dragon, Magma |  |  |  |  |  |  |  | Draconic Codex pg. 141 | Rare	Gargantuan |
+| Dragon, Fire, Primal, Rare | 21	450	46	+39	+32	+35	+38 | darkvision, scent (imprecise) 60 feet |  |  | 50 feet, burrow 50 feet, fly 200 feet; magma burrow | Magma Scorpion |  |  |  |  |  |  | Elemental, Fire | Monster Core 2 pg. 149 |
+| Common	Large | Elemental, Fire | 8	155	27	+19	+14	+16	+18 |  |  | darkvision, smoke vision |  |  |  |  |  |  |  | 40 feet, climb 30 feet | Magma Worm |
+| Cave Worm |  | Monster Core pg. 57 1.1 |  | Rare | Beast, Fire, Rare |  | 18 | 410 | 40 | +36 | +25 | +27 | darkvision, tremorsense (imprecise) 100 feet | 40 feet, burrow 40 feet, swim 20 feet |
+| Magnegor |  | Howl of the Wild pg. 168 2.1 |  | Common | Animal |  | 6 | 100 | 21 | +17 | +11 | +14 | low-light vision | 40 feet |
+| Magnetic Gecko | Galvanoscale | Howl of the Wild pg. 152 2.1 |  | Common | Animal |  | 1 | 20 | 15 | +10 | +7 | +4 | low-light vision, greater electrolocation 20 feet | 30 feet, climb 30 feet |
+| Mago Kai |  | Pathfinder #198: No Breath to Cry pg. 91 |  | Unique | Human, Humanoid, Unique |  | 11 | 220 | 29 | +24 | +18 | +21 | 20 feet | Loading... |
+| Majungasaurus | Dinosaur | Howl of the Wild pg. 137 2.1 |  | Common | Animal, Dinosaur |  | 6 | 120 | 23 | +14 | +17 | +12 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Malarunk |  | Pathfinder #145: Hellknight Hill pg. 58 |  | Unique | Charau-ka, Humanoid, Unique |  | 5 | 63 | 22 | +11 | +9 | +13 | darkvision, scent (imprecise) 30 feet | 25 feet, climb 25 feet |
+| Malgorzata Niska |  | Kingmaker Adventure Path pg. 197 |  | Unique | Human, Humanoid, Unique |  | 5 | 85 | 21 | +9 | +13 | +15 | 25 feet | Maliadi |
+| The Mwangi Expanse pg. 302 2.0 | Uncommon	Gargantuan | Beast, Uncommon |  | 17 | darkvision, scent (imprecise) 60 feet, true seeing |  |  |  |  |  |  |  | 30 feet, swim 20 feet; freedom of movement | Mamlambo |
+| The Mwangi Expanse pg. 303 2.0 | Uncommon	Huge | Aquatic, Beast, Uncommon |  | 9 | darkvision |  |  |  |  |  |  |  | 10 feet, swim 40 feet | Mammoth |
+| Elephant |  | Monster Core pg. 150 1.1 |  | Common | Animal |  | 10 | 190 | 29 | +21 | +15 | +18 | low-light vision, scent (imprecise) 30 feet | 45 feet |
+| Mammoth Land Star |  | Howl of the Wild pg. 169 2.1 |  | Common | Animal, Mindless |  | 8 | 100 (limb regrowth) | 26 | +19 | +13 | +15 | scent (precise) 100 feet, tremorsense (imprecise) 60 feet | 25 feet |
+| Mammoth Squid | Squid | Pathfinder #218: Titanbane pg. 85 |  | Uncommon | Animal, Aquatic, Uncommon |  | 14 | 255 | 36 | +28 | +22 | +26 | darkvision | swim 40 feet |
+| Mammoth Turtle |  | Pathfinder #166: Despair on Danger Island pg. 31 |  | Rare | Animal, Rare |  | 14 | 270 | 36 | +26 | +22 | +26 | low-light vision, scent (imprecise) 30 feet | 20 feet, swim 50 feet |
+| Manananggal |  | Tian Xia World Guide pg. 290 |  | Common | Aberration, Tanggal |  | 8 | 180 | 26 | +14 | +17 | +19 | darkvision | 30 feet (or fly 80 feet when body is separated) |
+| Mandragora |  | Monster Core 2 pg. 219 |  | Common | Plant |  | 4 | 60 | 21 | +11 | +13 | +8 | blood scent, low-light vision | 30 feet, burrow 10 feet, climb 30 feet |
+| Mandragora Swarm |  | Kingmaker Adventure Path pg. 430 |  | Rare | Plant, Rare, Swarm |  | 18 | 230 ( fast healing 15) | 42 | +30 | +34 | +28 | blood scent, low-light vision | 30 feet, burrow 10 feet, climb 30 feet |
+| Manifestation Of Dahak |  | Pathfinder #150: Broken Promises pg. 63 |  | Unique | Acid, Cold, Dragon, Electricity, Fire, Poison, Unique |  | 24 | 600 | 52 | +42 | +36 | +38 | darkvision, scent (precise) 120 feet, smoke vision | 60 feet, fly 200 feet |
+| Manta Ray | Ray | Bestiary 2 pg. 226 2.0 |  | Common | Animal, Aquatic |  | 1 | 24 | 16 | +6 | +9 | +6 | electrolocation (imprecise) 30 feet, low-light vision | swim 40 feet |
+| Manticore | Manticore | Monster Core pg. 228 1.1 |  | Common | Beast |  | 6 | 90 | 23 | +16 | +12 | +12 | darkvision, scent (imprecise) 30 feet | 25 feet, fly 40 feet |
+| Loading... | Mantis Keeper | Prey for Death pg. 51 |  | Unique | Leshy, Plant, Unique |  | 17 | 318 | 39 | +26 | +29 | +31 | low-light vision | 25 feet |
+| Mari Lwyd | A Caroling Horse (Of Course. Of Course.) | Uncommon	Large |  |  | Fey, Uncommon |  | 11 | 190 | 30 | +24 | +21 | +18 | darkvision | 50 feet, swim 30 feet |
+| Loading... | Marp | Howl of the Wild pg. 174 2.1 |  | Common | Beast |  | 4 | 48 | 20 | +10 | +14 | +10 | darkvision, goldsense (imprecise) 60 feet | 25 feet, climb 15 feet |
+| Marrmora |  | Monster Core 2 pg. 220 |  | Common | Fey, Fire |  | 15 | 280 | 37 | +29 | +25 | +27 | low-light vision | 30 feet, fly 30 feet |
+| Marsh Giant | Giant | Monster Core pg. 164 1.1 |  | Common | Amphibious, Giant, Humanoid, Water |  | 8 | 150 | 27 | +18 | +13 | +17 | low-light vision | 35 feet, swim 20 feet |
+| Martial Student | Martial Artist | NPC Core pg. 72 |  | Common | Human, Humanoid |  | 3 | 40 | 18 | +8 | +10 | +6 | 35 feet | Marut |
+| Aeon |  | Bestiary 2 pg. 10 2.0 |  | Common | Aeon, Inevitable, Monitor |  | 15 | 230 | 37 | +27 | +25 | +26 | darkvision, true seeing | 25 feet; air walk |
+| Mashkudu The Bully |  | Pathfinder #170: Spoken on the Song Wind pg. 27 |  | Unique | Human, Humanoid, Unique |  | 5 | 75 | 22 | +12 | +14 | +11 | 25 feet | Mask of Norgorber |
+| Pathfinder #206: Bring the House Down pg. 84 | Rare	Medium | Fiend, Human, Humanoid, Rare, Unholy |  | 16 | darkvision, truesight |  |  |  |  |  |  |  | 30 feet | Masque Mannequin |
+| Pathfinder #205: Singer, Stalker, Skinsaw Man pg. 87 | Uncommon	Medium | Construct, Soulbound, Uncommon |  | 15 | darkvision |  |  |  |  |  |  |  | 30 feet, climb 30 feet | Master Of Disguise |
+| Criminal |  | NPC Core pg. 22 |  | Common | Human, Humanoid |  | 7 | 110 | 25 | +11 | +17 | +16 | (21 to Sense Motive) | 25 feet |
+| Master Xun |  | Pathfinder #167: Ready? Fight! pg. 23 |  | Rare | Human, Humanoid, Rare |  | 14 | 250 | 36 | +26 | +24 | +23 | 25 feet, climb 15 feet | Mastermind |
+| Villain |  | NPC Core pg. 156 |  | Common | Human, Humanoid |  | 4 | 55 | 20 | +6 | +11 | +16 | (17 to Sense Motive) | 25 feet |
+| Mastiff Of Tindalos |  | Kingmaker Adventure Path pg. 416 |  | Rare | Aberration, Evil, Rare, Time |  | 15 | 210 | 37 | +23 | +29 | +27 | greater darkvision | 30 feet, fly 30 feet |
+| Mastodon | Elephant | Bestiary 2 pg. 116 2.0 |  | Common | Animal |  | 9 | 175 | 26 | +20 | +13 | +17 | low-light vision, scent (imprecise) 30 feet | 45 feet |
+| Masu |  | Pathfinder #179: Cradle of Quartz pg. 16 |  | Unique | Animal, Unique |  | -1 | 6 | 14 | +3 | +8 | +6 | low-light vision | 20 feet |
+| Loading... | Mayor | Official |  |  | NPC Core pg. 109 |  | Common | Medium |  |  |  |  | Human, Humanoid | 0	16	14	+6	+3	+14	+9 |
+| 25 feet | Meat Guardian | Pathfinder #182: Graveclaw pg. 34 |  | Uncommon | Construct, Divine, Golem, Mindless, Uncommon |  | 5 | 60 | 20 | +14 | +9 | +11 | darkvision | 25 feet |
+| Mechanic | Engineer | NPC Core pg. 42 |  | Common | Human, Humanoid |  | 1 | 22 | 14 | +8 | +6 | +3 | 25 feet | Loading... |
+| Mechanical Carny |  | Pathfinder #151: The Show Must Go On pg. 86 |  | Common | Construct, Mindless |  | 2 | 33 | 17 | +8 | +11 | +4 | low-light vision | 25 feet |
+| Mechanical Laborer |  | Pathfinder #182: Graveclaw pg. 41 |  | Uncommon | Construct, Earth, Mindless, Uncommon |  | 5 | 55 | 22 | +15 | +10 | +8 | darkvision | 25 feet |
+| Medusa |  | Monster Core pg. 230 1.1 |  | Common | Humanoid |  | 7 | 105 | 25 | +15 | +16 | +14 | darkvision | 25 feet |
+| Megalania | Lizard | Monster Core 2 pg. 216 |  | Common | Animal |  | 7 | 125 | 24 | +17 | +15 | +13 | low-light vision, scent (imprecise) 60 feet | 25 feet, swim 25 feet |
+| Loading... | Megaloceros | Elk |  |  | Kingmaker Adventure Path pg. 608, Pathfinder #176: Lost Mammoth Valley pg. 85 |  | Uncommon | Large |  |  |  |  | Animal, Uncommon | 4	58	21	+13	+11	+8	+10 |
+| low-light vision, scent (imprecise) 30 feet | 50 feet | Megalodon |  |  | Shark |  |  |  |  |  |  |  | Monster Core pg. 307 1.1 | Common	Gargantuan |
+| Animal, Aquatic | 9	180	27	+21	+16	+17	+20 | blood scent, scent (imprecise) 100 feet |  |  | swim 80 feet | Megaprimatus |  |  |  |  |  |  | Ape | Monster Core pg. 23 1.1 |
+| Common	Gargantuan | Animal | 8	150	26	+19	+16	+13	+15 |  |  | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 30 feet, climb 30 feet | Loading... |
+| Meitremar |  | Rusthenge pg. 56 |  | Unique | Human, Humanoid, Unique |  | 3 | 42 | 18 | +9 | +6 | +12 | 20 feet | Meladaemon |
+| Daemon |  | Monster Core 2 pg. 79 |  | Common | Daemon, Fiend, Unholy |  | 11 | 225 | 31 | +23 | +20 | +19 | darkvision, lifesense (imprecise) 30 feet | 25 feet, fly 50 feet |
+| Melfesh Monster |  | Monsters of Myth pg. 70 |  | Unique | Fungus, Unique |  | 6 | 78 | 23 | +16 | +14 | +12 | sporesight 100 feet | 25 feet, fly 30 feet |
+| Melianse |  | Kingmaker Adventure Path pg. 71 |  | Unique | Aquatic, Fey, Unique |  | 5 | 78 | 21 | +11 | +13 | +11 | low-light vision | 20 feet, swim 30 feet |
+| Loading... | Melodic Squalls | Pathfinder #167: Ready? Fight! pg. 57 |  | Rare | Air, Elemental, Rare |  | 16 | 280 | 39 | +24 | +32 | +28 | darkvision | fly 100 feet; swiftness |
+| Melody On The Wind | Elemental, Air | Monster Core 2 pg. 145 |  | Common | Air, Elemental |  | 10 | 170 | 30 | +16 | +22 | +19 | darkvision | fly 100 feet; swiftness |
+| Melomach | Elemental, Metal | Rage of Elements pg. 159 2.0 |  | Common | Elemental, Metal |  | 13 | 292 | 33 | +26 | +23 | +23 | darkvision | 25 feet |
+| Mengkare |  | Pathfinder #150: Broken Promises pg. 90 |  | Unique | Dragon, Fire, Unique |  | 23 | 575 | 50 | +37 | +34 | +42 | darkvision, scent (imprecise) 120 feet | 60 feet, fly 200 feet, swim 60 feet |
+| Meokdan | Nindoru | Pathfinder #197: Let the Leaves Fall pg. 84 |  | Common | Fiend, Nindoru |  | 2 | 32 | 17 | +5 | +9 | +9 | darkvision | 25 feet |
+| Loading... | Mercenary Band | Mercenary |  |  | NPC Core pg. 84 |  | Common | Gargantuan |  |  |  |  | Human, Humanoid, Troop | 9	180	26	+18	+17	+15	+17 |
+| 25 feet; troop movement | Mercenary Sailor | Pathfinder #147: Tomorrow Must Burn pg. 18 |  | Common | Human, Humanoid |  | 5 | 75 | 22 | +12 | +15 | +9 | 25 feet | Merchant |
+| Artisan |  | NPC Core pg. 8 |  | Common | Human, Humanoid |  | -1 | 7 | 13 | +1 | +2 | +10 | 25 feet | Mercurial |
+| Elemental, Metal |  | Rage of Elements pg. 153 2.0 |  | Common | Elemental, Metal |  | 2 | 30 | 17 | +7 | +11 | +8 | darkvision | 25 feet |
+| Merfolk Storm Singer | Merfolk | Pathfinder #218: Titanbane pg. 10 |  | Rare | Amphibious, Humanoid, Merfolk, Rare |  | 7 | 90 | 24 | +12 | +15 | +18 | low-light vision | 5 feet, swim 30 feet |
+| Merfolk Warrior | Merfolk | Monster Core pg. 231 1.1 |  | Common | Amphibious, Humanoid, Merfolk |  | 1 | 19 | 18 | +6 | +9 | +4 | low-light vision | 5 feet, swim 30 feet |
+| Merfolk Wavecaller | Merfolk | Monster Core pg. 231 1.1 |  | Common | Amphibious, Humanoid, Merfolk |  | 2 | 30 | 17 | +6 | +6 | +10 | low-light vision | 5 feet, swim 30 feet |
+| Messenger | Laborer | NPC Core pg. 70 |  | Common | Human, Humanoid |  | 1 | 20 | 16 | +7 | +10 | +4 | 30 feet | Metal Scamp |
+| Elemental, Scamp |  | Rage of Elements pg. 153 2.0 |  | Common | Elemental, Metal |  | 1 | 20 ( fast healing 2 (while touching metal)) | 15 | +7 | +5 | +5 | darkvision | 25 feet, fly 25 feet |
+| Metal Wisp | Elemental, Wisp | Rage of Elements pg. 152 2.0 |  | Common | Elemental, Metal |  | 0 | 15 | 16 | +7 | +3 | +6 | darkvision, rust vision | fly 25 feet |
+| Metuak |  | Pathfinder #177: Burning Tundra pg. 90 |  | Unique | Fiend, Human, Humanoid, Unique |  | 13 | 240 (dual soul; 120 each for Metuak and Xeleria) | 33 | +26 | +23 | +20 | darkvision, scent (imprecise) 30 feet | 25 feet, fly 25 feet |
+| Loading... | Mi-Go | Monster Core 2 pg. 221 |  | Uncommon | Fungus, Uncommon |  | 6 | 120 | 23 | +13 | +17 | +14 | low-light vision, tremorsense (precise) 30 feet | 25 feet, fly 40 feet |
+| Mialari Docur |  | Pathfinder #147: Tomorrow Must Burn pg. 89 |  | Unique | Elf, Humanoid, Unique |  | 10 | 160 | 30 | +17 | +21 | +19 | low-light vision | 30 feet |
+| Miastrilek | Demon | Pathfinder #211: The Secret of Deathstalk Tower pg. 88 |  | Uncommon | Demon, Fiend, Uncommon, Unholy |  | 11 | 245 | 30 | +18 | +24 | +22 | darkvision | 40 feet, fly 40 feet |
+| Loading... | Millindemalion | Monster Core 2 pg. 222 |  | Common | Fey |  | 13 | 275 | 33 | +20 | +27 | +23 | low-light vision | 30 feet |
+| Mime | Performer | NPC Core pg. 126 |  | Common | Human, Humanoid |  | 3 | 45 | 18 | +6 | +9 | +12 | 25 feet | Mimic |
+| Monster Core 2 pg. 223 | Common	Medium | Aberration |  | 4 | darkvision |  |  |  |  |  |  |  | 10 feet | Minargul |
+| Pathfinder #200: Seven Dooms for Sandpoint pg. 59 | Unique	Small | Goblin, Humanoid, Unique |  | 6 | darkvision |  |  |  |  |  |  |  | 25 feet | Minchgorm |
+| Pathfinder #161: Belly of the Black Whale pg. 84 | Rare	Huge | Aquatic, Fey, Rare, Water |  | 18 | darkvision, wavesense (imprecise) 100 feet |  |  |  |  |  |  |  | 5 feet, swim 20 feet | Mindmoppet |
+| Ooze |  | Gatewalkers (Hardcover) pg. 265 |  | Uncommon | Ooze, Uncommon |  | 5 | 75 | 21 | +9 | +12 | +15 | mindsense (precise) 120 feet, no vision | fly 40 feet |
+| Miner | Laborer | NPC Core pg. 68 |  | Common | Human, Humanoid |  | 0 | 20 | 14 | +7 | +5 | +4 | 25 feet | Minister Of Tumult |
+| Vampire, Jiang-Shi |  | Book of the Dead pg. 159, Pathfinder #167: Ready? Fight! pg. 87 |  | Common | Undead, Vampire |  | 14 | 190 ( fast healing 10 , negative healing , one more breath) | 36 | +26 | +24 | +28 | breathsense (precise) 60 feet, darkvision | 30 feet; rigor mortis |
+| Minognos-Ushad |  | Kingmaker Adventure Path pg. 118 |  | Unique | Dragon, Unique |  | 19 | 295 | 43 | +33 | +35 | +31 | darkvision, scent (imprecise) 30 feet | 30 feet, fly 100 feet |
+| Minotaur Hunter | Minotaur | Monster Core pg. 232 1.1 |  | Common | Beast, Humanoid |  | 4 | 70 | 20 | +13 | +8 | +10 | darkvision | 25 feet |
+| Mirage Archdragon | Dragon, Mirage | Draconic Codex pg. 78 |  | Rare | Arcane, Dragon, Rare |  | 22 | 450 | 47 | +34 | +35 | +39 | darkvision, illusion sense, scent (imprecise) 60 feet | 70 feet, climb 50 feet, fly 210 feet |
+| Loading... | Mirmicette | Claws of the Tyrant pg. 116 |  | Uncommon | Fey, Uncommon |  | 6 | 95 | 22 | +12 | +16 | +14 | low-light vision | 30 feet |
+| Mirror Seer | Mystic | NPC Core pg. 101 |  | Rare | Human, Humanoid, Rare |  | 9 | 140 | 27 | +14 | +17 | +20 | 25 feet | Mirror Wolf |
+| Spirit Guide |  | Howl of the Wild pg. 183 2.1 |  | Common | Beast, Incorporeal, Spirit |  | 7 | 117 | 24 | +14 | +19 | +15 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Loading... | Mist Bear | Ethereal Wildlife |  |  | Howl of the Wild pg. 147 2.1 |  | Uncommon | Large |  |  |  |  | Beast, Ethereal, Uncommon | 7	140	24	+16	+13	+15	+18 |
+| darkvision, scent (imprecise) 30 feet | 35 feet | Mist Stalker |  |  | Elemental, Water |  |  |  |  |  |  |  | Monster Core 2 pg. 150 | Common	Medium |
+| Amphibious, Elemental, Water | 4	60	20	+10	+12	+11	+13 | darkvision, mist vision |  |  | 20 feet, climb 20 feet, swim 30 feet | Mister Beak |  |  |  |  |  |  | Abomination Vaults Hardcover pg. 35 | Unique	Tiny |
+| Construct, Soulbound, Unique | 3	38	22	+9	+12	+8	+10 | darkvision |  |  | 20 feet, fly 20 feet | Mistress Dusklight |  |  |  |  |  |  | Pathfinder #152: Legacy of the Lost God pg. 88 | Unique	Medium |
+| Catfolk, Humanoid, Unique | 11	195	30	+17	+23	+20	+19 | low-light vision |  |  | 30 feet | Mitflit |  |  |  |  |  |  | Gremlin | Monster Core pg. 180 1.1 |
+| Common	Small | Fey, Gremlin | -1	10	14	+2	+7	+4	+4 |  |  | darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 20 feet, climb 20 feet | Mitflit Vermin Cavalry |
+| Battlecry! pg. 185 | Common	Gargantuan | Animal, Fey, Gremlin, Troop |  | 4 | darkvision |  |  |  |  |  |  |  | 15 feet, climb 15 feet; troop movement | Mithral Golem |
+| Golem |  | Bestiary 3 pg. 117 |  | Rare | Construct, Golem, Mindless, Rare |  | 16 | 220 | 40 | +27 | +30 | +24 | darkvision | 50 feet, climb 40 feet |
+| Loading... | Mix Coatl | Coatl |  |  | Monster Core 2 pg. 74 |  | Uncommon | Large |  |  |  |  | Beast, Coatl, Holy, Uncommon | 8	135	27	+14	+15	+19	+19 |
+| darkvision | 15 feet, fly 50 feet | Mixed Martial Artist |  |  | Martial Artist |  |  |  |  |  |  |  | NPC Core pg. 73 | Common	Medium |
+| Human, Humanoid | 7	130	24	+18	+15	+12	+15 | 35 feet | Mjolgat |  | Howl of the Wild pg. 175 2.1 |  | Common | Small |  |  |  |  | Animal | 4	60	21	+14	+8	+8	+15 |
+| darkvision, orescent (precise) 60 feet | 20 feet | Mnoghoth |  |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 111 |  | Unique | Large |  |  |  |  | Aberration, Unique | 9	130	28	+17	+20	+14	+18 |
+| darkvision, tremorsense 30 feet | 25 feet | Mobogo |  |  | Monster Core 2 pg. 224 |  | Common | Huge |  |  |  |  | Amphibious, Beast | 10	160	29	+22	+17	+19	+21 |
+| darkvision | 25 feet, fly 20 feet, swim 30 feet; swamp passage | Mocking Archdragon |  |  | Dragon, Mocking |  |  |  |  |  |  |  | Draconic Codex pg. 145 | Rare	Gargantuan |
+| Dragon, Occult, Rare | 20	420	45	+33	+38	+35	+39 | darkvision |  |  | 50 feet, fly 200 feet | Mocking Chorus |  |  |  |  |  |  | Hydra | Howl of the Wild pg. 167 2.1 |
+| Common	Large | Beast | 18	340 ((body), hydra regeneration)	41	+33	+30	+30	+30 |  |  | scent (imprecise) 60 feet |  |  |  |  |  |  |  | 35 feet, swim 35 feet | Mohrg |
+| Bestiary 2 pg. 172 2.0 | Common	Medium | Undead |  | 8 | darkvision |  |  |  |  |  |  |  | 25 feet | Loading... |
+| Moldering Steed |  | Claws of the Tyrant pg. 117 |  | Uncommon | Mindless, Uncommon, Undead, Unholy |  | 16 | 370 ( void healing ) | 38 | +30 | +25 | +28 | darkvision, willsense (precise) 120 feet | 40 feet |
+| Monadic Deva | Angel | Bestiary 2 pg. 15 2.0 |  | Common | Angel, Celestial |  | 12 | 245 | 33 | +24 | +21 | +20 | darkvision | 30 feet, fly 60 feet |
+| Monk Cadre |  | Battlecry! pg. 186 |  | Common | Human, Humanoid, Troop |  | 14 | 270 (4 segments) | 35 | +28 | +26 | +25 | 35 feet, climb 20 feet; troop movement | Loading... |
+| Loading... | Monster Hunter | Mercenary |  |  | NPC Core pg. 83 |  | Common | Medium |  |  |  |  | Human, Humanoid | 6	105	22	+15	+11	+13	+13 |
+| 20 feet | Moon Hag | Hag |  |  | Monster Core 2 pg. 189 |  | Uncommon | Medium |  |  |  |  | Hag, Humanoid, Uncommon | 10	190	28	+17	+19	+22	+22 |
+| darkvision | 25 feet | Moonflower |  |  | Bestiary 2 pg. 173 2.0 |  | Uncommon | Huge |  |  |  |  | Plant, Uncommon | 8	120 ( fast healing 10)	24	+18	+10	+16	+16 |
+| darkvision | 20 feet | Moonstalker |  |  | Storm Spirits |  |  |  |  |  |  |  | Pathfinder #208: Hoof, Cinder, and Storm pg. 85 | Rare	Medium |
+| Ghost, Incorporeal, Rare, Spirit, Undead | 7	90 (rejuvenation, void healing )	25	+10	+18	+16	+18 | darkvision |  |  | fly 25 feet | Moose |  |  |  |  |  |  | Monster Core 2 pg. 225 | Common	Large |
+| Animal | 3	50	18	+11	+10	+5	+9 | low-light vision, scent (imprecise) 60 feet |  |  | 30 feet | Loading... |  |  |  |  |  |  | Morlibint | No-Prep Character: Morlibint |
+| Unique	Medium | Human, Humanoid, Unique | 4	60	21	+11	+9	+9	+7 |  |  | 25 feet | Morlock |  |  |  |  |  |  | Morlock | Bestiary 2 pg. 174 2.0 |
+| Common	Medium | Humanoid | 2	38	17	+7	+11	+9	+7 |  |  | darkvision |  |  |  |  |  |  |  | 30 feet, climb 20 feet | Morlock Cultist |
+| Morlock |  | Pathfinder #163: Ruins of Gauntlight pg. 85 |  | Uncommon | Humanoid, Morlock, Uncommon |  | 4 | 58 | 21 | +9 | +11 | +11 | darkvision | 30 feet, climb 20 feet |
+| Morlock Engineer | Morlock | Pathfinder #163: Ruins of Gauntlight pg. 84 |  | Uncommon | Humanoid, Morlock, Uncommon |  | 3 | 46 | 18 | +7 | +12 | +10 | darkvision | 30 feet, climb 20 feet |
+| Morlock Scavenger | Morlock | Pathfinder #163: Ruins of Gauntlight pg. 84 |  | Common | Humanoid, Morlock |  | 1 | 20 | 16 | +4 | +9 | +6 | darkvision | 30 feet, climb 20 feet |
+| Morlock Thrall |  | Pathfinder #214: The Broken Palace pg. 57 |  | Rare | Humanoid, Rare |  | 4 | 70 ( fast healing 5) | 20 | +13 | +8 | +10 | darkvision | 30 feet, climb 20 feet |
+| Morlock Tinkerer | Morlock | Monster Core 2 pg. 226 |  | Common | Humanoid, Morlock |  | 2 | 40 | 17 | +7 | +11 | +9 | darkvision | 30 feet, climb 20 feet |
+| Morrigna | Psychopomp | Monster Core pg. 276 1.1 |  | Common | Monitor, Psychopomp |  | 15 | 240 | 38 | +25 | +27 | +29 | darkvision, lifesense 60 feet | 30 feet, climb 30 feet |
+| Morrowkin |  | Dark Archive pg. 192 |  | Unique | Aberration, Time, Unique |  | 14 | 320 | 34 | +28 | +25 | +25 | 35 feet | Morthak |
+| Dischoran |  | Howl of the Wild pg. 140 2.1 |  | Common | Beast |  | 4 | 70 | 20 | +14 | +10 | +10 | no vision, sensitive echolocation (precise) 90 feet | 20 feet, burrow 30 feet |
+| Mosghuta, Boss Cow |  | Pathfinder #181: Zombie Feast pg. 15 |  | Unique | Mindless, Undead, Unique, Zombie |  | 3 | 70 ( negative healing ) | 15 | +11 | +3 | +7 | darkvision | 25 feet |
+| Mosquito Witch |  | Monsters of Myth pg. 76 |  | Unique | Fey, Unique |  | 10 | 180 | 30 | +17 | +20 | +23 | darkvision, swarmsense (imprecise) 30 feet | 30 feet, climb 30 feet, fly 25 feet |
+| Moss Sloth | Elemental, Wood | Rage of Elements pg. 206 2.0 |  | Common | Elemental, Plant, Wood |  | 2 | 40 | 18 | +9 | +3 | +11 | 10 feet, climb 15 feet; hold fast | Mother Mitera |
+| Dark Archive pg. 152 | Unique	Medium | Human, Unique |  | 8 | 25 feet | Loading... |  |  |  |  |  |  | Mountain Guardian | Primalist |
+| NPC Core pg. 133 | Common	Medium | Human, Humanoid |  | 6 | tremorsense 10 feet |  |  |  |  |  |  |  | 20 feet | Mountain Oni |
+| Oni |  | Monster Core pg. 252 1.1 |  | Common | Giant, Humanoid, Oni |  | 8 | 165 | 26 | +18 | +15 | +14 | darkvision | 30 feet |
+| Mountaineer | Explorer | NPC Core pg. 55 |  | Common | Human, Humanoid |  | 5 | 80 | 21 | +14 | +12 | +9 | 25 feet; arctic passage | Movanic Deva |
+| Angel |  | Bestiary 2 pg. 14 2.0 |  | Common | Angel, Celestial |  | 10 | 195 | 30 | +21 | +17 | +19 | darkvision | 30 feet, fly 40 feet |
+| Mpeshi |  | Pathfinder #170: Spoken on the Song Wind pg. 85 |  | Rare | Beast, Electricity, Rare |  | 6 | 110 | 24 | +16 | +12 | +14 | darkvision | 30 feet; cloud walk |
+| Mpondo |  | Pathfinder #173: Doorway to the Red Star pg. 20 |  | Unique | Human, Humanoid, Unique |  | 15 | 285 | 37 | +25 | +23 | +27 | Iobane vision | 25 feet |
+| Mu Spore |  | Bestiary pg. 238 |  | Common | Fungus |  | 21 | 350 | 45 | +38 | +32 | +38 | low-light vision, windsense 240 feet | 40 feet, fly 50 feet |
+| Loading... | Mudwretch | Bestiary 2 pg. 176 2.0 |  | Common | Earth, Elemental, Water |  | 2 | 40 | 16 | +11 | +4 | +9 | darkvision | 20 feet, swim 20 feet |
+| Mugrisant | Qlippoth | Pathfinder #211: The Secret of Deathstalk Tower pg. 89 |  | Rare | Fiend, Qlippoth, Rare, Unholy |  | 15 | 245 | 37 | +29 | +25 | +23 | greater darkvision, scent (imprecise) 30 feet | 40 feet, fly 40 feet |
+| Mukradi |  | Monster Core pg. 233 1.1 |  | Common | Beast |  | 15 | 300 | 37 | +32 | +23 | +26 | darkvision, tremorsense (imprecise) 60 feet | 60 feet, burrow 60 feet, climb 60 feet |
+| Mulventok | Fleshwarp | Pathfinder #164: Hands of the Devil pg. 79 |  | Uncommon | Aberration, Uncommon |  | 7 | 115 ( negative healing ) | 24 | +15 | +11 | +17 | darkvision | 25 feet |
+| Mummified Cat | Mummy | Book of the Dead pg. 130 |  | Common | Mummy, Undead |  | 0 | 17 ( negative healing ) | 15 | +8 | +4 | +7 | darkvision, scent (imprecise) 30 feet | 25 feet, climb 15 feet |
+| Mummy Guardian | Mummy | Monster Core pg. 234 1.1 |  | Common | Mummy, Undead, Unholy |  | 6 | 125 ( void healing ) | 23 | +14 | +10 | +16 | darkvision | 20 feet |
+| Mummy Pharaoh | Mummy | Monster Core pg. 235 1.1 |  | Rare | Mummy, Rare, Undead, Unholy |  | 9 | 175 (sacred wrappings, void healing ) | 27 | +19 | +15 | +20 | darkvision | 20 feet |
+| Mummy Prophet of Set | Mummy | Book of the Dead pg. 132 |  | Uncommon | Mummy, Uncommon, Undead |  | 13 | 250 ( negative healing ) | 33 | +22 | +21 | +25 | darkvision, sand vision | 20 feet |
+| Munagola | Devil | Bestiary 3 pg. 66 |  | Common | Devil, Fiend |  | 11 | 165 | 31 | +23 | +21 | +20 | greater darkvision | 30 feet, fly 40 feet |
+| Munavri Spellblade | Munavri | Monster Core 2 pg. 229 |  | Rare | Humanoid, Munavri, Rare |  | 2 | 30 | 18 | +8 | +6 | +7 | darkvision, light blindness | 20 feet |
+| Munsahir |  | Monster Core 2 pg. 230 |  | Common | Elemental, Fire, Humanoid, Munsahir |  | 2 | 40 | 17 | +10 | +5 | +8 | darkvision | 20 feet |
+| Munsahir Gatecrasher | Munsahir | Rage of Elements pg. 131 2.0 |  | Common | Elemental, Fire, Humanoid |  | 4 | 65 | 22 | +14 | +6 | +11 | darkvision | 20 feet |
+| Munsahir Trooper | Munsahir | Rage of Elements pg. 131 2.0 |  | Common | Elemental, Fire, Humanoid |  | 5 | 85 | 22 | +14 | +10 | +10 | darkvision | 20 feet |
+| Murajau |  | Rage of Elements pg. 183 2.0 |  | Common | Amphibious, Humanoid |  | 5 | 60 | 25 | +15 | +9 | +11 | darkvision, scent (imprecise) 30 feet | 25 feet, swim 30 feet |
+| Murder Of Crows |  | Kingmaker Adventure Path pg. 257 |  | Rare | Animal, Rare, Swarm |  | 9 | 150 | 27 | +7 | +12 | +9 | low-light vision | 10 feet, fly 40 feet |
+| Murschen |  | Pathfinder #164: Hands of the Devil pg. 39 |  | Unique | Humanoid, Skulk, Unique |  | 8 | 140 | 27 | +17 | +16 | +15 | low-light vision | 30 feet |
+| Muruwa | Threshold of Knowledge Pregenerated Characters | Threshold of Knowledge pg. 13 |  | Unique | Grippli, Humanoid, Unique |  | 1 | 15 | 18 | +4 | +8 | +6 | low-light vision | 25 feet |
+| Muse Phantom |  | Pathfinder #152: Legacy of the Lost God pg. 81 |  | Uncommon | Incorporeal, Spirit, Uncommon, Undead |  | 5 | 50 ( negative healing ) | 21 | +9 | +13 | +14 | darkvision | fly 25 feet |
+| Musketeer | Maverick | NPC Core pg. 77 |  | Common | Human, Humanoid |  | 3 | 40 | 20 | +8 | +11 | +6 | 25 feet | Mutant Bat |
+| Pathfinder #180: The Smoking Gun pg. 22 | Uncommon	Huge | Animal, Uncommon |  | 5 | echolocation (precise) 40 feet, low-light vision |  |  |  |  |  |  |  | 15 feet, fly 30 feet | Mutant Desert Drake |
+| Mana Wastes Mutant |  | Pathfinder #179: Cradle of Quartz pg. 85 |  | Rare | Dragon, Earth, Mutant, Rare |  | 9 | 150 | 28 | +18 | +16 | +15 | darkvision, scent (imprecise) 30 feet | 20 feet, burrow 40 feet (sand only), fly 50 feet |
+| Mutant Giant Toad | Mana Wastes Mutant | Pathfinder #179: Cradle of Quartz pg. 84 |  | Rare | Animal, Mutant, Rare |  | 3 | 44 | 18 | +10 | +9 | +7 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Mutant Gnoll Hulk | Mana Wastes Mutant | Impossible Lands pg. 333 |  | Common | Gnoll, Humanoid, Mutant |  | 9 | 195 | 26 | +21 | +18 | +15 | magic hunger (imprecise) 30 feet | 25 feet |
+| Mutated Centaur |  | Pathfinder #218: Titanbane pg. 27 |  | Rare | Beast, Centaur, Humanoid, Mythic, Rare |  | 7 | 115 | 24 | +18 | +15 | +12 | darkvision | 40 feet |
+| Mutated Sewer Ooze |  | Pathfinder #170: Spoken on the Song Wind pg. 37 |  | Unique | Mindless, Mutant, Ooze, Unique |  | 6 | 45 | 16 | +16 | +8 | +10 | motion sense 60 feet, no vision | 10 feet |
+| Muurfeli | Blightburn Genies | Pathfinder #155: Lord of the Black Sands pg. 78 |  | Rare | Air, Elemental, Genie, Rare |  | 16 | 300 | 39 | +25 | +31 | +27 | darkvision, detect magic | 35 feet, fly 50 feet |
+| Myceloid |  | Monster Core 2 pg. 231 |  | Common | Fungus |  | 4 | 70 | 20 | +14 | +9 | +10 | darkvision, scent (imprecise) 30 feet | 20 feet |
+| Myroga |  | Gatewalkers (Hardcover) pg. 266 |  | Rare | Dragon, Rare |  | 6 | 120 | 24 | +16 | +15 | +14 | darkvision, ley line sense (imprecise) 1 mile, scent (imprecise) 30 feet | 20 feet, fly 50 feet |
+| Myrucarx |  | Pathfinder #161: Belly of the Black Whale pg. 85 |  | Rare | Aberration, Rare |  | 18 | 340 | 41 | +32 | +28 | +30 | darkvision, tremorsense (imprecise) 60 feet | 30 feet, climb 30 feet; freedom of movement |
+| Mythic Gogiteth |  | War of Immortals pg. 170 |  | Rare | Aberration, Mythic, Rare |  | 12 | 250 | 31 | +25 | +22 | +20 | darkvision | 40 feet, climb 30 feet |
+| Mythic Griffon |  | War of Immortals pg. 173 |  | Rare | Animal, Mythic, Rare |  | 4 | 60 | 21 | +13 | +13 | +7 | darkvision, scent (imprecise) 60 feet | 25 feet, fly 60 feet |
+| Mythic Lich |  | War of Immortals pg. 172 |  | Rare | Mythic, Rare, Undead, Unholy |  | 12 | 190 ( rejuvenation , void healing ) | 31 | +17 | +21 | +23 | darkvision | 25 feet |
+| Mythic Ogre Boss |  | War of Immortals pg. 171 |  | Rare | Giant, Humanoid, Mythic, Rare |  | 7 | 130 | 25 | +17 | +12 | +15 | darkvision | 25 feet |
+| Naari Pyrochemist | Geniekin | Monster Core 2 pg. 250 |  | Common | Human, Humanoid, Naari |  | 1 | 18 | 16 | +5 | +6 | +3 | 25 feet | Nabasu |
+| Demon |  | Bestiary 2 pg. 66 2.0 |  | Common | Demon, Fiend |  | 8 | 165 | 27 | +19 | +16 | +16 | darkvision | 25 feet, fly 50 feet |
+| Nagaji Soldier | Nagaji | Monster Core 2 pg. 232 |  | Common | Humanoid, Nagaji |  | 2 | 28 | 18 | +9 | +7 | +6 | low-light vision | 25 feet |
+| Nai Yan Fei |  | Pathfinder #166: Despair on Danger Island pg. 91 |  | Unique | Human, Humanoid, Unique |  | 20 | 375 | 44 | +32 | +34 | +33 | 25 feet | Naiad |
+| Nymph |  | Monster Core pg. 244 1.1 |  | Common | Amphibious, Fey, Nymph, Water |  | 1 | 20 | 14 | +3 | +6 | +8 | low-light vision | 25 feet, swim 25 feet |
+| Naiad Queen | Nymph | Monster Core pg. 246 1.1 |  | Uncommon | Amphibious, Fey, Nymph, Uncommon, Water |  | 7 | 100 | 26 | +15 | +18 | +17 | low-light vision | 25 feet, swim 25 feet |
+| Najra Lizard |  | Pathfinder #158: Sixty Feet Under pg. 83 |  | Uncommon | Dragon, Uncommon |  | 4 | 60 | 21 | +10 | +12 | +11 | darkvision, scent (imprecise) 30 feet | 30 feet |
+| Nalfeshnee | Demon | Bestiary 2 pg. 68 2.0, Pathfinder #149: Against the Scarlet Triad pg. 86 |  | Common | Demon, Fiend |  | 14 | 365 | 34 | +28 | +22 | +23 | darkvision, true seeing | 30 feet, fly 40 feet |
+| Nalushae Meronis |  | Pathfinder #214: The Broken Palace pg. 90 |  | Unique | Undead, Unholy, Unique, Vampire |  | 8 | 99 ( coffin restoration , fast healing 10, void healing ) | 26 | +13 | +18 | +16 | darkvision | 25 feet, climb 25 feet |
+| Loading... | Nanoshard Swarm | Elemental, Metal |  |  | Rage of Elements pg. 157 2.0 |  | Common | Huge |  |  |  |  | Elemental, Metal, Swarm | 9	120	28	+17	+21	+16	+18 |
+| darkvision | none (barrier), 15 feet (battle), or 25 feet (swarm) | Narlo Nyrell |  |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 160 |  | Unique | Medium |  |  |  |  | Undead, Unique | 8	136 (negative healing)	26	+16	+18	+14	+16 |
+| darkvision | 25 feet | Narlynark |  |  | Crown of the Kobold King pg. 106 |  | Unique | Small |  |  |  |  | Humanoid, Kobold, Unique | 5	75	22	+14	+10	+13	+13 |
+| darkvision | 25 feet | Narrik |  |  | Monster Core 2 pg. 233 |  | Common | Large |  |  |  |  | Aberration | 7	130	24	+18	+15	+12	+15 |
+| darkvision, scent (imprecise) 120 feet, taste fear, vestigial eyes | 25 feet | Narseigus Wormcaller |  |  | Pathfinder #195: Heavy is the Crown pg. 90 |  | Unique | Medium |  |  |  |  | Duergar, Dwarf, Humanoid, Unique | 11	140	31	+21	+18	+24	+20 |
+| darkvision, tremorsense (imprecise) 10 feet | 20 feet, burrow 20 feet, climb 20 feet | Loading... | Nasurgeth |  | Darvakka |  |  |  |  |  |  |  | Monster Core 2 pg. 87 | Common	Gargantuan |
+| Aquatic, Darvakka, Shadow, Undead, Unholy | 20	510 ( void healing )	45	+35	+32	+36	+36 | greater darkvision, lifesense 60 feet |  |  | fly 60 feet, swim 80 feet | Natbakh |  |  |  |  |  |  | Pathfinder Adventure Path #219: Lord of the Trinity Star pg. 89 | Common	Gargantuan |
+| Beast, Dream, Mythic | 14	320	34	+25	+28	+23	+25 | darkvision |  |  | 30 feet, fly 150 feet | Natural Scientist |  |  |  |  |  |  | Explorer | NPC Core pg. 53 |
+| Common	Medium | Human, Humanoid | 2	25	16	+8	+5	+11	+11 |  |  | 25 feet | Naunet |  |  |  |  |  |  | Protean | Monster Core 2 pg. 259 |
+| Common	Large | Monitor, Protean | 7	120 ( fast healing 2)	24	+18	+14	+12	+14 |  |  | darkvision, entropy sense (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet, fly 30 feet, swim 25 feet; unfettered movement | Navigator |
+| Seafarer |  | NPC Core pg. 146 |  | Common | Human, Humanoid |  | 2 | 30 | 17 | +7 | +8 | +9 | 25 feet | Necrohulk Flailer |
+| Necrohulk |  | Pathfinder #185: A Taste of Ashes pg. 86 |  | Uncommon | Mutant, Uncommon, Undead |  | 13 | 295 ( negative healing ) | 32 | +23 | +26 | +20 | darkvision | 30 feet, climb 25 feet |
+| Necrohulk Smasher | Necrohulk | Pathfinder #185: A Taste of Ashes pg. 87 |  | Uncommon | Mutant, Uncommon, Undead |  | 15 | 345 ( negative healing ) | 36 | +29 | +23 | +26 | darkvision | 30 feet |
+| Necrohusk |  | Pathfinder #176: Lost Mammoth Valley pg. 87 |  | Rare | Rare, Undead |  | 5 | 75 ( negative healing ) | 22 | +10 | +15 | +12 | darkvision, lifesense (imprecise) 30 feet | 30 feet, climb 30 feet |
+| Necromancer | Mystic | NPC Core pg. 99 |  | Common | Human, Humanoid |  | 5 | 65 | 20 | +11 | +12 | +11 | 25 feet | Loading... |
+| Necromunculus |  | Pathfinder #181: Zombie Feast pg. 86 |  | Uncommon | Uncommon, Undead |  | 0 | 20 | 16 | +3 | +6 | +3 | darkvision | 15 feet, fly 40 feet |
+| Necrophidius |  | Bestiary 2 pg. 180 2.0 |  | Common | Construct, Mindless |  | 3 | 50 | 19 | +7 | +11 | +9 | darkvision | 25 feet |
+| Loading... | Nemmia Bramblecloak | Pathfinder #151: The Show Must Go On pg. 90 |  | Unique | Halfling, Humanoid, Unique |  | 3 | 45 | 19 | +8 | +8 | +11 | keen eyes | 20 feet |
+| Nenchuuj | Sahkil | Pathfinder #162: Ruins of the Radiant Siege pg. 85 |  | Uncommon | Fiend, Sahkil, Uncommon |  | 19 | 355 | 43 | +31 | +29 | +37 | darkvision, detect magic | 50 feet; air walk |
+| Neothelid |  | Bestiary 2 pg. 181 2.0 |  | Uncommon | Aberration, Uncommon |  | 15 | 345 | 37 | +27 | +23 | +29 | greater darkvision, thoughtsense 100 feet | 30 feet, fly 50 feet |
+| Nereid |  | Bestiary 2 pg. 182 2.0 |  | Common | Aquatic, Fey, Water |  | 10 | 175 | 30 | +16 | +22 | +18 | low-light vision | 25 feet, swim 50 feet |
+| Neshkefru |  | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 90 |  | Unique | Beast, Humanoid, Unique |  | 8 | 135 | 27 | +16 | +14 | +19 | darkvision | 35 feet, fly 40 feet |
+| Nessari | Devil | Monster Core pg. 92 1.1 |  | Common | Devil, Fiend, Unholy |  | 20 | 335 | 46 | +37 | +32 | +35 | greater darkvision, truesight | 35 feet, fly 50 feet |
+| Ngara |  | Kingmaker Adventure Path pg. 99 |  | Unique | Aberration, Unique |  | 12 | 215 | 33 | +19 | +24 | +23 | darkvision | 25 feet, swim 15 feet |
+| Nhakazarin |  | Pathfinder #163: Ruins of Gauntlight pg. 48 |  | Unique | Ghoul, Undead, Unique |  | 5 | 75 (negative healing) | 21 | +15 | +12 | +9 | darkvision | 30 feet, burrow 5 feet |
+| Niesha |  | Prey for Death pg. 65 |  | Unique | Ooze, Unique |  | 16 | 300 | 36 | +25 | +28 | +30 | darkvision | 30 feet |
+| Night Hag | Hag | Bestiary pg. 202 |  | Common | Fiend, Hag, Humanoid |  | 9 | 170 | 28 | +19 | +17 | +18 | darkvision | 25 feet |
+| Nightgaunt |  | Monster Core 2 pg. 234 |  | Uncommon | Aberration, Dream, Uncommon |  | 4 | 60 | 21 | +10 | +13 | +10 | all-around vision (page 360), darkvision, thoughtsense (precise) 60 feet | 25 feet, fly 30 feet |
+| Loading... | Nightmare | Nightmare |  |  | Monster Core pg. 238 1.1 |  | Common | Large |  |  |  |  | Beast, Fiend, Unholy | 6	100	24	+15	+15	+12	+14 |
+| darkvision | 40 feet, fly 90 feet | Nightmare Rook |  |  | Kingmaker Adventure Path pg. 450 |  | Unique | Gargantuan |  |  |  |  | Beast, Unique | 20	380	46	+34	+34	+38	+38 |
+| low-light vision | 20 feet, fly 80 feet | Nightwood Guardian |  |  | Rage of Elements pg. 216 2.0 |  | Uncommon | Large |  |  |  |  | Giant, Troll, Uncommon, Wood | 9	200 (flesh of wood)	26	+21	+16	+17	+17 |
+| darkvision | 30 feet | Nikaramsa |  |  | Asura |  |  |  |  |  |  |  | Bestiary 3 pg. 24 | Common	Large |
+| Asura, Fiend | 14	315	35	+22	+25	+27	+25 | detect alignment, darkvision, see invisibility |  |  | 50 feet | Nilak |  |  |  |  |  |  | Kingmaker Companion Guide pg. 14 | Unique	Medium |
+| Human, Humanoid, Unique | 9	160	26	+17	+15	+19	+19 | 25 feet | Nilith |  | Monster Core pg. 239 1.1 |  | Common | Medium |  |  |  |  | Aberration | 10	150	32	+17	+20	+20	+19 |
+| darkvision | 25 feet, climb 30 feet | Ninkonda |  |  | Angel |  |  |  |  |  |  |  | Monster Core 2 pg. 29 | Uncommon	Large |
+| Angel, Celestial, Holy, Uncommon | 17	350	39	+30	+27	+33	+29 | darkvision, truesight |  |  | 30 feet, fly 45 feet | Niodrhast |  |  |  |  |  |  | Kingmaker Adventure Path pg. 414 | Unique	Gargantuan |
+| Aberration, Unique | 19	445	43	+35	+31	+33	+33 | greater darkvision, thoughtsense 100 feet. |  |  | 30 feet, fly 50 feet | Nishkiv The Knife |  |  |  |  |  |  | Kingmaker Adventure Path pg. 37 | Unique	Medium |
+| Human, Humanoid, Unique | 1	20	16	+6	+9	+5	+5 | 25 feet | Nixie |  | Monster Core 2 pg. 235 |  | Common | Small |  |  |  |  | Aquatic, Fey | 1	22	16	+6	+10	+6	+6 |
+| low-light vision | 20 feet, swim 30 feet | Nizca Iricol |  |  | Pathfinder #215: To Blot Out the Sun pg. 92 |  | Unique | Medium |  |  |  |  | Strigoi, Undead, Unique, Vampire | 11	170 ( coffin restoration , fast healing 10, void healing )	29	+18	+21	+24	+24 |
+| greater darkvision | 25 feet, fly 25 feet (on manifested batlike wings of shadow) | Nketiah |  |  | Pathfinder #146: Cult of Cinders pg. 79 |  | Unique | Medium |  |  |  |  | Elf, Human, Humanoid, Unique | 6	74	23	+8	+13	+12	+12 |
+| low-light vision | 35 feet, climb 20 feet | Nkiruka |  |  | Pathfinder #172: Secrets of the Temple City pg. 88 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 14	260	36	+24	+26	+25	+25 |
+| (29 to notice lies and Sense Motive) | 25 feet | Noble |  |  | Courtier |  |  |  |  |  |  |  | NPC Core pg. 13 | Common	Medium |
+| Human, Humanoid | 3	50	18	+6	+10	+11	+11 | 25 feet | Nok-Nok (Level 1) |  | Kingmaker Companion Guide pg. 57 |  | Unique | Small |  |  |  |  | Goblin, Humanoid, Unique | 1	17	18	+6	+9	+4	+14 |
+| (expert) darkvision | 25 feet | Nok-Nok (Level 5) |  |  | Kingmaker Companion Guide pg. 58 |  | Unique | Small |  |  |  |  | Goblin, Humanoid, Unique | 5	66	22	+11	+13	+8	+18 |
+| (expert) darkvision | 25 feet | Nolly Peltry |  |  | Pathfinder #147: Tomorrow Must Burn pg. 91 |  | Unique | Small |  |  |  |  | Halfling, Humanoid, Unique | 11	185	31	+18	+24	+21	+21 |
+| 25 feet; quick movements | Loading... | Noppera-Bo Grunt |  |  | Noppera-Bo |  |  |  |  |  |  |  | Pathfinder #196: The Summer That Never Was pg. 84 | Uncommon	Medium |
+| Aberration, Uncommon | 0	18	15	+6	+5	+4	+4 | no face |  |  | 25 feet | Noppera-Bo Impersonator |  |  |  |  |  |  | Pathfinder #198: No Breath to Cry pg. 85 | Rare	Medium |
+| Aberration, Rare | 6	93	22	+14	+14	+14	+14 | no face |  |  | 25 feet | Noppera-Bo Occultist |  |  |  |  |  |  | Noppera-Bo | Pathfinder #196: The Summer That Never Was pg. 85 |
+| Uncommon	Medium | Aberration, Uncommon | 2	30	17	+6	+9	+8	+8 |  |  | no face |  |  |  |  |  |  |  | 25 feet | Noppera-Bo Trickster |
+| Noppera-Bo |  | Pathfinder #196: The Summer That Never Was pg. 84 |  | Uncommon | Aberration, Uncommon |  | 1 | 20 | 16 | +7 | +8 | +5 | no face | 25 feet |
+| Norgorberite Spy |  | Pathfinder #171: Hurricane's Howl pg. 63 |  | Common | Human, Humanoid |  | 10 | 170 | 29 | +17 | +22 | +19 | 25 feet | Norn |
+| Norn |  | Monster Core pg. 240 1.1 |  | Rare | Fey, Rare |  | 20 | 375 | 46 | +34 | +30 | +38 | detect magic, greater darkvision, lifesense 120 feet, truesight | 35 feet, fly 35 feet |
+| Loading... | Nosferatu Malefactor | Vampire, Nosferatu |  |  | Monster Core 2 pg. 341 |  | Uncommon | Medium |  |  |  |  | Uncommon, Undead, Unholy, Vampire | 10	135 ( fast healing 10, plagued coffin restoration, void healing )	30	+17	+21	+19	+19 |
+| darkvision | 30 feet, climb 25 feet | Nosferatu Overlord |  |  | Vampire, Nosferatu |  |  |  |  |  |  |  | Monster Core 2 pg. 341 | Rare	Medium |
+| Rare, Undead, Unholy, Vampire | 15	215 ( fast healing 15, void healing , plagued coffin restoration)	37	+23	+27	+29	+27 | darkvision |  |  | 30 feet, climb 25 feet | Nosferatu Thrall |  |  |  |  |  |  | Vampire, Nosferatu | Monster Core 2 pg. 340 |
+| Uncommon	Medium | Human, Humanoid, Uncommon, Unholy | 8	135 ( fast healing 5)	26	+16	+17	+14	+16 |  |  | 25 feet | Nosoi |  |  |  |  |  |  | Psychopomp | Monster Core pg. 274 1.1 |
+| Common	Tiny | Monitor, Psychopomp | 1	18	16	+4	+8	+6	+6 |  |  | darkvision, lifesense 60 feet |  |  |  |  |  |  |  | 15 feet, fly 40 feet | Nox |
+| Pathfinder #164: Hands of the Devil pg. 36 | Unique	Medium | Caligni, Humanoid, Unique |  | 4 | greater darkvision |  |  |  |  |  |  |  | 25 feet | Noxious Needler |
+| Monster Core pg. 242 1.1 | Uncommon	Large | Alchemical, Construct, Mindless, Uncommon |  | 9 | darkvision |  |  |  |  |  |  |  | 25 feet | Ntavi |
+| Kingmaker Companion Guide pg. 30 | Unique	Medium | Human, Humanoid, Unique |  | 6 | 25 feet | Nuckelavee |  |  |  |  |  |  | Monster Core pg. 243 1.1 | Common	Large |
+| Amphibious, Fey | 9	190	28	+19	+16	+20	+16 | low-light vision |  |  | 40 feet, swim 40 feet | Nucol |  |  |  |  |  |  | Sahkil | Monster Core 2 pg. 275 |
+| Common	Medium | Fiend, Sahkil, Unholy | 4	75	20	+13	+10	+11	+11 |  |  | darkvision, scent (imprecise) 100 feet |  |  |  |  |  |  |  | 30 feet | Nue |
+| Tian Xia World Guide pg. 291 | Common	Large | Beast |  | 11 | darkvision |  |  |  |  |  |  |  | 40 feet | Nuglub |
+| Gremlin |  | Bestiary 2 pg. 135 2.0 |  | Common | Fey, Gremlin |  | 2 | 34 | 18 | +9 | +10 | +5 | darkvision | 30 feet, climb 20 feet |
+| Nugrah |  | Kingmaker Adventure Path pg. 183 |  | Unique | Human, Humanoid, Unique |  | 5 | 75 | 17 | +10 | +6 | +15 | 20 feet | Nursery Crawler |
+| Elemental, Wood |  | Rage of Elements pg. 206 2.0 |  | Common | Elemental, Plant, Wood |  | 3 | 48 | 18 | +6 | +4 | +12 | 20 feet, climb 20 feet | Nwanyian Archer |
+| Pathfinder #183: Field of Maidens pg. 36 | Uncommon	Medium | Human, Humanoid, Uncommon |  | 7 | 30 feet | Nwanyian Defender |  |  |  |  |  |  | Pathfinder #183: Field of Maidens pg. 38 | Uncommon	Medium |
+| Human, Humanoid, Uncommon | 5	80	22	+15	+9	+12	+12 | 25 feet | Nydazuul |  | Pathfinder #184: The Ghouls Hunger pg. 25 |  | Unique | Huge |  |  |  |  | Fiend, Qlippoth, Unique | 11	180	31	+23	+21	+20	+20 |
+| greater darkvision, scent (imprecise) 30 feet, true seeing | 40 feet, climb 40 feet, fly 40 feet | Loading... | Nymolus |  | Alghollthu |  |  |  |  |  |  |  | Monster Core 2 pg. 23 | Uncommon	Large |
+| Aberration, Aquatic, Uncommon | 10	190	28	+20	+15	+22	+22 | darkvision |  |  | 15 feet, swim 60 feet | Nyogoth |  |  |  |  |  |  | Qlippoth | Bestiary 2 pg. 214 2.0 |
+| Uncommon	Medium | Fiend, Qlippoth, Uncommon | 10	175	29	+20	+19	+16	+19 |  |  | darkvision |  |  |  |  |  |  |  | 5 feet, fly 25 feet | Nyrissa |
+| Kingmaker Adventure Path pg. 602 | Unique	Medium | Fey, Nymph, Unique |  | 23 | darkvision |  |  |  |  |  |  |  | 30 feet, climb 20 feet, fly 30 feet | Oaksteward Enforcer |
+| Gatewalkers (Hardcover) pg. 16 | Rare	Medium | Human, Humanoid, Rare |  | 0 | 25 feet | Oath Archdragon |  |  |  |  |  |  | Dragon, Oath | Draconic Codex pg. 149 |
+| Rare	Gargantuan | Divine, Dragon, Rare | 22	400	50	+37	+34	+42	+43 |  |  | darkvision, scent (imprecise) 60 feet |  |  |  |  |  |  |  | 60 feet, fly 180 feet | Obcisidaemon |
+| Daemon |  | Monster Core 2 pg. 82 |  | Common | Daemon, Fiend, Unholy |  | 19 | 425 | 43 | +35 | +29 | +32 | darkvision, truesight | 25 feet, fly 50 feet |
+| Obrousian |  | Book of the Dead pg. 134, Pathfinder #161: Belly of the Black Whale pg. 86 |  | Uncommon | Amphibious, Uncommon, Undead |  | 14 | 250 ( negative healing ) | 36 | +25 | +22 | +28 | darkvision | 5 feet, swim 30 feet |
+| Obsessive Researcher | Scholar | NPC Core pg. 138 |  | Common | Human, Humanoid |  | -1 | 7 | 14 | +3 | +2 | +7 | 25 feet | Obsidian Golem |
+| Golem |  | Pathfinder #155: Lord of the Black Sands pg. 80 |  | Uncommon | Construct, Golem, Mindless, Uncommon |  | 16 | 230 | 40 | +29 | +24 | +26 | darkvision | 25 feet, fly 25 feet |
+| Ocean Nomad | Seafarer | NPC Core pg. 150 |  | Common | Human, Humanoid |  | 6 | 100 | 24 | +14 | +17 | +11 | 25 feet, swim 25 feet | Oceanius And Glory Arcely |
+| Angel |  | Claws of the Tyrant pg. 73 |  | Unique | Angel, Celestial, Holy, Unique |  | 18 | 360 | 42 | +32 | +29 | +32 | darkvision | 25 feet, fly 60 feet |
+| Ockomlire |  | Pathfinder #204: Stage Fright pg. 87 |  | Rare | Aberration, Rare |  | 13 | 235 | 33 | +26 | +21 | +23 | darkvision, detect magic | 20 feet, climb 10 feet |
+| Ocluai | Gorga | Gatewalkers (Hardcover) pg. 261 |  | Uncommon | Fey, Uncommon |  | 3 | 55 | 18 | +6 | +12 | +12 | greater darkvision | 10 feet, fly 25 feet |
+| Ofalth | Ofalth | Monster Core pg. 249 1.1 |  | Common | Aberration |  | 10 | 170 (filth wallow) | 31 | +22 | +17 | +18 | darkvision | 30 feet |
+| Ofalth Stampede |  | Battlecry! pg. 186 |  | Uncommon | Aberration, Troop, Uncommon |  | 15 | 270 (4 segments, filth wallow) | 36 | +29 | +24 | +25 | darkvision | 30 feet; troop movement |
+| Loading... | Ogmunzorius | Gatewalkers (Hardcover) pg. 148 |  | Unique | Dream, Incorporeal, Unique |  | 11 | 145 | 28 | +19 | +21 | +22 | darkvision | fly 40 feet |
+| Ogre Boss | Ogre | Monster Core pg. 251 1.1 |  | Common | Giant, Humanoid |  | 7 | 130 | 25 | +17 | +12 | +15 | darkvision | 25 feet |
+| Ogre Bully |  | Pathfinder #202: Severed at the Root pg. 24 |  | Common | Giant, Humanoid |  | 7 | 140 | 24 | +18 | +14 | +12 | darkvision | 25 feet |
+| Ogre Glutton | Ogre | Monster Core pg. 250 1.1 |  | Common | Giant, Humanoid |  | 4 | 70 | 18 | +14 | +7 | +6 | darkvision | 30 feet |
+| Ogre Hurler | Ogre | Pathfinder Encounter: Heaving Kobolds |  | Uncommon | Giant, Humanoid, Uncommon |  | 4 | 65 | 19 | +14 | +11 | +8 | darkvision | 25 feet |
+| Ogre Spider | Spider | Monster Core 2 pg. 302 |  | Common | Animal |  | 5 | 70 | 22 | +15 | +13 | +9 | darkvision, web sense | 30 feet, climb 30 feet |
+| Ogre Warrior | Ogre | Monster Core pg. 250 1.1 |  | Common | Giant, Humanoid |  | 3 | 50 | 17 | +11 | +6 | +5 | darkvision | 25 feet |
+| Ohancanu |  | Pathfinder #201: Pactbreaker pg. 88 |  | Common | Fey |  | 5 | 80 | 21 | +15 | +12 | +10 | low-light vision | 25 feet |
+| Loading... | Okenevem | Archon |  |  | Monster Core 2 pg. 38 |  | Common | Large |  |  |  |  | Archon, Celestial, Holy | 15	250	35	+25	+26	+31	+29 |
+| darkvision | 25 feet, fly 30 feet | Okoa |  |  | Pathfinder #215: To Blot Out the Sun pg. 56 |  | Common | Medium |  |  |  |  | Shadow, Strix, Undead, Vampire | 9	120 ( coffin restoration , fast healing 10, void healing ))	28	+18	+21	+15	+16 |
+| greater darkvision | 25 feet, fly 25 feet | Old Crackjaw |  |  | Kingmaker Adventure Path pg. 77 |  | Unique | Medium |  |  |  |  | Animal, Unique | 5	78	23	+15	+9	+13	+11 |
+| low-light vision, scent (imprecise) 30 feet | 15 feet, swim 25 feet | Old Man Statue |  |  | Pathfinder #166: Despair on Danger Island pg. 20 |  | Unique | Huge |  |  |  |  | Construct, Divine, Mindless, Unique | 14	160	36	+28	+19	+22	+24 |
+| darkvision | 30 feet | Old Thornbarker |  |  | Pathfinder #203 Shepherd of Decay pg. 42 |  | Unique | Huge |  |  |  |  | Animal, Plant, Unique, Wood | 12	230	33	+23	+18	+25	+25 |
+| all-around vision, low-light vision, tremorsense (imprecise) 60 feet | 25 feet | Old Thrasher |  |  | Pathfinder #170: Spoken on the Song Wind pg. 48 |  | Unique | Large |  |  |  |  | Animal, Unique | 8	140	26	+18	+16	+15	+16 |
+| low-light vision | 20 feet, swim 25 feet | Oleg |  |  | Kingmaker Adventure Path pg. 52 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 1	26	12	+8	+6	+6	+6 |
+| 25 feet | Olethrodaemon | Daemon |  |  | Bestiary 2 pg. 63 2.0 |  | Common | Gargantuan |  |  |  |  | Daemon, Fiend | 20	450	44	+35	+32	+34	+33 |
+| darkvision, tremorsense (imprecise) 120 feet, true seeing | 35 feet, burrow 35 feet, fly 40 feet | Oliphaunt of Jandelay |  |  | War of Immortals pg. 195 |  | Unique | Gargantuan |  |  |  |  | Monitor, Mythic, Unique | 25	680	48	+48	+37	+39	+39 |
+| darkvision, scent (imprecise) 120 feet | 60 feet, fly 40 feet; legendary vigor, unfettered movement | Olobigonde |  |  | Rage of Elements pg. 184 2.0 |  | Common | Large |  |  |  |  | Animal, Aquatic, Elemental, Water | 2	38	17	+10	+7	+5	+7 |
+| scent (imprecise) 60 feet | 5 feet, swim 30 feet | Omelia |  |  | Ghoul |  |  |  |  |  |  |  | Claws of the Tyrant pg. 36 | Unique	Medium |
+| Ghoul, Undead, Unholy, Unique | 5	75 ( void healing )	21	+11	+13	+11	+12 | darkvision |  |  | 30 feet, burrow 5 feet | Omen Archdragon |  |  |  |  |  |  | Dragon, Omen | Draconic Codex pg. 82 |
+| Rare	Huge | Dragon, Occult, Rare | 20	360	44	+32	+33	+35	+35 |  |  | darkvision, scent (imprecise) 60 feet |  |  |  |  |  |  |  | 70 feet, fly 210 feet | Omorphos |
+| Pathfinder #217: Death Sails a Wine-Dark Sea pg. 49 | Unique	Huge | Beast, Monitor, Unique |  | 8 | darkvision, lifesense 30 feet, scent (imprecise) 60 feet |  |  |  |  |  |  |  | 35 feet | Omox |
+| Demon |  | Monster Core pg. 79 1.1 |  | Common | Demon, Fiend, Ooze, Unholy |  | 12 | 395 | 25 | +23 | +21 | +20 | darkvision | 40 feet, climb 20 feet, swim 80 feet |
+| Omox Slime Pool | Demon | Battlecry! pg. 186 |  | Common | Demon, Fiend, Ooze, Troop, Unholy |  | 17 | 315 (4 segments) | 39 | +32 | +29 | +26 | darkvision | 40 feet, climb 20 feet, swim 80 feet; troop movement |
+| One Eye Phantom | Storm Spirits | Pathfinder #208: Hoof, Cinder, and Storm pg. 84 |  | Rare | Ethereal, Incorporeal, Phantom, Rare, Spirit |  | 6 | 70 | 24 | +11 | +18 | +14 | darkvision | fly 25 feet |
+| Onidoshi | Oni | Bestiary 2 pg. 188 2.0 |  | Common | Fiend, Giant, Humanoid, Oni |  | 8 | 125 | 27 | +18 | +15 | +15 | darkvision | 30 feet, fly 30 feet |
+| Onryo |  | Book of the Dead pg. 135 |  | Uncommon | Uncommon, Undead |  | 12 | 180 ( negative healing ) | 32 | +21 | +23 | +23 | darkvision | 35 feet, climb 35 feet; flicker, spider climb, water walk |
+| Onyiji |  | Pathfinder #171: Hurricane's Howl pg. 9 |  | Unique | Human, Humanoid, Orc, Unique |  | 8 | 140 | 26 | +18 | +14 | +16 | darkvision | 25 feet |
+| Ooze Mephit | Elemental, Mephit | Bestiary 2 pg. 113 2.0 |  | Uncommon | Earth, Elemental, Uncommon, Water |  | 1 | 24 ( fast healing 2 (when touching mud or slime)) | 14 | +7 | +4 | +3 | darkvision | 20 feet, fly 20 feet |
+| Opkherab |  | Pathfinder #181: Zombie Feast pg. 44 |  | Unique | Undead, Unique |  | 3 | 50 ( negative healing ) | 19 | +6 | +9 | +12 | darkvision, lifesense 30 feet | 20 feet |
+| Loading... | Orc Agriculturalist | Orc |  |  | NPC Core pg. 206 |  | Common | Medium |  |  |  |  | Humanoid, Orc | 1	25	14	+9	+6	+7	+7 |
+| darkvision | 25 feet | Orc Commander |  |  | Orc |  |  |  |  |  |  |  | Monster Core pg. 259 1.1 | Common	Medium |
+| Humanoid, Orc | 2	32	19	+7	+6	+7	+8 | darkvision |  |  | 25 feet | Orc Doomsayer |  |  |  |  |  |  | Orc | Pathfinder #207: Resurrection Flood pg. 87 |
+| Common	Medium | Humanoid, Orc | 5	78	21	+12	+9	+15	+14 |  |  | darkvision |  |  |  |  |  |  |  | 25 feet | Orc Gamekeeper |
+| Orc |  | NPC Core pg. 206 |  | Common | Humanoid, Orc |  | 4 | 65 | 20 | +10 | +12 | +9 | darkvision | 25 feet |
+| Orc Hunter | Wyvernsting Orc | Pathfinder #209: Destroyer's Doom pg. 89 |  | Common | Humanoid, Orc |  | 9 | 155 | 29 | +18 | +23 | +21 | darkvision | 25 feet |
+| Orc Raider | Wyvernsting Orc | Pathfinder #209: Destroyer's Doom pg. 88 |  | Common | Humanoid, Orc |  | 8 | 165 | 26 | +18 | +15 | +13 | darkvision | 25 feet |
+| Orc Raiding Party | Orc | Battlecry! pg. 187 |  | Common | Humanoid, Orc, Troop |  | 5 | 75 (4 segments) | 21 | +10 | +15 | +12 | 25 feet; troop movement | Orc Rampager |
+| Orc |  | Pathfinder #207: Resurrection Flood pg. 86 |  | Common | Humanoid, Orc |  | 4 | 75 | 19 | +14 | +11 | +8 | darkvision | 30 feet |
+| Orc Scrapper | Orc | Monster Core pg. 258 1.1 |  | Common | Humanoid, Orc |  | 0 | 18 | 14 | +5 | +4 | +2 | darkvision | 25 feet |
+| Orc Skullcrushers | Orc | NPC Core pg. 207 |  | Common | Humanoid, Orc, Troop |  | 7 | 120 (4 segments) | 24 | +17 | +16 | +13 | darkvision | 25 feet; troop movement |
+| Orc Spinecracker | Wyvernsting Orc | Pathfinder #209: Destroyer's Doom pg. 88 |  | Common | Humanoid, Orc |  | 7 | 130 | 23 | +15 | +12 | +10 | darkvision | 25 feet |
+| Orc Vagabond | Orc | Pathfinder #207: Resurrection Flood pg. 86 |  | Common | Humanoid, Orc |  | 3 | 48 | 18 | +11 | +10 | +6 | darkvision | 25 feet |
+| Orc Veteran | Orc | Monster Core pg. 258 1.1 |  | Common | Humanoid, Orc |  | 1 | 23 | 18 | +8 | +7 | +4 | darkvision | 25 feet |
+| Orc Veteran Master | Orc | NPC Core pg. 208 |  | Common | Humanoid, Orc |  | 10 | 175 | 30 | +19 | +20 | +18 | darkvision | 30 feet |
+| Orca | Dolphin | Monster Core pg. 103 1.1 |  | Common | Animal |  | 5 | 75 | 21 | +14 | +11 | +12 | aquatic echolocation 120 feet, low-light vision | swim 60 feet |
+| Orchid Mantis Swarm | Orchid Mantis | Tian Xia World Guide pg. 292 |  | Common | Animal, Swarm |  | 6 | 100 | 24 | +13 | +16 | +12 | low-light vision | 30 feet, climb 20 feet, fly 20 feet |
+| Ordulf Bladecaller |  | Prey for Death pg. 35 |  | Unique | Human, Humanoid, Unique |  | 16 | 300 | 38 | +30 | +25 | +28 | 25 feet | Ordwi |
+| Rusthenge pg. 7 | Unique	Medium | Human, Humanoid, Unique |  | 2 | 25 feet | Ore Louse |  |  |  |  |  |  | Rage of Elements pg. 185 2.0 | Common	Medium |
+| Amphibious, Beast, Water | 5	60	22	+13	+15	+10	+14 | darkvision, metal scent 30 feet, wavesense 120 feet (imprecise) |  |  | 35 feet, swim 60 feet; water stride | Oread Guard |  |  |  |  |  |  | Geniekin | Monster Core 2 pg. 251 |
+| Common	Medium | Human, Humanoid, Oread | 1	20	17	+7	+6	+5	+7 |  |  | 20 feet | Oregorger |  |  |  |  |  |  | Elemental, Metal | Rage of Elements pg. 158 2.0 |
+| Common	Large | Elemental, Metal | 11	245	30	+24	+17	+20	+18 |  |  | darkvision, rust vision |  |  |  |  |  |  |  | 30 feet, burrow 20 feet, fly 20 feet | Loading... |
+| Ort | Devil | Monster Core pg. 86 1.1 |  | Common | Devil, Fiend, Mindless, Unholy |  | 0 | 20 | 13 | +9 | +6 | +2 | greater darkvision | 20 feet |
+| Ossuary Warden | Skeleton | Claws of the Tyrant pg. 67 |  | Unique | Mindless, Skeleton, Undead, Unholy, Unique |  | 19 | 265 ( void healing ) | 42 | +34 | +29 | +32 | darkvision, wavesense (imprecise) 120 feet | 20 feet, swim 60 feet |
+| Ostiarius | Velstrac | Monster Core 2 pg. 345 |  | Common | Fiend, Unholy, Velstrac |  | 5 | 65 | 21 | +9 | +15 | +13 | greater darkvision, painsight, sense portal | 25 feet |
+| Ostovite |  | Monster Core 2 pg. 245 |  | Common | Fiend, Unholy |  | 1 | 30 | 15 | +6 | +9 | +4 | darkvision | 25 feet |
+| Osyluth | Devil | Bestiary 2 pg. 73 2.0, Pathfinder #147: Tomorrow Must Burn pg. 78 |  | Common | Devil, Fiend |  | 9 | 135 | 28 | +17 | +18 | +17 | greater darkvision | 35 feet, fly 30 feet |
+| Otari Ilvashti |  | Pathfinder #163: Ruins of Gauntlight pg. 88 |  | Unique | Ghost, Incorporeal, Spirit, Undead, Unique |  | 9 | 120 (negative healing, rejuvenation) | 25 | +16 | +20 | +17 | darkvision | fly 25 feet |
+| Otyugh |  | Bestiary pg. 258 |  | Common | Aberration |  | 4 | 70 | 20 | +12 | +8 | +10 | darkvision, scent (imprecise) 30 feet | 20 feet |
+| Loading... | Overgrown Viper Vine | Kingmaker Adventure Path pg. 360 |  | Rare | Plant, Rare |  | 14 | 290 | 35 | +28 | +26 | +24 | low-light vision, tremorsense (precise in area A7, otherwise imprecise) 60 feet | 20 feet |
+| Oversized Chimera |  | Kingmaker Adventure Path pg. 107 |  | Rare | Beast, Rare |  | 12 | 220 | 33 | +25 | +22 | +19 | darkvision, scent (imprecise) 30 feet | 25 feet, fly 40 feet |
+| Ovinnik | House Spirit | Monster Core 2 pg. 195 |  | Common | Fey |  | 4 | 60 | 20 | +8 | +13 | +11 | tremorsense (imprecise) within their entire bound granary or storeroom | 30 feet, climb 20 feet |
+| Owb | Owb | Monster Core 2 pg. 246 |  | Uncommon | Shadow, Uncommon |  | 6 | 90 | 24 | +14 | +15 | +13 | greater darkvision | 5 feet, fly 30 feet |
+| Owb Prophet | Owb | Monster Core 2 pg. 247 |  | Rare | Rare, Shadow, Unholy |  | 13 | 225 | 34 | +25 | +23 | +24 | greater darkvision | 5 feet, fly 40 feet |
+| Owlbear | Owlbear | Bestiary pg. 259 |  | Common | Animal |  | 4 | 70 | 21 | +13 | +7 | +11 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Ozthoom |  | Monster Core 2 pg. 248 |  | Common | Fey |  | 14 | 280 | 35 | +23 | +28 | +24 | lifesense 120 feet, low-light vision | fly 75 feet |
+| Pachycephalosaurus | Dinosaur | Monster Core pg. 97 1.1 |  | Common | Animal, Dinosaur |  | 3 | 65 | 17 | +12 | +11 | +7 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Pack Leader | Primalist | NPC Core pg. 132 |  | Common | Human, Humanoid |  | 4 | 55 | 20 | +9 | +9 | +12 | 25 feet | Padli |
+| Pathfinder #165: Eyes of Empty Death pg. 7 | Unique	Medium | Caligni, Humanoid, Unique |  | 9 | greater darkvision |  |  |  |  |  |  |  | 25 feet | Loading... |
+| Painted Griffon | Painted Creatures | Pathfinder #218: Titanbane pg. 41 |  | Uncommon | Construct, Mindless, Uncommon |  | 5 | 60 | 23 | +14 | +14 | +8 | darkvision, scent (imprecise) 60 feet | 25 feet, fly 60 feet |
+| Painted Landscape | Painted Creatures | Pathfinder #218: Titanbane pg. 87 |  | Rare | Construct, Mindless, Rare |  | 10 | 155 | 30 | +22 | +18 | +20 | tremorsense (imprecise) 60 feet | 15 feet |
+| Painted Pontifex | Painted Creatures | Pathfinder #218: Titanbane pg. 87 |  | Rare | Construct, Mindless, Rare |  | 9 | 138 | 28 | +20 | +18 | +16 | darkvision | 25 feet |
+| Painted Ram | Painted Creatures | Pathfinder #218: Titanbane pg. 86 |  | Rare | Construct, Mindless, Rare |  | 8 | 120 | 27 | +18 | +15 | +13 | darkvision | 30 feet, climb 20 feet |
+| Painted Soldier | Painted Creatures | Pathfinder #218: Titanbane pg. 86 |  | Rare | Construct, Mindless, Rare |  | 7 | 100 | 25 | +17 | +13 | +11 | darkvision | 20 feet |
+| Painted Soldier (Matte) |  | Pathfinder #218: Titanbane pg. 28 |  | Uncommon | Construct, Mindless, Uncommon |  | 7 | 95 | 25 | +18 | +13 | +15 | darkvision | 20 feet |
+| Painted Stag | Elemental, Wood | Rage of Elements pg. 210 2.0 |  | Common | Elemental, Plant, Wood |  | 9 | 175 | 27 | +18 | +12 | +21 | 45 feet, climb 60 feet | Pairaka |
+| Div |  | Monster Core 2 pg. 112 |  | Common | Div, Fiend, Unholy |  | 7 | 105 | 24 | +12 | +16 | +17 | greater darkvision | 25 feet, fly 35 feet |
+| Pakalchi | Sahkil | Monster Core 2 pg. 276 |  | Common | Fiend, Sahkil, Unholy |  | 9 | 150 | 26 | +17 | +18 | +20 | darkvision, truesight | 30 feet |
+| Pakano |  | Pathfinder #175: Broken Tusk Moon pg. 88 |  | Unique | Human, Humanoid, Unique |  | 4 | 70 | 20 | +14 | +8 | +11 | 25 feet | Palace Guard |
+| Courtier |  | NPC Core pg. 14 |  | Common | Human, Humanoid |  | 4 | 60 | 21 | +12 | +10 | +10 | (14 when rolling initiative) | 25 feet |
+| Loading... | Pale Horse | Unicorn |  |  | Howl of the Wild pg. 190 2.1 |  | Uncommon | Large |  |  |  |  | Incorporeal, Uncommon, Undead, Unholy | 11	180 ( void healing )	30	+20	+24	+21	+21 |
+| darkvision, lifesense 90 feet | fly 45 feet | Pale Sovereign |  |  | Book of the Dead pg. 136 |  | Rare | Medium |  |  |  |  | Rare, Undead | 16	298 ( negative healing )	36	+26	+30	+28	+28 |
+| darkvision, sense visitors | 25 feet, air walk | Pale Stranger |  |  | Revenant |  |  |  |  |  |  |  | Book of the Dead pg. 140 | Rare	Medium |
+| Rare, Undead | 10	155 ( negative healing )	29	+19	+21	+15	+19 | darkvision, sense murderer |  |  | 25 feet | Paleohemoth |  |  |  |  |  |  | Monster Core pg. 260 1.1 | Rare	Huge |
+| Construct, Mindless, Rare | 12	195	33	+26	+20	+18	+20 | darkvision |  |  | 25 feet | Palpares |  |  |  |  |  |  | Pathfinder #209: Destroyer's Doom pg. 85 | Uncommon	Gargantuan |
+| Animal, Uncommon | 11	195	31	+21	+24	+18	+19 | darkvision, tremorsense (imprecise) 90 feet |  |  | 25 feet, burrow 35 feet | Palzu |  |  |  |  |  |  | Pathfinder #179: Cradle of Quartz pg. 35 | Unique	Medium |
+| Gnoll, Humanoid, Unique | 8	135	25	+17	+18	+13	+17 | darkvision |  |  | 25 feet | Parsus |  |  |  |  |  |  | Pathfinder #180: The Smoking Gun pg. 90 | Unique	Medium |
+| Dhampir, Human, Humanoid, Unique | 10	160 ( negative healing )	29	+18	+18	+20	+20 | 25 feet | Path Maiden |  | Pathfinder #199: To Bloom Below the Web pg. 86 |  | Rare | Medium |  |  |  |  | Incorporeal, Rare, Spirit, Undead | 12	160 (negative healing)	31	+18	+22	+24	+22 |
+| darkvision | limited flight 25 feet | Pathfinder Field Agent |  |  | Pathfinders |  |  |  |  |  |  |  | Character Guide pg. 126 2.0 | Common	Medium |
+| Elf, Human, Humanoid | 4	60	21	+10	+13	+11	+11 | low-light vision, trap finder |  |  | 25 feet | Pathfinder Venture-Captain |  |  |  |  |  |  | Pathfinders | Character Guide pg. 127 2.0 |
+| Common	Medium | Human, Humanoid | 11	195	32	+22	+18	+19	+20 |  |  | 20 feet | Pavetta Stroon-Drelev |  |  |  |  |  |  | Kingmaker Adventure Path pg. 313 | Unique	Medium |
+| Human, Humanoid, Unique | 9	150	25	+15	+15	+21	+19 | 25 feet | Pearl Dragonet |  | Dragonet |  |  |  |  |  |  |  | Draconic Codex pg. 128 | Uncommon	Tiny |
+| Arcane, Dragon, Uncommon | 1	17	16	+5	+10	+8	+9 | darkvision |  |  | 10 feet, fly 25 feet | Peerless Duelist |  |  |  |  |  |  | Maverick | NPC Core pg. 80 |
+| Common	Medium | Human, Humanoid | 12	200	33	+21	+25	+21	+24 |  |  | (27 for initiative) tremorsense 30 feet |  |  |  |  |  |  |  | 25 feet | Peerless Healer |
+| Healer |  | NPC Core pg. 64 |  | Common | Human, Humanoid |  | 15 | 200 | 35 | +26 | +24 | +27 | 25 feet | Pegasus |
+| Monster Core pg. 261 1.1 | Common	Large | Beast |  | 3 | darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 40 feet, fly 80 feet | Pelegox Cube |
+| Rage of Elements pg. 162 2.0 | Uncommon	Gargantuan | Elemental, Metal, Troop, Uncommon |  | 11 | metalsense (imprecise) 60 feet |  |  |  |  |  |  |  | fly 25 feet; troop movement | Peluda |
+| Bestiary 2 pg. 196 2.0 | Common	Large | Dragon, Fire |  | 10 | darkvision |  |  |  |  |  |  |  | 30 feet, swim 30 feet | Penanggalan |
+| Monster Core 2 pg. 249 | Common	Medium | Aberration, Tanggal |  | 5 | darkvision |  |  |  |  |  |  |  | fly 40 feet | Pendidia |
+| Pathfinder #218: Titanbane pg. 53 | Unique	Medium | Amphibious, Fey, Mythic, Nymph, Unique, Water |  | 10 | low-light vision |  |  |  |  |  |  |  | 25 feet, swim 50 feet | Peng |
+| Tian Xia World Guide pg. 294 | Common	Gargantuan | Air, Beast, Cold, Holy |  | 12 | 10 feet, fly 70 feet; windslice | Penitent Of Calistria |  |  |  |  |  |  | Devotee | NPC Core pg. 28 |
+| Common	Medium | Human, Humanoid | 0	18	15	+6	+5	+6	+4 |  |  | 25 feet | Penqual |  |  |  |  |  |  | Sahkil | Pathfinder #162: Ruins of the Radiant Siege pg. 84 |
+| Uncommon	Huge | Fiend, Sahkil, Swarm, Uncommon | 15	205	37	+29	+24	+27	+27 |  |  | darkvision |  |  |  |  |  |  |  | 40 feet | Loading... |
+| Peryton |  | Bestiary 2 pg. 197 2.0 |  | Common | Beast |  | 4 | 60 | 21 | +8 | +11 | +13 | darkvision | 25 feet, fly 50 feet |
+| Pesgahi the Poisoner |  | Pathfinder #181: Zombie Feast pg. 57 |  | Unique | Ghoul, Undead, Unique |  | 4 | 60 ( negative healing ) | 21 | +10 | +12 | +11 | darkvision | 30 feet, burrow 5 feet |
+| Pest Drake Swarm | Dragonet | Draconic Codex pg. 129 |  | Common | Dragon, Swarm |  | 9 | 120 | 27 | +17 | +21 | +15 | darkvision | 20 feet, fly 50 feet |
+| Petitioner |  | Bestiary 2 pg. 198 2.0 |  | Common | Petitioner |  | 1 | 22 | 15 | +7 | +7 | +7 | darkvision | 25 feet |
+| Phade | Elemental, Air | Monster Core pg. 140 1.1 |  | Common | Air, Elemental |  | 7 | 70 | 26 | +14 | +18 | +11 | darkvision | 25 feet, fly 25 feet |
+| Phalanx Formation | Military | NPC Core pg. 91 |  | Common | Human, Humanoid, Troop |  | 6 | 99 (4 segments) | 23 | +16 | +12 | +14 | 25 feet; troop movement | Phalanx Of Phalanges |
+| Animated Bones |  | Pathfinder #181: Zombie Feast pg. 83 |  | Uncommon | Construct, Mindless, Swarm, Uncommon |  | 1 | 16 | 15 | +9 | +8 | +5 | darkvision | Phantasmal Minion |
+| Player Core pg. 349 2.0 | Common	Medium | Force, Mindless |  | -1 | darkvision |  |  |  |  |  |  |  | fly 30 feet | Phantom Beast |
+| Phantom |  | Monster Core pg. 263 1.1 |  | Uncommon | Ethereal, Incorporeal, Phantom, Spirit, Uncommon |  | 8 | 120 | 26 | +13 | +18 | +16 | darkvision | fly 35 feet |
+| Phantom Boar | Phantom | Pathfinder #196: The Summer That Never Was pg. 15 |  | Rare | Ethereal, Incorporeal, Phantom, Rare, Spirit |  | 2 | 22 | 18 | +10 | +5 | +8 | darkvision, scent (imprecise) 30 feet | fly 40 feet |
+| Phantom Gecko | Phantom | Pathfinder #196: The Summer That Never Was pg. 21 |  | Rare | Ethereal, Incorporeal, Phantom, Rare, Spirit |  | 1 | 15 | 15 | +5 | +8 | +5 | darkvision | fly 25 feet |
+| Phantom Knight | Phantom | Monster Core pg. 262 1.1 |  | Uncommon | Ethereal, Incorporeal, Phantom, Spirit, Uncommon |  | 4 | 45 | 21 | +8 | +12 | +13 | darkvision | fly 25 feet |
+| Phantom Raven | Phantom | Pathfinder #196: The Summer That Never Was pg. 15 |  | Rare | Ethereal, Incorporeal, Phantom, Rare, Spirit |  | -1 | 6 | 15 | +2 | +7 | +5 | darkvision | fly 40 feet |
+| Phantom Wolf | Phantom | Pathfinder #196: The Summer That Never Was pg. 15 |  | Rare | Ethereal, Incorporeal, Phantom, Rare, Spirit |  | 1 | 14 | 15 | +6 | +9 | +5 | darkvision | fly 35 feet |
+| Phase Archdragon | Dragon, Phase | Draconic Codex pg. 86 |  | Rare | Arcane, Dragon, Rare |  | 22 | 300 | 47 | +33 | +38 | +37 | darkvision, scent (imprecise) 60 feet | 70 feet, fly 210 feet |
+| Phasmadaemon | Daemon | Monster Core 2 pg. 81 |  | Common | Daemon, Fiend, Unholy |  | 17 | 340 | 39 | +31 | +26 | +31 | darkvision, truesight | 25 feet, fly 35 feet |
+| Phistophilus | Devil | Monster Core pg. 90 1.1 |  | Common | Devil, Fiend, Unholy |  | 10 | 150 | 30 | +18 | +18 | +23 | greater darkvision | 25 feet |
+| Phoenix |  | Monster Core pg. 264 1.1 |  | Rare | Beast, Fire, Holy, Rare |  | 15 | 300 | 36 | +27 | +31 | +28 | darkvision, detect magic, see the unseen | 25 feet, fly 70 feet |
+| Phomandala |  | Kingmaker Adventure Path pg. 473 |  | Unique | Dragon, Humanoid, Unique |  | 19 | 300 | 45 | +33 | +35 | +32 | darkvision | 25 feet |
+| Phuthi |  | Pathfinder #167: Ready? Fight! pg. 39 |  | Unique | Gnoll, Humanoid, Unique |  | 13 | 260 | 31 | +23 | +24 | +23 | darkvision | 25 feet |
+| Physician | Healer | NPC Core pg. 60 |  | Common | Human, Humanoid |  | -1 | 8 | 13 | +9 | +3 | +8 | (8 to notice ailments) | 25 feet |
+| Phytohydra | Elemental, Wood | Pathfinder #203 Shepherd of Decay pg. 86 |  | Common | Elemental, Plant, Wood |  | 12 | 30 (body) 180; Immunities bleed, paralyzed , poison , sleep ; Weaknesses fire 10 HP (head) | 32 | +25 | +19 | +22 | 25 feet, climb 25 feet | Phytomancer Ghost |
+| Pathfinder #203 Shepherd of Decay pg. 51 | Unique	Medium | Ghost, Incorporeal, Spirit, Undead, Unholy, Unique, Wood |  | 13 | darkvision |  |  |  |  |  |  |  | fly 25 feet | Loading... |
+| Loading... | Pilgrim of Irori | Devotee |  |  | NPC Core pg. 28 |  | Common | Medium |  |  |  |  | Human, Humanoid | -1	9	14	+4	+4	+7	+5 |
+| 25 feet | Pin Tingwheely | Pathfinder #153: Life's Long Shadows pg. 20 |  | Unique | Fey, Sprite, Unique |  | 8 | 95 | 29 | +15 | +20 | +17 | low-light vision | 15 feet, fly 45 feet |
+| Pinacosaurus |  | Pathfinder #151: The Show Must Go On pg. 50 |  | Common | Animal, Dinosaur |  | 4 | 70 | 21 | +12 | +8 | +8 | low-light vision | 25 feet |
+| Pine Pangolin | Elemental, Wood | Rage of Elements pg. 208 2.0 |  | Common | Elemental, Plant, Wood |  | 7 | 140 | 25 | +15 | +10 | +18 | 25 feet | Pipefox |
+| Monster Core pg. 265 1.1 | Common	Tiny | Beast |  | 2 | darkvision |  |  |  |  |  |  |  | 25 feet, climb 20 feet | Piranha Swarm |
+| Fish |  | Bestiary 3 pg. 99 |  | Common | Animal, Aquatic, Swarm |  | 3 | 40 | 16 | +9 | +10 | +7 | blood scent, low-light vision, scent (imprecise) 100 feet | swim 30 feet |
+| Pirate | Seafarer | NPC Core pg. 147 |  | Common | Human, Humanoid |  | 2 | 32 | 17 | +7 | +8 | +6 | 25 feet | Piscodaemon |
+| Daemon |  | Bestiary 2 pg. 58 2.0 |  | Common | Amphibious, Daemon, Fiend |  | 10 | 200 | 28 | +22 | +16 | +19 | darkvision, see invisibility | 25 feet, swim 40 feet |
+| Pitax Warden |  | Kingmaker Adventure Path pg. 336 |  | Rare | Human, Humanoid, Rare |  | 12 | 215 | 33 | +23 | +21 | +23 | 25 feet | Pitborn Adept |
+| Nephilim |  | Monster Core pg. 266 1.1 |  | Uncommon | Human, Humanoid, Nephilim, Uncommon |  | 3 | 29 | 17 | +5 | +7 | +8 | darkvision | 25 feet |
+| Pixie | Sprite | Monster Core pg. 323 1.1 |  | Common | Fey, Sprite |  | 4 | 40 | 23 | +8 | +14 | +12 | low-light vision | 15 feet, fly 45 feet |
+| Pixiu |  | Tian Xia World Guide pg. 295 |  | Uncommon | Dragon, Uncommon |  | 8 | 165 | 26 | +18 | +14 | +16 | darkvision, goldsense (precise) 120 feet | 30 feet, fly 40 feet |
+| Plague Doctor | Healer | NPC Core pg. 62 |  | Common | Human, Humanoid |  | 5 | 70 | 20 | +13 | +8 | +13 | 25 feet | Plague Giant |
+| Giant |  | Bestiary 3 pg. 111 |  | Common | Giant, Humanoid |  | 14 | 285 | 35 | +27 | +24 | +23 | low-light vision | 45 feet |
+| Plague Zombie | Zombie | Monster Core pg. 356 1.1 |  | Common | Mindless, Undead, Unholy, Zombie |  | 1 | 50 ( void healing ) | 13 | +6 | +3 | +4 | darkvision | 25 feet |
+| Planar Terra-Cotta Soldier |  | Pathfinder #166: Despair on Danger Island pg. 52 |  | Rare | Construct, Rare |  | 11 | 250 | 30 | +24 | +21 | +17 | 25 feet | Planar Terra-Cotta Squadron |
+| Pathfinder #166: Despair on Danger Island pg. 53 | Rare	Medium | Construct, Rare, Troop |  | 15 | 25 feet | Planetar |  |  |  |  |  |  | Angel | Bestiary 2 pg. 15 2.0 |
+| Uncommon	Large | Angel, Celestial, Uncommon | 16	300	39	+28	+25	+28	+28 |  |  | (32 to detect illusions) darkvision, true seeing |  |  |  |  |  |  |  | 25 feet, fly 60 feet | Platecarpus |
+| Mosasaur |  | Monster Core 2 pg. 227 |  | Common | Animal |  | 3 | 46 | 19 | +10 | +11 | +7 | low-light vision, scent (imprecise) 30 feet | 5 feet, swim 35 feet |
+| Plated Python | Gorgon | Howl of the Wild pg. 155 2.1 |  | Uncommon | Beast, Uncommon |  | 12 | 215 | 33 | +24 | +20 | +22 | darkvision | 40 feet, burrow 30 feet, climb 30 feet; stone tunnel |
+| Pleroma | Aeon | Monster Core pg. 10 1.1 |  | Common | Aeon, Monitor |  | 20 | 335 | 45 | +32 | +31 | +37 | darkvision, lifesense 120 feet, truesight | fly 40 feet; unfettered movement |
+| Poacher | Explorer | NPC Core pg. 53 |  | Common | Human, Humanoid |  | 2 | 30 | 18 | +7 | +10 | +7 | 25 feet | Pokmit Bloody-Pike |
+| Pathfinder #185: A Taste of Ashes pg. 92 | Unique	Medium | Undead, Unique |  | 18 | darkvision |  |  |  |  |  |  |  | 25 feet | Polar Bear |
+| Bear |  | Bestiary 2 pg. 36 2.0 |  | Common | Animal |  | 5 | 73 | 22 | +14 | +10 | +10 | low-light vision, scent (imprecise) 60 feet | 35 feet, swim 15 feet |
+| Political Upstart | Maverick | NPC Core pg. 76 |  | Common | Human, Humanoid |  | 0 | 15 | 14 | +4 | +7 | +10 | (11 to Sense Motive) | 25 feet |
+| Polong |  | Book of the Dead pg. 138 |  | Uncommon | Incorporeal, Spirit, Uncommon, Undead |  | 8 | 100 ( negative healing ) | 24 | +12 | +18 | +19 | darkvision, lifesense 30 feet | fly 35 feet |
+| Poltergeist |  | Monster Core pg. 268 1.1 |  | Common | Incorporeal, Spirit, Undead, Unholy |  | 5 | 55 ( void healing , rejuvenation) | 22 | +9 | +14 | +13 | darkvision | fly 20 feet |
+| Loading... | Poppet Attendant | Poppet |  |  | Monster Core 2 pg. 256 |  | Rare | Small |  |  |  |  | Construct, Humanoid, Rare | 0	17	15	+9	+3	+6	+5 |
+| darkvision | 25 feet | Poppet Mage |  |  | Poppet |  |  |  |  |  |  |  | Monster Core 2 pg. 256 | Rare	Small |
+| Construct, Humanoid, Rare | 2	30	15	+6	+5	+11	+7 | darkvision |  |  | 25 feet | Poracha |  |  |  |  |  |  | Monster Core pg. 269 1.1 | Uncommon	Medium |
+| Beast, Uncommon | 4	50	23	+9	+13	+10	+10 | tremorsense (imprecise) 10 feet, darkvision |  |  | 40 feet | Portal Eater |  |  |  |  |  |  | Pathfinder #167: Ready? Fight! pg. 56 | Rare	Gargantuan |
+| Astral, Rare | 18	420	37	+34	+29	+32	+30 | greater darkvision |  |  | 35 feet, fly 35 feet | Powderkeg Punk Bombardier |  |  |  |  |  |  | Pathfinder #178: Punks in a Powderkeg pg. 38 | Uncommon	Medium |
+| Humanoid, Uncommon | 1	16	17	+6	+7	+4	+5 | 25 feet | Powderkeg Punk Gunner |  | Pathfinder #178: Punks in a Powderkeg pg. 39 |  | Uncommon | Medium |  |  |  |  | Humanoid, Uncommon | 0	13	16	+5	+6	+2	+4 |
+| 25 feet | Pr'rall | No-Prep Character: Pr’rall |  | Unique | Catfolk, Humanoid, Unique |  | 9 | 138 | 28 | +19 | +20 | +16 | low-light vision | 30 |
+| Prachalla |  | Pathfinder #183: Field of Maidens pg. 51 |  | Unique | Construct, Soulbound, Unique |  | 10 | 205 | 30 | +19 | +22 | +16 | darkvision | 25 feet |
+| Prairie Drake | Drake | Pathfinder #178: Punks in a Powderkeg pg. 87 |  | Uncommon | Dragon, Earth, Uncommon |  | 2 | 36 | 18 | +10 | +6 | +6 | tremorsense 30 feet (imprecise) | 25 feet, burrow 20 feet, fly 10 feet |
+| Praskith |  | Monster Core 2 pg. 257 |  | Common | Fungus, Plant |  | 7 | 120 | 25 | +17 | +12 | +13 | low-light vision | 20 feet |
+| Prazil |  | Kingmaker Adventure Path pg. 196 |  | Unique | Humanoid, Kobold, Unique |  | 5 | 85 | 21 | +11 | +14 | +17 | darkvision | 25 feet |
+| Precentor | Velstrac | Pathfinder #147: Tomorrow Must Burn pg. 85 |  | Uncommon | Fiend, Uncommon, Velstrac |  | 16 | 295 | 39 | +25 | +29 | +30 | darkvision, detect magic, painsight, true seeing | 30 feet, fly 30 feet (from fly) |
+| Predatory Rabbit | Risen Pet | Book of the Dead pg. 142 |  | Common | Undead |  | -1 | 6 ( negative healing ) | 16 | +4 | +8 | +3 | darkvision, sense companion | 40 feet |
+| Pridespawn Sentinel |  | Pathfinder Adventure Path #219: Lord of the Trinity Star pg. 56 |  | Rare | Aberration, Rare |  | 12 | 215 | 32 | +25 | +22 | +20 | darkvision, sin scent (imprecise) 30 feet | 30 feet |
+| Priest of Kabriri | Ghoul | Book of the Dead pg. 105 |  | Common | Ghoul, Undead |  | 5 | 63 ( negative healing ) | 19 | +9 | +9 | +12 | darkvision | 25 feet |
+| Priest of Pharasma | Devotees | Gamemastery Guide pg. 213 |  | Common | Human, Humanoid |  | 6 | 80 | 21 | +11 | +11 | +14 | 25 feet | Priest of Sarenrae |
+| Devotee |  | NPC Core pg. 32 |  | Common | Holy, Human, Humanoid |  | 6 | 80 | 21 | +11 | +13 | +16 | 25 feet | Priests Of Iomedae |
+| Claws of the Tyrant pg. 45 | Uncommon	Medium | Humanoid, Uncommon |  | 7 | 25 feet | Primal Bandersnatch |  |  |  |  |  |  | Bandersnatch | Kingmaker Adventure Path pg. 610 |
+| Common	Gargantuan | Beast, Tane | 19	395 ( fast healing 15 )	44	+35	+33	+31	+33 |  |  | darkvision, scent (precise) 120 feet |  |  |  |  |  |  |  | 50 feet, climb 20 feet | Primal Warden of Zibik |
+| Pathfinder #203 Shepherd of Decay pg. 27 | Rare	Medium | Construct, Plant, Rare |  | 12 | darkvision |  |  |  |  |  |  |  | 25 feet | Prime Minister |
+| Official |  | NPC Core pg. 110 |  | Common | Human, Humanoid |  | 0 | 15 | 14 | +6 | +3 | +19 | (19 to Sense Motive) | 25 feet |
+| Primordial Envy | Sinsludge | Rusthenge pg. 63 |  | Rare | Ooze, Rare |  | 3 | 60 | 12 | +13 | +4 | +8 | darkvision, magic sense (precise) 30 feet | 15 feet |
+| Prismhydra | Hydra | Howl of the Wild pg. 166 2.1 |  | Rare | Beast, Rare |  | 16 | 290 ((body), hydra regeneration HP 36 (head), prismatic head regrowth; Immunities area damage; Weaknesses slashing 15) | 30 | +28 | +26 | +24 | scent (imprecise) 60 feet | 35 feet, swim 35 feet |
+| Prisoner | Downtrodden | NPC Core pg. 40 |  | Common | Human, Humanoid |  | 1 | 17 | 16 | +4 | +9 | +6 | 25 feet | Privateer Captain |
+| Firebrands |  | Character Guide pg. 119 2.0 |  | Common | Human, Humanoid |  | 11 | 175 | 30 | +19 | +20 | +23 | see invisibility | 25 feet |
+| Procyal | Agathion | Monster Core 2 pg. 18 |  | Common | Agathion, Celestial, Holy |  | 8 | 170 | 26 | +16 | +14 | +18 | darkvision | 25 feet |
+| Profane Ghoul |  | Shadows at Sundown pg. 33 |  | Rare | Ghoul, Rare, Undead |  | 10 | 180 ( negative healing ) | 30 | +17 | +22 | +19 | darkvision | 30 feet, burrow 10 feet |
+| Promise Guard |  | Pathfinder #150: Broken Promises pg. 29 |  | Rare | Human, Humanoid, Rare |  | 17 | 330 | 43 | +32 | +26 | +29 | 30 feet | Propagandist |
+| Villain |  | NPC Core pg. 154 |  | Common | Human, Humanoid |  | 3 | 40 | 17 | +6 | +9 | +12 | (12 to Sense Motive) | 25 feet |
+| Prophet | Devotee | NPC Core pg. 30 |  | Common | Human, Humanoid |  | 2 | 25 | 17 | +8 | +7 | +11 | 25 feet | Protean Tumult |
+| Protean |  | Battlecry! pg. 188 |  | Uncommon | Monitor, Protean, Troop, Uncommon |  | 12 | 210 (4 segments, fast healing 8) | 32 | +22 | +25 | +19 | darkvision, entropy sense (imprecise) 30 feet | 25 feet, fly 30 feet, swim 25 feet; troop movement, unfettered movement |
+| Protoceratops | Dinosaur | Howl of the Wild pg. 136 2.1 |  | Common | Animal, Dinosaur |  | 2 | 30 | 17 | +11 | +8 | +6 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Protosoul |  | Gatewalkers (Hardcover) pg. 191 |  | Unique | Mindless, Undead, Unholy, Unique |  | 11 | 245 ( void healing ) | 28 | +24 | +22 | +17 | lifesense 120 feet | fly 40 feet |
+| Provincial Jiang-Shi | Vampire, Jiang-Shi | Book of the Dead pg. 158, Pathfinder #167: Ready? Fight! pg. 86 |  | Common | Undead, Vampire |  | 11 | 130 ( fast healing 10 , negative healing , one more breath) | 31 | +21 | +18 | +24 | breathsense (precise) 60 feet, darkvision | 15 feet; rigor mortis |
+| Prowler Wight | Wight | Book of the Dead pg. 168 |  | Uncommon | Uncommon, Undead, Wight |  | 9 | 155 ( negative healing ) | 28 | +17 | +20 | +16 | darkvision | 25 feet |
+| Pruana Two-Punch |  | Pathfinder #151: The Show Must Go On pg. 22 |  | Unique | Dwarf, Humanoid, Unique |  | 3 | 46 | 20 | +9 | +8 | +7 | darkvision | 20 feet |
+| Pteios |  | Pathfinder #218: Titanbane pg. 90 |  | Unique | Humanoid, Mythic, Stheno, Unique |  | 11 | 220 | 30 | +18 | +24 | +24 | all-around vision | 25 feet |
+| Pteranodon | Pterosaur | Monster Core pg. 278 1.1 |  | Common | Animal |  | 2 | 25 | 16 | +7 | +10 | +6 | low-light vision, scent (imprecise) 30 feet | 10 feet, fly 40 feet |
+| Pufferfish | Fish | Bestiary 3 pg. 99 |  | Common | Animal, Aquatic |  | -1 | 12 | 12 | +5 | +3 | +2 | low-light vision | swim 15 feet |
+| Pugwampi | Gremlin | Monster Core pg. 180 1.1 |  | Common | Fey, Gremlin |  | 0 | 17 | 14 | +5 | +8 | +6 | (-2 to hear things) darkvision | 25 feet |
+| Pukwudgie |  | Monster Core pg. 279 1.1 |  | Common | Fey |  | 7 | 100 | 25 | +12 | +15 | +17 | low-light vision | 25 feet |
+| Puppeteer | Performer | NPC Core pg. 129 |  | Common | Human, Humanoid |  | 6 | 95 | 23 | +11 | +14 | +15 | 25 feet | Purrodaemon |
+| Daemon |  | Bestiary 2 pg. 61 2.0 |  | Common | Daemon, Fiend |  | 18 | 335 | 43 | +33 | +30 | +29 | darkvision, true seeing | 25 feet, fly 50 feet |
+| Pusk | Demon | Monster Core pg. 76 1.1 |  | Common | Demon, Fiend, Unholy |  | 2 | 36 | 17 | +10 | +4 | +8 | darkvision | 20 feet |
+| Putrifer |  | Pathfinder #202: Severed at the Root pg. 84 |  | Uncommon | Plant, Uncommon, Undead |  | 9 | 160 ( void healing ) | 28 | +17 | +20 | +14 | low-light vision | 25 feet |
+| Pygmy Kaava | Kaava | The Mwangi Expanse pg. 300 2.0 |  | Common | Humanoid |  | 0 | 15 | 15 | +5 | +7 | +6 | low-light vision | 30 feet |
+| Pyrefowl |  | Pathfinder #216: The Acropolis Pyre pg. 87 |  | Uncommon | Beast, Fire, Uncommon |  | 1 | 24 | 15 | +10 | +8 | +6 | low-light vision | 20 feet, fly 25 feet |
+| Pyrkaion | Asura | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 80 |  | Uncommon | Asura, Spirit, Uncommon, Unholy |  | 8 | 132 | 27 | +15 | +13 | +18 | darkvision | 25 feet |
+| Pyroclastic Mukradi |  | Pathfinder Adventure Path #219: Lord of the Trinity Star pg. 35 |  | Rare | Beast, Mythic, Rare |  | 15 | 300 | 37 | +32 | +23 | +26 | darkvision, tremorsense (imprecise) 60 feet | 60 feet, burrow 60 feet, climb 60 feet |
+| Pyrogeist |  | Pathfinder #184: The Ghouls Hunger pg. 86 |  | Uncommon | Incorporeal, Spirit, Uncommon, Undead |  | 10 | 130 ( negative healing ) | 29 | +16 | +19 | +18 | darkvision | fly 40 feet |
+| Pyronite Ooze | Ooze | Pathfinder #180: The Smoking Gun pg. 83 |  | Rare | Mindless, Ooze, Rare |  | 10 | 350 | 19 | +24 | +14 | +19 | no vision, tremorsense (imprecise) 60 feet | 20 feet, climb 20 feet |
+| Python | Lizard | Pathfinder Game Night: Dawn of the Frogs (Deluxe Adventure) pg. 17 |  | Common | Animal |  | 1 | 20 | 15 | +8 | +10 | +4 | low-light vision | 20 feet, climb 20 feet, swim 20 feet |
+| Python | Snake | Monster Core pg. 316 1.1 |  | Common | Animal |  | 1 | 20 | 15 | +8 | +10 | +4 | low-light vision, scent (imprecise) 30 feet | 20 feet, climb 20 feet, swim 20 feet |
+| Qadiran Camel Corps |  | Battlecry! pg. 189 |  | Common | Animal, Human, Humanoid, Troop |  | 6 | 90 (4 segments) | 23 | +17 | +14 | +11 | 35 feet, troop movement | Qarna |
+| Archon |  | Monster Core pg. 27 1.1 |  | Common | Archon, Celestial, Holy |  | 4 | 65 | 22 | +11 | +10 | +11 | darkvision | 35 feet |
+| Qormintur |  | Pathfinder #155: Lord of the Black Sands pg. 90 |  | Unique | Duergar, Dwarf, Humanoid, Unique |  | 16 | 295 | 39 | +28 | +30 | +26 | darkvision | 20 feet |
+| Quai Dau To |  | Monster Core pg. 284 1.1 |  | Common | Beast |  | 13 | 300 | 32 | +26 | +19 | +21 | darkvision, mist vision, scent (imprecise) 120 feet | 40 feet, swim 30 feet; Inflate |
+| Quantium Golem | Golem | Impossible Lands pg. 335 |  | Rare | Construct, Golem, Mindless, Rare |  | 20 | 325 | 47 | +35 | +32 | +32 | darkvision, defender's link, lifesense 120 feet | 50 feet |
+| Quara Orshendiel |  | Pathfinder #165: Eyes of Empty Death pg. 91 |  | Unique | Drow, Elf, Humanoid, Unique |  | 11 | 190 | 30 | +16 | +22 | +21 | darkvision | 30 feet |
+| Quarry Construct |  | Gatewalkers (Hardcover) pg. 49 |  | Common | Construct, Earth, Mindless |  | 2 | 23 | 18 | +11 | +4 | +4 | darkvision | 20 feet |
+| Quatoid | Elemental, Water | Monster Core pg. 148 1.1 |  | Common | Aquatic, Elemental, Water |  | 7 | 120 | 25 | +13 | +15 | +18 | darkvision | 25 feet, swim 25 feet |
+| Loading... | Queen Sluagh | Sluagh |  |  | Book of the Dead pg. 151 |  | Rare | Huge |  |  |  |  | Fey, Rare, Undead | 18	417 ( negative healing )	41	+35	+27	+33	+31 |
+| greater darkvision, soulscent (imprecise) 200 feet | 30 feet, fly 80 feet | Quelaunt |  |  | Monster Core pg. 285 1.1 |  | Common | Large |  |  |  |  | Aberration | 15	305	36	+27	+26	+31	+29 |
+| tremorsense (imprecise) 60 feet | 40 feet; fly | Quetz Coatl |  |  | Coatl |  |  |  |  |  |  |  | Monster Core pg. 65 1.1 | Uncommon	Large |
+| Beast, Coatl, Holy, Uncommon | 10	175	30	+19	+19	+21	+21 | darkvision |  |  | 15 feet, fly 50 feet | Quetzalcoatlus |  |  |  |  |  |  | Pterosaur | Monster Core pg. 278 1.1 |
+| Common	Huge | Animal | 7	110	25	+16	+17	+12	+15 |  |  | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 15 feet, fly 50 feet | Quickiron Plasm |
+| Elemental, Metal |  | Rage of Elements pg. 154 2.0 |  | Common | Elemental, Metal |  | 4 | 65 | 20 | +13 | +8 | +10 | darkvision, magic scent | 15 feet |
+| Quickling |  | Bestiary 2 pg. 218 2.0 |  | Uncommon | Fey, Uncommon |  | 3 | 25 | 22 | +6 | +13 | +8 | low-light vision | 100 feet |
+| Quintessa Maray |  | Kingmaker Adventure Path pg. 314 |  | Unique | Human, Humanoid, Unique |  | 11 | 145 | 32 | +19 | +23 | +20 | 30 feet | Loading... |
+| Quoppopak |  | Bestiary 2 pg. 219 2.0 |  | Common | Aberration, Aquatic |  | 11 | 195 | 31 | +22 | +23 | +18 | low-light vision | 15 feet, swim 40 feet, water glide 30 feet |
+| Loading... | Qurashith | Pathfinder #154: Siege of the Dinosaurs pg. 82 |  | Rare | Aberration, Fiend, Rare |  | 17 | 340 | 40 | +29 | +30 | +28 | greater darkvision, scent (imprecise) 60 feet, true seeing | 20 feet, fly 60 feet |
+| Racharak |  | Pathfinder #146: Cult of Cinders pg. 34 |  | Unique | Charau-ka, Dragon, Fire, Humanoid, Unique |  | 8 | 135 | 27 | +19 | +13 | +16 | darkvision, scent (imprecise) 30 feet | 30 feet, climb 30 feet |
+| Radiant Veranallia | Mummy | Claws of the Tyrant pg. 95 |  | Unique | Mummy, Undead, Unholy, Unique |  | 20 | 475 ( void healing ) | 45 | +36 | +34 | +38 | darkvision, tremorsense (imprecise) 120 feet | 40 feet, fly 40 feet |
+| Radiant Warden |  | Monster Core 2 pg. 266 |  | Uncommon | Construct, Uncommon |  | 17 | 300 | 40 | +32 | +29 | +28 | darkvision | 30 feet, fly 30 feet |
+| Raelis | Azata | Monster Core 2 pg. 51 |  | Common | Azata, Celestial, Holy |  | 11 | 200 | 30 | +21 | +24 | +18 | darkvision | 40 feet, fly 80 feet |
+| Rage Rider |  | Prey for Death pg. 23 |  | Uncommon | Human, Humanoid, Uncommon |  | 10 | 175 | 29 | +20 | +17 | +19 | 25 feet | Rai Sho Disciple |
+| Pathfinder #168: King of the Mountain pg. 14 | Rare	Medium | Human, Humanoid, Rare |  | 16 | 40 feet | Rai Sho Postulant |  |  |  |  |  |  | Pathfinder #168: King of the Mountain pg. 13 | Rare	Large |
+| Humanoid, Rare | 16	360	39	+30	+27	+29	+30 | darkvision, scent (imprecise) 30 feet |  |  | 60 feet, climb 20 feet | Rain-Scribe |  |  |  |  |  |  | Magaambyan Adepts | Character Guide pg. 124 2.0 |
+| Common	Medium | Elf, Human, Humanoid | 4	54	21	+9	+9	+12	+13 |  |  | low-light vision |  |  |  |  |  |  |  | 40 feet (from longstrider) | Raised Cavalry |
+| Claws of the Tyrant pg. 118 | Uncommon	Gargantuan | Mindless, Troop, Uncommon, Undead, Unholy |  | 19 | darkvision |  |  |  |  |  |  |  | 40 feet; troop movement | Raja-Krodha |
+| Rakshasa |  | Monster Core pg. 287 1.1 |  | Common | Rakshasa, Spirit, Unholy |  | 10 | 180 | 30 | +18 | +20 | +18 | darkvision | 35 feet |
+| Rakkatak |  | Rage of Elements pg. 132 2.0 |  | Common | Elemental, Fire |  | 5 | 90 | 21 | +14 | +11 | +9 | darkvision | 5 feet, fly 45 feet |
+| Raktavarna | Rakshasa | Monster Core pg. 286 1.1 |  | Common | Rakshasa, Spirit, Unholy |  | 1 | 20 | 16 | +5 | +9 | +6 | darkvision | 20 feet, climb 20 feet, swim 20 feet |
+| Loading... | Ran-to | Pathfinder #166: Despair on Danger Island pg. 64 |  | Unique | Goblin, Humanoid, Unique |  | 14 | 330 | 35 | +28 | +24 | +21 | darkvision | 20 feet |
+| Ran-to (Level 16) |  | Pathfinder #167: Ready? Fight! pg. 37 |  | Unique | Goblin, Humanoid, Unique |  | 16 | 380 | 38 | +30 | +26 | +23 | darkvision | 25 feet |
+| Ran-To (Level 20) |  | Pathfinder #168: King of the Mountain pg. 54 |  | Unique | Goblin, Humanoid, Unique |  | 20 | 460 | 44 | +36 | +33 | +30 | darkvision | 25 feet, fly 60 feet |
+| Rancorous Priesthood | Devotee | NPC Core pg. 35 |  | Common | Human, Humanoid, Troop, Unholy |  | 11 | 195 (4 segments) | 31 | +23 | +17 | +22 | 25 feet, troop movement | Raptor Guard |
+| Pathfinder #155: Lord of the Black Sands pg. 32 | Rare	Medium | Rare, Undead |  | 13 | darkvision |  |  |  |  |  |  |  | 25 feet | Loading... |
+| Rat Snake Swarm | Snake | Monster Core 2 pg. 294 |  | Common | Animal, Swarm |  | 2 | 25 | 16 | +8 | +10 | +6 | low-light vision, scent (imprecise) 30 feet | 20 feet, climb 20 feet, swim 20 feet |
+| Rat Swarm | Rat | Monster Core pg. 288 1.1 |  | Common | Animal, Swarm |  | 1 | 14 | 14 | +2 | +7 | +4 | low-light vision, scent (imprecise) 30 feet | 30 feet, climb 10 feet |
+| Ratajin Mastermind | Ratajin | Impossible Lands pg. 336 |  | Rare | Humanoid, Rare, Ratajin |  | 2 | 30 | 18 | +6 | +11 | +7 | low-light vision | 25 feet |
+| Ratfolk Grenadier | Ratfolk | Monster Core pg. 289 1.1 |  | Common | Humanoid, Ratfolk |  | 4 | 60 | 21 | +11 | +13 | +9 | darkvision | 25 feet |
+| Ratfolk Shank Squad | Ratfolk | Battlecry! pg. 189 |  | Common | Humanoid, Ratfolk, Troop |  | 7 | 120 (4 segments) | 24 | +15 | +18 | +12 | darkvision | 25 feet, troop movement |
+| Ravager Of Tindalos |  | Pathfinder #173: Doorway to the Red Star pg. 39 |  | Rare | Aberration, Rare, Time |  | 18 | 250 | 43 | +30 | +33 | +31 | greater darkvision, true seeing | 30 feet, fly 30 feet |
+| Loading... | Raven Swarm | Raven |  |  | Monster Core 2 pg. 267 |  | Common | Large |  |  |  |  | Animal, Swarm | 3	30	19	+7	+12	+9	+9 |
+| low-light vision | 10 feet, fly 40 feet | Ravener |  |  | Ravener |  |  |  |  |  |  |  | Monster Core 2 pg. 270 | Rare	Gargantuan |
+| Dragon, Fire, Primal, Rare, Undead, Unholy | 21	500 ( void healing )	47	+38	+34	+37	+37 | darkvision, scent (imprecise) 60 feet, smoke vision, soulsense 60 feet |  |  | 60 feet, fly 180 feet | Ravener Husk |  |  |  |  |  |  | Ravener | Monster Core 2 pg. 271 |
+| Rare	Gargantuan | Dragon, Rare, Undead, Unholy | 14	325 ( void healing )	35	+28	+22	+26	+26 |  |  | darkvision, soulsense 60 feet |  |  |  |  |  |  |  | 60 feet, fly 180 feet | Ravenile |
+| Pathfinder #159: All or Nothing pg. 84 | Rare	Large | Humanoid, Lizardfolk, Rare |  | 14 | 20 feet, swim 10 feet | Raw Nerve |  |  |  |  |  |  | Book of the Dead pg. 139 | Common	Medium |
+| Undead | 8	150 ( negative healing )	26	+14	+16	+19	+17 | darkvision, thoughtsense 60 feet |  |  | 30 feet, float | Razu |  |  |  |  |  |  | Pathfinder #167: Ready? Fight! pg. 90 | Unique	Medium |
+| Humanoid, Tengu, Unique | 18	250	40	+27	+32	+30	+30 | low-light vision |  |  | 25 feet, fly 80 feet | Razzle Dazzler |  |  |  |  |  |  | Gnome | NPC Core pg. 183 |
+| Common	Small | Gnome, Humanoid | 5	78	20	+9	+12	+15	+12 |  |  | low-light vision |  |  |  |  |  |  |  | 25 feet | Loading... |
+| Reborn Devotee |  | Pathfinder #203 Shepherd of Decay pg. 59 |  | Uncommon | Fungus, Mindless, Mutant, Uncommon |  | 11 | 120 | 31 | +21 | +19 | +17 | tremorsense (imprecise) 60 feet | 25 feet |
+| Reborn Sun Hunter |  | Pathfinder #172: Secrets of the Temple City pg. 10 |  | Rare | Fire, Rare, Undead |  | 11 | 195 ( negative healing ) | 30 | +18 | +23 | +21 | darkvision | 35 feet |
+| Reborn Sun Mage |  | Pathfinder #172: Secrets of the Temple City pg. 11 |  | Rare | Fire, Rare, Undead |  | 11 | 195 ( negative healing ) | 28 | +18 | +21 | +24 | darkvision | 25 feet |
+| Reborn Sun Warrior |  | Pathfinder #172: Secrets of the Temple City pg. 11 |  | Rare | Fire, Rare, Undead |  | 11 | 245 ( negative healing ) | 31 | +24 | +21 | +18 | darkvision | 25 feet |
+| Reckless Scientist | Villain | NPC Core pg. 158 |  | Common | Human, Humanoid |  | 6 | 95 | 23 | +16 | +14 | +10 | 25 feet | Red Commander Ant |
+| Gigantic Ant |  | Pathfinder #174: Shadows of the Ancients pg. 73 |  | Rare | Beast, Rare |  | 17 | 315 | 40 | +29 | +28 | +31 | darkvision, scent (imprecise) 60 feet | 40 feet, climb 20 feet |
+| Red Fox | Fox | Bestiary 3 pg. 102 |  | Common | Animal |  | -1 | 5 | 17 | +5 | +6 | +3 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Red Guard Ant | Gigantic Ant | Pathfinder #174: Shadows of the Ancients pg. 72 |  | Rare | Beast, Rare |  | 15 | 275 | 37 | +29 | +23 | +26 | darkvision, scent (imprecise) 60 feet | 40 feet, climb 20 feet |
+| Red Mantis Assassin |  | Prey for Death pg. 38 |  | Common | Human, Humanoid |  | 11 | 193 | 31 | +19 | +21 | +19 | 30 feet | Red Mantis Conspirator |
+| Prey for Death pg. 44 | Rare	Medium | Human, Humanoid, Rare |  | 14 | 30 feet | Red Queen |  |  |  |  |  |  | Pathfinder #174: Shadows of the Ancients pg. 41 | Unique	Huge |
+| Beast, Unique | 18	335	42	+31	+33	+29	+30 | darkvision, scent (imprecise) 60 feet |  |  | 40 feet, climb 20 feet | Red-Hooded Thatchling |  |  |  |  |  |  | Thatchling | Pathfinder #196: The Summer That Never Was pg. 89 |
+| Rare	Small | Rare, Undead | 2	32 ( negative healing )	17	+6	+9	+8	+8 |  |  | darkvision |  |  |  |  |  |  |  | 30 feet; thicket walker | Redacted, The Weaver In Dreams |
+| In Darkness pg. 16 | Unique	Medium | Aberration, Human, Humanoid, Unique |  | 15 | 25 feet, fly 25 feet; Stalker in Dreams | Redcap |  |  |  |  |  |  | Redcap | Monster Core pg. 290 1.1 |
+| Common	Small | Fey | 5	60 ( fast healing 10)	21	+11	+15	+10	+12 |  |  | low-light vision |  |  |  |  |  |  |  | 50 feet | Redcap Brigade |
+| Redcap |  | Battlecry! pg. 189 |  | Common | Fey, Troop |  | 10 | 165 (4 segments, fast healing 20) | 29 | +18 | +22 | +17 | low-light vision | 50 feet; troop movement |
+| Redcap Cavalry | Redcap | Pathfinder #194: Cult of the Cave Worm pg. 88 |  | Uncommon | Fey, Uncommon |  | 6 | 75 ( fast healing 10) | 23 | +12 | +14 | +11 | low-light vision | 50 feet |
+| Redwood Leshy | Leshy | Pathfinder #203 Shepherd of Decay pg. 83 |  | Uncommon | Leshy, Plant, Uncommon |  | 10 | 205 | 29 | +22 | +16 | +19 | low-light vision | 25 feet |
+| Reef Octopus | Octopus | Bestiary 2 pg. 187 2.0 |  | Common | Animal, Aquatic |  | 1 | 20 | 17 | +6 | +9 | +7 | low-light vision | 10 feet, swim 30 feet |
+| Reefclaw |  | Monster Core pg. 291 1.1 |  | Common | Aberration, Aquatic |  | 1 | 17 | 20 | +7 | +9 | +4 | darkvision | 5 feet, swim 30 feet |
+| Rekhep | Archon | Monster Core pg. 28 1.1 |  | Common | Archon, Celestial, Holy |  | 10 | 150 | 31 | +23 | +15 | +19 | darkvision | 30 feet, fly 60 feet |
+| Relictner Eroder | Mortic | Book of the Dead pg. 127 |  | Rare | Dwarf, Humanoid, Mortic, Rare |  | 12 | 265 ( negative healing ) | 32 | +25 | +18 | +21 | darkvision, lair sense | 20 feet |
+| Remnant of Barzillai |  | Pathfinder #147: Tomorrow Must Burn pg. 80 |  | Rare | Incorporeal, Rare, Undead |  | 10 | 135 | 29 | +14 | +21 | +23 | darkvision | fly 25 feet |
+| Remorhaz |  | Bestiary pg. 280 |  | Uncommon | Beast, Uncommon |  | 7 | 120 | 25 | +18 | +15 | +10 | darkvision, tremorsense (imprecise) 60 feet | 35 feet, burrow 30 feet |
+| Ren Mei Li |  | Pathfinder #199: To Bloom Below the Web pg. 90 |  | Unique | Humanoid, Unique |  | 16 | 295 | 39 | +28 | +31 | +25 | darkvision | 30 feet, swim 30 feet |
+| Renali |  | Pathfinder #145: Hellknight Hill pg. 78 |  | Unique | Anadi, Humanoid, Unique |  | 4 | 60 | 18 | +8 | +10 | +12 | 25 feet, climb 25 feet | Requiem Archdragon |
+| Dragon, Requiem |  | Draconic Codex pg. 90 |  | Rare | Divine, Dragon, Rare |  | 24 | 500 | 50 | +38 | +36 | +42 | lifesense 150 feet, scent (imprecise) 60 feet, status sight | 70 feet, fly 210 feet, swim 70 feet |
+| Resin-Seep Xulgath |  | Pathfinder #153: Life's Long Shadows pg. 51 |  | Rare | Humanoid, Rare, Xulgath |  | 10 | 195 | 30 | +19 | +23 | +17 | darkvision | 25 feet |
+| Resurrection Archdragon | Dragon, Resurrection | Draconic Codex pg. 94 |  | Rare | Divine, Dragon, Rare |  | 23 | 470 | 48 | +36 | +35 | +40 | darkvision, scent (imprecise) 60 feet | 60 feet, fly 240 feet |
+| Reth |  | Pathfinder #170: Spoken on the Song Wind pg. 29 |  | Unique | Humanoid, Lizardfolk, Unique |  | 7 | 115 | 25 | +14 | +17 | +11 | 25 feet, swim 15 feet | Revenant |
+| Monster Core pg. 292 1.1 | Common	Medium | Undead |  | 6 | darkvision, sense murderer |  |  |  |  |  |  |  | 25 feet | Rezatha |
+| Kingmaker Adventure Path pg. 392 | Unique	Huge | Beast, Unique |  | 17 | darkvisiondarkvision, tremorsense (imprecise) 60 feet |  |  |  |  |  |  |  | 35 feet | Rezzelki |
+| Pathfinder #204: Stage Fright pg. 88 | Uncommon	Large | Beast, Uncommon |  | 10 | darkvision, glutton scent (imprecise) 60 feet |  |  |  |  |  |  |  | 25 feet, fly 20 feet | Rhevanna |
+| Pathfinder #162: Ruins of the Radiant Siege pg. 83 | Rare	Large | Fiend, Rare |  | 22 | greater darkvision, true seeing |  |  |  |  |  |  |  | 40 feet, fly 80 feet | Rhino Warrior |
+| Pathfinder #177: Burning Tundra pg. 12 | Rare	Medium | Human, Humanoid, Rare |  | 4 | 25 feet | Rhinoceros |  |  |  |  |  |  | Rhinoceros | Monster Core pg. 293 1.1 |
+| Common	Large | Animal | 4	70	22	+14	+8	+11	+9 |  |  | scent (imprecise) 30 feet |  |  |  |  |  |  |  | 35 feet | Rhovo |
+| Pathfinder #151: The Show Must Go On pg. 9 | Unique	Medium | Human, Humanoid, Unique |  | 1 | 25 feet | Rhu-Chalik |  |  |  |  |  |  | Dominion of the Black | Monster Core pg. 104 1.1 |
+| Uncommon	Small | Aberration, Uncommon | 6	95	23	+14	+11	+17	+17 |  |  | greater darkvision, thoughtsense 60 feet |  |  |  |  |  |  |  | 5 feet, fly 35 feet | Rhysaphine |
+| Prey for Death pg. 74 | Unique	Medium | Celestial, Fire, Unique |  | 18 | darkvision, smoke vision |  |  |  |  |  |  |  | 30 feet, fly 50 feet | Riding Dog |
+| Dog |  | Monster Core pg. 102 1.1 |  | Common | Animal |  | 1 | 20 | 16 | +7 | +5 | +5 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Riding Horse | Horse | Monster Core pg. 201 1.1 |  | Common | Animal |  | 1 | 22 | 16 | +9 | +6 | +5 | low-light vision, scent (imprecise) 30 feet | 40 feet |
+| Riding Pony | Horse | Monster Core pg. 201 1.1 |  | Common | Animal |  | 0 | 16 | 14 | +7 | +4 | +4 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Riekanoy |  | Night of the Gray Death pg. 69 |  | Rare | Amphibious, Fey, Rare, Water |  | 19 | 410 | 45 | +28 | +37 | +32 | low-light vision, true seeing | 25 feet, swim 50 feet; water walk |
+| Rift Chameleon | Ethereal Wildlife | Howl of the Wild pg. 146 2.1 |  | Uncommon | Air, Beast, Ethereal, Uncommon |  | 3 | 45 | 19 | +10 | +9 | +8 | darkvision, scent (imprecise) 30 feet | 25 feet, climb 20 feet |
+| Rift Pulper | Cliftwood Fiend | Pathfinder #212: A Voice in the Blight pg. 84 |  | Rare | Demon, Elemental, Fiend, Rare, Unholy, Wood |  | 17 | 390 | 40 | +32 | +29 | +26 | darkvision, tremorsense 30 feet | 25 feet, burrow 10 feet, fly 40 feet |
+| Riftweasel |  | Pathfinder #212: A Voice in the Blight pg. 87 |  | Rare | Beast, Fiend, Rare |  | 19 | 355 | 44 | +30 | +34 | +32 | darkvision, scent (precise) 120 feet, tremorsense (precise) 60 feet | 30 feet, burrow 20 feet, fly 30 feet |
+| Rigg Gargadilly |  | Kingmaker Adventure Path pg. 150 |  | Unique | Fey, Unique |  | 7 | 70 | 27 | +13 | +17 | +15 | low-light vision | 100 feet |
+| Rigger | Seafarer | NPC Core pg. 146 |  | Common | Human, Humanoid |  | 1 | 20 | 15 | +7 | +10 | +5 | 30 feet | Rime Archdragon |
+| Dragon, Rime |  | Draconic Codex pg. 153 |  | Rare | Cold, Dragon, Primal, Rare |  | 18 | 375 | 42 | +34 | +28 | +30 | darkvision, scent (imprecise) 120 feet, snow vision | 60 feet, fly 120 feet, swim 40 feet |
+| Rime Sludge |  | Pathfinder #175: Broken Tusk Moon pg. 86 |  | Rare | Mindless, Ooze, Rare |  | 1 | 38 | 8 | +7 | +2 | +4 | motion sense 60 feet, no vision | 10 feet, swim 10 feet; slushy undulation |
+| Rin |  | Pathfinder #198: No Breath to Cry pg. 30 |  | Common | Ghost, Incorporeal, Kitsune, Spirit, Undead |  | 8 | 100 (negative healing, rejuvenation) | 26 | +13 | +19 | +13 | darkvision | 30 feet |
+| Loading... | Rinnarv Bontimar | Pathfinder #150: Broken Promises pg. 24 |  | Unique | Elf, Human, Humanoid, Unique |  | 20 | 400 | 45 | +36 | +33 | +30 | low-light vision | 30 feet |
+| Ripnugget |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 63 |  | Unique | Undead, Unique |  | 6 | 110 (negative healing, rejuvenation) | 23 | +15 | +12 | +11 | darkvision | 25 feet |
+| Riptide Octopus Swarm |  | Pathfinder #216: The Acropolis Pyre pg. 84 |  | Common | Animal, Aquatic, Swarm |  | 0 | 14 | 16 | +8 | +7 | +4 | low-light vision | 15 feet, swim 30 feet |
+| Risen Fetch | Fetch | Kingmaker Adventure Path pg. 613 |  | Rare | Fey, Plant, Rare |  | 22 | 470 | 48 | +38 | +34 | +34 | darkvision, true seeing | 35 feet, air walk |
+| Risen Runelord | Risen Runelord | Pathfinder Adventure Path #219: Lord of the Trinity Star pg. 90 |  | Rare | Dream, Mythic, Rare |  | 11 | 195 | 30 | +18 | +22 | +24 | 25 feet | Rival Corpsekiller |
+| Pathfinder #186: Ghost King's Rage pg. 30 | Uncommon	Medium | Human, Humanoid, Uncommon |  | 16 | 25 feet (20 feet with armor) | Rival Necromancer |  |  |  |  |  |  | Pathfinder #186: Ghost King's Rage pg. 30 | Uncommon	Medium |
+| Human, Humanoid, Uncommon | 16	215 ( negative healing )	36	+25	+25	+30	+28 | 25 feet | River Drake |  | Drake |  |  |  |  |  |  |  | Monster Core pg. 129 1.1 | Common	Medium |
+| Amphibious, Dragon, Water | 3	45	17	+11	+9	+7	+9 | darkvision, scent (imprecise) 30 feet |  |  | 20 feet, fly 50 feet, swim 30 feet | River Elasmosaurus |  |  |  |  |  |  | Kingmaker Adventure Path pg. 275 | Rare	Huge |
+| Animal, Rare | 11	195	31	+23	+18	+21	+21 | low-light vision, scent (imprecise) 30 feet |  |  | 5 feet, swim 35 feet | Loading... |  |  |  |  |  |  | Roc | Monster Core pg. 294 1.1 |
+| Common	Gargantuan | Animal | 9	180	27	+20	+17	+16	+18 |  |  | low-light vision |  |  |  |  |  |  |  | 20 feet, fly 60 feet | Roc Rider |
+| Prey for Death pg. 23 | Uncommon	Medium | Cold, Humanoid, Uncommon |  | 14 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 40 feet | Rocketeer |
+| Engineer |  | NPC Core pg. 47 |  | Uncommon | Human, Humanoid, Uncommon |  | 6 | 85 | 23 | +12 | +16 | +14 | 25 feet, fly 30 feet | Loading... |
+| Loading... | Romi Bracken | Pathfinder #213: Thirst for Blood pg. 93 |  | Unique | Beast, Human, Humanoid, Unique, Werecreature |  | 4 | 61 | 21 | +8 | +12 | +9 | echolocation (precise) 40 feet, low-light vision | 25 feet, fly 25 feet |
+| Rompo |  | The Mwangi Expanse pg. 304 2.0 |  | Common | Beast |  | 5 | 80 | 21 | +15 | +9 | +11 | darkvision, scent (imprecise) 30 feet | 30 feet, climb 25 feet |
+| Root Leshy Groundskeeper | Leshy | NPC Core pg. 200 |  | Common | Leshy, Plant |  | -1 | 9 | 14 | +8 | +2 | +5 | low-light vision | 25 feet |
+| Root Rotter |  | Pathfinder #210: Whispers in the Dirt pg. 85 |  | Rare | Fungus, Rare, Undead, Unholy |  | 9 | 195 ( void healing ) | 26 | +17 | +20 | +16 | darkvision, fungus sense 120 feet | 30 feet |
+| Rootridden |  | Pathfinder #203 Shepherd of Decay pg. 12 |  | Uncommon | Uncommon, Undead, Unholy |  | 8 | 120 ( void healing ) | 26 | +18 | +16 | +14 | darkvision | 25 feet |
+| Roper |  | Bestiary pg. 282 |  | Uncommon | Aberration, Uncommon |  | 10 | 215 | 29 | +20 | +15 | +21 | darkvision | 10 feet, climb 10 feet |
+| Roru | Demon | Pathfinder #176: Lost Mammoth Valley pg. 84 |  | Uncommon | Demon, Fiend, Uncommon |  | 7 | 120 | 25 | +15 | +17 | +12 | darkvision, scent (imprecise) 60 feet | 40 feet |
+| Loading... | Rotbomber | Pathfinder #184: The Ghouls Hunger pg. 87 |  | Uncommon | Mindless, Uncommon, Undead |  | 12 | 250 ( negative healing ) | 31 | +19 | +25 | +19 | darkvision | 40 feet, climb 20 feet |
+| Royal Basilisk | Basilisk | Howl of the Wild pg. 127 2.1 |  | Rare | Beast, Rare |  | 13 | 290 | 33 | +26 | +22 | +23 | darkvision, scent (imprecise) 120 feet, tremorsense (precise) 60 feet | 30 feet, climb 30 feet, swim 30 feet |
+| Rt5rrmn | Foolish Housekeeping and Other Articles | Unique	Small |  |  | Animal, Fey, Unique |  | 8 | 172 | 36 | +15 | +35 | +22 | scent (imprecise) 60 feet | 35 feet |
+| Ruanna Nyamma |  | Pathfinder #152: Legacy of the Lost God pg. 17 |  | Unique | Elf, Human, Humanoid, Unique |  | 4 | 66 | 20 | +9 | +13 | +11 | low-light vision | 25 feet |
+| Loading... | Ruffian | Criminal |  |  | NPC Core pg. 19 |  | Common | Medium |  |  |  |  | Human, Humanoid | 2	30	18	+9	+8	+6	+8 |
+| 25 feet | Rukh | Pathfinder #215: To Blot Out the Sun pg. 57 |  | Unique | Shadow, Strix, Undead, Unique, Vampire |  | 9 | 110 ( coffin restoration , fast healing 10, void healing )) | 25 | +16 | +17 | +21 | greater darkvision | 25 feet, fly 25 feet |
+| Rumin Purgo |  | Pathfinder #184: The Ghouls Hunger pg. 42 |  | Unique | Gnome, Humanoid, Unique |  | 11 | 190 | 31 | +19 | +21 | +19 | low-light vision | 25 feet |
+| Rumindrol |  | Howl of the Wild pg. 176 2.1 |  | Rare | Beast, Rare |  | 15 | 295 | 37 | +30 | +26 | +23 | motion sense 120 feet, no vision | 20 feet, burrow 60 feet |
+| Runaway Blueblood | Maverick | NPC Core pg. 77 |  | Uncommon | Human, Humanoid, Uncommon |  | 3 | 45 | 18 | +7 | +10 | +9 | 25 feet | Rune Archdragon |
+| Dragon, Rune |  | Draconic Codex pg. 98 |  | Rare | Arcane, Dragon, Rare |  | 23 | 460 | 49 | +37 | +35 | +39 | darkvision, magic sense (precise) 120 feet, scent (imprecise) 120 feet | 100 feet, fly 200 feet |
+| Rune Giant | Giant | Monster Core pg. 169 1.1 |  | Common | Giant, Humanoid, Unholy |  | 16 | 330 | 38 | +33 | +26 | +28 | low-light vision | 45 feet; fly 45 feet |
+| Runecarved Lich | Lich | Book of the Dead pg. 122 |  | Rare | Rare, Undead |  | 19 | 330 ( negative healing , rejuvenation) | 42 | +27 | +33 | +36 | darkvision | 25 feet |
+| Rusalka |  | Monster Core 2 pg. 272, Pathfinder #147: Tomorrow Must Burn pg. 81 |  | Common | Aquatic, Fey, Water |  | 12 | 230 | 33 | +21 | +25 | +21 | low-light vision | 25 feet, swim 50 feet; water walk |
+| Rust Hag | Hag | Pathfinder #182: Graveclaw pg. 84 |  | Uncommon | Hag, Humanoid, Uncommon |  | 8 | 135 | 26 | +16 | +15 | +18 | darkvision | 25 feet |
+| Rust Monster |  | Bestiary pg. 283 |  | Common | Aberration |  | 3 | 40 | 19 | +8 | +10 | +6 | darkvision, metal scent 30 feet | 35 feet, climb 10 feet |
+| Rust Ooze | Ooze | Pathfinder #178: Punks in a Powderkeg pg. 87 |  | Uncommon | Mindless, Ooze, Uncommon |  | 3 | 80 | 11 | +10 | +3 | +6 | motion sense 60 feet, no vision | 15 feet, swim 30 feet |
+| Rust Scarab | Elemental, Metal | Rage of Elements pg. 155 2.0 |  | Common | Elemental, Metal |  | 5 | 65 | 21 | +14 | +9 | +11 | darkvision, rust vision | 25 feet |
+| Rustsworn Initiate |  | Rusthenge pg. 31 |  | Rare | Human, Humanoid, Rare |  | -1 | 8 | 14 | +4 | +7 | +2 | 25 feet | Rusty Mae |
+| Pathfinder #147: Tomorrow Must Burn pg. 14 | Unique	Large | Hag, Humanoid, Unique |  | 10 | darkvision |  |  |  |  |  |  |  | 40 feet | Ruzadoya Swiftmane |
+| Pathfinder #203 Shepherd of Decay pg. 89 | Unique	Large | Undead, Unique |  | 14 | darkvision |  |  |  |  |  |  |  | 40 feet | Ruzadoya's Chosen |
+| Woodblessed |  | Pathfinder #202: Severed at the Root pg. 85 |  | Uncommon | Human, Humanoid, Uncommon, Wood |  | 7 | 115 | 22 | +18 | +12 | +15 | 25 feet | Ryta |
+| Pathfinder #164: Hands of the Devil pg. 36 | Unique	Small | Humanoid, Ratfolk, Unique |  | 4 | darkvision |  |  |  |  |  |  |  | 25 feet | Sabora Sharkosa |
+| Pathfinder #179: Cradle of Quartz pg. 91 | Unique	Medium | Elf, Half-Elf, Human, Humanoid, Unique |  | 7 | low-light vision |  |  |  |  |  |  |  | 30 feet | Sabosan |
+| Monster Core 2 pg. 273, Pathfinder #146: Cult of Cinders pg. 91 | Common	Medium | Humanoid |  | 5 | echolocation 20 feet, low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet, fly 25 feet | Saboteur |
+| Villain |  | NPC Core pg. 153 |  | Common | Human, Humanoid |  | 2 | 28 | 17 | +5 | +9 | +8 | (10 to find traps) | 25 feet |
+| Sacristan | Velstrac | Monster Core 2 pg. 347 |  | Common | Fiend, Unholy, Velstrac |  | 10 | 175 | 30 | +22 | +19 | +17 | greater darkvision, painsight | 25 feet |
+| Sacuishu |  | Pathfinder #164: Hands of the Devil pg. 57 |  | Unique | Aberration, Air, Unique |  | 9 | 80 | 30 | +16 | +18 | +20 | darkvision | fly 50 feet |
+| Sage | Scholar | NPC Core pg. 141 |  | Common | Human, Humanoid |  | 6 | 86 | 22 | +10 | +12 | +16 | 25 feet | Sage Archdragon |
+| Dragon, Sage |  | Draconic Codex pg. 157 |  | Rare | Dragon, Occult, Rare |  | 21 | 390 | 46 | +32 | +36 | +38 | darkvision, detect magic | 25 feet, fly 120 feet |
+| Saggorak Poltergeist |  | Pathfinder #148: Fires of the Haunted City pg. 45 |  | Rare | Incorporeal, Rare, Spirit, Undead |  | 12 | 180 (rejuvenation) | 33 | +18 | +25 | +22 | darkvision | fly 30 feet |
+| Sahni Bride-Of-The-Sea |  | Pathfinder #182: Graveclaw pg. 90 |  | Unique | Amphibious, Hag, Humanoid, Unique |  | 7 | 120 | 24 | +13 | +14 | +18 | darkvision | 25 feet, swim 35 feet |
+| Sahreg the Dirge Screamer |  | Pathfinder #181: Zombie Feast pg. 35 |  | Unique | Human, Humanoid, Unique |  | 2 | 30 | 18 | +6 | +9 | +9 | 25 feet | Saint Fang |
+| Servitors of Gorum |  | Prey for Death pg. 115 |  | Unique | Divine, Dragon, Unique |  | 18 | 365 | 42 | +33 | +28 | +29 | darkvision, forge vision, scent (imprecise) 60 feet | 40 feet, fly 130 feet |
+| Sakuachi |  | Gatewalkers (Hardcover) pg. 280 |  | Unique | Human, Humanoid, Unique |  | 4 | 60 | 21 | +11 | +10 | +14 | 25 feet | Sakugami |
+| Kami |  | Monster Core 2 pg. 207 |  | Rare | Kami, Rare, Spirit, Wood |  | 15 | 350 | 35 | +25 | +28 | +30 | darkvision | 50 feet, fly 50 feet |
+| Salaisa Malthulas |  | Pathfinder #165: Eyes of Empty Death pg. 30 |  | Unique | Drow, Elf, Humanoid, Unique |  | 11 | 200 | 31 | +20 | +21 | +22 | darkvision | 30 feet |
+| Loading... | Salathiss | Pathfinder #170: Spoken on the Song Wind pg. 93 |  | Unique | Humanoid, Mutant, Serpentfolk, Unique |  | 9 | 150 | 27 | +14 | +17 | +20 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Sallowdrudge |  | Pathfinder #182: Graveclaw pg. 30 |  | Rare | Human, Humanoid, Rare |  | 1 | 25 | 16 | +10 | +7 | +4 | 20 feet | Saltborn Stalkers |
+| Rage of Elements pg. 186 2.0 | Common	Gargantuan | Aquatic, Elemental, Troop, Water |  | 13 | darkvision |  |  |  |  |  |  |  | 10 feet, swim 60 feet; troop movement | Samsaran Anchorite |
+| Samsaran |  | Monster Core 2 pg. 280 |  | Uncommon | Humanoid, Samsaran, Uncommon |  | 1 | 15 | 15 | +3 | +7 | +9 | low-light vision | 25 feet |
+| Sand Sentry | Elemental, Earth | Monster Core 2 pg. 146 |  | Common | Earth, Elemental |  | 6 | 90 | 24 | +16 | +12 | +14 | darkvision, tremorsense (imprecise) 60 feet | 25 feet, burrow 50 feet; earth glide |
+| Loading... | Sandpoint Devil | Bestiary 2 pg. 230 2.0 |  | Unique | Beast, Fiend, Unique |  | 8 | 165 | 27 | +19 | +14 | +16 | greater darkvision, scent (imprecise) 30 feet | 35 feet, fly 50 feet |
+| Loading... | Sard | Bestiary 2 pg. 231 2.0 |  | Rare | Electricity, Plant, Rare, Tane |  | 19 | 400 | 43 | +35 | +31 | +33 | low-light vision, tremorsense 120 feet | 40 feet, climb 25 feet |
+| Sargassum Heap | Sargassum Heap | Monster Core pg. 295 1.1 |  | Common | Amphibious, Plant |  | 6 | 180 | 14 | +17 | +14 | +10 | wavesense (precise) 60 feet | 10 feet, climb 10 feet, swim 25 feet |
+| Sarglagon | Devil | Monster Core pg. 89 1.1 |  | Common | Amphibious, Devil, Fiend, Unholy |  | 8 | 120 | 27 | +18 | +13 | +16 | greater darkvision, see the unseen | 25 feet, fly 25 feet, swim 30 feet |
+| Sarkorian Wolf | Wolf | Travel Guide pg. 99 |  | Common | Animal |  | 1 | 24 | 15 | +6 | +9 | +5 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Sarvel Ever-Hunger |  | Pathfinder #156: The Apocalypse Prophet pg. 90 |  | Unique | Fiend, Humanoid, Unique, Xulgath |  | 22 | 430 | 48 | +37 | +34 | +36 | darkvision | 30 feet; air walk, freedom of movement |
+| Loading... | Satinder Morne | Kingmaker Adventure Path pg. 306 |  | Unique | Human, Humanoid, Unique |  | 6 | 75 | 22 | +10 | +12 | +15 | 25 feet | Satyr |
+| Monster Core pg. 296 1.1 | Common	Medium | Fey |  | 4 | low-light vision |  |  |  |  |  |  |  | 35 feet | Saurian Warmonger |
+| Saurian |  | Pathfinder #156: The Apocalypse Prophet pg. 80 |  | Uncommon | Dinosaur, Humanoid, Uncommon |  | 16 | 340 | 39 | +26 | +25 | +28 | darkvision | 40 feet |
+| Saurian Worldwatcher | Saurian | Pathfinder #156: The Apocalypse Prophet pg. 81 |  | Uncommon | Dinosaur, Humanoid, Uncommon |  | 18 | 330 | 43 | +30 | +33 | +32 | darkvision | 40 feet |
+| Saviya |  | Prey for Death pg. 123 |  | Unique | Elf, Humanoid, Unique |  | 19 | 360 | 43 | +31 | +35 | +38 | (37 to Seek) darkvision, perfect scent 60 feet | 30 feet, fly 25 feet |
+| Scalathrax |  | Pathfinder #163: Ruins of Gauntlight pg. 86 |  | Uncommon | Aberration, Uncommon |  | 4 | 60 | 21 | +11 | +13 | +9 | darkvision | 25 feet, climb 25 feet |
+| Loading... | Loading... | Scalliwing |  |  | Couatl |  |  |  |  |  |  |  | Troubles in Otari pg. 62 | Uncommon	Tiny |
+| Beast, Couatl, Uncommon | 3	45	19	+8	+12	+11	+12 | darkvision |  |  | 10 feet, fly 40 feet | Scamp Inferno |  |  |  |  |  |  | Elemental, Scamp | Battlecry! pg. 190 |
+| Uncommon	Gargantuan | Elemental, Fire, Troop, Uncommon | 6	90 (4 segments, fast healing 6 (while touching fire))	23	+11	+17	+14	+14 |  |  | darkvision, smoke vision |  |  |  |  |  |  |  | 20 feet, fly 25 feet; troop movement | Scarecophagus |
+| Pathfinder #179: Cradle of Quartz pg. 86 | Rare	Large | Construct, Rare |  | 6 | darkvision, magic sense (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet, climb 25 feet | Scarecrow |
+| Monster Core pg. 297 1.1 | Common	Medium | Construct |  | 4 | darkvision |  |  |  |  |  |  |  | 20 feet | Scarhorn |
+| Pathfinder #200: Seven Dooms for Sandpoint pg. 152 | Unique	Large | Acid, Amphibious, Dragon, Unique |  | 14 | darkvision, scent (imprecise) 60 feet |  |  |  |  |  |  |  | 50 feet, fly 120 feet, swim 50 feet | Scarlet Triad Agent |
+| Pathfinder #148: Fires of the Haunted City pg. 31 | Unique	Medium | Human, Humanoid, Unique |  | 11 | 25 feet | Scarlet Triad Boss |  |  |  |  |  |  | Pathfinder #149: Against the Scarlet Triad pg. 57 | Common	Medium |
+| Human, Humanoid | 17	315	39	+27	+33	+29	+30 | 30 feet | Scarlet Triad Bruiser |  | Pathfinder #147: Tomorrow Must Burn pg. 23 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 10	180	30	+20	+17	+19	+19 |
+| 25 feet | Scarlet Triad Enforcer | Pathfinder #149: Against the Scarlet Triad pg. 41 |  | Rare | Human, Humanoid, Rare |  | 15 | 275 | 36 | +30 | +26 | +24 | 25 feet | Scarlet Triad Mage |
+| Pathfinder #149: Against the Scarlet Triad pg. 57 | Common	Medium | Human, Humanoid, Tiefling |  | 15 | darkvision |  |  |  |  |  |  |  | 25 feet | Scarlet Triad Poisoner |
+| Pathfinder #147: Tomorrow Must Burn pg. 41 | Uncommon	Medium | Human, Humanoid, Uncommon |  | 8 | 25 feet | Scarlet Triad Sneak |  |  |  |  |  |  | Pathfinder #147: Tomorrow Must Burn pg. 8 | Uncommon	Medium |
+| Human, Humanoid, Uncommon | 6	95	25	+10	+14	+12	+12 | 25 feet | Scarlet Triad Sniper |  | Pathfinder #147: Tomorrow Must Burn pg. 56 |  | Rare | Medium |  |  |  |  | Elf, Human, Humanoid, Rare | 11	195	32	+20	+22	+21	+23 |
+| low-light vision | 30 feet; swiftness | Scarlet Triad Thug |  |  | Pathfinder #147: Tomorrow Must Burn pg. 16 |  | Uncommon | Medium |  |  |  |  | Dwarf, Humanoid, Uncommon | 7	120	25	+18	+12	+15	+13 |
+| darkvision | 20 feet | Scarlet Walker |  |  | Shadows at Sundown pg. 57 |  | Rare | Huge |  |  |  |  | Aberration, Dream, Rare | 12	225	33	+21	+25	+21	+23 |
+| bloodsense 60 feet, darkvision | 30 feet, climb 30 feet; air walk | Sceaduinar |  |  | Monster Core 2 pg. 281 |  | Rare | Medium |  |  |  |  | Aberration, Rare, Void | 7	100 ( void healing (page 363))	25	+16	+18	+14	+15 |
+| greater darkvision, lifesense 120 feet | 30 feet, fly 60 feet | Loading... | Scorned Hound |  | Risen Pet |  |  |  |  |  |  |  | Book of the Dead pg. 142 | Common	Small |
+| Undead | 1	22 ( negative healing )	15	+9	+7	+5	+7 | darkvision, scent (imprecise) 30 feet, sense companion |  |  | 30 feet | Scorpion Swarm |  |  |  |  |  |  | Scorpion | Monster Core pg. 298 1.1 |
+| Common	Large | Animal, Swarm | 4	55	21	+10	+13	+8	+11 |  |  | darkvision |  |  |  |  |  |  |  | 25 feet | Scrabbling Ribcage |
+| Animated Bones |  | Pathfinder #181: Zombie Feast pg. 83 |  | Uncommon | Construct, Mindless, Uncommon |  | 1 | 20 | 16 | +7 | +5 | +5 | darkvision | 20 feet, climb 20 feet |
+| Loading... | Screaming Sulfur | Pathfinder #171: Hurricane's Howl pg. 84 |  | Uncommon | Incorporeal, Spirit, Uncommon |  | 10 | 125 ( negative healing , rejuvenation) | 27 | +16 | +20 | +20 | darkvision | fly 40 feet |
+| Scrit | Gremlin | Pathfinder #169: Kindled Magic pg. 82 |  | Uncommon | Fey, Gremlin, Uncommon |  | 0 | 18 | 16 | +6 | +9 | +4 | darkvision | 25 feet |
+| Scroungefeather |  | Howl of the Wild pg. 177 2.1 |  | Common | Animal |  | 5 | 76 | 21 | +14 | +16 | +8 | low-light vision | 20 feet; fly 40 feet |
+| Scythe Tree |  | Bestiary 2 pg. 235 2.0 |  | Common | Plant |  | 6 | 105 | 24 | +17 | +8 | +9 | lifesense 30 feet, low-light vision | 15 feet |
+| Sea Archdragon | Dragon, Sea | Draconic Codex pg. 161 |  | Rare | Amphibious, Arcane, Dragon, Rare, Water |  | 20 | 450 | 44 | +34 | +38 | +33 | darkvision, wavesense (imprecise) 60 feet | 60 feet, fly 160 feet, swim 80 feet; water walk |
+| Sea Drake | Drake | Bestiary 2 pg. 101 2.0 |  | Common | Amphibious, Dragon, Water |  | 6 | 95 | 24 | +16 | +14 | +12 | darkvision, scent (imprecise) 30 feet | 15 feet, fly 40 feet, swim 50 feet |
+| Sea Hag | Hag | Monster Core pg. 188 1.1 |  | Common | Amphibious, Hag, Humanoid |  | 3 | 45 | 19 | +11 | +8 | +10 | darkvision | 25 feet, swim 35 feet |
+| Sea Serpent |  | Monster Core pg. 299 1.1 |  | Common | Animal, Aquatic |  | 12 | 210 | 35 | +25 | +21 | +21 | darkvision | 20 feet, swim 60 feet |
+| Sea Snake | Snake | Monster Core 2 pg. 294 |  | Common | Animal |  | 0 | 15 | 16 | +5 | +9 | +3 | low-light vision, scent (imprecise) 30 feet | 15 feet, swim 25 feet |
+| Loading... | Second Spawn | Cliftwood Fiend |  |  | Pathfinder #212: A Voice in the Blight pg. 85 |  | Rare | Gargantuan |  |  |  |  | Demon, Elemental, Fiend, Rare, Unholy, Wood | 21	500	45	+39	+33	+36	+36 |
+| darkvision | 20 feet | Sedacthy Marauder |  |  | Sedacthy |  |  |  |  |  |  |  | Monster Core pg. 300 1.1 | Common	Medium |
+| Amphibious, Humanoid, Sedacthy | 4	75	19	+14	+9	+9	+9 | darkvision, wavesense 30 feet |  |  | 20 feet, swim 40 feet | Sedacthy Scout |  |  |  |  |  |  | Sedacthy | Monster Core pg. 300 1.1 |
+| Common	Medium | Amphibious, Humanoid, Sedacthy | 2	30	17	+7	+10	+7	+9 |  |  | darkvision, wavesense 30 feet |  |  |  |  |  |  |  | 20 feet, swim 40 feet | Sedacthy Speaker |
+| Sedacthy |  | Monster Core pg. 301 1.1 |  | Common | Amphibious, Humanoid, Sedacthy |  | 6 | 95 | 23 | +14 | +13 | +15 | darkvision, wavesense 30 feet | 20 feet, swim 40 feet |
+| Loading... | Seetangeist | Verdorite |  |  | Book of the Dead pg. 165 |  | Uncommon | Huge |  |  |  |  | Aquatic, Mindless, Swarm, Uncommon, Undead | 12	160 ( negative healing )	32	+25	+22	+19	+19 |
+| darkvision, wavesense (imprecise) 100 feet | swim 40 feet | Loading... | Seldeg Bhedlis (Claws of the Tyrant) |  | Graveknight |  |  |  |  |  |  |  | Claws of the Tyrant pg. 125 | Unique	Medium |
+| Graveknight, Undead, Unholy, Unique | 20	465 (rejuvenation, void healing )	46	+36	+32	+33	+32 | darkvision |  |  | 25 feet | Seldeg Bheldis (Ghost King's Rage) |  |  |  |  |  |  | Pathfinder #186: Ghost King's Rage pg. 36 | Unique	Medium |
+| Undead, Unique | 17	390 ( negative healing , rejuvenation))	41	+32	+29	+26	+26 | darkvision |  |  | 25 feet | Sepid |  |  |  |  |  |  | Div | Monster Core 2 pg. 113 |
+| Common	Large | Div, Fiend, Unholy | 14	350	34	+28	+23	+20	+24 |  |  | greater darkvision |  |  |  |  |  |  |  | 35 feet | Sepoko |
+| Kingmaker Adventure Path pg. 159 | Unique	Medium | Amphibious, Boggard, Humanoid, Unique |  | 11 | darkvision |  |  |  |  |  |  |  | 20 feet, swim 25 feet; swamp stride | Seraptis |
+| Demon |  | Monster Core pg. 80 1.1 |  | Common | Demon, Fiend, Unholy |  | 15 | 340 | 37 | +27 | +28 | +25 | darkvision, truesight | 40 feet, fly 40 feet |
+| Serpentfolk Granitescale | Serpentfolk | Pathfinder #170: Spoken on the Song Wind pg. 86 |  | Uncommon | Humanoid, Mutant, Serpentfolk, Uncommon |  | 6 | 120 | 24 | +17 | +14 | +12 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Serpentfolk Venom Caller | Serpentfolk | Pathfinder #170: Spoken on the Song Wind pg. 87 |  | Uncommon | Humanoid, Serpentfolk, Uncommon |  | 7 | 105 | 24 | +13 | +15 | +17 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Servant | Laborer | NPC Core pg. 66 |  | Common | Human, Humanoid |  | -1 | 7 | 14 | +5 | +7 | +3 | 25 feet | Server |
+| Publicans |  | Gamemastery Guide pg. 238 |  | Common | Human, Humanoid |  | -1 | 7 | 16 | +2 | +7 | +5 | 25 feet | Seugathi Reality Warper |
+| Seugathi |  | Pathfinder #164: Hands of the Devil pg. 83 |  | Uncommon | Aberration, Seugathi, Uncommon |  | 9 | 120 | 27 | +18 | +21 | +15 | darkvision, tremorsense 30 feet | 25 feet |
+| Seugathi Servant | Seugathi | Pathfinder #164: Hands of the Devil pg. 82 |  | Uncommon | Aberration, Seugathi, Uncommon |  | 6 | 75 | 23 | +14 | +17 | +12 | darkvision, tremorsense 30 feet | 25 feet |
+| Severed Head | Beheaded | Monster Core 2 pg. 56 |  | Common | Mindless, Undead, Unholy |  | -1 | 7 ( void healing ) | 15 | +4 | +6 | +4 | darkvision | 15 feet, fly 25 feet |
+| Sewer Ooze | Ooze | Monster Core pg. 256 1.1 |  | Common | Mindless, Ooze |  | 1 | 40 | 8 | +9 | +1 | +3 | motion sense (precise) 60 feet, no vision | 10 feet |
+| Loading... | Shabti Slayer | Shabti |  |  | Pathfinder #186: Ghost King's Rage pg. 84 |  | Uncommon | Medium |  |  |  |  | Humanoid, Shabti, Uncommon | 16	255	39	+30	+28	+25	+28 |
+| darkvision | 25 feet | Shabti Votary |  |  | Shabti |  |  |  |  |  |  |  | Pathfinder #186: Ghost King's Rage pg. 85 | Uncommon	Medium |
+| Humanoid, Shabti, Uncommon | 18	260	40	+31	+25	+34	+33 | darkvision |  |  | 25 feet | Shade |  |  |  |  |  |  | Monster Core 2 pg. 282 | Common	Medium |
+| Shade | 1	22	15	+7	+7	+7	+7 | darkvision |  |  | 25 feet | Shadebound Pixie Guard |  |  |  |  |  |  | Pathfinder #202: Severed at the Root pg. 47 | Common	Small |
+| Fey, Sprite | 6	95	25	+11	+17	+15	+14 | low-light vision |  |  | 15 feet, fly 45 feet | Shadern Immolator |  |  |  |  |  |  | Mortic | Book of the Dead pg. 126 |
+| Rare	Small | Fire, Goblin, Humanoid, Mortic, Rare | 1	21 ( negative healing )	15	+6	+9	+3	+5 |  |  | darkvision, smoke vision |  |  |  |  |  |  |  | 25 feet | Shadow |
+| Shadow |  | Monster Core pg. 306 1.1 |  | Common | Incorporeal, Undead, Unholy |  | 4 | 40 ( void healing ) | 20 | +8 | +14 | +12 | darkvision | fly 30 feet |
+| Shadow Drake | Drake | Bestiary 2 pg. 100 2.0 |  | Common | Dragon, Shadow |  | 2 | 28 | 17 | +7 | +10 | +6 | darkvision, scent (imprecise) 30 feet | 15 feet, fly 60 feet |
+| Shadow Giant | Giant | Monster Core pg. 168 1.1 |  | Common | Giant, Humanoid, Shadow |  | 13 | 275 | 33 | +25 | +20 | +23 | darkvision | 35 feet |
+| Shadow Sage |  | Pathfinder #202: Severed at the Root pg. 57 |  | Common | Human, Humanoid |  | 7 | 115 | 25 | +13 | +15 | +18 | 30 feet | Shadow Worm |
+| Cave Worm |  | Pathfinder #186: Ghost King's Rage pg. 86 |  | Rare | Animal, Rare, Shadow |  | 20 | 450 (shadow healing) | 45 | +36 | +32 | +30 | darkvision, tremorsense (imprecise) 100 feet | 40 feet, burrow 40 feet |
+| Loading... | Shadowbound Monk Statue | Pathfinder #183: Field of Maidens pg. 56 |  | Rare | Construct, Earth, Mindless, Rare, Shadow |  | 8 | 120 | 28 | +19 | +12 | +11 | darkvision | 30 feet |
+| Shadowforged Guardian |  | Pathfinder #183: Field of Maidens pg. 84 |  | Rare | Construct, Mindless, Rare |  | 10 | 170 | 29 | +19 | +21 | +14 | greater darkvision | 30 feet, fly 30 feet in dim light |
+| Shae |  | Monster Core 2 pg. 284 |  | Common | Shadow |  | 4 | 45 | 21 | +9 | +11 | +10 | darkvision | 25 feet, fly 35 feet; swift steps, tenebral form |
+| Loading... | Shambler | Bestiary pg. 290 |  | Common | Plant |  | 6 | 120 | 22 | +17 | +11 | +14 | darkvision | 20 feet, swim 20 feet |
+| Shambler Troop | Zombie | Monster Core 2 pg. 358 |  | Common | Mindless, Troop, Undead, Unholy, Zombie |  | 4 | 90 (4 segments, void healing ) | 18 | +11 | +8 | +9 | darkvision | 20 feet; troop movement |
+| Shanrigol Behemoth | Shanrigol | Pathfinder #164: Hands of the Devil pg. 85 |  | Uncommon | Aberration, Uncommon, Undead |  | 9 | 140 ( negative healing ) | 27 | +21 | +18 | +16 | darkvision, tremorsense (imprecise) 30 feet | 30 feet, climb 20 feet, swim 20 feet |
+| Shanrigol Heap | Shanrigol | Pathfinder #164: Hands of the Devil pg. 84 |  | Uncommon | Aberration, Uncommon, Undead |  | 4 | 55 ( negative healing ) | 20 | +14 | +11 | +9 | darkvision, tremorsense (imprecise) 30 feet | 20 feet, climb 20 feet, swim 20 feet |
+| Loading... | Shanty Chanter | Pathfinder #205: Singer, Stalker, Skinsaw Man pg. 88 |  | Rare | Fey, Rare |  | 10 | 175 | 30 | +17 | +22 | +20 | low-light vision | 25 feet; fly 60 feet |
+| Shatterling |  | Pathfinder #160: Assault on Hunting Lodge Seven pg. 84 |  | Uncommon | Fey, Uncommon |  | 14 | 305 | 36 | +24 | +30 | +26 | low-light vision, mirror senses | 40 feet |
+| Shaukeen | Asura | Bestiary 3 pg. 22 |  | Common | Asura, Fiend |  | 1 | 22 | 16 | +4 | +9 | +7 | darkvision | 25 feet |
+| Shemhazian | Demon | Monster Core pg. 81 1.1 |  | Common | Demon, Fiend, Unholy |  | 16 | 350 | 39 | +32 | +26 | +27 | darkvision, scent (imprecise) 60 feet, truesight | 35 feet, climb 20 feet, fly 35 feet |
+| Shianshi Waymaker |  | Pathfinder #174: Shadows of the Ancients pg. 21 |  | Unique | Humanoid, Negative, Unique |  | 18 | 330 ( negative healing ) | 42 | +27 | +35 | +29 | greater darkvision, scent (imprecise) 30 feet | 50 feet |
+| Shieldbearer Construct |  | Pathfinder #169: Kindled Magic pg. 41 |  | Rare | Construct, Mindless, Rare |  | 2 | 30 | 17 | +11 | +7 | +6 | low-light vision | 20 feet |
+| Shikigami | Kami | Monster Core 2 pg. 204 |  | Common | Kami, Spirit |  | 1 | 18 | 15 | +7 | +6 | +9 | darkvision | 20 feet; flatten |
+| Shimmernewt |  | Pathfinder #183: Field of Maidens pg. 85 |  | Rare | Amphibious, Beast, Rare |  | 6 | 120 | 22 | +16 | +14 | +12 | darkvision | 25 feet, swim 35 feet |
+| Shimmerthief |  | Pathfinder #198: No Breath to Cry pg. 86 |  | Uncommon | Beast, Uncommon |  | 7 | 119 | 25 | +12 | +17 | +15 | echolocation 120 feet, shimmervision | 25 feet |
+| Shinigami |  | Pathfinder #196: The Summer That Never Was pg. 86 |  | Uncommon | Monitor, Uncommon |  | 17 | 260 ( fast healing 40) | 40 | +32 | +29 | +31 | darkvision, detect alignment (chaotic and lawful only), true seeing | 25 feet, fly 30 feet |
+| Shining Child |  | Monster Core pg. 308 1.1 |  | Common | Astral |  | 12 | 215 | 33 | +22 | +19 | +19 | darkvision | 30 feet, fly 50 feet |
+| Shino Hakusa |  | Pathfinder #166: Despair on Danger Island pg. 63 |  | Unique | Human, Humanoid, Unique |  | 14 | 250 | 35 | +24 | +28 | +22 | 35 feet | Shino Hakusa (Level 16) |
+| Pathfinder #167: Ready? Fight! pg. 36 | Unique	Medium | Human, Humanoid, Unique |  | 16 | 40 feet | Shino Hakusa (Level 20) |  |  |  |  |  |  | Pathfinder #168: King of the Mountain pg. 53 | Unique	Medium |
+| Human, Humanoid, Unique | 20	360	45	+33	+36	+30	+34 | lifesense |  |  | 30 feet | Ship Captain |  |  |  |  |  |  | Seafarer | NPC Core pg. 149 |
+| Common	Medium | Human, Humanoid | 6	90	23	+12	+12	+14	+12 |  |  | 25 feet | Shirota |  |  |  |  |  |  | Prey for Death pg. 54 | Unique	Medium |
+| Human, Humanoid, Unique | 16	295	38	+29	+30	+26	+25 | 25 feet | Shisagishin |  | Nindoru |  |  |  |  |  |  |  | Pathfinder #199: To Bloom Below the Web pg. 85 | Common	Medium |
+| Fiend, Nindoru | 12	214	33	+22	+25	+20	+22 | darkvision |  |  | 40 feet | Shoal Linnorm |  |  |  |  |  |  | Linnorm | Bestiary 2 pg. 164 2.0 |
+| Uncommon	Gargantuan | Amphibious, Dragon, Uncommon | 15	295	38	+29	+25	+22	+27 |  |  | darkvision, scent (imprecise) 60 feet, true seeing |  |  |  |  |  |  |  | 35 feet, fly 100 feet, swim 100 feet; freedom of movement | Shobhad Enforcer |
+| Shobhad |  | Pathfinder #173: Doorway to the Red Star pg. 88 |  | Uncommon | Humanoid, Uncommon |  | 16 | 320 | 38 | +31 | +26 | +27 | darkvision | 30 feet |
+| Shobhad Sniper | Shobhad | Pathfinder #173: Doorway to the Red Star pg. 89 |  | Uncommon | Humanoid, Uncommon |  | 17 | 320 | 40 | +28 | +32 | +26 | darkvision | 30 feet |
+| Shock Zombie | Zombie | Pathfinder #180: The Smoking Gun pg. 85 |  | Uncommon | Electricity, Mindless, Uncommon, Undead, Zombie |  | 6 | 140 (lightning powered, negative healing ) | 21 | +14 | +17 | +11 | darkvision | 25 feet |
+| Shocker Lizard |  | Bestiary 2 pg. 240 2.0 |  | Common | Animal |  | 2 | 32 | 18 | +7 | +10 | +7 | low-light vision, greater electrolocation 20 feet | 35 feet, climb 15 feet, swim 15 feet |
+| Shoggoth |  | Monster Core 2 pg. 285 |  | Rare | Aberration, Amphibious, Rare |  | 18 | 275 ( fast healing 20) | 39 | +33 | +30 | +30 | darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 60 feet | 40 feet, climb 25 feet, swim 50 feet |
+| Shoggti | Qlippoth | Bestiary 2 pg. 213 2.0 |  | Uncommon | Amphibious, Fiend, Qlippoth, Uncommon |  | 7 | 105 | 25 | +16 | +12 | +14 | darkvision | 25 feet, swim 25 feet |
+| Shokasura | Asura | Monster Core 2 pg. 42 |  | Common | Asura, Spirit, Unholy |  | 1 | 22 | 16 | +4 | +9 | +7 | darkvision | 25 feet, climb 15 feet |
+| Shoki | Psychopomp | Monster Core 2 pg. 264 |  | Common | Monitor, Psychopomp |  | 9 | 150 | 27 | +19 | +14 | +21 | darkvision, lifesense 60 feet | 25 feet |
+| Shoma Lyzerius |  | Pathfinder #178: Punks in a Powderkeg pg. 90 |  | Unique | Human, Humanoid, Ifrit, Unique |  | 3 | 44 | 18 | +6 | +10 | +8 | low-light vision | 25 feet |
+| Shoony Hierarch | Shoony | Pathfinder #153: Life's Long Shadows pg. 83 |  | Rare | Humanoid, Rare, Shoony |  | 4 | 60 | 19 | +9 | +10 | +13 | low-light vision | 25 feet, paddler |
+| Shoony Militia Member | Shoony | Pathfinder #153: Life's Long Shadows pg. 82 |  | Rare | Humanoid, Rare, Shoony |  | 2 | 40 | 17 | +9 | +6 | +8 | low-light vision, scent (imprecise) 30 feet | 20 feet |
+| Shoony Tiller | Shoony | Pathfinder #153: Life's Long Shadows pg. 82 |  | Rare | Humanoid, Rare, Shoony |  | 0 | 16 | 15 | +5 | +3 | +6 | low-light vision | 25 feet |
+| Shotalashu |  | Howl of the Wild pg. 180 2.1 |  | Uncommon | Beast, Uncommon |  | 2 | 35 | 18 | +8 | +10 | +11 | darkvision | 40 feet, jungle stride |
+| Shou "Old" Matsuki |  | Pathfinder #196: The Summer That Never Was pg. 92 |  | Unique | Human, Humanoid, Unique |  | 5 | 70 | 18 | +10 | +8 | +12 | cataracts, wood-grain speaker | 25 feet |
+| Shraen Graveknight |  | Pathfinder #155: Lord of the Black Sands pg. 52 |  | Common | Undead |  | 15 | 295 ( negative healing , rejuvenation) | 37 | +25 | +27 | +26 | darkvision | 30 feet |
+| Shredskin |  | Book of the Dead pg. 143, Pathfinder #157: Devil at the Dreaming Palace pg. 60 |  | Common | Undead |  | 2 | 30 ( negative healing ) | 16 | +6 | +10 | +8 | darkvision | fly 30 feet |
+| Shriezyx |  | Monster Core 2 pg. 286 |  | Common | Aberration |  | 4 | 70 | 21 | +13 | +12 | +8 | darkvision, tremorsense (imprecise) 30 feet | 35 feet; climb 15 feet |
+| Shrine Maiden |  | Pathfinder #198: No Breath to Cry pg. 50 |  | Rare | Human, Humanoid, Rare |  | 9 | 152 | 27 | +14 | +18 | +19 | 25 feet | Loading... |
+| Loading... | Shroud Moss | Pathfinder #212: A Voice in the Blight pg. 88 |  | Rare | Fungus, Rare |  | 18 | 400 | 42 | +36 | +30 | +27 | darkvision | 25 feet, fly 40 feet |
+| Shroudwing |  | Shining Kingdoms pg. 184 |  | Common | Beast |  | 4 | 60 | 20 | +12 | +13 | +8 | darkvision | 20 feet, fly 30 feet |
+| Shui Gui |  | Tian Xia World Guide pg. 298 |  | Uncommon | Aquatic, Ghost, Incorporeal, Spirit, Uncommon, Undead, Water |  | 5 | 50 (void healing, rejuvenation)) | 21 | +9 | +14 | +10 | darkvision | 10 feet, swim 40 feet |
+| Shuln |  | Monster Core pg. 309 1.1 |  | Uncommon | Beast, Uncommon |  | 12 | 195 | 33 | +25 | +19 | +21 | scent 30 feet, tremorsense (imprecise) 60 feet | 40 feet, burrow 20 feet; unstoppable burrow |
+| Shulsaga | Ennosite | Bestiary 3 pg. 93 |  | Uncommon | Astral, Uncommon |  | 3 | 35 | 19 | +7 | +11 | +10 | low-light vision, rift sense | 25 feet, fly 30 feet |
+| Siabrae | Siabrae | Book of the Dead pg. 145 |  | Rare | Rare, Undead |  | 16 | 218 ( negative healing , rejuvenation) | 36 | +28 | +24 | +31 | darkvision, tremorsense (imprecise) 60 feet | 25 feet, burrow 25 feet, earth glide |
+| Sibyl | Devotee | NPC Core pg. 30 |  | Uncommon | Human, Humanoid, Uncommon |  | 3 | 40 | 18 | +6 | +8 | +12 | lifesense 60 feet | 25 feet |
+| Loading... | Sicklefang Longlegs | Longlegs |  |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 192 |  | Uncommon | Medium |  |  |  |  | Animal, Uncommon | 6	90	24	+15	+14	+12	+14 |
+| darkvision, tremorsense (imprecise) 30 feet | 25 feet, climb 25 feet | Sicklehand Construct |  |  | Pathfinder #169: Kindled Magic pg. 41 |  | Rare | Medium |  |  |  |  | Construct, Mindless, Rare | 0	15	16	+5	+9	+4	+6 |
+| low-light vision | 25 feet | Sickly Eshmok |  |  | Gatewalkers (Hardcover) pg. 128 |  | Uncommon | Large |  |  |  |  | Demon, Fiend, Fungus, Uncommon, Unholy | 8	180	25	+14	+17	+16	+16 |
+| darkvision | 25 feet, fly 35 feet | Siege Shard |  |  | Pathfinder #157: Devil at the Dreaming Palace pg. 84 |  | Uncommon | Tiny |  |  |  |  | Construct, Uncommon | 3	37	19	+12	+6	+9	+9 |
+| darkvision | fly 25 feet | Siegebreaker |  |  | Mercenary |  |  |  |  |  |  |  | NPC Core pg. 86 | Common	Medium |
+| Human, Humanoid | 14	300	34	+25	+28	+23	+24 | 25 feet | Loading... |  | Sigrid Jandevik |  |  |  |  |  |  |  | Pathfinder #201: Pactbreaker pg. 39 | Unique	Large |
+| Beast, Human, Humanoid, Unique, Werecreature | 7	140	24	+18	+13	+14	+15 | low-light vision, scent (imprecise) 30 feet |  |  | 25 feet | Silent Stalker |  |  |  |  |  |  | Revenant | Book of the Dead pg. 141 |
+| Common	Small | Undead | 13	220 ( negative healing )	34	+22	+24	+22	+24 |  |  | darkvision, sense murderer |  |  |  |  |  |  |  | 25 feet | Silsyche |
+| Pathfinder #198: No Breath to Cry pg. 87 | Uncommon	Small | Incorporeal, Kami, Spirit, Uncommon |  | 6 | darkvision |  |  |  |  |  |  |  | fly 30 feet | Silvanshee |
+| Agathion |  | Monster Core 2 pg. 16 |  | Common | Agathion, Celestial, Holy |  | 1 | 20 | 16 | +5 | +9 | +6 | darkvision | 25 feet, fly 40 feet |
+| Silver Saber |  | Prey for Death pg. 118 |  | Unique | Construct, Unique |  | 18 | 260 | 43 | +30 | +33 | +28 | darkvision | 40 feet, climb 30 feet |
+| Silverfish Swarm | Silverfish | Pathfinder #169: Kindled Magic pg. 84 |  | Uncommon | Animal, Swarm, Uncommon |  | -1 | 9 | 13 | +5 | +8 | +4 | darkvision | 40 feet, climb 20 feet |
+| Loading... | Simurgh | Bestiary pg. 295 |  | Rare | Beast, Rare |  | 18 | 350 | 41 | +30 | +29 | +32 | darkvision | 40 feet, fly 90 feet |
+| Sinmold |  | Pathfinder #210: Whispers in the Dirt pg. 86 |  | Rare | Fiend, Fungus, Ooze, Rare, Unholy |  | 12 | 300 | 23 | +25 | +11 | +22 | darkvision, lifesense (imprecise) 60 feet | 30 feet, climb 30 feet, swim 30 feet |
+| Sinspawn | Sinspawn | Monster Core pg. 311 1.1 |  | Common | Aberration |  | 2 | 30 | 16 | +10 | +9 | +6 | darkvision, sin scent (imprecise) 30 feet | 30 feet |
+| Sinswarm | Sinspawn | Battlecry! pg. 191 |  | Common | Aberration, Troop |  | 9 | 150 (4 segments) | 27 | +21 | +18 | +15 | darkvision, sin scent (imprecise) 30 feet | 30 feet; troop movement |
+| Sir Fredero Sinnet |  | Kingmaker Companion Guide pg. 88 |  | Unique | Human, Humanoid, Unique |  | 9 | 160 | 28 | +21 | +17 | +15 | 20 feet | Sister Maeri |
+| Prey for Death pg. 48 | Unique	Medium | Elf, Humanoid, Unique |  | 16 | low-light vision |  |  |  |  |  |  |  | 40 feet | Sister Of The Bloodshot Eye |
+| Kingmaker Adventure Path pg. 323 | Unique	Medium | Human, Humanoid, Unique |  | 12 | 25 feet | Sixth Pillar Students |  |  |  |  |  |  | Pathfinder #167: Ready? Fight! pg. 14 | Rare	Medium |
+| Human, Humanoid, Nagaji, Rare | 14	220	34	+24	+25	+23	+23 | darkvision |  |  | 30 feet | Sié Goluo |  |  |  |  |  |  | The Mwangi Expanse pg. 305 2.0 | Unique	Huge |
+| Beast, Incorporeal, Spirit, Unique | 14	320 (rejuvenation)	36	+28	+20	+28	+25 | imprecise scent 60 feet |  |  | 40 feet | Skarja |  |  |  |  |  |  | Pathfinder #153: Life's Long Shadows pg. 88 | Unique	Medium |
+| Fiend, Hag, Humanoid, Unique | 13	260	34	+23	+22	+23	+25 | darkvision |  |  | 25 feet | Skartitch Chip-Tooth |  |  |  |  |  |  | Pathfinder #173: Doorway to the Red Star pg. 51 | Unique	Small |
+| Humanoid, Ratfolk, Unique | 16	290	39	+26	+29	+26	+28 | low-light vision |  |  | 25 feet, burrow 15 feet | Skaveling |  |  |  |  |  |  | Monster Core 2 pg. 287 | Common	Large |
+| Undead, Unholy | 5	80	22	+11	+13	+15	+15 | darkvision, echolocation 40 feet |  |  | 15 feet, fly 30 feet | Loading... |  |  |  |  |  |  | Skeletal Champion | Skeleton |
+| Monster Core pg. 312 1.1 | Common	Medium | Skeleton, Undead, Unholy |  | 2 | darkvision |  |  |  |  |  |  |  | 25 feet | Skeletal Giant |
+| Skeleton |  | Monster Core pg. 313 1.1 |  | Common | Mindless, Skeleton, Undead, Unholy |  | 3 | 50 ( void healing ) | 17 | +8 | +8 | +7 | darkvision | 30 feet |
+| Skeletal Hellknight |  | Pathfinder #145: Hellknight Hill pg. 40 |  | Unique | Humanoid, Undead, Unique |  | 2 | 25 ( negative healing ) | 20 | +9 | +8 | +4 | darkvision | 25 feet, climb 25 feet |
+| Skeletal Horse | Skeleton | Monster Core pg. 313 1.1 |  | Common | Mindless, Skeleton, Undead, Unholy |  | 2 | 33 ( void healing ) | 16 | +6 | +9 | +8 | darkvision | 40 feet |
+| Skeletal Hulk | Skeleton | Monster Core pg. 313 1.1 |  | Common | Mindless, Skeleton, Undead, Unholy |  | 7 | 105 ( void healing ) | 25 | +15 | +15 | +13 | darkvision | 30 feet |
+| Skeletal Knight |  | Pathfinder #183: Field of Maidens pg. 58 |  | Uncommon | Mindless, Skeleton, Uncommon, Undead |  | 8 | 110 ( negative healing ) | 28 | +17 | +16 | +14 | darkvision | 20 feet |
+| Skeletal Mage | Skeleton | Book of the Dead pg. 148 |  | Common | Skeleton, Undead |  | 5 | 60 ( negative healing ) | 21 | +9 | +11 | +13 | darkvision | 25 feet |
+| Skeletal Rat Swarm | Skeleton | Claws of the Tyrant pg. 27 |  | Uncommon | Mindless, Skeleton, Swarm, Uncommon, Undead, Unholy |  | 2 | 40 ( void healing ) | 16 | +5 | +11 | +8 | darkvision, scent (imprecise) 30 feet | 30 feet, climb 10 feet |
+| Skeletal Soldier | Skeleton | Book of the Dead pg. 147 |  | Common | Mindless, Skeleton, Undead |  | 1 | 16 ( negative healing ) | 17 | +6 | +7 | +5 | darkvision | 25 feet |
+| Skeletal Tiger Lord |  | Kingmaker Adventure Path pg. 327 |  | Rare | Rare, Skeleton, Undead |  | 8 | 99 ( negative healing , fast healing 10) | 28 | +18 | +16 | +16 | 25 feet | Skeletal Titan |
+| Skeleton |  | Monster Core 2 pg. 291 |  | Common | Mindless, Skeleton, Undead, Unholy |  | 13 | 210 ( void healing ) | 33 | +23 | +24 | +21 | darkvision | 40 feet, fly 20 feet |
+| Skeletal Woolly Rhinoceros |  | Pathfinder #176: Lost Mammoth Valley pg. 36 |  | Uncommon | Mindless, Skeleton, Uncommon, Undead |  | 5 | 75 ( negative healing ) | 22 | +15 | +8 | +11 | darkvision | 35 feet |
+| Skeleton Guard |  | Pathfinder Game Night: Dawn of the Frogs (Deluxe Adventure) pg. 21 |  | Common | Mindless, Skeleton, Undead, Unholy |  | -1 | 4 ( void healing ) | 16 | +2 | +8 | +2 | darkvision | 25 feet |
+| Skeleton Guard | Skeleton | Monster Core pg. 312 1.1 |  | Common | Mindless, Skeleton, Undead, Unholy |  | -1 | 4 ( void healing ) | 16 | +2 | +8 | +2 | darkvision | 25 feet |
+| Skeleton Infantry | Skeleton | Monster Core 2 pg. 290 |  | Common | Mindless, Skeleton, Troop, Undead, Unholy |  | 11 | 180 (4 segments) | 31 | +21 | +18 | +19 | darkvision | 25 feet; troop movement |
+| Skeleton Mob | Skeleton | Battlecry! pg. 191 |  | Common | Mindless, Skeleton, Troop, Undead, Unholy |  | 6 | 90 (4 segments, void healing (page 217)) | 23 | +17 | +14 | +11 | darkvision | 25 feet, troop movement |
+| Skin Beetle | Skin Beetle | Gatewalkers (Hardcover) pg. 267 |  | Uncommon | Animal, Uncommon |  | 3 | 55 | 18 | +9 | +13 | +7 | low-light vision | 20 feet, burrow 15 feet, fly 15 feet |
+| Skin Beetle Swarm | Skin Beetle | Gatewalkers (Hardcover) pg. 267 |  | Uncommon | Animal, Swarm, Uncommon |  | 8 | 125 | 26 | +16 | +20 | +13 | low-light vision | 20 feet, burrow 15 feet, fly 15 feet |
+| Skin Shifter | Primalist | NPC Core pg. 134 |  | Common | Human, Humanoid |  | 8 | 140 | 25 | +15 | +14 | +16 | (18 in animal form) | 25 feet |
+| Loading... | Loading... | Skinskitter |  |  | Fleshforged |  |  |  |  |  |  |  | Impossible Lands pg. 329 | Common	Small |
+| Aberration, Amphibious, Mindless | 1	20	16	+6	+9	+5	+7 | a taste for skin (imprecise) 60 feet |  |  | 20 feet, swim 20 feet | Skinslough |  |  |  |  |  |  | Pathfinder #207: Resurrection Flood pg. 88 | Common	Medium |
+| Amphibious, Undead | 4	72 (hard to target, void healing )	20	+14	+8	+11	+12 | darkvision |  |  | 25 feet, swim 20 feet | Loading... |  |  |  |  |  |  | Skittering Slayer | Swarm Strider |
+| Monster Core 2 pg. 311 | Uncommon	Medium | Aberration, Swarm, Uncommon |  | 8 | darkvision, tremorsense (imprecise) 30 feet |  |  |  |  |  |  |  | 30 feet | Skrik Nettle |
+| Bestiary 2 pg. 242 2.0 | Common	Large | Aberration |  | 6 | motionsense 30 feet |  |  |  |  |  |  |  | 10 feet, fly 25 feet | Skulk |
+| Bestiary 2 pg. 243 2.0 | Common	Medium | Humanoid, Skulk |  | 1 | low-light vision |  |  |  |  |  |  |  | 25 feet | Skull Fairy |
+| Pathfinder #181: Zombie Feast pg. 87 | Uncommon	Tiny | Shadow, Uncommon |  | 3 | darkvision |  |  |  |  |  |  |  | 15 feet, fly 30 feet | Skull Peeler |
+| Monster Core 2 pg. 292 | Common	Small | Beast |  | 6 | low-light vision |  |  |  |  |  |  |  | 20 feet, climb 15 feet, fly 10 feet | Skulltaker |
+| Monster Core pg. 314 1.1 | Uncommon	Huge | Uncommon, Undead, Unholy |  | 18 | darkvision, truesight |  |  |  |  |  |  |  | 30 feet, fly 60 feet | Loading... |
+| Loading... | Sky Archdragon | Dragon, Sky |  |  | Draconic Codex pg. 164 |  | Rare | Gargantuan |  |  |  |  | Divine, Dragon, Electricity, Metal, Rare | 21	400	46	+35	+33	+39	+38 |
+| darkvision, mist vision, scent (imprecise) 60 feet | 75 feet, fly 175 feet | Sky Fisher |  |  | Howl of the Wild pg. 181 2.1 |  | Common | Huge |  |  |  |  | Animal | 11	200	30	+22	+22	+15	+18 |
+| darkvision | fly 20 feet | Skymetal Striker |  |  | Elemental, Metal |  |  |  |  |  |  |  | Rage of Elements pg. 156 2.0 | Common	Large |
+| Elemental, Metal | 7	100	26	+15	+17	+13	+15 | darkvision |  |  | 25 feet | Slana |  |  |  |  |  |  | Pathfinder #174: Shadows of the Ancients pg. 84 | Rare	Gargantuan |
+| Humanoid, Rare | 20	380 ( fast healing 20)	45	+35	+33	+33	+36 | low-light vision, scent (imprecise) 120 feet |  |  | 60 feet, climb 30 feet, swim 30 feet; freedom of movement | Slime Mold |  |  |  |  |  |  | Ooze | Monster Core 2 pg. 241 |
+| Common	Large | Fungus, Mindless, Ooze | 2	60	12	+11	+3	+4	+6 |  |  | motion sense 60 feet, no vision |  |  |  |  |  |  |  | 10 feet, climb 10 feet | Slime Puppeteer |
+| Alghollthu |  | Pathfinder #194: Cult of the Cave Worm pg. 82 |  | Rare | Aberration, Rare |  | 6 | 95 | 24 | +14 | +14 | +10 | darkvision | 10 feet, fly 30 feet, swim 30 feet |
+| Slithering Pit |  | Monster Core 2 pg. 293 |  | Rare | Mindless, Ooze, Rare |  | 7 | 220 | 14 | +18 | +6 | +11 | no vision, tremorsense (imprecise) 60 feet | 10 feet |
+| Sluagh Reaper | Sluagh | Book of the Dead pg. 150 |  | Uncommon | Fey, Uncommon, Undead |  | 10 | 175 ( negative healing ) | 29 | +17 | +21 | +19 | greater darkvision, soulscent (imprecise) 100 feet | 25 feet, fly 30 feet |
+| Sludgespine Killers |  | Pathfinder #178: Punks in a Powderkeg pg. 25 |  | Uncommon | Gnoll, Humanoid, Uncommon |  | -1 | 8 | 14 | +6 | +5 | +5 | 25 feet | Slurk |
+| Monster Core pg. 315 1.1 | Common	Medium | Animal |  | 2 | darkvision |  |  |  |  |  |  |  | 30 feet, climb 30 feet | Smaranava |
+| Naga |  | Monster Core pg. 236 1.1 |  | Uncommon | Beast, Uncommon |  | 7 | 115 | 27 | +15 | +17 | +15 | darkvision | 30 feet, swim 30 feet |
+| Smiler |  | Pathfinder #151: The Show Must Go On pg. 38 |  | Unique | Ghoul, Undead, Unique |  | 3 | 45 ( negative healing ) | 19 | +9 | +12 | +8 | darkvision | 30 feet, burrow 5 feet |
+| Smilodon | Cat | Monster Core pg. 51 1.1 |  | Common | Animal |  | 6 | 110 | 23 | +15 | +12 | +10 | low-light vision, scent (imprecise) 60 feet | 30 feet |
+| Smith | Artisan | NPC Core pg. 9 |  | Common | Human, Humanoid |  | 3 | 50 | 17 | +9 | +8 | +5 | 25 feet | Smog Giant |
+| Giant |  | Pathfinder #179: Cradle of Quartz pg. 83 |  | Rare | Giant, Humanoid, Rare |  | 7 | 145 | 23 | +17 | +15 | +13 | low-light vision | 35 feet |
+| Smog Wraith | Wraith | Pathfinder #180: The Smoking Gun pg. 84 |  | Uncommon | Incorporeal, Uncommon, Undead, Wraith |  | 9 | 110 ( negative healing ) | 27 | +17 | +17 | +21 | darkvision, lifesense 60 feet | fly 60 feet |
+| Smoke Creeper | Elemental, Air | Monster Core 2 pg. 144 |  | Common | Air, Elemental |  | 6 | 80 | 24 | +13 | +17 | +11 | darkvision, smoke vision | fly 40 feet |
+| Smoldering Leopard |  | Pathfinder #151: The Show Must Go On pg. 44 |  | Uncommon | Animal, Fiend, Uncommon |  | 3 | 45 | 19 | +9 | +11 | +6 | darkvision, scent (imprecise) 30 feet | 30 feet, climb 20 feet |
+| Snapdrake | Elemental, Wood | Rage of Elements pg. 209 2.0 |  | Common | Elemental, Plant, Wood |  | 8 | 144 | 26 | +16 | +11 | +19 | 20 feet, fly 50 feet; greater forest passage | Snapping Flytrap |
+| Flytrap |  | Monster Core pg. 154 1.1 |  | Common | Mindless, Plant |  | 3 | 50 | 18 | +12 | +8 | +7 | tremorsense (imprecise) 30 feet | 15 feet |
+| Snapping Turtle | Turtle | Bestiary 2 pg. 269 2.0 |  | Common | Animal |  | -1 | 9 | 16 | +8 | +1 | +3 | low-light vision, scent (imprecise) 30 feet | 10 feet, swim 20 feet |
+| Sniper | Military | NPC Core pg. 90 |  | Common | Human, Humanoid |  | 5 | 65 | 21 | +10 | +15 | +11 | 25 feet | Snow Oni |
+| Oni |  | Monster Core pg. 253 1.1 |  | Common | Cold, Giant, Humanoid, Oni |  | 13 | 290 | 33 | +23 | +25 | +21 | greater darkvision, snow vision | 40 feet, fly 40 feet |
+| Snowy Owl |  | Gatewalkers (Hardcover) pg. 139 |  | Unique | Human, Humanoid, Unique |  | 7 | 60 | 21 | +11 | +10 | +14 | darkvision | 25 feet |
+| Sod Hound | Elemental, Earth | Monster Core pg. 142 1.1 |  | Common | Earth, Elemental |  | 3 | 44 | 19 | +12 | +6 | +7 | crystal sense (imprecise) 60 feet, darkvision | 30 feet, burrow 20 feet; earth glide |
+| Sodden Sentinel |  | Pathfinder #154: Siege of the Dinosaurs pg. 32 |  | Rare | Rare, Undead |  | 11 | 320 ( negative healing ) | 28 | +24 | +14 | +19 | darkvision | 25 feet |
+| Sojiruh | Nindoru | Pathfinder #197: Let the Leaves Fall pg. 85 |  | Common | Fiend, Nindoru |  | 4 | 58 | 17 | +8 | +11 | +13 | darkvision | 25 feet |
+| Solar | Angel | Bestiary 2 pg. 16 2.0 |  | Rare | Angel, Celestial, Rare |  | 23 | 500 | 49 | +40 | +34 | +37 | darkvision, true seeing | 35 feet, fly 100 feet |
+| Solar Crow | Elemental, Fire | Rage of Elements pg. 128 2.0 |  | Common | Elemental, Fire |  | 10 | 170 | 30 | +18 | +22 | +17 | darkvision, smoke vision | 20 feet, fly 50 feet |
+| Solar Glass Golem | Golem | Pathfinder #184: The Ghouls Hunger pg. 40 |  | Rare | Construct, Golem, Mindless, Rare |  | 11 | 195 | 31 | +20 | +20 | +17 | darkvision | 25 feet |
+| Solar Ibis |  | The Mwangi Expanse pg. 306 2.0 |  | Common | Beast |  | 7 | 45 | 25 | +12 | +17 | +15 | darkvision, low-light vision | 10 feet, fly 60 feet |
+| Somnalu | Somnalu | Monsters of Myth pg. 88 |  | Unique | Aberration, Dream, Unique |  | 15 | 290 | 37 | +25 | +25 | +29 | greater darkvision, sleep scent (imprecise) 60 feet | 30 feet, burrow 25 feet, climb 25 feet |
+| Somnalu Oculus | Somnalu | Monsters of Myth pg. 88 |  | Unique | Aberration, Dream, Unique |  | 11 | 240 | 28 | +18 | +21 | +24 | greater darkvision, true seeing | fly 40 feet |
+| Soniphak | Dischoran | Howl of the Wild pg. 141 2.1 |  | Common | Beast |  | 9 | 180 | 27 | +21 | +21 | +15 | no vision, sensitive echolocation (precise) 120 feet | 20 feet, fly 50 feet |
+| Loading... | Sootsoldiers | Rage of Elements pg. 133 2.0 |  | Common | Elemental, Fire, Troop |  | 10 | 165 (16 squares) | 30 | +20 | +21 | +18 | darkvision, smoke vision | 40 feet; troop movement |
+| Loading... | Sordesdaemon | Daemon |  |  | Monster Core 2 pg. 81 |  | Common | Large |  |  |  |  | Daemon, Fiend, Unholy | 15	300	37	+30	+23	+26	+26 |
+| darkvision | 30 feet, climb 20 feet | Sorvuth-Ka |  |  | Spawn of Rovagug |  |  |  |  |  |  |  | Monster Core 2 pg. 300 | Unique	Gargantuan |
+| Beast, Unique | 24	550	52	+42	+38	+36	+42 | darkvision |  |  | 60 feet | Soul Eater |  |  |  |  |  |  | Bestiary 2 pg. 247 2.0 | Uncommon	Medium |
+| Fiend, Uncommon | 7	80	26	+13	+19	+15	+15 | greater darkvision |  |  | 25 feet, fly 60 feet | Loading... |  |  |  |  |  |  | Soul Slime | Pathfinder #186: Ghost King's Rage pg. 87 |
+| Rare	Large | Mindless, Ooze, Rare | 18	420	29	+33	+24	+27	+27 |  |  | lifesense 60 feet, no vision |  |  |  |  |  |  |  | 20 feet, climb 20 feet, swim 20 feet | Soul Swarm |
+| Pathfinder #172: Secrets of the Temple City pg. 42 | Rare	Gargantuan | Ghost, Incorporeal, Rare, Spirit, Troop, Undead |  | 13 | darkvision |  |  |  |  |  |  |  | 30 feet; air walk, troop movement | Soulbound Doll |
+| Monster Core pg. 318 1.1 | Common	Tiny | Construct, Soulbound |  | 2 | darkvision |  |  |  |  |  |  |  | 20 feet | Loading... |
+| Soulbound Ruin |  | Pathfinder #148: Fires of the Haunted City pg. 85 |  | Common | Construct, Undead |  | 15 | 310 ( negative healing ) | 37 | +29 | +21 | +27 | darkvision | can't move |
+| Soulrider | Soulrider | Monster Core 2 pg. 296 |  | Common | Aberration, Soulrider |  | -1 | 8 | 14 | +5 | +8 | +2 | darkvision | 20 feet, swim 20 feet |
+| Sovereign Archdragon | Dragon, Sovereign | Draconic Codex pg. 169 |  | Rare | Dragon, Earth, Occult, Rare |  | 23 | 520 | 50 | +41 | +42 | +44 | darkvision, scent (imprecise) 60 feet, sanctified sight | 80 feet, fly 200 feet |
+| Spark Bat | Elemental, Air | Bestiary 2 pg. 106 2.0 |  | Common | Air, Elemental |  | 2 | 18 | 19 | +5 | +11 | +7 | darkvision | 5 feet, fly 50 feet |
+| Spark Moth | Elemental, Air | Monster Core 2 pg. 144 |  | Common | Air, Elemental |  | 2 | 20 | 18 | +5 | +11 | +7 | darkvision | 5 feet, fly 50 feet |
+| Spawn Of Jeharlu |  | Pathfinder #212: A Voice in the Blight pg. 89 |  | Rare | Fiend, Fungus, Rare, Unholy |  | 22 | 540 | 46 | +34 | +38 | +40 | greater darkvision, scent purity (precise) 120 feet, truesight | 20 feet, fly 40 feet |
+| Spawn Of Kothogaz |  | Monsters of Myth pg. 53 |  | Rare | Beast, Rare |  | 6 | 70 | 24 | +13 | +17 | +10 | 40 feet, burrow 25 feet | Spawn Of Taon |
+| Pathfinder #173: Doorway to the Red Star pg. 29 | Rare	Medium | Rare, Undead |  | 11 | darkvision |  |  |  |  |  |  |  | 25 feet | Spawning Soulrider |
+| Soulrider |  | Monster Core 2 pg. 297 |  | Common | Aberration, Soulrider |  | 1 | 20 | 15 | +10 | +7 | +4 | darkvision | 20 feet, swim 20 feet |
+| Loading... | Spear Frog | Frog |  |  | Monster Core 2 pg. 158 |  | Common | Tiny |  |  |  |  | Animal | 0	12	14	+5	+7	+6	+6 |
+| low-light vision | 20 feet, climb 20 feet, swim 20 feet | Speartooth |  |  | Kingmaker Adventure Path pg. 104 |  | Unique | Large |  |  |  |  | Animal, Unique | 14	255	36	+28	+25	+23	+25 |
+| low-light vision, scent (imprecise) 60 feet | 30 feet | Specter |  |  | Bestiary 2 pg. 248 2.0 |  | Common | Medium |  |  |  |  | Incorporeal, Undead | 7	95 ( negative healing )	25	+13	+17	+15	+15 |
+| darkvision | fly 40 feet | Spectral Devil |  |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 135 |  | Unique | Large |  |  |  |  | Fiend, Incorporeal, Spirit, Undead, Unique | 10	140 (negative healing)	28	+22	+19	+16	+19 |
+| greater darkvision, scent (imprecise) 30 feet | fly 50 feet | Speiroikos |  |  | Pathfinder #216: The Acropolis Pyre pg. 88 |  | Uncommon | Gargantuan |  |  |  |  | Construct, Troop, Uncommon | 3	50 (4 segments)	18	+10	+8	+6	+9 |
+| 25 feet; troop movement | Spellscar Fext | Impossible Lands pg. 337 |  | Uncommon | Uncommon, Undead |  | 7 | 100 ( negative healing ) | 25 | +12 | +15 | +17 | darkvision, magic sense (imprecise) 30 feet | 25 feet |
+| Spellscar Sky Marauder |  | Pathfinder #179: Cradle of Quartz pg. 30 |  | Uncommon | Humanoid, Mutant, Uncommon |  | 5 | 85 | 22 | +12 | +13 | +10 | darkvision | 30 feet, fly 40 feet |
+| Spellskein |  | Pathfinder #169: Kindled Magic pg. 85 |  | Uncommon | Construct, Uncommon |  | 0 | 15 | 16 | +5 | +9 | +4 | darkvision | 25 feet |
+| Sphinx |  | Monster Core pg. 319 1.1 |  | Common | Beast, Humanoid |  | 8 | 135 | 27 | +16 | +14 | +19 | darkvision | 35 feet, fly 40 feet |
+| Spider Swarm | Spider | Monster Core pg. 320 1.1 |  | Common | Animal, Swarm |  | 0 | 12 | 15 | +4 | +7 | +2 | darkvision, web sense | 20 feet, climb 20 feet |
+| Spinel Leviathan Syndara |  | Pathfinder #168: King of the Mountain pg. 58 |  | Unique | Aeon, Monitor, Unique |  | 24 | 550 | 51 | +46 | +38 | +42 | spatial sense | 60 feet, fly 60 feet |
+| Spinosaurus | Dinosaur | Monster Core 2 pg. 108 |  | Common | Animal, Dinosaur |  | 11 | 200 | 30 | +23 | +21 | +19 | low-light vision, scent (imprecise) 30 feet | 40 feet, swim 30 feet |
+| Spiny Eurypterid | Eurypterid | Bestiary 3 pg. 97 |  | Common | Amphibious, Animal |  | 5 | 70 | 22 | +16 | +11 | +10 | darkvision, wavesense (imprecise) 30 feet | 40 feet, swim 40 feet |
+| Spiral Centurion |  | Monster Core 2 pg. 303 |  | Common | Construct, Mindless |  | 11 | 170 | 31 | +22 | +25 | +16 | darkvision | 40 feet |
+| Spirit Binder | Mystic | NPC Core pg. 103 |  | Common | Human, Humanoid |  | 11 | 175 | 28 | +19 | +19 | +24 | spiritsense (imprecise) 60 feet | 25 feet |
+| Spirit Naga | Naga | Bestiary 2 pg. 179 2.0 |  | Uncommon | Aberration, Uncommon |  | 9 | 160 | 28 | +15 | +20 | +18 | darkvision | 25 feet, swim 15 feet |
+| Spirit Of Stisshak |  | Kingmaker Adventure Path pg. 141 |  | Unique | Aberration, Air, Unique |  | 7 | 65 | 28 | +12 | +18 | +16 | darkvision | fly 50 feet |
+| Spirit Priest | Dwarf | NPC Core pg. 174 |  | Common | Dwarf, Humanoid |  | 5 | 78 | 19 | +12 | +9 | +14 | darkvision | 20 feet |
+| Spirit Turtle |  | Pathfinder #168: King of the Mountain pg. 86 |  | Rare | Fey, Rare |  | 21 | 320 | 45 | +40 | +32 | +38 | 30 feet, swim 40 feet | Spiritbound Aluum |
+| Aluum |  | Pathfinder #149: Against the Scarlet Triad pg. 83 |  | Rare | Construct, Mindless, Rare, Soulbound |  | 16 | 255 | 39 | +30 | +25 | +28 | darkvision | 25 feet, fly 25 feet |
+| Spitting Sawfly | Blight Bonded | Pathfinder #203 Shepherd of Decay pg. 80 |  | Rare | Beast, Mutant, Rare, Wood |  | 10 | 175 | 30 | +19 | +22 | +16 | darkvision, wood scent (precise) 30 feet | 20 feet, climb 20 feet, fly 40 feet |
+| Splinter Officer |  | Claws of the Tyrant pg. 119 |  | Uncommon | Uncommon, Undead, Unholy |  | 19 | 375 ( void healing ) | 42 | +32 | +35 | +36 | darkvision 120 feet, splintersense | 30 feet |
+| Splintershank |  | Pathfinder #201: Pactbreaker pg. 34 |  | Unique | Fey, Plant, Unique |  | 6 | 95 | 23 | +14 | +16 | +12 | darkvision | 25 feet |
+| Sporeback Frog | Frog | Howl of the Wild pg. 151 2.1 |  | Common | Animal |  | 5 | 94 | 21 | +15 | +12 | +9 | low-light vision | 25 feet, burrow 20 feet |
+| Loading... | Sportlebore Swarm | Sportlebore |  |  | Monster Core 2 pg. 306 |  | Common | Large |  |  |  |  | Animal, Swarm | 7	85	25	+15	+17	+13	+13 |
+| low-light vision | 35 feet, fly 35 feet | Spriggan Bully |  |  | Spriggan |  |  |  |  |  |  |  | Bestiary 2 pg. 252 2.0 | Common	Small |
+| Gnome, Humanoid, Spriggan | 3	48	19	+9	+11	+8	+10 | low-light vision |  |  | 20 feet | Spriggan Warlord |  |  |  |  |  |  | Spriggan | Bestiary 2 pg. 253 2.0 |
+| Common	Small | Gnome, Humanoid, Spriggan | 7	120	25	+13	+17	+14	+14 |  |  | low-light vision |  |  |  |  |  |  |  | 20 feet | Sprigjack |
+| Twigjack |  | Monster Core pg. 332 1.1 |  | Common | Fey, Plant, Wood |  | -1 | 10 | 15 | +5 | +7 | +3 | darkvision | 25 feet |
+| Spring-Heeled Jack |  | Monsters of Myth pg. 94 |  | Rare | Fey, Rare |  | 3 | 45 | 18 | +6 | +13 | +8 | low-light vision | 40 feet |
+| Sprite | Sprite | Monster Core pg. 322 1.1 |  | Common | Fey, Sprite |  | -1 | 7 | 15 | +2 | +8 | +4 | low-light vision | 10 feet, fly 40 feet |
+| Spy | Courtier | NPC Core pg. 15 |  | Common | Human, Humanoid |  | 6 | 90 | 23 | +12 | +16 | +14 | 25 feet | Loading... |
+| Loading... | Sramana | Angel |  |  | Monster Core 2 pg. 28 |  | Common | Medium |  |  |  |  | Angel, Celestial, Holy | 15	300	36	+26	+24	+28	+29 |
+| darkvision, heed the fettered (imprecise) 120 feet | 40 feet, fly 75 feet | Ssumzili |  |  | Pathfinder #171: Hurricane's Howl pg. 85 |  | Uncommon | Medium |  |  |  |  | Fey, Uncommon | 12	201	33	+20	+25	+23	+25 |
+| low-light vision | 40 feet; puddle stride | Stag Lord Bandit |  |  | Kingmaker Adventure Path pg. 177 |  | Uncommon | Medium |  |  |  |  | Human, Humanoid, Uncommon | 0	16	15	+6	+7	+4	+4 |
+| 25 feet | Stalker Automaton | Automaton |  |  | Monster Core 2 pg. 48 |  | Rare | Medium |  |  |  |  | Automaton, Construct, Rare | 5	65	21	+10	+14	+13	+15 |
+| darkvision | 30 feet, climb 20 feet | Standard Bearer |  |  | Military |  |  |  |  |  |  |  | NPC Core pg. 89 | Common	Medium |
+| Human, Humanoid | 4	60	20	+10	+8	+14	+12 | 25 feet | Star Archon |  | Archon |  |  |  |  |  |  |  | Bestiary 2 pg. 23 2.0 | Common	Medium |
+| Archon, Celestial | 19	400	43	+31	+34	+34	+35 | darkvision, true seeing |  |  | 35 feet, fly 75 feet | Stargut Hydra |  |  |  |  |  |  | Hydra | Howl of the Wild pg. 164 2.1 |
+| Common	Large | Beast | 9	150 ((body), hydra regeneration HP 22 (head), head regrowth)	27	+21	+18	+14	+19 |  |  | scent (imprecise) 60 feet |  |  |  |  |  |  |  | 25 feet, burrow 25 feet | Starved Staff |
+| Pathfinder #154: Siege of the Dinosaurs pg. 16 | Unique	Huge | Undead, Unique |  | 14 | darkvision |  |  |  |  |  |  |  | 25 feet | Statue Of Alaznist |
+| Pathfinder #200: Seven Dooms for Sandpoint pg. 19 | Common	Medium | Construct, Earth, Mindless |  | 5 | darkvisiondarkvision |  |  |  |  |  |  |  | 20 feet | Steam Mephit |
+| Elemental, Mephit |  | Bestiary 2 pg. 113 2.0 |  | Uncommon | Elemental, Fire, Uncommon, Water |  | 1 | 19 ( fast healing 2 (in boiling water or steam)) | 16 | +9 | +7 | +5 | darkvision, steam vision | 20 feet, fly 25 feet, swim 25 feet |
+| Stegosaurus | Dinosaur | Monster Core pg. 99 1.1 |  | Common | Animal, Dinosaur |  | 7 | 125 | 23 | +17 | +13 | +13 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Stelemora |  | Claws of the Tyrant pg. 120 |  | Uncommon | Fey, Plant, Uncommon |  | 7 | 188 | 24 | +15 | +14 | +17 | low-light vision | 25 feet |
+| Loading... | Sthira | Pathfinder #168: King of the Mountain pg. 87 |  | Uncommon | Cold, Uncommon, Undead |  | 20 | 475 ( negative healing ) | 45 | +39 | +27 | +33 | darkvision | 25 feet |
+| Stingray | Ray | Bestiary 2 pg. 226 2.0 |  | Common | Animal, Aquatic |  | 0 | 15 | 16 | +5 | +7 | +5 | electrolocation (imprecise) 30 feet, low-light vision | swim 30 feet |
+| Stinkweed Shambler |  | Troubles in Otari pg. 63 |  | Common | Plant |  | 2 | 30 | 18 | +7 | +10 | +8 | low-light vision | 20 feet, climb 10 feet |
+| Stirvyn Banyan |  | Pathfinder #154: Siege of the Dinosaurs pg. 39 |  | Unique | Human, Humanoid, Unique |  | 12 | 230 | 31 | +21 | +22 | +21 | detect magic | 25 feet |
+| Stone Bulwark |  | Monster Core pg. 324 1.1 |  | Uncommon | Construct, Mindless, Uncommon |  | 11 | 175 | 30 | +24 | +18 | +19 | darkvision | 20 feet |
+| Stone Ghost |  | Pathfinder #169: Kindled Magic pg. 88 |  | Unique | Human, Humanoid, Oread, Unique |  | 5 | 40 | 20 | +11 | +9 | +15 | 25 feet | Stone Giant |
+| Giant |  | Monster Core pg. 164 1.1 |  | Common | Earth, Giant, Humanoid |  | 8 | 150 | 27 | +18 | +14 | +14 | darkvision | 35 feet |
+| Stone Lion | Guardian Beast | Monster Core 2 pg. 183 |  | Uncommon | Celestial, Holy, Uncommon |  | 4 | 50 | 21 | +11 | +9 | +13 | darkvision | fly 40 feet |
+| Stone Lion Cub | Guardian Beast | Monster Core 2 pg. 2 |  | Uncommon | Celestial, Holy, Uncommon |  | 2 | 28 | 18 | +6 | +7 | +10 | darkvision | fly 25 feet |
+| Stone Mauler | Elemental, Earth | Monster Core pg. 142 1.1 |  | Common | Earth, Elemental |  | 9 | 180 | 27 | +23 | +15 | +19 | darkvision, tremorsense (imprecise) 80 feet | 35 feet, burrow 35 feet; earth glide |
+| Stone Sister |  | Impossible Lands pg. 338 |  | Rare | Rare, Undead |  | 6 | 75 ( negative healing , reconstitution, stone flesh) | 24 | +17 | +11 | +11 | darkvision | 25 feet |
+| Stone Spider |  | Pathfinder #196: The Summer That Never Was pg. 87 |  | Rare | Celestial, Rare |  | 5 | 62 | 22 | +10 | +12 | +14 | darkvision | fly 40 feet |
+| Stone-Breasted Owl | Spirit Guide | Gatewalkers (Hardcover) pg. 269 |  | Uncommon | Beast, Incorporeal, Spirit, Uncommon |  | 5 | 75 | 22 | +9 | +12 | +15 | darkvision | 10 feet, fly 40 feet |
+| Stonefish | Fish | Howl of the Wild pg. 148 2.1 |  | Common | Animal, Aquatic |  | 0 | 15 | 16 | +9 | +6 | +3 | low-light vision | swim 25 feet |
+| Stonefish Swarm | Fish | Howl of the Wild pg. 148 2.1 |  | Common | Animal, Aquatic, Swarm |  | 2 | 25 | 16 | +11 | +8 | +5 | low-light vision | swim 25 feet |
+| Stoneriver |  | Pathfinder #195: Heavy is the Crown pg. 88 |  | Unique | Celestial, Fire, Unique |  | 12 | 220 | 32 | +25 | +20 | +21 | (33 to detect lies and illusions) darkvision, scent (imprecise) 60 feet | 30 feet, burrow 30 feet, swim 30 feet |
+| Stony Bat | Gorgon | Howl of the Wild pg. 154 2.1 |  | Uncommon | Beast, Uncommon |  | 3 | 48 | 18 | +9 | +11 | +7 | echolocation (precise) 30 ft | 15 feet, fly 30 feet |
+| Stony Goat |  | Howl of the Wild pg. 184 2.1 |  | Rare | Animal, Rare |  | 2 | 28 | 17 | +8 | +11 | +5 | all-around vision | 40 feet |
+| Loading... | Storm Giant | Giant |  |  | Bestiary pg. 174 |  | Common | Huge |  |  |  |  | Amphibious, Giant, Humanoid | 13	235	34	+28	+21	+23	+24 |
+| low-light vision | 35 feet, swim 30 feet | Storm Hag |  |  | Hag |  |  |  |  |  |  |  | Monster Core 2 pg. 186 | Common	Medium |
+| Air, Electricity, Hag, Humanoid | 5	90	21	+15	+9	+12	+12 | darkvision, stormsight |  |  | 25 feet, fly 40 feet; storm passage | Loading... |  |  |  |  |  |  | Storm Snake | Howl of the Wild pg. 185 2.1 |
+| Common	Large | Beast, Dragon, Electricity | 5	70	21	+12	+15	+9	+12 |  |  | low-light vision |  |  |  |  |  |  |  | 30 feet, fly 30 feet | Storm-Struck Arboreal |
+| Kingmaker Adventure Path pg. 447 | Rare	Huge | Plant, Rare |  | 16 | low-light vision |  |  |  |  |  |  |  | 40 feet | Stormblood Tiger |
+| Pathfinder #207: Resurrection Flood pg. 89 | Rare	Medium | Beast, Humanoid, Orc, Rare, Werecreature |  | 7 | darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet, swim 25 feet | Stormcrown Archdragon |
+| Dragon, Stormcrown |  | Draconic Codex pg. 173 |  | Rare | Dragon, Electricity, Primal, Rare |  | 21 | 450 | 46 | +37 | +39 | +33 | darkvision, motionsense (precise) 120 feet, scent (imprecise) 60 feet | 60 feet, fly 200 feet |
+| Stormdrinker |  | Pathfinder #201: Pactbreaker pg. 16 |  | Uncommon | Plant, Uncommon |  | 7 | 145 | 23 | +18 | +12 | +15 | darkvision | 20 feet, swim 20 feet |
+| Straugh |  | Pathfinder #184: The Ghouls Hunger pg. 88 |  | Uncommon | Ghoul, Uncommon, Undead |  | 10 | 220 ( negative healing ) | 29 | +22 | +16 | +16 | darkvision, scent (imprecise) 30 feet | 30 feet, burrow 20 feet |
+| Street Musician | Performer | NPC Core pg. 125 |  | Common | Human, Humanoid |  | 2 | 32 | 17 | +8 | +8 | +9 | 25 feet | Loading... |
+| Striding Fire | Elemental, Fire | Monster Core 2 pg. 149 |  | Common | Elemental, Fire |  | 6 | 115 | 24 | +11 | +17 | +14 | darkvision, smoke vision | 50 feet |
+| Strigoi Progenitor | Vampire, Strigoi | Pathfinder #215: To Blot Out the Sun pg. 87 |  | Rare | Rare, Shadow, Undead, Unholy, Vampire |  | 13 | 180 (coffin restoration, fast healing 10, void healing ) | 34 | +24 | +26 | +22 | greater darkvision | 25 feet, fly 25 feet |
+| Strigoi Servant | Vampire, Strigoi | Pathfinder #215: To Blot Out the Sun pg. 87 |  | Rare | Rare, Shadow, Undead, Unholy, Vampire |  | 10 | 130 (coffin restoration, fast healing 10, void healing ) | 30 | +19 | +21 | +18 | greater darkvision | 25 feet |
+| String Slime | Ooze | Monster Core pg. 256 1.1 |  | Common | Mindless, Ooze |  | 3 | 90 | 10 | +12 | +0 | +5 | motion sense (precise) 60 feet, no vision | 20 feet |
+| Strix Aerialist | Strix | Monster Core 2 pg. 307 |  | Uncommon | Humanoid, Strix, Uncommon |  | 9 | 120 | 28 | +18 | +21 | +15 | low-light vision | 25 feet, fly 30 feet |
+| Strix Kinmate | Strix | Monster Core 2 pg. 307 |  | Uncommon | Humanoid, Strix, Uncommon |  | 2 | 25 | 18 | +6 | +10 | +7 | low-light vision | 25 feet, fly 25 feet |
+| Sturzstromer | Cobble Mite | Bestiary 3 pg. 52 |  | Uncommon | Aberration, Earth, Swarm, Uncommon |  | 19 | 280 | 41 | +33 | +35 | +29 | no vision, tremorsense (precise) 120 feet | 50 feet, burrow 20 feet |
+| Stygira |  | Monster Core 2 pg. 308 |  | Uncommon | Earth, Fey, Uncommon |  | 7 | 80 | 25 | +15 | +13 | +19 | gemsight | 25 feet |
+| Subaquatic Marauder | Seafarer | NPC Core pg. 149 |  | Uncommon | Human, Humanoid, Uncommon |  | 5 | 60 | 23 | +15 | +7 | +12 | 20 feet, swim 20 feet | Sublime Breath |
+| War of Immortals pg. 201 | Unique	Medium | Fey, Mythic, Unique |  | 6 | 25 feet | Succubus |  |  |  |  |  |  | Demon | Monster Core pg. 78 1.1 |
+| Uncommon	Medium | Demon, Fiend, Uncommon, Unholy | 7	100	23	+15	+14	+17	+15 |  |  | darkvision |  |  |  |  |  |  |  | 25 feet, fly 35 feet | Sulfur Zombie |
+| Zombie |  | Monster Core 2 pg. 358 |  | Common | Fire, Mindless, Undead, Unholy, Zombie |  | 6 | 125 ( void healing ) | 23 | +16 | +12 | +10 | darkvision | 30 feet |
+| Suli Dune Dancer | Geniekin | Monster Core 2 pg. 251 |  | Common | Human, Humanoid, Suli |  | 1 | 16 | 15 | +3 | +5 | +5 | 25 feet | Sulvik |
+| Pathfinder #182: Graveclaw pg. 56 | Unique	Large | Undead, Unique |  | 9 | darkvision |  |  |  |  |  |  |  | 35 feet | Sumbreiva |
+| Monster Core 2 pg. 309 | Common	Large | Humanoid, Unholy, Void |  | 16 | greater darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 50 feet | Summer Hora |
+| Nymph |  | Pathfinder #177: Burning Tundra pg. 80 |  | Rare | Fey, Nymph, Rare |  | 6 | 90 | 24 | +11 | +14 | +17 | low-light vision | 25 feet |
+| Summer Hora Queen | Nymph | Pathfinder #177: Burning Tundra pg. 81 |  | Rare | Fey, Nymph, Rare |  | 13 | 190 | 35 | +21 | +25 | +24 | low-light vision | 25 feet |
+| Sun Warrior Brigade |  | Pathfinder #172: Secrets of the Temple City pg. 57 |  | Uncommon | Humanoid, Troop, Uncommon |  | 12 | 216 | 33 | +24 | +18 | +23 | 25 feet; troop movement | Sunburst Corpse |
+| Pathfinder #172: Secrets of the Temple City pg. 85 | Uncommon	Medium | Uncommon, Undead |  | 14 | darkvision |  |  |  |  |  |  |  | 35 feet | Sunflower Leshy |
+| Leshy |  | Bestiary 2 pg. 160 2.0 |  | Common | Leshy, Plant |  | 1 | 20 | 16 | +4 | +10 | +7 | darkvision | 25 feet |
+| Sunscale Serpent | Spirit Guide | Howl of the Wild pg. 182 2.1 |  | Uncommon | Animal, Beast, Incorporeal, Spirit, Uncommon |  | 14 | 251 | 36 | +25 | +26 | +28 | low-light vision, tremorsense (imprecise) 100 feet | 40 feet, fly 40 feet |
+| Surgeon | Healer | NPC Core pg. 61 |  | Common | Human, Humanoid |  | 2 | 30 | 17 | +7 | +7 | +10 | 25 feet | Surjit Hamelan |
+| Pathfinder #167: Ready? Fight! pg. 39 | Unique	Small | Gnome, Humanoid, Unique |  | 13 | low-light vision |  |  |  |  |  |  |  | 25 feet, climb 20 feet, swim 20 feet | Loading... |
+| Svartalfar Killer |  | Pathfinder #159: All or Nothing pg. 85 |  | Uncommon | Fey, Uncommon |  | 8 | 135 | 27 | +11 | +19 | +16 | darkvision | 25 feet |
+| Loading... | Loading... | Svetlana |  |  | Kingmaker Adventure Path pg. 53 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 1	20	15	+6	+8	+5	+5 |
+| 25 feet | Swamp Beetle | Beetle |  |  | Pathfinder Game Night: Dawn of the Frogs (Deluxe Adventure) pg. 5 |  | Common | Small |  |  |  |  | Animal | -1	6	15	+4	+7	+2	+6 |
+| 20 feet | Swamp Blight | Blight |  |  | Pathfinder #211: The Secret of Deathstalk Tower pg. 84 |  | Rare | Medium |  |  |  |  | Blight, Ooze, Rare | 17	300 ( fast healing 30, rejuvenation)	38	+33	+26	+29	+29 |
+| darkvision | 25 feet, swim 30 feet | Swardlands Delinquent |  |  | Pathfinder #153: Life's Long Shadows pg. 15 |  | Rare | Medium |  |  |  |  | Human, Humanoid, Rare | 4	65	21	+9	+14	+8	+8 |
+| 25 feet | Swarm Voice | Ratfolk |  |  | NPC Core pg. 210 |  | Common | Small |  |  |  |  | Humanoid, Ratfolk | 3	45	18	+7	+8	+11	+9 |
+| (18 to Sense Motive) low-light vision | 25 feet; swarming | Sweet Hag |  |  | Hag |  |  |  |  |  |  |  | Monster Core pg. 189 1.1 | Common	Medium |
+| Hag, Humanoid | 4	70	21	+11	+11	+12	+10 | darkvision |  |  | 25 feet | Swordfish |  |  |  |  |  |  | Fish | Howl of the Wild pg. 149 2.1 |
+| Common	Large | Animal, Aquatic | 3	50	18	+10	+12	+7	+11 |  |  | low-light vision |  |  |  |  |  |  |  | swim 60 feet | Swordkeeper |
+| Monster Core 2 pg. 314 | Uncommon	Large | Construct, Mindless, Uncommon |  | 10 | 20 feet | Syarstik Painted-Tiger |  |  |  |  |  |  | Pathfinder #175: Broken Tusk Moon pg. 90 | Unique	Large |
+| Ghost, Incorporeal, Spirit, Undead, Unique | 5	40 ( negative healing , rejuvenation)	21	+9	+12	+16	+14 | darkvision, scent (imprecise) 60 feet |  |  | fly 30 feet | Sykever |  |  |  |  |  |  | Darvakka | Monster Core 2 pg. 85 |
+| Common	Huge | Darvakka, Shadow, Undead, Unholy | 15	310 ( void healing )	37	+25	+25	+31	+29 |  |  | greater darkvision, lifesense 60 feet |  |  |  |  |  |  |  | 40 feet; fly | Sylirican Phalanx |
+| Pathfinder #218: Titanbane pg. 59 | Unique	Gargantuan | Incorporeal, Spirit, Troop, Unique |  | 11 | 25 feet; troop movement | Sylph Sneak |  |  |  |  |  |  | Geniekin | Monster Core 2 pg. 252 |
+| Common	Medium | Human, Humanoid, Sylph | 1	17	16	+4	+9	+8	+5 |  |  | 25 feet | Sylvarindarian |  |  |  |  |  |  | Pathfinder #202: Severed at the Root pg. 29 | Unique	Small |
+| Fey, Sprite, Unique | 7	110	25	+12	+19	+16	+15 | low-light vision |  |  | 15 feet, fly 45 feet | Syndara The Sculptor |  |  |  |  |  |  | Pathfinder #168: King of the Mountain pg. 90 | Unique	Medium |
+| Aeon, Monitor, Unique | 22	380 ( fast healing 20 )	48	+39	+39	+36	+39 | spatial sense |  |  | 40 feet, air walk | Syu Tak-nwa |  |  |  |  |  |  | Pathfinder #166: Despair on Danger Island pg. 62 | Unique	Medium |
+| Human, Humanoid, Unique | 14	220	34	+21	+27	+26	+26 | 25 feet | Syu Tak-nwa (Level 16) |  | Pathfinder #167: Ready? Fight! pg. 35 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 16	250	37	+26	+29	+28	+29 |
+| 25 feet | Syu Tak-Nwa (Level 20) | Pathfinder #168: King of the Mountain pg. 52 |  | Unique | Human, Humanoid, Unique |  | 20 | 360 | 42 | +31 | +32 | +36 | tremorsense (precise) 60 feet | 35 feet, ignores difficult terrain |
+| Ta'apundo |  | Pathfinder #174: Shadows of the Ancients pg. 85 |  | Rare | Fey, Plant, Rare |  | 19 | 440 | 45 | +30 | +35 | +33 | low-light vision, greensight | 20 feet; woodland stride |
+| Tabellia | Angel | Monster Core pg. 16 1.1 |  | Common | Angel, Celestial, Holy |  | 14 | 285 | 36 | +27 | +26 | +22 | darkvision | 40 feet, fly 75 feet |
+| Taiga Giant | Giant | Bestiary 2 pg. 126 2.0 |  | Common | Giant, Humanoid |  | 12 | 230 | 32 | +25 | +20 | +22 | low-light vision, see invisibility | 30 feet |
+| Taiga Linnorm | Linnorm | Bestiary 2 pg. 167 2.0 |  | Uncommon | Dragon, Uncommon |  | 19 | 385 | 44 | +35 | +31 | +29 | darkvision, scent (imprecise) 60 feet, true seeing | 40 feet, fly 100 feet, swim 50 feet; freedom of movement |
+| Loading... | Takatorra (Daitengu Form) | Pathfinder #168: King of the Mountain pg. 48 |  | Unique | Humanoid, Tengu, Unique |  | 18 | 331 | 42 | +33 | +29 | +29 | low-light vision | 25 feet, fly 60 feet |
+| Takatorra (Level 13) |  | Pathfinder #167: Ready? Fight! pg. 27 |  | Unique | Humanoid, Tengu, Unique |  | 13 | 300 | 32 | +26 | +23 | +25 | low-light vision | 25 feet |
+| Takatorra (Level 9) |  | Pathfinder #166: Despair on Danger Island pg. 11 |  | Unique | Humanoid, Tengu, Unique |  | 9 | 210 | 26 | +21 | +17 | +20 | low-light vision | 25 feet |
+| Takulu Ot |  | Pathfinder #169: Kindled Magic pg. 90 |  | Unique | Human, Humanoid, Unique |  | 4 | 60 | 21 | +9 | +12 | +12 | 25 feet | Talamira |
+| Pathfinder #148: Fires of the Haunted City pg. 8 | Unique	Medium | Ghost, Incorporeal, Spirit, Undead, Unique |  | 13 | darkvision |  |  |  |  |  |  |  | fly 30 feet | Talaro |
+| Prey for Death pg. 38 | Unique	Medium | Humanoid, Kitsune, Unique |  | 15 | low-light vision |  |  |  |  |  |  |  | 30 feet | Taldan Cave Squirrel |
+| Howl of the Wild pg. 186 2.1 | Common	Medium | Animal |  | 5 | low-light vision, scent (imprecise) 60 feet, tremorsense (imprecise) |  |  |  |  |  |  |  | 30 feet, burrow 40 feet | Taljjae |
+| Monsters of Myth pg. 100 | Unique	Large | Fey, Unique |  | 18 | darkvision, jelly sense 120 feet |  |  |  |  |  |  |  | 50 feet, swim 30 feet | Tallow Guardian |
+| Crown of the Kobold King pg. 122 | Rare	Medium | Construct, Mindless, Rare |  | 7 | darkvision |  |  |  |  |  |  |  | 20 feet | Tallow Ooze |
+| Ooze |  | Pathfinder #154: Siege of the Dinosaurs pg. 83 |  | Common | Mindless, Ooze |  | 11 | 270 | 19 | +22 | +10 | +13 | motion sense 60 feet, no vision | 20 feet, swim 20 feet |
+| Tallusian |  | Claws of the Tyrant pg. 121 |  | Uncommon | Azata, Celestial, Holy, Uncommon |  | 5 | 76 | 21 | +14 | +12 | +12 | darkvision | 25 feet, climb 20 feet |
+| Talon Peak Roc |  | Kingmaker Adventure Path pg. 91 |  | Unique | Animal, Unique |  | 12 | 220 | 33 | +25 | +23 | +20 | low-light vision | 20 feet, fly 60 feet |
+| Talos Gadgeteer | Geniekin | Rage of Elements pg. 163 2.0 |  | Common | Human, Humanoid, Talos |  | 1 | 17 (plus 5 temporary HP (from ablative armor plating)) | 17 | +6 | +6 | +5 | 25 feet | Tamikan |
+| Pathfinder #166: Despair on Danger Island pg. 39 | Unique	Large | Dragon, Unique |  | 16 | darkvision |  |  |  |  |  |  |  | 30 feet, fly 130 feet, swim 30 feet | Tanesse Fleer |
+| Pathfinder #153: Life's Long Shadows pg. 16 | Unique	Medium | Human, Humanoid, Unique |  | 9 | 30 feet; mobility | Tanglebones |  |  |  |  |  |  | Malevolence pg. 71 | Rare	Large |
+| Rare, Undead | 7	145 ( negative healing )	24	+15	+12	+17	+17 | darkvision |  |  | 25 feet | Tantriog |  |  |  |  |  |  | Rage of Elements pg. 187 2.0 | Common	Medium |
+| Amphibious, Elemental, Water | 7	118	24	+18	+15	+12	+16 | all-around vision |  |  | 20 feet, swim 40 feet | Tanuki Village Hero |  |  |  |  |  |  | Tanuki | Monster Core 2 pg. 315 |
+| Uncommon	Small | Humanoid, Tanuki, Uncommon | 1	21	16	+7	+8	+2	+4 |  |  | 25 feet | Taon |  |  |  |  |  |  | Pathfinder #173: Doorway to the Red Star pg. 31 | Unique	Medium |
+| Undead, Unique | 15	230 ( negative healing )	38	+28	+26	+23	+25 | darkvision |  |  | 50 feet, climb 25 feet | Tar Ooze |  |  |  |  |  |  | Pathfinder #177: Burning Tundra pg. 82 | Uncommon	Huge |
+| Mindless, Ooze, Uncommon | 10	255	18	+22	+10	+15	+18 | motion sense 60 feet, no vision |  |  | 15 feet, climb 10 feet; viscous sludge | Tar Zombie Mammoth |  |  |  |  |  |  | Zombie, Tar | Pathfinder #177: Burning Tundra pg. 85 |
+| Uncommon	Huge | Mindless, Uncommon, Undead, Zombie | 9	240 ( negative healing )	26	+22	+14	+16	+18 |  |  | darkvision |  |  |  |  |  |  |  | 30 feet | Tar Zombie Predator |
+| Zombie, Tar |  | Pathfinder #177: Burning Tundra pg. 84 |  | Uncommon | Mindless, Uncommon, Undead, Zombie |  | 7 | 180 ( negative healing ) | 23 | +18 | +11 | +15 | darkvision | 30 feet, climb 10 feet |
+| Tar Zombie Snatcher | Zombie, Tar | Pathfinder #177: Burning Tundra pg. 84 |  | Uncommon | Mindless, Uncommon, Undead, Zombie |  | 6 | 130 ( negative healing ) | 22 | +18 | +10 | +13 | darkvision | 25 feet, climb 10 feet |
+| Tardigrade Swarm | Tardigrade | Howl of the Wild pg. 187 2.1 |  | Common | Amphibious, Animal |  | 12 | 140 | 28 | +26 | +21 | +19 | tremorsense (imprecise) 30 ft | 25 feet, climb 25 feet |
+| Tarn Linnorm | Linnorm | Monster Core pg. 221 1.1 |  | Uncommon | Acid, Amphibious, Dragon, Uncommon |  | 20 | 400 | 46 | +36 | +32 | +31 | darkvision, scent (imprecise) 60 feet, truesight | 35 feet, fly 100 feet, swim 80 feet; unfettered movement |
+| Tarrasque | Spawn of Rovagug | Pathfinder #150: Broken Promises pg. 80 |  | Unique | Beast, Unique |  | 25 | 540 | 54 | +47 | +37 | +39 | darkvision, scent (imprecise) 120 feet | 50 feet, swim 50 feet |
+| Tartuccio |  | Kingmaker Adventure Path pg. 605 |  | Unique | Gnome, Humanoid, Unique |  | 4 | 65 | 20 | +9 | +11 | +11 | low-light vision | 25 feet |
+| Tashlock Banyan |  | Pathfinder #154: Siege of the Dinosaurs pg. 39 |  | Unique | Human, Humanoid, Unique |  | 12 | 215 | 33 | +19 | +24 | +19 | 25 feet | Tatterthread |
+| Pathfinder #174: Shadows of the Ancients pg. 88 | Unique	Large | Fey, Unique |  | 20 | detect magic, greater darkvision, lifesense 120 feet, true seeing |  |  |  |  |  |  |  | 35 feet, fly 35 feet | Loading... |
+| Tatzlwyrm |  | Monster Core 2 pg. 316 |  | Common | Dragon |  | 2 | 30 | 18 | +11 | +5 | +8 | darkvision | 30 feet, climb 30 feet |
+| Taunting Skull | Beheaded | Book of the Dead pg. 74 |  | Common | Undead |  | 5 | 80 ( negative healing ) | 22 | +10 | +14 | +11 | darkvision | 15 feet, fly 40 feet |
+| Tax Collector | Official | NPC Core pg. 109 |  | Common | Human, Humanoid |  | -1 | 6 | 14 | +2 | +3 | +8 | (DC 19 against Stealing) | 25 feet |
+| Teacher | Scholar | NPC Core pg. 139 |  | Common | Human, Humanoid |  | -1 | 5 | 12 | +1 | +2 | +6 | 25 feet | Teaching Assistant |
+| Pathfinder #182: Graveclaw pg. 57 | Rare	Medium | Human, Humanoid, Rare |  | 5 | 25 feet | Tehialai-Thief-Of-Ships |  |  |  |  |  |  | Monsters of Myth pg. 106 | Unique	Gargantuan |
+| Amphibious, Aquatic, Beast, Unique | 13	200 (Hardness 10)	36	+26	+20	+23	+26 | darkvision, wavesense 60 |  |  | 30 feet, swim 60 feet | Temagyr |  |  |  |  |  |  | Gorga | Gatewalkers (Hardcover) pg. 260 |
+| Uncommon	Medium | Fey, Uncommon | 1	25	16	+8	+10	+5	+9 |  |  | greater darkvision |  |  |  |  |  |  |  | 40 feet | Temperbrand |
+| Servitors of Gorum |  | Prey for Death pg. 117 |  | Unique | Elemental, Fire, Metal, Unique |  | 18 | 335 | 41 | +35 | +29 | +27 | darkvision, tremorsense (imprecise) 60 feet | 30 feet, climb 30 feet, burrow 10 feet |
+| Tempest Incarnate | Primalist | NPC Core pg. 136 |  | Rare | Human, Humanoid, Rare |  | 19 | 360 | 40 | +30 | +34 | +31 | 25 feet, fly 60 feet; swiftness | Tempest-Sun Mage |
+| Magaambyan Adepts |  | Character Guide pg. 125 2.0 |  | Common | Human, Humanoid |  | 11 | 145 | 28 | +19 | +20 | +21 | 30 feet | Temteki |
+| Monsters of Myth pg. 112 | Unique	Medium | Earth, Elemental, Unique |  | 5 | darkvision, tremorsense (imprecise) 60 feet |  |  |  |  |  |  |  | 30 feet, burrow 30 feet; earth glide | Tenebric Giant |
+| Pathfinder #185: A Taste of Ashes pg. 88 | Rare	Large | Rare, Shadow, Undead |  | 17 | darkvision, lifesense 80 feet |  |  |  |  |  |  |  | 25 feet | Tengu Bladesmith |
+| Tengu |  | NPC Core pg. 213 |  | Common | Humanoid, Tengu |  | 6 | 100 | 24 | +15 | +16 | +11 | low-light vision | 25 feet |
+| Tengu Sneak | Tengu | Monster Core pg. 325 1.1 |  | Common | Humanoid, Tengu |  | 2 | 27 | 19 | +7 | +10 | +4 | low-light vision | 25 feet |
+| Tennin | Angel | Monster Core 2 pg. 26 |  | Common | Angel, Celestial, Holy |  | 9 | 155 | 27 | +16 | +21 | +17 | darkvision, fingers upon the loom (precise) 60 feet | 30 feet, fly 40 feet; dancer across the heavens, unfettered movement |
+| Tenome |  | Pathfinder #158: Sixty Feet Under pg. 85 |  | Common | Humanoid |  | 4 | 60 | 21 | +13 | +15 | +12 | darkvision | 25 feet |
+| Teraphant |  | Pathfinder #158: Sixty Feet Under pg. 86 |  | Uncommon | Beast, Uncommon |  | 9 | 175 | 27 | +20 | +14 | +18 | emotion sense 120 feet, low-light vision | 45 feet |
+| Terotricus |  | Monster Core pg. 326 1.1 |  | Rare | Fungus, Rare, Unholy |  | 19 | 370 | 42 | +34 | +28 | +33 | darkvision, tremorsense (imprecise) 120 feet | 35 feet; burrow 25 feet, climb 25 feet, swim 35 feet |
+| Terra Carver |  | Monster Core 2 pg. 317 |  | Common | Earth, Elemental |  | 13 | 265 | 33 | +26 | +19 | +23 | darkvision, tremorsense (imprecise) 100 feet | 20 feet; burrow 10 feet |
+| Loading... | Loading... | Terrion Numesti |  |  | Kingmaker Adventure Path pg. 316 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 9	155 (currently 50)	24	+20	+16	+18	+18 |
+| 25 feet | Terror Bird | Terror Bird |  |  | Monster Core 2 pg. 318 |  | Common | Large |  |  |  |  | Animal | 2	30	17	+11	+9	+4	+6 |
+| low-light vision | 50 feet | Terror Shrike |  |  | Terror Bird |  |  |  |  |  |  |  | Monster Core 2 pg. 318 | Common	Large |
+| Animal | 4	60	20	+13	+12	+7	+11 | low-light vision |  |  | 60 feet | Terrorguard |  |  |  |  |  |  | Pathfinder #184: The Ghouls Hunger pg. 89 | Rare	Medium |
+| Construct, Dream, Mindless, Rare | 14	255	37	+28	+25	+22	+25 | darkvision |  |  | 25 feet | Terwa Chosen |  |  |  |  |  |  | Lizardfolk | Pathfinder #171: Hurricane's Howl pg. 83 |
+| Uncommon	Medium | Humanoid, Lizardfolk, Uncommon | 8	140	27	+18	+16	+15	+19 |  |  | 25 feet | Terwa Prodigy |  |  |  |  |  |  | Lizardfolk | Pathfinder #171: Hurricane's Howl pg. 82 |
+| Uncommon	Medium | Humanoid, Lizardfolk, Uncommon | 6	100	23	+13	+15	+15	+17 |  |  | 25 feet | Terwa Star Reader |  |  |  |  |  |  | Lizardfolk | Pathfinder #171: Hurricane's Howl pg. 82 |
+| Uncommon	Medium | Humanoid, Lizardfolk, Uncommon | 7	115	24	+12	+15	+18	+18 |  |  | 25 feet | Teyam Ishtori |  |  |  |  |  |  | Pathfinder #149: Against the Scarlet Triad pg. 61 | Unique	Tiny |
+| Undead, Unique | 19	300 ( negative healing )	44	+29	+32	+35	+25 | darkvision, true seeing |  |  | fly 30 feet | Thanadaemon |  |  |  |  |  |  | Daemon | Monster Core 2 pg. 80 |
+| Common	Medium | Daemon, Fiend, Unholy | 13	270	34	+21	+23	+26	+26 |  |  | darkvision, truesight |  |  |  |  |  |  |  | 25 feet, fly 25 feet | Thanatotic Titan |
+| Titan |  | Pathfinder #156: The Apocalypse Prophet pg. 83 |  | Rare | Humanoid, Rare, Titan |  | 22 | 540 | 46 | +37 | +34 | +35 | darkvision, true seeing | 40 feet; air walk |
+| Thanatotic Titan | Titan | Monster Core 2 pg. 320 |  | Rare | Humanoid, Rare, Titan |  | 22 | 540 | 46 | +37 | +34 | +35 | darkvision, truesight | 40 feet, fly 40 feet |
+| Thasteron Khefak | Khefak | Pathfinder #173: Doorway to the Red Star pg. 87 |  | Uncommon | Beast, Uncommon |  | 3 | 42 | 19 | +12 | +9 | +7 | darkvision, tremorsense (imprecise) 60 feet | 20 feet, burrow 5 feet, climb 20 feet |
+| Thatchling | Thatchling | Pathfinder #196: The Summer That Never Was pg. 88 |  | Uncommon | Uncommon, Undead |  | 0 | 16 ( negative healing ) | 15 | +4 | +7 | +6 | darkvision | 30 feet; thicket walker |
+| The Beast |  | Kingmaker Adventure Path pg. 212 |  | Unique | Animal, Unique |  | 9 | 120 | 28 | +21 | +16 | +19 | low-light vision, scent (imprecise) 30 feet | 30 feet |
+| The Bee-Man Of Bellis |  | Pathfinder #201: Pactbreaker pg. 85 |  | Unique | Aberration, Animal, Swarm, Unique |  | 9 | 155 | 27 | +15 | +21 | +18 | 25 feet, fly 50 feet | Loading... |
+| Loading... | The Caterpillar Carriage | Haunted Clockwork |  |  | Tian Xia World Guide pg. 286 |  | Unique | Gargantuan |  |  |  |  | Clockwork, Construct, Unique | 18	380	42	+33	+29	+30	+30 |
+| darkvision, tremorsense (imprecise) 100 feet | 40 feet, burrow 40 feet, swim 20 feet | The Dancing Lady |  |  | Kingmaker Adventure Path pg. 153 |  | Unique | Medium |  |  |  |  | Fey, Unique | 8	135	28	+12	+17	+14	+16 |
+| low-light vision | 25 feet | The Disciples |  |  | Crown of the Kobold King pg. 89 |  | Unique | Medium |  |  |  |  | Undead, Unique | 7	130 ( negative healing )	22	+17	+14	+15	+15 |
+| darkvision, lifesense 30 feet | 30 feet | The First Blade |  |  | Prey for Death pg. 112 |  | Unique | Large |  |  |  |  | Aesir, Herald, Monitor, Unique | 15	300	37	+29	+23	+27	+27 |
+| darkvision, battle sense (precise) 60 feet | 25 feet; fly | The First Faithful |  |  | Kingmaker Companion Guide pg. 80 |  | Unique | Medium |  |  |  |  | Fiend, Human, Humanoid, Unique | 13	240	34	+24	+20	+26	+24 |
+| darkvision | 25 feet | The Gardener |  |  | Kingmaker Adventure Path pg. 364 |  | Unique | Small |  |  |  |  | Ghost, Incorporeal, Spirit, Undead, Unique | 16	220 ( negative healing , rejuvenation)	36	+27	+30	+26	+24 |
+| darkvision | fly 25 feet | The Great Flood |  |  | Tian Xia World Guide pg. 285 |  | Unique | Gargantuan |  |  |  |  | Amphibious, Beast, Unique | 20	472	44	+37	+32	+33	+39 |
+| darkvision, scent (imprecise) 120 feet | 40 feet, swim 80 feet | The Guest |  |  | Gatewalkers (Hardcover) pg. 155 |  | Unique | Medium |  |  |  |  | Aberration, Humanoid, Unique | 7	130	24	+17	+14	+13	+15 |
+| darkvision | 25 feet | The Horned Hunter |  |  | Kingmaker Adventure Path pg. 431 |  | Unique | Medium |  |  |  |  | Fey, Unique | 18	350	42	+32	+30	+30	+35 |
+| low-light vision | 35 feet | Loading... | The King of Biting Ants |  | Pathfinder #173: Doorway to the Red Star pg. 90 |  | Unique | Medium |  |  |  |  | Aberration, Swarm, Unique | 19	300	44	+31	+36	+32	+32 |
+| darkvision, tremorsense (imprecise) 30 feet | 30 feet, climb 20 feet | The Knurly Witch |  |  | Kingmaker Adventure Path pg. 453 |  | Unique | Large |  |  |  |  | Hag, Humanoid, Unique | 20	324	45	+32	+35	+38	+38 |
+| darkvision | 40 feet | The Lonely Warrior |  |  | Kingmaker Adventure Path pg. 135 |  | Unique | Medium |  |  |  |  | Undead, Unique, Wight | 6	106 ( negative healing )	23	+15	+13	+14	+14 |
+| darkvision | 25 feet | The Looksee Man |  |  | Gatewalkers (Hardcover) pg. 41 |  | Unique | Medium |  |  |  |  | Fetchling, Humanoid, Shadow, Unique | 4	70	21	+11	+14	+14	+14 |
+| darkvision | 25 feet | The Misbegotten Troll |  |  | Kingmaker Adventure Path pg. 437 |  | Unique | Large |  |  |  |  | Giant, Troll, Unique | 18	430	40	+36	+27	+27	+31 |
+| darkvision | 30 feet | Loading... | The Red Bishop |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 196 |  | Unique | Medium |  |  |  |  | Aberration, Unique | 14	260	36	+23	+26	+28	+26 |
+| darkvision | 25 feet, fly 50 feet | Loading... | The Stabbing Beast |  | Pathfinder #160: Assault on Hunting Lodge Seven pg. 85 |  | Unique | Huge |  |  |  |  | Fiend, Herald, Unique | 15	275	38	+27	+29	+27	+27 |
+| greater darkvision, true seeing | 40 feet | The Stag Lord |  |  | Kingmaker Adventure Path pg. 604 |  | Unique | Medium |  |  |  |  | Human, Humanoid, Unique | 6	110	22	+14	+15	+8	+15 |
+| 20 feet | The Vanish Man | Pathfinder #154: Siege of the Dinosaurs pg. 47 |  | Unique | Humanoid, Unique |  | 16 | 265 | 39 | +29 | +28 | +27 | darkvision | 25 feet |
+| The Wriggling Man |  | Kingmaker Adventure Path pg. 466 |  | Unique | Aberration, Swarm, Unique |  | 21 | 325 ( fast healing 20) | 47 | +34 | +39 | +35 | darkvision, tremorsense (imprecise) 30 feet | 30 feet |
+| Theater Phantasm |  | Pathfinder #185: A Taste of Ashes pg. 89 |  | Uncommon | Incorporeal, Uncommon, Undead |  | 16 | 260 (emotional consumption, dramatic return, negative healing ) | 36 | +28 | +25 | +30 | all-around vision, lifesense 100 feet, tremorsense 100 feet | fly 40 feet |
+| Theiltemar |  | Rusthenge pg. 54 |  | Unique | Skeleton, Undead, Unique |  | 4 | 50 ( negative healing ) | 20 | +8 | +10 | +13 | darkvision | 25 feet |
+| Theletos | Aeon | Monster Core 2 pg. 10 |  | Common | Aeon, Monitor |  | 7 | 125 | 25 | +16 | +13 | +18 | darkvision | 25 feet, fly 25 feet |
+| Therapeutic Healer | Healer | NPC Core pg. 63 |  | Common | Human, Humanoid |  | 7 | 110 | 24 | +15 | +12 | +18 | (16 to Sense Motive) | 25 feet |
+| Therizinosaurus | Dinosaur | Howl of the Wild pg. 138 2.1 |  | Common | Animal, Dinosaur |  | 9 | 210 | 27 | +21 | +16 | +16 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| Thessekka |  | Pathfinder #153: Life's Long Shadows pg. 90 |  | Unique | Humanoid, Unique, Xulgath |  | 14 | 255 | 35 | +26 | +19 | +22 | darkvision, tremorsense (imprecise) 30 feet | 20 feet, burrow 10 feet |
+| Thiarvo The Quick |  | Pathfinder #171: Hurricane's Howl pg. 90 |  | Unique | Halfling, Humanoid, Unique |  | 9 | 150 | 28 | +15 | +20 | +18 | 25 feet | Thoqqua |
+| Crown of the Kobold King pg. 123 | Uncommon	Medium | Earth, Elemental, Fire, Uncommon |  | 2 | darkvision, tremorsense (imprecise) 60 feet |  |  |  |  |  |  |  | 25 feet, burrow 15 feet | Thorn Guardian |
+| Pathfinder #174: Shadows of the Ancients pg. 19 | Rare	Small | Construct, Mindless, Rare |  | 16 | darkvision |  |  |  |  |  |  |  | fly 20 feet | Thorn River Bandit |
+| Kingmaker Adventure Path | Uncommon	Medium | Human, Humanoid, Minion, Uncommon |  | -1 | 25 feet | Thousand Thieves |  |  |  |  |  |  | Swarm Strider | Monster Core 2 pg. 313 |
+| Uncommon	Medium | Aberration, Swarm, Uncommon | 16	220	40	+25	+31	+27	+29 |  |  | darkvision, tremorsense (imprecise) 30 feet |  |  |  |  |  |  |  | 35 feet, climb 30 feet | Thrailorn |
+| Woodwarp |  | Pathfinder #202: Severed at the Root pg. 86 |  | Uncommon | Aberration, Plant, Uncommon |  | 6 | 99 | 22 | +13 | +17 | +12 | scent (imprecise) 30 feet | 30 feet |
+| Thrasfyr |  | Bestiary 2 pg. 258 2.0 |  | Rare | Beast, Fire, Rare, Tane |  | 17 | 350 | 40 | +35 | +28 | +27 | darkvision, see invisibility | 40 feet, climb 40 feet; air walk |
+| Loading... | Thresholder Disciple | Kingmaker Adventure Path pg. 409 |  | Rare | Human, Humanoid, Rare |  | 14 | 255 | 36 | +23 | +28 | +25 | unseen sight | 40 feet |
+| Thresholder Hermeticist |  | Kingmaker Adventure Path pg. 407 |  | Rare | Human, Humanoid, Rare |  | 16 | 290 | 39 | +28 | +30 | +26 | unseen sight | 25 feet |
+| Thresholder Mystic |  | Kingmaker Adventure Path pg. 408 |  | Rare | Human, Humanoid, Rare |  | 17 | 315 | 41 | +27 | +29 | +33 | unseen sight | 25 feet |
+| Thruneosaurus Rex | Dinosaur | Howl of the Wild pg. 139 2.1 |  | Rare | Beast, Devil, Dinosaur, Rare, Unholy |  | 17 | 290 | 39 | +31 | +25 | +29 | greater darkvision, scent (imprecise) 30 feet | 40 feet |
+| Thulgant | Qlippoth | Monster Core pg. 283 1.1 |  | Uncommon | Fiend, Qlippoth, Uncommon, Unholy |  | 18 | 305 ( fast healing 10) | 42 | +30 | +28 | +32 | darkvision, truesight | 30 feet, climb 30 feet, fly 50 feet; unfettered movement |
+| Thunderbird |  | Bestiary 2 pg. 259 2.0 |  | Uncommon | Air, Beast, Electricity, Uncommon |  | 11 | 200 | 31 | +24 | +20 | +22 | darkvision, stormsight | 25 feet, fly 80 feet |
+| Thylacine | Thylacine | Kingmaker Adventure Path pg. 609 |  | Uncommon | Animal, Uncommon |  | 0 | 16 | 16 | +6 | +8 | +4 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Tick Swarm | Tick | Bestiary 2 pg. 260 2.0 |  | Common | Animal, Swarm |  | 9 | 130 | 28 | +19 | +19 | +14 | darkvision | 25 feet, climb 25 feet |
+| Loading... | Loading... | Loading... | Tide Giant |  | Giant |  |  |  |  |  |  |  | Monster Core 2 pg. 165 | Common	Large |
+| Amphibious, Giant, Humanoid, Water | 13	250	33	+23	+25	+21	+21 | low-light vision |  |  | 30 feet, swim 50 feet | Loading... |  |  |  |  |  |  | Tidepool Dragonet | Dragonet |
+| Draconic Codex pg. 129 | Common	Tiny | Amphibious, Dragon, Water |  | 3 | darkvision |  |  |  |  |  |  |  | 15 feet, fly 25 feet, swim 45 feet | Tidewater Guard |
+| Lizardfolk |  | NPC Core pg. 204 |  | Common | Humanoid, Lizardfolk |  | 4 | 60 | 21 | +11 | +11 | +10 | 25 feet, swim 25 feet | Tiger |
+| Cat |  | Monster Core pg. 51 1.1 |  | Common | Animal |  | 4 | 60 | 21 | +13 | +11 | +8 | low-light vision, scent (imprecise) 30 feet | 30 feet |
+| Tiger Lord |  | Kingmaker Adventure Path pg. 320 |  | Uncommon | Human, Humanoid, Uncommon |  | 8 | 160 | 26 | +16 | +14 | +18 | 30 feet | Tiger Topiary |
+| Living Topiary |  | Monster Core 2 pg. 214 |  | Common | Plant |  | 5 | 80 | 21 | +15 | +12 | +9 | low-light vision, scent (imprecise) 60 feet | 40 feet; walk through plants |
+| Tikbalang |  | Monster Core 2 pg. 319 |  | Uncommon | Beast, Uncommon |  | 9 | 197 | 27 | +19 | +17 | +14 | low-light vision | 30 feet |
+| Tiluatchek |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 144 |  | Unique | Aberration, Unique |  | 12 | 221 | 32 | +21 | +24 | +23 | darkvision, lifesense 60 feet | 35 feet |
+| Timberweb | Elemental, Wood | Pathfinder #203 Shepherd of Decay pg. 87 |  | Common | Elemental, Plant, Wood |  | 14 | 250 | 35 | +27 | +24 | +23 | low-light vision, tremorsense (imprecise) 30 feet, vine sense | 40 feet, climb 30 feet |
+| Time Archdragon | Dragon, Time | Draconic Codex pg. 177 |  | Rare | Arcane, Dragon, Rare |  | 23 | 570 | 48 | +44 | +37 | +40 | (42 initiative) detect magic, greater darkvision | 60 feet, fly 200 feet |
+| Tino (Level 9) |  | Pathfinder #166: Despair on Danger Island pg. 10 |  | Unique | Human, Humanoid, Unique |  | 9 | 150 | 28 | +18 | +19 | +16 | 40 feet | Tino (Oni Form) |
+| Pathfinder #168: King of the Mountain pg. 47 | Unique	Large | Fiend, Giant, Humanoid, Oni, Unique |  | 18 | darkvision |  |  |  |  |  |  |  | 35 feet | Tino Tung (Level 13) |
+| Pathfinder #167: Ready? Fight! pg. 26 | Unique	Medium | Human, Humanoid, Unique |  | 13 | 45 feet | Titan Centipede |  |  |  |  |  |  | Centipede | Bestiary 2 pg. 50 2.0 |
+| Common	Gargantuan | Animal | 9	155	28	+20	+16	+18	+18 |  |  | darkvision |  |  |  |  |  |  |  | 50 feet, climb 50 feet | Titanosaur |
+| Dinosaur |  | Howl of the Wild pg. 138 2.1 |  | Common | Animal, Dinosaur |  | 16 | 370 | 38 | +33 | +28 | +29 | low-light vision, scent (imprecise) 30 feet | 30 feet |
+| Tithekeeper |  | Pathfinder #210: Whispers in the Dirt pg. 87 |  | Rare | Construct, Mindless, Rare |  | 10 | 220 | 29 | +22 | +17 | +14 | darkvision | 30 feet, climb 30 feet |
+| Tixitog |  | Pathfinder #145: Hellknight Hill pg. 91 |  | Uncommon | Aberration, Uncommon |  | 3 | 40 | 19 | +9 | +10 | +7 | darkvision, web sense (imprecise) 60 feet | 25 feet, climb 25 feet |
+| Toady | Villain | NPC Core pg. 152 |  | Common | Human, Humanoid |  | 0 | 20 | 14 | +9 | +6 | +3 | (9 to eavesdrop) | 25 feet |
+| Toilforged Sentinel |  | Pathfinder #195: Heavy is the Crown pg. 89 |  | Rare | Construct, Rare, Soulbound |  | 8 | 130 | 27 | +18 | +13 | +12 | darkvision, find the faithless (imprecise) 60 feet | 25 feet |
+| Tokainen |  | Pathfinder #215: To Blot Out the Sun pg. 31 |  | Uncommon | Dhampir, Human, Humanoid, Uncommon |  | 9 | 160 ( void healing ) | 26 | +17 | +14 | +21 | darkvision | 25 feet |
+| Tokainen's Chosen |  | Pathfinder #215: To Blot Out the Sun pg. 21 |  | Uncommon | Human, Humanoid, Uncommon |  | 5 | 75 | 21 | +15 | +12 | +9 | low-light vision | 25 feet |
+| Tollvych |  | Pathfinder #173: Doorway to the Red Star pg. 27 |  | Unique | Ghost, Incorporeal, Spirit, Undead, Unique |  | 15 | 200 ( negative healing , rejuvenation) | 33 | +21 | +25 | +28 | darkvision | fly 25 feet |
+| Loading... | Tomb Giant | Giant |  |  | Monster Core 2 pg. 164 |  | Common | Large |  |  |  |  | Giant, Humanoid | 12	255 ( void healing )	32	+22	+19	+25	+25 |
+| darkvision, lifesense (imprecise) 60 feet | 30 feet | Tomb Jelly |  |  | Ooze |  |  |  |  |  |  |  | Monster Core pg. 257 1.1 | Common	Large |
+| Mindless, Ooze | 5	150	12	+15	+4	+7	+7 | motion sense (precise) 60 feet, no vision |  |  | 15 feet, climb 10 feet | Tomb Raider |  |  |  |  |  |  | Explorer | NPC Core pg. 56 |
+| Common	Medium | Human, Humanoid | 5	75	21	+10	+15	+11	+13 |  |  | 25 feet, climb 15 feet | Tombstone Troll |  |  |  |  |  |  | Troll | Pathfinder #181: Zombie Feast pg. 88 |
+| Uncommon	Small | Giant, Troll, Uncommon | 1	25	13	+6	+9	+5	+7 |  |  | darkvision |  |  |  |  |  |  |  | 25 feet, burrow 5 feet | Tonic Merchant |
+| Healer |  | NPC Core pg. 62 |  | Common | Human, Humanoid |  | 3 | 50 | 17 | +10 | +9 | +8 | 25 feet | Tooth Fairy |
+| Tooth Fairy |  | Monster Core pg. 327 1.1 |  | Common | Fey |  | -1 | 8 | 15 | +2 | +7 | +4 | darkvision | 10 feet, fly 25 feet |
+| Tooth Fairy Swarm | Tooth Fairy | Monster Core pg. 327 1.1 |  | Common | Fey, Swarm |  | 3 | 28 | 18 | +5 | +10 | +7 | darkvision | 10 feet, fly 40 feet |
+| Tor Linnorm | Linnorm | Monster Core pg. 222 1.1 |  | Uncommon | Dragon, Fire, Uncommon |  | 21 | 440 | 47 | +38 | +35 | +33 | darkvision, scent (imprecise) 60 feet, truesight | 35 feet, climb 35 feet, fly 100 feet, swim 60 feet; unfettered movement |
+| Torchbearer | Explorer | NPC Core pg. 52 |  | Common | Human, Humanoid |  | 0 | 15 | 15 | +5 | +9 | +4 | 25 feet | Torcheater |
+| Pathfinder #216: The Acropolis Pyre pg. 89 | Uncommon	Small | Incorporeal, Spirit, Uncommon |  | 2 | darkvision, low-light vision |  |  |  |  |  |  |  | 25 feet; shadow stairs | Tormented |
+| Book of the Dead pg. 152 | Common	Medium | Undead |  | 14 | darkvision, lifesense 60 feet |  |  |  |  |  |  |  | 25 feet, fly 25 feet | Torn Quartet |
+| Shining Kingdoms pg. 185 | Uncommon	Medium | Uncommon, Undead |  | 13 | darkvision |  |  |  |  |  |  |  | 10 feet, fly 30 feet | Totenmaske |
+| Monster Core 2 pg. 324 | Common	Medium | Undead, Unholy |  | 7 | darkvision |  |  |  |  |  |  |  | 40 feet | Totum Font |
+| Monster Core 2 pg. 325 | Common	Large | Air, Earth, Elemental, Fire, Metal, Water, Wood |  | 15 | all-around vision, darkvision |  |  |  |  |  |  |  | 25 feet, fly 60 feet | Tournament Combatant |
+| Martial Artist |  | NPC Core pg. 72 |  | Common | Human, Humanoid |  | 5 | 75 | 21 | +10 | +15 | +10 | 35 feet | Toymaker |
+| Engineer |  | NPC Core pg. 45 |  | Common | Human, Humanoid |  | 3 | 45 | 18 | +6 | +10 | +10 | 25 feet | Tracker |
+| Explorer |  | NPC Core pg. 54 |  | Common | Human, Humanoid |  | 3 | 40 | 19 | +7 | +11 | +9 | 25 feet | Loading... |
+| Trained Bat |  | NPC Core pg. 218 |  | Common | Animal |  | 4 | 50 | 21 | +11 | +12 | +10 | echolocation (precise) 20 feet, low-light vision | 15 feet, fly 30 feet |
+| Trained Raven | Raven | Monster Core 2 pg. 267 |  | Common | Animal |  | -1 | 7 | 15 | +2 | +7 | +5 | low-light vision | 10 feet, fly 40 feet |
+| Trapdoor Ogre Spider | Spider | Kingmaker Adventure Path pg. 89 |  | Uncommon | Animal, Uncommon |  | 5 | 70 | 23 | +15 | +13 | +9 | darkvision | 30 feet, climb 30 feet |
+| Trapjaw Tangle |  | Pathfinder #179: Cradle of Quartz pg. 87 |  | Rare | Construct, Rare, Swarm |  | 5 | 58 | 22 | +11 | +14 | +9 | darkvision | 25 feet |
+| Traveling Actor | Performer | NPC Core pg. 127 |  | Common | Human, Humanoid |  | 3 | 35 | 18 | +6 | +12 | +9 | 25 feet | Traveling Priest of Desna |
+| Devotee |  | NPC Core pg. 34 |  | Common | Human, Humanoid |  | 9 | 140 | 27 | +16 | +19 | +19 | 30 feet | Tree Singer |
+| Primalist |  | NPC Core pg. 135 |  | Common | Human, Humanoid |  | 13 | 220 | 32 | +23 | +21 | +25 | 25 feet | Tree That Weeps |
+| Kingmaker Adventure Path pg. 117 | Rare	Gargantuan | Plant, Rare |  | 18 | lifesense 30 feet, low-light vision |  |  |  |  |  |  |  | 15 feet | Treerazer |
+| Monster Core pg. 328 1.1 | Unique	Huge | Amphibious, Demon, Fiend, Unholy, Unique |  | 25 | darkvision, truesight |  |  |  |  |  |  |  | 60 feet, fly 60 feet, swim 40 feet; unfettered movement | Loading... |
+| Triceratops | Dinosaur | Monster Core pg. 99 1.1 |  | Common | Animal, Dinosaur |  | 8 | 140 | 26 | +18 | +12 | +14 | low-light vision, scent (imprecise) 30 feet | 30 feet |
+| Trighoul |  | Pathfinder #208: Hoof, Cinder, and Storm pg. 86 |  | Rare | Aberration, Rare |  | 8 | 100 (body) HP 20 (tentacle), (tentacle regrowth) | 27 | +13 | +19 | +16 | darkvision | 45 feet |
+| Trilobite | Trilobite | Monster Core 2 pg. 326 |  | Common | Animal, Aquatic |  | -1 | 7 | 15 | +4 | +7 | +4 | darkvision, wavesense (imprecise) 30 feet | swim 25 feet |
+| Trilobite Swarm | Trilobite | Monster Core 2 pg. 326 |  | Common | Animal, Aquatic, Swarm |  | 3 | 30 | 18 | +10 | +9 | +7 | darkvision, wavesense (imprecise) 60 feet | swim 25 feet |
+| Trinity Initiates |  | Pathfinder Adventure Path #219: Lord of the Trinity Star pg. 19 |  | Uncommon | Humanoid, Uncommon |  | 0 | 130 | 26 | +13 | +16 | +18 | 25 feet | Tripkee Camoufleur |
+| Tripkee |  | NPC Core pg. 214 |  | Common | Humanoid, Tripkee |  | 2 | 30 | 18 | +5 | +11 | +8 | low-light vision | 25 feet, climb 20 feet; forest passage |
+| Tripkee Fiend Keeper | Tripkee | NPC Core pg. 215 |  | Common | Humanoid, Tripkee |  | 7 | 125 | 25 | +12 | +15 | +18 | low-light vision | 25 feet, climb 20 feet; forest passage |
+| Tripkee Rain-Caller | Tripkee | Monster Core 2 pg. 327 |  | Common | Humanoid, Tripkee |  | 4 | 60 | 20 | +8 | +11 | +14 | darkvision | 25 feet, climb 20 feet; jungle passage |
+| Tripkee Scout | Tripkee | Monster Core 2 pg. 327, NPC Core pg. 214 |  | Common | Humanoid, Tripkee |  | 1 | 20 | 16 | +7 | +9 | +6 | darkvision | 25 feet, climb 20 feet; jungle passage |
+| Tristian (Level 1) |  | Kingmaker Companion Guide pg. 69 |  | Unique | Aasimar, Human, Humanoid, Unique |  | 1 | 18 | 14 | +4 | +4 | +9 | (trained) low-light vision | 25 feet |
+| Tristian (Level 10) |  | Kingmaker Companion Guide pg. 69 |  | Unique | Aasimar, Human, Humanoid, Unique |  | 10 | 128 | 25 | +18 | +15 | +22 | (expert) low-light vision | 30 feet |
+| Triton |  | Bestiary 2 pg. 263 2.0 |  | Common | Amphibious, Humanoid |  | 2 | 30 | 18 | +5 | +11 | +8 | darkvision | 5 feet, swim 35 feet |
+| Loading... | Troff Frostknuckles | Pathfinder #167: Ready? Fight! pg. 43 |  | Unique | Goblin, Humanoid, Unique |  | 14 | 250 | 36 | +26 | +27 | +25 | darkvision | 30 feet, climb 20 feet |
+| Troll Guard |  | Kingmaker Adventure Path pg. 383 |  | Rare | Giant, Rare, Troll |  | 15 | 340 | 35 | +29 | +23 | +27 | darkvision | 30 feet |
+| Troll Warleader | Troll | Monster Core pg. 331 1.1 |  | Common | Giant, Humanoid, Troll, Wood |  | 10 | 240 | 29 | +23 | +17 | +15 | darkvision | 30 feet |
+| Trollhound |  | Monster Core 2 pg. 332 |  | Common | Beast, Troll, Wraith |  | 3 | 65 | 17 | +14 | +8 | +6 | darkvision, scent (imprecise) 30 feet | 35 feet |
+| Troodon | Dinosaur | Howl of the Wild pg. 136 2.1 |  | Common | Animal, Dinosaur |  | 1 | 20 | 16 | +4 | +8 | +5 | low-light vision, scent (imprecise) 30 feet | 30 feet |
+| Troubadour | Performer | NPC Core pg. 127 |  | Common | Human, Humanoid |  | 3 | 40 | 18 | +6 | +11 | +9 | 25 feet | Trumpet Archon |
+| Archon |  | Bestiary 2 pg. 23 2.0 |  | Common | Archon, Celestial |  | 14 | 285 | 36 | +24 | +24 | +27 | darkvision | 35 feet, fly 60 feet |
+| Trygve |  | Rusthenge pg. 22 |  | Unique | Human, Humanoid, Unique |  | 2 | 30 | 18 | +7 | +4 | +6 | 25 feet | Tsemone |
+| Pathfinder #218: Titanbane pg. 39 | Unique	Medium | Human, Humanoid, Mythic, Unique |  | 8 | 25 feet | Tulvak |  |  |  |  |  |  | Kingmaker Companion Guide pg. 92 | Unique	Medium |
+| Hag, Humanoid, Unique | 11	220	31	+22	+20	+22	+22 | darkvision |  |  | 25 feet, swim 25 feet | Tumblak |  |  |  |  |  |  | Sahkil | Night of the Gray Death pg. 71 |
+| Common	Medium | Fiend, Incorporeal, Sahkil | 18	305	42	+33	+28	+31	+33 |  |  | darkvision, true seeing |  |  |  |  |  |  |  | fly 40 feet | Tumbleweed Leshy Courier |
+| Leshy |  | NPC Core pg. 200 |  | Common | Leshy, Plant |  | 3 | 35 | 19 | +6 | +12 | +9 | low-light vision | 30 feet |
+| Tunch |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 53 |  | Unique | Goblin, Humanoid, Unique |  | 5 | 75 | 21 | +11 | +13 | +8 | darkvision | 25 feet |
+| Tunnel Viper | Ratfolk | NPC Core pg. 210 |  | Common | Humanoid, Ratfolk |  | 1 | 20 | 16 | +5 | +9 | +5 | darkvision | 25 feet; swarming, tunnel travel |
+| Loading... | Tupilaq | Monster Core 2 pg. 333 |  | Common | Construct |  | 7 | 90 | 26 | +17 | +15 | +12 | darkvision | 40 feet, swim 40 feet |
+| Turkek |  | Pathfinder #176: Lost Mammoth Valley pg. 39 |  | Unique | Dhampir, Human, Humanoid, Unique |  | 7 | 100 ( negative healing ) | 23 | +16 | +16 | +14 | bloodsense (imprecise) 30 feet, darkvision | 25 feet |
+| Twigjack | Twigjack | Monster Core pg. 332 1.1 |  | Common | Fey, Plant, Wood |  | 3 | 50 | 19 | +9 | +11 | +7 | darkvision | 25 feet |
+| Twigjack Bramble | Twigjack | Pathfinder #201: Pactbreaker pg. 89 |  | Uncommon | Fey, Plant, Troop, Uncommon |  | 6 | 102 (16 squares) | 24 | +14 | +16 | +12 | darkvision | 25 feet; troop movement |
+| Twins of Rowan | Elemental, Wood | Rage of Elements pg. 211 2.0 |  | Common | Elemental, Plant, Wood |  | 13 | 273 | 34 | +24 | +17 | +27 | tremorsense (imprecise) 30 feet | 35 feet, climb 25 feet |
+| Two Tusk |  | Pathfinder Game Night: Dawn of the Frogs (Deluxe Adventure) pg. 22 |  | Common | Animal |  | 2 | 35 | 17 | +10 | +6 | +4 | darkvision | 30 feet, swim 30 feet |
+| Two-Headed Troll | Troll | Monster Core 2 pg. 329 |  | Uncommon | Earth, Giant, Humanoid, Troll, Uncommon, Wood |  | 8 | 190 | 24 | +19 | +15 | +14 | darkvision | 30 feet |
+| Tylosaurus | Mosasaur | Monster Core 2 pg. 227 |  | Common | Animal |  | 8 | 137 | 27 | +17 | +19 | +14 | low-light vision, scent (imprecise) 30 feet | 5 feet, swim 80 feet |
+| Tyrafdir | Hydra | Howl of the Wild pg. 165 2.1 |  | Uncommon | Beast, Fey, Uncommon |  | 11 | 190 ((body), hydra regeneration) | 30 | +24 | +21 | +18 | scent (imprecise) 60 feet | 25 feet |
+| Tyrannosaurus | Dinosaur | Monster Core pg. 101 1.1 |  | Common | Animal, Dinosaur |  | 10 | 180 | 29 | +21 | +15 | +19 | low-light vision, scent (imprecise) 30 feet | 40 feet |
+| Tyrannosaurus Imperator |  | Pathfinder #166: Despair on Danger Island pg. 31 |  | Rare | Animal, Dinosaur, Rare |  | 14 | 260 | 35 | +27 | +20 | +25 | low-light vision, scent (imprecise) 60 feet | 40 feet |
+| Tyrannosaurus Skeleton | Skeleton | Monster Core 2 pg. 290 |  | Common | Mindless, Skeleton, Undead, Unholy |  | 9 | 140 ( void healing ) | 27 | +20 | +13 | +17 | darkvision | 40 feet |
+| Loading... | Tzitzimitl | Monster Core 2 pg. 334, Pathfinder #150: Broken Promises pg. 82 |  | Uncommon | Electricity, Uncommon, Undead, Unholy |  | 19 | 390 ( fast healing 15, void healing (page 362)) | 43 | +29 | +32 | +35 | darkvision, truesight | 50 feet, fly 60 feet |
+| Ufi | Threshold of Knowledge Pregenerated Characters | Threshold of Knowledge pg. 14 |  | Unique | Human, Humanoid, Unique |  | 1 | 17 | 17 | +6 | +3 | +9 | 20 feet | Ugothol |
+| Alghollthu |  | Monster Core pg. 12 1.1 |  | Common | Aberration |  | 4 | 60 | 21 | +9 | +9 | +12 | darkvision | 25 feet |
+| Ugvashi |  | Impossible Lands pg. 339 |  | Common | Animal |  | 3 | 40 | 19 | +13 | +6 | +8 | 20 feet | Ulat-Kini Initiate |
+| Alghollthu |  | Pathfinder #194: Cult of the Cave Worm pg. 83 |  | Uncommon | Amphibious, Humanoid, Uncommon |  | 4 | 60 | 21 | +11 | +13 | +8 | darkvision | 20 feet, swim 40 feet |
+| Ulat-Kini Mindreaver | Alghollthu | Pathfinder #194: Cult of the Cave Worm pg. 83 |  | Uncommon | Amphibious, Humanoid, Uncommon |  | 7 | 100 | 22 | +12 | +12 | +16 | darkvision | 20 feet, swim 40 feet |
+| Ulgrem-Axaan |  | Monsters of Myth pg. 118 |  | Unique | Amphibious, Beast, Undead, Unique |  | 7 | 130 ( negative healing ) | 24 | +18 | +15 | +12 | darkvision, wavesense (imprecise) 60 feet | 25 feet, burrow 10 feet, swim 30 feet |
+| Ulgrem-Lurann |  | Monsters of Myth pg. 119 |  | Rare | Amphibious, Beast, Rare |  | 3 | 55 | 18 | +12 | +10 | +5 | darkvision | 20 feet, swim 25 feet |
+| Ulikuq |  | Gatewalkers (Hardcover) pg. 283 |  | Unique | Human, Humanoid, Unique |  | 4 | 60 | 20 | +10 | +11 | +14 | 25 feet | Ulistul |
+| Monsters of Myth pg. 124 | Unique	Large | Automaton, Construct, Unique |  | 11 | darkvision, statuesense (imprecise) 60 feet |  |  |  |  |  |  |  | 30 feet | Ulizmila's Cauldron |
+| Crown of the Kobold King pg. 28 | Common	Small | Construct, Mindless |  | 2 | darkvision |  |  |  |  |  |  |  | 15 feet | Ulshuk |
+| Pathfinder #218: Titanbane pg. 39 | Unique	Medium | Human, Lizardfolk, Mythic, Unique |  | 8 | 25 feet | Ulthadar |  |  |  |  |  |  | Pathfinder #152: Legacy of the Lost God pg. 90 | Unique	Medium |
+| Incorporeal, Spirit, Undead, Unique | 8	95 ( negative healing , rejuvenation)	24	+13	+16	+19	+20 | darkvision |  |  | fly 25 feet | Loading... |  |  |  |  |  |  | Umbasi | Pathfinder #167: Ready? Fight! pg. 40 |
+| Unique	Medium | Elf, Humanoid, Unique | 13	190	33	+20	+27	+23	+21 |  |  | low-light vision |  |  |  |  |  |  |  | 25 feet | Umbo |
+| Pathfinder #169: Kindled Magic pg. 22 | Rare	Medium | Fungus, Rare |  | 3 | darkvision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 20 feet | Umbraex |
+| Darvakka |  | Pathfinder #185: A Taste of Ashes pg. 83 |  | Rare | Cold, Darvakka, Rare, Shadow, Undead |  | 21 | 450 (ashen rise, negative healing ) | 45 | +38 | +32 | +35 | greater darkvision, lifesense 100 feet | 25 feet, fly 70 feet |
+| Umbral Archdragon | Dragon, Umbral | Draconic Codex pg. 181 |  | Rare | Dragon, Occult, Rare, Shadow |  | 23 | 525 | 48 | +42 | +39 | +42 | greater darkvision, voidsense (precise) 60 feet | 70 feet, fly 225 feet |
+| Umbral Gnome Rockwarden | Gnome | Monster Core pg. 173 1.1 |  | Common | Gnome, Humanoid |  | 5 | 63 | 22 | +12 | +9 | +14 | darkvision | 15 feet |
+| Umbral Gnome Scout | Gnome | Monster Core pg. 172 1.1 |  | Common | Gnome, Humanoid |  | 1 | 18 | 17 | +7 | +9 | +5 | darkvision | 20 feet |
+| Umbral Gnome Warrior | Gnome | Monster Core pg. 173 1.1 |  | Common | Gnome, Humanoid |  | 2 | 34 | 18 | +9 | +8 | +5 | darkvision | 20 feet |
+| Umonlee |  | Bestiary 2 pg. 271 2.0 |  | Uncommon | Amphibious, Beast, Cold, Uncommon |  | 15 | 320 | 39 | +28 | +26 | +23 | darkvision, tremorsense (imprecise) 80 feet | 50 feet, burrow 25 feet, swim 40 feet |
+| Unaasi |  | Pathfinder #202: Severed at the Root pg. 92 |  | Unique | Ghoran, Humanoid, Plant, Unique |  | 11 | 160 | 28 | +18 | +20 | +23 | low-light vision | 25 feet |
+| Undead Murder | Skeleton | Claws of the Tyrant pg. 32 |  | Uncommon | Skeleton, Swarm, Uncommon, Undead, Unholy |  | 3 | 32 ( void healing ) | 18 | +7 | +13 | +8 | darkvision, scent (imprecise) 30 feet | 5 feet, fly 35 feet |
+| Underworld Archdragon | Dragon, Underworld | Draconic Codex pg. 185 |  | Rare | Arcane, Dragon, Fire, Rare |  | 19 | 430 | 45 | +35 | +30 | +32 | darkvision, scent (imprecise) 60 feet, smoke vision | 50 feet, burrow 80 feet, fly 100 feet |
+| Undine Hydromancer | Geniekin | Monster Core 2 pg. 253 |  | Common | Amphibious, Human, Humanoid, Undine |  | 1 | 15 | 15 | +4 | +5 | +7 | 25 feet, swim 25 feet | Loading... |
+| Ungkore Bounty Hunter |  | Pathfinder #218: Titanbane pg. 50 |  | Rare | Humanoid, Rare, Satyr |  | 8 | 140 | 26 | +19 | +19 | +16 | low-light vision | 30 feet |
+| Unicorn | Unicorn | Monster Core pg. 333 1.1 |  | Common | Beast, Fey, Holy |  | 3 | 45 | 20 | +10 | +8 | +11 | darkvision, scent (imprecise) 30 feet | 45 feet |
+| Loading... | Unrisen | Monster Core 2 pg. 335 |  | Common | Undead, Unholy |  | 11 | 220 (meant to live, void healing ) | 28 | +22 | +17 | +21 | darkvision, lifesense 30 feet | 30 feet |
+| Unsanctioned Sheriff | Maverick | NPC Core pg. 78 |  | Common | Human, Humanoid |  | 5 | 75 | 22 | +11 | +11 | +13 | (15 to Sense Motive) | 25 feet |
+| Unshadowed Anchor Root |  | Pathfinder #174: Shadows of the Ancients pg. 23 |  | Unique | Gnoll, Humanoid, Unique |  | 18 | 270 | 39 | +30 | +27 | +33 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Unshadowed Haibram |  | Pathfinder #174: Shadows of the Ancients pg. 24 |  | Unique | Dwarf, Humanoid, Unique |  | 18 | 330 | 41 | +33 | +30 | +27 | darkvision | 20 feet |
+| Unshadowed Koride |  | Pathfinder #174: Shadows of the Ancients pg. 90 |  | Unique | Human, Humanoid, Unique |  | 19 | 290 | 40 | +32 | +29 | +35 | 25 feet | Unshadowed Mariama |
+| Pathfinder #174: Shadows of the Ancients pg. 20 | Unique	Medium | Human, Humanoid, Unique |  | 18 | 25 feet | Unshadowed Okoro |  |  |  |  |  |  | Pathfinder #174: Shadows of the Ancients pg. 18 | Unique	Medium |
+| Human, Humanoid, Unique | 18	270	39	+30	+27	+33	+30 | 25 feet | Urbel |  | Pathfinder #169: Kindled Magic pg. 55 |  | Unique | Small |  |  |  |  | Fey, Gremlin, Unique | 4	68	21	+13	+12	+8	+8 |
+| darkvision | 30 feet, climb 20 feet | Urchin |  |  | Downtrodden |  |  |  |  |  |  |  | NPC Core pg. 40 | Common	Small |
+| Human, Humanoid | -1	8	15	+2	+7	+3	+3 | 25 feet | Loading... |  | Loading... | Urdefhan Dominator |  |  |  |  |  |  | Urdefhan | Pathfinder #155: Lord of the Black Sands pg. 83 |
+| Common	Medium | Humanoid, Urdefhan | 14	250 ( negative healing )	35	+25	+25	+29	+26 |  |  | greater darkvision |  |  |  |  |  |  |  | 25 feet | Urdefhan High Tormentor |
+| Urdefhan |  | Pathfinder #155: Lord of the Black Sands pg. 82 |  | Common | Humanoid, Urdefhan |  | 10 | 195 ( negative healing ) | 30 | +19 | +16 | +22 | greater darkvision | 25 feet |
+| Urdefhan Hunter | Urdefhan | Pathfinder #155: Lord of the Black Sands pg. 82 |  | Common | Humanoid, Urdefhan |  | 12 | 190 ( negative healing ) | 34 | +20 | +26 | +23 | greater darkvision | 30 feet |
+| Loading... | Urdefhan Tormentor | Urdefhan |  |  | Monster Core 2 pg. 337 |  | Common | Medium |  |  |  |  | Humanoid, Unholy, Urdefhan | 5	75 ( void healing )	21	+11	+10	+15	+13 |
+| greater darkvision | 25 feet | Urdefhan Warrior |  |  | Urdefhan |  |  |  |  |  |  |  | Monster Core 2 pg. 336 | Common	Medium |
+| Humanoid, Urdefhan | 3	55 (void healing)	18	+9	+8	+9	+9 | greater darkvision |  |  | 25 feet | Urevian |  |  |  |  |  |  | Pathfinder #164: Hands of the Devil pg. 90 | Unique	Medium |
+| Devil, Fiend, Unique | 9	135	28	+18	+17	+22	+19 | greater darkvision |  |  | 25 feet | Urglid |  |  |  |  |  |  | Demon | Monster Core 2 pg. 94 |
+| Common	Large | Demon, Fiend, Unholy | 13	290	31	+26	+20	+20	+20 |  |  | darkvision, tremorsense (imprecise) 60 feet, truesight |  |  |  |  |  |  |  | 30 feet, burrow 40 feet, climb 20 feet; earth glide | Uri Zandivar |
+| Pathfinder #149: Against the Scarlet Triad pg. 92 | Unique	Medium | Human, Humanoid, Unique |  | 19 | 30 feet | Urnak Lostwind |  |  |  |  |  |  | Pathfinder #167: Ready? Fight! pg. 41 | Unique	Medium |
+| Human, Humanoid, Orc, Unique | 14	310	34	+27	+23	+25	+25 | 20 feet | Urok |  | No-Prep Character: Urok |  | Unique | Small |  |  |  |  | Aphorite, Humanoid, Kobold, Unique | 9	140	27	+15	+21	+18	+18 |
+| darkvision, low-light vision | 25 feet | Urveth |  |  | Darvakka |  |  |  |  |  |  |  | Monster Core 2 pg. 86 | Common	Gargantuan |
+| Darvakka, Shadow, Undead, Unholy | 18	460 ( void healing )	40	+32	+29	+34	+32 | greater darkvision, lifesense 60 feet |  |  | 25 feet, burrow 60 feet, fly | Loading... |  |  |  |  |  |  | Loading... | Uthul |
+| Bestiary pg. 317 | Common	Huge | Air, Elemental |  | 14 | darkvision |  |  |  |  |  |  |  | fly 100 feet; swiftness | Vaklish |
+| Pathfinder #147: Tomorrow Must Burn pg. 54 | Unique	Medium | Fiend, Rakshasa, Unique |  | 12 | darkvision |  |  |  |  |  |  |  | 35 feet | Valerie (Level 1) |
+| Kingmaker Companion Guide pg. 83 | Unique	Medium | Human, Humanoid, Unique |  | 1 | (expert) |  |  |  |  |  |  |  | 25 feet | Valerie (Level 9) |
+| Kingmaker Companion Guide pg. 83 | Unique	Medium | Human, Humanoid, Unique |  | 9 | (master) |  |  |  |  |  |  |  | 25 feet | Valkyrie |
+| Aesir |  | Monster Core 2 pg. 15 |  | Common | Aesir, Monitor |  | 12 | 215 | 33 | +24 | +20 | +23 | darkvision | 25 feet, fly 60 feet |
+| Valkyrie Tempest |  | Prey for Death pg. 119 |  | Rare | Aesir, Monitor, Rare, Troop |  | 17 | 312 | 37 | +24 | +20 | +23 | darkvision | 25 feet, fly 60 feet |
+| Vampire Bat Swarm | Bat | Monster Core pg. 40 1.1 |  | Common | Animal, Swarm |  | 1 | 11 | 15 | +6 | +9 | +6 | echolocation (precise) 20 feet, low-light vision | 5 feet, fly 30 feet |
+| Vampire Count | Vampire | Monster Core pg. 336 1.1 |  | Common | Undead, Unholy, Vampire |  | 6 | 65 (coffin restoration, fast healing 7, void healing ) | 24 | +11 | +14 | +17 | darkvision | 25 feet, climb 25 feet |
+| Vampire Guardian | Vampire | Pathfinder #184: The Ghouls Hunger pg. 50 |  | Rare | Rare, Undead, Vampire |  | 10 | 132 (coffin restoration, fast healing 10 , negative healing ) | 29 | +17 | +19 | +21 | darkvision | 25 feet, climb 25 feet |
+| Vampire Mastermind | Vampire | Monster Core pg. 337 1.1 |  | Common | Undead, Unholy, Vampire |  | 9 | 115 (coffin restoration, fast healing 10, void healing ) | 27 | +15 | +18 | +20 | darkvision | 25 feet, climb 25 feet |
+| Vampire Nettle |  | Pathfinder #214: The Broken Palace pg. 86 |  | Uncommon | Mindless, Plant, Uncommon |  | 2 | 36 | 17 | +10 | +7 | +8 | tremorsense (imprecise) 30 feet | 10 feet |
+| Vampire Servant | Vampire | Pathfinder #213: Thirst for Blood pg. 67 |  | Common | Undead, Unholy, Vampire |  | 2 | 25 (coffin restoration, fast healing 5, void healing ) | 17 | +6 | +10 | +8 | darkvision | 25 feet, climb 25 feet |
+| Vampire Servitor | Vampire | Monster Core pg. 336 1.1 |  | Common | Undead, Unholy, Vampire |  | 4 | 40 (coffin restoration, fast healing 5, void healing ) | 22 | +9 | +13 | +11 | darkvision | 25 feet, climb 25 feet |
+| Vampire Squid | Squid | Bestiary 2 pg. 254 2.0 |  | Common | Animal, Aquatic |  | 0 | 15 | 16 | +4 | +8 | +6 | darkvision | swim 25 feet |
+| Vampire Taviah |  | Pathfinder #183: Field of Maidens pg. 59 |  | Unique | Undead, Unique, Vampire |  | 12 | 180 ( fast healing 10 , negative healing ) | 33 | +25 | +19 | +22 | darkvision, thoughtsense | 20 feet, climb 20 feet |
+| Vampiric Mist |  | Bestiary 2 pg. 278 2.0 |  | Common | Aberration |  | 3 | 35 | 18 | +8 | +12 | +9 | darkvision, sense blood (imprecise) 60 feet | fly 40 feet |
+| Vanara Disciple | Vanara | Monster Core 2 pg. 342 |  | Uncommon | Humanoid, Uncommon, Vanara |  | 1 | 16 | 19 | +5 | +9 | +8 | low-light vision | 25 feet, climb 15 feet |
+| Vanda |  | Rusthenge pg. 24 |  | Unique | Human, Humanoid, Unique |  | 2 | 30 | 16 | +8 | +4 | +10 | 20 feet | Vansidieth |
+| Demon |  | Pathfinder #212: A Voice in the Blight pg. 82 |  | Uncommon | Demon, Fiend, Uncommon, Unholy |  | 18 | 410 | 41 | +31 | +29 | +32 | darkvision, truesight | 35 feet, fly 35 feet |
+| Vanth | Psychopomp | Monster Core pg. 275 1.1 |  | Common | Monitor, Psychopomp |  | 7 | 105 | 27 | +15 | +13 | +17 | darkvision, lifesense 60 feet | 25 feet, fly 40 feet |
+| Vanth Guardian Flock | Psychopomp | Battlecry! pg. 192 |  | Common | Monitor, Psychopomp, Troop |  | 13 | 240 (4 segments) | 33 | +23 | +21 | +25 | darkvision, lifesense 60 feet | 25 feet, fly 40 feet; troop movement |
+| Vanth Warrior | Psychopomp | Pathfinder #186: Ghost King's Rage pg. 18 |  | Uncommon | Monitor, Psychopomp, Uncommon |  | 14 | 255 | 37 | +25 | +22 | +28 | darkvision, lifesense 60 feet | 25 feet, fly 40 feet |
+| Vanyver | Darvakka | Monster Core 2 pg. 84 |  | Common | Darvakka, Shadow, Undead, Unholy |  | 13 | 275 ( void healing ) | 34 | +29 | +23 | +22 | greater darkvision, lifesense 60 feet | 25 feet, fly 60 feet |
+| Vargouille |  | Crown of the Kobold King pg. 124, Pathfinder #157: Devil at the Dreaming Palace pg. 35 |  | Rare | Aberration, Fiend, Rare |  | 2 | 28 | 18 | +6 | +10 | +8 | darkvision | fly 25 feet |
+| Varilyn "Vare" Eridge |  | Pathfinder #176: Lost Mammoth Valley pg. 10 |  | Unique | Halfling, Human, Unique |  | 4 | 60 | 21 | +12 | +11 | +14 | 25 feet | Vaspercham |
+| Monster Core 2 pg. 343 | Common	Huge | Aberration, Aquatic |  | 17 | darkvision, see the unseen |  |  |  |  |  |  |  | 20 feet, swim 50 feet | Vatumledor |
+| Prey for Death pg. 120 | Unique	Huge | Dragon, Occult, Unique |  | 16 | (32 to Sense Motive) darkvision, scent (imprecise) 60 feet |  |  |  |  |  |  |  | 50 feet, climb 50 feet, fly 200 feet | Loading... |
+| Loading... | Vaultbreaker Ooze | Ooze |  |  | Pathfinder #158: Sixty Feet Under pg. 87 |  | Uncommon | Large |  |  |  |  | Mindless, Ooze, Uncommon | 6	150	13	+17	+10	+8	+10 |
+| motion sense 60 feet, treasure sense (imprecise) 30 feet | 20 feet, climb 10 feet | Vazgorlu |  |  | Pathfinder #150: Broken Promises pg. 83 |  | Rare | Large |  |  |  |  | Aberration, Astral, Rare | 20	380	45	+30	+33	+36	+33 |
+| darkvision | 30 feet, climb 30 feet | Veavieve |  |  | Pathfinder #194: Cult of the Cave Worm pg. 19 |  | Unique | Small |  |  |  |  | Fey, Unique | 6	100	24	+14	+17	+11	+14 |
+| darkvision | 30 feet | Vegetable Lamb |  |  | Elemental, Wood |  |  |  |  |  |  |  | Rage of Elements pg. 204 2.0 | Common	Small |
+| Elemental, Plant, Wood | 1	28	14	+6	+3	+8	+4 | 20 feet | Loading... |  | Loading... | Loading... |  |  |  |  |  |  | Velociraptor | Dinosaur |
+| Monster Core pg. 96 1.1 | Common	Small | Animal, Dinosaur |  | 1 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 40 feet | Velociraptor Pack |
+| Dinosaur |  | Monster Core 2 pg. 106 |  | Common | Animal, Dinosaur, Troop |  | 5 | 75 | 21 | +11 | +14 | +8 | low-light vision, scent (imprecise) 30 feet | 40 feet; troop movement |
+| Venator | Aeon | Monster Core 2 pg. 11 |  | Common | Aeon, Monitor |  | 13 | 230 | 33 | +21 | +25 | +24 | darkvision, locate target | 30 feet |
+| Venedaemon | Daemon | Monster Core pg. 73 1.1 |  | Common | Daemon, Fiend, Unholy |  | 5 | 75 | 21 | +9 | +11 | +14 | darkvision, smell magic (imprecise) 60 feet | 25 feet |
+| Venexus |  | Pathfinder #176: Lost Mammoth Valley pg. 91 |  | Unique | Cold, Dragon, Unique |  | 9 | 170 | 28 | +21 | +15 | +17 | darkvision, scent (imprecise) 60 feet, storm vision | 30 feet, fly 120 feet; ice climb 30 feet |
+| Venexus's Chosen |  | Pathfinder #176: Lost Mammoth Valley pg. 55 |  | Rare | Beast, Beastkin, Humanoid, Rare |  | 6 | 115 | 23 | +14 | +16 | +14 | darkvision, scent (imprecise) 30 feet | 35 feet |
+| Venexus's Wyrmlings |  | Pathfinder #176: Lost Mammoth Valley pg. 58 |  | Rare | Cold, Dragon, Rare |  | 5 | 90 | 22 | +12 | +15 | +9 | darkvision, scent (imprecise) 60 feet, snow vision | 30 feet, fly 60 feet, ice climb 30 feet |
+| Vengeful Shade |  | Pathfinder #218: Titanbane pg. 34 |  | Unique | Ghost, Incorporeal, Spirit, Undead, Unholy, Unique |  | 10 | 140 ( rejuvenation , void healing ) | 29 | +16 | +23 | +19 | darkvision | fly 40 feet |
+| Venomfist |  | Pathfinder #206: Bring the House Down pg. 88 |  | Unique | Amphibious, Elemental, Unholy, Unique, Water |  | 22 | 430 | 48 | +42 | +34 | +36 | greater darkvision, wavesense (precise) 120 feet | 40 feet, swim 120 feet |
+| Veranallia | Azata | Monster Core 2 pg. 53 |  | Common | Azata, Celestial, Holy |  | 20 | 475 | 45 | +33 | +30 | +36 | darkvision, tremorsense (imprecise) 120 feet | 40 feet, fly 40 feet |
+| Verdurous Ooze | Ooze | Monster Core 2 pg. 242 |  | Common | Mindless, Ooze |  | 6 | 157 | 12 | +17 | +8 | +10 | motion sense 60 feet, no vision | 15 feet |
+| Verex-That-Was | Spawn of Rovagug | War of Immortals pg. 207 |  | Unique | Aberration, Mythic, Unique |  | 24 | 550 | 51 | +42 | +38 | +36 | darkvision, truesight | 50 feet, burrow 30 feet |
+| Vermin Catcher | Laborer | NPC Core pg. 71 |  | Common | Human, Humanoid |  | 2 | 35 | 17 | +10 | +8 | +6 | 25 feet | Vermlek |
+| Demon |  | Monster Core 2 pg. 90 |  | Common | Demon, Fiend, Unholy |  | 3 | 55 | 16 | +11 | +8 | +6 | darkvision | 25 feet, burrow 15 feet |
+| Very Drunk Jinkin | Gremlin | Pathfinder #196: The Summer That Never Was pg. 29 |  | Uncommon | Fey, Gremlin, Uncommon |  | -1 | 9 | 12 | +2 | +4 | +2 | darkvision | 20 feet |
+| Vescavor Queen | Vescavor | Monster Core pg. 339 1.1 |  | Common | Fiend, Unholy |  | 9 | 150 | 28 | +17 | +19 | +15 | darkvision | 20 feet, fly 50 feet |
+| Vescavor Swarm | Vescavor | Monster Core pg. 338 1.1 |  | Common | Fiend, Swarm, Unholy |  | 5 | 60 | 21 | +11 | +15 | +9 | darkvision | 20 feet, fly 40 feet |
+| Veshumirix |  | Pathfinder #148: Fires of the Haunted City pg. 90 |  | Unique | Dragon, Fire, Unique |  | 16 | 300 | 39 | +29 | +28 | +26 | darkvision, scent (imprecise) 60 feet | 50 feet, fly 160 feet; magma swim 50 feet |
+| Vesinra |  | Pathfinder Adventure Path #219: Lord of the Trinity Star pg. 22 |  | Unique | Beast, Humanoid, Mythic, Unique |  | 11 | 195 | 31 | +18 | +23 | +22 | darkvision | 30 feet, climb 30 feet, swim 30 feet |
+| Vetalarana Emergent | Vampire, Vetalarana | Book of the Dead pg. 162 |  | Common | Undead, Vampire |  | 8 | 100 ( fast healing 10 , mental rebirth, negative healing ) | 26 | +14 | +17 | +16 | darkvision, thoughtsense (precise) 100 feet | 25 feet, climb 25 feet |
+| Vetalarana Manipulator | Vampire, Vetalarana | Book of the Dead pg. 163 |  | Uncommon | Uncommon, Undead, Vampire |  | 11 | 140 ( fast healing 10 , mental rebirth, negative healing ) | 28 | +19 | +19 | +24 | darkvision, thoughtsense (precise) 100 feet | 25 feet, climb 25 feet |
+| Veteran Noble | Courtier | NPC Core pg. 15 |  | Common | Human, Humanoid |  | 6 | 85 | 24 | +12 | +14 | +16 | 20 feet | Veteran Reclaimer |
+| Knights of Lastwall |  | Character Guide pg. 123 2.0 |  | Common | Human, Humanoid, Orc |  | 11 | 195 | 29 | +20 | +23 | +19 | darkvision, low-light vision | 25 feet; ignores the effects of non-magical difficult terrain |
+| Veteran War Horse |  | NPC Core pg. 218 |  | Common | Animal |  | 5 | 90 | 21 | +12 | +11 | +10 | low-light vision, scent (imprecise) 30 feet | 40 feet |
+| Vexgit | Gremlin | Bestiary 2 pg. 134 2.0 |  | Common | Fey, Gremlin |  | 1 | 24 | 16 | +5 | +9 | +6 | darkvision | 20 feet, climb 20 feet |
+| Loading... | Vibrant Pup Swarm | Howl of the Wild pg. 192 2.1 |  | Common | Animal, Swarm |  | 11 | 140 | 29 | +24 | +21 | +18 | tremorsense (precise) 60 feet | 30 feet, burrow 30 |
+| Loading... | Vicharamuni | Naga |  |  | Monster Core pg. 237 1.1 |  | Uncommon | Large |  |  |  |  | Beast, Holy, Uncommon | 10	175	31	+20	+21	+22	+22 |
+| darkvision | 25 feet, swim 25 feet | Vicious Army Ant Swarm |  |  | Kingmaker Adventure Path pg. 326 |  | Rare | Large |  |  |  |  | Animal, Rare, Swarm | 12	155	32	+25	+23	+19	+23 |
+| darkvision, scent (imprecise) | 30 feet, climb 30 feet | Vidileth |  |  | Alghollthu |  |  |  |  |  |  |  | Monster Core pg. 12 1.1 | Rare	Large |
+| Aberration, Aquatic, Rare | 14	270	34	+26	+22	+24	+25 | darkvision |  |  | 10 feet, swim 80 feet | Viewslog |  |  |  |  |  |  | Pathfinder #180: The Smoking Gun pg. 21 | Unique	Large |
+| Giant, Humanoid, Unique | 9	161	28	+21	+18	+15	+18 | low-light vision |  |  | 30 feet | Vigilia |  |  |  |  |  |  | Aeon | Monster Core 2 pg. 11 |
+| Common	Medium | Aeon, Monitor | 11	190	30	+23	+18	+20	+24 |  |  | darkvision, see the unseen |  |  |  |  |  |  |  | 30 feet | Vikandian |
+| Pathfinder #214: The Broken Palace pg. 60 | Unique	Medium | Undead, Unholy, Unique, Vampire |  | 8 | darkvision |  |  |  |  |  |  |  | 30 feet, climb 25 feet | Viking Guard |
+| Battlecry! pg. 193 | Common	Gargantuan | Human, Humanoid, Troop |  | 11 | 25 feet, troop movement | Viktor Volkano |  |  |  |  |  |  | Pathfinder #151: The Show Must Go On pg. 29 | Unique	Medium |
+| Human, Humanoid, Unique | 2	40	16	+11	+8	+8	+7 | 25 feet | Vilderavn |  | Monster Core pg. 340 1.1 |  | Rare | Medium |  |  |  |  | Fey, Rare | 16	300	40	+25	+30	+28	+28 |
+| greater darkvision, truesight | 40 feet, fly 120 feet | Vilderavn Herald |  |  | Vilderavn |  |  |  |  |  |  |  | Kingmaker Adventure Path pg. 614 | Rare	Medium |
+| Fey, Rare | 19	375	44	+31	+36	+33	+35 | greater darkvision, true seeing |  |  | 40 feet, fly 120 feet | Villamor Koth |  |  |  |  |  |  | Kingmaker Adventure Path pg. 347 | Unique	Medium |
+| Human, Humanoid, Unique | 15	350	35	+27	+23	+27	+27 | 35 feet | Loading... |  | Vine Lasher |  |  |  |  |  |  |  | Deadly Flora | The Fall of Plaguestone pg. 62 |
+| Common	Small | Plant | 0	15	16	+6	+7	+4	+4 |  |  | tremorsense (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet | Loading... |
+| Vinn Karskell |  | Pathfinder #214: The Broken Palace pg. 27 |  | Unique | Human, Humanoid, Unique |  | 6 | 93 | 24 | +8 | +16 | +13 | 35 feet | Violet |
+| Pathfinder #151: The Show Must Go On pg. 22 | Unique	Small | Animal, Unique |  | 1 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 30 feet | Violet Fungus |
+| Bestiary 2 pg. 286 2.0 | Common	Medium | Fungus, Mindless |  | 3 | no vision, tremorsense 60 feet |  |  |  |  |  |  |  | 10 feet | Viper |
+| Snake |  | Monster Core pg. 316 1.1 |  | Common | Animal |  | -1 | 8 | 14 | +2 | +7 | +5 | low-light vision, scent (imprecise) 30 feet | 20 feet, climb 20 feet, swim 20 feet |
+| Viper Bat |  | Pathfinder #214: The Broken Palace pg. 87 |  | Uncommon | Beast, Uncommon |  | 7 | 115 ( void healing ) | 24 | +17 | +12 | +15 | darkvision | 20 feet, fly 30 feet |
+| Viper Swarm | Snake | Monster Core 2 pg. 294 |  | Common | Animal, Swarm |  | 2 | 50 | 18 | +11 | +13 | +10 | low-light vision, scent (imprecise) 60 feet | 30 feet, climb 30 feet, swim 30 feet |
+| Viper Vine |  | Monster Core 2 pg. 350 |  | Common | Plant |  | 13 | 270 | 33 | +26 | +24 | +22 | low-light vision, tremorsense (imprecise) 60 feet | 20 feet |
+| Virthad |  | Kingmaker Adventure Path pg. 237 |  | Unique | Humanoid, Unique |  | 8 | 135 | 26 | +13 | +16 | +18 | darkvision | 25 feet |
+| Virtuosic Lyrebird |  | Howl of the Wild pg. 193 2.1 |  | Common | Beast |  | 6 | 65 | 24 | +9 | +17 | +14 | 15 feet, fly 60 feet | Virtuous Defender |
+| Knights of Lastwall |  | Character Guide pg. 122 2.0 |  | Common | Human, Humanoid |  | 4 | 70 | 22 | +12 | +6 | +12 | 20 feet | Virulak Necromancer |
+| Virulak |  | Pathfinder #182: Graveclaw pg. 87 |  | Rare | Rare, Undead |  | 7 | 115 ( negative healing ) | 24 | +15 | +12 | +18 | darkvision | 25 feet |
+| Virulak Villager | Virulak | Pathfinder #182: Graveclaw pg. 97 |  | Uncommon | Uncommon, Undead |  | 3 | 45 ( negative healing ) | 19 | +10 | +10 | +8 | darkvision | 25 feet |
+| Vischari |  | Pathfinder #164: Hands of the Devil pg. 34 |  | Unique | Humanoid, Unique, Urdefhan |  | 7 | 115 (negative healing) | 25 | +15 | +17 | +13 | greater darkvision | 25 feet |
+| Vishkanya Infiltrator | Vishkanya | Monster Core 2 pg. 3 |  | Rare | Humanoid, Rare, Vishkanya |  | 3 | 45 | 19 | +6 | +11 | +8 | low-light vision | 25 feet |
+| Viskithrel |  | Pathfinder #156: The Apocalypse Prophet pg. 84 |  | Uncommon | Beast, Uncommon |  | 15 | 275 | 37 | +25 | +27 | +23 | darkvision, scent (precise) 100 feet | 40 feet, swim 20 feet |
+| Vitalia |  | Pathfinder #155: Lord of the Black Sands pg. 84 |  | Rare | Aberration, Aquatic, Mindless, Rare |  | 18 | 425 ( fast healing 20 ) | 39 | +35 | +25 | +24 | bloodsense (precise) 30 feet, tremorsense (imprecise) 60 feet, no vision | 15 feet, swim 30 feet |
+| Vizier Archdragon | Dragon, Vizier | Draconic Codex pg. 189 |  | Rare | Dragon, Occult, Rare |  | 23 | 530 | 48 | +37 | +34 | +40 | darkvision, scent (imprecise) 120 feet | 60 feet, fly 250 feet, swim 60 feet |
+| Vizmivool |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 128 |  | Common | Human, Humanoid, Serpentfolk |  | 9 | 130 | 29 | +15 | +22 | +20 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Vloriak | Demon | Monster Core 2 pg. 91 |  | Common | Demon, Fiend, Unholy |  | 5 | 90 | 21 | +15 | +11 | +13 | darkvision | 25 feet |
+| Vlorian Cythnigot | Qlippoth | Rusthenge pg. 30 |  | Rare | Fiend, Qlippoth, Rare |  | 3 | 45 | 19 | +11 | +7 | +9 | darkvision | 30 feet |
+| Void Zombie |  | Bestiary 2 pg. 288 2.0 |  | Rare | Rare, Undead |  | 1 | 26 ( negative healing ) | 13 | +7 | +3 | +5 | darkvision | 25 feet |
+| Voidbracken Chuul |  | Pathfinder #165: Eyes of Empty Death pg. 57 |  | Rare | Aberration, Amphibious, Rare |  | 9 | 140 | 31 | +21 | +18 | +15 | darkvision, tremorsense (imprecise) 30 feet | 30 feet, swim 25 feet |
+| Voidglutton | Will-o'-Wisp | Pathfinder #163: Ruins of Gauntlight pg. 87 |  | Rare | Aberration, Air, Rare |  | 8 | 90 | 30 | +13 | +18 | +16 | darkvision | fly 40 feet |
+| Voidworm | Protean | Monster Core pg. 270 1.1 |  | Common | Monitor, Protean |  | 1 | 16 ( fast healing 1) | 17 | +5 | +9 | +6 | entropy sense (imprecise) 30 feet, darkvision | 20 feet, fly 40 feet; unfettered movement |
+| Volluk Azrinae |  | Pathfinder #163: Ruins of Gauntlight pg. 54 |  | Unique | Aberration, Swarm, Unique |  | 7 | 85 (fast healing 7) | 25 | +13 | +17 | +15 | darkvision, tremorsense (imprecise) 30 feet | 10 feet, swim 25 feet |
+| Volnagur | Spawn of Rovagug | Monster Core 2 pg. 299 |  | Unique | Beast, Unique |  | 22 | 515 | 48 | +39 | +36 | +33 | darkvision | 20 feet, fly 80 feet |
+| Volodmyra |  | Kingmaker Adventure Path pg. 38 |  | Unique | Human, Humanoid, Unique |  | 3 | 48 | 18 | +11 | +9 | +7 | 25 feet | Vool |
+| Pathfinder #214: The Broken Palace pg. 30 | Unique	Medium | Humanoid, Unique |  | 4 | darkvision |  |  |  |  |  |  |  | 30 feet, climb 20 feet | Vordakai |
+| Kingmaker Adventure Path pg. 606 | Unique	Large | Undead, Unique |  | 12 | darkvision, true seeing |  |  |  |  |  |  |  | 25 feet | Vordine |
+| Devil |  | Monster Core pg. 87 1.1 |  | Common | Devil, Fiend, Unholy |  | 5 | 60 | 22 | +14 | +13 | +10 | greater darkvision | 25 feet |
+| Vordine Legion | Devil | Battlecry! pg. 193 |  | Common | Devil, Fiend, Troop, Unholy |  | 10 | 180 (4 segments) | 29 | +22 | +19 | +16 | greater darkvision | 25 feet; troop movement |
+| Loading... | Vornen | Pathfinder #217: Death Sails a Wine-Dark Sea pg. 18 |  | Unique | Beast, Humanoid, Unique |  | 5 | 75 | 21 | +12 | +10 | +14 | darkvision | 25 feet |
+| Vorpal Archdragon | Dragon, Vorpal | Draconic Codex pg. 193 |  | Rare | Arcane, Dragon, Metal, Rare |  | 21 | 400 | 46 | +41 | +35 | +38 | darkvision, scent (imprecise) 150 feet | 25 feet, fly 200 feet |
+| Vorvorak | Crocodile | Shining Kingdoms pg. 186 |  | Common | Beast |  | 10 | 200 | 29 | +22 | +18 | +16 | darkvision, low-light vision | 40 feet, climb 30 feet, swim 30 feet; canal walker |
+| Voz Lirayne |  | Pathfinder #145: Hellknight Hill pg. 80 |  | Unique | Elf, Human, Humanoid, Unique |  | 5 | 56 (plus 10 temporary from false life ) | 20 | +10 | +12 | +9 | 25 feet | Vrolikai |
+| Demon |  | Monster Core pg. 82 1.1 |  | Common | Demon, Fiend, Unholy |  | 20 | 440 | 45 | +35 | +33 | +34 | darkvision, truesight | 35 feet, fly 50 feet |
+| Vrykolakas Ancient | Vampire, Vrykolakas | Bestiary 2 pg. 277 2.0 |  | Uncommon | Uncommon, Undead, Vampire |  | 13 | 250 ( negative healing ) | 34 | +23 | +24 | +21 | darkvision | 40 feet, climb 20 feet |
+| Vrykolakas Master | Vampire, Vrykolakas | Bestiary 2 pg. 276 2.0 |  | Common | Undead, Vampire |  | 10 | 190 ( negative healing ) | 30 | +19 | +21 | +17 | darkvision | 40 feet, climb 20 feet |
+| Vrykolakas Spawn | Vampire, Vrykolakas | Bestiary 2 pg. 276 2.0 |  | Common | Undead, Vampire |  | 6 | 99 ( negative healing ) | 24 | +14 | +16 | +12 | darkvision | 40 feet, climb 20 feet |
+| Vulot |  | War of Immortals pg. 177 |  | Unique | Demon, Fiend, Mythic, Unholy, Unique |  | 21 | 425 | 46 | +32 | +35 | +38 | darkvision, many eyes in many places, truesight | 30 feet |
+| Vulpinal | Agathion | Monster Core 2 pg. 17 |  | Common | Agathion, Celestial, Holy |  | 6 | 105 | 23 | +12 | +14 | +15 | darkvision | 30 feet |
+| Vulture Rat | Rat | Travel Guide pg. 99 |  | Common | Animal |  | -1 | 8 | 15 | +6 | +7 | +3 | low-light vision, scent (imprecise) 30 feet | 30 feet, climb 10 feet |
+| Wailing Archdragon | Dragon, Wailing | Draconic Codex pg. 197 |  | Rare | Arcane, Dragon, Rare |  | 18 | 400 | 41 | +30 | +33 | +28 | darkvision, echolocation (precise) 120 feet | 55 feet, fly 120 feet |
+| Walcofinde |  | Shining Kingdoms pg. 187 |  | Common | Undead, Unholy |  | 2 | 35 ( void healing ) | 17 | +10 | +4 | +7 | darkvision, tremorsense (imprecise) 30 feet | 25 feet; Wall Glide |
+| Waldgeist | Verdorite | Book of the Dead pg. 164 |  | Uncommon | Incorporeal, Spirit, Uncommon, Undead |  | 8 | 100 ( negative healing ) | 26 | +13 | +16 | +18 | darkvision | fly 30 feet |
+| War Aurochs | War Beast | Pathfinder #209: Destroyer's Doom pg. 87 |  | Common | Animal |  | 9 | 195 | 27 | +21 | +18 | +15 | low-light vision, scent (imprecise) 10 feet | 30 feet |
+| War Champion Kharostan |  | Pathfinder #155: Lord of the Black Sands pg. 88 |  | Unique | Fiend, Humanoid, Unique, Urdefhan |  | 16 | 280 ( negative healing ) | 38 | +28 | +30 | +25 | greater darkvision, true seeing | 30 feet, climb 30 feet |
+| War Horse | Horse | Monster Core pg. 201 1.1 |  | Common | Animal |  | 2 | 36 | 17 | +8 | +7 | +6 | low-light vision, scent (imprecise) 30 feet | 40 feet |
+| War Pig |  | Pathfinder #208: Hoof, Cinder, and Storm pg. 87 |  | Common | Animal |  | 6 | 110 | 23 | +17 | +12 | +13 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| War Pony | Horse | Monster Core pg. 201 1.1 |  | Common | Animal |  | 1 | 20 | 16 | +8 | +7 | +5 | low-light vision, scent (imprecise) 30 feet | 35 feet |
+| War Sauropelta |  | Pathfinder #154: Siege of the Dinosaurs pg. 46 |  | Uncommon | Animal, Dinosaur, Uncommon |  | 12 | 220 | 34 | +25 | +20 | +22 | low-light vision | 25 feet |
+| War Wraith | Wraith | Monster Core 2 pg. 356 |  | Common | Incorporeal, Undead, Unholy, Wraith |  | 9 | 130 ( void healing ) | 27 | +16 | +19 | +21 | darkvision, lifesense 60 feet | fly 60 feet |
+| Warbal Bumblebrasher |  | Pathfinder #145: Hellknight Hill pg. 83 |  | Unique | Goblin, Humanoid, Unique |  | 1 | 20 | 15 | +5 | +5 | +5 | darkvision | 25 feet |
+| Warcat of Rull | War Beast | Pathfinder #209: Destroyer's Doom pg. 87 |  | Common | Animal |  | 13 | 233 | 34 | +24 | +29 | +23 | low-light vision, scent (imprecise) 30 feet | 40 feet, climb 20 feet |
+| Warden | Official | NPC Core pg. 117 |  | Common | Human, Humanoid |  | 6 | 100 | 24 | +15 | +15 | +11 | 25 feet | Warden of Caverns and Burrows |
+| Wardens of the Wild |  | Howl of the Wild pg. 203 2.1 |  | Unique | Beast, Earth, Unique |  | 22 | 500 | 45 | +39 | +36 | +33 | darkvision, tremorsense (imprecise) 60 feet | 40 feet, burrow 40 feet |
+| Warden of Forests and Meadows | Wardens of the Wild | Howl of the Wild pg. 205 2.1 |  | Unique | Beast, Unique, Wood |  | 22 | 435 | 48 | +34 | +42 | +36 | greater darkvision, scent (imprecise) 1 mile | 60 feet, climb 30 feet; forest passage |
+| Warden of Ocean and Rivers | Wardens of the Wild | Howl of the Wild pg. 207 2.1 |  | Unique | Aquatic, Beast, Unique, Water |  | 22 | 540 | 47 | +39 | +36 | +33 | darkvision, scent (imprecise) 200 feet | swim 100 feet |
+| Warden of Peaks and Skies | Wardens of the Wild | Howl of the Wild pg. 209 2.1 |  | Unique | Air, Beast, Unique |  | 22 | 445 | 48 | +36 | +40 | +38 | darkvision, scent (imprecise) 60 feet, stormsight | 60 feet, fly 240 feet; unfettered movement |
+| Warg | Warg | Monster Core pg. 341 1.1 |  | Common | Beast |  | 2 | 36 | 17 | +11 | +9 | +6 | darkvision, scent (imprecise) 30 feet | 40 feet |
+| Warmonger | Villain | NPC Core pg. 161 |  | Common | Human, Humanoid |  | 10 | 200 | 29 | +21 | +20 | +16 | 30 feet, climb 10 feet, swim 20 feet | Warsworn |
+| Monster Core pg. 342 1.1 | Uncommon	Gargantuan | Uncommon, Undead, Unholy |  | 16 | darkvision |  |  |  |  |  |  |  | 30 feet | Wasp Swarm |
+| Wasp |  | Monster Core pg. 343 1.1 |  | Common | Animal, Swarm |  | 4 | 45 | 18 | +10 | +12 | +8 | darkvision | 20 feet, fly 40 feet |
+| Watch Officer | Official | NPC Core pg. 113 |  | Common | Human, Humanoid |  | 3 | 45 | 19 | +10 | +6 | +8 | (9 to Sense Motive) | 25 feet |
+| Watchmage | Official | NPC Core pg. 115 |  | Common | Human, Humanoid |  | 5 | 70 | 21 | +9 | +12 | +14 | 25 feet | Watchmage Squadron |
+| Official |  | NPC Core pg. 120 |  | Common | Human, Humanoid, Troop |  | 10 | 180 (4 segments) | 30 | +22 | +16 | +19 | invisibility scan | 25 feet, troop movement |
+| Watchtower Poltergeist |  | Pathfinder #166: Despair on Danger Island pg. 35 |  | Unique | Incorporeal, Spirit, Undead, Unique |  | 14 | 190 (rejuvenation) | 36 | +22 | +27 | +26 | darkvision | fly 20 feet |
+| Watchtower Shadow |  | Pathfinder #166: Despair on Danger Island pg. 36 |  | Unique | Incorporeal, Undead, Unique |  | 15 | 190 (rejuvenation) | 36 | +21 | +29 | +26 | darkvision | fly 30 feet |
+| Watchtower Wraith |  | Pathfinder #166: Despair on Danger Island pg. 36 |  | Unique | Incorporeal, Undead, Unique, Wraith |  | 16 | 285 ( negative healing ) | 39 | +22 | +28 | +28 | darkvision, lifesense 60 feet | fly 40 feet |
+| Water Orm |  | Monster Core 2 pg. 352 |  | Rare | Aquatic, Beast, Rare, Water |  | 10 | 170 | 30 | +21 | +19 | +17 | darkvision | 20 feet, swim 50 feet |
+| Water Scamp | Elemental, Scamp | Monster Core pg. 147 1.1 |  | Common | Elemental, Water |  | 1 | 20 ( fast healing 2 (while underwater)) | 16 | +7 | +11 | +4 | darkvision | 20 feet, fly 25 feet, swim 25 feet |
+| Water Wisp | Elemental, Wisp | Monster Core 2 pg. 153 |  | Common | Elemental, Water |  | 0 | 20 | 13 | +8 | +4 | +4 | darkvision, mist vision | 25 feet, swim 25 feet |
+| Waxen Effigy |  | Pathfinder #205: Singer, Stalker, Skinsaw Man pg. 89 |  | Rare | Ooze, Rare, Undead |  | 18 | 415 ( void healing ) | 38 | +31 | +24 | +27 | darkvision | 20 feet, climb 20 feet |
+| Wayang Whisperblade | Wayang | Monster Core 2 pg. 353 |  | Uncommon | Humanoid, Shadow, Uncommon, Wayang |  | 1 | 19 | 16 | +6 | +9 | +5 | darkvision | 25 feet |
+| Wealthy Vigilante | Villain | NPC Core pg. 160 |  | Rare | Human, Humanoid, Rare |  | 8 | 120 | 27 | +12 | +17 | +15 | 25 feet | Weapon Master |
+| Pathfinder #166: Despair on Danger Island pg. 22 | Uncommon	Medium | Human, Humanoid, Uncommon |  | 13 | 25 feet | Loading... |  |  |  |  |  |  | Weaver Of Webs | War of Immortals pg. 214 |
+| Unique	Gargantuan | Beast, Mythic, Unique | 15	335	36	+26	+23	+29	+32 |  |  | all-around vision, greater darkvision, tremorsense (imprecise) |  |  |  |  |  |  |  | 60 feet, climb 60 feet | Web Lurker |
+| Bestiary pg. 325 | Common	Medium | Aberration |  | 3 | darkvision, tremorsense (imprecise) 30 feet (creatures touching its web) |  |  |  |  |  |  |  | 25 feet, climb 25 feet | Weeping Jack |
+| Pathfinder #184: The Ghouls Hunger pg. 61 | Unique	Small | Undead, Unique, Vampire |  | 13 | darkvision |  |  |  |  |  |  |  | 25 feet, climb 25 feet | Wemmuth |
+| Monster Core 2 pg. 354 | Common	Huge | Plant |  | 15 | darkvision, tremorsense (imprecise) 60 feet |  |  |  |  |  |  |  | 25 feet, burrow 25 feet, climb 25 feet | Wendigo |
+| Bestiary pg. 327 | Uncommon	Large | Beast, Cold, Uncommon |  | 17 | darkvision, heatsight 60 feet |  |  |  |  |  |  |  | fly 100 feet | Wendlyn |
+| No-Prep Character: Wendlyn | Unique	Medium | Elf, Half-Elf, Human, Humanoid, Unique |  | 2 | low-light vision |  |  |  |  |  |  |  | 30 feet; mobility | Wereant Disciple |
+| Werecreature, Wereant |  | Pathfinder #174: Shadows of the Ancients pg. 86 |  | Rare | Beast, Human, Humanoid, Rare, Werecreature |  | 16 | 305 | 39 | +28 | +30 | +25 | darkvision, scent (imprecise) 30 feet | 40 feet, fly 60 feet |
+| Wereant Poisoner | Werecreature, Wereant | Pathfinder #174: Shadows of the Ancients pg. 87 |  | Rare | Beast, Human, Humanoid, Rare, Werecreature |  | 17 | 350 | 40 | +27 | +32 | +29 | darkvision, scent (imprecise) 30 feet | 40 feet |
+| Wereant Sentinel | Werecreature, Wereant | Pathfinder #174: Shadows of the Ancients pg. 50 |  | Rare | Beast, Human, Humanoid, Rare, Werecreature |  | 19 | 400 | 43 | +35 | +29 | +32 | darkvision, scent (imprecise) 30 feet | 40 feet |
+| Loading... | Werebat Warrior | Werecreature |  |  | Pathfinder #213: Thirst for Blood pg. 89 |  | Uncommon | Medium |  |  |  |  | Beast, Human, Humanoid, Uncommon, Werecreature | 3	45	19	+10	+11	+8	+10 |
+| echolocation (precise) 40 feet, low-light vision | 25 feet, fly 25 feet | Werebear |  |  | Werecreature |  |  |  |  |  |  |  | Monster Core pg. 346 1.1 | Uncommon	Large |
+| Beast, Human, Humanoid, Uncommon, Werecreature | 4	75	23	+12	+10	+10	+11 | low-light vision, scent (imprecise) 30 feet |  |  | 25 feet | Wereboar |  |  |  |  |  |  | Werecreature | Bestiary 2 pg. 290 2.0 |
+| Common	Medium | Beast, Human, Humanoid, Werecreature | 2	45	18	+10	+5	+8	+8 |  |  | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 25 feet | Loading... |
+| Weremoose | Werecreature | Howl of the Wild pg. 196 2.1 |  | Common | Beast, Human, Humanoid, Werecreature |  | 3 | 60 | 19 | +11 | +8 | +6 | low-light vision, scent (imprecise) 60 feet | 30 feet |
+| Werendegar |  | Kingmaker Adventure Path pg. 488 |  | Unique | Fey, Unique |  | 21 | 374 | 47 | +36 | +39 | +33 | hungersense (imprecise, low-light vision) | 30 feet; trickster's step |
+| Wererat |  | Monster Core pg. 345 1.1 |  | Common | Beast, Human, Humanoid, Werecreature |  | 2 | 45 | 19 | +6 | +10 | +8 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Wereshark | Werecreature | Howl of the Wild pg. 197 2.1 |  | Common | Amphibious, Beast, Human, Humanoid, Werecreature |  | 4 | 75 | 21 | +12 | +11 | +8 | blood scent, scent (imprecise) 100 feet | 25 feet, swim 25 feet |
+| Weretiger | Werecreature | Monster Core pg. 347 1.1 |  | Common | Beast, Human, Humanoid, Werecreature |  | 4 | 75 | 21 | +11 | +13 | +9 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Werewolf | Werecreature | Monster Core pg. 346 1.1 |  | Common | Beast, Human, Humanoid, Werecreature |  | 3 | 63 | 17 | +11 | +9 | +7 | low-light vision, scent (imprecise) 30 feet | 25 feet |
+| Weykoward |  | Pathfinder #177: Burning Tundra pg. 83 |  | Uncommon | Construct, Mindless, Uncommon |  | 10 | 145 | 29 | +23 | +19 | +16 | darkvision | 25 feet |
+| Whalesteed | Dolphin | Travel Guide pg. 99 |  | Common | Animal |  | 0 | 16 | 15 | +6 | +7 | +5 | aquatic echolocation 120 feet, low-light vision | swim 60 feet |
+| Whimwyrm |  | Kingmaker Adventure Path pg. 615 |  | Rare | Air, Dragon, Rare |  | 17 | 280 | 42 | +29 | +34 | +29 | darkvision, fog vision, scent (imprecise) 30 feet | 30 feet, fly 60 feet |
+| Whipping Willow | Elemental, Wood | Rage of Elements pg. 207 2.0 |  | Common | Elemental, Plant, Wood |  | 4 | 75 | 20 | +10 | +8 | +14 | 30 feet, climb 40 feet | Whisper Archdragon |
+| Dragon, Whisper |  | Draconic Codex pg. 102 |  | Rare | Dragon, Occult, Rare |  | 20 | 370 | 44 | +35 | +34 | +37 | (35 to Sense Motive) darkvision, scent (imprecise) 60 feet | 60 feet, fly 200 feet |
+| Wight | Wight | Monster Core pg. 348 1.1 |  | Common | Undead, Unholy, Wight |  | 3 | 40 (fueled by spite, void healing ) | 18 | +11 | +6 | +10 | darkvision | 25 feet |
+| Wight Battalion | Wight | Battlecry! pg. 194 |  | Common | Troop, Undead, Unholy, Wight |  | 9 | 150 (4 segments, fueled by spite, void healing ) | 27 | +21 | +15 | +18 | darkvision | 25 feet; troop movement |
+| Wight Commander | Wight | Book of the Dead pg. 169 |  | Rare | Rare, Undead, Wight |  | 12 | 220 ( negative healing ) | 32 | +24 | +19 | +21 | (+26 when rolling initiative) darkvision | 25 feet |
+| Wight Cultist |  | Pathfinder #154: Siege of the Dinosaurs pg. 34 |  | Rare | Rare, Undead |  | 12 | 235 ( negative healing ) | 32 | +24 | +20 | +22 | darkvision | 25 feet |
+| Wihsaak | Sahkil | Monster Core 2 pg. 275 |  | Common | Fiend, Sahkil, Unholy |  | 6 | 105 | 24 | +14 | +15 | +14 | darkvision | 30 feet, fly 40 feet |
+| Wild Hunt Archer | Wild Hunt | Kingmaker Adventure Path pg. 618 |  | Rare | Fey, Rare, Wild Hunt |  | 16 | 340 | 39 | +26 | +32 | +28 | greater darkvision, greensight, scent (imprecise) 30 feet, true seeing | 25 feet |
+| Wild Hunt Horse | Wild Hunt | Kingmaker Adventure Path pg. 617 |  | Rare | Fey, Rare, Wild Hunt |  | 15 | 320 | 37 | +27 | +23 | +29 | greater darkvision, greensight, scent (imprecise) 30 feet | 80 feet, fly 80 feet |
+| Wild Hunt Hound | Wild Hunt | Kingmaker Adventure Path pg. 616 |  | Rare | Fey, Rare, Wild Hunt |  | 14 | 300 | 36 | +27 | +24 | +25 | greater darkvision, greensight, scent | 50 feet |
+| Wild Hunt Monarch | Wild Hunt | Kingmaker Adventure Path pg. 620 |  | Rare | Fey, Rare, Wild Hunt |  | 20 | 450 | 46 | +33 | +32 | +35 | greater darkvision, greensight, scent (imprecise) 30 feet | 40 feet |
+| Wild Hunt Scout | Wild Hunt | Kingmaker Adventure Path pg. 619 |  | Rare | Fey, Rare, Wild Hunt |  | 18 | 380 | 42 | +28 | +30 | +34 | greater darkvision, greensight, scent (imprecise) 30 feet | 40 feet |
+| Wildwood Sentry |  | Pathfinder #203 Shepherd of Decay pg. 10 |  | Uncommon | Human, Humanoid, Uncommon |  | 9 | 155 | 28 | +18 | +20 | +18 | 25 feet | Will-O'-Wisp |
+| Monster Core pg. 349 1.1 | Common	Small | Aberration, Air |  | 6 | darkvision |  |  |  |  |  |  |  | fly 50 feet | Windchaser |
+| Kingmaker Adventure Path pg. 105 | Unique	Large | Beast, Unique |  | 8 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 40 feet | Winged Owlbear |
+| Kingmaker Adventure Path pg. 451 | Common	Gargantuan | Animal |  | 18 | low-light vision, scent (imprecise) 30 feet |  |  |  |  |  |  |  | 30 feet, fly 50 feet | Winter Hag |
+| Hag |  | Monster Core 2 pg. 187 |  | Common | Hag, Humanoid |  | 7 | 145 | 24 | +14 | +13 | +16 | darkvision, see the unseen, snow vision | 25 feet; ice climb 25 feet |
+| Wish Archdragon | Dragon, Wish | Draconic Codex pg. 201 |  | Rare | Arcane, Dragon, Rare |  | 22 | 475 | 48 | +35 | +35 | +39 | darkvision, scent (imprecise) 60 feet | 60 feet, climb 60 feet, fly 240 feet |
+| Witchfire |  | Bestiary 2 pg. 293 2.0 |  | Uncommon | Incorporeal, Spirit, Uncommon, Undead |  | 9 | 125 ( negative healing ) | 28 | +15 | +21 | +18 | darkvision | fly 40 feet |
+| Witchwarg | Warg | Monster Core pg. 341 1.1 |  | Common | Beast, Cold |  | 5 | 70 | 23 | +13 | +15 | +10 | darkvision, scent (imprecise) 30 feet | 40 feet |
+| Witchwyrd |  | Monster Core 2 pg. 355, Pathfinder #149: Against the Scarlet Triad pg. 90 |  | Uncommon | Humanoid, Uncommon |  | 6 | 110 | 22 | +13 | +13 | +15 | darkvision | 25 feet |
+| Withered | Zombie | Book of the Dead pg. 172 |  | Common | Undead, Zombie |  | 5 | 80 ( negative healing ) | 22 | +11 | +13 | +9 | darkvision | 35 feet |
+| Loading... | Wolf | Wolf |  |  | Monster Core pg. 350 1.1 |  | Common | Medium |  |  |  |  | Animal | 1	24	15	+6	+9	+5	+7 |
+| low-light vision, scent (imprecise) 30 feet | 35 feet | Wolf Pack |  |  | Wolf |  |  |  |  |  |  |  | Battlecry! pg. 194 | Common	Gargantuan |
+| Animal, Troop | 6	90 (4 segments)	23	+14	+17	+11	+17 | low-light vision, scent (imprecise) 30 feet |  |  | 35 feet; troop movement | Wolf Skeleton |  |  |  |  |  |  | Skeleton | Monster Core 2 pg. 289 |
+| Common	Medium | Mindless, Skeleton, Undead, Unholy | 0	12 ( void healing )	16	+3	+8	+6	+8 |  |  | darkvision |  |  |  |  |  |  |  | 35 feet | Wolgur Wrabs |
+| Pathfinder #200: Seven Dooms for Sandpoint pg. 32 | Unique	Medium | Ghoul, Undead, Unique |  | 5 | darkvision |  |  |  |  |  |  |  | 30 feet, burrow 5 feet | Loading... |
+| Wolverine | Wolverine | Bestiary 2 pg. 295 2.0 |  | Common | Animal |  | 2 | 34 | 18 | +9 | +7 | +6 | low-light vision, scent (imprecise) 30 feet | 25 feet, burrow 10 feet, climb 10 feet |
+| Wood Giant | Giant | Bestiary 2 pg. 124 2.0 |  | Common | Giant, Humanoid |  | 6 | 120 | 24 | +17 | +14 | +13 | low-light vision | 35 feet |
+| Wood Golem | Golem | Bestiary 2 pg. 130 2.0 |  | Uncommon | Construct, Golem, Mindless, Uncommon |  | 6 | 95 | 23 | +15 | +16 | +12 | darkvision | 25 feet |
+| Wood Scamp | Elemental, Scamp | Rage of Elements pg. 205 2.0 |  | Common | Elemental, Plant, Wood |  | 1 | 24 | 14 | +6 | +4 | +10 | darkvision | 20 feet, fly 25 feet |
+| Wood Wisp | Elemental, Wisp | Rage of Elements pg. 204 2.0 |  | Common | Elemental, Plant, Wood |  | 0 | 20 | 16 | +5 | +2 | +8 | darkvision | fly 20 feet, climb 40 feet |
+| Woodland Scouts | Elf | NPC Core pg. 179 |  | Common | Elf, Humanoid, Troop |  | 8 | 120 (4 segments) | 27 | +12 | +18 | +16 | low-light vision | 30 feet; forest passage, troop movement |
+| Woodweave Caterpillar |  | Pathfinder #203 Shepherd of Decay pg. 36 |  | Rare | Animal, Rare, Wood |  | 12 | 255 | 33 | +24 | +20 | +22 | darkvision | 40 feet, climb 40 feet |
+| Woolly Rhinoceros | Rhinoceros | Monster Core pg. 293 1.1 |  | Common | Animal |  | 6 | 100 | 25 | +17 | +11 | +15 | scent (imprecise) 30 feet | 35 feet |
+| Wooly Wrangler | Explorer | NPC Core pg. 57 |  | Common | Human, Humanoid |  | 8 | 125 | 26 | +19 | +12 | +16 | 25 feet | Worknesh |
+| Pathfinder #172: Secrets of the Temple City pg. 952 | Unique	Medium | Human, Humanoid, Unique |  | 16 | 25 feet | World Ender |  |  |  |  |  |  | Villain | NPC Core pg. 163 |
+| Rare	Medium | Human, Humanoid, Rare | 16	275	36	+30	+26	+28	+25 |  |  | 25 feet | Worm Prophet |  |  |  |  |  |  | Night of the Gray Death pg. 47 | Rare	Medium |
+| Human, Humanoid, Rare | 18	335	42	+27	+30	+33	+28 | 25 feet | Worm Prophet |  | Swarm Strider |  |  |  |  |  |  |  | Monster Core 2 pg. 312 | Uncommon	Medium |
+| Aberration, Swarm, Uncommon, Unholy | 12	160	32	+20	+20	+25	+23 | darkvision, tremorsense (imprecise) 30 feet |  |  | 25 feet, burrow 15 feet | Worm That Walks Cultist |  |  |  |  |  |  | Worm That Walks | Bestiary 2 pg. 297 2.0 |
+| Uncommon	Medium | Aberration, Swarm, Uncommon | 14	200 ( fast healing 10 )	36	+23	+28	+26	+25 |  |  | darkvision, tremorsense (imprecise) 30 feet |  |  |  |  |  |  |  | 30 feet | Wraith |
+| Wraith |  | Monster Core pg. 351 1.1 |  | Common | Incorporeal, Undead, Unholy, Wraith |  | 6 | 80 ( void healing ) | 24 | +8 | +14 | +14 | darkvision, lifesense 60 feet | fly 40 feet |
+| Wraithvine |  | Pathfinder #201: Pactbreaker pg. 30 |  | Common | Fungus, Plant, Wraithvine |  | 7 | 120 | 25 | +17 | +12 | +13 | darkvision, lifesense 30 feet | 20 feet |
+| Loading... | Loading... | Wrin Sivinxi |  |  | Pathfinder #163: Ruins of Gauntlight pg. 90 |  | Unique | Medium |  |  |  |  | Elf, Humanoid, Tiefling, Unique | 5	75	20	+9	+15	+12	+12 |
+| low-light vision, spirit sight (precise) 30 feet | 25 feet | Wyrmwraith |  |  | Wyrmwraith |  |  |  |  |  |  |  | Pathfinder #150: Broken Promises pg. 84 | Rare	Gargantuan |
+| Dragon, Incorporeal, Rare, Undead, Wraith | 17	280 ( negative healing )	39	+29	+32	+32	+29 | darkvision, lifesense 120 feet |  |  | 50 feet, fly 80 feet | Wyrmwraith |  |  |  |  |  |  | Wyrmwraith | Draconic Codex pg. 202 |
+| Rare	Gargantuan | Dragon, Incorporeal, Rare, Undead, Unholy, Wraith | 17	280 ( void healing )	39	+29	+32	+35	+29 |  |  | darkvision, lifesense 120 feet |  |  |  |  |  |  |  | 50 feet, fly 80 feet | Wyrwood Sneak |
+| Wyrwood |  | Monster Core 2 pg. 357 |  | Rare | Construct, Rare, Wyrwood |  | 1 | 15 | 16 | +3 | +9 | +8 | darkvision | 20 feet |
+| Wyvern | Drake | Monster Core pg. 131 1.1 |  | Common | Dragon |  | 6 | 95 | 24 | +16 | +12 | +13 | darkvision, scent (imprecise) 30 feet | 20 feet, fly 60 feet |
+| Xae |  | Kingmaker Companion Guide pg. 38 |  | Common | Ghost, Incorporeal, Spirit, Undead |  | 11 | 150 ( negative healing , rejuvenation) | 28 | +19 | +20 | +19 | darkvision | fly 25 feet |
+| Xevalorg |  | Pathfinder #148: Fires of the Haunted City pg. 14 |  | Unique | Aberration, Unique |  | 13 | 235 | 34 | +26 | +20 | +23 | darkvision | 40 feet, climb 20 feet |
+| Xilvirek |  | Pathfinder #154: Siege of the Dinosaurs pg. 84 |  | Uncommon | Fiend, Uncommon |  | 12 | 215 | 34 | +26 | +21 | +19 | darkvision, psionic scent (imprecise) 120 feet | 40 feet, swim 30 feet |
+| Ximtal | Sahkil | Monster Core 2 pg. 277 |  | Common | Fiend, Sahkil, Unholy |  | 17 | 380 | 39 | +32 | +26 | +28 | darkvision, truesight | 40 feet, climb 20 feet; fly |
+| Xin Yue |  | Pathfinder #197: Let the Leaves Fall pg. 90 |  | Unique | Undead, Unique |  | 7 | 90 | 25 | +11 | +13 | +17 | darkvision | 25 feet |
+| Xiuh Coatl | Coatl | Monster Core 2 pg. 75 |  | Rare | Beast, Coatl, Holy, Rare |  | 12 | 220 | 33 | +20 | +19 | +25 | darkvision, thoughtsense (imprecise) 60 feet | 20 feet, fly 60 feet |
+| Loading... | Xoarian | Dominion of the Black |  |  | Monster Core pg. 105 1.1 |  | Uncommon | Small |  |  |  |  | Aberration, Uncommon | 8	130	26	+14	+16	+18	+16 |
+| thoughtsense 60 feet, tremorsense 60 feet | 35 feet, climb 20 feet | Loading... | Xotani |  | Spawn of Rovagug |  |  |  |  |  |  |  | Pathfinder #150: Broken Promises pg. 81 | Unique	Gargantuan |
+| Beast, Fire, Unique | 20	385	48	+36	+33	+30	+39 | blindsight (precise) 120 feet, darkvision |  |  | 60 feet, burrow 40 feet, climb 60 feet | Xotanispawn |  |  |  |  |  |  | Pathfinder #149: Against the Scarlet Triad pg. 91 | Rare	Large |
+| Animal, Fire, Rare | 17	340	40	+31	+29	+23	+29 | darkvision, tremorsense (imprecise) 60 feet |  |  | 40 feet, burrow 40 feet, climb 40 feet | Xulgath Army |  |  |  |  |  |  | Xulgath | Battlecry! pg. 194 |
+| Common	Gargantuan | Humanoid, Troop, Xulgath | 6	99 (4 segments)	23	+17	+14	+11	+14 |  |  | darkvision |  |  |  |  |  |  |  | 25 feet; troop movement | Xulgath Bilebearer |
+| Xulgath |  | Pathfinder #151: The Show Must Go On pg. 87 |  | Common | Humanoid, Xulgath |  | 2 | 30 | 18 | +8 | +10 | +4 | darkvision | 25 feet |
+| Xulgath Bomber |  | Pathfinder #153: Life's Long Shadows pg. 28 |  | Uncommon | Humanoid, Uncommon, Xulgath |  | 7 | 115 | 25 | +12 | +17 | +15 | darkvision | 25 feet |
+| Xulgath Deepmouth | Xulgath | Pathfinder #155: Lord of the Black Sands pg. 85 |  | Uncommon | Humanoid, Uncommon, Xulgath |  | 12 | 215 | 33 | +18 | +22 | +25 | darkvision | 25 feet |
+| Xulgath Demon-Caller |  | Pathfinder #152: Legacy of the Lost God pg. 26 |  | Unique | Humanoid, Unique, Xulgath |  | 5 | 80 | 22 | +11 | +8 | +13 | darkvision | 25 feet |
+| Xulgath Dinosaur Cavalry | Xulgath | Battlecry! pg. 195 |  | Common | Animal, Dinosaur, Humanoid, Troop, Xulgath |  | 13 | 240 (4 segments) | 33 | +29 | +20 | +23 | low-light vision, scent (imprecise) 30 feet | 30 feet; troop movement |
+| Xulgath Gutrager | Xulgath | Pathfinder #154: Siege of the Dinosaurs pg. 85 |  | Common | Humanoid, Xulgath |  | 10 | 190 | 28 | +23 | +22 | +17 | darkvision | 40 feet |
+| Xulgath Hardscale |  | Pathfinder #154: Siege of the Dinosaurs pg. 53 |  | Common | Humanoid, Xulgath |  | 12 | 215 | 32 | +25 | +22 | +19 | (23 when using for initiative) | 25 feet |
+| Xulgath Herd-Tender |  | Pathfinder #154: Siege of the Dinosaurs pg. 10 |  | Common | Humanoid, Xulgath |  | 8 | 135 | 27 | +18 | +16 | +14 | darkvision | 25 feet |
+| Xulgath Leader | Xulgath | Monster Core pg. 353 1.1 |  | Common | Humanoid, Xulgath |  | 3 | 44 | 18 | +9 | +6 | +9 | darkvision | 25 feet |
+| Xulgath Mage |  | Pathfinder #152: Legacy of the Lost God pg. 27 |  | Common | Humanoid, Xulgath |  | 7 | 115 | 23 | +12 | +13 | +14 | darkvision | 25 feet |
+| Loading... | Xulgath Roughrider | Pathfinder #154: Siege of the Dinosaurs pg. 23 |  | Common | Humanoid, Xulgath |  | 11 | 195 | 31 | +22 | +23 | +19 | darkvision | 30 feet |
+| Xulgath Skirmisher |  | Pathfinder #153: Life's Long Shadows pg. 27 |  | Uncommon | Humanoid, Uncommon, Xulgath |  | 6 | 95 | 24 | +13 | +16 | +13 | darkvision | 30 feet, light step |
+| Xulgath Skulker | Xulgath | Monster Core pg. 353 1.1 |  | Common | Humanoid, Xulgath |  | 2 | 28 | 17 | +8 | +10 | +5 | darkvision | 25 feet |
+| Xulgath Spinesnapper | Xulgath | Pathfinder #152: Legacy of the Lost God pg. 84 |  | Common | Humanoid, Xulgath |  | 5 | 95 | 21 | +15 | +10 | +9 | darkvision | 25 feet |
+| Xulgath Stoneliege | Xulgath | Pathfinder #153: Life's Long Shadows pg. 84 |  | Uncommon | Humanoid, Uncommon, Xulgath |  | 8 | 135 | 26 | +20 | +12 | +14 | darkvision, tremorsense (imprecise) 30 feet | 20 feet, burrow 10 feet |
+| Xulgath Thoughtmaw | Xulgath | Pathfinder #156: The Apocalypse Prophet pg. 85 |  | Rare | Amphibious, Humanoid, Rare, Xulgath |  | 15 | 280 | 36 | +23 | +26 | +30 | darkvision, thoughtsense (imprecise) 60 feet | 25 feet, fly 35 feet (from fly) |
+| Xulgath Warrior | Xulgath | Monster Core pg. 352 1.1 |  | Common | Humanoid, Xulgath |  | 1 | 21 | 14 | +8 | +7 | +4 | darkvision | 25 feet |
+| Yabin the Just (Level 13) |  | Pathfinder #167: Ready? Fight! pg. 27 |  | Unique | Humanoid, Nagaji, Unique |  | 13 | 175 | 33 | +24 | +22 | +19 | low-light vision | 25 feet |
+| Yabin the Just (Level 9) |  | Pathfinder #166: Despair on Danger Island pg. 11 |  | Unique | Humanoid, Nagaji, Unique |  | 9 | 130 | 27 | +19 | +16 | +15 | low-light vision | 25 feet |
+| Yabin The Just (White Serpent Form) |  | Pathfinder #168: King of the Mountain pg. 48 |  | Unique | Humanoid, Nagaji, Unique |  | 18 | 256 | 39 | +30 | +28 | +33 | darkvision | 25 feet, burrow 20 feet, swim 60 feet |
+| Yaganty |  | Pathfinder #153: Life's Long Shadows pg. 85 |  | Uncommon | Fey, Uncommon |  | 10 | 200 | 29 | +23 | +17 | +21 | greater darkvision | 20 feet |
+| Yamah | Azata | Monster Core 2 pg. 50 |  | Common | Azata, Celestial, Holy |  | 5 | 75 | 21 | +9 | +13 | +13 | darkvision, detect magic | 25 feet, fly 70 feet |
+| Yamaraj | Psychopomp | Monster Core pg. 277 1.1 |  | Uncommon | Monitor, Psychopomp, Uncommon |  | 20 | 375 ( fast healing 20, lightning drinker) | 45 | +33 | +31 | +35 | darkvision, lifesense 240 feet, truesight | 35 feet, fly 50 feet, swim 30 feet |
+| Yana No-Trail |  | Pathfinder #177: Burning Tundra pg. 7 |  | Unique | Humanoid, Kitsune, Unique |  | 7 | 110 | 25 | +14 | +19 | +11 | low-light vision | 25 feet, climb 10 feet |
+| Yarrika |  | Pathfinder #167: Ready? Fight! pg. 34 |  | Unique | Human, Humanoid, Unique |  | 15 | 250 | 37 | +24 | +27 | +28 | 25 feet | Yeast Ooze |
+| Ooze |  | Pathfinder #178: Punks in a Powderkeg pg. 88 |  | Rare | Mindless, Ooze, Rare |  | 2 | 60 | 12 | +10 | +3 | +6 | motion sense 60 feet, no vision | 20 feet, swim 20 feet |
+| Yellow Musk Brute | Yellow Musk Creeper | Bestiary 2 pg. 301 2.0 |  | Common | Mindless, Plant |  | 2 | 45 | 15 | +10 | +3 | +6 | low-light vision | 25 feet |
+| Yellow Musk Creeper | Yellow Musk Creeper | Bestiary 2 pg. 300 2.0 |  | Common | Mindless, Plant |  | 2 | 34 | 18 | +10 | +6 | +4 | tremorsense (imprecise) 30 feet | 5 feet |
+| Yellow Musk Thrall | Yellow Musk Creeper | Bestiary 2 pg. 301 2.0 |  | Common | Mindless, Plant |  | -1 | 12 | 14 | +6 | +0 | +2 | low-light vision | 25 feet |
+| Yeongno |  | Tian Xia World Guide pg. 299 |  | Common | Celestial |  | 7 | 120 | 25 | +15 | +13 | +17 | goldsense (precise) 120 feet | 25 feet |
+| Yeth Hound |  | Bestiary 2 pg. 302 2.0 |  | Common | Beast, Fiend |  | 3 | 55 | 18 | +9 | +12 | +12 | darkvision, scent (imprecise) 30 feet | 40 feet; air walk |
+| Yeti |  | Monster Core pg. 354 1.1 |  | Uncommon | Humanoid, Uncommon |  | 5 | 115 | 21 | +15 | +11 | +13 | darkvision, scent (imprecise) 30 feet | 35 feet, climb 20 feet; arctic passage |
+| Ygrik |  | Crown of the Kobold King pg. 50 |  | Unique | Humanoid, Kobold, Unique |  | 2 | 30 | 17 | +8 | +10 | +5 | darkvision | 25 feet |
+| Loading... | Yniesse Zenderholm | Shadows at Sundown pg. 35 |  | Unique | Human, Humanoid, Unique |  | 7 | 120 | 25 | +17 | +11 | +14 | 20 feet | Yobnobby |
+| Pathfinder #214: The Broken Palace pg. 17 | Unique	Tiny | Fey, Gremlin, Unique |  | 3 | darkvision |  |  |  |  |  |  |  | 30 feet | Yoh Souran |
+| Pathfinder #168: King of the Mountain pg. 90 | Unique	Medium | Human, Humanoid, Unique |  | 15 | 25 feet | Yonsuu |  |  |  |  |  |  | Pathfinder #171: Hurricane's Howl pg. 44 | Unique	Medium |
+| Catfolk, Humanoid, Unique | 11	200	31	+19	+24	+21	+21 | low-light vision |  |  | 30 feet | Young Adamantine Dragon |  |  |  |  |  |  | Dragon, Adamantine | Monster Core pg. 108 1.1 |
+| Common	Large | Dragon, Primal | 9	140	27	+21	+15	+17	+17 |  |  | darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 60 feet |  |  |  |  |  |  |  | 25 feet, burrow 30 feet, fly 90 feet | Young Barrage Dragon |
+| Dragon, Barrage |  | Draconic Codex pg. 106 |  | Common | Arcane, Dragon |  | 8 | 140 | 26 | +13 | +19 | +16 | ironsense (precise) 30 feet | 50 feet, fly 120 feet |
+| Young Bog Dragon | Dragon, Bog | Draconic Codex pg. 110 |  | Common | Amphibious, Dragon, Primal |  | 7 | 115 | 24 | +16 | +13 | +17 | darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 60 feet | 25 feet, burrow 20 feet, fly 60 feet, swim 30 feet; swamp passage |
+| Young Brine Dragon | Dragon, Brine | Draconic Codex pg. 114 |  | Common | Aquatic, Dragon, Elemental, Primal, Water |  | 8 | 170 | 26 | +19 | +16 | +14 | (18 to Sense Motive) aquatic echolocation 120 feet, darkvision | 25 feet, fly 90 feet, swim 120 feet |
+| Young Cinder Dragon | Dragon, Cinder | Monster Core 2 pg. 118 |  | Common | Dragon, Fire, Primal |  | 10 | 210 | 29 | +21 | +17 | +19 | darkvision, scent (imprecise) 60 feet, smoke vision | 40 feet, fly 120 feet |
+| Young Cloud Dragon | Dragon, Cloud | Draconic Codex pg. 118 |  | Common | Air, Dragon, Primal |  | 10 | 175 | 30 | +19 | +17 | +21 | darkvision, mist vision, scent (imprecise) 60 feet | 40 feet, fly 140 feet |
+| Young Conspirator Dragon | Dragon, Conspirator | Monster Core pg. 110 1.1 |  | Common | Dragon, Occult |  | 8 | 135 | 27 | +14 | +15 | +18 | (18 to Sense Motive) darkvision, scent (imprecise) 60 feet | 30 feet, climb 30 feet, fly 120 feet |
+| Young Coral Dragon | Dragon, Coral | Monster Core 2 pg. 120 |  | Common | Amphibious, Dragon, Primal |  | 8 | 135 | 26 | +18 | +14 | +15 | darkvision, wavesense (imprecise) 60 feet | 30 feet, fly 40 feet, swim 80 feet |
+| Young Crystal Dragon | Dragon, Crystal | Draconic Codex pg. 122 |  | Common | Dragon, Earth, Primal |  | 7 | 110 | 25 | +17 | +12 | +16 | darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 60 feet | 30 feet, fly 120 feet |
+| Young Delight Dragon | Dragon, Delight | Draconic Codex pg. 126 |  | Common | Divine, Dragon, Holy |  | 10 | 165 | 30 | +18 | +21 | +19 | lifesense (imprecise) 30 feet, scent (imprecise) 60 feet, whimsysense (imprecise) 30 feet | 40 feet, fly 120 feet |
+| Young Despair Dragon | Dragon, Despair | Monster Core 2 pg. 122 |  | Common | Dragon, Occult |  | 9 | 140 | 27 | +16 | +18 | +20 | darkvision, fearsense (imprecise) 60 feet, scent (imprecise) 30 feet | 40 feet, fly 120 feet |
+| Young Diabolic Dragon | Dragon, Diabolic | Monster Core pg. 112 1.1 |  | Common | Divine, Dragon, Unholy |  | 11 | 215 | 30 | +23 | +20 | +21 | greater darkvision, scent (imprecise) 60 feet, smoke vision | 50 feet, fly 120 feet |
+| Young Empyreal Dragon | Dragon, Empyreal | Monster Core pg. 114 1.1 |  | Common | Divine, Dragon, Holy |  | 10 | 170 | 30 | +18 | +19 | +21 | darkvision, lifesense (imprecise) 30 feet, scent (imprecise) 60 feet | 60 feet, fly 150 feet |
+| Young Executor Dragon | Dragon, Executor | Draconic Codex pg. 132 |  | Common | Divine, Dragon |  | 9 | 155 | 27 | +18 | +16 | +21 | darkvision, lifesense (imprecise) 30 feet, scent (imprecise) 60 feet | 60 feet, fly 150 feet |
+| Young Forest Dragon | Dragon, Forest | Draconic Codex pg. 136 |  | Common | Dragon, Elemental, Primal, Wood |  | 10 | 180 | 30 | +22 | +16 | +20 | darkvision, scent (imprecise) 60 feet | 40 feet, fly 100 feet; woodland passage |
+| Young Fortune Dragon | Dragon, Fortune | Monster Core pg. 116 1.1 |  | Common | Arcane, Dragon |  | 10 | 175 | 30 | +18 | +21 | +19 | darkvision, scent (imprecise) 60 feet | 60 feet, fly 100 feet |
+| Young Horned Dragon | Dragon, Horned | Monster Core pg. 119 1.1 |  | Common | Amphibious, Dragon, Primal |  | 8 | 135 | 28 | +16 | +16 | +17 | darkvision, scent (imprecise) 60 feet | 30 feet, fly 120 feet, swim 30 feet; forest passage |
+| Young Linnorm | Linnorm | Monsters of Myth pg. 29 |  | Uncommon | Dragon, Uncommon |  | 7 | 115 | 25 | +18 | +15 | +12 | darkvision, low-light vision, scent (imprecise) 60 feet | 30 feet, fly 60 feet, swim 45 feet |
+| Young Magma Dragon | Dragon, Magma | Pathfinder #148: Fires of the Haunted City pg. 80 |  | Rare | Dragon, Fire, Rare |  | 9 | 175 | 28 | +19 | +16 | +18 | darkvision, scent (imprecise) 60 feet | 30 feet, fly 100 feet, swim 30 feet; magma swim |
+| Young Magma Dragon | Dragon, Magma | Draconic Codex pg. 140 |  | Common | Dragon, Fire, Primal |  | 9 | 175 | 27 | +19 | +16 | +18 | darkvision, scent (imprecise) 60 feet | 30 feet, burrow 30 feet, fly 100 feet; magma burrow |
+| Young Mirage Dragon | Dragon, Mirage | Monster Core pg. 122 1.1 |  | Common | Arcane, Dragon |  | 9 | 155 | 27 | +16 | +17 | +20 | darkvision, scent (imprecise) 60 feet | 40 feet, climb 20 feet, fly 120 feet |
+| Young Mocking Dragon | Dragon, Mocking | Draconic Codex pg. 144 |  | Common | Occult |  | 8 | 135 | 26 | +14 | +19 | +16 | darkvision | 25 feet, fly 90 feet |
+| Young Monitor Lizard | Lizard | Pathfinder Game Night: Dawn of the Frogs (Deluxe Adventure) pg. 9 |  | Common | Animal |  | 1 | 24 | 15 | +8 | +7 | +4 | low-light vision, scent (imprecise) 30 feet | 30 feet, swim 20 feet |
+| Young Oath Dragon | Dragon, Oath | Draconic Codex pg. 148 |  | Uncommon | Divine, Dragon, Uncommon |  | 10 | 175 | 30 | +19 | +16 | +22 | darkvision, scent (imprecise) 60 feet | 40 feet, fly 100 feet |
+| Young Omen Dragon | Dragon, Omen | Monster Core pg. 124 1.1 |  | Common | Dragon, Occult |  | 7 | 100 | 24 | +15 | +14 | +17 | darkvision, scent (imprecise) 60 feet | 40 feet, fly 100 feet |
+| Young Phase Dragon | Dragon, Phase | Monster Core 2 pg. 124 |  | Common | Arcane, Dragon |  | 9 | 120 | 27 | +15 | +20 | +19 | darkvision, scent (imprecise) 60 feet | 40 feet, fly 120 feet |
+| Young Requiem Dragon | Dragon, Requiem | Monster Core 2 pg. 126 |  | Common | Divine, Dragon |  | 11 | 190 | 30 | +21 | +18 | +24 | darkvision, lifesense 60 feet, scent (imprecise) 60 feet, status sight | 40 feet, fly 120 feet, swim 40 feet |
+| Young Resurrection Dragon | Dragon, Resurrection | Monster Core 2 pg. 129 |  | Common | Divine, Dragon |  | 8 | 140 | 26 | +15 | +14 | +19 | darkvision, scent (imprecise) 60 feet | 30 feet, fly 120 feet |
+| Young Rime Dragon | Dragon, Rime | Draconic Codex pg. 152 |  | Common | Cold, Dragon, Primal |  | 6 | 98 | 23 | +17 | +11 | +14 | darkvision, scent (imprecise) 60 feet, snow vision | 40 feet, fly 100 feet, swim 30 feet |
+| Young Rune Dragon | Dragon, Rune | Monster Core 2 pg. 131 |  | Common | Arcane, Dragon |  | 10 | 175 | 30 | +19 | +17 | +21 | darkvision, magic sense (imprecise) 60 feet, scent (imprecise) 60 feet | 60 feet, fly 100 feet |
+| Young Sage Dragon | Dragon, Sage | Draconic Codex pg. 156 |  | Common | Dragon, Occult |  | 9 | 150 | 28 | +15 | +17 | +19 | darkvision | 25 feet, fly 60 feet |
+| Young Sea Dragon | Dragon, Sea | Draconic Codex pg. 159 |  | Common | Amphibious, Arcane, Dragon, Water |  | 8 | 140 | 26 | +17 | +18 | +15 | darkvision, wavesense (imprecise) 60 feet | 30 feet, fly 100 feet, swim 50 feet; water walk |
+| Young Sky Dragon | Dragon, Sky | Draconic Codex pg. 164 |  | Common | Divine, Dragon, Electricity, Metal |  | 9 | 155 | 28 | +18 | +16 | +21 | darkvision, mist vision, scent (imprecise) 60 feet | 30 feet, fly 120 feet |
+| Young Sovereign Dragon | Dragon, Sovereign | Draconic Codex pg. 168 |  | Common | Dragon, Earth, Occult |  | 11 | 195 | 31 | +22 | +18 | +24 | darkvision, sanctified sight, scent (imprecise) 60 feet | 40 feet, fly 120 feet |
+| Young Stormcrown Dragon | Dragon, Stormcrown | Draconic Codex pg. 171 |  | Common | Dragon, Electricity, Primal |  | 9 | 155 | 28 | +18 | +21 | +15 | darkvision, motionsense (precise) 30 feet, scent (imprecise) 60 feet | 40 feet, fly 120 feet |
+| Young Time Dragon | Dragon, Time | Draconic Codex pg. 176 |  | Uncommon | Arcane, Dragon, Uncommon |  | 11 | 245 | 30 | +24 | +19 | +22 | (21 initiative) detect magic, greater darkvision | 40 feet, fly 120 feet |
+| Young Umbral Dragon | Dragon, Umbral | Draconic Codex pg. 180 |  | Common | Dragon, Occult, Shadow |  | 11 | 195 | 30 | +22 | +19 | +22 | greater darkvision, voidsense (precise) 60 feet | 40 feet, fly 140 feet |
+| Young Underworld Dragon | Dragon, Underworld | Draconic Codex pg. 184 |  | Common | Arcane, Dragon, Fire |  | 7 | 115 | 25 | +18 | +13 | +15 | darkvision, scent (imprecise) 60 feet, smoke vision | 40 feet, burrow 30 feet, fly 80 feet |
+| Young Vizier Dragon | Dragon, Vizier | Draconic Codex pg. 188 |  | Common | Dragon, Occult |  | 11 | 230 | 30 | +21 | +20 | +22 | darkvision, scent (imprecise) 60 feet | 40 feet, fly 100 feet, swim 40 feet |
+| Young Vorpal Dragon | Dragon, Vorpal | Draconic Codex pg. 192 |  | Common | Arcane, Dragon, Metal |  | 9 | 150 | 28 | +21 | +15 | +18 | darkvision, scent (imprecise) 60 feet | 35 feet, fly 100 feet |
+| Young Wailing Dragon | Dragon, Wailing | Draconic Codex pg. 196 |  | Common | Arcane, Dragon |  | 6 | 120 | 23 | +15 | +17 | +12 | darkvision, echolocation (precise) 120 feet | 25 feet, fly 90 feet |
+| Young Whisper Dragon | Dragon, Whisper | Monster Core 2 pg. 133 |  | Common | Dragon, Occult |  | 7 | 110 | 25 | +15 | +13 | +18 | (17 to Sense Motive) darkvision, scent (imprecise) 60 feet | 40 feet, fly 140 feet |
+| Young Wish Dragon | Dragon, Wish | Draconic Codex pg. 200 |  | Common | Arcane, Dragon |  | 10 | 180 | 29 | +18 | +18 | +21 | darkvision, scent (imprecise) 60 feet | 30 feet, climb 30 feet, fly 120 feet |
+| Yshula |  | Pathfinder #183: Field of Maidens pg. 11 |  | Unique | Div, Fiend, Unique |  | 8 | 109 | 26 | +12 | +18 | +19 | greater darkvision | 25 feet, fly 35 feet |
+| Yulthruk |  | Pathfinder #183: Field of Maidens pg. 46 |  | Unique | Ghoul, Undead, Unique |  | 11 | 195 ( negative healing ) | 30 | +21 | +23 | +19 | darkvision | 30 feet, burrow 5 feet |
+| Yuni |  | Pathfinder #197: Let the Leaves Fall pg. 46 |  | Unique | Ghost, Incorporeal, Spirit, Undead, Unique |  | 7 | 82 (negative healing, rejuvenation) | 23 | +11 | +15 | +17 | darkvision | fly 25 feet |
+| Yurgak |  | Pathfinder #184: The Ghouls Hunger pg. 30 |  | Unique | Ghoul, Undead, Unique |  | 14 | 240 ( negative healing ) | 36 | +24 | +25 | +28 | darkvision | 30 feet, burrow 5 feet |
+| Loading... | Zaiho | Prey for Death pg. 54 |  | Unique | Human, Humanoid, Unique |  | 16 | 265 | 39 | +25 | +31 | +28 | darkvision | 25 feet |
+| Zaiox |  | Rusthenge pg. 51 |  | Unique | Dero, Humanoid, Unique |  | 4 | 50 | 21 | +8 | +11 | +7 | darkvision | 20 feet |
+| Zalavexus |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 113 |  | Unique | Aberration, Swarm, Unique |  | 10 | 148 (fast healing 10) | 30 | +17 | +21 | +19 | darkvision, tremorsense (imprecise) 30 feet | 25 feet |
+| Zane Ikundi | Threshold of Knowledge Pregenerated Characters | Threshold of Knowledge pg. 15 |  | Unique | Half-Orc, Human, Humanoid, Orc, Unique |  | 1 | 15 | 15 | +4 | +5 | +5 | low-light vision | 25 feet |
+| Zaramuun |  | Bestiary pg. 339 |  | Common | Earth, Elemental |  | 16 | 291 | 39 | +34 | +30 | +25 | darkvision, tremorsense 60 feet | 35 feet, burrow 35 feet; sand glide |
+| Zashathal Head-Taker |  | Pathfinder #154: Siege of the Dinosaurs pg. 90 |  | Unique | Humanoid, Unique, Xulgath |  | 15 | 250 | 36 | +29 | +23 | +26 | coward sense (imprecise) 60 feet, darkvision | 35 feet |
+| Zealborn |  | Pathfinder #161: Belly of the Black Whale pg. 87 |  | Uncommon | Uncommon, Undead |  | 12 | 210 (rejuvenation) | 33 | +18 | +22 | +24 | darkvision | 25 feet |
+| Zealot of Asmodeus | Devotee | NPC Core pg. 31 |  | Common | Human, Humanoid, Unholy |  | 4 | 60 | 22 | +9 | +7 | +11 | 20 feet | Zebub |
+| Devil |  | Monster Core 2 pg. 98 |  | Common | Devil, Fiend, Unholy |  | 3 | 45 | 18 | +8 | +10 | +8 | greater darkvision | 15 feet, fly 50 feet |
+| Zecui |  | Monster Core pg. 355 1.1 |  | Uncommon | Aberration, Uncommon |  | 6 | 110 | 23 | +14 | +17 | +12 | darkvision | 30 feet, burrow 20 feet, climb 20 feet |
+| Zecui Horde |  | Battlecry! pg. 195 |  | Uncommon | Aberration, Troop, Uncommon |  | 11 | 195 (4 segments) | 30 | +21 | +24 | +18 | darkvision | 30 feet, burrow 20 feet, climb 20 feet; troop movement |
+| Zelekhut | Aeon | Bestiary 2 pg. 9 2.0 |  | Common | Aeon, Inevitable, Monitor |  | 9 | 160 | 28 | +17 | +20 | +18 | darkvision, true seeing | 40 feet, fly 40 feet |
+| Loading... | Zephyr Guard | Pathfinder #149: Against the Scarlet Triad pg. 51 |  | Uncommon | Human, Humanoid, Uncommon |  | 14 | 255 | 36 | +26 | +26 | +29 | 25 feet | Zephyr Hawk |
+| Elemental, Air |  | Monster Core pg. 140 1.1 |  | Common | Air, Elemental |  | 3 | 36 | 18 | +6 | +13 | +7 | darkvision | fly 50 feet |
+| Loading... | Loading... | Zhi Hui |  |  | Pathfinder #197: Let the Leaves Fall pg. 92 |  | Unique | Medium |  |  |  |  | Ghost, Incorporeal, Spirit, Undead, Unique | 7	85 (negative healing, rejuvenation)	23	+11	+15	+17	+18 |
+| Zhuraita | Azata | Monster Core 2 pg. 52 |  | Common | Azata, Celestial, Holy |  | 15 | 280 | 37 | +23 | +26 | +29 | darkvision, truesight | 40 feet; fly 80 feet |
+| Zibik |  | Pathfinder #203 Shepherd of Decay pg. 90 |  | Unique | Fungus, Leshy, Plant, Unique |  | 24 | 525 | 51 | +43 | +39 | +42 | darkvision, plantsense 60 feet | 40 feet, climb 40 feet |
+| Zimiezek |  | Pathfinder #206: Bring the House Down pg. 89 |  | Rare | Aberration, Fiend, Rare, Unholy |  | 18 | 335 | 41 | +28 | +31 | +33 | greater darkvision | 40 feet, climb 40 feet |
+| Zinba |  | The Mwangi Expanse pg. 307 2.0 |  | Rare | Amphibious, Beast, Rare |  | 10 | 220 | 28 | +23 | +20 | +18 | low-light vision, scent (imprecise) 60 feet | 30 feet, burrow 10 feet, climb 30 feet, swim 30 feet |
+| Zinogyvaz |  | Pathfinder #155: Lord of the Black Sands pg. 35 |  | Unique | Undead, Unique, Vampire |  | 16 | 240 (coffin restoration (as vampire), fast healing 20 , negative healing ) | 39 | +26 | +27 | +30 | darkvision | 30 feet, climb 30 feet |
+| Ziondriel |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 109 |  | Unique | Aberration, Unique |  | 9 | 154 | 28 | +15 | +20 | +18 | darkvision | 30 feet, climb 20 feet |
+| Ziradini |  | Pathfinder #200: Seven Dooms for Sandpoint pg. 93 |  | Common | Dero, Humanoid |  | 8 | 137 | 27 | +16 | +13 | +20 | darkvision | 20 feet |
+| Zoaem | Archon | Monster Core pg. 26 1.1 |  | Common | Archon, Celestial, Holy |  | 1 | 20 ( all-around vision ) | 16 | +6 | +10 | +4 | darkvision | fly 40 feet |
+| Zombie Bear | Zombie | Claws of the Tyrant pg. 29 |  | Uncommon | Mindless, Uncommon, Undead, Unholy, Zombie |  | 3 | 75 ( void healing ) | 17 | +8 | +5 | +6 | darkvision | 25 feet |
+| Zombie Brute | Zombie | Monster Core pg. 357 1.1 |  | Common | Mindless, Undead, Unholy, Zombie |  | 2 | 70 ( void healing ) | 15 | +10 | +3 | +6 | darkvision | 25 feet |
+| Zombie Chuul |  | Pathfinder #182: Graveclaw pg. 33 |  | Unique | Amphibious, Mindless, Undead, Unique, Zombie |  | 7 | 200 ( negative healing ) | 22 | +18 | +10 | +13 | darkvision, tremorsense (imprecise) 30 feet | 30 feet, swim 25 feet |
+| Zombie Desecrator | Zombie | Claws of the Tyrant pg. 85 |  | Uncommon | Mindless, Uncommon, Undead, Unholy, Zombie |  | 17 | 395 ( void healing ) | 40 | +35 | +23 | +29 | darkvision | 25 feet |
+| Zombie Dragon | Zombie | Monster Core 2 pg. 359 |  | Common | Dragon, Mindless, Undead, Unholy, Zombie |  | 9 | 210 ( void healing ) | 27 | +19 | +18 | +16 | darkvision | 30 feet, fly 50 feet |
+| Zombie Horse |  | Pathfinder #181: Zombie Feast pg. 16 |  | Uncommon | Mindless, Uncommon, Undead, Zombie |  | 1 | 50 ( negative healing ) | 13 | +6 | +3 | +4 | darkvision | 30 feet |
+| Zombie Hound |  | Pathfinder #181: Zombie Feast pg. 16 |  | Uncommon | Mindless, Uncommon, Undead, Zombie |  | -1 | 18 ( negative healing ) | 13 | +5 | +0 | +3 | darkvision | 25 feet |
+| Zombie Hulk | Zombie | Monster Core pg. 357 1.1 |  | Common | Mindless, Undead, Unholy, Zombie |  | 6 | 160 ( void healing ) | 21 | +16 | +9 | +12 | darkvision | 25 feet |
+| Zombie Lord | Zombie | Book of the Dead pg. 172 |  | Uncommon | Uncommon, Undead, Zombie |  | 4 | 80 ( negative healing ) | 20 | +11 | +10 | +13 | darkvision | 25 feet |
+| Zombie Mammoth | Zombie | Book of the Dead pg. 173 |  | Common | Mindless, Undead, Zombie |  | 11 | 290 ( negative healing ) | 27 | +22 | +15 | +19 | darkvision | 45 feet |
+| Zombie Mammoths |  | Pathfinder #176: Lost Mammoth Valley pg. 56 |  | Common | Mindless, Undead, Zombie |  | 8 | 200 ( negative healing ) | 18 | +18 | +10 | +15 | darkvision, scent (imprecise) 30 feet | 45 feet |
+| Zombie Owlbear | Zombie | Book of the Dead pg. 171 |  | Common | Mindless, Undead, Zombie |  | 3 | 85 ( negative healing ) | 16 | +8 | +5 | +6 | darkvision | 25 feet |
+| Zombie Shambler | Zombie | Monster Core pg. 356 1.1 |  | Common | Mindless, Undead, Unholy, Zombie |  | -1 | 20 ( void healing ) | 12 | +6 | +0 | +2 | darkvision | 25 feet |
+| Zombie Snake | Zombie | Book of the Dead pg. 170 |  | Common | Mindless, Undead, Zombie |  | 0 | 35 ( negative healing ) | 13 | +6 | +3 | +2 | darkvision | 20 feet, climb 20 feet |
+| Zomok |  | Bestiary 2 pg. 303 2.0 |  | Common | Dragon, Plant |  | 16 | 310 | 39 | +31 | +25 | +28 | darkvision, tremorsense (imprecise) 60 feet | 30 feet, fly 80 feet; pass without trace |
+| Zoog | Zoog | Pathfinder #200: Seven Dooms for Sandpoint pg. 193 |  | Rare | Beast, Dream, Rare |  | 1 | 20 | 16 | +6 | +6 | +5 | darkvision, scent (imprecise) 60 feet, spell sight | 25 feet, climb 25 feet |
+| Zoog Swarm | Zoog | Pathfinder #200: Seven Dooms for Sandpoint pg. 193 |  | Rare | Beast, Dream, Rare, Swarm |  | 8 | 100 | 24 | +15 | +18 | +14 | darkvision, scent (imprecise) 60 feet, spell sight | 25 feet, climb 25 feet |
+| Zorek |  | Kingmaker Adventure Path pg. 328 |  | Unique | Human, Humanoid, Unique |  | 12 | 220 ( fast healing 10) | 32 | +23 | +20 | +25 | 40 feet | Zoudou the Zealous |
+| Pathfinder #196: The Summer That Never Was pg. 66 | Unique	Medium | Aberration, Unique |  | 3 | no face |  |  |  |  |  |  |  | 25 feet | Zovi |
+| Pathfinder #215: To Blot Out the Sun pg. 11 | Unique	Small | Dero, Humanoid, Unique |  | 7 | darkvision |  |  |  |  |  |  |  | 20 feet | Loading... |
+| Zrukbat |  | Pathfinder #157: Devil at the Dreaming Palace pg. 85 |  | Common | Fey |  | 2 | 30 | 18 | +9 | +10 | +5 | darkvision | 20 feet, climb 20 feet, fly 20 feet |
+| Zuferian |  | Pathfinder #148: Fires of the Haunted City pg. 37 |  | Unique | Human, Humanoid, Unique |  | 15 | 265 | 36 | +24 | +29 | +27 | 25 feet | Zuhra |
+| Genie |  | Rage of Elements pg. 160 2.0 |  | Uncommon | Elemental, Genie, Metal, Uncommon |  | 8 | 125 | 26 | +16 | +17 | +17 | darkvision | 25 feet, fly 30 feet |
+| Zuhra Shuyookh | Genie | Rage of Elements pg. 161 2.0 |  | Rare | Elemental, Genie, Metal, Rare |  | 13 | 212 | 34 | +29 | +23 | +21 | darkvision | 30 feet, fly 35 feet |
+| Zuipnyrn |  | Pathfinder #152: Legacy of the Lost God pg. 85 |  | Rare | Aberration, Rare |  | 3 | 35 | 20 | +10 | +10 | +7 | greater darkvision | 20 feet, climb 10 feet |
+| Zuishin | Kami | Monster Core 2 pg. 206 |  | Common | Kami, Spirit |  | 10 | 180 | 30 | +19 | +23 | +17 | darkvision | fly 25 feet |
+| Zungur |  | Pathfinder Game Night: Dawn of the Frogs (Deluxe Adventure) pg. 32 |  | Unique | Amphibious, Boggard, Humanoid, Unique |  | 3 | 40 | 18 | +9 | +7 | +11 | darkvision | 20 feet, swim 25 feet; swamp passage |
+| Zuntishan Guard |  | Pathfinder #183: Field of Maidens pg. 42 |  | Uncommon | Human, Humanoid, Uncommon |  | 6 | 120 | 22 | +14 | +12 | +15 | 25 feet | Zyss Serpentfolk |
+| Serpentfolk |  | Monster Core pg. 302 1.1 |  | Uncommon | Humanoid, Serpentfolk, Uncommon |  | 2 | 25 | 18 | +4 | +8 | +8 | darkvision, scent (imprecise) 30 feet | 25 feet |
+| Site Owner: Rose-Winds LLC (Blake Davis) | Character Creation + | Equipment + | Feats + |  | Game Mastery + | Rules + |  |  |  |  |  |  | Setting + | Spells/Rituals + |
+| Mythic + | About the Archives + | Support the Archives |  |  |  |  |  |  |  |  |  |  |  |  |

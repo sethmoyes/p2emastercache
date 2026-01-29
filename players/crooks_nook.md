@@ -12,28 +12,28 @@
 
 **Specialties:** Cheap lodging and questionable goods
 
-## Common Items (5)
+## Common Items (11)
 
-| Image | Name | Level | Price | Rarity | Category | Type |
-|-------|------|-------|-------|--------|----------|------|
-| ![Sparkwarden](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Sparkwarden | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Battle Axe](https://2e.aonprd.com/Images/Monsters/Warmorger.webp) | Battle Axe | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Reflected Moonlight Fulu](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Reflected Moonlight Fulu | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Moonlit Spellgun (Lesser)](https://2e.aonprd.com/Images/Treasure/Moonlit_Spellgun.webp) | Moonlit Spellgun (Lesser) | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Unifying Emblem (Sklar-Quah)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Unifying Emblem (Sklar-Quah) | 0 | 0 gp | Common | N/A | Adventuring |
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| ![Staff of Healing (Greater)](https://2e.aonprd.com/Images/Treasure/Staff_Of_Healing.webp) | Staff of Healing (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Healing) |
+| 🖼️ | Wheelbarrow | 0 | 5 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheelbarrow) |
+| 🖼️ | Longspear | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Longspear) |
+| 🖼️ | Veiled Figurehead (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Veiled%20Figurehead) |
+| 🖼️ | Mask of Mercy | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mask%20of%20Mercy) |
+| 🖼️ | Jaws of the Grogrisant | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Jaws%20of%20the%20Grogrisant) |
+| 🖼️ | Dragonbone Arrowhead | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dragonbone%20Arrowhead) |
+| 🖼️ | Admonishing Band | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Admonishing%20Band) |
+| 🖼️ | Shining Symbol (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shining%20Symbol) |
+| 🖼️ | Splinter Spear (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Splinter%20Spear) |
+| 🖼️ | Ouroboros Flail (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ouroboros%20Flail) |
 
 ## Uncommon Items (2)
 
-| Image | Name | Level | Price | Rarity | Category | Type |
-|-------|------|-------|-------|--------|----------|------|
-| ![Backpack Balloon](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Backpack Balloon | 0 | 0 gp | Uncommon | N/A | Adventuring |
-| ![Architect's Pattern Book](https://2e.aonprd.com/Images/Ancestries/Minotaur02.webp) | Architect's Pattern Book | 0 | 0 gp | Uncommon | N/A | Adventuring |
-
-## Rare Items (1)
-
-| Image | Name | Level | Price | Rarity | Category | Type |
-|-------|------|-------|-------|--------|----------|------|
-| ![Digly's Oil of Sympathy (Greater)](https://2e.aonprd.com/Images/Ancestries/Icons/Tanuki_Icon.png) | Digly's Oil of Sympathy (Greater) | 0 | 0 gp | Rare | N/A | Adventuring |
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Horsechopper | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Horsechopper) |
+| 🖼️ | Lesser Flowing Water | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lesser%20Flowing%20Water) |
 
 ## Services
 

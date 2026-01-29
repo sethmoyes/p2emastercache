@@ -2,7 +2,7 @@
   {
     "name": "Club",
     "level": 0,
-    "price": "0 gp",
+    "price": "1 gp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -10,7 +10,7 @@
   {
     "name": "Primal Symbol",
     "level": 0,
-    "price": "0 gp",
+    "price": "6 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -18,7 +18,7 @@
   {
     "name": "Sling",
     "level": 0,
-    "price": "0 gp",
+    "price": "5 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -26,7 +26,7 @@
   {
     "name": "Staff",
     "level": 0,
-    "price": "0 gp",
+    "price": "9 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -34,7 +34,7 @@
   {
     "name": "Beverages (Mug of Ale)",
     "level": 0,
-    "price": "L",
+    "price": "8 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -42,7 +42,7 @@
   {
     "name": "Black Powder (Dose or Round)",
     "level": 0,
-    "price": "0 gp",
+    "price": "8 sp",
     "rarity": "uncommon",
     "category": "",
     "type": "adventuring"
@@ -50,7 +50,7 @@
   {
     "name": "Candle",
     "level": 0,
-    "price": "0 gp",
+    "price": "7 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -58,7 +58,7 @@
   {
     "name": "Chalk",
     "level": 0,
-    "price": "0 gp",
+    "price": "7 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -66,7 +66,7 @@
   {
     "name": "Clay",
     "level": 0,
-    "price": "0 gp",
+    "price": "8 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -74,7 +74,7 @@
   {
     "name": "Cloth (Wool Cloth, 1 square yard)",
     "level": 0,
-    "price": "0 gp",
+    "price": "6 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -82,7 +82,7 @@
   {
     "name": "Dart",
     "level": 0,
-    "price": "0 gp",
+    "price": "8 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -90,7 +90,7 @@
   {
     "name": "Feed (Standard)",
     "level": 0,
-    "price": "0 gp",
+    "price": "6 sp",
     "rarity": "common",
     "category": "Animal Caretaking Gear",
     "type": "adventuring"
@@ -98,7 +98,7 @@
   {
     "name": "Fish",
     "level": 0,
-    "price": "0 gp",
+    "price": "5 sp",
     "rarity": "common",
     "category": "Animals",
     "type": "adventuring"
@@ -106,7 +106,7 @@
   {
     "name": "Meal (Poor)",
     "level": 0,
-    "price": "L",
+    "price": "7 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -114,7 +114,7 @@
   {
     "name": "Mouse",
     "level": 0,
-    "price": "0 gp",
+    "price": "1 gp",
     "rarity": "common",
     "category": "Animals",
     "type": "adventuring"
@@ -122,7 +122,7 @@
   {
     "name": "Mug",
     "level": 0,
-    "price": "0 gp",
+    "price": "1 gp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -130,7 +130,7 @@
   {
     "name": "Oil",
     "level": 0,
-    "price": "0 gp",
+    "price": "5 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -138,7 +138,7 @@
   {
     "name": "Pinwheel",
     "level": 0,
-    "price": "0 gp",
+    "price": "1 gp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -146,7 +146,7 @@
   {
     "name": "Piton",
     "level": 0,
-    "price": "0 gp",
+    "price": "9 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -154,7 +154,7 @@
   {
     "name": "Sack",
     "level": 0,
-    "price": "L",
+    "price": "7 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -162,7 +162,7 @@
   {
     "name": "Shuriken",
     "level": 0,
-    "price": "0 gp",
+    "price": "1 gp",
     "rarity": "uncommon",
     "category": "",
     "type": "adventuring"
@@ -170,7 +170,7 @@
   {
     "name": "Sling Bullets",
     "level": 0,
-    "price": "L",
+    "price": "9 sp",
     "rarity": "common",
     "category": "Base Weapons",
     "type": "weapon"
@@ -186,7 +186,7 @@
   {
     "name": "Toll",
     "level": 0,
-    "price": "0 gp",
+    "price": "5 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -194,7 +194,7 @@
   {
     "name": "Torch",
     "level": 0,
-    "price": "L",
+    "price": "7 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -202,7 +202,7 @@
   {
     "name": "Treats (Standard)",
     "level": 0,
-    "price": "0 gp",
+    "price": "8 sp",
     "rarity": "common",
     "category": "Animal Caretaking Gear",
     "type": "adventuring"
@@ -210,7 +210,7 @@
   {
     "name": "Bedroll",
     "level": 0,
-    "price": "L",
+    "price": "5 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -218,7 +218,7 @@
   {
     "name": "Beverages (Pot of Coffee or Tea)",
     "level": 0,
-    "price": "L",
+    "price": "8 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -226,7 +226,7 @@
   {
     "name": "Soap",
     "level": 0,
-    "price": "0 gp",
+    "price": "8 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -234,7 +234,7 @@
   {
     "name": "Stabling",
     "level": 0,
-    "price": "0 gp",
+    "price": "1 gp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -242,7 +242,7 @@
   {
     "name": "Ball",
     "level": 0,
-    "price": "L",
+    "price": "5 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -250,7 +250,7 @@
   {
     "name": "Cat",
     "level": 0,
-    "price": "0 gp",
+    "price": "7 sp",
     "rarity": "common",
     "category": "Animals",
     "type": "adventuring"
@@ -266,7 +266,7 @@
   {
     "name": "Lodging (Floor Space)",
     "level": 0,
-    "price": "0 gp",
+    "price": "1 gp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -274,7 +274,7 @@
   {
     "name": "Meal (Square)",
     "level": 0,
-    "price": "L",
+    "price": "1 gp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -282,7 +282,7 @@
   {
     "name": "Transportation (Caravan)",
     "level": 0,
-    "price": "0 gp",
+    "price": "6 sp",
     "rarity": "common",
     "category": "Transportation",
     "type": "adventuring"
@@ -290,7 +290,7 @@
   {
     "name": "Kite",
     "level": 0,
-    "price": "0 gp",
+    "price": "7 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -298,7 +298,7 @@
   {
     "name": "Transportation (Ferry or Riverboat)",
     "level": 0,
-    "price": "0 gp",
+    "price": "9 sp",
     "rarity": "common",
     "category": "Transportation",
     "type": "adventuring"
@@ -306,7 +306,7 @@
   {
     "name": "Bandalore",
     "level": 0,
-    "price": "0 gp",
+    "price": "5 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -314,7 +314,7 @@
   {
     "name": "Blowgun Darts",
     "level": 0,
-    "price": "L",
+    "price": "5 sp",
     "rarity": "common",
     "category": "Base Weapons",
     "type": "weapon"
@@ -322,7 +322,7 @@
   {
     "name": "Flint and Steel",
     "level": 0,
-    "price": "0 gp",
+    "price": "7 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -330,7 +330,7 @@
   {
     "name": "Mask (Ordinary)",
     "level": 0,
-    "price": "0 gp",
+    "price": "7 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -338,7 +338,7 @@
   {
     "name": "Waterskin",
     "level": 0,
-    "price": "L",
+    "price": "5 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -346,7 +346,7 @@
   {
     "name": "Transportation (Sailing Ship)",
     "level": 0,
-    "price": "0 gp",
+    "price": "7 sp",
     "rarity": "common",
     "category": "Transportation",
     "type": "adventuring"
@@ -354,7 +354,7 @@
   {
     "name": "Signal Whistle",
     "level": 0,
-    "price": "0 gp",
+    "price": "5 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -370,7 +370,7 @@
   {
     "name": "Animal Bed",
     "level": 0,
-    "price": "0 gp",
+    "price": "8 sp",
     "rarity": "common",
     "category": "Animal Caretaking Gear",
     "type": "adventuring"
@@ -378,7 +378,7 @@
   {
     "name": "Arrows",
     "level": 0,
-    "price": "L",
+    "price": "6 sp",
     "rarity": "common",
     "category": "Base Weapons",
     "type": "weapon"
@@ -386,7 +386,7 @@
   {
     "name": "Backpack",
     "level": 0,
-    "price": "0 gp",
+    "price": "6 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -394,7 +394,7 @@
   {
     "name": "Backpack Ballista Bolts",
     "level": 0,
-    "price": "0 gp",
+    "price": "9 sp",
     "rarity": "uncommon",
     "category": "",
     "type": "adventuring"
@@ -402,7 +402,7 @@
   {
     "name": "Backpack Catapult Stones",
     "level": 0,
-    "price": "0 gp",
+    "price": "6 sp",
     "rarity": "uncommon",
     "category": "",
     "type": "adventuring"
@@ -410,7 +410,7 @@
   {
     "name": "Basic Crafter's Book",
     "level": 0,
-    "price": "L",
+    "price": "9 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"
@@ -418,7 +418,7 @@
   {
     "name": "Beverages (Bottle of Wine)",
     "level": 0,
-    "price": "L",
+    "price": "7 sp",
     "rarity": "common",
     "category": "",
     "type": "adventuring"

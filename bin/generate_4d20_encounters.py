@@ -59,6 +59,11 @@ def extract_lore_snippet(lore_text, keywords, max_length=600):
             break
     
     snippet = ' '.join(relevant_lines).strip()
+    
+    # Remove markdown headers
+    snippet = re.sub(r'^#+\s+', '', snippet, flags=re.MULTILINE)
+    snippet = re.sub(r'\n#+\s+', '\n', snippet)
+    
     if len(snippet) > max_length:
         snippet = snippet[:max_length].rsplit('.', 1)[0] + '.'
     

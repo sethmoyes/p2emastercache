@@ -188,11 +188,13 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 if image_url:
                     img_md = f"![{name}]({image_url})"
                 else:
-                    # Fallback to search link
-                    search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
-                    img_md = f"[🔍]({search_url})"
+                    img_md = "🖼️"  # Placeholder icon if no image
                 
-                f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} |\n")
+                # Create AoN search link
+                search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
+                link_md = f"[View]({search_url})"
+                
+                f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} | {link_md} |\n")
                 
                 time.sleep(0.3)  # Rate limiting
             
@@ -201,8 +203,8 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
         # Uncommon items
         if inventory['uncommon']:
             f.write(f"## Uncommon Items ({len(inventory['uncommon'])})\n\n")
-            f.write("| Image | Name | Level | Price | Rarity | Category | Type |\n")
-            f.write("|-------|------|-------|-------|--------|----------|------|\n")
+            f.write("| Image | Name | Level | Price | Rarity | Category | Type | Link |\n")
+            f.write("|-------|------|-------|-------|--------|----------|------|------|\n")
             
             total = len(inventory['uncommon'])
             for idx, item in enumerate(inventory['uncommon'], 1):
@@ -227,10 +229,13 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 if image_url:
                     img_md = f"![{name}]({image_url})"
                 else:
-                    search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
-                    img_md = f"[🔍]({search_url})"
+                    img_md = "🖼️"
                 
-                f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} |\n")
+                # Create AoN search link
+                search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
+                link_md = f"[View]({search_url})"
+                
+                f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} | {link_md} |\n")
                 
                 time.sleep(0.3)
             
@@ -239,8 +244,8 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
         # Rare items
         if inventory['rare']:
             f.write(f"## Rare Items ({len(inventory['rare'])})\n\n")
-            f.write("| Image | Name | Level | Price | Rarity | Category | Type |\n")
-            f.write("|-------|------|-------|-------|--------|----------|------|\n")
+            f.write("| Image | Name | Level | Price | Rarity | Category | Type | Link |\n")
+            f.write("|-------|------|-------|-------|--------|----------|------|------|\n")
             
             total = len(inventory['rare'])
             for idx, item in enumerate(inventory['rare'], 1):
@@ -265,10 +270,13 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 if image_url:
                     img_md = f"![{name}]({image_url})"
                 else:
-                    search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
-                    img_md = f"[🔍]({search_url})"
+                    img_md = "🖼️"
                 
-                f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} |\n")
+                # Create AoN search link
+                search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
+                link_md = f"[View]({search_url})"
+                
+                f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} | {link_md} |\n")
                 
                 time.sleep(0.3)
             

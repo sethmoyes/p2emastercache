@@ -12,21 +12,24 @@
 
 **Specialties:** Religious texts, scrolls, and holy items
 
-## Common Items (5)
+## Common Items (8)
 
-| Image | Name | Level | Price | Rarity | Category | Type |
-|-------|------|-------|-------|--------|----------|------|
-| ![What Doors We Open](https://2e.aonprd.com/Images/Rules/Rules444.png) | What Doors We Open | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Warhammer](https://2e.aonprd.com/Images/Monsters/GraveknightCaptain.png) | Warhammer | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Fiendbreaker (Artifact)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Fiendbreaker (Artifact) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Sighting%20Shot) | Sighting Shot | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Vaporous%20Pipe) | Vaporous Pipe | 0 | 0 gp | Common | N/A | Adventuring |
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Smoked Goggles | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Smoked%20Goggles) |
+| 🖼️ | Bravery Baldric (Healthful, Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bravery%20Baldric) |
+| 🖼️ | Snare Kit (Specialist) | 0 | 2 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Snare%20Kit) |
+| 🖼️ | Praying Mantis | 0 | 0 gp | Common | Animals | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Praying%20Mantis) |
+| 🖼️ | Wyrm's Wingspan | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wyrm%27s%20Wingspan) |
+| 🖼️ | Detonating Gears Snare | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Detonating%20Gears%20Snare) |
+| 🖼️ | Map (Pictorial Map) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Map) |
+| 🖼️ | Staff of the Desert Winds | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Desert%20Winds) |
 
 ## Uncommon Items (1)
 
-| Image | Name | Level | Price | Rarity | Category | Type |
-|-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Boughshatter) | Boughshatter | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Bladed Diabolo | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bladed%20Diabolo) |
 
 ## Services
 

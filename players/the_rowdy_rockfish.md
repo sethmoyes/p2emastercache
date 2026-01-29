@@ -12,30 +12,35 @@
 
 **Specialties:** Quality food, drink, and lodging
 
-## Common Items (12)
+## Common Items (11)
 
-| Image | Name | Level | Price | Rarity | Category | Type |
-|-------|------|-------|-------|--------|----------|------|
-| ![Master Magus Ring](https://2e.aonprd.com/Images/Treasure/Ring_of_Wizardry.webp) | Master Magus Ring | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Darkvision Elixir (Moderate)](https://2e.aonprd.com/Images/Ancestries/Icons/Ghoran_Icon.png) | Darkvision Elixir (Moderate) | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Cooperative Blade](https://2e.aonprd.com/Images/Ancestries/Icons/Ghoran_Icon.png) | Cooperative Blade | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Nevercold](https://2e.aonprd.com/Images/Treasure/Nevercold.webp) | Nevercold | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Magnifying Scope (Major)](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Magnifying Scope (Major) | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Fulu of Flood Suppression](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Fulu of Flood Suppression | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Bewitching Bloom (Red Rose)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Bewitching Bloom (Red Rose) | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Bewildering Spellgun](https://2e.aonprd.com/Images/Treasure/Bewildering_Spellgun.webp) | Bewildering Spellgun | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Slates of Distant Letters](https://2e.aonprd.com/Images/Treasure/Slates_Of_Distant_Letters.webp) | Slates of Distant Letters | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Acid Flask (Major)](https://2e.aonprd.com/Images/Treasure/Acid_Flask.webp) | Acid Flask (Major) | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Merciful Balm](https://2e.aonprd.com/Images/Treasure/Merciful_Balm.webp) | Merciful Balm | 0 | 0 gp | Common | N/A | Adventuring |
-| ![Horns of Naraga](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Horns of Naraga | 0 | 0 gp | Common | N/A | Adventuring |
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Fist | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fist) |
+| 🖼️ | Ouroboros Flail (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ouroboros%20Flail) |
+| 🖼️ | Tailor's Boll | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tailor%27s%20Boll) |
+| 🖼️ | Sky King's Tomb | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sky%20King%27s%20Tomb) |
+| 🖼️ | Ebon Fulcrum Lens | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ebon%20Fulcrum%20Lens) |
+| ![Mortalis Coin](https://2e.aonprd.com/Images/Treasure/Mortalis_Coin.webp) | Mortalis Coin | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mortalis%20Coin) |
+| 🖼️ | Eye Slash (Major) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eye%20Slash) |
+| 🖼️ | Crown of the Kobold King | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Crown%20of%20the%20Kobold%20King) |
+| 🖼️ | Boozy Bottle | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Boozy%20Bottle) |
+| 🖼️ | Lance | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lance) |
+| 🖼️ | Retrieval Prism | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Retrieval%20Prism) |
 
 ## Uncommon Items (3)
 
-| Image | Name | Level | Price | Rarity | Category | Type |
-|-------|------|-------|-------|--------|----------|------|
-| ![Architect's Pattern Book](https://2e.aonprd.com/Images/Ancestries/Minotaur02.webp) | Architect's Pattern Book | 0 | 0 gp | Uncommon | N/A | Adventuring |
-| ![Clockwork Bookshelf](https://2e.aonprd.com/Images/Ancestries/Icons/Ardande_Icon.png) | Clockwork Bookshelf | 0 | 0 gp | Uncommon | N/A | Adventuring |
-| ![Coin of Comfort](https://2e.aonprd.com/Images/Treasure/Predictable_Silver_Piece.webp) | Coin of Comfort | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Torrent Snare | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Torrent%20Snare) |
+| 🖼️ | Shuriken | 0 | 1 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shuriken) |
+| 🖼️ | Scarab Cuirass | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Scarab%20Cuirass) |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Nosoi Charm (Greater) | 0 | 0 gp | Rare | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nosoi%20Charm) |
 
 ## Services
 
