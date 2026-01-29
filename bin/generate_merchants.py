@@ -29,38 +29,84 @@ def clean_item_name(name):
     name = ' '.join(name.split())
     return name.strip()
 
+def try_direct_aon_image(item_name):
+    """Try to construct direct AoN image URL"""
+    clean_name = clean_item_name(item_name)
+    
+    # Try common AoN image paths
+    base_url = "https://2e.aonprd.com/Images/"
+    
+    # Create URL-safe name: replace spaces with underscores, remove apostrophes, capitalize words
+    url_name = clean_name.replace("'", "").replace(" ", "_")
+    # Capitalize each word
+    url_name = "_".join(word.capitalize() for word in url_name.split("_"))
+    
+    # Try different category paths
+    categories = [
+        f"Weapons/{url_name}.webp",
+        f"Armor/{url_name}.webp",
+        f"Equipment/{url_name}.webp",
+        f"Items/{url_name}.webp",
+        f"Treasure/{url_name}.webp",
+    ]
+    
+    for category in categories:
+        url = base_url + category
+        try:
+            response = requests.head(url, timeout=2)
+            if response.status_code == 200:
+                return url
+        except:
+            pass
+    
+    return None
+
 def get_image_from_aon(item_name):
-    """Scrape Google Images for actual image URL from Archives of Nethys"""
+    """Search Google Images for item and return first result URL"""
+    # First try direct AoN URLs
+    direct_url = try_direct_aon_image(item_name)
+    if direct_url:
+        return direct_url
+    
     try:
         clean_name = clean_item_name(item_name)
-        # Search specifically on 2e.aonprd.com
-        search_query = f"site:2e.aonprd.com {clean_name}"
-        encoded_query = urllib.parse.quote(search_query)
+        # Use the exact query format: "2e.aonprd.com: item name"
+        search_query = f"2e.aonprd.com: {clean_name}"
+        encoded_query = urllib.parse.quote_plus(search_query)
+        
+        # Use Google Images search
         search_url = f"https://www.google.com/search?q={encoded_query}&tbm=isch"
         
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         }
         
-        response = requests.get(search_url, headers=headers, timeout=5)
+        response = requests.get(search_url, headers=headers, timeout=10)
         
-        if response.status_code == 200:
-            content = response.text
+        # Extract first image URL from response
+        # Look for the "ou" (original URL) pattern in Google Images JSON
+        img_pattern = r'"ou":"(https?://[^"]+)"'
+        matches = re.findall(img_pattern, response.text)
+        
+        if matches:
+            # Filter for 2e.aonprd.com images first
+            aon_matches = [m for m in matches if '2e.aonprd.com' in m.lower()]
+            if aon_matches:
+                return aon_matches[0]
+            # Return first match if no AoN images
+            return matches[0]
+        
+        # Fallback: try to find any 2e.aonprd.com image URL directly
+        img_pattern2 = r'https?://2e\.aonprd\.com/[^\s<>"]+?\.(?:jpg|jpeg|png|webp|gif)'
+        matches2 = re.findall(img_pattern2, response.text, re.IGNORECASE)
+        
+        if matches2:
+            return matches2[0]
             
-            # Try to find 2e.aonprd.com image URLs in the HTML
-            image_pattern = r'https://2e\.aonprd\.com/Images/[^"\'>\s]+\.(?:png|jpg|jpeg|webp|gif)'
-            matches = re.findall(image_pattern, content)
-            
-            if matches:
-                # Return the first valid image URL
-                return matches[0]
-        
-        # If scraping fails, return None
-        return None
-        
     except Exception as e:
-        # Silently fail - don't spam console
-        return None
+        pass  # Silently fail
+    
+    return None
 
 def fix_price(price):
     """Fix malformed prices from source data"""
@@ -86,7 +132,6 @@ def generate_merchant_inventory(equipment, categories, num_common, num_uncommon)
     # Filter by categories and rarity
     common_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'common']
     uncommon_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'uncommon']
-    rare_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'rare']
     
     # Select items
     if common_pool:
@@ -95,9 +140,7 @@ def generate_merchant_inventory(equipment, categories, num_common, num_uncommon)
     if uncommon_pool:
         inventory['uncommon'] = random.sample(uncommon_pool, min(num_uncommon, len(uncommon_pool)))
     
-    # 10% chance for 1 rare item
-    if random.random() < 0.1 and rare_pool:
-        inventory['rare'] = [random.choice(rare_pool)]
+    # Rare items are handled separately in main
     
     return inventory
 
@@ -125,8 +168,13 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
             total = len(inventory['common'])
             for idx, item in enumerate(inventory['common'], 1):
                 # Get image URL
-                print(f"  [{idx}/{total}] {item['name'][:40]}")
+                print(f"  [{idx}/{total}] {item['name'][:50]}", end='... ')
                 image_url = get_image_from_aon(item['name'])
+                
+                if image_url:
+                    print(f"✓")
+                else:
+                    print(f"✗")
                 
                 # Fix and capitalize fields
                 name = item['name']
@@ -146,7 +194,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 
                 f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} |\n")
                 
-                time.sleep(0.2)  # Reduced rate limiting
+                time.sleep(0.3)  # Rate limiting
             
             f.write("\n")
         
@@ -159,8 +207,13 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
             total = len(inventory['uncommon'])
             for idx, item in enumerate(inventory['uncommon'], 1):
                 # Get image URL
-                print(f"  [{idx}/{total}] {item['name'][:40]}")
+                print(f"  [{idx}/{total}] {item['name'][:50]}", end='... ')
                 image_url = get_image_from_aon(item['name'])
+                
+                if image_url:
+                    print(f"✓")
+                else:
+                    print(f"✗")
                 
                 # Fix and capitalize fields
                 name = item['name']
@@ -179,7 +232,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 
                 f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} |\n")
                 
-                time.sleep(0.2)
+                time.sleep(0.3)
             
             f.write("\n")
         
@@ -192,8 +245,13 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
             total = len(inventory['rare'])
             for idx, item in enumerate(inventory['rare'], 1):
                 # Get image URL
-                print(f"  [{idx}/{total}] {item['name'][:40]}")
+                print(f"  [{idx}/{total}] {item['name'][:50]}", end='... ')
                 image_url = get_image_from_aon(item['name'])
+                
+                if image_url:
+                    print(f"✓")
+                else:
+                    print(f"✗")
                 
                 # Fix and capitalize fields
                 name = item['name']
@@ -212,7 +270,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 
                 f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} |\n")
                 
-                time.sleep(0.2)
+                time.sleep(0.3)
             
             f.write("\n")
         
@@ -233,215 +291,183 @@ if __name__ == "__main__":
     # Create output directory
     os.makedirs('players', exist_ok=True)
     
-    # 1. Otari Market - All types
-    print("\n[1/10] Generating Otari Market...")
-    inventory = generate_merchant_inventory(
-        equipment,
-        categories=['weapon', 'armor', 'adventuring', 'alchemical', 'magical'],
-        num_common=50,
-        num_uncommon=random.randint(1, 7)
-    )
-    write_merchant_with_header(
-        "Otari Market",
-        "One-stop shop for basic goods",
-        "Keeleno Lathenar (dour, humorless human merchant)",
-        "All adventuring gear, light armor, and simple weapons",
-        inventory
-    )
+    # Randomly select 2 merchants to get rare items
+    merchants_with_rares = random.sample(range(10), 2)
+    print(f"  Merchants {merchants_with_rares[0]+1} and {merchants_with_rares[1]+1} will have rare items\n")
     
-    # 2. Wrin's Wonders - Magical items, scrolls, wands, potions, alchemical, adventuring
-    print("\n[2/10] Generating Wrin's Wonders...")
-    inventory = generate_merchant_inventory(
-        equipment,
-        categories=['magical', 'alchemical', 'adventuring'],
-        num_common=30,
-        num_uncommon=random.randint(1, 7)
-    )
-    write_merchant_with_header(
-        "Wrin's Wonders",
-        "Eccentric tiefling-elf oddities merchant and stargazer",
-        "Wrin Sivinxi (CG female tiefling elf oddities merchant 5)",
-        "Scrolls, wands, potions, alchemical items, and adventuring gear",
-        inventory,
-        services=[
-            "Spellcasting Services: Price varies by spell level (GM discretion)",
-            "Spell Learning/Training: Price negotiable (GM discretion)",
-            "Magical item identification: 1-10 gp depending on complexity",
-            "Astrological readings: 5 sp - 5 gp"
-        ]
-    )
+    merchant_configs = [
+        # 1. Otari Market - All types
+        {
+            'name': 'Otari Market',
+            'description': 'One-stop shop for basic goods',
+            'proprietor': 'Keeleno Lathenar (dour, humorless human merchant)',
+            'specialties': 'All adventuring gear, light armor, and simple weapons',
+            'categories': ['weapon', 'armor', 'adventuring', 'alchemical', 'magical'],
+            'services': None
+        },
+        # 2. Wrin's Wonders - Magical items, scrolls, wands, potions, alchemical, adventuring
+        {
+            'name': "Wrin's Wonders",
+            'description': 'Eccentric tiefling-elf oddities merchant and stargazer',
+            'proprietor': 'Wrin Sivinxi (CG female tiefling elf oddities merchant 5)',
+            'specialties': 'Scrolls, wands, potions, alchemical items, and adventuring gear',
+            'categories': ['magical', 'alchemical', 'adventuring'],
+            'services': [
+                "Spellcasting Services: Price varies by spell level (GM discretion)",
+                "Spell Learning/Training: Price negotiable (GM discretion)",
+                "Magical item identification: 1-10 gp depending on complexity",
+                "Astrological readings: 5 sp - 5 gp"
+            ]
+        },
+        # 3. Odd Stories - Scrolls and adventuring gear
+        {
+            'name': 'Odd Stories',
+            'description': 'Bookshop and scroll emporium',
+            'proprietor': 'Morlibint (NG male gnome bookseller 3)',
+            'specialties': 'Books, scrolls, and writing supplies',
+            'categories': ['magical', 'adventuring'],
+            'services': [
+                "Spellcasting Services: Price varies by spell level (GM discretion)",
+                "Spell Learning/Training: Price negotiable (GM discretion)",
+                "Book copying and restoration: 1-5 gp per page",
+                "Research assistance: 5 gp per day"
+            ]
+        },
+        # 4. Gallentine Deliveries - Service only (no inventory)
+        {
+            'name': 'Gallentine Deliveries',
+            'description': 'Courier and delivery service',
+            'proprietor': 'Gallentine (N female human courier 2)',
+            'specialties': 'Package delivery, message running, and escort services',
+            'categories': [],
+            'services': [
+                "Local delivery (within Otari): 1 sp per package",
+                "Regional delivery (to nearby towns): 5 sp - 2 gp depending on distance",
+                "Long-distance delivery: Price negotiable (GM discretion)",
+                "Escort services: 5 gp per day",
+                "Rush delivery: Double normal price"
+            ]
+        },
+        # 5. Blades for Glades - Weapons and armor only
+        {
+            'name': 'Blades for Glades',
+            'description': 'Weaponsmith and armorer',
+            'proprietor': 'Jorsk Hinterclaw (LN male dwarf weaponsmith 4)',
+            'specialties': 'Weapons and armor of all types',
+            'categories': ['weapon', 'armor'],
+            'services': [
+                "Weapon sharpening: 5 sp",
+                "Armor repair: 1-5 gp depending on damage",
+                "Custom weapon crafting: Price negotiable (GM discretion)",
+                "Weapon engraving: 1 gp"
+            ]
+        },
+        # 6. Crow's Casks - Adventuring gear only (tavern)
+        {
+            'name': "Crow's Casks",
+            'description': 'Tavern and general store',
+            'proprietor': 'Crow (CN female human tavernkeeper 2)',
+            'specialties': 'Food, drink, and basic adventuring supplies',
+            'categories': ['adventuring'],
+            'services': [
+                "Meals: 1 cp (poor) to 1 gp (fine)",
+                "Lodging: 3 cp (floor space) to 5 sp (private room)",
+                "Ale/Wine: 1 cp (mug) to 1 sp (bottle)",
+                "Rumors and information: Free with purchase"
+            ]
+        },
+        # 7. Crook's Nook - Adventuring gear only (tavern)
+        {
+            'name': "Crook's Nook",
+            'description': 'Seedy tavern and flophouse',
+            'proprietor': 'Crook (NE male half-orc tavernkeeper 3)',
+            'specialties': 'Cheap lodging and questionable goods',
+            'categories': ['adventuring'],
+            'services': [
+                "Meals: 1 cp (poor quality)",
+                "Lodging: 3 cp (floor space) to 3 sp (shared room)",
+                "Ale: 1 cp (watered down)",
+                "Black market contacts: 5-50 gp (GM discretion)"
+            ]
+        },
+        # 8. The Rowdy Rockfish - Adventuring gear only (tavern)
+        {
+            'name': 'The Rowdy Rockfish',
+            'description': 'Lively tavern and inn',
+            'proprietor': 'Tamily Tanderveil (CG female halfling innkeeper 4)',
+            'specialties': 'Quality food, drink, and lodging',
+            'categories': ['adventuring'],
+            'services': [
+                "Meals: 5 cp (square) to 2 gp (fine)",
+                "Lodging: 5 cp (bed) to 1 gp (private room with bath)",
+                "Ale/Wine: 1 cp (mug) to 5 sp (fine bottle)",
+                "Entertainment: Free nightly performances",
+                "Hot bath: 2 cp"
+            ]
+        },
+        # 9. Otari Fishery - Adventuring gear only
+        {
+            'name': 'Otari Fishery',
+            'description': 'Fresh fish and fishing supplies',
+            'proprietor': 'Lillia Dusklight (NG female human fisher 2)',
+            'specialties': 'Fresh fish, fishing gear, and rope',
+            'categories': ['adventuring'],
+            'services': [
+                "Fresh fish: 1 cp - 5 sp depending on type",
+                "Fishing lessons: 5 sp per hour",
+                "Boat rental: 5 sp per day",
+                "Net repair: 1 sp"
+            ]
+        },
+        # 10. Dawnflower Library - Scrolls and magical items
+        {
+            'name': 'Dawnflower Library',
+            'description': 'Temple library and scriptorium',
+            'proprietor': 'Vandy Banderdash (LG female halfling cleric of Sarenrae 5)',
+            'specialties': 'Religious texts, scrolls, and holy items',
+            'categories': ['magical', 'adventuring'],
+            'services': [
+                "Spellcasting Services: Price varies by spell level (GM discretion)",
+                "Healing: 1-20 gp depending on severity",
+                "Remove curse/disease: 10-50 gp (GM discretion)",
+                "Research assistance: Free for worshippers, 2 gp per day for others",
+                "Blessings: Donation-based"
+            ]
+        }
+    ]
     
-    # 3. Odd Stories - Scrolls and adventuring gear
-    print("\n[3/10] Generating Odd Stories...")
-    inventory = generate_merchant_inventory(
-        equipment,
-        categories=['magical', 'adventuring'],
-        num_common=25,
-        num_uncommon=random.randint(1, 7)
-    )
-    write_merchant_with_header(
-        "Odd Stories",
-        "Bookshop and scroll emporium",
-        "Morlibint (NG male gnome bookseller 3)",
-        "Books, scrolls, and writing supplies",
-        inventory,
-        services=[
-            "Spellcasting Services: Price varies by spell level (GM discretion)",
-            "Spell Learning/Training: Price negotiable (GM discretion)",
-            "Book copying and restoration: 1-5 gp per page",
-            "Research assistance: 5 gp per day"
-        ]
-    )
-    
-    # 4. Gallentine Deliveries - Service only (no inventory)
-    print("\n[4/10] Generating Gallentine Deliveries...")
-    write_merchant_with_header(
-        "Gallentine Deliveries",
-        "Courier and delivery service",
-        "Gallentine (N female human courier 2)",
-        "Package delivery, message running, and escort services",
-        {'common': [], 'uncommon': [], 'rare': []},
-        services=[
-            "Local delivery (within Otari): 1 sp per package",
-            "Regional delivery (to nearby towns): 5 sp - 2 gp depending on distance",
-            "Long-distance delivery: Price negotiable (GM discretion)",
-            "Escort services: 5 gp per day",
-            "Rush delivery: Double normal price"
-        ]
-    )
-    
-    # 5. Blades for Glades - Weapons and armor only
-    print("\n[5/10] Generating Blades for Glades...")
-    inventory = generate_merchant_inventory(
-        equipment,
-        categories=['weapon', 'armor'],
-        num_common=40,
-        num_uncommon=random.randint(1, 7)
-    )
-    write_merchant_with_header(
-        "Blades for Glades",
-        "Weaponsmith and armorer",
-        "Jorsk Hinterclaw (LN male dwarf weaponsmith 4)",
-        "Weapons and armor of all types",
-        inventory,
-        services=[
-            "Weapon sharpening: 5 sp",
-            "Armor repair: 1-5 gp depending on damage",
-            "Custom weapon crafting: Price negotiable (GM discretion)",
-            "Weapon engraving: 1 gp"
-        ]
-    )
-    
-    # 6. Crow's Casks - Adventuring gear only (tavern)
-    print("\n[6/10] Generating Crow's Casks...")
-    inventory = generate_merchant_inventory(
-        equipment,
-        categories=['adventuring'],
-        num_common=20,
-        num_uncommon=random.randint(1, 7)
-    )
-    write_merchant_with_header(
-        "Crow's Casks",
-        "Tavern and general store",
-        "Crow (CN female human tavernkeeper 2)",
-        "Food, drink, and basic adventuring supplies",
-        inventory,
-        services=[
-            "Meals: 1 cp (poor) to 1 gp (fine)",
-            "Lodging: 3 cp (floor space) to 5 sp (private room)",
-            "Ale/Wine: 1 cp (mug) to 1 sp (bottle)",
-            "Rumors and information: Free with purchase"
-        ]
-    )
-    
-    # 7. Crook's Nook - Adventuring gear only (tavern)
-    print("\n[7/10] Generating Crook's Nook...")
-    inventory = generate_merchant_inventory(
-        equipment,
-        categories=['adventuring'],
-        num_common=20,
-        num_uncommon=random.randint(1, 7)
-    )
-    write_merchant_with_header(
-        "Crook's Nook",
-        "Seedy tavern and flophouse",
-        "Crook (NE male half-orc tavernkeeper 3)",
-        "Cheap lodging and questionable goods",
-        inventory,
-        services=[
-            "Meals: 1 cp (poor quality)",
-            "Lodging: 3 cp (floor space) to 3 sp (shared room)",
-            "Ale: 1 cp (watered down)",
-            "Black market contacts: 5-50 gp (GM discretion)"
-        ]
-    )
-    
-    # 8. The Rowdy Rockfish - Adventuring gear only (tavern)
-    print("\n[8/10] Generating The Rowdy Rockfish...")
-    inventory = generate_merchant_inventory(
-        equipment,
-        categories=['adventuring'],
-        num_common=25,
-        num_uncommon=random.randint(1, 7)
-    )
-    write_merchant_with_header(
-        "The Rowdy Rockfish",
-        "Lively tavern and inn",
-        "Tamily Tanderveil (CG female halfling innkeeper 4)",
-        "Quality food, drink, and lodging",
-        inventory,
-        services=[
-            "Meals: 5 cp (square) to 2 gp (fine)",
-            "Lodging: 5 cp (bed) to 1 gp (private room with bath)",
-            "Ale/Wine: 1 cp (mug) to 5 sp (fine bottle)",
-            "Entertainment: Free nightly performances",
-            "Hot bath: 2 cp"
-        ]
-    )
-    
-    # 9. Otari Fishery - Adventuring gear only
-    print("\n[9/10] Generating Otari Fishery...")
-    inventory = generate_merchant_inventory(
-        equipment,
-        categories=['adventuring'],
-        num_common=15,
-        num_uncommon=random.randint(1, 7)
-    )
-    write_merchant_with_header(
-        "Otari Fishery",
-        "Fresh fish and fishing supplies",
-        "Lillia Dusklight (NG female human fisher 2)",
-        "Fresh fish, fishing gear, and rope",
-        inventory,
-        services=[
-            "Fresh fish: 1 cp - 5 sp depending on type",
-            "Fishing lessons: 5 sp per hour",
-            "Boat rental: 5 sp per day",
-            "Net repair: 1 sp"
-        ]
-    )
-    
-    # 10. Dawnflower Library - Scrolls and magical items
-    print("\n[10/10] Generating Dawnflower Library...")
-    inventory = generate_merchant_inventory(
-        equipment,
-        categories=['magical', 'adventuring'],
-        num_common=20,
-        num_uncommon=random.randint(1, 7)
-    )
-    write_merchant_with_header(
-        "Dawnflower Library",
-        "Temple library and scriptorium",
-        "Vandy Banderdash (LG female halfling cleric of Sarenrae 5)",
-        "Religious texts, scrolls, and holy items",
-        inventory,
-        services=[
-            "Spellcasting Services: Price varies by spell level (GM discretion)",
-            "Healing: 1-20 gp depending on severity",
-            "Remove curse/disease: 10-50 gp (GM discretion)",
-            "Research assistance: Free for worshippers, 2 gp per day for others",
-            "Blessings: Donation-based"
-        ]
-    )
+    for idx, config in enumerate(merchant_configs):
+        print(f"\n[{idx+1}/10] Generating {config['name']}...")
+        
+        # Generate inventory with new limits
+        num_common = random.randint(3, 15)
+        num_uncommon = random.randint(1, 3)
+        has_rare = idx in merchants_with_rares
+        
+        if config['categories']:  # Skip if service-only
+            inventory = generate_merchant_inventory(
+                equipment,
+                categories=config['categories'],
+                num_common=num_common,
+                num_uncommon=num_uncommon
+            )
+            
+            # Add rare item if this merchant was selected
+            if has_rare:
+                rare_pool = [e for e in equipment if e['type'] in config['categories'] and e['rarity'] == 'rare']
+                if rare_pool:
+                    inventory['rare'] = [random.choice(rare_pool)]
+                    print(f"  ⭐ Added rare item!")
+        else:
+            inventory = {'common': [], 'uncommon': [], 'rare': []}
+        
+        write_merchant_with_header(
+            config['name'],
+            config['description'],
+            config['proprietor'],
+            config['specialties'],
+            inventory,
+            config['services']
+        )
     
     print("\n✓ All merchants generated!")

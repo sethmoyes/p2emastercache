@@ -12,45 +12,35 @@
 
 **Specialties:** Books, scrolls, and writing supplies
 
-## Common Items (25)
+## Common Items (12)
 
 | Image | Name | Level | Price | Rarity | Category | Type |
 |-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Leaf%20Weave) | Leaf Weave | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Sticky%20Algae%20Bomb) | Sticky Algae Bomb (Lesser) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Bomber%27s%20Eye%20Elixir) | Bomber's Eye Elixir (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Mask) | Mask (Rubber) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Harpoon) | Harpoon | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Lion%20Claw) | Lion Claw | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Nyctessa%27s%20Staff) | Nyctessa's Staff | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Tent) | Tent (Four-Person) | 0 | 1 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Holy%20Chain) | Holy Chain | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Pummel-Growth%20Toxin) | Pummel-Growth Toxin | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Warding%20Tablets) | Warding Tablets | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Fishing%20Tackle) | Fishing Tackle | 0 | 1 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Storm%20Hammer) | Storm Hammer | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Bone%20Object) | Bone Object | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Toxic%20Blood) | Toxic Blood | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Desert%20Winds) | Staff of the Desert Winds (Major) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Flask%20of%20Fellowship) | Flask of Fellowship | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Animal%20Blind) | Animal Blind | 0 | 2 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Staff-Storing%20Shield) | Staff-Storing Shield | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Wheelchair) | Wheelchair (Land-Delver's Chair) | 0 | 2 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Acid%20Flask) | Acid Flask (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Hongrui%27s%20Gratitude) | Hongrui's Gratitude | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Fish) | Fish | 0 | 0 gp | Common | Animals | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Olfactory%20Stimulators) | Olfactory Stimulators (Bloodhound) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Mirror%20Goggles) | Mirror Goggles (Moderate) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Bristling%20Spines) | Bristling Spines (Moderate) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Eye%20of%20the%20Unseen) | Eye of the Unseen | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Obsidian%20Goggles) | Obsidian Goggles (Major) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Atlatl) | Atlatl | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Obsidian%20Goggles) | Obsidian Goggles | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Transportation) | Transportation (Carriage) | 0 | 0 gp | Common | Transportation | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Daredevil%20Boots) | Daredevil Boots (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Sleeves%20of%20Storage) | Sleeves of Storage | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Fluid%20Form%20Staff) | Fluid Form Staff (Major) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) | Magic Wand (5th-rank Spell) | 0 | 0 gp | Common | N/A | Magical |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Gray%20Maiden%20Plate) | Gray Maiden Plate | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Unholy%20Plate) | Unholy Plate | 0 | 0 gp | Common | N/A | Adventuring |
 
-## Uncommon Items (5)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type |
 |-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Crescent%20Cross) | Crescent Cross (Ranged) | 0 | 0 gp | Uncommon | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Storm%20Herald) | Storm Herald | 0 | 0 gp | Uncommon | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Lions%20Pelt) | Lion’s Pelt (Leather) | 0 | 0 gp | Uncommon | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Mycoweave%20Shield) | Mycoweave Shield (Greater) | 0 | 0 gp | Uncommon | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Final%20Rest) | Staff of Final Rest (Major) | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Stupor%20Poison) | Stupor Poison | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Toadskin%20Salve) | Toadskin Salve (Major) | 0 | 0 gp | Uncommon | N/A | Adventuring |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type |
+|-------|------|-------|-------|--------|----------|------|
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Electromuscular%20Stimulator) | Electromuscular Stimulator | 0 | 0 gp | Rare | N/A | Adventuring |
 
 ## Services
 

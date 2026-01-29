@@ -12,43 +12,33 @@
 
 **Specialties:** Quality food, drink, and lodging
 
-## Common Items (25)
+## Common Items (10)
 
 | Image | Name | Level | Price | Rarity | Category | Type |
 |-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Thurible%20of%20Revelation) | Thurible of Revelation (Lesser) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Garrote%20Shot) | Garrote Shot | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Researcher) | Researcher (Level 1; trained) | 0 | 0 gp | Common | Researcher | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Merciful%20Balm) | Merciful Balm | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Ventriloquist%27s%20Ring) | Ventriloquist's Ring (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Animal%20Nip) | Animal Nip (Moderate) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Frost%20Vial) | Frost Vial (Major) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Concealed%20Sheath) | Concealed Sheath | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Desert%20Winds) | Staff of the Desert Winds | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Trustworthy%20Round) | Trustworthy Round | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Praying%20Mantis) | Praying Mantis | 0 | 0 gp | Common | Animals | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Stumbling%20Fulu) | Stumbling Fulu | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Desolation%20Locket) | Desolation Locket (Major) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Thunderblast%20Slippers) | Thunderblast Slippers | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Retaliation) | Retaliation (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Soothing%20Scents) | Soothing Scents | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Clown%20Monarch) | Clown Monarch | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Firestarter%20Pellets) | Firestarter Pellets | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Dragonbone%20Arrowhead) | Dragonbone Arrowhead | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Spellguard%20Blade) | Spellguard Blade | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Alchemist%27s%20Haversack) | Alchemist's Haversack | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Unifying%20Emblem) | Unifying Emblem (Shundar-Quah) | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Saddlebags) | Saddlebags | 0 | 5 sp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Familiar%20Tattoo) | Familiar Tattoo | 0 | 0 gp | Common | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Horned%20Hand%20Rests) | Horned Hand Rests | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Soaring%20Wings) | Soaring Wings | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Fixer) | Fixer (Expert Councelor) | 0 | 0 gp | Common | Fixer | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Stabling) | Stabling | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Olfactory%20Stimulators) | Olfactory Stimulators (Bloodhound) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Verdant%20Staff) | Verdant Staff (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Thieves%27%20Toolkit) | Thieves' Toolkit | 0 | 5 sp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Researcher) | Researcher (Level 5) | 0 | 0 gp | Common | Researcher | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Dragonscale%20Cameo) | Dragonscale Cameo | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Reverberating%20Stone) | Reverberating Stone (Greater) | 0 | 0 gp | Common | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Bewitching%20Bloom) | Bewitching Bloom (Lilac) | 0 | 0 gp | Common | N/A | Adventuring |
 
-## Uncommon Items (3)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type |
 |-------|------|-------|-------|--------|----------|------|
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Spirit%20Trap) | Spirit Trap | 0 | 0 gp | Uncommon | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Hauling) | Hauling (Greater) | 0 | 0 gp | Uncommon | N/A | Adventuring |
-| [🔍](https://2e.aonprd.com/Search.aspx?query=Thrice-Fried%20Mudwings) | Thrice-Fried Mudwings | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Aether%20Appendage) | Aether Appendage | 0 | 0 gp | Uncommon | N/A | Adventuring |
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Mourner%27s%20Dawnlight%20Fulu) | Mourner's Dawnlight Fulu | 0 | 0 gp | Uncommon | N/A | Adventuring |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type |
+|-------|------|-------|-------|--------|----------|------|
+| [🔍](https://2e.aonprd.com/Search.aspx?query=Orm%20Choker) | Orm Choker | 0 | 0 gp | Rare | N/A | Adventuring |
 
 ## Services
 
