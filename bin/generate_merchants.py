@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """
 Unified Otari Merchant Generator
-Generates merchant inventories with links to Archives of Nethys
+Generates merchant inventories with images scraped from Google Images
 """
 import random
 import re
 import os
 import urllib.parse
 import json
+import requests
+from bs4 import BeautifulSoup
+import time
 
 def load_equipment_json(filename):
     """Load equipment from JSON file"""
@@ -27,13 +30,37 @@ def clean_item_name(name):
     return name.strip()
 
 def get_image_from_aon(item_name):
-    """Generate Archives of Nethys image URL for the item"""
-    # Create direct image URL to AoN using Google Images site search
-    clean_name = clean_item_name(item_name)
-    # Use Google Images with site filter for 2e.aonprd.com
-    search_query = f"site:2e.aonprd.com {clean_name}"
-    image_url = f"https://www.google.com/search?q={urllib.parse.quote(search_query)}&tbm=isch"
-    return image_url
+    """Scrape Google Images for actual image URL from Archives of Nethys"""
+    try:
+        clean_name = clean_item_name(item_name)
+        # Search specifically on 2e.aonprd.com
+        search_query = f"site:2e.aonprd.com {clean_name}"
+        encoded_query = urllib.parse.quote(search_query)
+        search_url = f"https://www.google.com/search?q={encoded_query}&tbm=isch"
+        
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        }
+        
+        response = requests.get(search_url, headers=headers, timeout=5)
+        
+        if response.status_code == 200:
+            content = response.text
+            
+            # Try to find 2e.aonprd.com image URLs in the HTML
+            image_pattern = r'https://2e\.aonprd\.com/Images/[^"\'>\s]+\.(?:png|jpg|jpeg|webp|gif)'
+            matches = re.findall(image_pattern, content)
+            
+            if matches:
+                # Return the first valid image URL
+                return matches[0]
+        
+        # If scraping fails, return None
+        return None
+        
+    except Exception as e:
+        # Silently fail - don't spam console
+        return None
 
 def fix_price(price):
     """Fix malformed prices from source data"""
@@ -92,9 +119,13 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
         # Common items
         if inventory['common']:
             f.write(f"## Common Items ({len(inventory['common'])})\n\n")
+            f.write("| Image | Name | Level | Price | Rarity | Category | Type |\n")
+            f.write("|-------|------|-------|-------|--------|----------|------|\n")
             
-            for item in inventory['common']:
+            total = len(inventory['common'])
+            for idx, item in enumerate(inventory['common'], 1):
                 # Get image URL
+                print(f"  [{idx}/{total}] {item['name'][:40]}")
                 image_url = get_image_from_aon(item['name'])
                 
                 # Fix and capitalize fields
@@ -105,22 +136,29 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 category = capitalize_field(item.get('category', 'N/A'))
                 item_type = capitalize_field(item['type'])
                 
-                # Write item with image
-                f.write(f"### {name}\n\n")
-                f.write(f"![{name}]({image_url})\n\n")
-                f.write(f"**Level:** {level} | **Price:** {price} | **Rarity:** {rarity}\n\n")
-                f.write(f"**Category:** {category} | **Type:** {item_type}\n\n")
-                f.write(f"[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))})\n\n")
-                f.write("---\n\n")
+                # Create image markdown
+                if image_url:
+                    img_md = f"![{name}]({image_url})"
+                else:
+                    # Fallback to search link
+                    search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
+                    img_md = f"[🔍]({search_url})"
+                
+                f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} |\n")
+                
+                time.sleep(0.2)  # Reduced rate limiting
             
             f.write("\n")
         
         # Uncommon items
         if inventory['uncommon']:
             f.write(f"## Uncommon Items ({len(inventory['uncommon'])})\n\n")
+            f.write("| Image | Name | Level | Price | Rarity | Category | Type |\n")
+            f.write("|-------|------|-------|-------|--------|----------|------|\n")
             
             for item in inventory['uncommon']:
                 # Get image URL
+                print(f"  Fetching image for: {item['name']}")
                 image_url = get_image_from_aon(item['name'])
                 
                 # Fix and capitalize fields
@@ -131,22 +169,28 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 category = capitalize_field(item.get('category', 'N/A'))
                 item_type = capitalize_field(item['type'])
                 
-                # Write item with image
-                f.write(f"### {name}\n\n")
-                f.write(f"![{name}]({image_url})\n\n")
-                f.write(f"**Level:** {level} | **Price:** {price} | **Rarity:** {rarity}\n\n")
-                f.write(f"**Category:** {category} | **Type:** {item_type}\n\n")
-                f.write(f"[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))})\n\n")
-                f.write("---\n\n")
+                # Create image markdown
+                if image_url:
+                    img_md = f"![{name}]({image_url})"
+                else:
+                    search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
+                    img_md = f"[🔍]({search_url})"
+                
+                f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} |\n")
+                
+                time.sleep(0.5)
             
             f.write("\n")
         
         # Rare items
         if inventory['rare']:
             f.write(f"## Rare Items ({len(inventory['rare'])})\n\n")
+            f.write("| Image | Name | Level | Price | Rarity | Category | Type |\n")
+            f.write("|-------|------|-------|-------|--------|----------|------|\n")
             
             for item in inventory['rare']:
                 # Get image URL
+                print(f"  Fetching image for: {item['name']}")
                 image_url = get_image_from_aon(item['name'])
                 
                 # Fix and capitalize fields
@@ -157,13 +201,16 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 category = capitalize_field(item.get('category', 'N/A'))
                 item_type = capitalize_field(item['type'])
                 
-                # Write item with image
-                f.write(f"### {name}\n\n")
-                f.write(f"![{name}]({image_url})\n\n")
-                f.write(f"**Level:** {level} | **Price:** {price} | **Rarity:** {rarity}\n\n")
-                f.write(f"**Category:** {category} | **Type:** {item_type}\n\n")
-                f.write(f"[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))})\n\n")
-                f.write("---\n\n")
+                # Create image markdown
+                if image_url:
+                    img_md = f"![{name}]({image_url})"
+                else:
+                    search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
+                    img_md = f"[🔍]({search_url})"
+                
+                f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} |\n")
+                
+                time.sleep(0.5)
             
             f.write("\n")
         
