@@ -14,47 +14,405 @@
 
 ## Common Items (30)
 
-| Name | Level | Price | Rarity | Category | Type | Link |
-|------|-------|-------|--------|----------|------|-------|
-| Soothing Scents | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Soothing%20Scents) |
-| Sharpened Canines | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sharpened%20Canines) |
-| Manacles (Average) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Manacles) |
-| Magnetic Shot (Moderate) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magnetic%20Shot) |
-| Blight Bomb (Lesser) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blight%20Bomb) |
-| Wooden Nickel | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Nickel) |
-| Rotary Bow | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rotary%20Bow) |
-| Red Hand's Satchel | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Red%20Hand%27s%20Satchel) |
-| Winged | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Winged) |
-| Frostwalker Pattern | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Frostwalker%20Pattern) |
-| Clothing (Fine) | 0 | L | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clothing) |
-| Mug | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mug) |
-| Sleeves of Storage | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sleeves%20of%20Storage) |
-| Witchwarg Fur | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Witchwarg%20Fur) |
-| Harness | 0 | 0 gp | common | Animal Caretaking Gear | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Harness) |
-| Flaming Star (Major) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Flaming%20Star) |
-| Bravery Baldric (Flight) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bravery%20Baldric) |
-| Greataxe | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Greataxe) |
-| Familiar Morsel | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Familiar%20Morsel) |
-| Sky King's Tomb | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sky%20King%27s%20Tomb) |
-| Animal Staff (Major) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Animal%20Staff) |
-| Tentacle Potion (Greater) | 0 | 0 gp | common |  | magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
-| Indomitable Keepsake | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Indomitable%20Keepsake) |
-| Spiritual Warhorn (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spiritual%20Warhorn) |
-| Spectacles of Inquiry | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spectacles%20of%20Inquiry) |
-| Clarity Goggles (Lesser) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clarity%20Goggles) |
-| Holy Chain | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Holy%20Chain) |
-| Spellcasting (3rd rank) | 0 | 0 gp | common | Spellcasting | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
-| Paint Set | 0 | L | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Paint%20Set) |
-| Olfactory Obfuscator (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Olfactory%20Obfuscator) |
+### Bloodhound Mask (Lesser)
 
-## Uncommon Items (4)
+![Bloodhound Mask (Lesser)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Bloodhound%20Mask&tbm=isch)
 
-| Name | Level | Price | Rarity | Category | Type | Link |
-|------|-------|-------|--------|----------|------|-------|
-| Ablative Shield Plating (Lesser) | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ablative%20Shield%20Plating) |
-| Dandpatta | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dandpatta) |
-| Heated Cloak | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Heated%20Cloak) |
-| Skinsaw Mask | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Skinsaw%20Mask) |
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Bloodhound%20Mask)
+
+---
+
+### Spell Echo Shot
+
+![Spell Echo Shot](https://www.google.com/search?q=site%3A2e.aonprd.com%20Spell%20Echo%20Shot&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Spell%20Echo%20Shot)
+
+---
+
+### Rose of Loves Lost
+
+![Rose of Loves Lost](https://www.google.com/search?q=site%3A2e.aonprd.com%20Rose%20of%20Loves%20Lost&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Rose%20of%20Loves%20Lost)
+
+---
+
+### Imp Shot
+
+![Imp Shot](https://www.google.com/search?q=site%3A2e.aonprd.com%20Imp%20Shot&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Imp%20Shot)
+
+---
+
+### Flail
+
+![Flail](https://www.google.com/search?q=site%3A2e.aonprd.com%20Flail&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Flail)
+
+---
+
+### Scope of Truth
+
+![Scope of Truth](https://www.google.com/search?q=site%3A2e.aonprd.com%20Scope%20of%20Truth&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Scope%20of%20Truth)
+
+---
+
+### Blade of Four Energies (Greater)
+
+![Blade of Four Energies (Greater)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Blade%20of%20Four%20Energies&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Blade%20of%20Four%20Energies)
+
+---
+
+### Mask (Fine)
+
+![Mask (Fine)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Mask&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Mask)
+
+---
+
+### Map (Treasure Map)
+
+![Map (Treasure Map)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Map&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Map)
+
+---
+
+### Ghosthand's Comet
+
+![Ghosthand's Comet](https://www.google.com/search?q=site%3A2e.aonprd.com%20Ghosthand%27s%20Comet&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Ghosthand%27s%20Comet)
+
+---
+
+### Piton
+
+![Piton](https://www.google.com/search?q=site%3A2e.aonprd.com%20Piton&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Piton)
+
+---
+
+### Eye of Enlightenment
+
+![Eye of Enlightenment](https://www.google.com/search?q=site%3A2e.aonprd.com%20Eye%20of%20Enlightenment&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Eye%20of%20Enlightenment)
+
+---
+
+### Troubadour's Cap
+
+![Troubadour's Cap](https://www.google.com/search?q=site%3A2e.aonprd.com%20Troubadour%27s%20Cap&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Troubadour%27s%20Cap)
+
+---
+
+### Ghost Charge (Moderate)
+
+![Ghost Charge (Moderate)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Ghost%20Charge&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Ghost%20Charge)
+
+---
+
+### Wand of Reaching (6th-Rank Spell)
+
+![Wand of Reaching (6th-Rank Spell)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Wand%20of%20Reaching&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Magical
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching)
+
+---
+
+### Lady's Blessing Oil
+
+![Lady's Blessing Oil](https://www.google.com/search?q=site%3A2e.aonprd.com%20Lady%27s%20Blessing%20Oil&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Lady%27s%20Blessing%20Oil)
+
+---
+
+### Animal Staff (Greater)
+
+![Animal Staff (Greater)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Animal%20Staff&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Animal%20Staff)
+
+---
+
+### Forked Bipod
+
+![Forked Bipod](https://www.google.com/search?q=site%3A2e.aonprd.com%20Forked%20Bipod&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Forked%20Bipod)
+
+---
+
+### Demolition Fulu (Greater)
+
+![Demolition Fulu (Greater)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Demolition%20Fulu&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Demolition%20Fulu)
+
+---
+
+### Alpaca
+
+![Alpaca](https://www.google.com/search?q=site%3A2e.aonprd.com%20Alpaca&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** Animals | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Alpaca)
+
+---
+
+### Wand of the Ash Puppet
+
+![Wand of the Ash Puppet](https://www.google.com/search?q=site%3A2e.aonprd.com%20Wand%20of%20the%20Ash%20Puppet&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Magical
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20the%20Ash%20Puppet)
+
+---
+
+### Scene Stealer's Tunic
+
+![Scene Stealer's Tunic](https://www.google.com/search?q=site%3A2e.aonprd.com%20Scene%20Stealer%27s%20Tunic&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Scene%20Stealer%27s%20Tunic)
+
+---
+
+### Everlight Crystal
+
+![Everlight Crystal](https://www.google.com/search?q=site%3A2e.aonprd.com%20Everlight%20Crystal&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Everlight%20Crystal)
+
+---
+
+### Gerbil or Hamster
+
+![Gerbil or Hamster](https://www.google.com/search?q=site%3A2e.aonprd.com%20Gerbil%20or%20Hamster&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** Animals | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Gerbil%20or%20Hamster)
+
+---
+
+### Klar
+
+![Klar](https://www.google.com/search?q=site%3A2e.aonprd.com%20Klar&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Klar)
+
+---
+
+### Wheelchair (Traveler's Chair)
+
+![Wheelchair (Traveler's Chair)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Wheelchair&tbm=isch)
+
+**Level:** 0 | **Price:** 3 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Wheelchair)
+
+---
+
+### Unholy Plate
+
+![Unholy Plate](https://www.google.com/search?q=site%3A2e.aonprd.com%20Unholy%20Plate&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Unholy%20Plate)
+
+---
+
+### Warding Tattoo (Wave)
+
+![Warding Tattoo (Wave)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Warding%20Tattoo&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Warding%20Tattoo)
+
+---
+
+### Blade of Four Energies
+
+![Blade of Four Energies](https://www.google.com/search?q=site%3A2e.aonprd.com%20Blade%20of%20Four%20Energies&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Blade%20of%20Four%20Energies)
+
+---
+
+### Viridian Crown
+
+![Viridian Crown](https://www.google.com/search?q=site%3A2e.aonprd.com%20Viridian%20Crown&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Viridian%20Crown)
+
+---
+
+
+## Uncommon Items (3)
+
+### Greater Vanishing Shocker
+
+![Greater Vanishing Shocker](https://www.google.com/search?q=site%3A2e.aonprd.com%20Greater%20Vanishing%20Shocker&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Greater%20Vanishing%20Shocker)
+
+---
+
+### Whipstaff
+
+![Whipstaff](https://www.google.com/search?q=site%3A2e.aonprd.com%20Whipstaff&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Whipstaff)
+
+---
+
+### Giant Catch Pole
+
+![Giant Catch Pole](https://www.google.com/search?q=site%3A2e.aonprd.com%20Giant%20Catch%20Pole&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Giant%20Catch%20Pole)
+
+---
+
 
 ## Services
 

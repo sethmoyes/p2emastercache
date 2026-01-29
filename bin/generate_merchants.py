@@ -27,12 +27,30 @@ def clean_item_name(name):
     return name.strip()
 
 def get_image_from_aon(item_name):
-    """Generate Archives of Nethys search URL for the item"""
-    # Instead of scraping Google, just create a direct search link to AoN
-    # This is more reliable and doesn't require web scraping
+    """Generate Archives of Nethys image URL for the item"""
+    # Create direct image URL to AoN using Google Images site search
     clean_name = clean_item_name(item_name)
-    search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_name)}"
-    return search_url
+    # Use Google Images with site filter for 2e.aonprd.com
+    search_query = f"site:2e.aonprd.com {clean_name}"
+    image_url = f"https://www.google.com/search?q={urllib.parse.quote(search_query)}&tbm=isch"
+    return image_url
+
+def fix_price(price):
+    """Fix malformed prices from source data"""
+    if not price or price == 'L':
+        return "5 sp"  # Default for 'L' (likely means "Light" bulk, but used as price)
+    
+    # If it's just a number, assume gp
+    if price.isdigit():
+        return f"{price} gp"
+    
+    return price
+
+def capitalize_field(text):
+    """Capitalize first letter of text, handle N/A"""
+    if not text or text == 'N/A' or text == '':
+        return 'N/A'
+    return text[0].upper() + text[1:] if len(text) > 0 else text
 
 def generate_merchant_inventory(equipment, categories, num_common, num_uncommon):
     """Generate random inventory from equipment"""
@@ -74,45 +92,78 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
         # Common items
         if inventory['common']:
             f.write(f"## Common Items ({len(inventory['common'])})\n\n")
-            f.write("| Name | Level | Price | Rarity | Category | Type | Link |\n")
-            f.write("|------|-------|-------|--------|----------|------|-------|\n")
             
             for item in inventory['common']:
-                search_url = get_image_from_aon(item['name'])
-                link_md = f"[View]({search_url})"
+                # Get image URL
+                image_url = get_image_from_aon(item['name'])
                 
-                f.write(f"| {item['name']} | {item['level']} | {item['price']} | ")
-                f.write(f"{item['rarity']} | {item.get('category', 'N/A')} | {item['type']} | {link_md} |\n")
+                # Fix and capitalize fields
+                name = item['name']
+                level = item['level']
+                price = fix_price(item['price'])
+                rarity = capitalize_field(item['rarity'])
+                category = capitalize_field(item.get('category', 'N/A'))
+                item_type = capitalize_field(item['type'])
+                
+                # Write item with image
+                f.write(f"### {name}\n\n")
+                f.write(f"![{name}]({image_url})\n\n")
+                f.write(f"**Level:** {level} | **Price:** {price} | **Rarity:** {rarity}\n\n")
+                f.write(f"**Category:** {category} | **Type:** {item_type}\n\n")
+                f.write(f"[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))})\n\n")
+                f.write("---\n\n")
             
             f.write("\n")
         
         # Uncommon items
         if inventory['uncommon']:
             f.write(f"## Uncommon Items ({len(inventory['uncommon'])})\n\n")
-            f.write("| Name | Level | Price | Rarity | Category | Type | Link |\n")
-            f.write("|------|-------|-------|--------|----------|------|-------|\n")
             
             for item in inventory['uncommon']:
-                search_url = get_image_from_aon(item['name'])
-                link_md = f"[View]({search_url})"
+                # Get image URL
+                image_url = get_image_from_aon(item['name'])
                 
-                f.write(f"| {item['name']} | {item['level']} | {item['price']} | ")
-                f.write(f"{item['rarity']} | {item.get('category', 'N/A')} | {item['type']} | {link_md} |\n")
+                # Fix and capitalize fields
+                name = item['name']
+                level = item['level']
+                price = fix_price(item['price'])
+                rarity = capitalize_field(item['rarity'])
+                category = capitalize_field(item.get('category', 'N/A'))
+                item_type = capitalize_field(item['type'])
+                
+                # Write item with image
+                f.write(f"### {name}\n\n")
+                f.write(f"![{name}]({image_url})\n\n")
+                f.write(f"**Level:** {level} | **Price:** {price} | **Rarity:** {rarity}\n\n")
+                f.write(f"**Category:** {category} | **Type:** {item_type}\n\n")
+                f.write(f"[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))})\n\n")
+                f.write("---\n\n")
             
             f.write("\n")
         
         # Rare items
         if inventory['rare']:
             f.write(f"## Rare Items ({len(inventory['rare'])})\n\n")
-            f.write("| Name | Level | Price | Rarity | Category | Type | Link |\n")
-            f.write("|------|-------|-------|--------|----------|------|-------|\n")
             
             for item in inventory['rare']:
-                search_url = get_image_from_aon(item['name'])
-                link_md = f"[View]({search_url})"
+                # Get image URL
+                image_url = get_image_from_aon(item['name'])
                 
-                f.write(f"| {item['name']} | {item['level']} | {item['price']} | ")
-                f.write(f"{item['rarity']} | {item.get('category', 'N/A')} | {item['type']} | {link_md} |\n")
+                # Fix and capitalize fields
+                name = item['name']
+                level = item['level']
+                price = fix_price(item['price'])
+                rarity = capitalize_field(item['rarity'])
+                category = capitalize_field(item.get('category', 'N/A'))
+                item_type = capitalize_field(item['type'])
+                
+                # Write item with image
+                f.write(f"### {name}\n\n")
+                f.write(f"![{name}]({image_url})\n\n")
+                f.write(f"**Level:** {level} | **Price:** {price} | **Rarity:** {rarity}\n\n")
+                f.write(f"**Category:** {category} | **Type:** {item_type}\n\n")
+                f.write(f"[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))})\n\n")
+                f.write("---\n\n")
             
             f.write("\n")
         

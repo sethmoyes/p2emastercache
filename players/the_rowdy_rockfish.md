@@ -14,43 +14,333 @@
 
 ## Common Items (25)
 
-| Name | Level | Price | Rarity | Category | Type | Link |
-|------|-------|-------|--------|----------|------|-------|
-| Spirit-Sealing Fulu | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spirit-Sealing%20Fulu) |
-| Wyrm's Wingspan (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wyrm%27s%20Wingspan) |
-| Indomitable Keepsake | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Indomitable%20Keepsake) |
-| Mind's Light Circlet | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mind%27s%20Light%20Circlet) |
-| Coyote Cloak (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Coyote%20Cloak) |
-| Flying Broomstick | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Flying%20Broomstick) |
-| Guide Harness | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Guide%20Harness) |
-| Apotropaic Fulu | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Apotropaic%20Fulu) |
-| Spell Duelist's Siphon | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Duelist%27s%20Siphon) |
-| Rooting (Major) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rooting) |
-| Discord Fulu | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Discord%20Fulu) |
-| Splinter Spear (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Splinter%20Spear) |
-| Preserving (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Preserving) |
-| Noxious Incense (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Noxious%20Incense) |
-| Hyldarf's Fang | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hyldarf%27s%20Fang) |
-| Stone Object (Low-Grade) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stone%20Object) |
-| Fortress Plate | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fortress%20Plate) |
-| Stabling | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stabling) |
-| Kris | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Kris) |
-| Periscope | 0 | L | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Periscope) |
-| Gauntlet Buckler | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gauntlet%20Buckler) |
-| Bottled Catharsis (Lesser) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bottled%20Catharsis) |
-| Alchemist's Fire (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Alchemist%27s%20Fire) |
-| Dullahan Codex | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dullahan%20Codex) |
-| Conduit Shot (Greater) | 0 | 0 gp | common |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Conduit%20Shot) |
+### Bola Shot
 
-## Uncommon Items (5)
+![Bola Shot](https://www.google.com/search?q=site%3A2e.aonprd.com%20Bola%20Shot&tbm=isch)
 
-| Name | Level | Price | Rarity | Category | Type | Link |
-|------|-------|-------|--------|----------|------|-------|
-| Shield Pistol | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shield%20Pistol) |
-| Poracha Fulu | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Poracha%20Fulu) |
-| Grasping Tree | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Grasping%20Tree) |
-| Dinosaur Boots (Greater) | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dinosaur%20Boots) |
-| Fire and Iceberg (greater) | 0 | 0 gp | uncommon |  | adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fire%20and%20Iceberg) |
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Bola%20Shot)
+
+---
+
+### Waffle Iron
+
+![Waffle Iron](https://www.google.com/search?q=site%3A2e.aonprd.com%20Waffle%20Iron&tbm=isch)
+
+**Level:** 0 | **Price:** 1 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Waffle%20Iron)
+
+---
+
+### Bastion Plate
+
+![Bastion Plate](https://www.google.com/search?q=site%3A2e.aonprd.com%20Bastion%20Plate&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Bastion%20Plate)
+
+---
+
+### Staff of Elemental Power (Major)
+
+![Staff of Elemental Power (Major)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Staff%20of%20Elemental%20Power&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Elemental%20Power)
+
+---
+
+### Bewitching Bloom (Lilac)
+
+![Bewitching Bloom (Lilac)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Bewitching%20Bloom&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Bewitching%20Bloom)
+
+---
+
+### Restful Sleep Fulu
+
+![Restful Sleep Fulu](https://www.google.com/search?q=site%3A2e.aonprd.com%20Restful%20Sleep%20Fulu&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Restful%20Sleep%20Fulu)
+
+---
+
+### Bands of Force
+
+![Bands of Force](https://www.google.com/search?q=site%3A2e.aonprd.com%20Bands%20of%20Force&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Bands%20of%20Force)
+
+---
+
+### Messenger's Ring
+
+![Messenger's Ring](https://www.google.com/search?q=site%3A2e.aonprd.com%20Messenger%27s%20Ring&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Messenger%27s%20Ring)
+
+---
+
+### Lodging (Private Room, for 2)
+
+![Lodging (Private Room, for 2)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Lodging&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Lodging)
+
+---
+
+### Standard of the Primeval Howl
+
+![Standard of the Primeval Howl](https://www.google.com/search?q=site%3A2e.aonprd.com%20Standard%20of%20the%20Primeval%20Howl&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Standard%20of%20the%20Primeval%20Howl)
+
+---
+
+### Healer's Gel (Greater)
+
+![Healer's Gel (Greater)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Healer%27s%20Gel&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Gel)
+
+---
+
+### Feed (Unique)
+
+![Feed (Unique)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Feed&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** Animal Caretaking Gear | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Feed)
+
+---
+
+### Captivating Score
+
+![Captivating Score](https://www.google.com/search?q=site%3A2e.aonprd.com%20Captivating%20Score&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Captivating%20Score)
+
+---
+
+### Playing Cards
+
+![Playing Cards](https://www.google.com/search?q=site%3A2e.aonprd.com%20Playing%20Cards&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Playing%20Cards)
+
+---
+
+### Execution Powder
+
+![Execution Powder](https://www.google.com/search?q=site%3A2e.aonprd.com%20Execution%20Powder&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Execution%20Powder)
+
+---
+
+### Handwraps of Mighty Blows (+3 greater striking)
+
+![Handwraps of Mighty Blows (+3 greater striking)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Handwraps%20of%20Mighty%20Blows&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Handwraps%20of%20Mighty%20Blows)
+
+---
+
+### Compass
+
+![Compass](https://www.google.com/search?q=site%3A2e.aonprd.com%20Compass&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Compass)
+
+---
+
+### Hireling (Skilled)
+
+![Hireling (Skilled)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Hireling&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** Hirelings | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Hireling)
+
+---
+
+### Spell Duelist's Siphon
+
+![Spell Duelist's Siphon](https://www.google.com/search?q=site%3A2e.aonprd.com%20Spell%20Duelist%27s%20Siphon&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Spell%20Duelist%27s%20Siphon)
+
+---
+
+### Submersible Helm
+
+![Submersible Helm](https://www.google.com/search?q=site%3A2e.aonprd.com%20Submersible%20Helm&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Submersible%20Helm)
+
+---
+
+### Winged (Greater)
+
+![Winged (Greater)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Winged&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Winged)
+
+---
+
+### Orb of Dragonkind
+
+![Orb of Dragonkind](https://www.google.com/search?q=site%3A2e.aonprd.com%20Orb%20of%20Dragonkind&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Orb%20of%20Dragonkind)
+
+---
+
+### Monkey
+
+![Monkey](https://www.google.com/search?q=site%3A2e.aonprd.com%20Monkey&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** Animals | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Monkey)
+
+---
+
+### Corrosive Engravings
+
+![Corrosive Engravings](https://www.google.com/search?q=site%3A2e.aonprd.com%20Corrosive%20Engravings&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Corrosive%20Engravings)
+
+---
+
+### Dart Shield
+
+![Dart Shield](https://www.google.com/search?q=site%3A2e.aonprd.com%20Dart%20Shield&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Common
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Dart%20Shield)
+
+---
+
+
+## Uncommon Items (2)
+
+### Dragon's Breath (7th-Level Spell)
+
+![Dragon's Breath (7th-Level Spell)](https://www.google.com/search?q=site%3A2e.aonprd.com%20Dragon%27s%20Breath&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Dragon%27s%20Breath)
+
+---
+
+### Blooming Lotus Seed Pod
+
+![Blooming Lotus Seed Pod](https://www.google.com/search?q=site%3A2e.aonprd.com%20Blooming%20Lotus%20Seed%20Pod&tbm=isch)
+
+**Level:** 0 | **Price:** 0 gp | **Rarity:** Uncommon
+
+**Category:** N/A | **Type:** Adventuring
+
+[View on Archives of Nethys](https://2e.aonprd.com/Search.aspx?query=Blooming%20Lotus%20Seed%20Pod)
+
+---
+
 
 ## Services
 
