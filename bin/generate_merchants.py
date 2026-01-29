@@ -162,8 +162,8 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
         # Common items
         if inventory['common']:
             f.write(f"## Common Items ({len(inventory['common'])})\n\n")
-            f.write("| Image | Name | Level | Price | Rarity | Category | Type |\n")
-            f.write("|-------|------|-------|-------|--------|----------|------|\n")
+            f.write("| Image | Name | Level | Price | Rarity | Category | Type | Link |\n")
+            f.write("|-------|------|-------|-------|--------|----------|------|------|\n")
             
             total = len(inventory['common'])
             for idx, item in enumerate(inventory['common'], 1):
