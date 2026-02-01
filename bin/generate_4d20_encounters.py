@@ -11,6 +11,9 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
+# Import NPC generator
+from generate_npc_lore import generate_npc, generate_npc_encounter_template
+
 def load_json(filename):
     with open(filename, 'r', encoding='utf-8') as f:
         return json.load(f)
@@ -631,18 +634,20 @@ if __name__ == "__main__":
     print(f"  Players Guide: {len(players_guide_lore)} chars")
     print(f"  Creature Lore: {len(creature_lore_db)} creatures")
     print(f"  Encounter pools: {len(DEADLY_POOL_FILTERED)} deadly, {len(DIFFICULT_POOL_FILTERED)} difficult,", end=" ")
-    print(f"{len(MODERATE_POOL_FILTERED)} moderate, {len(EASY_POOL_FILTERED)} easy, {len(NPC_POOL)} NPCs")
+    print(f"{len(MODERATE_POOL_FILTERED)} moderate, {len(EASY_POOL_FILTERED)} easy")
     
     print("\nGenerating encounters with EXTENSIVE detail...")
     encounters = []
     
-    # Pre-select unique NPCs for lore encounters to avoid duplicates
+    # Generate unique NPCs dynamically for lore encounters
     lore_count = sum(1 for roll in range(4, 81) if 32 <= roll <= 52)
-    if lore_count > len(NPC_POOL):
-        print(f"WARNING: Need {lore_count} lore encounters but only have {len(NPC_POOL)} NPCs!")
-        selected_npcs = random.choices(NPC_POOL, k=lore_count)  # Allow duplicates if necessary
-    else:
-        selected_npcs = random.sample(NPC_POOL, lore_count)  # No duplicates
+    print(f"  Generating {lore_count} unique NPCs for lore encounters...")
+    selected_npcs = []
+    for i in range(lore_count):
+        npc = generate_npc()
+        npc_template = generate_npc_encounter_template(npc)
+        selected_npcs.append(npc_template)
+    print(f"  ✓ Generated {len(selected_npcs)} NPCs")
     npc_index = 0
     
     # Pre-select unique creatures for combat encounters to avoid duplicates

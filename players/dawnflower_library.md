@@ -12,23 +12,27 @@
 
 **Specialties:** Religious texts, scrolls, and holy items
 
-## Common Items (5)
+## Common Items (10)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Warding Tattoo | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warding%20Tattoo) |
-| 🖼️ | Sentry Fulu | 4 | 15 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sentry%20Fulu) |
-| 🖼️ | Wheelchair | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheelchair) |
-| 🖼️ | Stage Fright Missive | 5 | 22 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stage%20Fright%20Missive) |
-| ![Long Hammer](https://2e.aonprd.com/Images/Weapons/Long_Hammer.webp) | Long Hammer | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Long%20Hammer) |
+| ![Acid Flask (Major)](https://2e.aonprd.com/Images/Treasure/Acid_Flask.webp) | Acid Flask (Major) | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Acid%20Flask) |
+| 🖼️ | Belt of Good Health | 4 | 85 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Belt%20of%20Good%20Health) |
+| 🖼️ | Wand of Reaching (1st-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
+| 🖼️ | Chaos Falcon Feather | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chaos%20Falcon%20Feather) |
+| 🖼️ | Brass Ear | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Brass%20Ear) |
+| 🖼️ | Blazons of Shared Power (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blazons%20of%20Shared%20Power) |
+| 🖼️ | Warhammer | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warhammer) |
+| 🖼️ | Wand of Reaching (4th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
+| 🖼️ | Longsword | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Longsword) |
+| 🖼️ | Legerdemain Handkerchief | 2 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Legerdemain%20Handkerchief) |
 
-## Uncommon Items (3)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Zhuazhi Bang | 0 | 1 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Zhuazhi%20Bang) |
-| 🖼️ | Trudd's Strength | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Trudd%27s%20Strength) |
-| 🖼️ | Enveloping Light | 3 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Enveloping%20Light) |
+| 🖼️ | Gun Sword (Melee) | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gun%20Sword) |
+| ![War Gavel](https://2e.aonprd.com/Images/Weapons/War_Gavel.webp) | War Gavel | 0 | 50 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=War%20Gavel) |
 
 ## Services
 
