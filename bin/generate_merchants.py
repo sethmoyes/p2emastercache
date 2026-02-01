@@ -17,6 +17,49 @@ def load_equipment_json(filename):
     with open(filename, 'r', encoding='utf-8') as f:
         return json.load(f)
 
+def load_spells_json(filename):
+    """Load spells from JSON file"""
+    with open(filename, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+def get_spell_price_and_dc(spell_level):
+    """Get the price and DC for learning a spell based on its level"""
+    price_table = {
+        0: ("2 gp", 15),   # Cantrip
+        1: ("2 gp", 15),
+        2: ("6 gp", 18),
+        3: ("16 gp", 20),
+        4: ("36 gp", 23),
+        5: ("70 gp", 26),
+        6: ("140 gp", 28),
+        7: ("300 gp", 31),
+        8: ("650 gp", 34),
+        9: ("1,500 gp", 36),
+        10: ("7,000 gp", 41)
+    }
+    return price_table.get(spell_level, ("N/A", "N/A"))
+
+def generate_spell_inventory(spells, max_level, num_common, num_uncommon, has_rare=False):
+    """Generate random spell inventory (scrolls for learning)"""
+    inventory = {'common': [], 'uncommon': [], 'rare': []}
+    
+    # Filter spells by level and rarity - only actual spells, not focus or cantrips
+    common_pool = [s for s in spells if s['level'] <= max_level and s['rarity'] == 'common' and s['type'] == 'Spell']
+    uncommon_pool = [s for s in spells if s['level'] <= max_level and s['rarity'] == 'uncommon' and s['type'] == 'Spell']
+    rare_pool = [s for s in spells if s['level'] <= max_level and s['rarity'] == 'rare' and s['type'] == 'Spell']
+    
+    # Select spells
+    if common_pool:
+        inventory['common'] = random.sample(common_pool, min(num_common, len(common_pool)))
+    
+    if uncommon_pool:
+        inventory['uncommon'] = random.sample(uncommon_pool, min(num_uncommon, len(uncommon_pool)))
+    
+    if has_rare and rare_pool:
+        inventory['rare'] = [random.choice(rare_pool)]
+    
+    return inventory
+
 def clean_item_name(name):
     """Clean item name for search - remove everything after special chars/numbers"""
     # Remove parentheses and everything inside
@@ -175,7 +218,7 @@ def generate_merchant_inventory(equipment, categories, num_common, num_uncommon,
     
     return inventory
 
-def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, output_dir='players'):
+def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, spell_inventory=None, output_dir='players'):
     """Write merchant file with header, proprietor image, and full item details"""
     filename = merchant_name.lower().replace(' ', '_').replace("'", '') + '.md'
     filepath = os.path.join(output_dir, filename)
@@ -189,6 +232,101 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
         f.write(f"*{description}*\n\n")
         f.write(f"**Proprietor:** {proprietor}\n\n")
         f.write(f"**Specialties:** {specialties}\n\n")
+        
+        # Spell scrolls section (if applicable)
+        if spell_inventory:
+            f.write("---\n\n")
+            f.write("# SPELL SCROLLS FOR LEARNING\n\n")
+            f.write("*These scrolls can be studied with the merchant to permanently learn the spell.*\n\n")
+            f.write("*Study time: 1 hour (common), 5 hours (uncommon), 1 day (rare).*\n\n")
+            
+            # Common spells
+            if spell_inventory['common']:
+                f.write(f"## Common Spell Scrolls ({len(spell_inventory['common'])})\n\n")
+                f.write("| Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |\n")
+                f.write("|------------|-------|-------|-------|------------|------|-------|--------|------|\n")
+                
+                for spell in spell_inventory['common']:
+                    spell_name = f"SCROLL OF {spell['name'].upper()}"
+                    level = spell['level']
+                    price, dc = get_spell_price_and_dc(level)
+                    traditions = ', '.join(spell.get('traditions', ['N/A']))
+                    cast_time = spell.get('cast', 'N/A')
+                    spell_range = spell.get('range', 'N/A')
+                    traits = ', '.join(spell.get('traits', [])[:3])  # Limit to 3 traits
+                    if not traits:
+                        traits = 'N/A'
+                    
+                    # Create AoN link
+                    if spell.get('url'):
+                        link_md = f"[View](https://2e.aonprd.com{spell['url']})"
+                    else:
+                        search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(spell['name'])}"
+                        link_md = f"[View]({search_url})"
+                    
+                    f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {cast_time} | {spell_range} | {traits} | {link_md} |\n")
+                
+                f.write("\n")
+            
+            # Uncommon spells
+            if spell_inventory['uncommon']:
+                f.write(f"## Uncommon Spell Scrolls ({len(spell_inventory['uncommon'])})\n\n")
+                f.write("| Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |\n")
+                f.write("|------------|-------|-------|-------|------------|------|-------|--------|------|\n")
+                
+                for spell in spell_inventory['uncommon']:
+                    spell_name = f"SCROLL OF {spell['name'].upper()}"
+                    level = spell['level']
+                    price, dc = get_spell_price_and_dc(level)
+                    traditions = ', '.join(spell.get('traditions', ['N/A']))
+                    cast_time = spell.get('cast', 'N/A')
+                    spell_range = spell.get('range', 'N/A')
+                    traits = ', '.join(spell.get('traits', [])[:3])
+                    if not traits:
+                        traits = 'N/A'
+                    
+                    if spell.get('url'):
+                        link_md = f"[View](https://2e.aonprd.com{spell['url']})"
+                    else:
+                        search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(spell['name'])}"
+                        link_md = f"[View]({search_url})"
+                    
+                    f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {cast_time} | {spell_range} | {traits} | {link_md} |\n")
+                
+                f.write("\n")
+            
+            # Rare spells
+            if spell_inventory['rare']:
+                f.write(f"## Rare Spell Scrolls ({len(spell_inventory['rare'])})\n\n")
+                f.write("| Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |\n")
+                f.write("|------------|-------|-------|-------|------------|------|-------|--------|------|\n")
+                
+                for spell in spell_inventory['rare']:
+                    spell_name = f"SCROLL OF {spell['name'].upper()}"
+                    level = spell['level']
+                    price, dc = get_spell_price_and_dc(level)
+                    traditions = ', '.join(spell.get('traditions', ['N/A']))
+                    cast_time = spell.get('cast', 'N/A')
+                    spell_range = spell.get('range', 'N/A')
+                    traits = ', '.join(spell.get('traits', [])[:3])
+                    if not traits:
+                        traits = 'N/A'
+                    
+                    if spell.get('url'):
+                        link_md = f"[View](https://2e.aonprd.com{spell['url']})"
+                    else:
+                        search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(spell['name'])}"
+                        link_md = f"[View]({search_url})"
+                    
+                    f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {cast_time} | {spell_range} | {traits} | {link_md} |\n")
+                
+                f.write("\n")
+            
+            f.write("---\n\n")
+        
+        # Regular items section
+        if inventory['common'] or inventory['uncommon'] or inventory['rare']:
+            f.write("# REGULAR ITEMS\n\n")
         
         # Common items
         if inventory['common']:
@@ -336,9 +474,11 @@ if __name__ == "__main__":
                     print(f"Invalid level: {sys.argv[i + 2]}, using default level 4")
     
     max_item_level = player_level + 2
+    spell_level = player_level  # Spells are player level, NOT +2
     
     print(f"Generating merchants for player level {player_level}")
     print(f"  Max item level: {max_item_level}")
+    print(f"  Max spell level: {spell_level}")
     print()
     
     print("Loading equipment...")
@@ -348,12 +488,20 @@ if __name__ == "__main__":
     equipment = [e for e in equipment if e['level'] <= max_item_level]
     print(f"  Loaded {len(equipment)} items (level {max_item_level} or below)")
     
+    print("Loading spells...")
+    spells = load_spells_json("etc/spells.json")
+    print(f"  Loaded {len(spells)} spells")
+    
     # Create output directory
     os.makedirs('players', exist_ok=True)
     
     # Randomly select 2 merchants to get rare items
     merchants_with_rares = random.sample(range(10), 2)
-    print(f"  Merchants {merchants_with_rares[0]+1} and {merchants_with_rares[1]+1} will have rare items\n")
+    print(f"  Merchants {merchants_with_rares[0]+1} and {merchants_with_rares[1]+1} will have rare items")
+    
+    # Randomly select 1 spell merchant to get rare spell (Wrin's Wonders or Odd Stories)
+    spell_merchant_with_rare = random.choice([1, 2])  # Index 1 = Wrin's, Index 2 = Odd Stories
+    print(f"  Merchant {spell_merchant_with_rare+1} will have a rare spell\n")
     
     merchant_configs = [
         # 1. Otari Market - All types, DOUBLE items
@@ -570,13 +718,34 @@ if __name__ == "__main__":
         else:
             inventory = {'common': [], 'uncommon': [], 'rare': []}
         
+        # Generate spell inventory for Wrin's Wonders (idx 1) and Odd Stories (idx 2)
+        spell_inventory = None
+        if idx in [1, 2]:  # Wrin's Wonders or Odd Stories
+            num_common_spells = random.randint(5, 15)
+            num_uncommon_spells = random.randint(3, 5)
+            has_rare_spell = (idx == spell_merchant_with_rare)
+            
+            spell_inventory = generate_spell_inventory(
+                spells,
+                max_level=spell_level,
+                num_common=num_common_spells,
+                num_uncommon=num_uncommon_spells,
+                has_rare=has_rare_spell
+            )
+            
+            print(f"  📜 Added {len(spell_inventory['common'])} common spells")
+            print(f"  📜 Added {len(spell_inventory['uncommon'])} uncommon spells")
+            if has_rare_spell and spell_inventory['rare']:
+                print(f"  ⭐ Added rare spell!")
+        
         write_merchant_with_header(
             config['name'],
             config['description'],
             config['proprietor'],
             config['specialties'],
             inventory,
-            config['services']
+            config['services'],
+            spell_inventory
         )
     
     print("\nOK All merchants generated!")
