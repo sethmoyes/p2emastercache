@@ -5066,10 +5066,12 @@
   {
     "name": "Lady's Blessing Oil",
     "level": 1,
-    "price": 300,
+    "price": "3 gp",
     "rarity": "common",
-    "category": "",
-    "type": "adventuring"
+    "category": "equipment",
+    "type": "adventuring",
+    "item_category": "Alchemical Items",
+    "bulk": 0.1
   },
   {
     "name": "Leaper's Elixir (Lesser)",
@@ -8162,10 +8164,12 @@
   {
     "name": "Underwater",
     "level": 3,
-    "price": 5000,
+    "price": "50 gp",
     "rarity": "common",
-    "category": "",
-    "type": "adventuring"
+    "category": "equipment",
+    "type": "adventuring",
+    "item_category": "Runes",
+    "bulk": 0
   },
   {
     "name": "Wardrobe Stone (Lesser)",
@@ -14074,10 +14078,12 @@
   {
     "name": "Message Mail",
     "level": 8,
-    "price": 43000,
+    "price": "430 gp",
     "rarity": "common",
-    "category": "",
-    "type": "adventuring"
+    "category": "equipment",
+    "type": "adventuring",
+    "item_category": "Armor",
+    "bulk": 2
   },
   {
     "name": "Returning Starknife",
@@ -17772,10 +17778,12 @@
   {
     "name": "Singing Bowl of the Versatile Stance",
     "level": 11,
-    "price": 117500,
+    "price": "1,175 gp",
     "rarity": "uncommon",
-    "category": "",
-    "type": "adventuring"
+    "category": "equipment",
+    "type": "adventuring",
+    "item_category": "Held Items",
+    "bulk": 0.1
   },
   {
     "name": "Aeon Stone (Flickering)",
@@ -24756,10 +24764,12 @@
   {
     "name": "Wand of Widening (9th-rank Spell)",
     "level": 4,
-    "price": 10000,
+    "price": "100 gp",
     "rarity": "common",
-    "category": "",
-    "type": "magical"
+    "category": "equipment",
+    "type": "magical",
+    "item_category": "Wands",
+    "bulk": 0.1
   },
   {
     "name": "Whispering Staff",

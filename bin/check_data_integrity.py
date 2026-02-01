@@ -301,6 +301,7 @@ def main(num_checks=10, data_type='equipment', replace=False):
     
     if replace:
         print(f"REPLACE MODE: Will update mismatched items with AoN data")
+        print(f"CLEANUP MODE: Will delete items not found on AoN")
     
     print()
     
@@ -327,13 +328,39 @@ def main(num_checks=10, data_type='equipment', replace=False):
         sample = random.sample(data, min(num_checks, len(data)))
     
     results = []
+    junk_items = []  # Track items to delete
+    
     for idx, item in enumerate(sample, 1):
         print(f"\n[{idx}/{num_checks}]", end=" ")
         result = check_func(item, verbose=True, replace=replace)
         results.append(result)
         
+        # Mark items not found for deletion
+        if result['status'] == 'not_found' and replace:
+            junk_items.append(item)
+        
         # Small delay to be respectful to the API
         time.sleep(0.5)
+    
+    # Remove junk items from data if in replace mode
+    if replace and junk_items:
+        print(f"\n\nRemoving {len(junk_items)} junk items not found on AoN...")
+        for junk in junk_items:
+            if junk in data:
+                data.remove(junk)
+        
+        # Log junk items
+        with open('junk_items.log', 'w', encoding='utf-8') as f:
+            f.write(f"Junk Items Removed - {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
+            f.write(f"=" * 60 + "\n\n")
+            for item in junk_items:
+                f.write(f"Name: {item.get('name', 'Unknown')}\n")
+                f.write(f"  Level: {item.get('level', 'N/A')}\n")
+                f.write(f"  Price: {item.get('price', 'N/A')}\n")
+                f.write(f"  Rarity: {item.get('rarity', 'N/A')}\n")
+                f.write(f"  Category: {item.get('category', 'N/A')}\n")
+                f.write("\n")
+        print(f"Logged junk items to junk_items.log")
     
     # Summary
     print(f"\n\n{'=' * 60}")
@@ -355,6 +382,9 @@ def main(num_checks=10, data_type='equipment', replace=False):
     if replace and updated > 0:
         print(f"  >> Updated: {updated}")
     
+    if replace and junk_items:
+        print(f"  >> Deleted: {len(junk_items)}")
+    
     if mismatches > 0 and not replace:
         print(f"\nItems with mismatches:")
         for r in results:
@@ -365,16 +395,20 @@ def main(num_checks=10, data_type='equipment', replace=False):
     
     accuracy = (matches / len(results) * 100) if results else 0
     print(f"\nAccuracy: {accuracy:.1f}%")
+    
+    if replace:
+        print(f"Final item count: {len(data)} (removed {len(junk_items)} junk items)")
+    
     print(f"{'=' * 60}")
     
     # Save updated data if replace mode
-    if replace and updated > 0:
+    if replace and (updated > 0 or junk_items):
         print(f"\nSaving updated data to {filename}...")
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
-        print(f"Saved! {updated} items updated.")
-    elif replace and updated == 0:
-        print(f"\nNo items needed updating.")
+        print(f"Saved! {updated} items updated, {len(junk_items)} items removed.")
+    elif replace and updated == 0 and not junk_items:
+        print(f"\nNo items needed updating or removal.")
 
 if __name__ == "__main__":
     # Parse command line arguments

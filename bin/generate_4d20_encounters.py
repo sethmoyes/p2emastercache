@@ -267,6 +267,22 @@ def generate_combat_encounter(roll, difficulty, equipment, inner_sea_lore, playe
             item = random.choice(available)
             price = item['price']
             
+            # Convert price to string if it's an integer
+            if isinstance(price, int):
+                # Convert copper to proper denomination
+                if price < 10:
+                    price = f"{price} cp"
+                elif price < 100:
+                    price = f"{price} sp"
+                else:
+                    gp = price / 100
+                    if gp == int(gp):
+                        price = f"{int(gp)} gp"
+                    else:
+                        price = f"{gp:.1f} gp"
+            
+            price = str(price)  # Ensure it's a string
+            
             # Halve the price
             if 'gp' in price:
                 match = re.search(r'(\d+)', price)
