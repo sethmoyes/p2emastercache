@@ -144,12 +144,12 @@ def capitalize_field(text):
     return text[0].upper() + text[1:] if len(text) > 0 else text
 
 def generate_merchant_inventory(equipment, categories, num_common, num_uncommon):
-    """Generate random inventory from equipment"""
+    """Generate random inventory from equipment (max level 6)"""
     inventory = {'common': [], 'uncommon': [], 'rare': []}
     
-    # Filter by categories and rarity
-    common_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'common']
-    uncommon_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'uncommon']
+    # Filter by categories, rarity, AND level (max 6)
+    common_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'common' and e['level'] <= 6]
+    uncommon_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'uncommon' and e['level'] <= 6]
     
     # Select items
     if common_pool:
@@ -480,7 +480,7 @@ if __name__ == "__main__":
             
             # Add rare item if this merchant was selected
             if has_rare:
-                rare_pool = [e for e in equipment if e['type'] in config['categories'] and e['rarity'] == 'rare']
+                rare_pool = [e for e in equipment if e['type'] in config['categories'] and e['rarity'] == 'rare' and e['level'] <= 6]
                 if rare_pool:
                     inventory['rare'] = [random.choice(rare_pool)]
                     print(f"  ⭐ Added rare item!")

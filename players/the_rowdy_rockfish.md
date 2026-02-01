@@ -12,29 +12,30 @@
 
 **Specialties:** Quality food, drink, and lodging
 
-## Common Items (11)
+## Common Items (13)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Wheelchair (Supramarine Chair)](https://2e.aonprd.com/Images/Monsters/Propagandist.webp) | Wheelchair (Supramarine Chair) | 0 | 50 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheelchair) |
-| ![Reverberating Stone](https://2e.aonprd.com/Images/Ancestries/Icons/Merfolk_Icon.png) | Reverberating Stone | 11 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reverberating%20Stone) |
-| ![Ruby Capacitor (Major)](https://2e.aonprd.com/Images/Treasure/Ruby_Capacitor.webp) | Ruby Capacitor (Major) | 10 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ruby%20Capacitor) |
-| ![Cold Iron Blanch (Greater)](https://2e.aonprd.com/Images/Ancestries/Icons/Dromaar_Icon.png) | Cold Iron Blanch (Greater) | 2 | 20 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Blanch) |
-| ![Shining Symbol (Greater)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Shining Symbol (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shining%20Symbol) |
-| ![Armory Bracelet (Minor)](https://2e.aonprd.com/Images/Treasure/Armory_Bracelet.webp) | Armory Bracelet (Minor) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Armory%20Bracelet) |
-| ![Frostwalker Pattern](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Frostwalker Pattern | 2 | 30 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Frostwalker%20Pattern) |
-| ![False Manacles](https://2e.aonprd.com/Images/Monsters/False_Devil.webp) | False Manacles | 0 | 30 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=False%20Manacles) |
-| ![Hammer Gun (Melee)](https://2e.aonprd.com/Images/Weapons/Gnome_Hooked_Hammer.webp) | Hammer Gun (Melee) | 0 | 10 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hammer%20Gun) |
-| ![Tracking Fulu](https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png) | Tracking Fulu | 5 | 25 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tracking%20Fulu) |
-| ![Menacing](https://2e.aonprd.com/Images/Monsters/Demon_Katpaskir.png) | Menacing | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Menacing) |
+| ![Serpent Oil (Lesser)](https://2e.aonprd.com/Images/Treasure/Serpent_Oil.webp) | Serpent Oil (Lesser) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Serpent%20Oil) |
+| 🖼️ | Stumbling Fulu | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stumbling%20Fulu) |
+| ![Depth Charge (II)](https://2e.aonprd.com/Images/Treasure/Depth_Charge.webp) | Depth Charge (II) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Depth%20Charge) |
+| ![Catch Pole](https://2e.aonprd.com/Images/Treasure/Catch_Pole.webp) | Catch Pole | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Catch%20Pole) |
+| 🖼️ | Lodging (Bed, for 1) | 0 | 10 gp (per day) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lodging) |
+| 🖼️ | Lodging (Extravagant Suite, for 6) | 0 | 10 gp (per day) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lodging) |
+| ![Religious Symbol (Wooden)](https://2e.aonprd.com/Images/Treasure/Religious_Symbol.webp) | Religious Symbol (Wooden) | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Religious%20Symbol) |
+| 🖼️ | Triangular Teeth | 2 | 33 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Triangular%20Teeth) |
+| 🖼️ | Chalk | 0 | 1 cp (10 pieces) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chalk) |
+| 🖼️ | Repair Toolkit | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Repair%20Toolkit) |
+| ![Atmospheric Breathing Suit](https://2e.aonprd.com/Images/Treasure/Atmospheric_Breathing_Suit.webp) | Atmospheric Breathing Suit | 0 | 100 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Atmospheric%20Breathing%20Suit) |
+| ![Handwraps of Mighty Blows (+3 greater striking)](https://2e.aonprd.com/Images/Treasure/Handwraps_Of_Mighty_Blows.webp) | Handwraps of Mighty Blows (+3 greater striking) | 4 | 100 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Handwraps%20of%20Mighty%20Blows) |
+| 🖼️ | Soap | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Soap) |
 
-## Uncommon Items (3)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Plated Duster](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Plated Duster | 0 | 2 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Plated%20Duster) |
-| ![Mambele](https://2e.aonprd.com/Images/Weapons/Mambele.webp) | Mambele | 0 | 8 sp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mambele) |
-| ![Fulminating Spear](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Fulminating Spear | 7 | 360 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fulminating%20Spear) |
+| 🖼️ | Farlight Stone | 2 | 35 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Farlight%20Stone) |
+| ![Fangwire](https://2e.aonprd.com/Images/Weapons/Fangwire.webp) | Fangwire | 0 | 4 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fangwire) |
 
 ## Services
 

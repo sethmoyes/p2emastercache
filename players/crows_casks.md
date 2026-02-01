@@ -12,26 +12,27 @@
 
 **Specialties:** Food, drink, and basic adventuring supplies
 
-## Common Items (8)
+## Common Items (10)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Staff of Phantasms](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Staff of Phantasms | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Phantasms) |
-| ![Traveling Companion's Chair](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Traveling Companion's Chair | 1 | 4 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Traveling%20Companion%27s%20Chair) |
-| ![Blasting Stone (Greater)](https://2e.aonprd.com/Images/Treasure/Aeon_Stone.webp) | Blasting Stone (Greater) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blasting%20Stone) |
-| ![Instinct Crown](https://2e.aonprd.com/Images/Treasure/Instinct_Crown.webp) | Instinct Crown | 10 | 900 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Instinct%20Crown) |
-| ![Storm Hammer](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Storm Hammer | 3 | 60 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Storm%20Hammer) |
-| ![Alchemist's Fire (Major)](https://2e.aonprd.com/Images/Treasure/Alchemists_Fire.webp) | Alchemist's Fire (Major) | 3 | 10 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Alchemist%27s%20Fire) |
-| ![Staff of Nature's Cunning (Greater)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Staff of Nature's Cunning (Greater) | 7 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Nature%27s%20Cunning) |
-| ![Dinosaur](https://2e.aonprd.com/Images/Monsters/Dinosaur_Carnotarus.webp) | Dinosaur | 0 | 10 gp | Common | Animals | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dinosaur) |
+| 🖼️ | Disguise Kit (Elite) | 3 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Disguise%20Kit) |
+| 🖼️ | Map (Nautical Chart) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Map) |
+| 🖼️ | Bottled Catharsis (Minor) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bottled%20Catharsis) |
+| 🖼️ | Boozy Bottle | 5 | 140 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Boozy%20Bottle) |
+| 🖼️ | Healer's Gel (Greater) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Gel) |
+| 🖼️ | Beverages (Pot of Coffee or Tea) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Barding (Heavy; Small or Medium) | 2 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Barding) |
+| 🖼️ | Surprise Doll (Exquisite) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Surprise%20Doll) |
+| 🖼️ | Olfactory Stimulators | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Olfactory%20Stimulators) |
+| 🖼️ | Leaper's Elixir (Lesser) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Leaper%27s%20Elixir) |
 
-## Uncommon Items (3)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Scythe](https://2e.aonprd.com/Images/Monsters/ScytheTree.png) | Scythe | 13 | 3000 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Scythe) |
-| ![Echo Receptors](https://2e.aonprd.com/Images/Monsters/Ecorche.png) | Echo Receptors | 10 | 950 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Echo%20Receptors) |
-| ![Crushing (Greater)](https://2e.aonprd.com/Images/Ancestries/Icons/Merfolk_Icon.png) | Crushing (Greater) | 3 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Crushing) |
+| 🖼️ | Called (Accessory Rune) | 3 | 60 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Called) |
+| 🖼️ | Blood-Drinker Blade | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blood-Drinker%20Blade) |
 
 ## Services
 

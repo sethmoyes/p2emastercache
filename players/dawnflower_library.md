@@ -12,31 +12,23 @@
 
 **Specialties:** Religious texts, scrolls, and holy items
 
-## Common Items (14)
+## Common Items (5)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Mustard Powder](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Mustard Powder | 5 | 25 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mustard%20Powder) |
-| ![Rooting (Major)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Rooting (Major) | 7 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rooting) |
-| ![Sleeves of Storage (Greater)](https://2e.aonprd.com/Images/Monsters/Wealthy_Vigilante.webp) | Sleeves of Storage (Greater) | 9 | 600 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sleeves%20of%20Storage) |
-| ![Seventh Prism (Pentagonal)](https://2e.aonprd.com/Images/Treasure/Aeon_Stone.webp) | Seventh Prism (Pentagonal) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Seventh%20Prism) |
-| ![Moonlit Spellgun (Lesser)](https://2e.aonprd.com/Images/Treasure/Moonlit_Spellgun.webp) | Moonlit Spellgun (Lesser) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moonlit%20Spellgun) |
-| ![Magic Wand (9th-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (9th-rank Spell) | 3 | 60 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
-| ![Sticky Algae Bomb (Lesser)](https://2e.aonprd.com/Images/Ancestries/Icons/Ardande_Icon.png) | Sticky Algae Bomb (Lesser) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sticky%20Algae%20Bomb) |
-| ![Staff of the Dead (Major)](https://2e.aonprd.com/Images/Monsters/GrimReaper.png) | Staff of the Dead (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Dead) |
-| ![Battle Dirigible](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Battle Dirigible | 3 | 60 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Battle%20Dirigible) |
-| ![Wand of Reaching (1st-Rank Spell)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Wand of Reaching (1st-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
-| ![Glue Bomb (Lesser)](https://2e.aonprd.com/Images/Treasure/Silversoul_Bomb.webp) | Glue Bomb (Lesser) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glue%20Bomb) |
-| ![Fulu of Fire Suppression](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Fulu of Fire Suppression | 3 | 10 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fulu%20of%20Fire%20Suppression) |
-| ![Charlatan's Gloves](https://2e.aonprd.com/Images/NPCs/Criminal_Charlatan.png) | Charlatan's Gloves | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Charlatan%27s%20Gloves) |
-| ![Air Cycle](https://2e.aonprd.com/Images/Rules/Rules444.png) | Air Cycle | 7 | 320 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Air%20Cycle) |
+| 🖼️ | Warding Tattoo | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warding%20Tattoo) |
+| 🖼️ | Sentry Fulu | 4 | 15 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sentry%20Fulu) |
+| 🖼️ | Wheelchair | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheelchair) |
+| 🖼️ | Stage Fright Missive | 5 | 22 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stage%20Fright%20Missive) |
+| ![Long Hammer](https://2e.aonprd.com/Images/Weapons/Long_Hammer.webp) | Long Hammer | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Long%20Hammer) |
 
-## Uncommon Items (2)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Dinosaur Boots (Greater)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Dinosaur Boots (Greater) | 10 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dinosaur%20Boots) |
-| ![Boughshatter](https://2e.aonprd.com/Images/Ancestries/Icons/Ghoran_Icon.png) | Boughshatter | 13 | 2875 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Boughshatter) |
+| 🖼️ | Zhuazhi Bang | 0 | 1 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Zhuazhi%20Bang) |
+| 🖼️ | Trudd's Strength | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Trudd%27s%20Strength) |
+| 🖼️ | Enveloping Light | 3 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Enveloping%20Light) |
 
 ## Services
 

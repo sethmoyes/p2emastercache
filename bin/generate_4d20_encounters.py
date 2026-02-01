@@ -167,55 +167,55 @@ def extract_lore_snippet(lore_text, keywords, max_length=600):
 def get_fallback_lore(keywords):
     """Generate appropriate fallback lore based on creature keywords"""
     
+    # Check for specific creature types in keywords
+    keyword_str = ' '.join(keywords).lower()
+    
     # Undead-specific lore
-    if any(k in ['undead', 'Urgathoa', 'Pharasma', 'zombie', 'skeleton', 'wight', 'wraith', 'vampire'] for k in keywords):
-        undead_lore = [
-            "Undead creatures are tragically common in the Inner Sea region, particularly near sites of ancient battles, mass graves, or places touched by necromantic magic. The goddess Urgathoa, the Pallid Princess, is patron of undead and disease, while Pharasma, the Lady of Graves, opposes all undead as abominations against the natural cycle of death and rebirth.",
-            "The rise of undead is often tied to powerful necromantic rituals, cursed locations, or the lingering hatred of those who died violently. In Ustalav, entire counties are overrun with undead, while in Geb, an entire nation is ruled by undead aristocracy. Gauntlight itself was built by the necromancer Belcorra Haruvex, whose dark magic still animates the dead centuries after her defeat.",
-            "Undead creatures retain fragments of their former lives—memories, skills, and hatreds that drove them in life. The most dangerous undead are those with intelligence intact, capable of planning, tactics, and spreading their curse to others. Pharasma's clergy work tirelessly to put such abominations to rest, while Urgathoa's followers see undeath as a gift.",
-            "The creation of undead is considered one of the darkest forms of magic, forbidden in most civilized lands. Yet necromancers continue their work in hidden laboratories and forgotten ruins, seeking immortality or power over death itself. The undead they create often escape their control, becoming threats to all living things.",
-        ]
-        return random.choice(undead_lore)
+    if any(k in keyword_str for k in ['undead', 'ghost', 'zombie', 'skeleton', 'wight', 'wraith', 'vampire', 'lich', 'mummy']):
+        return "Undead creatures are tragically common in the Inner Sea region, particularly near sites of ancient battles, mass graves, or places touched by necromantic magic. The goddess Urgathoa is patron of undead and disease, while Pharasma opposes all undead as abominations against the natural cycle. Gauntlight itself was built by the necromancer Belcorra Haruvex, whose dark magic still animates the dead centuries after her defeat."
     
     # Fiend-specific lore
-    elif any(k in ['fiend', 'demon', 'devil', 'Cheliax', 'Asmodeus'] for k in keywords):
-        fiend_lore = [
-            "Fiends—demons, devils, and daemons—are extraplanar beings of pure evil that seek to corrupt, destroy, or enslave mortal souls. In Cheliax, House Thrune openly contracts with devils, binding them to service through infernal pacts. The nation's very laws are written in consultation with Hell's legalists.",
-            "The Worldwound in northern Avistan serves as a permanent portal to the Abyss, from which demons pour forth in endless hordes. The crusaders of Mendev have fought for over a century to contain this threat, but demonic corruption spreads like a plague wherever these fiends tread.",
-            "Devils are creatures of law and contracts, while demons embody chaos and destruction. Both seek mortal souls, but through different means—devils through temptation and bargains, demons through violence and corruption. Daemons, the third type of fiend, simply seek to end all life.",
-        ]
-        return random.choice(fiend_lore)
+    if any(k in keyword_str for k in ['fiend', 'demon', 'devil', 'daemon']):
+        return "Fiends—demons, devils, and daemons—are extraplanar beings of pure evil that seek to corrupt, destroy, or enslave mortal souls. In Cheliax, House Thrune openly contracts with devils, binding them to service through infernal pacts. Devils are creatures of law and contracts, while demons embody chaos and destruction."
     
-    # Beast/Animal lore
-    elif any(k in ['beast', 'animal', 'wilderness', 'nature'] for k in keywords):
-        beast_lore = [
-            "The wilderness of the Inner Sea region teems with dangerous creatures, from dire wolves the size of horses to giant spiders that spin webs between ancient trees. Fogfen, the swampland between Otari and Gauntlight, is particularly notorious for its aggressive wildlife, made more dangerous by the corrupting influence of the lighthouse's dark magic.",
-            "Natural predators in the region have grown bolder and more aggressive in recent years, possibly drawn by the same dark energies that animate the undead near Gauntlight. Hunters and lumber workers report encounters with creatures of unusual size and ferocity, as if the land itself has turned hostile.",
-            "Varisia's untamed wilderness harbors creatures that have survived since the age of Thassilon, ancient beasts that have adapted to magical corruption and learned to thrive in cursed lands. These creatures are often more intelligent and dangerous than their mundane cousins.",
-        ]
-        return random.choice(beast_lore)
+    # Dragon-specific lore
+    if any(k in keyword_str for k in ['dragon', 'drake', 'wyrm', 'wyvern']):
+        return "Dragons are among the most powerful and intelligent creatures in the Inner Sea region. These ancient beings hoard treasure, command powerful magic, and can live for thousands of years. Some dragons are benevolent protectors, while others are tyrannical destroyers. Even young dragons pose a serious threat to unprepared adventurers."
+    
+    # Fey-specific lore
+    if any(k in keyword_str for k in ['fey', 'sprite', 'pixie', 'gremlin', 'nymph']):
+        return "Fey creatures hail from the First World, a realm of primal magic and impossible beauty. These beings are capricious and unpredictable, following their own alien logic. Some fey are helpful to mortals, while others delight in causing mischief or harm. The forests and wild places of Varisia are home to many fey, drawn by the region's ancient magic."
     
     # Aberration lore
-    elif any(k in ['aberration', 'Darklands', 'madness'] for k in keywords):
-        aberration_lore = [
-            "Aberrations are creatures that defy natural law—beings from beyond reality, experiments gone wrong, or entities warped by exposure to alien magic. The Darklands beneath Golarion's surface are home to countless such horrors, and occasionally they find their way to the surface through forgotten tunnels or magical mishaps.",
-            "The ancient empire of Thassilon experimented extensively with transmutation and conjuration magic, creating aberrations that still haunt Varisia's ruins. These creatures often possess alien intelligence and motivations incomprehensible to mortal minds.",
-            "Exposure to aberrations can drive mortals mad, as the mind struggles to comprehend forms and geometries that should not exist. Scholars who study such creatures often find their sanity eroding, their dreams filled with visions of impossible angles and colors that have no name.",
-        ]
-        return random.choice(aberration_lore)
+    if any(k in keyword_str for k in ['aberration', 'ooze', 'slime']):
+        return "Aberrations are creatures that defy natural law—beings from beyond reality, experiments gone wrong, or entities warped by exposure to alien magic. The Darklands beneath Golarion's surface are home to countless such horrors. These creatures often possess alien intelligence and motivations incomprehensible to mortal minds."
+    
+    # Construct lore
+    if any(k in keyword_str for k in ['construct', 'golem', 'animated', 'clockwork']):
+        return "Constructs are artificial beings created through magic or advanced engineering. Golems are animated by binding elemental spirits, while clockwork creatures rely on intricate mechanisms. The ancient empire of Thassilon created countless constructs to serve as guardians, and many still function in forgotten ruins throughout Varisia."
     
     # Giant/Humanoid lore
-    elif any(k in ['giant', 'ogre', 'troll', 'goblin', 'humanoid'] for k in keywords):
-        humanoid_lore = [
-            "Giants and their kin have inhabited the Inner Sea region since before human civilization. In Varisia, hill giants and marsh giants claim territories in the wilderness, raiding settlements and demanding tribute. These creatures possess a crude intelligence and often serve as muscle for more cunning villains.",
-            "Goblins, hobgoblins, and bugbears plague the roads and forests of the Inner Sea region. While individually weak, they gather in large tribes and can overwhelm unprepared travelers. Their chaotic nature makes them unpredictable—sometimes cowardly, sometimes suicidally brave.",
-            "Trolls are among the most feared creatures in the wilderness, their regenerative abilities making them nearly impossible to kill without fire or acid. They hunt alone or in small family groups, claiming territories and devouring anything that enters their domain.",
-        ]
-        return random.choice(humanoid_lore)
+    if any(k in keyword_str for k in ['giant', 'ogre', 'troll', 'cyclops']):
+        return "Giants and their kin have inhabited the Inner Sea region since before human civilization. In Varisia, hill giants and marsh giants claim territories in the wilderness, raiding settlements and demanding tribute. These creatures possess a crude intelligence and often serve as muscle for more cunning villains."
     
-    # Default fallback
-    else:
-        return "The mists of Fogfen conceal ancient secrets and forgotten horrors. This creature is but one of many dangers that lurk in the wilderness between Otari and Gauntlight, drawn by the lighthouse's cursed beacon or simply claiming territory in the untamed swampland."
+    # Beast/Animal lore
+    if any(k in keyword_str for k in ['beast', 'animal']):
+        return "The wilderness of the Inner Sea region teems with dangerous creatures, from dire wolves the size of horses to giant spiders that spin webs between ancient trees. Fogfen, the swampland between Otari and Gauntlight, is particularly notorious for its aggressive wildlife, made more dangerous by the corrupting influence of the lighthouse's dark magic."
+    
+    # Humanoid lore (goblins, orcs, etc.)
+    if any(k in keyword_str for k in ['goblin', 'orc', 'hobgoblin', 'bugbear', 'kobold']):
+        return "Goblins, orcs, and their kin plague the roads and forests of the Inner Sea region. While individually weak, they gather in large tribes and can overwhelm unprepared travelers. Their chaotic nature makes them unpredictable—sometimes cowardly, sometimes suicidally brave. Many serve as minions for more powerful villains."
+    
+    # Plant lore
+    if any(k in keyword_str for k in ['plant', 'fungus']):
+        return "Animated plants and fungi are common in regions touched by primal magic or necromantic corruption. These creatures range from mindless predators to cunning hunters. The swamps and forests near Gauntlight harbor many such threats, their growth accelerated by the lighthouse's dark energies."
+    
+    # Elemental lore
+    if any(k in keyword_str for k in ['elemental', 'air', 'earth', 'fire', 'water']):
+        return "Elementals are beings of pure elemental energy from the Elemental Planes. They can be summoned by spellcasters or appear naturally in areas of strong elemental influence. These creatures embody the raw power of their element—destructive, relentless, and utterly alien to mortal concerns."
+    
+    # Default fallback - generic but useful
+    return f"This creature is one of many dangers that lurk in the wilderness between Otari and Gauntlight. The region's untamed swampland and ancient ruins attract all manner of threats, from natural predators to creatures drawn by the lighthouse's cursed beacon. Travelers who venture into Fogfen must be prepared for the unexpected."
 
 def get_otari_connection_combat():
     """Generate Otari-specific connection for COMBAT encounters"""
@@ -413,8 +413,8 @@ def generate_combat_encounter(roll, difficulty, equipment, inner_sea_lore, playe
         # Use creature lore from PathfinderWiki
         inner_sea_snippet = creature_lore_text
     else:
-        # Fallback to generic Inner Sea lore
-        inner_sea_snippet = extract_lore_snippet(inner_sea_lore, encounter_template.get('lore_keywords', ['Fogfen']))
+        # Use keyword-based fallback lore
+        inner_sea_snippet = get_fallback_lore(encounter_template.get('lore_keywords', ['creature']))
     
     otari_connection = get_otari_connection_combat()  # Use combat-specific connection
     gm_notes = generate_gm_notes(encounter_template, difficulty)

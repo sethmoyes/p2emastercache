@@ -12,19 +12,25 @@
 
 **Specialties:** Scrolls, wands, potions, alchemical items, and adventuring gear
 
-## Common Items (3)
+## Common Items (7)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Eldritch Flare](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Eldritch Flare | 15 | 1100 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eldritch%20Flare) |
-| ![Spyglass (Fine)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Spyglass (Fine) | 4 | 80 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spyglass) |
-| ![Reaper's Shadow](https://2e.aonprd.com/Images/Monsters/GrimReaper.png) | Reaper's Shadow | 17 | 14000 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reaper%27s%20Shadow) |
+| 🖼️ | Staff of the Desert Winds (True) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Desert%20Winds) |
+| 🖼️ | Wand of Mental Purification (8th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mental%20Purification) |
+| 🖼️ | Toll | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Toll) |
+| 🖼️ | Fish | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fish) |
+| 🖼️ | Dread Ampoule (Lesser) | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dread%20Ampoule) |
+| 🖼️ | Chain | 0 | 4 gp (10 ft.) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chain) |
+| ![Shield Bow](https://2e.aonprd.com/Images/Weapons/Shield_Bow.webp) | Shield Bow | 3 | 60 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shield%20Bow) |
 
-## Uncommon Items (1)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Moderate Spider Satchel](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Moderate Spider Satchel | 4 | 16 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moderate%20Spider%20Satchel) |
+| 🖼️ | Staff of Final Rest | 6 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Final%20Rest) |
+| 🖼️ | Camouflaging Chromatophores (Greater) | 4 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Camouflaging%20Chromatophores) |
+| 🖼️ | Sturdy Satchel | 2 | 30 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sturdy%20Satchel) |
 
 ## Services
 

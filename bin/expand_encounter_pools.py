@@ -62,6 +62,19 @@ def get_tactics(creature):
 
 def create_encounter(creature):
     """Create an encounter template from a creature"""
+    # Extract traits as keywords for better lore matching
+    traits = creature.get('trait', '').split(', ')
+    # Add creature family if available
+    if creature.get('creature_family'):
+        traits.append(creature['creature_family'])
+    
+    # Clean up traits - remove empty strings and generic ones
+    keywords = [t.strip() for t in traits if t.strip() and t.strip() not in ['Common', 'Uncommon', 'Rare', 'Unique']]
+    
+    # If no good keywords, use generic ones
+    if not keywords:
+        keywords = ['creature', 'monster', 'wilderness']
+    
     return {
         'name': creature['name'],
         'hp': creature['hp'],
@@ -73,7 +86,7 @@ def create_encounter(creature):
         'tactics': get_tactics(creature),
         'setup': random.choice(SETUPS),
         'readaloud': random.choice(READALOUDS).format(name=creature['name']),
-        'lore_keywords': creature.get('lore_keywords', ['creature', 'monster', 'wilderness'])
+        'lore_keywords': keywords
     }
 
 # Filter creatures by level

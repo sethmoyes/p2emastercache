@@ -12,23 +12,23 @@
 
 **Specialties:** Books, scrolls, and writing supplies
 
-## Common Items (7)
+## Common Items (6)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Indomitable Keepsake](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Indomitable Keepsake | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Indomitable%20Keepsake) |
-| ![Inventor's Fulu](https://2e.aonprd.com/Images/Classes/Iconic_Droven.png) | Inventor's Fulu | 6 | 50 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Fulu) |
-| ![Bow Staff (Ranged)](https://2e.aonprd.com/Images/Weapons/Bow_Staff.webp) | Bow Staff (Ranged) | 3 | 60 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bow%20Staff) |
-| ![Hearing Aid (Magical)](https://2e.aonprd.com/Images/Ancestries/Icons/Kholo_Icon.png) | Hearing Aid (Magical) | 0 | 50 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hearing%20Aid) |
-| ![Thunder Snare](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Thunder Snare | 2 | 6 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thunder%20Snare) |
-| ![Warding Tablets](https://2e.aonprd.com/Images/Ancestries/Icons/Ardande_Icon.png) | Warding Tablets | 8 | 450 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warding%20Tablets) |
-| ![Manacles (Good)](https://2e.aonprd.com/Images/Weapons/Dueling_Pistol.webp) | Manacles (Good) | 0 | 30 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Manacles) |
+| 🖼️ | Spyglass Eye | 4 | 80 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spyglass%20Eye) |
+| ![Gakgung](https://2e.aonprd.com/Images/Weapons/Gakgung.webp) | Gakgung | 0 | 6 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gakgung) |
+| 🖼️ | Menacing (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Menacing) |
+| 🖼️ | Lantern (Hooded) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lantern) |
+| ![Torrent Spellgun (Greater)](https://2e.aonprd.com/Images/Treasure/Torrent_Spellgun.webp) | Torrent Spellgun (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Torrent%20Spellgun) |
+| 🖼️ | Magnetic Suit (Greater) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magnetic%20Suit) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Buugeng](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Buugeng | 0 | 9 sp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Buugeng) |
+| 🖼️ | Cartographer's Kit | 3 | 42 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cartographer%27s%20Kit) |
+| 🖼️ | Rhino Hide Brooch | 5 | 28 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rhino%20Hide%20Brooch) |
 
 ## Services
 
