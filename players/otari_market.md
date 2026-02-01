@@ -14,28 +14,29 @@
 
 # REGULAR ITEMS
 
-## Common Items (9)
+## Common Items (12)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Animal Nip (Moderate) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Animal%20Nip) |
-| 🖼️ | Warding Tattoo | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warding%20Tattoo) |
-| 🖼️ | Cradle Minder | 0 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cradle%20Minder) |
-| 🖼️ | Lodging (Bed, for 1) | 0 | 10 gp (per day) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lodging) |
-| 🖼️ | Beverages (Mug of Ale) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
-| 🖼️ | Piton | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Piton) |
-| 🖼️ | Cassisian Helmet | 6 | 225 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cassisian%20Helmet) |
-| 🖼️ | Beastmaster's Sigil | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beastmaster%27s%20Sigil) |
-| ![Familiar Morsel](https://2e.aonprd.com/Images/Treasure/Familiar_Morsel.webp) | Familiar Morsel | 5 | 30 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Familiar%20Morsel) |
+| 🖼️ | Eye Slash (Greater) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eye%20Slash) |
+| 🖼️ | Wheel Blades | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheel%20Blades) |
+| ![Alchemist's Fire (Major)](https://2e.aonprd.com/Images/Treasure/Alchemists_Fire.webp) | Alchemist's Fire (Major) | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Alchemist%27s%20Fire) |
+| 🖼️ | Lock (Superior) | 0 | 2 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lock) |
+| 🖼️ | Map (Geographical Map) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Map) |
+| 🖼️ | Corrective Lenses | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Corrective%20Lenses) |
+| 🖼️ | Meal (Square) | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Meal) |
+| 🖼️ | Agents of Edgewatch | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Agents%20of%20Edgewatch) |
+| 🖼️ | Map (Geologic Map) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Map) |
+| 🖼️ | Lantern of Empty Light | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lantern%20of%20Empty%20Light) |
+| 🖼️ | Purifying Spoon (Teaspoon) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Purifying%20Spoon) |
+| 🖼️ | Staff of Control | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Control) |
 
-## Uncommon Items (6)
+## Uncommon Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Coin of Comfort | 3 | 45 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Coin%20of%20Comfort) |
-| 🖼️ | Spellcasting (4th rank) | 0 | 3 gp (plus any cost required to cast the specific spell) | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
-| 🖼️ | Grappling Gun (Clockwork) | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Grappling%20Gun) |
-| 🖼️ | Lesser Roc-Shaft Arrow | 5 | 24 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lesser%20Roc-Shaft%20Arrow) |
-| 🖼️ | Wand of Teeming Ghosts (5th-Rank Spell) | 6 | 0 gp | Uncommon | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Teeming%20Ghosts) |
-| 🖼️ | Ringmaster's Staff | 6 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ringmaster%27s%20Staff) |
+| 🖼️ | Shootist Bandolier | 0 | 1 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shootist%20Bandolier) |
+| 🖼️ | Box of Unspoiling (Type III) | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Box%20of%20Unspoiling) |
+| 🖼️ | Clockwork Goggles (Major) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clockwork%20Goggles) |
+| 🖼️ | Rhinoceros Mask | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rhinoceros%20Mask) |
 

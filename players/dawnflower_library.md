@@ -41,37 +41,41 @@
 - **Greater Reinforcing** (Level 11): 1,400 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 - **Major Reinforcing** (Level 17): 15,000 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 
-## Property Runes (5)
+## Property Runes (2)
 
 | Image | Name | Level | Price | Rarity | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Underwater | 3 | 50 gp | Common | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
 | 🖼️ | Called (Accessory Rune) | 3 | 60 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Called) |
 | 🖼️ | Soft-Landing | 3 | 60 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Soft-Landing) |
-| 🖼️ | Snagging | 3 | 60 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Snagging) |
-| 🖼️ | Bane | 4 | 100 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Bane) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (7)
+## Common Items (14)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Raiment | 5 | 140 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Raiment) |
-| 🖼️ | Underwater | 3 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
+| 🖼️ | Religious Text | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Religious%20Text) |
+| ![Formula Book (Blank)](https://2e.aonprd.com/Images/Treasure/Formula_Book.webp) | Formula Book (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Formula%20Book) |
+| 🖼️ | Courtier's Pillow Book | 6 | 250 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Courtier%27s%20Pillow%20Book) |
 | 🖼️ | Endless Grimoire | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
+| 🖼️ | Basic Crafter's Book | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Basic%20Crafter%27s%20Book) |
+| 🖼️ | Endless Grimoire (True) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
+| 🖼️ | Endless Grimoire (Greater) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
+| 🖼️ | Endless Grimoire (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
+| 🖼️ | Tome of Restorative Cleansing (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tome%20of%20Restorative%20Cleansing) |
+| 🖼️ | Tome of Restorative Cleansing (Lesser) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tome%20of%20Restorative%20Cleansing) |
+| 🖼️ | Raiment | 5 | 140 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Raiment) |
 | ![Spellbook (Blank)](https://2e.aonprd.com/Images/Treasure/Spellbook.webp) | Spellbook (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellbook) |
 | 🖼️ | Draxie's Recipe Book | 4 | 90 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Draxie%27s%20Recipe%20Book) |
-| 🖼️ | Courtier's Pillow Book | 6 | 250 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Courtier%27s%20Pillow%20Book) |
-| 🖼️ | Religious Text | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Religious%20Text) |
+| 🖼️ | Underwater | 3 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
 
 ## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Architect's Pattern Book | 6 | 240 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Architect%27s%20Pattern%20Book) |
+| 🖼️ | Cunning | 5 | 140 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cunning) |
 | 🖼️ | Book of Translation (Standard) | 2 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Book%20of%20Translation) |
 
 ## Services

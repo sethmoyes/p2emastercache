@@ -20,25 +20,34 @@
 
 *Study time: 1 hour (common), 5 hours (uncommon), 1 day (rare).*
 
-## Common Spell Scrolls (7)
+## Common Spell Scrolls (8)
 
 | Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |
 |------------|-------|-------|-------|------------|------|-------|--------|------|
-| SCROLL OF ENTANGLE | 2 | 6 gp | 18 | Primal | Unknown | 120 | Plant, Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=103) |
-| SCROLL OF BLAZING ARMORY | 2 | 6 gp | 18 | Arcane, Divine, Primal | Unknown | 30 | Concentrate, Fire, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1348) |
-| SCROLL OF REMOVE CURSE | 4 | 36 gp | 23 | Divine, Occult | Unknown | 0 | Healing, Necromancy | [View](https://2e.aonprd.com/Spells.aspx?ID=250) |
-| SCROLL OF SHATTER | 2 | 6 gp | 18 | Occult, Primal | Unknown | 30 | Concentrate, Manipulate, Sonic | [View](https://2e.aonprd.com/Spells.aspx?ID=1670) |
-| SCROLL OF GRAVITY WELL | 3 | 16 gp | 20 | Arcane, Occult | Unknown | 120 | Evocation | [View](https://2e.aonprd.com/Spells.aspx?ID=577) |
-| SCROLL OF ILLUSORY CREATURE | 2 | 6 gp | 18 | Arcane, Occult | Unknown | 500 | Auditory, Concentrate, Illusion | [View](https://2e.aonprd.com/Spells.aspx?ID=1567) |
-| SCROLL OF SAFE PASSAGE | 3 | 16 gp | 20 | Arcane, Divine, Primal, Elemental | Unknown | 0 | Abjuration | [View](https://2e.aonprd.com/Spells.aspx?ID=712) |
+| SCROLL OF SHARE LIFE | 2 | 6 gp | 18 | Divine | Unknown | 30 | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1669) |
+| SCROLL OF CLAIRAUDIENCE | 3 | 16 gp | 20 | Arcane, Occult | Unknown | 500 | Divination, Scrying | [View](https://2e.aonprd.com/Spells.aspx?ID=39) |
+| SCROLL OF INNER RADIANCE TORRENT | 2 | 6 gp | 18 | Divine, Occult | Unknown | Unknown | Force, Light, Necromancy | [View](https://2e.aonprd.com/Spells.aspx?ID=934) |
+| SCROLL OF ANIMATED ASSAULT | 2 | 6 gp | 18 | Arcane, Occult | Unknown | 120 | Evocation | [View](https://2e.aonprd.com/Spells.aspx?ID=668) |
+| SCROLL OF FROG TONGUE | 2 | 6 gp | 18 | Primal | Unknown | 30 | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1953) |
+| SCROLL OF CLAIRVOYANCE | 4 | 36 gp | 23 | Arcane, Occult | Unknown | 500 | Concentrate, Manipulate, Scrying | [View](https://2e.aonprd.com/Spells.aspx?ID=1466) |
+| SCROLL OF HASTE | 3 | 16 gp | 20 | Arcane, Occult, Primal | Unknown | 30 | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1553) |
+| SCROLL OF BURNING HANDS | 1 | 2 gp | 15 | Arcane, Primal | Unknown | Unknown | Evocation, Fire | [View](https://2e.aonprd.com/Spells.aspx?ID=30) |
 
-## Uncommon Spell Scrolls (3)
+## Uncommon Spell Scrolls (5)
 
 | Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |
 |------------|-------|-------|-------|------------|------|-------|--------|------|
-| SCROLL OF FEAR THE SUN | 2 | 6 gp | 18 | Arcane, Divine, Occult, Primal | Unknown | 30 | Transmutation, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1080) |
-| SCROLL OF STEAL VOICE | 4 | 36 gp | 23 | Arcane, Divine, Occult | Unknown | 30 | Curse, Incapacitation, Necromancy | [View](https://2e.aonprd.com/Spells.aspx?ID=1268) |
-| SCROLL OF AVENGING WILDWOOD | 2 | 6 gp | 18 | Primal | Unknown | 60 | Concentrate, Manipulate, Plant | [View](https://2e.aonprd.com/Spells.aspx?ID=2461) |
+| SCROLL OF IMP STING | 2 | 6 gp | 18 | Divine, Occult | Unknown | 0 | Evil, Necromancy, Poison | [View](https://2e.aonprd.com/Spells.aspx?ID=826) |
+| SCROLL OF SHADOW ZOMBIE | 2 | 6 gp | 18 | Arcane, Divine, Occult | Unknown | 30 | Necromancy, Shadow, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1208) |
+| SCROLL OF NOTHING UP MY SLEEVE | 3 | 16 gp | 20 | Arcane, Occult | Unknown | Unknown | Conjuration, Extradimensional, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1290) |
+| SCROLL OF VEIL OF PRIVACY | 3 | 16 gp | 20 | Arcane, Occult, Primal | Unknown | 0 | Concentrate, Manipulate, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1739) |
+| SCROLL OF GASPING MARSH | 3 | 16 gp | 20 | Arcane, Primal | Unknown | 30 | Evocation, Poison, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1067) |
+
+## Rare Spell Scrolls (1)
+
+| Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |
+|------------|-------|-------|-------|------------|------|-------|--------|------|
+| SCROLL OF FALLEN SOLDIER'S LAMENT | 4 | 36 gp | 23 | Divine, Occult | Unknown | 100 | Concentrate, Illusion, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=2503) |
 
 ---
 
@@ -71,36 +80,47 @@
 - **Greater Reinforcing** (Level 11): 1,400 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 - **Major Reinforcing** (Level 17): 15,000 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 
-## Property Runes (2)
+## Property Runes (1)
 
 | Image | Name | Level | Price | Rarity | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Snagging | 3 | 60 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Snagging) |
-| 🖼️ | Called (Accessory Rune) | 3 | 60 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Called) |
+| 🖼️ | Bane | 4 | 100 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Bane) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (8)
+## Common Items (14)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Sure-Step Potion | 4 | 17 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Sure-Step%20Potion) |
-| 🖼️ | Infiltrator's Elixir | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Infiltrator%27s%20Elixir) |
-| 🖼️ | Wand of Mercy (7th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mercy) |
+| 🖼️ | Cat's Eye Elixir | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cat%27s%20Eye%20Elixir) |
+| 🖼️ | Wand of Reaching (6th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
+| 🖼️ | Enhanced Hearing Aid | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Enhanced%20Hearing%20Aid) |
+| ![Magic Wand (9th-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (9th-rank Spell) | 3 | 60 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
+| 🖼️ | Staff of Elemental Power (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Elemental%20Power) |
+| 🖼️ | Wand of Shocking Haze | 6 | 250 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Shocking%20Haze) |
+| 🖼️ | Wand of Mental Purification (8th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mental%20Purification) |
+| 🖼️ | Staff of Summoning (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Summoning) |
+| 🖼️ | Darkvision Elixir (Moderate) | 4 | 11 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Darkvision%20Elixir) |
+| 🖼️ | Wand of Shardstorm (5th-rank Spell) | 5 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Shardstorm) |
+| ![Magic Wand (2nd-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (2nd-rank Spell) | 3 | 60 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
+| 🖼️ | Staff of the Desert Winds (True) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Desert%20Winds) |
 | 🖼️ | Staff of Protection | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Protection) |
-| 🖼️ | Wand of Widening (6th-rank Spell) | 4 | 100 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Widening) |
-| 🖼️ | Mage's Hat (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mage%27s%20Hat) |
-| 🖼️ | Wand of Reaching (9th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
-| 🖼️ | Cloak of Feline Rest | 1 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cloak%20of%20Feline%20Rest) |
+| 🖼️ | Wand of Continuation (3rd-rank Spell) | 5 | 160 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Continuation) |
 
 ## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Ringmaster's Staff | 6 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ringmaster%27s%20Staff) |
-| 🖼️ | Beckoning Cat Amulet | 5 | 26 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beckoning%20Cat%20Amulet) |
+| 🖼️ | Wand of Noisome Acid (2nd-Rank Spell) | 6 | 0 gp | Uncommon | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Noisome%20Acid) |
+| 🖼️ | Air Cartridge Firing System | 4 | 75 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Air%20Cartridge%20Firing%20System) |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Ring of Torag | 3 | 60 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ring%20of%20Torag) |
 
 ## Services
 

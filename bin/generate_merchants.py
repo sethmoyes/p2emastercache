@@ -1067,13 +1067,13 @@ if __name__ == "__main__":
         print("="*60)
         
         # Load NPC generator for random merchant names
-        from generate_npc_lore import generate_npc_background
+        from generate_npc_lore import generate_npc
         
         for merchant_num in [1, 2]:
             print(f"\n[RANDOM MERCHANT {merchant_num}] Generating...")
             
             # Generate random NPC
-            npc = generate_npc_background()
+            npc = generate_npc()
             merchant_name = f"Random Merchant {merchant_num}: {npc['name']}"
             
             # Random specialty

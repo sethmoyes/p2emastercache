@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="etc/default_merchant.jpg" alt="Proprietor" width="300">
+<img src="https://2e.aonprd.com/Images/Monsters/Merchant.webp" alt="Proprietor" width="250">
 
 </div>
 
@@ -14,24 +14,32 @@
 
 # REGULAR ITEMS
 
-## Common Items (8)
+## Common Items (15)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Beverages (Bottle of Fine Wine) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
-| 🖼️ | Underwater | 3 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
-| 🖼️ | Waterproofing Wax | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Waterproofing%20Wax) |
-| 🖼️ | Fishing Tackle (Professional) | 3 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fishing%20Tackle) |
-| 🖼️ | Healer's Toolkit | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
+| 🖼️ | Arbalest | 0 | 8 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Arbalest) |
 | 🖼️ | Beverages (Pot of Coffee or Tea) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
-| 🖼️ | Fu Water | 5 | 21 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fu%20Water) |
-| 🖼️ | Beverages (Keg of Ale) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Fishing Tackle (Professional) | 3 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fishing%20Tackle) |
+| 🖼️ | Healer's Gel (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Gel) |
+| 🖼️ | Beverages (Bottle of Fine Wine) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Fish | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fish) |
+| 🖼️ | Combat Fishing Pole | 0 | 8 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Combat%20Fishing%20Pole) |
+| 🖼️ | Healer's Toolkit (Expanded) | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
+| 🖼️ | Healer's Toolkit | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
+| 🖼️ | Fishing Lure | 0 | 8 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fishing%20Lure) |
+| 🖼️ | Rations | 0 | 4 sp (1 week) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rations) |
+| 🖼️ | Underwater | 3 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
+| 🖼️ | Meal (Square) | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Meal) |
+| ![Merchant's Scale](https://2e.aonprd.com/Images/Treasure/Merchants_Scale.webp) | Merchant's Scale | 0 | 2 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Merchant%27s%20Scale) |
+| 🖼️ | Cotton (Bale) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cotton) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Alkenstar Ice Wine | 5 | 25 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Alkenstar%20Ice%20Wine) |
+| 🖼️ | Water Purifier | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Water%20Purifier) |
+| 🖼️ | Comealong | 0 | 3 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comealong) |
 
 ## Services
 

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="etc/default_merchant.jpg" alt="Proprietor" width="300">
+<img src="https://cdna.artstation.com/p/assets/images/images/040/706/094/large/ksenia-kozhevnikova-pzo9309-mixed-marketplace.jpg?1629664123" alt="Proprietor" width="250">
 
 </div>
 
@@ -14,31 +14,30 @@
 
 # REGULAR ITEMS
 
-## Common Items (8)
+## Common Items (13)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Wand of Mental Purification (8th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mental%20Purification) |
-| 🖼️ | Map (Geographical Map) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Map) |
-| 🖼️ | Five-Feather Wreath (Greater) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Five-Feather%20Wreath) |
-| ![Snarling Badger (Moderate)](https://2e.aonprd.com/Images/Treasure/Snarling_Badger.webp) | Snarling Badger (Moderate) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Snarling%20Badger) |
-| 🖼️ | Gill Hook | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gill%20Hook) |
-| 🖼️ | Wand of Continuation (8th-rank Spell) | 5 | 160 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Continuation) |
-| 🖼️ | Blocks | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blocks) |
-| 🖼️ | Rabbit | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rabbit) |
+| 🖼️ | Griffon Cane | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Griffon%20Cane) |
+| 🖼️ | Oilskin Pouch | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oilskin%20Pouch) |
+| ![Weapon Shot (Lesser)](https://2e.aonprd.com/Images/Treasure/Weapon_Shot.webp) | Weapon Shot (Lesser) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Weapon%20Shot) |
+| 🖼️ | Retaliation (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Retaliation) |
+| 🖼️ | Rations | 0 | 4 sp (1 week) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rations) |
+| 🖼️ | Wheel Chair (Chair Storage) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheel%20Chair) |
+| 🖼️ | One Hundred Victories | 3 | 60 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=One%20Hundred%20Victories) |
+| 🖼️ | Mortar of Hidden Meaning | 4 | 75 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mortar%20of%20Hidden%20Meaning) |
+| ![Blight Bomb (Greater)](https://2e.aonprd.com/Images/Treasure/Blight_Bomb.webp) | Blight Bomb (Greater) | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blight%20Bomb) |
+| 🖼️ | Exsanguinating Ammunition (Major) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Exsanguinating%20Ammunition) |
+| 🖼️ | Trustworthy Round | 3 | 9 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Trustworthy%20Round) |
+| 🖼️ | Wand of Widening (6th-rank Spell) | 4 | 100 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Widening) |
+| 🖼️ | Mustard Powder | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mustard%20Powder) |
 
 ## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Acid Spitter | 4 | 15 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Acid%20Spitter) |
-| 🖼️ | Air Repeater | 0 | 1 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Air%20Repeater) |
-
-## Rare Items (1)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Demon-Hunting Bands | 3 | 10 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Demon-Hunting%20Bands) |
+| 🖼️ | Deployable Cover | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Deployable%20Cover) |
+| 🖼️ | Popdust | 1 | 1 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Popdust) |
 
 ## Services
 

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="etc/default_merchant.jpg" alt="Proprietor" width="300">
+<img src="https://i.redd.it/mr6j0g84qplc1.jpeg" alt="Proprietor" width="250">
 
 </div>
 
@@ -14,31 +14,37 @@
 
 # REGULAR ITEMS
 
-## Common Items (14)
+## Common Items (15)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Tooth and Claw Tattoo | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tooth%20and%20Claw%20Tattoo) |
-| 🖼️ | Necrotic Bomb (Greater) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Necrotic%20Bomb) |
 | ![Serpent Oil (Moderate)](https://2e.aonprd.com/Images/Treasure/Serpent_Oil.webp) | Serpent Oil (Moderate) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Serpent%20Oil) |
-| 🖼️ | Anticorrosion Oil | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Anticorrosion%20Oil) |
-| 🖼️ | Tentacle Potion (Moderate) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
-| 🖼️ | Cat's Eye Elixir | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cat%27s%20Eye%20Elixir) |
-| 🖼️ | Bomber's Eye Elixir (Greater) | 4 | 14 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bomber%27s%20Eye%20Elixir) |
-| 🖼️ | Eidetic Potion | 6 | 40 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Eidetic%20Potion) |
-| ![Oil of Ownership (Lesser)](https://2e.aonprd.com/Images/Treasure/Oil_Of_Ownership.webp) | Oil of Ownership (Lesser) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oil%20of%20Ownership) |
-| 🖼️ | Viperous Elixir (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Viperous%20Elixir) |
+| 🖼️ | Viperous Elixir (Lesser) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Viperous%20Elixir) |
 | 🖼️ | Cheetah's Elixir (Lesser) | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cheetah%27s%20Elixir) |
-| 🖼️ | Sticky Algae Bomb (Major) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sticky%20Algae%20Bomb) |
-| 🖼️ | Snare Kit (Specialist) | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Snare%20Kit) |
-| 🖼️ | Glue Bomb (Major) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glue%20Bomb) |
+| 🖼️ | Bomber's Eye Elixir (Greater) | 4 | 14 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bomber%27s%20Eye%20Elixir) |
+| 🖼️ | Thunder Snare | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thunder%20Snare) |
+| 🖼️ | Darkvision Elixir (Moderate) | 4 | 11 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Darkvision%20Elixir) |
+| 🖼️ | Necrotic Bomb (Major) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Necrotic%20Bomb) |
+| 🖼️ | Darkvision Elixir (Lesser) | 4 | 11 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Darkvision%20Elixir) |
+| ![Serpent Oil (True)](https://2e.aonprd.com/Images/Treasure/Serpent_Oil.webp) | Serpent Oil (True) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Serpent%20Oil) |
+| 🖼️ | Tentacle Potion (Moderate) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
+| 🖼️ | Oilskin Pouch | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oilskin%20Pouch) |
+| 🖼️ | Tooth and Claw Tattoo | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tooth%20and%20Claw%20Tattoo) |
+| 🖼️ | Warding Tattoo (Trail) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warding%20Tattoo) |
+| ![Blight Bomb (Moderate)](https://2e.aonprd.com/Images/Treasure/Blight_Bomb.webp) | Blight Bomb (Moderate) | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blight%20Bomb) |
+| 🖼️ | Warding Tattoo | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warding%20Tattoo) |
 
-## Uncommon Items (2)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Bomb Launcher | 1 | 20 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bomb%20Launcher) |
-| 🖼️ | Sulfur Bomb (Lesser) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sulfur%20Bomb) |
+| 🖼️ | Static Snare | 2 | 6 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Static%20Snare) |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Digly's Oil of Sympathy (Lesser) | 1 | 0 gp | Rare | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Digly%27s%20Oil%20of%20Sympathy) |
 
 ## Services
 
