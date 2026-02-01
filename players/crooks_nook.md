@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proprietor](etc/default_merchant.jpg)
+<img src="etc/default_merchant.jpg" alt="Proprietor" width="300">
 
 </div>
 
@@ -14,33 +14,31 @@
 
 # REGULAR ITEMS
 
-## Common Items (15)
+## Common Items (14)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Antivenom Potion | 2 | 6 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Antivenom%20Potion) |
-| ![Oil of Skating](https://2e.aonprd.com/Images/Treasure/Oil_Of_Skating.webp) | Oil of Skating | 2 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oil%20of%20Skating) |
-| 🖼️ | Viperous Elixir (Lesser) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Viperous%20Elixir) |
-| 🖼️ | Snare Kit | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Snare%20Kit) |
-| 🖼️ | Tentacle Potion (Lesser) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
-| 🖼️ | Cheetah's Elixir (Moderate) | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cheetah%27s%20Elixir) |
-| 🖼️ | Warding Tattoo (Trail) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warding%20Tattoo) |
-| 🖼️ | Faith Tattoo (Major) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Faith%20Tattoo) |
-| 🖼️ | Lady's Blessing Oil | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lady%27s%20Blessing%20Oil) |
-| 🖼️ | Green Wyrmling Breath Potion | 5 | 30 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Green%20Wyrmling%20Breath%20Potion) |
-| 🖼️ | Viperous Elixir (Greater) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Viperous%20Elixir) |
-| 🖼️ | Warding Tattoo (Wave) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warding%20Tattoo) |
-| 🖼️ | Faith Tattoo (True) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Faith%20Tattoo) |
-| 🖼️ | Detonating Gears Snare | 3 | 12 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Detonating%20Gears%20Snare) |
-| 🖼️ | Poisonous Dagger | 5 | 150 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Poisonous%20Dagger) |
+| 🖼️ | Tooth and Claw Tattoo | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tooth%20and%20Claw%20Tattoo) |
+| 🖼️ | Necrotic Bomb (Greater) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Necrotic%20Bomb) |
+| ![Serpent Oil (Moderate)](https://2e.aonprd.com/Images/Treasure/Serpent_Oil.webp) | Serpent Oil (Moderate) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Serpent%20Oil) |
+| 🖼️ | Anticorrosion Oil | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Anticorrosion%20Oil) |
+| 🖼️ | Tentacle Potion (Moderate) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
+| 🖼️ | Cat's Eye Elixir | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cat%27s%20Eye%20Elixir) |
+| 🖼️ | Bomber's Eye Elixir (Greater) | 4 | 14 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bomber%27s%20Eye%20Elixir) |
+| 🖼️ | Eidetic Potion | 6 | 40 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Eidetic%20Potion) |
+| ![Oil of Ownership (Lesser)](https://2e.aonprd.com/Images/Treasure/Oil_Of_Ownership.webp) | Oil of Ownership (Lesser) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oil%20of%20Ownership) |
+| 🖼️ | Viperous Elixir (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Viperous%20Elixir) |
+| 🖼️ | Cheetah's Elixir (Lesser) | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cheetah%27s%20Elixir) |
+| 🖼️ | Sticky Algae Bomb (Major) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sticky%20Algae%20Bomb) |
+| 🖼️ | Snare Kit (Specialist) | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Snare%20Kit) |
+| 🖼️ | Glue Bomb (Major) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glue%20Bomb) |
 
-## Uncommon Items (3)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Wet Shock Snare | 5 | 25 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wet%20Shock%20Snare) |
-| 🖼️ | Box of Unspoiling (Type I) | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Box%20of%20Unspoiling) |
 | 🖼️ | Bomb Launcher | 1 | 20 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bomb%20Launcher) |
+| 🖼️ | Sulfur Bomb (Lesser) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sulfur%20Bomb) |
 
 ## Services
 

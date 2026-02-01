@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proprietor](etc/default_merchant.jpg)
+<img src="etc/default_merchant.jpg" alt="Proprietor" width="300">
 
 </div>
 
@@ -14,30 +14,24 @@
 
 # REGULAR ITEMS
 
-## Common Items (6)
+## Common Items (8)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Beverages (Bottle of Wine) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
-| 🖼️ | Beverages (Mug of Ale) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
-| 🖼️ | Conflagration Club | 6 | 250 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Conflagration%20Club) |
-| 🖼️ | Healer's Gel (Greater) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Gel) |
+| 🖼️ | Beverages (Bottle of Fine Wine) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Underwater | 3 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
+| 🖼️ | Waterproofing Wax | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Waterproofing%20Wax) |
+| 🖼️ | Fishing Tackle (Professional) | 3 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fishing%20Tackle) |
+| 🖼️ | Healer's Toolkit | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
 | 🖼️ | Beverages (Pot of Coffee or Tea) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Fu Water | 5 | 21 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fu%20Water) |
 | 🖼️ | Beverages (Keg of Ale) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
 
-## Uncommon Items (3)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Waterproof Carrying Case | 0 | 2 sp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Waterproof%20Carrying%20Case) |
 | 🖼️ | Alkenstar Ice Wine | 5 | 25 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Alkenstar%20Ice%20Wine) |
-| 🖼️ | Blood-Drinker Blade | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blood-Drinker%20Blade) |
-
-## Rare Items (1)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Matsuki's Medicinal Wine | 3 | 12 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Matsuki%27s%20Medicinal%20Wine) |
 
 ## Services
 

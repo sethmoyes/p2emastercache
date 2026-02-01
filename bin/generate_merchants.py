@@ -60,6 +60,52 @@ def generate_spell_inventory(spells, max_level, num_common, num_uncommon, has_ra
     
     return inventory
 
+def generate_rune_inventory(equipment, max_level):
+    """Generate rune inventory for magic shops
+    
+    Returns:
+        dict with 'fundamental' (2-3 of each fundamental weapon rune) and 
+        'other' (1-3 non-fundamental runes)
+    """
+    inventory = {'fundamental': [], 'other': []}
+    
+    # Filter for runes at or below max level
+    all_runes = [e for e in equipment if e.get('item_category') == 'Runes' and e['level'] <= max_level]
+    
+    # Fundamental weapon runes are: Striking, Greater Striking, Major Striking
+    # We identify them by name patterns (not by traits since traits aren't in the JSON)
+    fundamental_weapon_runes = []
+    other_runes = []
+    
+    for rune in all_runes:
+        name_lower = rune['name'].lower()
+        
+        # Check if it's a fundamental weapon rune by name
+        # Fundamental weapon runes: striking (but NOT in armor/handwraps context)
+        # We want actual rune items, not handwraps or armor
+        is_striking = 'striking' in name_lower and 'handwraps' not in name_lower
+        
+        # Potency runes for weapons (not armor potency)
+        is_weapon_potency = 'potency' in name_lower and 'armor' not in name_lower
+        
+        if is_striking or is_weapon_potency:
+            fundamental_weapon_runes.append(rune)
+        else:
+            other_runes.append(rune)
+    
+    # Add 2-3 of each fundamental weapon rune
+    for rune in fundamental_weapon_runes:
+        quantity = random.randint(2, 3)
+        for _ in range(quantity):
+            inventory['fundamental'].append(rune)
+    
+    # Add 1-3 property runes (changed from 2-7)
+    num_other = random.randint(1, 3)
+    if other_runes:
+        inventory['other'] = random.sample(other_runes, min(num_other, len(other_runes)))
+    
+    return inventory
+
 def clean_item_name(name):
     """Clean item name for search - remove everything after special chars/numbers"""
     # Remove parentheses and everything inside
@@ -72,54 +118,73 @@ def clean_item_name(name):
     name = ' '.join(name.split())
     return name.strip()
 
-def get_merchant_image(npc_name):
-    """Get merchant portrait from PathfinderWiki or use default"""
+# Default merchant images to cycle through
+DEFAULT_MERCHANT_IMAGES = [
+    "https://2e.aonprd.com/Images/Monsters/Merchant.webp",
+    "https://2e.aonprd.com/Images/Monsters/Guildmaster.webp",
+    "https://i.redd.it/mr6j0g84qplc1.jpeg",
+    "https://cdna.artstation.com/p/assets/images/images/040/706/094/large/ksenia-kozhevnikova-pzo9309-mixed-marketplace.jpg?1629664123"
+]
+
+def get_merchant_image(npc_name, merchant_index=0):
+    """Get merchant portrait from PathfinderWiki or use default from cycle"""
     try:
         # Extract just the name (before parentheses)
         clean_name = npc_name.split('(')[0].strip()
-        name_underscore = clean_name.replace(' ', '_')
+        
+        # For names with multiple words, try different variations
+        name_variations = [
+            clean_name.replace(' ', '_'),  # Full name with underscores
+            clean_name.split()[0],  # First name only
+        ]
+        
+        # If there's a last name, try that too
+        if len(clean_name.split()) > 1:
+            name_variations.append(clean_name.split()[-1])  # Last name only
         
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         }
         
-        # Try both .jpg and .png extensions
-        for ext in ['.png', '.jpg']:
-            wiki_url = f"https://pathfinderwiki.com/wiki/File:{name_underscore}{ext}"
-            
-            response = requests.get(wiki_url, headers=headers, timeout=10)
-            
-            if response.status_code == 200:
-                soup = BeautifulSoup(response.text, 'html.parser')
+        # Try each name variation
+        for name_underscore in name_variations:
+            # Try both .jpg and .png extensions
+            for ext in ['.png', '.jpg']:
+                wiki_url = f"https://pathfinderwiki.com/wiki/File:{name_underscore}{ext}"
                 
-                # Look for the full resolution image link
-                fullres = soup.find('div', class_='fullImageLink')
-                if fullres:
-                    a_tag = fullres.find('a')
-                    if a_tag and a_tag.get('href'):
-                        img_url = a_tag['href']
-                        # Make sure it's a full URL
-                        if img_url.startswith('//'):
-                            img_url = 'https:' + img_url
-                        elif img_url.startswith('/'):
-                            img_url = 'https://pathfinderwiki.com' + img_url
-                        return img_url
+                response = requests.get(wiki_url, headers=headers, timeout=10)
                 
-                # Fallback: look for any img with the name in src
-                imgs = soup.find_all('img')
-                for img in imgs:
-                    src = img.get('src', '')
-                    if name_underscore in src and (ext in src):
-                        if src.startswith('//'):
-                            return 'https:' + src
-                        elif src.startswith('/'):
-                            return 'https://pathfinderwiki.com' + src
-                        return src
+                if response.status_code == 200:
+                    soup = BeautifulSoup(response.text, 'html.parser')
+                    
+                    # Look for the full resolution image link
+                    fullres = soup.find('div', class_='fullImageLink')
+                    if fullres:
+                        a_tag = fullres.find('a')
+                        if a_tag and a_tag.get('href'):
+                            img_url = a_tag['href']
+                            # Make sure it's a full URL
+                            if img_url.startswith('//'):
+                                img_url = 'https:' + img_url
+                            elif img_url.startswith('/'):
+                                img_url = 'https://pathfinderwiki.com' + img_url
+                            return img_url
+                    
+                    # Fallback: look for any img with the name in src
+                    imgs = soup.find_all('img')
+                    for img in imgs:
+                        src = img.get('src', '')
+                        if name_underscore in src and (ext in src):
+                            if src.startswith('//'):
+                                return 'https:' + src
+                            elif src.startswith('/'):
+                                return 'https://pathfinderwiki.com' + src
+                            return src
     except Exception as e:
         pass  # Silently fail and use default
     
-    # Return default image path
-    return "etc/default_merchant.jpg"
+    # Return default image from cycle
+    return DEFAULT_MERCHANT_IMAGES[merchant_index % len(DEFAULT_MERCHANT_IMAGES)]
 
 def try_direct_aon_image(item_name):
     """Try to construct direct AoN image URL"""
@@ -267,21 +332,21 @@ def generate_merchant_inventory(equipment, categories, num_common, num_uncommon,
     
     return inventory
 
-def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, spell_inventory=None, output_dir='players'):
+def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, spell_inventory=None, rune_inventory=None, output_dir='players', merchant_index=0):
     """Write merchant file with header, proprietor image, and full item details"""
     filename = merchant_name.lower().replace(' ', '_').replace("'", '') + '.md'
     filepath = os.path.join(output_dir, filename)
     
     # Get merchant image
     print(f"  Fetching merchant portrait...", end=' ')
-    merchant_img = get_merchant_image(proprietor)
+    merchant_img = get_merchant_image(proprietor, merchant_index)
     print(f"OK" if "pathfinderwiki" in merchant_img else "Using default")
     
     with open(filepath, 'w', encoding='utf-8') as f:
-        # Header with proprietor image
+        # Header with proprietor image (small size - 250px)
         f.write(f"# {merchant_name}\n\n")
         f.write(f"<div align=\"center\">\n\n")
-        f.write(f"![Proprietor]({merchant_img})\n\n")
+        f.write(f"<img src=\"{merchant_img}\" alt=\"Proprietor\" width=\"250\">\n\n")
         f.write(f"</div>\n\n")
         f.write(f"*{description}*\n\n")
         f.write(f"**Proprietor:** {proprietor}\n\n")
@@ -373,6 +438,121 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                         link_md = f"[View]({search_url})"
                     
                     f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {cast_time} | {spell_range} | {traits} | {link_md} |\n")
+                
+                f.write("\n")
+            
+            f.write("---\n\n")
+        
+        # Rune section (if applicable)
+        if rune_inventory:
+            f.write("# RUNES\n\n")
+            f.write("*Runes can be etched onto weapons and armor to enhance their properties.*\n\n")
+            
+            # Fundamental weapon runes (always available, 2-3 of each)
+            if rune_inventory['fundamental']:
+                # Count quantities
+                rune_counts = {}
+                for rune in rune_inventory['fundamental']:
+                    rune_name = rune['name']
+                    if rune_name not in rune_counts:
+                        rune_counts[rune_name] = {'count': 0, 'rune': rune}
+                    rune_counts[rune_name]['count'] += 1
+                
+                f.write(f"## Fundamental Weapon Runes (Always Available)\n\n")
+                f.write("| Image | Name | Quantity | Level | Price | Rarity | Link |\n")
+                f.write("|-------|------|----------|-------|-------|--------|------|\n")
+                
+                for rune_name, data in rune_counts.items():
+                    rune = data['rune']
+                    quantity = data['count']
+                    
+                    print(f"  [RUNE] {rune['name'][:50]}", end='... ')
+                    image_url = get_image_from_aon(rune['name'])
+                    
+                    if image_url:
+                        print(f"OK")
+                    else:
+                        print(f"X")
+                    
+                    # Fix and capitalize fields
+                    name = rune['name']
+                    level = rune['level']
+                    price = fix_price(rune['price'])
+                    rarity = capitalize_field(rune['rarity'])
+                    
+                    # Create image markdown
+                    if image_url:
+                        img_md = f"![{name}]({image_url})"
+                    else:
+                        img_md = "🖼️"
+                    
+                    # Create AoN search link
+                    search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
+                    link_md = f"[View]({search_url})"
+                    
+                    f.write(f"| {img_md} | {name} | {quantity} | {level} | {price} | {rarity} | {link_md} |\n")
+                    
+                    time.sleep(0.3)
+                
+                f.write("\n")
+            else:
+                # If no fundamental runes in database, show standard availability
+                f.write(f"## Fundamental Runes (Always Available on Request)\n\n")
+                f.write("*The following fundamental runes can be purchased at standard prices (2-3 of each in stock):*\n\n")
+                f.write("**Weapon Runes:**\n")
+                f.write("- **Weapon Potency (+1)** (Level 2): 35 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2829)\n")
+                f.write("- **Weapon Potency (+2)** (Level 10): 935 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2829)\n")
+                f.write("- **Weapon Potency (+3)** (Level 16): 8,935 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2829)\n")
+                f.write("- **Striking** (Level 4): 65 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2830)\n")
+                f.write("- **Greater Striking** (Level 12): 1,065 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2830)\n")
+                f.write("- **Major Striking** (Level 19): 31,065 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2830)\n\n")
+                f.write("**Armor Runes:**\n")
+                f.write("- **Armor Potency (+1)** (Level 5): 160 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2785)\n")
+                f.write("- **Armor Potency (+2)** (Level 11): 1,060 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2785)\n")
+                f.write("- **Armor Potency (+3)** (Level 18): 20,560 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2785)\n")
+                f.write("- **Resilient** (Level 8): 340 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2786)\n")
+                f.write("- **Greater Resilient** (Level 14): 3,440 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2786)\n")
+                f.write("- **Major Resilient** (Level 20): 49,440 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2786)\n\n")
+                f.write("**Shield Runes:**\n")
+                f.write("- **Reinforcing** (Level 4): 100 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)\n")
+                f.write("- **Greater Reinforcing** (Level 11): 1,400 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)\n")
+                f.write("- **Major Reinforcing** (Level 17): 15,000 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)\n\n")
+            
+            # Other runes (2-7 random)
+            if rune_inventory['other']:
+                f.write(f"## Property Runes ({len(rune_inventory['other'])})\n\n")
+                f.write("| Image | Name | Level | Price | Rarity | Link |\n")
+                f.write("|-------|------|-------|-------|--------|------|\n")
+                
+                total = len(rune_inventory['other'])
+                for idx, rune in enumerate(rune_inventory['other'], 1):
+                    print(f"  [RUNE {idx}/{total}] {rune['name'][:50]}", end='... ')
+                    image_url = get_image_from_aon(rune['name'])
+                    
+                    if image_url:
+                        print(f"OK")
+                    else:
+                        print(f"X")
+                    
+                    # Fix and capitalize fields
+                    name = rune['name']
+                    level = rune['level']
+                    price = fix_price(rune['price'])
+                    rarity = capitalize_field(rune['rarity'])
+                    
+                    # Create image markdown
+                    if image_url:
+                        img_md = f"![{name}]({image_url})"
+                    else:
+                        img_md = "🖼️"
+                    
+                    # Create AoN search link
+                    search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
+                    link_md = f"[View]({search_url})"
+                    
+                    f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {link_md} |\n")
+                    
+                    time.sleep(0.3)
                 
                 f.write("\n")
             
@@ -519,13 +699,24 @@ if __name__ == "__main__":
     
     # Parse command line arguments
     player_level = 4  # Default level
+    test_merchant = None  # Test mode: generate only one merchant
+    
     if len(sys.argv) > 1:
-        for i, arg in enumerate(sys.argv[1:]):
-            if arg == '--level' and i + 1 < len(sys.argv) - 1:
+        i = 1
+        while i < len(sys.argv):
+            arg = sys.argv[i]
+            if arg == '--level' and i + 1 < len(sys.argv):
                 try:
-                    player_level = int(sys.argv[i + 2])
+                    player_level = int(sys.argv[i + 1])
+                    i += 2
                 except ValueError:
-                    print(f"Invalid level: {sys.argv[i + 2]}, using default level 4")
+                    print(f"Invalid level: {sys.argv[i + 1]}, using default level 4")
+                    i += 2
+            elif arg in ['--tm', '-tm'] and i + 1 < len(sys.argv):
+                test_merchant = sys.argv[i + 1].lower().replace(' ', '_').replace("'", '')
+                i += 2
+            else:
+                i += 1
     
     max_item_level = player_level + 2
     spell_level = player_level  # Spells are player level, NOT +2
@@ -533,6 +724,9 @@ if __name__ == "__main__":
     print(f"Generating merchants for player level {player_level}")
     print(f"  Max item level: {max_item_level}")
     print(f"  Max spell level: {spell_level}")
+    
+    if test_merchant:
+        print(f"  TEST MODE: Only generating {test_merchant}")
     print()
     
     print("Loading equipment...")
@@ -546,8 +740,9 @@ if __name__ == "__main__":
     spells = load_spells_json("etc/spells.json")
     print(f"  Loaded {len(spells)} spells")
     
-    # Create output directory
+    # Create output directories
     os.makedirs('players', exist_ok=True)
+    os.makedirs('gm', exist_ok=True)
     
     # Randomly select 2 merchants to get rare items
     merchants_with_rares = random.sample(range(10), 2)
@@ -756,8 +951,39 @@ if __name__ == "__main__":
         }
     ]
     
+    # If test mode, find the merchant to test
+    if test_merchant:
+        merchant_to_test = None
+        test_idx = None
+        for idx, config in enumerate(merchant_configs):
+            config_filename = config['name'].lower().replace(' ', '_').replace("'", '')
+            if config_filename == test_merchant:
+                merchant_to_test = config
+                test_idx = idx
+                break
+        
+        if not merchant_to_test:
+            print(f"ERROR: Merchant '{test_merchant}' not found!")
+            print(f"Available merchants:")
+            for config in merchant_configs:
+                config_filename = config['name'].lower().replace(' ', '_').replace("'", '')
+                print(f"  - {config_filename}")
+            sys.exit(1)
+        
+        # Generate only the test merchant
+        print(f"TEST MODE: Generating only {merchant_to_test['name']}\n")
+        merchant_configs = [merchant_to_test]
+        merchants_with_rares = [0] if test_idx in merchants_with_rares else []
+        if test_idx not in [1, 2]:
+            spell_merchant_with_rare = -1  # No spell merchant
+        else:
+            spell_merchant_with_rare = 0  # First (and only) merchant in test mode
+    
     for idx, config in enumerate(merchant_configs):
-        print(f"\n[{idx+1}/10] Generating {config['name']}...")
+        # Use original index if in test mode
+        original_idx = test_idx if test_merchant else idx
+        
+        print(f"\n[{idx+1}/{len(merchant_configs)}] Generating {config['name']}...")
         
         # Generate inventory with new limits
         # Otari Market gets DOUBLE items
@@ -768,7 +994,7 @@ if __name__ == "__main__":
             num_common = random.randint(3, 15)
             num_uncommon = random.randint(1, 3)
         
-        has_rare = idx in merchants_with_rares
+        has_rare = original_idx in merchants_with_rares
         
         if config['categories']:  # Skip if service-only
             inventory = generate_merchant_inventory(
@@ -793,10 +1019,10 @@ if __name__ == "__main__":
         
         # Generate spell inventory for Wrin's Wonders (idx 1) and Odd Stories (idx 2)
         spell_inventory = None
-        if idx in [1, 2]:  # Wrin's Wonders or Odd Stories
+        if original_idx in [1, 2]:  # Wrin's Wonders or Odd Stories
             num_common_spells = random.randint(5, 15)
             num_uncommon_spells = random.randint(3, 5)
-            has_rare_spell = (idx == spell_merchant_with_rare)
+            has_rare_spell = (original_idx == spell_merchant_with_rare)
             
             spell_inventory = generate_spell_inventory(
                 spells,
@@ -811,6 +1037,17 @@ if __name__ == "__main__":
             if has_rare_spell and spell_inventory['rare']:
                 print(f"  ⭐ Added rare spell!")
         
+        # Generate rune inventory for Wrin's Wonders (idx 1), Odd Stories (idx 2), and Dawnflower Library (idx 9)
+        rune_inventory = None
+        if original_idx in [1, 2, 9]:  # Wrin's Wonders, Odd Stories, or Dawnflower Library
+            rune_inventory = generate_rune_inventory(equipment, player_level)
+            
+            # All fundamental runes are always available (2-3 of each)
+            print(f"  ⚡ Fundamental runes available (2-3 each): Weapon Potency, Striking, Armor Potency, Resilient, Reinforcing")
+            
+            other_count = len(rune_inventory['other'])
+            print(f"  ⚡ Added {other_count} property runes")
+        
         write_merchant_with_header(
             config['name'],
             config['description'],
@@ -818,8 +1055,78 @@ if __name__ == "__main__":
             config['specialties'],
             inventory,
             config['services'],
-            spell_inventory
+            spell_inventory,
+            rune_inventory,
+            merchant_index=original_idx
         )
+    
+    # Generate random merchants for GM (if not in test mode)
+    if not test_merchant:
+        print("\n" + "="*60)
+        print("GENERATING RANDOM MERCHANTS FOR GM")
+        print("="*60)
+        
+        # Load NPC generator for random merchant names
+        from generate_npc_lore import generate_npc_background
+        
+        for merchant_num in [1, 2]:
+            print(f"\n[RANDOM MERCHANT {merchant_num}] Generating...")
+            
+            # Generate random NPC
+            npc = generate_npc_background()
+            merchant_name = f"Random Merchant {merchant_num}: {npc['name']}"
+            
+            # Random specialty
+            specialties_pool = [
+                "General goods and supplies",
+                "Weapons and armor",
+                "Magical items and curiosities",
+                "Alchemical items and potions",
+                "Books and scrolls",
+                "Food and provisions",
+                "Tools and equipment",
+                "Rare and exotic goods"
+            ]
+            specialty = random.choice(specialties_pool)
+            
+            # Generate inventory - all categories, mostly common
+            num_common = random.randint(5, 12)
+            num_uncommon = random.randint(1, 4)
+            num_rare = random.randint(0, 2)  # 0-2 rare items
+            
+            all_categories = ['weapon', 'armor', 'adventuring', 'alchemical', 'magical']
+            inventory = generate_merchant_inventory(
+                equipment,
+                categories=all_categories,
+                num_common=num_common,
+                num_uncommon=num_uncommon,
+                item_filter=None
+            )
+            
+            # Add rare items
+            if num_rare > 0:
+                rare_pool = [e for e in equipment if e['type'] in all_categories and e['rarity'] == 'rare' and e['level'] <= max_item_level]
+                if rare_pool:
+                    inventory['rare'] = random.sample(rare_pool, min(num_rare, len(rare_pool)))
+                    print(f"  ⭐ Added {len(inventory['rare'])} rare items!")
+            
+            # Write to GM directory
+            write_merchant_with_header(
+                merchant_name,
+                f"A traveling merchant encountered during an encounter. {npc['background']}",
+                f"{npc['name']} ({npc['ancestry']} {npc['class']})",
+                specialty,
+                inventory,
+                services=[
+                    "Negotiable prices (GM discretion)",
+                    "May have rumors or information to share",
+                    "Willing to trade for interesting items"
+                ],
+                spell_inventory=None,
+                rune_inventory=None,
+                output_dir='gm',
+                merchant_index=10 + merchant_num  # Use indices 11, 12 for random merchants
+            )
     
     print("\nOK All merchants generated!")
 

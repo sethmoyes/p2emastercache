@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proprietor](etc/default_merchant.jpg)
+<img src="etc/default_merchant.jpg" alt="Proprietor" width="300">
 
 </div>
 
@@ -14,28 +14,31 @@
 
 # REGULAR ITEMS
 
-## Common Items (4)
+## Common Items (8)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Bravery Baldric (Healthful, Greater) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bravery%20Baldric) |
-| ![Flyssa](https://2e.aonprd.com/Images/Weapons/Flyssa.webp) | Flyssa | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Flyssa) |
-| 🖼️ | Portable Ram (Reinforced) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Portable%20Ram) |
-| 🖼️ | Bomber's Eye Elixir (Greater) | 4 | 14 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bomber%27s%20Eye%20Elixir) |
+| 🖼️ | Wand of Mental Purification (8th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mental%20Purification) |
+| 🖼️ | Map (Geographical Map) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Map) |
+| 🖼️ | Five-Feather Wreath (Greater) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Five-Feather%20Wreath) |
+| ![Snarling Badger (Moderate)](https://2e.aonprd.com/Images/Treasure/Snarling_Badger.webp) | Snarling Badger (Moderate) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Snarling%20Badger) |
+| 🖼️ | Gill Hook | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gill%20Hook) |
+| 🖼️ | Wand of Continuation (8th-rank Spell) | 5 | 160 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Continuation) |
+| 🖼️ | Blocks | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blocks) |
+| 🖼️ | Rabbit | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rabbit) |
 
-## Uncommon Items (3)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Thousand-Pains Fulu (Burl) | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thousand-Pains%20Fulu) |
-| 🖼️ | Spider Gun (Major) | 6 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spider%20Gun) |
-| 🖼️ | Folding Drums | 5 | 160 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Folding%20Drums) |
+| 🖼️ | Acid Spitter | 4 | 15 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Acid%20Spitter) |
+| 🖼️ | Air Repeater | 0 | 1 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Air%20Repeater) |
 
 ## Rare Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Moonkeep Lily | 5 | 30 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moonkeep%20Lily) |
+| 🖼️ | Demon-Hunting Bands | 3 | 10 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Demon-Hunting%20Bands) |
 
 ## Services
 

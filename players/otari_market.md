@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proprietor](etc/default_merchant.jpg)
+<img src="https://2e.aonprd.com/Images/Monsters/Merchant.webp" alt="Proprietor" width="250">
 
 </div>
 
@@ -14,30 +14,28 @@
 
 # REGULAR ITEMS
 
-## Common Items (14)
+## Common Items (9)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Grim Sandglass (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Grim%20Sandglass) |
-| 🖼️ | Indomitable Keepsake (Major) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Indomitable%20Keepsake) |
-| 🖼️ | Frostwalker Pattern | 2 | 30 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Frostwalker%20Pattern) |
-| 🖼️ | Reinforced Stock | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforced%20Stock) |
-| 🖼️ | Navigator's Star | 1 | 18 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Navigator%27s%20Star) |
-| ![Serpent Oil (Major)](https://2e.aonprd.com/Images/Treasure/Serpent_Oil.webp) | Serpent Oil (Major) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Serpent%20Oil) |
-| 🖼️ | Gill Hook | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gill%20Hook) |
-| 🖼️ | Gliding Membranes (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gliding%20Membranes) |
+| 🖼️ | Animal Nip (Moderate) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Animal%20Nip) |
+| 🖼️ | Warding Tattoo | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warding%20Tattoo) |
 | 🖼️ | Cradle Minder | 0 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cradle%20Minder) |
-| 🖼️ | Opossum, domestic | 0 | 2 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Opossum%20domestic) |
-| 🖼️ | Researcher (Level 3; expert) | 0 | 0 gp | Common | Researcher | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Researcher) |
-| 🖼️ | Cold Iron Blanch (Lesser) | 2 | 20 gp (per Bulk) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Blanch) |
-| ![Clan Dagger](https://2e.aonprd.com/Images/Weapons/Clan_Dagger.webp) | Clan Dagger | 5 | 150 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clan%20Dagger) |
-| 🖼️ | Manacles (Simple) | 0 | 3 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Manacles) |
+| 🖼️ | Lodging (Bed, for 1) | 0 | 10 gp (per day) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lodging) |
+| 🖼️ | Beverages (Mug of Ale) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Piton | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Piton) |
+| 🖼️ | Cassisian Helmet | 6 | 225 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cassisian%20Helmet) |
+| 🖼️ | Beastmaster's Sigil | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beastmaster%27s%20Sigil) |
+| ![Familiar Morsel](https://2e.aonprd.com/Images/Treasure/Familiar_Morsel.webp) | Familiar Morsel | 5 | 30 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Familiar%20Morsel) |
 
-## Uncommon Items (3)
+## Uncommon Items (6)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Aeon Stone (Envisioning)](https://2e.aonprd.com/Images/Treasure/Aeon_Stone.webp) | Aeon Stone (Envisioning) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Aeon%20Stone) |
-| 🖼️ | Herd Mask | 6 | 210 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Herd%20Mask) |
-| 🖼️ | Impact Foam Chassis (Lesser) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Impact%20Foam%20Chassis) |
+| 🖼️ | Coin of Comfort | 3 | 45 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Coin%20of%20Comfort) |
+| 🖼️ | Spellcasting (4th rank) | 0 | 3 gp (plus any cost required to cast the specific spell) | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
+| 🖼️ | Grappling Gun (Clockwork) | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Grappling%20Gun) |
+| 🖼️ | Lesser Roc-Shaft Arrow | 5 | 24 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lesser%20Roc-Shaft%20Arrow) |
+| 🖼️ | Wand of Teeming Ghosts (5th-Rank Spell) | 6 | 0 gp | Uncommon | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Teeming%20Ghosts) |
+| 🖼️ | Ringmaster's Staff | 6 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ringmaster%27s%20Staff) |
 

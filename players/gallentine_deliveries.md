@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proprietor](etc/default_merchant.jpg)
+<img src="https://cdna.artstation.com/p/assets/images/images/040/706/094/large/ksenia-kozhevnikova-pzo9309-mixed-marketplace.jpg?1629664123" alt="Proprietor" width="250">
 
 </div>
 
