@@ -12,26 +12,23 @@
 
 **Specialties:** Books, scrolls, and writing supplies
 
-## Common Items (8)
+## Common Items (7)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Five-Feather Wreath (Greater)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Five-Feather Wreath (Greater) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Five-Feather%20Wreath) |
-| ![Whispering Staff](https://2e.aonprd.com/Images/Treasure/Whisperer_of_Souls.webp) | Whispering Staff | 20 | 70000 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Whispering%20Staff) |
-| ![Wand of Reaching (5th-Rank Spell)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Wand of Reaching (5th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
-| ![Shadow Manse](https://2e.aonprd.com/Images/Monsters/Shadow.webp) | Shadow Manse | 17 | 14000 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shadow%20Manse) |
-| ![Grim Sandglass (Major)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Grim Sandglass (Major) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Grim%20Sandglass) |
-| ![Pummel-Growth Toxin](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Pummel-Growth Toxin | 13 | 550 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Pummel-Growth%20Toxin) |
-| ![Magic Wand (6th-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (6th-rank Spell) | 3 | 60 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
-| ![Wand of Mercy (4th-Rank Spell)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Wand of Mercy (4th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mercy) |
+| ![Indomitable Keepsake](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Indomitable Keepsake | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Indomitable%20Keepsake) |
+| ![Inventor's Fulu](https://2e.aonprd.com/Images/Classes/Iconic_Droven.png) | Inventor's Fulu | 6 | 50 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Fulu) |
+| ![Bow Staff (Ranged)](https://2e.aonprd.com/Images/Weapons/Bow_Staff.webp) | Bow Staff (Ranged) | 3 | 60 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bow%20Staff) |
+| ![Hearing Aid (Magical)](https://2e.aonprd.com/Images/Ancestries/Icons/Kholo_Icon.png) | Hearing Aid (Magical) | 0 | 50 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hearing%20Aid) |
+| ![Thunder Snare](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Thunder Snare | 2 | 6 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thunder%20Snare) |
+| ![Warding Tablets](https://2e.aonprd.com/Images/Ancestries/Icons/Ardande_Icon.png) | Warding Tablets | 8 | 450 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warding%20Tablets) |
+| ![Manacles (Good)](https://2e.aonprd.com/Images/Weapons/Dueling_Pistol.webp) | Manacles (Good) | 0 | 30 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Manacles) |
 
-## Uncommon Items (3)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Wand of Teeming Ghosts (2nd-Rank Spell)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Wand of Teeming Ghosts (2nd-Rank Spell) | 6 | 0 gp | Uncommon | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Teeming%20Ghosts) |
-| ![Wand of Splintered Sorrows (6th-Rank Spell)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Wand of Splintered Sorrows (6th-Rank Spell) | 6 | 0 gp | Uncommon | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Splintered%20Sorrows) |
-| ![Juggling Club](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Juggling Club | 7 | 325 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Juggling%20Club) |
+| ![Buugeng](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Buugeng | 0 | 9 sp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Buugeng) |
 
 ## Services
 

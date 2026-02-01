@@ -12,28 +12,19 @@
 
 **Specialties:** Scrolls, wands, potions, alchemical items, and adventuring gear
 
-## Common Items (4)
+## Common Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Formula Book (Blank)](https://2e.aonprd.com/Images/Treasure/Formula_Book.webp) | Formula Book (Blank) | 0 | 1 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Formula%20Book) |
-| ![Air Bladder](https://2e.aonprd.com/Images/Ancestries/Icons/Talos_Icon.png) | Air Bladder | 0 | 10 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Air%20Bladder) |
-| ![Magical Prosthetic Eye](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Magical Prosthetic Eye | 1 | 5 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magical%20Prosthetic%20Eye) |
-| ![Rooting (Major)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Rooting (Major) | 7 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rooting) |
+| ![Eldritch Flare](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Eldritch Flare | 15 | 1100 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eldritch%20Flare) |
+| ![Spyglass (Fine)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Spyglass (Fine) | 4 | 80 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spyglass) |
+| ![Reaper's Shadow](https://2e.aonprd.com/Images/Monsters/GrimReaper.png) | Reaper's Shadow | 17 | 14000 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reaper%27s%20Shadow) |
 
-## Uncommon Items (3)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| ![Lacquered Waist Drum](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Lacquered Waist Drum | 11 | 1300 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lacquered%20Waist%20Drum) |
-| ![Spider Gun](https://2e.aonprd.com/Images/Treasure/Pistol_Wand.webp) | Spider Gun | 6 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spider%20Gun) |
-| ![Hippopotamus Klar](https://2e.aonprd.com/Images/Ancestries/Icons/Kashrishi_Icon.png) | Hippopotamus Klar | 10 | 1000 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hippopotamus%20Klar) |
-
-## Rare Items (1)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Orb Shard](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Orb Shard | 20 | 0 gp | Rare | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Orb%20Shard) |
+| ![Moderate Spider Satchel](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Moderate Spider Satchel | 4 | 16 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moderate%20Spider%20Satchel) |
 
 ## Services
 

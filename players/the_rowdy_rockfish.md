@@ -16,31 +16,25 @@
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Shadow Signet](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Shadow Signet | 17 | 14000 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shadow%20Signet) |
-| ![Conduit Shot (Moderate)](https://2e.aonprd.com/Images/Treasure/Kaldemashs_Lament.webp) | Conduit Shot (Moderate) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Conduit%20Shot) |
-| ![Hearing Aid](https://2e.aonprd.com/Images/Ancestries/Icons/Kholo_Icon.png) | Hearing Aid | 0 | 50 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hearing%20Aid) |
-| ![Faith Tattoo (Greater)](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Faith Tattoo (Greater) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Faith%20Tattoo) |
-| ![Beastmaster's Sigil (Major)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Beastmaster's Sigil (Major) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beastmaster%27s%20Sigil) |
-| ![Cloak of Feline Rest](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Cloak of Feline Rest | 1 | 20 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cloak%20of%20Feline%20Rest) |
-| ![Cat's Eye Elixir](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Cat's Eye Elixir | 2 | 7 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cat%27s%20Eye%20Elixir) |
-| ![Choleric Contagion](https://2e.aonprd.com/Images/Ancestries/Icons/Ardande_Icon.png) | Choleric Contagion | 18 | 4200 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Choleric%20Contagion) |
-| ![Torag's Silver Anvil](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Torag's Silver Anvil | 2 | 20 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Torag%27s%20Silver%20Anvil) |
-| ![Researcher (Level 5)](https://2e.aonprd.com/Images/Monsters/Obsessive_Researcher.webp) | Researcher (Level 5) | 0 | 0 gp | Common | Researcher | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Researcher) |
-| ![Acid Flask (Moderate)](https://2e.aonprd.com/Images/Treasure/Acid_Flask.webp) | Acid Flask (Moderate) | 3 | 10 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Acid%20Flask) |
+| ![Wheelchair (Supramarine Chair)](https://2e.aonprd.com/Images/Monsters/Propagandist.webp) | Wheelchair (Supramarine Chair) | 0 | 50 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheelchair) |
+| ![Reverberating Stone](https://2e.aonprd.com/Images/Ancestries/Icons/Merfolk_Icon.png) | Reverberating Stone | 11 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reverberating%20Stone) |
+| ![Ruby Capacitor (Major)](https://2e.aonprd.com/Images/Treasure/Ruby_Capacitor.webp) | Ruby Capacitor (Major) | 10 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ruby%20Capacitor) |
+| ![Cold Iron Blanch (Greater)](https://2e.aonprd.com/Images/Ancestries/Icons/Dromaar_Icon.png) | Cold Iron Blanch (Greater) | 2 | 20 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Blanch) |
+| ![Shining Symbol (Greater)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Shining Symbol (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shining%20Symbol) |
+| ![Armory Bracelet (Minor)](https://2e.aonprd.com/Images/Treasure/Armory_Bracelet.webp) | Armory Bracelet (Minor) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Armory%20Bracelet) |
+| ![Frostwalker Pattern](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Frostwalker Pattern | 2 | 30 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Frostwalker%20Pattern) |
+| ![False Manacles](https://2e.aonprd.com/Images/Monsters/False_Devil.webp) | False Manacles | 0 | 30 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=False%20Manacles) |
+| ![Hammer Gun (Melee)](https://2e.aonprd.com/Images/Weapons/Gnome_Hooked_Hammer.webp) | Hammer Gun (Melee) | 0 | 10 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hammer%20Gun) |
+| ![Tracking Fulu](https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png) | Tracking Fulu | 5 | 25 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tracking%20Fulu) |
+| ![Menacing](https://2e.aonprd.com/Images/Monsters/Demon_Katpaskir.png) | Menacing | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Menacing) |
 
 ## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Fey Dragonet Liqueur (Lesser)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Fey Dragonet Liqueur (Lesser) | 7 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fey%20Dragonet%20Liqueur) |
-| ![Etheric Essence Disruptor (Moderate)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Etheric Essence Disruptor (Moderate) | 3 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Etheric%20Essence%20Disruptor) |
-| ![Blunderbuss](https://2e.aonprd.com/Images/Weapons/Dragon_Mouth_Pistol.webp) | Blunderbuss | 0 | 6 sp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blunderbuss) |
-
-## Rare Items (1)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| ![Nightmare Salt](https://2e.aonprd.com/Images/Ancestries/Icons/Merfolk_Icon.png) | Nightmare Salt | 20 | 14000 gp | Rare | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nightmare%20Salt) |
+| ![Plated Duster](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Plated Duster | 0 | 2 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Plated%20Duster) |
+| ![Mambele](https://2e.aonprd.com/Images/Weapons/Mambele.webp) | Mambele | 0 | 8 sp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mambele) |
+| ![Fulminating Spear](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Fulminating Spear | 7 | 360 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fulminating%20Spear) |
 
 ## Services
 

@@ -7,6 +7,9 @@ Each run = completely different table!
 import json
 import random
 import re
+import requests
+from bs4 import BeautifulSoup
+import time
 
 def load_json(filename):
     with open(filename, 'r', encoding='utf-8') as f:
@@ -24,8 +27,13 @@ def load_creature_lore():
     except FileNotFoundError:
         return {}
 
+def save_creature_lore(creature_lore_db):
+    """Save creature lore to JSON"""
+    with open('etc/creature_lore.json', 'w', encoding='utf-8') as f:
+        json.dump(creature_lore_db, f, indent=2, ensure_ascii=False)
+
 def get_creature_lore_text(creature_name, creature_lore_db):
-    """Get lore for a specific creature from the database"""
+    """Get lore for a specific creature from the database, or scrape if not found"""
     # Try exact match first
     if creature_name in creature_lore_db:
         return creature_lore_db[creature_name]['lore']
@@ -40,7 +48,90 @@ def get_creature_lore_text(creature_name, creature_lore_db):
         if key.lower() in creature_name.lower() or creature_name.lower() in key.lower():
             return creature_lore_db[key]['lore']
     
+    # If not found, try to scrape from PathfinderWiki
+    print(f"  Creature lore not found for '{creature_name}', attempting to scrape...")
+    scraped_lore = scrape_pathfinderwiki_lore(creature_name)
+    
+    if scraped_lore:
+        # Cache the scraped lore
+        creature_lore_db[creature_name] = scraped_lore
+        save_creature_lore(creature_lore_db)
+        print(f"  ✓ Scraped and cached lore for '{creature_name}'")
+        return scraped_lore['lore']
+    
+    # If scraping failed, return None to use fallback
+    print(f"  X Could not scrape lore for '{creature_name}', using fallback")
     return None
+
+def scrape_pathfinderwiki_lore(creature_name):
+    """Scrape creature lore from PathfinderWiki"""
+    import requests
+    from bs4 import BeautifulSoup
+    import urllib.parse
+    import time
+    
+    # Clean the creature name for URL
+    clean_name = re.sub(r'\([^)]*\)', '', creature_name)
+    clean_name = re.sub(r'Level \d+', '', clean_name)
+    clean_name = clean_name.strip()
+    clean_name = clean_name.replace("'", "")
+    clean_name = clean_name.replace(' ', '_')
+    
+    url = f"https://pathfinderwiki.com/wiki/{clean_name}"
+    
+    try:
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        response = requests.get(url, headers=headers, timeout=10)
+        
+        if response.status_code != 200:
+            return None
+        
+        soup = BeautifulSoup(response.text, 'html.parser')
+        content_div = soup.find('div', {'id': 'mw-content-text'})
+        if not content_div:
+            return None
+        
+        parser_output = content_div.find('div', {'class': 'mw-parser-output'})
+        if not parser_output:
+            parser_output = content_div
+        
+        # Get first few paragraphs
+        paragraphs = []
+        for element in parser_output.children:
+            if element.name == 'p':
+                text = element.get_text().strip()
+                if text and len(text) > 50 and not text.startswith('This page is a stub'):
+                    # Clean up citation markers
+                    text = re.sub(r'\[\d+\]', '', text)
+                    text = re.sub(r'citation needed', '', text)
+                    text = ' '.join(text.split())
+                    paragraphs.append(text)
+                    if len(paragraphs) >= 3:
+                        break
+        
+        if not paragraphs:
+            return None
+        
+        lore = '\n\n'.join(paragraphs)
+        
+        # Limit to reasonable length
+        if len(lore) > 1000:
+            lore = lore[:1000].rsplit('.', 1)[0] + '.'
+        
+        # Rate limiting
+        time.sleep(0.5)
+        
+        return {
+            'source': 'PathfinderWiki',
+            'url': url,
+            'lore': lore
+        }
+        
+    except Exception as e:
+        print(f"    Error scraping: {e}")
+        return None
 
 def get_equipment_by_level(equipment, level, rarity='common'):
     filtered = [e for e in equipment if e['level'] == level and e['rarity'] == rarity]
@@ -240,16 +331,8 @@ def generate_development(template, difficulty):
 # Import the massive encounter pools
 from encounter_pools import DEADLY_POOL, DIFFICULT_POOL, MODERATE_POOL, EASY_POOL, NPC_POOL
 
-def generate_combat_encounter(roll, difficulty, equipment, inner_sea_lore, players_guide_lore, creature_lore_db):
-    """Select random encounter from appropriate pool with EXTENSIVE detail"""
-    pool_map = {
-        'DEADLY': DEADLY_POOL,
-        'DIFFICULT': DIFFICULT_POOL,
-        'MODERATE': MODERATE_POOL,
-        'EASY': EASY_POOL
-    }
-    
-    encounter_template = random.choice(pool_map[difficulty])
+def generate_combat_encounter(roll, difficulty, equipment, inner_sea_lore, players_guide_lore, creature_lore_db, encounter_template):
+    """Generate combat encounter from pre-selected creature template"""
     
     # Generate rewards with halved prices
     level_map = {'DEADLY': 5, 'DIFFICULT': 4, 'MODERATE': 3, 'EASY': 2}
@@ -349,9 +432,8 @@ def generate_combat_encounter(roll, difficulty, equipment, inner_sea_lore, playe
         'developments': developments
     }
 
-def generate_lore_encounter(roll, inner_sea_lore, players_guide_lore):
-    """Select random NPC encounter from pool with EXTENSIVE detail"""
-    npc_template = random.choice(NPC_POOL)
+def generate_lore_encounter(roll, inner_sea_lore, players_guide_lore, npc_template):
+    """Generate lore encounter from pre-selected NPC template"""
     
     # Generate 5-6 skill interactions with varied DCs
     all_skills = [
@@ -516,6 +598,34 @@ if __name__ == "__main__":
     print("\nGenerating encounters with EXTENSIVE detail...")
     encounters = []
     
+    # Pre-select unique NPCs for lore encounters to avoid duplicates
+    lore_count = sum(1 for roll in range(4, 81) if 32 <= roll <= 52)
+    if lore_count > len(NPC_POOL):
+        print(f"WARNING: Need {lore_count} lore encounters but only have {len(NPC_POOL)} NPCs!")
+        selected_npcs = random.choices(NPC_POOL, k=lore_count)  # Allow duplicates if necessary
+    else:
+        selected_npcs = random.sample(NPC_POOL, lore_count)  # No duplicates
+    npc_index = 0
+    
+    # Pre-select unique creatures for combat encounters to avoid duplicates
+    combat_by_difficulty = {}
+    for diff in ['DEADLY', 'DIFFICULT', 'MODERATE', 'EASY']:
+        count = sum(1 for roll in range(4, 81) if (
+            (diff == 'DEADLY' and (roll <= 9 or roll >= 75)) or
+            (diff == 'DIFFICULT' and (roll <= 19 or roll >= 65) and not (roll <= 9 or roll >= 75)) or
+            (diff == 'MODERATE' and (roll <= 29 or roll >= 55) and not (roll <= 19 or roll >= 65)) or
+            (diff == 'EASY' and ((roll <= 31 or roll >= 53) and not (roll <= 29 or roll >= 55) and not (32 <= roll <= 52)))
+        ))
+        pool_map = {'DEADLY': DEADLY_POOL, 'DIFFICULT': DIFFICULT_POOL, 'MODERATE': MODERATE_POOL, 'EASY': EASY_POOL}
+        pool = pool_map[diff]
+        if count > len(pool):
+            print(f"WARNING: Need {count} {diff} encounters but only have {len(pool)} in pool!")
+            combat_by_difficulty[diff] = random.choices(pool, k=count)
+        else:
+            combat_by_difficulty[diff] = random.sample(pool, count)
+    
+    combat_indices = {diff: 0 for diff in ['DEADLY', 'DIFFICULT', 'MODERATE', 'EASY']}
+    
     for roll in range(4, 81):
         if roll <= 9 or roll >= 75:
             diff = 'DEADLY'
@@ -529,9 +639,12 @@ if __name__ == "__main__":
             diff = 'LORE ONLY'
         
         if diff == 'LORE ONLY':
-            enc = generate_lore_encounter(roll, inner_sea_lore, players_guide_lore)
+            enc = generate_lore_encounter(roll, inner_sea_lore, players_guide_lore, selected_npcs[npc_index])
+            npc_index += 1
         else:
-            enc = generate_combat_encounter(roll, diff, equipment, inner_sea_lore, players_guide_lore, creature_lore_db)
+            creature_template = combat_by_difficulty[diff][combat_indices[diff]]
+            combat_indices[diff] += 1
+            enc = generate_combat_encounter(roll, diff, equipment, inner_sea_lore, players_guide_lore, creature_lore_db, creature_template)
         
         encounters.append(enc)
     

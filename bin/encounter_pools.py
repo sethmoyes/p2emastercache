@@ -5,7 +5,7 @@ Thousands of variations ensure every run is unique!
 import json
 
 # Load expanded pools from JSON
-with open('expanded_pools.json', 'r', encoding='utf-8') as f:
+with open('etc/expanded_pools.json', 'r', encoding='utf-8') as f:
     pools = json.load(f)
 
 DEADLY_POOL = pools['DEADLY_POOL']

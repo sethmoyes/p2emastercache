@@ -102,8 +102,8 @@ output = {
     'EASY_POOL': EASY_POOL
 }
 
-with open('expanded_pools.json', 'w', encoding='utf-8') as f:
+with open('etc/expanded_pools.json', 'w', encoding='utf-8') as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 
-print(f"\nSaved expanded pools to expanded_pools.json")
+print(f"\nSaved expanded pools to etc/expanded_pools.json")
 print(f"Total encounters: {len(DEADLY_POOL) + len(DIFFICULT_POOL) + len(MODERATE_POOL) + len(EASY_POOL)}")

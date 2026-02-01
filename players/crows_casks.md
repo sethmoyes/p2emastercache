@@ -12,28 +12,26 @@
 
 **Specialties:** Food, drink, and basic adventuring supplies
 
-## Common Items (11)
+## Common Items (8)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Slashing Claws](https://2e.aonprd.com/Images/Treasure/Slashing_Claws.webp) | Slashing Claws | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Slashing%20Claws) |
-| ![Five-Feather Wreath (Greater)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Five-Feather Wreath (Greater) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Five-Feather%20Wreath) |
-| ![Bo Staff](https://2e.aonprd.com/Images/Weapons/Bow_Staff.webp) | Bo Staff | 6 | 240 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bo%20Staff) |
-| ![Bow Staff (Melee)](https://2e.aonprd.com/Images/Weapons/Bow_Staff.webp) | Bow Staff (Melee) | 3 | 60 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bow%20Staff) |
-| ![Bottled Catharsis (Major)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Bottled Catharsis (Major) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bottled%20Catharsis) |
-| ![Ghost Charge (Moderate)](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Ghost Charge (Moderate) | 3 | 10 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ghost%20Charge) |
-| ![Druid's Crown](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Druid's Crown | 6 | 220 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Druid%27s%20Crown) |
-| ![Fighting Stick](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Fighting Stick | 4 | 75 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fighting%20Stick) |
-| ![Disguise Kit (Replacement Cosmetics)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Disguise Kit (Replacement Cosmetics) | 3 | 50 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Disguise%20Kit) |
-| ![Dueling Pistol](https://2e.aonprd.com/Images/Weapons/Dueling_Pistol.webp) | Dueling Pistol | 0 | 50 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dueling%20Pistol) |
-| ![Doubling Rings](https://2e.aonprd.com/Images/Treasure/Doubling_Rings.webp) | Doubling Rings | 11 | 1300 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Doubling%20Rings) |
+| ![Staff of Phantasms](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Staff of Phantasms | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Phantasms) |
+| ![Traveling Companion's Chair](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Traveling Companion's Chair | 1 | 4 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Traveling%20Companion%27s%20Chair) |
+| ![Blasting Stone (Greater)](https://2e.aonprd.com/Images/Treasure/Aeon_Stone.webp) | Blasting Stone (Greater) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blasting%20Stone) |
+| ![Instinct Crown](https://2e.aonprd.com/Images/Treasure/Instinct_Crown.webp) | Instinct Crown | 10 | 900 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Instinct%20Crown) |
+| ![Storm Hammer](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Storm Hammer | 3 | 60 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Storm%20Hammer) |
+| ![Alchemist's Fire (Major)](https://2e.aonprd.com/Images/Treasure/Alchemists_Fire.webp) | Alchemist's Fire (Major) | 3 | 10 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Alchemist%27s%20Fire) |
+| ![Staff of Nature's Cunning (Greater)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Staff of Nature's Cunning (Greater) | 7 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Nature%27s%20Cunning) |
+| ![Dinosaur](https://2e.aonprd.com/Images/Monsters/Dinosaur_Carnotarus.webp) | Dinosaur | 0 | 10 gp | Common | Animals | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dinosaur) |
 
-## Uncommon Items (2)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Palstave](https://2e.aonprd.com/Images/Weapons/War_Gavel.webp) | Palstave | 0 | 5 sp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Palstave) |
-| ![Breech Ejectors](https://2e.aonprd.com/Images/Ancestries/Icons/Ardande_Icon.png) | Breech Ejectors | 3 | 10 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Breech%20Ejectors) |
+| ![Scythe](https://2e.aonprd.com/Images/Monsters/ScytheTree.png) | Scythe | 13 | 3000 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Scythe) |
+| ![Echo Receptors](https://2e.aonprd.com/Images/Monsters/Ecorche.png) | Echo Receptors | 10 | 950 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Echo%20Receptors) |
+| ![Crushing (Greater)](https://2e.aonprd.com/Images/Ancestries/Icons/Merfolk_Icon.png) | Crushing (Greater) | 3 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Crushing) |
 
 ## Services
 
