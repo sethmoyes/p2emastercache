@@ -12,36 +12,27 @@
 
 **Specialties:** Fresh fish, fishing gear, and rope
 
-## Common Items (13)
+## Common Items (9)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Wheelchair | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheelchair) |
-| 🖼️ | Axe Musket (Ranged) | 3 | 60 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Axe%20Musket) |
-| ![Moonlit Spellgun (Minor)](https://2e.aonprd.com/Images/Treasure/Moonlit_Spellgun.webp) | Moonlit Spellgun (Minor) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moonlit%20Spellgun) |
-| 🖼️ | Fist | 4 | 13 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fist) |
-| 🖼️ | Wheel Spikes | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheel%20Spikes) |
-| 🖼️ | Shining Symbol (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shining%20Symbol) |
-| 🖼️ | Indomitable Keepsake (Major) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Indomitable%20Keepsake) |
-| 🖼️ | Parrying Scabbard | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Parrying%20Scabbard) |
-| 🖼️ | Researcher (Level 6) | 0 | 0 gp | Common | Researcher | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Researcher) |
-| 🖼️ | Climbing Kit (Extreme) | 3 | 40 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Climbing%20Kit) |
-| 🖼️ | Lodging (Private Room, for 2) | 0 | 10 gp (per day) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lodging) |
-| 🖼️ | Leaper's Elixir (Lesser) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Leaper%27s%20Elixir) |
-| 🖼️ | Stone Object (Low-Grade) | 0 | 1 sp (per Bulk) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stone%20Object) |
+| 🖼️ | Stage Fright Missive | 5 | 22 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stage%20Fright%20Missive) |
+| 🖼️ | Combat Kite | 0 | 4 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Combat%20Kite) |
+| 🖼️ | Anticorrosion Oil | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Anticorrosion%20Oil) |
+| 🖼️ | Pinwheel | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Pinwheel) |
+| 🖼️ | Transportation (Caravan) | 0 | 4 cp (per 5 miles) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Transportation) |
+| 🖼️ | Waffle Iron (Imprint) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Waffle%20Iron) |
+| 🖼️ | Unifying Emblem (Shriikirri-Quah) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Unifying%20Emblem) |
+| 🖼️ | Clothing (High-Fashion Fine) | 3 | 55 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clothing) |
+| 🖼️ | Staff of Protection (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Protection) |
 
-## Uncommon Items (2)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Gladius](https://2e.aonprd.com/Images/Weapons/Gladius.webp) | Gladius | 0 | 1 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gladius) |
-| ![Aeon Stone (Smoothing)](https://2e.aonprd.com/Images/Treasure/Aeon_Stone.webp) | Aeon Stone (Smoothing) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Aeon%20Stone) |
-
-## Rare Items (1)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Elsie's Excellent Bottled Vim | 1 | 3 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Elsie%27s%20Excellent%20Bottled%20Vim) |
+| 🖼️ | Clockwork Diving Suit | 6 | 200 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clockwork%20Diving%20Suit) |
+| 🖼️ | Book of Translation (Advanced) | 2 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Book%20of%20Translation) |
+| 🖼️ | Spellcasting (4th rank) | 0 | 3 gp (plus any cost required to cast the specific spell) | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
 
 ## Services
 

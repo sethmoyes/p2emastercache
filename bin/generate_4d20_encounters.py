@@ -435,6 +435,133 @@ def generate_combat_encounter(roll, difficulty, equipment, inner_sea_lore, playe
         'developments': developments
     }
 
+def generate_npc_request():
+    """Generate a request, ask, or demand that gives players a choice"""
+    requests = [
+        {
+            'situation': 'Broken Wagon',
+            'request': 'The NPC\'s wagon wheel is broken and they\'re stranded. They ask for help repairing it or defending them while they work.',
+            'choices': [
+                'Help repair the wagon (Crafting DC 15, takes 30 minutes)',
+                'Stand guard while they repair it themselves (possible random encounter)',
+                'Offer to escort them to Otari on foot (slower travel)',
+                'Leave them and continue on'
+            ]
+        },
+        {
+            'situation': 'Lost Item',
+            'request': 'The NPC lost something valuable in the swamp nearby. They offer a reward if the party can retrieve it.',
+            'choices': [
+                'Search the swamp (Survival DC 17, takes 1 hour, possible danger)',
+                'Negotiate for a better reward before helping',
+                'Decline and offer directions to Otari instead',
+                'Ignore the request and move on'
+            ]
+        },
+        {
+            'situation': 'Dangerous Path Ahead',
+            'request': 'The NPC warns of danger ahead and asks to travel together for safety. They seem nervous.',
+            'choices': [
+                'Allow them to join the party temporarily',
+                'Investigate what danger they\'re referring to',
+                'Offer to scout ahead for them',
+                'Decline and part ways'
+            ]
+        },
+        {
+            'situation': 'Seeking Information',
+            'request': 'The NPC is searching for someone/something and asks if the party has seen it. They seem desperate.',
+            'choices': [
+                'Share any relevant information freely',
+                'Offer to help search (takes time)',
+                'Negotiate for payment in exchange for help',
+                'Lie or withhold information'
+            ]
+        },
+        {
+            'situation': 'Medical Emergency',
+            'request': 'The NPC or their companion is injured/sick. They desperately need healing or medicine.',
+            'choices': [
+                'Provide healing (spell, potion, or Medicine check)',
+                'Escort them to Otari for proper treatment',
+                'Offer basic first aid and directions',
+                'Apologize but continue on your way'
+            ]
+        },
+        {
+            'situation': 'Suspicious Activity',
+            'request': 'The NPC claims they saw something suspicious nearby and asks the party to investigate with them.',
+            'choices': [
+                'Investigate together',
+                'Investigate alone while they wait',
+                'Question them about what they saw (Sense Motive)',
+                'Decline and warn them to be careful'
+            ]
+        },
+        {
+            'situation': 'Trade Opportunity',
+            'request': 'The NPC offers to trade goods or information. They have something the party might want.',
+            'choices': [
+                'Negotiate a fair trade (Diplomacy)',
+                'Try to get a better deal (Deception or Intimidation)',
+                'Accept their initial offer',
+                'Decline the trade'
+            ]
+        },
+        {
+            'situation': 'Fleeing Danger',
+            'request': 'The NPC is running from something and begs for help or a place to hide.',
+            'choices': [
+                'Help them hide and face whatever is chasing them',
+                'Question them about what they\'re running from',
+                'Offer to mediate/negotiate with their pursuers',
+                'Step aside and let them pass'
+            ]
+        },
+        {
+            'situation': 'Moral Dilemma',
+            'request': 'The NPC confesses to a crime or wrongdoing and asks for the party\'s help or forgiveness.',
+            'choices': [
+                'Help them make amends',
+                'Turn them in to authorities in Otari',
+                'Offer advice but remain neutral',
+                'Judge them harshly and refuse to help'
+            ]
+        },
+        {
+            'situation': 'Delivery Request',
+            'request': 'The NPC asks the party to deliver a message or package to someone in Otari. They offer payment.',
+            'choices': [
+                'Accept the delivery job',
+                'Inspect the package first (Perception)',
+                'Negotiate for higher payment',
+                'Decline the request'
+            ]
+        },
+        {
+            'situation': 'Shelter Request',
+            'request': 'Night is falling and the NPC asks to share the party\'s camp for safety. They offer to contribute supplies.',
+            'choices': [
+                'Welcome them to camp',
+                'Allow them but keep watch (Perception)',
+                'Decline but point them to a safe spot nearby',
+                'Refuse and send them away'
+            ]
+        },
+        {
+            'situation': 'Warning',
+            'request': 'The NPC urgently warns the party about danger ahead and insists they turn back or take another route.',
+            'choices': [
+                'Heed the warning and change course',
+                'Question them about the danger (Diplomacy or Intimidation)',
+                'Thank them but continue on the current path',
+                'Ignore the warning entirely'
+            ]
+        },
+    ]
+    
+    return random.choice(requests)
+
 def generate_lore_encounter(roll, inner_sea_lore, players_guide_lore, npc_template):
     """Generate lore encounter from pre-selected NPC template"""
     
@@ -459,8 +586,9 @@ def generate_lore_encounter(roll, inner_sea_lore, players_guide_lore, npc_templa
         dc = random.randint(13, 22)
         interactions[skill] = {'dc': dc, 'description': description}
     
-    # Get lore
-    inner_sea_snippet = extract_lore_snippet(inner_sea_lore, npc_template.get('lore_keywords', ['Otari']))
+    # Generate NPC request/situation
+    npc_request = generate_npc_request()
+    
     otari_connection = get_otari_connection_npc()  # Use NPC-specific connection
     gm_notes = generate_gm_notes_npc(npc_template)  # Use NPC-specific GM notes
     developments = generate_development(npc_template, 'LORE ONLY')
@@ -491,7 +619,7 @@ def generate_lore_encounter(roll, inner_sea_lore, players_guide_lore, npc_templa
         'difficulty': 'LORE ONLY',
         'template': npc_template,
         'interactions': interactions,
-        'inner_sea_lore': inner_sea_snippet,
+        'npc_request': npc_request,
         'otari_connection': otari_connection,
         'gm_notes': gm_notes,
         'developments': developments,
@@ -530,8 +658,14 @@ def write_markdown(encounters, output_file, player_level, deadly_level, difficul
                 f.write(f"*{t['description']}*\n\n")
                 f.write(f"**No combat encounter**\n\n")
                 
-                f.write(f"#### Lore Connection (Inner Sea Region):\n\n")
-                f.write(f"{enc['inner_sea_lore']}\n\n")
+                # Write the NPC request/situation
+                req = enc['npc_request']
+                f.write(f"#### The Situation: {req['situation']}\n\n")
+                f.write(f"{req['request']}\n\n")
+                f.write(f"**Player Choices:**\n")
+                for choice in req['choices']:
+                    f.write(f"- {choice}\n")
+                f.write(f"\n")
                 
                 f.write(f"#### Otari Connection (Players Guide):\n\n")
                 f.write(f"{enc['otari_connection']}\n\n")

@@ -12,27 +12,20 @@
 
 **Specialties:** Religious texts, scrolls, and holy items
 
-## Common Items (10)
+## Common Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Acid Flask (Major)](https://2e.aonprd.com/Images/Treasure/Acid_Flask.webp) | Acid Flask (Major) | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Acid%20Flask) |
-| 🖼️ | Belt of Good Health | 4 | 85 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Belt%20of%20Good%20Health) |
-| 🖼️ | Wand of Reaching (1st-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
-| 🖼️ | Chaos Falcon Feather | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chaos%20Falcon%20Feather) |
-| 🖼️ | Brass Ear | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Brass%20Ear) |
-| 🖼️ | Blazons of Shared Power (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blazons%20of%20Shared%20Power) |
-| 🖼️ | Warhammer | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warhammer) |
-| 🖼️ | Wand of Reaching (4th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
-| 🖼️ | Longsword | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Longsword) |
-| 🖼️ | Legerdemain Handkerchief | 2 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Legerdemain%20Handkerchief) |
+| ![Tricky Pick](https://2e.aonprd.com/Images/Weapons/Tricky_Pick.webp) | Tricky Pick | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tricky%20Pick) |
+| 🖼️ | Codebreaker's Parchment (Major) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Codebreaker%27s%20Parchment) |
+| 🖼️ | Staff of Elemental Power (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Elemental%20Power) |
+| 🖼️ | Mirror Goggles (Greater) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mirror%20Goggles) |
 
-## Uncommon Items (2)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Gun Sword (Melee) | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gun%20Sword) |
-| ![War Gavel](https://2e.aonprd.com/Images/Weapons/War_Gavel.webp) | War Gavel | 0 | 50 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=War%20Gavel) |
+| 🖼️ | Clockwork Chirper | 3 | 8 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clockwork%20Chirper) |
 
 ## Services
 

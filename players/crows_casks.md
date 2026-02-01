@@ -12,30 +12,32 @@
 
 **Specialties:** Food, drink, and basic adventuring supplies
 
-## Common Items (12)
+## Common Items (9)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Longsword | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Longsword) |
-| 🖼️ | Blazons of Shared Power (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blazons%20of%20Shared%20Power) |
-| 🖼️ | Bladed Scarf | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bladed%20Scarf) |
-| ![Moonlit Spellgun (Moderate)](https://2e.aonprd.com/Images/Treasure/Moonlit_Spellgun.webp) | Moonlit Spellgun (Moderate) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moonlit%20Spellgun) |
-| 🖼️ | Snare Kit | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Snare%20Kit) |
-| 🖼️ | Waffle Iron | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Waffle%20Iron) |
-| 🖼️ | Bloodhound Mask (Lesser) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bloodhound%20Mask) |
-| 🖼️ | Steam Turtle | 0 | 3 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Steam%20Turtle) |
-| ![Comprehension Elixir (Greater)](https://2e.aonprd.com/Images/Treasure/Comprehension_Elixir.webp) | Comprehension Elixir (Greater) | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comprehension%20Elixir) |
-| 🖼️ | Diving Suit | 3 | 100 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Diving%20Suit) |
-| 🖼️ | Shiver | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shiver) |
-| 🖼️ | Bristling Spines (Moderate) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bristling%20Spines) |
+| 🖼️ | Staff of the Desert Winds (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Desert%20Winds) |
+| 🖼️ | Tactician's Helm | 5 | 160 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tactician%27s%20Helm) |
+| 🖼️ | Eagle-Eye Elixir (Lesser) | 5 | 27 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eagle-Eye%20Elixir) |
+| ![Handwraps of Mighty Blows (+3 greater striking)](https://2e.aonprd.com/Images/Treasure/Handwraps_Of_Mighty_Blows.webp) | Handwraps of Mighty Blows (+3 greater striking) | 4 | 100 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Handwraps%20of%20Mighty%20Blows) |
+| 🖼️ | Traveler's Any-Tool | 0 | 4 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Traveler%27s%20Any-Tool) |
+| ![Flyssa](https://2e.aonprd.com/Images/Weapons/Flyssa.webp) | Flyssa | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Flyssa) |
+| 🖼️ | Reinforcing Rune (Minor) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune) |
+| 🖼️ | Magical Prosthetic Eye | 1 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magical%20Prosthetic%20Eye) |
+| 🖼️ | Wildwood Ink (Major) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wildwood%20Ink) |
 
-## Uncommon Items (3)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Capturing Spetum | 0 | 9 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Capturing%20Spetum) |
-| ![Aeon Stone (Consumed)](https://2e.aonprd.com/Images/Treasure/Aeon_Stone.webp) | Aeon Stone (Consumed) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Aeon%20Stone) |
-| 🖼️ | Gun Sword (Ranged) | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gun%20Sword) |
+| 🖼️ | Falconsight Eye | 6 | 200 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Falconsight%20Eye) |
+| 🖼️ | Sealing Chest (Major) | 4 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sealing%20Chest) |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Moonkeep Lily | 5 | 30 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moonkeep%20Lily) |
 
 ## Services
 
