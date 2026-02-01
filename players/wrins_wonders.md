@@ -12,24 +12,28 @@
 
 **Specialties:** Scrolls, wands, potions, alchemical items, and adventuring gear
 
-## Common Items (6)
+## Common Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Gi | 0 | 9 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gi) |
-| 🖼️ | Wand of Mercy (3rd-Rank Spell) | 0 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mercy) |
-| ![Dancer's Spear](https://2e.aonprd.com/Images/Weapons/Dancers_Spear.webp) | Dancer's Spear | 0 | 9 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dancer%27s%20Spear) |
-| 🖼️ | Dimension Shot | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dimension%20Shot) |
-| ![Crystal Shards (Moderate)](https://2e.aonprd.com/Images/Treasure/Crystal_Shards.webp) | Crystal Shards (Moderate) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Crystal%20Shards) |
-| 🖼️ | Nyctessa's Staff | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nyctessa%27s%20Staff) |
+| ![Formula Book (Blank)](https://2e.aonprd.com/Images/Treasure/Formula_Book.webp) | Formula Book (Blank) | 0 | 1 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Formula%20Book) |
+| ![Air Bladder](https://2e.aonprd.com/Images/Ancestries/Icons/Talos_Icon.png) | Air Bladder | 0 | 10 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Air%20Bladder) |
+| ![Magical Prosthetic Eye](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Magical Prosthetic Eye | 1 | 5 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magical%20Prosthetic%20Eye) |
+| ![Rooting (Major)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Rooting (Major) | 7 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rooting) |
 
 ## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Cane Pistol (Melee) | 0 | 5 sp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cane%20Pistol) |
-| 🖼️ | Black Powder (Keg) | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Black%20Powder) |
-| 🖼️ | Wand of Teeming Ghosts (8th-Rank Spell) | 0 | 0 gp | Uncommon | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Teeming%20Ghosts) |
+| ![Lacquered Waist Drum](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Lacquered Waist Drum | 11 | 1300 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lacquered%20Waist%20Drum) |
+| ![Spider Gun](https://2e.aonprd.com/Images/Treasure/Pistol_Wand.webp) | Spider Gun | 6 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spider%20Gun) |
+| ![Hippopotamus Klar](https://2e.aonprd.com/Images/Ancestries/Icons/Kashrishi_Icon.png) | Hippopotamus Klar | 10 | 1000 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hippopotamus%20Klar) |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| ![Orb Shard](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Orb Shard | 20 | 0 gp | Rare | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Orb%20Shard) |
 
 ## Services
 

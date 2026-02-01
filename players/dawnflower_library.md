@@ -12,23 +12,26 @@
 
 **Specialties:** Religious texts, scrolls, and holy items
 
-## Common Items (7)
+## Common Items (8)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Olfactory Obfuscator (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Olfactory%20Obfuscator) |
-| 🖼️ | Cage | 0 | 7 sp | Common | Animal Caretaking Gear | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cage) |
-| 🖼️ | Bloodhound Mask (Greater) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bloodhound%20Mask) |
-| 🖼️ | Hireling (Unskilled) | 0 | 6 sp | Common | Hirelings | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hireling) |
-| 🖼️ | Silencing Shot | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Silencing%20Shot) |
-| 🖼️ | Artisan's Toolkit | 0 | 2 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Artisan%27s%20Toolkit) |
-| 🖼️ | Quenching Potion | 0 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Quenching%20Potion) |
+| ![Tentacle Potion (Moderate)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Tentacle Potion (Moderate) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
+| ![Reaper's Spellgun](https://2e.aonprd.com/Images/Treasure/Moonlit_Spellgun.webp) | Reaper's Spellgun | 13 | 600 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reaper%27s%20Spellgun) |
+| ![Wand of Reaching (9th-Rank Spell)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Wand of Reaching (9th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
+| ![Demolition Fulu (Moderate)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Demolition Fulu (Moderate) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Demolition%20Fulu) |
+| ![Repair Toolkit](https://2e.aonprd.com/Images/Ancestries/Icons/Kashrishi_Icon.png) | Repair Toolkit | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Repair%20Toolkit) |
+| 🖼️ | Writing Set | 0 | 10 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Writing%20Set) |
+| 🖼️ | Clawed Bracers | 7 | 325 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clawed%20Bracers) |
+| 🖼️ | Codebreaker's Parchment (Major) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Codebreaker%27s%20Parchment) |
 
-## Uncommon Items (1)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Malleable Mixture (Greater) | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Malleable%20Mixture) |
+| 🖼️ | Stormshard | 6 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stormshard) |
+| 🖼️ | Stepping Stone Shot (Greater) | 7 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stepping%20Stone%20Shot) |
+| 🖼️ | Storied Skin | 3 | 45 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Storied%20Skin) |
 
 ## Services
 

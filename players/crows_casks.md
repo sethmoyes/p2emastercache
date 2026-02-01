@@ -12,23 +12,28 @@
 
 **Specialties:** Food, drink, and basic adventuring supplies
 
-## Common Items (7)
+## Common Items (11)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Clothing (Ordinary) | 0 | 9 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clothing) |
-| ![Atmospheric Breathing Suit](https://2e.aonprd.com/Images/Treasure/Atmospheric_Breathing_Suit.webp) | Atmospheric Breathing Suit | 0 | 2 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Atmospheric%20Breathing%20Suit) |
-| 🖼️ | Anointed Waterskin | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Anointed%20Waterskin) |
-| ![War Flail](https://2e.aonprd.com/Images/Weapons/War_Flail.webp) | War Flail | 0 | 9 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=War%20Flail) |
-| 🖼️ | Spyglass Eye | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spyglass%20Eye) |
-| 🖼️ | Hourglass | 0 | 7 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hourglass) |
-| 🖼️ | Fiend's Hunger | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fiend%27s%20Hunger) |
+| ![Slashing Claws](https://2e.aonprd.com/Images/Treasure/Slashing_Claws.webp) | Slashing Claws | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Slashing%20Claws) |
+| ![Five-Feather Wreath (Greater)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Five-Feather Wreath (Greater) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Five-Feather%20Wreath) |
+| ![Bo Staff](https://2e.aonprd.com/Images/Weapons/Bow_Staff.webp) | Bo Staff | 6 | 240 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bo%20Staff) |
+| ![Bow Staff (Melee)](https://2e.aonprd.com/Images/Weapons/Bow_Staff.webp) | Bow Staff (Melee) | 3 | 60 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bow%20Staff) |
+| ![Bottled Catharsis (Major)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Bottled Catharsis (Major) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bottled%20Catharsis) |
+| ![Ghost Charge (Moderate)](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Ghost Charge (Moderate) | 3 | 10 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ghost%20Charge) |
+| ![Druid's Crown](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Druid's Crown | 6 | 220 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Druid%27s%20Crown) |
+| ![Fighting Stick](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Fighting Stick | 4 | 75 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fighting%20Stick) |
+| ![Disguise Kit (Replacement Cosmetics)](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Disguise Kit (Replacement Cosmetics) | 3 | 50 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Disguise%20Kit) |
+| ![Dueling Pistol](https://2e.aonprd.com/Images/Weapons/Dueling_Pistol.webp) | Dueling Pistol | 0 | 50 sp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dueling%20Pistol) |
+| ![Doubling Rings](https://2e.aonprd.com/Images/Treasure/Doubling_Rings.webp) | Doubling Rings | 11 | 1300 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Doubling%20Rings) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Moderate Tangibility Resonator | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moderate%20Tangibility%20Resonator) |
+| ![Palstave](https://2e.aonprd.com/Images/Weapons/War_Gavel.webp) | Palstave | 0 | 5 sp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Palstave) |
+| ![Breech Ejectors](https://2e.aonprd.com/Images/Ancestries/Icons/Ardande_Icon.png) | Breech Ejectors | 3 | 10 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Breech%20Ejectors) |
 
 ## Services
 

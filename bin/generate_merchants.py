@@ -113,11 +113,29 @@ def fix_price(price):
     if not price or price == 'L':
         return "5 sp"  # Default for 'L' (likely means "Light" bulk, but used as price)
     
-    # If it's just a number, assume gp
-    if price.isdigit():
-        return f"{price} gp"
+    # Handle integer prices (from Elasticsearch API)
+    if isinstance(price, int):
+        # Convert copper to proper denomination
+        if price < 10:
+            return f"{price} cp"
+        elif price < 100:
+            return f"{price} sp"
+        else:
+            # Convert to gold pieces
+            gp = price / 100
+            if gp == int(gp):
+                return f"{int(gp)} gp"
+            else:
+                return f"{gp:.1f} gp"
     
-    return price
+    # Handle string prices
+    price_str = str(price)
+    
+    # If it's just a number string, assume gp
+    if price_str.isdigit():
+        return f"{price_str} gp"
+    
+    return price_str
 
 def capitalize_field(text):
     """Capitalize first letter of text, handle N/A"""

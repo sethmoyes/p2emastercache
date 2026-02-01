@@ -12,23 +12,22 @@
 
 **Specialties:** Weapons and armor of all types
 
-## Common Items (13)
+## Common Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Heavy Rondache | 0 | 1 gp | Common | Base Shields | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Heavy%20Rondache) |
-| 🖼️ | Cold Iron Armor (Standard-Grade) | 0 | 0 gp | Common | Precious Material Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
-| 🖼️ | Cold Iron Armor (Low-Grade) | 0 | 0 gp | Common | Precious Material Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
-| 🖼️ | Silver Armor (Low-Grade) | 0 | 0 gp | Common | Precious Material Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Silver%20Armor) |
-| 🖼️ | Scale Mail | 0 | 2 gp | Common | Base Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Scale%20Mail) |
-| 🖼️ | Arrows | 0 | 1 gp | Common | Base Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Arrows) |
-| 🖼️ | Cold Iron Armor (High-Grade) | 0 | 0 gp | Common | Precious Material Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
-| ![Lattice Armor](https://2e.aonprd.com/Images/Armor/Lattice_Armor.webp) | Lattice Armor | 0 | 2 gp | Common | Base Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Lattice%20Armor) |
-| 🖼️ | 8-Round Magazine | 0 | 5 sp | Common | Base Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=) |
-| 🖼️ | Wooden Shield | 0 | 1 gp | Common | Base Shields | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Shield) |
-| 🖼️ | Hide Armor | 0 | 2 gp | Common | Base Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Hide%20Armor) |
-| 🖼️ | Blowgun Darts | 0 | 1 gp | Common | Base Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Blowgun%20Darts) |
-| 🖼️ | Shield Bash | 0 | 0 gp | Common | Base Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Shield%20Bash) |
+| ![Sling Bullets](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Sling Bullets | 5 | 155 gp | Common | Base Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Sling%20Bullets) |
+| ![Cold Iron Armor (Standard-Grade)](https://2e.aonprd.com/Images/Ancestries/Icons/Dromaar_Icon.png) | Cold Iron Armor (Standard-Grade) | 5 | 140 gp | Common | Precious Material Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
+| ![Wooden Breastplate](https://2e.aonprd.com/Images/Armor/Niyahaat.webp) | Wooden Breastplate | 9 | 130 gp | Common | Base Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Breastplate) |
+| ![Silver Armor (Standard-Grade)](https://2e.aonprd.com/Images/Treasure/Elven_Chain.webp) | Silver Armor (Standard-Grade) | 5 | 140 gp | Common | Precious Material Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Silver%20Armor) |
+
+## Uncommon Items (3)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| ![Hand Crossbow](https://2e.aonprd.com/Images/Weapons/Gauntlet_Bow.webp) | Hand Crossbow | 8 | 450 gp | Uncommon | Base Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Hand%20Crossbow) |
+| ![Crossbow](https://2e.aonprd.com/Images/Treasure/Spiritsight_%20Crossbow.webp) | Crossbow | 8 | 450 gp | Uncommon | Base Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Crossbow) |
+| ![Shield Bash](https://2e.aonprd.com/Images/Ancestries/Icons/Talos_Icon.png) | Shield Bash | 9 | 600 gp | Uncommon | Base Weapons | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Shield%20Bash) |
 
 ## Services
 
