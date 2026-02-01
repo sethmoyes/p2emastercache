@@ -310,9 +310,30 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
     print(f"✓ Created: {filepath}")
 
 if __name__ == "__main__":
+    import sys
+    
+    # Parse command line arguments
+    player_level = 4  # Default level
+    if len(sys.argv) > 1:
+        for i, arg in enumerate(sys.argv[1:]):
+            if arg == '--level' and i + 1 < len(sys.argv) - 1:
+                try:
+                    player_level = int(sys.argv[i + 2])
+                except ValueError:
+                    print(f"Invalid level: {sys.argv[i + 2]}, using default level 4")
+    
+    max_item_level = player_level + 2
+    
+    print(f"Generating merchants for player level {player_level}")
+    print(f"  Max item level: {max_item_level}")
+    print()
+    
     print("Loading equipment...")
     equipment = load_equipment_json("etc/equipment.json")
-    print(f"  Loaded {len(equipment)} items")
+    
+    # Filter equipment by max level
+    equipment = [e for e in equipment if e['level'] <= max_item_level]
+    print(f"  Loaded {len(equipment)} items (level {max_item_level} or below)")
     
     # Create output directory
     os.makedirs('players', exist_ok=True)

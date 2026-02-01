@@ -12,27 +12,30 @@
 
 **Specialties:** Food, drink, and basic adventuring supplies
 
-## Common Items (10)
+## Common Items (12)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Disguise Kit (Elite) | 3 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Disguise%20Kit) |
-| 🖼️ | Map (Nautical Chart) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Map) |
-| 🖼️ | Bottled Catharsis (Minor) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bottled%20Catharsis) |
-| 🖼️ | Boozy Bottle | 5 | 140 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Boozy%20Bottle) |
-| 🖼️ | Healer's Gel (Greater) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Gel) |
-| 🖼️ | Beverages (Pot of Coffee or Tea) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
-| 🖼️ | Barding (Heavy; Small or Medium) | 2 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Barding) |
-| 🖼️ | Surprise Doll (Exquisite) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Surprise%20Doll) |
-| 🖼️ | Olfactory Stimulators | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Olfactory%20Stimulators) |
-| 🖼️ | Leaper's Elixir (Lesser) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Leaper%27s%20Elixir) |
+| 🖼️ | Longsword | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Longsword) |
+| 🖼️ | Blazons of Shared Power (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blazons%20of%20Shared%20Power) |
+| 🖼️ | Bladed Scarf | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bladed%20Scarf) |
+| ![Moonlit Spellgun (Moderate)](https://2e.aonprd.com/Images/Treasure/Moonlit_Spellgun.webp) | Moonlit Spellgun (Moderate) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moonlit%20Spellgun) |
+| 🖼️ | Snare Kit | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Snare%20Kit) |
+| 🖼️ | Waffle Iron | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Waffle%20Iron) |
+| 🖼️ | Bloodhound Mask (Lesser) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bloodhound%20Mask) |
+| 🖼️ | Steam Turtle | 0 | 3 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Steam%20Turtle) |
+| ![Comprehension Elixir (Greater)](https://2e.aonprd.com/Images/Treasure/Comprehension_Elixir.webp) | Comprehension Elixir (Greater) | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comprehension%20Elixir) |
+| 🖼️ | Diving Suit | 3 | 100 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Diving%20Suit) |
+| 🖼️ | Shiver | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shiver) |
+| 🖼️ | Bristling Spines (Moderate) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bristling%20Spines) |
 
-## Uncommon Items (2)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Called (Accessory Rune) | 3 | 60 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Called) |
-| 🖼️ | Blood-Drinker Blade | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blood-Drinker%20Blade) |
+| 🖼️ | Capturing Spetum | 0 | 9 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Capturing%20Spetum) |
+| ![Aeon Stone (Consumed)](https://2e.aonprd.com/Images/Treasure/Aeon_Stone.webp) | Aeon Stone (Consumed) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Aeon%20Stone) |
+| 🖼️ | Gun Sword (Ranged) | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gun%20Sword) |
 
 ## Services
 

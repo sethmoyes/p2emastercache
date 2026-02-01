@@ -77,6 +77,7 @@ def create_encounter(creature):
     
     return {
         'name': creature['name'],
+        'level': creature['level'],  # Include level for filtering
         'hp': creature['hp'],
         'ac': creature['ac'],
         'fort': creature.get('fort', ''),

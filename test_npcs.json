@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Aerendyl the Farmer",
+    "race": "Elf",
+    "profession": "Farmer",
+    "personality": "suspicious",
+    "setup": "You hear someone calling out for help.",
+    "readaloud": "A suspicious elf farmer greets you. \"Hail, adventurers!\"",
+    "description": "This suspicious elf farmer was born to privilege among the nobility. Their parents were yeomen. In their youth, they was a victim of bullying in youth. They befriended a traveling merchant or minstrel who greatly influenced them. At one point, they failed to keep an important oath, motivated by hatred. Now they are running from the law.",
+    "lore_keywords": [
+      "humanoid",
+      "Elf",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Brenna the Scholar",
+    "race": "Human",
+    "profession": "Scholar",
+    "personality": "secretive",
+    "setup": "Someone is resting by the path.",
+    "readaloud": "A secretive human scholar greets you. \"Hail, adventurers!\"",
+    "description": "This secretive human scholar raised by another family. Their parents were artisans. In their youth, they attended a private academy. They had a significant romantic relationship who greatly influenced them. At one point, they failed someone who depended on them, motivated by love. Now they are seeking adventure.",
+    "lore_keywords": [
+      "humanoid",
+      "Human",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Aramil the Messenger",
+    "race": "Half-Elf",
+    "profession": "Messenger",
+    "personality": "quiet",
+    "setup": "Someone is resting by the path.",
+    "readaloud": "A quiet half-elf messenger greets you. \"Well met, travelers!\"",
+    "description": "This quiet half-elf messenger born to merchants or artisans. Their parents were entertainers. In their youth, they attended a private academy. They knew someone in the criminal underworld who greatly influenced them. At one point, they publicly embarrassed someone, motivated by religion. Now they are delivering an important message.",
+    "lore_keywords": [
+      "humanoid",
+      "Half-Elf",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Faelyn the Farmer",
+    "race": "Elf",
+    "profession": "Farmer",
+    "personality": "humble",
+    "setup": "Someone is resting by the path.",
+    "readaloud": "A humble elf farmer greets you. \"Well met, travelers!\"",
+    "description": "This humble elf farmer lost their parents at a young age. In their youth, they lost someone close. They had a significant romantic relationship who greatly influenced them. At one point, they betrayed someone's trust, motivated by love. Now they are delivering an important message.",
+    "lore_keywords": [
+      "humanoid",
+      "Elf",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Faelyn the Scribe",
+    "race": "Elf",
+    "profession": "Scribe",
+    "personality": "confident",
+    "setup": "A traveler waves to you from the roadside.",
+    "readaloud": "A confident elf scribe greets you. \"Good day to you!\"",
+    "description": "This confident elf scribe was born to privilege among the nobility. Their parents were sailors. In their youth, they attended a private academy. They was influenced by a holy person who greatly influenced them. At one point, they betrayed someone's trust, motivated by pressured. Now they are visiting family in Otari.",
+    "lore_keywords": [
+      "humanoid",
+      "Elf",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Faral the Sailor",
+    "race": "Half-Elf",
+    "profession": "Sailor",
+    "personality": "humble",
+    "setup": "A traveler waves to you from the roadside.",
+    "readaloud": "A humble half-elf sailor greets you. \"Hail, adventurers!\"",
+    "description": "This humble half-elf sailor grew up among peasants, working the land. Their parents were tradespeople. In their youth, they was a victim of bullying in youth. They knew someone in the criminal underworld who greatly influenced them. At one point, they failed to keep an important oath, motivated by pressured. Now they are seeking adventure.",
+    "lore_keywords": [
+      "humanoid",
+      "Half-Elf",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Shandri the Farmer",
+    "race": "Half-Elf",
+    "profession": "Farmer",
+    "personality": "confident",
+    "setup": "You hear someone calling out for help.",
+    "readaloud": "A confident half-elf farmer greets you. \"Greetings, friends!\"",
+    "description": "This confident half-elf farmer lost their parents at a young age. In their youth, they was mentored by a skilled teacher. They had a significant romantic relationship who greatly influenced them. At one point, they failed someone who depended on them, motivated by pressured. Now they are fleeing from trouble.",
+    "lore_keywords": [
+      "humanoid",
+      "Half-Elf",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Gareth the Scribe",
+    "race": "Human",
+    "profession": "Scribe",
+    "personality": "grumpy",
+    "setup": "A person emerges from the mist.",
+    "readaloud": "A grumpy human scribe greets you. \"Greetings, friends!\"",
+    "description": "This grumpy human scribe lost their parents at a young age. In their youth, they had an unremarkable childhood. They knew someone in the criminal underworld who greatly influenced them. At one point, they failed to keep an important oath, motivated by love. Now they are seeking adventure.",
+    "lore_keywords": [
+      "humanoid",
+      "Human",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Lidda the Hunter",
+    "race": "Halfling",
+    "profession": "Hunter",
+    "personality": "secretive",
+    "setup": "A figure approaches on the road ahead.",
+    "readaloud": "A secretive halfling hunter greets you. \"Well met, travelers!\"",
+    "description": "This secretive halfling hunter born to merchants or artisans. Their parents were entertainers. In their youth, they was betrayed by a trusted friend or family member. They was close to a family member who greatly influenced them. At one point, they publicly embarrassed someone, motivated by pressured. Now they are fleeing from trouble.",
+    "lore_keywords": [
+      "humanoid",
+      "Halfling",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Holg the Innkeeper",
+    "race": "Half-Orc",
+    "profession": "Innkeeper",
+    "personality": "curious",
+    "setup": "A figure approaches on the road ahead.",
+    "readaloud": "A curious half-orc innkeeper greets you. \"Greetings, friends!\"",
+    "description": "This curious half-orc innkeeper raised by another family. Their parents were entertainers. In their youth, they lost someone close. They was influenced by a holy person who greatly influenced them. At one point, they caused suffering through inaction, motivated by money. Now they are running from the law.",
+    "lore_keywords": [
+      "humanoid",
+      "Half-Orc",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Bree the Scribe",
+    "race": "Half-Elf",
+    "profession": "Scribe",
+    "personality": "nervous",
+    "setup": "A figure approaches on the road ahead.",
+    "readaloud": "A nervous half-elf scribe greets you. \"Greetings, friends!\"",
+    "description": "This nervous half-elf scribe raised by another family. Their parents were merchants. In their youth, they took a life at a young age. They was influenced by a holy person who greatly influenced them. At one point, they stole something valuable, motivated by justice. Now they are searching for a lost relative.",
+    "lore_keywords": [
+      "humanoid",
+      "Half-Elf",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Dench the Entertainer",
+    "race": "Half-Orc",
+    "profession": "Entertainer",
+    "personality": "proud",
+    "setup": "A traveler waves to you from the roadside.",
+    "readaloud": "A proud half-orc entertainer greets you. \"Well met, travelers!\"",
+    "description": "This proud half-orc entertainer lost their parents at a young age. In their youth, they had an unremarkable childhood. They befriended a traveling merchant or minstrel who greatly influenced them. At one point, they lied to further their goals, motivated by jealousy. Now they are searching for a lost relative.",
+    "lore_keywords": [
+      "humanoid",
+      "Half-Orc",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Shandri the Priest",
+    "race": "Half-Elf",
+    "profession": "Priest",
+    "personality": "confident",
+    "setup": "A traveler waves to you from the roadside.",
+    "readaloud": "A confident half-elf priest greets you. \"Greetings, friends!\"",
+    "description": "This confident half-elf priest was born to privilege among the nobility. Their parents were sailors. In their youth, they grew up during wartime. They knew someone in the criminal underworld who greatly influenced them. At one point, they caused suffering through inaction, motivated by money. Now they are escorting goods to market.",
+    "lore_keywords": [
+      "humanoid",
+      "Half-Elf",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Boddynock the Merchant",
+    "race": "Gnome",
+    "profession": "Merchant",
+    "personality": "cheerful",
+    "setup": "Someone is resting by the path.",
+    "readaloud": "A cheerful gnome merchant greets you. \"Well met, travelers!\"",
+    "description": "This cheerful gnome merchant grew up among peasants, working the land. Their parents were artisans. In their youth, they lost someone close. They had a wise teacher who greatly influenced them. At one point, they stole something valuable, motivated by religion. Now they are escorting goods to market.",
+    "lore_keywords": [
+      "humanoid",
+      "Gnome",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Holg the Sailor",
+    "race": "Half-Orc",
+    "profession": "Sailor",
+    "personality": "cowardly",
+    "setup": "You hear someone calling out for help.",
+    "readaloud": "A cowardly half-orc sailor greets you. \"Hail, adventurers!\"",
+    "description": "This cowardly half-orc sailor grew up among peasants, working the land. Their parents were entertainers. In their youth, they ran with a rough crowd. They had a wise teacher who greatly influenced them. At one point, they stole something valuable, motivated by money. Now they are visiting family in Otari.",
+    "lore_keywords": [
+      "humanoid",
+      "Half-Orc",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Ront the Healer",
+    "race": "Half-Orc",
+    "profession": "Healer",
+    "personality": "friendly",
+    "setup": "You hear someone calling out for help.",
+    "readaloud": "A friendly half-orc healer greets you. \"Good day to you!\"",
+    "description": "This friendly half-orc healer raised by another family. Their parents were tradespeople. In their youth, they was betrayed by a trusted friend or family member. They knew an athletic or competitive person who greatly influenced them. At one point, they failed someone who depended on them, motivated by religion. Now they are on a pilgrimage.",
+    "lore_keywords": [
+      "humanoid",
+      "Half-Orc",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Shandri the Innkeeper",
+    "race": "Half-Elf",
+    "profession": "Innkeeper",
+    "personality": "cheerful",
+    "setup": "Someone is resting by the path.",
+    "readaloud": "A cheerful half-elf innkeeper greets you. \"Well met, travelers!\"",
+    "description": "This cheerful half-elf innkeeper was born to privilege among the nobility. Their parents were tradespeople. In their youth, they had an unremarkable childhood. They befriended a traveling merchant or minstrel who greatly influenced them. At one point, they stole something valuable, motivated by pressured. Now they are running from the law.",
+    "lore_keywords": [
+      "humanoid",
+      "Half-Elf",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Nedda the Innkeeper",
+    "race": "Halfling",
+    "profession": "Innkeeper",
+    "personality": "confident",
+    "setup": "A person emerges from the mist.",
+    "readaloud": "A confident halfling innkeeper greets you. \"Well met, travelers!\"",
+    "description": "This confident halfling innkeeper born to merchants or artisans. Their parents were merchants. In their youth, they was a victim of bullying in youth. They befriended a traveling merchant or minstrel who greatly influenced them. At one point, they failed someone who depended on them, motivated by family. Now they are running from the law.",
+    "lore_keywords": [
+      "humanoid",
+      "Halfling",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Nissa the Hunter",
+    "race": "Gnome",
+    "profession": "Hunter",
+    "personality": "curious",
+    "setup": "A figure approaches on the road ahead.",
+    "readaloud": "A curious gnome hunter greets you. \"Hail, adventurers!\"",
+    "description": "This curious gnome hunter was born to privilege among the nobility. Their parents were clergy. In their youth, they had an unremarkable childhood. They knew an athletic or competitive person who greatly influenced them. At one point, they lied to further their goals, motivated by money. Now they are searching for a lost relative.",
+    "lore_keywords": [
+      "humanoid",
+      "Gnome",
+      "NPC",
+      "social"
+    ]
+  },
+  {
+    "name": "Cora the Priest",
+    "race": "Halfling",
+    "profession": "Priest",
+    "personality": "nervous",
+    "setup": "Someone is resting by the path.",
+    "readaloud": "A nervous halfling priest greets you. \"Hail, adventurers!\"",
+    "description": "This nervous halfling priest lost their parents at a young age. In their youth, they ran with a rough crowd. They had a wise teacher who greatly influenced them. At one point, they caused suffering through inaction, motivated by love. Now they are escorting goods to market.",
+    "lore_keywords": [
+      "humanoid",
+      "Halfling",
+      "NPC",
+      "social"
+    ]
+  }
+]

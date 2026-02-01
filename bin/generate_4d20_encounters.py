@@ -496,17 +496,18 @@ def generate_lore_encounter(roll, inner_sea_lore, players_guide_lore, npc_templa
         'knowledge_details': knowledge_details
     }
 
-def write_markdown(encounters, output_file):
+def write_markdown(encounters, output_file, player_level, deadly_level, difficult_level, moderate_level, easy_level):
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("# 4D20 RANDOM ENCOUNTER TABLE — FOGFEN TO OTARI V2\n\n")
         f.write("**Bell Curve Distribution (4d20 = 4-80)**\n\n")
         f.write("**RANDOMLY GENERATED WITH EXTENSIVE DETAIL** - Each run creates completely new encounters!\n\n")
+        f.write(f"**Player Level: {player_level}**\n\n")
         f.write("---\n\n")
         
         f.write("## DISTRIBUTION GUIDE\n\n")
-        f.write("- **4-9**: DEADLY (Level 5) | **10-19**: DIFFICULT (Level 4) | **20-29**: MODERATE (Level 3)\n")
-        f.write("- **30-31**: EASY (Level 2) | **32-52**: LORE ONLY (No Combat) | **53-54**: EASY (Level 2)\n")
-        f.write("- **55-64**: MODERATE (Level 3) | **65-74**: DIFFICULT (Level 4) | **75-80**: DEADLY (Level 5)\n\n")
+        f.write(f"- **4-9**: DEADLY (Level {deadly_level}) | **10-19**: DIFFICULT (Level {difficult_level}) | **20-29**: MODERATE (Level {moderate_level})\n")
+        f.write(f"- **30-31**: EASY (Level {easy_level}) | **32-52**: LORE ONLY (No Combat) | **53-54**: EASY (Level {easy_level})\n")
+        f.write(f"- **55-64**: MODERATE (Level {moderate_level}) | **65-74**: DIFFICULT (Level {difficult_level}) | **75-80**: DEADLY (Level {deadly_level})\n\n")
         f.write("---\n\n")
         
         current_diff = None
@@ -582,18 +583,55 @@ def write_markdown(encounters, output_file):
             f.write("\n---\n\n")
 
 if __name__ == "__main__":
+    import sys
+    
+    # Parse command line arguments
+    player_level = 4  # Default level
+    if len(sys.argv) > 1:
+        for i, arg in enumerate(sys.argv[1:]):
+            if arg == '--level' and i + 1 < len(sys.argv) - 1:
+                try:
+                    player_level = int(sys.argv[i + 2])
+                except ValueError:
+                    print(f"Invalid level: {sys.argv[i + 2]}, using default level 4")
+    
+    # Calculate level ranges based on player level
+    deadly_level = player_level + 2      # Max difficulty: player level + 2
+    difficult_level = player_level + 1   # Hard: player level + 1
+    moderate_level = player_level        # Moderate: player level
+    easy_level = max(1, player_level // 2)  # Easy: half player level (min 1)
+    max_item_level = player_level + 2    # Items: max player level + 2
+    
+    print(f"Generating encounters for player level {player_level}")
+    print(f"  Deadly encounters: Level {deadly_level}")
+    print(f"  Difficult encounters: Level {difficult_level}")
+    print(f"  Moderate encounters: Level {moderate_level}")
+    print(f"  Easy encounters: Level {easy_level}")
+    print(f"  Max item level: {max_item_level}")
+    print()
+    
     print("Loading data...")
     equipment = load_json("etc/equipment.json")
+    
+    # Filter equipment by max level
+    equipment = [e for e in equipment if e['level'] <= max_item_level]
+    
     inner_sea_lore = load_lore("etc/inner_sea_region.md")
     players_guide_lore = load_lore("etc/players_guide.md")
     creature_lore_db = load_creature_lore()
     
-    print(f"  Equipment: {len(equipment)} items")
+    # Filter encounter pools by level
+    DEADLY_POOL_FILTERED = [c for c in DEADLY_POOL if c.get('level', 99) <= deadly_level]
+    DIFFICULT_POOL_FILTERED = [c for c in DIFFICULT_POOL if c.get('level', 99) <= difficult_level]
+    MODERATE_POOL_FILTERED = [c for c in MODERATE_POOL if c.get('level', 99) <= moderate_level]
+    EASY_POOL_FILTERED = [c for c in EASY_POOL if c.get('level', 99) <= easy_level]
+    
+    print(f"  Equipment: {len(equipment)} items (level {max_item_level} or below)")
     print(f"  Inner Sea Lore: {len(inner_sea_lore)} chars")
     print(f"  Players Guide: {len(players_guide_lore)} chars")
     print(f"  Creature Lore: {len(creature_lore_db)} creatures")
-    print(f"  Encounter pools: {len(DEADLY_POOL)} deadly, {len(DIFFICULT_POOL)} difficult,", end=" ")
-    print(f"{len(MODERATE_POOL)} moderate, {len(EASY_POOL)} easy, {len(NPC_POOL)} NPCs")
+    print(f"  Encounter pools: {len(DEADLY_POOL_FILTERED)} deadly, {len(DIFFICULT_POOL_FILTERED)} difficult,", end=" ")
+    print(f"{len(MODERATE_POOL_FILTERED)} moderate, {len(EASY_POOL_FILTERED)} easy, {len(NPC_POOL)} NPCs")
     
     print("\nGenerating encounters with EXTENSIVE detail...")
     encounters = []
@@ -616,7 +654,12 @@ if __name__ == "__main__":
             (diff == 'MODERATE' and (roll <= 29 or roll >= 55) and not (roll <= 19 or roll >= 65)) or
             (diff == 'EASY' and ((roll <= 31 or roll >= 53) and not (roll <= 29 or roll >= 55) and not (32 <= roll <= 52)))
         ))
-        pool_map = {'DEADLY': DEADLY_POOL, 'DIFFICULT': DIFFICULT_POOL, 'MODERATE': MODERATE_POOL, 'EASY': EASY_POOL}
+        pool_map = {
+            'DEADLY': DEADLY_POOL_FILTERED, 
+            'DIFFICULT': DIFFICULT_POOL_FILTERED, 
+            'MODERATE': MODERATE_POOL_FILTERED, 
+            'EASY': EASY_POOL_FILTERED
+        }
         pool = pool_map[diff]
         if count > len(pool):
             print(f"WARNING: Need {count} {diff} encounters but only have {len(pool)} in pool!")
@@ -648,7 +691,7 @@ if __name__ == "__main__":
         
         encounters.append(enc)
     
-    write_markdown(encounters, "gm/4d20_fogfen_otari_encounters_v2.md")
+    write_markdown(encounters, "gm/4d20_fogfen_otari_encounters_v2.md", player_level, deadly_level, difficult_level, moderate_level, easy_level)
     
     print(f"\n✓ Generated {len(encounters)} DETAILED encounters!")
     print(f"  - {len([e for e in encounters if e['difficulty'] == 'LORE ONLY'])} lore encounters")

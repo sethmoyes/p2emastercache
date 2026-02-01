@@ -12,38 +12,28 @@
 
 **Specialties:** Cheap lodging and questionable goods
 
-## Common Items (14)
+## Common Items (12)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Clown Monarch | 5 | 21 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clown%20Monarch) |
-| 🖼️ | Sparking Spellgun (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sparking%20Spellgun) |
-| ![Dart](https://2e.aonprd.com/Images/Weapons/Dart.webp) | Dart | 0 | 1 cp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dart) |
-| 🖼️ | O-Yoroi | 2 | 35 gp | Common | Armor | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=O-Yoroi) |
-| 🖼️ | Legerdemain Handkerchief | 2 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Legerdemain%20Handkerchief) |
-| 🖼️ | Trollhound Pick | 5 | 140 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Trollhound%20Pick) |
-| 🖼️ | Mage's Hat (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mage%27s%20Hat) |
-| 🖼️ | Glue Bomb (Greater) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glue%20Bomb) |
-| ![Scizore](https://2e.aonprd.com/Images/Weapons/Scizore.webp) | Scizore | 5 | 150 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Scizore) |
-| 🖼️ | Air Bladder | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Air%20Bladder) |
-| 🖼️ | Brass Ear | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Brass%20Ear) |
-| 🖼️ | Sticky Algae Bomb (Moderate) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sticky%20Algae%20Bomb) |
-| 🖼️ | Ignitor | 1 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ignitor) |
-| 🖼️ | Transportation (Ferry or Riverboat) | 0 | 4 cp (per 5 miles) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Transportation) |
+| 🖼️ | Spirit-Sealing Fulu | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spirit-Sealing%20Fulu) |
+| 🖼️ | Venom Glands | 3 | 55 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Venom%20Glands) |
+| ![Main-gauche](https://2e.aonprd.com/Images/Weapons/Main-gauche.webp) | Main-gauche | 0 | 5 sp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Main-gauche) |
+| 🖼️ | Exsanguinating Ammunition (Major) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Exsanguinating%20Ammunition) |
+| 🖼️ | Clothing (Explorer's) | 3 | 55 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clothing) |
+| 🖼️ | Warhammer | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warhammer) |
+| 🖼️ | Religious Text | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Religious%20Text) |
+| 🖼️ | Tailor's Boll | 3 | 12 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tailor%27s%20Boll) |
+| ![Alicorn Hair](https://2e.aonprd.com/Images/Treasure/Alicorn_Hair.webp) | Alicorn Hair | 1 | 4 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Alicorn%20Hair) |
+| 🖼️ | Mask (Fine) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mask) |
+| 🖼️ | Lodging (Floor Space) | 0 | 10 gp (per day) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lodging) |
+| 🖼️ | Reinforcing Rune (Supreme) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune) |
 
-## Uncommon Items (3)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Aeon Stone (Envisioning)](https://2e.aonprd.com/Images/Treasure/Aeon_Stone.webp) | Aeon Stone (Envisioning) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Aeon%20Stone) |
-| 🖼️ | Thousand-Pains Fulu (Burl) | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thousand-Pains%20Fulu) |
-| 🖼️ | Replacement Filter (Level 10) | 1 | 3 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Replacement%20Filter) |
-
-## Rare Items (1)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Abysium Ingot | 0 | 4,500 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Abysium%20Ingot) |
+| 🖼️ | Flare Beacon (Lesser) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Flare%20Beacon) |
 
 ## Services
 
