@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proprietor](IMAGE_PLACEHOLDER)
+![Proprietor](etc/default_merchant.jpg)
 
 </div>
 

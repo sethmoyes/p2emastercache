@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proprietor](IMAGE_PLACEHOLDER)
+![Proprietor](etc/default_merchant.jpg)
 
 </div>
 
@@ -14,40 +14,41 @@
 
 # REGULAR ITEMS
 
-## Common Items (21)
+## Common Items (24)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Manacles (Superior) | 0 | 3 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Manacles) |
-| 🖼️ | Smoked Goggles | 3 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Smoked%20Goggles) |
-| 🖼️ | Ghost Charge (Lesser) | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ghost%20Charge) |
-| 🖼️ | Puzzle Box (Hollow) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Puzzle%20Box) |
-| 🖼️ | Purifying Spoon (Ladle) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Purifying%20Spoon) |
-| ![Crescent Cross (Melee)](https://2e.aonprd.com/Images/Weapons/Crescent_Cross.webp) | Crescent Cross (Melee) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Crescent%20Cross) |
-| 🖼️ | Retaliation (Lesser) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Retaliation) |
-| 🖼️ | Spiritual Warhorn (Major) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spiritual%20Warhorn) |
-| 🖼️ | Butchering Axe | 3 | 60 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Butchering%20Axe) |
-| 🖼️ | Wand of Shocking Haze | 6 | 250 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Shocking%20Haze) |
-| 🖼️ | Wand of Pernicious Poison (6th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Pernicious%20Poison) |
-| 🖼️ | Bewitching Bloom (Purple Iris) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bewitching%20Bloom) |
-| 🖼️ | Transportation (Caravan) | 0 | 4 cp (per 5 miles) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Transportation) |
-| 🖼️ | Staff of Protection | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Protection) |
-| 🖼️ | Cotton (1 Bulk) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cotton) |
-| 🖼️ | Tentacle Potion (Moderate) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
-| 🖼️ | Griffon Cane | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Griffon%20Cane) |
-| 🖼️ | Manacles of Persuasion | 0 | 3 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Manacles%20of%20Persuasion) |
-| 🖼️ | Five-Feather Wreath (Major) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Five-Feather%20Wreath) |
-| 🖼️ | Armored Sleigh | 0 | 2 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Armored%20Sleigh) |
-| ![Handwraps of Mighty Blows (+1)](https://2e.aonprd.com/Images/Treasure/Handwraps_Of_Mighty_Blows.webp) | Handwraps of Mighty Blows (+1) | 4 | 100 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Handwraps%20of%20Mighty%20Blows) |
+| 🖼️ | Chaos Falcon Feather | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chaos%20Falcon%20Feather) |
+| ![Wemmuth Trinket](https://2e.aonprd.com/Images/Treasure/Wemmuth_Trinket.webp) | Wemmuth Trinket | 3 | 12 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wemmuth%20Trinket) |
+| 🖼️ | Queasy Lantern (Greater) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Queasy%20Lantern) |
+| 🖼️ | Lodging (Bed, for 1) | 0 | 10 gp (per day) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lodging) |
+| 🖼️ | Shell of Easy Breathing | 5 | 160 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shell%20of%20Easy%20Breathing) |
+| 🖼️ | Hammer | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hammer) |
+| 🖼️ | Torag's Silver Anvil | 2 | 20 gp (per Bulk) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Torag%27s%20Silver%20Anvil) |
+| 🖼️ | Chalk | 0 | 1 cp (10 pieces) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chalk) |
+| ![Armory Bracelet (Greater)](https://2e.aonprd.com/Images/Treasure/Armory_Bracelet.webp) | Armory Bracelet (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Armory%20Bracelet) |
+| 🖼️ | Spry Sinews (Lesser) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spry%20Sinews) |
+| ![Dart](https://2e.aonprd.com/Images/Weapons/Dart.webp) | Dart | 0 | 1 cp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dart) |
+| 🖼️ | Longspear | 0 | 5 sp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Longspear) |
+| 🖼️ | Wolliped Fleece | 1 | 4 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wolliped%20Fleece) |
+| 🖼️ | Bewitching Bloom (White Poppy) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bewitching%20Bloom) |
+| ![Blight Bomb (Lesser)](https://2e.aonprd.com/Images/Treasure/Blight_Bomb.webp) | Blight Bomb (Lesser) | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blight%20Bomb) |
+| 🖼️ | Tool (Short) | 0 | 4 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tool) |
+| 🖼️ | Sticky Algae Bomb (Moderate) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sticky%20Algae%20Bomb) |
+| 🖼️ | Net | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Net) |
+| 🖼️ | Eye of Enlightenment | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eye%20of%20Enlightenment) |
+| 🖼️ | Pelagic Helmet | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Pelagic%20Helmet) |
+| 🖼️ | Dazzling Rosary | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dazzling%20Rosary) |
+| 🖼️ | Nightpitch | 5 | 60 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nightpitch) |
+| 🖼️ | Ghostcracker | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ghostcracker) |
+| ![Wind Ocarina](https://2e.aonprd.com/Images/Treasure/Wind_Ocarina.webp) | Wind Ocarina | 6 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wind%20Ocarina) |
 
-## Uncommon Items (6)
+## Uncommon Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Katana | 0 | 2 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Katana) |
+| 🖼️ | Snagging | 3 | 60 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Snagging) |
+| 🖼️ | Siege Barge | 3 | 60 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Siege%20Barge) |
+| 🖼️ | Misdirecting Haversack | 6 | 200 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Misdirecting%20Haversack) |
 | 🖼️ | Zhuazhi Bang | 0 | 1 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Zhuazhi%20Bang) |
-| 🖼️ | Storied Skin | 3 | 45 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Storied%20Skin) |
-| ![Mikazuki (Melee)](https://2e.aonprd.com/Images/Weapons/Mikazuki.webp) | Mikazuki (Melee) | 0 | 8 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mikazuki) |
-| 🖼️ | Impact Foam Chassis (Moderate) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Impact%20Foam%20Chassis) |
-| 🖼️ | Wand of Teeming Ghosts (5th-Rank Spell) | 6 | 0 gp | Uncommon | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Teeming%20Ghosts) |
 

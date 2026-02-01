@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proprietor](IMAGE_PLACEHOLDER)
+![Proprietor](etc/default_merchant.jpg)
 
 </div>
 
@@ -14,23 +14,22 @@
 
 # REGULAR ITEMS
 
-## Common Items (7)
+## Common Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Glue Bomb (Greater) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glue%20Bomb) |
+| 🖼️ | Thunder Snare | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thunder%20Snare) |
+| 🖼️ | Binding Coil (Greater) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Binding%20Coil) |
+| 🖼️ | Tentacle Potion (Moderate) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
 | 🖼️ | Sticky Algae Bomb (Moderate) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sticky%20Algae%20Bomb) |
-| ![Oil of Ownership (Greater)](https://2e.aonprd.com/Images/Treasure/Oil_Of_Ownership.webp) | Oil of Ownership (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oil%20of%20Ownership) |
-| 🖼️ | Necrotic Bomb (Greater) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Necrotic%20Bomb) |
-| 🖼️ | Darkvision Elixir (Lesser) | 4 | 11 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Darkvision%20Elixir) |
-| 🖼️ | Viperous Elixir (Lesser) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Viperous%20Elixir) |
-| 🖼️ | Wand of Pernicious Poison (6th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Pernicious%20Poison) |
 
-## Uncommon Items (1)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Mirror-Ball Snare | 6 | 40 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mirror-Ball%20Snare) |
+| 🖼️ | Box of Unspoiling (Type IV) | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Box%20of%20Unspoiling) |
+| 🖼️ | Box of Unspoiling (Type I) | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Box%20of%20Unspoiling) |
+| 🖼️ | Greater Quartz-Coil Rail Transport | 4 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Greater%20Quartz-Coil%20Rail%20Transport) |
 
 ## Services
 

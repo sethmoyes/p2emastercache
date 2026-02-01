@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proprietor](IMAGE_PLACEHOLDER)
+![Proprietor](etc/default_merchant.jpg)
 
 </div>
 
@@ -14,29 +14,21 @@
 
 # REGULAR ITEMS
 
-## Common Items (7)
+## Common Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Beverages (Bottle of Fine Wine) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Cooling Elixir (Moderate) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cooling%20Elixir) |
 | 🖼️ | Viperous Elixir (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Viperous%20Elixir) |
-| 🖼️ | Bomber's Eye Elixir (Greater) | 4 | 14 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bomber%27s%20Eye%20Elixir) |
-| 🖼️ | Concealed Sheath | 3 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Concealed%20Sheath) |
-| 🖼️ | Oil | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oil) |
-| 🖼️ | Conflagration Club | 6 | 250 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Conflagration%20Club) |
-| 🖼️ | Healer's Gel (Lesser) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Gel) |
-| 🖼️ | Bomber's Eye Elixir (Lesser) | 4 | 14 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bomber%27s%20Eye%20Elixir) |
+| 🖼️ | Aroma Concealer | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Aroma%20Concealer) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Skeptic's Elixir (Greater) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Skeptic%27s%20Elixir) |
-
-## Rare Items (1)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Digly's Oil of Sympathy (Moderate) | 1 | 0 gp | Rare | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Digly%27s%20Oil%20of%20Sympathy) |
+| ![Covenant Tea](https://2e.aonprd.com/Images/Treasure/Covenant_Tea.webp) | Covenant Tea | 3 | 10 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Covenant%20Tea) |
+| 🖼️ | Greater Quartz-Coil Rail Transport | 4 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Greater%20Quartz-Coil%20Rail%20Transport) |
 
 ## Services
 

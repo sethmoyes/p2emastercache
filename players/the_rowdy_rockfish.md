@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proprietor](IMAGE_PLACEHOLDER)
+![Proprietor](etc/default_merchant.jpg)
 
 </div>
 
@@ -14,19 +14,27 @@
 
 # REGULAR ITEMS
 
-## Common Items (3)
+## Common Items (10)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Waffle Iron | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Waffle%20Iron) |
-| 🖼️ | Monkey | 0 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Monkey) |
-| 🖼️ | Charm of Resistance (Greater) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Charm%20of%20Resistance) |
+| 🖼️ | Conduit Shot (Moderate) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Conduit%20Shot) |
+| 🖼️ | Animal Nip (Moderate) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Animal%20Nip) |
+| 🖼️ | Stumbling Fulu | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stumbling%20Fulu) |
+| 🖼️ | Tentacle Potion (Moderate) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
+| 🖼️ | Mask (Rubber) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mask) |
+| 🖼️ | Animal Pheromones (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Animal%20Pheromones) |
+| 🖼️ | Agents of Edgewatch | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Agents%20of%20Edgewatch) |
+| 🖼️ | Wand of Rolling Flames (2nd-Rank Spell) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Rolling%20Flames) |
+| 🖼️ | Leaper's Elixir (Greater) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Leaper%27s%20Elixir) |
+| 🖼️ | Puzzle Box (Challenging) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Puzzle%20Box) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Blunderbuss | 0 | 6 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blunderbuss) |
+| 🖼️ | Toadskin Salve | 3 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Toadskin%20Salve) |
+| ![Aeon Stone (Preserving)](https://2e.aonprd.com/Images/Treasure/Aeon_Stone.webp) | Aeon Stone (Preserving) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Aeon%20Stone) |
 
 ## Services
 

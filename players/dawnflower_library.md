@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proprietor](IMAGE_PLACEHOLDER)
+![Proprietor](etc/default_merchant.jpg)
 
 </div>
 
@@ -14,24 +14,35 @@
 
 # REGULAR ITEMS
 
-## Common Items (8)
+## Common Items (12)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
 | 🖼️ | Tome of Restorative Cleansing (Greater) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tome%20of%20Restorative%20Cleansing) |
-| 🖼️ | Tome of Restorative Cleansing (Lesser) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tome%20of%20Restorative%20Cleansing) |
-| 🖼️ | Reinforcing Rune (Supreme) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune) |
-| 🖼️ | Reinforcing Rune (Minor) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune) |
-| 🖼️ | Courtier's Pillow Book | 6 | 250 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Courtier%27s%20Pillow%20Book) |
+| 🖼️ | Raiment | 5 | 140 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Raiment) |
+| ![Formula Book (Blank)](https://2e.aonprd.com/Images/Treasure/Formula_Book.webp) | Formula Book (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Formula%20Book) |
+| 🖼️ | Basic Crafter's Book | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Basic%20Crafter%27s%20Book) |
 | 🖼️ | Draxie's Recipe Book | 4 | 90 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Draxie%27s%20Recipe%20Book) |
-| 🖼️ | Reinforcing Rune (Major) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune) |
-| 🖼️ | Unifying Emblem (Lyrune-Quah) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Unifying%20Emblem) |
+| 🖼️ | Endless Grimoire (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
+| 🖼️ | Endless Grimoire (True) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
+| 🖼️ | Endless Grimoire (Greater) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
+| 🖼️ | Endless Grimoire | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
+| 🖼️ | Religious Text | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Religious%20Text) |
+| 🖼️ | Tome of Restorative Cleansing (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tome%20of%20Restorative%20Cleansing) |
+| 🖼️ | Courtier's Pillow Book | 6 | 250 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Courtier%27s%20Pillow%20Book) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Book of Translation (Advanced) | 2 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Book%20of%20Translation) |
+| 🖼️ | Called (Accessory Rune) | 3 | 60 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Called) |
+| 🖼️ | Snagging | 3 | 60 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Snagging) |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| ![Gnome Hooked Hammer](https://2e.aonprd.com/Images/Weapons/Gnome_Hooked_Hammer.webp) | Gnome Hooked Hammer | 5 | 140 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gnome%20Hooked%20Hammer) |
 
 ## Services
 

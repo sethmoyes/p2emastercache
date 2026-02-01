@@ -72,6 +72,53 @@ def clean_item_name(name):
     name = ' '.join(name.split())
     return name.strip()
 
+def get_merchant_image(npc_name):
+    """Get merchant portrait from PathfinderWiki or use default"""
+    try:
+        # Extract just the name (before parentheses)
+        clean_name = npc_name.split('(')[0].strip()
+        
+        # Build PathfinderWiki File URL - format: https://pathfinderwiki.com/wiki/File:Name.jpg
+        wiki_url = f"https://pathfinderwiki.com/wiki/File:{clean_name.replace(' ', '_')}.jpg"
+        
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        }
+        
+        response = requests.get(wiki_url, headers=headers, timeout=10)
+        
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # Look for the full resolution image link
+            fullres = soup.find('div', class_='fullImageLink')
+            if fullres:
+                img = fullres.find('img')
+                if img and img.get('src'):
+                    img_url = img['src']
+                    # Make sure it's a full URL
+                    if img_url.startswith('//'):
+                        img_url = 'https:' + img_url
+                    elif img_url.startswith('/'):
+                        img_url = 'https://pathfinderwiki.com' + img_url
+                    return img_url
+            
+            # Fallback: look for any img with the name in src
+            imgs = soup.find_all('img')
+            for img in imgs:
+                src = img.get('src', '')
+                if clean_name.replace(' ', '_') in src:
+                    if src.startswith('//'):
+                        return 'https:' + src
+                    elif src.startswith('/'):
+                        return 'https://pathfinderwiki.com' + src
+                    return src
+    except Exception as e:
+        pass  # Silently fail and use default
+    
+    # Return default image path
+    return "etc/default_merchant.jpg"
+
 def try_direct_aon_image(item_name):
     """Try to construct direct AoN image URL"""
     clean_name = clean_item_name(item_name)
@@ -223,11 +270,16 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
     filename = merchant_name.lower().replace(' ', '_').replace("'", '') + '.md'
     filepath = os.path.join(output_dir, filename)
     
+    # Get merchant image
+    print(f"  Fetching merchant portrait...", end=' ')
+    merchant_img = get_merchant_image(proprietor)
+    print(f"OK" if "pathfinderwiki" in merchant_img else "Using default")
+    
     with open(filepath, 'w', encoding='utf-8') as f:
         # Header with proprietor image
         f.write(f"# {merchant_name}\n\n")
         f.write(f"<div align=\"center\">\n\n")
-        f.write(f"![Proprietor](IMAGE_PLACEHOLDER)\n\n")
+        f.write(f"![Proprietor]({merchant_img})\n\n")
         f.write(f"</div>\n\n")
         f.write(f"*{description}*\n\n")
         f.write(f"**Proprietor:** {proprietor}\n\n")
@@ -521,11 +573,18 @@ if __name__ == "__main__":
             'description': 'Eccentric tiefling-elf oddities merchant and stargazer',
             'proprietor': 'Wrin Sivinxi (CG female tiefling elf oddities merchant 5)',
             'specialties': 'Magical items, spells, scrolls, staffs, spellhearts, runes, and alchemical potions',
-            'categories': ['magical', 'alchemical'],
-            'item_filter': lambda item: any(keyword in item['name'].lower() for keyword in [
-                'scroll', 'staff', 'stave', 'spellheart', 'rune', 'potion', 'elixir', 
-                'wand', 'talisman', 'amulet', 'ring', 'cloak', 'boots', 'gloves', 'hat', 'circlet'
-            ]),
+            'categories': ['magical', 'alchemical', 'adventuring'],  # Added adventuring for staffs and runes!
+            'item_filter': lambda item: (
+                # Check item_category field for Runes
+                item.get('item_category') == 'Runes' or
+                # Check for Staff of X pattern (magical staffs)
+                'staff of' in item['name'].lower() or
+                # Check name for specific magical items
+                any(keyword in item['name'].lower() for keyword in [
+                    'scroll', 'spellheart', 'potion', 'elixir', 
+                    'wand', 'talisman', 'amulet', 'ring', 'cloak', 'boots', 'gloves', 'hat', 'circlet'
+                ])
+            ),
             'double_items': False,
             'services': [
                 "Spellcasting Services: Price varies by spell level (GM discretion)",
@@ -541,10 +600,17 @@ if __name__ == "__main__":
             'proprietor': 'Morlibint (NG male gnome bookseller 3)',
             'specialties': 'Books, scrolls, magical items, runes, and spells',
             'categories': ['magical', 'adventuring'],
-            'item_filter': lambda item: any(keyword in item['name'].lower() for keyword in [
-                'book', 'scroll', 'tome', 'manual', 'grimoire', 'rune', 'spell', 
-                'wand', 'staff', 'stave', 'talisman'
-            ]),
+            'item_filter': lambda item: (
+                # Check item_category field for Runes
+                item.get('item_category') == 'Runes' or
+                # Check for Staff of X pattern (magical staffs)
+                'staff of' in item['name'].lower() or
+                # Check name for books and magical items
+                any(keyword in item['name'].lower() for keyword in [
+                    'book', 'scroll', 'tome', 'manual', 'grimoire', 'spell', 
+                    'wand', 'talisman'
+                ])
+            ),
             'double_items': False,
             'services': [
                 "Spellcasting Services: Price varies by spell level (GM discretion)",
@@ -669,9 +735,14 @@ if __name__ == "__main__":
             'proprietor': 'Vandy Banderdash (LG female halfling cleric of Sarenrae 5)',
             'specialties': 'Religious texts, scrolls, and runes',
             'categories': ['magical', 'adventuring'],
-            'item_filter': lambda item: any(keyword in item['name'].lower() for keyword in [
-                'book', 'scroll', 'tome', 'manual', 'text', 'grimoire', 'rune', 'scripture'
-            ]),
+            'item_filter': lambda item: (
+                # Check item_category field for Runes (this is the key fix!)
+                item.get('item_category') == 'Runes' or
+                # Check name for books and scrolls
+                any(keyword in item['name'].lower() for keyword in [
+                    'book', 'scroll', 'tome', 'manual', 'text', 'grimoire', 'scripture'
+                ])
+            ),
             'double_items': False,
             'services': [
                 "Spellcasting Services: Price varies by spell level (GM discretion)",
@@ -721,8 +792,8 @@ if __name__ == "__main__":
         # Generate spell inventory for Wrin's Wonders (idx 1) and Odd Stories (idx 2)
         spell_inventory = None
         if idx in [1, 2]:  # Wrin's Wonders or Odd Stories
-            num_common_spells = random.randint(5, 15)
-            num_uncommon_spells = random.randint(3, 5)
+            num_common_spells = random.randint(3, 8)  # Halved from 5-15
+            num_uncommon_spells = random.randint(2, 3)  # Halved from 3-5
             has_rare_spell = (idx == spell_merchant_with_rare)
             
             spell_inventory = generate_spell_inventory(
