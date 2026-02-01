@@ -6,32 +6,35 @@
 
 </div>
 
-*Lively tavern and inn*
+*Lively tavern and general store*
 
 **Proprietor:** Tamily Tanderveil (CG female halfling innkeeper 4)
 
-**Specialties:** Quality food, drink, and lodging
+**Specialties:** General goods, supplies, and adventuring gear (no weapons or armor)
 
-## Common Items (8)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Chain | 0 | 4 gp (10 ft.) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chain) |
-| ![Mortalis Coin](https://2e.aonprd.com/Images/Treasure/Mortalis_Coin.webp) | Mortalis Coin | 4 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mortalis%20Coin) |
-| ![Armory Bracelet (Greater)](https://2e.aonprd.com/Images/Treasure/Armory_Bracelet.webp) | Armory Bracelet (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Armory%20Bracelet) |
-| 🖼️ | Blasting Stone (Moderate) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blasting%20Stone) |
-| 🖼️ | Experimental Clothing | 3 | 55 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Experimental%20Clothing) |
-| 🖼️ | Surprise Doll | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Surprise%20Doll) |
-| 🖼️ | Gaff | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gaff) |
-| 🖼️ | Greataxe | 0 | 2 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Greataxe) |
-
-## Uncommon Items (3)
+## Common Items (13)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Big Boom Gun | 4 | 18 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Big%20Boom%20Gun) |
-| 🖼️ | Lesser Durian Bomb | 1 | 4 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lesser%20Durian%20Bomb) |
-| 🖼️ | Unsullied Blood (Moderate) | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Unsullied%20Blood) |
+| ![Serpent Oil (Greater)](https://2e.aonprd.com/Images/Treasure/Serpent_Oil.webp) | Serpent Oil (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Serpent%20Oil) |
+| 🖼️ | Beverages (Mug of Ale) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Inventor's Fulu | 6 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Inventor%27s%20Fulu) |
+| 🖼️ | Bravery Baldric (Stone) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bravery%20Baldric) |
+| 🖼️ | Clothing (High-Fashion Fine) | 3 | 55 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clothing) |
+| 🖼️ | Reinforced Frame | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforced%20Frame) |
+| 🖼️ | Darkvision Scope | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Darkvision%20Scope) |
+| 🖼️ | Compound Eyes | 4 | 75 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Compound%20Eyes) |
+| 🖼️ | Superior Catch Pole | 4 | 80 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Superior%20Catch%20Pole) |
+| 🖼️ | Menacing (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Menacing) |
+| 🖼️ | Tome of Restorative Cleansing (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tome%20of%20Restorative%20Cleansing) |
+| 🖼️ | Ring of Sigils | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ring%20of%20Sigils) |
+| 🖼️ | Glamorous Buckler | 2 | 35 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glamorous%20Buckler) |
+
+## Uncommon Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Sickle-Saber | 0 | 5 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sickle-Saber) |
 
 ## Services
 

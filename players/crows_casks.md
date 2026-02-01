@@ -6,38 +6,32 @@
 
 </div>
 
-*Tavern and general store*
+*Tavern specializing in teas, oils, and fine beverages*
 
 **Proprietor:** Crow (CN female human tavernkeeper 2)
 
-**Specialties:** Food, drink, and basic adventuring supplies
+**Specialties:** Tea, oils, food, beverages, and alchemical potions
 
-## Common Items (9)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Staff of the Desert Winds (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Desert%20Winds) |
-| 🖼️ | Tactician's Helm | 5 | 160 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tactician%27s%20Helm) |
-| 🖼️ | Eagle-Eye Elixir (Lesser) | 5 | 27 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eagle-Eye%20Elixir) |
-| ![Handwraps of Mighty Blows (+3 greater striking)](https://2e.aonprd.com/Images/Treasure/Handwraps_Of_Mighty_Blows.webp) | Handwraps of Mighty Blows (+3 greater striking) | 4 | 100 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Handwraps%20of%20Mighty%20Blows) |
-| 🖼️ | Traveler's Any-Tool | 0 | 4 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Traveler%27s%20Any-Tool) |
-| ![Flyssa](https://2e.aonprd.com/Images/Weapons/Flyssa.webp) | Flyssa | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Flyssa) |
-| 🖼️ | Reinforcing Rune (Minor) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune) |
-| 🖼️ | Magical Prosthetic Eye | 1 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magical%20Prosthetic%20Eye) |
-| 🖼️ | Wildwood Ink (Major) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wildwood%20Ink) |
-
-## Uncommon Items (2)
+## Common Items (8)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Falconsight Eye | 6 | 200 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Falconsight%20Eye) |
-| 🖼️ | Sealing Chest (Major) | 4 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sealing%20Chest) |
+| 🖼️ | Viperous Elixir (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Viperous%20Elixir) |
+| ![Merchant's Scale](https://2e.aonprd.com/Images/Treasure/Merchants_Scale.webp) | Merchant's Scale | 0 | 2 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Merchant%27s%20Scale) |
+| ![Comprehension Elixir (Lesser)](https://2e.aonprd.com/Images/Treasure/Comprehension_Elixir.webp) | Comprehension Elixir (Lesser) | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comprehension%20Elixir) |
+| 🖼️ | Healer's Gel (Lesser) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Gel) |
+| 🖼️ | Beverages (Bottle of Fine Wine) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Cheetah's Elixir (Greater) | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cheetah%27s%20Elixir) |
+| 🖼️ | Oil | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oil) |
+| 🖼️ | Beverages (Mug of Ale) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
 
-## Rare Items (1)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Moonkeep Lily | 5 | 30 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moonkeep%20Lily) |
+| 🖼️ | Lesser Quartz-Coil Rail Transport | 4 | 20 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lesser%20Quartz-Coil%20Rail%20Transport) |
+| 🖼️ | Blood-Drinker Blade | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blood-Drinker%20Blade) |
+| 🖼️ | Life-Boosting Oil (Moderate) | 3 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Life-Boosting%20Oil) |
 
 ## Services
 

@@ -6,35 +6,40 @@
 
 </div>
 
-*Seedy tavern and flophouse*
+*Seedy tavern dealing in traps and questionable goods*
 
 **Proprietor:** Crook (NE male half-orc tavernkeeper 3)
 
-**Specialties:** Cheap lodging and questionable goods
+**Specialties:** Snares, tattoos, and consumable items
 
 ## Common Items (12)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Corrective Lenses | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Corrective%20Lenses) |
-| 🖼️ | Scimitar | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Scimitar) |
-| 🖼️ | Endless Grimoire | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
-| ![Gakgung](https://2e.aonprd.com/Images/Weapons/Gakgung.webp) | Gakgung | 0 | 6 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gakgung) |
-| 🖼️ | Wheelchair (Supramarine Chair) | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheelchair) |
-| 🖼️ | Trollhound Pick | 5 | 140 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Trollhound%20Pick) |
-| 🖼️ | Pocket Stage | 5 | 138 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Pocket%20Stage) |
-| 🖼️ | Battle Lute | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Battle%20Lute) |
-| 🖼️ | Dinosaur | 0 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dinosaur) |
-| 🖼️ | Manacles (Superior) | 0 | 3 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Manacles) |
-| 🖼️ | Spiritual Warhorn (Greater) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spiritual%20Warhorn) |
-| 🖼️ | Thorn Triad (Major) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thorn%20Triad) |
+| 🖼️ | Cooling Elixir (Lesser) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cooling%20Elixir) |
+| 🖼️ | Cooling Elixir (Greater) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cooling%20Elixir) |
+| 🖼️ | Familiar Tattoo | 3 | 60 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Familiar%20Tattoo) |
+| ![Serpent Oil (Moderate)](https://2e.aonprd.com/Images/Treasure/Serpent_Oil.webp) | Serpent Oil (Moderate) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Serpent%20Oil) |
+| ![Blight Bomb (Moderate)](https://2e.aonprd.com/Images/Treasure/Blight_Bomb.webp) | Blight Bomb (Moderate) | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blight%20Bomb) |
+| 🖼️ | Necrotic Bomb (Greater) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Necrotic%20Bomb) |
+| 🖼️ | Oilskin Pouch | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oilskin%20Pouch) |
+| 🖼️ | Tentacle Potion (Lesser) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
+| 🖼️ | Cheetah's Elixir (Moderate) | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cheetah%27s%20Elixir) |
+| 🖼️ | Thunder Snare | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thunder%20Snare) |
+| ![Comprehension Elixir (Greater)](https://2e.aonprd.com/Images/Treasure/Comprehension_Elixir.webp) | Comprehension Elixir (Greater) | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comprehension%20Elixir) |
+| 🖼️ | Cooling Elixir (Moderate) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cooling%20Elixir) |
 
-## Uncommon Items (2)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Ganjay Book | 1 | 10 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ganjay%20Book) |
-| 🖼️ | Grappling Arrow | 0 | 2 sp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Grappling%20Arrow) |
+| 🖼️ | Box of Unspoiling (Type I) | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Box%20of%20Unspoiling) |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Digly's Oil of Sympathy (Moderate) | 1 | 0 gp | Rare | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Digly%27s%20Oil%20of%20Sympathy) |
 
 ## Services
 

@@ -10,29 +10,34 @@
 
 **Proprietor:** Wrin Sivinxi (CG female tiefling elf oddities merchant 5)
 
-**Specialties:** Scrolls, wands, potions, alchemical items, and adventuring gear
+**Specialties:** Magical items, spells, scrolls, staffs, spellhearts, runes, and alchemical potions
 
-## Common Items (10)
+## Common Items (15)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Dinosaur | 0 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dinosaur) |
-| 🖼️ | Elven Absinthe | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Elven%20Absinthe) |
-| 🖼️ | Demolition Fulu (Moderate) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Demolition%20Fulu) |
-| ![Nodachi](https://2e.aonprd.com/Images/Weapons/Nodachi.webp) | Nodachi | 0 | 6 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Nodachi) |
-| 🖼️ | Staff of the Desert Winds (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Desert%20Winds) |
-| 🖼️ | Disguise Kit (Elite) | 3 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Disguise%20Kit) |
-| 🖼️ | Tank (Stationary) | 0 | 0 gp | Common | Animal Caretaking Gear | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tank) |
-| 🖼️ | Sniper's Bead (Greater) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sniper%27s%20Bead) |
-| 🖼️ | Wolliped Fleece | 1 | 4 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wolliped%20Fleece) |
-| ![Frogskin Tincture](https://2e.aonprd.com/Images/Treasure/Frogskin_Tincture.webp) | Frogskin Tincture | 6 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Frogskin%20Tincture) |
+| 🖼️ | Wand of Mercy (1st-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mercy) |
+| 🖼️ | Wand of Rolling Flames (4th-Rank Spell) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Rolling%20Flames) |
+| 🖼️ | Wand of Widening (8th-rank Spell) | 4 | 100 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Widening) |
+| 🖼️ | Wand of Reaching (5th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
+| 🖼️ | Wand of Shocking Haze | 6 | 250 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Shocking%20Haze) |
+| 🖼️ | Wand of Mental Purification (6th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mental%20Purification) |
+| ![Magic Wand (4th-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (4th-rank Spell) | 3 | 60 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
+| 🖼️ | Wand of Widening (1st-rank Spell) | 4 | 100 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Widening) |
+| 🖼️ | Wand of Mercy (6th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mercy) |
+| 🖼️ | Tentacle Potion (Moderate) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
+| ![Magic Wand (3rd-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (3rd-rank Spell) | 3 | 60 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
+| ![Magic Wand (1st-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (1st-rank Spell) | 3 | 60 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
+| 🖼️ | Wand of Widening (2nd-rank Spell) | 4 | 100 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Widening) |
+| 🖼️ | Wand of Shardstorm (7th-rank Spell) | 5 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Shardstorm) |
+| 🖼️ | Wand of Mercy (8th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mercy) |
 
 ## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Spectacles of Understanding | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spectacles%20of%20Understanding) |
-| 🖼️ | Replacement Filter (Level 10) | 1 | 3 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Replacement%20Filter) |
+| 🖼️ | Wand of Teeming Ghosts (3rd-Rank Spell) | 6 | 0 gp | Uncommon | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Teeming%20Ghosts) |
+| 🖼️ | Wand of Splintered Sorrows (6th-Rank Spell) | 6 | 0 gp | Uncommon | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Splintered%20Sorrows) |
 
 ## Services
 

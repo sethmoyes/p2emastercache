@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 Unified Otari Merchant Generator
 Generates merchant inventories with images scraped from Google Images
@@ -143,13 +143,26 @@ def capitalize_field(text):
         return 'N/A'
     return text[0].upper() + text[1:] if len(text) > 0 else text
 
-def generate_merchant_inventory(equipment, categories, num_common, num_uncommon):
-    """Generate random inventory from equipment (max level 6)"""
+def generate_merchant_inventory(equipment, categories, num_common, num_uncommon, item_filter=None):
+    """Generate random inventory from equipment (max level 6)
+    
+    Args:
+        equipment: List of all equipment items
+        categories: List of category types (weapon, armor, etc.)
+        num_common: Number of common items to generate
+        num_uncommon: Number of uncommon items to generate
+        item_filter: Optional function to further filter items beyond category
+    """
     inventory = {'common': [], 'uncommon': [], 'rare': []}
     
     # Filter by categories, rarity, AND level (max 6)
     common_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'common' and e['level'] <= 6]
     uncommon_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'uncommon' and e['level'] <= 6]
+    
+    # Apply additional filter if provided
+    if item_filter:
+        common_pool = [e for e in common_pool if item_filter(e)]
+        uncommon_pool = [e for e in uncommon_pool if item_filter(e)]
     
     # Select items
     if common_pool:
@@ -190,9 +203,9 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 image_url = get_image_from_aon(item['name'])
                 
                 if image_url:
-                    print(f"✓")
+                    print(f"OK")
                 else:
-                    print(f"✗")
+                    print(f"X")
                 
                 # Fix and capitalize fields
                 name = item['name']
@@ -231,9 +244,9 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 image_url = get_image_from_aon(item['name'])
                 
                 if image_url:
-                    print(f"✓")
+                    print(f"OK")
                 else:
-                    print(f"✗")
+                    print(f"X")
                 
                 # Fix and capitalize fields
                 name = item['name']
@@ -272,9 +285,9 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 image_url = get_image_from_aon(item['name'])
                 
                 if image_url:
-                    print(f"✓")
+                    print(f"OK")
                 else:
-                    print(f"✗")
+                    print(f"X")
                 
                 # Fix and capitalize fields
                 name = item['name']
@@ -307,7 +320,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 f.write(f"- {service}\n")
             f.write("\n")
     
-    print(f"✓ Created: {filepath}")
+    print(f"OK Created: {filepath}")
 
 if __name__ == "__main__":
     import sys
@@ -343,22 +356,29 @@ if __name__ == "__main__":
     print(f"  Merchants {merchants_with_rares[0]+1} and {merchants_with_rares[1]+1} will have rare items\n")
     
     merchant_configs = [
-        # 1. Otari Market - All types
+        # 1. Otari Market - All types, DOUBLE items
         {
             'name': 'Otari Market',
-            'description': 'One-stop shop for basic goods',
+            'description': 'Large open-air market with diverse goods',
             'proprietor': 'Keeleno Lathenar (dour, humorless human merchant)',
-            'specialties': 'All adventuring gear, light armor, and simple weapons',
+            'specialties': 'All adventuring gear, weapons, armor, and general supplies',
             'categories': ['weapon', 'armor', 'adventuring', 'alchemical', 'magical'],
+            'item_filter': None,  # No restrictions
+            'double_items': True,  # Market has double items
             'services': None
         },
-        # 2. Wrin's Wonders - Magical items, scrolls, wands, potions, alchemical, adventuring
+        # 2. Wrin's Wonders - Magical items, spells, scrolls, staffs, spellhearts, runes, alchemical potions
         {
             'name': "Wrin's Wonders",
             'description': 'Eccentric tiefling-elf oddities merchant and stargazer',
             'proprietor': 'Wrin Sivinxi (CG female tiefling elf oddities merchant 5)',
-            'specialties': 'Scrolls, wands, potions, alchemical items, and adventuring gear',
-            'categories': ['magical', 'alchemical', 'adventuring'],
+            'specialties': 'Magical items, spells, scrolls, staffs, spellhearts, runes, and alchemical potions',
+            'categories': ['magical', 'alchemical'],
+            'item_filter': lambda item: any(keyword in item['name'].lower() for keyword in [
+                'scroll', 'staff', 'stave', 'spellheart', 'rune', 'potion', 'elixir', 
+                'wand', 'talisman', 'amulet', 'ring', 'cloak', 'boots', 'gloves', 'hat', 'circlet'
+            ]),
+            'double_items': False,
             'services': [
                 "Spellcasting Services: Price varies by spell level (GM discretion)",
                 "Spell Learning/Training: Price negotiable (GM discretion)",
@@ -366,13 +386,18 @@ if __name__ == "__main__":
                 "Astrological readings: 5 sp - 5 gp"
             ]
         },
-        # 3. Odd Stories - Scrolls and adventuring gear
+        # 3. Odd Stories - Books, magical items, runes, spells
         {
             'name': 'Odd Stories',
             'description': 'Bookshop and scroll emporium',
             'proprietor': 'Morlibint (NG male gnome bookseller 3)',
-            'specialties': 'Books, scrolls, and writing supplies',
+            'specialties': 'Books, scrolls, magical items, runes, and spells',
             'categories': ['magical', 'adventuring'],
+            'item_filter': lambda item: any(keyword in item['name'].lower() for keyword in [
+                'book', 'scroll', 'tome', 'manual', 'grimoire', 'rune', 'spell', 
+                'wand', 'staff', 'stave', 'talisman'
+            ]),
+            'double_items': False,
             'services': [
                 "Spellcasting Services: Price varies by spell level (GM discretion)",
                 "Spell Learning/Training: Price negotiable (GM discretion)",
@@ -387,6 +412,8 @@ if __name__ == "__main__":
             'proprietor': 'Gallentine (N female human courier 2)',
             'specialties': 'Package delivery, message running, and escort services',
             'categories': [],
+            'item_filter': None,
+            'double_items': False,
             'services': [
                 "Local delivery (within Otari): 1 sp per package",
                 "Regional delivery (to nearby towns): 5 sp - 2 gp depending on distance",
@@ -395,13 +422,15 @@ if __name__ == "__main__":
                 "Rush delivery: Double normal price"
             ]
         },
-        # 5. Blades for Glades - Weapons and armor only
+        # 5. Blades for Glades - Weapons, armor, and shields ONLY
         {
             'name': 'Blades for Glades',
             'description': 'Weaponsmith and armorer',
             'proprietor': 'Jorsk Hinterclaw (LN male dwarf weaponsmith 4)',
-            'specialties': 'Weapons and armor of all types',
+            'specialties': 'Weapons, armor, and shields of all types',
             'categories': ['weapon', 'armor'],
+            'item_filter': None,  # Category filter is sufficient
+            'double_items': False,
             'services': [
                 "Weapon sharpening: 5 sp",
                 "Armor repair: 1-5 gp depending on damage",
@@ -409,13 +438,18 @@ if __name__ == "__main__":
                 "Weapon engraving: 1 gp"
             ]
         },
-        # 6. Crow's Casks - Adventuring gear only (tavern)
+        # 6. Crow's Casks - Tea, oils, food, beverages, alchemical items (potions)
         {
             'name': "Crow's Casks",
-            'description': 'Tavern and general store',
+            'description': 'Tavern specializing in teas, oils, and fine beverages',
             'proprietor': 'Crow (CN female human tavernkeeper 2)',
-            'specialties': 'Food, drink, and basic adventuring supplies',
-            'categories': ['adventuring'],
+            'specialties': 'Tea, oils, food, beverages, and alchemical potions',
+            'categories': ['adventuring', 'alchemical'],
+            'item_filter': lambda item: any(keyword in item['name'].lower() for keyword in [
+                'tea', 'oil', 'food', 'ration', 'meal', 'drink', 'beverage', 'wine', 'ale', 
+                'beer', 'mead', 'potion', 'elixir', 'tonic', 'brew'
+            ]),
+            'double_items': False,
             'services': [
                 "Meals: 1 cp (poor) to 1 gp (fine)",
                 "Lodging: 3 cp (floor space) to 5 sp (private room)",
@@ -423,13 +457,18 @@ if __name__ == "__main__":
                 "Rumors and information: Free with purchase"
             ]
         },
-        # 7. Crook's Nook - Adventuring gear only (tavern)
+        # 7. Crook's Nook - Snares, tattoos, consumables
         {
             'name': "Crook's Nook",
-            'description': 'Seedy tavern and flophouse',
+            'description': 'Seedy tavern dealing in traps and questionable goods',
             'proprietor': 'Crook (NE male half-orc tavernkeeper 3)',
-            'specialties': 'Cheap lodging and questionable goods',
-            'categories': ['adventuring'],
+            'specialties': 'Snares, tattoos, and consumable items',
+            'categories': ['adventuring', 'alchemical', 'magical'],
+            'item_filter': lambda item: any(keyword in item['name'].lower() for keyword in [
+                'snare', 'trap', 'tattoo', 'potion', 'elixir', 'oil', 'tonic', 'consumable',
+                'bomb', 'poison', 'drug', 'talisman', 'scroll'
+            ]),
+            'double_items': False,
             'services': [
                 "Meals: 1 cp (poor quality)",
                 "Lodging: 3 cp (floor space) to 3 sp (shared room)",
@@ -437,13 +476,18 @@ if __name__ == "__main__":
                 "Black market contacts: 5-50 gp (GM discretion)"
             ]
         },
-        # 8. The Rowdy Rockfish - Adventuring gear only (tavern)
+        # 8. The Rowdy Rockfish - All items EXCEPT weapons/armor/shields
         {
             'name': 'The Rowdy Rockfish',
-            'description': 'Lively tavern and inn',
+            'description': 'Lively tavern and general store',
             'proprietor': 'Tamily Tanderveil (CG female halfling innkeeper 4)',
-            'specialties': 'Quality food, drink, and lodging',
-            'categories': ['adventuring'],
+            'specialties': 'General goods, supplies, and adventuring gear (no weapons or armor)',
+            'categories': ['adventuring', 'alchemical', 'magical'],
+            'item_filter': lambda item: not any(keyword in item['name'].lower() for keyword in [
+                'sword', 'axe', 'mace', 'hammer', 'spear', 'bow', 'crossbow', 'dagger', 'knife',
+                'armor', 'shield', 'breastplate', 'chainmail', 'plate', 'helmet', 'gauntlet'
+            ]) and item['type'] not in ['weapon', 'armor'],
+            'double_items': False,
             'services': [
                 "Meals: 5 cp (square) to 2 gp (fine)",
                 "Lodging: 5 cp (bed) to 1 gp (private room with bath)",
@@ -452,13 +496,17 @@ if __name__ == "__main__":
                 "Hot bath: 2 cp"
             ]
         },
-        # 9. Otari Fishery - Adventuring gear only
+        # 9. Otari Fishery - Food and beverages ONLY
         {
             'name': 'Otari Fishery',
             'description': 'Fresh fish and fishing supplies',
             'proprietor': 'Lillia Dusklight (NG female human fisher 2)',
-            'specialties': 'Fresh fish, fishing gear, and rope',
+            'specialties': 'Fresh fish, food, and beverages',
             'categories': ['adventuring'],
+            'item_filter': lambda item: any(keyword in item['name'].lower() for keyword in [
+                'fish', 'food', 'ration', 'meal', 'drink', 'beverage', 'water', 'ale', 'wine'
+            ]),
+            'double_items': False,
             'services': [
                 "Fresh fish: 1 cp - 5 sp depending on type",
                 "Fishing lessons: 5 sp per hour",
@@ -466,13 +514,17 @@ if __name__ == "__main__":
                 "Net repair: 1 sp"
             ]
         },
-        # 10. Dawnflower Library - Scrolls and magical items
+        # 10. Dawnflower Library - Books, scrolls, runes ONLY
         {
             'name': 'Dawnflower Library',
             'description': 'Temple library and scriptorium',
             'proprietor': 'Vandy Banderdash (LG female halfling cleric of Sarenrae 5)',
-            'specialties': 'Religious texts, scrolls, and holy items',
+            'specialties': 'Religious texts, scrolls, and runes',
             'categories': ['magical', 'adventuring'],
+            'item_filter': lambda item: any(keyword in item['name'].lower() for keyword in [
+                'book', 'scroll', 'tome', 'manual', 'text', 'grimoire', 'rune', 'scripture'
+            ]),
+            'double_items': False,
             'services': [
                 "Spellcasting Services: Price varies by spell level (GM discretion)",
                 "Healing: 1-20 gp depending on severity",
@@ -487,8 +539,14 @@ if __name__ == "__main__":
         print(f"\n[{idx+1}/10] Generating {config['name']}...")
         
         # Generate inventory with new limits
-        num_common = random.randint(3, 15)
-        num_uncommon = random.randint(1, 3)
+        # Otari Market gets DOUBLE items
+        if config.get('double_items', False):
+            num_common = random.randint(6, 30)  # Double: 3-15 becomes 6-30
+            num_uncommon = random.randint(2, 6)  # Double: 1-3 becomes 2-6
+        else:
+            num_common = random.randint(3, 15)
+            num_uncommon = random.randint(1, 3)
+        
         has_rare = idx in merchants_with_rares
         
         if config['categories']:  # Skip if service-only
@@ -496,12 +554,16 @@ if __name__ == "__main__":
                 equipment,
                 categories=config['categories'],
                 num_common=num_common,
-                num_uncommon=num_uncommon
+                num_uncommon=num_uncommon,
+                item_filter=config.get('item_filter')
             )
             
             # Add rare item if this merchant was selected
             if has_rare:
                 rare_pool = [e for e in equipment if e['type'] in config['categories'] and e['rarity'] == 'rare' and e['level'] <= 6]
+                # Apply item filter to rare pool too
+                if config.get('item_filter'):
+                    rare_pool = [e for e in rare_pool if config['item_filter'](e)]
                 if rare_pool:
                     inventory['rare'] = [random.choice(rare_pool)]
                     print(f"  ⭐ Added rare item!")
@@ -517,5 +579,5 @@ if __name__ == "__main__":
             config['services']
         )
     
-    print("\n✓ All merchants generated!")
+    print("\nOK All merchants generated!")
 

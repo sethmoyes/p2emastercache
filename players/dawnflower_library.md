@@ -10,22 +10,27 @@
 
 **Proprietor:** Vandy Banderdash (LG female halfling cleric of Sarenrae 5)
 
-**Specialties:** Religious texts, scrolls, and holy items
+**Specialties:** Religious texts, scrolls, and runes
 
-## Common Items (4)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| ![Tricky Pick](https://2e.aonprd.com/Images/Weapons/Tricky_Pick.webp) | Tricky Pick | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tricky%20Pick) |
-| 🖼️ | Codebreaker's Parchment (Major) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Codebreaker%27s%20Parchment) |
-| 🖼️ | Staff of Elemental Power (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Elemental%20Power) |
-| 🖼️ | Mirror Goggles (Greater) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mirror%20Goggles) |
-
-## Uncommon Items (1)
+## Common Items (8)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Clockwork Chirper | 3 | 8 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clockwork%20Chirper) |
+| 🖼️ | Religious Text | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Religious%20Text) |
+| 🖼️ | Tome of Restorative Cleansing (Greater) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tome%20of%20Restorative%20Cleansing) |
+| ![Spellbook (Blank)](https://2e.aonprd.com/Images/Treasure/Spellbook.webp) | Spellbook (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellbook) |
+| 🖼️ | Reinforcing Rune (Lesser) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune) |
+| 🖼️ | Courtier's Pillow Book | 6 | 250 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Courtier%27s%20Pillow%20Book) |
+| 🖼️ | Reinforcing Rune (Supreme) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune) |
+| 🖼️ | Endless Grimoire (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
+| 🖼️ | Endless Grimoire | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
+
+## Uncommon Items (2)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Called (Accessory Rune) | 3 | 60 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Called) |
+| 🖼️ | Book of Translation (Standard) | 2 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Book%20of%20Translation) |
 
 ## Services
 
