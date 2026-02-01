@@ -14,27 +14,28 @@
 
 # REGULAR ITEMS
 
-## Common Items (10)
+## Common Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Conduit Shot (Moderate) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Conduit%20Shot) |
-| 🖼️ | Animal Nip (Moderate) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Animal%20Nip) |
-| 🖼️ | Stumbling Fulu | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stumbling%20Fulu) |
-| 🖼️ | Tentacle Potion (Moderate) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
-| 🖼️ | Mask (Rubber) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mask) |
-| 🖼️ | Animal Pheromones (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Animal%20Pheromones) |
-| 🖼️ | Agents of Edgewatch | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Agents%20of%20Edgewatch) |
-| 🖼️ | Wand of Rolling Flames (2nd-Rank Spell) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Rolling%20Flames) |
-| 🖼️ | Leaper's Elixir (Greater) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Leaper%27s%20Elixir) |
-| 🖼️ | Puzzle Box (Challenging) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Puzzle%20Box) |
+| 🖼️ | Bravery Baldric (Healthful, Greater) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bravery%20Baldric) |
+| ![Flyssa](https://2e.aonprd.com/Images/Weapons/Flyssa.webp) | Flyssa | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Flyssa) |
+| 🖼️ | Portable Ram (Reinforced) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Portable%20Ram) |
+| 🖼️ | Bomber's Eye Elixir (Greater) | 4 | 14 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bomber%27s%20Eye%20Elixir) |
 
-## Uncommon Items (2)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Toadskin Salve | 3 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Toadskin%20Salve) |
-| ![Aeon Stone (Preserving)](https://2e.aonprd.com/Images/Treasure/Aeon_Stone.webp) | Aeon Stone (Preserving) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Aeon%20Stone) |
+| 🖼️ | Thousand-Pains Fulu (Burl) | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thousand-Pains%20Fulu) |
+| 🖼️ | Spider Gun (Major) | 6 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spider%20Gun) |
+| 🖼️ | Folding Drums | 5 | 160 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Folding%20Drums) |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Moonkeep Lily | 5 | 30 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moonkeep%20Lily) |
 
 ## Services
 

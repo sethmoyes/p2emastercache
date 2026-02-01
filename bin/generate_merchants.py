@@ -77,42 +77,44 @@ def get_merchant_image(npc_name):
     try:
         # Extract just the name (before parentheses)
         clean_name = npc_name.split('(')[0].strip()
-        
-        # Build PathfinderWiki File URL - format: https://pathfinderwiki.com/wiki/File:Name.jpg
-        wiki_url = f"https://pathfinderwiki.com/wiki/File:{clean_name.replace(' ', '_')}.jpg"
+        name_underscore = clean_name.replace(' ', '_')
         
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         }
         
-        response = requests.get(wiki_url, headers=headers, timeout=10)
-        
-        if response.status_code == 200:
-            soup = BeautifulSoup(response.text, 'html.parser')
+        # Try both .jpg and .png extensions
+        for ext in ['.png', '.jpg']:
+            wiki_url = f"https://pathfinderwiki.com/wiki/File:{name_underscore}{ext}"
             
-            # Look for the full resolution image link
-            fullres = soup.find('div', class_='fullImageLink')
-            if fullres:
-                img = fullres.find('img')
-                if img and img.get('src'):
-                    img_url = img['src']
-                    # Make sure it's a full URL
-                    if img_url.startswith('//'):
-                        img_url = 'https:' + img_url
-                    elif img_url.startswith('/'):
-                        img_url = 'https://pathfinderwiki.com' + img_url
-                    return img_url
+            response = requests.get(wiki_url, headers=headers, timeout=10)
             
-            # Fallback: look for any img with the name in src
-            imgs = soup.find_all('img')
-            for img in imgs:
-                src = img.get('src', '')
-                if clean_name.replace(' ', '_') in src:
-                    if src.startswith('//'):
-                        return 'https:' + src
-                    elif src.startswith('/'):
-                        return 'https://pathfinderwiki.com' + src
-                    return src
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.text, 'html.parser')
+                
+                # Look for the full resolution image link
+                fullres = soup.find('div', class_='fullImageLink')
+                if fullres:
+                    a_tag = fullres.find('a')
+                    if a_tag and a_tag.get('href'):
+                        img_url = a_tag['href']
+                        # Make sure it's a full URL
+                        if img_url.startswith('//'):
+                            img_url = 'https:' + img_url
+                        elif img_url.startswith('/'):
+                            img_url = 'https://pathfinderwiki.com' + img_url
+                        return img_url
+                
+                # Fallback: look for any img with the name in src
+                imgs = soup.find_all('img')
+                for img in imgs:
+                    src = img.get('src', '')
+                    if name_underscore in src and (ext in src):
+                        if src.startswith('//'):
+                            return 'https:' + src
+                        elif src.startswith('/'):
+                            return 'https://pathfinderwiki.com' + src
+                        return src
     except Exception as e:
         pass  # Silently fail and use default
     
@@ -792,8 +794,8 @@ if __name__ == "__main__":
         # Generate spell inventory for Wrin's Wonders (idx 1) and Odd Stories (idx 2)
         spell_inventory = None
         if idx in [1, 2]:  # Wrin's Wonders or Odd Stories
-            num_common_spells = random.randint(3, 8)  # Halved from 5-15
-            num_uncommon_spells = random.randint(2, 3)  # Halved from 3-5
+            num_common_spells = random.randint(5, 15)
+            num_uncommon_spells = random.randint(3, 5)
             has_rare_spell = (idx == spell_merchant_with_rare)
             
             spell_inventory = generate_spell_inventory(
