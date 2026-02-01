@@ -8494,10 +8494,13 @@
   {
     "name": "One Hundred Victories",
     "level": 3,
-    "price": 6000,
+    "price": "60 gp",
     "rarity": "common",
-    "category": "",
-    "type": "adventuring"
+    "category": "equipment",
+    "type": "adventuring",
+    "item_category": "Tattoos",
+    "bulk": 0,
+    "aon_verified_date": "2026-02-01T11:16:13.133339"
   },
   {
     "name": "Pendant of the Occult",
@@ -10462,10 +10465,13 @@
   {
     "name": "Skeleton Key",
     "level": 11,
-    "price": 125000,
+    "price": "1,250 gp",
     "rarity": "common",
-    "category": "",
-    "type": "adventuring"
+    "category": "equipment",
+    "type": "adventuring",
+    "item_category": "Held Items",
+    "bulk": 0,
+    "aon_verified_date": "2026-02-01T11:16:11.389449"
   },
   {
     "name": "Twilight Tattoo",
@@ -11438,10 +11444,13 @@
   {
     "name": "Chatterer of Follies",
     "level": 6,
-    "price": 20000,
+    "price": "200 gp",
     "rarity": "uncommon",
-    "category": "",
-    "type": "adventuring"
+    "category": "equipment",
+    "type": "adventuring",
+    "item_category": "Weapons",
+    "bulk": 1,
+    "aon_verified_date": "2026-02-01T11:16:12.265683"
   },
   {
     "name": "Choker of Elocution",
@@ -18847,7 +18856,8 @@
     "price": "0 gp",
     "rarity": "uncommon",
     "category": "",
-    "type": "adventuring"
+    "type": "adventuring",
+    "aon_verified_date": "2026-02-01T11:16:09.642905"
   },
   {
     "name": "Fey Dragonet Liqueur",
@@ -20839,7 +20849,8 @@
     "price": "0 gp",
     "rarity": "common",
     "category": "",
-    "type": "adventuring"
+    "type": "adventuring",
+    "aon_verified_date": "2026-02-01T11:16:10.517620"
   },
   {
     "name": "Pactmaster's Grace",

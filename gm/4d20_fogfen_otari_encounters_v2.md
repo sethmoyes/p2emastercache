@@ -19,37 +19,38 @@
 
 ## Roll: 4 (DEADLY)
 
-### Title: THE CHUUL
+### Title: THE PATHFINDER #207: RESURRECTION FLOOD PG. 89
 
-**Setup:** Water churns violently.
+**Setup:** Strange sounds echo ahead.
 
-**Read-Aloud:** *"A massive lobster-thing rises, tentacles writhing."*
+**Read-Aloud:** *"A Pathfinder #207: Resurrection Flood pg. 89 emerges from the mist!"*
 
-**Creature:** Chuul (Level deadly, Aberrant crustacean with paralytic tentacles)
+**Creature:** Pathfinder #207: Resurrection Flood pg. 89 (Level deadly, A dangerous Pathfinder #207: Resurrection Flood pg. 89)
 
-**Stats:** HP: 90 | AC: 24 | Fort: +18 | Reflex: +12 | Will: +14
+**Stats:** HP: 470 | AC: 48 | Fort:  | Reflex:  | Will: 
 
 #### Creature Lore (PathfinderWiki):
 
-Aberrations are creatures that defy natural law—beings from beyond reality, experiments gone wrong, or entities warped by exposure to alien magic. The Darklands beneath Golarion's surface are home to countless such horrors, and occasionally they find their way to the surface through forgotten tunnels or magical mishaps.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Otari's townsfolk whisper of disappearances near Fogfen. The Lumber Consortium has lost three workers this month to creatures like this.
+Wrin Sivinxi at Wrin's Wonders has warned adventurers about these creatures. She's seen them in her star charts—bad omens.
 
 #### GM Notes:
 
-- Paralyzes, drags underwater, ambush
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Animal Nip (Greater)** (Level 4, common) - 1 gp - *Tarnished but functional*
-- **Cooling Elixir (Greater)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
-- **Mortar of Hidden Meaning** (Level 4, common) - 37 gp - *Tarnished but functional*
-- **Coins:** 19 gp in mixed currency
+- **Potion Patch (Moderate)** (Level 4, common) - 1 gp - *Tarnished but functional*
+- **Wand of Mercy (8th-Rank Spell)** (Level 4, common) - 1 gp - *Tarnished but functional*
+- **Moderate Spider Satchel** (Level 4, uncommon) - 8 gp - *Well-maintained*
+- **Wand of Widening (1st-rank Spell)** (Level 4, common) - 50 gp - *Tarnished but functional*
+- **Coins:** 25 gp in mixed currency
 
 #### Development:
 
@@ -60,36 +61,39 @@ Otari's townsfolk whisper of disappearances near Fogfen. The Lumber Consortium h
 
 ## Roll: 5 (DEADLY)
 
-### Title: THE GIBBERING MOUTHER
+### Title: THE GLASS ELEPHANT
 
-**Setup:** Insane babbling echoes. It's getting louder.
+**Setup:** The air grows thick with menace.
 
-**Read-Aloud:** *"A mass of eyes and mouths oozes forward, gibbering madly."*
+**Read-Aloud:** *"A Glass Elephant emerges from the mist!"*
 
-**Creature:** Gibbering Mouther (Level deadly, Blob covered in eyes and mouths)
+**Creature:** Glass Elephant (Level deadly, A dangerous Glass Elephant)
 
-**Stats:** HP: 65 | AC: 18 | Fort: +14 | Reflex: +12 | Will: +15
+**Stats:** HP: 245 | AC: 32 | Fort: 32 | Reflex: +25 | Will: +19
 
 #### Creature Lore (PathfinderWiki):
 
-The ancient empire of Thassilon experimented extensively with transmutation and conjuration magic, creating aberrations that still haunt Varisia's ruins. These creatures often possess alien intelligence and motivations incomprehensible to mortal minds.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Captain Longsaddle of the town guard has posted bounties for proof of creatures like this. Bring evidence to collect your reward.
+The Lumber Consortium has posted warnings about this type of creature. They're losing too many workers to continue operations safely.
 
 #### GM Notes:
 
-- Gibbering drives insane, bites with many mouths
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Thorn Triad (Greater)** (Level 4, common) - 1 gp - *Slightly damaged*
-- **Wand of Widening (9th-rank Spell)** (Level 4, common) - 50 gp - *Tarnished but functional*
-- **Coins:** 12 gp in mixed currency
+- **Faith Tattoo** (Level 4, common) - 1 gp - *Bears marks of previous owner*
+- **Sniper's Bead (Greater)** (Level 4, common) - 1 gp - *Tarnished but functional*
+- **Wand of Reaching (1st-Rank Spell)** (Level 4, common) - 1 gp - *Well-maintained*
+- **Crystal Shards (Moderate)** (Level 4, common) - 8 gp - *Bears marks of previous owner*
+- **Crystal Shards (Greater)** (Level 4, common) - 8 gp - *Well-maintained*
+- **Coins:** 10 gp in mixed currency
 
 #### Development:
 
@@ -100,38 +104,39 @@ Captain Longsaddle of the town guard has posted bounties for proof of creatures 
 
 ## Roll: 6 (DEADLY)
 
-### Title: THE CHUUL
+### Title: THE AGYRA
 
-**Setup:** Water churns violently.
+**Setup:** You sense hostile intent nearby.
 
-**Read-Aloud:** *"A massive lobster-thing rises, tentacles writhing."*
+**Read-Aloud:** *"A Agyra stalks toward you with hostile intent."*
 
-**Creature:** Chuul (Level deadly, Aberrant crustacean with paralytic tentacles)
+**Creature:** Agyra (Level deadly, A dangerous Agyra)
 
-**Stats:** HP: 90 | AC: 24 | Fort: +18 | Reflex: +12 | Will: +14
+**Stats:** HP: 475 | AC: 49 | Fort: 49 | Reflex: +37 | Will: +40
 
 #### Creature Lore (PathfinderWiki):
 
-The ancient empire of Thassilon experimented extensively with transmutation and conjuration magic, creating aberrations that still haunt Varisia's ruins. These creatures often possess alien intelligence and motivations incomprehensible to mortal minds.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex's ancient magic, still pulsing after centuries.
+Morlibint at Odd Stories has ancient texts describing these creatures. He'll pay well for firsthand accounts.
 
 #### GM Notes:
 
-- Paralyzes, drags underwater, ambush
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Mortalis Coin** (Level 4, common) - 10 gp - *Tarnished but functional*
-- **Wand of Reaching (2nd-Rank Spell)** (Level 4, common) - 1 gp - *Worn but serviceable*
-- **Fang Snare** (Level 4, uncommon) - 7 gp - *Well-maintained*
-- **Dischoran Rubble** (Level 4, common) - 9 gp - *Slightly damaged*
-- **Coins:** 10 gp in mixed currency
+- **Handwraps of Mighty Blows (+1 striking)** (Level 4, common) - 50 gp - *Slightly damaged*
+- **Mortar of Hidden Meaning** (Level 4, common) - 37 gp - *Slightly damaged*
+- **Faith Tattoo (Major)** (Level 4, common) - 1 gp - *Tarnished but functional*
+- **Wand of Mercy (1st-Rank Spell)** (Level 4, common) - 1 gp - *Worn but serviceable*
+- **Dragonbone Arrowhead** (Level 4, common) - 10 gp - *Tarnished but functional*
+- **Coins:** 21 gp in mixed currency
 
 #### Development:
 
@@ -142,39 +147,38 @@ This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex
 
 ## Roll: 7 (DEADLY)
 
-### Title: THE CHUUL
+### Title: THE HAMATULA
 
-**Setup:** Water churns violently.
+**Setup:** Danger approaches rapidly.
 
-**Read-Aloud:** *"A massive lobster-thing rises, tentacles writhing."*
+**Read-Aloud:** *"From the shadows, a Hamatula attacks!"*
 
-**Creature:** Chuul (Level deadly, Aberrant crustacean with paralytic tentacles)
+**Creature:** Hamatula (Level deadly, A dangerous Hamatula)
 
-**Stats:** HP: 90 | AC: 24 | Fort: +18 | Reflex: +12 | Will: +14
+**Stats:** HP: 165 | AC: 31 | Fort: 31 | Reflex: +23 | Will: +20
 
 #### Creature Lore (PathfinderWiki):
 
-Aberrations are creatures that defy natural law—beings from beyond reality, experiments gone wrong, or entities warped by exposure to alien magic. The Darklands beneath Golarion's surface are home to countless such horrors, and occasionally they find their way to the surface through forgotten tunnels or magical mishaps.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-The town guard warns travelers about these threats. Captain Longsaddle maintains a bestiary of local dangers at the garrison.
+The Lumber Consortium has posted warnings about this type of creature. They're losing too many workers to continue operations safely.
 
 #### GM Notes:
 
-- Paralyzes, drags underwater, ambush
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Darkvision Elixir (Lesser)** (Level 4, common) - 5 gp - *Tarnished but functional*
-- **Animal Nip (Lesser)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
-- **Energized Cartridge** (Level 4, common) - 10 gp - *Slightly damaged*
-- **Acid Spitter** (Level 4, uncommon) - 7 gp - *Slightly damaged*
-- **Wand of Reaching (2nd-Rank Spell)** (Level 4, common) - 1 gp - *Tarnished but functional*
-- **Coins:** 12 gp in mixed currency
+- **Glimmering Missive** (Level 4, common) - 10 gp - *Tarnished but functional*
+- **Moderate Defoliation Bomb** (Level 4, uncommon) - 9 gp - *Worn but serviceable*
+- **Tar Rocket Snare** (Level 4, uncommon) - 7 gp - *Slightly damaged*
+- **Chameleon Suit** (Level 4, uncommon) - 1 gp - *Worn but serviceable*
+- **Coins:** 18 gp in mixed currency
 
 #### Development:
 
@@ -185,39 +189,37 @@ The town guard warns travelers about these threats. Captain Longsaddle maintains
 
 ## Roll: 8 (DEADLY)
 
-### Title: THE CHUUL
+### Title: THE KUROBOZU
 
-**Setup:** Water churns violently.
+**Setup:** You sense hostile intent nearby.
 
-**Read-Aloud:** *"A massive lobster-thing rises, tentacles writhing."*
+**Read-Aloud:** *"You spot a Kurobozu ahead, and it spots you."*
 
-**Creature:** Chuul (Level deadly, Aberrant crustacean with paralytic tentacles)
+**Creature:** Kurobozu (Level deadly, A dangerous Kurobozu)
 
-**Stats:** HP: 90 | AC: 24 | Fort: +18 | Reflex: +12 | Will: +14
+**Stats:** HP: 90 | AC: 24 | Fort: 24 | Reflex: +12 | Will: +16
 
 #### Creature Lore (PathfinderWiki):
 
-Aberrations are creatures that defy natural law—beings from beyond reality, experiments gone wrong, or entities warped by exposure to alien magic. The Darklands beneath Golarion's surface are home to countless such horrors, and occasionally they find their way to the surface through forgotten tunnels or magical mishaps.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Fishermen at the Otari Fishery have spotted these creatures from their boats. They avoid certain areas of Fogfen now.
+Keeleno Lathenar at Otari Market pays extra for pelts or parts from dangerous creatures. This one would fetch a good price.
 
 #### GM Notes:
 
-- Paralyzes, drags underwater, ambush
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Cooling Elixir (Moderate)** (Level 4, common) - 1 gp - *Worn but serviceable*
-- **Five-Feather Wreath (Greater)** (Level 4, common) - 1 gp - *Worn but serviceable*
-- **Belt of Good Health** (Level 4, common) - 42 gp - *Slightly damaged*
-- **Reinforcing Rune (Major)** (Level 4, common) - 1 gp - *Slightly damaged*
-- **Wildwood Ink** (Level 4, common) - 1 gp - *Bears marks of previous owner*
-- **Coins:** 15 gp in mixed currency
+- **Faith Tattoo** (Level 4, common) - 1 gp - *Bears marks of previous owner*
+- **Wand of Widening (5th-rank Spell)** (Level 4, common) - 50 gp - *Well-maintained*
+- **Sextant of the Night** (Level 4, common) - 47 gp - *Bears marks of previous owner*
+- **Coins:** 14 gp in mixed currency
 
 #### Development:
 
@@ -228,37 +230,36 @@ Fishermen at the Otari Fishery have spotted these creatures from their boats. Th
 
 ## Roll: 9 (DEADLY)
 
-### Title: THE GIBBERING MOUTHER
+### Title: THE BOOK OF THE DEAD PG. 91, PATHFINDER #158: SIXTY FEET UNDER PG. 82
 
-**Setup:** Insane babbling echoes. It's getting louder.
+**Setup:** An unnatural presence fills the area.
 
-**Read-Aloud:** *"A mass of eyes and mouths oozes forward, gibbering madly."*
+**Read-Aloud:** *"You spot a Book of the Dead pg. 91, Pathfinder #158: Sixty Feet Under pg. 82 ahead, and it spots you."*
 
-**Creature:** Gibbering Mouther (Level deadly, Blob covered in eyes and mouths)
+**Creature:** Book of the Dead pg. 91, Pathfinder #158: Sixty Feet Under pg. 82 (Level deadly, A dangerous Book of the Dead pg. 91, Pathfinder #158: Sixty Feet Under pg. 82)
 
-**Stats:** HP: 65 | AC: 18 | Fort: +14 | Reflex: +12 | Will: +15
+**Stats:** HP: 210 | AC: 33 | Fort:  | Reflex:  | Will: 
 
 #### Creature Lore (PathfinderWiki):
 
-Exposure to aberrations can drive mortals mad, as the mind struggles to comprehend forms and geometries that should not exist. Scholars who study such creatures often find their sanity eroding, their dreams filled with visions of impossible angles and colors that have no name.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-The town guard warns travelers about these threats. Captain Longsaddle maintains a bestiary of local dangers at the garrison.
+Fishermen at the Otari Fishery have spotted these creatures from their boats. They avoid certain areas of Fogfen now.
 
 #### GM Notes:
 
-- Gibbering drives insane, bites with many mouths
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Belt of Good Health** (Level 4, common) - 42 gp - *Well-maintained*
-- **Belt of Good Health** (Level 4, common) - 42 gp - *Slightly damaged*
-- **Sextant of the Night** (Level 4, common) - 47 gp - *Slightly damaged*
-- **Coins:** 12 gp in mixed currency
+- **Reinforcing Rune (Greater)** (Level 4, common) - 1 gp - *Worn but serviceable*
+- **Mortalis Coin** (Level 4, common) - 10 gp - *Tarnished but functional*
+- **Coins:** 15 gp in mixed currency
 
 #### Development:
 
@@ -272,38 +273,38 @@ The town guard warns travelers about these threats. Captain Longsaddle maintains
 
 ## Roll: 10 (DIFFICULT)
 
-### Title: THE MINOTAUR
+### Title: THE CLOCKWORK FABRICATOR
 
-**Setup:** Heavy hoofbeats echo. A bestial roar.
+**Setup:** The path ahead is blocked.
 
-**Read-Aloud:** *"A massive bull-headed humanoid charges, greataxe raised."*
+**Read-Aloud:** *"A Clockwork Fabricator blocks your path menacingly."*
 
-**Creature:** Minotaur (Level difficult, Bull-headed humanoid warrior)
+**Creature:** Clockwork Fabricator (Level difficult, A dangerous Clockwork Fabricator)
 
-**Stats:** HP: 70 | AC: 20 | Fort: +15 | Reflex: +10 | Will: +12
+**Stats:** HP: 50 | AC: 19 | Fort: 19 | Reflex: +10 | Will: +11
 
 #### Creature Lore (PathfinderWiki):
 
-Varisia's untamed wilderness harbors creatures that have survived since the age of Thassilon, ancient beasts that have adapted to magical corruption and learned to thrive in cursed lands. These creatures are often more intelligent and dangerous than their mundane cousins.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Tamily Tanderveil offers free drinks to anyone who brings proof of eliminating threats like this near Otari.
+Wrin Sivinxi at Wrin's Wonders has warned adventurers about these creatures. She's seen them in her star charts—bad omens.
 
 #### GM Notes:
 
-- Charges with horns, maze knowledge, powerful axe
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Spyglass** (Level 4, common) - 40 gp - *Tarnished but functional*
-- **Torrent Spellgun (Major)** (Level 3, common) - 1 gp - *Bears marks of previous owner*
-- **Breath of Freedom** (Level 4, common) - 9 gp - *Bears marks of previous owner*
-- **Symbol of Conflict** (Level 4, uncommon) - 1 gp - *Bears marks of previous owner*
-- **Coins:** 9 gp in mixed currency
+- **Magnetic Suit** (Level 4, common) - 1 gp - *Bears marks of previous owner*
+- **Magnifying Glass** (Level 3, common) - 20 gp - *Worn but serviceable*
+- **Marvelous Calliope** (Level 4, uncommon) - 50 gp - *Bears marks of previous owner*
+- **Mask of Mercy** (Level 4, uncommon) - 50 gp - *Bears marks of previous owner*
+- **Coins:** 19 gp in mixed currency
 
 #### Development:
 
@@ -314,19 +315,19 @@ Tamily Tanderveil offers free drinks to anyone who brings proof of eliminating t
 
 ## Roll: 11 (DIFFICULT)
 
-### Title: THE HARPY
+### Title: THE CARRION GOLEM
 
-**Setup:** Beautiful singing echoes through fog.
+**Setup:** Something moves in the shadows.
 
-**Read-Aloud:** *"A woman with bird wings and talons perches above, singing."*
+**Read-Aloud:** *"A Carrion Golem rises before you, ready for battle."*
 
-**Creature:** Harpy (Level difficult, Bird-woman with captivating song)
+**Creature:** Carrion Golem (Level difficult, A dangerous Carrion Golem)
 
-**Stats:** HP: 55 | AC: 21 | Fort: +10 | Reflex: +14 | Will: +12
+**Stats:** HP: 60 | AC: 19 | Fort: 19 | Reflex: +13 | Will: +8
 
 #### Creature Lore (PathfinderWiki):
 
-The mists of Fogfen conceal ancient secrets and forgotten horrors. This creature is but one of many dangers that lurk in the wilderness between Otari and Gauntlight, drawn by the lighthouse's cursed beacon or simply claiming territory in the untamed swampland.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
@@ -334,17 +335,16 @@ Jorsk Hinterclaw at Blades for Glades has repaired armor damaged by creatures li
 
 #### GM Notes:
 
-- Captivating song, flies, talons and club
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Jug of Fond Remembrance** (Level 4, common) - 37 gp - *Worn but serviceable*
-- **Handwraps of Mighty Blows (+3 major striking)** (Level 4, common) - 50 gp - *Worn but serviceable*
-- **Material Essence Disruptor (Greater)** (Level 3, uncommon) - 1 gp - *Slightly damaged*
-- **Coins:** 12 gp in mixed currency
+- **Reinforcing Rune (Major)** (Level 4, common) - 1 gp - *Worn but serviceable*
+- **Dragon's Breath (7th-Level Spell)** (Level 4, uncommon) - 1 gp - *Slightly damaged*
+- **Coins:** 16 gp in mixed currency
 
 #### Development:
 
@@ -355,15 +355,57 @@ Jorsk Hinterclaw at Blades for Glades has repaired armor damaged by creatures li
 
 ## Roll: 12 (DIFFICULT)
 
-### Title: THE ETTERCAP
+### Title: THE OGRE GLUTTON
 
-**Setup:** Webs everywhere, something moves.
+**Setup:** Danger approaches rapidly.
 
-**Read-Aloud:** *"A spider-humanoid hybrid drops down."*
+**Read-Aloud:** *"You spot a Ogre Glutton ahead, and it spots you."*
 
-**Creature:** Ettercap (Level difficult, Spider-like humanoid web-spinner)
+**Creature:** Ogre Glutton (Level difficult, A dangerous Ogre Glutton)
 
-**Stats:** HP: 55 | AC: 20 | Fort: +12 | Reflex: +14 | Will: +10
+**Stats:** HP: 70 | AC: 18 | Fort: 18 | Reflex: +14 | Will: +7
+
+#### Creature Lore (PathfinderWiki):
+
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
+
+#### Otari Connection (Players Guide):
+
+Vandy Banderdash at the Dawnflower Library has blessed many who've faced creatures like this. She offers prayers and healing to survivors.
+
+#### GM Notes:
+
+- Standard combat tactics
+- This is a serious threat—play it smart and dangerous
+- Use terrain and tactics to maximum effect
+- Consider foreshadowing this encounter with signs/tracks
+
+#### Rewards (from equipment.json, prices halved):
+
+- **Bottled Lightning (Greater)** (Level 3, common) - 5 gp - *Worn but serviceable*
+- **Glimmering Missive** (Level 4, common) - 10 gp - *Tarnished but functional*
+- **Drake Rifle** (Level 4, uncommon) - 50 gp - *Worn but serviceable*
+- **Spirit-Sealing Fulu** (Level 3, common) - 1 gp - *Tarnished but functional*
+- **Coins:** 8 gp in mixed currency
+
+#### Development:
+
+- Searching the area reveals tracks leading toward Gauntlight
+- Locals in Otari will be grateful for news of this threat being eliminated
+
+---
+
+## Roll: 13 (DIFFICULT)
+
+### Title: THE SPIRIT GUIDE
+
+**Setup:** The air grows thick with menace.
+
+**Read-Aloud:** *"A Spirit Guide stalks toward you with hostile intent."*
+
+**Creature:** Spirit Guide (Level difficult, A dangerous Spirit Guide)
+
+**Stats:** HP: 60 | AC: 20 | Fort: 24 | Reflex: +14 | Will: +19
 
 #### Creature Lore (PathfinderWiki):
 
@@ -375,15 +417,101 @@ Tamily Tanderveil offers free drinks to anyone who brings proof of eliminating t
 
 #### GM Notes:
 
-- Web traps, commands spiders, ambush
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Climbing Kit (Extreme)** (Level 3, common) - 20 gp - *Slightly damaged*
-- **Grim Sandglass (Major)** (Level 3, common) - 1 gp - *Well-maintained*
+- **Acid Flask (Major)** (Level 3, common) - 5 gp - *Well-maintained*
+- **Reinforcing Rune (Greater)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
+- **Coins:** 17 gp in mixed currency
+
+#### Development:
+
+- Searching the area reveals tracks leading toward Gauntlight
+- Locals in Otari will be grateful for news of this threat being eliminated
+
+---
+
+## Roll: 14 (DIFFICULT)
+
+### Title: THE KINGMAKER COMPANION GUIDE PG. 83
+
+**Setup:** You sense hostile intent nearby.
+
+**Read-Aloud:** *"A Kingmaker Companion Guide pg. 83 blocks your path menacingly."*
+
+**Creature:** Kingmaker Companion Guide pg. 83 (Level difficult, A dangerous Kingmaker Companion Guide pg. 83)
+
+**Stats:** HP: 60 | AC: 20 | Fort:  | Reflex:  | Will: 
+
+#### Creature Lore (PathfinderWiki):
+
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
+
+#### Otari Connection (Players Guide):
+
+Captain Longsaddle of the town guard has posted bounties for proof of creatures like this. Bring evidence to collect your reward.
+
+#### GM Notes:
+
+- Standard combat tactics
+- This is a serious threat—play it smart and dangerous
+- Use terrain and tactics to maximum effect
+- Consider foreshadowing this encounter with signs/tracks
+
+#### Rewards (from equipment.json, prices halved):
+
+- **Wand of Mercy (1st-Rank Spell)** (Level 4, common) - 1 gp - *Slightly damaged*
+- **Rotary Bow** (Level 3, common) - 30 gp - *Bears marks of previous owner*
+- **Sextant of the Night** (Level 4, common) - 47 gp - *Well-maintained*
+- **Smoking Sword** (Level 3, common) - 30 gp - *Well-maintained*
+- **Backfire Mantle** (Level 3, common) - 1 gp - *Slightly damaged*
+- **Coins:** 19 gp in mixed currency
+
+#### Development:
+
+- Searching the area reveals tracks leading toward Gauntlight
+- Locals in Otari will be grateful for news of this threat being eliminated
+
+---
+
+## Roll: 15 (DIFFICULT)
+
+### Title: THE GIGANTIC BEE GUARD
+
+**Setup:** An unnatural presence fills the area.
+
+**Read-Aloud:** *"The Gigantic Bee Guard roars and charges!"*
+
+**Creature:** Gigantic Bee Guard (Level difficult, A dangerous Gigantic Bee Guard)
+
+**Stats:** HP: 60 | AC: 21 | Fort: 21 | Reflex: +14 | Will: +12
+
+#### Creature Lore (PathfinderWiki):
+
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
+
+#### Otari Connection (Players Guide):
+
+Wrin Sivinxi at Wrin's Wonders has warned adventurers about these creatures. She's seen them in her star charts—bad omens.
+
+#### GM Notes:
+
+- Standard combat tactics
+- This is a serious threat—play it smart and dangerous
+- Use terrain and tactics to maximum effect
+- Consider foreshadowing this encounter with signs/tracks
+
+#### Rewards (from equipment.json, prices halved):
+
+- **Climbing Kit** (Level 3, common) - 20 gp - *Well-maintained*
+- **Concealed Holster** (Level 3, uncommon) - 12 gp - *Slightly damaged*
+- **Portable Ram (Reinforced)** (Level 3, common) - 1 gp - *Well-maintained*
+- **Bomber's Eye Elixir (Lesser)** (Level 4, common) - 7 gp - *Slightly damaged*
+- **Admonishing Band** (Level 4, common) - 10 gp - *Well-maintained*
 - **Coins:** 9 gp in mixed currency
 
 #### Development:
@@ -393,179 +521,41 @@ Tamily Tanderveil offers free drinks to anyone who brings proof of eliminating t
 
 ---
 
-## Roll: 13 (DIFFICULT)
-
-### Title: THE WIGHT
-
-**Setup:** Hollow breathing echoes. Armor scrapes against bone.
-
-**Read-Aloud:** *"Tarnished armor stumbles forward. "The lighthouse... it calls..." it rasps."*
-
-**Creature:** Wight (Level difficult, Undead warrior muttering about "the red light")
-
-**Stats:** HP: 50 | AC: 20 | Fort: +12 | Reflex: +10 | Will: +11
-
-#### Creature Lore (PathfinderWiki):
-
-Wights are undead creatures born from warriors who died in battle with a terrible rage or hatred burning in their hearts. This fury persists beyond death, animating their corpses and driving them to seek vengeance against the living. Unlike mindless undead, wights retain much of their combat prowess and tactical thinking from life, making them formidable opponents.
-
-Wights appear as withered, desiccated humanoids with burning hatred visible in their eyes. Their touch drains the life force from living creatures, leaving victims weakened and vulnerable. Those slain by a wight often rise as wights themselves, forever bound to serve their killer.
-
-These undead are often found haunting battlefields, ancient fortresses, or places where great violence occurred. They sometimes lead groups of lesser undead, using their retained intelligence to coordinate attacks against the living.
-
-#### Otari Connection (Players Guide):
-
-Tamily Tanderveil offers free drinks to anyone who brings proof of eliminating threats like this near Otari.
-
-#### GM Notes:
-
-- Drain Life, fights with precision, seeks to create more undead
-- This is a serious threat—play it smart and dangerous
-- Use terrain and tactics to maximum effect
-- Consider foreshadowing this encounter with signs/tracks
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
-- Speaks Chelish (Common with accent)
-- May have military orders or identification papers
-- Could be reasoned with if party mentions Thrune or Cheliax
-
-#### Rewards (from equipment.json, prices halved):
-
-- **Serpent Oil (Major)** (Level 3, common) - 1 gp - *Slightly damaged*
-- **Wand of Pernicious Poison (6th-Rank Spell)** (Level 4, common) - 1 gp - *Slightly damaged*
-- **Magnetic Suit (Greater)** (Level 4, common) - 1 gp - *Worn but serviceable*
-- **Wand of Mercy (4th-Rank Spell)** (Level 4, common) - 1 gp - *Worn but serviceable*
-- **Greater Wood-Rotted Root** (Level 3, uncommon) - 1 gp - *Tarnished but functional*
-- **Coins:** 19 gp in mixed currency
-
-#### Development:
-
-- Searching the area reveals tracks leading toward Gauntlight
-- Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
-
----
-
-## Roll: 14 (DIFFICULT)
-
-### Title: THE BANDIT CAPTAIN
-
-**Setup:** A makeshift barricade blocks the trail.
-
-**Read-Aloud:** *""That's far enough." The leader's tattered Andoran uniform bears the eagle."*
-
-**Creature:** Bandit Captain (Level difficult, Deserter from Andoran, now leads bandits)
-
-**Stats:** HP: 60 | AC: 21 | Fort: +11 | Reflex: +13 | Will: +10
-
-#### Creature Lore (PathfinderWiki):
-
-The region stretches from the frozen reaches of the Crown of the World in the north to the steaming jungles of the Mwangi Expanse in the south, from the mysterious Arcadian Ocean in the west to the trade-rich shores of the Obari Ocean in the east. This vast territory encompasses dozens of nations, hundreds of city-states, and countless smaller settlements, each with their own unique culture, history, and destiny. The farther one travels from Absalom, whether north or south, the farther one moves from cosmopolitan civilization—though exceptions always exist.
-
-#### Otari Connection (Players Guide):
-
-Tamily Tanderveil offers free drinks to anyone who brings proof of eliminating threats like this near Otari.
-
-#### GM Notes:
-
-- Smart fighter, uses terrain, commands bandits, will negotiate
-- This is a serious threat—play it smart and dangerous
-- Use terrain and tactics to maximum effect
-- Consider foreshadowing this encounter with signs/tracks
-
-#### Rewards (from equipment.json, prices halved):
-
-- **Dread Ampoule (Greater)** (Level 3, common) - 5 gp - *Bears marks of previous owner*
-- **Musical Instrument (Virtuoso Heavy)** (Level 3, common) - 25 gp - *Slightly damaged*
-- **Coins:** 18 gp in mixed currency
-
-#### Development:
-
-- Searching the area reveals tracks leading toward Gauntlight
-- Locals in Otari will be grateful for news of this threat being eliminated
-- Bandit camp location can be found with DC 18 Survival check
-- Captain Longsaddle offers 25gp bounty for bandit leader's capture
-
----
-
-## Roll: 15 (DIFFICULT)
-
-### Title: THE BANDIT CAPTAIN
-
-**Setup:** A makeshift barricade blocks the trail.
-
-**Read-Aloud:** *""That's far enough." The leader's tattered Andoran uniform bears the eagle."*
-
-**Creature:** Bandit Captain (Level difficult, Deserter from Andoran, now leads bandits)
-
-**Stats:** HP: 60 | AC: 21 | Fort: +11 | Reflex: +13 | Will: +10
-
-#### Creature Lore (PathfinderWiki):
-
-The region stretches from the frozen reaches of the Crown of the World in the north to the steaming jungles of the Mwangi Expanse in the south, from the mysterious Arcadian Ocean in the west to the trade-rich shores of the Obari Ocean in the east. This vast territory encompasses dozens of nations, hundreds of city-states, and countless smaller settlements, each with their own unique culture, history, and destiny. The farther one travels from Absalom, whether north or south, the farther one moves from cosmopolitan civilization—though exceptions always exist.
-
-#### Otari Connection (Players Guide):
-
-This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex's ancient magic, still pulsing after centuries.
-
-#### GM Notes:
-
-- Smart fighter, uses terrain, commands bandits, will negotiate
-- This is a serious threat—play it smart and dangerous
-- Use terrain and tactics to maximum effect
-- Consider foreshadowing this encounter with signs/tracks
-
-#### Rewards (from equipment.json, prices halved):
-
-- **Reinforcing Rune (Lesser)** (Level 4, common) - 1 gp - *Worn but serviceable*
-- **Mask of Mercy** (Level 4, uncommon) - 50 gp - *Slightly damaged*
-- **Magic Wand (8th-rank Spell)** (Level 3, common) - 30 gp - *Well-maintained*
-- **Coins:** 13 gp in mixed currency
-
-#### Development:
-
-- Searching the area reveals tracks leading toward Gauntlight
-- Locals in Otari will be grateful for news of this threat being eliminated
-- Bandit camp location can be found with DC 18 Survival check
-- Captain Longsaddle offers 25gp bounty for bandit leader's capture
-
----
-
 ## Roll: 16 (DIFFICULT)
 
-### Title: THE GELATINOUS CUBE
+### Title: THE RUANNA NYAMMA
 
-**Setup:** The air shimmers strangely ahead.
+**Setup:** The path ahead is blocked.
 
-**Read-Aloud:** *"A transparent cube slides forward, bodies visible inside."*
+**Read-Aloud:** *"A Ruanna Nyamma emerges from the mist!"*
 
-**Creature:** Gelatinous Cube (Level difficult, Transparent ooze that engulfs prey)
+**Creature:** Ruanna Nyamma (Level difficult, A dangerous Ruanna Nyamma)
 
-**Stats:** HP: 90 | AC: 12 | Fort: +16 | Reflex: +6 | Will: +8
+**Stats:** HP: 66 | AC: 20 | Fort: 20 | Reflex: +9 | Will: +13
 
 #### Creature Lore (PathfinderWiki):
 
-The transformation of Cheliax into an infernal state began with the death of Aroden in 4606 AR and the subsequent civil war that tore the empire apart. As the nation descended into chaos, House Thrune made a pact with the archdevil Asmodeus, gaining infernal support in exchange for transforming Cheliax into a nation dedicated to Hell's principles of law, tyranny, and diabolism. Queen Abrogail II, the current ruler, sits upon the Infernal Throne in the capital city of Egorian, her power backed by both mortal armies and infernal legions.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Otari's townsfolk whisper of disappearances near Fogfen. The Lumber Consortium has lost three workers this month to creatures like this.
+Vandy Banderdash at the Dawnflower Library has blessed many who've faced creatures like this. She offers prayers and healing to survivors.
 
 #### GM Notes:
 
-- Engulfs, dissolves, nearly invisible
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Faith Tattoo (Greater)** (Level 4, common) - 1 gp - *Worn but serviceable*
-- **Oil of Ownership (Lesser)** (Level 3, common) - 1 gp - *Worn but serviceable*
-- **Animal Nip (Greater)** (Level 4, common) - 1 gp - *Worn but serviceable*
-- **Coins:** 16 gp in mixed currency
+- **Wildwood Ink (Greater)** (Level 4, common) - 1 gp - *Worn but serviceable*
+- **Acid Flask (Greater)** (Level 3, common) - 5 gp - *Well-maintained*
+- **Ankhrav Duster** (Level 4, uncommon) - 45 gp - *Slightly damaged*
+- **Handwraps of Mighty Blows (+1 striking)** (Level 4, common) - 50 gp - *Worn but serviceable*
+- **Reinforcing Rune (Supreme)** (Level 4, common) - 1 gp - *Tarnished but functional*
+- **Coins:** 19 gp in mixed currency
 
 #### Development:
 
@@ -576,37 +566,35 @@ Otari's townsfolk whisper of disappearances near Fogfen. The Lumber Consortium h
 
 ## Roll: 17 (DIFFICULT)
 
-### Title: THE TROLL
+### Title: THE WERESHARK
 
-**Setup:** A massive shape crashes through undergrowth.
+**Setup:** You sense hostile intent nearby.
 
-**Read-Aloud:** *"A green-skinned giant with long arms and claws lumbers forward, drooling."*
+**Read-Aloud:** *"You spot a Wereshark ahead, and it spots you."*
 
-**Creature:** Troll (Level difficult, Regenerating giant with insatiable hunger)
+**Creature:** Wereshark (Level difficult, A dangerous Wereshark)
 
-**Stats:** HP: 80 | AC: 19 | Fort: +16 | Reflex: +11 | Will: +10
+**Stats:** HP: 75 | AC: 21 | Fort: 21 | Reflex: +12 | Will: +11
 
 #### Creature Lore (PathfinderWiki):
 
-CHELIAX - THE INFERNAL EMPIRE  Infernal Cheliax remains one of the most powerful nations militarily in the Inner Sea region, despite having lost much of its former glory and territory. Once the greatest empire since Taldor, controlling vast swaths of Avistan and Garund, Cheliax has been reduced to a shadow of its former self—yet it remains a formidable force. The nation's control of the Arch of Aroden, the passage between the Inner Sea and the Arcadian Ocean, gives it a vital role in regional trade and military strategy.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Jorsk Hinterclaw at Blades for Glades has repaired armor damaged by creatures like this. He knows their attack patterns.
+Captain Longsaddle of the town guard has posted bounties for proof of creatures like this. Bring evidence to collect your reward.
 
 #### GM Notes:
 
-- Regenerates unless fire/acid, rend with claws
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Faith Tattoo (True)** (Level 4, common) - 1 gp - *Tarnished but functional*
-- **Dread Ampoule (Lesser)** (Level 3, common) - 5 gp - *Worn but serviceable*
-- **Buckler** (Level 3, uncommon) - 25 gp - *Worn but serviceable*
-- **Slashing Claws** (Level 3, common) - 1 gp - *Slightly damaged*
+- **Dischoran Rubble** (Level 4, common) - 9 gp - *Worn but serviceable*
+- **Magic Wand (1st-rank Spell)** (Level 3, common) - 30 gp - *Slightly damaged*
 - **Coins:** 15 gp in mixed currency
 
 #### Development:
@@ -618,104 +606,84 @@ Jorsk Hinterclaw at Blades for Glades has repaired armor damaged by creatures li
 
 ## Roll: 18 (DIFFICULT)
 
-### Title: THE WIGHT
+### Title: THE CARRION GOLEM
 
-**Setup:** Hollow breathing echoes. Armor scrapes against bone.
+**Setup:** Something moves in the shadows.
 
-**Read-Aloud:** *"Tarnished armor stumbles forward. "The lighthouse... it calls..." it rasps."*
+**Read-Aloud:** *"A Carrion Golem rises before you, ready for battle."*
 
-**Creature:** Wight (Level difficult, Undead warrior muttering about "the red light")
+**Creature:** Carrion Golem (Level difficult, A dangerous Carrion Golem)
 
-**Stats:** HP: 50 | AC: 20 | Fort: +12 | Reflex: +10 | Will: +11
-
-#### Creature Lore (PathfinderWiki):
-
-Wights are undead creatures born from warriors who died in battle with a terrible rage or hatred burning in their hearts. This fury persists beyond death, animating their corpses and driving them to seek vengeance against the living. Unlike mindless undead, wights retain much of their combat prowess and tactical thinking from life, making them formidable opponents.
-
-Wights appear as withered, desiccated humanoids with burning hatred visible in their eyes. Their touch drains the life force from living creatures, leaving victims weakened and vulnerable. Those slain by a wight often rise as wights themselves, forever bound to serve their killer.
-
-These undead are often found haunting battlefields, ancient fortresses, or places where great violence occurred. They sometimes lead groups of lesser undead, using their retained intelligence to coordinate attacks against the living.
-
-#### Otari Connection (Players Guide):
-
-When Gauntlight glows with baleful red light, the people of Otari bar their doors and pray to Pharasma. This creature is one of many drawn to the lighthouse's cursed beacon.
-
-#### GM Notes:
-
-- Drain Life, fights with precision, seeks to create more undead
-- This is a serious threat—play it smart and dangerous
-- Use terrain and tactics to maximum effect
-- Consider foreshadowing this encounter with signs/tracks
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
-- Speaks Chelish (Common with accent)
-- May have military orders or identification papers
-- Could be reasoned with if party mentions Thrune or Cheliax
-
-#### Rewards (from equipment.json, prices halved):
-
-- **Gliding Membranes (Greater)** (Level 3, common) - 1 gp - *Tarnished but functional*
-- **Trinity Geode** (Level 3, common) - 1 gp - *Well-maintained*
-- **Alchemist's Fire (Major)** (Level 3, common) - 5 gp - *Worn but serviceable*
-- **Potion Patch (Moderate)** (Level 4, common) - 1 gp - *Tarnished but functional*
-- **Frost Vial (Lesser)** (Level 3, common) - 5 gp - *Worn but serviceable*
-- **Coins:** 11 gp in mixed currency
-
-#### Development:
-
-- Searching the area reveals tracks leading toward Gauntlight
-- Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
-
----
-
-## Roll: 19 (DIFFICULT)
-
-### Title: THE SKELETAL CHAMPION
-
-**Setup:** A lone warrior stands at attention.
-
-**Read-Aloud:** *"This skeleton stands with military bearing."*
-
-**Creature:** Skeletal Champion (Level difficult, Elite undead warrior from ancient garrison)
-
-**Stats:** HP: 45 | AC: 21 | Fort: +11 | Reflex: +13 | Will: +9
+**Stats:** HP: 60 | AC: 19 | Fort: 19 | Reflex: +13 | Will: +8
 
 #### Creature Lore (PathfinderWiki):
 
-Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Captain Longsaddle of the town guard has posted bounties for proof of creatures like this. Bring evidence to collect your reward.
+Morlibint at Odd Stories has ancient texts describing these creatures. He'll pay well for firsthand accounts.
 
 #### GM Notes:
 
-- Skilled combatant, shield and sword
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Dischoran Rubble** (Level 4, common) - 9 gp - *Worn but serviceable*
-- **Memory Ribbon** (Level 4, uncommon) - 10 gp - *Bears marks of previous owner*
-- **Wand of Pernicious Poison (1st-Rank Spell)** (Level 4, common) - 1 gp - *Slightly damaged*
-- **Wand of Widening (2nd-rank Spell)** (Level 4, common) - 50 gp - *Tarnished but functional*
-- **Grave Token** (Level 4, uncommon) - 9 gp - *Tarnished but functional*
+- **Deadlock Mint (Greater)** (Level 3, common) - 1 gp - *Worn but serviceable*
+- **Handwraps of Mighty Blows (+3 major striking)** (Level 4, common) - 50 gp - *Worn but serviceable*
 - **Coins:** 13 gp in mixed currency
 
 #### Development:
 
 - Searching the area reveals tracks leading toward Gauntlight
 - Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
+
+---
+
+## Roll: 19 (DIFFICULT)
+
+### Title: THE LARVAL OFALTH
+
+**Setup:** A threatening shape emerges.
+
+**Read-Aloud:** *"A Larval Ofalth stalks toward you with hostile intent."*
+
+**Creature:** Larval Ofalth (Level difficult, A dangerous Larval Ofalth)
+
+**Stats:** HP: 60 | AC: 20 | Fort: 20 | Reflex: +11 | Will: +9
+
+#### Creature Lore (PathfinderWiki):
+
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
+
+#### Otari Connection (Players Guide):
+
+Fishermen at the Otari Fishery have spotted these creatures from their boats. They avoid certain areas of Fogfen now.
+
+#### GM Notes:
+
+- Standard combat tactics
+- This is a serious threat—play it smart and dangerous
+- Use terrain and tactics to maximum effect
+- Consider foreshadowing this encounter with signs/tracks
+
+#### Rewards (from equipment.json, prices halved):
+
+- **Drake Rifle** (Level 4, uncommon) - 50 gp - *Slightly damaged*
+- **Perfect Droplet (Major)** (Level 3, common) - 1 gp - *Worn but serviceable*
+- **Trinity Geode (Greater)** (Level 3, common) - 1 gp - *Slightly damaged*
+- **Wand of Mercy (1st-Rank Spell)** (Level 4, common) - 1 gp - *Tarnished but functional*
+- **Musical Instrument (Handheld)** (Level 3, common) - 25 gp - *Tarnished but functional*
+- **Coins:** 20 gp in mixed currency
+
+#### Development:
+
+- Searching the area reveals tracks leading toward Gauntlight
+- Locals in Otari will be grateful for news of this threat being eliminated
 
 ---
 
@@ -724,80 +692,72 @@ Captain Longsaddle of the town guard has posted bounties for proof of creatures 
 
 ## Roll: 20 (MODERATE)
 
-### Title: THE ZOMBIE BRUTE
+### Title: THE MONSTER CORE PG. 171 1.1
 
-**Setup:** A lone figure stumbles through fog.
+**Setup:** You sense hostile intent nearby.
 
-**Read-Aloud:** *"The corpse lurches forward, arms outstretched."*
+**Read-Aloud:** *"A Monster Core pg. 171 1.1 rises before you, ready for battle."*
 
-**Creature:** Zombie Brute (Level moderate, Shambling corpse animated by dark magic)
+**Creature:** Monster Core pg. 171 1.1 (Level moderate, A dangerous Monster Core pg. 171 1.1)
 
-**Stats:** HP: 45 | AC: 15 | Fort: +13 | Reflex: +5 | Will: +7
+**Stats:** HP: 40 | AC: 19 | Fort:  | Reflex:  | Will: 
 
 #### Creature Lore (PathfinderWiki):
 
-A zombie is the corpse of a creature animated by necromantic magic. These mindless undead are among the most common servants of necromancers and evil clerics, as they require relatively little magical power to create and maintain. Zombies retain the basic physical form of the creature they were in life, but their flesh is pallid and rotting, and they move with an awkward, shambling gait.
-
-Unlike some undead that retain fragments of their former personality or intelligence, zombies are completely mindless automatons that follow simple commands from their creator. They feel no pain, fear, or hesitation, making them relentless opponents that continue attacking until destroyed or commanded to stop.
-
-Zombies are often created in large numbers to serve as shock troops or laborers. Their main advantages are their resilience to damage and their complete obedience. However, their slow movement and lack of tactical thinking make them vulnerable to prepared opponents.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Otari's townsfolk whisper of disappearances near Fogfen. The Lumber Consortium has lost three workers this month to creatures like this.
+Keeleno Lathenar at Otari Market pays extra for pelts or parts from dangerous creatures. This one would fetch a good price.
 
 #### GM Notes:
 
-- Mindless aggression, slow but relentless
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Menacing (Greater)** (Level 3, common) - 1 gp - *Well-maintained*
-- **Bow Staff (Ranged)** (Level 3, common) - 30 gp - *Tarnished but functional*
-- **Coins:** 7 gp in mixed currency
+- **Potion Patch (Moderate)** (Level 4, common) - 1 gp - *Well-maintained*
+- **Portable Animal Blind** (Level 2, common) - 10 gp - *Well-maintained*
+- **Lover's Knot** (Level 2, uncommon) - 3 gp - *Worn but serviceable*
+- **Bow Staff (Melee)** (Level 3, common) - 30 gp - *Tarnished but functional*
+- **Coins:** 8 gp in mixed currency
 
 #### Development:
 
 - Searching the area reveals tracks leading toward Gauntlight
 - Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
 
 ---
 
 ## Roll: 21 (MODERATE)
 
-### Title: THE RUST MONSTER
+### Title: THE SMOLDERING LEOPARD
 
-**Setup:** A strange chittering. Metal corrodes nearby.
+**Setup:** The air grows thick with menace.
 
-**Read-Aloud:** *"An insect-like creature with antennae approaches. Your metal gear begins to rust!"*
+**Read-Aloud:** *"A Smoldering Leopard blocks your path menacingly."*
 
-**Creature:** Rust Monster (Level moderate, Insect that corrodes metal)
+**Creature:** Smoldering Leopard (Level moderate, A dangerous Smoldering Leopard)
 
-**Stats:** HP: 35 | AC: 20 | Fort: +10 | Reflex: +13 | Will: +8
+**Stats:** HP: 45 | AC: 19 | Fort: 19 | Reflex: +9 | Will: +11
 
 #### Creature Lore (PathfinderWiki):
 
-Aberrations are creatures that defy natural law—beings from beyond reality, experiments gone wrong, or entities warped by exposure to alien magic. The Darklands beneath Golarion's surface are home to countless such horrors, and occasionally they find their way to the surface through forgotten tunnels or magical mishaps.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Vandy Banderdash at the Dawnflower Library has blessed many who've faced creatures like this. She offers prayers and healing to survivors.
+When Gauntlight glows with baleful red light, the people of Otari bar their doors and pray to Pharasma. This creature is one of many drawn to the lighthouse's cursed beacon.
 
 #### GM Notes:
 
-- Rusts weapons and armor, flees when threatened
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Ancestral Geometry** (Level 2, uncommon) - 15 gp - *Bears marks of previous owner*
-- **Wand of the Pampered Pet** (Level 4, common) - 37 gp - *Well-maintained*
-- **Wrist Launcher** (Level 2, uncommon) - 12 gp - *Bears marks of previous owner*
-- **Coins:** 8 gp in mixed currency
+- **Thorn Triad (Greater)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
+- **Book of Translation (Advanced)** (Level 2, uncommon) - 1 gp - *Tarnished but functional*
+- **Coins:** 9 gp in mixed currency
 
 #### Development:
 
@@ -808,34 +768,34 @@ Vandy Banderdash at the Dawnflower Library has blessed many who've faced creatur
 
 ## Roll: 22 (MODERATE)
 
-### Title: THE WORG
+### Title: THE MONSTER CORE 2 PG. 199
 
-**Setup:** Growling in Common: "Fresh meat..."
+**Setup:** Strange sounds echo ahead.
 
-**Read-Aloud:** *"A massive wolf with intelligent eyes stalks forward. "You smell... delicious.""*
+**Read-Aloud:** *"A Monster Core 2 pg. 199 emerges from the mist!"*
 
-**Creature:** Worg (Level moderate, Evil intelligent wolf)
+**Creature:** Monster Core 2 pg. 199 (Level moderate, A dangerous Monster Core 2 pg. 199)
 
-**Stats:** HP: 40 | AC: 19 | Fort: +11 | Reflex: +12 | Will: +9
+**Stats:** HP: 40 | AC: 19 | Fort:  | Reflex:  | Will: 
 
 #### Creature Lore (PathfinderWiki):
 
-The Steel Falcons represent Andoran's military might and its commitment to spreading freedom. This elite military force combines traditional army units with specialized groups like the Eagle Knights, who conduct covert operations to free slaves and undermine tyrannical regimes throughout the Inner Sea. The Gray Corsairs, Andoran's naval arm, patrol the waters around the nation and beyond, attacking slave ships and disrupting the operations of nations Andoran considers oppressive.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Keeleno Lathenar at Otari Market pays extra for pelts or parts from dangerous creatures. This one would fetch a good price.
+Morlibint at Odd Stories has ancient texts describing these creatures. He'll pay well for firsthand accounts.
 
 #### GM Notes:
 
-- Pack tactics, speaks Common, cunning
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Distracting Carapace** (Level 4, common) - 40 gp - *Worn but serviceable*
-- **Breech Ejectors** (Level 3, uncommon) - 5 gp - *Tarnished but functional*
-- **Masquerade Scarf** (Level 2, common) - 1 gp - *Worn but serviceable*
-- **Coins:** 8 gp in mixed currency
+- **Oil of Ownership (Lesser)** (Level 3, common) - 1 gp - *Worn but serviceable*
+- **Bane Oil** (Level 3, uncommon) - 6 gp - *Well-maintained*
+- **Crystal Shards (Greater)** (Level 4, common) - 8 gp - *Slightly damaged*
+- **Coins:** 14 gp in mixed currency
 
 #### Development:
 
@@ -846,80 +806,72 @@ Keeleno Lathenar at Otari Market pays extra for pelts or parts from dangerous cr
 
 ## Roll: 23 (MODERATE)
 
-### Title: THE ZOMBIE BRUTE
+### Title: THE AUROCHS
 
-**Setup:** A lone figure stumbles through fog.
+**Setup:** A threatening shape emerges.
 
-**Read-Aloud:** *"The corpse lurches forward, arms outstretched."*
+**Read-Aloud:** *"You spot a Aurochs ahead, and it spots you."*
 
-**Creature:** Zombie Brute (Level moderate, Shambling corpse animated by dark magic)
+**Creature:** Aurochs (Level moderate, A dangerous Aurochs)
 
-**Stats:** HP: 45 | AC: 15 | Fort: +13 | Reflex: +5 | Will: +7
+**Stats:** HP: 42 | AC: 18 | Fort: 18 | Reflex: +12 | Will: +9
 
 #### Creature Lore (PathfinderWiki):
 
-A zombie is the corpse of a creature animated by necromantic magic. These mindless undead are among the most common servants of necromancers and evil clerics, as they require relatively little magical power to create and maintain. Zombies retain the basic physical form of the creature they were in life, but their flesh is pallid and rotting, and they move with an awkward, shambling gait.
-
-Unlike some undead that retain fragments of their former personality or intelligence, zombies are completely mindless automatons that follow simple commands from their creator. They feel no pain, fear, or hesitation, making them relentless opponents that continue attacking until destroyed or commanded to stop.
-
-Zombies are often created in large numbers to serve as shock troops or laborers. Their main advantages are their resilience to damage and their complete obedience. However, their slow movement and lack of tactical thinking make them vulnerable to prepared opponents.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex's ancient magic, still pulsing after centuries.
+Vandy Banderdash at the Dawnflower Library has blessed many who've faced creatures like this. She offers prayers and healing to survivors.
 
 #### GM Notes:
 
-- Mindless aggression, slow but relentless
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Taster's Folly** (Level 4, common) - 10 gp - *Tarnished but functional*
-- **Battle Lute** (Level 4, common) - 1 gp - *Worn but serviceable*
-- **Menacing** (Level 3, common) - 1 gp - *Well-maintained*
+- **Bewitching Bloom (Lotus)** (Level 2, common) - 1 gp - *Well-maintained*
+- **Bloodhound Mask (Greater)** (Level 2, common) - 1 gp - *Tarnished but functional*
+- **Toadskin Salve** (Level 3, uncommon) - 1 gp - *Bears marks of previous owner*
 - **Coins:** 6 gp in mixed currency
 
 #### Development:
 
 - Searching the area reveals tracks leading toward Gauntlight
 - Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
 
 ---
 
 ## Roll: 24 (MODERATE)
 
-### Title: THE DIRE WOLF
+### Title: THE CALIGNI SLAYER
 
-**Setup:** A howl that shakes your bones.
+**Setup:** You sense hostile intent nearby.
 
-**Read-Aloud:** *"A wolf the size of a horse emerges, eyes glowing in darkness."*
+**Read-Aloud:** *"A Caligni Slayer emerges from the mist!"*
 
-**Creature:** Dire Wolf (Level moderate, Massive prehistoric wolf)
+**Creature:** Caligni Slayer (Level moderate, A dangerous Caligni Slayer)
 
-**Stats:** HP: 42 | AC: 18 | Fort: +12 | Reflex: +11 | Will: +9
+**Stats:** HP: 45 | AC: 19 | Fort: 19 | Reflex: +9 | Will: +12
 
 #### Creature Lore (PathfinderWiki):
 
-Natural predators in the region have grown bolder and more aggressive in recent years, possibly drawn by the same dark energies that animate the undead near Gauntlight. Hunters and lumber workers report encounters with creatures of unusual size and ferocity, as if the land itself has turned hostile.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Captain Longsaddle of the town guard has posted bounties for proof of creatures like this. Bring evidence to collect your reward.
+Lumber workers from Otari have reported seeing creatures like this near the old logging roads. Several have gone missing.
 
 #### GM Notes:
 
-- Pack leader, trip and knockdown, powerful bite
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Wildwood Ink (Major)** (Level 4, common) - 1 gp - *Tarnished but functional*
-- **Spacious Pouch (Type I)** (Level 4, common) - 1 gp - *Tarnished but functional*
-- **Coins:** 15 gp in mixed currency
+- **Fetters (Superior)** (Level 2, common) - 1 gp - *Well-maintained*
+- **Dragon's Blood Pudding (Lesser)** (Level 2, uncommon) - 1 gp - *Bears marks of previous owner*
+- **Magic Wand (9th-rank Spell)** (Level 3, common) - 30 gp - *Slightly damaged*
+- **Coins:** 12 gp in mixed currency
 
 #### Development:
 
@@ -930,33 +882,33 @@ Captain Longsaddle of the town guard has posted bounties for proof of creatures 
 
 ## Roll: 25 (MODERATE)
 
-### Title: THE BUGBEAR AMBUSHER
+### Title: THE SMOLDERING LEOPARD
 
-**Setup:** Something large hides in shadows.
+**Setup:** The air grows thick with menace.
 
-**Read-Aloud:** *"A massive hairy goblinoid leaps out, morningstar raised!"*
+**Read-Aloud:** *"A Smoldering Leopard blocks your path menacingly."*
 
-**Creature:** Bugbear Ambusher (Level moderate, Large hairy goblinoid, stealthy)
+**Creature:** Smoldering Leopard (Level moderate, A dangerous Smoldering Leopard)
 
-**Stats:** HP: 38 | AC: 19 | Fort: +11 | Reflex: +10 | Will: +8
+**Stats:** HP: 45 | AC: 19 | Fort: 19 | Reflex: +9 | Will: +11
 
 #### Creature Lore (PathfinderWiki):
 
-The mists of Fogfen conceal ancient secrets and forgotten horrors. This creature is but one of many dangers that lurk in the wilderness between Otari and Gauntlight, drawn by the lighthouse's cursed beacon or simply claiming territory in the untamed swampland.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-The Rowdy Rockfish's patrons trade stories of encounters like this. Tamily Tanderveil keeps a tally of survivors on her wall.
+Lumber workers from Otari have reported seeing creatures like this near the old logging roads. Several have gone missing.
 
 #### GM Notes:
 
-- Ambush, surprise attacks, intimidation
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Messenger Missive** (Level 4, common) - 1 gp - *Tarnished but functional*
-- **Wand of Mental Purification (8th-Rank Spell)** (Level 4, common) - 1 gp - *Well-maintained*
-- **Coins:** 9 gp in mixed currency
+- **Dragon's Blood Pudding (Major)** (Level 2, uncommon) - 1 gp - *Slightly damaged*
+- **Wand of Widening (9th-rank Spell)** (Level 4, common) - 50 gp - *Worn but serviceable*
+- **Coins:** 15 gp in mixed currency
 
 #### Development:
 
@@ -967,15 +919,15 @@ The Rowdy Rockfish's patrons trade stories of encounters like this. Tamily Tande
 
 ## Roll: 26 (MODERATE)
 
-### Title: THE GIANT SPIDER
+### Title: THE MONSTER CORE 2 PG. 198
 
-**Setup:** Thick webs stretch between trees, glistening.
+**Setup:** Something moves in the shadows.
 
-**Read-Aloud:** *"Movement above—a spider the size of a dog drops from canopy, fangs dripping."*
+**Read-Aloud:** *"A Monster Core 2 pg. 198 stalks toward you with hostile intent."*
 
-**Creature:** Giant Spider (Level moderate, Massive arachnid lurking in foggy trees)
+**Creature:** Monster Core 2 pg. 198 (Level moderate, A dangerous Monster Core 2 pg. 198)
 
-**Stats:** HP: 35 | AC: 19 | Fort: +9 | Reflex: +12 | Will: +8
+**Stats:** HP: 40 | AC: 19 | Fort:  | Reflex:  | Will: 
 
 #### Creature Lore (PathfinderWiki):
 
@@ -987,13 +939,15 @@ Captain Longsaddle of the town guard has posted bounties for proof of creatures 
 
 #### GM Notes:
 
-- Ambush from above, web attacks, venomous bite
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Yarrow-Root Bandage** (Level 4, common) - 6 gp - *Slightly damaged*
-- **Paper Shredder** (Level 2, uncommon) - 15 gp - *Worn but serviceable*
-- **Coins:** 8 gp in mixed currency
+- **Waverider Barding** (Level 2, common) - 12 gp - *Slightly damaged*
+- **Codebreaker's Parchment (Major)** (Level 3, common) - 1 gp - *Bears marks of previous owner*
+- **Dazzling Rosary** (Level 4, common) - 1 gp - *Slightly damaged*
+- **Wand of the Pampered Pet** (Level 4, common) - 37 gp - *Worn but serviceable*
+- **Coins:** 9 gp in mixed currency
 
 #### Development:
 
@@ -1004,82 +958,72 @@ Captain Longsaddle of the town guard has posted bounties for proof of creatures 
 
 ## Roll: 27 (MODERATE)
 
-### Title: THE GHOUL PACK
+### Title: THE CHARAU-KA ACOLYTE OF ANGAZHAN
 
-**Setup:** Hunched figures crouch over something ahead.
+**Setup:** Strange sounds echo ahead.
 
-**Read-Aloud:** *"Gray-skinned humanoids look up from their meal, eyes gleaming with hunger."*
+**Read-Aloud:** *"The Charau-ka Acolyte of Angazhan roars and charges!"*
 
-**Creature:** Ghoul Pack (Level moderate, Gray-skinned undead hungering for flesh)
+**Creature:** Charau-ka Acolyte of Angazhan (Level moderate, A dangerous Charau-ka Acolyte of Angazhan)
 
-**Stats:** HP: 30 | AC: 18 | Fort: +10 | Reflex: +11 | Will: +8
+**Stats:** HP: 45 | AC: 19 | Fort: 19 | Reflex: +8 | Will: +7
 
 #### Creature Lore (PathfinderWiki):
 
-Ghouls are sentient, ravenous humanoid undead who haunt graveyards and devour corpses. Despite being undead, ghouls harbour many of the needs that drive the living, though these needs are normally perverted in some sinister way. Ghouls are primarily motivated by hunger despite being dead with stomachs that stopped working long ago. This hunger is constant, never rising or falling, and ceasing only while consuming flesh.
-
-Ghouls have a somewhat humanoid appearance, sharing the basic frame of the humanoid they were created from, although up close it is almost impossible to mistake a ghoul for a still-living person. All ghouls look emaciated and hungry, and despite their frequent feasting ghouls never gain weight and always look wiry. Their skin takes on the hue of bruised, pallid flesh. A ghoul's facial features also subtly change to become more elongated, with teeth that increase in both size and sharpness.
-
-The bite of a ghoul can inflict ghoul fever, which causes the victim to suffer from great hunger but also renders them unable to keep down any food. Unless cured, the victim slowly starves to death and rises the next midnight as a ghoul.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Captain Longsaddle of the town guard has posted bounties for proof of creatures like this. Bring evidence to collect your reward.
+This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex's ancient magic, still pulsing after centuries.
 
 #### GM Notes:
 
-- Paralyzing attacks, pack tactics, target isolated victims
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Wand of Reaching (8th-Rank Spell)** (Level 4, common) - 1 gp - *Tarnished but functional*
-- **Hippogriff Feather** (Level 3, common) - 6 gp - *Slightly damaged*
-- **Dragon's Blood Pudding (Major)** (Level 2, uncommon) - 1 gp - *Tarnished but functional*
-- **Bottled Catharsis (Minor)** (Level 2, common) - 1 gp - *Well-maintained*
-- **Bewitching Bloom (Lilac)** (Level 2, common) - 1 gp - *Tarnished but functional*
+- **Wardrobe Stone (Lesser)** (Level 3, uncommon) - 1 gp - *Bears marks of previous owner*
+- **Cat's Eye Elixir** (Level 2, common) - 3 gp - *Tarnished but functional*
 - **Coins:** 9 gp in mixed currency
 
 #### Development:
 
 - Searching the area reveals tracks leading toward Gauntlight
 - Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
 
 ---
 
 ## Roll: 28 (MODERATE)
 
-### Title: THE WORG
+### Title: THE CENTAUR HERBALIST
 
-**Setup:** Growling in Common: "Fresh meat..."
+**Setup:** The air grows thick with menace.
 
-**Read-Aloud:** *"A massive wolf with intelligent eyes stalks forward. "You smell... delicious.""*
+**Read-Aloud:** *"You spot a Centaur Herbalist ahead, and it spots you."*
 
-**Creature:** Worg (Level moderate, Evil intelligent wolf)
+**Creature:** Centaur Herbalist (Level moderate, A dangerous Centaur Herbalist)
 
-**Stats:** HP: 40 | AC: 19 | Fort: +11 | Reflex: +12 | Will: +9
+**Stats:** HP: 36 | AC: 18 | Fort: 18 | Reflex: +8 | Will: +9
 
 #### Creature Lore (PathfinderWiki):
 
-The Steel Falcons represent Andoran's military might and its commitment to spreading freedom. This elite military force combines traditional army units with specialized groups like the Eagle Knights, who conduct covert operations to free slaves and undermine tyrannical regimes throughout the Inner Sea. The Gray Corsairs, Andoran's naval arm, patrol the waters around the nation and beyond, attacking slave ships and disrupting the operations of nations Andoran considers oppressive.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Jorsk Hinterclaw at Blades for Glades has repaired armor damaged by creatures like this. He knows their attack patterns.
+When Gauntlight glows with baleful red light, the people of Otari bar their doors and pray to Pharasma. This creature is one of many drawn to the lighthouse's cursed beacon.
 
 #### GM Notes:
 
-- Pack tactics, speaks Common, cunning
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Wand of Mental Purification (8th-Rank Spell)** (Level 4, common) - 1 gp - *Slightly damaged*
-- **Bottled Catharsis (Greater)** (Level 2, common) - 1 gp - *Tarnished but functional*
-- **Coins:** 13 gp in mixed currency
+- **Magic Wand (7th-rank Spell)** (Level 3, common) - 30 gp - *Well-maintained*
+- **Perfect Droplet (Major)** (Level 3, common) - 1 gp - *Bears marks of previous owner*
+- **Yarrow-Root Bandage** (Level 4, common) - 6 gp - *Slightly damaged*
+- **Climbing Kit (Extreme)** (Level 3, common) - 20 gp - *Slightly damaged*
+- **Coins:** 8 gp in mixed currency
 
 #### Development:
 
@@ -1090,15 +1034,15 @@ Jorsk Hinterclaw at Blades for Glades has repaired armor damaged by creatures li
 
 ## Roll: 29 (MODERATE)
 
-### Title: THE GIANT SPIDER
+### Title: THE CHARLATAN
 
-**Setup:** Thick webs stretch between trees, glistening.
+**Setup:** An unnatural presence fills the area.
 
-**Read-Aloud:** *"Movement above—a spider the size of a dog drops from canopy, fangs dripping."*
+**Read-Aloud:** *"The Charlatan roars and charges!"*
 
-**Creature:** Giant Spider (Level moderate, Massive arachnid lurking in foggy trees)
+**Creature:** Charlatan (Level moderate, A dangerous Charlatan)
 
-**Stats:** HP: 35 | AC: 19 | Fort: +9 | Reflex: +12 | Will: +8
+**Stats:** HP: 40 | AC: 18 | Fort: 18 | Reflex: +5 | Will: +8
 
 #### Creature Lore (PathfinderWiki):
 
@@ -1106,20 +1050,19 @@ VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse 
 
 #### Otari Connection (Players Guide):
 
-Captain Longsaddle of the town guard has posted bounties for proof of creatures like this. Bring evidence to collect your reward.
+The Lumber Consortium has posted warnings about this type of creature. They're losing too many workers to continue operations safely.
 
 #### GM Notes:
 
-- Ambush from above, web attacks, venomous bite
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Toadskin Salve (Major)** (Level 3, uncommon) - 1 gp - *Bears marks of previous owner*
-- **Legerdemain Handkerchief** (Level 2, common) - 12 gp - *Well-maintained*
-- **Talisman Cord** (Level 4, uncommon) - 1 gp - *Bears marks of previous owner*
-- **Fulu of Fire Suppression** (Level 3, common) - 5 gp - *Tarnished but functional*
-- **Cold Iron Blanch (Moderate)** (Level 2, common) - 10 gp - *Worn but serviceable*
-- **Coins:** 13 gp in mixed currency
+- **Wand of Pernicious Poison (1st-Rank Spell)** (Level 4, common) - 1 gp - *Slightly damaged*
+- **Bow Staff (Melee)** (Level 3, common) - 30 gp - *Well-maintained*
+- **Bewitching Bloom (Lotus)** (Level 2, common) - 1 gp - *Worn but serviceable*
+- **Crystal Shards (Moderate)** (Level 4, common) - 8 gp - *Tarnished but functional*
+- **Coins:** 10 gp in mixed currency
 
 #### Development:
 
@@ -1133,34 +1076,35 @@ Captain Longsaddle of the town guard has posted bounties for proof of creatures 
 
 ## Roll: 30 (EASY)
 
-### Title: THE KOBOLD SCOUTS
+### Title: THE MUNAVRI SPELLBLADE
 
-**Setup:** Small reptilian figures dart between trees.
+**Setup:** Something moves in the shadows.
 
-**Read-Aloud:** *"Three kobolds brandish crude weapons nervously."*
+**Read-Aloud:** *"A Munavri Spellblade emerges from the mist!"*
 
-**Creature:** Kobold Scouts (Level easy, Small dragon-like humanoids, nervous)
+**Creature:** Munavri Spellblade (Level easy, A dangerous Munavri Spellblade)
 
-**Stats:** HP: 12 | AC: 17 | Fort: +5 | Reflex: +9 | Will: +6
+**Stats:** HP: 28 | AC: 18 | Fort: 18 | Reflex: +8 | Will: +6
 
 #### Creature Lore (PathfinderWiki):
 
-BREVOY - THE DIVIDED KINGDOM  Brevoy is a relatively young nation, having existed in its current form only since 4499 AR when the dragon-riding conqueror Choral the Conqueror united the warring nations of Issia and Rostland under his rule. The nation sits in northeastern Avistan, bordered by the Lake of Mists and Veils to the west, Numeria to the east, and the River Kingdoms to the south.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Jorsk Hinterclaw at Blades for Glades has repaired armor damaged by creatures like this. He knows their attack patterns.
+The town guard warns travelers about these threats. Captain Longsaddle maintains a bestiary of local dangers at the garrison.
 
 #### GM Notes:
 
-- Can be intimidated, flees if one dies
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Barding (Heavy; Small or Medium)** (Level 2, common) - 12 gp - *Bears marks of previous owner*
-- **Exquisite Surprise Doll** (Level 2, common) - 5 gp - *Bears marks of previous owner*
-- **Smoke Fan** (Level 2, uncommon) - 1 gp - *Well-maintained*
-- **Coins:** 7 gp in mixed currency
+- **Bristling Spines (Greater)** (Level 1, common) - 1 gp - *Worn but serviceable*
+- **Dread Ampoule (Greater)** (Level 3, common) - 5 gp - *Slightly damaged*
+- **Gate Attenuator (Major)** (Level 3, common) - 1 gp - *Well-maintained*
+- **Butchering Axe** (Level 3, common) - 30 gp - *Tarnished but functional*
+- **Coins:** 6 gp in mixed currency
 
 #### Development:
 
@@ -1171,34 +1115,34 @@ Jorsk Hinterclaw at Blades for Glades has repaired armor damaged by creatures li
 
 ## Roll: 31 (EASY)
 
-### Title: THE SWARM OF BATS
+### Title: THE DHAMPIR
 
-**Setup:** Screeching fills the air. Wings everywhere.
+**Setup:** Strange sounds echo ahead.
 
-**Read-Aloud:** *"Hundreds of bats pour from a hollow tree, swarming around you."*
+**Read-Aloud:** *"The Dhampir roars and charges!"*
 
-**Creature:** Swarm of Bats (Level easy, Cloud of screeching bats)
+**Creature:** Dhampir (Level easy, A dangerous Dhampir)
 
-**Stats:** HP: 12 | AC: 17 | Fort: +4 | Reflex: +11 | Will: +6
+**Stats:** HP: 22 | AC: 17 | Fort: 17 | Reflex: +4 | Will: +7
 
 #### Creature Lore (PathfinderWiki):
 
-Natural predators in the region have grown bolder and more aggressive in recent years, possibly drawn by the same dark energies that animate the undead near Gauntlight. Hunters and lumber workers report encounters with creatures of unusual size and ferocity, as if the land itself has turned hostile.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Fishermen at the Otari Fishery have spotted these creatures from their boats. They avoid certain areas of Fogfen now.
+Jorsk Hinterclaw at Blades for Glades has repaired armor damaged by creatures like this. He knows their attack patterns.
 
 #### GM Notes:
 
-- Swarm, echolocation, vulnerable to area damage
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Origin Unguent** (Level 2, common) - 3 gp - *Worn but serviceable*
-- **Etheric Essence Disruptor (Moderate)** (Level 3, uncommon) - 1 gp - *Slightly damaged*
-- **Beekeeper's Smoker** (Level 2, uncommon) - 1 gp - *Bears marks of previous owner*
-- **Glamorous Buckler** (Level 2, common) - 17 gp - *Slightly damaged*
+- **Glue Bomb (Greater)** (Level 1, common) - 1 gp - *Worn but serviceable*
+- **Aeon Stone (Peering)** (Level 1, uncommon) - 1 gp - *Bears marks of previous owner*
+- **Soft-Landing** (Level 3, uncommon) - 30 gp - *Worn but serviceable*
+- **Diving Suit** (Level 3, common) - 50 gp - *Bears marks of previous owner*
 - **Coins:** 4 gp in mixed currency
 
 #### Development:
@@ -1212,119 +1156,6 @@ Fishermen at the Otari Fishery have spotted these creatures from their boats. Th
 # LORE ONLY ENCOUNTERS
 
 ## Roll: 32 (LORE ONLY)
-
-### Title: THE RETIRED PATHFINDER
-
-**Setup:** Well-equipped traveler waves from ahead.
-
-**Read-Aloud:** *"An older human in practical gear greets warmly. "Fellow travelers! Heading to Otari?""*
-
-**NPC:** Retired Pathfinder
-
-*Weathered adventurer with countless scars*
-
-**No combat encounter**
-
-#### Lore Connection (Inner Sea Region):
-
-INTRODUCTION TO THE INNER SEA  The Inner Sea region encompasses the continent of Avistan and the northern third of Garund, both surrounding the body of water known as the Inner Sea. At its heart lies Absalom, the City at the Center of the World, a metropolis that has stood for over 4,000 years as a beacon of civilization and commerce. The Inner Sea region represents the cradle of human civilization on Golarion, where countless empires have risen and fallen, where gods have walked and died, and where the fate of the world has been decided time and again.
-
-#### Otari Connection (Players Guide):
-
-They're acquainted with Wrin Sivinxi and mention she's always interested in meeting adventurers—especially those who've seen strange omens.
-
-#### Interaction Opportunities:
-
-- **Intimidation DC 21**: Threaten or coerce information
-- **Diplomacy DC 19**: Friendly conversation and persuasion
-- **Performance DC 17**: Entertain or impress
-- **Occultism DC 18**: Recognize magical or esoteric elements
-- **Nature DC 18**: Knowledge of natural world
-- **Arcana DC 14**: Identify magical phenomena
-
-#### GM Notes:
-
-- Personality: Friendly, loves sharing tales
-- Knowledge: Dungeon survival, monster weaknesses, Otari connections
-- Becomes defensive if threatened but will cooperate if intimidated successfully
-- Has no combat stats—this is a roleplay encounter only
-- Genuinely wants to help the party if treated with respect
-- Knows about bandit activity
-- Can provide shortcuts
-- Has information about local politics
-
-#### Rewards:
-
-**No combat rewards**
-
-**Gift (if treated with respect):**
-- **Blessed medallion**: +1 to next Religion check (Value: 2gp)
-
-#### Development:
-
-- If party is helpful, NPC remembers them and may offer aid in Otari
-- Information gained here can be used for advantage in future encounters
-- NPC may appear again as recurring friendly contact
-
----
-
-## Roll: 33 (LORE ONLY)
-
-### Title: THE RETIRED PATHFINDER
-
-**Setup:** Well-equipped traveler waves from ahead.
-
-**Read-Aloud:** *"An older human in practical gear greets warmly. "Fellow travelers! Heading to Otari?""*
-
-**NPC:** Retired Pathfinder
-
-*Weathered adventurer with countless scars*
-
-**No combat encounter**
-
-#### Lore Connection (Inner Sea Region):
-
-INTRODUCTION TO THE INNER SEA  The Inner Sea region encompasses the continent of Avistan and the northern third of Garund, both surrounding the body of water known as the Inner Sea. At its heart lies Absalom, the City at the Center of the World, a metropolis that has stood for over 4,000 years as a beacon of civilization and commerce. The Inner Sea region represents the cradle of human civilization on Golarion, where countless empires have risen and fallen, where gods have walked and died, and where the fate of the world has been decided time and again.
-
-#### Otari Connection (Players Guide):
-
-They mention Morlibint at Odd Stories is always buying interesting books, maps, and historical documents. The party might have something he'd want.
-
-#### Interaction Opportunities:
-
-- **Arcana DC 20**: Identify magical phenomena
-- **Deception DC 21**: Trick or mislead the NPC
-- **Occultism DC 21**: Recognize magical or esoteric elements
-- **Nature DC 19**: Knowledge of natural world
-- **Diplomacy DC 13**: Friendly conversation and persuasion
-
-#### GM Notes:
-
-- Personality: Friendly, loves sharing tales
-- Knowledge: Dungeon survival, monster weaknesses, Otari connections
-- Has no combat stats—this is a roleplay encounter only
-- Willing to share information freely if approached diplomatically
-- Will not fight unless attacked—prefers to flee or negotiate
-- Knows about undead sightings
-- Can provide shortcuts
-- Has information about regional threats
-
-#### Rewards:
-
-**No combat rewards**
-
-**Gift (if treated with respect):**
-- **Herbal remedy**: +2 to next Medicine check (Value: 1gp)
-
-#### Development:
-
-- If party is helpful, NPC remembers them and may offer aid in Otari
-- Information gained here can be used for advantage in future encounters
-- NPC may appear again as recurring friendly contact
-
----
-
-## Roll: 34 (LORE ONLY)
 
 ### Title: THE VARISIAN FORTUNE TELLER
 
@@ -1344,26 +1175,81 @@ Absalom stands as the greatest city in the Inner Sea region and perhaps all of G
 
 #### Otari Connection (Players Guide):
 
-This traveler has done business with Keeleno Lathenar at Otari Market. They can vouch for the party if they need credit or special orders.
+The NPC knows several people in Otari and can provide introductions to merchants, guards, or other useful contacts.
 
 #### Interaction Opportunities:
 
-- **Intimidation DC 14**: Threaten or coerce information
-- **Society DC 15**: Recall relevant cultural knowledge
-- **Medicine DC 16**: Offer healing or medical aid
-- **Occultism DC 19**: Recognize magical or esoteric elements
-- **Nature DC 18**: Knowledge of natural world
-- **Arcana DC 19**: Identify magical phenomena
+- **Medicine DC 15**: Offer healing or medical aid
+- **Performance DC 14**: Entertain or impress
+- **Intimidation DC 19**: Threaten or coerce information
+- **Society DC 20**: Recall relevant cultural knowledge
+- **Occultism DC 22**: Recognize magical or esoteric elements
 
 #### GM Notes:
 
 - Personality: Wise, mysterious, genuinely helpful
 - Knowledge: Gauntlight legends, safe paths, Varisian customs, Desna blessings
-- May offer to travel with the party to Otari for safety
-- Appreciates gifts or kind gestures—will remember the party fondly
 - Will not fight unless attacked—prefers to flee or negotiate
+- Willing to share information freely if approached diplomatically
+- May offer to travel with the party to Otari for safety
+- Knows about recent disappearances
+- Can provide safe camping spots
+- Has information about Otari merchants
+
+#### Rewards:
+
+**No combat rewards**
+
+**Gift (if treated with respect):**
+- **Gauntlight information**: Reveals hidden entrance or safe path (Value: Could save lives)
+
+#### Development:
+
+- If party is helpful, NPC remembers them and may offer aid in Otari
+- Information gained here can be used for advantage in future encounters
+- NPC may appear again as recurring friendly contact
+
+---
+
+## Roll: 33 (LORE ONLY)
+
+### Title: THE TRAVELING MONK
+
+**Setup:** Someone meditates beside the path.
+
+**Read-Aloud:** *"A monk opens their eyes. "The path to enlightenment is also the path to Otari.""*
+
+**NPC:** Traveling Monk
+
+*Serene monk in simple robes*
+
+**No combat encounter**
+
+#### Lore Connection (Inner Sea Region):
+
+MENDEV - THE CRUSADER STATE  Mendev stands as the first and last line of defense against the Worldwound, a massive planar rift that spews forth demons in endless hordes. This nation has been transformed by its proximity to the Abyss, evolving from a relatively peaceful kingdom into a militarized crusader state where every aspect of society is oriented toward the eternal war against demonkind.
+
+#### Otari Connection (Players Guide):
+
+The NPC knows several people in Otari and can provide introductions to merchants, guards, or other useful contacts.
+
+#### Interaction Opportunities:
+
+- **Medicine DC 19**: Offer healing or medical aid
+- **Intimidation DC 15**: Threaten or coerce information
+- **Deception DC 16**: Trick or mislead the NPC
+- **Arcana DC 18**: Identify magical phenomena
+- **Diplomacy DC 21**: Friendly conversation and persuasion
+
+#### GM Notes:
+
+- Personality: Peaceful, philosophical, skilled fighter
+- Knowledge: Meditation techniques, martial arts, inner peace
+- Becomes defensive if threatened but will cooperate if intimidated successfully
+- Can become a recurring ally if the party makes a good impression
+- Genuinely wants to help the party if treated with respect
 - Knows about undead sightings
-- Can provide danger warnings
+- Can provide water sources
 - Has information about ancient ruins
 
 #### Rewards:
@@ -1371,7 +1257,64 @@ This traveler has done business with Keeleno Lathenar at Otari Market. They can 
 **No combat rewards**
 
 **Gift (if treated with respect):**
-- **Detailed map of safe paths**: Saves 2 hours travel time through Fogfen (Value: Worth 5gp to right buyer)
+- **Ancient coin**: Collectible, Morlibint will pay 10gp (Value: 10gp to collector)
+
+#### Development:
+
+- If party is helpful, NPC remembers them and may offer aid in Otari
+- Information gained here can be used for advantage in future encounters
+- NPC may appear again as recurring friendly contact
+
+---
+
+## Roll: 34 (LORE ONLY)
+
+### Title: THE BELLFLOWER NETWORK OPERATIVE
+
+**Setup:** Someone signals you from the shadows.
+
+**Read-Aloud:** *"A hooded figure whispers: "Are you fleeing Cheliax? I can help.""*
+
+**NPC:** Bellflower Network Operative
+
+*Mysterious figure helping escaped slaves*
+
+**No combat encounter**
+
+#### Lore Connection (Inner Sea Region):
+
+---  ### ANDORAN - THE BIRTHPLACE OF FREEDOM  Andoran represents one of the youngest major powers in the Inner Sea region, having gained independence from Cheliax in 4669 AR during the chaos following Aroden's death. This nation of forests, rivers, and rolling hills has transformed itself from a Chelish colony into a beacon of democracy and individual liberty, standing in stark ideological opposition to its former master. Andoran's government, known as the People's Council, is elected by popular vote—a radical concept in a region dominated by monarchies, theocracies, and worse.
+
+#### Otari Connection (Players Guide):
+
+The NPC knows Captain Longsaddle personally and can put in a good word with the town guard if the party helps them.
+
+#### Interaction Opportunities:
+
+- **Nature DC 13**: Knowledge of natural world
+- **Arcana DC 17**: Identify magical phenomena
+- **Diplomacy DC 21**: Friendly conversation and persuasion
+- **Performance DC 19**: Entertain or impress
+- **Intimidation DC 19**: Threaten or coerce information
+- **Religion DC 20**: Understand religious significance
+
+#### GM Notes:
+
+- Personality: Secretive, compassionate, fights slavery
+- Knowledge: Safe houses, escape routes, Chelish politics
+- Has no combat stats—this is a roleplay encounter only
+- May offer to travel with the party to Otari for safety
+- Becomes defensive if threatened but will cooperate if intimidated successfully
+- Knows about Gauntlight history
+- Can provide water sources
+- Has information about regional threats
+
+#### Rewards:
+
+**No combat rewards**
+
+**Gift (if treated with respect):**
+- **Varisian good luck charm**: +1 circumstance bonus to next saving throw (Value: Priceless to owner)
 
 #### Development:
 
@@ -1382,6 +1325,62 @@ This traveler has done business with Keeleno Lathenar at Otari Market. They can 
 ---
 
 ## Roll: 35 (LORE ONLY)
+
+### Title: THE VARISIAN FORTUNE TELLER
+
+**Setup:** Colorful fabric and incense scent drift through fog.
+
+**Read-Aloud:** *"A painted wagon sits beside trail. Inside, an elderly Varisian shuffles cards. "The cards told me you would come.""*
+
+**NPC:** Varisian Fortune Teller
+
+*Elderly woman with colorful scarves, Harrow deck*
+
+**No combat encounter**
+
+#### Lore Connection (Inner Sea Region):
+
+Absalom stands as the greatest city in the Inner Sea region and perhaps all of Golarion. For more than 4,000 years, this metropolis has served as a showcase of the greatest treasures, most diverse peoples, and most significant historical events in the world. Founded by the living god Aroden in 1 AR when he raised the Starstone from the depths of the Inner Sea, Absalom has withstood countless sieges, invasions, and catastrophes, earning its reputation as the most defensible city in existence.
+
+#### Otari Connection (Players Guide):
+
+This person has family in Otari—a relative works at the Otari Fishery, the Rowdy Rockfish, or one of the other local businesses.
+
+#### Interaction Opportunities:
+
+- **Intimidation DC 22**: Threaten or coerce information
+- **Nature DC 13**: Knowledge of natural world
+- **Deception DC 18**: Trick or mislead the NPC
+- **Diplomacy DC 19**: Friendly conversation and persuasion
+- **Arcana DC 16**: Identify magical phenomena
+
+#### GM Notes:
+
+- Personality: Wise, mysterious, genuinely helpful
+- Knowledge: Gauntlight legends, safe paths, Varisian customs, Desna blessings
+- May offer to travel with the party to Otari for safety
+- Will not fight unless attacked—prefers to flee or negotiate
+- Becomes defensive if threatened but will cooperate if intimidated successfully
+- Knows about Gauntlight history
+- Can provide water sources
+- Has information about Otari merchants
+
+#### Rewards:
+
+**No combat rewards**
+
+**Gift (if treated with respect):**
+- **Blessed medallion**: +1 to next Religion check (Value: 2gp)
+
+#### Development:
+
+- If party is helpful, NPC remembers them and may offer aid in Otari
+- Information gained here can be used for advantage in future encounters
+- NPC may appear again as recurring friendly contact
+
+---
+
+## Roll: 36 (LORE ONLY)
 
 ### Title: THE RETIRED PATHFINDER
 
@@ -1401,25 +1400,24 @@ INTRODUCTION TO THE INNER SEA  The Inner Sea region encompasses the continent of
 
 #### Otari Connection (Players Guide):
 
-The NPC knows Captain Longsaddle personally and can put in a good word with the town guard if the party helps them.
+The NPC mentions that Otari is a good base for exploring the region. Many adventurers use it as a staging point for Gauntlight expeditions.
 
 #### Interaction Opportunities:
 
-- **Religion DC 16**: Understand religious significance
-- **Occultism DC 13**: Recognize magical or esoteric elements
-- **Diplomacy DC 21**: Friendly conversation and persuasion
-- **Deception DC 13**: Trick or mislead the NPC
-- **Arcana DC 19**: Identify magical phenomena
-- **Performance DC 13**: Entertain or impress
+- **Deception DC 20**: Trick or mislead the NPC
+- **Arcana DC 13**: Identify magical phenomena
+- **Nature DC 17**: Knowledge of natural world
+- **Diplomacy DC 19**: Friendly conversation and persuasion
+- **Performance DC 16**: Entertain or impress
 
 #### GM Notes:
 
 - Personality: Friendly, loves sharing tales
 - Knowledge: Dungeon survival, monster weaknesses, Otari connections
-- Appreciates gifts or kind gestures—will remember the party fondly
-- Willing to share information freely if approached diplomatically
-- Becomes defensive if threatened but will cooperate if intimidated successfully
-- Knows about bandit activity
+- Has no combat stats—this is a roleplay encounter only
+- Can become a recurring ally if the party makes a good impression
+- Genuinely wants to help the party if treated with respect
+- Knows about recent disappearances
 - Can provide safe camping spots
 - Has information about regional threats
 
@@ -1428,63 +1426,7 @@ The NPC knows Captain Longsaddle personally and can put in a good word with the 
 **No combat rewards**
 
 **Gift (if treated with respect):**
-- **Letter of introduction**: Grants access to Otari contact (merchant, guard, or priest) (Value: Invaluable for reputation)
-
-#### Development:
-
-- If party is helpful, NPC remembers them and may offer aid in Otari
-- Information gained here can be used for advantage in future encounters
-- NPC may appear again as recurring friendly contact
-
----
-
-## Roll: 36 (LORE ONLY)
-
-### Title: THE HALFLING TRADER
-
-**Setup:** A small figure waves cheerfully.
-
-**Read-Aloud:** *"A halfling with pack mule grins. "Care to see my wares? Fair prices!""*
-
-**NPC:** Halfling Trader
-
-*Cheerful merchant with goods*
-
-**No combat encounter**
-
-#### Lore Connection (Inner Sea Region):
-
-The Inner Sea region encompasses the continent of Avistan and the northern third of Garund, both surrounding the body of water known as the Inner Sea. At its heart lies Absalom, the City at the Center of the World, a metropolis that has stood for over 4,000 years as a beacon of civilization and commerce. The Inner Sea region represents the cradle of human civilization on Golarion, where countless empires have risen and fallen, where gods have walked and died, and where the fate of the world has been decided time and again.
-
-#### Otari Connection (Players Guide):
-
-They're acquainted with Wrin Sivinxi and mention she's always interested in meeting adventurers—especially those who've seen strange omens.
-
-#### Interaction Opportunities:
-
-- **Intimidation DC 14**: Threaten or coerce information
-- **Performance DC 17**: Entertain or impress
-- **Arcana DC 13**: Identify magical phenomena
-- **Religion DC 17**: Understand religious significance
-- **Occultism DC 15**: Recognize magical or esoteric elements
-
-#### GM Notes:
-
-- Personality: Friendly, loves to haggle, shares rumors
-- Knowledge: Trade goods, Otari market, recent bandit activity
-- Genuinely wants to help the party if treated with respect
-- Appreciates gifts or kind gestures—will remember the party fondly
-- Becomes defensive if threatened but will cooperate if intimidated successfully
-- Knows about Gauntlight history
-- Can provide water sources
-- Has information about local politics
-
-#### Rewards:
-
-**No combat rewards**
-
-**Gift (if treated with respect):**
-- **Varisian good luck charm**: +1 circumstance bonus to next saving throw (Value: Priceless to owner)
+- **Ancient coin**: Collectible, Morlibint will pay 10gp (Value: 10gp to collector)
 
 #### Development:
 
@@ -1496,43 +1438,43 @@ They're acquainted with Wrin Sivinxi and mention she's always interested in meet
 
 ## Roll: 37 (LORE ONLY)
 
-### Title: THE CLERIC OF SARENRAE
+### Title: THE BELLFLOWER NETWORK OPERATIVE
 
-**Setup:** Golden light glows through fog.
+**Setup:** Someone signals you from the shadows.
 
-**Read-Aloud:** *"A priest in sun-emblazoned robes approaches. "The Dawnflower's light reaches even here.""*
+**Read-Aloud:** *"A hooded figure whispers: "Are you fleeing Cheliax? I can help.""*
 
-**NPC:** Cleric of Sarenrae
+**NPC:** Bellflower Network Operative
 
-*Warm priest in golden robes*
+*Mysterious figure helping escaped slaves*
 
 **No combat encounter**
 
 #### Lore Connection (Inner Sea Region):
 
-Nerosyan, the Diamond of the North, serves as both Mendev's capital and the headquarters of the crusade against the Worldwound. The city is surrounded by massive walls designed to withstand demonic assault, and every building is constructed with defense in mind. The city's population is swollen with crusaders, refugees from the Worldwound, and support personnel needed to maintain the war effort. Queen Galfrey, who has ruled Mendev for over a century through a combination of divine blessing and sheer determination, leads both the nation and the crusade from her palace in the city's heart.
+---  ### ANDORAN - THE BIRTHPLACE OF FREEDOM  Andoran represents one of the youngest major powers in the Inner Sea region, having gained independence from Cheliax in 4669 AR during the chaos following Aroden's death. This nation of forests, rivers, and rolling hills has transformed itself from a Chelish colony into a beacon of democracy and individual liberty, standing in stark ideological opposition to its former master. Andoran's government, known as the People's Council, is elected by popular vote—a radical concept in a region dominated by monarchies, theocracies, and worse.
 
 #### Otari Connection (Players Guide):
 
-The NPC knows several people in Otari and can provide introductions to merchants, guards, or other useful contacts.
+This person recently attended a festival in Otari and speaks highly of the town's hospitality. They recommend the party visit.
 
 #### Interaction Opportunities:
 
-- **Religion DC 22**: Understand religious significance
-- **Deception DC 15**: Trick or mislead the NPC
 - **Occultism DC 13**: Recognize magical or esoteric elements
-- **Nature DC 14**: Knowledge of natural world
-- **Society DC 19**: Recall relevant cultural knowledge
+- **Performance DC 22**: Entertain or impress
+- **Arcana DC 16**: Identify magical phenomena
+- **Diplomacy DC 19**: Friendly conversation and persuasion
+- **Intimidation DC 16**: Threaten or coerce information
 
 #### GM Notes:
 
-- Personality: Compassionate, offers healing, fights undead
-- Knowledge: Redemption, healing magic, Sarenrae teachings, undead weaknesses
-- Becomes defensive if threatened but will cooperate if intimidated successfully
-- Can become a recurring ally if the party makes a good impression
-- Will not fight unless attacked—prefers to flee or negotiate
-- Knows about bandit activity
-- Can provide water sources
+- Personality: Secretive, compassionate, fights slavery
+- Knowledge: Safe houses, escape routes, Chelish politics
+- May offer to travel with the party to Otari for safety
+- Has no combat stats—this is a roleplay encounter only
+- Appreciates gifts or kind gestures—will remember the party fondly
+- Knows about undead sightings
+- Can provide shortcuts
 - Has information about local politics
 
 #### Rewards:
@@ -1540,7 +1482,7 @@ The NPC knows several people in Otari and can provide introductions to merchants
 **No combat rewards**
 
 **Gift (if treated with respect):**
-- **Detailed map of safe paths**: Saves 2 hours travel time through Fogfen (Value: Worth 5gp to right buyer)
+- **Herbal remedy**: +2 to next Medicine check (Value: 1gp)
 
 #### Development:
 
@@ -1574,30 +1516,29 @@ They know Vandy Banderdash at the Dawnflower Library and can provide a letter of
 
 #### Interaction Opportunities:
 
-- **Medicine DC 17**: Offer healing or medical aid
-- **Diplomacy DC 17**: Friendly conversation and persuasion
-- **Performance DC 18**: Entertain or impress
-- **Arcana DC 16**: Identify magical phenomena
-- **Intimidation DC 19**: Threaten or coerce information
-- **Nature DC 15**: Knowledge of natural world
+- **Diplomacy DC 14**: Friendly conversation and persuasion
+- **Medicine DC 20**: Offer healing or medical aid
+- **Society DC 16**: Recall relevant cultural knowledge
+- **Intimidation DC 15**: Threaten or coerce information
+- **Performance DC 13**: Entertain or impress
 
 #### GM Notes:
 
 - Personality: Frightened, needs escort home
 - Knowledge: Saw "pretty lights" (will-o'-wisps), parents worried
-- May offer to travel with the party to Otari for safety
-- Has no combat stats—this is a roleplay encounter only
-- Becomes defensive if threatened but will cooperate if intimidated successfully
-- Knows about undead sightings
-- Can provide shortcuts
-- Has information about Otari merchants
+- Appreciates gifts or kind gestures—will remember the party fondly
+- Willing to share information freely if approached diplomatically
+- Will not fight unless attacked—prefers to flee or negotiate
+- Knows about recent disappearances
+- Can provide safe camping spots
+- Has information about local politics
 
 #### Rewards:
 
 **No combat rewards**
 
 **Gift (if treated with respect):**
-- **Blessed medallion**: +1 to next Religion check (Value: 2gp)
+- **Letter of introduction**: Grants access to Otari contact (merchant, guard, or priest) (Value: Invaluable for reputation)
 
 #### Development:
 
@@ -1609,15 +1550,15 @@ They know Vandy Banderdash at the Dawnflower Library and can provide a letter of
 
 ## Roll: 39 (LORE ONLY)
 
-### Title: THE CHELISH DESERTER
+### Title: THE QADIRAN MERCHANT
 
-**Setup:** A figure in torn uniform huddles by tree.
+**Setup:** Exotic spices scent the air.
 
-**Read-Aloud:** *""Stay back! I won't go back to that lighthouse!""*
+**Read-Aloud:** *"A Qadiran merchant bows. "Greetings! I have wonders from the east!""*
 
-**NPC:** Chelish Deserter
+**NPC:** Qadiran Merchant
 
-*Haunted soldier in tattered uniform*
+*Exotic trader from distant Qadira*
 
 **No combat encounter**
 
@@ -1627,26 +1568,26 @@ The region stretches from the frozen reaches of the Crown of the World in the no
 
 #### Otari Connection (Players Guide):
 
-The NPC knows several people in Otari and can provide introductions to merchants, guards, or other useful contacts.
+They mention Morlibint at Odd Stories is always buying interesting books, maps, and historical documents. The party might have something he'd want.
 
 #### Interaction Opportunities:
 
-- **Diplomacy DC 22**: Friendly conversation and persuasion
-- **Medicine DC 21**: Offer healing or medical aid
-- **Intimidation DC 17**: Threaten or coerce information
-- **Nature DC 20**: Knowledge of natural world
-- **Occultism DC 17**: Recognize magical or esoteric elements
+- **Religion DC 21**: Understand religious significance
+- **Occultism DC 15**: Recognize magical or esoteric elements
+- **Society DC 13**: Recall relevant cultural knowledge
+- **Intimidation DC 16**: Threaten or coerce information
+- **Performance DC 22**: Entertain or impress
 
 #### GM Notes:
 
-- Personality: Desperate, afraid, can be helped or hostile
-- Knowledge: Gauntlight interior, Chelish military, hidden paths
-- Becomes defensive if threatened but will cooperate if intimidated successfully
-- Has no combat stats—this is a roleplay encounter only
+- Personality: Charming, worldly, loves to haggle
+- Knowledge: Foreign goods, Qadiran culture, trade routes
+- Genuinely wants to help the party if treated with respect
 - Willing to share information freely if approached diplomatically
-- Knows about Gauntlight history
+- May offer to travel with the party to Otari for safety
+- Knows about recent disappearances
 - Can provide safe camping spots
-- Has information about Otari merchants
+- Has information about regional threats
 
 #### Rewards:
 
@@ -1665,52 +1606,51 @@ The NPC knows several people in Otari and can provide introductions to merchants
 
 ## Roll: 40 (LORE ONLY)
 
-### Title: THE HERMIT DRUID
+### Title: THE HALFLING TRADER
 
-**Setup:** A moss-covered figure emerges from reeds.
+**Setup:** A small figure waves cheerfully.
 
-**Read-Aloud:** *"The hermit speaks: "The swamp remembers all.""*
+**Read-Aloud:** *"A halfling with pack mule grins. "Care to see my wares? Fair prices!""*
 
-**NPC:** Hermit Druid
+**NPC:** Halfling Trader
 
-*Wild figure covered in moss*
+*Cheerful merchant with goods*
 
 **No combat encounter**
 
 #### Lore Connection (Inner Sea Region):
 
-The nation's capital, Caliphas, sits on the shores of Lake Encarthan and serves as the seat of Prince Aduard Ordranti III, the current ruler. However, the Prince's authority extends little beyond the capital itself, and even there his power is checked by the Palatine Council, an assembly of nobles who jealously guard their privileges. Caliphas itself is a city of contrasts—elegant architecture and refined society exist alongside poverty, crime, and supernatural threats.
+The Inner Sea region encompasses the continent of Avistan and the northern third of Garund, both surrounding the body of water known as the Inner Sea. At its heart lies Absalom, the City at the Center of the World, a metropolis that has stood for over 4,000 years as a beacon of civilization and commerce. The Inner Sea region represents the cradle of human civilization on Golarion, where countless empires have risen and fallen, where gods have walked and died, and where the fate of the world has been decided time and again.
 
 #### Otari Connection (Players Guide):
 
-They're traveling to Otari for the same reason as the party—opportunity, safety, or curiosity about Gauntlight.
+They recently passed through Otari and can share current news: the Lumber Consortium is hiring, Gauntlight has been glowing more frequently, and Captain Longsaddle is looking for capable people.
 
 #### Interaction Opportunities:
 
-- **Diplomacy DC 14**: Friendly conversation and persuasion
-- **Religion DC 17**: Understand religious significance
-- **Nature DC 19**: Knowledge of natural world
-- **Medicine DC 17**: Offer healing or medical aid
-- **Deception DC 15**: Trick or mislead the NPC
-- **Arcana DC 20**: Identify magical phenomena
+- **Diplomacy DC 17**: Friendly conversation and persuasion
+- **Nature DC 22**: Knowledge of natural world
+- **Arcana DC 22**: Identify magical phenomena
+- **Occultism DC 19**: Recognize magical or esoteric elements
+- **Performance DC 15**: Entertain or impress
 
 #### GM Notes:
 
-- Personality: Cryptic, speaks in riddles, protects nature
-- Knowledge: Fogfen ecology, safe camping, natural hazards
-- Willing to share information freely if approached diplomatically
+- Personality: Friendly, loves to haggle, shares rumors
+- Knowledge: Trade goods, Otari market, recent bandit activity
 - Becomes defensive if threatened but will cooperate if intimidated successfully
-- Has no combat stats—this is a roleplay encounter only
-- Knows about bandit activity
-- Can provide shortcuts
-- Has information about ancient ruins
+- Appreciates gifts or kind gestures—will remember the party fondly
+- Will not fight unless attacked—prefers to flee or negotiate
+- Knows about undead sightings
+- Can provide safe camping spots
+- Has information about Otari merchants
 
 #### Rewards:
 
 **No combat rewards**
 
 **Gift (if treated with respect):**
-- **Gauntlight information**: Reveals hidden entrance or safe path (Value: Could save lives)
+- **Herbal remedy**: +2 to next Medicine check (Value: 1gp)
 
 #### Development:
 
@@ -1722,44 +1662,45 @@ They're traveling to Otari for the same reason as the party—opportunity, safet
 
 ## Roll: 41 (LORE ONLY)
 
-### Title: THE CHELISH DESERTER
+### Title: THE HALFLING TRADER
 
-**Setup:** A figure in torn uniform huddles by tree.
+**Setup:** A small figure waves cheerfully.
 
-**Read-Aloud:** *""Stay back! I won't go back to that lighthouse!""*
+**Read-Aloud:** *"A halfling with pack mule grins. "Care to see my wares? Fair prices!""*
 
-**NPC:** Chelish Deserter
+**NPC:** Halfling Trader
 
-*Haunted soldier in tattered uniform*
+*Cheerful merchant with goods*
 
 **No combat encounter**
 
 #### Lore Connection (Inner Sea Region):
 
-The region stretches from the frozen reaches of the Crown of the World in the north to the steaming jungles of the Mwangi Expanse in the south, from the mysterious Arcadian Ocean in the west to the trade-rich shores of the Obari Ocean in the east. This vast territory encompasses dozens of nations, hundreds of city-states, and countless smaller settlements, each with their own unique culture, history, and destiny. The farther one travels from Absalom, whether north or south, the farther one moves from cosmopolitan civilization—though exceptions always exist.
+The Inner Sea region encompasses the continent of Avistan and the northern third of Garund, both surrounding the body of water known as the Inner Sea. At its heart lies Absalom, the City at the Center of the World, a metropolis that has stood for over 4,000 years as a beacon of civilization and commerce. The Inner Sea region represents the cradle of human civilization on Golarion, where countless empires have risen and fallen, where gods have walked and died, and where the fate of the world has been decided time and again.
 
 #### Otari Connection (Players Guide):
 
-They're traveling to Otari for the same reason as the party—opportunity, safety, or curiosity about Gauntlight.
+They know Vandy Banderdash at the Dawnflower Library and can provide a letter of introduction if the party needs healing or blessings.
 
 #### Interaction Opportunities:
 
-- **Deception DC 21**: Trick or mislead the NPC
-- **Performance DC 16**: Entertain or impress
-- **Religion DC 21**: Understand religious significance
-- **Diplomacy DC 22**: Friendly conversation and persuasion
-- **Nature DC 20**: Knowledge of natural world
+- **Nature DC 21**: Knowledge of natural world
+- **Occultism DC 18**: Recognize magical or esoteric elements
+- **Arcana DC 19**: Identify magical phenomena
+- **Medicine DC 20**: Offer healing or medical aid
+- **Performance DC 21**: Entertain or impress
+- **Intimidation DC 13**: Threaten or coerce information
 
 #### GM Notes:
 
-- Personality: Desperate, afraid, can be helped or hostile
-- Knowledge: Gauntlight interior, Chelish military, hidden paths
-- Genuinely wants to help the party if treated with respect
-- Has no combat stats—this is a roleplay encounter only
+- Personality: Friendly, loves to haggle, shares rumors
+- Knowledge: Trade goods, Otari market, recent bandit activity
+- May offer to travel with the party to Otari for safety
+- Can become a recurring ally if the party makes a good impression
 - Will not fight unless attacked—prefers to flee or negotiate
-- Knows about undead sightings
+- Knows about bandit activity
 - Can provide safe camping spots
-- Has information about Otari merchants
+- Has information about regional threats
 
 #### Rewards:
 
@@ -1777,119 +1718,6 @@ They're traveling to Otari for the same reason as the party—opportunity, safet
 ---
 
 ## Roll: 42 (LORE ONLY)
-
-### Title: THE WIZARD RESEARCHING GAUNTLIGHT
-
-**Setup:** Someone mutters while scribbling notes.
-
-**Read-Aloud:** *"A wizard looks up from notes. "Fascinating! Have you been inside Gauntlight?""*
-
-**NPC:** Wizard Researching Gauntlight
-
-*Scholarly mage with notebooks*
-
-**No combat encounter**
-
-#### Lore Connection (Inner Sea Region):
-
-The nation is ruled by the Black Sovereign, a title held by whoever can claim it through strength and cunning. The current Black Sovereign, Kevoth-Kul, rules from the capital city of Starfall, built around the largest piece of the crashed spacecraft. However, his rule is largely nominal outside the capital—Numeria is divided into numerous tribal territories, each controlled by a warlord who acknowledges the Black Sovereign's authority only when convenient.
-
-#### Otari Connection (Players Guide):
-
-This traveler has done business with Keeleno Lathenar at Otari Market. They can vouch for the party if they need credit or special orders.
-
-#### Interaction Opportunities:
-
-- **Diplomacy DC 13**: Friendly conversation and persuasion
-- **Religion DC 17**: Understand religious significance
-- **Intimidation DC 21**: Threaten or coerce information
-- **Nature DC 19**: Knowledge of natural world
-- **Arcana DC 18**: Identify magical phenomena
-
-#### GM Notes:
-
-- Personality: Curious, absent-minded, pays for information
-- Knowledge: Gauntlight history, Belcorra lore, arcane theory
-- Genuinely wants to help the party if treated with respect
-- Has no combat stats—this is a roleplay encounter only
-- Appreciates gifts or kind gestures—will remember the party fondly
-- Knows about undead sightings
-- Can provide danger warnings
-- Has information about local politics
-
-#### Rewards:
-
-**No combat rewards**
-
-**Gift (if treated with respect):**
-- **Blessed medallion**: +1 to next Religion check (Value: 2gp)
-
-#### Development:
-
-- If party is helpful, NPC remembers them and may offer aid in Otari
-- Information gained here can be used for advantage in future encounters
-- NPC may appear again as recurring friendly contact
-
----
-
-## Roll: 43 (LORE ONLY)
-
-### Title: THE CLERIC OF SARENRAE
-
-**Setup:** Golden light glows through fog.
-
-**Read-Aloud:** *"A priest in sun-emblazoned robes approaches. "The Dawnflower's light reaches even here.""*
-
-**NPC:** Cleric of Sarenrae
-
-*Warm priest in golden robes*
-
-**No combat encounter**
-
-#### Lore Connection (Inner Sea Region):
-
-Nerosyan, the Diamond of the North, serves as both Mendev's capital and the headquarters of the crusade against the Worldwound. The city is surrounded by massive walls designed to withstand demonic assault, and every building is constructed with defense in mind. The city's population is swollen with crusaders, refugees from the Worldwound, and support personnel needed to maintain the war effort. Queen Galfrey, who has ruled Mendev for over a century through a combination of divine blessing and sheer determination, leads both the nation and the crusade from her palace in the city's heart.
-
-#### Otari Connection (Players Guide):
-
-The NPC knows Captain Longsaddle personally and can put in a good word with the town guard if the party helps them.
-
-#### Interaction Opportunities:
-
-- **Occultism DC 15**: Recognize magical or esoteric elements
-- **Religion DC 13**: Understand religious significance
-- **Performance DC 18**: Entertain or impress
-- **Society DC 21**: Recall relevant cultural knowledge
-- **Deception DC 13**: Trick or mislead the NPC
-- **Intimidation DC 16**: Threaten or coerce information
-
-#### GM Notes:
-
-- Personality: Compassionate, offers healing, fights undead
-- Knowledge: Redemption, healing magic, Sarenrae teachings, undead weaknesses
-- Will not fight unless attacked—prefers to flee or negotiate
-- Can become a recurring ally if the party makes a good impression
-- Appreciates gifts or kind gestures—will remember the party fondly
-- Knows about bandit activity
-- Can provide shortcuts
-- Has information about regional threats
-
-#### Rewards:
-
-**No combat rewards**
-
-**Gift (if treated with respect):**
-- **Detailed map of safe paths**: Saves 2 hours travel time through Fogfen (Value: Worth 5gp to right buyer)
-
-#### Development:
-
-- If party is helpful, NPC remembers them and may offer aid in Otari
-- Information gained here can be used for advantage in future encounters
-- NPC may appear again as recurring friendly contact
-
----
-
-## Roll: 44 (LORE ONLY)
 
 ### Title: THE TALDAN NOBLE
 
@@ -1909,26 +1737,140 @@ The region stretches from the frozen reaches of the Crown of the World in the no
 
 #### Otari Connection (Players Guide):
 
-They mention Morlibint at Odd Stories is always buying interesting books, maps, and historical documents. The party might have something he'd want.
+They know Vandy Banderdash at the Dawnflower Library and can provide a letter of introduction if the party needs healing or blessings.
 
 #### Interaction Opportunities:
 
-- **Deception DC 22**: Trick or mislead the NPC
-- **Arcana DC 18**: Identify magical phenomena
-- **Religion DC 13**: Understand religious significance
-- **Medicine DC 21**: Offer healing or medical aid
-- **Society DC 15**: Recall relevant cultural knowledge
+- **Occultism DC 17**: Recognize magical or esoteric elements
+- **Diplomacy DC 16**: Friendly conversation and persuasion
+- **Medicine DC 15**: Offer healing or medical aid
+- **Nature DC 16**: Knowledge of natural world
+- **Performance DC 16**: Entertain or impress
+- **Deception DC 17**: Trick or mislead the NPC
 
 #### GM Notes:
 
 - Personality: Arrogant but desperate, will pay for escort
 - Knowledge: Taldan politics, Oppara gossip, will pay 50gp for safe escort
-- Can become a recurring ally if the party makes a good impression
-- Has no combat stats—this is a roleplay encounter only
+- Will not fight unless attacked—prefers to flee or negotiate
 - Appreciates gifts or kind gestures—will remember the party fondly
+- Becomes defensive if threatened but will cooperate if intimidated successfully
+- Knows about recent disappearances
+- Can provide danger warnings
+- Has information about ancient ruins
+
+#### Rewards:
+
+**No combat rewards**
+
+**Gift (if treated with respect):**
+- **Detailed map of safe paths**: Saves 2 hours travel time through Fogfen (Value: Worth 5gp to right buyer)
+
+#### Development:
+
+- If party is helpful, NPC remembers them and may offer aid in Otari
+- Information gained here can be used for advantage in future encounters
+- NPC may appear again as recurring friendly contact
+
+---
+
+## Roll: 43 (LORE ONLY)
+
+### Title: THE HERMIT DRUID
+
+**Setup:** A moss-covered figure emerges from reeds.
+
+**Read-Aloud:** *"The hermit speaks: "The swamp remembers all.""*
+
+**NPC:** Hermit Druid
+
+*Wild figure covered in moss*
+
+**No combat encounter**
+
+#### Lore Connection (Inner Sea Region):
+
+The nation's capital, Caliphas, sits on the shores of Lake Encarthan and serves as the seat of Prince Aduard Ordranti III, the current ruler. However, the Prince's authority extends little beyond the capital itself, and even there his power is checked by the Palatine Council, an assembly of nobles who jealously guard their privileges. Caliphas itself is a city of contrasts—elegant architecture and refined society exist alongside poverty, crime, and supernatural threats.
+
+#### Otari Connection (Players Guide):
+
+They mention Morlibint at Odd Stories is always buying interesting books, maps, and historical documents. The party might have something he'd want.
+
+#### Interaction Opportunities:
+
+- **Religion DC 17**: Understand religious significance
+- **Arcana DC 22**: Identify magical phenomena
+- **Occultism DC 13**: Recognize magical or esoteric elements
+- **Society DC 22**: Recall relevant cultural knowledge
+- **Intimidation DC 14**: Threaten or coerce information
+- **Performance DC 14**: Entertain or impress
+
+#### GM Notes:
+
+- Personality: Cryptic, speaks in riddles, protects nature
+- Knowledge: Fogfen ecology, safe camping, natural hazards
+- Has no combat stats—this is a roleplay encounter only
+- May offer to travel with the party to Otari for safety
+- Willing to share information freely if approached diplomatically
 - Knows about Gauntlight history
-- Can provide shortcuts
-- Has information about local politics
+- Can provide safe camping spots
+- Has information about Otari merchants
+
+#### Rewards:
+
+**No combat rewards**
+
+**Gift (if treated with respect):**
+- **Ancient coin**: Collectible, Morlibint will pay 10gp (Value: 10gp to collector)
+
+#### Development:
+
+- If party is helpful, NPC remembers them and may offer aid in Otari
+- Information gained here can be used for advantage in future encounters
+- NPC may appear again as recurring friendly contact
+
+---
+
+## Roll: 44 (LORE ONLY)
+
+### Title: THE ELVEN SCOUT
+
+**Setup:** An arrow thuds into a tree near you.
+
+**Read-Aloud:** *"An elf steps from the trees. "You're being followed. I can help.""*
+
+**NPC:** Elven Scout
+
+*Graceful elf with longbow*
+
+**No combat encounter**
+
+#### Lore Connection (Inner Sea Region):
+
+The region stretches from the frozen reaches of the Crown of the World in the north to the steaming jungles of the Mwangi Expanse in the south, from the mysterious Arcadian Ocean in the west to the trade-rich shores of the Obari Ocean in the east. This vast territory encompasses dozens of nations, hundreds of city-states, and countless smaller settlements, each with their own unique culture, history, and destiny. The farther one travels from Absalom, whether north or south, the farther one moves from cosmopolitan civilization—though exceptions always exist.
+
+#### Otari Connection (Players Guide):
+
+They mention Morlibint at Odd Stories is always buying interesting books, maps, and historical documents. The party might have something he'd want.
+
+#### Interaction Opportunities:
+
+- **Religion DC 19**: Understand religious significance
+- **Nature DC 21**: Knowledge of natural world
+- **Medicine DC 14**: Offer healing or medical aid
+- **Deception DC 14**: Trick or mislead the NPC
+- **Performance DC 14**: Entertain or impress
+
+#### GM Notes:
+
+- Personality: Aloof but helpful, protects the forest
+- Knowledge: Forest paths, creature tracking, elven traditions
+- May offer to travel with the party to Otari for safety
+- Appreciates gifts or kind gestures—will remember the party fondly
+- Willing to share information freely if approached diplomatically
+- Knows about recent disappearances
+- Can provide water sources
+- Has information about ancient ruins
 
 #### Rewards:
 
@@ -1947,45 +1889,44 @@ They mention Morlibint at Odd Stories is always buying interesting books, maps, 
 
 ## Roll: 45 (LORE ONLY)
 
-### Title: THE HERMIT DRUID
+### Title: THE DWARF PROSPECTOR
 
-**Setup:** A moss-covered figure emerges from reeds.
+**Setup:** The sound of a pickaxe echoes.
 
-**Read-Aloud:** *"The hermit speaks: "The swamp remembers all.""*
+**Read-Aloud:** *"A dwarf wipes sweat from his brow. "Looking for gold? I know where to find it.""*
 
-**NPC:** Hermit Druid
+**NPC:** Dwarf Prospector
 
-*Wild figure covered in moss*
+*Grizzled dwarf with mining tools*
 
 **No combat encounter**
 
 #### Lore Connection (Inner Sea Region):
 
-The nation's capital, Caliphas, sits on the shores of Lake Encarthan and serves as the seat of Prince Aduard Ordranti III, the current ruler. However, the Prince's authority extends little beyond the capital itself, and even there his power is checked by the Palatine Council, an assembly of nobles who jealously guard their privileges. Caliphas itself is a city of contrasts—elegant architecture and refined society exist alongside poverty, crime, and supernatural threats.
+The nation's capital, Almas, serves as both its political heart and its largest city. Built along the Andoshen River, Almas combines the architectural grandeur inherited from its Chelish past with new construction reflecting Andoran's democratic ideals. The People's Palace, where the People's Council meets, stands as a symbol of the nation's commitment to representative government. The city's streets bustle with activity as merchants, craftsmen, and citizens from all walks of life participate in the vibrant economy and political discourse that defines modern Andoran.
 
 #### Otari Connection (Players Guide):
 
-They're traveling to Otari for the same reason as the party—opportunity, safety, or curiosity about Gauntlight.
+They mention Morlibint at Odd Stories is always buying interesting books, maps, and historical documents. The party might have something he'd want.
 
 #### Interaction Opportunities:
 
-- **Deception DC 16**: Trick or mislead the NPC
-- **Performance DC 22**: Entertain or impress
-- **Nature DC 13**: Knowledge of natural world
-- **Society DC 21**: Recall relevant cultural knowledge
-- **Diplomacy DC 20**: Friendly conversation and persuasion
-- **Occultism DC 13**: Recognize magical or esoteric elements
+- **Medicine DC 16**: Offer healing or medical aid
+- **Religion DC 14**: Understand religious significance
+- **Nature DC 16**: Knowledge of natural world
+- **Performance DC 20**: Entertain or impress
+- **Arcana DC 17**: Identify magical phenomena
 
 #### GM Notes:
 
-- Personality: Cryptic, speaks in riddles, protects nature
-- Knowledge: Fogfen ecology, safe camping, natural hazards
+- Personality: Gruff but honest, knows the land
+- Knowledge: Mineral deposits, underground passages, dwarven lore
+- Genuinely wants to help the party if treated with respect
+- Willing to share information freely if approached diplomatically
 - Becomes defensive if threatened but will cooperate if intimidated successfully
-- Can become a recurring ally if the party makes a good impression
-- Will not fight unless attacked—prefers to flee or negotiate
 - Knows about bandit activity
-- Can provide water sources
-- Has information about Otari merchants
+- Can provide safe camping spots
+- Has information about local politics
 
 #### Rewards:
 
@@ -2004,128 +1945,15 @@ They're traveling to Otari for the same reason as the party—opportunity, safet
 
 ## Roll: 46 (LORE ONLY)
 
-### Title: THE WIZARD RESEARCHING GAUNTLIGHT
+### Title: THE ASPIS CONSORTIUM AGENT
 
-**Setup:** Someone mutters while scribbling notes.
+**Setup:** A well-dressed figure watches you carefully.
 
-**Read-Aloud:** *"A wizard looks up from notes. "Fascinating! Have you been inside Gauntlight?""*
+**Read-Aloud:** *"An Aspis agent smiles coldly. "Perhaps we can do business?""*
 
-**NPC:** Wizard Researching Gauntlight
+**NPC:** Aspis Consortium Agent
 
-*Scholarly mage with notebooks*
-
-**No combat encounter**
-
-#### Lore Connection (Inner Sea Region):
-
-The nation is ruled by the Black Sovereign, a title held by whoever can claim it through strength and cunning. The current Black Sovereign, Kevoth-Kul, rules from the capital city of Starfall, built around the largest piece of the crashed spacecraft. However, his rule is largely nominal outside the capital—Numeria is divided into numerous tribal territories, each controlled by a warlord who acknowledges the Black Sovereign's authority only when convenient.
-
-#### Otari Connection (Players Guide):
-
-This person recently attended a festival in Otari and speaks highly of the town's hospitality. They recommend the party visit.
-
-#### Interaction Opportunities:
-
-- **Society DC 13**: Recall relevant cultural knowledge
-- **Religion DC 13**: Understand religious significance
-- **Nature DC 14**: Knowledge of natural world
-- **Intimidation DC 19**: Threaten or coerce information
-- **Performance DC 14**: Entertain or impress
-- **Arcana DC 17**: Identify magical phenomena
-
-#### GM Notes:
-
-- Personality: Curious, absent-minded, pays for information
-- Knowledge: Gauntlight history, Belcorra lore, arcane theory
-- May offer to travel with the party to Otari for safety
-- Becomes defensive if threatened but will cooperate if intimidated successfully
-- Will not fight unless attacked—prefers to flee or negotiate
-- Knows about Gauntlight history
-- Can provide shortcuts
-- Has information about ancient ruins
-
-#### Rewards:
-
-**No combat rewards**
-
-**Gift (if treated with respect):**
-- **Detailed map of safe paths**: Saves 2 hours travel time through Fogfen (Value: Worth 5gp to right buyer)
-
-#### Development:
-
-- If party is helpful, NPC remembers them and may offer aid in Otari
-- Information gained here can be used for advantage in future encounters
-- NPC may appear again as recurring friendly contact
-
----
-
-## Roll: 47 (LORE ONLY)
-
-### Title: THE HERMIT DRUID
-
-**Setup:** A moss-covered figure emerges from reeds.
-
-**Read-Aloud:** *"The hermit speaks: "The swamp remembers all.""*
-
-**NPC:** Hermit Druid
-
-*Wild figure covered in moss*
-
-**No combat encounter**
-
-#### Lore Connection (Inner Sea Region):
-
-The nation's capital, Caliphas, sits on the shores of Lake Encarthan and serves as the seat of Prince Aduard Ordranti III, the current ruler. However, the Prince's authority extends little beyond the capital itself, and even there his power is checked by the Palatine Council, an assembly of nobles who jealously guard their privileges. Caliphas itself is a city of contrasts—elegant architecture and refined society exist alongside poverty, crime, and supernatural threats.
-
-#### Otari Connection (Players Guide):
-
-They're traveling to Otari for the same reason as the party—opportunity, safety, or curiosity about Gauntlight.
-
-#### Interaction Opportunities:
-
-- **Religion DC 20**: Understand religious significance
-- **Society DC 18**: Recall relevant cultural knowledge
-- **Occultism DC 22**: Recognize magical or esoteric elements
-- **Performance DC 19**: Entertain or impress
-- **Deception DC 20**: Trick or mislead the NPC
-
-#### GM Notes:
-
-- Personality: Cryptic, speaks in riddles, protects nature
-- Knowledge: Fogfen ecology, safe camping, natural hazards
-- Has no combat stats—this is a roleplay encounter only
-- Can become a recurring ally if the party makes a good impression
-- Appreciates gifts or kind gestures—will remember the party fondly
-- Knows about bandit activity
-- Can provide safe camping spots
-- Has information about local politics
-
-#### Rewards:
-
-**No combat rewards**
-
-**Gift (if treated with respect):**
-- **Ancient coin**: Collectible, Morlibint will pay 10gp (Value: 10gp to collector)
-
-#### Development:
-
-- If party is helpful, NPC remembers them and may offer aid in Otari
-- Information gained here can be used for advantage in future encounters
-- NPC may appear again as recurring friendly contact
-
----
-
-## Roll: 48 (LORE ONLY)
-
-### Title: THE CHELISH DESERTER
-
-**Setup:** A figure in torn uniform huddles by tree.
-
-**Read-Aloud:** *""Stay back! I won't go back to that lighthouse!""*
-
-**NPC:** Chelish Deserter
-
-*Haunted soldier in tattered uniform*
+*Suspicious merchant in fine clothes*
 
 **No combat encounter**
 
@@ -2135,81 +1963,26 @@ The region stretches from the frozen reaches of the Crown of the World in the no
 
 #### Otari Connection (Players Guide):
 
-This traveler has done business with Keeleno Lathenar at Otari Market. They can vouch for the party if they need credit or special orders.
+The NPC knows several people in Otari and can provide introductions to merchants, guards, or other useful contacts.
 
 #### Interaction Opportunities:
 
-- **Performance DC 13**: Entertain or impress
-- **Arcana DC 15**: Identify magical phenomena
-- **Occultism DC 22**: Recognize magical or esoteric elements
-- **Medicine DC 13**: Offer healing or medical aid
-- **Nature DC 17**: Knowledge of natural world
-
-#### GM Notes:
-
-- Personality: Desperate, afraid, can be helped or hostile
-- Knowledge: Gauntlight interior, Chelish military, hidden paths
-- Will not fight unless attacked—prefers to flee or negotiate
-- Has no combat stats—this is a roleplay encounter only
-- Genuinely wants to help the party if treated with respect
-- Knows about recent disappearances
-- Can provide water sources
-- Has information about local politics
-
-#### Rewards:
-
-**No combat rewards**
-
-**Gift (if treated with respect):**
-- **Letter of introduction**: Grants access to Otari contact (merchant, guard, or priest) (Value: Invaluable for reputation)
-
-#### Development:
-
-- If party is helpful, NPC remembers them and may offer aid in Otari
-- Information gained here can be used for advantage in future encounters
-- NPC may appear again as recurring friendly contact
-
----
-
-## Roll: 49 (LORE ONLY)
-
-### Title: THE BARD COLLECTING STORIES
-
-**Setup:** Music drifts through fog.
-
-**Read-Aloud:** *"A bard strums a lute. "Travelers! Care to trade tales?""*
-
-**NPC:** Bard Collecting Stories
-
-*Charismatic performer with lute*
-
-**No combat encounter**
-
-#### Lore Connection (Inner Sea Region):
-
-Despite its decline, Taldor retains significant economic power. The nation's agricultural heartland remains productive, and Taldan wine, grain, and horses are prized throughout the region. The city of Cassomir serves as a major port, connecting Taldor to trade routes throughout the Inner Sea and up the Sellen River. Taldan craftsmen still produce goods of exceptional quality, and the nation's banks and merchant houses wield considerable financial influence.
-
-#### Otari Connection (Players Guide):
-
-The NPC has heard rumors in Otari about Gauntlight: strange lights, missing explorers, and ancient treasures. They can share what they know.
-
-#### Interaction Opportunities:
-
-- **Performance DC 14**: Entertain or impress
+- **Society DC 18**: Recall relevant cultural knowledge
+- **Nature DC 21**: Knowledge of natural world
+- **Diplomacy DC 14**: Friendly conversation and persuasion
 - **Arcana DC 21**: Identify magical phenomena
-- **Diplomacy DC 21**: Friendly conversation and persuasion
-- **Religion DC 17**: Understand religious significance
-- **Medicine DC 20**: Offer healing or medical aid
+- **Medicine DC 15**: Offer healing or medical aid
+- **Intimidation DC 21**: Threaten or coerce information
 
 #### GM Notes:
 
-- Personality: Entertaining, trades stories for stories
-- Knowledge: Local legends, Gauntlight ballads, Otari gossip
-- Has no combat stats—this is a roleplay encounter only
-- Appreciates gifts or kind gestures—will remember the party fondly
+- Personality: Greedy, manipulative, dangerous if crossed
+- Knowledge: Black market goods, smuggling routes, Aspis operations
+- Becomes defensive if threatened but will cooperate if intimidated successfully
+- Genuinely wants to help the party if treated with respect
 - Willing to share information freely if approached diplomatically
-- Knows about undead sightings
-- Can provide water sources
+- Knows about Gauntlight history
+- Can provide safe camping spots
 - Has information about Otari merchants
 
 #### Rewards:
@@ -2227,7 +2000,7 @@ The NPC has heard rumors in Otari about Gauntlight: strange lights, missing expl
 
 ---
 
-## Roll: 50 (LORE ONLY)
+## Roll: 47 (LORE ONLY)
 
 ### Title: THE RETIRED PATHFINDER
 
@@ -2247,26 +2020,25 @@ INTRODUCTION TO THE INNER SEA  The Inner Sea region encompasses the continent of
 
 #### Otari Connection (Players Guide):
 
-They mention Morlibint at Odd Stories is always buying interesting books, maps, and historical documents. The party might have something he'd want.
+They're familiar with Otari's layout and can recommend the best places to stay, eat, and resupply. The Rowdy Rockfish has the best food, Wrin's Wonders for magic items.
 
 #### Interaction Opportunities:
 
-- **Occultism DC 13**: Recognize magical or esoteric elements
-- **Diplomacy DC 20**: Friendly conversation and persuasion
-- **Deception DC 17**: Trick or mislead the NPC
-- **Performance DC 19**: Entertain or impress
-- **Religion DC 18**: Understand religious significance
-- **Arcana DC 17**: Identify magical phenomena
+- **Occultism DC 17**: Recognize magical or esoteric elements
+- **Medicine DC 18**: Offer healing or medical aid
+- **Arcana DC 16**: Identify magical phenomena
+- **Nature DC 22**: Knowledge of natural world
+- **Diplomacy DC 17**: Friendly conversation and persuasion
 
 #### GM Notes:
 
 - Personality: Friendly, loves sharing tales
 - Knowledge: Dungeon survival, monster weaknesses, Otari connections
 - Willing to share information freely if approached diplomatically
+- Genuinely wants to help the party if treated with respect
 - Can become a recurring ally if the party makes a good impression
-- Has no combat stats—this is a roleplay encounter only
-- Knows about recent disappearances
-- Can provide safe camping spots
+- Knows about undead sightings
+- Can provide danger warnings
 - Has information about local politics
 
 #### Rewards:
@@ -2274,7 +2046,176 @@ They mention Morlibint at Odd Stories is always buying interesting books, maps, 
 **No combat rewards**
 
 **Gift (if treated with respect):**
-- **Letter of introduction**: Grants access to Otari contact (merchant, guard, or priest) (Value: Invaluable for reputation)
+- **Varisian good luck charm**: +1 circumstance bonus to next saving throw (Value: Priceless to owner)
+
+#### Development:
+
+- If party is helpful, NPC remembers them and may offer aid in Otari
+- Information gained here can be used for advantage in future encounters
+- NPC may appear again as recurring friendly contact
+
+---
+
+## Roll: 48 (LORE ONLY)
+
+### Title: THE BARD COLLECTING STORIES
+
+**Setup:** Music drifts through fog.
+
+**Read-Aloud:** *"A bard strums a lute. "Travelers! Care to trade tales?""*
+
+**NPC:** Bard Collecting Stories
+
+*Charismatic performer with lute*
+
+**No combat encounter**
+
+#### Lore Connection (Inner Sea Region):
+
+Despite its decline, Taldor retains significant economic power. The nation's agricultural heartland remains productive, and Taldan wine, grain, and horses are prized throughout the region. The city of Cassomir serves as a major port, connecting Taldor to trade routes throughout the Inner Sea and up the Sellen River. Taldan craftsmen still produce goods of exceptional quality, and the nation's banks and merchant houses wield considerable financial influence.
+
+#### Otari Connection (Players Guide):
+
+They're traveling to Otari for the same reason as the party—opportunity, safety, or curiosity about Gauntlight.
+
+#### Interaction Opportunities:
+
+- **Religion DC 16**: Understand religious significance
+- **Nature DC 15**: Knowledge of natural world
+- **Diplomacy DC 16**: Friendly conversation and persuasion
+- **Intimidation DC 15**: Threaten or coerce information
+- **Medicine DC 13**: Offer healing or medical aid
+
+#### GM Notes:
+
+- Personality: Entertaining, trades stories for stories
+- Knowledge: Local legends, Gauntlight ballads, Otari gossip
+- Will not fight unless attacked—prefers to flee or negotiate
+- May offer to travel with the party to Otari for safety
+- Genuinely wants to help the party if treated with respect
+- Knows about recent disappearances
+- Can provide water sources
+- Has information about ancient ruins
+
+#### Rewards:
+
+**No combat rewards**
+
+**Gift (if treated with respect):**
+- **Detailed map of safe paths**: Saves 2 hours travel time through Fogfen (Value: Worth 5gp to right buyer)
+
+#### Development:
+
+- If party is helpful, NPC remembers them and may offer aid in Otari
+- Information gained here can be used for advantage in future encounters
+- NPC may appear again as recurring friendly contact
+
+---
+
+## Roll: 49 (LORE ONLY)
+
+### Title: THE BELLFLOWER NETWORK OPERATIVE
+
+**Setup:** Someone signals you from the shadows.
+
+**Read-Aloud:** *"A hooded figure whispers: "Are you fleeing Cheliax? I can help.""*
+
+**NPC:** Bellflower Network Operative
+
+*Mysterious figure helping escaped slaves*
+
+**No combat encounter**
+
+#### Lore Connection (Inner Sea Region):
+
+---  ### ANDORAN - THE BIRTHPLACE OF FREEDOM  Andoran represents one of the youngest major powers in the Inner Sea region, having gained independence from Cheliax in 4669 AR during the chaos following Aroden's death. This nation of forests, rivers, and rolling hills has transformed itself from a Chelish colony into a beacon of democracy and individual liberty, standing in stark ideological opposition to its former master. Andoran's government, known as the People's Council, is elected by popular vote—a radical concept in a region dominated by monarchies, theocracies, and worse.
+
+#### Otari Connection (Players Guide):
+
+This person has family in Otari—a relative works at the Otari Fishery, the Rowdy Rockfish, or one of the other local businesses.
+
+#### Interaction Opportunities:
+
+- **Intimidation DC 15**: Threaten or coerce information
+- **Occultism DC 13**: Recognize magical or esoteric elements
+- **Medicine DC 21**: Offer healing or medical aid
+- **Deception DC 21**: Trick or mislead the NPC
+- **Society DC 19**: Recall relevant cultural knowledge
+
+#### GM Notes:
+
+- Personality: Secretive, compassionate, fights slavery
+- Knowledge: Safe houses, escape routes, Chelish politics
+- Appreciates gifts or kind gestures—will remember the party fondly
+- Will not fight unless attacked—prefers to flee or negotiate
+- Willing to share information freely if approached diplomatically
+- Knows about bandit activity
+- Can provide danger warnings
+- Has information about ancient ruins
+
+#### Rewards:
+
+**No combat rewards**
+
+**Gift (if treated with respect):**
+- **Minor healing potion**: Heals 1d8 HP (Value: 3gp)
+
+#### Development:
+
+- If party is helpful, NPC remembers them and may offer aid in Otari
+- Information gained here can be used for advantage in future encounters
+- NPC may appear again as recurring friendly contact
+
+---
+
+## Roll: 50 (LORE ONLY)
+
+### Title: THE GNOME ALCHEMIST
+
+**Setup:** Colorful smoke rises from a small camp.
+
+**Read-Aloud:** *"A gnome looks up from bubbling vials. "Want to see my latest creation?""*
+
+**NPC:** Gnome Alchemist
+
+*Eccentric gnome with bubbling vials*
+
+**No combat encounter**
+
+#### Lore Connection (Inner Sea Region):
+
+Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
+
+#### Otari Connection (Players Guide):
+
+They're acquainted with Wrin Sivinxi and mention she's always interested in meeting adventurers—especially those who've seen strange omens.
+
+#### Interaction Opportunities:
+
+- **Occultism DC 22**: Recognize magical or esoteric elements
+- **Medicine DC 13**: Offer healing or medical aid
+- **Performance DC 17**: Entertain or impress
+- **Diplomacy DC 22**: Friendly conversation and persuasion
+- **Religion DC 14**: Understand religious significance
+- **Arcana DC 19**: Identify magical phenomena
+
+#### GM Notes:
+
+- Personality: Enthusiastic, slightly mad, loves experiments
+- Knowledge: Alchemy, potion recipes, explosive compounds
+- Becomes defensive if threatened but will cooperate if intimidated successfully
+- Appreciates gifts or kind gestures—will remember the party fondly
+- Can become a recurring ally if the party makes a good impression
+- Knows about recent disappearances
+- Can provide danger warnings
+- Has information about regional threats
+
+#### Rewards:
+
+**No combat rewards**
+
+**Gift (if treated with respect):**
+- **Gauntlight information**: Reveals hidden entrance or safe path (Value: Could save lives)
 
 #### Development:
 
@@ -2286,51 +2227,51 @@ They mention Morlibint at Odd Stories is always buying interesting books, maps, 
 
 ## Roll: 51 (LORE ONLY)
 
-### Title: THE HERMIT DRUID
+### Title: THE TRAVELING MONK
 
-**Setup:** A moss-covered figure emerges from reeds.
+**Setup:** Someone meditates beside the path.
 
-**Read-Aloud:** *"The hermit speaks: "The swamp remembers all.""*
+**Read-Aloud:** *"A monk opens their eyes. "The path to enlightenment is also the path to Otari.""*
 
-**NPC:** Hermit Druid
+**NPC:** Traveling Monk
 
-*Wild figure covered in moss*
+*Serene monk in simple robes*
 
 **No combat encounter**
 
 #### Lore Connection (Inner Sea Region):
 
-The nation's capital, Caliphas, sits on the shores of Lake Encarthan and serves as the seat of Prince Aduard Ordranti III, the current ruler. However, the Prince's authority extends little beyond the capital itself, and even there his power is checked by the Palatine Council, an assembly of nobles who jealously guard their privileges. Caliphas itself is a city of contrasts—elegant architecture and refined society exist alongside poverty, crime, and supernatural threats.
+MENDEV - THE CRUSADER STATE  Mendev stands as the first and last line of defense against the Worldwound, a massive planar rift that spews forth demons in endless hordes. This nation has been transformed by its proximity to the Abyss, evolving from a relatively peaceful kingdom into a militarized crusader state where every aspect of society is oriented toward the eternal war against demonkind.
 
 #### Otari Connection (Players Guide):
 
-They're familiar with Otari's layout and can recommend the best places to stay, eat, and resupply. The Rowdy Rockfish has the best food, Wrin's Wonders for magic items.
+The NPC mentions that Otari is a good base for exploring the region. Many adventurers use it as a staging point for Gauntlight expeditions.
 
 #### Interaction Opportunities:
 
-- **Society DC 19**: Recall relevant cultural knowledge
-- **Religion DC 16**: Understand religious significance
-- **Medicine DC 21**: Offer healing or medical aid
-- **Diplomacy DC 15**: Friendly conversation and persuasion
-- **Arcana DC 16**: Identify magical phenomena
+- **Medicine DC 16**: Offer healing or medical aid
+- **Performance DC 18**: Entertain or impress
+- **Deception DC 17**: Trick or mislead the NPC
+- **Occultism DC 13**: Recognize magical or esoteric elements
+- **Diplomacy DC 14**: Friendly conversation and persuasion
 
 #### GM Notes:
 
-- Personality: Cryptic, speaks in riddles, protects nature
-- Knowledge: Fogfen ecology, safe camping, natural hazards
-- Has no combat stats—this is a roleplay encounter only
+- Personality: Peaceful, philosophical, skilled fighter
+- Knowledge: Meditation techniques, martial arts, inner peace
 - Genuinely wants to help the party if treated with respect
 - Will not fight unless attacked—prefers to flee or negotiate
-- Knows about recent disappearances
+- Willing to share information freely if approached diplomatically
+- Knows about bandit activity
 - Can provide danger warnings
-- Has information about Otari merchants
+- Has information about regional threats
 
 #### Rewards:
 
 **No combat rewards**
 
 **Gift (if treated with respect):**
-- **Blessed medallion**: +1 to next Religion check (Value: 2gp)
+- **Detailed map of safe paths**: Saves 2 hours travel time through Fogfen (Value: Worth 5gp to right buyer)
 
 #### Development:
 
@@ -2342,51 +2283,51 @@ They're familiar with Otari's layout and can recommend the best places to stay, 
 
 ## Roll: 52 (LORE ONLY)
 
-### Title: THE LUMBER WORKER FROM OTARI
+### Title: THE BELLFLOWER NETWORK OPERATIVE
 
-**Setup:** Sound of axes, voices ahead.
+**Setup:** Someone signals you from the shadows.
 
-**Read-Aloud:** *"Lumber workers share food. "Travelers! Join us?""*
+**Read-Aloud:** *"A hooded figure whispers: "Are you fleeing Cheliax? I can help.""*
 
-**NPC:** Lumber Worker from Otari
+**NPC:** Bellflower Network Operative
 
-*Burly worker taking break*
+*Mysterious figure helping escaped slaves*
 
 **No combat encounter**
 
 #### Lore Connection (Inner Sea Region):
 
-The mists of Fogfen conceal ancient secrets and forgotten horrors. This creature is but one of many dangers that lurk in the wilderness between Otari and Gauntlight, drawn by the lighthouse's cursed beacon or simply claiming territory in the untamed swampland.
+---  ### ANDORAN - THE BIRTHPLACE OF FREEDOM  Andoran represents one of the youngest major powers in the Inner Sea region, having gained independence from Cheliax in 4669 AR during the chaos following Aroden's death. This nation of forests, rivers, and rolling hills has transformed itself from a Chelish colony into a beacon of democracy and individual liberty, standing in stark ideological opposition to its former master. Andoran's government, known as the People's Council, is elected by popular vote—a radical concept in a region dominated by monarchies, theocracies, and worse.
 
 #### Otari Connection (Players Guide):
 
-The NPC has heard rumors in Otari about Gauntlight: strange lights, missing explorers, and ancient treasures. They can share what they know.
+They're familiar with Otari's layout and can recommend the best places to stay, eat, and resupply. The Rowdy Rockfish has the best food, Wrin's Wonders for magic items.
 
 #### Interaction Opportunities:
 
-- **Performance DC 14**: Entertain or impress
-- **Religion DC 18**: Understand religious significance
-- **Diplomacy DC 19**: Friendly conversation and persuasion
-- **Arcana DC 19**: Identify magical phenomena
-- **Medicine DC 13**: Offer healing or medical aid
+- **Diplomacy DC 15**: Friendly conversation and persuasion
+- **Society DC 14**: Recall relevant cultural knowledge
+- **Religion DC 13**: Understand religious significance
+- **Arcana DC 13**: Identify magical phenomena
+- **Deception DC 17**: Trick or mislead the NPC
 
 #### GM Notes:
 
-- Personality: Down-to-earth, gossips freely
-- Knowledge: Otari rumors, recent disappearances, local geography
+- Personality: Secretive, compassionate, fights slavery
+- Knowledge: Safe houses, escape routes, Chelish politics
+- May offer to travel with the party to Otari for safety
+- Has no combat stats—this is a roleplay encounter only
 - Can become a recurring ally if the party makes a good impression
-- Genuinely wants to help the party if treated with respect
-- Willing to share information freely if approached diplomatically
-- Knows about Gauntlight history
-- Can provide safe camping spots
-- Has information about regional threats
+- Knows about recent disappearances
+- Can provide danger warnings
+- Has information about local politics
 
 #### Rewards:
 
 **No combat rewards**
 
 **Gift (if treated with respect):**
-- **Ancient coin**: Collectible, Morlibint will pay 10gp (Value: 10gp to collector)
+- **Gauntlight information**: Reveals hidden entrance or safe path (Value: Could save lives)
 
 #### Development:
 
@@ -2401,35 +2342,35 @@ The NPC has heard rumors in Otari about Gauntlight: strange lights, missing expl
 
 ## Roll: 53 (EASY)
 
-### Title: THE GIANT CENTIPEDE
+### Title: THE DERO
 
-**Setup:** The ground writhes with segmented bodies.
+**Setup:** The air grows thick with menace.
 
-**Read-Aloud:** *"Centipedes pour from rotting log, chittering bodies flowing like carpet."*
+**Read-Aloud:** *"The Dero roars and charges!"*
 
-**Creature:** Giant Centipede (Level easy, Venomous arthropod)
+**Creature:** Dero (Level easy, A dangerous Dero)
 
-**Stats:** HP: 8 | AC: 16 | Fort: +6 | Reflex: +9 | Will: +4
+**Stats:** HP: 30 | AC: 19 | Fort: 19 | Reflex: +10 | Will: +8
 
 #### Creature Lore (PathfinderWiki):
 
-THE MWANGI EXPANSE - THE UNTAMED JUNGLE  The Mwangi Expanse is not a single nation but rather a vast region of jungle, savanna, and swamp that covers much of central Garund. This is a land of incredible diversity—dozens of distinct cultures, hundreds of city-states and tribal territories, and countless ruins from civilizations that rose and fell long before recorded history. The Expanse is bordered by more organized nations to the north and east, but its interior remains largely unexplored by outsiders, a green hell where ancient magic still holds sway and dangers lurk behind every tree.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-The town guard warns travelers about these threats. Captain Longsaddle maintains a bestiary of local dangers at the garrison.
+Tamily Tanderveil offers free drinks to anyone who brings proof of eliminating threats like this near Otari.
 
 #### GM Notes:
 
-- Poison bite, swarm tactics, defends nest
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Eye Slash (True)** (Level 1, common) - 1 gp - *Tarnished but functional*
-- **Clockwork Goggles (Greater)** (Level 1, uncommon) - 1 gp - *Well-maintained*
-- **Reading Ring** (Level 1, common) - 1 gp - *Bears marks of previous owner*
-- **Leaper's Elixir (Greater)** (Level 1, common) - 1 gp - *Worn but serviceable*
-- **Coins:** 6 gp in mixed currency
+- **Toadskin Salve (Greater)** (Level 3, uncommon) - 1 gp - *Tarnished but functional*
+- **Infiltrator's Elixir** (Level 2, common) - 3 gp - *Slightly damaged*
+- **Torag's Silver Anvil** (Level 2, common) - 10 gp - *Slightly damaged*
+- **Tear-Away Clothing** (Level 3, common) - 27 gp - *Worn but serviceable*
+- **Coins:** 4 gp in mixed currency
 
 #### Development:
 
@@ -2440,50 +2381,39 @@ The town guard warns travelers about these threats. Captain Longsaddle maintains
 
 ## Roll: 54 (EASY)
 
-### Title: THE SKELETON GUARDS
+### Title: THE AZARKETI
 
-**Setup:** Clattering bones echo through fog.
+**Setup:** Danger approaches rapidly.
 
-**Read-Aloud:** *"Four skeletal warriors march in lockstep, rusted weapons ready. Chelish crests mark armor."*
+**Read-Aloud:** *"From the shadows, a Azarketi attacks!"*
 
-**Creature:** Skeleton Guards (Level easy, Animated bones of ancient guards)
+**Creature:** Azarketi (Level easy, A dangerous Azarketi)
 
-**Stats:** HP: 15 | AC: 16 | Fort: +7 | Reflex: +9 | Will: +6
+**Stats:** HP: 30 | AC: 18 | Fort: 18 | Reflex: +10 | Will: +7
 
 #### Creature Lore (PathfinderWiki):
 
-A skeleton is a typically mindless undead being that was animated through basic necromantic magic from the bones of any creature with a skeletal structure. Skeletons are among the simplest and most common forms of undead, requiring minimal magical energy to create and maintain. They serve as tireless guardians, soldiers, and laborers for those who command them.
-
-Skeletons have the skeletal form of whatever creature they were animated from, most commonly humanoids. They are held together by dark magic rather than sinew and muscle, allowing them to move despite lacking the biological components necessary for life. Their bones often show signs of age and damage, and they may be adorned with remnants of armor or clothing from their former existence.
-
-Like zombies, skeletons are mindless and follow simple commands without question or hesitation. However, they are typically faster and more coordinated than zombies, making them more effective in combat situations. Skeletons are often found guarding tombs, ancient ruins, or serving necromancers as expendable troops.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Captain Longsaddle of the town guard has posted bounties for proof of creatures like this. Bring evidence to collect your reward.
+This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex's ancient magic, still pulsing after centuries.
 
 #### GM Notes:
 
-- Fight in formation, vulnerable to bludgeoning, mindless
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
-- Speaks Chelish (Common with accent)
-- May have military orders or identification papers
-- Could be reasoned with if party mentions Thrune or Cheliax
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Blasting Stone (Moderate)** (Level 1, common) - 1 gp - *Tarnished but functional*
-- **Barding (Heavy; Large)** (Level 2, common) - 12 gp - *Slightly damaged*
-- **Coins:** 4 gp in mixed currency
+- **Moonlit Spellgun (Lesser)** (Level 2, common) - 1 gp - *Tarnished but functional*
+- **Cloak of Feline Rest** (Level 1, common) - 10 gp - *Bears marks of previous owner*
+- **Fetters (Simple)** (Level 2, common) - 1 gp - *Slightly damaged*
+- **Coins:** 5 gp in mixed currency
 
 #### Development:
 
 - Searching the area reveals tracks leading toward Gauntlight
 - Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
 
 ---
 
@@ -2492,15 +2422,15 @@ Captain Longsaddle of the town guard has posted bounties for proof of creatures 
 
 ## Roll: 55 (MODERATE)
 
-### Title: THE OWLBEAR
+### Title: THE GIANT
 
-**Setup:** A strange hooting roar echoes.
+**Setup:** Strange sounds echo ahead.
 
-**Read-Aloud:** *"A massive creature—part bear, part owl—charges from the reeds."*
+**Read-Aloud:** *"A Giant blocks your path menacingly."*
 
-**Creature:** Owlbear (Level moderate, Bear-owl hybrid, fiercely territorial)
+**Creature:** Giant (Level moderate, A dangerous Giant)
 
-**Stats:** HP: 45 | AC: 18 | Fort: +12 | Reflex: +9 | Will: +10
+**Stats:** HP: 40 | AC: 20 | Fort: 35 | Reflex: +27 | Will: +24
 
 #### Creature Lore (PathfinderWiki):
 
@@ -2508,17 +2438,17 @@ VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse 
 
 #### Otari Connection (Players Guide):
 
-The town guard warns travelers about these threats. Captain Longsaddle maintains a bestiary of local dangers at the garrison.
+Keeleno Lathenar at Otari Market pays extra for pelts or parts from dangerous creatures. This one would fetch a good price.
 
 #### GM Notes:
 
-- Charges, hugs and rends, protects nest
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Bewitching Bloom (Cherry Blossom)** (Level 2, common) - 1 gp - *Slightly damaged*
-- **Wemmuth Trinket** (Level 3, common) - 6 gp - *Worn but serviceable*
-- **Dragon's Breath (1st-Level Spell)** (Level 4, uncommon) - 1 gp - *Well-maintained*
+- **Dread Ampoule (Greater)** (Level 3, common) - 5 gp - *Well-maintained*
+- **Adaptive Cogwheel** (Level 2, common) - 2 gp - *Slightly damaged*
+- **Cold Iron Blanch (Greater)** (Level 2, common) - 10 gp - *Tarnished but functional*
 - **Coins:** 10 gp in mixed currency
 
 #### Development:
@@ -2532,34 +2462,34 @@ The town guard warns travelers about these threats. Captain Longsaddle maintains
 
 ### Title: THE DIRE WOLF
 
-**Setup:** A howl that shakes your bones.
+**Setup:** The air grows thick with menace.
 
-**Read-Aloud:** *"A wolf the size of a horse emerges, eyes glowing in darkness."*
+**Read-Aloud:** *"The Dire Wolf roars and charges!"*
 
-**Creature:** Dire Wolf (Level moderate, Massive prehistoric wolf)
+**Creature:** Dire Wolf (Level moderate, A dangerous Dire Wolf)
 
-**Stats:** HP: 42 | AC: 18 | Fort: +12 | Reflex: +11 | Will: +9
+**Stats:** HP: 50 | AC: 18 | Fort: 18 | Reflex: +11 | Will: +8
 
 #### Creature Lore (PathfinderWiki):
 
-Natural predators in the region have grown bolder and more aggressive in recent years, possibly drawn by the same dark energies that animate the undead near Gauntlight. Hunters and lumber workers report encounters with creatures of unusual size and ferocity, as if the land itself has turned hostile.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Wrin Sivinxi at Wrin's Wonders has warned adventurers about these creatures. She's seen them in her star charts—bad omens.
+Tamily Tanderveil offers free drinks to anyone who brings proof of eliminating threats like this near Otari.
 
 #### GM Notes:
 
-- Pack leader, trip and knockdown, powerful bite
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Comprehension Elixir (Greater)** (Level 2, common) - 3 gp - *Tarnished but functional*
-- **Wayfinder** (Level 2, common) - 1 gp - *Slightly damaged*
-- **Faith Tattoo (Major)** (Level 4, common) - 1 gp - *Well-maintained*
-- **Toadskin Salve (Greater)** (Level 3, uncommon) - 1 gp - *Worn but serviceable*
-- **Exquisite Surprise Doll** (Level 2, common) - 5 gp - *Well-maintained*
-- **Coins:** 9 gp in mixed currency
+- **Flask of Fellowship** (Level 2, common) - 12 gp - *Slightly damaged*
+- **Thunder Snare** (Level 2, common) - 3 gp - *Slightly damaged*
+- **Lesser Necrotic Cap** (Level 4, uncommon) - 9 gp - *Well-maintained*
+- **Moonlit Spellgun (Major)** (Level 2, common) - 1 gp - *Tarnished but functional*
+- **Moonlit Spellgun (Major)** (Level 2, common) - 1 gp - *Well-maintained*
+- **Coins:** 7 gp in mixed currency
 
 #### Development:
 
@@ -2570,35 +2500,33 @@ Wrin Sivinxi at Wrin's Wonders has warned adventurers about these creatures. She
 
 ## Roll: 57 (MODERATE)
 
-### Title: THE DIRE WOLF
+### Title: THE MONSTER CORE PG. 312 1.1
 
-**Setup:** A howl that shakes your bones.
+**Setup:** An unnatural presence fills the area.
 
-**Read-Aloud:** *"A wolf the size of a horse emerges, eyes glowing in darkness."*
+**Read-Aloud:** *"A Monster Core pg. 312 1.1 rises before you, ready for battle."*
 
-**Creature:** Dire Wolf (Level moderate, Massive prehistoric wolf)
+**Creature:** Monster Core pg. 312 1.1 (Level moderate, A dangerous Monster Core pg. 312 1.1)
 
-**Stats:** HP: 42 | AC: 18 | Fort: +12 | Reflex: +11 | Will: +9
+**Stats:** HP: 40 | AC: 19 | Fort:  | Reflex:  | Will: 
 
 #### Creature Lore (PathfinderWiki):
 
-The wilderness of the Inner Sea region teems with dangerous creatures, from dire wolves the size of horses to giant spiders that spin webs between ancient trees. Fogfen, the swampland between Otari and Gauntlight, is particularly notorious for its aggressive wildlife, made more dangerous by the corrupting influence of the lighthouse's dark magic.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex's ancient magic, still pulsing after centuries.
+The Rowdy Rockfish's patrons trade stories of encounters like this. Tamily Tanderveil keeps a tally of survivors on her wall.
 
 #### GM Notes:
 
-- Pack leader, trip and knockdown, powerful bite
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Piercing Horn** (Level 3, common) - 1 gp - *Bears marks of previous owner*
-- **Ranging Shot** (Level 3, common) - 4 gp - *Tarnished but functional*
-- **Moonlit Spellgun (Major)** (Level 2, common) - 1 gp - *Well-maintained*
-- **Moderate Tenderizer Grenade** (Level 3, uncommon) - 6 gp - *Well-maintained*
-- **Coins:** 9 gp in mixed currency
+- **Piercing Horn** (Level 3, common) - 1 gp - *Well-maintained*
+- **Thrower's Bandolier** (Level 3, common) - 30 gp - *Bears marks of previous owner*
+- **Coins:** 6 gp in mixed currency
 
 #### Development:
 
@@ -2609,15 +2537,15 @@ This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex
 
 ## Roll: 58 (MODERATE)
 
-### Title: THE GIANT SPIDER
+### Title: THE PATHFINDER #162: RUINS OF THE RADIANT SIEGE PG. 83
 
-**Setup:** Thick webs stretch between trees, glistening.
+**Setup:** Strange sounds echo ahead.
 
-**Read-Aloud:** *"Movement above—a spider the size of a dog drops from canopy, fangs dripping."*
+**Read-Aloud:** *"The Pathfinder #162: Ruins of the Radiant Siege pg. 83 roars and charges!"*
 
-**Creature:** Giant Spider (Level moderate, Massive arachnid lurking in foggy trees)
+**Creature:** Pathfinder #162: Ruins of the Radiant Siege pg. 83 (Level moderate, A dangerous Pathfinder #162: Ruins of the Radiant Siege pg. 83)
 
-**Stats:** HP: 35 | AC: 19 | Fort: +9 | Reflex: +12 | Will: +8
+**Stats:** HP: 37 | AC: 19 | Fort:  | Reflex:  | Will: 
 
 #### Creature Lore (PathfinderWiki):
 
@@ -2625,19 +2553,17 @@ VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse 
 
 #### Otari Connection (Players Guide):
 
-Wrin Sivinxi at Wrin's Wonders has warned adventurers about these creatures. She's seen them in her star charts—bad omens.
+This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex's ancient magic, still pulsing after centuries.
 
 #### GM Notes:
 
-- Ambush from above, web attacks, venomous bite
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Essence of Mandragora** (Level 4, common) - 10 gp - *Slightly damaged*
-- **Drowsy Sun Eye Drops** (Level 3, common) - 4 gp - *Tarnished but functional*
-- **Gunner's Saddle** (Level 2, uncommon) - 10 gp - *Well-maintained*
-- **Wildwood Ink (Major)** (Level 4, common) - 1 gp - *Slightly damaged*
-- **Coins:** 15 gp in mixed currency
+- **Dazzling Rosary (Greater)** (Level 4, common) - 1 gp - *Worn but serviceable*
+- **Chameleon Suit (Major)** (Level 4, uncommon) - 1 gp - *Tarnished but functional*
+- **Coins:** 14 gp in mixed currency
 
 #### Development:
 
@@ -2648,34 +2574,33 @@ Wrin Sivinxi at Wrin's Wonders has warned adventurers about these creatures. She
 
 ## Roll: 59 (MODERATE)
 
-### Title: THE WORG
+### Title: THE GIANT EAGLE
 
-**Setup:** Growling in Common: "Fresh meat..."
+**Setup:** The path ahead is blocked.
 
-**Read-Aloud:** *"A massive wolf with intelligent eyes stalks forward. "You smell... delicious.""*
+**Read-Aloud:** *"The Giant Eagle roars and charges!"*
 
-**Creature:** Worg (Level moderate, Evil intelligent wolf)
+**Creature:** Giant Eagle (Level moderate, A dangerous Giant Eagle)
 
-**Stats:** HP: 40 | AC: 19 | Fort: +11 | Reflex: +12 | Will: +9
+**Stats:** HP: 45 | AC: 19 | Fort: 17 | Reflex: +6 | Will: +11
 
 #### Creature Lore (PathfinderWiki):
 
-The Steel Falcons represent Andoran's military might and its commitment to spreading freedom. This elite military force combines traditional army units with specialized groups like the Eagle Knights, who conduct covert operations to free slaves and undermine tyrannical regimes throughout the Inner Sea. The Gray Corsairs, Andoran's naval arm, patrol the waters around the nation and beyond, attacking slave ships and disrupting the operations of nations Andoran considers oppressive.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Captain Longsaddle of the town guard has posted bounties for proof of creatures like this. Bring evidence to collect your reward.
+Keeleno Lathenar at Otari Market pays extra for pelts or parts from dangerous creatures. This one would fetch a good price.
 
 #### GM Notes:
 
-- Pack tactics, speaks Common, cunning
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Wand of Widening (8th-rank Spell)** (Level 4, common) - 50 gp - *Tarnished but functional*
-- **Spacious Pouch (Type I)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
-- **Bewitching Bloom (Amaranth)** (Level 2, common) - 1 gp - *Well-maintained*
-- **Coins:** 13 gp in mixed currency
+- **Thunder Snare** (Level 2, common) - 3 gp - *Slightly damaged*
+- **Potion Patch (Lesser)** (Level 4, common) - 1 gp - *Worn but serviceable*
+- **Coins:** 6 gp in mixed currency
 
 #### Development:
 
@@ -2686,79 +2611,75 @@ Captain Longsaddle of the town guard has posted bounties for proof of creatures 
 
 ## Roll: 60 (MODERATE)
 
-### Title: THE ZOMBIE BRUTE
+### Title: THE MONSTER CORE 2 PG. 211
 
-**Setup:** A lone figure stumbles through fog.
+**Setup:** Strange sounds echo ahead.
 
-**Read-Aloud:** *"The corpse lurches forward, arms outstretched."*
+**Read-Aloud:** *"A Monster Core 2 pg. 211 emerges from the mist!"*
 
-**Creature:** Zombie Brute (Level moderate, Shambling corpse animated by dark magic)
+**Creature:** Monster Core 2 pg. 211 (Level moderate, A dangerous Monster Core 2 pg. 211)
 
-**Stats:** HP: 45 | AC: 15 | Fort: +13 | Reflex: +5 | Will: +7
+**Stats:** HP: 40 | AC: 19 | Fort:  | Reflex:  | Will: 
 
 #### Creature Lore (PathfinderWiki):
 
-A zombie is the corpse of a creature animated by necromantic magic. These mindless undead are among the most common servants of necromancers and evil clerics, as they require relatively little magical power to create and maintain. Zombies retain the basic physical form of the creature they were in life, but their flesh is pallid and rotting, and they move with an awkward, shambling gait.
-
-Unlike some undead that retain fragments of their former personality or intelligence, zombies are completely mindless automatons that follow simple commands from their creator. They feel no pain, fear, or hesitation, making them relentless opponents that continue attacking until destroyed or commanded to stop.
-
-Zombies are often created in large numbers to serve as shock troops or laborers. Their main advantages are their resilience to damage and their complete obedience. However, their slow movement and lack of tactical thinking make them vulnerable to prepared opponents.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Lumber workers from Otari have reported seeing creatures like this near the old logging roads. Several have gone missing.
+Fishermen at the Otari Fishery have spotted these creatures from their boats. They avoid certain areas of Fogfen now.
 
 #### GM Notes:
 
-- Mindless aggression, slow but relentless
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Wand of Reaching (7th-Rank Spell)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
-- **Mycoweave Shield (Greater)** (Level 2, uncommon) - 1 gp - *Bears marks of previous owner*
-- **Coins:** 10 gp in mixed currency
+- **Diving Suit** (Level 3, common) - 50 gp - *Well-maintained*
+- **Sextant of the Night** (Level 4, common) - 47 gp - *Well-maintained*
+- **Comprehension Elixir (Lesser)** (Level 2, common) - 3 gp - *Worn but serviceable*
+- **Magic Wand (1st-rank Spell)** (Level 3, common) - 30 gp - *Well-maintained*
+- **Coins:** 13 gp in mixed currency
 
 #### Development:
 
 - Searching the area reveals tracks leading toward Gauntlight
 - Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
 
 ---
 
 ## Roll: 61 (MODERATE)
 
-### Title: THE BUGBEAR AMBUSHER
+### Title: THE CLOCKWORK BREWER
 
-**Setup:** Something large hides in shadows.
+**Setup:** Something moves in the shadows.
 
-**Read-Aloud:** *"A massive hairy goblinoid leaps out, morningstar raised!"*
+**Read-Aloud:** *"From the shadows, a Clockwork Brewer attacks!"*
 
-**Creature:** Bugbear Ambusher (Level moderate, Large hairy goblinoid, stealthy)
+**Creature:** Clockwork Brewer (Level moderate, A dangerous Clockwork Brewer)
 
-**Stats:** HP: 38 | AC: 19 | Fort: +11 | Reflex: +10 | Will: +8
+**Stats:** HP: 40 | AC: 18 | Fort: 18 | Reflex: +8 | Will: +10
 
 #### Creature Lore (PathfinderWiki):
 
-The mists of Fogfen conceal ancient secrets and forgotten horrors. This creature is but one of many dangers that lurk in the wilderness between Otari and Gauntlight, drawn by the lighthouse's cursed beacon or simply claiming territory in the untamed swampland.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-When Gauntlight glows with baleful red light, the people of Otari bar their doors and pray to Pharasma. This creature is one of many drawn to the lighthouse's cursed beacon.
+Otari's townsfolk whisper of disappearances near Fogfen. The Lumber Consortium has lost three workers this month to creatures like this.
 
 #### GM Notes:
 
-- Ambush, surprise attacks, intimidation
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Darkvision Elixir (Lesser)** (Level 4, common) - 5 gp - *Tarnished but functional*
-- **Bottled Catharsis (Greater)** (Level 2, common) - 1 gp - *Worn but serviceable*
-- **Coins:** 10 gp in mixed currency
+- **Kirin Echo Chime** (Level 2, common) - 2 gp - *Well-maintained*
+- **Clay Sphere** (Level 3, uncommon) - 1 gp - *Bears marks of previous owner*
+- **Five-Feather Wreath (Major)** (Level 4, common) - 1 gp - *Well-maintained*
+- **Blight Bomb (Lesser)** (Level 3, common) - 5 gp - *Tarnished but functional*
+- **Spyglass Eye** (Level 4, common) - 40 gp - *Bears marks of previous owner*
+- **Coins:** 13 gp in mixed currency
 
 #### Development:
 
@@ -2769,81 +2690,75 @@ When Gauntlight glows with baleful red light, the people of Otari bar their door
 
 ## Roll: 62 (MODERATE)
 
-### Title: THE GHOUL PACK
+### Title: THE OCLUAI
 
-**Setup:** Hunched figures crouch over something ahead.
+**Setup:** An unnatural presence fills the area.
 
-**Read-Aloud:** *"Gray-skinned humanoids look up from their meal, eyes gleaming with hunger."*
+**Read-Aloud:** *"A Ocluai rises before you, ready for battle."*
 
-**Creature:** Ghoul Pack (Level moderate, Gray-skinned undead hungering for flesh)
+**Creature:** Ocluai (Level moderate, A dangerous Ocluai)
 
-**Stats:** HP: 30 | AC: 18 | Fort: +10 | Reflex: +11 | Will: +8
+**Stats:** HP: 55 | AC: 18 | Fort: 18 | Reflex: +6 | Will: +12
 
 #### Creature Lore (PathfinderWiki):
 
-Ghouls are sentient, ravenous humanoid undead who haunt graveyards and devour corpses. Despite being undead, ghouls harbour many of the needs that drive the living, though these needs are normally perverted in some sinister way. Ghouls are primarily motivated by hunger despite being dead with stomachs that stopped working long ago. This hunger is constant, never rising or falling, and ceasing only while consuming flesh.
-
-Ghouls have a somewhat humanoid appearance, sharing the basic frame of the humanoid they were created from, although up close it is almost impossible to mistake a ghoul for a still-living person. All ghouls look emaciated and hungry, and despite their frequent feasting ghouls never gain weight and always look wiry. Their skin takes on the hue of bruised, pallid flesh. A ghoul's facial features also subtly change to become more elongated, with teeth that increase in both size and sharpness.
-
-The bite of a ghoul can inflict ghoul fever, which causes the victim to suffer from great hunger but also renders them unable to keep down any food. Unless cured, the victim slowly starves to death and rises the next midnight as a ghoul.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Jorsk Hinterclaw at Blades for Glades has repaired armor damaged by creatures like this. He knows their attack patterns.
+Morlibint at Odd Stories has ancient texts describing these creatures. He'll pay well for firsthand accounts.
 
 #### GM Notes:
 
-- Paralyzing attacks, pack tactics, target isolated victims
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Fetters (Superior)** (Level 2, common) - 1 gp - *Bears marks of previous owner*
-- **Day Goggles** (Level 2, uncommon) - 15 gp - *Bears marks of previous owner*
-- **Greater Wood-Rotted Root** (Level 3, uncommon) - 1 gp - *Bears marks of previous owner*
-- **Fetters (Average)** (Level 2, common) - 1 gp - *Well-maintained*
-- **Coins:** 8 gp in mixed currency
+- **Violet Venom** (Level 3, uncommon) - 6 gp - *Well-maintained*
+- **Clothing (Fine)** (Level 3, common) - 27 gp - *Well-maintained*
+- **Dragon's Breath (4th-Level Spell)** (Level 4, uncommon) - 1 gp - *Bears marks of previous owner*
+- **Bomber's Eye Elixir (Greater)** (Level 4, common) - 7 gp - *Well-maintained*
+- **Unbreakable Heart** (Level 3, common) - 30 gp - *Worn but serviceable*
+- **Coins:** 7 gp in mixed currency
 
 #### Development:
 
 - Searching the area reveals tracks leading toward Gauntlight
 - Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
 
 ---
 
 ## Roll: 63 (MODERATE)
 
-### Title: THE BUGBEAR AMBUSHER
+### Title: THE GIANT EAGLE
 
-**Setup:** Something large hides in shadows.
+**Setup:** The path ahead is blocked.
 
-**Read-Aloud:** *"A massive hairy goblinoid leaps out, morningstar raised!"*
+**Read-Aloud:** *"The Giant Eagle roars and charges!"*
 
-**Creature:** Bugbear Ambusher (Level moderate, Large hairy goblinoid, stealthy)
+**Creature:** Giant Eagle (Level moderate, A dangerous Giant Eagle)
 
-**Stats:** HP: 38 | AC: 19 | Fort: +11 | Reflex: +10 | Will: +8
+**Stats:** HP: 45 | AC: 19 | Fort: 17 | Reflex: +6 | Will: +11
 
 #### Creature Lore (PathfinderWiki):
 
-The mists of Fogfen conceal ancient secrets and forgotten horrors. This creature is but one of many dangers that lurk in the wilderness between Otari and Gauntlight, drawn by the lighthouse's cursed beacon or simply claiming territory in the untamed swampland.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Wrin Sivinxi at Wrin's Wonders has warned adventurers about these creatures. She's seen them in her star charts—bad omens.
+The Lumber Consortium has posted warnings about this type of creature. They're losing too many workers to continue operations safely.
 
 #### GM Notes:
 
-- Ambush, surprise attacks, intimidation
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Moonlit Spellgun (Major)** (Level 2, common) - 1 gp - *Slightly damaged*
-- **Camouflaging Chromatophores (Greater)** (Level 4, uncommon) - 1 gp - *Worn but serviceable*
-- **Coins:** 9 gp in mixed currency
+- **Seventh Prism (Pentagonal)** (Level 3, common) - 1 gp - *Well-maintained*
+- **Cooling Elixir (Lesser)** (Level 4, common) - 1 gp - *Worn but serviceable*
+- **Cat's Eye Elixir** (Level 2, common) - 3 gp - *Tarnished but functional*
+- **Magic Wand (1st-rank Spell)** (Level 3, common) - 30 gp - *Slightly damaged*
+- **Coins:** 12 gp in mixed currency
 
 #### Development:
 
@@ -2854,34 +2769,33 @@ Wrin Sivinxi at Wrin's Wonders has warned adventurers about these creatures. She
 
 ## Roll: 64 (MODERATE)
 
-### Title: THE RUST MONSTER
+### Title: THE MONSTER CORE 2 PG. 24
 
-**Setup:** A strange chittering. Metal corrodes nearby.
+**Setup:** Danger approaches rapidly.
 
-**Read-Aloud:** *"An insect-like creature with antennae approaches. Your metal gear begins to rust!"*
+**Read-Aloud:** *"The Monster Core 2 pg. 24 roars and charges!"*
 
-**Creature:** Rust Monster (Level moderate, Insect that corrodes metal)
+**Creature:** Monster Core 2 pg. 24 (Level moderate, A dangerous Monster Core 2 pg. 24)
 
-**Stats:** HP: 35 | AC: 20 | Fort: +10 | Reflex: +13 | Will: +8
+**Stats:** HP: 40 | AC: 19 | Fort:  | Reflex:  | Will: 
 
 #### Creature Lore (PathfinderWiki):
 
-Aberrations are creatures that defy natural law—beings from beyond reality, experiments gone wrong, or entities warped by exposure to alien magic. The Darklands beneath Golarion's surface are home to countless such horrors, and occasionally they find their way to the surface through forgotten tunnels or magical mishaps.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Lumber workers from Otari have reported seeing creatures like this near the old logging roads. Several have gone missing.
+Keeleno Lathenar at Otari Market pays extra for pelts or parts from dangerous creatures. This one would fetch a good price.
 
 #### GM Notes:
 
-- Rusts weapons and armor, flees when threatened
+- Standard combat tactics
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Clothing (Fine)** (Level 3, common) - 27 gp - *Bears marks of previous owner*
-- **Barding (Light; Large)** (Level 2, common) - 12 gp - *Well-maintained*
-- **Magic Wand (6th-rank Spell)** (Level 3, common) - 30 gp - *Bears marks of previous owner*
-- **Coins:** 6 gp in mixed currency
+- **Unifying Emblem (Sklar-Quah)** (Level 3, common) - 1 gp - *Slightly damaged*
+- **Fetters (Simple)** (Level 2, common) - 1 gp - *Well-maintained*
+- **Coins:** 10 gp in mixed currency
 
 #### Development:
 
@@ -2895,136 +2809,121 @@ Lumber workers from Otari have reported seeing creatures like this near the old 
 
 ## Roll: 65 (DIFFICULT)
 
-### Title: THE SKELETAL CHAMPION
+### Title: THE SHADOW
 
-**Setup:** A lone warrior stands at attention.
+**Setup:** The path ahead is blocked.
 
-**Read-Aloud:** *"This skeleton stands with military bearing."*
+**Read-Aloud:** *"The Shadow roars and charges!"*
 
-**Creature:** Skeletal Champion (Level difficult, Elite undead warrior from ancient garrison)
+**Creature:** Shadow (Level difficult, A dangerous Shadow)
 
-**Stats:** HP: 45 | AC: 21 | Fort: +11 | Reflex: +13 | Will: +9
+**Stats:** HP: 40 | AC: 20 | Fort: 24 | Reflex: +11 | Will: +18
 
 #### Creature Lore (PathfinderWiki):
 
-Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Otari's townsfolk whisper of disappearances near Fogfen. The Lumber Consortium has lost three workers this month to creatures like this.
+Fishermen at the Otari Fishery have spotted these creatures from their boats. They avoid certain areas of Fogfen now.
 
 #### GM Notes:
 
-- Skilled combatant, shield and sword
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Torrent Spellgun (Moderate)** (Level 3, common) - 1 gp - *Well-maintained*
-- **Slashing Claws** (Level 3, common) - 1 gp - *Slightly damaged*
-- **Shiver** (Level 3, common) - 5 gp - *Well-maintained*
-- **Coins:** 18 gp in mixed currency
+- **Slashing Claws** (Level 3, common) - 1 gp - *Well-maintained*
+- **Wand of Mercy (2nd-Rank Spell)** (Level 4, common) - 1 gp - *Worn but serviceable*
+- **Essence of Mandragora** (Level 4, common) - 10 gp - *Tarnished but functional*
+- **Coins:** 19 gp in mixed currency
 
 #### Development:
 
 - Searching the area reveals tracks leading toward Gauntlight
 - Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
 
 ---
 
 ## Roll: 66 (DIFFICULT)
 
-### Title: THE WIGHT
+### Title: THE AQUATIC, BEAST
 
-**Setup:** Hollow breathing echoes. Armor scrapes against bone.
+**Setup:** You sense hostile intent nearby.
 
-**Read-Aloud:** *"Tarnished armor stumbles forward. "The lighthouse... it calls..." it rasps."*
+**Read-Aloud:** *"A Aquatic, Beast emerges from the mist!"*
 
-**Creature:** Wight (Level difficult, Undead warrior muttering about "the red light")
+**Creature:** Aquatic, Beast (Level difficult, A dangerous Aquatic, Beast)
 
-**Stats:** HP: 50 | AC: 20 | Fort: +12 | Reflex: +10 | Will: +11
+**Stats:** HP: 55 | AC: 20 | Fort:  | Reflex:  | Will: 
 
 #### Creature Lore (PathfinderWiki):
 
-Wights are undead creatures born from warriors who died in battle with a terrible rage or hatred burning in their hearts. This fury persists beyond death, animating their corpses and driving them to seek vengeance against the living. Unlike mindless undead, wights retain much of their combat prowess and tactical thinking from life, making them formidable opponents.
-
-Wights appear as withered, desiccated humanoids with burning hatred visible in their eyes. Their touch drains the life force from living creatures, leaving victims weakened and vulnerable. Those slain by a wight often rise as wights themselves, forever bound to serve their killer.
-
-These undead are often found haunting battlefields, ancient fortresses, or places where great violence occurred. They sometimes lead groups of lesser undead, using their retained intelligence to coordinate attacks against the living.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Otari's townsfolk whisper of disappearances near Fogfen. The Lumber Consortium has lost three workers this month to creatures like this.
+Vandy Banderdash at the Dawnflower Library has blessed many who've faced creatures like this. She offers prayers and healing to survivors.
 
 #### GM Notes:
 
-- Drain Life, fights with precision, seeks to create more undead
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
-- Speaks Chelish (Common with accent)
-- May have military orders or identification papers
-- Could be reasoned with if party mentions Thrune or Cheliax
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Battle Lute** (Level 4, common) - 1 gp - *Bears marks of previous owner*
-- **Disguise Kit (Replacement Cosmetics)** (Level 3, common) - 25 sp - *Tarnished but functional*
-- **Darkvision Elixir (Moderate)** (Level 4, common) - 5 gp - *Well-maintained*
-- **Clothing (Desert)** (Level 3, common) - 27 gp - *Well-maintained*
-- **Coins:** 14 gp in mixed currency
+- **Belt of Good Health** (Level 4, common) - 42 gp - *Worn but serviceable*
+- **Five-Feather Wreath (Greater)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
+- **Retrieval Prism (Greater)** (Level 3, common) - 1 gp - *Worn but serviceable*
+- **Faith Tattoo (Major)** (Level 4, common) - 1 gp - *Worn but serviceable*
+- **Coins:** 8 gp in mixed currency
 
 #### Development:
 
 - Searching the area reveals tracks leading toward Gauntlight
 - Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
 
 ---
 
 ## Roll: 67 (DIFFICULT)
 
-### Title: THE MINOTAUR
+### Title: THE LICKWEED
 
-**Setup:** Heavy hoofbeats echo. A bestial roar.
+**Setup:** The path ahead is blocked.
 
-**Read-Aloud:** *"A massive bull-headed humanoid charges, greataxe raised."*
+**Read-Aloud:** *"A Lickweed stalks toward you with hostile intent."*
 
-**Creature:** Minotaur (Level difficult, Bull-headed humanoid warrior)
+**Creature:** Lickweed (Level difficult, A dangerous Lickweed)
 
-**Stats:** HP: 70 | AC: 20 | Fort: +15 | Reflex: +10 | Will: +12
+**Stats:** HP: 65 | AC: 20 | Fort: 20 | Reflex: +9 | Will: +12
 
 #### Creature Lore (PathfinderWiki):
 
-Varisia's untamed wilderness harbors creatures that have survived since the age of Thassilon, ancient beasts that have adapted to magical corruption and learned to thrive in cursed lands. These creatures are often more intelligent and dangerous than their mundane cousins.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Wrin Sivinxi at Wrin's Wonders has warned adventurers about these creatures. She's seen them in her star charts—bad omens.
+Jorsk Hinterclaw at Blades for Glades has repaired armor damaged by creatures like this. He knows their attack patterns.
 
 #### GM Notes:
 
-- Charges with horns, maze knowledge, powerful axe
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Handwraps of Mighty Blows (+1)** (Level 4, common) - 50 gp - *Bears marks of previous owner*
-- **Krasovnatype** (Level 4, uncommon) - 7 gp - *Slightly damaged*
-- **Coins:** 18 gp in mixed currency
+- **Wovenwood Shield (Greater)** (Level 4, uncommon) - 1 gp - *Bears marks of previous owner*
+- **Symbol of Conflict (Major)** (Level 4, uncommon) - 1 gp - *Tarnished but functional*
+- **Diving Suit** (Level 3, common) - 50 gp - *Tarnished but functional*
+- **Symbol of Conflict (Greater)** (Level 4, uncommon) - 1 gp - *Slightly damaged*
+- **Coins:** 12 gp in mixed currency
 
 #### Development:
 
@@ -3035,15 +2934,15 @@ Wrin Sivinxi at Wrin's Wonders has warned adventurers about these creatures. She
 
 ## Roll: 68 (DIFFICULT)
 
-### Title: THE ETTERCAP
+### Title: THE PATHFINDER #214: THE BROKEN PALACE PG. 30
 
-**Setup:** Webs everywhere, something moves.
+**Setup:** Strange sounds echo ahead.
 
-**Read-Aloud:** *"A spider-humanoid hybrid drops down."*
+**Read-Aloud:** *"You spot a Pathfinder #214: The Broken Palace pg. 30 ahead, and it spots you."*
 
-**Creature:** Ettercap (Level difficult, Spider-like humanoid web-spinner)
+**Creature:** Pathfinder #214: The Broken Palace pg. 30 (Level difficult, A dangerous Pathfinder #214: The Broken Palace pg. 30)
 
-**Stats:** HP: 55 | AC: 20 | Fort: +12 | Reflex: +14 | Will: +10
+**Stats:** HP: 60 | AC: 21 | Fort:  | Reflex:  | Will: 
 
 #### Creature Lore (PathfinderWiki):
 
@@ -3051,21 +2950,20 @@ VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse 
 
 #### Otari Connection (Players Guide):
 
-This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex's ancient magic, still pulsing after centuries.
+The town guard warns travelers about these threats. Captain Longsaddle maintains a bestiary of local dangers at the garrison.
 
 #### GM Notes:
 
-- Web traps, commands spiders, ambush
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Animal Nip (Lesser)** (Level 4, common) - 1 gp - *Worn but serviceable*
-- **Glimmering Missive** (Level 4, common) - 10 gp - *Bears marks of previous owner*
-- **Familiar Tattoo** (Level 3, common) - 30 gp - *Slightly damaged*
-- **Coins:** 14 gp in mixed currency
+- **Spacious Pouch (Type IV)** (Level 4, common) - 1 gp - *Tarnished but functional*
+- **Acid Flask (Lesser)** (Level 3, common) - 5 gp - *Well-maintained*
+- **Coins:** 19 gp in mixed currency
 
 #### Development:
 
@@ -3076,36 +2974,38 @@ This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex
 
 ## Roll: 69 (DIFFICULT)
 
-### Title: THE GARGOYLE
+### Title: THE TENOME
 
-**Setup:** A "statue" suddenly moves.
+**Setup:** Strange sounds echo ahead.
 
-**Read-Aloud:** *"Stone wings unfold as the gargoyle takes flight, claws extended."*
+**Read-Aloud:** *"From the shadows, a Tenome attacks!"*
 
-**Creature:** Gargoyle (Level difficult, Stone-like fiend that hunts from above)
+**Creature:** Tenome (Level difficult, A dangerous Tenome)
 
-**Stats:** HP: 60 | AC: 22 | Fort: +13 | Reflex: +12 | Will: +11
+**Stats:** HP: 60 | AC: 21 | Fort: 21 | Reflex: +13 | Will: +15
 
 #### Creature Lore (PathfinderWiki):
 
-ABSALOM - THE CITY AT THE CENTER OF THE WORLD  Absalom stands as the greatest city in the Inner Sea region and perhaps all of Golarion. For more than 4,000 years, this metropolis has served as a showcase of the greatest treasures, most diverse peoples, and most significant historical events in the world. Founded by the living god Aroden in 1 AR when he raised the Starstone from the depths of the Inner Sea, Absalom has withstood countless sieges, invasions, and catastrophes, earning its reputation as the most defensible city in existence.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex's ancient magic, still pulsing after centuries.
+Morlibint at Odd Stories has ancient texts describing these creatures. He'll pay well for firsthand accounts.
 
 #### GM Notes:
 
-- Flies, dive attacks, stone camouflage
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Reinforcing Rune (Moderate)** (Level 4, common) - 1 gp - *Worn but serviceable*
-- **Clothing (Fine)** (Level 3, common) - 27 gp - *Worn but serviceable*
-- **Coins:** 13 gp in mixed currency
+- **Alchemist's Lab** (Level 3, common) - 27 gp - *Slightly damaged*
+- **Torrent Spellgun (Major)** (Level 3, common) - 1 gp - *Well-maintained*
+- **Five-Feather Wreath (Major)** (Level 4, common) - 1 gp - *Slightly damaged*
+- **Wand of Reaching (1st-Rank Spell)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
+- **Coins:** 20 gp in mixed currency
 
 #### Development:
 
@@ -3116,82 +3016,80 @@ This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex
 
 ## Roll: 70 (DIFFICULT)
 
-### Title: THE BANDIT CAPTAIN
+### Title: THE RATFOLK GRENADIER
 
-**Setup:** A makeshift barricade blocks the trail.
+**Setup:** Strange sounds echo ahead.
 
-**Read-Aloud:** *""That's far enough." The leader's tattered Andoran uniform bears the eagle."*
+**Read-Aloud:** *"The Ratfolk Grenadier roars and charges!"*
 
-**Creature:** Bandit Captain (Level difficult, Deserter from Andoran, now leads bandits)
+**Creature:** Ratfolk Grenadier (Level difficult, A dangerous Ratfolk Grenadier)
 
-**Stats:** HP: 60 | AC: 21 | Fort: +11 | Reflex: +13 | Will: +10
+**Stats:** HP: 60 | AC: 21 | Fort: 21 | Reflex: +11 | Will: +13
 
 #### Creature Lore (PathfinderWiki):
 
-The region stretches from the frozen reaches of the Crown of the World in the north to the steaming jungles of the Mwangi Expanse in the south, from the mysterious Arcadian Ocean in the west to the trade-rich shores of the Obari Ocean in the east. This vast territory encompasses dozens of nations, hundreds of city-states, and countless smaller settlements, each with their own unique culture, history, and destiny. The farther one travels from Absalom, whether north or south, the farther one moves from cosmopolitan civilization—though exceptions always exist.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-When Gauntlight glows with baleful red light, the people of Otari bar their doors and pray to Pharasma. This creature is one of many drawn to the lighthouse's cursed beacon.
+The town guard warns travelers about these threats. Captain Longsaddle maintains a bestiary of local dangers at the garrison.
 
 #### GM Notes:
 
-- Smart fighter, uses terrain, commands bandits, will negotiate
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Charlatan's Gloves (Greater)** (Level 3, common) - 1 gp - *Bears marks of previous owner*
-- **Handwraps of Mighty Blows (+2 striking)** (Level 4, common) - 50 gp - *Well-maintained*
-- **Chameleon Suit (Major)** (Level 4, uncommon) - 1 gp - *Well-maintained*
-- **Charlatan's Gloves (Greater)** (Level 3, common) - 1 gp - *Slightly damaged*
-- **Coins:** 10 gp in mixed currency
+- **Detonating Gears Snare** (Level 3, common) - 6 gp - *Slightly damaged*
+- **Gate Attenuator (Greater)** (Level 3, common) - 1 gp - *Bears marks of previous owner*
+- **Hippogriff Feather** (Level 3, common) - 6 gp - *Bears marks of previous owner*
+- **Detonating Gears Snare** (Level 3, common) - 6 gp - *Slightly damaged*
+- **Coins:** 17 gp in mixed currency
 
 #### Development:
 
 - Searching the area reveals tracks leading toward Gauntlight
 - Locals in Otari will be grateful for news of this threat being eliminated
-- Bandit camp location can be found with DC 18 Survival check
-- Captain Longsaddle offers 25gp bounty for bandit leader's capture
 
 ---
 
 ## Roll: 71 (DIFFICULT)
 
-### Title: THE MINOTAUR
+### Title: THE PATHFINDER #218: TITANBANE PG. 41
 
-**Setup:** Heavy hoofbeats echo. A bestial roar.
+**Setup:** The air grows thick with menace.
 
-**Read-Aloud:** *"A massive bull-headed humanoid charges, greataxe raised."*
+**Read-Aloud:** *"The Pathfinder #218: Titanbane pg. 41 roars and charges!"*
 
-**Creature:** Minotaur (Level difficult, Bull-headed humanoid warrior)
+**Creature:** Pathfinder #218: Titanbane pg. 41 (Level difficult, A dangerous Pathfinder #218: Titanbane pg. 41)
 
-**Stats:** HP: 70 | AC: 20 | Fort: +15 | Reflex: +10 | Will: +12
+**Stats:** HP: 60 | AC: 21 | Fort:  | Reflex:  | Will: 
 
 #### Creature Lore (PathfinderWiki):
 
-Varisia's untamed wilderness harbors creatures that have survived since the age of Thassilon, ancient beasts that have adapted to magical corruption and learned to thrive in cursed lands. These creatures are often more intelligent and dangerous than their mundane cousins.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-Keeleno Lathenar at Otari Market pays extra for pelts or parts from dangerous creatures. This one would fetch a good price.
+Morlibint at Odd Stories has ancient texts describing these creatures. He'll pay well for firsthand accounts.
 
 #### GM Notes:
 
-- Charges with horns, maze knowledge, powerful axe
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **One Hundred Victories** (Level 3, common) - 30 gp - *Well-maintained*
-- **Magic Wand (5th-rank Spell)** (Level 3, common) - 30 gp - *Slightly damaged*
-- **Axe Musket (Ranged)** (Level 3, common) - 30 gp - *Well-maintained*
-- **Symbol of Conflict (Major)** (Level 4, uncommon) - 1 gp - *Slightly damaged*
-- **Coins:** 8 gp in mixed currency
+- **Dazzling Rosary (Greater)** (Level 4, common) - 1 gp - *Worn but serviceable*
+- **Faith Tattoo** (Level 4, common) - 1 gp - *Bears marks of previous owner*
+- **Skinsaw Mask** (Level 3, uncommon) - 15 gp - *Worn but serviceable*
+- **Wand of Mental Purification (8th-Rank Spell)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
+- **Coins:** 10 gp in mixed currency
 
 #### Development:
 
@@ -3202,15 +3100,227 @@ Keeleno Lathenar at Otari Market pays extra for pelts or parts from dangerous cr
 
 ## Roll: 72 (DIFFICULT)
 
-### Title: THE OGRE WARRIOR
+### Title: THE HULDRA
 
-**Setup:** Heavy splashing and grunting approach rapidly.
+**Setup:** You sense hostile intent nearby.
 
-**Read-Aloud:** *"An ogre crashes through reeds, dragging massive club, eyes gleaming with hunger."*
+**Read-Aloud:** *"From the shadows, a Huldra attacks!"*
 
-**Creature:** Ogre Warrior (Level difficult, Brutish swamp ogre with crude club)
+**Creature:** Huldra (Level difficult, A dangerous Huldra)
 
-**Stats:** HP: 70 | AC: 18 | Fort: +14 | Reflex: +8 | Will: +9
+**Stats:** HP: 70 | AC: 21 | Fort: 21 | Reflex: +9 | Will: +14
+
+#### Creature Lore (PathfinderWiki):
+
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
+
+#### Otari Connection (Players Guide):
+
+The Lumber Consortium has posted warnings about this type of creature. They're losing too many workers to continue operations safely.
+
+#### GM Notes:
+
+- Standard combat tactics
+- This is a serious threat—play it smart and dangerous
+- Use terrain and tactics to maximum effect
+- Consider foreshadowing this encounter with signs/tracks
+
+#### Rewards (from equipment.json, prices halved):
+
+- **Unbreakable Heart** (Level 3, common) - 30 gp - *Tarnished but functional*
+- **Trinity Geode** (Level 3, common) - 1 gp - *Worn but serviceable*
+- **Coins:** 13 gp in mixed currency
+
+#### Development:
+
+- Searching the area reveals tracks leading toward Gauntlight
+- Locals in Otari will be grateful for news of this threat being eliminated
+
+---
+
+## Roll: 73 (DIFFICULT)
+
+### Title: THE TRIPKEE RAIN-CALLER
+
+**Setup:** Strange sounds echo ahead.
+
+**Read-Aloud:** *"The Tripkee Rain-Caller roars and charges!"*
+
+**Creature:** Tripkee Rain-Caller (Level difficult, A dangerous Tripkee Rain-Caller)
+
+**Stats:** HP: 60 | AC: 20 | Fort: 20 | Reflex: +8 | Will: +11
+
+#### Creature Lore (PathfinderWiki):
+
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
+
+#### Otari Connection (Players Guide):
+
+When Gauntlight glows with baleful red light, the people of Otari bar their doors and pray to Pharasma. This creature is one of many drawn to the lighthouse's cursed beacon.
+
+#### GM Notes:
+
+- Standard combat tactics
+- This is a serious threat—play it smart and dangerous
+- Use terrain and tactics to maximum effect
+- Consider foreshadowing this encounter with signs/tracks
+
+#### Rewards (from equipment.json, prices halved):
+
+- **Reinforcing Rune (Lesser)** (Level 4, common) - 1 gp - *Slightly damaged*
+- **Storm Hammer** (Level 3, common) - 30 gp - *Well-maintained*
+- **Armory Bracelet (Greater)** (Level 3, common) - 1 gp - *Slightly damaged*
+- **Coins:** 14 gp in mixed currency
+
+#### Development:
+
+- Searching the area reveals tracks leading toward Gauntlight
+- Locals in Otari will be grateful for news of this threat being eliminated
+
+---
+
+## Roll: 74 (DIFFICULT)
+
+### Title: THE PATHFINDER #216: THE ACROPOLIS PYRE PG. 84
+
+**Setup:** The path ahead is blocked.
+
+**Read-Aloud:** *"The Pathfinder #216: The Acropolis Pyre pg. 84 roars and charges!"*
+
+**Creature:** Pathfinder #216: The Acropolis Pyre pg. 84 (Level difficult, A dangerous Pathfinder #216: The Acropolis Pyre pg. 84)
+
+**Stats:** HP: 60 | AC: 21 | Fort:  | Reflex:  | Will: 
+
+#### Creature Lore (PathfinderWiki):
+
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
+
+#### Otari Connection (Players Guide):
+
+Jorsk Hinterclaw at Blades for Glades has repaired armor damaged by creatures like this. He knows their attack patterns.
+
+#### GM Notes:
+
+- Standard combat tactics
+- This is a serious threat—play it smart and dangerous
+- Use terrain and tactics to maximum effect
+- Consider foreshadowing this encounter with signs/tracks
+
+#### Rewards (from equipment.json, prices halved):
+
+- **Wand of Reaching (2nd-Rank Spell)** (Level 4, common) - 1 gp - *Well-maintained*
+- **Battle Lute** (Level 4, common) - 1 gp - *Bears marks of previous owner*
+- **Wand of Mental Purification (8th-Rank Spell)** (Level 4, common) - 1 gp - *Slightly damaged*
+- **Darkvision Elixir (Moderate)** (Level 4, common) - 5 gp - *Well-maintained*
+- **Tear-Away Clothing** (Level 3, common) - 27 gp - *Well-maintained*
+- **Coins:** 18 gp in mixed currency
+
+#### Development:
+
+- Searching the area reveals tracks leading toward Gauntlight
+- Locals in Otari will be grateful for news of this threat being eliminated
+
+---
+
+
+# DEADLY ENCOUNTERS
+
+## Roll: 75 (DEADLY)
+
+### Title: THE ORC RAIDER
+
+**Setup:** A threatening shape emerges.
+
+**Read-Aloud:** *"The Orc Raider roars and charges!"*
+
+**Creature:** Orc Raider (Level deadly, A dangerous Orc Raider)
+
+**Stats:** HP: 165 | AC: 26 | Fort: 26 | Reflex: +18 | Will: +15
+
+#### Creature Lore (PathfinderWiki):
+
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
+
+#### Otari Connection (Players Guide):
+
+Keeleno Lathenar at Otari Market pays extra for pelts or parts from dangerous creatures. This one would fetch a good price.
+
+#### GM Notes:
+
+- Standard combat tactics
+- This is a serious threat—play it smart and dangerous
+- Use terrain and tactics to maximum effect
+- Consider foreshadowing this encounter with signs/tracks
+
+#### Rewards (from equipment.json, prices halved):
+
+- **Handwraps of Mighty Blows (+3 greater striking)** (Level 4, common) - 50 gp - *Bears marks of previous owner*
+- **Void Salts** (Level 4, uncommon) - 7 gp - *Worn but serviceable*
+- **Dragon's Breath (3rd-Level Spell)** (Level 4, uncommon) - 1 gp - *Slightly damaged*
+- **Sealing Chest (Major)** (Level 4, uncommon) - 1 gp - *Well-maintained*
+- **Coins:** 14 gp in mixed currency
+
+#### Development:
+
+- Searching the area reveals tracks leading toward Gauntlight
+- Locals in Otari will be grateful for news of this threat being eliminated
+
+---
+
+## Roll: 76 (DEADLY)
+
+### Title: THE LICH
+
+**Setup:** A threatening shape emerges.
+
+**Read-Aloud:** *"From the shadows, a Lich attacks!"*
+
+**Creature:** Lich (Level deadly, A dangerous Lich)
+
+**Stats:** HP: 190 | AC: 31 | Fort: 31 | Reflex: +17 | Will: +21
+
+#### Creature Lore (PathfinderWiki):
+
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
+
+#### Otari Connection (Players Guide):
+
+Lumber workers from Otari have reported seeing creatures like this near the old logging roads. Several have gone missing.
+
+#### GM Notes:
+
+- Standard combat tactics
+- This is a serious threat—play it smart and dangerous
+- Use terrain and tactics to maximum effect
+- Consider foreshadowing this encounter with signs/tracks
+
+#### Rewards (from equipment.json, prices halved):
+
+- **Shapespeak Mask** (Level 4, uncommon) - 40 gp - *Worn but serviceable*
+- **Sentry Fulu** (Level 4, common) - 7 gp - *Slightly damaged*
+- **Bomber's Eye Elixir (Lesser)** (Level 4, common) - 7 gp - *Well-maintained*
+- **Dischoran Rubble** (Level 4, common) - 9 gp - *Bears marks of previous owner*
+- **Darkvision Elixir (Lesser)** (Level 4, common) - 5 gp - *Well-maintained*
+- **Coins:** 14 gp in mixed currency
+
+#### Development:
+
+- Searching the area reveals tracks leading toward Gauntlight
+- Locals in Otari will be grateful for news of this threat being eliminated
+
+---
+
+## Roll: 77 (DEADLY)
+
+### Title: THE FROST GIANT
+
+**Setup:** The path ahead is blocked.
+
+**Read-Aloud:** *"A Frost Giant blocks your path menacingly."*
+
+**Creature:** Frost Giant (Level deadly, A dangerous Frost Giant)
+
+**Stats:** HP: 150 | AC: 29 | Fort: 29 | Reflex: +23 | Will: +16
 
 #### Creature Lore (PathfinderWiki):
 
@@ -3222,19 +3332,16 @@ This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex
 
 #### GM Notes:
 
-- Overwhelming strength, pushes into water, fights to death
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Marvelous Calliope** (Level 4, uncommon) - 50 gp - *Tarnished but functional*
-- **Magnifying Glass** (Level 3, common) - 20 gp - *Worn but serviceable*
-- **Wand of Mercy (1st-Rank Spell)** (Level 4, common) - 1 gp - *Tarnished but functional*
-- **Life-Boosting Oil (Lesser)** (Level 3, uncommon) - 1 gp - *Tarnished but functional*
-- **Glimmering Missive** (Level 4, common) - 10 gp - *Bears marks of previous owner*
-- **Coins:** 19 gp in mixed currency
+- **Wand of Widening (9th-rank Spell)** (Level 4, common) - 50 gp - *Bears marks of previous owner*
+- **Faith Tattoo (Greater)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
+- **Coins:** 20 gp in mixed currency
 
 #### Development:
 
@@ -3243,124 +3350,21 @@ This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex
 
 ---
 
-## Roll: 73 (DIFFICULT)
+## Roll: 78 (DEADLY)
 
-### Title: THE HARPY
+### Title: THE BLUE VIPER
 
-**Setup:** Beautiful singing echoes through fog.
+**Setup:** Something moves in the shadows.
 
-**Read-Aloud:** *"A woman with bird wings and talons perches above, singing."*
+**Read-Aloud:** *"From the shadows, a Blue Viper attacks!"*
 
-**Creature:** Harpy (Level difficult, Bird-woman with captivating song)
+**Creature:** Blue Viper (Level deadly, A dangerous Blue Viper)
 
-**Stats:** HP: 55 | AC: 21 | Fort: +10 | Reflex: +14 | Will: +12
-
-#### Creature Lore (PathfinderWiki):
-
-The mists of Fogfen conceal ancient secrets and forgotten horrors. This creature is but one of many dangers that lurk in the wilderness between Otari and Gauntlight, drawn by the lighthouse's cursed beacon or simply claiming territory in the untamed swampland.
-
-#### Otari Connection (Players Guide):
-
-Otari's townsfolk whisper of disappearances near Fogfen. The Lumber Consortium has lost three workers this month to creatures like this.
-
-#### GM Notes:
-
-- Captivating song, flies, talons and club
-- This is a serious threat—play it smart and dangerous
-- Use terrain and tactics to maximum effect
-- Consider foreshadowing this encounter with signs/tracks
-
-#### Rewards (from equipment.json, prices halved):
-
-- **Wand of Reaching (1st-Rank Spell)** (Level 4, common) - 1 gp - *Tarnished but functional*
-- **Reinforcing Rune (Lesser)** (Level 4, common) - 1 gp - *Worn but serviceable*
-- **Reinforcing Rune (Supreme)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
-- **Coins:** 16 gp in mixed currency
-
-#### Development:
-
-- Searching the area reveals tracks leading toward Gauntlight
-- Locals in Otari will be grateful for news of this threat being eliminated
-
----
-
-## Roll: 74 (DIFFICULT)
-
-### Title: THE WIGHT
-
-**Setup:** Hollow breathing echoes. Armor scrapes against bone.
-
-**Read-Aloud:** *"Tarnished armor stumbles forward. "The lighthouse... it calls..." it rasps."*
-
-**Creature:** Wight (Level difficult, Undead warrior muttering about "the red light")
-
-**Stats:** HP: 50 | AC: 20 | Fort: +12 | Reflex: +10 | Will: +11
+**Stats:** HP: 260 | AC: 34 | Fort: 34 | Reflex: +27 | Will: +28
 
 #### Creature Lore (PathfinderWiki):
 
-Wights are undead creatures born from warriors who died in battle with a terrible rage or hatred burning in their hearts. This fury persists beyond death, animating their corpses and driving them to seek vengeance against the living. Unlike mindless undead, wights retain much of their combat prowess and tactical thinking from life, making them formidable opponents.
-
-Wights appear as withered, desiccated humanoids with burning hatred visible in their eyes. Their touch drains the life force from living creatures, leaving victims weakened and vulnerable. Those slain by a wight often rise as wights themselves, forever bound to serve their killer.
-
-These undead are often found haunting battlefields, ancient fortresses, or places where great violence occurred. They sometimes lead groups of lesser undead, using their retained intelligence to coordinate attacks against the living.
-
-#### Otari Connection (Players Guide):
-
-This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex's ancient magic, still pulsing after centuries.
-
-#### GM Notes:
-
-- Drain Life, fights with precision, seeks to create more undead
-- This is a serious threat—play it smart and dangerous
-- Use terrain and tactics to maximum effect
-- Consider foreshadowing this encounter with signs/tracks
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
-- Speaks Chelish (Common with accent)
-- May have military orders or identification papers
-- Could be reasoned with if party mentions Thrune or Cheliax
-
-#### Rewards (from equipment.json, prices halved):
-
-- **Irritating Seedpod** (Level 3, uncommon) - 1 gp - *Well-maintained*
-- **Musical Instrument (Virtuoso Handheld)** (Level 3, common) - 25 gp - *Tarnished but functional*
-- **Life-Boosting Oil (Moderate)** (Level 3, uncommon) - 1 gp - *Tarnished but functional*
-- **Admonishing Band** (Level 4, common) - 10 gp - *Slightly damaged*
-- **Jug of Fond Remembrance** (Level 4, common) - 37 gp - *Well-maintained*
-- **Coins:** 17 gp in mixed currency
-
-#### Development:
-
-- Searching the area reveals tracks leading toward Gauntlight
-- Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
-
----
-
-
-# DEADLY ENCOUNTERS
-
-## Roll: 75 (DEADLY)
-
-### Title: THE MOHRG
-
-**Setup:** Bones rattle. A long tongue lashes out.
-
-**Read-Aloud:** *"A skeleton with impossibly long tongue stalks forward, ribs exposed."*
-
-**Creature:** Mohrg (Level deadly, Skeletal undead with prehensile tongue)
-
-**Stats:** HP: 70 | AC: 23 | Fort: +14 | Reflex: +15 | Will: +13
-
-#### Creature Lore (PathfinderWiki):
-
-Mohrgs are dangerous and malevolent undead creatures born of people who killed countless others during their lifetime. They appear as skeletons with vivid, living prehensile entrails that writhe and lash out at the living. These intestines are not merely decorative—they serve as deadly weapons that can strangle and constrict victims.
-
-A mohrg is created when a serial killer or mass murderer dies without atoning for their crimes. The sheer weight of their evil deeds prevents their soul from moving on, instead binding it to their remains and transforming them into this horrific undead form. Mohrgs retain their intelligence and often their sadistic personalities, taking pleasure in killing just as they did in life.
-
-Those slain by mohrgs instantly animate as fast-moving zombies under the command of their slayer, creating an ever-growing horde of undead servants. This makes mohrgs particularly dangerous, as they can quickly overwhelm settlements if not stopped.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
@@ -3368,156 +3372,19 @@ When Gauntlight glows with baleful red light, the people of Otari bar their door
 
 #### GM Notes:
 
-- Tongue grapple, creates zombies from kills
-- This is a serious threat—play it smart and dangerous
-- Use terrain and tactics to maximum effect
-- Consider foreshadowing this encounter with signs/tracks
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
-
-#### Rewards (from equipment.json, prices halved):
-
-- **Potion of Passing Fancy** (Level 4, uncommon) - 10 gp - *Tarnished but functional*
-- **Wildwood Ink** (Level 4, common) - 1 gp - *Bears marks of previous owner*
-- **Coins:** 22 gp in mixed currency
-
-#### Development:
-
-- Searching the area reveals tracks leading toward Gauntlight
-- Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
-
----
-
-## Roll: 76 (DEADLY)
-
-### Title: THE GIBBERING MOUTHER
-
-**Setup:** Insane babbling echoes. It's getting louder.
-
-**Read-Aloud:** *"A mass of eyes and mouths oozes forward, gibbering madly."*
-
-**Creature:** Gibbering Mouther (Level deadly, Blob covered in eyes and mouths)
-
-**Stats:** HP: 65 | AC: 18 | Fort: +14 | Reflex: +12 | Will: +15
-
-#### Creature Lore (PathfinderWiki):
-
-Aberrations are creatures that defy natural law—beings from beyond reality, experiments gone wrong, or entities warped by exposure to alien magic. The Darklands beneath Golarion's surface are home to countless such horrors, and occasionally they find their way to the surface through forgotten tunnels or magical mishaps.
-
-#### Otari Connection (Players Guide):
-
-This creature was likely drawn from the depths of Gauntlight by Belcorra Haruvex's ancient magic, still pulsing after centuries.
-
-#### GM Notes:
-
-- Gibbering drives insane, bites with many mouths
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Bomber's Eye Elixir (Lesser)** (Level 4, common) - 7 gp - *Well-maintained*
-- **Sextant of the Night** (Level 4, common) - 47 gp - *Well-maintained*
-- **Wand of Widening (1st-rank Spell)** (Level 4, common) - 50 gp - *Slightly damaged*
-- **Marvelous Calliope** (Level 4, uncommon) - 50 gp - *Tarnished but functional*
-- **Wand of Mercy (1st-Rank Spell)** (Level 4, common) - 1 gp - *Worn but serviceable*
+- **Dragon's Breath (8th-Level Spell)** (Level 4, uncommon) - 1 gp - *Slightly damaged*
+- **Wand of Mercy (7th-Rank Spell)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
+- **Memory Ribbon** (Level 4, uncommon) - 10 gp - *Worn but serviceable*
+- **Wand of Mental Purification (7th-Rank Spell)** (Level 4, common) - 1 gp - *Slightly damaged*
+- **Thorn Triad** (Level 4, common) - 1 gp - *Worn but serviceable*
 - **Coins:** 19 gp in mixed currency
-
-#### Development:
-
-- Searching the area reveals tracks leading toward Gauntlight
-- Locals in Otari will be grateful for news of this threat being eliminated
-
----
-
-## Roll: 77 (DEADLY)
-
-### Title: THE GHOUL PACK LEADER
-
-**Setup:** Multiple hunched figures circle through the fog.
-
-**Read-Aloud:** *"A larger ghoul leads the pack, eyes gleaming with terrible intelligence."*
-
-**Creature:** Ghoul Pack Leader (Level deadly, Cunning ghoul leading pack of lesser undead)
-
-**Stats:** HP: 70 | AC: 22 | Fort: +14 | Reflex: +15 | Will: +11
-
-#### Creature Lore (PathfinderWiki):
-
-Ghouls are sentient, ravenous humanoid undead who haunt graveyards and devour corpses. Despite being undead, ghouls harbour many of the needs that drive the living, though these needs are normally perverted in some sinister way. Ghouls are primarily motivated by hunger despite being dead with stomachs that stopped working long ago. This hunger is constant, never rising or falling, and ceasing only while consuming flesh.
-
-Ghouls have a somewhat humanoid appearance, sharing the basic frame of the humanoid they were created from, although up close it is almost impossible to mistake a ghoul for a still-living person. All ghouls look emaciated and hungry, and despite their frequent feasting ghouls never gain weight and always look wiry. Their skin takes on the hue of bruised, pallid flesh. A ghoul's facial features also subtly change to become more elongated, with teeth that increase in both size and sharpness.
-
-The bite of a ghoul can inflict ghoul fever, which causes the victim to suffer from great hunger but also renders them unable to keep down any food. Unless cured, the victim slowly starves to death and rises the next midnight as a ghoul.
-
-#### Otari Connection (Players Guide):
-
-The Lumber Consortium has posted warnings about this type of creature. They're losing too many workers to continue operations safely.
-
-#### GM Notes:
-
-- Paralyzing attacks, pack tactics, targets spellcasters
-- This is a serious threat—play it smart and dangerous
-- Use terrain and tactics to maximum effect
-- Consider foreshadowing this encounter with signs/tracks
-- Immune to mental effects, doesn't need to breathe
-- Can be turned by clerics of Pharasma or Sarenrae
-- Knows information about Gauntlight if questioned with magic
-
-#### Rewards (from equipment.json, prices halved):
-
-- **Belt of Good Health** (Level 4, common) - 42 gp - *Worn but serviceable*
-- **Sure-Step Potion** (Level 4, common) - 8 gp - *Tarnished but functional*
-- **Handwraps of Mighty Blows (+1)** (Level 4, common) - 50 gp - *Well-maintained*
-- **Wand of Shrouded Step** (Level 4, common) - 40 gp - *Slightly damaged*
-- **Wand of Reaching (7th-Rank Spell)** (Level 4, common) - 1 gp - *Tarnished but functional*
-- **Coins:** 15 gp in mixed currency
-
-#### Development:
-
-- Searching the area reveals tracks leading toward Gauntlight
-- Locals in Otari will be grateful for news of this threat being eliminated
-- Pharasma's priests will pay 10gp for proof of undead destruction
-- The creature's remains can be consecrated to prevent reanimation
-
----
-
-## Roll: 78 (DEADLY)
-
-### Title: THE MANTICORE
-
-**Setup:** Leathery wings beat overhead.
-
-**Read-Aloud:** *"A grotesque hybrid—lion body, human face, bat wings—circles above."*
-
-**Creature:** Manticore (Level deadly, Lion-bodied beast with human face, bat wings)
-
-**Stats:** HP: 75 | AC: 22 | Fort: +15 | Reflex: +13 | Will: +12
-
-#### Creature Lore (PathfinderWiki):
-
-Absalom stands as the greatest city in the Inner Sea region and perhaps all of Golarion. For more than 4,000 years, this metropolis has served as a showcase of the greatest treasures, most diverse peoples, and most significant historical events in the world. Founded by the living god Aroden in 1 AR when he raised the Starstone from the depths of the Inner Sea, Absalom has withstood countless sieges, invasions, and catastrophes, earning its reputation as the most defensible city in existence.
-
-#### Otari Connection (Players Guide):
-
-Tamily Tanderveil offers free drinks to anyone who brings proof of eliminating threats like this near Otari.
-
-#### GM Notes:
-
-- Flies, shoots tail spikes, devours prey
-- This is a serious threat—play it smart and dangerous
-- Use terrain and tactics to maximum effect
-- Consider foreshadowing this encounter with signs/tracks
-
-#### Rewards (from equipment.json, prices halved):
-
-- **Energized Cartridge** (Level 4, common) - 10 gp - *Well-maintained*
-- **Wand of Pernicious Poison (6th-Rank Spell)** (Level 4, common) - 1 gp - *Bears marks of previous owner*
-- **Coins:** 24 gp in mixed currency
 
 #### Development:
 
@@ -3528,36 +3395,38 @@ Tamily Tanderveil offers free drinks to anyone who brings proof of eliminating t
 
 ## Roll: 79 (DEADLY)
 
-### Title: THE CHUUL
+### Title: THE CLAWS OF TIME
 
-**Setup:** Water churns violently.
+**Setup:** The air grows thick with menace.
 
-**Read-Aloud:** *"A massive lobster-thing rises, tentacles writhing."*
+**Read-Aloud:** *"The Claws Of Time roars and charges!"*
 
-**Creature:** Chuul (Level deadly, Aberrant crustacean with paralytic tentacles)
+**Creature:** Claws Of Time (Level deadly, A dangerous Claws Of Time)
 
-**Stats:** HP: 90 | AC: 24 | Fort: +18 | Reflex: +12 | Will: +14
+**Stats:** HP: 150 | AC: 30 | Fort: 30 | Reflex: +17 | Will: +21
 
 #### Creature Lore (PathfinderWiki):
 
-Exposure to aberrations can drive mortals mad, as the mind struggles to comprehend forms and geometries that should not exist. Scholars who study such creatures often find their sanity eroding, their dreams filled with visions of impossible angles and colors that have no name.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-The Rowdy Rockfish's patrons trade stories of encounters like this. Tamily Tanderveil keeps a tally of survivors on her wall.
+Captain Longsaddle of the town guard has posted bounties for proof of creatures like this. Bring evidence to collect your reward.
 
 #### GM Notes:
 
-- Paralyzes, drags underwater, ambush
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Distracting Carapace** (Level 4, common) - 40 gp - *Slightly damaged*
-- **Handwraps of Mighty Blows (+3 greater striking)** (Level 4, common) - 50 gp - *Well-maintained*
-- **Coins:** 13 gp in mixed currency
+- **Handwraps of Mighty Blows (+2 greater striking)** (Level 4, common) - 50 gp - *Slightly damaged*
+- **Sure-Step Potion** (Level 4, common) - 8 gp - *Well-maintained*
+- **Pillow Shield** (Level 4, uncommon) - 40 gp - *Bears marks of previous owner*
+- **Mortalis Coin** (Level 4, common) - 10 gp - *Bears marks of previous owner*
+- **Coins:** 17 gp in mixed currency
 
 #### Development:
 
@@ -3568,45 +3437,38 @@ The Rowdy Rockfish's patrons trade stories of encounters like this. Tamily Tande
 
 ## Roll: 80 (DEADLY)
 
-### Title: THE WIGHT COMMANDER
+### Title: THE QUANTIUM GOLEM
 
-**Setup:** Rusted armor clinks. A commanding voice barks orders in archaic Chelish.
+**Setup:** The path ahead is blocked.
 
-**Read-Aloud:** *"A Chelish officer emerges, hollow eyes burning. "Form ranks!" it commands to shadows."*
+**Read-Aloud:** *"You spot a Quantium Golem ahead, and it spots you."*
 
-**Creature:** Wight Commander (Level deadly, Ancient Chelish officer in tarnished armor)
+**Creature:** Quantium Golem (Level deadly, A dangerous Quantium Golem)
 
-**Stats:** HP: 75 | AC: 23 | Fort: +15 | Reflex: +12 | Will: +14
+**Stats:** HP: 325 | AC: 47 | Fort: 47 | Reflex: +35 | Will: +32
 
 #### Creature Lore (PathfinderWiki):
 
-Wights are undead creatures born from warriors who died in battle with a terrible rage or hatred burning in their hearts. This fury persists beyond death, animating their corpses and driving them to seek vengeance against the living. Unlike mindless undead, wights retain much of their combat prowess and tactical thinking from life, making them formidable opponents.
-
-Wights appear as withered, desiccated humanoids with burning hatred visible in their eyes. Their touch drains the life force from living creatures, leaving victims weakened and vulnerable. Those slain by a wight often rise as wights themselves, forever bound to serve their killer.
-
-These undead are often found haunting battlefields, ancient fortresses, or places where great violence occurred. They sometimes lead groups of lesser undead, using their retained intelligence to coordinate attacks against the living.
+VARISIA - LAND OF ANCIENT MYSTERIES  Varisia represents one of the most diverse and mysterious regions in all of Avistan, a land where ancient ruins dot the landscape and magic seems to seep from the very ground. Unlike most regions of the Inner Sea, Varisia has never been unified under a single government. Instead, it consists of numerous independent city-states, tribal territories, and unclaimed wilderness, all existing in a complex web of alliances, rivalries, and trade relationships.
 
 #### Otari Connection (Players Guide):
 
-When Gauntlight glows with baleful red light, the people of Otari bar their doors and pray to Pharasma. This creature is one of many drawn to the lighthouse's cursed beacon.
+The Lumber Consortium has posted warnings about this type of creature. They're losing too many workers to continue operations safely.
 
 #### GM Notes:
 
-- Commands undead, military tactics, Drain Life on wounded
+- Standard combat tactics
 - This is a serious threat—play it smart and dangerous
 - Use terrain and tactics to maximum effect
 - Consider foreshadowing this encounter with signs/tracks
-- Speaks Chelish (Common with accent)
-- May have military orders or identification papers
-- Could be reasoned with if party mentions Thrune or Cheliax
 
 #### Rewards (from equipment.json, prices halved):
 
-- **Admonishing Band** (Level 4, common) - 10 gp - *Tarnished but functional*
-- **Symbol of Conflict (Greater)** (Level 4, uncommon) - 1 gp - *Slightly damaged*
-- **Spyglass (Fine)** (Level 4, common) - 40 gp - *Tarnished but functional*
-- **Wand of Widening (3rd-rank Spell)** (Level 4, common) - 50 gp - *Well-maintained*
-- **Coins:** 19 gp in mixed currency
+- **Animal Nip (Moderate)** (Level 4, common) - 1 gp - *Slightly damaged*
+- **Fulmination Fang** (Level 4, uncommon) - 57 gp - *Slightly damaged*
+- **Wand of Mercy (9th-Rank Spell)** (Level 4, common) - 1 gp - *Worn but serviceable*
+- **Brightshade** (Level 4, common) - 9 gp - *Slightly damaged*
+- **Coins:** 23 gp in mixed currency
 
 #### Development:
 

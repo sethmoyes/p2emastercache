@@ -9,16 +9,39 @@ import requests
 import time
 import re
 import sys
+from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 import urllib.parse
 
 # Archives of Nethys Elasticsearch endpoint
 AON_ELASTIC_URL = "https://elasticsearch.aonprd.com/aon/_search"
 
+# Verification expiry (30 days)
+VERIFICATION_EXPIRY_DAYS = 30
+
 def load_json(filename):
     """Load JSON file"""
     with open(filename, 'r', encoding='utf-8') as f:
         return json.load(f)
+
+def is_recently_verified(item):
+    """Check if item was verified within the last 30 days"""
+    verified_date = item.get('aon_verified_date')
+    if not verified_date:
+        return False
+    
+    try:
+        verified_dt = datetime.fromisoformat(verified_date)
+        now = datetime.now()
+        days_since = (now - verified_dt).days
+        return days_since < VERIFICATION_EXPIRY_DAYS
+    except:
+        return False
+
+def mark_as_verified(item):
+    """Mark item as verified with current timestamp"""
+    item['aon_verified_date'] = datetime.now().isoformat()
+    return item
 
 def search_aon_elasticsearch(item_name, category='equipment'):
     """
@@ -153,6 +176,14 @@ def scrape_creature_data(url):
 
 def check_equipment_item(item, verbose=True, replace=False):
     """Check a single equipment item against AoN using Elasticsearch API"""
+    
+    # Skip if recently verified
+    if is_recently_verified(item):
+        if verbose:
+            verified_date = item.get('aon_verified_date', '')[:10]  # Just the date part
+            print(f"\nSkipping: {item['name']} (verified on {verified_date})")
+        return {'status': 'skipped', 'item': item['name'], 'updated': False}
+    
     if verbose:
         print(f"\nChecking: {item['name']}")
         print(f"  Our data: Level {item['level']}, Price {item['price']}, Rarity {item['rarity']}")
@@ -223,18 +254,31 @@ def check_equipment_item(item, verbose=True, replace=False):
                 item['armor_category'] = aon_data.get('armor_category', '')
                 item['dex_cap'] = aon_data.get('dex_cap', 0)
             
+            # Mark as verified after updating
+            mark_as_verified(item)
             updated = True
             if verbose:
                 print(f"  >> Updated with AoN data")
         
         return {'status': 'mismatch', 'item': item['name'], 'mismatches': mismatches, 'aon_data': aon_data, 'updated': updated}
     else:
+        # Mark as verified if data matches
+        if replace:
+            mark_as_verified(item)
         if verbose:
             print(f"  OK Data matches!")
         return {'status': 'match', 'item': item['name'], 'updated': False}
 
 def check_creature_item(item, verbose=True, replace=False):
     """Check a single creature against AoN using Elasticsearch API"""
+    
+    # Skip if recently verified
+    if is_recently_verified(item):
+        if verbose:
+            verified_date = item.get('aon_verified_date', '')[:10]
+            print(f"\nSkipping: {item['name']} (verified on {verified_date})")
+        return {'status': 'skipped', 'item': item['name'], 'updated': False}
+    
     if verbose:
         print(f"\nChecking: {item['name']}")
         print(f"  Our data: Level {item['level']}, HP {item['hp']}, AC {item['ac']}")
@@ -276,12 +320,80 @@ def check_creature_item(item, verbose=True, replace=False):
             item['level'] = aon_level
             item['hp'] = aon_hp
             item['ac'] = aon_ac
+            mark_as_verified(item)
             updated = True
             if verbose:
                 print(f"  >> Updated with AoN data")
         
         return {'status': 'mismatch', 'item': item['name'], 'mismatches': mismatches, 'aon_data': aon_data, 'updated': updated}
     else:
+        if replace:
+            mark_as_verified(item)
+        if verbose:
+            print(f"  OK Data matches!")
+        return {'status': 'match', 'item': item['name'], 'updated': False}
+
+def check_deity_item(item, verbose=True, replace=False):
+    """Check a single deity against AoN using Elasticsearch API"""
+    
+    # Skip if recently verified
+    if is_recently_verified(item):
+        if verbose:
+            verified_date = item.get('aon_verified_date', '')[:10]
+            print(f"\nSkipping: {item['name']} (verified on {verified_date})")
+        return {'status': 'skipped', 'item': item['name'], 'updated': False}
+    
+    if verbose:
+        print(f"\nChecking: {item['name']}")
+        print(f"  Our data: Category {item.get('category', 'N/A')}, Alignment {item.get('alignment', 'N/A')}")
+    
+    aon_data = search_aon_elasticsearch(item['name'], 'deity')
+    if not aon_data:
+        if verbose:
+            print(f"  X Not found on AoN")
+        return {'status': 'not_found', 'item': item['name'], 'updated': False}
+    
+    if verbose:
+        print(f"  Found: {aon_data.get('name', 'Unknown')}")
+    
+    # Extract data from Elasticsearch response
+    aon_category = aon_data.get('deity_category', '')
+    aon_alignment = aon_data.get('alignment', '')
+    aon_domains = aon_data.get('domain', [])
+    aon_edicts = aon_data.get('edict', '')
+    aon_anathema = aon_data.get('anathema', '')
+    
+    mismatches = []
+    
+    if aon_category and aon_category != item.get('category', ''):
+        mismatches.append(f"Category: ours={item.get('category', 'N/A')}, AoN={aon_category}")
+    
+    if aon_alignment and aon_alignment != item.get('alignment', ''):
+        mismatches.append(f"Alignment: ours={item.get('alignment', 'N/A')}, AoN={aon_alignment}")
+    
+    if mismatches:
+        if verbose:
+            print(f"  ! Mismatches found:")
+            for m in mismatches:
+                print(f"    - {m}")
+        
+        # Update the item if replace flag is set
+        updated = False
+        if replace:
+            item['category'] = aon_category
+            item['alignment'] = aon_alignment
+            item['domains'] = aon_domains
+            item['edicts'] = aon_edicts
+            item['anathema'] = aon_anathema
+            mark_as_verified(item)
+            updated = True
+            if verbose:
+                print(f"  >> Updated with AoN data")
+        
+        return {'status': 'mismatch', 'item': item['name'], 'mismatches': mismatches, 'aon_data': aon_data, 'updated': updated}
+    else:
+        if replace:
+            mark_as_verified(item)
         if verbose:
             print(f"  OK Data matches!")
         return {'status': 'match', 'item': item['name'], 'updated': False}
@@ -314,8 +426,13 @@ def main(num_checks=10, data_type='equipment', replace=False):
         filename = 'etc/creatures.json'
         data = load_json(filename)
         check_func = check_creature_item
+    elif data_type == 'deities':
+        filename = 'etc/dieties.json'  # Note: typo in original filename
+        data = load_json(filename)
+        check_func = check_deity_item
     else:
         print(f"Unknown data type: {data_type}")
+        print(f"Valid types: equipment, creatures, deities")
         return
     
     print(f"Loaded {len(data)} items from JSON\n")
@@ -371,6 +488,7 @@ def main(num_checks=10, data_type='equipment', replace=False):
     mismatches = sum(1 for r in results if r['status'] == 'mismatch')
     not_found = sum(1 for r in results if r['status'] == 'not_found')
     scrape_failed = sum(1 for r in results if r['status'] == 'scrape_failed')
+    skipped = sum(1 for r in results if r['status'] == 'skipped')
     updated = sum(1 for r in results if r.get('updated', False))
     
     print(f"Total checked: {len(results)}")
@@ -378,6 +496,7 @@ def main(num_checks=10, data_type='equipment', replace=False):
     print(f"  ! Mismatches: {mismatches}")
     print(f"  X Not found: {not_found}")
     print(f"  ! Scrape failed: {scrape_failed}")
+    print(f"  ~ Skipped (recently verified): {skipped}")
     
     if replace and updated > 0:
         print(f"  >> Updated: {updated}")
@@ -426,12 +545,13 @@ if __name__ == "__main__":
             except:
                 print("Usage: python check_data_integrity.py [num_checks|all] [data_type] [--replace]")
                 print("  num_checks: number of items to check or 'all' (default: 10)")
-                print("  data_type: 'equipment' or 'creatures' (default: equipment)")
-                print("  --replace: update mismatched items with AoN data")
+                print("  data_type: 'equipment', 'creatures', or 'deities' (default: equipment)")
+                print("  --replace: update mismatched items with AoN data and delete items not found")
                 print("\nExamples:")
                 print("  python check_data_integrity.py 10 equipment")
                 print("  python check_data_integrity.py all equipment --replace")
                 print("  python check_data_integrity.py 50 creatures")
+                print("  python check_data_integrity.py all deities --replace")
                 sys.exit(1)
     
     if len(sys.argv) > 2:
