@@ -12,39 +12,36 @@
 
 **Specialties:** Snares, tattoos, and consumable items
 
+---
+
+# HEALING POTIONS
+
+*These potions restore Hit Points or spell slots when consumed.*
+
+| Image | Name | Level | Price | Effect | Link |
+|-------|------|-------|-------|--------|------|
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 4 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+
+---
+
 # REGULAR ITEMS
 
-## Common Items (15)
+## Common Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Serpent Oil (Moderate)](https://2e.aonprd.com/Images/Treasure/Serpent_Oil.webp) | Serpent Oil (Moderate) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Serpent%20Oil) |
-| 🖼️ | Viperous Elixir (Lesser) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Viperous%20Elixir) |
-| 🖼️ | Cheetah's Elixir (Lesser) | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cheetah%27s%20Elixir) |
-| 🖼️ | Bomber's Eye Elixir (Greater) | 4 | 14 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bomber%27s%20Eye%20Elixir) |
-| 🖼️ | Thunder Snare | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thunder%20Snare) |
-| 🖼️ | Darkvision Elixir (Moderate) | 4 | 11 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Darkvision%20Elixir) |
-| 🖼️ | Necrotic Bomb (Major) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Necrotic%20Bomb) |
-| 🖼️ | Darkvision Elixir (Lesser) | 4 | 11 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Darkvision%20Elixir) |
-| ![Serpent Oil (True)](https://2e.aonprd.com/Images/Treasure/Serpent_Oil.webp) | Serpent Oil (True) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Serpent%20Oil) |
-| 🖼️ | Tentacle Potion (Moderate) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Tentacle%20Potion) |
-| 🖼️ | Oilskin Pouch | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oilskin%20Pouch) |
-| 🖼️ | Tooth and Claw Tattoo | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tooth%20and%20Claw%20Tattoo) |
-| 🖼️ | Warding Tattoo (Trail) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warding%20Tattoo) |
-| ![Blight Bomb (Moderate)](https://2e.aonprd.com/Images/Treasure/Blight_Bomb.webp) | Blight Bomb (Moderate) | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blight%20Bomb) |
-| 🖼️ | Warding Tattoo | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Warding%20Tattoo) |
+| 🖼️ | Cheetah's Elixir (Greater) | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cheetah%27s%20Elixir) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Common | Equipment | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Comprehension Elixir (Greater)](https://2e.aonprd.com/Images/Treasure/Comprehension_Elixir.webp) | Comprehension Elixir (Greater) | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comprehension%20Elixir) |
+| ![Comprehension Elixir (Lesser)](https://2e.aonprd.com/Images/Treasure/Comprehension_Elixir.webp) | Comprehension Elixir (Lesser) | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comprehension%20Elixir) |
 
 ## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Static Snare | 2 | 6 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Static%20Snare) |
-
-## Rare Items (1)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Digly's Oil of Sympathy (Lesser) | 1 | 0 gp | Rare | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Digly%27s%20Oil%20of%20Sympathy) |
+| 🖼️ | Skeptic's Elixir (Moderate) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Skeptic%27s%20Elixir) |
 
 ## Services
 

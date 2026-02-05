@@ -12,6 +12,20 @@
 
 **Specialties:** Package delivery, message running, and escort services
 
+---
+
+# HEALING POTIONS
+
+*These potions restore Hit Points or spell slots when consumed.*
+
+| Image | Name | Level | Price | Effect | Link |
+|-------|------|-------|-------|--------|------|
+| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 12 gp | Restores one expended 2nd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+
+---
+
 ## Services
 
 - Local delivery (within Otari): 1 sp per package

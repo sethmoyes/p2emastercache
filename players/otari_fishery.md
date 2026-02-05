@@ -12,34 +12,45 @@
 
 **Specialties:** Fresh fish, food, and beverages
 
+---
+
+# HEALING POTIONS
+
+*These potions restore Hit Points or spell slots when consumed.*
+
+| Image | Name | Level | Price | Effect | Link |
+|-------|------|-------|-------|--------|------|
+| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 12 gp | Restores one expended 2nd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+
+---
+
 # REGULAR ITEMS
 
-## Common Items (15)
+## Common Items (11)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Arbalest | 0 | 8 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Arbalest) |
-| 🖼️ | Beverages (Pot of Coffee or Tea) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
-| 🖼️ | Fishing Tackle (Professional) | 3 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fishing%20Tackle) |
-| 🖼️ | Healer's Gel (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Gel) |
-| 🖼️ | Beverages (Bottle of Fine Wine) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
-| 🖼️ | Fish | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fish) |
 | 🖼️ | Combat Fishing Pole | 0 | 8 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Combat%20Fishing%20Pole) |
-| 🖼️ | Healer's Toolkit (Expanded) | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
-| 🖼️ | Healer's Toolkit | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
-| 🖼️ | Fishing Lure | 0 | 8 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fishing%20Lure) |
-| 🖼️ | Rations | 0 | 4 sp (1 week) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rations) |
 | 🖼️ | Underwater | 3 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
-| 🖼️ | Meal (Square) | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Meal) |
-| ![Merchant's Scale](https://2e.aonprd.com/Images/Treasure/Merchants_Scale.webp) | Merchant's Scale | 0 | 2 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Merchant%27s%20Scale) |
-| 🖼️ | Cotton (Bale) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cotton) |
+| 🖼️ | Healer's Toolkit | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
+| 🖼️ | Meal (Poor) | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Meal) |
+| 🖼️ | Rations | 0 | 4 sp (1 week) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rations) |
+| 🖼️ | Beverages (Bottle of Wine) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Fish | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fish) |
+| 🖼️ | Waterproofing Wax | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Waterproofing%20Wax) |
+| 🖼️ | Beverages (Pot of Coffee or Tea) | 0 | 2 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Fu Water | 5 | 21 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fu%20Water) |
+| 🖼️ | Healer's Toolkit (Expanded) | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
 
-## Uncommon Items (2)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Water Purifier | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Water%20Purifier) |
+| 🖼️ | Concealed Holster | 3 | 25 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Concealed%20Holster) |
 | 🖼️ | Comealong | 0 | 3 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comealong) |
+| 🖼️ | Blood-Drinker Blade | 5 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blood-Drinker%20Blade) |
 
 ## Services
 

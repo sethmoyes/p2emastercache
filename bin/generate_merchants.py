@@ -300,6 +300,42 @@ def capitalize_field(text):
         return 'N/A'
     return text[0].upper() + text[1:] if len(text) > 0 else text
 
+def generate_potion_inventory(equipment, player_level):
+    """Generate 3-6 healing potions for merchant
+    
+    Args:
+        equipment: List of all equipment items
+        player_level: Current player level
+    
+    Returns:
+        List of 3-6 potions, with at least 1 Spell Slot Restoration Potion
+    """
+    # Calculate minimum potion level (player_level - 3, minimum 1)
+    min_potion_level = max(1, player_level - 3)
+    
+    # Get all healing potions and spell slot restoration potions
+    healing_potions = [e for e in equipment if 'Healing Potion' in e['name'] and e['level'] >= min_potion_level]
+    spell_slot_potions = [e for e in equipment if 'Spell Slot Restoration Potion' in e['name'] and e['level'] >= min_potion_level]
+    
+    # Determine number of potions (3-6)
+    num_potions = random.randint(3, 6)
+    
+    # Always include at least 1 Spell Slot Restoration Potion
+    potions = []
+    if spell_slot_potions:
+        potions.append(random.choice(spell_slot_potions))
+    
+    # Fill remaining slots with random mix of healing and spell slot potions
+    all_potions = healing_potions + spell_slot_potions
+    remaining = num_potions - len(potions)
+    
+    if all_potions and remaining > 0:
+        # Sample with replacement to allow duplicates
+        for _ in range(remaining):
+            potions.append(random.choice(all_potions))
+    
+    return potions
+
 def generate_merchant_inventory(equipment, categories, num_common, num_uncommon, item_filter=None):
     """Generate random inventory from equipment (max level 6)
     
@@ -332,7 +368,7 @@ def generate_merchant_inventory(equipment, categories, num_common, num_uncommon,
     
     return inventory
 
-def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, spell_inventory=None, rune_inventory=None, output_dir='players', merchant_index=0):
+def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, spell_inventory=None, rune_inventory=None, potion_inventory=None, output_dir='players', merchant_index=0):
     """Write merchant file with header, proprietor image, and full item details"""
     filename = merchant_name.lower().replace(' ', '_').replace("'", '') + '.md'
     filepath = os.path.join(output_dir, filename)
@@ -351,6 +387,47 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
         f.write(f"*{description}*\n\n")
         f.write(f"**Proprietor:** {proprietor}\n\n")
         f.write(f"**Specialties:** {specialties}\n\n")
+        
+        # Potion section (if applicable) - ALWAYS FIRST
+        if potion_inventory:
+            f.write("---\n\n")
+            f.write("# HEALING POTIONS\n\n")
+            f.write("*These potions restore Hit Points or spell slots when consumed.*\n\n")
+            f.write("| Image | Name | Level | Price | Effect | Link |\n")
+            f.write("|-------|------|-------|-------|--------|------|\n")
+            
+            total = len(potion_inventory)
+            for idx, potion in enumerate(potion_inventory, 1):
+                print(f"  [POTION {idx}/{total}] {potion['name'][:50]}", end='... ')
+                image_url = get_image_from_aon(potion['name'])
+                
+                if image_url:
+                    print(f"OK")
+                else:
+                    print(f"X")
+                
+                # Fix and capitalize fields
+                name = potion['name']
+                level = potion['level']
+                price = fix_price(potion['price'])
+                effect = potion.get('effect', 'N/A')
+                
+                # Create image markdown
+                if image_url:
+                    img_md = f"![{name}]({image_url})"
+                else:
+                    img_md = "🖼️"
+                
+                # Create AoN search link
+                search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
+                link_md = f"[View]({search_url})"
+                
+                f.write(f"| {img_md} | {name} | {level} | {price} | {effect} | {link_md} |\n")
+                
+                time.sleep(0.3)
+            
+            f.write("\n")
+            f.write("---\n\n")
         
         # Spell scrolls section (if applicable)
         if spell_inventory:
@@ -1048,6 +1125,10 @@ if __name__ == "__main__":
             other_count = len(rune_inventory['other'])
             print(f"  ⚡ Added {other_count} property runes")
         
+        # Generate potion inventory for ALL merchants (3-6 potions, level X-3 minimum)
+        potion_inventory = generate_potion_inventory(equipment, player_level)
+        print(f"  🧪 Added {len(potion_inventory)} healing potions (at least 1 Spell Slot Restoration)")
+        
         write_merchant_with_header(
             config['name'],
             config['description'],
@@ -1057,6 +1138,7 @@ if __name__ == "__main__":
             config['services'],
             spell_inventory,
             rune_inventory,
+            potion_inventory,
             merchant_index=original_idx
         )
     
@@ -1067,14 +1149,29 @@ if __name__ == "__main__":
         print("="*60)
         
         # Load NPC generator for random merchant names
-        from generate_npc_lore import generate_npc
+        from generate_npc_lore import generate_npc, format_npc_narrative
+        
+        # Simple name lists for random merchants
+        first_names = [
+            "Aldric", "Brenna", "Cedric", "Dara", "Eldon", "Fiona", "Gareth", "Hilda",
+            "Ivor", "Jana", "Kael", "Lyra", "Milo", "Nessa", "Orin", "Petra",
+            "Quinn", "Rolf", "Sable", "Thane", "Una", "Vex", "Wren", "Xander"
+        ]
+        last_names = [
+            "Ashwood", "Blackstone", "Copperfield", "Darkwater", "Emberforge", "Frostwind",
+            "Goldleaf", "Hawthorne", "Ironside", "Jadeheart", "Keenedge", "Lightfoot",
+            "Moonwhisper", "Nightshade", "Oakenshield", "Proudfoot", "Quicksilver", "Ravencrest",
+            "Silverstream", "Thornblade", "Underhill", "Valorheart", "Windrunner", "Youngblood"
+        ]
         
         for merchant_num in [1, 2]:
             print(f"\n[RANDOM MERCHANT {merchant_num}] Generating...")
             
             # Generate random NPC
             npc = generate_npc()
-            merchant_name = f"Random Merchant {merchant_num}: {npc['name']}"
+            npc_name = f"{random.choice(first_names)} {random.choice(last_names)}"
+            npc_background = format_npc_narrative(npc)
+            merchant_name = f"Random Merchant {merchant_num}: {npc_name}"
             
             # Random specialty
             specialties_pool = [
@@ -1110,11 +1207,15 @@ if __name__ == "__main__":
                     inventory['rare'] = random.sample(rare_pool, min(num_rare, len(rare_pool)))
                     print(f"  ⭐ Added {len(inventory['rare'])} rare items!")
             
+            # Generate potion inventory for random merchants too
+            potion_inventory = generate_potion_inventory(equipment, player_level)
+            print(f"  🧪 Added {len(potion_inventory)} healing potions (at least 1 Spell Slot Restoration)")
+            
             # Write to GM directory
             write_merchant_with_header(
                 merchant_name,
-                f"A traveling merchant encountered during an encounter. {npc['background']}",
-                f"{npc['name']} ({npc['ancestry']} {npc['class']})",
+                f"A traveling merchant encountered during an encounter. {npc_background}",
+                f"{npc_name} ({npc['race']} {npc['profession']})",
                 specialty,
                 inventory,
                 services=[
@@ -1124,6 +1225,7 @@ if __name__ == "__main__":
                 ],
                 spell_inventory=None,
                 rune_inventory=None,
+                potion_inventory=potion_inventory,
                 output_dir='gm',
                 merchant_index=10 + merchant_num  # Use indices 11, 12 for random merchants
             )

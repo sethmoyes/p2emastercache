@@ -29465,5 +29465,175 @@
     "rarity": "unique",
     "category": "",
     "type": "adventuring"
+  },
+  {
+    "name": "Healing Potion (Minor)",
+    "level": 1,
+    "price": "4 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Healing",
+      "Magical",
+      "Potion",
+      "Vitality"
+    ],
+    "effect": "Restores 1d8 Hit Points"
+  },
+  {
+    "name": "Healing Potion (Lesser)",
+    "level": 3,
+    "price": "12 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Healing",
+      "Magical",
+      "Potion",
+      "Vitality"
+    ],
+    "effect": "Restores 2d8+5 Hit Points"
+  },
+  {
+    "name": "Healing Potion (Moderate)",
+    "level": 6,
+    "price": "50 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Healing",
+      "Magical",
+      "Potion",
+      "Vitality"
+    ],
+    "effect": "Restores 3d8+10 Hit Points"
+  },
+  {
+    "name": "Healing Potion (Greater)",
+    "level": 12,
+    "price": "400 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Healing",
+      "Magical",
+      "Potion",
+      "Vitality"
+    ],
+    "effect": "Restores 6d8+20 Hit Points"
+  },
+  {
+    "name": "Healing Potion (Major)",
+    "level": 18,
+    "price": "5,000 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Healing",
+      "Magical",
+      "Potion",
+      "Vitality"
+    ],
+    "effect": "Restores 8d8+30 Hit Points"
+  },
+  {
+    "name": "Spell Slot Restoration Potion (Minor)",
+    "level": 1,
+    "price": "4 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Magical",
+      "Potion"
+    ],
+    "effect": "Restores one expended 1st-level spell slot"
+  },
+  {
+    "name": "Spell Slot Restoration Potion (Lesser)",
+    "level": 3,
+    "price": "12 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Magical",
+      "Potion"
+    ],
+    "effect": "Restores one expended 2nd-level spell slot"
+  },
+  {
+    "name": "Spell Slot Restoration Potion (Moderate)",
+    "level": 6,
+    "price": "50 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Magical",
+      "Potion"
+    ],
+    "effect": "Restores one expended 3rd-level spell slot"
+  },
+  {
+    "name": "Spell Slot Restoration Potion (Greater)",
+    "level": 12,
+    "price": "400 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Magical",
+      "Potion"
+    ],
+    "effect": "Restores one expended 6th-level spell slot"
+  },
+  {
+    "name": "Spell Slot Restoration Potion (Major)",
+    "level": 18,
+    "price": "5,000 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Magical",
+      "Potion"
+    ],
+    "effect": "Restores one expended 8th-level spell slot"
   }
 ]

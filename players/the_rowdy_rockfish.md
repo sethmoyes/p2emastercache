@@ -12,32 +12,42 @@
 
 **Specialties:** General goods, supplies, and adventuring gear (no weapons or armor)
 
+---
+
+# HEALING POTIONS
+
+*These potions restore Hit Points or spell slots when consumed.*
+
+| Image | Name | Level | Price | Effect | Link |
+|-------|------|-------|-------|--------|------|
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 4 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 4 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+
+---
+
 # REGULAR ITEMS
 
-## Common Items (13)
+## Common Items (8)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Griffon Cane | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Griffon%20Cane) |
-| 🖼️ | Oilskin Pouch | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oilskin%20Pouch) |
-| ![Weapon Shot (Lesser)](https://2e.aonprd.com/Images/Treasure/Weapon_Shot.webp) | Weapon Shot (Lesser) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Weapon%20Shot) |
-| 🖼️ | Retaliation (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Retaliation) |
-| 🖼️ | Rations | 0 | 4 sp (1 week) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rations) |
-| 🖼️ | Wheel Chair (Chair Storage) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheel%20Chair) |
-| 🖼️ | One Hundred Victories | 3 | 60 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=One%20Hundred%20Victories) |
-| 🖼️ | Mortar of Hidden Meaning | 4 | 75 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mortar%20of%20Hidden%20Meaning) |
-| ![Blight Bomb (Greater)](https://2e.aonprd.com/Images/Treasure/Blight_Bomb.webp) | Blight Bomb (Greater) | 3 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blight%20Bomb) |
-| 🖼️ | Exsanguinating Ammunition (Major) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Exsanguinating%20Ammunition) |
-| 🖼️ | Trustworthy Round | 3 | 9 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Trustworthy%20Round) |
-| 🖼️ | Wand of Widening (6th-rank Spell) | 4 | 100 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Widening) |
-| 🖼️ | Mustard Powder | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mustard%20Powder) |
+| 🖼️ | Staff of Elemental Power | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Elemental%20Power) |
+| 🖼️ | Wand of Reaching (4th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
+| 🖼️ | Repair Toolkit (Superb) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Repair%20Toolkit) |
+| 🖼️ | Demolition Fulu (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Demolition%20Fulu) |
+| 🖼️ | Floating Camouflage Blind | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Floating%20Camouflage%20Blind) |
+| ![Torrent Spellgun (Greater)](https://2e.aonprd.com/Images/Treasure/Torrent_Spellgun.webp) | Torrent Spellgun (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Torrent%20Spellgun) |
+| 🖼️ | Thieves' Toolkit | 0 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thieves%27%20Toolkit) |
+| 🖼️ | Messenger Missive (Multiple) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Messenger%20Missive) |
 
-## Uncommon Items (2)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Deployable Cover | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Deployable%20Cover) |
-| 🖼️ | Popdust | 1 | 1 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Popdust) |
+| 🖼️ | Glittering Snare | 4 | 18 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glittering%20Snare) |
 
 ## Services
 
