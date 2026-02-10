@@ -85,8 +85,16 @@
 
             <!-- Manual Dice Input -->
             <div class="bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500">
-                <h2 class="text-2xl font-bold mb-4">Enter Dice Total</h2>
-                <p class="text-gray-400 text-sm mb-4">Players roll 5d20 in person. Enter the total here:</p>
+                <h2 class="text-2xl font-bold mb-4">Dice Roll</h2>
+                <p class="text-gray-400 text-sm mb-4">Roll 5d20 physically OR use auto-roll:</p>
+                
+                <!-- Auto Roll Button -->
+                <button onclick="autoRoll5d20()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg mb-3 transition transform hover:scale-105 shadow-lg">
+                    🎲 AUTO-ROLL 5d20
+                </button>
+                
+                <!-- Manual Input -->
+                <p class="text-gray-400 text-xs mb-2 text-center">Or enter total manually:</p>
                 <input type="number" id="dice-input" min="5" max="100" 
                     class="w-full bg-gray-700 text-white text-3xl font-bold py-4 px-4 rounded-lg mb-4 text-center border-2 border-purple-500 focus:border-pink-500 focus:outline-none"
                     placeholder="5-100">
@@ -170,6 +178,16 @@
                     </button>
                 </div>
 
+                <!-- Hazard Generator -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">⚠️ Generate Hazard</h3>
+                    <p class="text-sm text-gray-400 mb-3">Random trap or environmental hazard</p>
+                    <input type="number" id="hazard-level" placeholder="Hazard Level (-1 to 10)" min="-1" max="10" value="1" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
+                    <button onclick="generateHazard()" class="w-full bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition font-bold">
+                        Generate Hazard
+                    </button>
+                </div>
+
             </div>
         </div>
 
@@ -248,6 +266,43 @@
             event.target.classList.remove('bg-gray-700');
             event.target.classList.add('bg-purple-600');
             document.getElementById('floor-name').textContent = floorNames[floor];
+        }
+
+        // Auto-roll 5d20 with proper bell curve statistics
+        function autoRoll5d20() {
+            const btn = event.target;
+            btn.disabled = true;
+            btn.textContent = '🎲 Rolling...';
+            
+            // Roll 5d20
+            const rolls = [];
+            for (let i = 0; i < 5; i++) {
+                rolls.push(Math.floor(Math.random() * 20) + 1);
+            }
+            
+            // Calculate sum
+            const sum = rolls.reduce((a, b) => a + b, 0);
+            
+            // Animate the rolls
+            const input = document.getElementById('dice-input');
+            let displayIndex = 0;
+            const animationInterval = setInterval(() => {
+                if (displayIndex < rolls.length) {
+                    input.value = rolls.slice(0, displayIndex + 1).join(' + ') + ' = ' + rolls.slice(0, displayIndex + 1).reduce((a, b) => a + b, 0);
+                    displayIndex++;
+                } else {
+                    clearInterval(animationInterval);
+                    input.value = sum;
+                    
+                    // Show the individual rolls briefly
+                    setTimeout(() => {
+                        // Auto-trigger encounter generation
+                        getDiceEncounter();
+                        btn.disabled = false;
+                        btn.textContent = '🎲 AUTO-ROLL 5d20';
+                    }, 500);
+                }
+            }, 300);
         }
 
         async function getDiceEncounter() {
@@ -416,6 +471,34 @@
                 </div>
                 <div class="prose prose-invert max-w-none bg-gray-900 p-6 rounded">
                     ${data.html}
+                </div>
+            `;
+            output.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        async function generateHazard() {
+            const level = parseInt(document.getElementById('hazard-level').value);
+            
+            if (isNaN(level) || level < -1 || level > 10) {
+                alert('Please enter a level between -1 and 10');
+                return;
+            }
+            
+            const output = document.getElementById('generator-output');
+            output.innerHTML = '<p class="text-center">Generating hazard...</p>';
+            output.classList.remove('hidden');
+            
+            const response = await fetch('/api/generate-hazard', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ level })
+            });
+            const data = await response.json();
+            
+            output.innerHTML = `
+                <h3 class="text-2xl font-bold mb-4">⚠️ ${data.name} (Level ${data.level})</h3>
+                <div class="prose prose-invert max-w-none">
+                    <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded">${data.content}</pre>
                 </div>
             `;
             output.scrollIntoView({ behavior: 'smooth' });

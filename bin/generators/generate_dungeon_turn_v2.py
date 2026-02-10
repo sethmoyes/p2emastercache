@@ -217,133 +217,478 @@ OPPORTUNITY_TEMPLATES = [
         "time_cost": "1 action to sneak, 5 minutes to deceive",
         "gm_notes": "Avoids combat encounter. If deception used, guards leave post for 30 minutes.",
         "reward": "Avoid combat, save resources"
+    },
+    {
+        "title": "Healing Spring",
+        "description": "A small spring bubbles from the wall. The water glows faintly and smells sweet.",
+        "challenge": "DC 17 Nature to identify if safe, DC 19 Arcana to detect magic",
+        "success": "It's a natural healing spring! Each person who drinks heals 3d8 HP.",
+        "failure": "You're not sure if it's safe. Drinking requires DC 15 Fortitude save or become sickened 1.",
+        "spotlight": ["Druid", "Wizard"],
+        "skills": ["Nature", "Arcana"],
+        "time_cost": "10 minutes for everyone to drink",
+        "gm_notes": "Major healing opportunity. Add 1 die to jar for time spent.",
+        "reward": "Significant healing"
+    },
+    {
+        "title": "Weapon Cache",
+        "description": "You find a hidden armory - racks of weapons covered in dust but still functional.",
+        "challenge": "DC 16 Perception to find, DC 17 Crafting to assess quality",
+        "success": "You find 1d4 +1 weapons appropriate for your party. Take what you need.",
+        "failure": "The weapons are too corroded or damaged to be useful.",
+        "spotlight": ["Rogue", "Fighter"],
+        "skills": ["Perception", "Crafting"],
+        "time_cost": "10 minutes to search and test",
+        "gm_notes": "Significant treasure. Add 1 die to jar. Weapons are +1 striking if party level 4+.",
+        "reward": "Magic weapons"
+    },
+    {
+        "title": "Sleeping Enemy",
+        "description": "A powerful enemy is sleeping in an alcove, snoring loudly. They're alone and vulnerable.",
+        "challenge": "DC 18 Stealth to sneak past OR automatic surprise round if you attack",
+        "success": "You pass unnoticed or get a free surprise round in combat.",
+        "failure": "They wake up! Roll initiative normally.",
+        "spotlight": ["Rogue", "Monk"],
+        "skills": ["Stealth"],
+        "time_cost": "1 action to sneak",
+        "gm_notes": "If attacked with surprise, enemy is flat-footed and prone. Major advantage.",
+        "reward": "Avoid encounter or major combat advantage"
+    },
+    {
+        "title": "Treasure Map",
+        "description": "You find a crude map scratched into the wall showing an 'X' marks the spot.",
+        "challenge": "DC 17 Survival to navigate to the location, DC 18 Society to interpret symbols",
+        "success": "You find the hidden treasure: 100gp per party member and 1 random magic item.",
+        "failure": "The map is too vague or the treasure has already been looted.",
+        "spotlight": ["Ranger", "Wizard"],
+        "skills": ["Survival", "Society"],
+        "time_cost": "20 minutes to search (add 2 dice to jar)",
+        "gm_notes": "Significant treasure reward. Worth the time investment.",
+        "reward": "Gold and magic item"
+    },
+    {
+        "title": "Friendly Creature",
+        "description": "A small creature approaches cautiously. It seems intelligent and friendly.",
+        "challenge": "DC 15 Nature to understand its behavior, DC 16 Diplomacy to befriend it",
+        "success": "It becomes your companion for this floor. Grants +2 to Perception checks and warns of danger.",
+        "failure": "It runs away, frightened.",
+        "spotlight": ["Druid", "Ranger"],
+        "skills": ["Nature", "Diplomacy"],
+        "time_cost": "5 minutes to befriend",
+        "gm_notes": "Companion lasts until you leave this floor. Provides warning before ambushes.",
+        "reward": "Temporary companion, perception bonus"
+    },
+    {
+        "title": "Alchemical Lab",
+        "description": "You find an abandoned alchemist's workspace with intact equipment and ingredients.",
+        "challenge": "DC 18 Crafting to brew potions, DC 17 Nature to identify ingredients",
+        "success": "You can craft 1d4 healing potions (moderate) or other alchemical items.",
+        "failure": "The ingredients are too degraded or you lack the skill.",
+        "spotlight": ["Alchemist", "Wizard"],
+        "skills": ["Crafting", "Nature"],
+        "time_cost": "30 minutes to brew (add 3 dice to jar)",
+        "gm_notes": "Major time investment but significant reward. Potions are moderate healing (2d8+10).",
+        "reward": "Healing potions"
+    },
+    {
+        "title": "Ventilation Shaft",
+        "description": "You spot a ventilation shaft that connects to other areas. It's narrow but passable.",
+        "challenge": "DC 16 Athletics to climb through, DC 17 Survival to navigate correctly",
+        "success": "You emerge 2 floors ahead! Massive shortcut discovered.",
+        "failure": "You get lost in the shafts and emerge where you started (waste 20 minutes).",
+        "spotlight": ["Rogue", "Monk"],
+        "skills": ["Athletics", "Survival"],
+        "time_cost": "20 minutes to navigate",
+        "gm_notes": "Success skips entire floor! Remove 5 dice from jar. Mark on map.",
+        "reward": "Massive shortcut"
+    },
+    {
+        "title": "Ritual Circle",
+        "description": "An intact ritual circle glows faintly. It's still charged with magic.",
+        "challenge": "DC 19 Arcana to activate safely, DC 20 Religion if divine magic",
+        "success": "The circle grants everyone a +1 status bonus to all saves for 1 hour.",
+        "failure": "The circle discharges harmlessly. Magic is wasted.",
+        "spotlight": ["Wizard", "Cleric"],
+        "skills": ["Arcana", "Religion"],
+        "time_cost": "10 minutes to activate ritual",
+        "gm_notes": "Significant buff. Add 1 die to jar. Bonus lasts 1 hour of game time.",
+        "reward": "+1 to all saves"
+    },
+    {
+        "title": "Spy Hole",
+        "description": "You find a hidden spy hole that looks into the next room. You can see what's ahead.",
+        "challenge": "DC 15 Perception to find, DC 16 Stealth to observe without being noticed",
+        "success": "You see the next encounter and can plan accordingly. Gain +2 to initiative.",
+        "failure": "You don't find it or make noise while looking.",
+        "spotlight": ["Rogue", "Ranger"],
+        "skills": ["Perception", "Stealth"],
+        "time_cost": "5 minutes to observe",
+        "gm_notes": "Allows players to prepare for next encounter. +2 initiative is significant.",
+        "reward": "Preparation, initiative bonus"
     }
 ]
 
 # COMPLICATION EVENT TEMPLATES (26-45)
 COMPLICATION_TEMPLATES = [
     {
-        "title": "Locked Iron Door",
-        "description": "A heavy iron door blocks the passage. The lock is complex but functional.",
+        "title": "Locked Door",
+        "description": "A locked door blocks your path. The mechanism is complex but functional.",
         "challenge": "DC 18 Thievery to pick lock OR DC 22 Athletics to force open",
         "success": "Door opens. Quietly if picked, loudly if forced.",
         "failure": "Lock jams (Thievery) or door holds (Athletics). Must find key or try different approach.",
         "spotlight": ["Rogue", "Monk"],
         "skills": ["Thievery", "Athletics"],
         "time_cost": "2 actions (Thievery) or 3 actions (Athletics)",
-        "gm_notes": "If forced open, next encounter has surprise round against party (noise alert).",
+        "gm_notes": "If forced open, noise may attract attention.",
         "consequence": "Noise attracts attention"
     },
     {
-        "title": "Unstable Floor",
-        "description": "The floor ahead is cracked and unstable. You hear creaking with each step.",
-        "challenge": "DC 17 Acrobatics to cross carefully OR DC 19 Crafting to brace the floor",
+        "title": "Unstable Structure",
+        "description": "The structure ahead is cracked and unstable. You hear ominous creaking.",
+        "challenge": "DC 17 Acrobatics to cross carefully OR DC 19 Crafting to brace it",
         "success": "Everyone crosses safely. Crafting solution is permanent.",
-        "failure": "Floor collapses. Everyone makes DC 18 Reflex save or falls 10 feet (2d6 damage).",
+        "failure": "Structure fails. Everyone makes DC 18 Reflex save or takes 2d6 damage.",
         "spotlight": ["Swashbuckler", "Rogue"],
         "skills": ["Acrobatics", "Crafting"],
         "time_cost": "1 action per person (Acrobatics) or 10 minutes (Crafting)",
-        "gm_notes": "Crafting takes time but helps on return trip. Acrobatics is faster but risky.",
+        "gm_notes": "Crafting takes time but helps on return trip.",
         "consequence": "Falling damage, noise"
     },
-
     {
         "title": "Magical Ward",
-        "description": "A glowing sigil blocks the doorway. Touching it would trigger an alarm.",
+        "description": "A glowing sigil blocks your path. Touching it would trigger an alarm.",
         "challenge": "DC 19 Arcana to dispel OR DC 20 Thievery to disable the physical trigger",
         "success": "Ward is disabled. You can pass safely.",
-        "failure": "Ward triggers! Alarm sounds throughout this floor. All encounters are now alert.",
+        "failure": "Ward triggers! Alarm sounds throughout this floor.",
         "spotlight": ["Wizard", "Rogue"],
         "skills": ["Arcana", "Thievery"],
         "time_cost": "3 actions to attempt",
-        "gm_notes": "If failed, all remaining encounters on this floor get surprise round against party.",
+        "gm_notes": "If failed, remaining encounters on this floor are alerted.",
         "consequence": "Dungeon-wide alert"
     },
     {
         "title": "Language Barrier",
-        "description": "A wounded creature begs for help in a language you don't recognize. They seem to have important information.",
-        "challenge": "DC 18 Society to identify language and communicate OR DC 16 Diplomacy with gestures",
-        "success": "They warn you about an ambush ahead and tell you the safe route.",
+        "description": "A wounded creature tries to communicate. They seem to have important information.",
+        "challenge": "DC 18 Society to identify language OR DC 16 Diplomacy with gestures",
+        "success": "They warn you about danger ahead and tell you the safe route.",
         "failure": "You can't communicate. They flee in fear or frustration.",
         "spotlight": ["Wizard", "Cleric"],
         "skills": ["Society", "Diplomacy"],
         "time_cost": "5 minutes to communicate",
-        "gm_notes": "If successful, next encounter can be avoided entirely. Creature may become ally.",
+        "gm_notes": "If successful, next encounter can be avoided entirely.",
         "consequence": "Missed information"
     },
     {
         "title": "Tracking Challenge",
-        "description": "An enemy fled this way, leaving a blood trail. They're wounded and know you're coming.",
+        "description": "Fresh tracks lead away. Someone or something passed through recently.",
         "challenge": "DC 17 Survival to track quickly and quietly",
         "success": "You find them before they can alert others. Surprise round.",
-        "failure": "You lose the trail, or they hear you coming and prepare an ambush.",
-        "spotlight": ["Rogue", "Monk"],
+        "failure": "You lose the trail, or they hear you coming.",
+        "spotlight": ["Ranger", "Rogue"],
         "skills": ["Survival"],
         "time_cost": "10 minutes to track carefully",
-        "gm_notes": "Success = surprise round for party. Failure = surprise round for enemy. Add 1 die to jar.",
+        "gm_notes": "Success = surprise round for party. Failure = surprise round for enemy.",
         "consequence": "Enemy reinforcements"
     },
-
     {
         "title": "Poisoned Air",
-        "description": "Green mist seeps from cracks in the walls. The smell is acrid and burning.",
-        "challenge": "DC 18 Nature to identify poison and find antidote plants nearby OR DC 19 Medicine to treat symptoms",
+        "description": "Toxic mist seeps from cracks. The smell is acrid and burning.",
+        "challenge": "DC 18 Nature to identify poison OR DC 19 Medicine to treat symptoms",
         "success": "You neutralize the poison or treat everyone. Can pass safely.",
         "failure": "Everyone makes DC 17 Fortitude save or become sickened 1 for 1 hour.",
-        "spotlight": ["Cleric", "Wizard"],
+        "spotlight": ["Druid", "Cleric"],
         "skills": ["Nature", "Medicine"],
         "time_cost": "10 minutes to treat everyone",
-        "gm_notes": "Sickened 1 = -1 to all checks. Significantly weakens party. Add 1 die to jar for treatment time.",
+        "gm_notes": "Sickened 1 = -1 to all checks. Significantly weakens party.",
         "consequence": "Condition penalty"
     },
     {
-        "title": "Collapsing Ceiling",
-        "description": "Cracks spread across the ceiling. Debris falls. It's going to collapse!",
-        "challenge": "DC 19 Athletics to brace ceiling while others escape OR DC 18 Acrobatics to dodge falling debris",
+        "title": "Collapsing Structure",
+        "description": "Cracks spread rapidly. Debris falls. It's going to collapse!",
+        "challenge": "DC 19 Athletics to brace while others escape OR DC 18 Acrobatics to dodge debris",
         "success": "Everyone escapes safely. If braced, passage remains open.",
-        "failure": "Everyone makes DC 18 Reflex save or takes 3d6 bludgeoning damage. Passage collapses.",
+        "failure": "Everyone makes DC 18 Reflex save or takes 3d6 bludgeoning damage.",
         "spotlight": ["Monk", "Swashbuckler"],
         "skills": ["Athletics", "Acrobatics"],
         "time_cost": "1 round of actions",
-        "gm_notes": "If passage collapses, must find alternate route (adds 30 minutes = 3 dice to jar).",
+        "gm_notes": "If passage collapses, must find alternate route (adds 30 minutes).",
         "consequence": "Damage, blocked passage"
     },
     {
         "title": "Puzzle Lock",
-        "description": "The door has a complex mechanical puzzle lock - gears, levers, and symbols.",
-        "challenge": "DC 19 Crafting to solve mechanically OR DC 20 Arcana if it has magical components",
+        "description": "A complex mechanical puzzle blocks your way - gears, levers, and symbols.",
+        "challenge": "DC 19 Crafting to solve mechanically OR DC 20 Arcana if magical",
         "success": "Lock opens. You can pass through.",
         "failure": "Lock remains sealed. Must find another way or the key.",
         "spotlight": ["Rogue", "Wizard"],
         "skills": ["Crafting", "Arcana"],
         "time_cost": "10 minutes to solve",
-        "gm_notes": "Add 1 die to jar for time spent. Alternative: find key elsewhere in dungeon.",
+        "gm_notes": "Alternative: find key elsewhere in dungeon.",
         "consequence": "Time spent, alternate route needed"
     },
     {
         "title": "Intimidating Presence",
-        "description": "A powerful creature blocks the path. They're not immediately hostile, but wary and aggressive.",
-        "challenge": "DC 18 Diplomacy to negotiate passage OR DC 19 Intimidation to make them back down",
+        "description": "A powerful creature blocks the path. They're wary but not immediately hostile.",
+        "challenge": "DC 18 Diplomacy to negotiate OR DC 19 Intimidation to make them back down",
         "success": "They let you pass. May even provide information if Diplomacy used.",
         "failure": "They attack. Roll initiative.",
         "spotlight": ["Cleric", "Swashbuckler"],
         "skills": ["Diplomacy", "Intimidation"],
         "time_cost": "5 minutes of negotiation",
-        "gm_notes": "Avoids combat if successful. Diplomacy may turn them into ally. Intimidation makes them hostile later.",
+        "gm_notes": "Diplomacy may turn them into ally. Intimidation makes them hostile later.",
         "consequence": "Combat or future hostility"
     },
-
     {
         "title": "Performance Required",
-        "description": "Guards ahead are bored and looking for entertainment. They challenge you to prove you're 'worthy' to pass.",
-        "challenge": "DC 17 Performance to entertain them OR DC 18 Deception to pretend you're expected guests",
-        "success": "They let you pass, laughing or convinced. May even give you information.",
+        "description": "Guards ahead are bored. They challenge you to prove you're 'worthy' to pass.",
+        "challenge": "DC 17 Performance to entertain OR DC 18 Deception to pretend you're expected",
+        "success": "They let you pass. May even give you information.",
         "failure": "They're offended or suspicious. Roll initiative.",
-        "spotlight": ["Swashbuckler", "Rogue"],
+        "spotlight": ["Bard", "Rogue"],
         "skills": ["Performance", "Deception"],
-        "time_cost": "5 minutes of performance/deception",
-        "gm_notes": "Creative solution to avoid combat. Rewards social skills in dungeon.",
+        "time_cost": "5 minutes",
+        "gm_notes": "Creative solution to avoid combat.",
         "consequence": "Combat if failed"
+    },
+    {
+        "title": "Slippery Surface",
+        "description": "The floor is covered in slime, oil, or ice. Very treacherous.",
+        "challenge": "DC 16 Acrobatics to cross safely OR DC 18 Athletics to power through",
+        "success": "Everyone crosses without incident.",
+        "failure": "Fall prone and slide 10 feet. Take 1d6 damage if you hit a wall.",
+        "spotlight": ["Monk", "Swashbuckler"],
+        "skills": ["Acrobatics", "Athletics"],
+        "time_cost": "1 action per person",
+        "gm_notes": "Falling prone in combat is dangerous. Consider cleaning the area.",
+        "consequence": "Prone, damage"
+    },
+    {
+        "title": "Narrow Passage",
+        "description": "The passage ahead narrows to a tight squeeze. Medium creatures must crawl.",
+        "challenge": "DC 15 Athletics to squeeze through OR DC 17 Survival to find alternate route",
+        "success": "Everyone gets through safely.",
+        "failure": "Someone gets stuck. Takes 10 minutes to free them (add 1 die to jar).",
+        "spotlight": ["Small creatures shine here"],
+        "skills": ["Athletics", "Survival"],
+        "time_cost": "2 actions per person to squeeze",
+        "gm_notes": "Small creatures pass easily. Large creatures can't fit at all.",
+        "consequence": "Time spent, vulnerability"
+    },
+    {
+        "title": "Darkness",
+        "description": "All light sources suddenly extinguish. Magical darkness fills the area.",
+        "challenge": "DC 18 Arcana to dispel OR DC 16 Survival to navigate by touch/sound",
+        "success": "You overcome the darkness and continue.",
+        "failure": "You stumble around. Takes 10 minutes to find your way (add 1 die to jar).",
+        "spotlight": ["Wizard", "Ranger"],
+        "skills": ["Arcana", "Survival"],
+        "time_cost": "3 actions to overcome",
+        "gm_notes": "Creatures with darkvision are unaffected.",
+        "consequence": "Time spent, vulnerability"
+    },
+    {
+        "title": "Illusory Wall",
+        "description": "The wall ahead shimmers slightly. It might be an illusion hiding a passage.",
+        "challenge": "DC 19 Perception to notice OR DC 20 Arcana to analyze the illusion",
+        "success": "You find the hidden passage. Shortcut discovered!",
+        "failure": "You don't notice anything unusual. Continue the long way.",
+        "spotlight": ["Wizard", "Rogue"],
+        "skills": ["Perception", "Arcana"],
+        "time_cost": "1 minute to investigate",
+        "gm_notes": "Success saves 20 minutes of travel (remove 2 dice from jar).",
+        "consequence": "Missed shortcut"
+    },
+    {
+        "title": "Swarm of Vermin",
+        "description": "Rats, insects, or bats swarm through the area. Not dangerous but disruptive.",
+        "challenge": "DC 16 Nature to calm them OR DC 17 Intimidation to scare them off",
+        "success": "Swarm disperses. You can pass.",
+        "failure": "Swarm attacks! Everyone takes 1d4 damage and must make DC 15 Will save or become frightened 1.",
+        "spotlight": ["Druid", "Ranger"],
+        "skills": ["Nature", "Intimidation"],
+        "time_cost": "2 actions",
+        "gm_notes": "Frightened 1 = -1 to all checks for 1 round.",
+        "consequence": "Minor damage, condition"
+    },
+    {
+        "title": "Suspicious Stain",
+        "description": "A large dark stain covers the floor. Could be blood, acid, or something worse.",
+        "challenge": "DC 17 Crafting to identify substance OR DC 18 Medicine if it's biological",
+        "success": "You identify it and know how to safely cross.",
+        "failure": "You step in it. Make DC 16 Fortitude save or take 2d6 acid damage.",
+        "spotlight": ["Alchemist", "Cleric"],
+        "skills": ["Crafting", "Medicine"],
+        "time_cost": "1 minute to analyze",
+        "gm_notes": "Could be trap residue, monster remains, or environmental hazard.",
+        "consequence": "Acid damage"
+    },
+    {
+        "title": "Echoing Chamber",
+        "description": "This chamber amplifies all sounds. Even whispers echo loudly.",
+        "challenge": "DC 18 Stealth to move silently OR DC 16 Performance to use acoustics to confuse enemies",
+        "success": "You cross without alerting anyone, or you create a diversion.",
+        "failure": "Your noise echoes throughout the floor. All encounters are now alerted.",
+        "spotlight": ["Rogue", "Bard"],
+        "skills": ["Stealth", "Performance"],
+        "time_cost": "2 actions per person",
+        "gm_notes": "Performance success can send enemies to wrong location.",
+        "consequence": "Dungeon-wide alert"
+    },
+    {
+        "title": "Rickety Bridge",
+        "description": "A rope bridge spans a chasm. It looks old and frayed.",
+        "challenge": "DC 17 Acrobatics to cross carefully OR DC 19 Crafting to reinforce it",
+        "success": "Everyone crosses safely.",
+        "failure": "Bridge breaks! Everyone makes DC 18 Reflex save or falls 20 feet (4d6 damage).",
+        "spotlight": ["Monk", "Rogue"],
+        "skills": ["Acrobatics", "Crafting"],
+        "time_cost": "1 action per person (Acrobatics) or 10 minutes (Crafting)",
+        "gm_notes": "Crafting makes it safe for return trip.",
+        "consequence": "Falling damage"
+    },
+    {
+        "title": "Magical Feedback",
+        "description": "Residual magic in the area interferes with spellcasting.",
+        "challenge": "DC 19 Arcana to stabilize the magic OR DC 17 Religion if divine magic",
+        "success": "Magic stabilizes. Spellcasters can cast normally.",
+        "failure": "Magic remains unstable. All spells cast here require DC 15 flat check or fizzle.",
+        "spotlight": ["Wizard", "Cleric"],
+        "skills": ["Arcana", "Religion"],
+        "time_cost": "5 minutes to stabilize",
+        "gm_notes": "Affects both party and enemy spellcasters.",
+        "consequence": "Spell failure chance"
+    },
+    {
+        "title": "Ancient Inscription",
+        "description": "Runes cover the walls. They might contain important information or warnings.",
+        "challenge": "DC 18 Society to translate OR DC 19 Arcana if magical runes",
+        "success": "You learn about a trap ahead, enemy weakness, or hidden treasure location.",
+        "failure": "You can't decipher it. Miss important information.",
+        "spotlight": ["Wizard", "Cleric"],
+        "skills": ["Society", "Arcana"],
+        "time_cost": "5 minutes to translate",
+        "gm_notes": "Success gives tactical advantage in next encounter.",
+        "consequence": "Missed tactical information"
+    },
+    {
+        "title": "Cursed Object",
+        "description": "A beautiful item sits on a pedestal, glowing invitingly. It radiates magic.",
+        "challenge": "DC 19 Religion to detect curse, DC 20 Arcana to safely dispel",
+        "success": "You identify and remove the curse. The item is safe to take (minor magic item).",
+        "failure": "You touch it. Make DC 17 Will save or become cursed (GM's choice of effect).",
+        "spotlight": ["Cleric", "Wizard"],
+        "skills": ["Religion", "Arcana"],
+        "time_cost": "10 minutes to analyze and dispel",
+        "gm_notes": "Curse could be: -1 to saves, can't heal naturally, nightmares, etc.",
+        "consequence": "Curse effect"
+    },
+    {
+        "title": "Flooded Passage",
+        "description": "Water fills the corridor ahead, waist-deep and murky. You can't see the bottom.",
+        "challenge": "DC 17 Athletics to swim through, DC 18 Survival to find shallow path",
+        "success": "Everyone crosses safely.",
+        "failure": "Someone steps in a hole. Make DC 16 Reflex save or go underwater (1d6 damage, lose 1 action).",
+        "spotlight": ["Monk", "Ranger"],
+        "skills": ["Athletics", "Survival"],
+        "time_cost": "5 minutes to cross carefully",
+        "gm_notes": "Wet equipment may be damaged. Scrolls and books need protection.",
+        "consequence": "Drowning risk, equipment damage"
+    },
+    {
+        "title": "Territorial Beast",
+        "description": "A large beast has made this area its den. It's not evil, just protective.",
+        "challenge": "DC 17 Nature to calm it, DC 18 Intimidation to scare it off",
+        "success": "Beast allows you to pass or leaves the area.",
+        "failure": "Beast attacks. Roll initiative.",
+        "spotlight": ["Druid", "Ranger"],
+        "skills": ["Nature", "Intimidation"],
+        "time_cost": "5 minutes to calm",
+        "gm_notes": "If calmed with Nature, beast may help in next combat. If intimidated, it flees.",
+        "consequence": "Combat with beast"
+    },
+    {
+        "title": "Magical Darkness",
+        "description": "Unnatural darkness fills the area. Even darkvision doesn't work here.",
+        "challenge": "DC 19 Arcana to dispel, DC 17 Religion if unholy darkness",
+        "success": "Darkness lifts. You can see normally.",
+        "failure": "Darkness remains. Must navigate blind (all creatures are concealed).",
+        "spotlight": ["Wizard", "Cleric"],
+        "skills": ["Arcana", "Religion"],
+        "time_cost": "3 actions to dispel",
+        "gm_notes": "If not dispelled, all attacks have 20% miss chance. Very dangerous.",
+        "consequence": "Concealment, combat disadvantage"
+    },
+    {
+        "title": "Pressure Plate",
+        "description": "You spot a suspicious tile in the floor. It's slightly raised.",
+        "challenge": "DC 18 Perception to notice, DC 19 Thievery to disarm",
+        "success": "Trap is disarmed. You can pass safely.",
+        "failure": "Trap triggers! Darts shoot from walls. Everyone makes DC 18 Reflex save or takes 3d6 damage.",
+        "spotlight": ["Rogue"],
+        "skills": ["Perception", "Thievery"],
+        "time_cost": "2 actions to disarm",
+        "gm_notes": "If triggered, noise alerts nearby enemies.",
+        "consequence": "Damage, alert enemies"
+    },
+    {
+        "title": "Unstable Magic",
+        "description": "Wild magic surges through this area. Spells behave unpredictably.",
+        "challenge": "DC 19 Arcana to stabilize, DC 18 Religion if divine magic",
+        "success": "Magic stabilizes. Spells work normally.",
+        "failure": "Wild magic persists. All spells cast here roll on wild magic table.",
+        "spotlight": ["Wizard", "Sorcerer"],
+        "skills": ["Arcana", "Religion"],
+        "time_cost": "10 minutes to stabilize",
+        "gm_notes": "Wild magic can help or hurt. 50/50 chance of beneficial/harmful effect.",
+        "consequence": "Unpredictable spell effects"
+    },
+    {
+        "title": "Negotiation Opportunity",
+        "description": "Intelligent creatures ahead are willing to talk. They want something.",
+        "challenge": "DC 18 Diplomacy to negotiate, DC 17 Society to understand their culture",
+        "success": "You make a deal. They let you pass or provide information.",
+        "failure": "Negotiations break down. They attack or demand too much.",
+        "spotlight": ["Bard", "Cleric"],
+        "skills": ["Diplomacy", "Society"],
+        "time_cost": "10 minutes to negotiate",
+        "gm_notes": "They might want: gold, magic item, promise of help, or just respect.",
+        "consequence": "Combat or unfavorable deal"
+    },
+    {
+        "title": "Crumbling Ledge",
+        "description": "The path narrows to a crumbling ledge over a deep pit. One wrong step...",
+        "challenge": "DC 18 Acrobatics to cross, DC 19 Athletics to climb around",
+        "success": "Everyone crosses safely.",
+        "failure": "Someone falls! Make DC 18 Reflex save to catch ledge or fall 30 feet (6d6 damage).",
+        "spotlight": ["Monk", "Rogue"],
+        "skills": ["Acrobatics", "Athletics"],
+        "time_cost": "1 action per person (Acrobatics) or 10 minutes (Athletics)",
+        "gm_notes": "Falling makes noise. Alerts enemies below.",
+        "consequence": "Falling damage, alert enemies"
+    },
+    {
+        "title": "Magical Lock",
+        "description": "The door ahead has no keyhole - only a glowing magical seal.",
+        "challenge": "DC 20 Arcana to dispel, DC 18 Thievery to find hidden mechanism",
+        "success": "Door opens. You can pass.",
+        "failure": "Door remains sealed. Must find another way.",
+        "spotlight": ["Wizard", "Rogue"],
+        "skills": ["Arcana", "Thievery"],
+        "time_cost": "10 minutes to attempt",
+        "gm_notes": "Alternative: find command word elsewhere in dungeon.",
+        "consequence": "Blocked path, alternate route needed"
+    },
+    {
+        "title": "Haunted Area",
+        "description": "The temperature drops. You see your breath. Ghostly whispers fill the air.",
+        "challenge": "DC 18 Religion to bless area, DC 17 Occultism to understand spirits",
+        "success": "Spirits calm or leave. You can pass safely.",
+        "failure": "Spirits attack! Everyone makes DC 17 Will save or become frightened 2.",
+        "spotlight": ["Cleric", "Wizard"],
+        "skills": ["Religion", "Occultism"],
+        "time_cost": "5 minutes to perform blessing",
+        "gm_notes": "Frightened 2 = -2 to all checks for 2 rounds. Very debilitating.",
+        "consequence": "Fear condition, spirit attacks"
     }
 ]
 
@@ -462,6 +807,112 @@ DILEMMA_TEMPLATES = [
         "time_cost": "10 min vs none vs encumbrance",
         "gm_notes": "If pick now: roll dice jar during attempt. If take chest: -5 ft speed until dropped. If ignore: treasure is gone.",
         "consequence": "Multiple trade-offs"
+    },
+    {
+        "title": "Sacrifice for Information",
+        "description": "A dying enemy offers information about the floor layout and traps in exchange for healing.",
+        "choice_a": "Heal them: Use spell slot or potion. Get detailed map and trap locations.",
+        "choice_b": "Intimidate: DC 18 Intimidation. They talk but info might be incomplete or false.",
+        "choice_c": "Let them die: No cost, but lose valuable intelligence.",
+        "spotlight": ["Cleric", "Rogue"],
+        "skills": ["Medicine", "Intimidation"],
+        "time_cost": "5 minutes to heal and talk",
+        "gm_notes": "If healed: accurate info. If intimidated: 50% chance of false info. If ignored: miss shortcuts.",
+        "consequence": "Resources vs information"
+    },
+    {
+        "title": "Split the Party",
+        "description": "Two passages lead to the same destination. One is trapped but shorter, the other is safe but longer.",
+        "choice_a": "Send scout ahead: One PC takes trapped path (DC 18 Perception for traps). Rest take safe path. Meet at end.",
+        "choice_b": "All take safe path: 20 minutes longer (add 2 dice to jar). Everyone stays together.",
+        "choice_c": "All take trapped path: Faster but everyone risks traps. Multiple DC 18 Reflex saves.",
+        "spotlight": ["Rogue", "All"],
+        "skills": ["Perception", "Reflex", "Tactics"],
+        "time_cost": "10 min vs 30 min vs 10 min with risk",
+        "gm_notes": "Splitting party is risky but efficient. Safe path is slow. Trapped path is dangerous.",
+        "consequence": "Speed vs safety vs party cohesion"
+    },
+    {
+        "title": "Magical Artifact Choice",
+        "description": "You find three magical items on pedestals. You can only take one before the others vanish.",
+        "choice_a": "Weapon: +1 striking weapon of your choice. Immediate combat power.",
+        "choice_b": "Armor: +1 resilient armor. Better defense for the dungeon.",
+        "choice_c": "Utility: Bag of holding or similar. Carry more loot and supplies.",
+        "spotlight": ["All"],
+        "skills": ["Arcana to identify"],
+        "time_cost": "5 minutes to choose",
+        "gm_notes": "Each choice benefits different playstyles. No wrong answer but creates discussion.",
+        "consequence": "Tactical choice with long-term impact"
+    },
+    {
+        "title": "Poison the Well",
+        "description": "You find the enemy's water supply. You have poison that could sicken them all.",
+        "choice_a": "Poison it: All enemies on this floor become sickened 1 for 24 hours. Easier fights but morally questionable.",
+        "choice_b": "Don't poison: Keep moral high ground but fights are normal difficulty.",
+        "spotlight": ["Alchemist", "Rogue"],
+        "skills": ["Crafting", "Stealth"],
+        "time_cost": "10 minutes to poison safely",
+        "gm_notes": "Sickened 1 = -1 to all checks. Significant advantage. But is it right?",
+        "consequence": "Moral choice with tactical benefit"
+    },
+    {
+        "title": "Rescue or Mission",
+        "description": "You hear prisoners crying for help nearby. But your mission is time-sensitive.",
+        "choice_a": "Rescue now: 20 minutes (add 2 dice). Prisoners become allies and provide info.",
+        "choice_b": "Mission first: Continue to objective. Prisoners might be dead when you return.",
+        "spotlight": ["Cleric", "All"],
+        "skills": ["Diplomacy", "Tactics"],
+        "time_cost": "20 min to rescue",
+        "gm_notes": "If rescued: gain 1d4 NPC allies for this floor. If ignored: moral weight and potential loss.",
+        "consequence": "Heroism vs pragmatism"
+    },
+    {
+        "title": "Destroy or Claim",
+        "description": "You find an evil artifact. It's powerful but corrupting.",
+        "choice_a": "Destroy it: DC 20 Religion or Arcana. Takes 10 minutes. Enemies lose power source.",
+        "choice_b": "Claim it: Gain powerful item but risk corruption. DC 17 Will save each day or become evil.",
+        "choice_c": "Leave it: No risk, no reward. Enemies keep their power.",
+        "spotlight": ["Cleric", "Wizard"],
+        "skills": ["Religion", "Arcana", "Will"],
+        "time_cost": "10 min to destroy",
+        "gm_notes": "Corruption is real. Will saves get harder each day. But power is tempting.",
+        "consequence": "Power vs corruption"
+    },
+    {
+        "title": "Barricade or Ambush",
+        "description": "You know enemies are coming. You have time to prepare.",
+        "choice_a": "Barricade: 10 minutes to build defenses. Enemies can't reach you easily (+2 AC, cover).",
+        "choice_b": "Ambush: 10 minutes to set trap. Enemies take 3d6 damage when they arrive.",
+        "choice_c": "Flee: Leave now. Avoid fight but enemies will pursue later.",
+        "spotlight": ["All"],
+        "skills": ["Crafting", "Stealth", "Tactics"],
+        "time_cost": "10 min to prepare",
+        "gm_notes": "Both preparation options are good. Fleeing means harder fight later.",
+        "consequence": "Tactical preparation choice"
+    },
+    {
+        "title": "Negotiate or Fight",
+        "description": "Intelligent enemies ahead are willing to parley. They want something you have.",
+        "choice_a": "Negotiate: Give them gold/item. They let you pass and provide safe passage.",
+        "choice_b": "Refuse and fight: Keep your stuff but must fight them now.",
+        "choice_c": "Lie and betray: DC 20 Deception. They believe you, then you attack with surprise.",
+        "spotlight": ["Bard", "Rogue"],
+        "skills": ["Diplomacy", "Deception"],
+        "time_cost": "10 min to negotiate",
+        "gm_notes": "Betrayal works once. Word spreads. Future negotiations become impossible.",
+        "consequence": "Honor vs pragmatism"
+    },
+    {
+        "title": "Loud or Slow",
+        "description": "A collapsed passage blocks your way. You can blast through or dig carefully.",
+        "choice_a": "Blast through: Use magic or explosives. Fast (5 minutes) but VERY loud. Alerts entire floor.",
+        "choice_b": "Dig carefully: 30 minutes (add 3 dice). Quiet but exhausting. Everyone loses 1 action next combat.",
+        "choice_c": "Find another way: 20 minutes (add 2 dice) to backtrack and find alternate route.",
+        "spotlight": ["Wizard", "Monk"],
+        "skills": ["Arcana", "Athletics", "Survival"],
+        "time_cost": "5 min vs 30 min vs 20 min",
+        "gm_notes": "Loud = all encounters alerted. Dig = fatigue penalty. Alternate = time cost.",
+        "consequence": "Speed vs stealth vs fatigue"
     }
 ]
 
@@ -589,6 +1040,114 @@ ACTIVE_THREAT_TEMPLATES = [
         "time_cost": "3 actions to disrupt",
         "gm_notes": "If disrupted: avoid combat. If not: combat encounter with summoned creature.",
         "threat_level": "High - combat or quick thinking"
+    },
+    {
+        "title": "Swarm Attack!",
+        "description": "Thousands of insects/rats/bats suddenly swarm from the walls!",
+        "immediate_action": "DC 17 Reflex to cover face, DC 18 Nature to repel them with fire/smoke",
+        "success": "You protect yourself. Swarm disperses.",
+        "failure": "Take 2d6 damage and become sickened 2 from bites and disease.",
+        "spotlight": ["Druid", "Ranger"],
+        "skills": ["Reflex", "Nature"],
+        "time_cost": "1 round",
+        "gm_notes": "Sickened 2 = -2 to all checks. Very debilitating. Lasts until treated.",
+        "threat_level": "Moderate - condition and damage"
+    },
+    {
+        "title": "Sniper!",
+        "description": "An arrow whistles past your head! Someone is shooting from hiding!",
+        "immediate_action": "DC 19 Perception to spot them, DC 18 Acrobatics to take cover",
+        "success": "You spot the sniper or reach cover. Can act normally.",
+        "failure": "Another arrow! Take 2d8 damage. Still don't know where they are.",
+        "spotlight": ["Ranger", "Rogue"],
+        "skills": ["Perception", "Acrobatics"],
+        "time_cost": "1 round to react",
+        "gm_notes": "Sniper has cover and concealment. Hard to fight back without spotting them.",
+        "threat_level": "High - ongoing damage"
+    },
+    {
+        "title": "Magical Explosion!",
+        "description": "A magical trap detonates! Fireball erupts around you!",
+        "immediate_action": "DC 19 Reflex save or take 4d6 fire damage (half on success)",
+        "success": "You dive aside. Take half damage.",
+        "failure": "Full damage and catch fire (1d6 persistent fire damage).",
+        "spotlight": ["Monk", "Swashbuckler"],
+        "skills": ["Reflex"],
+        "time_cost": "Immediate",
+        "gm_notes": "Persistent fire requires action to extinguish. Major resource drain.",
+        "threat_level": "High - burst damage and persistent"
+    },
+    {
+        "title": "Betrayal!",
+        "description": "An NPC you trusted suddenly attacks! They were a spy all along!",
+        "immediate_action": "DC 18 Perception to notice their intent, or they get surprise round",
+        "success": "You see it coming. Roll initiative normally.",
+        "failure": "They attack with surprise! You're flat-footed.",
+        "spotlight": ["Rogue", "Cleric"],
+        "skills": ["Perception", "Sense Motive"],
+        "time_cost": "Immediate combat",
+        "gm_notes": "Betrayal hurts. NPC knows party tactics and weaknesses.",
+        "threat_level": "High - surprise combat"
+    },
+    {
+        "title": "Ceiling Collapse!",
+        "description": "The entire ceiling is coming down! Tons of stone falling!",
+        "immediate_action": "DC 19 Athletics to sprint to safety, DC 20 Acrobatics to dodge falling debris",
+        "success": "You escape the collapse zone.",
+        "failure": "Buried! Take 4d6 damage and are restrained. DC 18 Athletics to dig out.",
+        "spotlight": ["Monk", "Barbarian"],
+        "skills": ["Athletics", "Acrobatics"],
+        "time_cost": "1 round to escape, 3 rounds to dig out if buried",
+        "gm_notes": "Restrained = can't move. Very dangerous in combat. Allies must help dig out.",
+        "threat_level": "Extreme - potential death"
+    },
+    {
+        "title": "Reinforcements Arriving!",
+        "description": "You hear war horns! Enemy reinforcements are rushing to this location!",
+        "immediate_action": "Flee now (no time to loot) or barricade and prepare (DC 18 Crafting, 1 round)",
+        "success": "You escape or create defensible position (+2 AC from cover).",
+        "failure": "Caught in the open when reinforcements arrive. Outnumbered 2-to-1.",
+        "spotlight": ["All"],
+        "skills": ["Tactics", "Crafting"],
+        "time_cost": "1 round to decide and act",
+        "gm_notes": "Reinforcements are fresh and numerous. Very dangerous fight if caught.",
+        "threat_level": "High - overwhelming numbers"
+    },
+    {
+        "title": "Hostage Situation!",
+        "description": "Enemies have grabbed a civilian/ally and hold a knife to their throat!",
+        "immediate_action": "DC 20 Diplomacy to negotiate, DC 22 Intimidation to make them back down, or DC 19 ranged attack to shoot knife",
+        "success": "Hostage is safe. Enemies surrender or flee.",
+        "failure": "Hostage is killed. Enemies attack.",
+        "spotlight": ["Bard", "Ranger"],
+        "skills": ["Diplomacy", "Intimidation", "Ranged Attack"],
+        "time_cost": "1 round to act",
+        "gm_notes": "High stakes. Failure has permanent consequences. Tests player judgment.",
+        "threat_level": "Extreme - life or death"
+    },
+    {
+        "title": "Magical Darkness Spreading!",
+        "description": "Unnatural darkness spreads from a source, consuming all light!",
+        "immediate_action": "DC 20 Arcana to counter-spell, DC 18 Religion if unholy, or flee before engulfed",
+        "success": "Darkness is stopped or you escape its area.",
+        "failure": "Engulfed in darkness. Blinded. All creatures concealed. Can't target spells.",
+        "spotlight": ["Wizard", "Cleric"],
+        "skills": ["Arcana", "Religion"],
+        "time_cost": "3 actions to counter",
+        "gm_notes": "Blinded = -4 to Perception, flat-footed, 50% miss chance. Extremely dangerous.",
+        "threat_level": "High - total concealment"
+    },
+    {
+        "title": "Stampede!",
+        "description": "Panicked creatures are stampeding toward you! Dozens of them!",
+        "immediate_action": "DC 18 Athletics to brace against wall, DC 19 Acrobatics to dodge, or DC 17 Nature to calm them",
+        "success": "You avoid the stampede or calm the creatures.",
+        "failure": "Trampled! Take 3d6 damage and knocked prone. Creatures keep running.",
+        "spotlight": ["Druid", "Monk"],
+        "skills": ["Athletics", "Acrobatics", "Nature"],
+        "time_cost": "1 round",
+        "gm_notes": "Prone in a stampede is very dangerous. Can be trampled multiple times.",
+        "threat_level": "High - ongoing damage"
     }
 ]
 
@@ -781,6 +1340,12 @@ def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_su
     # Filter out creatures with bad names (book references, trait lists, etc.)
     def is_valid_creature(creature):
         name = creature.get('name', '')
+        rarity = creature.get('rarity', 'common').lower()
+        
+        # Only allow common or uncommon creatures
+        if rarity not in ['common', 'uncommon']:
+            return False
+        
         # Skip if name is too short
         if len(name) < 3:
             return False
@@ -975,7 +1540,7 @@ def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_su
     event['num_creatures'] = num_creatures
     event['creature_level'] = target_level
     event['floor'] = floor_num
-    event['floor_name'] = floor_data['name']
+    event['floor_name'] = floor_data.get('name', f'Floor {floor_num}')
     event['difficulty'] = difficulty
     event['difficulty_note'] = difficulty_note
     event['dice_sum'] = dice_sum

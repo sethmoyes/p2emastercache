@@ -463,6 +463,32 @@ def download_doc_api():
     
     return send_file(full_path, as_attachment=True)
 
+@app.route('/api/generate-hazard', methods=['POST'])
+def generate_hazard_api():
+    """Generate a random hazard of specified level"""
+    data = request.json
+    level = data.get('level', 1)
+    
+    try:
+        sys.path.insert(0, os.path.join(PROJECT_ROOT, 'bin', 'generators'))
+        from generate_hazard import generate_hazard, format_output
+        
+        hazard = generate_hazard(level)
+        content = format_output(hazard)
+        
+        return jsonify({
+            'level': level,
+            'name': hazard.get('name', 'Unknown'),
+            'content': content,
+            'hazard': hazard
+        })
+    except Exception as e:
+        return jsonify({
+            'level': level,
+            'name': 'Error',
+            'content': f'Error generating hazard: {str(e)}'
+        }), 500
+
 if __name__ == '__main__':
     print("\n" + "="*80)
     print("DUNGEON TURN V2 - WEB INTERFACE")
