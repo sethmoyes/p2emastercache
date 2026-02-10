@@ -512,7 +512,14 @@
                     event.creature_stats.forEach(creature => {
                         html += `
                             <div class="bg-gray-900 p-4 rounded-lg border border-red-700">
-                                <p class="font-bold text-xl text-red-300 mb-3">${creature.name} (Level ${creature.level})</p>
+                                <div class="flex justify-between items-start mb-3">
+                                    <div>
+                                        <p class="font-bold text-xl text-red-300">${creature.name} (Level ${creature.level})</p>
+                                        <p class="text-sm text-gray-400">${creature.size} ${creature.creature_type || ''} ${creature.alignment || ''}</p>
+                                        <p class="text-xs text-gray-500">Rarity: ${creature.rarity} | Traits: ${(creature.traits || []).join(', ')}</p>
+                                    </div>
+                                    ${creature.url ? `<a href="https://2e.aonprd.com${creature.url}" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">View on AoN →</a>` : ''}
+                                </div>
                                 
                                 <!-- Basic Stats -->
                                 <div class="grid grid-cols-3 gap-2 mb-3 text-sm">
@@ -523,6 +530,21 @@
                                     ${creature.reflex ? `<p><strong>Reflex:</strong> ${creature.reflex}</p>` : ''}
                                     ${creature.will ? `<p><strong>Will:</strong> ${creature.will}</p>` : ''}
                                 </div>
+                                
+                                <!-- Skills -->
+                                ${creature.skills && Object.keys(creature.skills).length > 0 ? `
+                                    <div class="mt-3 p-3 bg-gray-800 rounded text-sm">
+                                        <p class="font-bold text-cyan-300 mb-1">Skills:</p>
+                                        <p class="text-gray-300">${Object.entries(creature.skills).map(([skill, bonus]) => `${skill} ${bonus}`).join(', ')}</p>
+                                    </div>
+                                ` : ''}
+                                
+                                <!-- Languages -->
+                                ${creature.languages && creature.languages.length > 0 ? `
+                                    <div class="mt-2 text-sm">
+                                        <strong class="text-purple-300">Languages:</strong> ${creature.languages.join(', ')}
+                                    </div>
+                                ` : ''}
                                 
                                 <!-- Attacks -->
                                 ${creature.attacks && creature.attacks.length > 0 ? `
@@ -549,6 +571,7 @@
                                   (creature.resistances && creature.resistances.length > 0) || 
                                   (creature.weaknesses && creature.weaknesses.length > 0) ? `
                                     <div class="mt-3 p-3 bg-blue-900 rounded text-sm">
+                                        <p class="font-bold text-blue-300 mb-1">🛡️ Defenses:</p>
                                         ${creature.immunities && creature.immunities.length > 0 ? 
                                             `<p><strong>Immunities:</strong> ${creature.immunities.join(', ')}</p>` : ''}
                                         ${creature.resistances && creature.resistances.length > 0 ? 

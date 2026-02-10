@@ -731,17 +731,126 @@ def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_su
         difficulty = "Low (2 levels below party)"
         difficulty_note = "Standard encounter"
     
-    # Get creatures at target level - be strict about it for extreme encounters
-    floor_creatures = [c for c in creatures if c['level'] == target_level]
+    # Define floor-appropriate creature traits/types based on gauntlight_keep_levels.md
+    floor_traits = {
+        1: {
+            'keywords': ['mitflit', 'gremlin', 'undead', 'skeleton', 'zombie', 'shambling'],
+            'description': 'Mitflits and basic undead from Belcorra\'s forces'
+        },
+        2: {
+            'keywords': ['morlock', 'humanoid', 'undead', 'degenerate', 'servant'],
+            'description': 'Morlocks worshipping the Ghost Queen and undead servants'
+        },
+        3: {
+            'keywords': ['ghoul', 'undead', 'librarian', 'scribe', 'devil', 'zebub', 'imp'],
+            'description': 'Ghoul librarians (Cult of the Canker) and minor devils'
+        },
+        4: {
+            'keywords': ['drow', 'elf', 'undead', 'velstrac', 'worm', 'leech', 'werewolf'],
+            'description': 'Drow, velstracs, and Belcorra\'s personal servants'
+        },
+        5: {
+            'keywords': ['beast', 'animal', 'lizard', 'grothlut', 'fleshwarp', 'devil'],
+            'description': 'Arena beasts and failed fleshwarp experiments'
+        },
+        6: {
+            'keywords': ['seugathi', 'aberration', 'fleshwarp', 'drider', 'ooze', 'grothlut'],
+            'description': 'Seugathi fleshwarpers and their experiments'
+        },
+        7: {
+            'keywords': ['devil', 'fiend', 'imp', 'erinyes', 'contract', 'infernal', 'denizen', 'leng'],
+            'description': 'Devils and infernal creatures in the prison'
+        },
+        8: {
+            'keywords': ['mummy', 'bog', 'undead', 'bodak', 'gnome', 'svirfneblin', 'gug', 'caligni'],
+            'description': 'Bog mummies (Children of Belcorra) and Darklands creatures'
+        },
+        9: {
+            'keywords': ['drow', 'elf', 'urdefhan', 'caligni', 'darklands', 'duergar', 'xulgath', 'ratfolk', 'spider'],
+            'description': 'Darklands factions: drow, urdefhan, and caligni'
+        },
+        10: {
+            'keywords': ['undead', 'ghost', 'serpentfolk', 'aberration', 'void', 'empty', 'nhimbaloth'],
+            'description': 'Ancient serpentfolk temple and Nhimbaloth\'s servants'
+        }
+    }
     
-    # Only fall back if we have NO creatures at target level
+    # Get creatures at target level
+    level_creatures = [c for c in creatures if c['level'] == target_level]
+    
+    # Filter out creatures with bad names (book references, trait lists, etc.)
+    def is_valid_creature(creature):
+        name = creature.get('name', '')
+        # Skip if name is too short
+        if len(name) < 3:
+            return False
+        # Skip book references
+        if 'Pathfinder #' in name or ' pg. ' in name or 'Monster Core' in name or 'Bestiary' in name:
+            return False
+        # Skip if name contains ANY commas (trait lists)
+        if ',' in name:
+            return False
+        # Skip generic single-word names
+        generic_names = ['Undead', 'Demon', 'Devil', 'Dragon', 'Elemental', 'Beast', 'Aberration', 
+                        'Fiend', 'Construct', 'Ooze', 'Plant', 'Fungus', 'Humanoid', 'Animal']
+        if name in generic_names:
+            return False
+        return True
+    
+    level_creatures = [c for c in level_creatures if is_valid_creature(c)]
+    
+    # Prioritize manually enhanced creatures (they have full stats)
+    enhanced_creatures = [c for c in level_creatures if c.get('attacks') and len(c.get('attacks', [])) > 0]
+    if enhanced_creatures:
+        # Use enhanced creatures preferentially
+        level_creatures = enhanced_creatures
+    
+    # Filter by floor-appropriate traits
+    floor_data = floor_traits.get(floor_num, {})
+    floor_keywords = floor_data.get('keywords', [])
+    if floor_keywords and level_creatures:
+        # Check if creature name or traits match floor keywords
+        filtered = []
+        for c in level_creatures:
+            name_lower = c['name'].lower()
+            traits_lower = ' '.join(c.get('traits', [])).lower()
+            creature_type_lower = c.get('creature_type', '').lower()
+            combined = name_lower + ' ' + traits_lower + ' ' + creature_type_lower
+            
+            # Check if any floor keyword appears in creature
+            if any(keyword in combined for keyword in floor_keywords):
+                filtered.append(c)
+        
+        # Use filtered list if we found matches, otherwise use all at level
+        if filtered:
+            floor_creatures = filtered
+        else:
+            floor_creatures = level_creatures
+    else:
+        floor_creatures = level_creatures
+    
+    # Fallback if no creatures at exact level
     if not floor_creatures:
         # Try within 1 level
         floor_creatures = [c for c in creatures if abs(c['level'] - target_level) <= 1]
+        floor_creatures = [c for c in floor_creatures if is_valid_creature(c)]
+        
+        # Apply floor trait filtering again
+        if floor_keywords and floor_creatures:
+            filtered = []
+            for c in floor_creatures:
+                name_lower = c['name'].lower()
+                traits_lower = ' '.join(c.get('traits', [])).lower()
+                combined = name_lower + ' ' + traits_lower
+                if any(keyword in combined for keyword in floor_keywords):
+                    filtered.append(c)
+            if filtered:
+                floor_creatures = filtered
     
     if not floor_creatures:
         # Last resort: any creatures up to target level
         floor_creatures = [c for c in creatures if c['level'] <= target_level and c['level'] > 0]
+        floor_creatures = [c for c in floor_creatures if is_valid_creature(c)]
     
     # For extreme encounters, prefer higher level creatures
     if dice_sum >= 95 and floor_creatures:

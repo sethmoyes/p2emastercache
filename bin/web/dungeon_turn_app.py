@@ -94,7 +94,13 @@ def get_encounter():
                     'languages': creature.get('languages', []),
                     'immunities': creature.get('immunities', []),
                     'resistances': creature.get('resistances', []),
-                    'weaknesses': creature.get('weaknesses', [])
+                    'weaknesses': creature.get('weaknesses', []),
+                    'traits': creature.get('traits', []),
+                    'rarity': creature.get('rarity', 'common'),
+                    'size': creature.get('size', 'Medium'),
+                    'alignment': creature.get('alignment', ''),
+                    'creature_type': creature.get('creature_type', ''),
+                    'url': creature.get('url', '')
                 })
         event['creature_stats'] = creature_stats
     
