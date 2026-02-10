@@ -595,23 +595,38 @@
                     event.creature_stats.forEach(creature => {
                         html += `
                             <div class="bg-gray-900 p-4 rounded-lg border border-red-700">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <p class="font-bold text-xl text-red-300">${creature.name} (Level ${creature.level})</p>
-                                        <p class="text-sm text-gray-400">${creature.size} ${creature.creature_type || ''} ${creature.alignment || ''}</p>
-                                        <p class="text-xs text-gray-500">Rarity: ${creature.rarity} | Traits: ${(creature.traits || []).join(', ')}</p>
+                                <div class="flex gap-4 mb-3">
+                                    <!-- Creature Image -->
+                                    ${creature.image ? `
+                                        <div class="flex-shrink-0">
+                                            <img src="https://2e.aonprd.com${creature.image}" 
+                                                 alt="${creature.name}" 
+                                                 class="w-32 h-32 object-cover rounded-lg border-2 border-red-500"
+                                                 onerror="this.style.display='none'">
+                                        </div>
+                                    ` : ''}
+                                    
+                                    <!-- Creature Info -->
+                                    <div class="flex-grow">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <div>
+                                                <p class="font-bold text-xl text-red-300">${creature.name} (Level ${creature.level})</p>
+                                                <p class="text-sm text-gray-400">${creature.size} ${creature.creature_type || ''} ${creature.alignment || ''}</p>
+                                                <p class="text-xs text-gray-500">Rarity: ${creature.rarity} | Traits: ${(creature.traits || []).join(', ')}</p>
+                                            </div>
+                                            ${creature.url ? `<a href="https://2e.aonprd.com${creature.url}" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">View on AoN →</a>` : ''}
+                                        </div>
+                                        
+                                        <!-- Basic Stats -->
+                                        <div class="grid grid-cols-3 gap-2 text-sm">
+                                            <p><strong>HP:</strong> ${creature.hp || 'Unknown'}</p>
+                                            <p><strong>AC:</strong> ${creature.ac || 'Unknown'}</p>
+                                            <p><strong>Perception:</strong> ${creature.perception || 'Unknown'}</p>
+                                            ${creature.fort ? `<p><strong>Fort:</strong> ${creature.fort}</p>` : ''}
+                                            ${creature.reflex ? `<p><strong>Reflex:</strong> ${creature.reflex}</p>` : ''}
+                                            ${creature.will ? `<p><strong>Will:</strong> ${creature.will}</p>` : ''}
+                                        </div>
                                     </div>
-                                    ${creature.url ? `<a href="https://2e.aonprd.com${creature.url}" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">View on AoN →</a>` : ''}
-                                </div>
-                                
-                                <!-- Basic Stats -->
-                                <div class="grid grid-cols-3 gap-2 mb-3 text-sm">
-                                    <p><strong>HP:</strong> ${creature.hp || 'Unknown'}</p>
-                                    <p><strong>AC:</strong> ${creature.ac || 'Unknown'}</p>
-                                    <p><strong>Perception:</strong> ${creature.perception || 'Unknown'}</p>
-                                    ${creature.fort ? `<p><strong>Fort:</strong> ${creature.fort}</p>` : ''}
-                                    ${creature.reflex ? `<p><strong>Reflex:</strong> ${creature.reflex}</p>` : ''}
-                                    ${creature.will ? `<p><strong>Will:</strong> ${creature.will}</p>` : ''}
                                 </div>
                                 
                                 <!-- Skills -->

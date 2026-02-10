@@ -100,7 +100,8 @@ def get_encounter():
                     'size': creature.get('size', 'Medium'),
                     'alignment': creature.get('alignment', ''),
                     'creature_type': creature.get('creature_type', ''),
-                    'url': creature.get('url', '')
+                    'url': creature.get('url', ''),
+                    'image': creature.get('image', [''])[0] if creature.get('image') else ''
                 })
         event['creature_stats'] = creature_stats
     

@@ -70,7 +70,8 @@ def parse_creature(hit):
         'immunities': source.get('immunity', []),
         'resistances': source.get('resistance', []),
         'weaknesses': source.get('weakness', []),
-        'url': source.get('url', '')
+        'url': source.get('url', ''),
+        'image': source.get('image', [])  # Add image field
     }
     
     # Parse attacks from text
