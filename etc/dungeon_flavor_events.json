@@ -1,0 +1,2526 @@
+{
+  "1": [
+    {
+      "title": "Shiny Trinket",
+      "description": "A shiny button lies on the ground next to some small bones. Something collects treasures here.",
+      "teaching": "Hints at scavenger creatures"
+    },
+    {
+      "title": "Moving Shadow",
+      "description": "A shadow on the wall moves wrong - reaching toward you when the light source doesn't shift. You blink and it's normal again.",
+      "teaching": "Hints at unnatural light"
+    },
+    {
+      "title": "Rusted Sword Fragment",
+      "description": "A broken sword blade, ancient and rusted. The pommel has a symbol you don't recognize. Old soldiers were here once.",
+      "teaching": "Hints at past military"
+    },
+    {
+      "title": "Painful Carving",
+      "description": "A small carving on the wall. Looking at it makes your eyes water and your head throb. You look away quickly.",
+      "teaching": "Hints at forbidden symbols"
+    },
+    {
+      "title": "Salt-Crusted Stone",
+      "description": "The stones here are crusted with salt. You can hear waves in the distance. Still near the surface.",
+      "teaching": "Establishes location"
+    },
+    {
+      "title": "Slime Trail",
+      "description": "A thick slime trail crosses the floor - something huge and segmented. The smell makes you gag.",
+      "teaching": "Hints at large creatures"
+    },
+    {
+      "title": "Crumbling Edge",
+      "description": "The floor edge crumbles under your foot. Pebbles fall into darkness. You don't hear them hit bottom.",
+      "teaching": "Hints at depth and danger"
+    },
+    {
+      "title": "Rat Skeleton",
+      "description": "A rat skeleton picked completely clean. Tiny teeth marks on the bones.",
+      "teaching": "Hints at small predators"
+    },
+    {
+      "title": "Broken Spear",
+      "description": "A spear shaft snapped in half. The break is old but the wood is oddly preserved.",
+      "teaching": "Hints at ancient combat"
+    },
+    {
+      "title": "Scratched Warning",
+      "description": "Words scratched into stone: 'Turn back.' The letters are crude, desperate.",
+      "teaching": "Hints at past warnings"
+    },
+    {
+      "title": "Colorful Pebble",
+      "description": "A smooth, colorful pebble sits in an otherwise empty alcove. Placed there deliberately.",
+      "teaching": "Hints at offerings or markers"
+    },
+    {
+      "title": "Rusty Helmet",
+      "description": "A dented helmet, rust-red and ancient. It's been polished recently on one side.",
+      "teaching": "Hints at worship or reverence"
+    },
+    {
+      "title": "Fog Tendril",
+      "description": "A tendril of fog curls through a crack in the ceiling. It moves against the wind.",
+      "teaching": "Hints at unnatural weather"
+    },
+    {
+      "title": "Distant Chittering",
+      "description": "High-pitched chittering echoes from somewhere. It stops when you try to locate it.",
+      "teaching": "Hints at hidden watchers"
+    },
+    {
+      "title": "Gnawed Rope",
+      "description": "A rope end, gnawed through by small teeth. Whatever was tied here escaped.",
+      "teaching": "Hints at captives or pets"
+    },
+    {
+      "title": "Lighthouse Pulse",
+      "description": "The walls pulse with faint light for just a moment. Like a heartbeat.",
+      "teaching": "Hints at lighthouse power"
+    },
+    {
+      "title": "Seabird Feather",
+      "description": "A seabird feather, out of place this deep. How did it get here?",
+      "teaching": "Hints at surface connection"
+    },
+    {
+      "title": "Tiny Footprints",
+      "description": "Tiny footprints in the dust. Barefoot. Child-sized but wrong somehow.",
+      "teaching": "Hints at small humanoids"
+    },
+    {
+      "title": "Broken Bottle",
+      "description": "Shards of a bottle. The glass is thick, old. It once held something alcoholic.",
+      "teaching": "Hints at past inhabitants"
+    },
+    {
+      "title": "Scorch Mark",
+      "description": "A small scorch mark on the wall. Recent. Something burned here.",
+      "teaching": "Hints at fire or magic"
+    },
+    {
+      "title": "Dropped Coin",
+      "description": "A single copper coin, green with age. The face is worn smooth.",
+      "teaching": "Hints at past wealth"
+    },
+    {
+      "title": "Nest Material",
+      "description": "Bits of cloth and straw arranged like nest material. Empty now.",
+      "teaching": "Hints at nesting creatures"
+    },
+    {
+      "title": "Carved Tally",
+      "description": "Tally marks carved into stone. Someone counted something here. Hundreds of marks.",
+      "teaching": "Hints at long occupation"
+    },
+    {
+      "title": "Bent Nail",
+      "description": "A bent iron nail on the ground. It's been straightened and bent again multiple times.",
+      "teaching": "Hints at makeshift repairs"
+    },
+    {
+      "title": "Mushroom Cluster",
+      "description": "A small cluster of pale mushrooms growing from a crack. They glow faintly.",
+      "teaching": "Hints at underground ecosystem"
+    },
+    {
+      "title": "Tooth",
+      "description": "A single tooth, sharp and yellowed. Too large to be human.",
+      "teaching": "Hints at monsters"
+    },
+    {
+      "title": "Frayed Banner",
+      "description": "A scrap of banner fabric, faded beyond recognition. Once it was red.",
+      "teaching": "Hints at military past"
+    },
+    {
+      "title": "Candle Stub",
+      "description": "A candle burned down to nothing. The wax is old but not ancient.",
+      "teaching": "Hints at recent visitors"
+    },
+    {
+      "title": "Claw Scratch",
+      "description": "A single claw scratch on the wall. Deep. Whatever made it was strong.",
+      "teaching": "Hints at dangerous creatures"
+    },
+    {
+      "title": "Dropped Ration",
+      "description": "A piece of hardtack, moldy and old. Someone dropped their rations here.",
+      "teaching": "Hints at adventurers"
+    },
+    {
+      "title": "Broken Chain Link",
+      "description": "A single link from a chain. The metal is pitted with rust.",
+      "teaching": "Hints at restraints"
+    },
+    {
+      "title": "Pebble Pile",
+      "description": "A small pile of pebbles stacked carefully. A cairn? A marker?",
+      "teaching": "Hints at intelligence"
+    },
+    {
+      "title": "Bat Guano",
+      "description": "Fresh bat droppings. You hear wings fluttering somewhere above.",
+      "teaching": "Hints at bats"
+    },
+    {
+      "title": "Wet Stone",
+      "description": "The stone here is damp. Water seeps from somewhere. You hear dripping.",
+      "teaching": "Hints at water"
+    },
+    {
+      "title": "Snapped Arrow",
+      "description": "An arrow shaft snapped in two. The fletching is rotted away.",
+      "teaching": "Hints at archery"
+    },
+    {
+      "title": "Chalk Mark",
+      "description": "A chalk mark on the wall - an X. Someone marked this spot.",
+      "teaching": "Hints at navigation"
+    },
+    {
+      "title": "Loose Stone",
+      "description": "A stone wobbles under your foot. Beneath it, a small hollow. Empty.",
+      "teaching": "Hints at hiding spots"
+    },
+    {
+      "title": "Bone Whistle",
+      "description": "A small whistle carved from bone. It makes no sound when you blow it.",
+      "teaching": "Hints at crafts"
+    },
+    {
+      "title": "Singed Hair",
+      "description": "A tuft of singed hair caught on a stone. It smells of burning.",
+      "teaching": "Hints at fire danger"
+    },
+    {
+      "title": "Dropped Key",
+      "description": "A small key, rusted solid. It won't turn anything now.",
+      "teaching": "Hints at locks"
+    },
+    {
+      "title": "Bloodstain",
+      "description": "A dark stain on the floor. Old blood. A lot of it.",
+      "teaching": "Hints at violence"
+    },
+    {
+      "title": "Prayer Beads",
+      "description": "A single prayer bead on a broken string. The symbol is unfamiliar.",
+      "teaching": "Hints at religion"
+    },
+    {
+      "title": "Cracked Lens",
+      "description": "A cracked glass lens from spectacles. Someone lost their sight here.",
+      "teaching": "Hints at scholars"
+    },
+    {
+      "title": "Rope Burn",
+      "description": "A groove worn into stone by rope friction. Something heavy was lowered here.",
+      "teaching": "Hints at hauling"
+    },
+    {
+      "title": "Insect Husk",
+      "description": "The dried husk of a large insect. Bigger than your hand.",
+      "teaching": "Hints at vermin"
+    },
+    {
+      "title": "Melted Wax",
+      "description": "Wax melted and pooled on the floor. Multiple colors. Many candles burned here.",
+      "teaching": "Hints at rituals"
+    },
+    {
+      "title": "Torn Page",
+      "description": "A page torn from a book. The text is in a language you don't recognize.",
+      "teaching": "Hints at books"
+    },
+    {
+      "title": "Buckle",
+      "description": "A belt buckle, tarnished but intact. The leather is long gone.",
+      "teaching": "Hints at clothing"
+    },
+    {
+      "title": "Fish Bones",
+      "description": "Tiny fish bones in a pile. Someone ate here. Recently.",
+      "teaching": "Hints at food"
+    },
+    {
+      "title": "Soot Smudge",
+      "description": "A smudge of soot on the wall at hand height. Someone touched it with dirty hands.",
+      "teaching": "Hints at passage"
+    }
+  ],
+  "2": [
+    {
+      "title": "Claw Marks",
+      "description": "Fresh claw marks on the doorframe. Something with claws lives here and marks its territory.",
+      "teaching": "Hints at clawed inhabitants"
+    },
+    {
+      "title": "Soggy Paper Scrap",
+      "description": "A scrap of paper, barely readable: '...the screams from below...' The rest is water-damaged beyond recognition.",
+      "teaching": "Hints at past fear"
+    },
+    {
+      "title": "Scorch Mark",
+      "description": "A scorch mark on the floor in the shape of a clawed foot. Whatever stood here was very hot.",
+      "teaching": "Hints at summoned beings"
+    },
+    {
+      "title": "Child's Toy",
+      "description": "A small wooden toy horse, rotted and broken. Children lived here once.",
+      "teaching": "Humanizes past inhabitants"
+    },
+    {
+      "title": "Bone Pattern",
+      "description": "Small bones arranged in a careful pattern on the floor. Fresh. Someone was here recently.",
+      "teaching": "Hints at current worship"
+    },
+    {
+      "title": "Double Echo",
+      "description": "Your footstep echoes twice. The second echo comes a heartbeat too late.",
+      "teaching": "Eerie atmosphere"
+    },
+    {
+      "title": "Rotted Bedding",
+      "description": "Scraps of rotted fabric - once a mattress or blanket. People slept here.",
+      "teaching": "Hints at dormitories"
+    },
+    {
+      "title": "Bent Spoon",
+      "description": "A bent eating spoon, tarnished black. Someone ate meals here long ago.",
+      "teaching": "Hints at dining"
+    },
+    {
+      "title": "Red Ochre Smear",
+      "description": "A smear of red ochre on the doorframe. Deliberate. A ward? A warning?",
+      "teaching": "Hints at superstitions"
+    },
+    {
+      "title": "Broken Comb",
+      "description": "A wooden comb with half its teeth broken off. Personal grooming, centuries ago.",
+      "teaching": "Humanizes servants"
+    },
+    {
+      "title": "Mold Patch",
+      "description": "A patch of black mold spreading across the wall. The smell is overwhelming.",
+      "teaching": "Hints at dampness"
+    },
+    {
+      "title": "Scratched Name",
+      "description": "A name scratched into the wall: 'Marta.' Nothing else.",
+      "teaching": "Hints at individuals"
+    },
+    {
+      "title": "Dropped Needle",
+      "description": "A sewing needle, rusted but intact. Someone mended clothes here.",
+      "teaching": "Hints at domestic life"
+    },
+    {
+      "title": "Crushed Rat",
+      "description": "A rat crushed flat against the wall. The impact was tremendous.",
+      "teaching": "Hints at violence"
+    },
+    {
+      "title": "Servant's Bell",
+      "description": "A small bell on a broken cord. It still rings faintly when touched.",
+      "teaching": "Hints at service"
+    },
+    {
+      "title": "Spilled Ink",
+      "description": "An old ink stain on the floor. Someone wrote letters here.",
+      "teaching": "Hints at literacy"
+    },
+    {
+      "title": "Broken Mirror",
+      "description": "Shards of a small hand mirror. The silver backing is tarnished black.",
+      "teaching": "Hints at vanity"
+    },
+    {
+      "title": "Gnawed Bone",
+      "description": "A bone gnawed clean. The teeth marks are humanoid but wrong.",
+      "teaching": "Hints at degenerate eaters"
+    },
+    {
+      "title": "Dropped Thimble",
+      "description": "A brass thimble rolled into a corner. Seamstress work.",
+      "teaching": "Hints at tailoring"
+    },
+    {
+      "title": "Charcoal Sketch",
+      "description": "A crude sketch on the wall in charcoal. A face. Sad eyes.",
+      "teaching": "Hints at art"
+    },
+    {
+      "title": "Broken Pottery",
+      "description": "Shards of a clay pot. It once held water or food.",
+      "teaching": "Hints at storage"
+    },
+    {
+      "title": "Loose Floorboard",
+      "description": "A floorboard that creaks loudly. Beneath it, a small hollow. Empty now.",
+      "teaching": "Hints at hiding places"
+    },
+    {
+      "title": "Candle Wax Trail",
+      "description": "A trail of wax drips leading down the hall. Someone carried a candle this way.",
+      "teaching": "Hints at movement"
+    },
+    {
+      "title": "Torn Apron",
+      "description": "A scrap of apron fabric. Stained with old food and grease.",
+      "teaching": "Hints at kitchen work"
+    },
+    {
+      "title": "Wooden Button",
+      "description": "A button carved from wood. Simple, functional. From a servant's shirt.",
+      "teaching": "Hints at clothing"
+    },
+    {
+      "title": "Rat Nest",
+      "description": "A rat's nest made of shredded fabric and paper. Occupied.",
+      "teaching": "Hints at vermin"
+    },
+    {
+      "title": "Footprint in Dust",
+      "description": "A single footprint in thick dust. Bare. Humanoid. Recent.",
+      "teaching": "Hints at current inhabitants"
+    },
+    {
+      "title": "Broken Broom",
+      "description": "A broom with its bristles worn to nubs. Someone swept here for years.",
+      "teaching": "Hints at maintenance"
+    },
+    {
+      "title": "Spilled Grain",
+      "description": "Ancient grain spilled and petrified on the floor. Once this was a pantry.",
+      "teaching": "Hints at food storage"
+    },
+    {
+      "title": "Hanging Cobweb",
+      "description": "A massive cobweb hangs from the ceiling. Something large made this.",
+      "teaching": "Hints at spiders"
+    },
+    {
+      "title": "Scratched Map",
+      "description": "A crude map scratched into the wall. It shows these rooms. An escape route?",
+      "teaching": "Hints at planning"
+    },
+    {
+      "title": "Dropped Ladle",
+      "description": "A wooden ladle, cracked and dry. Kitchen work.",
+      "teaching": "Hints at cooking"
+    },
+    {
+      "title": "Prayer Scratched",
+      "description": "A prayer scratched into stone: 'Gods protect us.' It didn't work.",
+      "teaching": "Hints at desperation"
+    },
+    {
+      "title": "Broken Lantern",
+      "description": "A lantern smashed on the floor. The oil stain is still visible.",
+      "teaching": "Hints at lighting"
+    },
+    {
+      "title": "Servant's Shoe",
+      "description": "A single worn shoe. The sole is paper-thin from use.",
+      "teaching": "Hints at poverty"
+    },
+    {
+      "title": "Knot of Hair",
+      "description": "A knot of human hair caught on a nail. Brown, long. A woman's.",
+      "teaching": "Hints at individuals"
+    },
+    {
+      "title": "Tally of Days",
+      "description": "Tally marks counting days. They stop at 127.",
+      "teaching": "Hints at imprisonment"
+    },
+    {
+      "title": "Broken Cup",
+      "description": "A clay cup broken in half. Cheap, utilitarian. A servant's cup.",
+      "teaching": "Hints at class"
+    },
+    {
+      "title": "Mop Bucket",
+      "description": "A wooden bucket, warped and cracked. It once held mop water.",
+      "teaching": "Hints at cleaning"
+    },
+    {
+      "title": "Dropped Coin Purse",
+      "description": "An empty coin purse, the leather rotted. Someone lost their wages.",
+      "teaching": "Hints at payment"
+    },
+    {
+      "title": "Scratched Symbol",
+      "description": "A protective symbol scratched into the doorframe. It didn't protect them.",
+      "teaching": "Hints at fear"
+    },
+    {
+      "title": "Broken Plate",
+      "description": "Shards of a wooden plate. Simple, plain. Servants ate from these.",
+      "teaching": "Hints at meals"
+    },
+    {
+      "title": "Dropped Scissors",
+      "description": "Sewing scissors, rusted shut. Someone did needlework here.",
+      "teaching": "Hints at crafts"
+    },
+    {
+      "title": "Straw Mattress",
+      "description": "The remains of a straw mattress, rotted to nothing. Someone slept here.",
+      "teaching": "Hints at sleeping quarters"
+    },
+    {
+      "title": "Broken Stool",
+      "description": "A three-legged stool with one leg broken off. Someone sat here to work.",
+      "teaching": "Hints at labor"
+    },
+    {
+      "title": "Spilled Soap",
+      "description": "A lump of ancient soap, cracked and dry. Laundry was done here.",
+      "teaching": "Hints at washing"
+    },
+    {
+      "title": "Dropped Rag",
+      "description": "A cleaning rag, stiff with age and grime. Endless cleaning.",
+      "teaching": "Hints at servitude"
+    },
+    {
+      "title": "Broken Bucket",
+      "description": "A bucket with its bottom rotted out. It carried water once.",
+      "teaching": "Hints at hauling"
+    },
+    {
+      "title": "Scratched Plea",
+      "description": "'Let me go home' scratched into the wall. They never did.",
+      "teaching": "Hints at captivity"
+    },
+    {
+      "title": "Dropped Spoon",
+      "description": "A spoon bent nearly in half. Someone was very strong. Or very angry.",
+      "teaching": "Hints at strength"
+    }
+  ],
+  "3": [
+    {
+      "title": "Quill Scratching",
+      "description": "You hear a quill scratching on parchment from somewhere nearby. Constant. Methodical. Never stopping.",
+      "teaching": "Hints at endless work"
+    },
+    {
+      "title": "Chunk of Flesh",
+      "description": "A chunk of rotting flesh on the floor. Bite marks on it. Someone's eating their own collection.",
+      "teaching": "Hints at failed collection"
+    },
+    {
+      "title": "Forbidden Title",
+      "description": "A book spine catches your eye. The title makes your head hurt to read. You look away.",
+      "teaching": "Hints at dark knowledge"
+    },
+    {
+      "title": "Tattooing Needle",
+      "description": "A tattooing needle on a table, still wet with ink. And blood. Fresh.",
+      "teaching": "Hints at disturbing practice"
+    },
+    {
+      "title": "Whispering Pages",
+      "description": "A book lies open. The pages whisper when you're not looking at them. You slam it shut.",
+      "teaching": "Hints at cursed texts"
+    },
+    {
+      "title": "Glass Shards",
+      "description": "Fresh glass shards on the floor. Something was displayed here. Recently taken.",
+      "teaching": "Hints at recent theft"
+    },
+    {
+      "title": "Clutched Portrait",
+      "description": "A skeleton's bony fingers still clutch a small portrait. Even in death, they wouldn't let go.",
+      "teaching": "Hints at devotion"
+    },
+    {
+      "title": "Bookworm Trail",
+      "description": "A trail of book dust and tiny holes. Something eats the pages here.",
+      "teaching": "Hints at vermin"
+    },
+    {
+      "title": "Ink Stain",
+      "description": "A massive ink stain on the floor. A whole bottle spilled. Or thrown.",
+      "teaching": "Hints at frustration"
+    },
+    {
+      "title": "Torn Binding",
+      "description": "A book binding torn apart. The pages are gone. Someone wanted what was inside.",
+      "teaching": "Hints at theft"
+    },
+    {
+      "title": "Reading Glasses",
+      "description": "Spectacles with one lens cracked. Left on a table as if the reader just stepped away.",
+      "teaching": "Hints at scholars"
+    },
+    {
+      "title": "Bookmark",
+      "description": "A silk bookmark in a book. The page it marks is about summoning.",
+      "teaching": "Hints at research"
+    },
+    {
+      "title": "Candle Ring",
+      "description": "A ring of candle stubs around a reading desk. Someone studied here for hours.",
+      "teaching": "Hints at study"
+    },
+    {
+      "title": "Chewed Page",
+      "description": "A page chewed and spat out. The teeth marks are humanoid.",
+      "teaching": "Hints at ghouls"
+    },
+    {
+      "title": "Dropped Quill",
+      "description": "A quill pen, the nib broken. Someone pressed too hard while writing.",
+      "teaching": "Hints at anger"
+    },
+    {
+      "title": "Book Stack",
+      "description": "Books stacked in a precise tower. Someone organized these. Recently.",
+      "teaching": "Hints at current activity"
+    },
+    {
+      "title": "Dusty Shelf",
+      "description": "One shelf is dust-free. Books are taken from here regularly.",
+      "teaching": "Hints at use"
+    },
+    {
+      "title": "Torn Map",
+      "description": "A map torn from a book. It shows a city. Absalom.",
+      "teaching": "Hints at targets"
+    },
+    {
+      "title": "Bloodstained Page",
+      "description": "A page with a bloody fingerprint. Someone read while bleeding.",
+      "teaching": "Hints at injury"
+    },
+    {
+      "title": "Broken Pen",
+      "description": "A pen snapped in half. Frustration or rage.",
+      "teaching": "Hints at emotion"
+    },
+    {
+      "title": "Scattered Notes",
+      "description": "Notes scattered across a desk. The handwriting degrades from neat to frantic.",
+      "teaching": "Hints at madness"
+    },
+    {
+      "title": "Empty Inkwell",
+      "description": "An inkwell scraped completely dry. Someone needed every drop.",
+      "teaching": "Hints at desperation"
+    },
+    {
+      "title": "Bookend",
+      "description": "A single bookend. Its partner is missing. The books have fallen.",
+      "teaching": "Hints at disorder"
+    },
+    {
+      "title": "Paper Scraps",
+      "description": "Tiny scraps of paper like confetti. Someone tore up a document.",
+      "teaching": "Hints at destruction"
+    },
+    {
+      "title": "Wax Seal",
+      "description": "A broken wax seal on the floor. The symbol is a skull.",
+      "teaching": "Hints at correspondence"
+    },
+    {
+      "title": "Leather Strap",
+      "description": "A strap from a book binding. The book it held is gone.",
+      "teaching": "Hints at missing books"
+    },
+    {
+      "title": "Page Corner",
+      "description": "A page corner torn off and dropped. Someone marked their place.",
+      "teaching": "Hints at reading"
+    },
+    {
+      "title": "Magnifying Glass",
+      "description": "A magnifying glass with a cracked lens. For reading small text.",
+      "teaching": "Hints at detailed work"
+    },
+    {
+      "title": "Book Cart",
+      "description": "A small cart for moving books. One wheel is broken.",
+      "teaching": "Hints at library work"
+    },
+    {
+      "title": "Ladder Rung",
+      "description": "A broken rung from a library ladder. Someone fell.",
+      "teaching": "Hints at accident"
+    },
+    {
+      "title": "Dust Motes",
+      "description": "Dust motes swirl in the air. Someone disturbed the shelves recently.",
+      "teaching": "Hints at movement"
+    },
+    {
+      "title": "Pressed Flower",
+      "description": "A dried flower pressed between book pages. A bookmark from long ago.",
+      "teaching": "Hints at past readers"
+    },
+    {
+      "title": "Gnawed Cover",
+      "description": "A book cover gnawed at the corners. Rats? Or something else?",
+      "teaching": "Hints at damage"
+    },
+    {
+      "title": "Spilled Sand",
+      "description": "Sand spilled from a blotter. For drying ink.",
+      "teaching": "Hints at writing"
+    },
+    {
+      "title": "Broken Ruler",
+      "description": "A wooden ruler snapped in two. For measuring or drawing lines.",
+      "teaching": "Hints at precision"
+    },
+    {
+      "title": "Page Weight",
+      "description": "A small weight for holding pages open. Made of brass.",
+      "teaching": "Hints at tools"
+    },
+    {
+      "title": "Ribbon Marker",
+      "description": "A ribbon hanging from a book. The page it marks is about necromancy.",
+      "teaching": "Hints at dark arts"
+    },
+    {
+      "title": "Cracked Spine",
+      "description": "A book with its spine cracked from being opened too wide. Well-used.",
+      "teaching": "Hints at popular texts"
+    },
+    {
+      "title": "Margin Notes",
+      "description": "A book with frantic notes scrawled in the margins. 'This works!' 'Try this!'",
+      "teaching": "Hints at experimentation"
+    },
+    {
+      "title": "Bookplate",
+      "description": "A bookplate inside a cover: 'Property of Belcorra Haruvex.' Her library.",
+      "teaching": "Hints at ownership"
+    },
+    {
+      "title": "Moldy Pages",
+      "description": "Pages stuck together with mold. The dampness is destroying the books.",
+      "teaching": "Hints at decay"
+    },
+    {
+      "title": "Torn Illustration",
+      "description": "An illustration torn from a book. It shows a summoning circle.",
+      "teaching": "Hints at magic"
+    },
+    {
+      "title": "Empty Shelf",
+      "description": "A shelf completely empty. The dust outline shows many books were here.",
+      "teaching": "Hints at removal"
+    },
+    {
+      "title": "Reading Stand",
+      "description": "A wooden stand for holding books open. Adjusted to a short person's height.",
+      "teaching": "Hints at readers"
+    },
+    {
+      "title": "Dropped Bookmark",
+      "description": "A bookmark on the floor. Someone lost their place.",
+      "teaching": "Hints at interruption"
+    },
+    {
+      "title": "Catalog Card",
+      "description": "A card from a catalog system. This library was organized once.",
+      "teaching": "Hints at order"
+    },
+    {
+      "title": "Blotter Paper",
+      "description": "Blotter paper covered in ink smudges. Someone wrote many letters here.",
+      "teaching": "Hints at correspondence"
+    },
+    {
+      "title": "Book Strap",
+      "description": "A leather strap for carrying books. Worn smooth from use.",
+      "teaching": "Hints at transport"
+    },
+    {
+      "title": "Page Knife",
+      "description": "A small knife for cutting pages. The blade is dull from use.",
+      "teaching": "Hints at book maintenance"
+    },
+    {
+      "title": "Wax Drips",
+      "description": "Wax dripped on a book. Someone read by candlelight and wasn't careful.",
+      "teaching": "Hints at late night study"
+    }
+  ],
+  "4": [
+    {
+      "title": "Meditation Cushion",
+      "description": "A single cushion, positioned to face one direction. The fabric is stained with old sweat and tears.",
+      "teaching": "Hints at obsessive meditation"
+    },
+    {
+      "title": "Preserved Hand",
+      "description": "A severed hand in a display case, impossibly well preserved. A trophy of some kind.",
+      "teaching": "Hints at collected victories"
+    },
+    {
+      "title": "Ghostly Hum",
+      "description": "A faint humming sound, like energy crackling. It's coming from below, but you can't go down. Something blocks the way.",
+      "teaching": "Hints at barrier"
+    },
+    {
+      "title": "Distant Moaning",
+      "description": "Faint moaning echoes from somewhere. It sounds... entranced. Dreamy, not pained.",
+      "teaching": "Hints at entranced prisoner"
+    },
+    {
+      "title": "Rogue's Lockpick",
+      "description": "A lockpick lies next to a skeleton. The pick is bent - they were trying to open something when they died.",
+      "teaching": "Hints at trapped explorer"
+    },
+    {
+      "title": "Forgotten Whip",
+      "description": "A whip lies on a table, covered in dust. It hasn't been touched in a very long time.",
+      "teaching": "Hints at abandoned tool"
+    },
+    {
+      "title": "Single Leech",
+      "description": "A leech crawls across the floor. Just one. Where did it come from?",
+      "teaching": "Hints at leech source"
+    },
+    {
+      "title": "Incense Ash",
+      "description": "A pile of incense ash. The smell is faint but still present. Meditation rituals.",
+      "teaching": "Hints at rituals"
+    },
+    {
+      "title": "Broken Icon",
+      "description": "A religious icon smashed on the floor. Someone rejected the gods.",
+      "teaching": "Hints at apostasy"
+    },
+    {
+      "title": "Silk Scarf",
+      "description": "A silk scarf, expensive and fine. Personal clothing from centuries ago.",
+      "teaching": "Hints at wealth"
+    },
+    {
+      "title": "Trophy Plaque",
+      "description": "An empty plaque on the wall. Whatever it displayed is gone.",
+      "teaching": "Hints at missing trophy"
+    },
+    {
+      "title": "Meditation Bell",
+      "description": "A small bell for meditation. It rings with a pure, clear tone.",
+      "teaching": "Hints at practice"
+    },
+    {
+      "title": "Dropped Earring",
+      "description": "A single earring, gold and ornate. Someone lost it here.",
+      "teaching": "Hints at jewelry"
+    },
+    {
+      "title": "Perfume Bottle",
+      "description": "An empty perfume bottle. The scent is long gone.",
+      "teaching": "Hints at vanity"
+    },
+    {
+      "title": "Mirror Shard",
+      "description": "A shard from a broken mirror. The silver backing is intact.",
+      "teaching": "Hints at reflection"
+    },
+    {
+      "title": "Hairpin",
+      "description": "An ornate hairpin on the floor. Dropped or torn out?",
+      "teaching": "Hints at struggle"
+    },
+    {
+      "title": "Cushion Stuffing",
+      "description": "Stuffing pulled from a cushion. Someone searched it.",
+      "teaching": "Hints at searching"
+    },
+    {
+      "title": "Candle Holder",
+      "description": "An ornate candle holder, tarnished black. Once it was silver.",
+      "teaching": "Hints at decay"
+    },
+    {
+      "title": "Dropped Ring",
+      "description": "A ring on the floor. The stone is missing from its setting.",
+      "teaching": "Hints at theft"
+    },
+    {
+      "title": "Torn Tapestry",
+      "description": "A scrap of tapestry. The pattern shows a battle scene.",
+      "teaching": "Hints at decoration"
+    },
+    {
+      "title": "Broken Lute",
+      "description": "A lute with broken strings. Someone played music here once.",
+      "teaching": "Hints at entertainment"
+    },
+    {
+      "title": "Wine Stain",
+      "description": "An old wine stain on the floor. A bottle was dropped or thrown.",
+      "teaching": "Hints at drinking"
+    },
+    {
+      "title": "Dropped Dagger",
+      "description": "A small dagger, ornamental. The blade is dull.",
+      "teaching": "Hints at weapons"
+    },
+    {
+      "title": "Powder Compact",
+      "description": "A compact for face powder. The mirror inside is cracked.",
+      "teaching": "Hints at grooming"
+    },
+    {
+      "title": "Broken Comb",
+      "description": "A comb with teeth missing. Personal grooming items.",
+      "teaching": "Hints at daily life"
+    },
+    {
+      "title": "Spilled Perfume",
+      "description": "A stain where perfume was spilled. The smell is faint but sickly sweet.",
+      "teaching": "Hints at luxury"
+    },
+    {
+      "title": "Torn Letter",
+      "description": "A letter torn into pieces. You can make out '...never forgive...'",
+      "teaching": "Hints at correspondence"
+    },
+    {
+      "title": "Dropped Brooch",
+      "description": "A brooch shaped like a skull. Morbid jewelry.",
+      "teaching": "Hints at dark tastes"
+    },
+    {
+      "title": "Broken Necklace",
+      "description": "A necklace with its chain broken. The beads are scattered.",
+      "teaching": "Hints at violence"
+    },
+    {
+      "title": "Makeup Brush",
+      "description": "A brush for applying makeup. The bristles are stiff with age.",
+      "teaching": "Hints at vanity"
+    },
+    {
+      "title": "Dropped Glove",
+      "description": "A single glove, fine leather. Its partner is missing.",
+      "teaching": "Hints at clothing"
+    },
+    {
+      "title": "Broken Fan",
+      "description": "A folding fan with broken ribs. Once it was elegant.",
+      "teaching": "Hints at refinement"
+    },
+    {
+      "title": "Spilled Ink",
+      "description": "Ink spilled on a writing desk. Someone was writing letters.",
+      "teaching": "Hints at correspondence"
+    },
+    {
+      "title": "Quill Pen",
+      "description": "A quill pen with a gold nib. Expensive writing tools.",
+      "teaching": "Hints at wealth"
+    },
+    {
+      "title": "Wax Seal",
+      "description": "A wax seal stamp. The symbol is a tower.",
+      "teaching": "Hints at correspondence"
+    },
+    {
+      "title": "Torn Diary",
+      "description": "Pages torn from a diary. The entries are frantic, angry.",
+      "teaching": "Hints at emotions"
+    },
+    {
+      "title": "Dropped Key",
+      "description": "A small key on a chain. What does it open?",
+      "teaching": "Hints at locks"
+    },
+    {
+      "title": "Broken Hourglass",
+      "description": "An hourglass with its glass broken. The sand has spilled out.",
+      "teaching": "Hints at time"
+    },
+    {
+      "title": "Candle Wax",
+      "description": "Wax pooled on a table. Many candles burned here.",
+      "teaching": "Hints at late nights"
+    },
+    {
+      "title": "Dropped Coin",
+      "description": "A gold coin. The face shows a ruler you don't recognize.",
+      "teaching": "Hints at age"
+    },
+    {
+      "title": "Broken Seal",
+      "description": "A broken seal on the floor. Someone opened a sealed letter.",
+      "teaching": "Hints at secrets"
+    },
+    {
+      "title": "Torn Ribbon",
+      "description": "A ribbon torn in half. Once it tied something closed.",
+      "teaching": "Hints at packages"
+    },
+    {
+      "title": "Dropped Pendant",
+      "description": "A pendant on a broken chain. The symbol is arcane.",
+      "teaching": "Hints at magic"
+    },
+    {
+      "title": "Broken Bracelet",
+      "description": "A bracelet snapped in two. The metal is bent.",
+      "teaching": "Hints at force"
+    },
+    {
+      "title": "Spilled Powder",
+      "description": "Face powder spilled on a vanity. The container is tipped over.",
+      "teaching": "Hints at haste"
+    },
+    {
+      "title": "Dropped Vial",
+      "description": "An empty vial. It once held perfume or poison.",
+      "teaching": "Hints at substances"
+    },
+    {
+      "title": "Broken Clasp",
+      "description": "A clasp from a cloak or dress. The pin is bent.",
+      "teaching": "Hints at clothing"
+    },
+    {
+      "title": "Torn Fabric",
+      "description": "A scrap of fine fabric. Silk or velvet. From expensive clothing.",
+      "teaching": "Hints at wealth"
+    },
+    {
+      "title": "Dropped Button",
+      "description": "A button carved from bone. From an expensive garment.",
+      "teaching": "Hints at fashion"
+    },
+    {
+      "title": "Broken Buckle",
+      "description": "A belt buckle, ornate and heavy. The leather is gone.",
+      "teaching": "Hints at accessories"
+    }
+  ],
+  "5": [
+    {
+      "title": "Blood-Soaked Sand",
+      "description": "A patch of sand darker than the rest. Old blood, never cleaned.",
+      "teaching": "Hints at arena combat"
+    },
+    {
+      "title": "Broken Tooth",
+      "description": "A tooth the size of your thumb. Sharp. Not human.",
+      "teaching": "Hints at beasts"
+    },
+    {
+      "title": "Claw Mark",
+      "description": "A single claw scratch on the wall. Deep. Whatever made it was huge.",
+      "teaching": "Hints at monsters"
+    },
+    {
+      "title": "Dropped Betting Chip",
+      "description": "A clay chip with a number on it. Someone bet on the fights.",
+      "teaching": "Hints at gambling"
+    },
+    {
+      "title": "Broken Chain",
+      "description": "A link from a heavy chain. For restraining something strong.",
+      "teaching": "Hints at captives"
+    },
+    {
+      "title": "Spectator's Cushion",
+      "description": "A cushion, moldy and flat. Someone sat here to watch.",
+      "teaching": "Hints at audience"
+    },
+    {
+      "title": "Spilled Wine",
+      "description": "An old wine stain. Aristocrats drank while watching death.",
+      "teaching": "Hints at VIPs"
+    },
+    {
+      "title": "Beast Fur",
+      "description": "A tuft of coarse fur caught on a cage bar. Black and oily.",
+      "teaching": "Hints at caged creatures"
+    },
+    {
+      "title": "Broken Spear",
+      "description": "A spear shaft snapped in half. The gladiator lost.",
+      "teaching": "Hints at weapons"
+    },
+    {
+      "title": "Roar Echo",
+      "description": "Your footstep echoes strangely. Like a distant roar.",
+      "teaching": "Hints at acoustics"
+    },
+    {
+      "title": "Dropped Shield",
+      "description": "A small buckler, dented and scratched. Abandoned mid-fight.",
+      "teaching": "Hints at combat"
+    },
+    {
+      "title": "Bone Fragment",
+      "description": "A bone fragment on the sand. Humanoid. Picked clean.",
+      "teaching": "Hints at death"
+    },
+    {
+      "title": "Betting Slip",
+      "description": "A scrap of paper with names and numbers. Betting records.",
+      "teaching": "Hints at wagers"
+    },
+    {
+      "title": "Broken Net",
+      "description": "A net torn apart. Whatever was caught broke free.",
+      "teaching": "Hints at capture"
+    },
+    {
+      "title": "Claw Scrape",
+      "description": "Claw marks on the floor. Something tried to dig its way out.",
+      "teaching": "Hints at desperation"
+    },
+    {
+      "title": "Dropped Dagger",
+      "description": "A gladiator's dagger, rusted. The blade is notched from use.",
+      "teaching": "Hints at fighters"
+    },
+    {
+      "title": "Bloodstain Pattern",
+      "description": "Blood splattered in an arc. Someone was struck hard.",
+      "teaching": "Hints at violence"
+    },
+    {
+      "title": "Broken Helmet",
+      "description": "A helmet crushed flat. The wearer didn't survive.",
+      "teaching": "Hints at death"
+    },
+    {
+      "title": "Beast Claw",
+      "description": "A severed claw, massive and curved. Trophy or warning?",
+      "teaching": "Hints at trophies"
+    },
+    {
+      "title": "Dropped Coin",
+      "description": "A gold coin in the sand. Someone's winnings, lost.",
+      "teaching": "Hints at wealth"
+    },
+    {
+      "title": "Cage Bar",
+      "description": "A bent cage bar. Something strong was kept here.",
+      "teaching": "Hints at strength"
+    },
+    {
+      "title": "Torn Banner",
+      "description": "A scrap of banner fabric. A champion's colors.",
+      "teaching": "Hints at glory"
+    },
+    {
+      "title": "Broken Trident",
+      "description": "A trident with one prong snapped off. Arena weapon.",
+      "teaching": "Hints at gladiators"
+    },
+    {
+      "title": "Spectator's Fan",
+      "description": "A folding fan dropped in the stands. Aristocratic accessory.",
+      "teaching": "Hints at nobility"
+    },
+    {
+      "title": "Beast Dung",
+      "description": "Fresh dung. Something large was here recently.",
+      "teaching": "Hints at current beasts"
+    },
+    {
+      "title": "Broken Whip",
+      "description": "A whip with its lash torn off. For controlling beasts.",
+      "teaching": "Hints at beast masters"
+    },
+    {
+      "title": "Dropped Gauntlet",
+      "description": "A single gauntlet, leather and metal. Its partner is gone.",
+      "teaching": "Hints at armor"
+    },
+    {
+      "title": "Claw Gouge",
+      "description": "A gouge in the stone wall. Claws scraped here repeatedly.",
+      "teaching": "Hints at pacing"
+    },
+    {
+      "title": "Broken Buckle",
+      "description": "A buckle from armor straps. Torn off in combat.",
+      "teaching": "Hints at struggle"
+    },
+    {
+      "title": "Bloodied Cloth",
+      "description": "A cloth used to wipe blood. Still damp somehow.",
+      "teaching": "Hints at wounds"
+    },
+    {
+      "title": "Dropped Key",
+      "description": "A small key in the sand. For a cage? A chest?",
+      "teaching": "Hints at locks"
+    },
+    {
+      "title": "Broken Collar",
+      "description": "A collar with its chain snapped. A beast broke free.",
+      "teaching": "Hints at escape"
+    },
+    {
+      "title": "Spectator's Glove",
+      "description": "A silk glove dropped in the stands. Fine quality.",
+      "teaching": "Hints at wealth"
+    },
+    {
+      "title": "Beast Scale",
+      "description": "A single scale, iridescent and hard. From something reptilian.",
+      "teaching": "Hints at scaled beasts"
+    },
+    {
+      "title": "Broken Mace",
+      "description": "A mace with its head cracked. Hit something very hard.",
+      "teaching": "Hints at weapons"
+    },
+    {
+      "title": "Dropped Potion",
+      "description": "An empty potion vial. Someone needed healing fast.",
+      "teaching": "Hints at medicine"
+    },
+    {
+      "title": "Claw Scratch",
+      "description": "A scratch on the cage door. Counting days? Or madness?",
+      "teaching": "Hints at captivity"
+    },
+    {
+      "title": "Broken Sword",
+      "description": "A sword blade snapped at the hilt. The fight was brutal.",
+      "teaching": "Hints at combat"
+    },
+    {
+      "title": "Beast Feather",
+      "description": "A feather as long as your arm. Black and oily.",
+      "teaching": "Hints at winged beasts"
+    },
+    {
+      "title": "Dropped Torch",
+      "description": "A torch burned down to nothing. Someone needed light here.",
+      "teaching": "Hints at darkness"
+    },
+    {
+      "title": "Broken Axe",
+      "description": "An axe with its handle splintered. Gladiator weapon.",
+      "teaching": "Hints at fighters"
+    },
+    {
+      "title": "Spectator's Ribbon",
+      "description": "A ribbon in champion's colors. Someone's favor.",
+      "teaching": "Hints at romance"
+    },
+    {
+      "title": "Beast Blood",
+      "description": "Blood that's not quite red. Purple-black. Not human.",
+      "teaching": "Hints at aberrations"
+    },
+    {
+      "title": "Broken Grate",
+      "description": "A grate torn from the floor. Something came up from below.",
+      "teaching": "Hints at depths"
+    },
+    {
+      "title": "Dropped Helmet",
+      "description": "A helmet rolled into a corner. The straps are cut.",
+      "teaching": "Hints at surrender"
+    },
+    {
+      "title": "Claw Print",
+      "description": "A claw print in dried blood. Three toes. Huge.",
+      "teaching": "Hints at tracks"
+    },
+    {
+      "title": "Broken Lance",
+      "description": "A lance snapped in two. Mounted combat?",
+      "teaching": "Hints at cavalry"
+    },
+    {
+      "title": "Spectator's Mask",
+      "description": "A decorative mask dropped in the stands. Aristocratic disguise.",
+      "teaching": "Hints at anonymity"
+    },
+    {
+      "title": "Beast Roar",
+      "description": "A distant roar echoes. Something alive is still here.",
+      "teaching": "Hints at danger"
+    },
+    {
+      "title": "Broken Gate",
+      "description": "A gate hanging off its hinges. The portcullis failed.",
+      "teaching": "Hints at mechanisms"
+    }
+  ],
+  "6": [
+    {
+      "title": "Surgical Tool",
+      "description": "A scalpel on the floor, still sharp. The blade is stained.",
+      "teaching": "Hints at surgery"
+    },
+    {
+      "title": "Flesh Scrap",
+      "description": "A scrap of flesh on a table. It twitches when you look away.",
+      "teaching": "Hints at experiments"
+    },
+    {
+      "title": "Broken Vial",
+      "description": "A vial shattered on the floor. The liquid ate through the stone.",
+      "teaching": "Hints at alchemy"
+    },
+    {
+      "title": "Stitching Thread",
+      "description": "Thread used for stitching flesh. It's made of something organic.",
+      "teaching": "Hints at fleshwarping"
+    },
+    {
+      "title": "Observation Notes",
+      "description": "A scrap of paper with notes. 'Subject 47: Failed. Dispose.'",
+      "teaching": "Hints at failures"
+    },
+    {
+      "title": "Bloodstain",
+      "description": "A bloodstain on the operating table. Fresh. Very fresh.",
+      "teaching": "Hints at recent work"
+    },
+    {
+      "title": "Broken Syringe",
+      "description": "A syringe with its needle bent. The plunger is stuck.",
+      "teaching": "Hints at injections"
+    },
+    {
+      "title": "Flesh Jar",
+      "description": "A jar containing something preserved. You don't look closely.",
+      "teaching": "Hints at specimens"
+    },
+    {
+      "title": "Scalpel Set",
+      "description": "A set of scalpels arranged by size. One is missing.",
+      "teaching": "Hints at tools"
+    },
+    {
+      "title": "Dropped Eye",
+      "description": "An eye on the floor. It's not human. It's still looking.",
+      "teaching": "Hints at body parts"
+    },
+    {
+      "title": "Stitched Scar",
+      "description": "A piece of skin with stitches. The pattern is deliberate.",
+      "teaching": "Hints at modification"
+    },
+    {
+      "title": "Chemical Smell",
+      "description": "The air smells of preservatives and rot. You gag.",
+      "teaching": "Hints at atmosphere"
+    },
+    {
+      "title": "Broken Restraint",
+      "description": "A leather restraint torn apart. The subject broke free.",
+      "teaching": "Hints at escape"
+    },
+    {
+      "title": "Surgical Mask",
+      "description": "A mask stained with blood. Someone wore this during surgery.",
+      "teaching": "Hints at surgeons"
+    },
+    {
+      "title": "Flesh Bucket",
+      "description": "A bucket containing scraps. Leftovers from experiments.",
+      "teaching": "Hints at waste"
+    },
+    {
+      "title": "Broken Bone Saw",
+      "description": "A saw with teeth missing. It cut through many bones.",
+      "teaching": "Hints at amputation"
+    },
+    {
+      "title": "Observation Window",
+      "description": "A window looking into a chamber. The glass is smeared.",
+      "teaching": "Hints at watching"
+    },
+    {
+      "title": "Dropped Organ",
+      "description": "Something organic on the floor. You step around it quickly.",
+      "teaching": "Hints at dissection"
+    },
+    {
+      "title": "Stitching Pattern",
+      "description": "A pattern drawn on paper. Instructions for stitching flesh.",
+      "teaching": "Hints at procedures"
+    },
+    {
+      "title": "Broken Clamp",
+      "description": "A surgical clamp bent out of shape. It held something struggling.",
+      "teaching": "Hints at resistance"
+    },
+    {
+      "title": "Flesh Sample",
+      "description": "A sample in a dish. It's growing something.",
+      "teaching": "Hints at cultivation"
+    },
+    {
+      "title": "Dropped Needle",
+      "description": "A needle the size of a dagger. For stitching large subjects.",
+      "teaching": "Hints at scale"
+    },
+    {
+      "title": "Chemical Burn",
+      "description": "A burn mark on the table. Acid or something worse.",
+      "teaching": "Hints at chemicals"
+    },
+    {
+      "title": "Broken Jar",
+      "description": "A jar shattered on the floor. Whatever was inside is gone.",
+      "teaching": "Hints at specimens"
+    },
+    {
+      "title": "Surgical Apron",
+      "description": "An apron hanging on a hook. Stiff with dried blood.",
+      "teaching": "Hints at surgeons"
+    },
+    {
+      "title": "Flesh Mold",
+      "description": "A mold for shaping flesh. The shape is disturbing.",
+      "teaching": "Hints at sculpting"
+    },
+    {
+      "title": "Broken Forceps",
+      "description": "Forceps bent and twisted. They gripped something too hard.",
+      "teaching": "Hints at tools"
+    },
+    {
+      "title": "Observation Log",
+      "description": "A log book open on a desk. The last entry: 'Screaming stopped.'",
+      "teaching": "Hints at records"
+    },
+    {
+      "title": "Dropped Tooth",
+      "description": "A tooth on the floor. It's been filed to a point.",
+      "teaching": "Hints at modification"
+    },
+    {
+      "title": "Flesh Graft",
+      "description": "A piece of skin grafted onto something. The colors don't match.",
+      "teaching": "Hints at transplants"
+    },
+    {
+      "title": "Broken Microscope",
+      "description": "A microscope with cracked lenses. For examining specimens.",
+      "teaching": "Hints at study"
+    },
+    {
+      "title": "Chemical Spill",
+      "description": "A spill on the floor. The stone is bubbling.",
+      "teaching": "Hints at danger"
+    },
+    {
+      "title": "Dropped Scalpel",
+      "description": "A scalpel still wet with blood. Recently used.",
+      "teaching": "Hints at current work"
+    },
+    {
+      "title": "Flesh Diagram",
+      "description": "A diagram showing how to rearrange organs. Horrifying.",
+      "teaching": "Hints at plans"
+    },
+    {
+      "title": "Broken Beaker",
+      "description": "A beaker shattered on the floor. The liquid is eating the stone.",
+      "teaching": "Hints at alchemy"
+    },
+    {
+      "title": "Surgical Tray",
+      "description": "A tray of tools arranged neatly. Ready for the next subject.",
+      "teaching": "Hints at preparation"
+    },
+    {
+      "title": "Dropped Finger",
+      "description": "A finger on the floor. It has too many joints.",
+      "teaching": "Hints at mutations"
+    },
+    {
+      "title": "Flesh Vat",
+      "description": "A vat containing something. It bubbles slowly.",
+      "teaching": "Hints at brewing"
+    },
+    {
+      "title": "Broken Retractor",
+      "description": "A retractor bent out of shape. It held flesh open.",
+      "teaching": "Hints at surgery"
+    },
+    {
+      "title": "Observation Chair",
+      "description": "A chair facing an operating table. Someone watched from here.",
+      "teaching": "Hints at observers"
+    },
+    {
+      "title": "Dropped Syringe",
+      "description": "A syringe with green liquid inside. You don't touch it.",
+      "teaching": "Hints at serums"
+    },
+    {
+      "title": "Flesh Sketch",
+      "description": "A sketch of a creature. Half-drawn, half-real.",
+      "teaching": "Hints at designs"
+    },
+    {
+      "title": "Broken Lamp",
+      "description": "A surgical lamp with its bulb shattered. For illuminating work.",
+      "teaching": "Hints at lighting"
+    },
+    {
+      "title": "Chemical Bottle",
+      "description": "A bottle labeled in a language you don't know. The contents glow.",
+      "teaching": "Hints at reagents"
+    },
+    {
+      "title": "Dropped Clamp",
+      "description": "A clamp for holding flesh. The jaws are bent.",
+      "teaching": "Hints at tools"
+    },
+    {
+      "title": "Flesh Puppet",
+      "description": "Something that looks like a doll. Made of flesh. It moves.",
+      "teaching": "Hints at animation"
+    },
+    {
+      "title": "Broken Table",
+      "description": "An operating table with one leg broken. Someone heavy was here.",
+      "teaching": "Hints at large subjects"
+    },
+    {
+      "title": "Surgical Notes",
+      "description": "Notes in cramped handwriting. 'Try adding more limbs next time.'",
+      "teaching": "Hints at ambition"
+    },
+    {
+      "title": "Dropped Probe",
+      "description": "A probe for examining wounds. The tip is bloody.",
+      "teaching": "Hints at examination"
+    },
+    {
+      "title": "Flesh Cage",
+      "description": "A cage made of bone and sinew. Empty now. What was inside?",
+      "teaching": "Hints at containment"
+    }
+  ]
+,
+  "7": [
+    {
+      "title": "Brimstone Smell",
+      "description": "The air smells of sulfur. Your eyes water.",
+      "teaching": "Hints at infernal presence"
+    },
+    {
+      "title": "Scorch Mark",
+      "description": "A scorch mark on the wall. The shape is vaguely humanoid.",
+      "teaching": "Hints at fire"
+    },
+    {
+      "title": "Broken Chain",
+      "description": "A chain link melted through. The heat was intense.",
+      "teaching": "Hints at heat"
+    },
+    {
+      "title": "Contract Scrap",
+      "description": "A scrap of parchment with tiny writing. Legal language.",
+      "teaching": "Hints at contracts"
+    },
+    {
+      "title": "Dropped Coin",
+      "description": "A coin that's too hot to touch. It glows faintly red.",
+      "teaching": "Hints at infernal currency"
+    },
+    {
+      "title": "Claw Scratch",
+      "description": "A claw mark on the cell door. Deep and deliberate.",
+      "teaching": "Hints at devils"
+    },
+    {
+      "title": "Melted Lock",
+      "description": "A lock melted into slag. Someone wanted out badly.",
+      "teaching": "Hints at escape"
+    },
+    {
+      "title": "Bloodstain",
+      "description": "A bloodstain on the floor. It's still warm.",
+      "teaching": "Hints at recent violence"
+    },
+    {
+      "title": "Broken Shackle",
+      "description": "A shackle snapped open. The metal is twisted.",
+      "teaching": "Hints at strength"
+    },
+    {
+      "title": "Distant Scream",
+      "description": "A scream echoes from somewhere. It stops abruptly.",
+      "teaching": "Hints at torture"
+    },
+    {
+      "title": "Dropped Quill",
+      "description": "A quill pen with red ink. Or is it blood?",
+      "teaching": "Hints at signing"
+    },
+    {
+      "title": "Wax Seal",
+      "description": "A broken wax seal. The symbol is a pitchfork.",
+      "teaching": "Hints at contracts"
+    },
+    {
+      "title": "Charred Bone",
+      "description": "A bone charred black. The marrow is gone.",
+      "teaching": "Hints at burning"
+    },
+    {
+      "title": "Cell Tally",
+      "description": "Tally marks scratched into a cell wall. Hundreds of them.",
+      "teaching": "Hints at imprisonment"
+    },
+    {
+      "title": "Dropped Key",
+      "description": "A key that's too hot to hold. It glows with inner heat.",
+      "teaching": "Hints at locks"
+    },
+    {
+      "title": "Broken Collar",
+      "description": "A collar with spikes on the inside. For controlling prisoners.",
+      "teaching": "Hints at control"
+    },
+    {
+      "title": "Contract Fragment",
+      "description": "A fragment of a contract. You can read: '...in perpetuity...'",
+      "teaching": "Hints at eternal deals"
+    },
+    {
+      "title": "Melted Candle",
+      "description": "A candle melted into a puddle. The heat here is constant.",
+      "teaching": "Hints at temperature"
+    },
+    {
+      "title": "Claw Print",
+      "description": "A claw print burned into the floor. Still smoking.",
+      "teaching": "Hints at devils"
+    },
+    {
+      "title": "Broken Whip",
+      "description": "A whip with barbs on the lash. For punishment.",
+      "teaching": "Hints at torture"
+    },
+    {
+      "title": "Dropped Tooth",
+      "description": "A tooth on the floor. Sharp and pointed. Not human.",
+      "teaching": "Hints at devils"
+    },
+    {
+      "title": "Scorch Pattern",
+      "description": "Scorch marks in a pattern. A summoning circle?",
+      "teaching": "Hints at summoning"
+    },
+    {
+      "title": "Broken Grate",
+      "description": "A grate torn from the floor. Something came up from below.",
+      "teaching": "Hints at depths"
+    },
+    {
+      "title": "Contract Ash",
+      "description": "Ashes of a burned contract. Someone voided their deal.",
+      "teaching": "Hints at broken deals"
+    },
+    {
+      "title": "Melted Shackle",
+      "description": "A shackle melted around a wrist bone. The prisoner died here.",
+      "teaching": "Hints at death"
+    },
+    {
+      "title": "Dropped Horn",
+      "description": "A horn fragment. Curved and ridged. From a devil's head.",
+      "teaching": "Hints at devils"
+    },
+    {
+      "title": "Cell Door",
+      "description": "A cell door hanging open. The lock is intact. Opened from inside.",
+      "teaching": "Hints at release"
+    },
+    {
+      "title": "Broken Rack",
+      "description": "A torture rack with one wheel broken. It saw heavy use.",
+      "teaching": "Hints at torture"
+    },
+    {
+      "title": "Dropped Seal",
+      "description": "A seal stamp for contracts. The symbol is a skull.",
+      "teaching": "Hints at authority"
+    },
+    {
+      "title": "Charred Cloth",
+      "description": "Cloth burned to ash. The outline shows it was clothing.",
+      "teaching": "Hints at immolation"
+    },
+    {
+      "title": "Cell Scratch",
+      "description": "Words scratched into a cell: 'I didn't read it all.'",
+      "teaching": "Hints at regret"
+    },
+    {
+      "title": "Broken Brand",
+      "description": "A branding iron snapped in half. For marking prisoners.",
+      "teaching": "Hints at marking"
+    },
+    {
+      "title": "Dropped Scale",
+      "description": "A scale from devil skin. Red and hot to the touch.",
+      "teaching": "Hints at devils"
+    },
+    {
+      "title": "Melted Coin",
+      "description": "A coin melted into the floor. The face is unrecognizable.",
+      "teaching": "Hints at heat"
+    },
+    {
+      "title": "Contract Pile",
+      "description": "A pile of contracts stacked neatly. All signed in blood.",
+      "teaching": "Hints at deals"
+    },
+    {
+      "title": "Broken Cage",
+      "description": "A cage with bars bent outward. Something strong escaped.",
+      "teaching": "Hints at escape"
+    },
+    {
+      "title": "Dropped Claw",
+      "description": "A severed claw. Still twitching.",
+      "teaching": "Hints at combat"
+    },
+    {
+      "title": "Scorch Handprint",
+      "description": "A handprint burned into the wall. The fingers are too long.",
+      "teaching": "Hints at devils"
+    },
+    {
+      "title": "Cell Prayer",
+      "description": "A prayer scratched into a cell wall. It didn't work.",
+      "teaching": "Hints at desperation"
+    },
+    {
+      "title": "Broken Thumbscrew",
+      "description": "A thumbscrew with its screw stripped. Overused.",
+      "teaching": "Hints at torture"
+    },
+    {
+      "title": "Dropped Ink",
+      "description": "Spilled ink on a desk. Someone was writing contracts.",
+      "teaching": "Hints at bureaucracy"
+    },
+    {
+      "title": "Melted Ring",
+      "description": "A ring melted onto a finger bone. Wedding band?",
+      "teaching": "Hints at loss"
+    },
+    {
+      "title": "Contract Signature",
+      "description": "A signature on a contract scrap. The name is yours.",
+      "teaching": "Hints at dread"
+    },
+    {
+      "title": "Broken Iron Maiden",
+      "description": "An iron maiden with its door torn off. Empty now.",
+      "teaching": "Hints at torture"
+    },
+    {
+      "title": "Dropped Feather",
+      "description": "A feather that's on fire. It doesn't burn up.",
+      "teaching": "Hints at infernal creatures"
+    },
+    {
+      "title": "Cell Bloodstain",
+      "description": "Blood on the cell wall. Handprints sliding down.",
+      "teaching": "Hints at suffering"
+    },
+    {
+      "title": "Broken Pitchfork",
+      "description": "A pitchfork with bent tines. Devil's weapon.",
+      "teaching": "Hints at devils"
+    },
+    {
+      "title": "Dropped Parchment",
+      "description": "A blank contract on the floor. Waiting for a signature.",
+      "teaching": "Hints at temptation"
+    },
+    {
+      "title": "Melted Bars",
+      "description": "Cell bars melted and re-solidified. The heat was extreme.",
+      "teaching": "Hints at power"
+    },
+    {
+      "title": "Contract Loophole",
+      "description": "A contract with a note: 'Found the loophole!' They didn't.",
+      "teaching": "Hints at false hope"
+    }
+  ]
+,
+  "8": [
+    {
+      "title": "Glowing Mushroom",
+      "description": "A mushroom glowing faintly blue. It pulses like a heartbeat.",
+      "teaching": "Hints at fungi"
+    },
+    {
+      "title": "Wet Footprint",
+      "description": "A footprint in the mud. Humanoid but wrong. The toes are too long.",
+      "teaching": "Hints at bog mummies"
+    },
+    {
+      "title": "Psychic Whisper",
+      "description": "A whisper at the edge of hearing. You can't make out the words.",
+      "teaching": "Hints at psychic presence"
+    },
+    {
+      "title": "Mushroom Spore",
+      "description": "Spores drift through the air. They make you dizzy.",
+      "teaching": "Hints at spores"
+    },
+    {
+      "title": "Bog Stench",
+      "description": "The smell of rot and stagnant water. You gag.",
+      "teaching": "Hints at bog"
+    },
+    {
+      "title": "Dropped Tool",
+      "description": "A farming tool, rusted and ancient. For tending mushrooms.",
+      "teaching": "Hints at farming"
+    },
+    {
+      "title": "Wet Cloth",
+      "description": "A cloth soaked in bog water. It's been here a long time.",
+      "teaching": "Hints at dampness"
+    },
+    {
+      "title": "Mushroom Circle",
+      "description": "Mushrooms growing in a perfect circle. Deliberate cultivation.",
+      "teaching": "Hints at farming"
+    },
+    {
+      "title": "Psychic Echo",
+      "description": "You hear your own thoughts echoed back. Distorted.",
+      "teaching": "Hints at psychic interference"
+    },
+    {
+      "title": "Bog Mummy Hand",
+      "description": "A hand reaching from the mud. Preserved. Grasping.",
+      "teaching": "Hints at bog mummies"
+    },
+    {
+      "title": "Glowing Pool",
+      "description": "A pool of water glowing faintly. Bioluminescent algae.",
+      "teaching": "Hints at ecosystem"
+    },
+    {
+      "title": "Dropped Basket",
+      "description": "A basket for harvesting mushrooms. Rotted through.",
+      "teaching": "Hints at harvest"
+    },
+    {
+      "title": "Psychic Pressure",
+      "description": "Pressure behind your eyes. Something is watching.",
+      "teaching": "Hints at presence"
+    },
+    {
+      "title": "Mushroom Stalk",
+      "description": "A mushroom stalk as thick as your arm. Cut cleanly.",
+      "teaching": "Hints at large fungi"
+    },
+    {
+      "title": "Bog Bubble",
+      "description": "Bubbles rising from the mud. The smell is overwhelming.",
+      "teaching": "Hints at decay"
+    },
+    {
+      "title": "Dropped Sickle",
+      "description": "A sickle for harvesting. The blade is pitted with rust.",
+      "teaching": "Hints at tools"
+    },
+    {
+      "title": "Wet Bones",
+      "description": "Bones half-submerged in mud. Preserved by the bog.",
+      "teaching": "Hints at death"
+    },
+    {
+      "title": "Mushroom Smell",
+      "description": "The smell of mushrooms. Earthy and overwhelming.",
+      "teaching": "Hints at cultivation"
+    },
+    {
+      "title": "Psychic Headache",
+      "description": "A sudden headache. It fades when you move away.",
+      "teaching": "Hints at psychic zones"
+    },
+    {
+      "title": "Bog Mummy Cloth",
+      "description": "A strip of cloth, preserved and leathery. From a mummy.",
+      "teaching": "Hints at bog mummies"
+    },
+    {
+      "title": "Glowing Moss",
+      "description": "Moss glowing on the walls. It lights your way.",
+      "teaching": "Hints at bioluminescence"
+    },
+    {
+      "title": "Dropped Hoe",
+      "description": "A hoe for tending soil. The handle is rotted.",
+      "teaching": "Hints at farming"
+    },
+    {
+      "title": "Psychic Voice",
+      "description": "A voice in your head. Not yours. It says: 'Serve.'",
+      "teaching": "Hints at control"
+    },
+    {
+      "title": "Mushroom Patch",
+      "description": "A patch of mushrooms growing on a corpse. Feeding.",
+      "teaching": "Hints at decomposition"
+    },
+    {
+      "title": "Bog Water",
+      "description": "Water dripping from the ceiling. Brown and thick.",
+      "teaching": "Hints at seepage"
+    },
+    {
+      "title": "Dropped Rake",
+      "description": "A rake for tending mushroom beds. The tines are bent.",
+      "teaching": "Hints at maintenance"
+    },
+    {
+      "title": "Wet Footsteps",
+      "description": "Wet footprints leading away. They don't dry.",
+      "teaching": "Hints at movement"
+    },
+    {
+      "title": "Mushroom Cap",
+      "description": "A mushroom cap the size of a shield. Harvested.",
+      "teaching": "Hints at size"
+    },
+    {
+      "title": "Psychic Dread",
+      "description": "A feeling of dread washes over you. No source.",
+      "teaching": "Hints at emotion"
+    },
+    {
+      "title": "Bog Mummy Face",
+      "description": "A face in the mud. Eyes open. Staring.",
+      "teaching": "Hints at bog mummies"
+    },
+    {
+      "title": "Glowing Fungus",
+      "description": "Fungus growing in patterns. Almost like writing.",
+      "teaching": "Hints at intelligence"
+    },
+    {
+      "title": "Dropped Bucket",
+      "description": "A bucket for carrying water. Full of bog water.",
+      "teaching": "Hints at irrigation"
+    },
+    {
+      "title": "Psychic Laughter",
+      "description": "Laughter in your mind. Mocking. Not your own.",
+      "teaching": "Hints at presence"
+    },
+    {
+      "title": "Mushroom Spore Cloud",
+      "description": "A cloud of spores. You hold your breath.",
+      "teaching": "Hints at danger"
+    },
+    {
+      "title": "Bog Stain",
+      "description": "A stain on the wall. Bog water seeping through.",
+      "teaching": "Hints at seepage"
+    },
+    {
+      "title": "Dropped Trowel",
+      "description": "A trowel for planting. The blade is rusted solid.",
+      "teaching": "Hints at planting"
+    },
+    {
+      "title": "Wet Hair",
+      "description": "Hair caught on a stone. Long and preserved. Bog mummy.",
+      "teaching": "Hints at bog mummies"
+    },
+    {
+      "title": "Mushroom Root",
+      "description": "A mushroom root system exposed. It spreads everywhere.",
+      "teaching": "Hints at network"
+    },
+    {
+      "title": "Psychic Scream",
+      "description": "A scream in your mind. Silent but deafening.",
+      "teaching": "Hints at psychic attack"
+    },
+    {
+      "title": "Bog Mummy Finger",
+      "description": "A finger on the ground. Preserved. Still wearing a ring.",
+      "teaching": "Hints at bog mummies"
+    },
+    {
+      "title": "Glowing Trail",
+      "description": "A trail of glowing mushrooms. Leading somewhere.",
+      "teaching": "Hints at paths"
+    },
+    {
+      "title": "Dropped Shovel",
+      "description": "A shovel stuck in the mud. The handle is rotted.",
+      "teaching": "Hints at digging"
+    },
+    {
+      "title": "Psychic Command",
+      "description": "A command in your mind: 'Worship.' You resist.",
+      "teaching": "Hints at control"
+    },
+    {
+      "title": "Mushroom Harvest",
+      "description": "Mushrooms cut and piled. Recently harvested.",
+      "teaching": "Hints at current activity"
+    },
+    {
+      "title": "Bog Skeleton",
+      "description": "A skeleton half-submerged. The bones are stained brown.",
+      "teaching": "Hints at death"
+    },
+    {
+      "title": "Dropped Knife",
+      "description": "A knife for cutting mushrooms. The blade is sharp.",
+      "teaching": "Hints at tools"
+    },
+    {
+      "title": "Wet Clothing",
+      "description": "Clothing hanging on a hook. Soaked and moldy.",
+      "teaching": "Hints at inhabitants"
+    },
+    {
+      "title": "Mushroom Smell",
+      "description": "The smell intensifies. You're near the main farm.",
+      "teaching": "Hints at proximity"
+    },
+    {
+      "title": "Psychic Presence",
+      "description": "You feel watched. The feeling doesn't go away.",
+      "teaching": "Hints at observation"
+    },
+    {
+      "title": "Bog Mummy Tooth",
+      "description": "A tooth on the ground. Filed to a point. Deliberately.",
+      "teaching": "Hints at modification"
+    }
+  ]
+,
+  "9": [
+    {
+      "title": "Drow Bootprint",
+      "description": "A bootprint in the dust. Drow make. Recent.",
+      "teaching": "Hints at drow"
+    },
+    {
+      "title": "Urdefhan Tooth",
+      "description": "A tooth on the ground. Sharp and yellowed. Urdefhan.",
+      "teaching": "Hints at urdefhan"
+    },
+    {
+      "title": "Darklands Fungus",
+      "description": "A fungus you don't recognize. Darklands species.",
+      "teaching": "Hints at Darklands"
+    },
+    {
+      "title": "Dropped Arrow",
+      "description": "A drow arrow. The fletching is black feathers.",
+      "teaching": "Hints at drow hunters"
+    },
+    {
+      "title": "Blood Trail",
+      "description": "A trail of blood leading into darkness. Fresh.",
+      "teaching": "Hints at wounded prey"
+    },
+    {
+      "title": "Lens Glint",
+      "description": "A glint of colored light. Like a lens reflecting.",
+      "teaching": "Hints at fulcrum lenses"
+    },
+    {
+      "title": "Caligni Shadow",
+      "description": "A shadow that moves wrong. Caligni were here.",
+      "teaching": "Hints at caligni"
+    },
+    {
+      "title": "Urdefhan Banner",
+      "description": "A scrap of banner. War champion's colors.",
+      "teaching": "Hints at urdefhan forces"
+    },
+    {
+      "title": "Drow Carving",
+      "description": "A carving in the wall. Drow script. A warning.",
+      "teaching": "Hints at territory"
+    },
+    {
+      "title": "Dropped Dagger",
+      "description": "A dagger with a curved blade. Darklands make.",
+      "teaching": "Hints at weapons"
+    },
+    {
+      "title": "Refugee Cloth",
+      "description": "A scrap of cloth. Caligni weave. Torn.",
+      "teaching": "Hints at refugees"
+    },
+    {
+      "title": "Urdefhan Warpaint",
+      "description": "Warpaint smeared on a rock. Still wet.",
+      "teaching": "Hints at war bands"
+    },
+    {
+      "title": "Drow Rope",
+      "description": "A rope made of spider silk. Drow craftsmanship.",
+      "teaching": "Hints at drow"
+    },
+    {
+      "title": "Lens Fragment",
+      "description": "A tiny shard of colored crystal. From a lens?",
+      "teaching": "Hints at fulcrum lenses"
+    },
+    {
+      "title": "Caligni Whisper",
+      "description": "A whisper in the shadows. You can't see the speaker.",
+      "teaching": "Hints at caligni"
+    },
+    {
+      "title": "Urdefhan Bone",
+      "description": "A bone carved with symbols. Urdefhan trophy.",
+      "teaching": "Hints at urdefhan"
+    },
+    {
+      "title": "Drow Poison",
+      "description": "A vial of poison. Drow make. The stopper is loose.",
+      "teaching": "Hints at drow"
+    },
+    {
+      "title": "Dropped Spear",
+      "description": "A spear with a stone tip. Urdefhan weapon.",
+      "teaching": "Hints at urdefhan"
+    },
+    {
+      "title": "Darklands Moss",
+      "description": "Moss glowing faintly. Darklands species.",
+      "teaching": "Hints at ecosystem"
+    },
+    {
+      "title": "Caligni Footprint",
+      "description": "A footprint that's too light. Caligni barely touch the ground.",
+      "teaching": "Hints at caligni"
+    },
+    {
+      "title": "Urdefhan Camp",
+      "description": "Ashes from a fire. Urdefhan camped here recently.",
+      "teaching": "Hints at camps"
+    },
+    {
+      "title": "Drow Cloak",
+      "description": "A scrap of cloak. Drow weave. Torn in combat.",
+      "teaching": "Hints at combat"
+    },
+    {
+      "title": "Lens Glow",
+      "description": "A faint glow from somewhere. Colored light.",
+      "teaching": "Hints at fulcrum lenses"
+    },
+    {
+      "title": "Caligni Charm",
+      "description": "A charm made of shadow. It dissolves when you touch it.",
+      "teaching": "Hints at caligni"
+    },
+    {
+      "title": "Urdefhan Skull",
+      "description": "A skull with filed teeth. Urdefhan trophy.",
+      "teaching": "Hints at urdefhan"
+    },
+    {
+      "title": "Drow Crossbow Bolt",
+      "description": "A bolt from a hand crossbow. Drow make.",
+      "teaching": "Hints at drow"
+    },
+    {
+      "title": "Dropped Shield",
+      "description": "A shield with urdefhan symbols. Dropped in flight.",
+      "teaching": "Hints at retreat"
+    },
+    {
+      "title": "Darklands Beetle",
+      "description": "A beetle the size of your fist. Darklands species.",
+      "teaching": "Hints at fauna"
+    },
+    {
+      "title": "Caligni Mask",
+      "description": "A mask made of shadow-stuff. It fades in the light.",
+      "teaching": "Hints at caligni"
+    },
+    {
+      "title": "Urdefhan Drum",
+      "description": "A war drum. The skin is stretched tight.",
+      "teaching": "Hints at war bands"
+    },
+    {
+      "title": "Drow Ration",
+      "description": "A ration pack. Drow food. Dried mushrooms.",
+      "teaching": "Hints at supplies"
+    },
+    {
+      "title": "Lens Reflection",
+      "description": "A reflection of colored light on the wall. Moving.",
+      "teaching": "Hints at fulcrum lenses"
+    },
+    {
+      "title": "Caligni Prayer",
+      "description": "Words scratched in the dark. A prayer to the Forsaken.",
+      "teaching": "Hints at religion"
+    },
+    {
+      "title": "Urdefhan Axe",
+      "description": "An axe with a chipped blade. Urdefhan weapon.",
+      "teaching": "Hints at urdefhan"
+    },
+    {
+      "title": "Drow Trap",
+      "description": "A tripwire across the path. Drow trap. Disarmed.",
+      "teaching": "Hints at defenses"
+    },
+    {
+      "title": "Dropped Torch",
+      "description": "A torch made of fungus. Darklands light source.",
+      "teaching": "Hints at lighting"
+    },
+    {
+      "title": "Darklands Spider",
+      "description": "A spider the size of a dog. Dead. Something killed it.",
+      "teaching": "Hints at predators"
+    },
+    {
+      "title": "Caligni Tears",
+      "description": "Dark stains on the ground. Caligni tears. They weep shadow.",
+      "teaching": "Hints at caligni"
+    },
+    {
+      "title": "Urdefhan Blood",
+      "description": "Blood on the ground. Dark and thick. Urdefhan.",
+      "teaching": "Hints at combat"
+    },
+    {
+      "title": "Drow Sigil",
+      "description": "A sigil carved into stone. Drow house mark.",
+      "teaching": "Hints at houses"
+    },
+    {
+      "title": "Lens Hum",
+      "description": "A humming sound. Like crystal vibrating.",
+      "teaching": "Hints at fulcrum lenses"
+    },
+    {
+      "title": "Caligni Refuge",
+      "description": "A small shelter. Caligni made. Abandoned.",
+      "teaching": "Hints at refugees"
+    },
+    {
+      "title": "Urdefhan Horn",
+      "description": "A war horn. Urdefhan make. Cracked.",
+      "teaching": "Hints at signals"
+    },
+    {
+      "title": "Drow Whittling",
+      "description": "Wood shavings on the ground. Someone was whittling.",
+      "teaching": "Hints at downtime"
+    },
+    {
+      "title": "Dropped Lens",
+      "description": "A small lens on the ground. Not a fulcrum lens. For seeing.",
+      "teaching": "Hints at tools"
+    },
+    {
+      "title": "Darklands Bat",
+      "description": "A bat with no eyes. Darklands species.",
+      "teaching": "Hints at fauna"
+    },
+    {
+      "title": "Caligni Offering",
+      "description": "An offering to the Forsaken. Shadow and bone.",
+      "teaching": "Hints at worship"
+    },
+    {
+      "title": "Urdefhan Scar",
+      "description": "A scar pattern carved into stone. Urdefhan ritual.",
+      "teaching": "Hints at rituals"
+    },
+    {
+      "title": "Drow Lockpick",
+      "description": "A lockpick set. Drow make. One pick is missing.",
+      "teaching": "Hints at thieves"
+    },
+    {
+      "title": "Lens Power",
+      "description": "The air feels charged. A lens is nearby.",
+      "teaching": "Hints at fulcrum lenses"
+    }
+  ]
+,
+  "10": [
+    {
+      "title": "Seven Fingers",
+      "description": "A handprint on the wall. Seven fingers. Wrong.",
+      "teaching": "Hints at Nhimbaloth"
+    },
+    {
+      "title": "Reality Ripple",
+      "description": "The air ripples like water. Reality feels thin here.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Scale",
+      "description": "A scale on the ground. Serpentfolk. Ancient.",
+      "teaching": "Hints at serpentfolk"
+    },
+    {
+      "title": "Empty Whisper",
+      "description": "A whisper that says nothing. You hear it anyway.",
+      "teaching": "Hints at Empty Death"
+    },
+    {
+      "title": "Warped Stone",
+      "description": "Stone that's been twisted. Not carved. Warped.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Carving",
+      "description": "A carving of a serpent. The eyes follow you.",
+      "teaching": "Hints at serpentfolk"
+    },
+    {
+      "title": "Void Stain",
+      "description": "A stain that's darker than black. It hurts to look at.",
+      "teaching": "Hints at void"
+    },
+    {
+      "title": "Reality Crack",
+      "description": "A crack in the air. You can see through to... nothing.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Fang",
+      "description": "A fang the length of your finger. Serpentfolk.",
+      "teaching": "Hints at serpentfolk"
+    },
+    {
+      "title": "Empty Echo",
+      "description": "Your voice echoes. But the echo is empty. Silent.",
+      "teaching": "Hints at Empty Death"
+    },
+    {
+      "title": "Warped Time",
+      "description": "You blink. Hours have passed. Or seconds. You can't tell.",
+      "teaching": "Hints at time warping"
+    },
+    {
+      "title": "Serpent Script",
+      "description": "Writing in serpent script. The words shift when you read them.",
+      "teaching": "Hints at serpentfolk"
+    },
+    {
+      "title": "Void Touch",
+      "description": "A spot on the wall that's cold. Colder than ice. Empty cold.",
+      "teaching": "Hints at void"
+    },
+    {
+      "title": "Reality Fold",
+      "description": "The corridor folds in on itself. You're walking in circles.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Statue",
+      "description": "A statue of a serpent. It's breathing.",
+      "teaching": "Hints at serpentfolk"
+    },
+    {
+      "title": "Empty Hunger",
+      "description": "A feeling of hunger. Not yours. Something else's.",
+      "teaching": "Hints at Empty Death"
+    },
+    {
+      "title": "Warped Gravity",
+      "description": "Gravity shifts. You stumble. The floor is now the wall.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Skin",
+      "description": "Shed skin on the ground. Serpentfolk. Still warm.",
+      "teaching": "Hints at serpentfolk"
+    },
+    {
+      "title": "Void Presence",
+      "description": "Something is here. You can't see it. It's made of nothing.",
+      "teaching": "Hints at void"
+    },
+    {
+      "title": "Reality Tear",
+      "description": "A tear in space. You see through to somewhere else. Somewhere wrong.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Altar",
+      "description": "An altar carved with serpents. The stone is slick with blood.",
+      "teaching": "Hints at worship"
+    },
+    {
+      "title": "Empty Scream",
+      "description": "A scream with no sound. You hear it in your bones.",
+      "teaching": "Hints at Empty Death"
+    },
+    {
+      "title": "Warped Light",
+      "description": "Light bends around a corner. Physics don't work here.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Eye",
+      "description": "An eye carved into the wall. It blinks.",
+      "teaching": "Hints at serpentfolk"
+    },
+    {
+      "title": "Void Footprint",
+      "description": "A footprint that's not there. You see the absence of it.",
+      "teaching": "Hints at void"
+    },
+    {
+      "title": "Reality Loop",
+      "description": "You've been here before. Just now. You're looping.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Offering",
+      "description": "An offering bowl. Full of something that writhes.",
+      "teaching": "Hints at worship"
+    },
+    {
+      "title": "Empty Touch",
+      "description": "Something touches you. There's nothing there.",
+      "teaching": "Hints at Empty Death"
+    },
+    {
+      "title": "Warped Sound",
+      "description": "Sound travels wrong. You hear your heartbeat from across the room.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Priest",
+      "description": "A skeleton in priest robes. Serpentfolk. Clutching a symbol.",
+      "teaching": "Hints at serpentfolk"
+    },
+    {
+      "title": "Void Stare",
+      "description": "You feel watched by nothing. The void is looking at you.",
+      "teaching": "Hints at void"
+    },
+    {
+      "title": "Reality Shift",
+      "description": "The room shifts. The door is now where the wall was.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Coil",
+      "description": "A coil pattern carved into the floor. For summoning.",
+      "teaching": "Hints at rituals"
+    },
+    {
+      "title": "Empty Breath",
+      "description": "A breath on your neck. There's no one behind you.",
+      "teaching": "Hints at Empty Death"
+    },
+    {
+      "title": "Warped Distance",
+      "description": "The far wall is close. And far. Both at once.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Fang Necklace",
+      "description": "A necklace of serpent fangs. Still dripping venom.",
+      "teaching": "Hints at serpentfolk"
+    },
+    {
+      "title": "Void Hunger",
+      "description": "A hunger that's not hunger. The void wants to consume.",
+      "teaching": "Hints at void"
+    },
+    {
+      "title": "Reality Fracture",
+      "description": "Reality fractures. You see multiple versions of yourself.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Mural",
+      "description": "A mural of serpents worshipping something. Seven-fingered.",
+      "teaching": "Hints at Nhimbaloth"
+    },
+    {
+      "title": "Empty Promise",
+      "description": "A promise whispered. To give you nothing. Forever.",
+      "teaching": "Hints at Empty Death"
+    },
+    {
+      "title": "Warped Memory",
+      "description": "You remember being here. You've never been here.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Skull",
+      "description": "A serpentfolk skull. The jaw is unhinged. Screaming.",
+      "teaching": "Hints at serpentfolk"
+    },
+    {
+      "title": "Void Gate",
+      "description": "A doorway to nothing. You can step through. You don't.",
+      "teaching": "Hints at void"
+    },
+    {
+      "title": "Reality Collapse",
+      "description": "Reality collapses for a moment. Everything is nothing. Then it's back.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Ritual",
+      "description": "Ritual implements scattered. The ceremony was interrupted.",
+      "teaching": "Hints at rituals"
+    },
+    {
+      "title": "Empty Soul",
+      "description": "You feel empty. Like your soul is being drained. It passes.",
+      "teaching": "Hints at Empty Death"
+    },
+    {
+      "title": "Warped Reflection",
+      "description": "Your reflection moves wrong. It's not copying you.",
+      "teaching": "Hints at reality warping"
+    },
+    {
+      "title": "Serpent Crown",
+      "description": "A crown shaped like a serpent. For a priest-king.",
+      "teaching": "Hints at serpentfolk"
+    },
+    {
+      "title": "Void Call",
+      "description": "The void calls to you. Promising oblivion. Peace. Nothing.",
+      "teaching": "Hints at Empty Death"
+    },
+    {
+      "title": "Reality End",
+      "description": "You reach the end of reality. There's a wall. Beyond it: nothing.",
+      "teaching": "Hints at reality warping"
+    }
+  ]
+}
