@@ -139,13 +139,57 @@ def clear_history():
     roll_history = []
     return jsonify({'success': True})
 
+@app.route('/api/test-ghoul', methods=['GET'])
+def test_ghoul():
+    """Test endpoint to force a Ghoul encounter"""
+    # Find Ghoul in database
+    ghoul = next((c for c in creatures if c['name'] == 'Ghoul' and c.get('attacks')), None)
+    
+    if not ghoul:
+        return jsonify({'error': 'Ghoul not found'}), 404
+    
+    event = {
+        'title': 'Test Ghoul Encounter',
+        'description': 'A Ghoul emerges from the shadows, hungry for flesh.',
+        'category': 'COMBAT',
+        'floor': 1,
+        'sum': 90,
+        'creatures': ['Ghoul'],
+        'num_creatures': 1,
+        'creature_level': ghoul['level'],
+        'difficulty': 'Test',
+        'ecology': 'Test encounter to verify enhanced creature display',
+        'tactical_option': 'This is a test',
+        'avoidable': False,
+        'surprise_available': False,
+        'creature_stats': [{
+            'name': ghoul['name'],
+            'level': ghoul['level'],
+            'hp': ghoul.get('hp', 'Unknown'),
+            'ac': ghoul.get('ac', 'Unknown'),
+            'fort': ghoul.get('fort', ''),
+            'reflex': ghoul.get('reflex', ''),
+            'will': ghoul.get('will', ''),
+            'perception': ghoul.get('perception', ''),
+            'attacks': ghoul.get('attacks', []),
+            'abilities': ghoul.get('abilities', []),
+            'skills': ghoul.get('skills', {}),
+            'languages': ghoul.get('languages', []),
+            'immunities': ghoul.get('immunities', []),
+            'resistances': ghoul.get('resistances', []),
+            'weaknesses': ghoul.get('weaknesses', [])
+        }]
+    }
+    
+    return jsonify(event)
+
 if __name__ == '__main__':
     print("\n" + "="*80)
     print("DUNGEON TURN V2 - WEB INTERFACE")
     print("="*80)
     print("\nStarting server...")
-    print("Open your browser to: http://localhost:5000")
+    print("Open your browser to: http://localhost:5001")
     print("\nPress Ctrl+C to stop")
     print("="*80 + "\n")
     
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5001)

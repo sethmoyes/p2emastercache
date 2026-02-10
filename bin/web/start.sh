@@ -7,7 +7,10 @@ echo "=================================="
 echo ""
 
 # Activate virtual environment if it exists
-if [ -d "$HOME/boto3env" ]; then
+if [ -d "venv" ]; then
+    echo "🔧 Activating virtual environment..."
+    source venv/bin/activate
+elif [ -d "$HOME/boto3env" ]; then
     echo "🔧 Activating virtual environment..."
     source "$HOME/boto3env/bin/activate"
 fi
@@ -24,7 +27,7 @@ fi
 echo "✅ Flask is installed"
 echo ""
 echo "Starting server..."
-echo "Open your browser to: http://localhost:5000"
+echo "Open your browser to: http://localhost:5001"
 echo ""
 echo "Press Ctrl+C to stop"
 echo "=================================="

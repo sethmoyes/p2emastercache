@@ -94,6 +94,10 @@
                     class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-4 rounded-lg text-xl transition transform hover:scale-105 shadow-lg">
                     🎲 GET ENCOUNTER
                 </button>
+                <button onclick="testGhoul()" 
+                    class="w-full mt-2 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition">
+                    🧪 TEST: Show Enhanced Ghoul
+                </button>
                 <p class="text-center mt-2 text-xs text-gray-500">Extreme rolls (5-8, 97-100) are WILD!</p>
             </div>
         </div>
@@ -219,6 +223,12 @@
                 }
             });
         });
+
+        async function testGhoul() {
+            const response = await fetch('/api/test-ghoul');
+            const encounter = await response.json();
+            displayEncounter(encounter, 90);
+        }
 
         function displayEncounter(event, diceTotal) {
             const display = document.getElementById('encounter-display');
