@@ -731,10 +731,24 @@ def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_su
         difficulty = "Low (2 levels below party)"
         difficulty_note = "Standard encounter"
     
+    # Get creatures at target level - be strict about it for extreme encounters
     floor_creatures = [c for c in creatures if c['level'] == target_level]
     
+    # Only fall back if we have NO creatures at target level
     if not floor_creatures:
-        floor_creatures = [c for c in creatures if c['level'] <= target_level]
+        # Try within 1 level
+        floor_creatures = [c for c in creatures if abs(c['level'] - target_level) <= 1]
+    
+    if not floor_creatures:
+        # Last resort: any creatures up to target level
+        floor_creatures = [c for c in creatures if c['level'] <= target_level and c['level'] > 0]
+    
+    # For extreme encounters, prefer higher level creatures
+    if dice_sum >= 95 and floor_creatures:
+        # Sort by level descending and take top half
+        floor_creatures.sort(key=lambda x: x['level'], reverse=True)
+        cutoff = max(1, len(floor_creatures) // 2)
+        floor_creatures = floor_creatures[:cutoff]
     
     # Select ecology type
     ecology_type = random.choice(COMBAT_ECOLOGY_TYPES)

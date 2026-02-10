@@ -8,6 +8,7 @@ from flask import Flask, render_template, jsonify, request, send_file
 import random
 import sys
 import os
+import json
 
 # Get the project root directory (2 levels up from this file)
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -232,41 +233,52 @@ def generate_merchant_api():
     name = data.get('name', 'Random Merchant')
     level = data.get('level', 4)
     
-    # Generate basic merchant info
-    merchant_types = [
-        ('General Store', ['rope', 'torches', 'rations', 'backpacks', 'bedrolls']),
-        ('Weapon Shop', ['longswords', 'shortbows', 'daggers', 'crossbows', 'arrows']),
-        ('Armor Shop', ['leather armor', 'chain mail', 'shields', 'helmets']),
-        ('Magic Shop', ['potions', 'scrolls', 'wands', 'minor magic items']),
-        ('Alchemist', ['healing potions', 'antitoxins', 'alchemical items', 'elixirs'])
-    ]
+    # Load equipment data
+    equipment_path = os.path.join(PROJECT_ROOT, 'etc', 'equipment.json')
+    try:
+        with open(equipment_path, 'r') as f:
+            equipment = json.load(f)
+    except:
+        equipment = []
     
-    shop_type, items = random.choice(merchant_types)
+    # Filter items by level
+    available_items = [item for item in equipment if item.get('level', 0) <= level and item.get('level', 0) > 0]
+    
+    # Separate by rarity
+    common_items = [item for item in available_items if item.get('rarity', '').lower() == 'common']
+    uncommon_items = [item for item in available_items if item.get('rarity', '').lower() == 'uncommon']
+    
+    # Select random items
+    num_common = min(10, len(common_items))
+    num_uncommon = min(5, len(uncommon_items))
+    
+    selected_common = random.sample(common_items, num_common) if common_items else []
+    selected_uncommon = random.sample(uncommon_items, num_uncommon) if uncommon_items else []
+    
+    # Generate merchant personality
+    personalities = ['friendly', 'gruff', 'suspicious', 'enthusiastic', 'bored', 'chatty']
+    personality = random.choice(personalities)
     
     content = f"""# {name}
-**Type:** {shop_type}
 **Level:** {level}
+**Personality:** {personality.title()}
 
-## Description
-A {'friendly' if random.random() > 0.5 else 'gruff'} merchant who runs a {shop_type.lower()} in town.
-
-## Available Items
+## Common Items ({len(selected_common)})
 """
     
-    for item in items:
-        price = random.randint(1, 10) * level
-        content += f"- {item.title()} - {price} gp\n"
+    for item in selected_common:
+        content += f"- **{item['name']}** (Level {item.get('level', '?')}) - {item.get('price', '?')} gp\n"
     
-    content += f"""
+    if selected_uncommon:
+        content += f"\n## Uncommon Items ({len(selected_uncommon)})\n"
+        for item in selected_uncommon:
+            content += f"- **{item['name']}** (Level {item.get('level', '?')}) - {item.get('price', '?')} gp\n"
+    
+    content += """
 ## Services
 - Buy/sell equipment at standard prices
 - Repairs and maintenance (10% of item cost)
 - Special orders available (1d4 days, +20% cost)
-
-## Personality
-- {'Haggling is expected' if random.random() > 0.5 else 'Fixed prices, no negotiation'}
-- {'Knows local gossip' if random.random() > 0.5 else 'Keeps to themselves'}
-- {'Offers credit to regulars' if random.random() > 0.5 else 'Cash only'}
 """
     
     return jsonify({
@@ -345,6 +357,62 @@ The Fogfen is a misty marshland between Otari and the wilderness. Visibility is 
     
     return jsonify({
         'total': total,
+        'content': content
+    })
+
+@app.route('/api/generate-v1', methods=['POST'])
+def generate_v1_api():
+    """Generate Dungeon Turn V1 encounter"""
+    data = request.json
+    floor = data.get('floor', 1)
+    
+    # Roll 5d20
+    rolls = [random.randint(1, 20) for _ in range(5)]
+    total = sum(rolls)
+    
+    # Simple V1 logic
+    if total <= 25:
+        category = "Nothing"
+        result = "The dungeon is quiet. No encounter."
+    elif total <= 50:
+        category = "Clue/Discovery"
+        discoveries = [
+            "Find old graffiti on the wall",
+            "Discover a hidden cache with minor supplies",
+            "Notice tracks leading deeper into the dungeon",
+            "Hear distant sounds echoing through the halls",
+            "Find evidence of recent activity"
+        ]
+        result = random.choice(discoveries)
+    elif total <= 75:
+        category = "Hazard/Trap"
+        hazards = [
+            "Pit trap! DC 15 Perception to notice, DC 13 Reflex to avoid",
+            "Unstable floor. DC 14 Acrobatics or fall through",
+            "Poison gas seeps from cracks. DC 16 Fortitude save",
+            "Magical ward triggers. DC 15 Will save or Frightened 1",
+            "Collapsing ceiling. DC 17 Reflex or take 2d6 damage"
+        ]
+        result = random.choice(hazards)
+    else:
+        category = "Combat Encounter"
+        result = f"Encounter {random.randint(1, 3)} creatures appropriate for Floor {floor}"
+    
+    content = f"""# Dungeon Turn V1 - Floor {floor}
+
+**Dice Rolls:** {rolls[0]}, {rolls[1]}, {rolls[2]}, {rolls[3]}, {rolls[4]}
+**Total:** {total}
+**Category:** {category}
+
+## Result
+{result}
+
+## Notes
+This is the original Dungeon Turn system (V1). For the enhanced system with ecology and tactical options, use the main encounter generator above.
+"""
+    
+    return jsonify({
+        'floor': floor,
         'content': content
     })
 

@@ -106,7 +106,7 @@
         <!-- Other Generators -->
         <div class="bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500 mb-6">
             <h2 class="text-2xl font-bold mb-4">Other Generators</h2>
-            <div class="grid md:grid-cols-2 gap-4">
+            <div class="grid md:grid-cols-3 gap-4">
                 
                 <!-- NPC Generator -->
                 <div class="bg-gray-700 p-4 rounded-lg">
@@ -135,6 +135,22 @@
                     <input type="number" id="encounter-4d20" placeholder="4d20 Total (4-80)" min="4" max="80" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
                     <button onclick="generate4d20Encounter()" class="w-full bg-yellow-600 hover:bg-yellow-700 px-4 py-2 rounded-lg transition font-bold">
                         Generate Encounter
+                    </button>
+                </div>
+
+                <!-- Dungeon Turn V1 -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">🎲 Dungeon Turn V1</h3>
+                    <p class="text-sm text-gray-400 mb-3">Original dungeon turn system</p>
+                    <select id="v1-floor" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
+                        <option value="1">Floor 1</option>
+                        <option value="2">Floor 2</option>
+                        <option value="3">Floor 3</option>
+                        <option value="4">Floor 4</option>
+                        <option value="5">Floor 5</option>
+                    </select>
+                    <button onclick="generateV1Encounter()" class="w-full bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-lg transition font-bold">
+                        Generate V1 Encounter
                     </button>
                 </div>
 
@@ -341,6 +357,29 @@
             
             output.innerHTML = `
                 <h3 class="text-2xl font-bold mb-4">🎲 4d20 Encounter (${total})</h3>
+                <div class="prose prose-invert max-w-none">
+                    <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded">${data.content}</pre>
+                </div>
+            `;
+            output.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        async function generateV1Encounter() {
+            const floor = parseInt(document.getElementById('v1-floor').value);
+            
+            const output = document.getElementById('generator-output');
+            output.innerHTML = '<p class="text-center">Generating V1 encounter...</p>';
+            output.classList.remove('hidden');
+            
+            const response = await fetch('/api/generate-v1', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ floor })
+            });
+            const data = await response.json();
+            
+            output.innerHTML = `
+                <h3 class="text-2xl font-bold mb-4">🎲 Dungeon Turn V1 - Floor ${floor}</h3>
                 <div class="prose prose-invert max-w-none">
                     <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded">${data.content}</pre>
                 </div>
