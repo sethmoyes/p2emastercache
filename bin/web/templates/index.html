@@ -112,7 +112,7 @@
                 <div class="bg-gray-700 p-4 rounded-lg">
                     <h3 class="text-lg font-bold mb-2">🧙 Generate NPC</h3>
                     <p class="text-sm text-gray-400 mb-3">Create a random NPC with backstory</p>
-                    <button onclick="generateNPC()" class="w-full bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">
+                    <button onclick="generateNPC()" class="w-full bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition font-bold">
                         Generate NPC
                     </button>
                 </div>
@@ -121,9 +121,9 @@
                 <div class="bg-gray-700 p-4 rounded-lg">
                     <h3 class="text-lg font-bold mb-2">🏪 Generate Merchant</h3>
                     <p class="text-sm text-gray-400 mb-3">Create a merchant with inventory</p>
-                    <input type="text" id="merchant-name" placeholder="Merchant Name" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2">
-                    <input type="number" id="merchant-level" placeholder="Level (1-20)" min="1" max="20" value="4" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2">
-                    <button onclick="generateMerchant()" class="w-full bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition">
+                    <input type="text" id="merchant-name" placeholder="Merchant Name" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
+                    <input type="number" id="merchant-level" placeholder="Level (1-20)" min="1" max="20" value="4" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
+                    <button onclick="generateMerchant()" class="w-full bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition font-bold">
                         Generate Merchant
                     </button>
                 </div>
@@ -132,8 +132,8 @@
                 <div class="bg-gray-700 p-4 rounded-lg">
                     <h3 class="text-lg font-bold mb-2">🎲 4d20 Encounter</h3>
                     <p class="text-sm text-gray-400 mb-3">Fogfen/Otari wilderness encounters</p>
-                    <input type="number" id="encounter-4d20" placeholder="4d20 Total (4-80)" min="4" max="80" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2">
-                    <button onclick="generate4d20Encounter()" class="w-full bg-yellow-600 hover:bg-yellow-700 px-4 py-2 rounded-lg transition">
+                    <input type="number" id="encounter-4d20" placeholder="4d20 Total (4-80)" min="4" max="80" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
+                    <button onclick="generate4d20Encounter()" class="w-full bg-yellow-600 hover:bg-yellow-700 px-4 py-2 rounded-lg transition font-bold">
                         Generate Encounter
                     </button>
                 </div>
@@ -142,14 +142,14 @@
                 <div class="bg-gray-700 p-4 rounded-lg">
                     <h3 class="text-lg font-bold mb-2">📚 Documentation</h3>
                     <p class="text-sm text-gray-400 mb-3">View guides and references</p>
-                    <select id="doc-select" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2">
+                    <select id="doc-select" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
                         <option value="">Select a document...</option>
                         <option value="docs/EXTREME_ENCOUNTERS.md">Extreme Encounters Guide</option>
                         <option value="docs/DUNGEON_TURN_REDESIGN.md">Dungeon Turn Design</option>
                         <option value="players/DUNGEON_EXPLORATION_GUIDE.md">Player Exploration Guide</option>
                         <option value="gm/DUNGEON_TURN_V2_QUICK_REFERENCE.md">GM Quick Reference</option>
                     </select>
-                    <button onclick="viewDoc()" class="w-full bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg transition">
+                    <button onclick="viewDoc()" class="w-full bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg transition font-bold">
                         View Document
                     </button>
                 </div>

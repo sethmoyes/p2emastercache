@@ -186,16 +186,44 @@ def test_ghoul():
 @app.route('/api/generate-npc', methods=['GET'])
 def generate_npc_api():
     """Generate a random NPC"""
-    sys.path.insert(0, os.path.join(PROJECT_ROOT, 'bin', 'generators'))
-    from generate_npc_lore import generate_npc, format_npc_narrative
-    
-    npc = generate_npc()
-    content = format_npc_narrative(npc)
-    
-    return jsonify({
-        'name': npc['name'],
-        'content': content
-    })
+    try:
+        sys.path.insert(0, os.path.join(PROJECT_ROOT, 'bin', 'generators'))
+        from generate_npc_lore import generate_npc, format_npc_narrative, generate_npc_encounter_template
+        
+        npc = generate_npc()
+        template = generate_npc_encounter_template(npc)
+        narrative = format_npc_narrative(npc)
+        
+        content = f"""# {template['name']}
+
+**Race:** {template['race']}
+**Profession:** {template['profession']}
+**Personality:** {template['personality']}
+
+## Setup
+{template['setup']}
+
+## Read-Aloud
+{template['readaloud']}
+
+## Background
+{narrative}
+
+## GM Notes
+- Use this NPC for social encounters
+- Can provide information, quests, or complications
+- Personality: {template['personality']}
+"""
+        
+        return jsonify({
+            'name': template['name'],
+            'content': content
+        })
+    except Exception as e:
+        return jsonify({
+            'name': 'Error',
+            'content': f'Error generating NPC: {str(e)}'
+        }), 500
 
 @app.route('/api/generate-merchant', methods=['POST'])
 def generate_merchant_api():
@@ -204,24 +232,41 @@ def generate_merchant_api():
     name = data.get('name', 'Random Merchant')
     level = data.get('level', 4)
     
-    # For now, return a placeholder
-    # TODO: Implement full merchant generation
-    content = f"""# {name}
+    # Generate basic merchant info
+    merchant_types = [
+        ('General Store', ['rope', 'torches', 'rations', 'backpacks', 'bedrolls']),
+        ('Weapon Shop', ['longswords', 'shortbows', 'daggers', 'crossbows', 'arrows']),
+        ('Armor Shop', ['leather armor', 'chain mail', 'shields', 'helmets']),
+        ('Magic Shop', ['potions', 'scrolls', 'wands', 'minor magic items']),
+        ('Alchemist', ['healing potions', 'antitoxins', 'alchemical items', 'elixirs'])
+    ]
     
+    shop_type, items = random.choice(merchant_types)
+    
+    content = f"""# {name}
+**Type:** {shop_type}
 **Level:** {level}
-**Type:** General Goods Merchant
 
-## Inventory
-- Common items appropriate for level {level}
-- Uncommon items (limited stock)
-- Basic adventuring gear
+## Description
+A {'friendly' if random.random() > 0.5 else 'gruff'} merchant who runs a {shop_type.lower()} in town.
 
+## Available Items
+"""
+    
+    for item in items:
+        price = random.randint(1, 10) * level
+        content += f"- {item.title()} - {price} gp\n"
+    
+    content += f"""
 ## Services
-- Buy/sell equipment
-- Repairs and maintenance
-- Special orders (1d4 days)
+- Buy/sell equipment at standard prices
+- Repairs and maintenance (10% of item cost)
+- Special orders available (1d4 days, +20% cost)
 
-*Full merchant generation coming soon!*
+## Personality
+- {'Haggling is expected' if random.random() > 0.5 else 'Fixed prices, no negotiation'}
+- {'Knows local gossip' if random.random() > 0.5 else 'Keeps to themselves'}
+- {'Offers credit to regulars' if random.random() > 0.5 else 'Cash only'}
 """
     
     return jsonify({
@@ -235,36 +280,73 @@ def generate_4d20_api():
     data = request.json
     total = data.get('total', 40)
     
-    # For now, return a placeholder
-    # TODO: Implement full 4d20 encounter generation
-    content = f"""# Fogfen/Otari Wilderness Encounter
+    # Determine encounter type based on total
+    if total <= 20:
+        category = "Safe Travel"
+        encounters = [
+            "Clear weather and easy terrain. Make good time.",
+            "Find a safe campsite with fresh water nearby.",
+            "Spot wildlife in the distance - deer, rabbits, birds.",
+            "Discover edible berries or mushrooms (DC 15 Nature to identify).",
+            "Meet friendly travelers heading the opposite direction."
+        ]
+    elif total <= 40:
+        category = "Minor Complication"
+        encounters = [
+            "Muddy terrain slows travel. Lose 1 hour.",
+            "Light rain begins. DC 12 Survival to stay dry.",
+            "Hear strange noises in the distance. Nothing dangerous.",
+            "Path is blocked by fallen tree. Must find way around.",
+            "One party member's rations spoil. Need to forage or share."
+        ]
+    elif total <= 60:
+        category = "Moderate Challenge"
+        encounters = [
+            f"Encounter {random.randint(1,3)} hostile creatures (level {max(1, total//20)}).",
+            "Dangerous terrain. DC 15 Acrobatics or take 1d6 damage.",
+            "Sudden storm. Must find shelter or risk exposure.",
+            "Bandit scouts watching from distance. May attack if party looks weak.",
+            "Trapped area. DC 16 Perception to notice, DC 14 Thievery to disarm."
+        ]
+    else:
+        category = "Dangerous Encounter"
+        encounters = [
+            f"Combat! {random.randint(2,4)} creatures (level {max(2, total//15)}) attack!",
+            "Ambush! Enemies have surprise round. DC 18 Perception to avoid.",
+            "Severe weather. Must make DC 17 Fortitude saves or gain Fatigued.",
+            "Territorial predator. Large creature (level {}) defends its hunting ground.".format(max(3, total//12)),
+            "Hostile humanoids demand toll. Fight or pay 50gp per person."
+        ]
     
+    encounter = random.choice(encounters)
+    
+    content = f"""# Fogfen/Otari Wilderness Encounter
+
 **4d20 Total:** {total}
+**Category:** {category}
 
-## Encounter Type
-{get_4d20_category(total)}
+## Encounter
+{encounter}
 
-## Description
-A wilderness encounter appropriate for the Fogfen or Otari region.
+## Terrain
+The Fogfen is a misty marshland between Otari and the wilderness. Visibility is limited, and the ground is treacherous.
 
-*Full 4d20 encounter generation coming soon!*
+## GM Notes
+- Adjust difficulty based on party level
+- Consider time of day and weather
+- Use this as opportunity for roleplay or resource management
+- Can lead to side quests or discoveries
+
+## Possible Developments
+- Party finds clues about larger threats
+- NPCs encountered may reappear later
+- Environmental hazards can create memorable moments
 """
     
     return jsonify({
         'total': total,
         'content': content
     })
-
-def get_4d20_category(total):
-    """Determine 4d20 encounter category"""
-    if total <= 20:
-        return "Safe/Beneficial"
-    elif total <= 40:
-        return "Minor Complication"
-    elif total <= 60:
-        return "Moderate Threat"
-    else:
-        return "Dangerous Encounter"
 
 @app.route('/api/view-doc', methods=['POST'])
 def view_doc_api():
