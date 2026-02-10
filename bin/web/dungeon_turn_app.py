@@ -4,7 +4,7 @@ Dungeon Turn V2 - Web Interface
 A beautiful, simple web app for generating random encounters at the table
 """
 
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, send_file
 import random
 import sys
 import os
@@ -182,6 +182,130 @@ def test_ghoul():
     }
     
     return jsonify(event)
+
+@app.route('/api/generate-npc', methods=['GET'])
+def generate_npc_api():
+    """Generate a random NPC"""
+    sys.path.insert(0, os.path.join(PROJECT_ROOT, 'bin', 'generators'))
+    from generate_npc_lore import generate_npc, format_npc_narrative
+    
+    npc = generate_npc()
+    content = format_npc_narrative(npc)
+    
+    return jsonify({
+        'name': npc['name'],
+        'content': content
+    })
+
+@app.route('/api/generate-merchant', methods=['POST'])
+def generate_merchant_api():
+    """Generate a merchant with inventory"""
+    data = request.json
+    name = data.get('name', 'Random Merchant')
+    level = data.get('level', 4)
+    
+    # For now, return a placeholder
+    # TODO: Implement full merchant generation
+    content = f"""# {name}
+    
+**Level:** {level}
+**Type:** General Goods Merchant
+
+## Inventory
+- Common items appropriate for level {level}
+- Uncommon items (limited stock)
+- Basic adventuring gear
+
+## Services
+- Buy/sell equipment
+- Repairs and maintenance
+- Special orders (1d4 days)
+
+*Full merchant generation coming soon!*
+"""
+    
+    return jsonify({
+        'name': name,
+        'content': content
+    })
+
+@app.route('/api/generate-4d20', methods=['POST'])
+def generate_4d20_api():
+    """Generate 4d20 wilderness encounter"""
+    data = request.json
+    total = data.get('total', 40)
+    
+    # For now, return a placeholder
+    # TODO: Implement full 4d20 encounter generation
+    content = f"""# Fogfen/Otari Wilderness Encounter
+    
+**4d20 Total:** {total}
+
+## Encounter Type
+{get_4d20_category(total)}
+
+## Description
+A wilderness encounter appropriate for the Fogfen or Otari region.
+
+*Full 4d20 encounter generation coming soon!*
+"""
+    
+    return jsonify({
+        'total': total,
+        'content': content
+    })
+
+def get_4d20_category(total):
+    """Determine 4d20 encounter category"""
+    if total <= 20:
+        return "Safe/Beneficial"
+    elif total <= 40:
+        return "Minor Complication"
+    elif total <= 60:
+        return "Moderate Threat"
+    else:
+        return "Dangerous Encounter"
+
+@app.route('/api/view-doc', methods=['POST'])
+def view_doc_api():
+    """View a markdown document"""
+    data = request.json
+    doc_path = data.get('path', '')
+    
+    full_path = os.path.join(PROJECT_ROOT, doc_path)
+    
+    if not os.path.exists(full_path):
+        return jsonify({'error': 'Document not found'}), 404
+    
+    with open(full_path, 'r') as f:
+        content = f.read()
+    
+    # Simple markdown to HTML conversion (basic)
+    html = content.replace('\n', '<br>')
+    html = html.replace('# ', '<h1 class="text-3xl font-bold mt-6 mb-4">')
+    html = html.replace('## ', '<h2 class="text-2xl font-bold mt-4 mb-3">')
+    html = html.replace('### ', '<h3 class="text-xl font-bold mt-3 mb-2">')
+    html = html.replace('**', '<strong>')
+    html = html.replace('*', '<em>')
+    
+    title = os.path.basename(doc_path).replace('.md', '').replace('_', ' ').title()
+    
+    return jsonify({
+        'title': title,
+        'html': html,
+        'raw': content
+    })
+
+@app.route('/api/download-doc', methods=['GET'])
+def download_doc_api():
+    """Download a markdown document"""
+    doc_path = request.args.get('path', '')
+    full_path = os.path.join(PROJECT_ROOT, doc_path)
+    
+    if not os.path.exists(full_path):
+        return jsonify({'error': 'Document not found'}), 404
+    
+    return send_file(full_path, as_attachment=True)
 
 if __name__ == '__main__':
     print("\n" + "="*80)

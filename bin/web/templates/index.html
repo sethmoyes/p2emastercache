@@ -26,7 +26,7 @@
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 min-h-screen text-white relative overflow-x-hidden">
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen text-white relative overflow-x-hidden">
     <!-- Background Art Overlay - Rotating Wayne Reynolds Art -->
     <div id="bg-art" class="fixed inset-0 opacity-10 pointer-events-none bg-cover bg-center bg-no-repeat" style="filter: blur(2px);"></div>
     
@@ -94,10 +94,6 @@
                     class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-4 rounded-lg text-xl transition transform hover:scale-105 shadow-lg">
                     🎲 GET ENCOUNTER
                 </button>
-                <button onclick="testGhoul()" 
-                    class="w-full mt-2 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition">
-                    🧪 TEST: Show Enhanced Ghoul
-                </button>
                 <p class="text-center mt-2 text-xs text-gray-500">Extreme rolls (5-8, 97-100) are WILD!</p>
             </div>
         </div>
@@ -105,6 +101,65 @@
         <!-- Encounter Display -->
         <div id="encounter-display" class="hidden bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500 mb-6">
             <!-- Encounter content will be inserted here -->
+        </div>
+
+        <!-- Other Generators -->
+        <div class="bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500 mb-6">
+            <h2 class="text-2xl font-bold mb-4">Other Generators</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                
+                <!-- NPC Generator -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">🧙 Generate NPC</h3>
+                    <p class="text-sm text-gray-400 mb-3">Create a random NPC with backstory</p>
+                    <button onclick="generateNPC()" class="w-full bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">
+                        Generate NPC
+                    </button>
+                </div>
+
+                <!-- Merchant Generator -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">🏪 Generate Merchant</h3>
+                    <p class="text-sm text-gray-400 mb-3">Create a merchant with inventory</p>
+                    <input type="text" id="merchant-name" placeholder="Merchant Name" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2">
+                    <input type="number" id="merchant-level" placeholder="Level (1-20)" min="1" max="20" value="4" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2">
+                    <button onclick="generateMerchant()" class="w-full bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition">
+                        Generate Merchant
+                    </button>
+                </div>
+
+                <!-- 4d20 Encounters -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">🎲 4d20 Encounter</h3>
+                    <p class="text-sm text-gray-400 mb-3">Fogfen/Otari wilderness encounters</p>
+                    <input type="number" id="encounter-4d20" placeholder="4d20 Total (4-80)" min="4" max="80" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2">
+                    <button onclick="generate4d20Encounter()" class="w-full bg-yellow-600 hover:bg-yellow-700 px-4 py-2 rounded-lg transition">
+                        Generate Encounter
+                    </button>
+                </div>
+
+                <!-- View Docs -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">📚 Documentation</h3>
+                    <p class="text-sm text-gray-400 mb-3">View guides and references</p>
+                    <select id="doc-select" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2">
+                        <option value="">Select a document...</option>
+                        <option value="docs/EXTREME_ENCOUNTERS.md">Extreme Encounters Guide</option>
+                        <option value="docs/DUNGEON_TURN_REDESIGN.md">Dungeon Turn Design</option>
+                        <option value="players/DUNGEON_EXPLORATION_GUIDE.md">Player Exploration Guide</option>
+                        <option value="gm/DUNGEON_TURN_V2_QUICK_REFERENCE.md">GM Quick Reference</option>
+                    </select>
+                    <button onclick="viewDoc()" class="w-full bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg transition">
+                        View Document
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Generator Output -->
+        <div id="generator-output" class="hidden bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500 mb-6">
+            <!-- Generator content will be inserted here -->
         </div>
 
         <!-- History -->
@@ -224,10 +279,107 @@
             });
         });
 
-        async function testGhoul() {
-            const response = await fetch('/api/test-ghoul');
-            const encounter = await response.json();
-            displayEncounter(encounter, 90);
+        async function generateNPC() {
+            const output = document.getElementById('generator-output');
+            output.innerHTML = '<p class="text-center">Generating NPC...</p>';
+            output.classList.remove('hidden');
+            
+            const response = await fetch('/api/generate-npc');
+            const data = await response.json();
+            
+            output.innerHTML = `
+                <h3 class="text-2xl font-bold mb-4">🧙 ${data.name}</h3>
+                <div class="prose prose-invert max-w-none">
+                    <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded">${data.content}</pre>
+                </div>
+            `;
+            output.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        async function generateMerchant() {
+            const name = document.getElementById('merchant-name').value || 'Random Merchant';
+            const level = parseInt(document.getElementById('merchant-level').value) || 4;
+            
+            const output = document.getElementById('generator-output');
+            output.innerHTML = '<p class="text-center">Generating merchant...</p>';
+            output.classList.remove('hidden');
+            
+            const response = await fetch('/api/generate-merchant', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, level })
+            });
+            const data = await response.json();
+            
+            output.innerHTML = `
+                <h3 class="text-2xl font-bold mb-4">🏪 ${data.name}</h3>
+                <div class="prose prose-invert max-w-none">
+                    <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded">${data.content}</pre>
+                </div>
+            `;
+            output.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        async function generate4d20Encounter() {
+            const total = parseInt(document.getElementById('encounter-4d20').value);
+            
+            if (!total || total < 4 || total > 80) {
+                alert('Please enter a number between 4 and 80');
+                return;
+            }
+            
+            const output = document.getElementById('generator-output');
+            output.innerHTML = '<p class="text-center">Generating encounter...</p>';
+            output.classList.remove('hidden');
+            
+            const response = await fetch('/api/generate-4d20', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ total })
+            });
+            const data = await response.json();
+            
+            output.innerHTML = `
+                <h3 class="text-2xl font-bold mb-4">🎲 4d20 Encounter (${total})</h3>
+                <div class="prose prose-invert max-w-none">
+                    <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded">${data.content}</pre>
+                </div>
+            `;
+            output.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        async function viewDoc() {
+            const docPath = document.getElementById('doc-select').value;
+            
+            if (!docPath) {
+                alert('Please select a document');
+                return;
+            }
+            
+            const output = document.getElementById('generator-output');
+            output.innerHTML = '<p class="text-center">Loading document...</p>';
+            output.classList.remove('hidden');
+            
+            const response = await fetch('/api/view-doc', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ path: docPath })
+            });
+            const data = await response.json();
+            
+            output.innerHTML = `
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold">📚 ${data.title}</h3>
+                    <a href="/api/download-doc?path=${encodeURIComponent(docPath)}" 
+                       class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm">
+                        Download
+                    </a>
+                </div>
+                <div class="prose prose-invert max-w-none bg-gray-900 p-6 rounded">
+                    ${data.html}
+                </div>
+            `;
+            output.scrollIntoView({ behavior: 'smooth' });
         }
 
         function displayEncounter(event, diceTotal) {
@@ -287,10 +439,24 @@
                     </div>
                 `;
             } else if (event.category === 'COMBAT') {
+                // Show difficulty warning for extreme encounters
+                const difficultyClass = event.dice_sum === 100 ? 'bg-red-900 border-red-500' : 
+                                       event.dice_sum >= 95 ? 'bg-orange-900 border-orange-500' : 
+                                       'bg-gray-700 border-gray-600';
+                const difficultyIcon = event.dice_sum === 100 ? '💀' : 
+                                      event.dice_sum >= 95 ? '⚠️' : 
+                                      '⚔️';
+                
                 html += `
+                    ${event.difficulty_note ? `
+                        <div class="${difficultyClass} border-2 p-3 rounded-lg mb-3">
+                            <p class="text-lg font-bold text-center">${difficultyIcon} ${event.difficulty_note}</p>
+                        </div>
+                    ` : ''}
                     <div class="space-y-2 bg-gray-800 p-4 rounded-lg">
+                        <p><strong class="text-purple-400">Difficulty:</strong> ${event.difficulty}</p>
                         <p><strong class="text-purple-400">Ecology:</strong> ${event.ecology}</p>
-                        <p><strong class="text-red-400">Creatures:</strong> ${event.num_creatures}x ${event.creatures.join(', ')}</p>
+                        <p><strong class="text-red-400">Creatures:</strong> ${event.num_creatures}x ${event.creatures.join(', ')} (Level ${event.creature_level})</p>
                         <p><strong class="text-yellow-400">Tactical Option:</strong> ${event.tactical_option}</p>
                         <p><strong class="text-green-400">Avoidable:</strong> ${event.avoidable ? 'Yes' : 'No'}</p>
                         <p><strong class="text-blue-400">Surprise Available:</strong> ${event.surprise_available ? 'Yes' : 'No'}</p>

@@ -36,6 +36,19 @@ Navigate to: **http://localhost:5000**
 - Rolls 5-8 or 97-100 show **⚡ EXTREME ROLL! ⚡**
 - Makes crazy rolls feel significant
 
+### Extreme Encounter Scaling (NEW!)
+Combat difficulty now scales with dice rolls:
+- **86-94:** Standard combat (2 levels below party) - Manageable
+- **95-99:** Dangerous combat (at party level) - ⚠️ Use tactics!
+- **100:** EXTREME combat (at floor level) - 💀 DEADLY!
+
+**Example:** On Floor 7 with a party of level 4:
+- Roll 88 → Level 2 creatures (easy)
+- Roll 97 → Level 4 creatures (challenging)
+- Roll 100 → Level 7 Devils (run or die!)
+
+See `docs/EXTREME_ENCOUNTERS.md` for full details.
+
 ### Complete Creature Stats
 For key Gauntlight creatures:
 - ⚔️ **Attacks** - Full attack bonuses and damage
@@ -154,7 +167,8 @@ See `bin/web/static/art/README.md` for details.
 
 ### Extreme Rolls
 - **5-8:** Extremely beneficial or trivial
-- **97-100:** Extremely dangerous or epic
+- **97-99:** Dangerous encounters at party level
+- **100:** DEADLY encounters at floor level - consider retreat!
 
 ### Dice Jar
 - Add a die when players:

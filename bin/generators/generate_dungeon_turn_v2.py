@@ -705,11 +705,32 @@ def generate_active_threat_event(floor_num, floor_data, party_level):
     
     return event
 
-def generate_combat_event(floor_num, floor_data, party_level, creatures):
-    """Generate a COMBAT encounter (86-100) with dungeon ecology"""
+def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_sum=86):
+    """Generate a COMBAT encounter (86-100) with dungeon ecology
     
-    # Get appropriate creatures for this floor (2 levels below party)
-    target_level = max(1, party_level - 2)
+    Dice sum ranges:
+    - 86-94: Standard combat (2 levels below party) - "Low threat"
+    - 95-99: Dangerous combat (at party level) - "Moderate threat"  
+    - 100: EXTREME combat (at floor level) - "DEADLY threat"
+    """
+    
+    # Determine target level and difficulty based on dice sum
+    if dice_sum == 100:
+        # EXTREME: Creatures at floor level (deadly)
+        target_level = floor_num
+        difficulty = "DEADLY (Floor Level)"
+        difficulty_note = "⚠️ EXTREME ENCOUNTER - Creatures at floor level!"
+    elif dice_sum >= 95:
+        # High roll: Creatures at party level (moderate)
+        target_level = party_level
+        difficulty = "Moderate (Party Level)"
+        difficulty_note = "Dangerous encounter - creatures at your level"
+    else:
+        # Normal combat: 2 levels below party (low)
+        target_level = max(1, party_level - 2)
+        difficulty = "Low (2 levels below party)"
+        difficulty_note = "Standard encounter"
+    
     floor_creatures = [c for c in creatures if c['level'] == target_level]
     
     if not floor_creatures:
@@ -832,7 +853,9 @@ def generate_combat_event(floor_num, floor_data, party_level, creatures):
     event['creature_level'] = target_level
     event['floor'] = floor_num
     event['floor_name'] = floor_data['name']
-    event['difficulty'] = "Low (2 levels below party)"
+    event['difficulty'] = difficulty
+    event['difficulty_note'] = difficulty_note
+    event['dice_sum'] = dice_sum
     
     # Add floor-specific ecology notes
     if floor_num == 1:
@@ -872,7 +895,7 @@ def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatur
     elif category == "ACTIVE_THREAT":
         event = generate_active_threat_event(floor_num, floor_data, party_level)
     else:  # COMBAT
-        event = generate_combat_event(floor_num, floor_data, party_level, creatures)
+        event = generate_combat_event(floor_num, floor_data, party_level, creatures, dice_sum)
     
     event['sum'] = dice_sum
     event['category'] = category
