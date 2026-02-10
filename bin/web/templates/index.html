@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Turn V2 - Web Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes roll {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(90deg); }
+            50% { transform: rotate(180deg); }
+            75% { transform: rotate(270deg); }
+        }
+        .rolling {
+            animation: roll 0.5s ease-in-out;
+        }
+        .dice-pip {
+            width: 12px;
+            height: 12px;
+            background: white;
+            border-radius: 50%;
+        }
+        #bg-art {
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 min-h-screen text-white relative overflow-x-hidden">
+    <!-- Background Art Overlay - Rotating Wayne Reynolds Art -->
+    <div id="bg-art" class="fixed inset-0 opacity-10 pointer-events-none bg-cover bg-center bg-no-repeat" style="filter: blur(2px);"></div>
+    
+    <div class="container mx-auto px-4 py-8 max-w-6xl relative z-10">
+        
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-5xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent drop-shadow-lg">
+                Dungeon Turn V2
+            </h1>
+            <p class="text-gray-400">Roll the dice jar and discover what happens!</p>
+            <p class="text-xs text-gray-600 mt-2">Art by Wayne Reynolds</p>
+        </div>
+
+        <!-- Dice Jar Tracker -->
+        <div class="bg-gray-800 rounded-lg p-6 mb-6 shadow-2xl border border-purple-500">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-2xl font-bold">Dice Jar</h2>
+                <div class="flex gap-2">
+                    <button onclick="addDie()" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition">
+                        + Add Die
+                    </button>
+                    <button onclick="resetJar()" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition">
+                        Reset
+                    </button>
+                </div>
+            </div>
+            <div class="flex gap-4 justify-center" id="dice-jar-display">
+                <!-- Dice will be added here -->
+            </div>
+            <p class="text-center mt-4 text-gray-400" id="jar-status">
+                Add dice as players explore (10 min = 1 die)
+            </p>
+        </div>
+
+        <!-- Main Controls -->
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+            
+            <!-- Floor Selector -->
+            <div class="bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500">
+                <h2 class="text-2xl font-bold mb-4">Current Floor</h2>
+                <div class="grid grid-cols-5 gap-2">
+                    <button onclick="selectFloor(1)" class="floor-btn bg-purple-600 hover:bg-purple-700 px-4 py-3 rounded-lg transition font-bold">1</button>
+                    <button onclick="selectFloor(2)" class="floor-btn bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition font-bold">2</button>
+                    <button onclick="selectFloor(3)" class="floor-btn bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition font-bold">3</button>
+                    <button onclick="selectFloor(4)" class="floor-btn bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition font-bold">4</button>
+                    <button onclick="selectFloor(5)" class="floor-btn bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition font-bold">5</button>
+                    <button onclick="selectFloor(6)" class="floor-btn bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition font-bold">6</button>
+                    <button onclick="selectFloor(7)" class="floor-btn bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition font-bold">7</button>
+                    <button onclick="selectFloor(8)" class="floor-btn bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition font-bold">8</button>
+                    <button onclick="selectFloor(9)" class="floor-btn bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition font-bold">9</button>
+                    <button onclick="selectFloor(10)" class="floor-btn bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition font-bold">10</button>
+                </div>
+                <p class="text-center mt-4 text-gray-400" id="floor-name">The Lighthouse (Surface Level)</p>
+            </div>
+
+            <!-- Manual Dice Input -->
+            <div class="bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500">
+                <h2 class="text-2xl font-bold mb-4">Enter Dice Total</h2>
+                <p class="text-gray-400 text-sm mb-4">Players roll 5d20 in person. Enter the total here:</p>
+                <input type="number" id="dice-input" min="5" max="100" 
+                    class="w-full bg-gray-700 text-white text-3xl font-bold py-4 px-4 rounded-lg mb-4 text-center border-2 border-purple-500 focus:border-pink-500 focus:outline-none"
+                    placeholder="5-100">
+                <button onclick="getDiceEncounter()" id="get-encounter-btn" 
+                    class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-4 rounded-lg text-xl transition transform hover:scale-105 shadow-lg">
+                    🎲 GET ENCOUNTER
+                </button>
+                <p class="text-center mt-2 text-xs text-gray-500">Extreme rolls (5-8, 97-100) are WILD!</p>
+            </div>
+        </div>
+
+        <!-- Encounter Display -->
+        <div id="encounter-display" class="hidden bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500 mb-6">
+            <!-- Encounter content will be inserted here -->
+        </div>
+
+        <!-- History -->
+        <div class="bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-2xl font-bold">Roll History</h2>
+                <button onclick="clearHistory()" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition text-sm">
+                    Clear
+                </button>
+            </div>
+            <div id="history-display" class="space-y-2">
+                <p class="text-gray-400 text-center">No rolls yet</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentFloor = 1;
+        let currentDiceJar = 0;
+        let partyLevel = 4;
+
+        const floorNames = {
+            1: "The Lighthouse (Surface Level)",
+            2: "Servants' Quarters (Underground)",
+            3: "The Library",
+            4: "Belcorra's Retreat",
+            5: "The Arena",
+            6: "Fleshwarping Laboratories",
+            7: "The Prison (Mini-Hell)",
+            8: "The Farm (Bog Mummy Level)",
+            9: "The Hunting Grounds (Darklands Caverns)",
+            10: "The Empty Vault (Temple to Nhimbaloth)"
+        };
+
+        // Wayne Reynolds Pathfinder Art URLs
+        const backgroundArt = [
+            'https://images.squarespace-cdn.com/content/v1/5bd88db093a6320f071b1a50/1593019848989-YJXQVHкойе8YJXQVHKOJE8/pathfinder-iconic-characters.jpg',
+            'https://www.waynereynolds.com/images/fantasy-art-gallery-2/pathfinder-iconic-characters-wayne-reynolds.jpg',
+            'https://www.waynereynolds.com/images/fantasy-art-gallery-1/pathfinder-goblins-wayne-reynolds.jpg',
+            'https://www.waynereynolds.com/images/fantasy-art-gallery-2/pathfinder-cover-art-wayne-reynolds.jpg'
+        ];
+
+        // Set random background art on load
+        function setBackgroundArt() {
+            const bgElement = document.getElementById('bg-art');
+            const randomArt = backgroundArt[Math.floor(Math.random() * backgroundArt.length)];
+            bgElement.style.backgroundImage = `url('${randomArt}')`;
+        }
+
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            setBackgroundArt();
+            updateDiceJar(0);
+            updateHistory();
+            
+            // Enter key support
+            document.getElementById('dice-input').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    getDiceEncounter();
+                }
+            });
+        });
+
+        function selectFloor(floor) {
+            currentFloor = floor;
+            document.querySelectorAll('.floor-btn').forEach(btn => {
+                btn.classList.remove('bg-purple-600');
+                btn.classList.add('bg-gray-700');
+            });
+            event.target.classList.remove('bg-gray-700');
+            event.target.classList.add('bg-purple-600');
+            document.getElementById('floor-name').textContent = floorNames[floor];
+        }
+
+        async function getDiceEncounter() {
+            const input = document.getElementById('dice-input');
+            const total = parseInt(input.value);
+            
+            if (!total || total < 5 || total > 100) {
+                alert('Please enter a number between 5 and 100');
+                return;
+            }
+
+            const btn = document.getElementById('get-encounter-btn');
+            btn.disabled = true;
+            btn.textContent = '⏳ Generating...';
+
+            // Get encounter
+            const encounterResponse = await fetch('/api/encounter', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    floor: currentFloor,
+                    sum: total,
+                    party_level: partyLevel
+                })
+            });
+            const encounter = await encounterResponse.json();
+
+            displayEncounter(encounter, total);
+            updateHistory();
+            resetJar();
+            
+            // Clear input
+            input.value = '';
+
+            btn.disabled = false;
+            btn.textContent = '🎲 GET ENCOUNTER';
+        }
+
+        // Allow Enter key to submit
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('dice-input').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    getDiceEncounter();
+                }
+            });
+        });
+
+        function displayEncounter(event, diceTotal) {
+            const display = document.getElementById('encounter-display');
+            const categoryColors = {
+                'OPPORTUNITY': 'from-green-600 to-emerald-600',
+                'COMPLICATION': 'from-yellow-600 to-orange-600',
+                'DILEMMA': 'from-blue-600 to-cyan-600',
+                'ACTIVE_THREAT': 'from-red-600 to-pink-600',
+                'COMBAT': 'from-purple-600 to-fuchsia-600'
+            };
+
+            // Check if extreme roll
+            const isExtreme = diceTotal <= 8 || diceTotal >= 97;
+            const extremeLabel = isExtreme ? '<div class="bg-red-900 border-2 border-red-500 p-2 rounded-lg mb-2 text-center"><span class="text-red-300 font-bold text-lg">⚡ EXTREME ROLL! ⚡</span></div>' : '';
+
+            let html = `
+                ${extremeLabel}
+                <div class="bg-gradient-to-r ${categoryColors[event.category]} p-1 rounded-lg mb-4">
+                    <div class="bg-gray-900 p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-sm font-bold text-gray-400">Dice Total: ${diceTotal}</span>
+                            <span class="px-3 py-1 rounded-full text-sm font-bold bg-gradient-to-r ${categoryColors[event.category]}">${event.category}</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">${event.title}</h3>
+                        <p class="text-lg mb-4 text-gray-300">${event.description}</p>
+            `;
+
+            // Category-specific content
+            if (event.category === 'OPPORTUNITY' || event.category === 'COMPLICATION') {
+                html += `
+                    <div class="space-y-2 bg-gray-800 p-4 rounded-lg">
+                        <p><strong class="text-purple-400">Challenge:</strong> ${event.challenge}</p>
+                        <p><strong class="text-green-400">Success:</strong> ${event.success}</p>
+                        <p><strong class="text-red-400">Failure:</strong> ${event.failure}</p>
+                        <p><strong class="text-blue-400">Skills:</strong> ${event.skills.join(', ')}</p>
+                        <p><strong class="text-yellow-400">Time Cost:</strong> ${event.time_cost}</p>
+                    </div>
+                `;
+            } else if (event.category === 'DILEMMA') {
+                html += `
+                    <div class="space-y-2 bg-gray-800 p-4 rounded-lg">
+                        <p><strong class="text-purple-400">Choice A:</strong> ${event.choice_a}</p>
+                        ${event.choice_b ? `<p><strong class="text-purple-400">Choice B:</strong> ${event.choice_b}</p>` : ''}
+                        ${event.choice_c ? `<p><strong class="text-purple-400">Choice C:</strong> ${event.choice_c}</p>` : ''}
+                    </div>
+                `;
+            } else if (event.category === 'ACTIVE_THREAT') {
+                html += `
+                    <div class="bg-red-900 border-2 border-red-500 p-4 rounded-lg mb-4">
+                        <p class="text-xl font-bold text-red-300">⚠️ ${event.urgency}</p>
+                    </div>
+                    <div class="space-y-2 bg-gray-800 p-4 rounded-lg">
+                        <p><strong class="text-purple-400">Immediate Action:</strong> ${event.immediate_action}</p>
+                        <p><strong class="text-green-400">Success:</strong> ${event.success}</p>
+                        <p><strong class="text-red-400">Failure:</strong> ${event.failure}</p>
+                    </div>
+                `;
+            } else if (event.category === 'COMBAT') {
+                html += `
+                    <div class="space-y-2 bg-gray-800 p-4 rounded-lg">
+                        <p><strong class="text-purple-400">Ecology:</strong> ${event.ecology}</p>
+                        <p><strong class="text-red-400">Creatures:</strong> ${event.num_creatures}x ${event.creatures.join(', ')}</p>
+                        <p><strong class="text-yellow-400">Tactical Option:</strong> ${event.tactical_option}</p>
+                        <p><strong class="text-green-400">Avoidable:</strong> ${event.avoidable ? 'Yes' : 'No'}</p>
+                        <p><strong class="text-blue-400">Surprise Available:</strong> ${event.surprise_available ? 'Yes' : 'No'}</p>
+                    </div>
+                `;
+                
+                // Add creature stats if available
+                if (event.creature_stats && event.creature_stats.length > 0) {
+                    html += `
+                        <div class="mt-4 bg-red-900 border-2 border-red-500 p-4 rounded-lg">
+                            <h4 class="text-xl font-bold mb-3 text-red-300">⚔️ Creature Stats</h4>
+                            <div class="space-y-4">
+                    `;
+                    event.creature_stats.forEach(creature => {
+                        html += `
+                            <div class="bg-gray-900 p-4 rounded-lg border border-red-700">
+                                <p class="font-bold text-xl text-red-300 mb-3">${creature.name} (Level ${creature.level})</p>
+                                
+                                <!-- Basic Stats -->
+                                <div class="grid grid-cols-3 gap-2 mb-3 text-sm">
+                                    <p><strong>HP:</strong> ${creature.hp || 'Unknown'}</p>
+                                    <p><strong>AC:</strong> ${creature.ac || 'Unknown'}</p>
+                                    <p><strong>Perception:</strong> ${creature.perception || 'Unknown'}</p>
+                                    ${creature.fort ? `<p><strong>Fort:</strong> ${creature.fort}</p>` : ''}
+                                    ${creature.reflex ? `<p><strong>Reflex:</strong> ${creature.reflex}</p>` : ''}
+                                    ${creature.will ? `<p><strong>Will:</strong> ${creature.will}</p>` : ''}
+                                </div>
+                                
+                                <!-- Attacks -->
+                                ${creature.attacks && creature.attacks.length > 0 ? `
+                                    <div class="mt-3 p-3 bg-red-800 rounded">
+                                        <p class="font-bold text-yellow-300 mb-2">⚔️ Attacks:</p>
+                                        <ul class="text-sm space-y-1">
+                                            ${creature.attacks.map(atk => `<li>• ${atk}</li>`).join('')}
+                                        </ul>
+                                    </div>
+                                ` : ''}
+                                
+                                <!-- Abilities -->
+                                ${creature.abilities && creature.abilities.length > 0 ? `
+                                    <div class="mt-3 p-3 bg-purple-900 rounded">
+                                        <p class="font-bold text-purple-300 mb-2">✨ Special Abilities:</p>
+                                        <ul class="text-sm space-y-1">
+                                            ${creature.abilities.map(ab => `<li>• ${ab}</li>`).join('')}
+                                        </ul>
+                                    </div>
+                                ` : ''}
+                                
+                                <!-- Defenses -->
+                                ${(creature.immunities && creature.immunities.length > 0) || 
+                                  (creature.resistances && creature.resistances.length > 0) || 
+                                  (creature.weaknesses && creature.weaknesses.length > 0) ? `
+                                    <div class="mt-3 p-3 bg-blue-900 rounded text-sm">
+                                        ${creature.immunities && creature.immunities.length > 0 ? 
+                                            `<p><strong>Immunities:</strong> ${creature.immunities.join(', ')}</p>` : ''}
+                                        ${creature.resistances && creature.resistances.length > 0 ? 
+                                            `<p><strong>Resistances:</strong> ${creature.resistances.join(', ')}</p>` : ''}
+                                        ${creature.weaknesses && creature.weaknesses.length > 0 ? 
+                                            `<p><strong>Weaknesses:</strong> ${creature.weaknesses.join(', ')}</p>` : ''}
+                                    </div>
+                                ` : ''}
+                                
+                                <!-- Warning if incomplete -->
+                                ${!creature.attacks || creature.attacks.length === 0 ? `
+                                    <div class="mt-3 p-2 bg-yellow-900 border border-yellow-600 rounded text-xs">
+                                        <p class="text-yellow-300">⚠️ <strong>Note:</strong> Full stats not available. Check <a href="https://2e.aonprd.com" target="_blank" class="underline">Archives of Nethys</a>.</p>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        `;
+                    });
+                    html += `
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            if (event.gm_notes) {
+                html += `
+                    <div class="mt-4 bg-yellow-900 border-l-4 border-yellow-500 p-4 rounded">
+                        <p class="text-sm"><strong>GM Notes:</strong> ${event.gm_notes}</p>
+                    </div>
+                `;
+            }
+
+            html += `</div></div>`;
+            display.innerHTML = html;
+            display.classList.remove('hidden');
+            display.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        async function addDie() {
+            const response = await fetch('/api/dice-jar', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'add' })
+            });
+            const data = await response.json();
+            updateDiceJar(data.dice_jar);
+        }
+
+        async function resetJar() {
+            const response = await fetch('/api/dice-jar', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ action: 'reset' })
+            });
+            const data = await response.json();
+            updateDiceJar(data.dice_jar);
+        }
+
+        function updateDiceJar(count) {
+            currentDiceJar = count;
+            const display = document.getElementById('dice-jar-display');
+            display.innerHTML = '';
+            
+            for (let i = 0; i < 5; i++) {
+                const die = document.createElement('div');
+                die.className = `w-16 h-16 rounded-lg flex items-center justify-center text-2xl font-bold transition ${
+                    i < count ? 'bg-purple-600 shadow-lg' : 'bg-gray-700'
+                }`;
+                die.textContent = '🎲';
+                display.appendChild(die);
+            }
+
+            const status = document.getElementById('jar-status');
+            if (count >= 5) {
+                status.textContent = '🔥 JAR IS FULL! Time to roll!';
+                status.classList.add('text-red-400', 'font-bold');
+            } else {
+                status.textContent = `${count}/5 dice in jar. ${5 - count} more until roll.`;
+                status.classList.remove('text-red-400', 'font-bold');
+            }
+        }
+
+        async function updateHistory() {
+            const response = await fetch('/api/history');
+            const data = await response.json();
+            const display = document.getElementById('history-display');
+            
+            if (data.history.length === 0) {
+                display.innerHTML = '<p class="text-gray-400 text-center">No rolls yet</p>';
+                return;
+            }
+
+            display.innerHTML = data.history.reverse().map(h => `
+                <div class="bg-gray-700 p-3 rounded-lg flex justify-between items-center">
+                    <span>Floor ${h.floor}: ${h.title}</span>
+                    <span class="text-sm text-gray-400">${h.category} (${h.sum})</span>
+                </div>
+            `).join('');
+        }
+
+        async function clearHistory() {
+            await fetch('/api/clear-history', { method: 'POST' });
+            updateHistory();
+        }
+
+        // Wayne Reynolds art rotation
+        const wrArt = [
+            '/static/art/wr_goblin.jpg',
+            '/static/art/wr_dragon.jpg',
+            '/static/art/wr_dungeon.jpg',
+            '/static/art/wr_combat.jpg',
+            '/static/art/wr_monster.jpg'
+        ];
+        
+        function rotateArt() {
+            const randomArt = wrArt[Math.floor(Math.random() * wrArt.length)];
+            const bgArt = document.getElementById('bg-art');
+            bgArt.style.backgroundImage = `url('${randomArt}')`;
+        }
+        
+        // Rotate art every 30 seconds
+        rotateArt();
+        setInterval(rotateArt, 30000);
+
+        // Initialize
+        updateDiceJar(0);
+        updateHistory();
+    </script>
+</body>
+</html>

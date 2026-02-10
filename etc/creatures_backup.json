@@ -5145,35 +5145,7 @@
     "perception": "+17",
     "sense": "darkvision",
     "speed": "25 feet, climb 10 feet, swim 40 feet",
-    "aon_verified_date": "2026-02-01T11:30:42.827413",
-    "attacks": [
-      "Melee jaws +7 (finesse), Damage 1d6+1 piercing plus ghoul fever and paralysis",
-      "Melee claw +7 (agile, finesse), Damage 1d4+1 slashing plus paralysis"
-    ],
-    "abilities": [
-      "Consume Flesh (manipulate) - Requirements The ghoul is adjacent to the corpse of a creature that died within the last hour",
-      "Ghoul Fever (disease) - Saving Throw DC 15 Fortitude",
-      "Paralysis (incapacitation, occult, necromancy) - Any living, non-elf creature hit by a ghoul's attack must succeed at a DC 15 Fortitude save or become paralyzed"
-    ],
-    "skills": {
-      "Acrobatics": "+7",
-      "Athletics": "+5",
-      "Stealth": "+7",
-      "Survival": "+5"
-    },
-    "languages": [
-      "Common",
-      "Necril"
-    ],
-    "immunities": [
-      "death effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [],
-    "weaknesses": []
+    "aon_verified_date": "2026-02-01T11:30:42.827413"
   },
   {
     "name": "Barrage Archdragon",
@@ -17845,24 +17817,7 @@
     "perception": "+5",
     "sense": "low-light vision, scent (imprecise) 30 feet",
     "speed": "30 feet, swim 30 feet",
-    "aon_verified_date": "2026-02-01T11:43:58.886816",
-    "attacks": [
-      "Melee jaws +9, Damage 1d10+4 piercing plus Grab",
-      "Melee tail +9 (agile), Damage 1d8+4 bludgeoning"
-    ],
-    "abilities": [
-      "Grab",
-      "Lurching Charge (two actions) - The giant monitor lizard Strides twice and then makes a Strike"
-    ],
-    "skills": {
-      "Acrobatics": "+5",
-      "Athletics": "+9",
-      "Stealth": "+7"
-    },
-    "languages": [],
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": []
+    "aon_verified_date": "2026-02-01T11:43:58.886816"
   },
   {
     "name": "Giant Moray Eel",
@@ -19968,33 +19923,7 @@
     "perception": "+15",
     "sense": "darkvision",
     "speed": "fly 30 feet",
-    "aon_verified_date": "2026-02-01T11:46:06.158577",
-    "attacks": [
-      "Melee shadow hand +10 (finesse, magical), Damage 1d6+2 negative plus 1d6 persistent negative"
-    ],
-    "abilities": [
-      "Light Vulnerability - An object shedding magical light (such as from the light spell) is treated as a magical light source by the shadow",
-      "Shadow Spawn (divine, necromancy) - When a creature's shadow is pulled free by Steal Shadow, it becomes a shadow spawn under the command of the shadow that created it"
-    ],
-    "skills": {
-      "Acrobatics": "+10",
-      "Stealth": "+12"
-    },
-    "languages": [
-      "Necril"
-    ],
-    "immunities": [
-      "death effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "precision",
-      "unconscious"
-    ],
-    "resistances": [
-      "all damage 5 (except force, ghost touch, or positive; double resistance vs. non-magical)"
-    ],
-    "weaknesses": []
+    "aon_verified_date": "2026-02-01T11:46:06.158577"
   },
   {
     "name": "Greedspawn Soldiers",
@@ -22748,31 +22677,7 @@
     "perception": "+14",
     "sense": "darkvision",
     "speed": "25 feet",
-    "aon_verified_date": "2026-02-01T11:48:37.606497",
-    "attacks": [
-      "Melee claw +10 (finesse), Damage 1d6+4 slashing plus drain life"
-    ],
-    "abilities": [
-      "Drain Life (divine, necromancy) - When the wight damages a living creature with its claw Strike, the wight gains 3 temporary Hit Points and the creature must succeed at a DC 17 Fortitude save or become drained 1"
-    ],
-    "skills": {
-      "Athletics": "+10",
-      "Intimidation": "+9",
-      "Stealth": "+9"
-    },
-    "languages": [
-      "Common",
-      "Necril"
-    ],
-    "immunities": [
-      "death effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [],
-    "weaknesses": []
+    "aon_verified_date": "2026-02-01T11:48:37.606497"
   },
   {
     "name": "Hunting Spider",
@@ -27182,35 +27087,7 @@
     "perception": "+19",
     "sense": "darkvision",
     "speed": "25 feet, burrow 25 feet, climb 25 feet",
-    "aon_verified_date": "2026-02-01T11:53:00.616007",
-    "attacks": [
-      "Melee jaws +7 (finesse), Damage 1d6+1 piercing plus ghoul fever and paralysis",
-      "Melee claw +7 (agile, finesse), Damage 1d4+1 slashing plus paralysis"
-    ],
-    "abilities": [
-      "Consume Flesh (manipulate) - Requirements The ghoul is adjacent to the corpse of a creature that died within the last hour",
-      "Ghoul Fever (disease) - Saving Throw DC 15 Fortitude",
-      "Paralysis (incapacitation, occult, necromancy) - Any living, non-elf creature hit by a ghoul's attack must succeed at a DC 15 Fortitude save or become paralyzed"
-    ],
-    "skills": {
-      "Acrobatics": "+7",
-      "Athletics": "+5",
-      "Stealth": "+7",
-      "Survival": "+5"
-    },
-    "languages": [
-      "Common",
-      "Necril"
-    ],
-    "immunities": [
-      "death effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [],
-    "weaknesses": []
+    "aon_verified_date": "2026-02-01T11:53:00.616007"
   },
   {
     "name": "Leng Spider",
@@ -29784,28 +29661,7 @@
     "perception": "+11",
     "sense": "darkvision",
     "speed": "30 feet, climb 20 feet",
-    "aon_verified_date": "2026-02-01T11:55:54.426354",
-    "attacks": [
-      "Melee club +8 (agile), Damage 1d6+3 bludgeoning",
-      "Ranged sling +6 (propulsive, range increment 50 feet), Damage 1d4+1 bludgeoning"
-    ],
-    "abilities": [
-      "Light Blindness",
-      "Sneak Attack - The morlock deals an extra 1d6 precision damage to flat-footed creatures",
-      "Swarming Stance - A morlock can share the same space as another morlock"
-    ],
-    "skills": {
-      "Acrobatics": "+6",
-      "Athletics": "+8",
-      "Crafting": "+4",
-      "Stealth": "+8"
-    },
-    "languages": [
-      "Undercommon"
-    ],
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": []
+    "aon_verified_date": "2026-02-01T11:55:54.426354"
   },
   {
     "name": "Morlock Engineer",
@@ -38175,33 +38031,7 @@
     "perception": "+12",
     "sense": "darkvision",
     "speed": "fly 30 feet",
-    "aon_verified_date": "2026-02-01T12:06:33.329628",
-    "attacks": [
-      "Melee shadow hand +10 (finesse, magical), Damage 1d6+2 negative plus 1d6 persistent negative"
-    ],
-    "abilities": [
-      "Light Vulnerability - An object shedding magical light (such as from the light spell) is treated as a magical light source by the shadow",
-      "Shadow Spawn (divine, necromancy) - When a creature's shadow is pulled free by Steal Shadow, it becomes a shadow spawn under the command of the shadow that created it"
-    ],
-    "skills": {
-      "Acrobatics": "+10",
-      "Stealth": "+12"
-    },
-    "languages": [
-      "Necril"
-    ],
-    "immunities": [
-      "death effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "precision",
-      "unconscious"
-    ],
-    "resistances": [
-      "all damage 5 (except force, ghost touch, or positive; double resistance vs. non-magical)"
-    ],
-    "weaknesses": []
+    "aon_verified_date": "2026-02-01T12:06:33.329628"
   },
   {
     "name": "Shadow Drake",
@@ -39587,37 +39417,7 @@
     "perception": "+2",
     "sense": "darkvision",
     "speed": "25 feet",
-    "aon_verified_date": "2026-02-01T12:08:11.465315",
-    "attacks": [
-      "Melee scimitar +7 (forceful, sweep), Damage 1d6+3 slashing",
-      "Melee claw +7 (agile), Damage 1d4+3 slashing"
-    ],
-    "abilities": [
-      "Shield Block"
-    ],
-    "skills": {
-      "Acrobatics": "+5",
-      "Athletics": "+7"
-    },
-    "languages": [],
-    "immunities": [
-      "death effects",
-      "disease",
-      "mental",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [
-      "cold 5",
-      "electricity 5",
-      "fire 5",
-      "piercing 5",
-      "slashing 5"
-    ],
-    "weaknesses": [
-      "bludgeoning 5"
-    ]
+    "aon_verified_date": "2026-02-01T12:08:11.465315"
   },
   {
     "name": "Skeleton Guard",
@@ -39635,37 +39435,7 @@
     "perception": "+2",
     "sense": "darkvision",
     "speed": "25 feet",
-    "aon_verified_date": "2026-02-01T12:08:12.324732",
-    "attacks": [
-      "Melee scimitar +7 (forceful, sweep), Damage 1d6+3 slashing",
-      "Melee claw +7 (agile), Damage 1d4+3 slashing"
-    ],
-    "abilities": [
-      "Shield Block"
-    ],
-    "skills": {
-      "Acrobatics": "+5",
-      "Athletics": "+7"
-    },
-    "languages": [],
-    "immunities": [
-      "death effects",
-      "disease",
-      "mental",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [
-      "cold 5",
-      "electricity 5",
-      "fire 5",
-      "piercing 5",
-      "slashing 5"
-    ],
-    "weaknesses": [
-      "bludgeoning 5"
-    ]
+    "aon_verified_date": "2026-02-01T12:08:12.324732"
   },
   {
     "name": "Skeleton Infantry",
@@ -48773,31 +48543,7 @@
     "perception": "+10",
     "sense": "darkvision",
     "speed": "25 feet",
-    "aon_verified_date": "2026-02-01T12:17:44.368627",
-    "attacks": [
-      "Melee claw +10 (finesse), Damage 1d6+4 slashing plus drain life"
-    ],
-    "abilities": [
-      "Drain Life (divine, necromancy) - When the wight damages a living creature with its claw Strike, the wight gains 3 temporary Hit Points and the creature must succeed at a DC 17 Fortitude save or become drained 1"
-    ],
-    "skills": {
-      "Athletics": "+10",
-      "Intimidation": "+9",
-      "Stealth": "+9"
-    },
-    "languages": [
-      "Common",
-      "Necril"
-    ],
-    "immunities": [
-      "death effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [],
-    "weaknesses": []
+    "aon_verified_date": "2026-02-01T12:17:44.368627"
   },
   {
     "name": "Wight Battalion",
@@ -51749,28 +51495,7 @@
     "perception": "+2",
     "sense": "darkvision",
     "speed": "25 feet",
-    "aon_verified_date": "2026-02-01T12:20:20.690541",
-    "attacks": [
-      "Melee fist +7, Damage 1d6+3 bludgeoning plus Grab"
-    ],
-    "abilities": [
-      "Grab",
-      "Slow - A zombie is permanently slowed 1 and can't use reactions"
-    ],
-    "skills": {},
-    "languages": [],
-    "immunities": [
-      "death effects",
-      "disease",
-      "mental",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      "slashing 5"
-    ]
+    "aon_verified_date": "2026-02-01T12:20:20.690541"
   },
   {
     "name": "Zombie Snake",
