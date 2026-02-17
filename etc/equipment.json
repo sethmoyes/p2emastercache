@@ -34013,5 +34013,85 @@
     ],
     "effect": "Restores 8d8+30 Hit Points",
     "aon_verified_date": "2026-02-16T16:43:34.892084"
+  },
+  {
+    "name": "Spell Slot Restoration Potion (Minor)",
+    "level": 1,
+    "price": "8 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Magical",
+      "Potion"
+    ],
+    "effect": "Restores one expended 1st-level spell slot"
+  },
+  {
+    "name": "Spell Slot Restoration Potion (Lesser)",
+    "level": 3,
+    "price": "24 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Magical",
+      "Potion"
+    ],
+    "effect": "Restores one expended spell slot of 2nd level or lower"
+  },
+  {
+    "name": "Spell Slot Restoration Potion (Moderate)",
+    "level": 6,
+    "price": "100 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Magical",
+      "Potion"
+    ],
+    "effect": "Restores one expended spell slot of 3rd level or lower"
+  },
+  {
+    "name": "Spell Slot Restoration Potion (Greater)",
+    "level": 12,
+    "price": "800 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Magical",
+      "Potion"
+    ],
+    "effect": "Restores one expended spell slot of 6th level or lower"
+  },
+  {
+    "name": "Spell Slot Restoration Potion (Major)",
+    "level": 18,
+    "price": "5000 gp",
+    "rarity": "common",
+    "category": "equipment",
+    "type": "alchemical",
+    "item_category": "Potions",
+    "bulk": 0,
+    "traits": [
+      "Consumable",
+      "Magical",
+      "Potion"
+    ],
+    "effect": "Restores one expended spell slot of 9th level or lower"
   }
 ]

@@ -439,15 +439,14 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
             # Common spells
             if spell_inventory['common']:
                 f.write(f"## Common Spell Scrolls ({len(spell_inventory['common'])})\n\n")
-                f.write("| Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |\n")
-                f.write("|------------|-------|-------|-------|------------|------|-------|--------|------|\n")
+                f.write("| Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |\n")
+                f.write("|------------|-------|-------|-------|------------|-------|--------|------|\n")
                 
                 for spell in spell_inventory['common']:
                     spell_name = f"SCROLL OF {spell['name'].upper()}"
                     level = spell['level']
                     price, dc = get_spell_price_and_dc(level)
                     traditions = ', '.join(spell.get('traditions', ['N/A']))
-                    cast_time = spell.get('cast', 'N/A')
                     spell_range = spell.get('range', 'N/A')
                     traits = ', '.join(spell.get('traits', [])[:3])  # Limit to 3 traits
                     if not traits:
@@ -460,22 +459,21 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                         search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(spell['name'])}"
                         link_md = f"[View]({search_url})"
                     
-                    f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {cast_time} | {spell_range} | {traits} | {link_md} |\n")
+                    f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {spell_range} | {traits} | {link_md} |\n")
                 
                 f.write("\n")
             
             # Uncommon spells
             if spell_inventory['uncommon']:
                 f.write(f"## Uncommon Spell Scrolls ({len(spell_inventory['uncommon'])})\n\n")
-                f.write("| Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |\n")
-                f.write("|------------|-------|-------|-------|------------|------|-------|--------|------|\n")
+                f.write("| Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |\n")
+                f.write("|------------|-------|-------|-------|------------|-------|--------|------|\n")
                 
                 for spell in spell_inventory['uncommon']:
                     spell_name = f"SCROLL OF {spell['name'].upper()}"
                     level = spell['level']
                     price, dc = get_spell_price_and_dc(level)
                     traditions = ', '.join(spell.get('traditions', ['N/A']))
-                    cast_time = spell.get('cast', 'N/A')
                     spell_range = spell.get('range', 'N/A')
                     traits = ', '.join(spell.get('traits', [])[:3])
                     if not traits:
@@ -487,22 +485,21 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                         search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(spell['name'])}"
                         link_md = f"[View]({search_url})"
                     
-                    f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {cast_time} | {spell_range} | {traits} | {link_md} |\n")
+                    f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {spell_range} | {traits} | {link_md} |\n")
                 
                 f.write("\n")
             
             # Rare spells
             if spell_inventory['rare']:
                 f.write(f"## Rare Spell Scrolls ({len(spell_inventory['rare'])})\n\n")
-                f.write("| Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |\n")
-                f.write("|------------|-------|-------|-------|------------|------|-------|--------|------|\n")
+                f.write("| Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |\n")
+                f.write("|------------|-------|-------|-------|------------|-------|--------|------|\n")
                 
                 for spell in spell_inventory['rare']:
                     spell_name = f"SCROLL OF {spell['name'].upper()}"
                     level = spell['level']
                     price, dc = get_spell_price_and_dc(level)
                     traditions = ', '.join(spell.get('traditions', ['N/A']))
-                    cast_time = spell.get('cast', 'N/A')
                     spell_range = spell.get('range', 'N/A')
                     traits = ', '.join(spell.get('traits', [])[:3])
                     if not traits:
@@ -514,7 +511,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                         search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(spell['name'])}"
                         link_md = f"[View]({search_url})"
                     
-                    f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {cast_time} | {spell_range} | {traits} | {link_md} |\n")
+                    f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {spell_range} | {traits} | {link_md} |\n")
                 
                 f.write("\n")
             
@@ -1063,15 +1060,17 @@ if __name__ == "__main__":
         print(f"\n[{idx+1}/{len(merchant_configs)}] Generating {config['name']}...")
         
         # Generate inventory with new limits
-        # Otari Market gets DOUBLE items
+        # Otari Market gets special high counts
         if config.get('double_items', False):
-            num_common = random.randint(6, 30)  # Double: 3-15 becomes 6-30
-            num_uncommon = random.randint(2, 6)  # Double: 1-3 becomes 2-6
+            num_common = random.randint(20, 50)  # Otari Market: 20-50 common
+            num_uncommon = random.randint(5, 15)  # Otari Market: 5-15 uncommon
+            num_rare = random.randint(1, 3)  # Otari Market: 1-3 rare (always has rare)
+            has_rare = True  # Otari Market always has rare items
         else:
             num_common = random.randint(3, 15)
             num_uncommon = random.randint(1, 3)
-        
-        has_rare = original_idx in merchants_with_rares
+            num_rare = 0  # Other merchants use the random selection
+            has_rare = original_idx in merchants_with_rares
         
         if config['categories']:  # Skip if service-only
             inventory = generate_merchant_inventory(
@@ -1082,15 +1081,20 @@ if __name__ == "__main__":
                 item_filter=config.get('item_filter')
             )
             
-            # Add rare item if this merchant was selected
+            # Add rare items
             if has_rare:
                 rare_pool = [e for e in equipment if e['type'] in config['categories'] and e['rarity'] == 'rare' and e['level'] <= 6]
                 # Apply item filter to rare pool too
                 if config.get('item_filter'):
                     rare_pool = [e for e in rare_pool if config['item_filter'](e)]
                 if rare_pool:
-                    inventory['rare'] = [random.choice(rare_pool)]
-                    print(f"  ⭐ Added rare item!")
+                    # For Otari Market, add multiple rare items (num_rare)
+                    if config.get('double_items', False):
+                        inventory['rare'] = random.sample(rare_pool, min(num_rare, len(rare_pool)))
+                        print(f"  ⭐ Added {len(inventory['rare'])} rare items!")
+                    else:
+                        inventory['rare'] = [random.choice(rare_pool)]
+                        print(f"  ⭐ Added rare item!")
         else:
             inventory = {'common': [], 'uncommon': [], 'rare': []}
         

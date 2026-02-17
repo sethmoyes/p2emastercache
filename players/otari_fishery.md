@@ -20,25 +20,31 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 | ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 | ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (4)
+## Common Items (10)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Meal (Fine Dining) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Meal) |
+| 🖼️ | Aroma Concealer | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Aroma%20Concealer) |
+| 🖼️ | Healer's Toolkit (Expanded) | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
+| ![Merchant's Scale](https://2e.aonprd.com/Images/Treasure/Merchants_Scale.webp) | Merchant's Scale | 0 | 2 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Merchant%27s%20Scale) |
+| 🖼️ | Eternal Eruption of Pale Mountain | 5 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eternal%20Eruption%20of%20Pale%20Mountain) |
+| 🖼️ | Healer's Toolkit | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
+| 🖼️ | Cotton (Bale) | 0 | 100 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cotton) |
 | 🖼️ | Beverages (Bottle of Wine) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
-| 🖼️ | Underwater | 3 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
-| 🖼️ | Beverages (Keg of Ale) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Fishing Tackle (Professional) | 3 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fishing%20Tackle) |
+| 🖼️ | Conflagration Club | 6 | 250 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Conflagration%20Club) |
+| 🖼️ | Fish | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fish) |
 
 ## Uncommon Items (1)
 
