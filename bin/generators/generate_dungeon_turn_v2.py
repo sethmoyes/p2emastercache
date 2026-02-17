@@ -117,7 +117,9 @@ def get_creatures_for_floor(creatures, floor_num, party_level):
     return appropriate if appropriate else creatures
 
 # Load events from JSON file
-EVENTS_FILE = '/Users/smoyes/Documents/p2emastercache/etc/dungeon_turn_events.json'
+# Use relative path from script location to work in containers
+SCRIPT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+EVENTS_FILE = os.path.join(SCRIPT_DIR, 'etc', 'dungeon_turn_events.json')
 
 try:
     LOADED_EVENTS = load_events_from_json(EVENTS_FILE)
