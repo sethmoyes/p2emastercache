@@ -1,0 +1,4 @@
+# file: /Users/smoyes/Documents/p2emastercache/bin/generators/dungeon_event_tweaker/parser.py
+# hypothesis_version: 6.151.8
+
+['(\\d+)\\s*actions?', '(\\d+)\\s*hours?', '(\\d+)\\s*minutes?', '(\\d+)\\s*rounds?', 'ACTIVE_THREAT', 'COMBAT', 'COMPLICATION', 'DILEMMA', 'OPPORTUNITY', 'actions', 'category', 'challenge', 'consequence', 'consequences', 'creatures', 'dc', 'description', 'ecology', 'ecology_notes', 'enemies', 'floor_ecology', 'gm_notes', 'hours', 'minutes', 'num_creatures', 'purpose', 'quantity', 'reward', 'rewards', 'rounds', 'skill', 'skill_checks', 'skills', 'special_abilities', 'success', 'tactical_notes', 'tactical_option', 'time_cost', 'time_costs', 'title', 'type']

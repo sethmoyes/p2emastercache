@@ -39,8 +39,18 @@ roll_history = []
 
 @app.route('/')
 def index():
-    """Main page"""
-    return render_template('index.html')
+    """Landing page with PLAYER and GM buttons"""
+    return render_template('landing.html')
+
+@app.route('/players')
+def players():
+    """Player-facing market square page"""
+    return render_template('players.html')
+
+@app.route('/gm')
+def gm():
+    """GM tools page (password protected on frontend)"""
+    return render_template('gm.html')
 
 @app.route('/api/roll', methods=['POST'])
 def roll_dice():
@@ -54,11 +64,21 @@ def roll_dice():
 
 @app.route('/api/encounter', methods=['POST'])
 def get_encounter():
-    """Generate random encounter for given floor and sum"""
+    """Generate random encounter for given floor and sum with optional context"""
+    # Import EventContext here to avoid circular imports
+    sys.path.insert(0, os.path.join(PROJECT_ROOT, 'bin', 'generators'))
+    from event_context import EventContext
+    
     data = request.json
     floor = data.get('floor', 1)
     dice_sum = data.get('sum')
     party_level = data.get('party_level', 4)
+    
+    # Extract context parameters (with defaults)
+    space_type = data.get('space_type', 'unknown')
+    recent_combat = data.get('recent_combat', False)
+    new_area = data.get('new_area', True)
+    party_status = data.get('party_status', 'healthy')
     
     if not dice_sum:
         return jsonify({'error': 'Sum required'}), 400
@@ -68,8 +88,20 @@ def get_encounter():
     if not floor_data:
         return jsonify({'error': f'Floor {floor} not found'}), 404
     
-    # Generate event
-    event = generate_event_for_sum(dice_sum, floor, floor_data, party_level, creatures)
+    # Create context
+    try:
+        context = EventContext(
+            space_type=space_type,
+            recent_combat=recent_combat,
+            new_area=new_area,
+            party_status=party_status
+        )
+        context.validate()
+    except ValueError as e:
+        return jsonify({'error': f'Invalid context: {str(e)}'}), 400
+    
+    # Generate event with context
+    event = generate_event_for_sum(dice_sum, floor, floor_data, party_level, creatures, context)
     
     # If it's a combat encounter, add full creature stats
     if event.get('category') == 'COMBAT' and event.get('creatures'):
@@ -489,6 +521,482 @@ def generate_hazard_api():
             'name': 'Error',
             'content': f'Error generating hazard: {str(e)}'
         }), 500
+
+@app.route('/api/merchant/<merchant_file>', methods=['GET'])
+def get_merchant(merchant_file):
+    """Load a merchant markdown file and return as HTML"""
+    # Sanitize filename
+    if not merchant_file.replace('_', '').isalnum():
+        return jsonify({'error': 'Invalid merchant file'}), 400
+    
+    merchant_path = os.path.join(PROJECT_ROOT, 'players', f'{merchant_file}.md')
+    
+    if not os.path.exists(merchant_path):
+        return jsonify({'error': 'Merchant not found'}), 404
+    
+    try:
+        with open(merchant_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Convert markdown to HTML (basic conversion)
+        html = markdown_to_html(content)
+        
+        # Extract title from first # heading
+        title_match = content.split('\n')[0]
+        if title_match.startswith('#'):
+            title = title_match.lstrip('#').strip()
+        else:
+            title = merchant_file.replace('_', ' ').title()
+        
+        return jsonify({
+            'title': title,
+            'html': html,
+            'raw': content
+        })
+    except Exception as e:
+        return jsonify({'error': f'Error loading merchant: {str(e)}'}), 500
+
+@app.route('/api/document/<doc_name>', methods=['GET'])
+def get_document(doc_name):
+    """Load a documentation file and return as HTML"""
+    # Sanitize filename
+    if not doc_name.replace('_', '').isalnum():
+        return jsonify({'error': 'Invalid document name'}), 400
+    
+    doc_path = os.path.join(PROJECT_ROOT, 'docs', f'{doc_name}.md')
+    
+    if not os.path.exists(doc_path):
+        return jsonify({'error': 'Document not found'}), 404
+    
+    try:
+        with open(doc_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Convert markdown to HTML
+        html = markdown_to_html(content)
+        
+        # Extract title
+        title_match = content.split('\n')[0]
+        if title_match.startswith('#'):
+            title = title_match.lstrip('#').strip()
+        else:
+            title = doc_name.replace('_', ' ').title()
+        
+        return jsonify({
+            'title': title,
+            'html': html,
+            'raw': content
+        })
+    except Exception as e:
+        return jsonify({'error': f'Error loading document: {str(e)}'}), 500
+
+def markdown_to_html(markdown_text):
+    """Convert markdown to HTML with proper table support"""
+    import re
+    
+    # Process tables first (before line breaks)
+    lines = markdown_text.split('\n')
+    result = []
+    in_table = False
+    table_lines = []
+    
+    for i, line in enumerate(lines):
+        # Detect table rows (contains |)
+        if '|' in line and line.strip().startswith('|'):
+            if not in_table:
+                in_table = True
+                table_lines = []
+            table_lines.append(line)
+        else:
+            # End of table
+            if in_table:
+                result.append(convert_table_to_html(table_lines))
+                in_table = False
+                table_lines = []
+            result.append(line)
+    
+    # Handle table at end of file
+    if in_table:
+        result.append(convert_table_to_html(table_lines))
+    
+    html = '\n'.join(result)
+    
+    # Headers
+    html = re.sub(r'^# (.+)$', r'<h1 class="text-4xl font-bold mt-8 mb-4 text-blue-400">\1</h1>', html, flags=re.MULTILINE)
+    html = re.sub(r'^## (.+)$', r'<h2 class="text-3xl font-bold mt-6 mb-3 text-purple-400">\1</h2>', html, flags=re.MULTILINE)
+    html = re.sub(r'^### (.+)$', r'<h3 class="text-2xl font-bold mt-4 mb-2 text-pink-400">\1</h3>', html, flags=re.MULTILINE)
+    html = re.sub(r'^#### (.+)$', r'<h4 class="text-xl font-bold mt-3 mb-2 text-white">\1</h4>', html, flags=re.MULTILINE)
+    
+    # Horizontal rules
+    html = re.sub(r'^---+$', r'<hr class="my-6 border-gray-600">', html, flags=re.MULTILINE)
+    
+    # Bold and italic
+    html = re.sub(r'\*\*(.+?)\*\*', r'<strong class="text-white font-bold">\1</strong>', html)
+    html = re.sub(r'\*(.+?)\*', r'<em class="text-gray-300">\1</em>', html)
+    
+    # Images (convert markdown syntax to HTML)
+    html = re.sub(r'!\[([^\]]*)\]\(([^\)]+)\)', r'<img src="\2" alt="\1" class="max-w-xs h-auto rounded border border-gray-600" loading="lazy">', html)
+    
+    # Links
+    html = re.sub(r'\[(.+?)\]\((.+?)\)', r'<a href="\2" class="text-blue-400 hover:text-blue-300 underline" target="_blank">\1</a>', html)
+    
+    # Lists
+    lines = html.split('\n')
+    in_list = False
+    result = []
+    for line in lines:
+        if line.strip().startswith('- '):
+            if not in_list:
+                result.append('<ul class="list-disc list-inside ml-4 space-y-1 text-gray-300 mb-4">')
+                in_list = True
+            result.append(f'<li class="ml-4">{line.strip()[2:]}</li>')
+        else:
+            if in_list:
+                result.append('</ul>')
+                in_list = False
+            result.append(line)
+    if in_list:
+        result.append('</ul>')
+    html = '\n'.join(result)
+    
+    # Paragraphs (but not for lines that are already HTML)
+    lines = html.split('\n')
+    result = []
+    for line in lines:
+        if line.strip() and not line.strip().startswith('<') and not line.strip().endswith('>'):
+            result.append(f'<p class="mb-3 text-gray-300">{line}</p>')
+        else:
+            result.append(line)
+    html = '\n'.join(result)
+    
+    return html
+
+def convert_table_to_html(table_lines):
+    """Convert markdown table to HTML table"""
+    if len(table_lines) < 2:
+        return '\n'.join(table_lines)
+    
+    # Parse header
+    header_line = table_lines[0]
+    headers = [cell.strip() for cell in header_line.split('|')[1:-1]]  # Skip first and last empty
+    
+    # Skip separator line (table_lines[1])
+    
+    # Parse rows
+    rows = []
+    for line in table_lines[2:]:
+        if '|' in line:
+            cells = [cell.strip() for cell in line.split('|')[1:-1]]
+            rows.append(cells)
+    
+    # Build HTML table
+    html = '<div class="overflow-x-auto my-6">'
+    html += '<table class="min-w-full bg-gray-900 border border-gray-700 rounded-lg">'
+    
+    # Header
+    html += '<thead class="bg-gray-800">'
+    html += '<tr>'
+    for header in headers:
+        html += f'<th class="px-4 py-3 text-left text-sm font-bold text-purple-400 border-b border-gray-700">{header}</th>'
+    html += '</tr>'
+    html += '</thead>'
+    
+    # Body
+    html += '<tbody>'
+    for i, row in enumerate(rows):
+        bg_class = 'bg-gray-900' if i % 2 == 0 else 'bg-gray-850'
+        html += f'<tr class="{bg_class} hover:bg-gray-800 transition">'
+        for cell in row:
+            html += f'<td class="px-4 py-3 text-sm text-gray-300 border-b border-gray-700">{cell}</td>'
+        html += '</tr>'
+    html += '</tbody>'
+    
+    html += '</table>'
+    html += '</div>'
+    
+    return html
+
+@app.route('/api/generate-merchants', methods=['POST'])
+def generate_merchants_api():
+    """Generate merchants using the generate_merchants.py script"""
+    import subprocess
+    import threading
+    from queue import Queue
+    
+    data = request.json
+    player_level = data.get('player_level', 4)
+    
+    # Validate player level
+    if not isinstance(player_level, int) or player_level < 1 or player_level > 20:
+        return jsonify({'error': 'Player level must be between 1 and 20'}), 400
+    
+    # Path to the script
+    script_path = os.path.join(PROJECT_ROOT, 'bin', 'generators', 'generate_merchants.py')
+    
+    # Run the script as a subprocess
+    try:
+        # Change to the project root directory so relative paths work
+        process = subprocess.Popen(
+            [sys.executable, script_path, str(player_level)],
+            cwd=PROJECT_ROOT,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1
+        )
+        
+        # Collect output
+        output_lines = []
+        for line in process.stdout:
+            output_lines.append(line.strip())
+        
+        process.wait()
+        
+        if process.returncode == 0:
+            return jsonify({
+                'success': True,
+                'message': 'Merchants generated successfully!',
+                'output': '\n'.join(output_lines)
+            })
+        else:
+            return jsonify({
+                'success': False,
+                'error': 'Script failed',
+                'output': '\n'.join(output_lines)
+            }), 500
+            
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+@app.route('/api/generate-merchants-stream', methods=['GET'])
+def generate_merchants_stream():
+    """Stream merchant generation progress"""
+    import subprocess
+    from flask import Response, stream_with_context
+    
+    player_level = request.args.get('player_level', 4, type=int)
+    
+    # Validate player level
+    if player_level < 1 or player_level > 20:
+        return jsonify({'error': 'Player level must be between 1 and 20'}), 400
+    
+    # Path to the script
+    script_path = os.path.join(PROJECT_ROOT, 'bin', 'generators', 'generate_merchants.py')
+    
+    def generate():
+        try:
+            process = subprocess.Popen(
+                [sys.executable, script_path, '--level', str(player_level)],
+                cwd=PROJECT_ROOT,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                bufsize=1
+            )
+            
+            for line in process.stdout:
+                yield f"data: {json.dumps({'line': line.strip()})}\n\n"
+            
+            process.wait()
+            
+            if process.returncode == 0:
+                yield f"data: {json.dumps({'done': True, 'success': True})}\n\n"
+            else:
+                yield f"data: {json.dumps({'done': True, 'success': False, 'error': 'Script failed'})}\n\n"
+                
+        except Exception as e:
+            yield f"data: {json.dumps({'done': True, 'success': False, 'error': str(e)})}\n\n"
+    
+    return Response(stream_with_context(generate()), mimetype='text/event-stream')
+
+@app.route('/api/run-data-integrity', methods=['POST'])
+def run_data_integrity():
+    """Run data integrity checker"""
+    import subprocess
+    
+    data = request.json
+    data_type = data.get('type', 'equipment')
+    count = data.get('count', 10)
+    fix = data.get('fix', False)
+    
+    script_path = os.path.join(PROJECT_ROOT, 'bin', 'data_management', 'check_data_integrity.py')
+    
+    try:
+        args = [sys.executable, script_path, str(count), data_type]
+        if fix:
+            args.append('--replace')
+        
+        process = subprocess.Popen(
+            args,
+            cwd=PROJECT_ROOT,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True
+        )
+        
+        output_lines = []
+        for line in process.stdout:
+            output_lines.append(line.strip())
+        
+        process.wait()
+        
+        return jsonify({
+            'success': process.returncode == 0,
+            'output': '\n'.join(output_lines[-50:])  # Last 50 lines
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/scrape-creatures', methods=['POST'])
+def scrape_creatures():
+    """Scrape all creatures from AoN"""
+    import subprocess
+    
+    script_path = os.path.join(PROJECT_ROOT, 'bin', 'scrapers', 'scrape_all_creatures.py')
+    
+    try:
+        process = subprocess.Popen(
+            [sys.executable, script_path],
+            cwd=PROJECT_ROOT,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True
+        )
+        
+        output_lines = []
+        for line in process.stdout:
+            output_lines.append(line.strip())
+        
+        process.wait()
+        
+        return jsonify({
+            'success': process.returncode == 0,
+            'output': '\n'.join(output_lines[-50:])
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/scrape-creature-lore', methods=['POST'])
+def scrape_creature_lore():
+    """Scrape creature lore from AoN"""
+    import subprocess
+    
+    script_path = os.path.join(PROJECT_ROOT, 'bin', 'scrapers', 'scrape_creature_lore.py')
+    
+    try:
+        process = subprocess.Popen(
+            [sys.executable, script_path],
+            cwd=PROJECT_ROOT,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True
+        )
+        
+        output_lines = []
+        for line in process.stdout:
+            output_lines.append(line.strip())
+        
+        process.wait()
+        
+        return jsonify({
+            'success': process.returncode == 0,
+            'output': '\n'.join(output_lines[-50:])
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/scrape-spells', methods=['POST'])
+def scrape_spells():
+    """Scrape spells from AoN"""
+    import subprocess
+    
+    script_path = os.path.join(PROJECT_ROOT, 'bin', 'scrapers', 'scrape_spells.py')
+    
+    try:
+        process = subprocess.Popen(
+            [sys.executable, script_path],
+            cwd=PROJECT_ROOT,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True
+        )
+        
+        output_lines = []
+        for line in process.stdout:
+            output_lines.append(line.strip())
+        
+        process.wait()
+        
+        return jsonify({
+            'success': process.returncode == 0,
+            'output': '\n'.join(output_lines[-50:])
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/expand-encounter-pools', methods=['POST'])
+def expand_encounter_pools():
+    """Expand encounter pools"""
+    import subprocess
+    
+    script_path = os.path.join(PROJECT_ROOT, 'bin', 'data_management', 'expand_encounter_pools.py')
+    
+    try:
+        process = subprocess.Popen(
+            [sys.executable, script_path],
+            cwd=PROJECT_ROOT,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True
+        )
+        
+        output_lines = []
+        for line in process.stdout:
+            output_lines.append(line.strip())
+        
+        process.wait()
+        
+        return jsonify({
+            'success': process.returncode == 0,
+            'output': '\n'.join(output_lines[-50:])
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/reset-verification', methods=['POST'])
+def reset_verification():
+    """Reset verification dates"""
+    import subprocess
+    
+    data = request.json
+    data_type = data.get('type', 'equipment')
+    
+    script_path = os.path.join(PROJECT_ROOT, 'bin', 'data_management', 'reset_verification_dates.py')
+    
+    try:
+        process = subprocess.Popen(
+            [sys.executable, script_path, data_type],
+            cwd=PROJECT_ROOT,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True
+        )
+        
+        output_lines = []
+        for line in process.stdout:
+            output_lines.append(line.strip())
+        
+        process.wait()
+        
+        return jsonify({
+            'success': process.returncode == 0,
+            'output': '\n'.join(output_lines[-50:])
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
 
 if __name__ == '__main__':
     print("\n" + "="*80)

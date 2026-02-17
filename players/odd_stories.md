@@ -20,12 +20,11 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 12 gp | Restores one expended 2nd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 4 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
 ---
 
@@ -37,37 +36,34 @@
 
 *Study time: 1 hour (common), 5 hours (uncommon), 1 day (rare).*
 
-## Common Spell Scrolls (12)
+## Common Spell Scrolls (10)
 
 | Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |
 |------------|-------|-------|-------|------------|------|-------|--------|------|
-| SCROLL OF PARALYZE | 3 | 16 gp | 20 | Arcane, Occult | Unknown | 30 | Enchantment, Incapacitation, Mental | [View](https://2e.aonprd.com/Spells.aspx?ID=213) |
-| SCROLL OF SHRINK ITEM | 3 | 16 gp | 20 | Arcane | Unknown | 0 | Concentrate, Manipulate, Polymorph | [View](https://2e.aonprd.com/Spells.aspx?ID=2026) |
-| SCROLL OF WEB | 2 | 6 gp | 18 | Arcane, Primal | Unknown | 30 | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=2045) |
-| SCROLL OF DISTRACTING CHATTER | 3 | 16 gp | 20 | Arcane, Occult | Unknown | 30 | Auditory, Illusion | [View](https://2e.aonprd.com/Spells.aspx?ID=895) |
-| SCROLL OF CONTAINMENT | 4 | 36 gp | 23 | Arcane, Occult | Unknown | 30 | Concentrate, Force, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1981) |
-| SCROLL OF CLAD IN METAL | 2 | 6 gp | 18 | Arcane, Divine, Primal | Unknown | 0 | Concentrate, Manipulate, Metal | [View](https://2e.aonprd.com/Spells.aspx?ID=1366) |
-| SCROLL OF KNOCK | 2 | 6 gp | 18 | Arcane, Occult | Unknown | 30 | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1581) |
-| SCROLL OF INFUSE VITALITY | 1 | 2 gp | 15 | Divine | Unknown | 30 | Concentrate, Manipulate, Vitality | [View](https://2e.aonprd.com/Spells.aspx?ID=1574) |
-| SCROLL OF SAND FORM | 3 | 16 gp | 20 | Arcane, Primal | Unknown | 0 | Concentrate, Earth, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1340) |
-| SCROLL OF SIGNAL SKYROCKET | 1 | 2 gp | 15 | Arcane, Occult, Primal | Unknown | 1000 | Concentrate, Fire, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1362) |
-| SCROLL OF HEROISM | 3 | 16 gp | 20 | Divine, Occult | Unknown | 0 | Concentrate, Manipulate, Mental | [View](https://2e.aonprd.com/Spells.aspx?ID=1555) |
-| SCROLL OF EARTHBIND | 3 | 16 gp | 20 | Arcane, Primal | Unknown | 120 | Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=94) |
+| SCROLL OF PUMMELING RUBBLE | 1 | 2 gp | 15 | Arcane, Primal | Unknown | Unknown | Concentrate, Earth, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1642) |
+| SCROLL OF WEAPON STORM | 4 | 36 gp | 23 | Arcane, Primal | Unknown | Unknown | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1758) |
+| SCROLL OF DARKVISION | 2 | 6 gp | 18 | Arcane, Divine, Occult, Primal, Elemental | Unknown | Unknown | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1481) |
+| SCROLL OF MENDING | 1 | 2 gp | 15 | Arcane, Divine, Occult, Primal, Elemental | Unknown | 0 | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1597) |
+| SCROLL OF HIDEBOUND | 2 | 6 gp | 18 | Arcane, Primal | Unknown | 60 | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1954) |
+| SCROLL OF COUNTLESS EYES | 4 | 36 gp | 23 | Arcane, Occult, Primal | Unknown | 0 | Divination | [View](https://2e.aonprd.com/Spells.aspx?ID=680) |
+| SCROLL OF DAY'S WEIGHT | 3 | 16 gp | 20 | Arcane, Occult, Primal | Unknown | 120 | Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=891) |
+| SCROLL OF DARKNESS | 2 | 6 gp | 18 | Arcane, Divine, Occult, Primal | Unknown | 120 | Concentrate, Darkness, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1480) |
+| SCROLL OF WOODEN FISTS | 1 | 2 gp | 15 | Arcane, Primal | Unknown | Unknown | Concentrate, Manipulate, Morph | [View](https://2e.aonprd.com/Spells.aspx?ID=1417) |
+| SCROLL OF TORTOISE AND THE HARE | 4 | 36 gp | 23 | Occult, Primal | Unknown | 30 | Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=1021) |
 
-## Uncommon Spell Scrolls (4)
+## Uncommon Spell Scrolls (3)
 
 | Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |
 |------------|-------|-------|-------|------------|------|-------|--------|------|
-| SCROLL OF MANIFESTATION OF SPIRITS | 2 | 6 gp | 18 | Divine, Primal | Unknown | 30 | Concentrate, Manipulate, Mental | [View](https://2e.aonprd.com/Spells.aspx?ID=2469) |
-| SCROLL OF IMPRINT MESSAGE | 1 | 2 gp | 15 | Occult | Unknown | 0 | Divination, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=551) |
-| SCROLL OF MENTAL MAP | 2 | 6 gp | 18 | Arcane, Occult | Unknown | 0 | Concentrate, Mental, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=2295) |
-| SCROLL OF SPIRITUAL ANAMNESIS | 4 | 36 gp | 23 | Divine, Occult | Unknown | 60 | Mental, Necromancy, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=554) |
+| SCROLL OF DETECT SCRYING | 4 | 36 gp | 23 | Arcane, Occult | Unknown | Unknown | Detection, Divination, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=68) |
+| SCROLL OF STRENGTH OF MIND | 3 | 16 gp | 20 | Divine, Occult, Primal | Unknown | 0 | Concentrate, Mental, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=2455) |
+| SCROLL OF OVERWHELMING MEMORY | 3 | 16 gp | 20 | Arcane, Occult | Unknown | 30 | Concentrate, Emotion, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=2296) |
 
 ## Rare Spell Scrolls (1)
 
 | Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |
 |------------|-------|-------|-------|------------|------|-------|--------|------|
-| SCROLL OF DEATHLESS MARCH | 4 | 36 gp | 23 | Arcane, Occult, Primal | Unknown | Unknown | Auditory, Enchantment, Rare | [View](https://2e.aonprd.com/Spells.aspx?ID=1910) |
+| SCROLL OF LIFE'S FRESH BLOOM | 4 | 36 gp | 23 | Divine, Primal | Unknown | 30 | Healing, Necromancy, Positive | [View](https://2e.aonprd.com/Spells.aspx?ID=1923) |
 
 ---
 
@@ -100,46 +96,34 @@
 - **Greater Reinforcing** (Level 11): 1,400 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 - **Major Reinforcing** (Level 17): 15,000 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 
-## Property Runes (2)
+## Property Runes (3)
 
 | Image | Name | Level | Price | Rarity | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Soft-Landing | 3 | 60 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Soft-Landing) |
+| 🖼️ | Called (Accessory Rune) | 3 | 60 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Called) |
 | 🖼️ | Bane | 4 | 100 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Bane) |
+| 🖼️ | Underwater | 3 | 50 gp | Common | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (13)
+## Common Items (5)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Staff of Control | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Control) |
-| 🖼️ | Tome of Restorative Cleansing (Moderate) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tome%20of%20Restorative%20Cleansing) |
-| 🖼️ | Staff of Summoning (Greater) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Summoning) |
-| 🖼️ | Wand of Rolling Flames (3rd-Rank Spell) | 6 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Rolling%20Flames) |
-| 🖼️ | Endless Grimoire (Greater) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
-| 🖼️ | Wand of Mental Purification (8th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mental%20Purification) |
-| 🖼️ | Wand of Reaching (5th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
-| 🖼️ | Wand of Continuation (6th-rank Spell) | 5 | 160 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Continuation) |
+| 🖼️ | Staff of the Desert Winds | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Desert%20Winds) |
+| 🖼️ | Staff of Summoning (Major) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Summoning) |
+| 🖼️ | Wand of Continuation (1st-rank Spell) | 5 | 160 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Continuation) |
 | 🖼️ | Staff of Protection (Greater) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Protection) |
-| ![Magic Wand (9th-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (9th-rank Spell) | 3 | 60 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
-| ![Magic Wand (8th-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (8th-rank Spell) | 3 | 60 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
-| 🖼️ | Basic Crafter's Book | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Basic%20Crafter%27s%20Book) |
-| 🖼️ | Wand of Continuation (8th-rank Spell) | 5 | 160 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Continuation) |
+| 🖼️ | Staff of the Dead (Greater) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Dead) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Book of Translation (Advanced) | 2 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Book%20of%20Translation) |
-
-## Rare Items (1)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| ![Musket Staff of Force](https://2e.aonprd.com/Images/Treasure/Musket_Staff_Of_Force.webp) | Musket Staff of Force | 4 | 100 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Musket%20Staff%20of%20Force) |
+| 🖼️ | Bane | 4 | 100 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bane) |
+| 🖼️ | Dragon's Breath (1st-Level Spell) | 4 | 100 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dragon%27s%20Breath) |
 
 ## Services
 

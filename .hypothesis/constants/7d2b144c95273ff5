@@ -1,0 +1,4 @@
+# file: /Users/smoyes/Documents/p2emastercache/bin/generators/dungeon_event_tweaker/formatter.py
+# hypothesis_version: 6.151.8
+
+['**Consequences:**', '**Enemies:**', '**Rewards:**', '**Skill Checks:**', '**Time Costs:**', '---\n', '</div>', '</ul>', '<div class="skills">', '<hr>', '<ul>', 'consequences', 'dc', 'description', 'ecology_notes', 'enemies', 'gm_notes', 'positioning', 'purpose', 'quantity', 'rewards', 'skill', 'skill_checks', 'spatial_context', 'special_abilities', 'tactical_options', 'terrain_features', 'time_costs', 'title', 'type']

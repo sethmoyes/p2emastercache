@@ -17,6 +17,12 @@ import random
 import sys
 import json
 import re
+import os
+
+# Add parent directory (bin) to path for event_loader import
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from event_loader import load_events_from_json, ValidationError
 
 def load_json(filename):
     """Load JSON file"""
@@ -60,18 +66,35 @@ def parse_gauntlight_levels(content):
     
     return levels
 
-def get_category_from_sum(total):
-    """Determine event category based on 5d20 sum"""
-    if total <= 25:
-        return "OPPORTUNITY"
-    elif total <= 45:
-        return "COMPLICATION"
-    elif total <= 65:
-        return "DILEMMA"
-    elif total <= 85:
-        return "ACTIVE_THREAT"
-    else:
+def get_category_from_sum(total, is_extreme=False):
+    """
+    Determine event category based on 5d20 sum.
+    
+    New distribution with "no event" mechanic:
+    - Extreme rolls (5-15, 90-100): Always COMBAT
+    - Non-extreme rolls: 50% chance of NO EVENT
+    - 5-44: COMBAT/ACTIVE_THREAT (danger)
+    - 45-62: OPPORTUNITIES/COMPLICATIONS/DILEMMAS (middle range)
+    - 63-100: ACTIVE_THREAT/COMBAT (danger)
+    """
+    # Extreme rolls always generate combat
+    if is_extreme:
         return "COMBAT"
+    
+    # Non-extreme rolls: 50% chance of no event
+    if random.random() < 0.5:
+        return "NO_EVENT"
+    
+    # Distribute remaining events
+    if total <= 44:
+        # Low rolls: danger (combat or active threats)
+        return random.choice(["COMBAT", "ACTIVE_THREAT"])
+    elif total <= 62:
+        # Middle rolls: non-combat encounters
+        return random.choice(["OPPORTUNITY", "COMPLICATION", "DILEMMA"])
+    else:
+        # High rolls: danger (active threats or combat)
+        return random.choice(["ACTIVE_THREAT", "COMBAT"])
 
 
 def get_party_member_spotlight():
@@ -93,1063 +116,37 @@ def get_creatures_for_floor(creatures, floor_num, party_level):
     
     return appropriate if appropriate else creatures
 
+# Load events from JSON file
+EVENTS_FILE = '/Users/smoyes/Documents/p2emastercache/etc/dungeon_turn_events.json'
+
+try:
+    LOADED_EVENTS = load_events_from_json(EVENTS_FILE)
+    OPPORTUNITY_TEMPLATES = LOADED_EVENTS['OPPORTUNITY']
+    COMPLICATION_TEMPLATES = LOADED_EVENTS['COMPLICATION']
+    DILEMMA_TEMPLATES = LOADED_EVENTS['DILEMMA']
+    ACTIVE_THREAT_TEMPLATES = LOADED_EVENTS['ACTIVE_THREAT']
+except FileNotFoundError:
+    print(f"ERROR: Event file not found: {EVENTS_FILE}")
+    print("Please ensure dungeon_turn_events.json exists in etc/ directory")
+    sys.exit(1)
+except json.JSONDecodeError as e:
+    print(f"ERROR: Invalid JSON in {EVENTS_FILE}: {e}")
+    sys.exit(1)
+except ValidationError as e:
+    print(f"ERROR: Invalid event structure: {e}")
+    sys.exit(1)
+
 # OPPORTUNITY EVENT TEMPLATES (5-25)
-OPPORTUNITY_TEMPLATES = [
-    {
-        "title": "Secret Passage",
-        "description": "You notice unusual wear patterns on the floor leading to a wall section.",
-        "challenge": "DC 18 Perception to find hidden door",
-        "success": "You discover a secret passage that bypasses the next 3 rooms. Saves 30 minutes of exploration.",
-        "failure": "You don't find anything unusual. Continue the normal way.",
-        "spotlight": ["Rogue", "Monk"],
-        "skills": ["Perception"],
-        "time_cost": "1 action to search",
-        "gm_notes": "If found, skip next 3 dice jar rolls. Mark on map.",
-        "reward": "Shortcut, time saved, avoid encounters"
-    },
-    {
-        "title": "Eavesdropping Opportunity",
-        "description": "You hear voices ahead - creatures discussing their patrol route.",
-        "challenge": "DC 16 Stealth to get close, DC 18 Society to understand their language",
-        "success": "You learn the patrol schedule: they pass through here every 2 hours. You know when it's safe.",
-        "failure": "You make noise and alert them, or can't understand their language.",
-        "spotlight": ["Rogue", "Wizard"],
-        "skills": ["Stealth", "Society"],
-        "time_cost": "10 minutes to listen carefully",
-        "gm_notes": "If successful, next 2 encounters can be avoided with timing. Add 1 die to jar for time spent.",
-        "reward": "Intelligence, tactical advantage"
-    },
-
-    {
-        "title": "Abandoned Supplies",
-        "description": "You find a cache of supplies left by previous explorers - bandages, healing herbs, and rations.",
-        "challenge": "DC 16 Medicine to use supplies effectively",
-        "success": "Each party member can heal 2d8 HP. Takes 10 minutes.",
-        "failure": "Supplies are too old or damaged. Heal only 1d8 HP.",
-        "spotlight": ["Cleric"],
-        "skills": ["Medicine"],
-        "time_cost": "10 minutes to treat wounds",
-        "gm_notes": "Add 1 die to jar for time spent. Good reward for exploration.",
-        "reward": "Healing without spell slots"
-    },
-    {
-        "title": "Friendly Ghost",
-        "description": "A translucent figure appears - a former servant who died here centuries ago. They seem willing to talk.",
-        "challenge": "DC 15 Diplomacy to gain trust, DC 18 Religion to understand their nature",
-        "success": "The ghost warns you about a trap ahead and tells you how to disarm it safely.",
-        "failure": "The ghost fades away, frightened or offended.",
-        "spotlight": ["Cleric", "Swashbuckler"],
-        "skills": ["Diplomacy", "Religion"],
-        "time_cost": "5 minutes of conversation",
-        "gm_notes": "If successful, next trap is automatically disarmed or avoided.",
-        "reward": "Information, trap avoidance"
-    },
-    {
-        "title": "Environmental Advantage",
-        "description": "You spot a chandelier above a narrow passage, and barrels of oil nearby.",
-        "challenge": "DC 16 Crafting to rig a trap, DC 18 Athletics to position it correctly",
-        "success": "You create a trap. Next enemy encounter triggers it for 3d6 fire damage to all enemies.",
-        "failure": "Trap is poorly made and won't trigger reliably.",
-        "spotlight": ["Rogue", "Monk"],
-        "skills": ["Crafting", "Athletics"],
-        "time_cost": "10 minutes to set up",
-        "gm_notes": "Add 1 die to jar. Mark trap on map. Triggers on next combat encounter.",
-        "reward": "Tactical advantage in combat"
-    },
-
-    {
-        "title": "Magical Residue",
-        "description": "The air shimmers with recent magical energy. Someone cast powerful magic here recently.",
-        "challenge": "DC 18 Arcana to identify the spell and its purpose",
-        "success": "You identify a teleportation spell. Someone left in a hurry. You know danger is ahead.",
-        "failure": "The magical signature is too complex to decipher.",
-        "spotlight": ["Wizard"],
-        "skills": ["Arcana"],
-        "time_cost": "1 action to analyze",
-        "gm_notes": "If successful, players know next encounter is dangerous. Can prepare accordingly.",
-        "reward": "Forewarning, preparation time"
-    },
-    {
-        "title": "Fresh Tracks",
-        "description": "You find fresh tracks in the dust - multiple creatures passed through here recently.",
-        "challenge": "DC 17 Survival to identify creatures and direction",
-        "success": "You identify the creatures and know they went ahead. You can avoid or ambush them.",
-        "failure": "Tracks are too muddled to read clearly.",
-        "spotlight": ["Rogue", "Monk"],
-        "skills": ["Survival"],
-        "time_cost": "1 action to examine",
-        "gm_notes": "If successful, next encounter can be avoided or players get surprise round.",
-        "reward": "Tactical choice, surprise advantage"
-    },
-    {
-        "title": "Architectural Weakness",
-        "description": "You notice the ceiling here is unstable - old damage from past battles.",
-        "challenge": "DC 18 Crafting to identify weak points, DC 16 Athletics to trigger collapse safely",
-        "success": "You can collapse this passage behind you, blocking pursuit. Or save for later.",
-        "failure": "The structure is more stable than it looks.",
-        "spotlight": ["Rogue", "Monk"],
-        "skills": ["Crafting", "Athletics"],
-        "time_cost": "2 actions to trigger if used",
-        "gm_notes": "If used, blocks passage. Pursuing enemies must find another route (buys time).",
-        "reward": "Escape option, tactical control"
-    },
-    {
-        "title": "Ancient Inscription",
-        "description": "Carved into the wall is text in an ancient language, partially worn away.",
-        "challenge": "DC 19 Society to translate, DC 17 Religion if it's religious text",
-        "success": "The inscription warns: 'The left path leads to the arena. The right to the laboratories.' You know where you're going.",
-        "failure": "The text is too damaged to read fully.",
-        "spotlight": ["Wizard", "Cleric"],
-        "skills": ["Society", "Religion"],
-        "time_cost": "5 minutes to study and translate",
-        "gm_notes": "Provides map knowledge. Players can choose their path wisely.",
-        "reward": "Navigation, informed choices"
-    },
-
-    {
-        "title": "Distracted Guards",
-        "description": "Two guards ahead are arguing loudly about something. They're completely focused on each other.",
-        "challenge": "DC 15 Stealth to sneak past, or DC 17 Deception to join their argument and distract them further",
-        "success": "You slip past unnoticed or convince them to leave their post to 'check something'.",
-        "failure": "They notice you. Roll initiative.",
-        "spotlight": ["Rogue", "Swashbuckler"],
-        "skills": ["Stealth", "Deception"],
-        "time_cost": "1 action to sneak, 5 minutes to deceive",
-        "gm_notes": "Avoids combat encounter. If deception used, guards leave post for 30 minutes.",
-        "reward": "Avoid combat, save resources"
-    },
-    {
-        "title": "Healing Spring",
-        "description": "A small spring bubbles from the wall. The water glows faintly and smells sweet.",
-        "challenge": "DC 17 Nature to identify if safe, DC 19 Arcana to detect magic",
-        "success": "It's a natural healing spring! Each person who drinks heals 3d8 HP.",
-        "failure": "You're not sure if it's safe. Drinking requires DC 15 Fortitude save or become sickened 1.",
-        "spotlight": ["Druid", "Wizard"],
-        "skills": ["Nature", "Arcana"],
-        "time_cost": "10 minutes for everyone to drink",
-        "gm_notes": "Major healing opportunity. Add 1 die to jar for time spent.",
-        "reward": "Significant healing"
-    },
-    {
-        "title": "Weapon Cache",
-        "description": "You find a hidden armory - racks of weapons covered in dust but still functional.",
-        "challenge": "DC 16 Perception to find, DC 17 Crafting to assess quality",
-        "success": "You find 1d4 +1 weapons appropriate for your party. Take what you need.",
-        "failure": "The weapons are too corroded or damaged to be useful.",
-        "spotlight": ["Rogue", "Fighter"],
-        "skills": ["Perception", "Crafting"],
-        "time_cost": "10 minutes to search and test",
-        "gm_notes": "Significant treasure. Add 1 die to jar. Weapons are +1 striking if party level 4+.",
-        "reward": "Magic weapons"
-    },
-    {
-        "title": "Sleeping Enemy",
-        "description": "A powerful enemy is sleeping in an alcove, snoring loudly. They're alone and vulnerable.",
-        "challenge": "DC 18 Stealth to sneak past OR automatic surprise round if you attack",
-        "success": "You pass unnoticed or get a free surprise round in combat.",
-        "failure": "They wake up! Roll initiative normally.",
-        "spotlight": ["Rogue", "Monk"],
-        "skills": ["Stealth"],
-        "time_cost": "1 action to sneak",
-        "gm_notes": "If attacked with surprise, enemy is flat-footed and prone. Major advantage.",
-        "reward": "Avoid encounter or major combat advantage"
-    },
-    {
-        "title": "Treasure Map",
-        "description": "You find a crude map scratched into the wall showing an 'X' marks the spot.",
-        "challenge": "DC 17 Survival to navigate to the location, DC 18 Society to interpret symbols",
-        "success": "You find the hidden treasure: 100gp per party member and 1 random magic item.",
-        "failure": "The map is too vague or the treasure has already been looted.",
-        "spotlight": ["Ranger", "Wizard"],
-        "skills": ["Survival", "Society"],
-        "time_cost": "20 minutes to search (add 2 dice to jar)",
-        "gm_notes": "Significant treasure reward. Worth the time investment.",
-        "reward": "Gold and magic item"
-    },
-    {
-        "title": "Friendly Creature",
-        "description": "A small creature approaches cautiously. It seems intelligent and friendly.",
-        "challenge": "DC 15 Nature to understand its behavior, DC 16 Diplomacy to befriend it",
-        "success": "It becomes your companion for this floor. Grants +2 to Perception checks and warns of danger.",
-        "failure": "It runs away, frightened.",
-        "spotlight": ["Druid", "Ranger"],
-        "skills": ["Nature", "Diplomacy"],
-        "time_cost": "5 minutes to befriend",
-        "gm_notes": "Companion lasts until you leave this floor. Provides warning before ambushes.",
-        "reward": "Temporary companion, perception bonus"
-    },
-    {
-        "title": "Alchemical Lab",
-        "description": "You find an abandoned alchemist's workspace with intact equipment and ingredients.",
-        "challenge": "DC 18 Crafting to brew potions, DC 17 Nature to identify ingredients",
-        "success": "You can craft 1d4 healing potions (moderate) or other alchemical items.",
-        "failure": "The ingredients are too degraded or you lack the skill.",
-        "spotlight": ["Alchemist", "Wizard"],
-        "skills": ["Crafting", "Nature"],
-        "time_cost": "30 minutes to brew (add 3 dice to jar)",
-        "gm_notes": "Major time investment but significant reward. Potions are moderate healing (2d8+10).",
-        "reward": "Healing potions"
-    },
-    {
-        "title": "Ventilation Shaft",
-        "description": "You spot a ventilation shaft that connects to other areas. It's narrow but passable.",
-        "challenge": "DC 16 Athletics to climb through, DC 17 Survival to navigate correctly",
-        "success": "You emerge 2 floors ahead! Massive shortcut discovered.",
-        "failure": "You get lost in the shafts and emerge where you started (waste 20 minutes).",
-        "spotlight": ["Rogue", "Monk"],
-        "skills": ["Athletics", "Survival"],
-        "time_cost": "20 minutes to navigate",
-        "gm_notes": "Success skips entire floor! Remove 5 dice from jar. Mark on map.",
-        "reward": "Massive shortcut"
-    },
-    {
-        "title": "Ritual Circle",
-        "description": "An intact ritual circle glows faintly. It's still charged with magic.",
-        "challenge": "DC 19 Arcana to activate safely, DC 20 Religion if divine magic",
-        "success": "The circle grants everyone a +1 status bonus to all saves for 1 hour.",
-        "failure": "The circle discharges harmlessly. Magic is wasted.",
-        "spotlight": ["Wizard", "Cleric"],
-        "skills": ["Arcana", "Religion"],
-        "time_cost": "10 minutes to activate ritual",
-        "gm_notes": "Significant buff. Add 1 die to jar. Bonus lasts 1 hour of game time.",
-        "reward": "+1 to all saves"
-    },
-    {
-        "title": "Spy Hole",
-        "description": "You find a hidden spy hole that looks into the next room. You can see what's ahead.",
-        "challenge": "DC 15 Perception to find, DC 16 Stealth to observe without being noticed",
-        "success": "You see the next encounter and can plan accordingly. Gain +2 to initiative.",
-        "failure": "You don't find it or make noise while looking.",
-        "spotlight": ["Rogue", "Ranger"],
-        "skills": ["Perception", "Stealth"],
-        "time_cost": "5 minutes to observe",
-        "gm_notes": "Allows players to prepare for next encounter. +2 initiative is significant.",
-        "reward": "Preparation, initiative bonus"
-    }
-]
+# Loaded from JSON file at module initialization
 
 # COMPLICATION EVENT TEMPLATES (26-45)
-COMPLICATION_TEMPLATES = [
-    {
-        "title": "Locked Door",
-        "description": "A locked door blocks your path. The mechanism is complex but functional.",
-        "challenge": "DC 18 Thievery to pick lock OR DC 22 Athletics to force open",
-        "success": "Door opens. Quietly if picked, loudly if forced.",
-        "failure": "Lock jams (Thievery) or door holds (Athletics). Must find key or try different approach.",
-        "spotlight": ["Rogue", "Monk"],
-        "skills": ["Thievery", "Athletics"],
-        "time_cost": "2 actions (Thievery) or 3 actions (Athletics)",
-        "gm_notes": "If forced open, noise may attract attention.",
-        "consequence": "Noise attracts attention"
-    },
-    {
-        "title": "Unstable Structure",
-        "description": "The structure ahead is cracked and unstable. You hear ominous creaking.",
-        "challenge": "DC 17 Acrobatics to cross carefully OR DC 19 Crafting to brace it",
-        "success": "Everyone crosses safely. Crafting solution is permanent.",
-        "failure": "Structure fails. Everyone makes DC 18 Reflex save or takes 2d6 damage.",
-        "spotlight": ["Swashbuckler", "Rogue"],
-        "skills": ["Acrobatics", "Crafting"],
-        "time_cost": "1 action per person (Acrobatics) or 10 minutes (Crafting)",
-        "gm_notes": "Crafting takes time but helps on return trip.",
-        "consequence": "Falling damage, noise"
-    },
-    {
-        "title": "Magical Ward",
-        "description": "A glowing sigil blocks your path. Touching it would trigger an alarm.",
-        "challenge": "DC 19 Arcana to dispel OR DC 20 Thievery to disable the physical trigger",
-        "success": "Ward is disabled. You can pass safely.",
-        "failure": "Ward triggers! Alarm sounds throughout this floor.",
-        "spotlight": ["Wizard", "Rogue"],
-        "skills": ["Arcana", "Thievery"],
-        "time_cost": "3 actions to attempt",
-        "gm_notes": "If failed, remaining encounters on this floor are alerted.",
-        "consequence": "Dungeon-wide alert"
-    },
-    {
-        "title": "Language Barrier",
-        "description": "A wounded creature tries to communicate. They seem to have important information.",
-        "challenge": "DC 18 Society to identify language OR DC 16 Diplomacy with gestures",
-        "success": "They warn you about danger ahead and tell you the safe route.",
-        "failure": "You can't communicate. They flee in fear or frustration.",
-        "spotlight": ["Wizard", "Cleric"],
-        "skills": ["Society", "Diplomacy"],
-        "time_cost": "5 minutes to communicate",
-        "gm_notes": "If successful, next encounter can be avoided entirely.",
-        "consequence": "Missed information"
-    },
-    {
-        "title": "Tracking Challenge",
-        "description": "Fresh tracks lead away. Someone or something passed through recently.",
-        "challenge": "DC 17 Survival to track quickly and quietly",
-        "success": "You find them before they can alert others. Surprise round.",
-        "failure": "You lose the trail, or they hear you coming.",
-        "spotlight": ["Ranger", "Rogue"],
-        "skills": ["Survival"],
-        "time_cost": "10 minutes to track carefully",
-        "gm_notes": "Success = surprise round for party. Failure = surprise round for enemy.",
-        "consequence": "Enemy reinforcements"
-    },
-    {
-        "title": "Poisoned Air",
-        "description": "Toxic mist seeps from cracks. The smell is acrid and burning.",
-        "challenge": "DC 18 Nature to identify poison OR DC 19 Medicine to treat symptoms",
-        "success": "You neutralize the poison or treat everyone. Can pass safely.",
-        "failure": "Everyone makes DC 17 Fortitude save or become sickened 1 for 1 hour.",
-        "spotlight": ["Druid", "Cleric"],
-        "skills": ["Nature", "Medicine"],
-        "time_cost": "10 minutes to treat everyone",
-        "gm_notes": "Sickened 1 = -1 to all checks. Significantly weakens party.",
-        "consequence": "Condition penalty"
-    },
-    {
-        "title": "Collapsing Structure",
-        "description": "Cracks spread rapidly. Debris falls. It's going to collapse!",
-        "challenge": "DC 19 Athletics to brace while others escape OR DC 18 Acrobatics to dodge debris",
-        "success": "Everyone escapes safely. If braced, passage remains open.",
-        "failure": "Everyone makes DC 18 Reflex save or takes 3d6 bludgeoning damage.",
-        "spotlight": ["Monk", "Swashbuckler"],
-        "skills": ["Athletics", "Acrobatics"],
-        "time_cost": "1 round of actions",
-        "gm_notes": "If passage collapses, must find alternate route (adds 30 minutes).",
-        "consequence": "Damage, blocked passage"
-    },
-    {
-        "title": "Puzzle Lock",
-        "description": "A complex mechanical puzzle blocks your way - gears, levers, and symbols.",
-        "challenge": "DC 19 Crafting to solve mechanically OR DC 20 Arcana if magical",
-        "success": "Lock opens. You can pass through.",
-        "failure": "Lock remains sealed. Must find another way or the key.",
-        "spotlight": ["Rogue", "Wizard"],
-        "skills": ["Crafting", "Arcana"],
-        "time_cost": "10 minutes to solve",
-        "gm_notes": "Alternative: find key elsewhere in dungeon.",
-        "consequence": "Time spent, alternate route needed"
-    },
-    {
-        "title": "Intimidating Presence",
-        "description": "A powerful creature blocks the path. They're wary but not immediately hostile.",
-        "challenge": "DC 18 Diplomacy to negotiate OR DC 19 Intimidation to make them back down",
-        "success": "They let you pass. May even provide information if Diplomacy used.",
-        "failure": "They attack. Roll initiative.",
-        "spotlight": ["Cleric", "Swashbuckler"],
-        "skills": ["Diplomacy", "Intimidation"],
-        "time_cost": "5 minutes of negotiation",
-        "gm_notes": "Diplomacy may turn them into ally. Intimidation makes them hostile later.",
-        "consequence": "Combat or future hostility"
-    },
-    {
-        "title": "Performance Required",
-        "description": "Guards ahead are bored. They challenge you to prove you're 'worthy' to pass.",
-        "challenge": "DC 17 Performance to entertain OR DC 18 Deception to pretend you're expected",
-        "success": "They let you pass. May even give you information.",
-        "failure": "They're offended or suspicious. Roll initiative.",
-        "spotlight": ["Bard", "Rogue"],
-        "skills": ["Performance", "Deception"],
-        "time_cost": "5 minutes",
-        "gm_notes": "Creative solution to avoid combat.",
-        "consequence": "Combat if failed"
-    },
-    {
-        "title": "Slippery Surface",
-        "description": "The floor is covered in slime, oil, or ice. Very treacherous.",
-        "challenge": "DC 16 Acrobatics to cross safely OR DC 18 Athletics to power through",
-        "success": "Everyone crosses without incident.",
-        "failure": "Fall prone and slide 10 feet. Take 1d6 damage if you hit a wall.",
-        "spotlight": ["Monk", "Swashbuckler"],
-        "skills": ["Acrobatics", "Athletics"],
-        "time_cost": "1 action per person",
-        "gm_notes": "Falling prone in combat is dangerous. Consider cleaning the area.",
-        "consequence": "Prone, damage"
-    },
-    {
-        "title": "Narrow Passage",
-        "description": "The passage ahead narrows to a tight squeeze. Medium creatures must crawl.",
-        "challenge": "DC 15 Athletics to squeeze through OR DC 17 Survival to find alternate route",
-        "success": "Everyone gets through safely.",
-        "failure": "Someone gets stuck. Takes 10 minutes to free them (add 1 die to jar).",
-        "spotlight": ["Small creatures shine here"],
-        "skills": ["Athletics", "Survival"],
-        "time_cost": "2 actions per person to squeeze",
-        "gm_notes": "Small creatures pass easily. Large creatures can't fit at all.",
-        "consequence": "Time spent, vulnerability"
-    },
-    {
-        "title": "Darkness",
-        "description": "All light sources suddenly extinguish. Magical darkness fills the area.",
-        "challenge": "DC 18 Arcana to dispel OR DC 16 Survival to navigate by touch/sound",
-        "success": "You overcome the darkness and continue.",
-        "failure": "You stumble around. Takes 10 minutes to find your way (add 1 die to jar).",
-        "spotlight": ["Wizard", "Ranger"],
-        "skills": ["Arcana", "Survival"],
-        "time_cost": "3 actions to overcome",
-        "gm_notes": "Creatures with darkvision are unaffected.",
-        "consequence": "Time spent, vulnerability"
-    },
-    {
-        "title": "Illusory Wall",
-        "description": "The wall ahead shimmers slightly. It might be an illusion hiding a passage.",
-        "challenge": "DC 19 Perception to notice OR DC 20 Arcana to analyze the illusion",
-        "success": "You find the hidden passage. Shortcut discovered!",
-        "failure": "You don't notice anything unusual. Continue the long way.",
-        "spotlight": ["Wizard", "Rogue"],
-        "skills": ["Perception", "Arcana"],
-        "time_cost": "1 minute to investigate",
-        "gm_notes": "Success saves 20 minutes of travel (remove 2 dice from jar).",
-        "consequence": "Missed shortcut"
-    },
-    {
-        "title": "Swarm of Vermin",
-        "description": "Rats, insects, or bats swarm through the area. Not dangerous but disruptive.",
-        "challenge": "DC 16 Nature to calm them OR DC 17 Intimidation to scare them off",
-        "success": "Swarm disperses. You can pass.",
-        "failure": "Swarm attacks! Everyone takes 1d4 damage and must make DC 15 Will save or become frightened 1.",
-        "spotlight": ["Druid", "Ranger"],
-        "skills": ["Nature", "Intimidation"],
-        "time_cost": "2 actions",
-        "gm_notes": "Frightened 1 = -1 to all checks for 1 round.",
-        "consequence": "Minor damage, condition"
-    },
-    {
-        "title": "Suspicious Stain",
-        "description": "A large dark stain covers the floor. Could be blood, acid, or something worse.",
-        "challenge": "DC 17 Crafting to identify substance OR DC 18 Medicine if it's biological",
-        "success": "You identify it and know how to safely cross.",
-        "failure": "You step in it. Make DC 16 Fortitude save or take 2d6 acid damage.",
-        "spotlight": ["Alchemist", "Cleric"],
-        "skills": ["Crafting", "Medicine"],
-        "time_cost": "1 minute to analyze",
-        "gm_notes": "Could be trap residue, monster remains, or environmental hazard.",
-        "consequence": "Acid damage"
-    },
-    {
-        "title": "Echoing Chamber",
-        "description": "This chamber amplifies all sounds. Even whispers echo loudly.",
-        "challenge": "DC 18 Stealth to move silently OR DC 16 Performance to use acoustics to confuse enemies",
-        "success": "You cross without alerting anyone, or you create a diversion.",
-        "failure": "Your noise echoes throughout the floor. All encounters are now alerted.",
-        "spotlight": ["Rogue", "Bard"],
-        "skills": ["Stealth", "Performance"],
-        "time_cost": "2 actions per person",
-        "gm_notes": "Performance success can send enemies to wrong location.",
-        "consequence": "Dungeon-wide alert"
-    },
-    {
-        "title": "Rickety Bridge",
-        "description": "A rope bridge spans a chasm. It looks old and frayed.",
-        "challenge": "DC 17 Acrobatics to cross carefully OR DC 19 Crafting to reinforce it",
-        "success": "Everyone crosses safely.",
-        "failure": "Bridge breaks! Everyone makes DC 18 Reflex save or falls 20 feet (4d6 damage).",
-        "spotlight": ["Monk", "Rogue"],
-        "skills": ["Acrobatics", "Crafting"],
-        "time_cost": "1 action per person (Acrobatics) or 10 minutes (Crafting)",
-        "gm_notes": "Crafting makes it safe for return trip.",
-        "consequence": "Falling damage"
-    },
-    {
-        "title": "Magical Feedback",
-        "description": "Residual magic in the area interferes with spellcasting.",
-        "challenge": "DC 19 Arcana to stabilize the magic OR DC 17 Religion if divine magic",
-        "success": "Magic stabilizes. Spellcasters can cast normally.",
-        "failure": "Magic remains unstable. All spells cast here require DC 15 flat check or fizzle.",
-        "spotlight": ["Wizard", "Cleric"],
-        "skills": ["Arcana", "Religion"],
-        "time_cost": "5 minutes to stabilize",
-        "gm_notes": "Affects both party and enemy spellcasters.",
-        "consequence": "Spell failure chance"
-    },
-    {
-        "title": "Ancient Inscription",
-        "description": "Runes cover the walls. They might contain important information or warnings.",
-        "challenge": "DC 18 Society to translate OR DC 19 Arcana if magical runes",
-        "success": "You learn about a trap ahead, enemy weakness, or hidden treasure location.",
-        "failure": "You can't decipher it. Miss important information.",
-        "spotlight": ["Wizard", "Cleric"],
-        "skills": ["Society", "Arcana"],
-        "time_cost": "5 minutes to translate",
-        "gm_notes": "Success gives tactical advantage in next encounter.",
-        "consequence": "Missed tactical information"
-    },
-    {
-        "title": "Cursed Object",
-        "description": "A beautiful item sits on a pedestal, glowing invitingly. It radiates magic.",
-        "challenge": "DC 19 Religion to detect curse, DC 20 Arcana to safely dispel",
-        "success": "You identify and remove the curse. The item is safe to take (minor magic item).",
-        "failure": "You touch it. Make DC 17 Will save or become cursed (GM's choice of effect).",
-        "spotlight": ["Cleric", "Wizard"],
-        "skills": ["Religion", "Arcana"],
-        "time_cost": "10 minutes to analyze and dispel",
-        "gm_notes": "Curse could be: -1 to saves, can't heal naturally, nightmares, etc.",
-        "consequence": "Curse effect"
-    },
-    {
-        "title": "Flooded Passage",
-        "description": "Water fills the corridor ahead, waist-deep and murky. You can't see the bottom.",
-        "challenge": "DC 17 Athletics to swim through, DC 18 Survival to find shallow path",
-        "success": "Everyone crosses safely.",
-        "failure": "Someone steps in a hole. Make DC 16 Reflex save or go underwater (1d6 damage, lose 1 action).",
-        "spotlight": ["Monk", "Ranger"],
-        "skills": ["Athletics", "Survival"],
-        "time_cost": "5 minutes to cross carefully",
-        "gm_notes": "Wet equipment may be damaged. Scrolls and books need protection.",
-        "consequence": "Drowning risk, equipment damage"
-    },
-    {
-        "title": "Territorial Beast",
-        "description": "A large beast has made this area its den. It's not evil, just protective.",
-        "challenge": "DC 17 Nature to calm it, DC 18 Intimidation to scare it off",
-        "success": "Beast allows you to pass or leaves the area.",
-        "failure": "Beast attacks. Roll initiative.",
-        "spotlight": ["Druid", "Ranger"],
-        "skills": ["Nature", "Intimidation"],
-        "time_cost": "5 minutes to calm",
-        "gm_notes": "If calmed with Nature, beast may help in next combat. If intimidated, it flees.",
-        "consequence": "Combat with beast"
-    },
-    {
-        "title": "Magical Darkness",
-        "description": "Unnatural darkness fills the area. Even darkvision doesn't work here.",
-        "challenge": "DC 19 Arcana to dispel, DC 17 Religion if unholy darkness",
-        "success": "Darkness lifts. You can see normally.",
-        "failure": "Darkness remains. Must navigate blind (all creatures are concealed).",
-        "spotlight": ["Wizard", "Cleric"],
-        "skills": ["Arcana", "Religion"],
-        "time_cost": "3 actions to dispel",
-        "gm_notes": "If not dispelled, all attacks have 20% miss chance. Very dangerous.",
-        "consequence": "Concealment, combat disadvantage"
-    },
-    {
-        "title": "Pressure Plate",
-        "description": "You spot a suspicious tile in the floor. It's slightly raised.",
-        "challenge": "DC 18 Perception to notice, DC 19 Thievery to disarm",
-        "success": "Trap is disarmed. You can pass safely.",
-        "failure": "Trap triggers! Darts shoot from walls. Everyone makes DC 18 Reflex save or takes 3d6 damage.",
-        "spotlight": ["Rogue"],
-        "skills": ["Perception", "Thievery"],
-        "time_cost": "2 actions to disarm",
-        "gm_notes": "If triggered, noise alerts nearby enemies.",
-        "consequence": "Damage, alert enemies"
-    },
-    {
-        "title": "Unstable Magic",
-        "description": "Wild magic surges through this area. Spells behave unpredictably.",
-        "challenge": "DC 19 Arcana to stabilize, DC 18 Religion if divine magic",
-        "success": "Magic stabilizes. Spells work normally.",
-        "failure": "Wild magic persists. All spells cast here roll on wild magic table.",
-        "spotlight": ["Wizard", "Sorcerer"],
-        "skills": ["Arcana", "Religion"],
-        "time_cost": "10 minutes to stabilize",
-        "gm_notes": "Wild magic can help or hurt. 50/50 chance of beneficial/harmful effect.",
-        "consequence": "Unpredictable spell effects"
-    },
-    {
-        "title": "Negotiation Opportunity",
-        "description": "Intelligent creatures ahead are willing to talk. They want something.",
-        "challenge": "DC 18 Diplomacy to negotiate, DC 17 Society to understand their culture",
-        "success": "You make a deal. They let you pass or provide information.",
-        "failure": "Negotiations break down. They attack or demand too much.",
-        "spotlight": ["Bard", "Cleric"],
-        "skills": ["Diplomacy", "Society"],
-        "time_cost": "10 minutes to negotiate",
-        "gm_notes": "They might want: gold, magic item, promise of help, or just respect.",
-        "consequence": "Combat or unfavorable deal"
-    },
-    {
-        "title": "Crumbling Ledge",
-        "description": "The path narrows to a crumbling ledge over a deep pit. One wrong step...",
-        "challenge": "DC 18 Acrobatics to cross, DC 19 Athletics to climb around",
-        "success": "Everyone crosses safely.",
-        "failure": "Someone falls! Make DC 18 Reflex save to catch ledge or fall 30 feet (6d6 damage).",
-        "spotlight": ["Monk", "Rogue"],
-        "skills": ["Acrobatics", "Athletics"],
-        "time_cost": "1 action per person (Acrobatics) or 10 minutes (Athletics)",
-        "gm_notes": "Falling makes noise. Alerts enemies below.",
-        "consequence": "Falling damage, alert enemies"
-    },
-    {
-        "title": "Magical Lock",
-        "description": "The door ahead has no keyhole - only a glowing magical seal.",
-        "challenge": "DC 20 Arcana to dispel, DC 18 Thievery to find hidden mechanism",
-        "success": "Door opens. You can pass.",
-        "failure": "Door remains sealed. Must find another way.",
-        "spotlight": ["Wizard", "Rogue"],
-        "skills": ["Arcana", "Thievery"],
-        "time_cost": "10 minutes to attempt",
-        "gm_notes": "Alternative: find command word elsewhere in dungeon.",
-        "consequence": "Blocked path, alternate route needed"
-    },
-    {
-        "title": "Haunted Area",
-        "description": "The temperature drops. You see your breath. Ghostly whispers fill the air.",
-        "challenge": "DC 18 Religion to bless area, DC 17 Occultism to understand spirits",
-        "success": "Spirits calm or leave. You can pass safely.",
-        "failure": "Spirits attack! Everyone makes DC 17 Will save or become frightened 2.",
-        "spotlight": ["Cleric", "Wizard"],
-        "skills": ["Religion", "Occultism"],
-        "time_cost": "5 minutes to perform blessing",
-        "gm_notes": "Frightened 2 = -2 to all checks for 2 rounds. Very debilitating.",
-        "consequence": "Fear condition, spirit attacks"
-    }
-]
+# Loaded from JSON file at module initialization
 
 # DILEMMA EVENT TEMPLATES (46-65)
-DILEMMA_TEMPLATES = [
-    {
-        "title": "Two Paths: Loud vs Quiet",
-        "description": "The passage splits. Left: a wide, clear corridor (fast but exposed). Right: narrow maintenance tunnels (slow but hidden).",
-        "choice_a": "Take the loud path: 10 minutes, but next encounter is alerted to your presence",
-        "choice_b": "Take the quiet path: 30 minutes (add 2 dice to jar), but next encounter doesn't know you're coming",
-        "spotlight": ["All"],
-        "skills": ["Tactical thinking"],
-        "time_cost": "10 min vs 30 min",
-        "gm_notes": "Track choice. Loud path = enemies get surprise round. Quiet path = party gets surprise round.",
-        "consequence": "Time vs stealth trade-off"
-    },
-    {
-        "title": "Imprisoned Creature",
-        "description": "A creature is locked in a cage, begging for freedom. They claim they were captured unjustly and will help you.",
-        "choice_a": "Free them now: Takes 10 minutes (add 1 die), makes noise, but gain potential ally",
-        "choice_b": "Come back later: Mark location, but they might be dead or moved when you return",
-        "choice_c": "Leave them: No time cost, no risk, but no ally and they might alert enemies",
-        "spotlight": ["Cleric", "Rogue"],
-        "skills": ["Thievery", "Diplomacy"],
-        "time_cost": "10 min to free, or none",
-        "gm_notes": "If freed: 50% chance they help in next combat, 50% they flee. If left: they alert enemies.",
-        "consequence": "Moral choice with tactical implications"
-    },
-
-    {
-        "title": "Fight Now or Avoid",
-        "description": "You spot a patrol ahead. They haven't seen you yet. You're at full strength.",
-        "choice_a": "Fight now: Combat while you're fresh and they're unprepared (surprise round)",
-        "choice_b": "Sneak past: DC 17 Stealth. Success = avoid combat. Failure = they join next encounter as reinforcements",
-        "spotlight": ["Rogue", "All"],
-        "skills": ["Stealth", "Tactics"],
-        "time_cost": "Combat time vs 1 action",
-        "gm_notes": "If avoided and Stealth fails, add these enemies to next combat encounter (harder fight).",
-        "consequence": "Fight now vs potentially harder fight later"
-    },
-    {
-        "title": "Rest Here or Push On",
-        "description": "You find a defensible room. You're wounded and low on resources. But resting here is risky.",
-        "choice_a": "Rest here: 10 minutes to Treat Wounds (add 1 die to jar). DC 15 Perception to avoid ambush during rest.",
-        "choice_b": "Push on: No healing, but no risk of ambush. Continue while wounded.",
-        "spotlight": ["Cleric", "All"],
-        "skills": ["Medicine", "Perception"],
-        "time_cost": "10 min to rest",
-        "gm_notes": "If rest and fail Perception: ambush during rest (party is flat-footed). If push on: next combat is harder.",
-        "consequence": "Risk vs reward for healing"
-    },
-    {
-        "title": "Loot Now or Later",
-        "description": "You find a treasure room, but it will take time to search thoroughly. You hear movement nearby.",
-        "choice_a": "Loot now: 10 minutes (add 1 die to jar). Roll on treasure table. But enemies might arrive.",
-        "choice_b": "Mark for later: No time cost now, but treasure might be gone when you return (50% chance).",
-        "spotlight": ["Rogue", "All"],
-        "skills": ["Perception", "Thievery"],
-        "time_cost": "10 min to loot",
-        "gm_notes": "If loot now: roll dice jar immediately after. If mark for later: 50% chance treasure is gone.",
-        "consequence": "Greed vs caution"
-    },
-    {
-        "title": "Chase Fleeing Enemy",
-        "description": "You wounded an enemy and they're fleeing. They're heading toward their allies to raise the alarm.",
-        "choice_a": "Chase them: Pursue and fight now (1 enemy, but you're split from party)",
-        "choice_b": "Let them go: They alert others. Next encounter has +2 enemies and they're prepared.",
-        "spotlight": ["Monk", "Rogue"],
-        "skills": ["Athletics", "Tactics"],
-        "time_cost": "Immediate decision",
-        "gm_notes": "If chase: solo combat for fastest PC. If let go: next encounter is significantly harder.",
-        "consequence": "Risk one PC vs harder group fight"
-    },
-
-    {
-        "title": "Ritual in Progress",
-        "description": "Through a doorway, you see creatures performing a ritual. It's almost complete.",
-        "choice_a": "Interrupt now: Surprise round, but you don't know what the ritual does",
-        "choice_b": "Watch and learn: DC 19 Arcana to understand ritual. Takes 5 minutes. They complete it but you know what to expect.",
-        "spotlight": ["Wizard", "All"],
-        "skills": ["Arcana", "Tactics"],
-        "time_cost": "Immediate vs 5 min",
-        "gm_notes": "If watch: ritual completes (enemy gets buff/summon). But party knows and can counter. If interrupt: surprise but unknown effect.",
-        "consequence": "Knowledge vs tactical advantage"
-    },
-    {
-        "title": "Wounded Ally",
-        "description": "One party member is bleeding badly (persistent bleed damage). You can stop to treat them or push forward.",
-        "choice_a": "Treat Wounds now: 10 minutes (add 1 die to jar). Heal 2d8 HP and stop bleeding.",
-        "choice_b": "Push on: Ally takes 1d6 damage each turn until treated. But no time cost.",
-        "spotlight": ["Cleric"],
-        "skills": ["Medicine"],
-        "time_cost": "10 min to treat",
-        "gm_notes": "If push on: track bleed damage. Ally might go down before next rest. Add 1 die to jar when finally treated.",
-        "consequence": "Time vs ally's health"
-    },
-    {
-        "title": "Alarm Triggered",
-        "description": "You accidentally triggered a magical alarm. A bell is ringing loudly. You have seconds to act.",
-        "choice_a": "Disable alarm: DC 20 Thievery or Arcana. Takes 3 actions. If failed, alarm continues.",
-        "choice_b": "Flee immediately: Run to next room and barricade. Enemies will search but might not find you (DC 17 Stealth).",
-        "spotlight": ["Rogue", "Wizard"],
-        "skills": ["Thievery", "Arcana", "Stealth"],
-        "time_cost": "3 actions vs 1 round",
-        "gm_notes": "If alarm continues: all encounters on this floor are alerted and prepared. If flee successfully: only nearby enemies respond.",
-        "consequence": "Risk vs escape"
-    },
-    {
-        "title": "Treasure vs Time",
-        "description": "You find a locked chest. It looks valuable but the lock is complex. You hear footsteps approaching.",
-        "choice_a": "Pick lock now: DC 19 Thievery, takes 10 minutes (add 1 die). Enemies will arrive during attempt.",
-        "choice_b": "Ignore it: No time cost, but lose potential treasure and it might be gone later.",
-        "choice_c": "Take whole chest: Athletics DC 18 to carry (Bulk 4). Slows movement but can open later.",
-        "spotlight": ["Rogue", "Monk"],
-        "skills": ["Thievery", "Athletics"],
-        "time_cost": "10 min vs none vs encumbrance",
-        "gm_notes": "If pick now: roll dice jar during attempt. If take chest: -5 ft speed until dropped. If ignore: treasure is gone.",
-        "consequence": "Multiple trade-offs"
-    },
-    {
-        "title": "Sacrifice for Information",
-        "description": "A dying enemy offers information about the floor layout and traps in exchange for healing.",
-        "choice_a": "Heal them: Use spell slot or potion. Get detailed map and trap locations.",
-        "choice_b": "Intimidate: DC 18 Intimidation. They talk but info might be incomplete or false.",
-        "choice_c": "Let them die: No cost, but lose valuable intelligence.",
-        "spotlight": ["Cleric", "Rogue"],
-        "skills": ["Medicine", "Intimidation"],
-        "time_cost": "5 minutes to heal and talk",
-        "gm_notes": "If healed: accurate info. If intimidated: 50% chance of false info. If ignored: miss shortcuts.",
-        "consequence": "Resources vs information"
-    },
-    {
-        "title": "Split the Party",
-        "description": "Two passages lead to the same destination. One is trapped but shorter, the other is safe but longer.",
-        "choice_a": "Send scout ahead: One PC takes trapped path (DC 18 Perception for traps). Rest take safe path. Meet at end.",
-        "choice_b": "All take safe path: 20 minutes longer (add 2 dice to jar). Everyone stays together.",
-        "choice_c": "All take trapped path: Faster but everyone risks traps. Multiple DC 18 Reflex saves.",
-        "spotlight": ["Rogue", "All"],
-        "skills": ["Perception", "Reflex", "Tactics"],
-        "time_cost": "10 min vs 30 min vs 10 min with risk",
-        "gm_notes": "Splitting party is risky but efficient. Safe path is slow. Trapped path is dangerous.",
-        "consequence": "Speed vs safety vs party cohesion"
-    },
-    {
-        "title": "Magical Artifact Choice",
-        "description": "You find three magical items on pedestals. You can only take one before the others vanish.",
-        "choice_a": "Weapon: +1 striking weapon of your choice. Immediate combat power.",
-        "choice_b": "Armor: +1 resilient armor. Better defense for the dungeon.",
-        "choice_c": "Utility: Bag of holding or similar. Carry more loot and supplies.",
-        "spotlight": ["All"],
-        "skills": ["Arcana to identify"],
-        "time_cost": "5 minutes to choose",
-        "gm_notes": "Each choice benefits different playstyles. No wrong answer but creates discussion.",
-        "consequence": "Tactical choice with long-term impact"
-    },
-    {
-        "title": "Poison the Well",
-        "description": "You find the enemy's water supply. You have poison that could sicken them all.",
-        "choice_a": "Poison it: All enemies on this floor become sickened 1 for 24 hours. Easier fights but morally questionable.",
-        "choice_b": "Don't poison: Keep moral high ground but fights are normal difficulty.",
-        "spotlight": ["Alchemist", "Rogue"],
-        "skills": ["Crafting", "Stealth"],
-        "time_cost": "10 minutes to poison safely",
-        "gm_notes": "Sickened 1 = -1 to all checks. Significant advantage. But is it right?",
-        "consequence": "Moral choice with tactical benefit"
-    },
-    {
-        "title": "Rescue or Mission",
-        "description": "You hear prisoners crying for help nearby. But your mission is time-sensitive.",
-        "choice_a": "Rescue now: 20 minutes (add 2 dice). Prisoners become allies and provide info.",
-        "choice_b": "Mission first: Continue to objective. Prisoners might be dead when you return.",
-        "spotlight": ["Cleric", "All"],
-        "skills": ["Diplomacy", "Tactics"],
-        "time_cost": "20 min to rescue",
-        "gm_notes": "If rescued: gain 1d4 NPC allies for this floor. If ignored: moral weight and potential loss.",
-        "consequence": "Heroism vs pragmatism"
-    },
-    {
-        "title": "Destroy or Claim",
-        "description": "You find an evil artifact. It's powerful but corrupting.",
-        "choice_a": "Destroy it: DC 20 Religion or Arcana. Takes 10 minutes. Enemies lose power source.",
-        "choice_b": "Claim it: Gain powerful item but risk corruption. DC 17 Will save each day or become evil.",
-        "choice_c": "Leave it: No risk, no reward. Enemies keep their power.",
-        "spotlight": ["Cleric", "Wizard"],
-        "skills": ["Religion", "Arcana", "Will"],
-        "time_cost": "10 min to destroy",
-        "gm_notes": "Corruption is real. Will saves get harder each day. But power is tempting.",
-        "consequence": "Power vs corruption"
-    },
-    {
-        "title": "Barricade or Ambush",
-        "description": "You know enemies are coming. You have time to prepare.",
-        "choice_a": "Barricade: 10 minutes to build defenses. Enemies can't reach you easily (+2 AC, cover).",
-        "choice_b": "Ambush: 10 minutes to set trap. Enemies take 3d6 damage when they arrive.",
-        "choice_c": "Flee: Leave now. Avoid fight but enemies will pursue later.",
-        "spotlight": ["All"],
-        "skills": ["Crafting", "Stealth", "Tactics"],
-        "time_cost": "10 min to prepare",
-        "gm_notes": "Both preparation options are good. Fleeing means harder fight later.",
-        "consequence": "Tactical preparation choice"
-    },
-    {
-        "title": "Negotiate or Fight",
-        "description": "Intelligent enemies ahead are willing to parley. They want something you have.",
-        "choice_a": "Negotiate: Give them gold/item. They let you pass and provide safe passage.",
-        "choice_b": "Refuse and fight: Keep your stuff but must fight them now.",
-        "choice_c": "Lie and betray: DC 20 Deception. They believe you, then you attack with surprise.",
-        "spotlight": ["Bard", "Rogue"],
-        "skills": ["Diplomacy", "Deception"],
-        "time_cost": "10 min to negotiate",
-        "gm_notes": "Betrayal works once. Word spreads. Future negotiations become impossible.",
-        "consequence": "Honor vs pragmatism"
-    },
-    {
-        "title": "Loud or Slow",
-        "description": "A collapsed passage blocks your way. You can blast through or dig carefully.",
-        "choice_a": "Blast through: Use magic or explosives. Fast (5 minutes) but VERY loud. Alerts entire floor.",
-        "choice_b": "Dig carefully: 30 minutes (add 3 dice). Quiet but exhausting. Everyone loses 1 action next combat.",
-        "choice_c": "Find another way: 20 minutes (add 2 dice) to backtrack and find alternate route.",
-        "spotlight": ["Wizard", "Monk"],
-        "skills": ["Arcana", "Athletics", "Survival"],
-        "time_cost": "5 min vs 30 min vs 20 min",
-        "gm_notes": "Loud = all encounters alerted. Dig = fatigue penalty. Alternate = time cost.",
-        "consequence": "Speed vs stealth vs fatigue"
-    }
-]
-
+# Loaded from JSON file at module initialization
 
 # ACTIVE THREAT EVENT TEMPLATES (66-85)
-ACTIVE_THREAT_TEMPLATES = [
-    {
-        "title": "Patrol Approaching!",
-        "description": "You hear heavy footsteps and voices. A patrol is coming this way. You have seconds to act!",
-        "immediate_action": "Choose NOW: Hide (DC 17 Stealth), Prepare ambush (ready actions), or Flee (move away quickly)",
-        "success": "Hide: They pass by. Ambush: Surprise round. Flee: Avoid encounter.",
-        "failure": "Hide: They spot you (they get surprise). Flee: They chase you (running combat).",
-        "spotlight": ["Rogue", "All"],
-        "skills": ["Stealth", "Tactics"],
-        "time_cost": "1 round to react",
-        "gm_notes": "Immediate decision. No time to discuss. Tests party coordination.",
-        "threat_level": "Moderate - can be avoided"
-    },
-    {
-        "title": "Floor Collapsing!",
-        "description": "The floor beneath you cracks and gives way! Everyone make a Reflex save!",
-        "immediate_action": "DC 18 Reflex save to grab edge. DC 19 Athletics to pull yourself up.",
-        "success": "You catch yourself and climb up. No damage.",
-        "failure": "You fall 15 feet into the room below. 3d6 damage. Separated from party.",
-        "spotlight": ["Monk", "Swashbuckler"],
-        "skills": ["Reflex", "Athletics"],
-        "time_cost": "1 round",
-        "gm_notes": "If anyone falls: they're in different room. Party must reunite. Adds tension.",
-        "threat_level": "High - damage and separation"
-    },
-    {
-        "title": "Alarm Bell Ringing!",
-        "description": "A loud bell starts ringing throughout this floor. You triggered a magical alarm!",
-        "immediate_action": "DC 20 Arcana or Thievery to disable in 3 actions, or flee immediately",
-        "success": "Alarm stops. Only nearby enemies alerted.",
-        "failure": "Alarm continues. All enemies on this floor are alerted and searching for you.",
-        "spotlight": ["Wizard", "Rogue"],
-        "skills": ["Arcana", "Thievery"],
-        "time_cost": "3 actions to disable",
-        "gm_notes": "If alarm continues: all remaining encounters get surprise round against party. Major consequence.",
-        "threat_level": "High - affects entire floor"
-    },
-
-    {
-        "title": "Fire Spreading!",
-        "description": "A torch fell and ignited oil on the floor. Fire is spreading rapidly toward you!",
-        "immediate_action": "DC 17 Acrobatics to jump through flames (2d6 fire damage on failure) or DC 18 Athletics to break through wall",
-        "success": "You escape the fire safely.",
-        "failure": "Take fire damage and must try again next round. Smoke inhalation (DC 16 Fort or sickened 1).",
-        "spotlight": ["Monk", "Swashbuckler"],
-        "skills": ["Acrobatics", "Athletics"],
-        "time_cost": "1 round per attempt",
-        "gm_notes": "Escalating danger. Each round fire spreads. Eventually blocks passage entirely.",
-        "threat_level": "High - damage and time pressure"
-    },
-    {
-        "title": "Ambush from Above!",
-        "description": "Creatures drop from the ceiling onto the party! They were waiting in ambush!",
-        "immediate_action": "Everyone makes DC 18 Perception check. Success = act in surprise round. Failure = flat-footed.",
-        "success": "You noticed them falling. You can act in surprise round.",
-        "failure": "You're caught off-guard. Enemies get surprise round against you.",
-        "spotlight": ["Monk", "Rogue"],
-        "skills": ["Perception"],
-        "time_cost": "Immediate combat",
-        "gm_notes": "Surprise round is critical. Rewards high Perception. Punishes low Perception.",
-        "threat_level": "High - combat with disadvantage"
-    },
-    {
-        "title": "Magical Backlash!",
-        "description": "The magical ward you're examining suddenly explodes with energy!",
-        "immediate_action": "DC 19 Reflex save or take 3d6 force damage. DC 20 Arcana to counter the effect.",
-        "success": "You dodge or counter the blast. No damage.",
-        "failure": "Take full damage and are pushed 10 feet back.",
-        "spotlight": ["Wizard", "Swashbuckler"],
-        "skills": ["Reflex", "Arcana"],
-        "time_cost": "Immediate",
-        "gm_notes": "Punishes careless interaction with magic. Rewards Arcana knowledge.",
-        "threat_level": "Moderate - damage"
-    },
-    {
-        "title": "Falling Debris!",
-        "description": "The ceiling cracks and chunks of stone rain down on the party!",
-        "immediate_action": "DC 18 Reflex save to dodge. Take 2d6 bludgeoning damage on failure.",
-        "success": "You dodge the falling stones.",
-        "failure": "Take damage and must make DC 16 Fort save or be stunned 1.",
-        "spotlight": ["Monk", "Swashbuckler"],
-        "skills": ["Reflex"],
-        "time_cost": "Immediate",
-        "gm_notes": "Environmental hazard. Can happen anywhere. Keeps party alert.",
-        "threat_level": "Moderate - damage and condition"
-    },
-
-    {
-        "title": "Poison Gas Seeping!",
-        "description": "Green mist pours from cracks in the walls. It smells toxic!",
-        "immediate_action": "DC 17 Nature to identify and find safe air, or DC 18 Fort save each round you stay",
-        "success": "You identify safe breathing technique or find clean air pocket.",
-        "failure": "Take 1d6 poison damage and become sickened 1. Worsens each round.",
-        "spotlight": ["Cleric", "Wizard"],
-        "skills": ["Nature", "Fortitude"],
-        "time_cost": "1 round per save",
-        "gm_notes": "Forces movement. Can't stay in this area. Escalating danger.",
-        "threat_level": "High - ongoing damage"
-    },
-    {
-        "title": "Flooding Chamber!",
-        "description": "Water rushes in from broken pipes. The room is flooding rapidly!",
-        "immediate_action": "DC 18 Athletics to swim to exit before water fills room. DC 16 Perception to spot air pocket.",
-        "success": "You reach the exit or find air pocket to breathe.",
-        "failure": "You're underwater. Hold breath or start drowning (DC 15 Fort each round).",
-        "spotlight": ["Monk", "Rogue"],
-        "skills": ["Athletics", "Perception"],
-        "time_cost": "1 round per attempt",
-        "gm_notes": "Escalating danger. Eventually room is completely flooded. Must escape or drown.",
-        "threat_level": "High - potential death"
-    },
-    {
-        "title": "Summoning Circle Activating!",
-        "description": "A summoning circle on the floor glows brightly. Something is being summoned!",
-        "immediate_action": "DC 20 Arcana to disrupt ritual (3 actions) or prepare for combat",
-        "success": "Ritual disrupted. Nothing is summoned.",
-        "failure": "A creature appears! Roll initiative. It's hostile.",
-        "spotlight": ["Wizard"],
-        "skills": ["Arcana"],
-        "time_cost": "3 actions to disrupt",
-        "gm_notes": "If disrupted: avoid combat. If not: combat encounter with summoned creature.",
-        "threat_level": "High - combat or quick thinking"
-    },
-    {
-        "title": "Swarm Attack!",
-        "description": "Thousands of insects/rats/bats suddenly swarm from the walls!",
-        "immediate_action": "DC 17 Reflex to cover face, DC 18 Nature to repel them with fire/smoke",
-        "success": "You protect yourself. Swarm disperses.",
-        "failure": "Take 2d6 damage and become sickened 2 from bites and disease.",
-        "spotlight": ["Druid", "Ranger"],
-        "skills": ["Reflex", "Nature"],
-        "time_cost": "1 round",
-        "gm_notes": "Sickened 2 = -2 to all checks. Very debilitating. Lasts until treated.",
-        "threat_level": "Moderate - condition and damage"
-    },
-    {
-        "title": "Sniper!",
-        "description": "An arrow whistles past your head! Someone is shooting from hiding!",
-        "immediate_action": "DC 19 Perception to spot them, DC 18 Acrobatics to take cover",
-        "success": "You spot the sniper or reach cover. Can act normally.",
-        "failure": "Another arrow! Take 2d8 damage. Still don't know where they are.",
-        "spotlight": ["Ranger", "Rogue"],
-        "skills": ["Perception", "Acrobatics"],
-        "time_cost": "1 round to react",
-        "gm_notes": "Sniper has cover and concealment. Hard to fight back without spotting them.",
-        "threat_level": "High - ongoing damage"
-    },
-    {
-        "title": "Magical Explosion!",
-        "description": "A magical trap detonates! Fireball erupts around you!",
-        "immediate_action": "DC 19 Reflex save or take 4d6 fire damage (half on success)",
-        "success": "You dive aside. Take half damage.",
-        "failure": "Full damage and catch fire (1d6 persistent fire damage).",
-        "spotlight": ["Monk", "Swashbuckler"],
-        "skills": ["Reflex"],
-        "time_cost": "Immediate",
-        "gm_notes": "Persistent fire requires action to extinguish. Major resource drain.",
-        "threat_level": "High - burst damage and persistent"
-    },
-    {
-        "title": "Betrayal!",
-        "description": "An NPC you trusted suddenly attacks! They were a spy all along!",
-        "immediate_action": "DC 18 Perception to notice their intent, or they get surprise round",
-        "success": "You see it coming. Roll initiative normally.",
-        "failure": "They attack with surprise! You're flat-footed.",
-        "spotlight": ["Rogue", "Cleric"],
-        "skills": ["Perception", "Sense Motive"],
-        "time_cost": "Immediate combat",
-        "gm_notes": "Betrayal hurts. NPC knows party tactics and weaknesses.",
-        "threat_level": "High - surprise combat"
-    },
-    {
-        "title": "Ceiling Collapse!",
-        "description": "The entire ceiling is coming down! Tons of stone falling!",
-        "immediate_action": "DC 19 Athletics to sprint to safety, DC 20 Acrobatics to dodge falling debris",
-        "success": "You escape the collapse zone.",
-        "failure": "Buried! Take 4d6 damage and are restrained. DC 18 Athletics to dig out.",
-        "spotlight": ["Monk", "Barbarian"],
-        "skills": ["Athletics", "Acrobatics"],
-        "time_cost": "1 round to escape, 3 rounds to dig out if buried",
-        "gm_notes": "Restrained = can't move. Very dangerous in combat. Allies must help dig out.",
-        "threat_level": "Extreme - potential death"
-    },
-    {
-        "title": "Reinforcements Arriving!",
-        "description": "You hear war horns! Enemy reinforcements are rushing to this location!",
-        "immediate_action": "Flee now (no time to loot) or barricade and prepare (DC 18 Crafting, 1 round)",
-        "success": "You escape or create defensible position (+2 AC from cover).",
-        "failure": "Caught in the open when reinforcements arrive. Outnumbered 2-to-1.",
-        "spotlight": ["All"],
-        "skills": ["Tactics", "Crafting"],
-        "time_cost": "1 round to decide and act",
-        "gm_notes": "Reinforcements are fresh and numerous. Very dangerous fight if caught.",
-        "threat_level": "High - overwhelming numbers"
-    },
-    {
-        "title": "Hostage Situation!",
-        "description": "Enemies have grabbed a civilian/ally and hold a knife to their throat!",
-        "immediate_action": "DC 20 Diplomacy to negotiate, DC 22 Intimidation to make them back down, or DC 19 ranged attack to shoot knife",
-        "success": "Hostage is safe. Enemies surrender or flee.",
-        "failure": "Hostage is killed. Enemies attack.",
-        "spotlight": ["Bard", "Ranger"],
-        "skills": ["Diplomacy", "Intimidation", "Ranged Attack"],
-        "time_cost": "1 round to act",
-        "gm_notes": "High stakes. Failure has permanent consequences. Tests player judgment.",
-        "threat_level": "Extreme - life or death"
-    },
-    {
-        "title": "Magical Darkness Spreading!",
-        "description": "Unnatural darkness spreads from a source, consuming all light!",
-        "immediate_action": "DC 20 Arcana to counter-spell, DC 18 Religion if unholy, or flee before engulfed",
-        "success": "Darkness is stopped or you escape its area.",
-        "failure": "Engulfed in darkness. Blinded. All creatures concealed. Can't target spells.",
-        "spotlight": ["Wizard", "Cleric"],
-        "skills": ["Arcana", "Religion"],
-        "time_cost": "3 actions to counter",
-        "gm_notes": "Blinded = -4 to Perception, flat-footed, 50% miss chance. Extremely dangerous.",
-        "threat_level": "High - total concealment"
-    },
-    {
-        "title": "Stampede!",
-        "description": "Panicked creatures are stampeding toward you! Dozens of them!",
-        "immediate_action": "DC 18 Athletics to brace against wall, DC 19 Acrobatics to dodge, or DC 17 Nature to calm them",
-        "success": "You avoid the stampede or calm the creatures.",
-        "failure": "Trampled! Take 3d6 damage and knocked prone. Creatures keep running.",
-        "spotlight": ["Druid", "Monk"],
-        "skills": ["Athletics", "Acrobatics", "Nature"],
-        "time_cost": "1 round",
-        "gm_notes": "Prone in a stampede is very dangerous. Can be trampled multiple times.",
-        "threat_level": "High - ongoing damage"
-    }
-]
+# Loaded from JSON file at module initialization
 
 # COMBAT ENCOUNTER TEMPLATES (86-100)
 # These will be generated dynamically based on floor and creatures
@@ -1167,14 +164,25 @@ COMBAT_ECOLOGY_TYPES = [
 ]
 
 
-def generate_opportunity_event(floor_num, floor_data, party_level):
+def generate_opportunity_event(floor_num, floor_data, party_level, context=None):
     """Generate an OPPORTUNITY event (5-25)"""
-    template = random.choice(OPPORTUNITY_TEMPLATES)
+    from event_context import EventContext
+    from template_selector import select_template
+    from context_description import apply_all_context
+    
+    if context is None:
+        context = EventContext()
+    
+    # Select template based on context
+    template = select_template(OPPORTUNITY_TEMPLATES, context)
     
     # Customize for floor
     event = template.copy()
     event['floor'] = floor_num
     event['floor_name'] = floor_data['name']
+    
+    # Apply context-aware modifications
+    event = apply_all_context(event, context)
     
     # Add floor-specific flavor
     if floor_num == 1:
@@ -1200,13 +208,24 @@ def generate_opportunity_event(floor_num, floor_data, party_level):
     
     return event
 
-def generate_complication_event(floor_num, floor_data, party_level):
+def generate_complication_event(floor_num, floor_data, party_level, context=None):
     """Generate a COMPLICATION event (26-45)"""
-    template = random.choice(COMPLICATION_TEMPLATES)
+    from event_context import EventContext
+    from template_selector import select_template
+    from context_description import apply_all_context
+    
+    if context is None:
+        context = EventContext()
+    
+    # Select template based on context
+    template = select_template(COMPLICATION_TEMPLATES, context)
     
     event = template.copy()
     event['floor'] = floor_num
     event['floor_name'] = floor_data['name']
+    
+    # Apply context-aware modifications
+    event = apply_all_context(event, context)
     
     # Add floor-specific complications
     if floor_num == 1:
@@ -1232,13 +251,24 @@ def generate_complication_event(floor_num, floor_data, party_level):
     
     return event
 
-def generate_dilemma_event(floor_num, floor_data, party_level):
+def generate_dilemma_event(floor_num, floor_data, party_level, context=None):
     """Generate a DILEMMA event (46-65)"""
-    template = random.choice(DILEMMA_TEMPLATES)
+    from event_context import EventContext
+    from template_selector import select_template
+    from context_description import apply_all_context
+    
+    if context is None:
+        context = EventContext()
+    
+    # Select template based on context
+    template = select_template(DILEMMA_TEMPLATES, context)
     
     event = template.copy()
     event['floor'] = floor_num
     event['floor_name'] = floor_data['name']
+    
+    # Apply context-aware modifications
+    event = apply_all_context(event, context)
     
     # Add floor-specific context
     if floor_num <= 3:
@@ -1251,18 +281,105 @@ def generate_dilemma_event(floor_num, floor_data, party_level):
     return event
 
 
-def generate_active_threat_event(floor_num, floor_data, party_level):
+def generate_active_threat_event(floor_num, floor_data, party_level, context=None):
     """Generate an ACTIVE THREAT event (66-85)"""
-    template = random.choice(ACTIVE_THREAT_TEMPLATES)
+    from event_context import EventContext
+    from template_selector import select_template
+    from context_description import apply_all_context
+    
+    if context is None:
+        context = EventContext()
+    
+    # Select template based on context
+    template = select_template(ACTIVE_THREAT_TEMPLATES, context)
     
     event = template.copy()
     event['floor'] = floor_num
     event['floor_name'] = floor_data['name']
     
+    # Apply context-aware modifications
+    event = apply_all_context(event, context)
+    
     # Add urgency
     event['urgency'] = "IMMEDIATE ACTION REQUIRED! No time to discuss!"
     
     return event
+
+def generate_extreme_combat_event(floor_num, floor_data, party_level, creatures, dice_sum):
+    """
+    Generate an EXTREME combat encounter for extreme rolls (5-15, 90-100).
+    These encounters use creatures at dungeon floor level, making them very dangerous.
+    """
+    # Extreme encounters always use floor level
+    target_level = floor_num
+    difficulty = "EXTREME (Floor Level)"
+    difficulty_note = f"💀 EXTREME ROLL ({dice_sum})! Creatures at floor level {floor_num}!"
+    
+    # Get creatures at floor level
+    level_creatures = [c for c in creatures if c['level'] == target_level]
+    
+    # Filter for valid creatures
+    def is_valid_creature(creature):
+        name = creature.get('name', '')
+        rarity = creature.get('rarity', 'common').lower()
+        
+        if rarity not in ['common', 'uncommon']:
+            return False
+        if len(name) < 3:
+            return False
+        if 'Pathfinder #' in name or ' pg. ' in name or 'Monster Core' in name or 'Bestiary' in name:
+            return False
+        if ',' in name:
+            return False
+        return True
+    
+    level_creatures = [c for c in level_creatures if is_valid_creature(c)]
+    
+    if not level_creatures:
+        # Fallback if no creatures at floor level
+        level_creatures = [c for c in creatures if c['level'] == max(1, party_level)]
+    
+    # Select creatures
+    num_creatures = random.choice([1, 2, 2, 3])  # Weighted toward 2
+    selected_creatures = random.sample(level_creatures, min(num_creatures, len(level_creatures)))
+    
+    creature_names = [c['name'] for c in selected_creatures]
+    
+    # Generate ecology based on floor
+    floor_name = floor_data.get('name', f'Floor {floor_num}')
+    floor_theme = floor_data.get('theme', 'Unknown')
+    
+    ecology_options = [
+        f"These creatures are native to {floor_name}. They know the terrain and use it to their advantage.",
+        f"Drawn by the {floor_theme.lower()}, these creatures are at home in this environment.",
+        f"These are the dominant predators of {floor_name}, perfectly adapted to this floor.",
+        f"Ancient guardians of {floor_name}, these creatures have claimed this territory."
+    ]
+    
+    tactical_options = [
+        "Use terrain to your advantage - look for chokepoints or cover",
+        "Consider retreating to a more favorable position",
+        "Focus fire on one enemy at a time to reduce their action economy",
+        "Use buffs and debuffs - every bonus counts in a deadly fight",
+        "Coordinate attacks for flanking bonuses"
+    ]
+    
+    return {
+        'title': f"EXTREME ENCOUNTER: {', '.join(creature_names)}",
+        'description': f"An extremely dangerous encounter! {num_creatures} powerful creature(s) at floor level {floor_num}.",
+        'difficulty': difficulty,
+        'difficulty_note': difficulty_note,
+        'ecology': random.choice(ecology_options),
+        'creatures': creature_names,
+        'num_creatures': num_creatures,
+        'creature_level': target_level,
+        'tactical_option': random.choice(tactical_options),
+        'avoidable': False,  # Extreme encounters are not avoidable
+        'surprise_available': dice_sum <= 15,  # Low extreme rolls can surprise
+        'gm_notes': f"EXTREME encounter at floor level. This is a deadly fight. Consider allowing creative solutions or retreat options.",
+        'dice_sum': dice_sum,
+        'floor': floor_num
+    }
 
 def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_sum=86):
     """Generate a COMBAT encounter (86-100) with dungeon ecology
@@ -1427,9 +544,11 @@ def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_su
     # Select ecology type
     ecology_type = random.choice(COMBAT_ECOLOGY_TYPES)
     
-    # Select 1-3 creatures
+    # Select 1-3 creatures of the SAME type
     num_creatures = random.randint(1, 3)
-    selected_creatures = random.sample(floor_creatures, min(num_creatures, len(floor_creatures)))
+    # Pick one creature type and use it multiple times
+    selected_creature = random.choice(floor_creatures)
+    selected_creatures = [selected_creature]  # Only one type for consistency
     
     # Build encounter based on ecology
     if ecology_type == "feeding":
@@ -1570,23 +689,51 @@ def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_su
     return event
 
 
-def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatures):
-    """Generate appropriate event based on dice sum"""
-    category = get_category_from_sum(dice_sum)
+def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatures, context=None):
+    """Generate appropriate event based on dice sum with optional context"""
+    from event_context import EventContext
     
-    if category == "OPPORTUNITY":
-        event = generate_opportunity_event(floor_num, floor_data, party_level)
+    # Use default context if none provided (backward compatibility)
+    if context is None:
+        context = EventContext()
+    
+    # Validate context
+    context.validate()
+    
+    # Check if this is an extreme roll
+    is_extreme = dice_sum <= 15 or dice_sum >= 90
+    
+    # Get category (with extreme flag and no-event mechanic)
+    category = get_category_from_sum(dice_sum, is_extreme)
+    
+    # Handle NO_EVENT
+    if category == "NO_EVENT":
+        return {
+            'title': 'Quiet Passage',
+            'description': 'The dungeon is quiet. Nothing of note occurs as you continue exploring.',
+            'category': 'NO_EVENT',
+            'sum': dice_sum,
+            'gm_notes': 'No encounter this turn. Continue exploration.'
+        }
+    
+    # For extreme rolls, generate combat at dungeon floor level
+    if is_extreme and category == "COMBAT":
+        event = generate_extreme_combat_event(floor_num, floor_data, party_level, creatures, dice_sum)
+    elif category == "OPPORTUNITY":
+        event = generate_opportunity_event(floor_num, floor_data, party_level, context)
     elif category == "COMPLICATION":
-        event = generate_complication_event(floor_num, floor_data, party_level)
+        event = generate_complication_event(floor_num, floor_data, party_level, context)
     elif category == "DILEMMA":
-        event = generate_dilemma_event(floor_num, floor_data, party_level)
+        event = generate_dilemma_event(floor_num, floor_data, party_level, context)
     elif category == "ACTIVE_THREAT":
-        event = generate_active_threat_event(floor_num, floor_data, party_level)
-    else:  # COMBAT
+        event = generate_active_threat_event(floor_num, floor_data, party_level, context)
+    else:  # COMBAT (non-extreme)
         event = generate_combat_event(floor_num, floor_data, party_level, creatures, dice_sum)
     
     event['sum'] = dice_sum
     event['category'] = category
+    if is_extreme:
+        event['is_extreme'] = True
     
     return event
 
@@ -1668,8 +815,13 @@ def format_event_markdown(event):
     return "\n".join(lines)
 
 
-def generate_all_encounters(party_level, max_floor, output_file):
-    """Generate comprehensive encounter table for all floors"""
+def generate_all_encounters(party_level, max_floor, output_file, context=None):
+    """Generate comprehensive encounter table for all floors with optional context"""
+    from event_context import EventContext
+    
+    # Use default context if none provided
+    if context is None:
+        context = EventContext()
     
     print(f"=" * 80)
     print(f"DUNGEON TURN GENERATOR V2 - THE FUN VERSION")
@@ -1677,6 +829,12 @@ def generate_all_encounters(party_level, max_floor, output_file):
     print(f"Party Level: {party_level}")
     print(f"Floors: 1-{max_floor}")
     print(f"Total Events: {96 * max_floor} (96 sums per floor)")
+    print(f"")
+    print(f"Context Settings:")
+    print(f"  Space Type: {context.space_type}")
+    print(f"  Recent Combat: {context.recent_combat}")
+    print(f"  New Area: {context.new_area}")
+    print(f"  Party Status: {context.party_status}")
     print(f"")
     print(f"New Probability Distribution:")
     print(f"  5-25:  OPPORTUNITIES (21 sums, ~22%)")
@@ -1761,7 +919,7 @@ def generate_all_encounters(party_level, max_floor, output_file):
         
         # Generate all 96 possible sums (5-100)
         for dice_sum in range(5, 101):
-            event = generate_event_for_sum(dice_sum, floor, level_data, party_level, creatures)
+            event = generate_event_for_sum(dice_sum, floor, level_data, party_level, creatures, context)
             lines.append(format_event_markdown(event))
         
         print(f"  [OK] Generated 96 events for Floor {floor}")
@@ -1786,18 +944,40 @@ def generate_all_encounters(party_level, max_floor, output_file):
 def main():
     """Main function"""
     import argparse
+    from event_context import EventContext
     
     parser = argparse.ArgumentParser(description='Generate Dungeon Turn Encounters V2')
     parser.add_argument('--level', type=int, default=4, help='Party level (default: 4)')
     parser.add_argument('--floors', type=int, default=3, help='Number of floors to generate (1 to X)')
     parser.add_argument('--output', type=str, default='gm/dungeon_turn_encounters_v2.md', help='Output file path')
     
+    # Context parameters
+    parser.add_argument('--space-type', type=str, default='unknown',
+                       choices=['hallway', 'large_room', 'small_room', 'outside', 'vertical_space', 'water', 'unknown'],
+                       help='Type of space for event generation (default: unknown)')
+    parser.add_argument('--recent-combat', action='store_true',
+                       help='Party just finished combat')
+    parser.add_argument('--new-area', action='store_true', default=True,
+                       help='Party is in unfamiliar area (default: True)')
+    parser.add_argument('--party-status', type=str, default='healthy',
+                       choices=['healthy', 'injured', 'low_resources'],
+                       help='Current party condition (default: healthy)')
+    
     args = parser.parse_args()
+    
+    # Create context from arguments
+    context = EventContext(
+        space_type=args.space_type,
+        recent_combat=args.recent_combat,
+        new_area=args.new_area,
+        party_status=args.party_status
+    )
     
     generate_all_encounters(
         party_level=args.level,
         max_floor=args.floors,
-        output_file=args.output
+        output_file=args.output,
+        context=context
     )
 
 if __name__ == "__main__":

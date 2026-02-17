@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otari Market Square - Player View</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        }
+        .merchant-card {
+            transition: all 0.3s ease;
+        }
+        .merchant-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        #bg-art {
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-white p-4 relative overflow-x-hidden">
+    <!-- Background Art Overlay - Rotating Wayne Reynolds Art -->
+    <div id="bg-art" class="fixed inset-0 opacity-20 pointer-events-none bg-cover bg-center bg-no-repeat" style="filter: blur(2px);"></div>
+    
+    <div class="container mx-auto max-w-7xl relative z-10">
+        <!-- Header -->
+        <div class="mb-6">
+            <a href="/" class="inline-flex items-center gap-2 bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition text-white mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Back to Main Menu
+            </a>
+            <div>
+                <h1 class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+                    Otari Market Square
+                </h1>
+                <p class="text-gray-400 mt-1">Welcome to the bustling town of Otari!</p>
+            </div>
+        </div>
+
+        <!-- Town Map -->
+        <div class="bg-gray-800 rounded-lg p-6 mb-6 shadow-2xl border border-blue-500">
+            <h2 class="text-2xl font-bold mb-4">Town Map</h2>
+            <div class="flex justify-center">
+                <img src="/static/otari.webp" alt="Otari Town Map" class="rounded-lg max-w-full h-auto shadow-lg">
+            </div>
+            <p class="text-center text-gray-400 mt-4 text-sm">Click on a merchant below to view their shop</p>
+        </div>
+
+        <!-- Merchant Selector -->
+        <div class="bg-gray-800 rounded-lg p-6 mb-6 shadow-2xl border border-blue-500">
+            <h2 class="text-2xl font-bold mb-4">Visit a Merchant</h2>
+            <select id="merchant-select" onchange="loadMerchant()" 
+                    class="w-full bg-gray-700 text-white px-4 py-3 rounded-lg border-2 border-blue-500 focus:border-purple-500 focus:outline-none text-lg">
+                <option value="">-- Select a merchant or location --</option>
+                <optgroup label="Magical & Specialty Shops">
+                    <option value="wrins_wonders">🔮 Wrin's Wonders - Magical Items & Scrolls</option>
+                    <option value="odd_stories">📚 Odd Stories - Bookshop & Scrolls</option>
+                    <option value="dawnflower_library">⛪ Dawnflower Library - Temple & Religious Texts</option>
+                </optgroup>
+                <optgroup label="General Goods">
+                    <option value="otari_market">🏪 Otari Market - Large Open-Air Market</option>
+                    <option value="blades_for_glades">⚔️ Blades for Glades - Weapons & Armor</option>
+                </optgroup>
+                <optgroup label="Taverns & Food">
+                    <option value="crows_casks">🍵 Crow's Casks - Tea, Oils & Potions</option>
+                    <option value="crooks_nook">🍺 Crook's Nook - Seedy Tavern</option>
+                    <option value="the_rowdy_rockfish">🐟 The Rowdy Rockfish - Lively Tavern</option>
+                    <option value="otari_fishery">🎣 Otari Fishery - Fresh Fish</option>
+                </optgroup>
+                <optgroup label="Services">
+                    <option value="gallentine_deliveries">📦 Gallentine Deliveries - Courier Service</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <!-- Merchant Display -->
+        <div id="merchant-display" class="hidden bg-gray-800 rounded-lg p-6 shadow-2xl border border-blue-500">
+            <div class="flex justify-between items-center mb-4">
+                <h2 id="merchant-title" class="text-3xl font-bold"></h2>
+                <button onclick="closeMerchant()" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition">
+                    Close
+                </button>
+            </div>
+            <div id="merchant-content" class="prose prose-invert max-w-none">
+                <!-- Merchant content will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="grid md:grid-cols-3 gap-4 mt-6">
+            <div class="merchant-card bg-gray-800 rounded-lg p-4 shadow-lg border border-gray-700">
+                <h3 class="text-lg font-bold mb-2">📖 Exploration Guide</h3>
+                <p class="text-sm text-gray-400 mb-3">Learn about dungeon exploration</p>
+                <button onclick="loadDocument('DUNGEON_EXPLORATION_GUIDE')" 
+                        class="w-full bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded transition text-sm">
+                    View Guide
+                </button>
+            </div>
+
+            <div class="merchant-card bg-gray-800 rounded-lg p-4 shadow-lg border border-gray-700">
+                <h3 class="text-lg font-bold mb-2">🏪 Merchant Info</h3>
+                <p class="text-sm text-gray-400 mb-3">About Otari's merchants</p>
+                <button onclick="loadDocument('OTARI_MERCHANTS')" 
+                        class="w-full bg-green-600 hover:bg-green-700 px-3 py-2 rounded transition text-sm">
+                    View Info
+                </button>
+            </div>
+
+            <div class="merchant-card bg-gray-800 rounded-lg p-4 shadow-lg border border-gray-700">
+                <h3 class="text-lg font-bold mb-2">🗺️ Campaign Info</h3>
+                <p class="text-sm text-gray-400 mb-3">Abomination Vaults details</p>
+                <button onclick="alert('Campaign info coming soon!')" 
+                        class="w-full bg-purple-600 hover:bg-purple-700 px-3 py-2 rounded transition text-sm">
+                    View Info
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Wayne Reynolds art rotation
+        const wrArt = [
+            '/static/art/wr_goblin.jpg',
+            '/static/art/wr_dragon.jpg',
+            '/static/art/wr_dungeon.jpg',
+            '/static/art/wr_combat.jpg',
+            '/static/art/wr_monster.jpg'
+        ];
+        
+        function rotateArt() {
+            const randomArt = wrArt[Math.floor(Math.random() * wrArt.length)];
+            const bgArt = document.getElementById('bg-art');
+            bgArt.style.backgroundImage = `url('${randomArt}')`;
+        }
+        
+        // Rotate art on load and every 30 seconds
+        rotateArt();
+        setInterval(rotateArt, 30000);
+
+        async function loadMerchant() {
+            const select = document.getElementById('merchant-select');
+            const merchantFile = select.value;
+            
+            if (!merchantFile) {
+                document.getElementById('merchant-display').classList.add('hidden');
+                return;
+            }
+
+            const display = document.getElementById('merchant-display');
+            const title = document.getElementById('merchant-title');
+            const content = document.getElementById('merchant-content');
+
+            // Show loading
+            display.classList.remove('hidden');
+            title.textContent = 'Loading...';
+            content.innerHTML = '<p class="text-center text-gray-400">Loading merchant information...</p>';
+
+            try {
+                const response = await fetch(`/api/merchant/${merchantFile}`);
+                const data = await response.json();
+
+                title.textContent = data.title;
+                content.innerHTML = data.html;
+
+                // Scroll to display
+                display.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } catch (error) {
+                content.innerHTML = '<p class="text-red-400">Error loading merchant information</p>';
+            }
+        }
+
+        function closeMerchant() {
+            document.getElementById('merchant-display').classList.add('hidden');
+            document.getElementById('merchant-select').value = '';
+        }
+
+        async function loadDocument(docName) {
+            const display = document.getElementById('merchant-display');
+            const title = document.getElementById('merchant-title');
+            const content = document.getElementById('merchant-content');
+
+            display.classList.remove('hidden');
+            title.textContent = 'Loading...';
+            content.innerHTML = '<p class="text-center text-gray-400">Loading document...</p>';
+
+            try {
+                const response = await fetch(`/api/document/${docName}`);
+                const data = await response.json();
+
+                title.textContent = data.title;
+                content.innerHTML = data.html;
+
+                display.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } catch (error) {
+                content.innerHTML = '<p class="text-red-400">Error loading document</p>';
+            }
+        }
+    </script>
+</body>
+</html>

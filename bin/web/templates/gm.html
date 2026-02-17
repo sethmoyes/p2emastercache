@@ -28,9 +28,19 @@
 </head>
 <body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen text-white relative overflow-x-hidden">
     <!-- Background Art Overlay - Rotating Wayne Reynolds Art -->
-    <div id="bg-art" class="fixed inset-0 opacity-10 pointer-events-none bg-cover bg-center bg-no-repeat" style="filter: blur(2px);"></div>
+    <div id="bg-art" class="fixed inset-0 opacity-30 pointer-events-none bg-cover bg-center bg-no-repeat" style="filter: blur(2px); background-image: url('https://www.waynereynolds.com/images/fantasy-art-gallery-1/pathfinder-goblins-wayne-reynolds.jpg');"></div>
     
     <div class="container mx-auto px-4 py-8 max-w-6xl relative z-10">
+        
+        <!-- Back Button -->
+        <div class="mb-4">
+            <a href="/" class="inline-flex items-center gap-2 bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Back to Main Menu
+            </a>
+        </div>
         
         <!-- Header -->
         <div class="text-center mb-8">
@@ -97,12 +107,57 @@
                 <p class="text-gray-400 text-xs mb-2 text-center">Or enter total manually:</p>
                 <input type="number" id="dice-input" min="5" max="100" 
                     class="w-full bg-gray-700 text-white text-3xl font-bold py-4 px-4 rounded-lg mb-4 text-center border-2 border-purple-500 focus:border-pink-500 focus:outline-none"
-                    placeholder="5-100">
+                    placeholder="5-100"
+                    title="Enter the sum of 5d20 (between 5 and 100). Extreme rolls (5-8, 97-100) trigger wild events!">
                 <button onclick="getDiceEncounter()" id="get-encounter-btn" 
                     class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-4 rounded-lg text-xl transition transform hover:scale-105 shadow-lg">
                     🎲 GET ENCOUNTER
                 </button>
                 <p class="text-center mt-2 text-xs text-gray-500">Extreme rolls (5-8, 97-100) are WILD!</p>
+            </div>
+        </div>
+
+        <!-- Context Controls -->
+        <div class="bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500 mb-6">
+            <h2 class="text-2xl font-bold mb-4">Situation Context</h2>
+            <p class="text-gray-400 text-sm mb-4">Set context for more appropriate events:</p>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                <!-- Space Type -->
+                <div>
+                    <label class="block text-sm font-bold mb-2">Space Type</label>
+                    <select id="space-type" class="w-full bg-gray-700 text-white px-3 py-2 rounded border border-purple-500 focus:border-pink-500 focus:outline-none">
+                        <option value="unknown">Unknown</option>
+                        <option value="hallway">Hallway</option>
+                        <option value="large_room">Large Room</option>
+                        <option value="small_room">Small Room</option>
+                        <option value="outside">Outside</option>
+                        <option value="vertical_space">Vertical Space</option>
+                        <option value="water">Water/Underwater</option>
+                    </select>
+                </div>
+
+                <!-- Party Status -->
+                <div>
+                    <label class="block text-sm font-bold mb-2">Party Status</label>
+                    <select id="party-status" class="w-full bg-gray-700 text-white px-3 py-2 rounded border border-purple-500 focus:border-pink-500 focus:outline-none">
+                        <option value="healthy">Healthy</option>
+                        <option value="injured">Injured</option>
+                        <option value="low_resources">Low Resources</option>
+                    </select>
+                </div>
+
+                <!-- Recent Combat -->
+                <div class="flex items-center">
+                    <input type="checkbox" id="recent-combat" class="w-5 h-5 bg-gray-700 border-purple-500 rounded focus:ring-purple-500">
+                    <label for="recent-combat" class="ml-2 text-sm font-bold">Recent Combat</label>
+                </div>
+
+                <!-- New Area -->
+                <div class="flex items-center">
+                    <input type="checkbox" id="new-area" checked class="w-5 h-5 bg-gray-700 border-purple-500 rounded focus:ring-purple-500">
+                    <label for="new-area" class="ml-2 text-sm font-bold">New/Unfamiliar Area</label>
+                </div>
             </div>
         </div>
 
@@ -113,7 +168,13 @@
 
         <!-- Other Generators -->
         <div class="bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Other Generators</h2>
+            <button onclick="toggleGenerators()" class="w-full flex justify-between items-center mb-4 hover:bg-gray-700 p-2 rounded transition">
+                <h2 class="text-2xl font-bold">Other Generators</h2>
+                <svg id="generators-arrow" class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            <div id="generators-content" class="hidden">
             <div class="grid md:grid-cols-3 gap-4">
                 
                 <!-- NPC Generator -->
@@ -129,8 +190,12 @@
                 <div class="bg-gray-700 p-4 rounded-lg">
                     <h3 class="text-lg font-bold mb-2">🏪 Generate Merchant</h3>
                     <p class="text-sm text-gray-400 mb-3">Create a merchant with inventory</p>
-                    <input type="text" id="merchant-name" placeholder="Merchant Name" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
-                    <input type="number" id="merchant-level" placeholder="Level (1-20)" min="1" max="20" value="4" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
+                    <input type="text" id="merchant-name" placeholder="Merchant Name" 
+                        class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
+                        title="Enter a name for the merchant (leave blank for random)">
+                    <input type="number" id="merchant-level" placeholder="Level (1-20)" min="1" max="20" value="4" 
+                        class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
+                        title="Party level determines max item level (party level + 2)">
                     <button onclick="generateMerchant()" class="w-full bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition font-bold">
                         Generate Merchant
                     </button>
@@ -140,7 +205,9 @@
                 <div class="bg-gray-700 p-4 rounded-lg">
                     <h3 class="text-lg font-bold mb-2">🎲 4d20 Encounter</h3>
                     <p class="text-sm text-gray-400 mb-3">Fogfen/Otari wilderness encounters</p>
-                    <input type="number" id="encounter-4d20" placeholder="4d20 Total (4-80)" min="4" max="80" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
+                    <input type="number" id="encounter-4d20" placeholder="4d20 Total (4-80)" min="4" max="80" 
+                        class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
+                        title="Enter the sum of 4d20 (between 4 and 80) for wilderness encounters">
                     <button onclick="generate4d20Encounter()" class="w-full bg-yellow-600 hover:bg-yellow-700 px-4 py-2 rounded-lg transition font-bold">
                         Generate Encounter
                     </button>
@@ -150,7 +217,8 @@
                 <div class="bg-gray-700 p-4 rounded-lg">
                     <h3 class="text-lg font-bold mb-2">🎲 Dungeon Turn V1</h3>
                     <p class="text-sm text-gray-400 mb-3">Original dungeon turn system</p>
-                    <select id="v1-floor" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
+                    <select id="v1-floor" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
+                        title="Select which floor of Gauntlight to generate an encounter for">
                         <option value="1">Floor 1</option>
                         <option value="2">Floor 2</option>
                         <option value="3">Floor 3</option>
@@ -166,7 +234,8 @@
                 <div class="bg-gray-700 p-4 rounded-lg">
                     <h3 class="text-lg font-bold mb-2">📚 Documentation</h3>
                     <p class="text-sm text-gray-400 mb-3">View guides and references</p>
-                    <select id="doc-select" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
+                    <select id="doc-select" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
+                        title="Select a document to view">
                         <option value="">Select a document...</option>
                         <option value="docs/EXTREME_ENCOUNTERS.md">Extreme Encounters Guide</option>
                         <option value="docs/DUNGEON_TURN_REDESIGN.md">Dungeon Turn Design</option>
@@ -182,12 +251,116 @@
                 <div class="bg-gray-700 p-4 rounded-lg">
                     <h3 class="text-lg font-bold mb-2">⚠️ Generate Hazard</h3>
                     <p class="text-sm text-gray-400 mb-3">Random trap or environmental hazard</p>
-                    <input type="number" id="hazard-level" placeholder="Hazard Level (-1 to 10)" min="-1" max="10" value="1" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm">
+                    <input type="number" id="hazard-level" placeholder="Hazard Level (-1 to 10)" min="-1" max="10" value="1" 
+                        class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
+                        title="Hazard level (-1 for trivial, 0-10 for standard hazards)">
                     <button onclick="generateHazard()" class="w-full bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition font-bold">
                         Generate Hazard
                     </button>
                 </div>
 
+                <!-- ALL Merchants Generator -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">🏪 Generate ALL Merchants</h3>
+                    <p class="text-sm text-gray-400 mb-3">Regenerate all Otari merchants with inventory</p>
+                    <input type="number" id="all-merchants-level" placeholder="Party Level (1-20)" min="1" max="20" value="4" 
+                        class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
+                        title="Party level determines max item level for all merchants (party level + 2)">
+                    <button onclick="generateAllMerchants()" id="generate-all-merchants-btn" class="w-full bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-lg transition font-bold">
+                        Generate All Merchants
+                    </button>
+                    <div id="merchant-progress" class="hidden mt-3">
+                        <div class="w-full bg-gray-600 rounded-full h-4 mb-2">
+                            <div id="merchant-progress-bar" class="bg-indigo-600 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
+                        </div>
+                        <p id="merchant-status" class="text-xs text-gray-400 text-center">Starting...</p>
+                    </div>
+                </div>
+
+                <!-- Data Integrity Checker -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">🔍 Check Data Integrity</h3>
+                    <p class="text-sm text-gray-400 mb-3">Verify equipment/creatures against AoN</p>
+                    <select id="integrity-type" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
+                        title="Select which type of data to verify against Archives of Nethys">
+                        <option value="equipment">Equipment</option>
+                        <option value="creatures">Creatures</option>
+                        <option value="deities">Deities</option>
+                    </select>
+                    <input type="number" id="integrity-count" placeholder="Items to check (or 'all')" min="1" value="10" 
+                        class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
+                        title="Number of random items to check (use 'all' to check everything - takes a long time!)">
+                    <label class="flex items-center text-sm mb-2" title="Automatically update mismatched items with correct data from AoN">
+                        <input type="checkbox" id="integrity-fix" class="mr-2">
+                        Auto-fix mismatches
+                    </label>
+                    <button onclick="runDataIntegrity()" id="integrity-btn" class="w-full bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-lg transition font-bold">
+                        Check Data
+                    </button>
+                    <p id="integrity-status" class="text-xs text-gray-400 mt-2 hidden"></p>
+                </div>
+
+                <!-- Scrape Creatures -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">🕷️ Scrape Creatures</h3>
+                    <p class="text-sm text-gray-400 mb-3">Update creature database from AoN</p>
+                    <button onclick="scrapeCreatures()" id="scrape-creatures-btn" class="w-full bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-lg transition font-bold"
+                        title="Scrapes ALL creatures from Archives of Nethys - takes several minutes">
+                        Scrape All Creatures
+                    </button>
+                    <p id="scrape-creatures-status" class="text-xs text-gray-400 mt-2 hidden"></p>
+                </div>
+
+                <!-- Scrape Creature Lore -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">📖 Scrape Creature Lore</h3>
+                    <p class="text-sm text-gray-400 mb-3">Update creature lore from AoN</p>
+                    <button onclick="scrapeCreatureLore()" id="scrape-lore-btn" class="w-full bg-amber-600 hover:bg-amber-700 px-4 py-2 rounded-lg transition font-bold"
+                        title="Scrapes creature lore and descriptions from Archives of Nethys">
+                        Scrape Lore
+                    </button>
+                    <p id="scrape-lore-status" class="text-xs text-gray-400 mt-2 hidden"></p>
+                </div>
+
+                <!-- Scrape Spells -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">✨ Scrape Spells</h3>
+                    <p class="text-sm text-gray-400 mb-3">Update spell database from AoN</p>
+                    <button onclick="scrapeSpells()" id="scrape-spells-btn" class="w-full bg-violet-600 hover:bg-violet-700 px-4 py-2 rounded-lg transition font-bold"
+                        title="Scrapes ALL spells from Archives of Nethys - takes several minutes">
+                        Scrape Spells
+                    </button>
+                    <p id="scrape-spells-status" class="text-xs text-gray-400 mt-2 hidden"></p>
+                </div>
+
+                <!-- Expand Encounter Pools -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">🎲 Expand Encounter Pools</h3>
+                    <p class="text-sm text-gray-400 mb-3">Generate expanded encounter pools</p>
+                    <button onclick="expandEncounterPools()" id="expand-pools-btn" class="w-full bg-lime-600 hover:bg-lime-700 px-4 py-2 rounded-lg transition font-bold"
+                        title="Expands encounter pools with additional creatures and variations">
+                        Expand Pools
+                    </button>
+                    <p id="expand-pools-status" class="text-xs text-gray-400 mt-2 hidden"></p>
+                </div>
+
+                <!-- Reset Verification Dates -->
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-2">🔄 Reset Verification</h3>
+                    <p class="text-sm text-gray-400 mb-3">Reset AoN verification dates</p>
+                    <select id="reset-type" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
+                        title="Select which data type to reset verification dates for (forces re-checking)">
+                        <option value="equipment">Equipment</option>
+                        <option value="creatures">Creatures</option>
+                        <option value="deities">Deities</option>
+                    </select>
+                    <button onclick="resetVerification()" id="reset-verify-btn" class="w-full bg-rose-600 hover:bg-rose-700 px-4 py-2 rounded-lg transition font-bold">
+                        Reset Dates
+                    </button>
+                    <p id="reset-verify-status" class="text-xs text-gray-400 mt-2 hidden"></p>
+                </div>
+
+            </div>
             </div>
         </div>
 
@@ -209,6 +382,8 @@
             </div>
         </div>
     </div>
+
+
 
     <script>
         let currentFloor = 1;
@@ -318,14 +493,30 @@
             btn.disabled = true;
             btn.textContent = '⏳ Generating...';
 
-            // Get encounter
+            // Read context parameters
+            const spaceType = document.getElementById('space-type').value;
+            const partyStatus = document.getElementById('party-status').value;
+            const recentCombat = document.getElementById('recent-combat').checked;
+            const newArea = document.getElementById('new-area').checked;
+
+            // Save context to sessionStorage for persistence
+            sessionStorage.setItem('context_space_type', spaceType);
+            sessionStorage.setItem('context_party_status', partyStatus);
+            sessionStorage.setItem('context_recent_combat', recentCombat);
+            sessionStorage.setItem('context_new_area', newArea);
+
+            // Get encounter with context
             const encounterResponse = await fetch('/api/encounter', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     floor: currentFloor,
                     sum: total,
-                    party_level: partyLevel
+                    party_level: partyLevel,
+                    space_type: spaceType,
+                    party_status: partyStatus,
+                    recent_combat: recentCombat,
+                    new_area: newArea
                 })
             });
             const encounter = await encounterResponse.json();
@@ -348,6 +539,25 @@
                     getDiceEncounter();
                 }
             });
+
+            // Restore context values from sessionStorage
+            const savedSpaceType = sessionStorage.getItem('context_space_type');
+            const savedPartyStatus = sessionStorage.getItem('context_party_status');
+            const savedRecentCombat = sessionStorage.getItem('context_recent_combat');
+            const savedNewArea = sessionStorage.getItem('context_new_area');
+
+            if (savedSpaceType) {
+                document.getElementById('space-type').value = savedSpaceType;
+            }
+            if (savedPartyStatus) {
+                document.getElementById('party-status').value = savedPartyStatus;
+            }
+            if (savedRecentCombat !== null) {
+                document.getElementById('recent-combat').checked = savedRecentCombat === 'true';
+            }
+            if (savedNewArea !== null) {
+                document.getElementById('new-area').checked = savedNewArea === 'true';
+            }
         });
 
         async function generateNPC() {
@@ -502,6 +712,98 @@
                 </div>
             `;
             output.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        async function generateAllMerchants() {
+            const level = parseInt(document.getElementById('all-merchants-level').value);
+            
+            if (isNaN(level) || level < 1 || level > 20) {
+                alert('Please enter a party level between 1 and 20');
+                return;
+            }
+            
+            const btn = document.getElementById('generate-all-merchants-btn');
+            const progressDiv = document.getElementById('merchant-progress');
+            const progressBar = document.getElementById('merchant-progress-bar');
+            const statusText = document.getElementById('merchant-status');
+            
+            // Disable button and show progress
+            btn.disabled = true;
+            btn.textContent = 'Generating...';
+            progressDiv.classList.remove('hidden');
+            progressBar.style.width = '0%';
+            statusText.textContent = 'Starting merchant generation...';
+            
+            try {
+                // Use EventSource for streaming progress
+                const eventSource = new EventSource(`/api/generate-merchants-stream?player_level=${level}`);
+                
+                let totalLines = 0;
+                let merchantCount = 0;
+                const expectedMerchants = 12; // 10 Otari merchants + 2 random
+                
+                eventSource.onmessage = function(event) {
+                    const data = JSON.parse(event.data);
+                    
+                    if (data.done) {
+                        eventSource.close();
+                        
+                        if (data.success) {
+                            progressBar.style.width = '100%';
+                            statusText.textContent = 'All merchants generated successfully!';
+                            statusText.classList.add('text-green-400');
+                            
+                            setTimeout(() => {
+                                btn.disabled = false;
+                                btn.textContent = 'Generate All Merchants';
+                                progressDiv.classList.add('hidden');
+                                statusText.classList.remove('text-green-400');
+                                alert('Merchants generated successfully! Check the players/ and gm/ directories.');
+                            }, 2000);
+                        } else {
+                            progressBar.style.width = '100%';
+                            progressBar.classList.add('bg-red-600');
+                            statusText.textContent = `Error: ${data.error}`;
+                            statusText.classList.add('text-red-400');
+                            
+                            btn.disabled = false;
+                            btn.textContent = 'Generate All Merchants';
+                        }
+                    } else if (data.line) {
+                        totalLines++;
+                        
+                        // Count merchants being generated
+                        if (data.line.includes('[MERCHANT') || data.line.includes('[RANDOM MERCHANT')) {
+                            merchantCount++;
+                            const progress = (merchantCount / expectedMerchants) * 100;
+                            progressBar.style.width = `${progress}%`;
+                        }
+                        
+                        // Update status with current line
+                        statusText.textContent = data.line;
+                        
+                        // Log to console for debugging
+                        console.log(data.line);
+                    }
+                };
+                
+                eventSource.onerror = function(error) {
+                    eventSource.close();
+                    progressBar.classList.add('bg-red-600');
+                    statusText.textContent = 'Connection error. Check console for details.';
+                    statusText.classList.add('text-red-400');
+                    btn.disabled = false;
+                    btn.textContent = 'Generate All Merchants';
+                    console.error('EventSource error:', error);
+                };
+                
+            } catch (error) {
+                progressBar.classList.add('bg-red-600');
+                statusText.textContent = `Error: ${error.message}`;
+                statusText.classList.add('text-red-400');
+                btn.disabled = false;
+                btn.textContent = 'Generate All Merchants';
+            }
         }
 
         function displayEncounter(event, diceTotal) {
@@ -703,10 +1005,15 @@
                 `;
             }
 
+
+
             html += `</div></div>`;
             display.innerHTML = html;
             display.classList.remove('hidden');
             display.scrollIntoView({ behavior: 'smooth' });
+            
+            // Store current event for tweaking
+            window.currentEvent = event;
         }
 
         async function addDie() {
@@ -798,6 +1105,290 @@
         // Initialize
         updateDiceJar(0);
         updateHistory();
+
+        // Toggle generators dropdown
+        function toggleGenerators() {
+            const content = document.getElementById('generators-content');
+            const arrow = document.getElementById('generators-arrow');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                arrow.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                arrow.classList.remove('rotate-180');
+            }
+        }
+
+        // Data Integrity Checker
+        async function runDataIntegrity() {
+            const type = document.getElementById('integrity-type').value;
+            const count = document.getElementById('integrity-count').value;
+            const fix = document.getElementById('integrity-fix').checked;
+            const btn = document.getElementById('integrity-btn');
+            const status = document.getElementById('integrity-status');
+            
+            btn.disabled = true;
+            btn.textContent = 'Checking...';
+            status.classList.remove('hidden');
+            status.textContent = 'Running data integrity check...';
+            
+            try {
+                const response = await fetch('/api/run-data-integrity', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ type, count, fix })
+                });
+                const data = await response.json();
+                
+                if (data.success) {
+                    status.textContent = 'Check complete! See output below.';
+                    status.classList.add('text-green-400');
+                    
+                    const output = document.getElementById('generator-output');
+                    output.innerHTML = `
+                        <h3 class="text-2xl font-bold mb-4">🔍 Data Integrity Check - ${type}</h3>
+                        <div class="prose prose-invert max-w-none">
+                            <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded text-sm">${data.output}</pre>
+                        </div>
+                    `;
+                    output.classList.remove('hidden');
+                    output.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    status.textContent = `Error: ${data.error || 'Check failed'}`;
+                    status.classList.add('text-red-400');
+                }
+            } catch (error) {
+                status.textContent = `Error: ${error.message}`;
+                status.classList.add('text-red-400');
+            }
+            
+            btn.disabled = false;
+            btn.textContent = 'Check Data';
+        }
+
+        // Scrape Creatures
+        async function scrapeCreatures() {
+            const btn = document.getElementById('scrape-creatures-btn');
+            const status = document.getElementById('scrape-creatures-status');
+            
+            if (!confirm('This will scrape ALL creatures from Archives of Nethys. This may take several minutes. Continue?')) {
+                return;
+            }
+            
+            btn.disabled = true;
+            btn.textContent = 'Scraping...';
+            status.classList.remove('hidden');
+            status.textContent = 'Scraping creatures from AoN...';
+            
+            try {
+                const response = await fetch('/api/scrape-creatures', { method: 'POST' });
+                const data = await response.json();
+                
+                if (data.success) {
+                    status.textContent = 'Scraping complete!';
+                    status.classList.add('text-green-400');
+                    
+                    const output = document.getElementById('generator-output');
+                    output.innerHTML = `
+                        <h3 class="text-2xl font-bold mb-4">🕷️ Creature Scraping Complete</h3>
+                        <div class="prose prose-invert max-w-none">
+                            <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded text-sm">${data.output}</pre>
+                        </div>
+                    `;
+                    output.classList.remove('hidden');
+                    output.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    status.textContent = `Error: ${data.error || 'Scraping failed'}`;
+                    status.classList.add('text-red-400');
+                }
+            } catch (error) {
+                status.textContent = `Error: ${error.message}`;
+                status.classList.add('text-red-400');
+            }
+            
+            btn.disabled = false;
+            btn.textContent = 'Scrape All Creatures';
+        }
+
+        // Scrape Creature Lore
+        async function scrapeCreatureLore() {
+            const btn = document.getElementById('scrape-lore-btn');
+            const status = document.getElementById('scrape-lore-status');
+            
+            if (!confirm('This will scrape creature lore from Archives of Nethys. This may take several minutes. Continue?')) {
+                return;
+            }
+            
+            btn.disabled = true;
+            btn.textContent = 'Scraping...';
+            status.classList.remove('hidden');
+            status.textContent = 'Scraping creature lore...';
+            
+            try {
+                const response = await fetch('/api/scrape-creature-lore', { method: 'POST' });
+                const data = await response.json();
+                
+                if (data.success) {
+                    status.textContent = 'Lore scraping complete!';
+                    status.classList.add('text-green-400');
+                    
+                    const output = document.getElementById('generator-output');
+                    output.innerHTML = `
+                        <h3 class="text-2xl font-bold mb-4">📖 Creature Lore Scraping Complete</h3>
+                        <div class="prose prose-invert max-w-none">
+                            <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded text-sm">${data.output}</pre>
+                        </div>
+                    `;
+                    output.classList.remove('hidden');
+                    output.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    status.textContent = `Error: ${data.error || 'Scraping failed'}`;
+                    status.classList.add('text-red-400');
+                }
+            } catch (error) {
+                status.textContent = `Error: ${error.message}`;
+                status.classList.add('text-red-400');
+            }
+            
+            btn.disabled = false;
+            btn.textContent = 'Scrape Lore';
+        }
+
+        // Scrape Spells
+        async function scrapeSpells() {
+            const btn = document.getElementById('scrape-spells-btn');
+            const status = document.getElementById('scrape-spells-status');
+            
+            if (!confirm('This will scrape ALL spells from Archives of Nethys. This may take several minutes. Continue?')) {
+                return;
+            }
+            
+            btn.disabled = true;
+            btn.textContent = 'Scraping...';
+            status.classList.remove('hidden');
+            status.textContent = 'Scraping spells from AoN...';
+            
+            try {
+                const response = await fetch('/api/scrape-spells', { method: 'POST' });
+                const data = await response.json();
+                
+                if (data.success) {
+                    status.textContent = 'Spell scraping complete!';
+                    status.classList.add('text-green-400');
+                    
+                    const output = document.getElementById('generator-output');
+                    output.innerHTML = `
+                        <h3 class="text-2xl font-bold mb-4">✨ Spell Scraping Complete</h3>
+                        <div class="prose prose-invert max-w-none">
+                            <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded text-sm">${data.output}</pre>
+                        </div>
+                    `;
+                    output.classList.remove('hidden');
+                    output.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    status.textContent = `Error: ${data.error || 'Scraping failed'}`;
+                    status.classList.add('text-red-400');
+                }
+            } catch (error) {
+                status.textContent = `Error: ${error.message}`;
+                status.classList.add('text-red-400');
+            }
+            
+            btn.disabled = false;
+            btn.textContent = 'Scrape Spells';
+        }
+
+        // Expand Encounter Pools
+        async function expandEncounterPools() {
+            const btn = document.getElementById('expand-pools-btn');
+            const status = document.getElementById('expand-pools-status');
+            
+            btn.disabled = true;
+            btn.textContent = 'Expanding...';
+            status.classList.remove('hidden');
+            status.textContent = 'Expanding encounter pools...';
+            
+            try {
+                const response = await fetch('/api/expand-encounter-pools', { method: 'POST' });
+                const data = await response.json();
+                
+                if (data.success) {
+                    status.textContent = 'Pools expanded!';
+                    status.classList.add('text-green-400');
+                    
+                    const output = document.getElementById('generator-output');
+                    output.innerHTML = `
+                        <h3 class="text-2xl font-bold mb-4">🎲 Encounter Pools Expanded</h3>
+                        <div class="prose prose-invert max-w-none">
+                            <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded text-sm">${data.output}</pre>
+                        </div>
+                    `;
+                    output.classList.remove('hidden');
+                    output.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    status.textContent = `Error: ${data.error || 'Expansion failed'}`;
+                    status.classList.add('text-red-400');
+                }
+            } catch (error) {
+                status.textContent = `Error: ${error.message}`;
+                status.classList.add('text-red-400');
+            }
+            
+            btn.disabled = false;
+            btn.textContent = 'Expand Pools';
+        }
+
+        // Reset Verification Dates
+        async function resetVerification() {
+            const type = document.getElementById('reset-type').value;
+            const btn = document.getElementById('reset-verify-btn');
+            const status = document.getElementById('reset-verify-status');
+            
+            if (!confirm(`Reset verification dates for ${type}? This will force re-checking all items.`)) {
+                return;
+            }
+            
+            btn.disabled = true;
+            btn.textContent = 'Resetting...';
+            status.classList.remove('hidden');
+            status.textContent = 'Resetting verification dates...';
+            
+            try {
+                const response = await fetch('/api/reset-verification', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ type })
+                });
+                const data = await response.json();
+                
+                if (data.success) {
+                    status.textContent = 'Verification dates reset!';
+                    status.classList.add('text-green-400');
+                    
+                    const output = document.getElementById('generator-output');
+                    output.innerHTML = `
+                        <h3 class="text-2xl font-bold mb-4">🔄 Verification Dates Reset - ${type}</h3>
+                        <div class="prose prose-invert max-w-none">
+                            <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded text-sm">${data.output}</pre>
+                        </div>
+                    `;
+                    output.classList.remove('hidden');
+                    output.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    status.textContent = `Error: ${data.error || 'Reset failed'}`;
+                    status.classList.add('text-red-400');
+                }
+            } catch (error) {
+                status.textContent = `Error: ${error.message}`;
+                status.classList.add('text-red-400');
+            }
+            
+            btn.disabled = false;
+            btn.textContent = 'Reset Dates';
+        }
+
+
     </script>
 </body>
 </html>

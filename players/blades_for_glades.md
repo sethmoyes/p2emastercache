@@ -20,39 +20,29 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 4 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 4 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (15)
+## Common Items (5)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Leather Armor | 0 | 2 cp (+ per square yard) | Common | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Leather%20Armor) |
-| 🖼️ | Silver Armor (Standard-Grade) | 5 | 140 gp (+14 gp per Bulk) | Common | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Silver%20Armor) |
-| 🖼️ | Unarmored | 0 | 0 gp | Common | Base Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Unarmored) |
-| 🖼️ | Sling Bullets | 5 | 155 gp | Common | Equipment | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Sling%20Bullets) |
-| 🖼️ | Splint Mail | 0 | 5 sp | Common | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Splint%20Mail) |
-| 🖼️ | Bolts | 0 | 1 sp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Bolts) |
-| 🖼️ | Cold Iron Armor (Standard-Grade) | 5 | 140 gp (+14 gp per Bulk) | Common | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
-| 🖼️ | Silver Armor (High-Grade) | 5 | 140 gp (+14 gp per Bulk) | Common | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Silver%20Armor) |
-| 🖼️ | Bolts (Phalanx Piercer) | 0 | 1 sp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Bolts) |
-| 🖼️ | Cold Iron Armor (Low-Grade) | 5 | 140 gp (+14 gp per Bulk) | Common | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
-| 🖼️ | Cold Iron Buckler (Low-Grade) | 2 | 20 gp (per Bulk) | Common | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Buckler) |
 | 🖼️ | Silver Armor (Low-Grade) | 5 | 140 gp (+14 gp per Bulk) | Common | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Silver%20Armor) |
-| 🖼️ | Studded Leather Armor | 0 | 2 cp (+ per square yard) | Common | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Studded%20Leather%20Armor) |
-| 🖼️ | Blowgun Darts | 0 | 5 cp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Blowgun%20Darts) |
-| 🖼️ | Cold Iron Armor (High-Grade) | 5 | 140 gp (+14 gp per Bulk) | Common | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
+| 🖼️ | 8-Round Magazine | 0 | 2 sp | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=) |
+| 🖼️ | Bolts | 0 | 1 sp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Bolts) |
+| 🖼️ | Heavy Crossbow | 0 | 4 gp | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Heavy%20Crossbow) |
+| 🖼️ | Sling Bullets | 0 | 1 cp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Sling%20Bullets) |
 
 ## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Spray Pellet | 3 | 12 gp | Uncommon | Equipment | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Spray%20Pellet) |
+| 🖼️ | Buckler | 3 | 50 gp | Uncommon | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Buckler) |
 
 ## Services
 

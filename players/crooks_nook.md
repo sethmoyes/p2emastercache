@@ -20,8 +20,11 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 4 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 | ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
 ---
@@ -32,16 +35,17 @@
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Cheetah's Elixir (Greater) | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cheetah%27s%20Elixir) |
-| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Common | Equipment | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| ![Comprehension Elixir (Greater)](https://2e.aonprd.com/Images/Treasure/Comprehension_Elixir.webp) | Comprehension Elixir (Greater) | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comprehension%20Elixir) |
-| ![Comprehension Elixir (Lesser)](https://2e.aonprd.com/Images/Treasure/Comprehension_Elixir.webp) | Comprehension Elixir (Lesser) | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comprehension%20Elixir) |
+| 🖼️ | Detonating Gears Snare | 3 | 12 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Detonating%20Gears%20Snare) |
+| 🖼️ | Leaper's Elixir (Lesser) | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Leaper%27s%20Elixir) |
+| 🖼️ | Cheetah's Elixir (Moderate) | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cheetah%27s%20Elixir) |
+| ![Oil of Skating](https://2e.aonprd.com/Images/Treasure/Oil_Of_Skating.webp) | Oil of Skating | 2 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oil%20of%20Skating) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Skeptic's Elixir (Moderate) | 1 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Skeptic%27s%20Elixir) |
+| 🖼️ | Blue Dragonfly Poison | 3 | 7 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blue%20Dragonfly%20Poison) |
+| 🖼️ | Moderate Defoliation Bomb | 4 | 18 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moderate%20Defoliation%20Bomb) |
 
 ## Services
 

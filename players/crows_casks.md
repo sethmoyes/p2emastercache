@@ -20,9 +20,9 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 12 gp | Restores one expended 2nd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 | ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 | ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
@@ -30,23 +30,30 @@
 
 # REGULAR ITEMS
 
-## Common Items (5)
+## Common Items (8)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Binding Coil | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Binding%20Coil) |
-| 🖼️ | Meal (Fine Dining) | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Meal) |
+| 🖼️ | Cat's Eye Elixir | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cat%27s%20Eye%20Elixir) |
+| 🖼️ | Healer's Gel (Lesser) | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Gel) |
 | ![Comprehension Elixir (Lesser)](https://2e.aonprd.com/Images/Treasure/Comprehension_Elixir.webp) | Comprehension Elixir (Lesser) | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comprehension%20Elixir) |
-| 🖼️ | Cooling Elixir (Lesser) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cooling%20Elixir) |
-| 🖼️ | Healer's Toolkit | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
+| ![Oil of Ownership (Lesser)](https://2e.aonprd.com/Images/Treasure/Oil_Of_Ownership.webp) | Oil of Ownership (Lesser) | 3 | 8 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oil%20of%20Ownership) |
+| 🖼️ | Purifying Spoon (Teaspoon) | 1 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Purifying%20Spoon) |
+| 🖼️ | Beverages (Bottle of Fine Wine) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Conflagration Club | 6 | 250 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Conflagration%20Club) |
+| 🖼️ | Anticorrosion Oil | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Anticorrosion%20Oil) |
 
-## Uncommon Items (3)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Alkenstar Ice Wine | 5 | 25 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Alkenstar%20Ice%20Wine) |
-| 🖼️ | Bane Oil | 3 | 12 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bane%20Oil) |
-| ![Covenant Tea](https://2e.aonprd.com/Images/Treasure/Covenant_Tea.webp) | Covenant Tea | 3 | 10 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Covenant%20Tea) |
+| 🖼️ | Concealed Holster | 3 | 25 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Concealed%20Holster) |
+
+## Rare Items (1)
+
+| Image | Name | Level | Price | Rarity | Category | Type | Link |
+|-------|------|-------|-------|--------|----------|------|------|
+| 🖼️ | Bitterblood Elixir | 6 | 40 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bitterblood%20Elixir) |
 
 ## Services
 

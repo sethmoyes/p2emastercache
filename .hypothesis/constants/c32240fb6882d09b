@@ -1,0 +1,4 @@
+# file: /Users/smoyes/Documents/p2emastercache/bin/generators/context_description.py
+# hypothesis_version: 6.151.8
+
+['a cramped room', 'a narrow corridor', 'a spacious chamber', 'a vertical shaft', 'description', 'hallway', 'healthy', 'injured', 'large_room', 'low_resources', 'outside', 'small_room', 'tactical_notes', 'the area', 'the flooded passage', 'the open area', 'unknown', 'vertical_space', 'water', '{combat_context}', '{space}']

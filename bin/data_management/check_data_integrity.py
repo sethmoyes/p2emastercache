@@ -48,17 +48,15 @@ def search_aon_elasticsearch(item_name, category='equipment'):
     Search Archives of Nethys using their Elasticsearch API.
     This is the official way AoN loads data - much more reliable than scraping!
     """
-    # Clean the name for search
-    clean_name = re.sub(r'\([^)]*\)', '', item_name).strip()
-    
-    # Build Elasticsearch query
+    # First try exact match with full name (including parentheses)
+    # This is important for variants like "Healing Potion (Greater)"
     query = {
         "size": 5,  # Get top 5 results
         "query": {
             "bool": {
                 "must": [
                     {"match": {"category": category}},
-                    {"match": {"name": clean_name}}
+                    {"match_phrase": {"name": item_name}}  # Use match_phrase for exact match
                 ]
             }
         }

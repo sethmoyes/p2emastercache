@@ -20,34 +20,30 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 4 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 4 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (8)
+## Common Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Staff of Elemental Power | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Elemental%20Power) |
-| 🖼️ | Wand of Reaching (4th-Rank Spell) | 4 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Reaching) |
-| 🖼️ | Repair Toolkit (Superb) | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Repair%20Toolkit) |
-| 🖼️ | Demolition Fulu (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Demolition%20Fulu) |
-| 🖼️ | Floating Camouflage Blind | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Floating%20Camouflage%20Blind) |
-| ![Torrent Spellgun (Greater)](https://2e.aonprd.com/Images/Treasure/Torrent_Spellgun.webp) | Torrent Spellgun (Greater) | 3 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Torrent%20Spellgun) |
-| 🖼️ | Thieves' Toolkit | 0 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Thieves%27%20Toolkit) |
-| 🖼️ | Messenger Missive (Multiple) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Messenger%20Missive) |
+| 🖼️ | Mask (Ordinary) | 0 | 5 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mask) |
+| 🖼️ | Wheel Spikes | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheel%20Spikes) |
+| 🖼️ | Heartening Missive (Bull) | 6 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Heartening%20Missive) |
+| 🖼️ | Obsidian Goggles | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Obsidian%20Goggles) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Glittering Snare | 4 | 18 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glittering%20Snare) |
+| 🖼️ | Flare Beacon (Lesser) | 1 | 4 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Flare%20Beacon) |
+| 🖼️ | Backpack Ballista | 1 | 18 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Backpack%20Ballista) |
 
 ## Services
 

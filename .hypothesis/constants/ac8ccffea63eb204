@@ -1,0 +1,4 @@
+# file: /Users/smoyes/Documents/p2emastercache/bin/generators/dungeon_event_tweaker/extractor.py
+# hypothesis_version: 6.151.8
+
+['ACTIVE_THREAT', 'COMBAT', 'COMPLICATION', 'DILEMMA', 'LOW', 'MODERATE', 'OPPORTUNITY', 'SEVERE', 'ambush', 'avoid', 'avoidable', 'bypass', 'deception', 'distracted', 'evade', 'hide', 'perception', 'sleeping', 'sneak', 'stealth', 'surprise', 'surprise_possible', 'unaware']

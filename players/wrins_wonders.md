@@ -20,11 +20,11 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 4 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 4 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 50 gp | Restores one expended 3rd-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
 ---
 
@@ -36,25 +36,28 @@
 
 *Study time: 1 hour (common), 5 hours (uncommon), 1 day (rare).*
 
-## Common Spell Scrolls (6)
+## Common Spell Scrolls (8)
 
 | Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |
 |------------|-------|-------|-------|------------|------|-------|--------|------|
-| SCROLL OF BLASTBACK | 3 | 16 gp | 20 | Arcane, Primal | Unknown | Unknown | Air, Concentrate | [View](https://2e.aonprd.com/Spells.aspx?ID=1312) |
-| SCROLL OF GRIM TENDRILS | 1 | 2 gp | 15 | Arcane, Occult | Unknown | Unknown | Concentrate, Manipulate, Void | [View](https://2e.aonprd.com/Spells.aspx?ID=1548) |
-| SCROLL OF HYPNOTIZE | 3 | 16 gp | 20 | Arcane, Occult | Unknown | 120 | Illusion, Manipulate, Subtle | [View](https://2e.aonprd.com/Spells.aspx?ID=1564) |
-| SCROLL OF DAY'S WEIGHT | 3 | 16 gp | 20 | Arcane, Occult, Primal | Unknown | 120 | Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=891) |
-| SCROLL OF INVISIBLE ITEM | 1 | 2 gp | 15 | Arcane, Occult | Unknown | 0 | Illusion | [View](https://2e.aonprd.com/Spells.aspx?ID=700) |
-| SCROLL OF LIFE-DRAINING ROOTS | 4 | 36 gp | 23 | Arcane, Primal | Unknown | Unknown | Concentrate, Manipulate, Plant | [View](https://2e.aonprd.com/Spells.aspx?ID=1403) |
+| SCROLL OF INVISIBILITY SPHERE | 3 | 16 gp | 20 | Arcane, Occult | Unknown | Unknown | Illusion | [View](https://2e.aonprd.com/Spells.aspx?ID=165) |
+| SCROLL OF BESTIAL CURSE | 4 | 36 gp | 23 | Arcane, Occult, Primal | Unknown | 0 | Curse, Polymorph, Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=670) |
+| SCROLL OF HORIZON THUNDER SPHERE | 1 | 2 gp | 15 | Arcane, Primal | Unknown | Unknown | Attack, Electricity, Evocation | [View](https://2e.aonprd.com/Spells.aspx?ID=927) |
+| SCROLL OF CURSE OF RECOIL | 1 | 2 gp | 15 | Divine, Occult | Unknown | 120 | Concentrate, Curse | [View](https://2e.aonprd.com/Spells.aspx?ID=2498) |
+| SCROLL OF PROPULSIVE BREEZE | 2 | 6 gp | 18 | Arcane, Primal | Unknown | 60 | Air, Manipulate, Move | [View](https://2e.aonprd.com/Spells.aspx?ID=1319) |
+| SCROLL OF ENFEEBLE | 1 | 2 gp | 15 | Arcane, Divine, Occult | Unknown | 30 | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1513) |
+| SCROLL OF SEA OF THOUGHT | 3 | 16 gp | 20 | Arcane, Occult | Unknown | 60 | Conjuration | [View](https://2e.aonprd.com/Spells.aspx?ID=1162) |
+| SCROLL OF PUMMELING RUBBLE | 1 | 2 gp | 15 | Arcane, Primal | Unknown | Unknown | Earth, Evocation | [View](https://2e.aonprd.com/Spells.aspx?ID=708) |
 
-## Uncommon Spell Scrolls (4)
+## Uncommon Spell Scrolls (5)
 
 | Spell Name | Level | Price | DC | Traditions | Cast | Range | Traits | Link |
 |------------|-------|-------|-------|------------|------|-------|--------|------|
-| SCROLL OF MANIFESTATION OF SPIRITS | 2 | 6 gp | 18 | Divine, Primal | Unknown | 30 | Concentrate, Manipulate, Mental | [View](https://2e.aonprd.com/Spells.aspx?ID=2469) |
-| SCROLL OF SWARMING WASP STINGS | 4 | 36 gp | 23 | Arcane, Primal | Unknown | 30 | Necromancy, Poison, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=829) |
-| SCROLL OF VEIL OF SPIRITS | 2 | 6 gp | 18 | Arcane, Divine, Occult | Unknown | 120 | Concentrate, Manipulate, Spirit | [View](https://2e.aonprd.com/Spells.aspx?ID=2474) |
-| SCROLL OF CORDYCEPS COMMAND | 3 | 16 gp | 20 | Primal | Unknown | 30 | Concentrate, Fungus, Incapacitation | [View](https://2e.aonprd.com/Spells.aspx?ID=2446) |
+| SCROLL OF RADIANT GLOBE | 3 | 16 gp | 20 | Arcane, Divine | Unknown | 120 | Concentrate, Light, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=2464) |
+| SCROLL OF BRALANI REFERENDUM | 2 | 6 gp | 18 | Divine, Primal | Unknown | 60 | Air, Evocation, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1219) |
+| SCROLL OF MODIFY MEMORY | 4 | 36 gp | 23 | Occult | Unknown | 30 | Divination, Mental, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=200) |
+| SCROLL OF MOONLIGHT RAY | 3 | 16 gp | 20 | Divine, Primal | Unknown | 120 | Attack, Cold, Evocation | [View](https://2e.aonprd.com/Spells.aspx?ID=1082) |
+| SCROLL OF FAVORABLE REVIEW | 4 | 36 gp | 23 | Arcane, Occult | Unknown | Unknown | Enchantment, Incapacitation, Mental | [View](https://2e.aonprd.com/Spells.aspx?ID=644) |
 
 ---
 
@@ -87,31 +90,36 @@
 - **Greater Reinforcing** (Level 11): 1,400 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 - **Major Reinforcing** (Level 17): 15,000 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 
-## Property Runes (2)
+## Property Runes (1)
 
 | Image | Name | Level | Price | Rarity | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Bane | 4 | 100 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Bane) |
-| 🖼️ | Called (Accessory Rune) | 3 | 60 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Called) |
+| 🖼️ | Snagging | 3 | 60 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Snagging) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (4)
+## Common Items (9)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Cat's Eye Elixir | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cat%27s%20Eye%20Elixir) |
-| 🖼️ | Staff of the Dead (Greater) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Dead) |
-| 🖼️ | Viperous Elixir (Lesser) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Viperous%20Elixir) |
-| 🖼️ | Magical Hearing Aid | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magical%20Hearing%20Aid) |
+| 🖼️ | Green Wyrmling Breath Potion | 5 | 30 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Green%20Wyrmling%20Breath%20Potion) |
+| 🖼️ | Cooling Elixir (Greater) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cooling%20Elixir) |
+| 🖼️ | Darkvision Elixir (Lesser) | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Darkvision%20Elixir) |
+| 🖼️ | Staff of Protection | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Protection) |
+| 🖼️ | Cooling Elixir (Lesser) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cooling%20Elixir) |
+| 🖼️ | Wand of Widening (2nd-rank Spell) | 6 | 250 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Widening) |
+| ![Potion Patch (Lesser)](https://2e.aonprd.com/Images/Treasure/Potion_Patch.webp) | Potion Patch (Lesser) | 4 | 20 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Potion%20Patch) |
+| 🖼️ | Leaper's Elixir (Lesser) | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Leaper%27s%20Elixir) |
+| 🖼️ | Eidetic Potion | 6 | 40 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Eidetic%20Potion) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Wand of Teeming Ghosts (6th-Rank Spell) | 6 | 0 gp | Uncommon | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Teeming%20Ghosts) |
+| 🖼️ | Shade Hat | 5 | 150 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Shade%20Hat) |
+| 🖼️ | Wand of Splintered Sorrows (2nd-Rank Spell) | 6 | 250 gp | Uncommon | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Splintered%20Sorrows) |
 
 ## Services
 

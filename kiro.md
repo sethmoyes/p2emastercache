@@ -94,3 +94,55 @@ All generation scripts MUST pull from these comprehensive data files:
 - Always check what data is available before generating
 - Maintain consistency with existing lore and mechanics
 - Keep flavor text mysterious and discovery-based
+
+## Recent Updates
+
+### Dungeon Turn V2 - Extreme Encounters & No-Event Mechanic (Feb 2026)
+
+Major overhaul to the dungeon turn system with new probability distribution:
+
+#### New Event Distribution
+- **Extreme rolls (5-15, 90-100)**: Always generate COMBAT at floor level (deadly!)
+- **Non-extreme rolls**: 50% chance of NO_EVENT (quiet passage)
+- **Low rolls (5-44)**: COMBAT or ACTIVE_THREAT
+- **Middle rolls (45-62)**: OPPORTUNITY, COMPLICATION, or DILEMMA
+- **High rolls (63-100)**: ACTIVE_THREAT or COMBAT
+
+#### Extreme Combat Encounters
+- Use creatures at dungeon floor level (not party level -2)
+- Generate 1-3 creatures from floor-appropriate pool
+- Include floor-specific ecology and tactical notes
+- Mark as unavoidable with special GM notes
+- Low extreme rolls (5-15) can provide surprise rounds
+
+#### Bug Fixes
+- Fixed creature consistency bug where description said "2 Zombie Brute(s)" but creature list included random other creatures (e.g., Nuglub)
+- Now selects ONE creature type and uses it consistently throughout the encounter
+- Changed from `random.sample()` selecting multiple types to `random.choice()` selecting one type
+
+### Dungeon Event Tweaker Integration (Feb 2026)
+
+Added tactical variation system to web interface:
+
+#### Features
+- New "Tweak Event" button on generated encounters
+- Generates 3 spatial variations: Narrow Space, Open Area, Vertical Space
+- Each variation includes:
+  - Adapted positioning and terrain features
+  - Context-specific tactical options
+  - Modified skill checks for the environment
+  - Preserved core encounter elements
+- Copy-to-clipboard functionality for each variation
+- Modal interface with color-coded contexts
+
+#### API Endpoint
+- `/api/tweak` - POST endpoint for generating variations
+- Accepts event data in standard format
+- Returns array of tactical variations
+- Error handling for invalid events
+
+#### Implementation
+- Integrated `dungeon_event_tweaker` module into web app
+- Added modal UI with gradient styling
+- JavaScript functions for displaying and copying variations
+- Keyboard shortcut (ESC) to close modal
