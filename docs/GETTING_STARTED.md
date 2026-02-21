@@ -1,5 +1,7 @@
 # Getting Started with Dungeon Turn V2
 
+**Current Version:** 2.1.0 (February 2026)
+
 ## 5-Minute Quick Start
 
 ### 1. Generate Encounters (2 seconds)
@@ -38,6 +40,12 @@ Give them: `players/DUNGEON_EXPLORATION_GUIDE.md`
 
 ### Result
 **Dungeons are FUN instead of tedious!**
+
+### New in 2.1.0
+- **Prepared Tokens:** Strategic time investment system
+- **Enhanced Webapp:** Collapsible filters, better event display, interactive Otari map
+- **Floor Filtering:** Fixed and accurate
+- **Specific Creatures:** Every encounter has exact creatures with stats
 
 ---
 

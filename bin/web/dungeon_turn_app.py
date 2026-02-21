@@ -62,9 +62,135 @@ def roll_dice():
         'total': total
     })
 
+@app.route('/api/events', methods=['GET'])
+def get_events():
+    """Return all dungeon turn events for client-side filtering"""
+    events_file = os.path.join(PROJECT_ROOT, 'etc', 'dungeon_turn_events.json')
+    try:
+        with open(events_file, 'r') as f:
+            events_data = json.load(f)
+        return jsonify(events_data)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+def apply_event_filters(events, filters, floor=None):
+    """
+    Apply filter criteria to event list.
+    
+    Args:
+        events: List of event dictionaries
+        filters: Dictionary with filter parameters:
+            - categories: List of category strings (OR logic)
+            - skills: List of skill strings (OR logic)
+            - timeCost: List of time cost patterns ['quick', 'short', 'long'] (OR logic)
+            - newArea: String 'yes', 'no', or 'either'
+            - reward: String for text search (case-insensitive, OPPORTUNITY only)
+            - threatLevel: List of threat level strings (OR logic, ACTIVE_THREAT only)
+        floor: Floor number (1-10) to filter by. If provided, only returns events for that floor or generic events (floor=0)
+    
+    Returns:
+        List of filtered events (AND logic across all filters)
+    """
+    filtered = events
+    
+    # Floor filter - CRITICAL for floor selector to work!
+    # Events with floor=0 are generic (appear on all floors)
+    # Events with floor=1-10 only appear on that specific floor
+    if floor is not None:
+        filtered = [e for e in filtered if e.get('floor', 0) == 0 or e.get('floor', 0) == floor]
+    
+    # Category filter (OR logic within filter)
+    if filters.get('categories'):
+        filtered = [e for e in filtered if e.get('category') in filters['categories']]
+    
+    # Skills filter (OR logic within filter)
+    if filters.get('skills'):
+        filtered = [e for e in filtered 
+                   if e.get('skills') and any(skill in e['skills'] for skill in filters['skills'])]
+    
+    # Time cost filter (OR logic within filter)
+    if filters.get('timeCost'):
+        def matches_time_cost(event, time_costs):
+            time_str = event.get('time_cost', '').lower()
+            for tc in time_costs:
+                if tc == 'quick' and 'action' in time_str:
+                    return True
+                if tc == 'short' and ('5 min' in time_str or '10 min' in time_str):
+                    return True
+                if tc == 'long' and ('20 min' in time_str or '30 min' in time_str):
+                    return True
+            return False
+        
+        filtered = [e for e in filtered if matches_time_cost(e, filters['timeCost'])]
+    
+    # New area filter
+    if filters.get('newArea') and filters['newArea'] != 'either':
+        requires_new = filters['newArea'] == 'yes'
+        filtered = [e for e in filtered if e.get('requires_new_area', False) == requires_new]
+    
+    # Reward filter (text search, case-insensitive, OPPORTUNITY only)
+    if filters.get('reward'):
+        reward_text = filters['reward'].lower()
+        filtered = [e for e in filtered 
+                   if e.get('category') == 'OPPORTUNITY' and 
+                   reward_text in e.get('reward', '').lower()]
+    
+    # Threat level filter (OR logic within filter, ACTIVE_THREAT only)
+    if filters.get('threatLevel'):
+        filtered = [e for e in filtered 
+                   if e.get('category') == 'ACTIVE_THREAT' and 
+                   any(tl.lower() in e.get('threat_level', '').lower() for tl in filters['threatLevel'])]
+    
+    return filtered
+
+def generate_filtered_event(filters, floor, floor_data, party_level, creatures):
+    """
+    Generate event based on filter criteria.
+    
+    Args:
+        filters: Dictionary with filter parameters (see apply_event_filters)
+        floor: Floor number (1-10) - NOW USED FOR FILTERING!
+        floor_data: Floor data dictionary (for context)
+        party_level: Party level (for context)
+        creatures: Creatures database (for context)
+    
+    Returns:
+        Dictionary representing the selected event, or an error event if no matches
+    """
+    # Load all events from dungeon_turn_events.json
+    events_file = os.path.join(PROJECT_ROOT, 'etc', 'dungeon_turn_events.json')
+    with open(events_file, 'r') as f:
+        all_events = json.load(f)
+    
+    # Flatten events from all categories
+    flat_events = []
+    for category, events_list in all_events.items():
+        for event in events_list:
+            # Add category to each event for filtering
+            event['category'] = category
+            flat_events.append(event)
+    
+    # Apply filters using apply_event_filters function - NOW INCLUDES FLOOR!
+    filtered_events = apply_event_filters(flat_events, filters, floor=floor)
+    
+    # Handle empty filtered set - return error event
+    if not filtered_events:
+        return {
+            'category': 'ERROR',
+            'title': 'No Matching Events',
+            'description': f'No events match your criteria for Floor {floor}. Try adjusting your filters or selecting a different floor.',
+            'error': True,
+            'floor': floor
+        }
+    
+    # Select random event from filtered set
+    selected_event = random.choice(filtered_events)
+    
+    return selected_event
+
 @app.route('/api/encounter', methods=['POST'])
 def get_encounter():
-    """Generate random encounter for given floor and sum with optional context"""
+    """Generate random encounter for given floor and sum with optional filters"""
     # Import EventContext here to avoid circular imports
     sys.path.insert(0, os.path.join(PROJECT_ROOT, 'bin', 'generators'))
     from event_context import EventContext
@@ -74,34 +200,55 @@ def get_encounter():
     dice_sum = data.get('sum')
     party_level = data.get('party_level', 4)
     
-    # Extract context parameters (with defaults)
-    space_type = data.get('space_type', 'unknown')
-    recent_combat = data.get('recent_combat', False)
-    new_area = data.get('new_area', True)
-    party_status = data.get('party_status', 'healthy')
+    # Extract filter parameters (optional)
+    filters = data.get('filters', {})
     
-    if not dice_sum:
-        return jsonify({'error': 'Sum required'}), 400
+    # Check if filters are provided and non-empty
+    # Consider a filter active if it has non-empty arrays or non-default values
+    has_filters = False
+    if filters:
+        has_filters = (
+            (filters.get('categories') and len(filters['categories']) > 0) or
+            (filters.get('skills') and len(filters['skills']) > 0) or
+            (filters.get('timeCost') and len(filters['timeCost']) > 0) or
+            (filters.get('newArea') and filters['newArea'] != 'either') or
+            (filters.get('reward') and len(filters['reward'].strip()) > 0) or
+            (filters.get('threatLevel') and len(filters['threatLevel']) > 0)
+        )
     
     # Get floor data
     floor_data = levels_data.get(floor)
     if not floor_data:
         return jsonify({'error': f'Floor {floor} not found'}), 404
     
-    # Create context
-    try:
-        context = EventContext(
-            space_type=space_type,
-            recent_combat=recent_combat,
-            new_area=new_area,
-            party_status=party_status
-        )
-        context.validate()
-    except ValueError as e:
-        return jsonify({'error': f'Invalid context: {str(e)}'}), 400
-    
-    # Generate event with context
-    event = generate_event_for_sum(dice_sum, floor, floor_data, party_level, creatures, context)
+    # If filters provided, use filtered event generation
+    if has_filters:
+        event = generate_filtered_event(filters, floor, floor_data, party_level, creatures)
+    else:
+        # Use existing event generation logic for backward compatibility
+        # Extract context parameters (with defaults)
+        space_type = data.get('space_type', 'unknown')
+        recent_combat = data.get('recent_combat', False)
+        new_area = data.get('new_area', True)
+        party_status = data.get('party_status', 'healthy')
+        
+        if not dice_sum:
+            return jsonify({'error': 'Sum required'}), 400
+        
+        # Create context
+        try:
+            context = EventContext(
+                space_type=space_type,
+                recent_combat=recent_combat,
+                new_area=new_area,
+                party_status=party_status
+            )
+            context.validate()
+        except ValueError as e:
+            return jsonify({'error': f'Invalid context: {str(e)}'}), 400
+        
+        # Generate event with context
+        event = generate_event_for_sum(dice_sum, floor, floor_data, party_level, creatures, context)
     
     # If it's a combat encounter, add full creature stats
     if event.get('category') == 'COMBAT' and event.get('creatures'):

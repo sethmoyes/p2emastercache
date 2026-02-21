@@ -1,192 +1,193 @@
-# Dungeon Turn V2 - Quick Start Guide
+# Quick Start Guide - Pathfinder 2e Dungeon Tools
 
-## 🎲 What Is This?
+Get up and running in 5 minutes!
 
-A web-based random encounter generator for Pathfinder 2E's Abomination Vaults adventure path. Roll 5d20 at the table, enter the total, and get instant encounters with full creature stats!
+---
 
-## 🚀 Quick Start
+## 🚀 For GMs
 
-### 1. Activate Virtual Environment
+### 1. Generate Encounters
 ```bash
-source ~/boto3env/bin/activate
+python3 bin/generators/generate_dungeon_turn_v2.py --level 4 --floors 3
 ```
 
-### 2. Start the Server
+### 2. Start Web Interface (Optional)
 ```bash
+source ~/boto3env/bin/activate  # or your venv
+./bin/web/start.sh
+# Open http://localhost:5000
+```
+
+### 3. Read This (10 minutes)
+- `gm/DUNGEON_TURN_V2_QUICK_REFERENCE.md` - How to run the system
+
+### 4. Give Players This
+- `players/DUNGEON_EXPLORATION_GUIDE.md` - Player-facing guide
+
+### 5. Play!
+- Track time (10 min = 1 die)
+- Roll at 5 dice
+- Look up sum in generated file
+- Run the encounter
+
+---
+
+## 🎲 The System in 30 Seconds
+
+### The Dice Jar
+- Every 10 minutes = add 1 die
+- At 5 dice = roll all 5d20
+- Sum (5-100) determines what happens
+
+### What Happens
+| Sum | Category | Effect |
+|-----|----------|--------|
+| 5-25 | OPPORTUNITY | Rewards creativity |
+| 26-45 | COMPLICATION | Skill challenge |
+| 46-65 | DILEMMA | Meaningful choice |
+| 66-85 | ACTIVE THREAT | Immediate danger |
+| 86-100 | COMBAT | Monster encounter |
+
+### Example
+```
+GM: "You search thoroughly. 30 minutes. Add 3 dice."
+Players: "We're at 5 dice!"
+GM: "Roll them!"
+Players: *rolls* "67!"
+GM: "You hear footsteps approaching fast..."
+```
+
+---
+
+## 🎮 Web Interface Quick Start
+
+### Start Server
+```bash
+source ~/boto3env/bin/activate
 ./bin/web/start.sh
 ```
 
-### 3. Open Browser
-Navigate to: **http://localhost:5000**
+### Use It
+1. Select floor (1-10)
+2. Roll 5d20 physically
+3. Enter total in web app
+4. Get encounter with full stats
 
-### 4. Play!
-1. Select a floor (1-10)
-2. Roll 5d20 in person
-3. Enter the total (5-100)
-4. Get your encounter with full stats!
+### Features
+- ⚔️ Complete creature stats for key monsters
+- 🎲 Dice jar tracker
+- 📜 Roll history
+- ⚡ Extreme roll indicators (5-8, 97-100)
+- 💀 Extreme encounter scaling (100 = floor level = deadly!)
 
-## ✨ Features
+---
 
-### Manual Dice Rolling
-- Roll physical dice at the table
-- Enter the total in the web app
-- More tactile and engaging than virtual rolls
+## 📚 Common Commands
 
-### Extreme Roll Indicators
-- Rolls 5-8 or 97-100 show **⚡ EXTREME ROLL! ⚡**
-- Makes crazy rolls feel significant
+### Generate Content
+```bash
+# Dungeon encounters
+python3 bin/generators/generate_dungeon_turn_v2.py --level 4 --floors 3
 
-### Extreme Encounter Scaling (NEW!)
-Combat difficulty now scales with dice rolls:
-- **86-94:** Standard combat (2 levels below party) - Manageable
-- **95-99:** Dangerous combat (at party level) - ⚠️ Use tactics!
-- **100:** EXTREME combat (at floor level) - 💀 DEADLY!
+# Merchant inventories
+python3 bin/generators/generate_merchants.py --level 4
 
-**Example:** On Floor 7 with a party of level 4:
-- Roll 88 → Level 2 creatures (easy)
-- Roll 97 → Level 4 creatures (challenging)
-- Roll 100 → Level 7 Devils (run or die!)
-
-See `docs/EXTREME_ENCOUNTERS.md` for full details.
-
-### Complete Creature Stats
-For key Gauntlight creatures:
-- ⚔️ **Attacks** - Full attack bonuses and damage
-- ✨ **Abilities** - Special powers and effects
-- 🛡️ **Defenses** - Immunities, resistances, weaknesses
-- 🎯 **Skills** - All skill bonuses
-- 💬 **Languages** - What they speak
-
-### Enhanced Creatures
-Full stats available for:
-- Mitflit
-- Morlock
-- Ghoul
-- Skeleton Guard
-- Zombie Shambler
-- Giant Monitor Lizard
-- Wight
-- Shadow
-
-Other creatures show basic stats with a link to Archives of Nethys.
-
-### Dice Jar Tracker
-- Track dice accumulation between encounters
-- Visual display of 5d20 jar
-- Auto-resets after rolling
-
-### Roll History
-- See your last 10 encounters
-- Track what happened on each floor
-- Clear history anytime
-
-## 📁 Project Structure
-
+# Overland encounters
+python3 bin/generators/generate_4d20_encounters.py --level 4
 ```
-p2emastercache/
-├── bin/
-│   ├── generators/          # Encounter generation logic
-│   ├── scrapers/            # Data enhancement scripts
-│   └── web/                 # Web application
-│       ├── templates/       # HTML templates
-│       ├── static/          # CSS, JS, images
-│       ├── dungeon_turn_app.py
-│       └── start.sh
-├── etc/                     # Game data
-│   ├── creatures.json       # 2,877 creatures (11 fully enhanced)
-│   ├── gauntlight_keep_levels.md
-│   └── ...
-├── docs/                    # Documentation
-├── players/                 # Player-facing guides
-└── gm/                      # GM resources
+
+### Check Data
+```bash
+# Verify data integrity
+python3 bin/data_management/check_data_integrity.py 10 equipment
 ```
+
+---
 
 ## 🔧 Troubleshooting
 
-### Port 5000 Already in Use
+### Port 5000 in Use
 ```bash
-# Kill processes on port 5000
 lsof -ti:5000 | xargs kill -9
-
-# Or use a different port
-python3 bin/web/dungeon_turn_app.py --port 5001
 ```
 
 ### Flask Not Found
 ```bash
-# Make sure you're in the virtual environment
 source ~/boto3env/bin/activate
-
-# Install Flask
-pip3 install Flask
+pip install Flask
 ```
 
-### Creatures Missing Attacks
-Some creatures don't have full stats yet. To add more:
-```bash
-# Edit the enhancement script
-nano bin/scrapers/add_gauntlight_creatures.py
-
-# Add creature data to GAUNTLIGHT_CREATURES dict
-
-# Run the script
-python3 bin/scrapers/add_gauntlight_creatures.py
-```
-
-## 📚 Documentation
-
-- **[Web Interface Guide](docs/WEB_INTERFACE.md)** - Detailed web app documentation
-- **[Fixes Complete](docs/FIXES_COMPLETE.md)** - Recent improvements
-- **[Dungeon Turn Redesign](docs/DUNGEON_TURN_REDESIGN.md)** - System design
-- **[Player Guide](players/DUNGEON_EXPLORATION_GUIDE.md)** - For players
-
-## 🎨 Adding Background Art
-
-The app supports rotating Wayne Reynolds art:
-
-1. Find 5 Pathfinder images by Wayne Reynolds
-2. Save as JPG in `bin/web/static/art/`:
-   - `wr_goblin.jpg`
-   - `wr_dragon.jpg`
-   - `wr_dungeon.jpg`
-   - `wr_combat.jpg`
-   - `wr_monster.jpg`
-3. Restart the server
-4. Art will rotate every 30 seconds at 10% opacity
-
-See `bin/web/static/art/README.md` for details.
-
-## 🎯 Tips for GMs
-
-### Encounter Pacing
-- **5-20:** Opportunities (treasure, shortcuts)
-- **21-40:** Complications (skill challenges)
-- **41-60:** Dilemmas (choices with consequences)
-- **61-80:** Active Threats (time pressure)
-- **81-100:** Combat (monsters!)
-
-### Extreme Rolls
-- **5-8:** Extremely beneficial or trivial
-- **97-99:** Dangerous encounters at party level
-- **100:** DEADLY encounters at floor level - consider retreat!
-
-### Dice Jar
-- Add a die when players:
-  - Fail a critical roll
-  - Trigger a trap
-  - Make excessive noise
-  - Spend too much time
-- When jar fills (5 dice), roll for encounter
-
-### Creature Stats
-- Click creature names to see full stats
-- Use Archives of Nethys link for creatures without full data
-- Print stat blocks for common encounters
-
-## 🔥 Ready to Play!
-
-Your dungeon is enhanced and ready to rock. Roll those dice and let the chaos begin! 🎲
+### Missing Data Files
+Ensure these exist in `etc/`:
+- `creatures.json`
+- `equipment.json`
+- `spells.json`
+- `gauntlight_keep_levels.md`
+- `dungeon_turn_events.json`
 
 ---
 
-**Questions?** Check the docs folder or the README files in each directory.
+## 📖 Documentation
+
+- **[README.md](README.md)** - Complete overview
+- **[kiro.md](kiro.md)** - Project guidelines
+- **[docs/](docs/)** - Full documentation
+- **[gm/](gm/)** - GM resources
+- **[players/](players/)** - Player guides
+
+---
+
+## 🎯 Key Features
+
+### 630 Floor-Specific Events
+Every event tied to actual dungeon lore:
+- Floor 1: Mitflit chaos
+- Floor 2: Morlock darkness
+- Floor 3: Ghoul library
+- Floor 4: Belcorra's quarters
+- Floor 5: The Arena
+- Floor 6: Fleshwarp labs
+- Floor 7: Infernal prison
+- Floor 8: Bog mummy crypts
+- Floor 9: Darklands factions
+- Floor 10: Serpentfolk temple
+
+### Explicit Dice Mechanics
+Every choice clearly states:
+- "ADD 3 DICE TO JAR" (30 minutes)
+- "ADD 1 DIE TO JAR" (10 minutes)
+- "NO DICE" (instant)
+
+### Meaningful Choices
+- Risk vs reward
+- Greed vs speed
+- Knowledge vs time
+- Honor vs pragmatism
+
+---
+
+## ✨ Tips for Success
+
+### For GMs
+- Reward creativity generously
+- Track consequences visibly
+- Make time pressure real
+- Let players avoid combat through cleverness
+
+### For Players
+- Use ALL your skills
+- Make meaningful choices
+- Be creative
+- Time matters - balance thoroughness vs speed
+
+---
+
+## 🎉 Ready to Play!
+
+Your dungeon is enhanced and ready. Roll those dice! 🎲
+
+**Questions?** Check [README.md](README.md) or the docs folder.
+
+---
+
+**The dungeon is alive. The choices matter. Have fun!**

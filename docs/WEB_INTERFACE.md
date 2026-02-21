@@ -111,6 +111,14 @@ Jar resets automatically. Keep exploring!
 - Buttons for all 10 floors
 - Shows floor name
 - Easy to switch
+- Correctly filters events by floor
+
+### Event Filters (Collapsible)
+- Filter by event type (Opportunity, Complication, Dilemma, Active Threat, Combat)
+- Collapsible section to save screen space
+- Starts collapsed by default
+- Click header to expand/collapse
+- Rotating arrow icon indicates state
 
 ### Dice Roller
 - Animated button
@@ -125,6 +133,12 @@ Color-coded by category:
 - 🔵 **Blue** = Dilemmas (meaningful choices)
 - 🔴 **Red** = Active Threats (immediate danger)
 - 🟣 **Purple** = Combat (living dungeon)
+
+Shows all event fields:
+- **OPPORTUNITY/COMPLICATION:** reward, spotlight, consequence
+- **DILEMMA:** skills, time_cost, consequence, spotlight, context
+- **ACTIVE_THREAT:** skills, threat_level, spotlight, creatures
+- **Prepared tokens:** Visible in reward field when applicable
 
 ### Roll History
 - Last 10 rolls shown
@@ -249,6 +263,73 @@ lsof -ti:5000 | xargs kill
 - Keep browser tab open
 - Subsequent rolls are instant
 
+---
+
+## Players Page - Interactive Otari Map
+
+The players page (`/players`) features an interactive, high-resolution map of Otari that players can explore on any device.
+
+### Features
+- **High-resolution map:** 18MB ultra-high-res image for crystal-clear detail
+- **Touch gestures:** Pinch to zoom, drag to pan (perfect for phones/tablets)
+- **Mouse controls:** Scroll to zoom, drag to pan, double-click to reset
+- **Zoom controls:** +, -, and reset buttons for easy navigation
+- **Smooth animations:** Fluid zooming and panning experience
+- **Zoom range:** 1x (full view) to 5x (extreme detail)
+
+### How to Use
+
+**On Mobile/Tablet:**
+- Pinch with two fingers to zoom in/out
+- Drag with one finger to pan around
+- Tap zoom buttons (+/-) for precise control
+- Double-tap to reset to full view
+
+**On Desktop:**
+- Scroll mouse wheel to zoom in/out
+- Click and drag to pan around
+- Click zoom buttons (+/-) for precise control
+- Double-click to reset to full view
+
+### Why This Rocks
+- Players can explore Otari in detail during downtime
+- Perfect for planning shopping trips or finding locations
+- Works great on phones at the table
+- No need to pass around a physical map
+- Everyone can zoom in on their own device
+
+### Technical Details
+- **Library:** Panzoom v4.5.1
+- **Image:** `/static/otari.big.webp` (18MB)
+- **Container:** Overflow hidden with grab cursor
+- **Controls:** Positioned bottom-right, always visible
+- **Instructions:** Displayed below map
+
+---
+
+## Troubleshooting
+
+### "Module 'flask' not found"
+```bash
+pip3 install Flask
+```
+
+### "Port 5000 already in use"
+Change port in `dungeon_turn_app.py` or kill other process:
+```bash
+lsof -ti:5000 | xargs kill
+```
+
+### Can't access from other devices
+1. Find your IP: `ifconfig` or `ipconfig`
+2. Open firewall port 5000
+3. Access via: `http://YOUR_IP:5000`
+
+### Slow loading
+- First load takes 2-3 seconds (loading data)
+- Keep browser tab open
+- Subsequent rolls are instant
+
 ## Tips
 
 ### For In-Person Games
@@ -272,6 +353,9 @@ lsof -ti:5000 | xargs kill
 ## Future Ideas
 
 Possible enhancements:
+- ✅ Collapsible event filters (DONE - Feb 2026)
+- ✅ Enhanced event display with all fields (DONE - Feb 2026)
+- ✅ Interactive Otari map for players (DONE - Feb 2026)
 - Sound effects for rolls
 - Save/load sessions
 - Export to PDF
@@ -279,6 +363,8 @@ Possible enhancements:
 - Encounter notes
 - Statistics tracking
 - Custom templates
+- Prepared token tracker widget
+- Multiple party support
 
 ## Comparison
 
@@ -289,6 +375,10 @@ Possible enhancements:
 | Visual Appeal | ✅ Beautiful | ⚫ Plain text |
 | Dice Jar Tracker | ✅ Built-in | ❌ Manual |
 | Roll History | ✅ Automatic | ❌ Manual |
+| Event Filters | ✅ Collapsible | ❌ None |
+| Floor Filtering | ✅ Accurate | ✅ Yes |
+| Prepared Tokens | ✅ Displayed | ✅ Documented |
+| Interactive Map | ✅ Players page | ❌ No |
 | Can Review Ahead | ❌ No | ✅ Yes |
 | Printable | ❌ No | ✅ Yes |
 | Fun Factor | ✅ High | ⚫ Medium |

@@ -91,6 +91,11 @@
                     <button onclick="selectFloor(10)" class="floor-btn bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg transition font-bold">10</button>
                 </div>
                 <p class="text-center mt-4 text-gray-400" id="floor-name">The Lighthouse (Surface Level)</p>
+                
+                <!-- Test Button for Rapid Floor Testing -->
+                <button onclick="testFloorFiltering()" class="w-full mt-4 bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-lg transition">
+                    🧪 Test Floor Filter (Generate 5 Events)
+                </button>
             </div>
 
             <!-- Manual Dice Input -->
@@ -117,47 +122,114 @@
             </div>
         </div>
 
-        <!-- Context Controls -->
+        <!-- Event Filters -->
         <div class="bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Situation Context</h2>
-            <p class="text-gray-400 text-sm mb-4">Set context for more appropriate events:</p>
+            <button onclick="toggleFilters()" class="w-full flex justify-between items-center mb-4 hover:bg-gray-700 p-2 rounded transition">
+                <h2 class="text-2xl font-bold">Event Filters</h2>
+                <svg id="filters-arrow" class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            <div id="filters-content" class="hidden">
             
-            <div class="grid md:grid-cols-2 gap-4">
-                <!-- Space Type -->
+            <!-- Filter Controls -->
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <!-- Event Category Multi-Select -->
                 <div>
-                    <label class="block text-sm font-bold mb-2">Space Type</label>
-                    <select id="space-type" class="w-full bg-gray-700 text-white px-3 py-2 rounded border border-purple-500 focus:border-pink-500 focus:outline-none">
-                        <option value="unknown">Unknown</option>
-                        <option value="hallway">Hallway</option>
-                        <option value="large_room">Large Room</option>
-                        <option value="small_room">Small Room</option>
-                        <option value="outside">Outside</option>
-                        <option value="vertical_space">Vertical Space</option>
-                        <option value="water">Water/Underwater</option>
+                    <label class="block text-sm font-bold mb-2">Event Categories</label>
+                    <select id="filter-categories" multiple class="w-full bg-gray-700 text-white px-3 py-2 rounded border border-purple-500 focus:border-pink-500 focus:outline-none" style="min-height: 100px;">
+                        <option value="OPPORTUNITY">Opportunity</option>
+                        <option value="COMPLICATION">Complication</option>
+                        <option value="DILEMMA">Dilemma</option>
+                        <option value="ACTIVE_THREAT">Active Threat</option>
                     </select>
                 </div>
-
-                <!-- Party Status -->
+                
+                <!-- Skills Multi-Select -->
                 <div>
-                    <label class="block text-sm font-bold mb-2">Party Status</label>
-                    <select id="party-status" class="w-full bg-gray-700 text-white px-3 py-2 rounded border border-purple-500 focus:border-pink-500 focus:outline-none">
-                        <option value="healthy">Healthy</option>
-                        <option value="injured">Injured</option>
-                        <option value="low_resources">Low Resources</option>
+                    <label class="block text-sm font-bold mb-2">Skills</label>
+                    <select id="filter-skills" multiple class="w-full bg-gray-700 text-white px-3 py-2 rounded border border-purple-500 focus:border-pink-500 focus:outline-none" style="min-height: 100px;">
+                        <option value="Perception">Perception</option>
+                        <option value="Stealth">Stealth</option>
+                        <option value="Thievery">Thievery</option>
+                        <option value="Athletics">Athletics</option>
+                        <option value="Acrobatics">Acrobatics</option>
+                        <option value="Arcana">Arcana</option>
+                        <option value="Nature">Nature</option>
+                        <option value="Medicine">Medicine</option>
+                        <option value="Diplomacy">Diplomacy</option>
+                        <option value="Intimidation">Intimidation</option>
+                        <option value="Deception">Deception</option>
+                        <option value="Society">Society</option>
+                        <option value="Religion">Religion</option>
+                        <option value="Crafting">Crafting</option>
+                        <option value="Survival">Survival</option>
                     </select>
                 </div>
-
-                <!-- Recent Combat -->
-                <div class="flex items-center">
-                    <input type="checkbox" id="recent-combat" class="w-5 h-5 bg-gray-700 border-purple-500 rounded focus:ring-purple-500">
-                    <label for="recent-combat" class="ml-2 text-sm font-bold">Recent Combat</label>
+                
+                <!-- Time Cost Multi-Select -->
+                <div>
+                    <label class="block text-sm font-bold mb-2">Time Cost</label>
+                    <select id="filter-time-cost" multiple class="w-full bg-gray-700 text-white px-3 py-2 rounded border border-purple-500 focus:border-pink-500 focus:outline-none">
+                        <option value="quick">Quick (1-3 actions)</option>
+                        <option value="short">Short (5-10 min)</option>
+                        <option value="long">Long (20-30 min)</option>
+                    </select>
                 </div>
-
-                <!-- New Area -->
-                <div class="flex items-center">
-                    <input type="checkbox" id="new-area" checked class="w-5 h-5 bg-gray-700 border-purple-500 rounded focus:ring-purple-500">
-                    <label for="new-area" class="ml-2 text-sm font-bold">New/Unfamiliar Area</label>
+                
+                <!-- New Area Single-Select -->
+                <div>
+                    <label class="block text-sm font-bold mb-2">New/Unfamiliar Area</label>
+                    <select id="filter-new-area" class="w-full bg-gray-700 text-white px-3 py-2 rounded border border-purple-500 focus:border-pink-500 focus:outline-none">
+                        <option value="either">Either</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
                 </div>
+                
+                <!-- Reward Type Text Search (for OPPORTUNITY events) -->
+                <div>
+                    <label class="block text-sm font-bold mb-2">Reward Type (Opportunities)</label>
+                    <input type="text" id="filter-reward" placeholder="e.g., healing, gold, tactical" 
+                        class="w-full bg-gray-700 text-white px-3 py-2 rounded border border-purple-500 focus:border-pink-500 focus:outline-none">
+                </div>
+                
+                <!-- Threat Level Multi-Select (for ACTIVE_THREAT events) -->
+                <div>
+                    <label class="block text-sm font-bold mb-2">Threat Level (Active Threats)</label>
+                    <select id="filter-threat-level" multiple class="w-full bg-gray-700 text-white px-3 py-2 rounded border border-purple-500 focus:border-pink-500 focus:outline-none">
+                        <option value="Low">Low</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="High">High</option>
+                        <option value="Extreme">Extreme</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Matching Count and Actions -->
+            <div class="flex justify-between items-center mb-4">
+                <div>
+                    <span class="text-lg font-bold">Matching Events: </span>
+                    <span id="matching-count" class="text-2xl text-green-400">0</span>
+                </div>
+                <button onclick="clearAllFilters()" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition font-bold">
+                    Clear All Filters
+                </button>
+            </div>
+            
+            <!-- Event Preview List -->
+            <div class="bg-gray-700 rounded-lg p-4 mb-4 max-h-48 overflow-y-auto">
+                <h3 class="text-sm font-bold mb-2">Available Events:</h3>
+                <ul id="event-preview-list" class="text-sm text-gray-300 space-y-1">
+                    <!-- Preview items populated by JavaScript -->
+                </ul>
+            </div>
+            
+            <!-- Generate Event Button -->
+            <button onclick="generateFilteredEvent()" id="generate-filtered-event-btn" 
+                class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-4 rounded-lg text-xl transition transform hover:scale-105 shadow-lg">
+                🎲 GENERATE FILTERED EVENT
+            </button>
             </div>
         </div>
 
@@ -419,10 +491,13 @@
         }
 
         // Initialize on page load
-        window.addEventListener('DOMContentLoaded', function() {
+        window.addEventListener('DOMContentLoaded', async function() {
             setBackgroundArt();
             updateDiceJar(0);
             updateHistory();
+            
+            // Load event data for filtering
+            await loadEventData();
             
             // Enter key support
             document.getElementById('dice-input').addEventListener('keypress', function(e) {
@@ -431,6 +506,31 @@
                 }
             });
         });
+
+        // Load event data and initialize filter manager
+        async function loadEventData() {
+            try {
+                const response = await fetch('/api/events');
+                const eventsData = await response.json();
+                
+                // Flatten events from all categories
+                const flatEvents = [];
+                for (const [category, events] of Object.entries(eventsData)) {
+                    for (const event of events) {
+                        event.category = category;
+                        flatEvents.push(event);
+                    }
+                }
+                
+                // Initialize EventFilterManager with event data
+                EventFilterManager.init(flatEvents);
+            } catch (error) {
+                console.error('Error loading event data:', error);
+                // Show error in preview list
+                document.getElementById('event-preview-list').innerHTML = 
+                    '<li class="text-red-400">Error loading events. Please refresh the page.</li>';
+            }
+        }
 
         function selectFloor(floor) {
             currentFloor = floor;
@@ -493,19 +593,8 @@
             btn.disabled = true;
             btn.textContent = '⏳ Generating...';
 
-            // Read context parameters
-            const spaceType = document.getElementById('space-type').value;
-            const partyStatus = document.getElementById('party-status').value;
-            const recentCombat = document.getElementById('recent-combat').checked;
-            const newArea = document.getElementById('new-area').checked;
-
-            // Save context to sessionStorage for persistence
-            sessionStorage.setItem('context_space_type', spaceType);
-            sessionStorage.setItem('context_party_status', partyStatus);
-            sessionStorage.setItem('context_recent_combat', recentCombat);
-            sessionStorage.setItem('context_new_area', newArea);
-
-            // Get encounter with context
+            // Use default context parameters for dice-based generation
+            // (backward compatibility - no filters)
             const encounterResponse = await fetch('/api/encounter', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -513,10 +602,10 @@
                     floor: currentFloor,
                     sum: total,
                     party_level: partyLevel,
-                    space_type: spaceType,
-                    party_status: partyStatus,
-                    recent_combat: recentCombat,
-                    new_area: newArea
+                    space_type: 'unknown',
+                    party_status: 'healthy',
+                    recent_combat: false,
+                    new_area: true
                 })
             });
             const encounter = await encounterResponse.json();
@@ -539,25 +628,6 @@
                     getDiceEncounter();
                 }
             });
-
-            // Restore context values from sessionStorage
-            const savedSpaceType = sessionStorage.getItem('context_space_type');
-            const savedPartyStatus = sessionStorage.getItem('context_party_status');
-            const savedRecentCombat = sessionStorage.getItem('context_recent_combat');
-            const savedNewArea = sessionStorage.getItem('context_new_area');
-
-            if (savedSpaceType) {
-                document.getElementById('space-type').value = savedSpaceType;
-            }
-            if (savedPartyStatus) {
-                document.getElementById('party-status').value = savedPartyStatus;
-            }
-            if (savedRecentCombat !== null) {
-                document.getElementById('recent-combat').checked = savedRecentCombat === 'true';
-            }
-            if (savedNewArea !== null) {
-                document.getElementById('new-area').checked = savedNewArea === 'true';
-            }
         });
 
         async function generateNPC() {
@@ -834,13 +904,44 @@
 
             // Category-specific content
             if (event.category === 'OPPORTUNITY' || event.category === 'COMPLICATION') {
+                // Parse success field for multiple options (separated by OR)
+                let successHtml = '';
+                if (event.success && event.success.includes(' OR ')) {
+                    const options = event.success.split(' OR ');
+                    successHtml = '<div class="space-y-2">';
+                    options.forEach((option, index) => {
+                        const optionLabel = option.match(/^([A-Z\s]+):/);
+                        if (optionLabel) {
+                            // Has a label like "COMBAT PREP:" or "FALLBACK PREP:"
+                            const label = optionLabel[1];
+                            const content = option.substring(optionLabel[0].length).trim();
+                            successHtml += `<div class="bg-gray-700 p-3 rounded border-l-4 border-green-500">
+                                <p class="font-bold text-green-300">Option ${index + 1}: ${label}</p>
+                                <p class="text-gray-300 mt-1">${content}</p>
+                            </div>`;
+                        } else {
+                            // No label, just show as option
+                            successHtml += `<div class="bg-gray-700 p-3 rounded border-l-4 border-green-500">
+                                <p class="font-bold text-green-300">Option ${index + 1}:</p>
+                                <p class="text-gray-300 mt-1">${option.trim()}</p>
+                            </div>`;
+                        }
+                    });
+                    successHtml += '</div>';
+                } else {
+                    successHtml = `<p><strong class="text-green-400">Success:</strong> ${event.success}</p>`;
+                }
+                
                 html += `
                     <div class="space-y-2 bg-gray-800 p-4 rounded-lg">
                         <p><strong class="text-purple-400">Challenge:</strong> ${event.challenge}</p>
-                        <p><strong class="text-green-400">Success:</strong> ${event.success}</p>
+                        ${successHtml}
                         <p><strong class="text-red-400">Failure:</strong> ${event.failure}</p>
                         <p><strong class="text-blue-400">Skills:</strong> ${event.skills.join(', ')}</p>
                         <p><strong class="text-yellow-400">Time Cost:</strong> ${event.time_cost}</p>
+                        ${event.reward ? `<p><strong class="text-cyan-400">Reward:</strong> ${event.reward}</p>` : ''}
+                        ${event.spotlight ? `<p><strong class="text-pink-400">Spotlight:</strong> ${event.spotlight.join(', ')}</p>` : ''}
+                        ${event.consequence ? `<p><strong class="text-orange-400">Consequence:</strong> ${event.consequence}</p>` : ''}
                     </div>
                 `;
             } else if (event.category === 'DILEMMA') {
@@ -849,6 +950,11 @@
                         <p><strong class="text-purple-400">Choice A:</strong> ${event.choice_a}</p>
                         ${event.choice_b ? `<p><strong class="text-purple-400">Choice B:</strong> ${event.choice_b}</p>` : ''}
                         ${event.choice_c ? `<p><strong class="text-purple-400">Choice C:</strong> ${event.choice_c}</p>` : ''}
+                        ${event.skills ? `<p><strong class="text-blue-400">Skills:</strong> ${event.skills.join(', ')}</p>` : ''}
+                        ${event.time_cost ? `<p><strong class="text-yellow-400">Time Cost:</strong> ${event.time_cost}</p>` : ''}
+                        ${event.consequence ? `<p><strong class="text-orange-400">Consequence:</strong> ${event.consequence}</p>` : ''}
+                        ${event.spotlight ? `<p><strong class="text-pink-400">Spotlight:</strong> ${event.spotlight.join(', ')}</p>` : ''}
+                        ${event.context ? `<p><strong class="text-cyan-400">Context:</strong> ${event.context}</p>` : ''}
                     </div>
                 `;
             } else if (event.category === 'ACTIVE_THREAT') {
@@ -860,6 +966,10 @@
                         <p><strong class="text-purple-400">Immediate Action:</strong> ${event.immediate_action}</p>
                         <p><strong class="text-green-400">Success:</strong> ${event.success}</p>
                         <p><strong class="text-red-400">Failure:</strong> ${event.failure}</p>
+                        ${event.skills ? `<p><strong class="text-blue-400">Skills:</strong> ${event.skills.join(', ')}</p>` : ''}
+                        ${event.threat_level ? `<p><strong class="text-orange-400">Threat Level:</strong> ${event.threat_level}</p>` : ''}
+                        ${event.spotlight ? `<p><strong class="text-pink-400">Spotlight:</strong> ${event.spotlight.join(', ')}</p>` : ''}
+                        ${event.creatures ? `<p><strong class="text-red-400">Creatures:</strong> ${event.creatures}</p>` : ''}
                     </div>
                 `;
             } else if (event.category === 'COMBAT') {
@@ -1110,6 +1220,20 @@
         function toggleGenerators() {
             const content = document.getElementById('generators-content');
             const arrow = document.getElementById('generators-arrow');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                arrow.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                arrow.classList.remove('rotate-180');
+            }
+        }
+
+        // Toggle filters dropdown
+        function toggleFilters() {
+            const content = document.getElementById('filters-content');
+            const arrow = document.getElementById('filters-arrow');
             
             if (content.classList.contains('hidden')) {
                 content.classList.remove('hidden');
@@ -1386,6 +1510,344 @@
             
             btn.disabled = false;
             btn.textContent = 'Reset Dates';
+        }
+
+        // ============================================
+        // Event Filter Manager
+        // ============================================
+        
+        const EventFilterManager = {
+            // State
+            allEvents: [],
+            filteredEvents: [],
+            
+            // Initialize with event data
+            init: function(events) {
+                this.allEvents = events;
+                this.attachEventListeners();
+                this.updateFilters();
+            },
+            
+            // Attach change listeners to all filter controls
+            attachEventListeners: function() {
+                document.getElementById('filter-categories').addEventListener('change', () => this.updateFilters());
+                document.getElementById('filter-skills').addEventListener('change', () => this.updateFilters());
+                document.getElementById('filter-time-cost').addEventListener('change', () => this.updateFilters());
+                document.getElementById('filter-new-area').addEventListener('change', () => this.updateFilters());
+                document.getElementById('filter-reward').addEventListener('input', () => this.updateFilters());
+                document.getElementById('filter-threat-level').addEventListener('change', () => this.updateFilters());
+            },
+            
+            // Get current filter values
+            getFilterValues: function() {
+                return {
+                    categories: Array.from(document.getElementById('filter-categories').selectedOptions).map(o => o.value),
+                    skills: Array.from(document.getElementById('filter-skills').selectedOptions).map(o => o.value),
+                    timeCost: Array.from(document.getElementById('filter-time-cost').selectedOptions).map(o => o.value),
+                    newArea: document.getElementById('filter-new-area').value,
+                    reward: document.getElementById('filter-reward').value.toLowerCase(),
+                    threatLevel: Array.from(document.getElementById('filter-threat-level').selectedOptions).map(o => o.value)
+                };
+            },
+            
+            // Apply filters to events
+            filterEvents: function(events, filters) {
+                return events.filter(event => {
+                    // Category filter (OR logic within filter)
+                    if (filters.categories.length > 0 && !filters.categories.includes(event.category)) {
+                        return false;
+                    }
+                    
+                    // Skills filter (OR logic within filter)
+                    if (filters.skills.length > 0) {
+                        const hasMatchingSkill = event.skills && event.skills.some(skill => filters.skills.includes(skill));
+                        if (!hasMatchingSkill) return false;
+                    }
+                    
+                    // Time cost filter (OR logic within filter)
+                    if (filters.timeCost.length > 0) {
+                        const timeCostStr = event.time_cost || '';
+                        const matchesTimeCost = filters.timeCost.some(tc => {
+                            if (tc === 'quick') return /\d+ action/i.test(timeCostStr);
+                            if (tc === 'short') return /(5|10) min/i.test(timeCostStr);
+                            if (tc === 'long') return /(20|30) min/i.test(timeCostStr);
+                            return false;
+                        });
+                        if (!matchesTimeCost) return false;
+                    }
+                    
+                    // New area filter
+                    if (filters.newArea !== 'either') {
+                        const requiresNewArea = event.requires_new_area === true;
+                        if (filters.newArea === 'yes' && !requiresNewArea) return false;
+                        if (filters.newArea === 'no' && requiresNewArea) return false;
+                    }
+                    
+                    // Reward filter (text search, only for OPPORTUNITY events)
+                    if (filters.reward && event.category === 'OPPORTUNITY') {
+                        const reward = (event.reward || '').toLowerCase();
+                        if (!reward.includes(filters.reward)) return false;
+                    }
+                    
+                    // Threat level filter (OR logic within filter, only for ACTIVE_THREAT events)
+                    if (filters.threatLevel.length > 0 && event.category === 'ACTIVE_THREAT') {
+                        const threatLevel = event.threat_level || '';
+                        const matchesThreatLevel = filters.threatLevel.some(tl => 
+                            threatLevel.toLowerCase().includes(tl.toLowerCase())
+                        );
+                        if (!matchesThreatLevel) return false;
+                    }
+                    
+                    return true;
+                });
+            },
+            
+            // Update filtered events and UI
+            updateFilters: function() {
+                const filters = this.getFilterValues();
+                this.filteredEvents = this.filterEvents(this.allEvents, filters);
+                this.updateMatchingCount();
+                this.updatePreviewList();
+            },
+            
+            // Update matching count display
+            updateMatchingCount: function() {
+                const countElement = document.getElementById('matching-count');
+                countElement.textContent = this.filteredEvents.length;
+                countElement.className = this.filteredEvents.length === 0 ? 'text-2xl text-red-400' : 'text-2xl text-green-400';
+            },
+            
+            // Update preview list
+            updatePreviewList: function() {
+                const listElement = document.getElementById('event-preview-list');
+                listElement.innerHTML = '';
+                
+                if (this.filteredEvents.length === 0) {
+                    listElement.innerHTML = '<li class="text-red-400">No events match current filters</li>';
+                    return;
+                }
+                
+                const previewCount = Math.min(10, this.filteredEvents.length);
+                for (let i = 0; i < previewCount; i++) {
+                    const li = document.createElement('li');
+                    li.textContent = `• ${this.filteredEvents[i].title}`;
+                    listElement.appendChild(li);
+                }
+                
+                if (this.filteredEvents.length > 10) {
+                    const li = document.createElement('li');
+                    li.textContent = `... and ${this.filteredEvents.length - 10} more`;
+                    li.className = 'text-gray-500 italic';
+                    listElement.appendChild(li);
+                }
+            }
+        };
+
+        // Clear all filters
+        function clearAllFilters() {
+            document.getElementById('filter-categories').selectedIndex = -1;
+            document.getElementById('filter-skills').selectedIndex = -1;
+            document.getElementById('filter-time-cost').selectedIndex = -1;
+            document.getElementById('filter-new-area').value = 'either';
+            document.getElementById('filter-reward').value = '';
+            document.getElementById('filter-threat-level').selectedIndex = -1;
+            EventFilterManager.updateFilters();
+        }
+
+        // Generate filtered event
+        async function generateFilteredEvent() {
+            const filters = EventFilterManager.getFilterValues();
+            
+            if (EventFilterManager.filteredEvents.length === 0) {
+                alert('No events match your current filters. Please adjust your filters.');
+                return;
+            }
+            
+            const btn = document.getElementById('generate-filtered-event-btn');
+            btn.disabled = true;
+            btn.textContent = '⏳ Generating...';
+            
+            try {
+                const response = await fetch('/api/encounter', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        floor: currentFloor,
+                        sum: 50, // Dummy value since we're using filters
+                        party_level: partyLevel,
+                        filters: filters
+                    })
+                });
+                
+                const event = await response.json();
+                displayEncounter(event, 50);
+                updateHistory();
+            } catch (error) {
+                console.error('Error generating filtered event:', error);
+                alert('Error generating event. Please try again.');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = '🎲 GENERATE FILTERED EVENT';
+            }
+        }
+
+        // Test floor filtering by generating 5 events rapidly
+        async function testFloorFiltering() {
+            const btn = event.target;
+            btn.disabled = true;
+            btn.textContent = '🧪 Testing...';
+            
+            const display = document.getElementById('encounter-display');
+            display.innerHTML = '<p class="text-center text-gray-400">Generating 5 test events for Floor ' + currentFloor + '...</p>';
+            display.classList.remove('hidden');
+            
+            try {
+                let allEventsHtml = '<div class="space-y-6">';
+                
+                // Generate 5 events
+                for (let i = 0; i < 5; i++) {
+                    // Random dice total between 5 and 100
+                    const randomSum = Math.floor(Math.random() * 96) + 5;
+                    
+                    const response = await fetch('/api/encounter', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            floor: currentFloor,
+                            sum: randomSum,
+                            party_level: partyLevel,
+                            space_type: 'unknown',
+                            party_status: 'healthy',
+                            recent_combat: false,
+                            new_area: true
+                        })
+                    });
+                    
+                    const event = await response.json();
+                    
+                    // Build HTML for this event using the same logic as displayEncounter
+                    const categoryColors = {
+                        'OPPORTUNITY': 'from-green-600 to-emerald-600',
+                        'COMPLICATION': 'from-yellow-600 to-orange-600',
+                        'DILEMMA': 'from-blue-600 to-cyan-600',
+                        'ACTIVE_THREAT': 'from-red-600 to-pink-600',
+                        'COMBAT': 'from-purple-600 to-fuchsia-600'
+                    };
+
+                    const isExtreme = randomSum <= 8 || randomSum >= 97;
+                    const extremeLabel = isExtreme ? '<div class="bg-red-900 border-2 border-red-500 p-2 rounded-lg mb-2 text-center"><span class="text-red-300 font-bold text-lg">⚡ EXTREME ROLL! ⚡</span></div>' : '';
+
+                    let eventHtml = `
+                        <div class="border-4 border-yellow-500 rounded-lg p-1">
+                        ${extremeLabel}
+                        <div class="bg-gradient-to-r ${categoryColors[event.category]} p-1 rounded-lg">
+                            <div class="bg-gray-900 p-4 rounded-lg">
+                                <div class="flex justify-between items-start mb-2">
+                                    <span class="text-sm font-bold text-gray-400">Test Event ${i + 1} | Dice Total: ${randomSum} | Floor: ${event.floor}</span>
+                                    <span class="px-3 py-1 rounded-full text-sm font-bold bg-gradient-to-r ${categoryColors[event.category]}">${event.category}</span>
+                                </div>
+                                <h3 class="text-3xl font-bold mb-4">${event.title}</h3>
+                                <p class="text-lg mb-4 text-gray-300">${event.description}</p>
+                    `;
+
+                    // Category-specific content (same as displayEncounter)
+                    if (event.category === 'OPPORTUNITY' || event.category === 'COMPLICATION') {
+                        // Parse success field for multiple options (separated by OR)
+                        let successHtml = '';
+                        if (event.success && event.success.includes(' OR ')) {
+                            const options = event.success.split(' OR ');
+                            successHtml = '<div class="space-y-2">';
+                            options.forEach((option, index) => {
+                                const optionLabel = option.match(/^([A-Z\s]+):/);
+                                if (optionLabel) {
+                                    const label = optionLabel[1];
+                                    const content = option.substring(optionLabel[0].length).trim();
+                                    successHtml += `<div class="bg-gray-700 p-3 rounded border-l-4 border-green-500">
+                                        <p class="font-bold text-green-300">Option ${index + 1}: ${label}</p>
+                                        <p class="text-gray-300 mt-1">${content}</p>
+                                    </div>`;
+                                } else {
+                                    successHtml += `<div class="bg-gray-700 p-3 rounded border-l-4 border-green-500">
+                                        <p class="font-bold text-green-300">Option ${index + 1}:</p>
+                                        <p class="text-gray-300 mt-1">${option.trim()}</p>
+                                    </div>`;
+                                }
+                            });
+                            successHtml += '</div>';
+                        } else {
+                            successHtml = `<p><strong class="text-green-400">Success:</strong> ${event.success}</p>`;
+                        }
+                        
+                        eventHtml += `
+                            <div class="space-y-2 bg-gray-800 p-4 rounded-lg">
+                                <p><strong class="text-purple-400">Challenge:</strong> ${event.challenge}</p>
+                                ${successHtml}
+                                <p><strong class="text-red-400">Failure:</strong> ${event.failure}</p>
+                                <p><strong class="text-blue-400">Skills:</strong> ${event.skills.join(', ')}</p>
+                                <p><strong class="text-yellow-400">Time Cost:</strong> ${event.time_cost}</p>
+                                ${event.reward ? `<p><strong class="text-cyan-400">Reward:</strong> ${event.reward}</p>` : ''}
+                                ${event.spotlight ? `<p><strong class="text-pink-400">Spotlight:</strong> ${event.spotlight.join(', ')}</p>` : ''}
+                                ${event.consequence ? `<p><strong class="text-orange-400">Consequence:</strong> ${event.consequence}</p>` : ''}
+                            </div>
+                        `;
+                    } else if (event.category === 'DILEMMA') {
+                        eventHtml += `
+                            <div class="space-y-2 bg-gray-800 p-4 rounded-lg">
+                                <p><strong class="text-purple-400">Choice A:</strong> ${event.choice_a}</p>
+                                ${event.choice_b ? `<p><strong class="text-purple-400">Choice B:</strong> ${event.choice_b}</p>` : ''}
+                                ${event.choice_c ? `<p><strong class="text-purple-400">Choice C:</strong> ${event.choice_c}</p>` : ''}
+                                ${event.skills ? `<p><strong class="text-blue-400">Skills:</strong> ${event.skills.join(', ')}</p>` : ''}
+                                ${event.time_cost ? `<p><strong class="text-yellow-400">Time Cost:</strong> ${event.time_cost}</p>` : ''}
+                                ${event.consequence ? `<p><strong class="text-orange-400">Consequence:</strong> ${event.consequence}</p>` : ''}
+                                ${event.spotlight ? `<p><strong class="text-pink-400">Spotlight:</strong> ${event.spotlight.join(', ')}</p>` : ''}
+                                ${event.context ? `<p><strong class="text-cyan-400">Context:</strong> ${event.context}</p>` : ''}
+                            </div>
+                        `;
+                    } else if (event.category === 'ACTIVE_THREAT') {
+                        eventHtml += `
+                            <div class="bg-red-900 border-2 border-red-500 p-4 rounded-lg mb-4">
+                                <p class="text-xl font-bold text-red-300">⚠️ ${event.urgency}</p>
+                            </div>
+                            <div class="space-y-2 bg-gray-800 p-4 rounded-lg">
+                                <p><strong class="text-purple-400">Immediate Action:</strong> ${event.immediate_action}</p>
+                                <p><strong class="text-green-400">Success:</strong> ${event.success}</p>
+                                <p><strong class="text-red-400">Failure:</strong> ${event.failure}</p>
+                                ${event.skills ? `<p><strong class="text-blue-400">Skills:</strong> ${event.skills.join(', ')}</p>` : ''}
+                                ${event.threat_level ? `<p><strong class="text-orange-400">Threat Level:</strong> ${event.threat_level}</p>` : ''}
+                                ${event.spotlight ? `<p><strong class="text-pink-400">Spotlight:</strong> ${event.spotlight.join(', ')}</p>` : ''}
+                                ${event.creatures ? `<p><strong class="text-red-400">Creatures:</strong> ${event.creatures}</p>` : ''}
+                            </div>
+                        `;
+                    }
+
+                    eventHtml += `
+                                <div class="mt-4 text-sm text-gray-500">
+                                    <strong>GM Notes:</strong> ${event.gm_notes || 'None'}
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    `;
+                    
+                    allEventsHtml += eventHtml;
+                }
+                
+                allEventsHtml += '</div>';
+                display.innerHTML = allEventsHtml;
+                display.scrollIntoView({ behavior: 'smooth' });
+                
+            } catch (error) {
+                console.error('Error testing floor filtering:', error);
+                display.innerHTML = `
+                    <div class="text-center text-red-400">
+                        <h3 class="text-2xl font-bold mb-4">🧪 Test Failed</h3>
+                        <p>Error: ${error.message}</p>
+                    </div>
+                `;
+            } finally {
+                btn.disabled = false;
+                btn.textContent = '🧪 Test Floor Filter (Generate 5 Events)';
+            }
         }
 
 

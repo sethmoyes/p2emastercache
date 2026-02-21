@@ -51,18 +51,21 @@ def is_compatible(template: Dict[str, Any], context: EventContext) -> bool:
 
 def select_template(
     templates: List[Dict[str, Any]], 
-    context: EventContext
+    context: EventContext,
+    floor: int = None
 ) -> Dict[str, Any]:
     """
-    Select appropriate event template based on context.
+    Select appropriate event template based on context and floor.
     
-    Filters templates by compatibility with context parameters and randomly
-    selects from compatible options. If no templates are compatible, falls
-    back to random selection from all templates.
+    Filters templates by compatibility with context parameters and floor,
+    then randomly selects from compatible options. If no templates are 
+    compatible, falls back to random selection from all templates.
     
     Args:
         templates: List of event template dictionaries
         context: Context parameters
+        floor: Floor number (1-10). If provided, only returns events for 
+               that floor or generic events (floor=0)
     
     Returns:
         Selected event template dictionary
@@ -73,6 +76,12 @@ def select_template(
     if not templates:
         raise ValueError("Cannot select from empty template list")
     
+    # Filter by floor first (if specified)
+    if floor is not None:
+        # Events with floor=0 are generic (appear on all floors)
+        # Events with floor=1-10 only appear on that specific floor
+        templates = [t for t in templates if t.get('floor', 0) == 0 or t.get('floor', 0) == floor]
+    
     # Filter templates by context compatibility
     compatible = [t for t in templates if is_compatible(t, context)]
     
@@ -80,4 +89,4 @@ def select_template(
     if compatible:
         return random.choice(compatible)
     else:
-        return random.choice(templates)
+        return random.choice(templates) if templates else {'error': 'No templates available'}

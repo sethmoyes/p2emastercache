@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otari Market Square - Player View</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
     <style>
         body {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
@@ -18,6 +19,57 @@
         }
         #bg-art {
             transition: opacity 0.5s ease-in-out;
+        }
+        
+        /* Panzoom container styles */
+        .map-container {
+            overflow: hidden;
+            position: relative;
+            cursor: grab;
+            border-radius: 0.5rem;
+            background: #1f2937;
+        }
+        .map-container:active {
+            cursor: grabbing;
+        }
+        .map-image {
+            display: block;
+            max-width: none;
+            width: 100%;
+            height: auto;
+        }
+        
+        /* Zoom controls */
+        .zoom-controls {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            z-index: 10;
+        }
+        .zoom-btn {
+            background: rgba(31, 41, 55, 0.9);
+            border: 2px solid #3b82f6;
+            color: white;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            backdrop-filter: blur(4px);
+        }
+        .zoom-btn:hover {
+            background: rgba(59, 130, 246, 0.9);
+            transform: scale(1.1);
+        }
+        .zoom-btn:active {
+            transform: scale(0.95);
         }
     </style>
 </head>
@@ -45,8 +97,18 @@
         <!-- Town Map -->
         <div class="bg-gray-800 rounded-lg p-6 mb-6 shadow-2xl border border-blue-500">
             <h2 class="text-2xl font-bold mb-4">Town Map</h2>
-            <div class="flex justify-center">
-                <img src="/static/otari.webp" alt="Otari Town Map" class="rounded-lg max-w-full h-auto shadow-lg">
+            <p class="text-center text-gray-400 mb-2 text-sm">
+                📱 Touch/Click and drag to pan • Pinch/Scroll to zoom • Double-click to reset
+            </p>
+            <div class="relative">
+                <div id="map-container" class="map-container" style="height: 600px;">
+                    <img id="otari-map" src="/static/otari.big.webp" alt="Otari Town Map" class="map-image">
+                </div>
+                <div class="zoom-controls">
+                    <button class="zoom-btn" onclick="zoomIn()" title="Zoom In">+</button>
+                    <button class="zoom-btn" onclick="zoomOut()" title="Zoom Out">−</button>
+                    <button class="zoom-btn" onclick="resetZoom()" title="Reset" style="font-size: 1.2rem;">⟲</button>
+                </div>
             </div>
             <p class="text-center text-gray-400 mt-4 text-sm">Click on a merchant below to view their shop</p>
         </div>
@@ -123,6 +185,53 @@
     </div>
 
     <script>
+        // Initialize Panzoom for the map
+        let panzoomInstance;
+        
+        window.addEventListener('DOMContentLoaded', function() {
+            const elem = document.getElementById('otari-map');
+            const container = document.getElementById('map-container');
+            
+            panzoomInstance = Panzoom(elem, {
+                maxScale: 5,
+                minScale: 1,
+                contain: 'outside',
+                cursor: 'grab',
+                canvas: true,
+                startScale: 1,
+                startX: 0,
+                startY: 0
+            });
+            
+            // Enable mouse wheel zoom
+            container.addEventListener('wheel', function(e) {
+                e.preventDefault();
+                panzoomInstance.zoomWithWheel(e);
+            });
+            
+            // Double-click to reset
+            container.addEventListener('dblclick', function() {
+                resetZoom();
+            });
+            
+            // Touch gestures are handled automatically by Panzoom
+        });
+        
+        function zoomIn() {
+            panzoomInstance.zoomIn();
+        }
+        
+        function zoomOut() {
+            panzoomInstance.zoomOut();
+        }
+        
+        function resetZoom() {
+            panzoomInstance.reset({
+                animate: true,
+                duration: 300
+            });
+        }
+        
         // Wayne Reynolds art rotation
         const wrArt = [
             '/static/art/wr_goblin.jpg',

@@ -175,8 +175,8 @@ def generate_opportunity_event(floor_num, floor_data, party_level, context=None)
     if context is None:
         context = EventContext()
     
-    # Select template based on context
-    template = select_template(OPPORTUNITY_TEMPLATES, context)
+    # Select template based on context AND floor
+    template = select_template(OPPORTUNITY_TEMPLATES, context, floor=floor_num)
     
     # Customize for floor
     event = template.copy()
@@ -219,8 +219,8 @@ def generate_complication_event(floor_num, floor_data, party_level, context=None
     if context is None:
         context = EventContext()
     
-    # Select template based on context
-    template = select_template(COMPLICATION_TEMPLATES, context)
+    # Select template based on context AND floor
+    template = select_template(COMPLICATION_TEMPLATES, context, floor=floor_num)
     
     event = template.copy()
     event['floor'] = floor_num
@@ -262,8 +262,8 @@ def generate_dilemma_event(floor_num, floor_data, party_level, context=None):
     if context is None:
         context = EventContext()
     
-    # Select template based on context
-    template = select_template(DILEMMA_TEMPLATES, context)
+    # Select template based on context AND floor
+    template = select_template(DILEMMA_TEMPLATES, context, floor=floor_num)
     
     event = template.copy()
     event['floor'] = floor_num
@@ -292,8 +292,8 @@ def generate_active_threat_event(floor_num, floor_data, party_level, context=Non
     if context is None:
         context = EventContext()
     
-    # Select template based on context
-    template = select_template(ACTIVE_THREAT_TEMPLATES, context)
+    # Select template based on context AND floor
+    template = select_template(ACTIVE_THREAT_TEMPLATES, context, floor=floor_num)
     
     event = template.copy()
     event['floor'] = floor_num

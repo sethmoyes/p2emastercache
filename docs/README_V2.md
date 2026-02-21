@@ -146,6 +146,16 @@ Monsters have lives - eating, sleeping, fighting each other.
 - Sleeping creatures? Sneak past or attack
 - Distracted guards? Deceive or avoid
 
+### 6. Prepared Tokens (NEW!)
+Strategic time investment system. Spend time preparing when safe, save time when dangerous.
+
+**Example:**
+- Find defensive position, no enemies nearby
+- Spend 10 min preparing fallback plans (ADD 1 DIE, gain token)
+- Later, moving between floors would cost 1 die
+- Spend token: Add 0 dice instead
+- Net result: Prepared for future at no time cost!
+
 ---
 
 ## Statistics
@@ -283,8 +293,8 @@ Use freely, modify as needed, share improvements!
 
 ✅ **COMPLETE AND READY TO USE**
 
-**Version:** 2.0.0  
-**Date:** 2024  
+**Version:** 2.1.0  
+**Date:** February 2026  
 **Quality:** Production-ready  
 
 ---
