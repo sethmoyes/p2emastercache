@@ -1,0 +1,4 @@
+# file: /Users/smoyes/Documents/p2emastercache/bin/event_loader.py
+# hypothesis_version: 6.151.8
+
+['ACTIVE_THREAT', 'COMPLICATION', 'DILEMMA', 'OPPORTUNITY', 'challenge', 'choice_a', 'choice_b', 'choice_c', 'consequence', 'description', 'failure', 'gm_notes', 'immediate_action', 'r', 'required_spaces', 'requires_new_area', 'reward', 'skills', 'spotlight', 'success', 'threat_level', 'time_cost', 'title', 'urgency', 'utf-8']

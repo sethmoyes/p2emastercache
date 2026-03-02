@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://cdna.artstation.com/p/assets/images/images/040/706/094/large/ksenia-kozhevnikova-pzo9309-mixed-marketplace.jpg?1629664123" alt="Proprietor" width="250">
+<img src="https://2e.aonprd.com/Images/Monsters/Guildmaster.webp" alt="Proprietor" width="250">
 
 </div>
 
@@ -21,34 +21,38 @@
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
 | 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 100 gp | Restores one expended spell slot of 3rd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (8)
+## Common Items (12)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Wool (1 Bulk) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wool) |
-| 🖼️ | Memoir Map | 1 | 13 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Memoir%20Map) |
-| 🖼️ | Leaf Weave | 5 | 160 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Leaf%20Weave) |
-| 🖼️ | Fixer (Expert Informant) | 0 | 1 gp (per hour) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fixer) |
-| 🖼️ | Conflagration Club | 6 | 250 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Conflagration%20Club) |
-| ![Caltrops](https://2e.aonprd.com/Images/Treasure/Caltrops.webp) | Caltrops | 0 | 3 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Caltrops) |
-| 🖼️ | Spyglass | 4 | 80 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spyglass) |
-| 🖼️ | Trustworthy Round | 3 | 9 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Trustworthy%20Round) |
+| 🖼️ | Clothing (Fine) | 0 | 2 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clothing) |
+| 🖼️ | Magical Hearing Aid | 1 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magical%20Hearing%20Aid) |
+| ![Antiplague (Lesser)](https://2e.aonprd.com/Images/Treasure/Antiplague.webp) | Antiplague (Lesser) | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Antiplague) |
+| 🖼️ | Obsidian Goggles (Major) | 5 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Obsidian%20Goggles) |
+| 🖼️ | Greatclub | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Greatclub) |
+| 🖼️ | Superior Catch Pole | 4 | 80 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Superior%20Catch%20Pole) |
+| 🖼️ | Stage Fright Missive | 5 | 22 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stage%20Fright%20Missive) |
+| 🖼️ | Amphisbaena Spittle | 5 | 21 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Amphisbaena%20Spittle) |
+| 🖼️ | Sparking Spellgun (Lesser) | 5 | 30 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sparking%20Spellgun) |
+| 🖼️ | Compass (Lensatic) | 3 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Compass) |
+| 🖼️ | Eternal Eruption of Blackpeak | 5 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eternal%20Eruption%20of%20Blackpeak) |
+| 🖼️ | Raiment | 5 | 140 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Raiment) |
 
-## Uncommon Items (1)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Palstave | 0 | 4 sp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Palstave) |
+| ![Mikazuki (Ranged)](https://2e.aonprd.com/Images/Weapons/Mikazuki.webp) | Mikazuki (Ranged) | 0 | 8 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mikazuki) |
+| 🖼️ | Cartographer's Kit | 3 | 42 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cartographer%27s%20Kit) |
+| 🖼️ | Burial Oil | 3 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Burial%20Oil) |
 
 ## Services
 

@@ -20,11 +20,11 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Spell Slot Restoration Potion (Lesser)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Spell Slot Restoration Potion (Lesser)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Spell Slot Restoration Potion (Lesser)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Spell Slot Restoration Potion (Lesser)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 
 ---
 
@@ -36,28 +36,31 @@
 
 *Study time: 1 hour (common), 5 hours (uncommon), 1 day (rare).*
 
-## Common Spell Scrolls (8)
+## Common Spell Scrolls (5)
 
 | Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |
 |------------|-------|-------|-------|------------|-------|--------|------|
-| SCROLL OF SHATTER | 2 | 6 gp | 18 | Occult, Primal | 30 | Evocation, Sonic | [View](https://2e.aonprd.com/Spells.aspx?ID=279) |
-| SCROLL OF DAY'S WEIGHT | 3 | 16 gp | 20 | Arcane, Occult, Primal | 120 | Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=891) |
-| SCROLL OF SHAPE WOOD | 2 | 6 gp | 18 | Primal | 0 | Plant, Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=277) |
-| SCROLL OF INVISIBLE ITEM | 1 | 2 gp | 15 | Arcane, Occult | 0 | Illusion | [View](https://2e.aonprd.com/Spells.aspx?ID=700) |
-| SCROLL OF VITAL BEACON | 4 | 36 gp | 23 | Divine, Primal | Unknown | Concentrate, Healing, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1743) |
-| SCROLL OF SPIRIT LINK | 1 | 2 gp | 15 | Divine, Occult | 30 | Healing, Necromancy | [View](https://2e.aonprd.com/Spells.aspx?ID=302) |
-| SCROLL OF RUNIC WEAPON | 1 | 2 gp | 15 | Arcane, Divine, Occult, Primal, Elemental | 0 | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1658) |
-| SCROLL OF ACIDIC BURST | 1 | 2 gp | 15 | Arcane, Primal | Unknown | Acid, Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=2340) |
+| SCROLL OF GASEOUS FORM | 4 | 36 gp | 23 | Arcane, Occult, Primal | 0 | Polymorph, Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=129) |
+| SCROLL OF BITING WORDS | 1 | 2 gp | 15 | Occult | Unknown | Attack, Auditory, Evocation | [View](https://2e.aonprd.com/Spells.aspx?ID=868) |
+| SCROLL OF FAERIE FIRE | 2 | 6 gp | 18 | Divine, Occult, Primal, Elemental | 120 | Evocation, Light | [View](https://2e.aonprd.com/Spells.aspx?ID=107) |
+| SCROLL OF FEY FORM | 4 | 36 gp | 23 | Occult, Primal | Unknown | Polymorph, Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=910) |
+| SCROLL OF FEATHER FALL | 1 | 2 gp | 15 | Arcane, Primal | 60 | Abjuration | [View](https://2e.aonprd.com/Spells.aspx?ID=111) |
 
 ## Uncommon Spell Scrolls (5)
 
 | Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |
 |------------|-------|-------|-------|------------|-------|--------|------|
-| SCROLL OF VERDANT SPROUT | 1 | 2 gp | 15 | Primal | 30 | Conjuration, Plant, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=641) |
-| SCROLL OF STRENGTH OF MIND | 3 | 16 gp | 20 | Divine, Occult, Primal | 0 | Concentrate, Mental, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=2455) |
-| SCROLL OF WEB OF INFLUENCE | 4 | 36 gp | 23 |  | 0 | Detection, Divination, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1218) |
-| SCROLL OF STEAL VOICE | 4 | 36 gp | 23 | Arcane, Divine, Occult | 30 | Curse, Incapacitation, Necromancy | [View](https://2e.aonprd.com/Spells.aspx?ID=1268) |
-| SCROLL OF CALL THE BLOOD | 4 | 36 gp | 23 | Arcane, Occult, Primal | 60 | Death, Necromancy, Negative | [View](https://2e.aonprd.com/Spells.aspx?ID=845) |
+| SCROLL OF LOCATE | 3 | 16 gp | 20 | Arcane, Divine, Occult | 500 | Detection, Divination, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=173) |
+| SCROLL OF DEFENDED BY SPIRITS | 1 | 2 gp | 15 | Divine, Occult | 30 | Concentrate, Manipulate, Spirit | [View](https://2e.aonprd.com/Spells.aspx?ID=2468) |
+| SCROLL OF TALKING CORPSE | 4 | 36 gp | 23 | Divine, Occult | 0 | Concentrate, Manipulate, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1712) |
+| SCROLL OF VEIL OF PRIVACY | 3 | 16 gp | 20 | Arcane, Occult, Primal | 0 | Concentrate, Manipulate, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1739) |
+| SCROLL OF WALL OF RADIANCE | 3 | 16 gp | 20 | Arcane, Primal | 30 | Evocation, Light, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1085) |
+
+## Rare Spell Scrolls (1)
+
+| Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |
+|------------|-------|-------|-------|------------|-------|--------|------|
+| SCROLL OF TRANSCRIBE CONFLICT | 3 | 16 gp | 20 | Arcane, Occult | 0 | Divination, Rare | [View](https://2e.aonprd.com/Spells.aspx?ID=1231) |
 
 ---
 
@@ -90,41 +93,36 @@
 - **Greater Reinforcing** (Level 11): 1,400 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 - **Major Reinforcing** (Level 17): 15,000 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 
-## Property Runes (3)
+## Property Runes (2)
 
 | Image | Name | Level | Price | Rarity | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Underwater | 3 | 50 gp | Common | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
-| 🖼️ | Dragon's Breath (1st-Level Spell) | 4 | 100 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Dragon%27s%20Breath) |
-| 🖼️ | Snagging | 3 | 60 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Snagging) |
+| ![Soft-Landing](https://2e.aonprd.com/Images/Rules/Rules444.png) | Soft-Landing | 3 | 60 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Soft-Landing) |
+| ![Bane](https://2e.aonprd.com/Images/Treasure/Hunter_s_Bane.webp) | Bane | 4 | 100 gp | Uncommon | [View](https://2e.aonprd.com/Search.aspx?query=Bane) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (11)
+## Common Items (9)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Spellbook (Blank)](https://2e.aonprd.com/Images/Treasure/Spellbook.webp) | Spellbook (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellbook) |
-| 🖼️ | Wand of Shrouded Step | 4 | 80 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Shrouded%20Step) |
-| 🖼️ | Staff of Elemental Power | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Elemental%20Power) |
-| 🖼️ | Staff of Phantasms | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Phantasms) |
-| 🖼️ | Staff of Control | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Control) |
-| 🖼️ | Spellcasting (9th rank) | 0 | 1,800 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
-| 🖼️ | Wand of Noisome Acid (2nd-Rank Spell) | 6 | 250 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Noisome%20Acid) |
-| 🖼️ | Staff of the Unblinking Eye (Major) | 6 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Unblinking%20Eye) |
-| ![Torrent Spellgun (Lesser)](https://2e.aonprd.com/Images/Treasure/Torrent_Spellgun.webp) | Torrent Spellgun (Lesser) | 3 | 12 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Torrent%20Spellgun) |
-| 🖼️ | Wand of Shardstorm (7th-rank Spell) | 5 | 0 gp | Common | N/A | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Shardstorm) |
-| 🖼️ | Spellcasting (3rd rank) | 0 | 18 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
+| ![Staff of the Dead (Greater)](https://2e.aonprd.com/Images/Monsters/Lich_Lich.png) | Staff of the Dead (Greater) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Dead) |
+| ![Spellcasting (2nd rank)](https://2e.aonprd.com/Images/Classes/Iconic_Seoni.png) | Spellcasting (2nd rank) | 0 | 7 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
+| ![Wand of Noisome Acid (2nd-Rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Wand of Noisome Acid (2nd-Rank Spell) | 6 | 250 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Noisome%20Acid) |
+| ![Wand Cane](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Wand Cane | 4 | 100 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20Cane) |
+| ![Staff of Control (Greater)](https://2e.aonprd.com/Images/Treasure/Staff_of_Power.webp) | Staff of Control (Greater) | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Control) |
+| ![Wand of Rolling Flames (2nd-Rank Spell)](https://2e.aonprd.com/Images/PF1Logo_Nethys.png) | Wand of Rolling Flames (2nd-Rank Spell) | 6 | 250 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Rolling%20Flames) |
+| ![Staff of the Unblinking Eye (Major)](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Staff of the Unblinking Eye (Major) | 6 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20the%20Unblinking%20Eye) |
+| ![Magic Wand (3rd-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (3rd-rank Spell) | 3 | 0 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
+| ![Wand of Mercy (1st-Rank Spell)](https://2e.aonprd.com/Images/starfinder_2_logo.webp) | Wand of Mercy (1st-Rank Spell) | 4 | 75 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mercy) |
 
-## Uncommon Items (3)
+## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Bane | 4 | 100 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bane) |
-| 🖼️ | Dragon's Breath (2nd-Level Spell) | 6 | 250 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dragon%27s%20Breath) |
-| 🖼️ | Talisman Cord | 4 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Talisman%20Cord) |
+| ![Snagging](https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png) | Snagging | 3 | 60 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Snagging) |
 
 ## Services
 

@@ -122,8 +122,7 @@ def clean_item_name(name):
 DEFAULT_MERCHANT_IMAGES = [
     "https://2e.aonprd.com/Images/Monsters/Merchant.webp",
     "https://2e.aonprd.com/Images/Monsters/Guildmaster.webp",
-    "https://i.redd.it/mr6j0g84qplc1.jpeg",
-    "https://cdna.artstation.com/p/assets/images/images/040/706/094/large/ksenia-kozhevnikova-pzo9309-mixed-marketplace.jpg?1629664123"
+    "https://i.redd.it/mr6j0g84qplc1.jpeg"
 ]
 
 def get_merchant_image(npc_name, merchant_index=0):

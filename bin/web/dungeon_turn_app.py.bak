@@ -666,13 +666,13 @@ def get_document(doc_name):
 def markdown_to_html(markdown_text):
     """Convert markdown to HTML with proper table support"""
     import re
-
+    
     # Process tables first (before line breaks)
     lines = markdown_text.split('\n')
     result = []
     in_table = False
     table_lines = []
-
+    
     for i, line in enumerate(lines):
         # Detect table rows (contains |)
         if '|' in line and line.strip().startswith('|'):
@@ -687,30 +687,32 @@ def markdown_to_html(markdown_text):
                 in_table = False
                 table_lines = []
             result.append(line)
-
+    
     # Handle table at end of file
     if in_table:
         result.append(convert_table_to_html(table_lines))
-
+    
     html = '\n'.join(result)
-
+    
     # Headers
     html = re.sub(r'^# (.+)$', r'<h1 class="text-4xl font-bold mt-8 mb-4 text-blue-400">\1</h1>', html, flags=re.MULTILINE)
     html = re.sub(r'^## (.+)$', r'<h2 class="text-3xl font-bold mt-6 mb-3 text-purple-400">\1</h2>', html, flags=re.MULTILINE)
     html = re.sub(r'^### (.+)$', r'<h3 class="text-2xl font-bold mt-4 mb-2 text-pink-400">\1</h3>', html, flags=re.MULTILINE)
     html = re.sub(r'^#### (.+)$', r'<h4 class="text-xl font-bold mt-3 mb-2 text-white">\1</h4>', html, flags=re.MULTILINE)
-
+    
     # Horizontal rules
     html = re.sub(r'^---+$', r'<hr class="my-6 border-gray-600">', html, flags=re.MULTILINE)
-
+    
     # Bold and italic
     html = re.sub(r'\*\*(.+?)\*\*', r'<strong class="text-white font-bold">\1</strong>', html)
     html = re.sub(r'\*(.+?)\*', r'<em class="text-gray-300">\1</em>', html)
-
-
+    
+    # Images (convert markdown syntax to HTML)
+    html = re.sub(r'!\[([^\]]*)\]\(([^\)]+)\)', r'<img src="\2" alt="\1" class="max-w-xs h-auto rounded border border-gray-600" loading="lazy">', html)
+    
     # Links
     html = re.sub(r'\[(.+?)\]\((.+?)\)', r'<a href="\2" class="text-blue-400 hover:text-blue-300 underline" target="_blank">\1</a>', html)
-
+    
     # Lists
     lines = html.split('\n')
     in_list = False
@@ -729,70 +731,17 @@ def markdown_to_html(markdown_text):
     if in_list:
         result.append('</ul>')
     html = '\n'.join(result)
-
+    
     # Paragraphs (but not for lines that are already HTML)
-    # Enhanced to track HTML blocks that span multiple lines
     lines = html.split('\n')
     result = []
-    in_html_block = False
-    html_block_depth = 0
-    in_self_closing_tag = False  # Track if we're inside a self-closing tag like <img>
-
-    # Block-level HTML tags that indicate start of multi-line HTML blocks
-    # Note: 'hr' is excluded because it's self-closing and doesn't create a block
-    block_tags = ['div', 'table', 'button', 'script', 'ul', 'ol', 'thead', 'tbody', 'tr', 'td', 'th']
-    self_closing_tags = ['img']  # Tags that don't have closing tags
-
     for line in lines:
-        stripped = line.strip()
-
-        # Count opening and closing tags on this line to update depth
-        line_depth_change = 0
-        for tag in block_tags:
-            # Count opening tags
-            line_depth_change += stripped.count(f'<{tag} ') + stripped.count(f'<{tag}>')
-            # Count closing tags
-            line_depth_change -= stripped.count(f'</{tag}>')
-
-        # Handle self-closing tags (like <img>) that span multiple lines
-        for tag in self_closing_tags:
-            if f'<{tag} ' in stripped or f'<{tag}>' in stripped:
-                # Opening a self-closing tag
-                in_self_closing_tag = True
-                line_depth_change += 1
-            if in_self_closing_tag and stripped.endswith('>') and not stripped.endswith('/>'):
-                # Closing the self-closing tag (ends with > but not with />)
-                # Check if this line actually closes the tag by seeing if it has attributes
-                if '=' in stripped or stripped == '>':
-                    in_self_closing_tag = False
-                    line_depth_change -= 1
-
-        # Update depth and block state
-        html_block_depth += line_depth_change
-        if html_block_depth < 0:
-            html_block_depth = 0
-
-        # Determine if we should wrap this line in <p> tags
-        should_wrap = False
-        if stripped:  # Non-empty line
-            # Don't wrap if:
-            # 1. Inside an HTML block (depth > 0)
-            # 2. Line starts with < (single-line HTML or opening tag)
-            # 3. Line ends with > (closing tag or single-line HTML)
-            if html_block_depth == 0 and not stripped.startswith('<') and not stripped.endswith('>'):
-                should_wrap = True
-
-        # Add the line to result
-        if should_wrap:
+        if line.strip() and not line.strip().startswith('<') and not line.strip().endswith('>'):
             result.append(f'<p class="mb-3 text-gray-300">{line}</p>')
         else:
             result.append(line)
-
-        # Update block state based on depth
-        in_html_block = (html_block_depth > 0)
-
     html = '\n'.join(result)
-
+    
     return html
 
 def convert_table_to_html(table_lines):
@@ -809,9 +758,9 @@ def convert_table_to_html(table_lines):
     
     # Skip separator line (table_lines[1])
     
-    # Parse rows and collect all items (with and without images)
+    # Parse rows and collect all images
     rows = []
-    all_items = []  # Collect all items for the grid view
+    all_images = []  # Collect all image URLs for the grid view
     for line in table_lines[2:]:
         if '|' in line:
             cells = [cell.strip() for cell in line.split('|')[1:-1]]
@@ -856,24 +805,6 @@ def convert_table_to_html(table_lines):
         row_id = f'row-{uuid.uuid4().hex[:8]}'
         html += f'<tr class="{bg_class} hover:bg-gray-800 transition" id="{row_id}">'
         
-        # Extract item name from Name column (clean markdown formatting)
-        # Find the index of the "Name" column in headers
-        name_col_idx = next((i for i, h in enumerate(headers) if h.lower() == 'name'), None)
-        
-        # Extract item name: use Name column if found, fallback to row[1], then 'Unknown Item'
-        if name_col_idx is not None and len(row) > name_col_idx:
-            item_name = row[name_col_idx]
-        elif len(row) > 1:
-            item_name = row[1]
-        else:
-            item_name = 'Unknown Item'
-        
-        # Remove markdown bold (**text**), italic (*text*), and links ([text](url))
-        item_name = re.sub(r'\*\*([^\*]+)\*\*', r'\1', item_name)  # Remove bold
-        item_name = re.sub(r'\*([^\*]+)\*', r'\1', item_name)  # Remove italic
-        item_name = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', item_name)  # Remove links
-        item_name = item_name.strip()
-        
         for j, cell in enumerate(row):
             # Check if this cell contains an image (markdown format: ![alt](url))
             img_match = re.search(r'!\[([^\]]*)\]\(([^\)]+)\)', cell)
@@ -883,14 +814,8 @@ def convert_table_to_html(table_lines):
                 alt_text = img_match.group(1)
                 img_url = img_match.group(2)
                 
-                # Store item with image for grid view
-                all_items.append({
-                    'name': item_name,
-                    'url': img_url,
-                    'alt': alt_text,
-                    'has_image': True,
-                    'row_index': i
-                })
+                # Store image for grid view
+                all_images.append({'url': img_url, 'alt': alt_text, 'row_index': i})
                 
                 # Create button with preloaded hidden image
                 cell_content = f'''
@@ -906,16 +831,6 @@ def convert_table_to_html(table_lines):
                          data-grid-alt="{alt_text}">
                 '''
                 html += f'<td class="px-4 py-3 text-sm text-gray-300 border-b border-gray-700">{cell_content}</td>'
-            elif headers[j].lower() == 'image':
-                # Image column but no image - store item without image for grid view
-                all_items.append({
-                    'name': item_name,
-                    'url': None,
-                    'alt': item_name,
-                    'has_image': False,
-                    'row_index': i
-                })
-                html += f'<td class="px-4 py-3 text-sm text-gray-300 border-b border-gray-700">{cell}</td>'
             else:
                 html += f'<td class="px-4 py-3 text-sm text-gray-300 border-b border-gray-700">{cell}</td>'
         
@@ -924,10 +839,10 @@ def convert_table_to_html(table_lines):
     
     html += '</table>'
     
-    # Hidden div to store item data for grid view
-    if all_items:
+    # Hidden div to store image data for grid view
+    if all_images:
         import json
-        html += f'<script type="application/json" class="item-grid-data" data-table="{table_id}">{json.dumps(all_items)}</script>'
+        html += f'<script type="application/json" class="image-grid-data" data-table="{table_id}">{json.dumps(all_images)}</script>'
     
     html += '</div>'
     
