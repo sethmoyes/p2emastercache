@@ -812,6 +812,10 @@ def convert_table_to_html(table_lines):
     # Parse rows and collect all items (with and without images)
     rows = []
     all_items = []  # Collect all items for the grid view
+    
+    # Find the "Link" column index in headers (similar to how we find "Name" column)
+    link_col_idx = next((i for i, h in enumerate(headers) if h.lower() == 'link'), None)
+    
     for line in table_lines[2:]:
         if '|' in line:
             cells = [cell.strip() for cell in line.split('|')[1:-1]]
@@ -874,6 +878,14 @@ def convert_table_to_html(table_lines):
         item_name = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', item_name)  # Remove links
         item_name = item_name.strip()
         
+        # Extract link URL from Link column using regex
+        link_url = None
+        if link_col_idx is not None and len(row) > link_col_idx:
+            link_cell = row[link_col_idx]
+            link_match = re.search(r'\[([^\]]+)\]\(([^\)]+)\)', link_cell)
+            if link_match:
+                link_url = link_match.group(2)  # group(2) is the URL
+        
         for j, cell in enumerate(row):
             # Check if this cell contains an image (markdown format: ![alt](url))
             img_match = re.search(r'!\[([^\]]*)\]\(([^\)]+)\)', cell)
@@ -889,7 +901,8 @@ def convert_table_to_html(table_lines):
                     'url': img_url,
                     'alt': alt_text,
                     'has_image': True,
-                    'row_index': i
+                    'row_index': i,
+                    'link': link_url
                 })
                 
                 # Create button with preloaded hidden image
@@ -913,7 +926,8 @@ def convert_table_to_html(table_lines):
                     'url': None,
                     'alt': item_name,
                     'has_image': False,
-                    'row_index': i
+                    'row_index': i,
+                    'link': link_url
                 })
                 html += f'<td class="px-4 py-3 text-sm text-gray-300 border-b border-gray-700">{cell}</td>'
             else:

@@ -1476,22 +1476,30 @@
             
             itemData.forEach(item => {
                 if (item.has_image) {
-                    // Item with image - display image tile
+                    // Item with image - display image tile wrapped in link
+                    const linkStart = item.link ? `<a href="${item.link}" target="_blank" class="block">` : '';
+                    const linkEnd = item.link ? '</a>' : '';
                     html += `
-                        <div class="bg-gray-900 p-3 rounded-lg border border-gray-700 hover:border-purple-500 transition">
+                        ${linkStart}
+                        <div class="bg-gray-900 p-3 rounded-lg border border-gray-700 hover:border-purple-500 transition ${item.link ? 'cursor-pointer' : ''}">
                             <img src="${item.url}" 
                                  alt="${item.alt}" 
                                  class="w-full h-40 object-contain rounded mb-2"
                                  loading="lazy">
                             <p class="text-xs text-gray-400 text-center truncate">${item.name}</p>
                         </div>
+                        ${linkEnd}
                     `;
                 } else {
-                    // Item without image - display text tile
+                    // Item without image - display text tile wrapped in link
+                    const linkStart = item.link ? `<a href="${item.link}" target="_blank" class="block">` : '';
+                    const linkEnd = item.link ? '</a>' : '';
                     html += `
-                        <div class="bg-gray-900 p-3 rounded-lg border-2 border-dashed border-gray-600 hover:border-yellow-500 transition flex items-center justify-center min-h-[200px]">
+                        ${linkStart}
+                        <div class="bg-gray-900 p-3 rounded-lg border-2 border-dashed border-gray-600 hover:border-yellow-500 transition flex items-center justify-center min-h-[200px] ${item.link ? 'cursor-pointer' : ''}">
                             <p class="text-sm text-gray-400 text-center px-2">${item.name}</p>
                         </div>
+                        ${linkEnd}
                     `;
                 }
             });
