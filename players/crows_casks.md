@@ -20,12 +20,10 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 
 ---
 
@@ -35,27 +33,28 @@
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Beverages (Pot of Coffee or Tea) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
-| 🖼️ | Purifying Spoon (Teaspoon) | 1 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Purifying%20Spoon) |
-| 🖼️ | Eternal Eruption of Pale Mountain | 5 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eternal%20Eruption%20of%20Pale%20Mountain) |
-| 🖼️ | Beverages (Bottle of Fine Wine) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
-| 🖼️ | Meal (Poor) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Meal) |
+| 🖼️ | Healer's Toolkit | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Healer%27s%20Toolkit) |
 | 🖼️ | Meal (Fine Dining) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Meal) |
-| 🖼️ | Tear-Away Clothing | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tear-Away%20Clothing) |
-| ![Merchant's Scale](https://2e.aonprd.com/Images/Treasure/Merchants_Scale.webp) | Merchant's Scale | 0 | 2 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Merchant%27s%20Scale) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Common | Equipment | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Meal (Square) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Meal) |
+| 🖼️ | Purifying Spoon (Teaspoon) | 1 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Purifying%20Spoon) |
+| 🖼️ | Eagle-Eye Elixir (Lesser) | 1 | 4 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eagle-Eye%20Elixir) |
 | 🖼️ | Oilskin Pouch | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oilskin%20Pouch) |
-| 🖼️ | Infiltrator's Elixir | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Infiltrator%27s%20Elixir) |
-| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 100 gp | Common | Equipment | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Cheetah's Elixir (Lesser) | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cheetah%27s%20Elixir) |
+| 🖼️ | Aroma Concealer | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Aroma%20Concealer) |
 | 🖼️ | Lady's Blessing Oil | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lady%27s%20Blessing%20Oil) |
-| 🖼️ | Concealed Sheath | 3 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Concealed%20Sheath) |
+| 🖼️ | Beverages (Bottle of Fine Wine) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Cheetah's Elixir (Lesser) | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cheetah%27s%20Elixir) |
+| 🖼️ | Rations | 0 | 4 sp (1 week) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rations) |
+| 🖼️ | Arbalest | 0 | 8 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Arbalest) |
+| 🖼️ | Meal (Poor) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Meal) |
 
-## Uncommon Items (2)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Energizing Tea | 4 | 20 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Energizing%20Tea) |
-| 🖼️ | Alkenstar Ice Wine | 5 | 25 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Alkenstar%20Ice%20Wine) |
+| ![Tengu Gale Blade](https://2e.aonprd.com/Images/Weapons/Tengu_Gale_Blade.webp) | Tengu Gale Blade | 0 | 4 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tengu%20Gale%20Blade) |
+| 🖼️ | Asp Coil | 0 | 10 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Asp%20Coil) |
+| 🖼️ | Comealong | 0 | 3 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Comealong) |
 
 ## Services
 

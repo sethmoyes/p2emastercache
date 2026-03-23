@@ -20,11 +20,9 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 100 gp | Restores one expended spell slot of 3rd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
 ---
 
@@ -57,44 +55,25 @@
 - **Greater Reinforcing** (Level 11): 1,400 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 - **Major Reinforcing** (Level 17): 15,000 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 
-## Property Runes (1)
-
-| Image | Name | Level | Price | Rarity | Link |
-|-------|------|-------|-------|--------|------|
-| 🖼️ | Underwater | 3 | 50 gp | Common | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
-
 ---
 
 # REGULAR ITEMS
 
-## Common Items (10)
+## Common Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Retaliation (Lesser) | 6 | 250 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Retaliation) |
+| 🖼️ | Basic Crafter's Book | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Basic%20Crafter%27s%20Book) |
 | 🖼️ | Religious Text | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Religious%20Text) |
-| 🖼️ | Underwater | 3 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
-| 🖼️ | Raiment | 5 | 140 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Raiment) |
-| 🖼️ | Endless Grimoire | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Endless%20Grimoire) |
-| 🖼️ | Courtier's Pillow Book | 6 | 250 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Courtier%27s%20Pillow%20Book) |
-| 🖼️ | Draxie's Recipe Book | 4 | 90 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Draxie%27s%20Recipe%20Book) |
-| 🖼️ | Armor Potency (+1) | 5 | 160 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Armor%20Potency) |
-| 🖼️ | Reinforcing Rune (Minor) | 4 | 75 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune) |
 | ![Formula Book (Blank)](https://2e.aonprd.com/Images/Treasure/Formula_Book.webp) | Formula Book (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Formula%20Book) |
+| ![Spellbook (Blank)](https://2e.aonprd.com/Images/Treasure/Spellbook.webp) | Spellbook (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellbook) |
 
-## Uncommon Items (3)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Dread (Lesser) | 6 | 225 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dread) |
-| 🖼️ | Energizing | 6 | 250 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Energizing) |
-| 🖼️ | Dragon's Breath (2nd-Level Spell) | 6 | 250 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dragon%27s%20Breath) |
-
-## Rare Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Hooked | 5 | 140 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hooked) |
+| 🖼️ | Clockwork Bookshelf | 1 | 15 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clockwork%20Bookshelf) |
+| 🖼️ | Ganjay Book | 1 | 10 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ganjay%20Book) |
 
 ## Services
 

@@ -336,10 +336,10 @@ def generate_potion_inventory(equipment, player_level):
     return potions
 
 def generate_merchant_inventory(equipment, categories, num_common, num_uncommon, item_filter=None):
-    """Generate random inventory from equipment (max level 6)
+    """Generate random inventory from equipment filtered by player level
     
     Args:
-        equipment: List of all equipment items
+        equipment: List of equipment items (pre-filtered by max level)
         categories: List of category types (weapon, armor, etc.)
         num_common: Number of common items to generate
         num_uncommon: Number of uncommon items to generate
@@ -347,9 +347,9 @@ def generate_merchant_inventory(equipment, categories, num_common, num_uncommon,
     """
     inventory = {'common': [], 'uncommon': [], 'rare': []}
     
-    # Filter by categories, rarity, AND level (max 6)
-    common_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'common' and e['level'] <= 6]
-    uncommon_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'uncommon' and e['level'] <= 6]
+    # Filter by categories and rarity (level already filtered in equipment list)
+    common_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'common']
+    uncommon_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'uncommon']
     
     # Apply additional filter if provided
     if item_filter:
@@ -789,10 +789,15 @@ if __name__ == "__main__":
                 test_merchant = sys.argv[i + 1].lower().replace(' ', '_').replace("'", '')
                 i += 2
             else:
+                # Accept bare number as player level
+                try:
+                    player_level = int(arg)
+                except ValueError:
+                    pass
                 i += 1
     
-    max_item_level = player_level + 2
-    spell_level = player_level  # Spells are player level, NOT +2
+    max_item_level = player_level
+    spell_level = player_level
     
     print(f"Generating merchants for player level {player_level}")
     print(f"  Max item level: {max_item_level}")
@@ -1082,7 +1087,7 @@ if __name__ == "__main__":
             
             # Add rare items
             if has_rare:
-                rare_pool = [e for e in equipment if e['type'] in config['categories'] and e['rarity'] == 'rare' and e['level'] <= 6]
+                rare_pool = [e for e in equipment if e['type'] in config['categories'] and e['rarity'] == 'rare']
                 # Apply item filter to rare pool too
                 if config.get('item_filter'):
                     rare_pool = [e for e in rare_pool if config['item_filter'](e)]

@@ -20,39 +20,30 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 100 gp | Restores one expended spell slot of 3rd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (10)
+## Common Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Transportation (Carriage) | 0 | 2 sp (per 5 miles) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Transportation) |
-| 🖼️ | One Hundred Victories | 3 | 60 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=One%20Hundred%20Victories) |
-| 🖼️ | Chalk | 0 | 1 cp (10 pieces) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chalk) |
-| 🖼️ | Necrotic Bomb (Lesser) | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Necrotic%20Bomb) |
-| 🖼️ | Meal (Square) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Meal) |
-| 🖼️ | Antidote (Lesser) | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Antidote) |
-| 🖼️ | Transportation (Ferry or Riverboat) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Transportation) |
-| 🖼️ | Ghostcracker | 5 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ghostcracker) |
-| 🖼️ | Cat | 0 | 0 gp | Common | Animals | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cat) |
-| 🖼️ | Staff of Protection | 6 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Staff%20of%20Protection) |
+| 🖼️ | Beverages (Keg of Ale) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Grappling Hook | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Grappling%20Hook) |
+| 🖼️ | Treats (Unique) | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Treats) |
 
 ## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Tracking Tag | 0 | 1 sp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tracking%20Tag) |
-| 🖼️ | Schematic Scanner | 6 | 230 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Schematic%20Scanner) |
-| 🖼️ | Abadar's Flawless Scale | 3 | 50 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Abadar%27s%20Flawless%20Scale) |
+| 🖼️ | Elven Curve Blade | 0 | 4 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Elven%20Curve%20Blade) |
+| 🖼️ | Backpack Catapult Stones | 0 | 1 sp (price for 10) | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Backpack%20Catapult%20Stones) |
+| 🖼️ | Triggerbrand (Melee) | 0 | 10 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Triggerbrand) |
 
 ## Services
 

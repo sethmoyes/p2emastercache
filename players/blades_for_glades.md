@@ -20,31 +20,32 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Moderate) | 6 | 100 gp | Restores one expended spell slot of 3rd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| ![Healing Potion (Moderate)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Moderate) | 6 | 50 gp | Restores 3d8+10 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (5)
+## Common Items (13)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![8-Round Magazine](https://2e.aonprd.com/Images/Classes/Iconic_Sajan.png) | 8-Round Magazine | 0 | 2 sp | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=) |
-| 🖼️ | Cold Iron Armor (Low-Grade) | 5 | 140 gp (+14 gp per Bulk) | Common | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Cold%20Iron%20Armor) |
-| 🖼️ | Splint Mail | 1 | 13 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Splint%20Mail) |
-| 🖼️ | Half Plate | 1 | 18 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Half%20Plate) |
+| 🖼️ | Wooden Taws | 0 | 1 sp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Taws) |
+| 🖼️ | Sling Bullets | 0 | 1 cp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Sling%20Bullets) |
+| 🖼️ | Wooden Breastplate | 0 | 6 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Breastplate) |
+| 🖼️ | Alchemical Bomb | 0 |  (Varies) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Alchemical%20Bomb) |
+| 🖼️ | Spray Pellet | 0 | 1 sp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Spray%20Pellet) |
 | 🖼️ | Shield Bash | 0 | 0 gp | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Shield%20Bash) |
-
-## Uncommon Items (1)
-
-| Image | Name | Level | Price | Rarity | Category | Type | Link |
-|-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Buckler | 3 | 50 gp | Uncommon | Equipment | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Buckler) |
+| 🖼️ | Blowgun Darts | 0 | 5 cp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Blowgun%20Darts) |
+| 🖼️ | 8-Round Magazine | 0 | 2 sp | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=) |
+| 🖼️ | Bolts | 0 | 1 sp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Bolts) |
+| 🖼️ | Scale Mail | 0 | 4 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Scale%20Mail) |
+| 🖼️ | Hand Crossbow | 0 | 3 gp | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Hand%20Crossbow) |
+| 🖼️ | Studded Leather Armor | 0 | 3 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Studded%20Leather%20Armor) |
+| 🖼️ | Leather Armor | 0 | 2 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Leather%20Armor) |
 
 ## Services
 
