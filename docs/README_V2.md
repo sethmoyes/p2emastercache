@@ -69,13 +69,13 @@ python3 bin/generators/generate_dungeon_turn_v2.py --level 4 --floors 3
 - Sum determines what happens (5-100)
 
 ### What Happens
-| Sum | Category | What It Does |
-|-----|----------|--------------|
-| 5-25 | OPPORTUNITIES | Rewards creativity |
-| 26-45 | COMPLICATIONS | Forces skill use |
-| 46-65 | DILEMMAS | Meaningful choices |
-| 66-85 | ACTIVE THREATS | Immediate danger |
-| 86-100 | COMBAT | Living dungeon |
+| Condition | Category | What It Does |
+|-----------|----------|--------------|
+| Extreme (5-15, 90-100) | COMBAT | Always triggers (very rare) |
+| Non-extreme | NO EVENT (50%) | Quiet passage |
+| Sum ≤ 44 | COMBAT or ACTIVE THREAT | Danger zone |
+| Sum 45-62 | OPPORTUNITY, COMPLICATION, or DILEMMA | Non-combat |
+| Sum ≥ 63 | ACTIVE THREAT or COMBAT | Danger zone |
 
 ### Result
 - **50/50 combat vs non-combat**

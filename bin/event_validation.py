@@ -264,7 +264,7 @@ def _rewards_clever_play(event: dict, text: str) -> bool:
 
 def _has_required_fields(event: dict) -> bool:
     """Check if event has all required fields."""
-    required_fields = {'title', 'description', 'spotlight', 'skills', 'time_cost', 'gm_notes'}
+    required_fields = {'title', 'description', 'skills', 'time_cost', 'gm_notes'}
     return required_fields.issubset(event.keys())
 
 

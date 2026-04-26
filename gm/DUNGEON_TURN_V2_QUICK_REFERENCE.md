@@ -35,13 +35,13 @@ Players are exhausted, paranoid, and bored. They only use Detect Magic and Liste
 
 ## The New Probability Distribution
 
-| Sum Range | Category | % | What It Does |
-|-----------|----------|---|--------------|
-| 5-25 | **OPPORTUNITIES** | 22% | Rewards creativity - shortcuts, intel, resources |
-| 26-45 | **COMPLICATIONS** | 21% | Forces skill use - locked doors, puzzles, hazards |
-| 46-65 | **DILEMMAS** | 21% | Meaningful choices - time vs safety, risk vs reward |
-| 66-85 | **ACTIVE THREATS** | 21% | Immediate danger - patrols, alarms, collapsing floors |
-| 86-100 | **COMBAT** | 16% | Actual fights with dungeon ecology |
+| Condition | Category | What It Does |
+|-----------|----------|--------------|
+| Extreme (5-15, 90-100) | **COMBAT** | Always triggers, very rare |
+| Non-extreme | **NO EVENT** (50%) | Quiet passage, nothing happens |
+| Sum ≤ 44 | **COMBAT or ACTIVE THREAT** | Danger zone |
+| Sum 45-62 | **OPPORTUNITY, COMPLICATION, or DILEMMA** | Non-combat encounters |
+| Sum ≥ 63 | **ACTIVE THREAT or COMBAT** | Danger zone |
 
 **Combat Potential:** ~37% (ACTIVE THREATS can escalate to combat based on player choices)
 

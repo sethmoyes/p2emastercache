@@ -26,16 +26,14 @@ Make the dungeon **FUN** by:
 ## NEW PROBABILITY DISTRIBUTION (50/50 Combat vs Non-Combat)
 
 ### 5d20 Sum Distribution:
-- **5-25 (21 sums):** OPPORTUNITIES - Reward creativity, shortcuts, intel
-- **26-45 (20 sums):** COMPLICATIONS - Force skill use, environmental puzzles
-- **46-65 (20 sums):** DILEMMAS - Meaningful choices with trade-offs
-- **66-85 (20 sums):** ACTIVE THREATS - Immediate danger, patrols, alarms
-- **86-100 (15 sums):** COMBAT ENCOUNTERS - Actual fights
+- **Extreme (5-15, 90-100):** Always COMBAT (very rare)
+- **Non-extreme:** 50% chance of NO EVENT, then:
+  - **Sum ≤ 44:** COMBAT or ACTIVE_THREAT (danger)
+  - **Sum 45-62:** OPPORTUNITY, COMPLICATION, or DILEMMA (non-combat)
+  - **Sum ≥ 63:** ACTIVE_THREAT or COMBAT (danger)
 
-**Total:** 96 possible sums per floor
-**Combat:** 86-100 = 15 sums = ~16% pure combat
-**Active Threats:** 66-85 = 20 sums = ~21% (can become combat)
-**Combined Combat Potential:** ~37% (close to 50/50 with player choices)
+**Total:** 96 possible sums per floor (5-100)
+**Combat Potential:** ~37% (danger zones + extreme rolls, with player choices determining escalation)
 
 ## EVENT CATEGORIES
 
@@ -117,7 +115,7 @@ Make the dungeon **FUN** by:
 
 **Key:** These demand IMMEDIATE response, no time to deliberate
 
-### 5. COMBAT ENCOUNTERS (86-100) - Actual Fights
+### 5. COMBAT ENCOUNTERS (Danger Zones + Extreme Rolls) - Actual Fights
 **Goal:** Resource-draining fights, never bosses, show dungeon ecology
 
 **Examples:**
@@ -327,7 +325,7 @@ Make the dungeon **FUN** by:
 ```
 
 ### Generation Logic:
-1. **Determine category** from sum (5-25 = Opportunity, etc.)
+1. **Determine category** from sum (extreme rolls → combat; non-extreme → 50% no event, then sum-based category)
 2. **Select floor theme** from gauntlight_keep_levels.md
 3. **Choose appropriate creatures** from creatures.json (2 levels below party)
 4. **Add atmospheric details** from dungeon_flavor_events.json

@@ -16,11 +16,11 @@
 
 ## New Probability Distribution
 
-- **5-25:** OPPORTUNITIES (~22%) - Reward creativity, shortcuts, intel
-- **26-45:** COMPLICATIONS (~21%) - Force skill use, environmental puzzles
-- **46-65:** DILEMMAS (~21%) - Meaningful choices with trade-offs
-- **66-85:** ACTIVE THREATS (~21%) - Immediate danger, patrols, alarms
-- **86-100:** COMBAT (~16%) - Actual fights with dungeon ecology
+- **Extreme (5-15, 90-100):** Always COMBAT (very rare)
+- **Non-extreme:** 50% chance of NO EVENT, then:
+  - **Sum ≤ 44:** COMBAT or ACTIVE_THREAT (danger)
+  - **Sum 45-62:** OPPORTUNITY, COMPLICATION, or DILEMMA (non-combat)
+  - **Sum ≥ 63:** ACTIVE_THREAT or COMBAT (danger)
 
 **Combat Potential:** ~37% (ACTIVE THREATS can escalate to combat)
 

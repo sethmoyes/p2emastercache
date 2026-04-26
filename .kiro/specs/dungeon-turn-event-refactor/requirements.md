@@ -130,7 +130,7 @@ This specification defines the refactoring of the dungeon turn event generation 
 1. THE JSON_Event_File SHALL organize events into OPPORTUNITY, COMPLICATION, DILEMMA, ACTIVE_THREAT, and COMBAT categories
 2. THE Generator_Script SHALL load events into separate lists by category
 3. THE Generator_Script SHALL select events from the appropriate category based on dice sum ranges
-4. THE System SHALL preserve the probability distribution (5-25 OPPORTUNITY, 26-45 COMPLICATION, 46-65 DILEMMA, 66-85 ACTIVE_THREAT, 86-100 COMBAT)
+4. THE System SHALL use the following probability distribution: Extreme rolls (5-15, 90-100) always trigger COMBAT; non-extreme rolls have 50% NO EVENT; remaining events: Sum ≤ 44 = COMBAT or ACTIVE_THREAT, Sum 45-62 = OPPORTUNITY/COMPLICATION/DILEMMA, Sum ≥ 63 = ACTIVE_THREAT or COMBAT
 5. THE System SHALL maintain the existing event selection logic without modification
 
 ### Requirement 10: Enable Future Event Management

@@ -6,11 +6,11 @@ Creates tension, rewards creativity, and makes the dungeon feel ALIVE.
 50/50 combat vs non-combat split with meaningful choices.
 
 New probability distribution:
-- 5-25: OPPORTUNITIES (reward creativity)
-- 26-45: COMPLICATIONS (force skill use)
-- 46-65: DILEMMAS (meaningful choices)
-- 66-85: ACTIVE THREATS (immediate danger)
-- 86-100: COMBAT (actual fights)
+- Extreme (5-15, 90-100): Always COMBAT (very rare)
+- Non-extreme: 50% NO EVENT, then:
+  - Sum <= 44: COMBAT or ACTIVE_THREAT (danger)
+  - Sum 45-62: OPPORTUNITY, COMPLICATION, or DILEMMA (non-combat)
+  - Sum >= 63: ACTIVE_THREAT or COMBAT (danger)
 """
 
 import random
@@ -97,15 +97,6 @@ def get_category_from_sum(total, is_extreme=False):
         return random.choice(["ACTIVE_THREAT", "COMBAT"])
 
 
-def get_party_member_spotlight():
-    """Rotate through party members to spotlight"""
-    return random.choice([
-        {"class": "Cleric", "skills": ["Religion", "Medicine", "Diplomacy"]},
-        {"class": "Wizard", "skills": ["Arcana", "Recall Knowledge", "Society"]},
-        {"class": "Rogue", "skills": ["Thievery", "Stealth", "Acrobatics", "Deception"]},
-        {"class": "Swashbuckler", "skills": ["Acrobatics", "Deception", "Performance", "Intimidation"]},
-        {"class": "Monk", "skills": ["Athletics", "Acrobatics", "Perception"]}
-    ])
 
 def get_creatures_for_floor(creatures, floor_num, party_level):
     """Get appropriate creatures for this floor (2 levels below party)"""
@@ -755,7 +746,6 @@ def format_event_markdown(event):
         lines.append(f"**Challenge:** {event['challenge']}")
         lines.append(f"**Success:** {event['success']}")
         lines.append(f"**Failure:** {event['failure']}")
-        lines.append(f"**Spotlight:** {', '.join(event['spotlight'])}")
         lines.append(f"**Skills:** {', '.join(event['skills'])}")
         lines.append(f"**Time Cost:** {event['time_cost']}")
         lines.append(f"**Reward:** {event['reward']}")
@@ -766,7 +756,6 @@ def format_event_markdown(event):
         lines.append(f"**Challenge:** {event['challenge']}")
         lines.append(f"**Success:** {event['success']}")
         lines.append(f"**Failure:** {event['failure']}")
-        lines.append(f"**Spotlight:** {', '.join(event['spotlight'])}")
         lines.append(f"**Skills:** {', '.join(event['skills'])}")
         lines.append(f"**Time Cost:** {event['time_cost']}")
         lines.append(f"**Consequence:** {event['consequence']}")
@@ -779,7 +768,6 @@ def format_event_markdown(event):
             lines.append(f"**Choice B:** {event['choice_b']}")
         if 'choice_c' in event:
             lines.append(f"**Choice C:** {event['choice_c']}")
-        lines.append(f"**Spotlight:** {', '.join(event['spotlight'])}")
         lines.append(f"**Skills:** {', '.join(event['skills'])}")
         lines.append(f"**Time Cost:** {event['time_cost']}")
         lines.append(f"**Consequence:** {event['consequence']}")
@@ -792,7 +780,6 @@ def format_event_markdown(event):
         lines.append(f"**Immediate Action:** {event['immediate_action']}")
         lines.append(f"**Success:** {event['success']}")
         lines.append(f"**Failure:** {event['failure']}")
-        lines.append(f"**Spotlight:** {', '.join(event['spotlight'])}")
         lines.append(f"**Skills:** {', '.join(event['skills'])}")
         lines.append(f"**Threat Level:** {event['threat_level']}")
     
@@ -839,11 +826,11 @@ def generate_all_encounters(party_level, max_floor, output_file, context=None):
     print(f"  Party Status: {context.party_status}")
     print(f"")
     print(f"New Probability Distribution:")
-    print(f"  5-25:  OPPORTUNITIES (21 sums, ~22%)")
-    print(f"  26-45: COMPLICATIONS (20 sums, ~21%)")
-    print(f"  46-65: DILEMMAS (20 sums, ~21%)")
-    print(f"  66-85: ACTIVE THREATS (20 sums, ~21%)")
-    print(f"  86-100: COMBAT (15 sums, ~16%)")
+    print(f"  Extreme (5-15, 90-100): Always COMBAT")
+    print(f"  Non-extreme: 50% NO EVENT, then:")
+    print(f"    Sum ≤ 44:  COMBAT or ACTIVE_THREAT (danger)")
+    print(f"    Sum 45-62: OPPORTUNITY, COMPLICATION, or DILEMMA (non-combat)")
+    print(f"    Sum ≥ 63:  ACTIVE_THREAT or COMBAT (danger)")
     print(f"")
     print(f"Combat potential: ~37% (ACTIVE THREATS can become combat)")
     print(f"=" * 80)
@@ -878,11 +865,11 @@ def generate_all_encounters(party_level, max_floor, output_file, context=None):
     lines.append("")
     lines.append("## New Probability Distribution")
     lines.append("")
-    lines.append("- **5-25:** OPPORTUNITIES (~22%) - Reward creativity, shortcuts, intel")
-    lines.append("- **26-45:** COMPLICATIONS (~21%) - Force skill use, environmental puzzles")
-    lines.append("- **46-65:** DILEMMAS (~21%) - Meaningful choices with trade-offs")
-    lines.append("- **66-85:** ACTIVE THREATS (~21%) - Immediate danger, patrols, alarms")
-    lines.append("- **86-100:** COMBAT (~16%) - Actual fights with dungeon ecology")
+    lines.append("- **Extreme (5-15, 90-100):** Always COMBAT (very rare)")
+    lines.append("- **Non-extreme:** 50% chance of NO EVENT, then:")
+    lines.append("  - **Sum ≤ 44:** COMBAT or ACTIVE_THREAT (danger)")
+    lines.append("  - **Sum 45-62:** OPPORTUNITY, COMPLICATION, or DILEMMA (non-combat)")
+    lines.append("  - **Sum ≥ 63:** ACTIVE_THREAT or COMBAT (danger)")
     lines.append("")
     lines.append("**Combat Potential:** ~37% (ACTIVE THREATS can escalate to combat)")
     lines.append("")

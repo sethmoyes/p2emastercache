@@ -44,9 +44,11 @@ Each floor of Gauntlight Keep has an associated danger level:
 ## Strategy Tips
 
 ### For Players
-- **Low rolls (5-25):** Opportunities! Take advantage of them
-- **Mid rolls (26-85):** Complications, dilemmas, and threats - stay alert
-- **High rolls (86-94):** Standard combat - manageable
+- **Extreme rolls (5-15, 90-100):** Guaranteed combat — brace yourselves
+- **Non-extreme:** 50% chance nothing happens, otherwise:
+  - **Sum ≤ 44:** Danger — combat or active threats
+  - **Sum 45-62:** Non-combat — opportunities, complications, dilemmas
+  - **Sum ≥ 63:** Danger — active threats or combat
 - **Very high rolls (95-99):** Dangerous combat - use tactics and resources
 - **Maximum roll (100):** EXTREME - consider retreat, use all resources, or find creative solutions
 

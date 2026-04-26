@@ -42,11 +42,11 @@ source ~/boto3env/bin/activate  # or your venv
 ### What Happens
 | Sum | Category | Effect |
 |-----|----------|--------|
-| 5-25 | OPPORTUNITY | Rewards creativity |
-| 26-45 | COMPLICATION | Skill challenge |
-| 46-65 | DILEMMA | Meaningful choice |
-| 66-85 | ACTIVE THREAT | Immediate danger |
-| 86-100 | COMBAT | Monster encounter |
+| Extreme (5-15, 90-100) | COMBAT | Always triggers (very rare) |
+| Non-extreme | NO EVENT (50%) | Quiet passage |
+| Sum ≤ 44 | COMBAT or ACTIVE THREAT | Danger zone |
+| Sum 45-62 | OPPORTUNITY, COMPLICATION, or DILEMMA | Non-combat encounter |
+| Sum ≥ 63 | ACTIVE THREAT or COMBAT | Danger zone |
 
 ### Example
 ```

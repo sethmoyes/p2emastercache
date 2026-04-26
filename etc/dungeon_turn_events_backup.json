@@ -6,10 +6,6 @@
       "challenge": "DC 18 Perception to find hidden door",
       "success": "You discover a secret passage that bypasses the next 3 rooms. Saves 30 minutes of exploration.",
       "failure": "You don't find anything unusual. Continue the normal way.",
-      "spotlight": [
-        "Rogue",
-        "Monk"
-      ],
       "skills": [
         "Perception"
       ],
@@ -29,10 +25,6 @@
       "challenge": "DC 16 Stealth to get close, DC 18 Society to understand their language",
       "success": "You learn the patrol schedule: they pass through here every 2 hours. You know when it's safe.",
       "failure": "You make noise and alert them, or can't understand their language.",
-      "spotlight": [
-        "Rogue",
-        "Wizard"
-      ],
       "skills": [
         "Stealth",
         "Society"
@@ -47,9 +39,6 @@
       "challenge": "DC 16 Medicine to use supplies effectively",
       "success": "Each party member can heal 2d8 HP. Takes 10 minutes.",
       "failure": "Supplies are too old or damaged. Heal only 1d8 HP.",
-      "spotlight": [
-        "Cleric"
-      ],
       "skills": [
         "Medicine"
       ],
@@ -63,10 +52,6 @@
       "challenge": "DC 15 Diplomacy to gain trust, DC 18 Religion to understand their nature",
       "success": "The ghost warns you about a trap ahead and tells you how to disarm it safely.",
       "failure": "The ghost fades away, frightened or offended.",
-      "spotlight": [
-        "Cleric",
-        "Swashbuckler"
-      ],
       "skills": [
         "Diplomacy",
         "Religion"
@@ -81,10 +66,6 @@
       "challenge": "DC 16 Crafting to rig a trap, DC 18 Athletics to position it correctly",
       "success": "You create a trap. Next enemy encounter triggers it for 3d6 damage to all enemies.",
       "failure": "Trap is poorly made and won't trigger reliably.",
-      "spotlight": [
-        "Rogue",
-        "Monk"
-      ],
       "skills": [
         "Crafting",
         "Athletics"
@@ -99,9 +80,6 @@
       "challenge": "DC 18 Arcana to identify the spell and its purpose",
       "success": "You identify a teleportation spell. Someone left in a hurry. You know danger is ahead.",
       "failure": "The magical signature is too complex to decipher.",
-      "spotlight": [
-        "Wizard"
-      ],
       "skills": [
         "Arcana"
       ],
@@ -115,10 +93,6 @@
       "challenge": "DC 17 Survival to identify creatures and direction",
       "success": "You identify the creatures and know they went ahead. You can avoid or ambush them.",
       "failure": "Tracks are too muddled to read clearly.",
-      "spotlight": [
-        "Rogue",
-        "Monk"
-      ],
       "skills": [
         "Survival"
       ],
@@ -132,10 +106,6 @@
       "challenge": "DC 18 Crafting to identify weak points, DC 16 Athletics to trigger collapse safely",
       "success": "You can collapse part of this area behind you, blocking pursuit. Or save for later.",
       "failure": "The structure is more stable than it looks.",
-      "spotlight": [
-        "Rogue",
-        "Monk"
-      ],
       "skills": [
         "Crafting",
         "Athletics"
@@ -150,10 +120,6 @@
       "challenge": "DC 19 Society to translate, DC 17 Religion if it's religious text",
       "success": "The inscription provides useful information about this area or warnings about dangers.",
       "failure": "The text is too damaged to read fully.",
-      "spotlight": [
-        "Wizard",
-        "Cleric"
-      ],
       "skills": [
         "Society",
         "Religion"
@@ -168,10 +134,6 @@
       "challenge": "DC 15 Stealth to avoid notice, or DC 17 Deception to join their argument and distract them further",
       "success": "You slip past unnoticed or convince them to leave to 'check something'.",
       "failure": "They notice you. Roll initiative.",
-      "spotlight": [
-        "Rogue",
-        "Swashbuckler"
-      ],
       "skills": [
         "Stealth",
         "Deception"
@@ -186,10 +148,6 @@
       "challenge": "DC 17 Nature to identify if safe, DC 19 Arcana to detect magic",
       "success": "It's a natural healing spring! Each person who drinks heals 3d8 HP.",
       "failure": "You're not sure if it's safe. Drinking requires DC 15 Fortitude save or become sickened 1.",
-      "spotlight": [
-        "Druid",
-        "Wizard"
-      ],
       "skills": [
         "Nature",
         "Arcana"
@@ -204,10 +162,6 @@
       "challenge": "DC 16 Perception to find, DC 17 Crafting to assess quality",
       "success": "You find 1d4 +1 weapons appropriate for your party. Take what you need.",
       "failure": "The weapons are too corroded or damaged to be useful.",
-      "spotlight": [
-        "Rogue",
-        "Fighter"
-      ],
       "skills": [
         "Perception",
         "Crafting"
@@ -222,10 +176,6 @@
       "challenge": "DC 18 Stealth to avoid waking them OR automatic surprise round if you attack",
       "success": "You pass unnoticed or get a free surprise round in combat.",
       "failure": "They wake up! Roll initiative normally.",
-      "spotlight": [
-        "Rogue",
-        "Monk"
-      ],
       "skills": [
         "Stealth"
       ],
@@ -239,10 +189,6 @@
       "challenge": "DC 17 Survival to navigate to the location, DC 18 Society to interpret symbols",
       "success": "You find the hidden treasure: 100gp per party member and 1 random magic item.",
       "failure": "The map is too vague or the treasure has already been looted.",
-      "spotlight": [
-        "Ranger",
-        "Wizard"
-      ],
       "skills": [
         "Survival",
         "Society"
@@ -258,10 +204,6 @@
       "challenge": "DC 15 Nature to understand its behavior, DC 16 Diplomacy to befriend it",
       "success": "It becomes your companion for this floor. Grants +2 to Perception checks and warns of danger.",
       "failure": "It runs away, frightened.",
-      "spotlight": [
-        "Druid",
-        "Ranger"
-      ],
       "skills": [
         "Nature",
         "Diplomacy"
@@ -276,10 +218,6 @@
       "challenge": "DC 18 Crafting to brew potions, DC 17 Nature to identify ingredients",
       "success": "You can craft 1d4 healing potions (moderate) or other alchemical items.",
       "failure": "The ingredients are too degraded or you lack the skill.",
-      "spotlight": [
-        "Alchemist",
-        "Wizard"
-      ],
       "skills": [
         "Crafting",
         "Nature"
@@ -294,10 +232,6 @@
       "challenge": "DC 16 Athletics to climb through, DC 17 Survival to navigate correctly",
       "success": "You emerge 2 floors ahead! Massive shortcut discovered.",
       "failure": "You get lost in the shafts and emerge where you started (waste 20 minutes).",
-      "spotlight": [
-        "Rogue",
-        "Monk"
-      ],
       "skills": [
         "Athletics",
         "Survival"
@@ -319,10 +253,6 @@
       "challenge": "DC 19 Arcana to activate safely, DC 20 Religion if divine magic",
       "success": "The circle grants everyone a +1 status bonus to all saves for 1 hour.",
       "failure": "The circle discharges harmlessly. Magic is wasted.",
-      "spotlight": [
-        "Wizard",
-        "Cleric"
-      ],
       "skills": [
         "Arcana",
         "Religion"
@@ -337,10 +267,6 @@
       "challenge": "DC 15 Perception to find, DC 16 Stealth to observe without being noticed",
       "success": "You see what's nearby and can plan accordingly. Gain +2 to initiative if you engage.",
       "failure": "You don't find it or make noise while looking.",
-      "spotlight": [
-        "Rogue",
-        "Ranger"
-      ],
       "skills": [
         "Perception",
         "Stealth"
@@ -357,10 +283,6 @@
       "challenge": "DC 18 Thievery to pick lock OR DC 22 Athletics to force open",
       "success": "Door opens. Quietly if picked, loudly if forced.",
       "failure": "Lock jams (Thievery) or door holds (Athletics). Must find key or try different approach.",
-      "spotlight": [
-        "Rogue",
-        "Monk"
-      ],
       "skills": [
         "Thievery",
         "Athletics"
@@ -375,10 +297,6 @@
       "challenge": "DC 17 Acrobatics to move carefully OR DC 19 Crafting to brace it",
       "success": "Everyone moves safely. Crafting solution is permanent.",
       "failure": "Structure fails. Everyone makes DC 18 Reflex save or takes 2d6 damage.",
-      "spotlight": [
-        "Swashbuckler",
-        "Rogue"
-      ],
       "skills": [
         "Acrobatics",
         "Crafting"
@@ -393,10 +311,6 @@
       "challenge": "DC 19 Arcana to dispel OR DC 20 Thievery to disable the physical trigger",
       "success": "Ward is disabled. You can proceed safely.",
       "failure": "Ward triggers! Alarm sounds throughout this floor.",
-      "spotlight": [
-        "Wizard",
-        "Rogue"
-      ],
       "skills": [
         "Arcana",
         "Thievery"
@@ -411,10 +325,6 @@
       "challenge": "DC 18 Society to identify language OR DC 16 Diplomacy with gestures",
       "success": "They warn you about danger ahead and tell you the safe route.",
       "failure": "You can't communicate. They flee in fear or frustration.",
-      "spotlight": [
-        "Wizard",
-        "Cleric"
-      ],
       "skills": [
         "Society",
         "Diplomacy"
@@ -429,10 +339,6 @@
       "challenge": "DC 17 Survival to track quickly and quietly",
       "success": "You find them before they can alert others. Surprise round.",
       "failure": "You lose the trail, or they hear you coming.",
-      "spotlight": [
-        "Ranger",
-        "Rogue"
-      ],
       "skills": [
         "Survival"
       ],
@@ -446,10 +352,6 @@
       "challenge": "DC 18 Nature to identify poison OR DC 19 Medicine to treat symptoms",
       "success": "You neutralize the poison or treat everyone. Can continue safely.",
       "failure": "Everyone makes DC 17 Fortitude save or become sickened 1 for 1 hour.",
-      "spotlight": [
-        "Druid",
-        "Cleric"
-      ],
       "skills": [
         "Nature",
         "Medicine"
@@ -464,10 +366,6 @@
       "challenge": "DC 19 Athletics to brace while others escape OR DC 18 Acrobatics to dodge debris",
       "success": "Everyone escapes safely. If braced, passage remains open.",
       "failure": "Everyone makes DC 18 Reflex save or takes 3d6 bludgeoning damage.",
-      "spotlight": [
-        "Monk",
-        "Swashbuckler"
-      ],
       "skills": [
         "Athletics",
         "Acrobatics"
@@ -482,10 +380,6 @@
       "challenge": "DC 19 Crafting to solve mechanically OR DC 20 Arcana if magical",
       "success": "Lock opens. You can proceed.",
       "failure": "Lock remains sealed. Must find another way or the key.",
-      "spotlight": [
-        "Rogue",
-        "Wizard"
-      ],
       "skills": [
         "Crafting",
         "Arcana"
@@ -500,10 +394,6 @@
       "challenge": "DC 18 Diplomacy to negotiate OR DC 19 Intimidation to make them back down",
       "success": "They leave you alone. May even provide information if Diplomacy used.",
       "failure": "They attack. Roll initiative.",
-      "spotlight": [
-        "Cleric",
-        "Swashbuckler"
-      ],
       "skills": [
         "Diplomacy",
         "Intimidation"
@@ -518,10 +408,6 @@
       "challenge": "DC 17 Performance to entertain OR DC 18 Deception to pretend you're expected",
       "success": "They let you continue. May even give you information.",
       "failure": "They're offended or suspicious. Roll initiative.",
-      "spotlight": [
-        "Bard",
-        "Rogue"
-      ],
       "skills": [
         "Performance",
         "Deception"
@@ -536,10 +422,6 @@
       "challenge": "DC 16 Acrobatics to move safely OR DC 18 Athletics to power through",
       "success": "Everyone moves without incident.",
       "failure": "Fall prone and slide 10 feet. Take 1d6 damage if you hit a wall.",
-      "spotlight": [
-        "Monk",
-        "Swashbuckler"
-      ],
       "skills": [
         "Acrobatics",
         "Athletics"
@@ -554,9 +436,6 @@
       "challenge": "DC 15 Athletics to squeeze through OR DC 17 Survival to find alternate route",
       "success": "Everyone gets through safely.",
       "failure": "Someone gets stuck. Takes 10 minutes to free them (add 1 die to jar).",
-      "spotlight": [
-        "Small creatures shine here"
-      ],
       "skills": [
         "Athletics",
         "Survival"
@@ -571,10 +450,6 @@
       "challenge": "DC 18 Arcana to dispel OR DC 16 Survival to navigate by touch/sound",
       "success": "You overcome the darkness and continue.",
       "failure": "You stumble around. Takes 10 minutes to find your way (add 1 die to jar).",
-      "spotlight": [
-        "Wizard",
-        "Ranger"
-      ],
       "skills": [
         "Arcana",
         "Survival"
@@ -589,10 +464,6 @@
       "challenge": "DC 19 Perception to notice OR DC 20 Arcana to analyze the illusion",
       "success": "You find a hidden passage or shortcut!",
       "failure": "You don't notice anything unusual.",
-      "spotlight": [
-        "Wizard",
-        "Rogue"
-      ],
       "skills": [
         "Perception",
         "Arcana"
@@ -607,10 +478,6 @@
       "challenge": "DC 16 Nature to calm them OR DC 17 Intimidation to scare them off",
       "success": "Swarm disperses or avoids you.",
       "failure": "Swarm attacks! Everyone takes 1d4 damage and must make DC 15 Will save or become frightened 1.",
-      "spotlight": [
-        "Druid",
-        "Ranger"
-      ],
       "skills": [
         "Nature",
         "Intimidation"
@@ -625,10 +492,6 @@
       "challenge": "DC 17 Crafting to identify substance OR DC 18 Medicine if it's biological",
       "success": "You identify it and know how to safely cross.",
       "failure": "You step in it. Make DC 16 Fortitude save or take 2d6 acid damage.",
-      "spotlight": [
-        "Alchemist",
-        "Cleric"
-      ],
       "skills": [
         "Crafting",
         "Medicine"
@@ -643,10 +506,6 @@
       "challenge": "DC 18 Stealth to move silently OR DC 16 Performance to use acoustics to confuse enemies",
       "success": "You cross without alerting anyone, or you create a diversion.",
       "failure": "Your noise echoes throughout the floor. All encounters are now alerted.",
-      "spotlight": [
-        "Rogue",
-        "Bard"
-      ],
       "skills": [
         "Stealth",
         "Performance"
@@ -661,10 +520,6 @@
       "challenge": "DC 17 Acrobatics to cross carefully OR DC 19 Crafting to reinforce it",
       "success": "Everyone crosses safely.",
       "failure": "Bridge breaks! Everyone makes DC 18 Reflex save or falls 20 feet (4d6 damage).",
-      "spotlight": [
-        "Monk",
-        "Rogue"
-      ],
       "skills": [
         "Acrobatics",
         "Crafting"
@@ -679,10 +534,6 @@
       "challenge": "DC 19 Arcana to stabilize the magic OR DC 17 Religion if divine magic",
       "success": "Magic stabilizes. Spellcasters can cast normally.",
       "failure": "Magic remains unstable. All spells cast here require DC 15 flat check or fizzle.",
-      "spotlight": [
-        "Wizard",
-        "Cleric"
-      ],
       "skills": [
         "Arcana",
         "Religion"
@@ -697,10 +548,6 @@
       "challenge": "DC 18 Society to translate OR DC 19 Arcana if magical runes",
       "success": "You learn about a trap ahead, enemy weakness, or hidden treasure location.",
       "failure": "You can't decipher it. Miss important information.",
-      "spotlight": [
-        "Wizard",
-        "Cleric"
-      ],
       "skills": [
         "Society",
         "Arcana"
@@ -715,10 +562,6 @@
       "challenge": "DC 19 Religion to detect curse, DC 20 Arcana to safely dispel",
       "success": "You identify and remove the curse. The item is safe to take (minor magic item).",
       "failure": "You touch it. Make DC 17 Will save or become cursed (GM's choice of effect).",
-      "spotlight": [
-        "Cleric",
-        "Wizard"
-      ],
       "skills": [
         "Religion",
         "Arcana"
@@ -733,10 +576,6 @@
       "challenge": "DC 17 Athletics to wade through quickly, DC 18 Survival to find the source and plug it",
       "success": "Everyone moves through safely, or the flooding stops.",
       "failure": "Water rises to waist-deep. Make DC 16 Reflex save or lose footing (1d6 damage, lose 1 action).",
-      "spotlight": [
-        "Monk",
-        "Ranger"
-      ],
       "skills": [
         "Athletics",
         "Survival"
@@ -751,10 +590,6 @@
       "challenge": "DC 17 Nature to calm it, DC 18 Intimidation to scare it off",
       "success": "Beast allows you to stay or leaves the area.",
       "failure": "Beast attacks. Roll initiative.",
-      "spotlight": [
-        "Druid",
-        "Ranger"
-      ],
       "skills": [
         "Nature",
         "Intimidation"
@@ -769,10 +604,6 @@
       "challenge": "DC 19 Arcana to dispel, DC 17 Religion if unholy darkness",
       "success": "Darkness lifts. You can see normally.",
       "failure": "Darkness remains. Must navigate blind (all creatures are concealed).",
-      "spotlight": [
-        "Wizard",
-        "Cleric"
-      ],
       "skills": [
         "Arcana",
         "Religion"
@@ -787,9 +618,6 @@
       "challenge": "DC 18 Perception to notice, DC 19 Thievery to disarm",
       "success": "Trap is disarmed. You can pass safely.",
       "failure": "Trap triggers! Darts shoot from walls. Everyone makes DC 18 Reflex save or takes 3d6 damage.",
-      "spotlight": [
-        "Rogue"
-      ],
       "skills": [
         "Perception",
         "Thievery"
@@ -804,10 +632,6 @@
       "challenge": "DC 19 Arcana to stabilize, DC 18 Religion if divine magic",
       "success": "Magic stabilizes. Spells work normally.",
       "failure": "Wild magic persists. All spells cast here roll on wild magic table.",
-      "spotlight": [
-        "Wizard",
-        "Sorcerer"
-      ],
       "skills": [
         "Arcana",
         "Religion"
@@ -822,10 +646,6 @@
       "challenge": "DC 18 Diplomacy to negotiate, DC 17 Society to understand their culture",
       "success": "You make a deal. They leave you alone or provide information.",
       "failure": "Negotiations break down. They attack or demand too much.",
-      "spotlight": [
-        "Bard",
-        "Cleric"
-      ],
       "skills": [
         "Diplomacy",
         "Society"
@@ -840,10 +660,6 @@
       "challenge": "DC 18 Acrobatics to move carefully, DC 19 Athletics to jump to safety",
       "success": "Everyone moves to safety.",
       "failure": "Someone falls! Make DC 18 Reflex save to catch edge or fall (damage based on actual drop).",
-      "spotlight": [
-        "Monk",
-        "Rogue"
-      ],
       "skills": [
         "Acrobatics",
         "Athletics"
@@ -858,10 +674,6 @@
       "challenge": "DC 20 Arcana to dispel, DC 18 Thievery to find hidden mechanism",
       "success": "Barrier drops. You can proceed.",
       "failure": "Barrier remains. Must find another way.",
-      "spotlight": [
-        "Wizard",
-        "Rogue"
-      ],
       "skills": [
         "Arcana",
         "Thievery"
@@ -876,10 +688,6 @@
       "challenge": "DC 18 Religion to bless area, DC 17 Occultism to understand spirits",
       "success": "Spirits calm or leave. You can pass safely.",
       "failure": "Spirits attack! Everyone makes DC 17 Will save or become frightened 2.",
-      "spotlight": [
-        "Cleric",
-        "Wizard"
-      ],
       "skills": [
         "Religion",
         "Occultism"
@@ -895,9 +703,6 @@
       "description": "You can hear activity ahead. You could move quickly and directly (fast but noisy) or take your time being stealthy (slow but hidden).",
       "choice_a": "Move quickly: 10 minutes, but next encounter is alerted to your presence",
       "choice_b": "Move stealthily: 30 minutes (add 2 dice to jar), but next encounter doesn't know you're coming",
-      "spotlight": [
-        "All"
-      ],
       "skills": [
         "Stealth",
         "Tactical thinking"
@@ -917,10 +722,6 @@
       "choice_a": "Free them now: Takes 10 minutes (add 1 die), makes noise, but gain potential ally",
       "choice_b": "Come back later: Mark location, but they might be dead or moved when you return",
       "choice_c": "Leave them: No time cost, no risk, but no ally and they might alert enemies",
-      "spotlight": [
-        "Cleric",
-        "Rogue"
-      ],
       "skills": [
         "Thievery",
         "Diplomacy"
@@ -934,10 +735,6 @@
       "description": "You spot a patrol ahead. They haven't seen you yet. You're at full strength.",
       "choice_a": "Fight now: Combat while you're fresh and they're unprepared (surprise round)",
       "choice_b": "Sneak past: DC 17 Stealth. Success = avoid combat. Failure = they join next encounter as reinforcements",
-      "spotlight": [
-        "Rogue",
-        "All"
-      ],
       "skills": [
         "Stealth",
         "Tactics"
@@ -951,10 +748,6 @@
       "description": "You find a defensible room. You're wounded and low on resources. But resting here is risky.",
       "choice_a": "Rest here: 10 minutes to Treat Wounds (add 1 die to jar). DC 15 Perception to avoid ambush during rest.",
       "choice_b": "Push on: No healing, but no risk of ambush. Continue while wounded.",
-      "spotlight": [
-        "Cleric",
-        "All"
-      ],
       "skills": [
         "Medicine",
         "Perception"
@@ -968,10 +761,6 @@
       "description": "You find a treasure room in {space}, but it will take time to search thoroughly. You hear movement nearby.",
       "choice_a": "Loot now: 10 minutes (add 1 die to jar). Roll on treasure table. But enemies might arrive.",
       "choice_b": "Mark for later: No time cost now, but treasure might be gone when you return (50% chance).",
-      "spotlight": [
-        "Rogue",
-        "All"
-      ],
       "skills": [
         "Perception",
         "Thievery"
@@ -986,10 +775,6 @@
       "description": "An enemy breaks away {combat_context} and flees toward their allies to raise the alarm.",
       "choice_a": "Chase them: Pursue and fight now (1 enemy, but you're split from party)",
       "choice_b": "Let them go: They alert others. Next encounter has +2 enemies and they're prepared.",
-      "spotlight": [
-        "Monk",
-        "Rogue"
-      ],
       "skills": [
         "Athletics",
         "Tactics"
@@ -1010,10 +795,6 @@
       "description": "Through a doorway, you see creatures performing a ritual. It's almost complete.",
       "choice_a": "Interrupt now: Surprise round, but you don't know what the ritual does",
       "choice_b": "Watch and learn: DC 19 Arcana to understand ritual. Takes 5 minutes. They complete it but you know what to expect.",
-      "spotlight": [
-        "Wizard",
-        "All"
-      ],
       "skills": [
         "Arcana",
         "Tactics"
@@ -1027,9 +808,6 @@
       "description": "One party member is bleeding badly (persistent bleed damage). You can stop to treat them or push forward.",
       "choice_a": "Treat Wounds now: 10 minutes (add 1 die to jar). Heal 2d8 HP and stop bleeding.",
       "choice_b": "Push on: Ally takes 1d6 damage each turn until treated. But no time cost.",
-      "spotlight": [
-        "Cleric"
-      ],
       "skills": [
         "Medicine"
       ],
@@ -1042,10 +820,6 @@
       "description": "You accidentally triggered a magical alarm. A bell is ringing loudly. You have seconds to act.",
       "choice_a": "Disable alarm: DC 20 Thievery or Arcana. Takes 3 actions. If failed, alarm continues.",
       "choice_b": "Flee immediately: Run to next room and barricade. Enemies will search but might not find you (DC 17 Stealth).",
-      "spotlight": [
-        "Rogue",
-        "Wizard"
-      ],
       "skills": [
         "Thievery",
         "Arcana",
@@ -1061,10 +835,6 @@
       "choice_a": "Pick lock now: DC 19 Thievery, takes 10 minutes (add 1 die). Enemies will arrive during attempt.",
       "choice_b": "Ignore it: No time cost, but lose potential treasure and it might be gone later.",
       "choice_c": "Take whole chest: Athletics DC 18 to carry (Bulk 4). Slows movement but can open later.",
-      "spotlight": [
-        "Rogue",
-        "Monk"
-      ],
       "skills": [
         "Thievery",
         "Athletics"
@@ -1079,10 +849,6 @@
       "choice_a": "Heal them: Use spell slot or potion. Get detailed map and trap locations.",
       "choice_b": "Intimidate: DC 18 Intimidation. They talk but info might be incomplete or false.",
       "choice_c": "Let them die: No cost, but lose valuable intelligence.",
-      "spotlight": [
-        "Cleric",
-        "Rogue"
-      ],
       "skills": [
         "Medicine",
         "Intimidation"
@@ -1098,10 +864,6 @@
       "choice_a": "Send scout ahead: One PC scouts alone (DC 18 Perception for traps/enemies). Faster but risky if ambushed.",
       "choice_b": "Move as group: 20 minutes longer (add 2 dice to jar). Everyone stays together and safe.",
       "choice_c": "Rush through: Faster but everyone risks triggering traps. Multiple DC 18 Reflex saves.",
-      "spotlight": [
-        "Rogue",
-        "All"
-      ],
       "skills": [
         "Perception",
         "Reflex",
@@ -1117,9 +879,6 @@
       "choice_a": "Weapon: +1 striking weapon of your choice. Immediate combat power.",
       "choice_b": "Armor: +1 resilient armor. Better defense for the dungeon.",
       "choice_c": "Utility: Bag of holding or similar. Carry more loot and supplies.",
-      "spotlight": [
-        "All"
-      ],
       "skills": [
         "Arcana to identify"
       ],
@@ -1132,10 +891,6 @@
       "description": "You find the enemy's water supply. You have poison that could sicken them all.",
       "choice_a": "Poison it: All enemies on this floor become sickened 1 for 24 hours. Easier fights but morally questionable.",
       "choice_b": "Don't poison: Keep moral high ground but fights are normal difficulty.",
-      "spotlight": [
-        "Alchemist",
-        "Rogue"
-      ],
       "skills": [
         "Crafting",
         "Stealth"
@@ -1149,10 +904,6 @@
       "description": "You hear prisoners crying for help nearby. But your mission is time-sensitive.",
       "choice_a": "Rescue now: 20 minutes (add 2 dice). Prisoners become allies and provide info.",
       "choice_b": "Mission first: Continue to objective. Prisoners might be dead when you return.",
-      "spotlight": [
-        "Cleric",
-        "All"
-      ],
       "skills": [
         "Diplomacy",
         "Tactics"
@@ -1167,10 +918,6 @@
       "choice_a": "Destroy it: DC 20 Religion or Arcana. Takes 10 minutes. Enemies lose power source.",
       "choice_b": "Claim it: Gain powerful item but risk corruption. DC 17 Will save each day or become evil.",
       "choice_c": "Leave it: No risk, no reward. Enemies keep their power.",
-      "spotlight": [
-        "Cleric",
-        "Wizard"
-      ],
       "skills": [
         "Religion",
         "Arcana",
@@ -1186,9 +933,6 @@
       "choice_a": "Barricade: 10 minutes to build defenses. Enemies can't reach you easily (+2 AC, cover).",
       "choice_b": "Ambush: 10 minutes to set trap. Enemies take 3d6 damage when they arrive.",
       "choice_c": "Flee: Leave now. Avoid fight but enemies will pursue later.",
-      "spotlight": [
-        "All"
-      ],
       "skills": [
         "Crafting",
         "Stealth",
@@ -1209,10 +953,6 @@
       "choice_a": "Negotiate: Give them gold/item. They let you pass and provide safe passage.",
       "choice_b": "Refuse and fight: Keep your stuff but must fight them now.",
       "choice_c": "Lie and betray: DC 20 Deception. They believe you, then you attack with surprise.",
-      "spotlight": [
-        "Bard",
-        "Rogue"
-      ],
       "skills": [
         "Diplomacy",
         "Deception"
@@ -1227,11 +967,6 @@
       "choice_a": "Force through: Use magic, strength, or explosives. Fast (5 minutes) but VERY loud. Alerts entire floor.",
       "choice_b": "Work carefully: 30 minutes (add 3 dice). Quiet but exhausting. Everyone loses 1 action next combat.",
       "choice_c": "Find another way: 20 minutes (add 2 dice) to explore and find an alternate route.",
-      "spotlight": [
-        "Wizard",
-        "Monk",
-        "Rogue"
-      ],
       "skills": [
         "Arcana",
         "Athletics",
@@ -1250,10 +985,6 @@
       "immediate_action": "Choose NOW: Hide (DC 17 Stealth), Prepare ambush (ready actions), or Flee (move away quickly)",
       "success": "Hide: They pass by. Ambush: Surprise round. Flee: Avoid encounter.",
       "failure": "Hide: They spot you (they get surprise). Flee: They chase you (running combat).",
-      "spotlight": [
-        "Rogue",
-        "All"
-      ],
       "skills": [
         "Stealth",
         "Tactics"
@@ -1268,10 +999,6 @@
       "immediate_action": "DC 18 Reflex save to grab edge. DC 19 Athletics to pull yourself up.",
       "success": "You catch yourself and climb up. No damage.",
       "failure": "You fall 15 feet into the room below. 3d6 damage. Separated from party.",
-      "spotlight": [
-        "Monk",
-        "Swashbuckler"
-      ],
       "skills": [
         "Reflex",
         "Athletics"
@@ -1286,10 +1013,6 @@
       "immediate_action": "DC 20 Arcana or Thievery to disable in 3 actions, or flee immediately",
       "success": "Alarm stops. Only nearby enemies alerted.",
       "failure": "Alarm continues. All enemies on this floor are alerted and searching for you.",
-      "spotlight": [
-        "Wizard",
-        "Rogue"
-      ],
       "skills": [
         "Arcana",
         "Thievery"
@@ -1304,10 +1027,6 @@
       "immediate_action": "DC 17 Acrobatics to jump through flames (2d6 fire damage on failure) or DC 18 Athletics to break through wall",
       "success": "You escape the fire safely.",
       "failure": "Take fire damage and must try again next round. Smoke inhalation (DC 16 Fort or sickened 1).",
-      "spotlight": [
-        "Monk",
-        "Swashbuckler"
-      ],
       "skills": [
         "Acrobatics",
         "Athletics"
@@ -1322,10 +1041,6 @@
       "immediate_action": "Everyone makes DC 18 Perception check. Success = act in surprise round. Failure = flat-footed.",
       "success": "You noticed them falling. You can act in surprise round.",
       "failure": "You're caught off-guard. Enemies get surprise round against you.",
-      "spotlight": [
-        "Monk",
-        "Rogue"
-      ],
       "skills": [
         "Perception"
       ],
@@ -1339,10 +1054,6 @@
       "immediate_action": "DC 19 Reflex save or take 3d6 force damage. DC 20 Arcana to counter the effect.",
       "success": "You dodge or counter the blast. No damage.",
       "failure": "Take full damage and are pushed 10 feet back.",
-      "spotlight": [
-        "Wizard",
-        "Swashbuckler"
-      ],
       "skills": [
         "Reflex",
         "Arcana"
@@ -1357,10 +1068,6 @@
       "immediate_action": "DC 18 Reflex save to dodge. Take 2d6 bludgeoning damage on failure.",
       "success": "You dodge the falling stones.",
       "failure": "Take damage and must make DC 16 Fort save or be stunned 1.",
-      "spotlight": [
-        "Monk",
-        "Swashbuckler"
-      ],
       "skills": [
         "Reflex"
       ],
@@ -1374,10 +1081,6 @@
       "immediate_action": "DC 17 Nature to identify and find safe air, or DC 18 Fort save each round you stay",
       "success": "You identify safe breathing technique or find clean air pocket.",
       "failure": "Take 1d6 poison damage and become sickened 1. Worsens each round.",
-      "spotlight": [
-        "Cleric",
-        "Wizard"
-      ],
       "skills": [
         "Nature",
         "Fortitude"
@@ -1392,10 +1095,6 @@
       "immediate_action": "DC 18 Athletics to swim to exit before water fills room. DC 16 Perception to spot air pocket.",
       "success": "You reach the exit or find air pocket to breathe.",
       "failure": "You're underwater. Hold breath or start drowning (DC 15 Fort each round).",
-      "spotlight": [
-        "Monk",
-        "Rogue"
-      ],
       "skills": [
         "Athletics",
         "Perception"
@@ -1410,9 +1109,6 @@
       "immediate_action": "DC 20 Arcana to disrupt ritual (3 actions) or prepare for combat",
       "success": "Ritual disrupted. Nothing is summoned.",
       "failure": "A creature appears! Roll initiative. It's hostile.",
-      "spotlight": [
-        "Wizard"
-      ],
       "skills": [
         "Arcana"
       ],
@@ -1426,10 +1122,6 @@
       "immediate_action": "DC 17 Reflex to cover face, DC 18 Nature to repel them with fire/smoke",
       "success": "You protect yourself. Swarm disperses.",
       "failure": "Take 2d6 damage and become sickened 2 from bites and disease.",
-      "spotlight": [
-        "Druid",
-        "Ranger"
-      ],
       "skills": [
         "Reflex",
         "Nature"
@@ -1444,10 +1136,6 @@
       "immediate_action": "DC 19 Perception to spot them, DC 18 Acrobatics to take cover",
       "success": "You spot the sniper or reach cover. Can act normally.",
       "failure": "Another arrow! Take 2d8 damage. Still don't know where they are.",
-      "spotlight": [
-        "Ranger",
-        "Rogue"
-      ],
       "skills": [
         "Perception",
         "Acrobatics"
@@ -1462,10 +1150,6 @@
       "immediate_action": "DC 19 Reflex save or take 4d6 fire damage (half on success)",
       "success": "You dive aside. Take half damage.",
       "failure": "Full damage and catch fire (1d6 persistent fire damage).",
-      "spotlight": [
-        "Monk",
-        "Swashbuckler"
-      ],
       "skills": [
         "Reflex"
       ],
@@ -1479,10 +1163,6 @@
       "immediate_action": "DC 18 Perception to notice their intent, or they get surprise round",
       "success": "You see it coming. Roll initiative normally.",
       "failure": "They attack with surprise! You're flat-footed.",
-      "spotlight": [
-        "Rogue",
-        "Cleric"
-      ],
       "skills": [
         "Perception",
         "Sense Motive"
@@ -1497,10 +1177,6 @@
       "immediate_action": "DC 19 Athletics to sprint to safety, DC 20 Acrobatics to dodge falling debris",
       "success": "You escape the collapse zone.",
       "failure": "Buried! Take 4d6 damage and are restrained. DC 18 Athletics to dig out.",
-      "spotlight": [
-        "Monk",
-        "Barbarian"
-      ],
       "skills": [
         "Athletics",
         "Acrobatics"
@@ -1515,9 +1191,6 @@
       "immediate_action": "Flee now (no time to loot) or barricade and prepare (DC 18 Crafting, 1 round)",
       "success": "You escape or create defensible position (+2 AC from cover).",
       "failure": "Caught in the open when reinforcements arrive. Outnumbered 2-to-1.",
-      "spotlight": [
-        "All"
-      ],
       "skills": [
         "Tactics",
         "Crafting"
@@ -1532,10 +1205,6 @@
       "immediate_action": "DC 20 Diplomacy to negotiate, DC 22 Intimidation to make them back down, or DC 19 ranged attack to shoot knife",
       "success": "Hostage is safe. Enemies surrender or flee.",
       "failure": "Hostage is killed. Enemies attack.",
-      "spotlight": [
-        "Bard",
-        "Ranger"
-      ],
       "skills": [
         "Diplomacy",
         "Intimidation",
@@ -1551,10 +1220,6 @@
       "immediate_action": "DC 20 Arcana to counter-spell, DC 18 Religion if unholy, or flee before engulfed",
       "success": "Darkness is stopped or you escape its area.",
       "failure": "Engulfed in darkness. Blinded. All creatures concealed. Can't target spells.",
-      "spotlight": [
-        "Wizard",
-        "Cleric"
-      ],
       "skills": [
         "Arcana",
         "Religion"
@@ -1569,10 +1234,6 @@
       "immediate_action": "DC 18 Athletics to brace against wall, DC 19 Acrobatics to dodge, or DC 17 Nature to calm them",
       "success": "You avoid the stampede or calm the creatures.",
       "failure": "Trampled! Take 3d6 damage and knocked prone. Creatures keep running.",
-      "spotlight": [
-        "Druid",
-        "Monk"
-      ],
       "skills": [
         "Athletics",
         "Acrobatics",

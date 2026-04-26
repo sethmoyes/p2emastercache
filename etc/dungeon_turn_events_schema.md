@@ -19,22 +19,34 @@ Events are stored in `/Users/smoyes/Documents/p2emastercache/etc/dungeon_turn_ev
 
 ## Event Categories
 
-### OPPORTUNITY (Dice Sum: 5-25)
+### How the 5d20 Roll Works
+
+When the dice jar reaches 5 dice, roll all 5d20 and sum the result (range: 5-100). The sum determines what happens:
+
+1. **Extreme rolls** (sum ≤ 15 or sum ≥ 90): Always triggers COMBAT. These are statistically very rare.
+2. **Non-extreme rolls**: 50% chance of NO EVENT (quiet passage). If an event does trigger:
+   - **Sum ≤ 44**: Randomly picks COMBAT or ACTIVE_THREAT (danger zone)
+   - **Sum 45-62**: Randomly picks OPPORTUNITY, COMPLICATION, or DILEMMA (non-combat)
+   - **Sum ≥ 63**: Randomly picks ACTIVE_THREAT or COMBAT (danger zone)
+
+Because 5d20 produces a bell curve centered around 52.5, sums of 45-62 are the most common rolls, making non-combat events the most frequent *when something happens*. The danger zones (≤44 and ≥63) cover a wider combined range but each individual sum in those ranges is less probable. The 50% no-event filter means most turns are quiet, building tension for when something does occur.
+
+### OPPORTUNITY
 Positive encounters that reward clever play, provide resources, or offer tactical advantages. These events should feel like lucky breaks or rewards for exploration.
 
 **Examples**: Finding supplies, eavesdropping on enemies, discovering tactical advantages, meeting friendly NPCs, magical discoveries.
 
-### COMPLICATION (Dice Sum: 26-45)
+### COMPLICATION
 Obstacles that require skill checks to overcome. These events slow progress but can be resolved with the right approach. They test player skills and creativity.
 
 **Examples**: Locked doors, unstable structures, magical wards, language barriers, environmental hazards, puzzle locks.
 
-### DILEMMA (Dice Sum: 46-65)
+### DILEMMA
 Meaningful choices with trade-offs. Players must decide between competing priorities, with each choice having clear consequences. No "right" answer.
 
 **Examples**: Speed vs stealth, risk vs reward, moral choices with tactical implications, resource management decisions.
 
-### ACTIVE_THREAT (Dice Sum: 66-85)
+### ACTIVE_THREAT
 Immediate dangers requiring quick decisions. These events create urgency and tension, forcing players to react under pressure.
 
 **Examples**: Approaching patrols, collapsing structures, alarms, ambushes, spreading hazards, environmental dangers.

@@ -75,7 +75,6 @@ def validate_event_structure(event: dict, category: Optional[str] = None) -> boo
     common_required = {
         'title': str,
         'description': str,
-        'spotlight': list,
         'skills': list,
         'time_cost': str,
         'gm_notes': str
@@ -94,7 +93,7 @@ def validate_event_structure(event: dict, category: Optional[str] = None) -> boo
             )
     
     # Validate list contents are strings
-    for list_field in ['spotlight', 'skills']:
+    for list_field in ['skills']:
         if not all(isinstance(item, str) for item in event[list_field]):
             raise ValidationError(
                 f"Event '{event['title']}' field '{list_field}' must contain only strings"

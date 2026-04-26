@@ -103,6 +103,11 @@
                 <button onclick="autoRoll5d20()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg mb-3 transition transform hover:scale-105 shadow-lg">
                     🎲 AUTO-ROLL 5d20
                 </button>
+
+                <!-- Test Generator Button -->
+                <button onclick="testGenerator(this)" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg mb-3 transition transform hover:scale-105 shadow-lg text-sm">
+                    🧪 TEST GENERATOR (10 rolls)
+                </button>
                 
                 <!-- Manual Input -->
                 <p class="text-gray-400 text-xs mb-2 text-center">Or enter total manually:</p>
@@ -459,6 +464,57 @@
             }, 300);
         }
 
+        // Test generator — rolls 5d20 ten times and appends all results
+        async function testGenerator(btn) {
+            btn.disabled = true;
+            btn.textContent = '⏳ Running 10 rolls...';
+
+            const display = document.getElementById('encounter-display');
+            display.classList.remove('hidden');
+            display.innerHTML = `
+                <div class="bg-indigo-900 border-2 border-indigo-400 p-3 rounded-lg mb-4 text-center">
+                    <span class="text-indigo-200 font-bold text-lg">🧪 TEST RUN — Floor ${currentFloor} — 10 rolls</span>
+                </div>
+            `;
+
+            for (let i = 1; i <= 10; i++) {
+                const rolls = Array.from({length: 5}, () => Math.floor(Math.random() * 20) + 1);
+                const sum = rolls.reduce((a, b) => a + b, 0);
+
+                let encounter;
+                try {
+                    const res = await fetch('/api/encounter', {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify({
+                            floor: currentFloor, sum,
+                            party_level: partyLevel,
+                            space_type: 'unknown', party_status: 'healthy',
+                            recent_combat: false, new_area: true
+                        })
+                    });
+                    encounter = await res.json();
+                } catch (e) {
+                    encounter = {title: 'Error', description: String(e), category: 'COMPLICATION', skills: [], time_cost: ''};
+                }
+
+                const rollLabel = rolls.join(' + ') + ' = ' + sum;
+                const card = document.createElement('div');
+                card.innerHTML = buildEncounterHTML(encounter, sum, `Roll ${i}/10 &nbsp;|&nbsp; ${rollLabel}`);
+                display.appendChild(card);
+
+                if (i < 10) {
+                    const divider = document.createElement('hr');
+                    divider.className = 'border-gray-500 my-6';
+                    display.appendChild(divider);
+                }
+            }
+
+            btn.disabled = false;
+            btn.textContent = '🧪 TEST GENERATOR (10 rolls)';
+            display.scrollIntoView({behavior: 'smooth'});
+        }
+
         async function getDiceEncounter() {
             const input = document.getElementById('dice-input');
             const total = parseInt(input.value);
@@ -756,6 +812,13 @@
 
         function displayEncounter(event, diceTotal) {
             const display = document.getElementById('encounter-display');
+            display.innerHTML = buildEncounterHTML(event, diceTotal);
+            display.classList.remove('hidden');
+            display.scrollIntoView({ behavior: 'smooth' });
+            window.currentEvent = event;
+        }
+
+        function buildEncounterHTML(event, diceTotal, rollLabel) {
             const categoryColors = {
                 'OPPORTUNITY': 'from-green-600 to-emerald-600',
                 'COMPLICATION': 'from-yellow-600 to-orange-600',
@@ -818,7 +881,6 @@
                         <p><strong class="text-blue-400">Skills:</strong> ${event.skills.join(', ')}</p>
                         <p><strong class="text-yellow-400">Time Cost:</strong> ${event.time_cost}</p>
                         ${event.reward ? `<p><strong class="text-cyan-400">Reward:</strong> ${event.reward}</p>` : ''}
-                        ${event.spotlight ? `<p><strong class="text-pink-400">Spotlight:</strong> ${event.spotlight.join(', ')}</p>` : ''}
                         ${event.consequence ? `<p><strong class="text-orange-400">Consequence:</strong> ${event.consequence}</p>` : ''}
                     </div>
                 `;
@@ -831,7 +893,6 @@
                         ${event.skills ? `<p><strong class="text-blue-400">Skills:</strong> ${event.skills.join(', ')}</p>` : ''}
                         ${event.time_cost ? `<p><strong class="text-yellow-400">Time Cost:</strong> ${event.time_cost}</p>` : ''}
                         ${event.consequence ? `<p><strong class="text-orange-400">Consequence:</strong> ${event.consequence}</p>` : ''}
-                        ${event.spotlight ? `<p><strong class="text-pink-400">Spotlight:</strong> ${event.spotlight.join(', ')}</p>` : ''}
                         ${event.context ? `<p><strong class="text-cyan-400">Context:</strong> ${event.context}</p>` : ''}
                     </div>
                 `;
@@ -846,7 +907,6 @@
                         <p><strong class="text-red-400">Failure:</strong> ${event.failure}</p>
                         ${event.skills ? `<p><strong class="text-blue-400">Skills:</strong> ${event.skills.join(', ')}</p>` : ''}
                         ${event.threat_level ? `<p><strong class="text-orange-400">Threat Level:</strong> ${event.threat_level}</p>` : ''}
-                        ${event.spotlight ? `<p><strong class="text-pink-400">Spotlight:</strong> ${event.spotlight.join(', ')}</p>` : ''}
                         ${event.creatures ? `<p><strong class="text-red-400">Creatures:</strong> ${event.creatures}</p>` : ''}
                     </div>
                 `;
@@ -996,12 +1056,12 @@
 
 
             html += `</div></div>`;
-            display.innerHTML = html;
-            display.classList.remove('hidden');
-            display.scrollIntoView({ behavior: 'smooth' });
-            
-            // Store current event for tweaking
-            window.currentEvent = event;
+
+            if (rollLabel) {
+                html = `<div class="mb-2 text-xs text-gray-400 font-mono">${rollLabel}</div>` + html;
+            }
+
+            return html;
         }
 
         async function addDie() {

@@ -275,11 +275,11 @@ Complete overhaul of the dungeon turn encounter system to make dungeons FUN inst
 - 70-100: Hazards/Encounters (~50%)
 
 **New (V2):**
-- 5-25: OPPORTUNITIES (~22%)
-- 26-45: COMPLICATIONS (~21%)
-- 46-65: DILEMMAS (~21%)
-- 66-85: ACTIVE THREATS (~21%)
-- 86-100: COMBAT (~16%)
+- Extreme (5-15, 90-100): Always COMBAT
+- Non-extreme: 50% NO EVENT, then:
+  - Sum ≤ 44: COMBAT or ACTIVE_THREAT
+  - Sum 45-62: OPPORTUNITY, COMPLICATION, or DILEMMA
+  - Sum ≥ 63: ACTIVE_THREAT or COMBAT
 
 **Result:** Combat potential ~37% (down from 50%), with player choice determining escalation
 
