@@ -22,29 +22,28 @@
 |-------|------|-------|-------|--------|------|
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (13)
+## Common Items (11)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Wooden Taws | 0 | 1 sp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Taws) |
-| 🖼️ | Sling Bullets | 0 | 1 cp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Sling%20Bullets) |
-| 🖼️ | Wooden Breastplate | 0 | 6 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Breastplate) |
-| 🖼️ | Alchemical Bomb | 0 |  (Varies) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Alchemical%20Bomb) |
-| 🖼️ | Spray Pellet | 0 | 1 sp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Spray%20Pellet) |
-| 🖼️ | Shield Bash | 0 | 0 gp | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Shield%20Bash) |
-| 🖼️ | Blowgun Darts | 0 | 5 cp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Blowgun%20Darts) |
-| 🖼️ | 8-Round Magazine | 0 | 2 sp | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=) |
 | 🖼️ | Bolts | 0 | 1 sp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Bolts) |
-| 🖼️ | Scale Mail | 0 | 4 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Scale%20Mail) |
+| 🖼️ | Bolts (Phalanx Piercer) | 0 | 1 sp (price for 5) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Bolts) |
+| ![Lattice Armor](https://2e.aonprd.com/Images/Armor/Lattice_Armor.webp) | Lattice Armor | 0 | 9 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Lattice%20Armor) |
+| 🖼️ | Shield Bash | 0 | 0 gp | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Shield%20Bash) |
+| 🖼️ | Alchemical Bomb | 0 |  (Varies) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Alchemical%20Bomb) |
+| 🖼️ | Splint Mail | 1 | 13 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Splint%20Mail) |
+| 🖼️ | Half Plate | 1 | 18 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Half%20Plate) |
+| 🖼️ | Wooden Taws | 0 | 1 sp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Wooden%20Taws) |
 | 🖼️ | Hand Crossbow | 0 | 3 gp | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Hand%20Crossbow) |
-| 🖼️ | Studded Leather Armor | 0 | 3 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Studded%20Leather%20Armor) |
+| 🖼️ | Blowgun Darts | 0 | 5 cp (price for 10) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Blowgun%20Darts) |
 | 🖼️ | Leather Armor | 0 | 2 gp | Common | Armor | Armor | [View](https://2e.aonprd.com/Search.aspx?query=Leather%20Armor) |
 
 ## Services
