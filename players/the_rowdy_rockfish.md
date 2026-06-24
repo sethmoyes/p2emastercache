@@ -22,7 +22,8 @@
 |-------|------|-------|-------|--------|------|
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
@@ -30,26 +31,19 @@
 
 # REGULAR ITEMS
 
-## Common Items (10)
+## Common Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Feed (Unique) | 0 | 1 sp (1 week) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Feed) |
-| 🖼️ | Map (Political Map) | 0 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Map) |
-| ![Formula Book (Blank)](https://2e.aonprd.com/Images/Treasure/Formula_Book.webp) | Formula Book (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Formula%20Book) |
-| ![War Flail](https://2e.aonprd.com/Images/Weapons/War_Flail.webp) | War Flail | 0 | 2 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=War%20Flail) |
-| 🖼️ | Opossum, domestic | 0 | 2 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Opossum%20domestic) |
-| 🖼️ | Writing Set | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Writing%20Set) |
-| 🖼️ | Waffle Iron | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Waffle%20Iron) |
-| 🖼️ | Stone Object (Low-Grade) | 0 | 1 sp (per Bulk) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Stone%20Object) |
-| 🖼️ | Chain | 0 | 4 gp (10 ft.) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Chain) |
-| ![Musical Instrument (Handheld)](https://2e.aonprd.com/Images/Treasure/Musical_Instrument.webp) | Musical Instrument (Handheld) | 0 | 8 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Musical%20Instrument) |
+| 🖼️ | Saddlebags | 0 | 2 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Saddlebags) |
+| 🖼️ | Lantern (Hooded) | 0 | 7 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lantern) |
+| 🖼️ | Waffle Iron (Imprint) | 1 | 2 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Waffle%20Iron) |
 
 ## Uncommon Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Mikazuki (Ranged)](https://2e.aonprd.com/Images/Weapons/Mikazuki.webp) | Mikazuki (Ranged) | 0 | 8 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mikazuki) |
+| ![Taw Launcher](https://2e.aonprd.com/Images/Weapons/Taw_Launcher.webp) | Taw Launcher | 0 | 10 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Taw%20Launcher) |
 
 ## Services
 

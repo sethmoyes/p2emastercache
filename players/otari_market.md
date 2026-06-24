@@ -23,62 +23,64 @@
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 | ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (27)
+## Common Items (28)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Cow | 0 | 8 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cow) |
-| 🖼️ | Tack | 0 | 4 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tack) |
-| 🖼️ | Repeating Hand Crossbow Magazine | 0 | 9 sp (price for 5 bolts) | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Repeating%20Hand%20Crossbow%20Magazine) |
-| 🖼️ | Magical Prosthetic Eye | 1 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Magical%20Prosthetic%20Eye) |
-| 🖼️ | War Razor | 0 | 3 sp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=War%20Razor) |
-| 🖼️ | Beverages (Keg of Ale) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
-| 🖼️ | Bottled Catharsis (Moderate) | 2 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bottled%20Catharsis) |
-| 🖼️ | Raccoon | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Raccoon) |
-| 🖼️ | Monkey | 0 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Monkey) |
-| 🖼️ | Purifying Spoon (Tablespoon) | 1 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Purifying%20Spoon) |
-| 🖼️ | Padded Armor | 0 | 2 sp | Common | Armor | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Padded%20Armor) |
-| 🖼️ | Clothing (High-Fashion Fine) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clothing) |
-| 🖼️ | Ten-Foot Pole | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ten-Foot%20Pole) |
-| 🖼️ | Writing Set | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Writing%20Set) |
-| 🖼️ | Harness | 0 | 8 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Harness) |
-| ![Spellbook (Blank)](https://2e.aonprd.com/Images/Treasure/Spellbook.webp) | Spellbook (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellbook) |
-| 🖼️ | Surprise Doll | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Surprise%20Doll) |
-| 🖼️ | Clay | 0 | 1 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clay) |
-| ![Catch Pole](https://2e.aonprd.com/Images/Treasure/Catch_Pole.webp) | Catch Pole | 0 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Catch%20Pole) |
-| 🖼️ | Crutch | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Crutch) |
-| 🖼️ | Liuyedao | 0 | 3 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Liuyedao) |
-| 🖼️ | Lodging (Floor Space) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lodging) |
-| 🖼️ | Bird (House Eagle) | 0 | 10 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bird) |
-| 🖼️ | Spellcasting (8th rank) | 0 | 720 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
-| 🖼️ | Lodging (Extravagant Suite, for 6) | 0 | 10 gp (per day) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lodging) |
-| 🖼️ | Scimitar | 0 | 1 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Scimitar) |
-| 🖼️ | Lantern (Bull's-Eye) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lantern) |
+| ![Frying Pan](https://2e.aonprd.com/Images/Weapons/Frying_Pan.webp) | Frying Pan | 0 | 1 sp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Frying%20Pan) |
+| 🖼️ | Apparition Gloves | 2 | 25 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Apparition%20Gloves) |
+| 🖼️ | Probing Cane | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Probing%20Cane) |
+| 🖼️ | Lodging (Bed, for 1) | 0 | 1 sp (per day) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lodging) |
+| 🖼️ | Rations | 0 | 4 sp (1 week) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Rations) |
+| 🖼️ | Explorer's Clothing | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Explorer%27s%20Clothing) |
+| 🖼️ | Portable Animal Blind | 2 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Portable%20Animal%20Blind) |
+| 🖼️ | Alchemical Bomb | 0 |  (Varies) | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Alchemical%20Bomb) |
+| 🖼️ | Spellcasting (1st rank) | 0 | 3 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
+| ![Gakgung](https://2e.aonprd.com/Images/Weapons/Gakgung.webp) | Gakgung | 0 | 6 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gakgung) |
+| 🖼️ | Bird | 0 | 0 gp | Common | Animals | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bird) |
+| 🖼️ | Bloodhound Mask (Lesser) | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bloodhound%20Mask) |
+| 🖼️ | Tatzlwyrm's Gasp | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tatzlwyrm%27s%20Gasp) |
+| 🖼️ | Cookware | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cookware) |
+| 🖼️ | Origin Unguent | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Origin%20Unguent) |
+| 🖼️ | Versatile Tinderbox | 1 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Versatile%20Tinderbox) |
+| 🖼️ | Ranseur | 0 | 2 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ranseur) |
+| 🖼️ | Bastard Sword | 0 | 4 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bastard%20Sword) |
+| 🖼️ | Traveling Companion's Chair | 1 | 4 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Traveling%20Companion%27s%20Chair) |
+| 🖼️ | Silver Tripod | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Silver%20Tripod) |
+| 🖼️ | Backpack | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Backpack) |
+| 🖼️ | Beverages (Bottle of Wine) | 0 | 0 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Beverages) |
+| 🖼️ | Kris | 0 | 7 sp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Kris) |
+| 🖼️ | Falchion | 0 | 3 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Falchion) |
+| 🖼️ | Shield Bash | 0 | 0 gp | Common | Weapon | Weapon | [View](https://2e.aonprd.com/Search.aspx?query=Shield%20Bash) |
+| 🖼️ | Aromatic Ammunition | 2 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Aromatic%20Ammunition) |
+| 🖼️ | Flint and Steel | 0 | 5 cp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Flint%20and%20Steel) |
+| 🖼️ | Greatsword | 0 | 2 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Greatsword) |
 
-## Uncommon Items (9)
+## Uncommon Items (10)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Gunner's Saddle | 2 | 20 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Gunner%27s%20Saddle) |
-| 🖼️ | Flingflenser | 0 | 5 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Flingflenser) |
-| 🖼️ | Cryomister (Lesser) | 1 | 3 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cryomister) |
-| 🖼️ | Repeating Heavy Crossbow Magazine | 0 | 9 sp (price for 5 bolts) | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Repeating%20Heavy%20Crossbow%20Magazine) |
-| 🖼️ | Dragonhide Object (Standard-Grade) | 0 | 0 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dragonhide%20Object) |
-| ![Breaching Pike](https://2e.aonprd.com/Images/Weapons/Breaching_Pike.webp) | Breaching Pike | 0 | 8 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Breaching%20Pike) |
-| 🖼️ | Tripod | 0 | 2 sp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Tripod) |
-| 🖼️ | Mace Multipistol (Ranged) | 0 | 13 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mace%20Multipistol) |
-| ![Bow Staff (Ranged)](https://2e.aonprd.com/Images/Weapons/Bow_Staff.webp) | Bow Staff (Ranged) | 0 | 8 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bow%20Staff) |
+| 🖼️ | Khopesh | 0 | 2 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Khopesh) |
+| 🖼️ | Switchscythe | 1 | 12 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Switchscythe) |
+| ![Mikazuki (Melee)](https://2e.aonprd.com/Images/Weapons/Mikazuki.webp) | Mikazuki (Melee) | 0 | 8 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mikazuki) |
+| 🖼️ | Fire Lance | 0 | 3 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Fire%20Lance) |
+| 🖼️ | Clockwork Megaphone | 1 | 15 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clockwork%20Megaphone) |
+| ![Mikazuki (Ranged)](https://2e.aonprd.com/Images/Weapons/Mikazuki.webp) | Mikazuki (Ranged) | 0 | 8 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Mikazuki) |
+| 🖼️ | Kama | 0 | 1 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Kama) |
+| 🖼️ | Pocket Watch | 2 | 25 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Pocket%20Watch) |
+| 🖼️ | Vexing Vapor (Lesser) | 1 | 4 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Vexing%20Vapor) |
+| 🖼️ | Dart Umbrella | 0 | 1 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Dart%20Umbrella) |
 
 ## Rare Items (1)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Handkerchief of Disagreeable Disguise | 2 | 0 gp | Rare | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Handkerchief%20of%20Disagreeable%20Disguise) |
+| 🖼️ | Prankster's Perpetual Pieplate | 1 | 12 gp | Rare | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Prankster%27s%20Perpetual%20Pieplate) |
 
