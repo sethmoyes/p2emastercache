@@ -20,9 +20,9 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 
 ---
 
@@ -55,32 +55,24 @@
 - **Greater Reinforcing** (Level 11): 1,400 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 - **Major Reinforcing** (Level 17): 15,000 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 
-## Property Runes (2)
-
-| Image | Name | Level | Price | Rarity | Link |
-|-------|------|-------|-------|--------|------|
-| 🖼️ | Underwater | 3 | 50 gp | Common | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
-| 🖼️ | Reinforcing Rune (Minor) | 4 | 75 gp | Common | [View](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune) |
-
 ---
 
 # REGULAR ITEMS
 
-## Common Items (5)
+## Common Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Basic Crafter's Book | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Basic%20Crafter%27s%20Book) |
+| ![Formula Book (Blank)](https://2e.aonprd.com/Images/Treasure/Formula_Book.webp) | Formula Book (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Formula%20Book) |
 | 🖼️ | Religious Text | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Religious%20Text) |
-| 🖼️ | Draxie's Recipe Book | 4 | 90 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Draxie%27s%20Recipe%20Book) |
-| 🖼️ | Underwater | 3 | 50 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
-| 🖼️ | Reinforcing Rune (Minor) | 4 | 75 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Reinforcing%20Rune) |
+| 🖼️ | Basic Crafter's Book | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Basic%20Crafter%27s%20Book) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Bane | 4 | 100 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bane) |
+| 🖼️ | Clockwork Bookshelf | 1 | 15 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Clockwork%20Bookshelf) |
+| 🖼️ | Ganjay Book | 1 | 10 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ganjay%20Book) |
 
 ## Services
 

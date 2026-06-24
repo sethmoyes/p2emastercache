@@ -20,31 +20,31 @@
 
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| ![Healing Potion (Lesser)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Lesser) | 3 | 12 gp | Restores 2d8+5 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (7)
+## Common Items (6)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Potion Patch (Lesser)](https://2e.aonprd.com/Images/Treasure/Potion_Patch.webp) | Potion Patch (Lesser) | 4 | 20 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Potion%20Patch) |
-| 🖼️ | Leaper's Elixir (Lesser) | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Leaper%27s%20Elixir) |
-| 🖼️ | Lady's Blessing Oil | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lady%27s%20Blessing%20Oil) |
-| 🖼️ | Infiltrator's Elixir | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Infiltrator%27s%20Elixir) |
-| 🖼️ | Sticky Algae Bomb (Moderate) | 3 | 12 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Sticky%20Algae%20Bomb) |
 | ![Blight Bomb (Lesser)](https://2e.aonprd.com/Images/Treasure/Blight_Bomb.webp) | Blight Bomb (Lesser) | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blight%20Bomb) |
-| 🖼️ | Cooling Elixir (Moderate) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cooling%20Elixir) |
+| 🖼️ | Glue Bomb (Moderate) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glue%20Bomb) |
+| 🖼️ | Glue Bomb (Greater) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glue%20Bomb) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Common | Equipment | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Oilskin Pouch | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Oilskin%20Pouch) |
+| 🖼️ | Glue Bomb (Lesser) | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Glue%20Bomb) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Talisman Cord (Lesser) | 4 | 85 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Talisman%20Cord) |
+| 🖼️ | Lesser Durian Bomb | 1 | 4 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lesser%20Durian%20Bomb) |
+| 🖼️ | Noisemaker Snare | 2 | 6 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Noisemaker%20Snare) |
 
 ## Services
 

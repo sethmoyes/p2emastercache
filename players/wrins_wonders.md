@@ -22,8 +22,7 @@
 |-------|------|-------|-------|--------|------|
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Lesser) | 3 | 24 gp | Restores one expended spell slot of 2nd level or lower | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 
 ---
 
@@ -35,34 +34,23 @@
 
 *Study time: 1 hour (common), 5 hours (uncommon), 1 day (rare).*
 
-## Common Spell Scrolls (14)
+## Common Spell Scrolls (5)
 
 | Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |
 |------------|-------|-------|-------|------------|-------|--------|------|
-| SCROLL OF CONFUSION | 4 | 36 gp | 23 | Arcane, Occult | 30 | Concentrate, Emotion, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1471) |
-| SCROLL OF SCRYING RIPPLES | 3 | 16 gp | 20 | Arcane, Divine, Occult, Primal | 0 | Concentrate, Manipulate, Scrying | [View](https://2e.aonprd.com/Spells.aspx?ID=1396) |
-| SCROLL OF MIST | 2 | 6 gp | 18 | Arcane, Primal | 120 | Concentrate, Manipulate, Water | [View](https://2e.aonprd.com/Spells.aspx?ID=1606) |
-| SCROLL OF BREADCRUMBS | 1 | 2 gp | 15 | Arcane, Divine, Occult, Primal, Elemental | 0 | Abjuration | [View](https://2e.aonprd.com/Spells.aspx?ID=876) |
-| SCROLL OF SPEAK WITH PLANTS | 3 | 16 gp | 20 | Divine, Occult, Primal | Unknown | Concentrate, Manipulate, Plant | [View](https://2e.aonprd.com/Spells.aspx?ID=1681) |
-| SCROLL OF HOLY CASCADE | 4 | 36 gp | 23 | Divine | 500 | Evocation, Good, Positive | [View](https://2e.aonprd.com/Spells.aspx?ID=151) |
-| SCROLL OF CLEANSE CUISINE | 1 | 2 gp | 15 | Divine, Primal | 10 | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1468) |
-| SCROLL OF CHROMA LEACH | 4 | 36 gp | 23 | Occult | 0 | Necromancy | [View](https://2e.aonprd.com/Spells.aspx?ID=679) |
-| SCROLL OF TAILWIND | 1 | 2 gp | 15 | Arcane, Primal | Unknown | Air, Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1711) |
-| SCROLL OF SPECTRAL HAND | 2 | 6 gp | 18 | Arcane, Occult | 120 | Necromancy | [View](https://2e.aonprd.com/Spells.aspx?ID=295) |
-| SCROLL OF WEB OF EYES | 3 | 16 gp | 20 | Arcane, Divine, Occult, Primal | 30 | Divination, Scrying | [View](https://2e.aonprd.com/Spells.aspx?ID=1032) |
-| SCROLL OF MAGNETIC ATTRACTION | 2 | 6 gp | 18 | Arcane, Primal | 60 | Evocation, Metal | [View](https://2e.aonprd.com/Spells.aspx?ID=944) |
-| SCROLL OF EXTRACT POISON | 2 | 6 gp | 18 | Arcane, Primal | 0 | Abjuration | [View](https://2e.aonprd.com/Spells.aspx?ID=907) |
-| SCROLL OF CRASHING WAVE | 3 | 16 gp | 20 | Arcane, Primal | Unknown | Evocation, Water | [View](https://2e.aonprd.com/Spells.aspx?ID=682) |
+| SCROLL OF CONCORDANT CHOIR | 1 | 2 gp | 15 | Divine, Occult | 30 | Evocation, Sonic | [View](https://2e.aonprd.com/Spells.aspx?ID=886) |
+| SCROLL OF LOCK | 1 | 2 gp | 15 | Arcane, Divine, Occult | 0 | Abjuration | [View](https://2e.aonprd.com/Spells.aspx?ID=174) |
+| SCROLL OF BRAND THE IMPENITENT | 2 | 6 gp | 18 | Divine | 0 | Abjuration, Curse | [View](https://2e.aonprd.com/Spells.aspx?ID=570) |
+| SCROLL OF STATUS | 2 | 6 gp | 18 | Divine, Occult, Primal | 0 | Detection, Divination | [View](https://2e.aonprd.com/Spells.aspx?ID=308) |
+| SCROLL OF MAGIC WEAPON | 1 | 2 gp | 15 | Arcane, Divine, Occult, Elemental | 0 | Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=182) |
 
-## Uncommon Spell Scrolls (5)
+## Uncommon Spell Scrolls (3)
 
 | Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |
 |------------|-------|-------|-------|------------|-------|--------|------|
-| SCROLL OF FRIENDFETCH | 1 | 2 gp | 15 | Arcane, Occult | 30 | Evocation, Force, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=860) |
-| SCROLL OF PAINTED SCOUT | 3 | 16 gp | 20 | Occult, Primal | 0 | Divination, Scrying, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1096) |
-| SCROLL OF CELESTIAL ACCORD | 1 | 2 gp | 15 | Divine, Occult | 30 | Emotion, Enchantment, Good | [View](https://2e.aonprd.com/Spells.aspx?ID=1220) |
-| SCROLL OF WEB OF INFLUENCE | 4 | 36 gp | 23 |  | 0 | Detection, Divination, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1218) |
-| SCROLL OF SUDDEN RECOLLECTION | 3 | 16 gp | 20 | Occult | 30 | Enchantment, Mental, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1003) |
+| SCROLL OF KGALASERKE'S AXES | 2 | 6 gp | 18 | Arcane, Occult | 30 | Auditory, Concentrate, Linguistic | [View](https://2e.aonprd.com/Spells.aspx?ID=2308) |
+| SCROLL OF NETTLESKIN | 1 | 2 gp | 15 | Primal | Unknown | Plant, Transmutation, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1093) |
+| SCROLL OF MANIFESTATION OF SPIRITS | 2 | 6 gp | 18 | Divine, Primal | 30 | Concentrate, Manipulate, Mental | [View](https://2e.aonprd.com/Spells.aspx?ID=2469) |
 
 ---
 
@@ -95,41 +83,34 @@
 - **Greater Reinforcing** (Level 11): 1,400 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 - **Major Reinforcing** (Level 17): 15,000 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)
 
-## Property Runes (1)
-
-| Image | Name | Level | Price | Rarity | Link |
-|-------|------|-------|-------|--------|------|
-| 🖼️ | Underwater | 3 | 50 gp | Common | [View](https://2e.aonprd.com/Search.aspx?query=Underwater) |
-
 ---
 
 # REGULAR ITEMS
 
-## Common Items (14)
+## Common Items (12)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Ring of Sigils | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ring%20of%20Sigils) |
 | 🖼️ | Hatchet | 0 | 4 sp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hatchet) |
-| 🖼️ | Sure-Step Potion | 4 | 17 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Sure-Step%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Common | Equipment | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Cooling Elixir (Moderate) | 4 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cooling%20Elixir) |
-| 🖼️ | Wand of Mercy (1st-Rank Spell) | 4 | 75 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Mercy) |
-| 🖼️ | Wand of Pernicious Poison (1st-Rank Spell) | 4 | 100 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Wand%20of%20Pernicious%20Poison) |
-| ![Magic Wand (5th-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (5th-rank Spell) | 3 | 0 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
-| 🖼️ | Eagle-Eye Elixir (Lesser) | 1 | 4 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eagle-Eye%20Elixir) |
-| ![Magic Wand (7th-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (7th-rank Spell) | 3 | 0 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
-| 🖼️ | Bomber's Eye Elixir (Lesser) | 4 | 14 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Bomber%27s%20Eye%20Elixir) |
-| ![Magic Wand (3rd-rank Spell)](https://2e.aonprd.com/Images/Treasure/Magic_Wand.webp) | Magic Wand (3rd-rank Spell) | 3 | 0 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Magic%20Wand) |
+| 🖼️ | Hearing Aid (Magical) | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Hearing%20Aid) |
 | 🖼️ | Armored Cloak | 0 | 2 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Armored%20Cloak) |
-| 🖼️ | Antivenom Potion | 2 | 6 gp | Common | Equipment | Magical | [View](https://2e.aonprd.com/Search.aspx?query=Antivenom%20Potion) |
+| 🖼️ | Eagle-Eye Elixir (Lesser) | 1 | 4 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Eagle-Eye%20Elixir) |
+| 🖼️ | Darkvision Elixir (Lesser) | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Darkvision%20Elixir) |
+| 🖼️ | Cloak of Feline Rest | 1 | 20 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cloak%20of%20Feline%20Rest) |
+| 🖼️ | Cheetah's Elixir (Lesser) | 1 | 3 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cheetah%27s%20Elixir) |
+| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Common | Equipment | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Common | Equipment | Alchemical | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Infiltrator's Elixir | 2 | 6 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Infiltrator%27s%20Elixir) |
+| 🖼️ | Cat's Eye Elixir | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Cat%27s%20Eye%20Elixir) |
+| 🖼️ | Ring of Sigils | 1 | 0 gp | Common | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Ring%20of%20Sigils) |
 
-## Uncommon Items (2)
+## Uncommon Items (3)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Talisman Cord (Lesser) | 4 | 85 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Talisman%20Cord) |
-| 🖼️ | Blast Boots (Moderate) | 3 | 11 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Blast%20Boots) |
+| 🖼️ | Butchering Axe | 0 | 8 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Butchering%20Axe) |
+| 🖼️ | Skittering Mask | 0 | 0 gp | Uncommon | N/A | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Skittering%20Mask) |
+| 🖼️ | Capturing Spetum | 0 | 9 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Capturing%20Spetum) |
 
 ## Services
 
