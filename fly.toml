@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for p2emastercache on 2026-02-10T03:36:10Z
+# fly.toml app configuration file generated for p2emastercache2 on 2026-06-24T19:25:51Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'p2emastercache'
-primary_region = 'iad'
+app = 'p2emastercache2'
+primary_region = 'dfw'
 
 [build]
 
