@@ -36,9 +36,9 @@
         </div>
 
         <!-- Buttons -->
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid md:grid-cols-3 gap-6">
             <!-- Player Button -->
-            <button onclick="goToPlayers()" class="btn-hover bg-gradient-to-br from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-2xl p-12 shadow-2xl border-2 border-blue-400">
+            <button onclick="goToPlayers()" class="btn-hover bg-gradient-to-br from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white rounded-2xl p-8 shadow-2xl border-2 border-blue-400">
                 <div class="text-6xl mb-4">🗡️</div>
                 <h3 class="text-3xl font-bold mb-2">PLAYER</h3>
                 <p class="text-blue-200">Visit Otari Market Square</p>
@@ -46,11 +46,19 @@
             </button>
 
             <!-- GM Button -->
-            <button onclick="showGMPassword()" class="btn-hover bg-gradient-to-br from-purple-600 to-purple-900 hover:from-purple-500 hover:to-purple-800 text-white rounded-2xl p-12 shadow-2xl border-2 border-purple-400">
+            <button onclick="showGMPassword()" class="btn-hover bg-gradient-to-br from-purple-600 to-purple-900 hover:from-purple-500 hover:to-purple-800 text-white rounded-2xl p-8 shadow-2xl border-2 border-purple-400">
                 <div class="text-6xl mb-4">🎲</div>
                 <h3 class="text-3xl font-bold mb-2">GM</h3>
                 <p class="text-purple-200">Access GM Tools</p>
                 <p class="text-sm text-purple-300 mt-2">Encounter generator, dice jar, and more</p>
+            </button>
+
+            <!-- Atlas Button -->
+            <button onclick="window.location.href='/atlas'" class="btn-hover bg-gradient-to-br from-emerald-600 to-teal-800 hover:from-emerald-500 hover:to-teal-700 text-white rounded-2xl p-8 shadow-2xl border-2 border-emerald-400">
+                <div class="text-6xl mb-4">🗺️</div>
+                <h3 class="text-3xl font-bold mb-2">ATLAS</h3>
+                <p class="text-emerald-200">Maps of the Inner Sea</p>
+                <p class="text-sm text-emerald-300 mt-2">Otari, Absalom, and every place worth knowing</p>
             </button>
         </div>
 

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Atlas of the Inner Sea</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<style>
+  :root { --edge: #11161f; }
+  body { background: linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%); }
+  #map { background: var(--edge); width: 100%; height: 100%; }
+  .leaflet-container { background: var(--edge); font-family: inherit; }
+
+  /* Pin markers */
+  .poi-pin {
+    display:flex; align-items:center; justify-content:center;
+    width:28px; height:28px; border-radius:50% 50% 50% 0;
+    transform: rotate(-45deg); border:2px solid rgba(255,255,255,.85);
+    box-shadow:0 2px 6px rgba(0,0,0,.6); font-size:13px; line-height:1;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .poi-pin > span { transform: rotate(45deg); }
+  .poi-marker:hover .poi-pin { transform: rotate(-45deg) scale(1.2); box-shadow:0 4px 14px rgba(0,0,0,.8); }
+  .poi-marker.is-active .poi-pin {
+    transform: rotate(-45deg) scale(1.3);
+    border-color:#fbbf24; box-shadow:0 0 0 4px rgba(251,191,36,.35),0 4px 14px rgba(0,0,0,.8);
+  }
+  .poi-label {
+    position:absolute; left:50%; top:30px; transform:translateX(-50%);
+    white-space:nowrap; font-size:11px; font-weight:600; color:#e5e7eb;
+    text-shadow:0 1px 3px #000,0 0 6px #000; pointer-events:none;
+    opacity:0; transition:opacity .15s;
+  }
+  .labels-on .poi-label, .poi-marker.is-active .poi-label { opacity:1; }
+
+  .marker-cluster {
+    background-clip: padding-box; border-radius: 20px;
+    background: rgba(59,130,246,.35);
+  }
+  .marker-cluster div {
+    width:30px; height:30px; margin-left:5px; margin-top:5px;
+    text-align:center; border-radius:15px;
+    background: rgba(37,99,235,.92); color:#fff; font-weight:700; font-size:12px;
+    border:2px solid rgba(255,255,255,.55);
+  }
+  .marker-cluster span { line-height:30px; }
+  .marker-cluster-large { background: rgba(147,51,234,.35); }
+  .marker-cluster-large div { background: rgba(126,34,206,.92); }
+
+  .leaflet-control-zoom a {
+    background:rgba(31,41,55,.94) !important; color:#fff !important;
+    border-color:#3b82f6 !important;
+  }
+  .leaflet-control-zoom a:hover { background:rgba(59,130,246,.95) !important; }
+  .leaflet-control-attribution {
+    background:rgba(17,24,39,.85) !important; color:#9ca3af !important; font-size:10px;
+  }
+  .leaflet-control-attribution a { color:#60a5fa !important; }
+
+  .scroll-slim::-webkit-scrollbar { width:8px; }
+  .scroll-slim::-webkit-scrollbar-track { background:rgba(0,0,0,.25); }
+  .scroll-slim::-webkit-scrollbar-thumb { background:#374151; border-radius:4px; }
+  .scroll-slim::-webkit-scrollbar-thumb:hover { background:#4b5563; }
+
+  .poi-row.selected { background:rgba(251,191,36,.18); border-color:#fbbf24; }
+  /* Approximate: district is known, exact spot is not. */
+  .poi-marker.is-approx .poi-pin { opacity:.62; border-style:dashed; }
+  .poi-marker.is-approx:hover .poi-pin { opacity:1; }
+  .placing #map { cursor: crosshair; }
+  .placing .leaflet-marker-icon { cursor: move; }
+
+  @media (max-width: 1024px) {
+    #sidebar {
+      position:absolute; inset:0 auto 0 0; width:88%; max-width:22rem; z-index:1200;
+      transform:translateX(-100%); transition:transform .25s ease;
+    }
+    #sidebar.open { transform:translateX(0); }
+    #detail { max-height:55vh; }
+  }
+</style>
+</head>
+<body class="min-h-screen text-white">
+
+<div class="flex flex-col h-screen">
+
+  <!-- Header -->
+  {% if not embed %}<header class="flex-none bg-gray-900/80 backdrop-blur border-b border-blue-500/40 px-3 py-2">
+    <div class="flex items-center gap-3 flex-wrap">
+      <a href="/" class="flex items-center gap-1.5 bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded-lg text-sm transition">
+        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+        Menu
+      </a>
+
+      <button id="sidebar-toggle" onclick="toggleSidebar()"
+              class="lg:hidden bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded-lg text-sm transition">
+        Places
+      </button>
+
+      <div class="min-w-0">
+        <h1 id="map-title" class="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent leading-tight truncate">
+          Atlas
+        </h1>
+        <p id="map-subtitle" class="text-xs text-gray-400 truncate hidden sm:block"></p>
+      </div>
+
+      <div class="flex-1"></div>
+
+      <select id="map-select" onchange="selectMap(this.value)"
+              class="bg-gray-700 text-white px-3 py-1.5 rounded-lg border-2 border-blue-500 focus:border-purple-500 focus:outline-none text-sm max-w-[13rem]">
+      </select>
+
+      <button onclick="toggleLabels()" id="labels-btn" title="Show or hide pin names"
+              class="bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded-lg text-sm transition">
+        Labels
+      </button>
+      <button onclick="togglePlacing()" id="place-btn" title="GM: position pins on the map"
+              class="bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded-lg text-sm transition">
+        Place pins
+      </button>
+    </div>
+  </header>{% endif %}
+
+  {% if embed %}
+  <div class="flex-none flex items-center gap-2 bg-gray-900/80 border-b border-blue-500/40 px-3 py-1.5">
+    <button onclick="toggleSidebar()" class="lg:hidden bg-gray-700 hover:bg-gray-600 px-3 py-1 rounded text-xs">Places</button>
+    <select id="map-select" onchange="selectMap(this.value)"
+            class="bg-gray-700 text-white px-2 py-1 rounded border border-blue-500 focus:outline-none text-xs"></select>
+    <span id="map-subtitle" class="text-xs text-gray-400 truncate hidden sm:block"></span>
+    <span id="map-title" class="hidden"></span>
+    <div class="flex-1"></div>
+    <button onclick="toggleLabels()" id="labels-btn" class="bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded text-xs">Labels</button>
+    <button onclick="togglePlacing()" id="place-btn" class="hidden"></button>
+    <a href="/atlas" target="_blank" class="bg-blue-600 hover:bg-blue-700 px-2 py-1 rounded text-xs">Full atlas</a>
+  </div>
+  {% endif %}
+
+  <div class="flex-1 relative flex overflow-hidden">
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="flex-none w-80 bg-gray-900/95 backdrop-blur border-r border-gray-700 flex flex-col">
+      <div class="flex-none p-3 border-b border-gray-700 space-y-2">
+        <div class="flex gap-2">
+          <input id="search" type="search" placeholder="Search places..." oninput="renderList()"
+                 class="flex-1 min-w-0 bg-gray-800 px-3 py-2 rounded-lg border border-gray-600 focus:border-blue-500 focus:outline-none text-sm">
+          <button onclick="toggleSidebar()" class="lg:hidden bg-gray-700 px-3 rounded-lg text-sm">Close</button>
+        </div>
+        <div class="flex items-center justify-between text-xs text-gray-400">
+          <span id="count-line">&nbsp;</span>
+          <button onclick="toggleAllGroups()" id="toggle-all" class="text-blue-400 hover:text-blue-300">Hide all</button>
+        </div>
+      </div>
+
+      <!-- Layer groups -->
+      <div class="flex-none max-h-52 overflow-y-auto scroll-slim border-b border-gray-700 p-2">
+        <div id="groups" class="space-y-0.5"></div>
+      </div>
+
+      <!-- Placement panel -->
+      <div id="place-panel" class="hidden flex-none p-3 border-b border-amber-500/50 bg-amber-500/10 text-xs space-y-2">
+        <p class="font-bold text-amber-300">Placement mode</p>
+        <p class="text-gray-300 leading-relaxed">
+          Click the map to drop the highlighted place, then it advances to the next unplaced one.
+          Drag any pin to adjust. Pick a group above to work through one at a time.
+        </p>
+        <p id="place-next" class="text-amber-200 font-semibold"></p>
+        <div class="flex gap-2">
+          <button onclick="savePlacements()" id="save-btn"
+                  class="flex-1 bg-green-600 hover:bg-green-700 px-2 py-1.5 rounded transition font-semibold">
+            Save
+          </button>
+          <button onclick="skipPlacement()" class="bg-gray-700 hover:bg-gray-600 px-2 py-1.5 rounded transition">Skip</button>
+          <button onclick="unplaceSelected()" class="bg-red-700 hover:bg-red-600 px-2 py-1.5 rounded transition">Unplace</button>
+        </div>
+        <p id="save-status" class="text-gray-400"></p>
+      </div>
+
+      <!-- POI list -->
+      <div id="list" class="flex-1 overflow-y-auto scroll-slim p-2 space-y-1"></div>
+    </aside>
+
+    <!-- Map -->
+    <main class="flex-1 relative">
+      <div id="map"></div>
+
+      <div id="loading" class="absolute inset-0 flex items-center justify-center bg-gray-900/80 z-[1500] pointer-events-none">
+        <p class="text-gray-300 animate-pulse">Loading map...</p>
+      </div>
+
+      <!-- Detail panel -->
+      <div id="detail" class="hidden absolute right-0 bottom-0 lg:top-0 lg:bottom-auto lg:h-full w-full lg:w-96
+                  bg-gray-900/96 backdrop-blur border-t lg:border-t-0 lg:border-l border-blue-500/50 z-[1100]
+                  overflow-y-auto scroll-slim">
+        <div class="p-4">
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <div class="min-w-0">
+              <h2 id="d-name" class="text-xl font-bold leading-tight"></h2>
+              <p id="d-group" class="text-xs text-gray-400 mt-0.5"></p>
+            </div>
+            <button onclick="closeDetail()" class="flex-none bg-gray-700 hover:bg-gray-600 w-8 h-8 rounded-lg transition">&times;</button>
+          </div>
+          <p id="d-summary" class="text-sm text-gray-300 leading-relaxed my-3"></p>
+          <p id="d-unplaced" class="hidden text-xs text-amber-300 bg-amber-500/10 border border-amber-500/40 rounded p-2 mb-3"></p>
+          <a id="d-link" href="#" target="_blank" rel="noopener"
+             class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm transition">
+            Read the full entry
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script>
+// ---------------------------------------------------------------- config
+
+const TYPE_STYLE = {
+  tavern:        { icon: '\u{1F37A}', color: '#d97706' },
+  restaurant:    { icon: '\u{1F372}', color: '#ea580c' },
+  temple:        { icon: '⛪',    color: '#8b5cf6' },
+  magic:         { icon: '\u{1F52E}', color: '#c026d3' },
+  knowledge:     { icon: '\u{1F4DA}', color: '#2563eb' },
+  shop:          { icon: '\u{1F3EA}', color: '#059669' },
+  guild:         { icon: '\u{1F6E1}', color: '#0891b2' },
+  military:      { icon: '⚔',    color: '#dc2626' },
+  civic:         { icon: '\u{1F3DB}', color: '#64748b' },
+  entertainment: { icon: '\u{1F3AD}', color: '#db2777' },
+  healing:       { icon: '⚕',    color: '#16a34a' },
+  maritime:      { icon: '⚓',    color: '#0284c7' },
+  ruins:         { icon: '\u{1F480}', color: '#78716c' },
+  nation:        { icon: '\u{1F3F3}', color: '#4f46e5' },
+  settlement:    { icon: '\u{1F3D8}', color: '#0d9488' },
+  residence:     { icon: '\u{1F3E0}', color: '#ca8a04' },
+  geography:     { icon: '⛰',    color: '#65a30d' },
+  landmark:      { icon: '\u{1F4CD}', color: '#6b7280' }
+};
+const styleFor = t => TYPE_STYLE[t] || TYPE_STYLE.landmark;
+
+// ---------------------------------------------------------------- state
+
+let maps = [];
+let current = null;          // active map registry entry
+let pois = [];               // POIs for the active map
+let groups = [];             // layer group names, in display order
+let hidden = new Set();      // groups toggled off
+let markers = {};            // poi id -> L.Marker
+let selectedId = null;
+let placing = false;
+let labelsOn = false;
+let dirty = {};              // poi id -> {x,y} | null, pending save
+
+let map, tileLayer, cluster;
+
+// ---------------------------------------------------------------- geometry
+// POIs store x/y as 0-1 fractions of the image, so a map image can be swapped
+// for a higher-resolution scan without any pin moving.
+
+const worldScale = () => Math.pow(2, current.max_zoom);
+
+function fracToLatLng(fx, fy) {
+  const s = worldScale();
+  return L.latLng(-(fy * current.height) / s, (fx * current.width) / s);
+}
+
+function latLngToFrac(latlng) {
+  const s = worldScale();
+  return {
+    x: Math.min(1, Math.max(0, (latlng.lng * s) / current.width)),
+    y: Math.min(1, Math.max(0, (-latlng.lat * s) / current.height))
+  };
+}
+
+function mapBounds() {
+  const s = worldScale();
+  return L.latLngBounds(
+    L.latLng(-current.height / s, 0),
+    L.latLng(0, current.width / s)
+  );
+}
+
+// ---------------------------------------------------------------- boot
+
+async function init() {
+  const res = await fetch('/api/maps');
+  maps = (await res.json()).maps || [];
+
+  const sel = document.getElementById('map-select');
+  if (!maps.length) {
+    document.getElementById('loading').innerHTML =
+      '<p class="text-gray-300 text-center px-6">No maps yet.<br><span class="text-sm text-gray-500">Add one with bin/maps/tile_map.py</span></p>';
+    return;
+  }
+  sel.innerHTML = maps.map(m => `<option value="${m.id}">${esc(m.name)}</option>`).join('');
+
+  const wanted = location.hash.slice(1).split('/')[0];
+  const start = maps.find(m => m.id === wanted) || maps[0];
+  sel.value = start.id;
+  await selectMap(start.id, location.hash.split('/')[1]);
+}
+
+async function selectMap(id, focusPoi) {
+  current = maps.find(m => m.id === id);
+  if (!current) return;
+
+  document.getElementById('loading').classList.remove('hidden');
+  document.getElementById('map-title').textContent = current.name;
+  document.getElementById('map-subtitle').textContent = current.subtitle || '';
+  closeDetail();
+  dirty = {};
+  hidden = new Set();
+
+  const resp = await fetch('/api/pois/' + id);
+  const data = await resp.json();
+  pois = data.locations || [];
+  groups = data.groups || [];
+
+  buildMap();
+  renderGroups();
+  renderMarkers();
+  renderList();
+  updateCounts();
+
+  location.hash = id + (focusPoi ? '/' + focusPoi : '');
+  document.getElementById('loading').classList.add('hidden');
+
+  if (focusPoi) {
+    const poi = pois.find(p => p.id === focusPoi);
+    if (poi) showDetail(poi, true);
+  }
+}
+
+function buildMap() {
+  if (map) { map.remove(); map = null; }
+
+  const bounds = mapBounds();
+  map = L.map('map', {
+    crs: L.CRS.Simple,
+    minZoom: 0,
+    maxZoom: current.max_zoom + 2,   // allow overzoom past native tiles
+    zoomControl: true,
+    attributionControl: true,
+    maxBounds: bounds.pad(0.25),
+    maxBoundsViscosity: 0.85,
+    zoomSnap: 0.25,
+    wheelPxPerZoomLevel: 110
+  });
+
+  tileLayer = L.tileLayer(current.tiles, {
+    tileSize: current.tile_size || 256,
+    minZoom: 0,
+    maxNativeZoom: current.max_zoom,
+    maxZoom: current.max_zoom + 2,
+    bounds: bounds,
+    noWrap: true,
+    attribution: current.attribution || ''
+  }).addTo(map);
+
+  // Absalom has 383 pins, so clustering matters at low zoom; a sparse town map
+  // should show its pins individually as soon as there is room.
+  cluster = L.markerClusterGroup({
+    maxClusterRadius: pois.length > 60 ? 44 : 28,
+    disableClusteringAtZoom: Math.max(1, current.max_zoom - 1),
+    spiderfyOnMaxZoom: true,
+    showCoverageOnHover: false
+  }).addTo(map);
+
+  map.fitBounds(bounds);
+  map.on('click', onMapClick);
+}
+
+// ---------------------------------------------------------------- markers
+
+function visiblePois() {
+  return pois.filter(p => coordsOf(p).x !== null && !hidden.has(p.group));
+}
+
+/** Pending edits win over what came from the server. */
+function coordsOf(poi) {
+  if (Object.prototype.hasOwnProperty.call(dirty, poi.id)) {
+    return dirty[poi.id] || { x: null, y: null };
+  }
+  return { x: poi.x === undefined ? null : poi.x, y: poi.y === undefined ? null : poi.y };
+}
+
+function renderMarkers() {
+  cluster.clearLayers();
+  markers = {};
+
+  visiblePois().forEach(poi => {
+    const c = coordsOf(poi);
+    const s = styleFor(poi.type);
+    const marker = L.marker(fracToLatLng(c.x, c.y), {
+      icon: L.divIcon({
+        className: 'poi-marker'
+          + (poi.id === selectedId ? ' is-active' : '')
+          + (poi.approx ? ' is-approx' : ''),
+        html: `<div class="poi-pin" style="background:${s.color}"><span>${s.icon}</span></div>
+               <div class="poi-label">${esc(poi.name)}</div>`,
+        iconSize: [28, 28],
+        iconAnchor: [14, 28]
+      }),
+      draggable: placing,
+      title: poi.name
+    });
+
+    marker.on('click', e => { L.DomEvent.stop(e); showDetail(poi); });
+    marker.on('dragend', e => {
+      dirty[poi.id] = latLngToFrac(e.target.getLatLng());
+      updateCounts();
+    });
+
+    marker.addTo(cluster);
+    markers[poi.id] = marker;
+  });
+
+  document.getElementById('map').classList.toggle('labels-on', labelsOn);
+}
+
+// ---------------------------------------------------------------- groups
+
+function renderGroups() {
+  const host = document.getElementById('groups');
+  host.innerHTML = groups.map(g => {
+    const n = pois.filter(p => p.group === g).length;
+    const placed = pois.filter(p => p.group === g && coordsOf(p).x !== null).length;
+    return `
+      <label class="flex items-center gap-2 px-2 py-1 rounded hover:bg-gray-800 cursor-pointer text-sm">
+        <input type="checkbox" ${hidden.has(g) ? '' : 'checked'} onchange="toggleGroup('${escAttr(g)}')"
+               class="accent-blue-500 flex-none">
+        <span class="flex-1 truncate">${esc(g)}</span>
+        <span class="flex-none text-xs ${placed ? 'text-gray-500' : 'text-amber-500/70'}">${placed}/${n}</span>
+      </label>`;
+  }).join('');
+}
+
+function toggleGroup(g) {
+  hidden.has(g) ? hidden.delete(g) : hidden.add(g);
+  renderMarkers();
+  renderList();
+  updateCounts();
+}
+
+function toggleAllGroups() {
+  const btn = document.getElementById('toggle-all');
+  if (hidden.size) { hidden.clear(); btn.textContent = 'Hide all'; }
+  else { groups.forEach(g => hidden.add(g)); btn.textContent = 'Show all'; }
+  renderGroups(); renderMarkers(); renderList(); updateCounts();
+}
+
+// ---------------------------------------------------------------- list
+
+function filteredPois() {
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  return pois
+    .filter(p => !hidden.has(p.group))
+    .filter(p => !q || p.name.toLowerCase().includes(q) || (p.summary || '').toLowerCase().includes(q))
+    .sort((a, b) => a.group === b.group
+      ? a.name.localeCompare(b.name)
+      : groups.indexOf(a.group) - groups.indexOf(b.group));
+}
+
+function renderList() {
+  const rows = filteredPois();
+  const host = document.getElementById('list');
+
+  if (!rows.length) {
+    host.innerHTML = '<p class="text-sm text-gray-500 p-3 text-center">Nothing matches.</p>';
+    updateCounts();
+    return;
+  }
+
+  let html = '', lastGroup = null;
+  rows.slice(0, 400).forEach(p => {
+    if (p.group !== lastGroup) {
+      lastGroup = p.group;
+      html += `<p class="text-xs font-bold text-gray-500 uppercase tracking-wide pt-3 pb-1 px-1">${esc(p.group)}</p>`;
+    }
+    const s = styleFor(p.type);
+    const unplaced = coordsOf(p).x === null;
+    html += `
+      <button onclick="pickFromList('${escAttr(p.id)}')"
+              class="poi-row w-full text-left flex items-center gap-2 px-2 py-1.5 rounded border border-transparent
+                     hover:bg-gray-800 transition ${p.id === selectedId ? 'selected' : ''}">
+        <span class="flex-none w-6 h-6 rounded-full flex items-center justify-center text-[11px]"
+              style="background:${s.color}">${s.icon}</span>
+        <span class="flex-1 min-w-0 text-sm truncate ${unplaced ? 'text-gray-400' : ''}">${esc(p.name)}</span>
+        ${unplaced ? '<span class="flex-none text-[10px] text-amber-500/80">unplaced</span>'
+          : (p.approx ? '<span class="flex-none text-[10px] text-gray-500" title="Approximate position">approx</span>' : '')}
+      </button>`;
+  });
+  if (rows.length > 400) {
+    html += `<p class="text-xs text-gray-500 p-3 text-center">+ ${rows.length - 400} more. Narrow the search.</p>`;
+  }
+  host.innerHTML = html;
+  updateCounts();
+}
+
+function pickFromList(id) {
+  const poi = pois.find(p => p.id === id);
+  if (!poi) return;
+  showDetail(poi, true);
+  if (placing) { selectedId = id; updatePlaceNext(); }
+}
+
+function updateCounts() {
+  const placed = pois.filter(p => coordsOf(p).x !== null).length;
+  const pending = Object.keys(dirty).length;
+  document.getElementById('count-line').textContent =
+    `${placed} of ${pois.length} placed` + (pending ? ` - ${pending} unsaved` : '');
+  const save = document.getElementById('save-btn');
+  if (save) save.textContent = pending ? `Save ${pending}` : 'Save';
+  renderGroups();
+}
+
+// ---------------------------------------------------------------- detail
+
+function showDetail(poi, fly) {
+  selectedId = poi.id;
+  const c = coordsOf(poi);
+
+  document.getElementById('d-name').textContent = poi.name;
+  document.getElementById('d-group').textContent =
+    `${poi.group}  -  ${(poi.type || 'landmark').replace(/^\w/, ch => ch.toUpperCase())}`;
+  document.getElementById('d-summary').textContent = poi.summary || 'No description recorded yet.';
+
+  const warn = document.getElementById('d-unplaced');
+  if (c.x === null) {
+    warn.textContent = placing
+      ? 'Not on the map yet. Click the map to drop this pin.'
+      : 'Not on the map yet. Turn on "Place pins" to position it.';
+    warn.classList.remove('hidden');
+  } else if (poi.approx && !Object.prototype.hasOwnProperty.call(dirty, poi.id)) {
+    warn.textContent = `Approximate position \u2014 recorded as being in ${poi.group}, `
+      + 'but its exact spot is not published. Drag the pin to correct it.';
+    warn.classList.remove('hidden');
+  } else {
+    warn.classList.add('hidden');
+  }
+
+  const link = document.getElementById('d-link');
+  if (poi.url) { link.href = poi.url; link.classList.remove('hidden'); }
+  else { link.classList.add('hidden'); }
+
+  document.getElementById('detail').classList.remove('hidden');
+  location.hash = current.id + '/' + poi.id;
+
+  if (fly && c.x !== null) {
+    map.flyTo(fracToLatLng(c.x, c.y), Math.max(map.getZoom(), current.max_zoom - 1), { duration: 0.6 });
+  }
+  renderMarkers();
+  renderList();
+  updatePlaceNext();
+}
+
+function closeDetail() {
+  document.getElementById('detail').classList.add('hidden');
+  selectedId = null;
+  if (current) location.hash = current.id;
+  if (map) { renderMarkers(); renderList(); }
+}
+
+// ---------------------------------------------------------------- placement
+
+function togglePlacing() {
+  placing = !placing;
+  document.body.classList.toggle('placing', placing);
+  document.getElementById('place-panel').classList.toggle('hidden', !placing);
+  document.getElementById('place-btn').className = placing
+    ? 'bg-amber-600 hover:bg-amber-700 px-3 py-1.5 rounded-lg text-sm transition font-semibold'
+    : 'bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded-lg text-sm transition';
+  if (placing && !selectedId) selectedId = (nextUnplaced() || {}).id || null;
+  renderMarkers();
+  updatePlaceNext();
+}
+
+/** Next unplaced POI among the visible/filtered ones, so you can work a group at a time. */
+function nextUnplaced() {
+  const rows = filteredPois().filter(p => coordsOf(p).x === null);
+  if (!rows.length) return null;
+  const i = rows.findIndex(p => p.id === selectedId);
+  return i >= 0 ? rows[i] : rows[0];
+}
+
+function updatePlaceNext() {
+  const el = document.getElementById('place-next');
+  if (!el || !placing) return;
+  const sel = pois.find(p => p.id === selectedId);
+  const target = (sel && coordsOf(sel).x === null) ? sel : nextUnplaced();
+  el.textContent = target
+    ? `Next: ${target.name}`
+    : 'Everything visible is placed. Pick another group or clear the search.';
+  if (target) selectedId = target.id;
+}
+
+function onMapClick(e) {
+  if (!placing) { closeDetail(); return; }
+  const target = pois.find(p => p.id === selectedId) || nextUnplaced();
+  if (!target) return;
+
+  dirty[target.id] = latLngToFrac(e.latlng);
+  selectedId = null;
+  renderMarkers();
+  renderList();
+  updateCounts();
+  const next = nextUnplaced();
+  selectedId = next ? next.id : null;
+  updatePlaceNext();
+}
+
+function skipPlacement() {
+  const rows = filteredPois().filter(p => coordsOf(p).x === null);
+  if (!rows.length) return;
+  const i = rows.findIndex(p => p.id === selectedId);
+  selectedId = rows[(i + 1) % rows.length].id;
+  renderList();
+  updatePlaceNext();
+}
+
+function unplaceSelected() {
+  if (!selectedId) return;
+  dirty[selectedId] = null;
+  renderMarkers(); renderList(); updateCounts(); updatePlaceNext();
+}
+
+async function savePlacements() {
+  const status = document.getElementById('save-status');
+  if (!Object.keys(dirty).length) { status.textContent = 'Nothing to save.'; return; }
+
+  status.textContent = 'Saving...';
+  try {
+    const res = await fetch('/api/pois/' + current.id, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ placements: dirty })
+    });
+    const out = await res.json();
+    if (!res.ok || out.error) throw new Error(out.error || 'save failed');
+
+    // Fold saved coordinates back into the in-memory set.
+    Object.entries(dirty).forEach(([id, c]) => {
+      const poi = pois.find(p => p.id === id);
+      if (poi) { poi.x = c ? c.x : null; poi.y = c ? c.y : null; }
+    });
+    dirty = {};
+    status.textContent = `Saved. ${out.placed} of ${out.total} placed.`;
+    updateCounts();
+  } catch (err) {
+    status.textContent = 'Could not save: ' + err.message;
+  }
+}
+
+// ---------------------------------------------------------------- misc
+
+function toggleLabels() {
+  labelsOn = !labelsOn;
+  document.getElementById('map').classList.toggle('labels-on', labelsOn);
+  document.getElementById('labels-btn').className = labelsOn
+    ? 'bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-lg text-sm transition'
+    : 'bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded-lg text-sm transition';
+}
+
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g,
+  c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const escAttr = s => esc(s).replace(/\\/g, '\\\\');
+
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeDetail();
+  if (e.key === 'Enter' && placing && document.activeElement.id !== 'search') skipPlacement();
+});
+
+window.addEventListener('beforeunload', e => {
+  if (Object.keys(dirty).length) { e.preventDefault(); e.returnValue = ''; }
+});
+
+init();
+</script>
+</body>
+</html>

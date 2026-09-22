@@ -1,0 +1,1530 @@
+{
+  "map": "inner-sea",
+  "source": "PathfinderWiki",
+  "license": "Wiki text CC BY-SA 3.0. Pathfinder/Golarion are Paizo Inc. trademarks.",
+  "scraped": "2026-09-21",
+  "group_by": "type",
+  "groups": [
+    "Shops & Markets",
+    "Defences & Prisons",
+    "Harbour & Sea",
+    "Nations",
+    "Geography"
+  ],
+  "count": 142,
+  "locations": [
+    {
+      "id": "absalom",
+      "name": "Absalom",
+      "group": "Shops & Markets",
+      "type": "shop",
+      "summary": "For more than 4,000 years, Absalom (pronounced AB-sah-lahm) has been the City at the Center of the World, a metropolis-sized showcase of the greatest treasures in all Golarion. The importance and influence of Absalom upon the Inner Sea and the whole of Golarion can not be overstated.",
+      "url": "https://pathfinderwiki.com/wiki/Absalom",
+      "latlong": [
+        30.888626,
+        -0.2343082
+      ],
+      "coords": {}
+    },
+    {
+      "id": "alban",
+      "name": "Alban",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This article covers a historical nation of the River Kingdoms. For the person, see Alban (person). Alban was the name given to one of the lands of the River Kingdoms until it was overwhelmed by goblins in 4071 AR.",
+      "url": "https://pathfinderwiki.com/wiki/Alban",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "alijae",
+      "name": "Alijae",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The Alijae are a nation and ethnic group of Mualijae elves who inhabit the northeastern jungles of the Mwangi Expanse. They compete for living space with the region's tribes of lizardfolk and boggards. They do their best to protect the ruins of Nagisa, the White City, from outside explorers.",
+      "url": "https://pathfinderwiki.com/wiki/Alijae",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "alkenstar",
+      "name": "Alkenstar",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This article relates to the Grand Duchy of Alkenstar. Also see articles on the person named Alkenstar and Alkenstar City. The Grand Duchy of Alkenstar (pronounced AL-ken-star) has gained an unexpected level of power despite its tiny size through the invention of firearms, a necessity for survival in the harsh, magic-de...",
+      "url": "https://pathfinderwiki.com/wiki/Alkenstar",
+      "latlong": [
+        18.6037245,
+        -6.4009019
+      ],
+      "coords": {}
+    },
+    {
+      "id": "andoran",
+      "name": "Andoran",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "For another meaning of \"Andoran\", please see Andoran (faction). Andoran (pronounced ann-DOHR-ann) is a nation of the people, governed by the principles of Common Rule that grant every citizen a voice in elections that chose their representatives to the government.",
+      "url": "https://pathfinderwiki.com/wiki/Andoran",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "arcadian-ocean",
+      "name": "Arcadian Ocean",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "The Arcadian Ocean is a large body of salt water on the planet Golarion located between the continents of Avistan and Garund on its eastern edge and Arcadia on its western edge.",
+      "url": "https://pathfinderwiki.com/wiki/Arcadian_Ocean",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "artume",
+      "name": "Artume",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Artume is a small kingdom amid hills and fertile plains within the River Kingdoms. Artume is located on a western branch of the Sellen River, not far from the cities of Daggermark, Gralton, and Sevenarches. The region boasts high-quality livestock, especially horses, as well as leather goods and stone.",
+      "url": "https://pathfinderwiki.com/wiki/Artume",
+      "latlong": [
+        45.7123764,
+        -0.7518035
+      ],
+      "coords": {}
+    },
+    {
+      "id": "bakrakhan",
+      "name": "Bakrakhan",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Bakrakhan (pronounced BAK-ra-khan), the realm of wrath, was one of the seven nations which formed the ancient empire of Thassilon in northwestern Avistan.",
+      "url": "https://pathfinderwiki.com/wiki/Bakrakhan",
+      "latlong": [
+        45.602,
+        -29.628
+      ],
+      "coords": {}
+    },
+    {
+      "id": "bhopan",
+      "name": "Bhopan",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "Bhopan is a small island in the Obari Ocean between Garund and Vudra, stated to be east of Nex.",
+      "url": "https://pathfinderwiki.com/wiki/Bhopan",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "bloodcove",
+      "name": "Bloodcove",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "The city-state of Bloodcove is a decadent haven of crime located where the Vanji River meets the Fever Sea on the edge of the vast Mwangi Expanse.",
+      "url": "https://pathfinderwiki.com/wiki/Bloodcove",
+      "latlong": [
+        16.4827818,
+        -24.283229
+      ],
+      "coords": {}
+    },
+    {
+      "id": "brevoy",
+      "name": "Brevoy",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Brevoy (pronounced BRE-voy) is a nation in far northeastern Avistan on the verge of tearing itself apart. The political entity known as Brevoy was once two vastly different nations locked in a constant state of war before being conquered by a foreign despot: Choral the Conqueror.",
+      "url": "https://pathfinderwiki.com/wiki/Brevoy",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "broken-lands",
+      "name": "Broken Lands",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "The Broken Lands are the northeastern region of Avistan composed of the nations of Brevoy (itself divided into the distinct areas of Rostland and Issia), Mendev, Numeria, Razmiran, the River Kingdoms, and Sarkoris. It is a land defined by struggle and scarcity.",
+      "url": "https://pathfinderwiki.com/wiki/Broken_Lands",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "chauxen",
+      "name": "Chauxen",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Chauxen is a small colony recently established by Vudra in Southern Garund, beyond the better-known Inner Sea region.",
+      "url": "https://pathfinderwiki.com/wiki/Chauxen",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "cheliax",
+      "name": "Cheliax",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Infernal Cheliax (pronounced CHEL-ee-ax) remains one of the most powerful nations militarily in the Inner Sea region. Its control of the Arch of Aroden, the passage between the Inner Sea and the Arcadian Ocean, also gives it a vital role in much of the region's trade.",
+      "url": "https://pathfinderwiki.com/wiki/Cheliax",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "cordelon",
+      "name": "Cordelon",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Cordelon is a small, independent country on the Sellen River in the southern River Kingdoms. Its centers of population are the village of Bacul Gruii and the larger Novoboro. Once long ago, Cordelon was a staging area for the return of the elves of Kyonin from their self-imposed exile in Sovyrian.",
+      "url": "https://pathfinderwiki.com/wiki/Cordelon",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "cyrusian",
+      "name": "Cyrusian",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Cyrusian (pronounced si-ROO-see-un) was the historic Thassilonian Domain of Pride, ruled over by the runelord Xanderghul during the Age of Legend. During the time of the runelords, Cyrusian was considered the most powerful of all the domains. As such, it was also the de facto capital of the entire empire.",
+      "url": "https://pathfinderwiki.com/wiki/Cyrusian",
+      "latlong": [
+        54.14,
+        -32.63
+      ],
+      "coords": {}
+    },
+    {
+      "id": "daggermark",
+      "name": "Daggermark",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The largest city in all of the River Kingdoms, Daggermark has maintained enough political and economic stability to secure an abundant supply of food, a rarity in the chaotic Broken Lands region of northeastern Avistan.",
+      "url": "https://pathfinderwiki.com/wiki/Daggermark",
+      "latlong": [
+        46.16502,
+        -2.61715
+      ],
+      "coords": {}
+    },
+    {
+      "id": "dehrukani",
+      "name": "Dehrukani",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Dehrukani or Dehrykani is one of the coastal nations of Southern Garund, beyond the Inner Sea region, whose inhabitants worship azatas and azata empyreal lords such as Ashava, Cernunnos, and Lalaci. It is a beautiful and peaceful land, known for the many wondrous crystal towers built with celestial aid.",
+      "url": "https://pathfinderwiki.com/wiki/Dehrukani",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "desolation-cape",
+      "name": "Desolation Cape",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "Desolation Cape is a geographical feature of Southern Garund, beyond the Inner Sea region of Golarion. It forms part of the territory of the Bekyar ethnicity of Mwangi peoples.",
+      "url": "https://pathfinderwiki.com/wiki/Desolation_Cape",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "doggadth",
+      "name": "Doggadth",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Doggadth, the Impenetrable Kingdom—sometimes spelled Doggath—was one of the five dwarven kingdoms in Five Kings Mountains. It was established by Doggon in 1560 AR, and collapsed in 2506 AR after fighting the invading orcs for 19 years.",
+      "url": "https://pathfinderwiki.com/wiki/Doggadth",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "droon",
+      "name": "Droon",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Droon is one of the coastal nations of Southern Garund, beyond the Inner Sea region. It is generally considered to be one of the region's two most powerful nations alongside Holomog to its north.",
+      "url": "https://pathfinderwiki.com/wiki/Droon",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "droskar-s-kingdom",
+      "name": "Droskar's Kingdom",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Droskar's Kingdom in Five Kings Mountains was founded by Theocrat Ordrik Talhrik in 4382 AR. During the Droskar's Kingdom era all dwarves had to work in Droskar's name. For nearly 100 years the dwarves of the Five Kings Mountains lost all every sense of art and beauty and their craftsmanship became merely adequate.",
+      "url": "https://pathfinderwiki.com/wiki/Droskar%27s_Kingdom",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "druma",
+      "name": "Druma",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The Kalistocracy of Druma (pronounced kal-ihs-TOK-rah-see of DROO-muh) is a land glutting itself on the wealth of trade that is ruled by the high prophet of a strange, secular philosophy called the Prophecies of Kalistrade that values wealth and trade above any deity.",
+      "url": "https://pathfinderwiki.com/wiki/Druma",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "echo-wood",
+      "name": "Echo Wood",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Echo Wood is a forest located in the northwestern River Kingdoms and a region within that large country. The forest is home to crumbling Azlanti ruins, as well as monstrous spiders who are said to nest within the ruins.",
+      "url": "https://pathfinderwiki.com/wiki/Echo_Wood",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "edasseril",
+      "name": "Edasseril",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This page contains spoilers for the following products: The entire Return of the Runelords Pathfinder Adventure Path.You can disable this banner in your personal preferences. For another meaning of \"Edasseril\", please see Telandia Edasseril.",
+      "url": "https://pathfinderwiki.com/wiki/Edasseril",
+      "latlong": [
+        48.747,
+        -36.795
+      ],
+      "coords": {}
+    },
+    {
+      "id": "eihlona",
+      "name": "Eihlona",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Eihlona is a nation in Southern Garund that contains the debris of one of the crashed flying cities of the Shory Empire. As a result of studying this site, they have a strong tradition of magitechnology, the fusion of magic and technology.",
+      "url": "https://pathfinderwiki.com/wiki/Eihlona",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "ekujae",
+      "name": "Ekujae",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This page contains spoilers for the following products: River into Darkness and the Age of Ashes Adventure Path.You can disable this banner in your personal preferences. The Ekujae are an ethnic group and nation of Mualijae elves who live in the western Mwangi Expanse.",
+      "url": "https://pathfinderwiki.com/wiki/Ekujae",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "eurythnia",
+      "name": "Eurythnia",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This page contains spoilers for the following products: The entire Return of the Runelords Adventure Path.You can disable this banner in your personal preferences. Eurythnia (pronounced yoo-RITH-nee-ah), the realm of lust and fertility, was one of the seven nations which formed the ancient empire of Thassilon.",
+      "url": "https://pathfinderwiki.com/wiki/Eurythnia",
+      "latlong": [
+        43.1,
+        -23.0
+      ],
+      "coords": {}
+    },
+    {
+      "id": "eye-of-abendego",
+      "name": "Eye of Abendego",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "The Eye of Abendego (pronounced ah-BEN-deh-go) is a vicious, permanent hurricane located in the southern Arcadian Ocean off the western coast of the continent of Garund (between Mediogalti Island and the Sodden Lands and north of the Shackles).",
+      "url": "https://pathfinderwiki.com/wiki/Eye_of_Abendego",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "eye-of-dread",
+      "name": "Eye of Dread",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "Eye of Dread is a term used to describe the region of central Avistan most heavily impacted by the newly ascendant Tar-Baphon, and includes Lake Encarthan (and the Isle of Terror), the orc homeland of Belkzen, militaristic Molthune, fiercely independent Nirmathas, the newly emergent hobgoblin nation of Oprak, haunted U...",
+      "url": "https://pathfinderwiki.com/wiki/Eye_of_Dread",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "eysuna",
+      "name": "Eysuna",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "The island of Eysuna, located in the Steaming Sea on the southern tip of the Ironbound Archipelago, is home to several thousand aloof and alien Mordant Spire elves who are hostile towards outsiders.",
+      "url": "https://pathfinderwiki.com/wiki/Eysuna",
+      "latlong": [
+        45.466225,
+        -38.928062
+      ],
+      "coords": {}
+    },
+    {
+      "id": "felgunn",
+      "name": "Felgunn",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Felgunn is the ancestral home of the dwarves deep in the Darklands. It is now home to many fey, leshies, elementals and other creatures.",
+      "url": "https://pathfinderwiki.com/wiki/Felgunn",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "five-kings-mountains",
+      "name": "Five Kings Mountains",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This article covers the nation. For the mountain range, see Five Kings Range. The Five Kings Mountains are the collection of independent dwarven city-states located in the Five Kings Range of central Avistan. They are the largest center of dwarven culture on or beneath Golarion.",
+      "url": "https://pathfinderwiki.com/wiki/Five_Kings_Mountains",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "galt",
+      "name": "Galt",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Galt (pronounced GALT) is a land in the Shining Kingdoms of northeastern Avistan where once high ideals were long laid low, and mob rule led to rampant paranoia and chaos.",
+      "url": "https://pathfinderwiki.com/wiki/Galt",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "gardadth",
+      "name": "Gardadth",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The Kingdom of Gardadth was the first of the five dwarven kingdoms established in Five Kings Mountains. It was founded by Baron-mayor of Highhelm, Gardrick I in 1557 AR.",
+      "url": "https://pathfinderwiki.com/wiki/Gardadth",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "gastash",
+      "name": "Gastash",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Gastash (pronounced GAS-tash) was the Thassilonian realm of Zutha, the runelord of gluttony. Its borders were similar to the modern-day Hold of Belkzen, stretching from the Kodar and Mindspin Mountains in the west to the Tusk Mountains and Fangwood to the east.",
+      "url": "https://pathfinderwiki.com/wiki/Gastash",
+      "latlong": [
+        48.968,
+        -14.782
+      ],
+      "coords": {}
+    },
+    {
+      "id": "geb",
+      "name": "Geb",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This article covers the nation of Geb. For the person of the same name, see Geb (person). A kingdom forged during the Age of Destiny by a necromancer of incredible power and insidious vision, Geb is now renowned as a land of the undead, and while plantations filled with zombie labourers may stick in the mind, there is...",
+      "url": "https://pathfinderwiki.com/wiki/Geb",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "ghol-gan",
+      "name": "Ghol-Gan",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The lost and ancient kingdom of Ghol-Gan (pronounced GOHL-gahn) was a once magnificent cyclops civilisation made great by their gift for prophecy that eventually degenerated into worship of alien deities, bloody rituals, cannibalism, and ultimately collapse.",
+      "url": "https://pathfinderwiki.com/wiki/Ghol-Gan",
+      "latlong": [
+        20.2,
+        -26.75
+      ],
+      "coords": {}
+    },
+    {
+      "id": "golden-road",
+      "name": "Golden Road",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "See also: Golden Path The Golden Road region of the Inner Sea spans northern Garund from Nuat in the west to Osirion and Katapesh to the east, as well as Stonespine Island and the Avistani trade power of Qadira.",
+      "url": "https://pathfinderwiki.com/wiki/Golden_Road",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "grakodan",
+      "name": "Grakodan",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The Laborious Kingdom of Grakodan was one of the five dwarven kingdoms in the Five Kings Mountains. It was established by Grak the Younger, in 1561 AR. During the invasion of orcs, the attack to Grakodan began in 2507 AR and the city fell two years after, in 2509 AR.",
+      "url": "https://pathfinderwiki.com/wiki/Grakodan",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "gralton",
+      "name": "Gralton",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The inhabitants of Gralton consist almost entirely of people who have fled the ongoing revolution (some would say anarchy) in Galt. Many of those who have fled to Gralton are the old nobility of Galt.",
+      "url": "https://pathfinderwiki.com/wiki/Gralton",
+      "latlong": [
+        46.1999254,
+        1.3373704
+      ],
+      "coords": {}
+    },
+    {
+      "id": "gravelands",
+      "name": "Gravelands",
+      "group": "Defences & Prisons",
+      "type": "military",
+      "summary": "This page contains spoilers for the following products: Tyrant's Grasp Adventure Path.You can disable this banner in your personal preferences. See also: Lastwall The Gravelands is an undead-haunted wasteland, and all that remains of the once-proud crusader nation of Lastwall.",
+      "url": "https://pathfinderwiki.com/wiki/Gravelands",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "haruka",
+      "name": "Haruka",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The realm of Haruka (pronounced hah-ROO-kah) was located at the southern end of the Thassilonian empire and was the domain of Krune, runelord of sloth. Haruka was considered a particularly cruel and hypocritical domain.",
+      "url": "https://pathfinderwiki.com/wiki/Haruka",
+      "latlong": [
+        45.08,
+        -17.079
+      ],
+      "coords": {}
+    },
+    {
+      "id": "hermea",
+      "name": "Hermea",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "This page contains spoilers for the following products: the resolution of Age of Ashes by its canon resolution in War of Immortals.You can disable this banner in your personal preferences. Hermea (pronounced her-MEE-uh) is an isolated island nation in the Steaming Sea southwest off the coast of Varisia.",
+      "url": "https://pathfinderwiki.com/wiki/Hermea",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "hespereth-strait",
+      "name": "Hespereth Strait",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "The Hespereth Strait (also known as the Straits of Aroden) is a narrow channel of water approximately 15 miles in width which connects the Arcadian Ocean with the Inner Sea. It was formerly bridged by the Arch of Aroden, and is the closest the continents of Avistan and Garund come to meet.",
+      "url": "https://pathfinderwiki.com/wiki/Hespereth_Strait",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "high-seas",
+      "name": "High Seas",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "The nations and territories that make up the High Seas region bordering Avistan and Garund's western coasts are tumultuous and lawless realms that include dragon-dominated Hermea, Mediogalti Island controlled by the Red Mantis assassins, the piratical Shackles, and the elven realm of the Mordant Spire.",
+      "url": "https://pathfinderwiki.com/wiki/High_Seas",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "hold-of-belkzen",
+      "name": "Hold of Belkzen",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "For other meanings of \"Belkzen\", please see Belkzen (disambiguation). While orcs exist across Golarion, nowhere are they as plentiful or live in as densely populated settlements as in the Hold of Belkzen (pronounced BEHLK-zen and sometimes called Belkzen for short).",
+      "url": "https://pathfinderwiki.com/wiki/Hold_of_Belkzen",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "holomog",
+      "name": "Holomog",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The matriarchy of Holomog is one of the coastal nations of southern Garund, beyond the Inner Sea region. It is generally considered to be one of the region's two most powerful nations alongside Droon.",
+      "url": "https://pathfinderwiki.com/wiki/Holomog",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "hymbria",
+      "name": "Hymbria",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The elven land of Hymbria is a colony of Kyonin located in a wooded region in the southern River Kingdoms, between Embeth Forest and Gralton. Non-elves and even many elves from other lands are not allowed in Hymbria, thus little is known of the region outside its wooded borders. It was founded in 2802 AR.",
+      "url": "https://pathfinderwiki.com/wiki/Hymbria",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "impossible-lands",
+      "name": "Impossible Lands",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "This article covers the microregion of Golarion. For the Pathfinder Lost Omens sourcebook, see Impossible Lands (sourcebook). The Impossible Lands is a term collectively referring to a microregion comprising of the Mana Wastes (including Alkenstar), and the nations of Geb, Nex, Bhopan, and Jalmeray located both on and...",
+      "url": "https://pathfinderwiki.com/wiki/Impossible_Lands",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "inner-sea",
+      "name": "Inner Sea",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "See also: Inner Sea region The Inner Sea is one of the most heavily traveled and populated bodies of water in Golarion. Formed after Earthfall in -5293 AR reshaped the face of the planet, the Inner Sea divides Avistan and Garund. Before Earthfall, the two continents had been joined by a land bridge.",
+      "url": "https://pathfinderwiki.com/wiki/Inner_Sea",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "inner-sea-region",
+      "name": "Inner Sea region",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "See also: Settlements of the Inner Sea region The Inner Sea region refers to the continent of Avistan and the northern third of the continent of Garund, both of which surround the Inner Sea. At the heart of this region is the City at the Center of the World: Absalom.",
+      "url": "https://pathfinderwiki.com/wiki/Inner_Sea_region",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "irrisen",
+      "name": "Irrisen",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Irrisen (pronounced IHR-ih-sehn) is a harsh, cold northern nation in northwestern Avistan covered in the snow and ice of a winter that has lasted centuries. The snow never melts, and almost as omnipresent as the snow and ice, is the feeling of dread that pervades the nation.",
+      "url": "https://pathfinderwiki.com/wiki/Irrisen",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "isger",
+      "name": "Isger",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Isger (pronounced IZ-guhr) is a vassal state of Cheliax. In the eyes of Cheliax it is not so much a sovereign nation as a glorified trade route.",
+      "url": "https://pathfinderwiki.com/wiki/Isger",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "isle-of-terror",
+      "name": "Isle of Terror",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "The dramatically named Isle of Terror is located in the middle of Lake Encarthan in central Avistan. In ancient times, it was known as Inteper Isle before it was conquered and renamed by the wizard-king Tar-Baphon, whose headquarters are in the underground city of Xin-Grafar (formerly Kestrillon).",
+      "url": "https://pathfinderwiki.com/wiki/Isle_of_Terror",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "issia",
+      "name": "Issia",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "One of two former nations that now comprise Brevoy, the pirate nation of Issia was known and feared all along the length of the Sellen River. Perched on the edge of the Lake of Mists and Veils, Issia had an unforgiving geography that forced its people to be cunning and brutal in order to survive.",
+      "url": "https://pathfinderwiki.com/wiki/Issia",
+      "latlong": [
+        51.5734736,
+        8.065409
+      ],
+      "coords": {}
+    },
+    {
+      "id": "jalmeray",
+      "name": "Jalmeray",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "Jalmeray (pronounced JAHL-meh-ray) is a large island-nation in the Obari Ocean off the coast of Nex. For the past 2,000 years, it has been ruled by Vudran nobles as the westernmost of that land's so-called Impossible Kingdoms.",
+      "url": "https://pathfinderwiki.com/wiki/Jalmeray",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "jelheg",
+      "name": "Jelheg",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Jelheg, formally the Meritocracy of Jelheg, was a short-lived Kellid ethnostate that existed in what is now southern Druma.",
+      "url": "https://pathfinderwiki.com/wiki/Jelheg",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "jistka-imperium",
+      "name": "Jistka Imperium",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The Jistka Imperium (pronounced JIHST-kuh) was the first human kingdom to establish itself in the Inner Sea region after the centuries of darkness and devastation caused by Earthfall.",
+      "url": "https://pathfinderwiki.com/wiki/Jistka_Imperium",
+      "latlong": [
+        28.8,
+        -21.67
+      ],
+      "coords": {}
+    },
+    {
+      "id": "kallijae",
+      "name": "Kallijae",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Kallijae are a nation and ethnic group of Mualijae who inhabit the northwestern jungles of the Mwangi Expanse. They oppose the Gorilla King of Usaro. They have largely settled in and around Lake Ocota in small conclaves, with many clustered to north and northeast of Usaro.",
+      "url": "https://pathfinderwiki.com/wiki/Kallijae",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "katapesh",
+      "name": "Katapesh",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This article covers the nation of Katapesh. For information on the city of the same name, see Katapesh (city). Katapesh is a nation of trade located on the eastern coast of Garund that sells all conceivable goods, no matter how mundane or bizarre.",
+      "url": "https://pathfinderwiki.com/wiki/Katapesh",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "kaz-ulu",
+      "name": "Kaz'ulu",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Kaz'ulu is a triad of unified city-states inhabited by Bekyar humans, and is located to the south of the Kaliasso Jungle in southern Garund.",
+      "url": "https://pathfinderwiki.com/wiki/Kaz%27ulu",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "kerdreg",
+      "name": "Kerdreg",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The fire giant kingdom of Kerdreg is located in southern Thuvia. It is heavily involved in the slave trade throughout the region. Its denizens pay a fair price or barter weapons or other goods for human slaves. The slaves are brought to vast slave camps along the rim of the open mining pits where the slaves toil.",
+      "url": "https://pathfinderwiki.com/wiki/Kerdreg",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "kestrillon",
+      "name": "Kestrillon",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "",
+      "url": "https://pathfinderwiki.com/wiki/Kestrillon",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "kibwe",
+      "name": "Kibwe",
+      "group": "Shops & Markets",
+      "type": "shop",
+      "summary": "Kibwe is a large, walled city-state of trade and mining with a diverse population of Mwangi peoples and non-humans, situated in the eastern Mwangi Jungle west of the Ndele Gap.",
+      "url": "https://pathfinderwiki.com/wiki/Kibwe",
+      "latlong": [
+        19.9875875,
+        -10.725366
+      ],
+      "coords": {}
+    },
+    {
+      "id": "kingdom-of-zog",
+      "name": "Kingdom of Zog",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The Kingdom of Zog was a small empire of goblins ruled by a dynasty of seven barghests in the River Kingdoms. First created in 4071 AR, the kingdom sprang up after goblins overwhelmed the young kingdom of Alban (modern-day Lambreth) and took its place as master of the region.",
+      "url": "https://pathfinderwiki.com/wiki/Kingdom_of_Zog",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "kragnaroth",
+      "name": "Kragnaroth",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The fire giant kingdom of Kragnaroth is located in the Mindspin Mountains, east of Varisia. Its current ruler is King Orynox Marchelin, a fierce and ruthless warlord who has plans to expand Kragnaroth across the Mindspin Mountains both south and east.",
+      "url": "https://pathfinderwiki.com/wiki/Kragnaroth",
+      "latlong": [
+        46.4944838,
+        -16.268417
+      ],
+      "coords": {}
+    },
+    {
+      "id": "kyonin",
+      "name": "Kyonin",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The homeland of the elven ancestry on Golarion, Kyonin (pronounced ky-OH-nihn) was almost completely evacuated by the elves just before Earthfall in -5293 AR. They only recently (by elven standards) returned to Golarion to reclaim their ancient homeland and became an isolationist realm, allowing few non-elven visitors...",
+      "url": "https://pathfinderwiki.com/wiki/Kyonin",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "lambreth",
+      "name": "Lambreth",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "As of 4722 AR, the small, self-sufficient domain of Lambreth had been ruled by the despotic Lord Kamdyn Arnefax since 4675 AR. Throughout the River Kingdoms, Lambreth suffers the least from bandit attacks. Newcomers and troublemakers quickly draw the attention of the widely feared Black Eagles.",
+      "url": "https://pathfinderwiki.com/wiki/Lambreth",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "lands-of-the-linnorm-kings",
+      "name": "Lands of the Linnorm Kings",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This article covers the nation in northern Avistan. For the real-world book, see Lands of the Linnorm Kings (sourcebook). The Lands of the Linnorm Kings are the homelands of the Ulfen people and are kingdoms as wild and untameable as the people who live there.",
+      "url": "https://pathfinderwiki.com/wiki/Lands_of_the_Linnorm_Kings",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "lastwall",
+      "name": "Lastwall",
+      "group": "Defences & Prisons",
+      "type": "military",
+      "summary": "This page contains spoilers for the following products: Tyrant's Grasp Adventure Path.You can disable this banner in your personal preferences. See also: Gravelands The historical nation of Lastwall was founded in the 39th century AR with a dual purpose.",
+      "url": "https://pathfinderwiki.com/wiki/Lastwall",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "liberthane",
+      "name": "Liberthane",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Liberthane was once a rundown bandit fortress in the River Kingdoms until it was taken over by Achille Parsall, an aristocrat of Galt who is also a paladin of Milani. It is the base from which Parsall seeks to recruit for his cause.",
+      "url": "https://pathfinderwiki.com/wiki/Liberthane",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "lirgen",
+      "name": "Lirgen",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The lost kingdom of Lirgen (pronounced LIHR-gehn) lay in what is today known as the northern part of the Sodden Lands.",
+      "url": "https://pathfinderwiki.com/wiki/Lirgen",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "mana-wastes",
+      "name": "Mana Wastes",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The Mana Wastes are the devastated strip of land that lies between the once-warring nations of Nex and Geb. Its major political entity, the Grand Duchy of Alkenstar, is technically a fiefdom of Nex, but in practice the region maintains strict neutrality between its two powerful neighbours.",
+      "url": "https://pathfinderwiki.com/wiki/Mana_Wastes",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "mediogalti-island",
+      "name": "Mediogalti Island",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Mediogalti Island (pronounced med-ee-oh-GALL-tee) is a small nation located off the western coast of Garund, and is home to the Red Mantis Assassins. It is also a haven for pirates who sometimes bury their treasure in the island's interior.",
+      "url": "https://pathfinderwiki.com/wiki/Mediogalti_Island",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "mendev",
+      "name": "Mendev",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The nation of Mendev (pronounced MEN-dev) in northeastern Avistan is a land long defined by its conflict with the Abyssal forces of the Worldwound. For over a century, people from across the Inner Sea region traveled to support the native Mendevians in their crusades to drive back the demons to the west.",
+      "url": "https://pathfinderwiki.com/wiki/Mendev",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "mierani",
+      "name": "Mierani",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Mierani was the name of an elven forest nation founded just north of the Rasp hills of what would one day become the Lost Coast of Varisia. Established by a splinter faction of elves who had come from Sovyrian to settle Kyonin during the Age of Serpents, over the years the influence of the Mierani would elevate the ind...",
+      "url": "https://pathfinderwiki.com/wiki/Mierani",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "mivon",
+      "name": "Mivon",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "It was to Mivon (pronounced mih-VON) that many of the Aldori swordlords fled after Choral the Conqueror overthrew the nation of Rostland to create modern day Brevoy. Many swordlords settled in Mivon bringing with them the experience and knowledge of the ancient art of the swordlords.",
+      "url": "https://pathfinderwiki.com/wiki/Mivon",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "molthune",
+      "name": "Molthune",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "A rising power on the shores of Lake Encarthan, Molthune (pronounced mole-THOON) desperately wants to be an empire whose power rivals those of the great nations of the Inner Sea region.",
+      "url": "https://pathfinderwiki.com/wiki/Molthune",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "mualijae",
+      "name": "Mualijae",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The three nations and ethnic groups of elves in the Mwangi Expanse who remained on Golarion when the others fled to Sovyrian are collectively referred to as the Mualijae, which was also the name of the ancient nation to which they all once belonged.",
+      "url": "https://pathfinderwiki.com/wiki/Mualijae",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "murraseth",
+      "name": "Murraseth",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Murraseth is a city-state of catfolk, an ancestry known locally amurruns, located in southern Garund.✝︎ Murraseth is the largest catfolk settlement on Golarion, and the feline humanoids believe it to be built upon their ancestral homeland.",
+      "url": "https://pathfinderwiki.com/wiki/Murraseth",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "mwangi-expanse",
+      "name": "Mwangi Expanse",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "For other meanings of \"Mwangi\", please see Mwangi (disambiguation). The Mwangi Expanse (pronounced MWAN-gi), archaically also called the Forbidden Jungle, is the catch-all term given to the wild interior of central and western Garund. The Expanse also extends southwards beyond the Inner Sea region.",
+      "url": "https://pathfinderwiki.com/wiki/Mwangi_Expanse",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "mzali",
+      "name": "Mzali",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Mzali is the largest Garundi city south of Katapesh in the Inner Sea region and is ruled by the undead god-emperor named Walkena. Having risen from death to destroy Avistani looters who sought to plunder Mzali's riches, Walkena became the absolute ruler of the city.",
+      "url": "https://pathfinderwiki.com/wiki/Mzali",
+      "latlong": [
+        12.9374827,
+        -15.4337197
+      ],
+      "coords": {}
+    },
+    {
+      "id": "nantambu",
+      "name": "Nantambu",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Nantambu, also called the Song-Wind City, is a colourful, cheerful city-state in the western Mwangi Expanse. A haven of peace, learning, and culture within the Expanse, it is home to the Magaambya, one of the oldest, if not the oldest arcane schools on Golarion.",
+      "url": "https://pathfinderwiki.com/wiki/Nantambu",
+      "latlong": [
+        18.6216398,
+        -19.7016798
+      ],
+      "coords": {}
+    },
+    {
+      "id": "narland",
+      "name": "Narland",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Narland is a nascent nation claiming parts of the Stolen Lands. Its capital of Shrikewall is located on the northern shore of the Tuskwater river. Little is known about this nation.",
+      "url": "https://pathfinderwiki.com/wiki/Narland",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "narven",
+      "name": "Narven",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This article covers the druid kingdom. For its founder, see Narven Feathereyes. The druid kingdom of Narven was a short-lived (4438 AR–4512 AR) theocracy founded in the Arthfell Forest of Andoran (then part of Cheliax).",
+      "url": "https://pathfinderwiki.com/wiki/Narven",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "new-thassilon",
+      "name": "New Thassilon",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This page contains spoilers for the following products: Return of the Runelords Adventure Path.You can disable this banner in your personal preferences. New Thassilon is a young nation located in northwestern Avistan, founded by the two surviving runelords of ancient Thassilon, Sorshen and Belimarius.",
+      "url": "https://pathfinderwiki.com/wiki/New_Thassilon",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "nex",
+      "name": "Nex",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This is an article on the nation of Nex. For information on the person of the same name, see Nex (person). Nex (pronounced NEKS) is a cosmopolitan realm on the southeastern coast of Garund filled with arcane wonders and ancient scars. It was established by the mighty wizard-king Nex, who vanished 4,000 years ago.",
+      "url": "https://pathfinderwiki.com/wiki/Nex",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "nidal",
+      "name": "Nidal",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Nidal (pronounced NYE-dohl) is one of the oldest surviving nations of Avistan, having been founded during the early years of the Age of Darkness nearly 10,000 years ago.",
+      "url": "https://pathfinderwiki.com/wiki/Nidal",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "nine-walls",
+      "name": "Nine Walls",
+      "group": "Defences & Prisons",
+      "type": "military",
+      "summary": "Nine Walls is a heavily defended nation of Matanji orcs located in the Mwangi Expanse. Its name is derived from its nine concentric cities, each ringed in tall, fortified, hexagonally shaped walls.",
+      "url": "https://pathfinderwiki.com/wiki/Nine_Walls",
+      "latlong": [
+        21.1074327,
+        -18.180363
+      ],
+      "coords": {}
+    },
+    {
+      "id": "nirmathas",
+      "name": "Nirmathas",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Nirmathas (pronounced NEAR-math-ehs) is a struggling country that only recently gained independence from the imperialistic nation of Molthune to the south, which continues to try to reclaim it.",
+      "url": "https://pathfinderwiki.com/wiki/Nirmathas",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "numeria",
+      "name": "Numeria",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This page contains spoilers for the following products: Iron Gods Adventure Path.You can disable this banner in your personal preferences. Numeria (pronounced new-MARE-ee-uh) is a barren, harsh land inhabited by tribes of savage barbarians and corrupted by the strange energies emitted by skymetals and other technologic...",
+      "url": "https://pathfinderwiki.com/wiki/Numeria",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "nurvatcha",
+      "name": "Nurvatcha",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Nurvatcha, often spelt Nurvatchta, is one of the coastal nations of Southern Garund, south of the Inner Sea region. Its inhabitants are the reclusive spider-like humanoids known as the anadi, who often use their natural illusion magic to hide their true natures, giving rise to the rumor that they transform into horribl...",
+      "url": "https://pathfinderwiki.com/wiki/Nurvatcha",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "obari-ocean",
+      "name": "Obari Ocean",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "The Obari Ocean is a massive body of saltwater that separates the continents of Casmaron and Garund. It is known for being prone to terrible and sudden storms and carrying a very large amount of sea trade between the Inner Sea region, Vudra, and the rest of the Kelesh Empire and Garund.",
+      "url": "https://pathfinderwiki.com/wiki/Obari_Ocean",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "old-cheliax",
+      "name": "Old Cheliax",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "Once a prominent human empire in Avistan, Cheliax's influence has waned over the past century. At the point of its greatest expansion at the end of the Everwar, Cheliax controlled everything in southwestern Avistan, an area still known today as Old Cheliax.",
+      "url": "https://pathfinderwiki.com/wiki/Old_Cheliax",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "oprak",
+      "name": "Oprak",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This page contains spoilers for the following products: The Ironfang Invasion Adventure Path.You can disable this banner in your personal preferences. Oprak, one of Avistan's most recently established nations, achieved its statehood through the arduous struggles of the Ironfang Legion, a formidable hobgoblin army under...",
+      "url": "https://pathfinderwiki.com/wiki/Oprak",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "osirion",
+      "name": "Osirion",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Osirion (pronounced oh-SEER-ee-on) is not only one of the oldest human nations currently in existence in the Inner Sea region, but has been one of the most powerful and influential since Earthfall.",
+      "url": "https://pathfinderwiki.com/wiki/Osirion",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "parinarsus-wall",
+      "name": "Parinarsus Wall",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "The Parinarsus Wall is a mountain range in Garund that marks the southern boundary of the Mwangi Expanse. The range's northern foothills contain numerous ruins that apparently weathered extensive warfare and fell before Earthfall.",
+      "url": "https://pathfinderwiki.com/wiki/Parinarsus_Wall",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "pitax",
+      "name": "Pitax",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Pitax (pronounced pih-TAHKS) is a city in the Stolen Lands near Brevoy in the River Kingdoms. It was once a city-state domain of a petty tyrant but fell a few years before 4719 AR after a failed attempt at expansion.",
+      "url": "https://pathfinderwiki.com/wiki/Pitax",
+      "latlong": [
+        48.0787435,
+        4.6121647
+      ],
+      "coords": {}
+    },
+    {
+      "id": "principalities-of-taldaris",
+      "name": "Principalities of Taldaris",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "",
+      "url": "https://pathfinderwiki.com/wiki/Principalities_of_Taldaris",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "protectorate-of-the-black-marquis",
+      "name": "Protectorate of the Black Marquis",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The Protectorate of the Black Marquis is one of the River Kingdoms of northeastern Avistan. Since its founding, it has been ruled by a series of despots who call themselves Marquis, despite having little proper claim to the title.",
+      "url": "https://pathfinderwiki.com/wiki/Protectorate_of_the_Black_Marquis",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "qadira",
+      "name": "Qadira",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The westernmost province of the Padishah Empire of Kelesh, Qadira (pronounced kah-DEER-ah) is a kingdom with the power of the sprawling Casmar empire at its back. Qadira is Kelesh's doorway to the Inner Sea region, and is perhaps the single most valuable piece of real estate on Golarion.",
+      "url": "https://pathfinderwiki.com/wiki/Qadira",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "raemerrund",
+      "name": "Raemerrund",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Raemerrund was a kingdom of the Lands of the Linnorm Kings that was overrun by the forces of the witch queen Baba Yaga during the Winter War of 3313 AR.",
+      "url": "https://pathfinderwiki.com/wiki/Raemerrund",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "rahadoum",
+      "name": "Rahadoum",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The nation of Rahadoum (pronounced rah-ha-DOOM) in northwestern Garund is unusual in that it is the only nation known to have forbidden the practice of any and all religions within its borders. Its founding principle can be summed up by a single phrase: \"let no mortal be beholden to a god\".",
+      "url": "https://pathfinderwiki.com/wiki/Rahadoum",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "rastel",
+      "name": "Rastel",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The now-extinct nation of Rastel was known for conflict with its neighbours, which at the time included Holy Xatramba. At its height its territory included the Korir Plains and part of the Screaming Jungle in the Mwangi Expanse.",
+      "url": "https://pathfinderwiki.com/wiki/Rastel",
+      "latlong": [
+        16.707,
+        -12.2
+      ],
+      "coords": {}
+    },
+    {
+      "id": "ravounel",
+      "name": "Ravounel",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This page contains spoilers for the following products: Hell's Rebels Adventure Path.You can disable this banner in your personal preferences. Ravounel is a burgeoning confederation located in southwestern Avistan.",
+      "url": "https://pathfinderwiki.com/wiki/Ravounel",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "razmiran",
+      "name": "Razmiran",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The realm known as Razmiran (pronounced RAZZ-meer-ann) was once a turbulent, violent River Kingdom called the Arch-Duchy of Melcat, where leadership changed as often as the years. This ended in 4661 AR, when the land was conquered by Razmir, a petty tyrant masquerading as a god.",
+      "url": "https://pathfinderwiki.com/wiki/Razmiran",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "realm-of-the-mammoth-lords",
+      "name": "Realm of the Mammoth Lords",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "A realm of harsh weather, brutal megafauna, and nomadic hunter-gatherers, the Realm of the Mammoth Lords is a land in Avistan's far north that spells doom for those who take it lightly.",
+      "url": "https://pathfinderwiki.com/wiki/Realm_of_the_Mammoth_Lords",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "rimethirst-mountains",
+      "name": "Rimethirst Mountains",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "The Rimethirst Mountains are a chain of peaks that mark the northern boundaries of Avistan and one of the southern borders of the Crown of the World. The Path of Aganhei is one of the few known routes through the mountains.",
+      "url": "https://pathfinderwiki.com/wiki/Rimethirst_Mountains",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "river-kingdoms",
+      "name": "River Kingdoms",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The River Kingdoms of northeastern Avistan have long been a haven for inland pirates, anarchists, exiles, and anyone else who does not fit into the more \"civilized\" nations.",
+      "url": "https://pathfinderwiki.com/wiki/River_Kingdoms",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "rostland",
+      "name": "Rostland",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The fertile region of Rostland is one of the two nations conglomerated into the modern-day state of Brevoy in northeastern Avistan. Known for its master swordsmen and proud, defiant citizenry, Rostland stands on the verge of civil war with its northern neighbor Issia, which gained political control of the region since...",
+      "url": "https://pathfinderwiki.com/wiki/Rostland",
+      "latlong": [
+        49.1864242,
+        7.9482199
+      ],
+      "coords": {}
+    },
+    {
+      "id": "saga-lands",
+      "name": "Saga Lands",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "The northwestern reaches of Avistan boast vast woodlands, towering mountain ranges, sweeping deserts and tundra, and sprawling swamplands, yet not all is wilderness. Kingdoms, clans, and free cities alike can be found throughout this far-flung stretch of the Inner Sea region, each with its own traditions and legends.",
+      "url": "https://pathfinderwiki.com/wiki/Saga_Lands",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "saggorak",
+      "name": "Saggorak",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This page contains spoilers for the following products: Fires of the Haunted City.You can disable this banner in your personal preferences. The Pious Kingdom of Saggorak was one of the five dwarven kingdoms established in Five Kings Mountains. It was founded by Saggorn the Holy, in 1559 AR.",
+      "url": "https://pathfinderwiki.com/wiki/Saggorak",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "sargava",
+      "name": "Sargava",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "See also: Vidrian Once the jewel in the crown of the Empire of Cheliax, Sargava (pronounced sahr-GAH-vah) broke away from its motherland and became dependent on the protection of the Free Captains of the Shackles.",
+      "url": "https://pathfinderwiki.com/wiki/Sargava",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "sarkoris",
+      "name": "Sarkoris",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "See also: Worldwound and Sarkoris Scar The historical Kellid realm of Old Sarkoris (pronounced sah-KOHR-ihs) was a savage land of fiercely painted warriors and witches located in north-central Avistan.",
+      "url": "https://pathfinderwiki.com/wiki/Sarkoris",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "sarkoris-scar-nation",
+      "name": "Sarkoris Scar (nation)",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Canon details about the nation in the lands formerly described as the Sarkoris Scar are documented in Sarkoris, and canon details abut the geographic feature currently referred to by this name are documented in Sarkoris Scar.",
+      "url": "https://pathfinderwiki.com/wiki/Sarkoris_Scar_%28nation%29",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "senghor",
+      "name": "Senghor",
+      "group": "Shops & Markets",
+      "type": "shop",
+      "summary": "The port city-state of Senghor is located on the Bay of Senghor, which is part of the Fever Sea on Garund's western coast. It is on the western end of the peninsula known as the Kaava Lands (the kaava are a pygmy tribe of kech) in the southern Mwangi Expanse.",
+      "url": "https://pathfinderwiki.com/wiki/Senghor",
+      "latlong": [
+        14.365392,
+        -25.7882495
+      ],
+      "coords": {}
+    },
+    {
+      "id": "sevenarches",
+      "name": "Sevenarches",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Sevenarches is a town in the southwestern River Kingdoms built around seven stone arches scattered around the settlement, and a loosely organized nation of the surrounding wildlands.",
+      "url": "https://pathfinderwiki.com/wiki/Sevenarches",
+      "latlong": [
+        45.32409,
+        -0.47991
+      ],
+      "coords": {}
+    },
+    {
+      "id": "shackles",
+      "name": "Shackles",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The Shackles is an extended archipelago off the coast of western Garund, directly south of the never-ending hurricane known as the Eye of Abendego. It is the haven of the notorious Shackles Pirates, and the ruins of the ancient cyclops civilization of Ghol-Gan dot its islands and lurk beneath its waters.",
+      "url": "https://pathfinderwiki.com/wiki/Shackles",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "shalast",
+      "name": "Shalast",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Shalast (pronounced sha-LAST), the domain of wealth and greed, was one of the seven nations which formed the ancient empire of Thassilon. At the time of its fall, Shalast was ruled by Runelord Karzoug who maintained his opulent palace in the mountain-top capital of Xin-Shalast.",
+      "url": "https://pathfinderwiki.com/wiki/Shalast",
+      "latlong": [
+        47.437,
+        -22.0
+      ],
+      "coords": {}
+    },
+    {
+      "id": "shattered-range",
+      "name": "Shattered Range",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "The ancient mountains of the Shattered Range, also known as the Shattered Peaks, in southeastern Garund stretch like the spine of the continent from the little-known lands southwest of Geb, to the center of Nex's western border with the Mwangi Expanse. There they trail off in highlands known as the Ndele Gap.",
+      "url": "https://pathfinderwiki.com/wiki/Shattered_Range",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "shining-kingdoms",
+      "name": "Shining Kingdoms",
+      "group": "Geography",
+      "type": "geography",
+      "summary": "This article covers the in-universe region. For the real-world book about the region, see Shining Kingdoms (sourcebook). The Shining Kingdoms is the region of eastern Avistan centered around the once-great nation of Taldor.",
+      "url": "https://pathfinderwiki.com/wiki/Shining_Kingdoms",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "shory-empire",
+      "name": "Shory Empire",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The Shory Empire (pronounced shoh-REE) was an ancient civilization of the Shory people, who traveled the world in great flying cities during the Age of Destiny. Their flying cities, and many other wonders, were accomplished through the use of a form of long-forgotten magic known as Aeromantic Infadibulum.",
+      "url": "https://pathfinderwiki.com/wiki/Shory_Empire",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "sodden-lands",
+      "name": "Sodden Lands",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The region currently known as the Sodden Lands was previously a pair of now-lost kingdoms which were destroyed by the formation of the Eye of Abendego in 4606 AR. In their place is a land constantly battered by storms and largely flooded with only a few isolated pockets of civilisation.",
+      "url": "https://pathfinderwiki.com/wiki/Sodden_Lands",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "statue-builder",
+      "name": "Statue Builder",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The primary ancient civilization in Eastern Garund, known as the Statue Builders (ca. -7000 AR to -4000 AR) has remained an enigma to historians. Their legacy consists of minimal ruins and the absence of written records, shrouding their true nature in mystery.",
+      "url": "https://pathfinderwiki.com/wiki/Statue_Builder",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "steaming-sea",
+      "name": "Steaming Sea",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "The Steaming Sea is the cold stretch of water which lies north-west of the continent of Avistan, beginning roughly at the northern borders of Nidal, past the Lands of the Linnorm Kings, and all the way to the frozen Crown of the World. It is part of the great Arcadian Ocean.",
+      "url": "https://pathfinderwiki.com/wiki/Steaming_Sea",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "taggoret",
+      "name": "Taggoret",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "For another meaning of \"Taggoret\", please see Taggoret (city). The Everlasting Kingdom of Taggoret was one of the five original dwarven kingdoms in Five Kings Mountains. It was established by Taggrick I, also known as Taggun I, in 1562 AR.",
+      "url": "https://pathfinderwiki.com/wiki/Taggoret",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "taldor",
+      "name": "Taldor",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Knights, fair maidens, heroic adventures, and righteous quests—these are the legends of old Taldor (pronounced TAL-door). But the once-powerful empire has fallen from its former glory. Now rival nobles battle each other with bitter knights and proxy armies for personal power rather than honor.",
+      "url": "https://pathfinderwiki.com/wiki/Taldor",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "tar-khadurrm",
+      "name": "Tar Khadurrm",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The dwarven empire of Tar Khadurrm was the largest dwarven kingdom to form since the fall of Tar Taargadth in 1551 AR. It dominated the Five Kings Range for nearly 1,200 years, spanning in influence from Emperor's Peak to what is today known as Droskar's Crag.",
+      "url": "https://pathfinderwiki.com/wiki/Tar_Khadurrm",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "tar-taargadth",
+      "name": "Tar Taargadth",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Tar Taargadth (pronounced TAHR TAHR-gahdth) was a truly ancient and long-lived dwarven empire which united its people into a common culture for over 6,500 years.",
+      "url": "https://pathfinderwiki.com/wiki/Tar_Taargadth",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "tekritanin-league",
+      "name": "Tekritanin League",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The Tekritanin League (pronounced tek-rih-TAN-in) was an early human civilization which flourished in northern Garund during the early part of the Age of Destiny. It covered the area now largely claimed by Thuvia.",
+      "url": "https://pathfinderwiki.com/wiki/Tekritanin_League",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "thassilon",
+      "name": "Thassilon",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This article covers the historical nation. For the modern re-emergence, see New Thassilon. The ancient empire of Thassilon (pronounced THAH-sih-lon) existed in the waning years of the Age of Legend, and occupied parts of what today are the nations of Varisia, the Hold of Belkzen, and the Lands of the Linnorm Kings.",
+      "url": "https://pathfinderwiki.com/wiki/Thassilon",
+      "latlong": [
+        47.57,
+        -25.1
+      ],
+      "coords": {}
+    },
+    {
+      "id": "thuvia",
+      "name": "Thuvia",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Situated on the northern Inner Sea coast of Garund between ancient Osirion and godless Rahadoum, Thuvia (pronounced THOO-vee-uh) is a land focused almost entirely on the export of a single product.",
+      "url": "https://pathfinderwiki.com/wiki/Thuvia",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "tirakawhan",
+      "name": "Tirakawhan",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Tirakawhan is one of the coastal nations of Southern Garund, beyond the Inner Sea region. It is a small colony recently established by the Keleshite Empire of Casmaron.",
+      "url": "https://pathfinderwiki.com/wiki/Tirakawhan",
+      "latlong": [
+        -15.268428,
+        7.4263498
+      ],
+      "coords": {}
+    },
+    {
+      "id": "touvette",
+      "name": "Touvette",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Touvette is one of the River Kingdoms. It borders upon Pitax to the northeast and Gralton to the west and south. It has prime farm and ranch land, and prospered under King Aven I. However, under King Aven II it started to fall apart and descended into religious warfare.",
+      "url": "https://pathfinderwiki.com/wiki/Touvette",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "tymon",
+      "name": "Tymon",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The city-state of Tymon lies southwest of the city of Daggermark on the very western borders of the River Kingdoms next to the nation of Razmiran. Tymon is renowned for its gladiators, as it boasts both a huge arena and many prestigious gladiator colleges.",
+      "url": "https://pathfinderwiki.com/wiki/Tymon",
+      "latlong": [
+        45.12763,
+        -4.1821
+      ],
+      "coords": {}
+    },
+    {
+      "id": "usaro",
+      "name": "Usaro",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The majority charau-ka city of Usaro is the former domain of the Gorilla King who served Angazhan, demon lord of beasts. The city is located on the Blood River where it flows into Lake Ocota from its southern shoreline.",
+      "url": "https://pathfinderwiki.com/wiki/Usaro",
+      "latlong": [
+        20.332273,
+        -16.7178671
+      ],
+      "coords": {}
+    },
+    {
+      "id": "ustalav",
+      "name": "Ustalav",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "The Immortal Principality of Ustalav (pronounced OO-stah-lahv) is a fog-shrouded nation of countless horrors, and a once-proud realm that suffered under the clawed hands of the Whispering Tyrant for centuries.",
+      "url": "https://pathfinderwiki.com/wiki/Ustalav",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "varisia",
+      "name": "Varisia",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "While the other territories within the Saga Lands might possess lengthier histories as established nations, the events of recent years have propelled the untamed regions of Varisia (pronounced vah-RHIS-ee-ah) into contemporary prominence.",
+      "url": "https://pathfinderwiki.com/wiki/Varisia",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "vidrian",
+      "name": "Vidrian",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "See also: Sargava Vidrian is an independent nation located in the southwestern Mwangi Expanse. Once a colony of Cheliax known as Sargava—then an independent colonial barony of the same name—Vidrian's native peoples won freedom for themselves in 4717 AR, though the country is still burdened by the scars of colonialism.",
+      "url": "https://pathfinderwiki.com/wiki/Vidrian",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "worldwound",
+      "name": "Worldwound",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "This page contains spoilers for the following products: Wrath of the Righteous Adventure Path.You can disable this banner in your personal preferences. N.B.: The name Worldwound can be applied to both the expanse of canyons and ravines that served as a direct planar connection between Golarion and the Outer Rifts, and...",
+      "url": "https://pathfinderwiki.com/wiki/Worldwound",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "yamasa",
+      "name": "Yamasa",
+      "group": "Nations",
+      "type": "nation",
+      "summary": "Yamasa (pronounced yah-MAH-sah) was once a proud agricultural land in western Garund. It was founded in 3257 AR by farmers who broke off from the nation of Lirgen after marching on its capital.",
+      "url": "https://pathfinderwiki.com/wiki/Yamasa",
+      "latlong": null,
+      "coords": {}
+    }
+  ]
+}

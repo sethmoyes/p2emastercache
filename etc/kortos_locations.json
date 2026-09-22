@@ -1,0 +1,793 @@
+{
+  "map": "kortos",
+  "source": "PathfinderWiki",
+  "license": "Wiki text CC BY-SA 3.0. Pathfinder/Golarion are Paizo Inc. trademarks.",
+  "scraped": "2026-09-21",
+  "group_by": "type",
+  "groups": [
+    "Temples & Shrines",
+    "Magic & Alchemy",
+    "Libraries & Schools",
+    "Shops & Markets",
+    "Guilds & Lodges",
+    "Defences & Prisons",
+    "Harbour & Sea",
+    "Ruins & Tombs",
+    "Settlements",
+    "Landmarks"
+  ],
+  "count": 47,
+  "locations": [
+    {
+      "id": "abomination-vaults",
+      "name": "Abomination Vaults",
+      "group": "Ruins & Tombs",
+      "type": "ruins",
+      "summary": "For other meanings of \"Abomination Vaults\", please see Abomination Vaults (disambiguation). Abomination Vaults is the name Belcorra Haruvex used to refer to the dungeons that she created beneath Gauntlight, a magical lighthouse that she also constructed northwest of Otari.",
+      "url": "https://pathfinderwiki.com/wiki/Abomination_Vaults",
+      "latlong": [
+        30.7949184,
+        -0.9385755
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.348501,
+          "y": 0.755723
+        }
+      }
+    },
+    {
+      "id": "absalom",
+      "name": "Absalom",
+      "group": "Shops & Markets",
+      "type": "shop",
+      "summary": "For more than 4,000 years, Absalom (pronounced AB-sah-lahm) has been the City at the Center of the World, a metropolis-sized showcase of the greatest treasures in all Golarion. The importance and influence of Absalom upon the Inner Sea and the whole of Golarion can not be overstated.",
+      "url": "https://pathfinderwiki.com/wiki/Absalom",
+      "latlong": [
+        30.888626,
+        -0.2343082
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.499,
+          "y": 0.793
+        }
+      }
+    },
+    {
+      "id": "aeon-tower",
+      "name": "Aeon tower",
+      "group": "Landmarks",
+      "type": "landmark",
+      "summary": "The aeon towers are a series of five magical adobe towers, four located in the Swardlands in the western Isle of Kortos, and the other on the Isle of Erran.",
+      "url": "https://pathfinderwiki.com/wiki/Aeon_tower",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "aerie",
+      "name": "Aerie",
+      "group": "Defences & Prisons",
+      "type": "military",
+      "summary": "The Aerie is a fortress of Andoren Eagle Knights located in the northern reaches of the Kortos Mounts on the Isle of Kortos. Knights assigned to the post deal with thin air due to its elevation, poor food, and local hostilities in order to monitor and prevent any potential threats to Andoran that might originate from t...",
+      "url": "https://pathfinderwiki.com/wiki/Aerie",
+      "latlong": [
+        31.4550306,
+        -0.4495873
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.492379,
+          "y": 0.431616
+        }
+      }
+    },
+    {
+      "id": "allegro-college",
+      "name": "Allegro College",
+      "group": "Libraries & Schools",
+      "type": "knowledge",
+      "summary": "This page contains spoilers for the following products: The Mantis's Prey.You can disable this banner in your personal preferences. Allegro College is an abandoned bardic college north of Absalom's city walls, hidden behind the Frothripper waterfall.",
+      "url": "https://pathfinderwiki.com/wiki/Allegro_College",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "arbo",
+      "name": "Arbo",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Arbo is a mostly abandoned limestone quarry village in the western Swardlands of the Isle of Kortos, located north of the Irr River on the western edge of the Inland Hills on a farm track that connects the northern Husna Crossroads to Stump south of Arbo.",
+      "url": "https://pathfinderwiki.com/wiki/Arbo",
+      "latlong": [
+        31.107471,
+        -1.279781
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.263256,
+          "y": 0.598319
+        }
+      }
+    },
+    {
+      "id": "bosco",
+      "name": "Bosco",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Bosco is a town on the eastern coast of the Isle of Kortos in the nation of Absalom, just southeast of the Tyrant's Grasp.",
+      "url": "https://pathfinderwiki.com/wiki/Bosco",
+      "latlong": [
+        31.016637,
+        0.390728
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.707,
+          "y": 0.609
+        }
+      }
+    },
+    {
+      "id": "brazen-arch",
+      "name": "Brazen Arch",
+      "group": "Ruins & Tombs",
+      "type": "ruins",
+      "summary": "See also: First Siege of Absalom The Brazen Arch (also known as the Brazen Gate) was a massive teleportation portal built on the orders of the minotaur warlord Voradni Voon for his invasion of Absalom in 23 AR.",
+      "url": "https://pathfinderwiki.com/wiki/Brazen_Arch",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "brume",
+      "name": "Brume",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Brume is a gypsum mining town village in the Swardlands of the Isle of Kortos named for its misty mornings.",
+      "url": "https://pathfinderwiki.com/wiki/Brume",
+      "latlong": [
+        31.072528,
+        -1.215423
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.279805,
+          "y": 0.616097
+        }
+      }
+    },
+    {
+      "id": "castinlee",
+      "name": "Castinlee",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Castinlee is an agricultural settlement located in the Swardlands of the Isle of Kortos. It is known for the many orchards of productive fruit and nut trees in the area.",
+      "url": "https://pathfinderwiki.com/wiki/Castinlee",
+      "latlong": [
+        30.985473,
+        -1.501801
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.201412,
+          "y": 0.657312
+        }
+      }
+    },
+    {
+      "id": "cawshax",
+      "name": "Cawshax",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Cawshax, originally Cow Shacks, is an agricultural village in the Swardlands of the Isle of Kortos. It is located south of Potter's Lake at the crossroads of the Merovan Road and the roads connecting to Castinlee and Turpin Rowe, with a locally known but obscure cow path leading directly to the road to Kerrick.",
+      "url": "https://pathfinderwiki.com/wiki/Cawshax",
+      "latlong": [
+        31.013166,
+        -1.348706
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.242951,
+          "y": 0.644628
+        }
+      }
+    },
+    {
+      "id": "copperwood",
+      "name": "Copperwood",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "For other meanings of \"Copperheads\", please see Copperheads (disambiguation). Copperwood is a small town located northeast of Absalom just outside the city's walls that is the home of many of Absalom's laborers, tradesmen, and domestic servants.",
+      "url": "https://pathfinderwiki.com/wiki/Copperwood",
+      "latlong": [
+        30.9167269,
+        -0.1923561
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.550714,
+          "y": 0.700434
+        }
+      }
+    },
+    {
+      "id": "dawnflower-library",
+      "name": "Dawnflower Library",
+      "group": "Temples & Shrines",
+      "type": "temple",
+      "summary": "The Dawnflower Library is a temple of Sarenrae and library located on 10 Dawnflower Street in the town of Otari, on the southern coast of the Isle of Kortos. Its high priestess is Vandy Banderdash, a talkative halfling woman.",
+      "url": "https://pathfinderwiki.com/wiki/Dawnflower_Library",
+      "latlong": [
+        30.7862766,
+        -0.9374678
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.348628,
+          "y": 0.760017
+        }
+      }
+    },
+    {
+      "id": "dawnfoot",
+      "name": "Dawnfoot",
+      "group": "Defences & Prisons",
+      "type": "military",
+      "summary": "The small town of Dawnfoot lies just southeast of the city of Absalom, between the city walls surrounding the Precipice Quarter and Starwatch Keep. It began as a camp for members of the Starwatch (who must live outside the city walls due to an ancient agreement with the First Guard), but has since grown into a somewhat...",
+      "url": "https://pathfinderwiki.com/wiki/Dawnfoot",
+      "latlong": [
+        30.8139625,
+        -0.1865311
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.550261,
+          "y": 0.751454
+        }
+      }
+    },
+    {
+      "id": "diobel",
+      "name": "Diobel",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Diobel is one of the larger towns under the rule of the city-state of Absalom. While not as large as Escadar off the Isle of Kortos' northern coast, Diobel plays an important role in the commercial and political affairs of the City at the Center of the World.",
+      "url": "https://pathfinderwiki.com/wiki/Diobel",
+      "latlong": [
+        30.6563207,
+        -1.6266578
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.165,
+          "y": 0.872
+        }
+      }
+    },
+    {
+      "id": "elyon",
+      "name": "Elyon",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Elyon is a settlement on the western coast of the Isle of Kortos in the nation of Absalom. It is located in the western Swardlands just west of the town of Kerrick.",
+      "url": "https://pathfinderwiki.com/wiki/Elyon",
+      "latlong": [
+        31.2351739,
+        -1.9478471
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.082,
+          "y": 0.525
+        }
+      }
+    },
+    {
+      "id": "ferny",
+      "name": "Ferny",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "The village of Ferny is the largest settlement of shoonies in the Swardlands of the Isle of Kortos.",
+      "url": "https://pathfinderwiki.com/wiki/Ferny",
+      "latlong": [
+        31.22635,
+        -1.469111
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.214885,
+          "y": 0.538041
+        }
+      }
+    },
+    {
+      "id": "flesk",
+      "name": "Flesk",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Flesk is a settlement on the central eastern coast of the Isle of Kortos in the nation of Absalom.",
+      "url": "https://pathfinderwiki.com/wiki/Flesk",
+      "latlong": [
+        31.4292593,
+        0.6015778
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.776,
+          "y": 0.426
+        }
+      }
+    },
+    {
+      "id": "galizhur",
+      "name": "Galizhur",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Galizhur is a largely dwarven mining settlement on the southern coast of the Isle of Kortos in the nation of Absalom.",
+      "url": "https://pathfinderwiki.com/wiki/Galizhur",
+      "latlong": [
+        30.509283,
+        -1.292444
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.284,
+          "y": 0.851
+        }
+      }
+    },
+    {
+      "id": "gauntlight",
+      "name": "Gauntlight",
+      "group": "Magic & Alchemy",
+      "type": "magic",
+      "summary": "For other meanings of \"Gauntlight\", please see Gauntlight (disambiguation). Gauntlight is a 115-foot-tall magical lighthouse located in the ruins of Gauntlight Keep in the Fogfen near Otari, on the Isle of Kortos.",
+      "url": "https://pathfinderwiki.com/wiki/Gauntlight",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "gauntlight-keep",
+      "name": "Gauntlight Keep",
+      "group": "Defences & Prisons",
+      "type": "military",
+      "summary": "For other meanings of \"Gauntlight\", please see Gauntlight (disambiguation). The ruins of Gauntlight Keep, located on the edge of the Fogfen swamp near Otari, include its namesake lighthouse. Unbeknownst to the nearby town's residents, the keep's dungeons extend deep below ground.",
+      "url": "https://pathfinderwiki.com/wiki/Gauntlight_Keep",
+      "latlong": [
+        30.7949184,
+        -0.9385755
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.348501,
+          "y": 0.755723
+        }
+      }
+    },
+    {
+      "id": "grandfather-s-arms",
+      "name": "Grandfather's Arms",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Grandfather's Arms refers to the settled area between two volcanic ridges north and northwest of the Weeping Grandfather volcano on the Isle of Kortos. The Earthsong tribe of minotaurs have lived in Grandfather's Arms for generations, farming the rich soil and crafting items for trade out of bone and stone.",
+      "url": "https://pathfinderwiki.com/wiki/Grandfather%27s_Arms",
+      "latlong": [
+        31.4153069,
+        -0.6208909
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.445728,
+          "y": 0.450143
+        }
+      }
+    },
+    {
+      "id": "hazrak",
+      "name": "Hazrak",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Hazrak is a minotaur settlement located in the Riven Hills of the Isle of Kortos in Absalom. Its inhabitants can trace their town's origins all the way back to the First Siege of Absalom in 23 AR.",
+      "url": "https://pathfinderwiki.com/wiki/Hazrak",
+      "latlong": [
+        31.3873385,
+        -0.056642
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.678,
+          "y": 0.414
+        }
+      }
+    },
+    {
+      "id": "hell-pit",
+      "name": "Hell Pit",
+      "group": "Landmarks",
+      "type": "landmark",
+      "summary": "",
+      "url": "https://pathfinderwiki.com/wiki/Hell_Pit",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "high-harbor",
+      "name": "High Harbor",
+      "group": "Ruins & Tombs",
+      "type": "ruins",
+      "summary": "High Harbor is a once-grand settlement reduced to ruins located on the northeast coast of the Scrape region of the Isle of Kortos.",
+      "url": "https://pathfinderwiki.com/wiki/High_Harbor",
+      "latlong": [
+        31.8733494,
+        0.720497
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.796,
+          "y": 0.278
+        }
+      }
+    },
+    {
+      "id": "kerrick",
+      "name": "Kerrick",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Kerrick is the largest town in the Swardlands, located west of the mouth of the Husna River on the western coast of the Isle of Kortos.",
+      "url": "https://pathfinderwiki.com/wiki/Kerrick",
+      "latlong": [
+        31.1478822,
+        -1.6600111
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.14,
+          "y": 0.57
+        }
+      }
+    },
+    {
+      "id": "liferoot-stone",
+      "name": "Liferoot Stone",
+      "group": "Landmarks",
+      "type": "landmark",
+      "summary": "The Liferoot Stone is one of the aeon towers that Aroden placed around the Isle of Kortos. The tower was a 300-foot-tall mudbrick step pyramid with a flat 10-foot-wide top and four uneven tiers, though it is now partially collapsed.",
+      "url": "https://pathfinderwiki.com/wiki/Liferoot_Stone",
+      "latlong": [
+        30.935933,
+        -1.631781
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.165634,
+          "y": 0.680993
+        }
+      }
+    },
+    {
+      "id": "marsh-tower",
+      "name": "Marsh Tower",
+      "group": "Landmarks",
+      "type": "landmark",
+      "summary": "The Marsh Tower, also known by locals as the Marsh Stone Tower or the \"Tower of Empty Stones\", is one of the aeon towers that Aroden placed around the Isle of Kortos. The tower is a 300-foot-tall mudbrick step pyramid with a flat 10-foot-wide top and four uneven tiers.",
+      "url": "https://pathfinderwiki.com/wiki/Marsh_Tower",
+      "latlong": [
+        31.4687191,
+        -1.2970634
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.265706,
+          "y": 0.418989
+        }
+      }
+    },
+    {
+      "id": "matten-cleave",
+      "name": "Matten Cleave",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Matten Cleave is a town in the Swardlands of the Isle of Kortos used primarily by local farmers for transporting crops to the port of Kerrick and buying agricultural supplies. It is located near the northwestern shore of the Isle of Kortos on the Inner Sea, northeast of Kerrick.",
+      "url": "https://pathfinderwiki.com/wiki/Matten_Cleave",
+      "latlong": [
+        31.21833,
+        -1.539802
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.195798,
+          "y": 0.541532
+        }
+      }
+    },
+    {
+      "id": "meravon",
+      "name": "Meravon",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Meravon, sometimes spelled Merovan, is a logging settlement located within the Immenwood on the Isle of Kortos. It is considered the center of Absalom's lumber industry, and the wood cut in the forest is transported either by the Deluge River to Diobel or overland to Otari.",
+      "url": "https://pathfinderwiki.com/wiki/Meravon",
+      "latlong": [
+        31.002622,
+        -1.0004751
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.304,
+          "y": 0.688
+        }
+      }
+    },
+    {
+      "id": "old-forest-tower",
+      "name": "Old Forest Tower",
+      "group": "Temples & Shrines",
+      "type": "temple",
+      "summary": "The Old Forest Tower is one of the aeon towers that Aroden placed around the Isle of Kortos. The tower is a 300-foot-tall mudbrick step pyramid with a flat 10-foot-wide top and four uneven tiers. The tower is located in the Swardlands on the Isle of Kortos in the Immenwood.",
+      "url": "https://pathfinderwiki.com/wiki/Old_Forest_Tower",
+      "latlong": [
+        31.010757,
+        -1.228976
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.274965,
+          "y": 0.646648
+        }
+      }
+    },
+    {
+      "id": "otari",
+      "name": "Otari",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "Otari is a small port town near the Immenwood on the south coast of the Isle of Kortos, about halfway between Absalom and Diobel. It is located at the head of a bay of the Inner Sea. It is a modern but relatively quiet settlement, and is popular among retired Pathfinders, many of whom operate businesses there.",
+      "url": "https://pathfinderwiki.com/wiki/Otari",
+      "latlong": [
+        30.7873323,
+        -0.9350036
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.339,
+          "y": 0.744
+        }
+      }
+    },
+    {
+      "id": "pier-s-end",
+      "name": "Pier's End",
+      "group": "Harbour & Sea",
+      "type": "maritime",
+      "summary": "Pier's End is a small, squalid fishing village on the north coast of the Isle of Kortos within the domain of the city-state of Absalom. It is surrounded by a hard-to-cross bog known as the Dunmire.",
+      "url": "https://pathfinderwiki.com/wiki/Pier%27s_End",
+      "latlong": [
+        31.696159,
+        -0.837156
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.389,
+          "y": 0.327
+        }
+      }
+    },
+    {
+      "id": "pilgrim-s-cave",
+      "name": "Pilgrim's Cave",
+      "group": "Landmarks",
+      "type": "landmark",
+      "summary": "This page contains spoilers for the following products: The Confirmation.You can disable this banner in your personal preferences. The Pilgrim's Cave is an extensively modified system of caves and passages in the foothills of the Kortos Mounts.",
+      "url": "https://pathfinderwiki.com/wiki/Pilgrim%27s_Cave",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "rovagug-s-hall",
+      "name": "Rovagug's Hall",
+      "group": "Ruins & Tombs",
+      "type": "ruins",
+      "summary": "Rovagug's Hall is a ruin that is most known for being raided by a group that took their name after their exploits here, the Raiders of Rovagug's Hall, and is located in the southwest section of the Scrape region of the Isle of Kortos.",
+      "url": "https://pathfinderwiki.com/wiki/Rovagug%27s_Hall",
+      "latlong": [
+        31.6653749,
+        -0.052335
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.585,
+          "y": 0.346
+        }
+      }
+    },
+    {
+      "id": "saddlebark-ranch",
+      "name": "Saddlebark Ranch",
+      "group": "Guilds & Lodges",
+      "type": "guild",
+      "summary": "Saddlebark Ranch is a breeder and trainer of faerie mounts and Taldan corgis located in the foothills of the Kortos Mounts on the Isle of Kortos. Its proprietor is Timblethorn Baublebrand, who launched the ranch after recognizing that riding dogs were more surefooted than axebeaks or camels in the Mounts.",
+      "url": "https://pathfinderwiki.com/wiki/Saddlebark_Ranch",
+      "latlong": [
+        31.3296134,
+        -0.7167074
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.418391,
+          "y": 0.491995
+        }
+      }
+    },
+    {
+      "id": "sanctum-of-aroden",
+      "name": "Sanctum of Aroden",
+      "group": "Temples & Shrines",
+      "type": "temple",
+      "summary": "The Sanctum of Aroden, an underground site of Absalom's Church of Aroden whose location was kept a secret for millennia, served as a chapel and headquarters of the Arodenite monastic cult of the Order of the Aeon Star.",
+      "url": "https://pathfinderwiki.com/wiki/Sanctum_of_Aroden",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "shoreline",
+      "name": "Shoreline",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Shoreline is a small town located just outside the never-breached walls of Absalom, directly west of the district called the Puddles and the Sally Port.",
+      "url": "https://pathfinderwiki.com/wiki/Shoreline",
+      "latlong": [
+        30.8734142,
+        -0.2954081
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.52227,
+          "y": 0.721211
+        }
+      }
+    },
+    {
+      "id": "spire-of-nex",
+      "name": "Spire of Nex",
+      "group": "Defences & Prisons",
+      "type": "military",
+      "summary": "The Spire of Nex, also called the Tower of Nex, is a tall siege castle created by the archmage Nex as part of his unsuccessful siege of Absalom in 166 AR. Nex constructed it using a shard from his personal demiplane known as the Crux of Nex.",
+      "url": "https://pathfinderwiki.com/wiki/Spire_of_Nex",
+      "latlong": [
+        30.9855026,
+        -0.1828509
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.554607,
+          "y": 0.666381
+        }
+      }
+    },
+    {
+      "id": "stone-ring-pond",
+      "name": "Stone Ring Pond",
+      "group": "Landmarks",
+      "type": "landmark",
+      "summary": "Stone Ring Pond is a small pond surrounded by landmark standing stones and situated on an overlook near Otari. The pond's waters are preternaturally still and reflective, and 24 age-weathered standing stones, each 12 feet high, surround it.",
+      "url": "https://pathfinderwiki.com/wiki/Stone_Ring_Pond",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "stump",
+      "name": "Stump",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Stump, originally called Egert, is a fishing village and former logging town in the Swardlands of the Isle of Kortos. It is located northeast of Potter's Lake on the route between Brume and the rest of the Swardlands.",
+      "url": "https://pathfinderwiki.com/wiki/Stump",
+      "latlong": [
+        31.061932,
+        -1.298404
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.257376,
+          "y": 0.620782
+        }
+      }
+    },
+    {
+      "id": "sun-scarab-s-keep",
+      "name": "Sun Scarab's Keep",
+      "group": "Ruins & Tombs",
+      "type": "ruins",
+      "summary": "Sun Scarab's Keep is a ruined monument to the Fallen Pharaoh Menedes XXVI and the Menedes dynasty of Osirion, in the form of a ziggurat built several miles from Absalom. It was built by a man claiming to be the pharaonic pretender Menedes XXVII and destroyed by the First Guard soon after its construction in 1542 AR.",
+      "url": "https://pathfinderwiki.com/wiki/Sun_Scarab%27s_Keep",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "turpin-rowe",
+      "name": "Turpin Rowe",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Turpin Rowe is a small logging town on the Isle of Kortos managed by the Yalbrough Consortium of Absalom. Its economy is driven by the lumber trade but derives its name from the nearby distillation of turp spirits.",
+      "url": "https://pathfinderwiki.com/wiki/Turpin_Rowe",
+      "latlong": [
+        30.961751,
+        -1.301262
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.254648,
+          "y": 0.670461
+        }
+      }
+    },
+    {
+      "id": "tyrant-s-grasp",
+      "name": "Tyrant's Grasp",
+      "group": "Landmarks",
+      "type": "landmark",
+      "summary": "This page contains spoilers for the following products: Midwives to Death.You can disable this banner in your personal preferences. This article is about the location near Absalom. For the Pathfinder Adventure Path, see Tyrant's Grasp (adventure path).",
+      "url": "https://pathfinderwiki.com/wiki/Tyrant%27s_Grasp",
+      "latlong": null,
+      "coords": {
+        "kortos": {
+          "x": 0.664,
+          "y": 0.584
+        }
+      }
+    },
+    {
+      "id": "wellspring-tower",
+      "name": "Wellspring Tower",
+      "group": "Landmarks",
+      "type": "landmark",
+      "summary": "The Wellspring Tower is one of the aeon towers that Aroden placed around the Isle of Kortos. The tower is a 300-foot-tall mudbrick step pyramid with a flat 10-foot-wide top and four uneven tiers. The tower is located on the north side of the Isle of Kortos, near the Verdant Passage and the small town of Matten Cleave.",
+      "url": "https://pathfinderwiki.com/wiki/Wellspring_Tower",
+      "latlong": [
+        31.184172,
+        -1.460767
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.216293,
+          "y": 0.559022
+        }
+      }
+    },
+    {
+      "id": "westerhold",
+      "name": "Westerhold",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "Westerhold is the richest of Absalom's outlying towns. Members of Absalom's wealthiest families own small estates in Westerhold. The town is also known for its large number of dwarven inhabitants and trustworthy stables.",
+      "url": "https://pathfinderwiki.com/wiki/Westerhold",
+      "latlong": [
+        30.9082246,
+        -0.29138
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.524031,
+          "y": 0.70397
+        }
+      }
+    },
+    {
+      "id": "willowside",
+      "name": "Willowside",
+      "group": "Settlements",
+      "type": "settlement",
+      "summary": "This page contains spoilers for the following products: Siege of the Dinosaurs.You can disable this banner in your personal preferences. Willowside is an old, reclusive town on the northwestern coast of the Isle of Kortos, which has suffered greatly from a strange phenomenon known as the Welt in recent years.",
+      "url": "https://pathfinderwiki.com/wiki/Willowside",
+      "latlong": [
+        31.523008,
+        -1.205365
+      ],
+      "coords": {
+        "kortos": {
+          "x": 0.319,
+          "y": 0.342
+        }
+      }
+    }
+  ]
+}

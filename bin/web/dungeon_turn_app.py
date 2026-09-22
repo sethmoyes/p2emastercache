@@ -52,6 +52,160 @@ def gm():
     """GM tools page (password protected on frontend)"""
     return render_template('gm.html')
 
+# ---------------------------------------------------------------- Atlas / maps
+
+MAPS_REGISTRY = os.path.join(PROJECT_ROOT, 'etc', 'maps.json')
+
+
+def load_maps():
+    """Map registry written by bin/maps/tile_map.py."""
+    try:
+        with open(MAPS_REGISTRY, 'r', encoding='utf-8') as f:
+            return json.load(f).get('maps', [])
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+
+
+def poi_path(filename):
+    """Resolve a POI file inside etc/, refusing anything that escapes it."""
+    if not filename:
+        return None
+    etc = os.path.join(PROJECT_ROOT, 'etc')
+    full = os.path.abspath(os.path.join(etc, os.path.basename(filename)))
+    return full if full.startswith(etc + os.sep) and os.path.exists(full) else None
+
+
+@app.route('/atlas')
+def atlas():
+    """Interactive tiled map atlas with clickable points of interest.
+
+    ?embed=1 hides the page header so the viewer can be framed inside another
+    page, such as the players' market square.
+    """
+    return render_template('atlas.html', embed=request.args.get('embed') == '1')
+
+
+@app.route('/api/maps', methods=['GET'])
+def api_maps():
+    return jsonify({'maps': load_maps()})
+
+
+@app.route('/api/pois/<map_id>', methods=['GET'])
+def api_pois(map_id):
+    """Every POI for a map, including unplaced ones (x/y null).
+
+    A POI file can back several maps (the whole city and one district, say), so
+    coordinates are stored per map under "coords". Here we flatten this map's
+    entry into plain x/y, which keeps the viewer's job simple.
+    """
+    entry = next((m for m in load_maps() if m['id'] == map_id), None)
+    if not entry:
+        return jsonify({'error': f'unknown map: {map_id}'}), 404
+
+    path = poi_path(entry.get('pois'))
+    if not path:
+        return jsonify({'map': map_id, 'groups': [], 'locations': [], 'count': 0})
+
+    with open(path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    # A district map shows only its own slice of a shared POI file.
+    only_groups = entry.get('poi_groups')
+    locations = []
+    for loc in data.get('locations', []):
+        if only_groups and loc.get('group') not in only_groups:
+            continue
+        here = (loc.get('coords') or {}).get(map_id) or {}
+        flat = {k: v for k, v in loc.items() if k != 'coords'}
+        flat['x'] = here.get('x')
+        flat['y'] = here.get('y')
+        flat['approx'] = bool(here.get('approx'))
+        locations.append(flat)
+
+    groups = data.get('groups', [])
+    if only_groups:
+        groups = [g for g in groups if g in only_groups]
+
+    return jsonify({
+        'map': map_id,
+        'group_by': data.get('group_by', 'type'),
+        'groups': groups,
+        'count': len(locations),
+        'locations': locations,
+    })
+
+
+@app.route('/api/pois/<map_id>', methods=['POST'])
+def api_save_pois(map_id):
+    """Persist pin coordinates from the viewer's placement mode.
+
+    Body: {"placements": {"<poi id>": {"x": 0.42, "y": 0.61}, ...},
+           "custom": [ {full poi object}, ... ]}
+    Coordinates are 0-1 fractions of the image, so they survive swapping the
+    underlying map image for a higher-resolution one, and are stored under
+    coords[<map id>] so one POI file can back several maps.
+    """
+    entry = next((m for m in load_maps() if m['id'] == map_id), None)
+    if not entry:
+        return jsonify({'error': f'unknown map: {map_id}'}), 404
+
+    path = poi_path(entry.get('pois'))
+    if not path:
+        return jsonify({'error': f'no POI file configured for {map_id}'}), 400
+
+    body = request.get_json(silent=True) or {}
+    placements = body.get('placements') or {}
+    custom = body.get('custom') or []
+
+    with open(path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    updated = 0
+    cleared = 0
+    for loc in data.get('locations', []):
+        if loc['id'] not in placements:
+            continue
+        coords = placements[loc['id']]
+        store = loc.setdefault('coords', {})
+        if coords is None:
+            if store.pop(map_id, None) is not None:
+                cleared += 1
+        else:
+            try:
+                x = min(1.0, max(0.0, float(coords['x'])))
+                y = min(1.0, max(0.0, float(coords['y'])))
+            except (TypeError, ValueError, KeyError):
+                continue
+            # A hand placement is deliberate, so it is no longer approximate.
+            store[map_id] = {'x': round(x, 6), 'y': round(y, 6)}
+            updated += 1
+
+    if custom:
+        known = {l['id'] for l in data.get('locations', [])}
+        for poi in custom:
+            if poi.get('id') and poi['id'] not in known:
+                poi['custom'] = True
+                data.setdefault('locations', []).append(poi)
+                known.add(poi['id'])
+        groups = data.setdefault('groups', [])
+        for poi in custom:
+            if poi.get('group') and poi['group'] not in groups:
+                groups.append(poi['group'])
+
+    data['count'] = len(data.get('locations', []))
+
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    only_groups = entry.get('poi_groups')
+    scoped = [l for l in data.get('locations', [])
+              if not only_groups or l.get('group') in only_groups]
+    placed = sum(1 for l in scoped if (l.get('coords') or {}).get(map_id))
+    return jsonify({
+        'success': True, 'updated': updated, 'cleared': cleared,
+        'added': len(custom), 'placed': placed, 'total': len(scoped),
+    })
+
 @app.route('/api/roll', methods=['POST'])
 def roll_dice():
     """Roll 5d20 and return sum"""

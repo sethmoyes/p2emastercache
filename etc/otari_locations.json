@@ -1,0 +1,259 @@
+{
+  "map": "otari",
+  "source": "PathfinderWiki",
+  "license": "Wiki text CC BY-SA 3.0. Pathfinder/Golarion are Paizo Inc. trademarks.",
+  "scraped": "2026-09-21",
+  "group_by": "type",
+  "groups": [
+    "Taverns & Inns",
+    "Temples & Shrines",
+    "Magic & Alchemy",
+    "Libraries & Schools",
+    "Shops & Markets",
+    "Defences & Prisons",
+    "Estates & Homes",
+    "Landmarks"
+  ],
+  "count": 16,
+  "locations": [
+    {
+      "id": "blades-for-glades",
+      "name": "Blades for Glades",
+      "group": "Shops & Markets",
+      "type": "shop",
+      "summary": "Blades for Glades is a blacksmith shop located in Otari that specializes in producing and repairing tools used in the lumber trade. Its owner is Carman Rajani, a descendant of one of the town's founders.",
+      "url": "https://pathfinderwiki.com/wiki/Blades_for_Glades",
+      "latlong": null,
+      "coords": {
+        "otari": {
+          "x": 0.641,
+          "y": 0.39
+        }
+      }
+    },
+    {
+      "id": "chertel-manor",
+      "name": "Chertel Manor",
+      "group": "Estates & Homes",
+      "type": "residence",
+      "summary": "Chertel Manor, located in west Otari, serves as the residence of Wrab Chertel, his family, and the location from where he runs his business: Chertel Timber. Recently, members of the Kortos Consortium have infiltrated the company's workforce.",
+      "url": "https://pathfinderwiki.com/wiki/Chertel_Manor",
+      "latlong": null,
+      "coords": {
+        "otari": {
+          "x": 0.342,
+          "y": 0.398
+        }
+      }
+    },
+    {
+      "id": "crook-s-nook",
+      "name": "Crook's Nook",
+      "group": "Taverns & Inns",
+      "type": "tavern",
+      "summary": "Crook's Nook is a tavern in Otari famous for its seafood, but it also offers rooms for overnight stays. The building also serves as a bridge across the Osprey River.",
+      "url": "https://pathfinderwiki.com/wiki/Crook%27s_Nook",
+      "latlong": null,
+      "coords": {
+        "otari": {
+          "x": 0.474,
+          "y": 0.552
+        }
+      }
+    },
+    {
+      "id": "crow-s-casks",
+      "name": "Crow's Casks",
+      "group": "Taverns & Inns",
+      "type": "tavern",
+      "summary": "Crow's Casks is a tavern and brewery run by the tengu Magiloy, which also serves as a shrine to Cayden Cailean. The tavern's sign is easily recognizable by the drunken crows depicted on it. The tavern's popularity stems from Magiloy's signature drinks, such as blackberry ale and pumpkin rum.",
+      "url": "https://pathfinderwiki.com/wiki/Crow%27s_Casks",
+      "latlong": null,
+      "coords": {
+        "otari": {
+          "x": 0.536,
+          "y": 0.47
+        }
+      }
+    },
+    {
+      "id": "dawnflower-library",
+      "name": "Dawnflower Library",
+      "group": "Temples & Shrines",
+      "type": "temple",
+      "summary": "The Dawnflower Library is a temple of Sarenrae and library located on 10 Dawnflower Street in the town of Otari, on the southern coast of the Isle of Kortos. Its high priestess is Vandy Banderdash, a talkative halfling woman.",
+      "url": "https://pathfinderwiki.com/wiki/Dawnflower_Library",
+      "latlong": [
+        30.7862766,
+        -0.9374678
+      ],
+      "coords": {
+        "otari": {
+          "x": 0.153,
+          "y": 0.583
+        }
+      }
+    },
+    {
+      "id": "gallentine-deliveries",
+      "name": "Gallentine Deliveries",
+      "group": "Landmarks",
+      "type": "landmark",
+      "summary": "Gallentine Deliveries is Otari's post office, operating both within and outside the city for sending and collecting packages and letters of all kinds. The office is managed by its owner, Oloria Gallentine, and handles deliveries to Diobel, Absalom, and beyond.",
+      "url": "https://pathfinderwiki.com/wiki/Gallentine_Deliveries",
+      "latlong": null,
+      "coords": {
+        "otari": {
+          "x": 0.735,
+          "y": 0.405
+        }
+      }
+    },
+    {
+      "id": "gauntlight",
+      "name": "Gauntlight",
+      "group": "Magic & Alchemy",
+      "type": "magic",
+      "summary": "For other meanings of \"Gauntlight\", please see Gauntlight (disambiguation). Gauntlight is a 115-foot-tall magical lighthouse located in the ruins of Gauntlight Keep in the Fogfen near Otari, on the Isle of Kortos.",
+      "url": "https://pathfinderwiki.com/wiki/Gauntlight",
+      "latlong": null,
+      "coords": {}
+    },
+    {
+      "id": "gauntlight-keep",
+      "name": "Gauntlight Keep",
+      "group": "Defences & Prisons",
+      "type": "military",
+      "summary": "For other meanings of \"Gauntlight\", please see Gauntlight (disambiguation). The ruins of Gauntlight Keep, located on the edge of the Fogfen swamp near Otari, include its namesake lighthouse. Unbeknownst to the nearby town's residents, the keep's dungeons extend deep below ground.",
+      "url": "https://pathfinderwiki.com/wiki/Gauntlight_Keep",
+      "latlong": [
+        30.7949184,
+        -0.9385755
+      ],
+      "coords": {}
+    },
+    {
+      "id": "inkleholtz-manor",
+      "name": "Inkleholtz Manor",
+      "group": "Estates & Homes",
+      "type": "residence",
+      "summary": "Inkleholtz Manor, located in west Otari, is the residence of the Inkleholtz family, which runs Whistledown Cutters, one of the town's three lumber companies. Alymora Inkleholtz lives at the residence with the rest of her family.",
+      "url": "https://pathfinderwiki.com/wiki/Inkleholtz_Manor",
+      "latlong": null,
+      "coords": {
+        "otari": {
+          "x": 0.507,
+          "y": 0.34
+        }
+      }
+    },
+    {
+      "id": "menhemes-manor",
+      "name": "Menhemes Manor",
+      "group": "Libraries & Schools",
+      "type": "knowledge",
+      "summary": "Menhemes Manor has served as the residence for members of the Menhemes family for generations in Otari. It is currently the residence of Oseph Menhemes, the village mayor, along with his wife, Emnala, and five children. Part of the manor serves as a public museum chronicling the history of Otari.",
+      "url": "https://pathfinderwiki.com/wiki/Menhemes_Manor",
+      "latlong": null,
+      "coords": {
+        "otari": {
+          "x": 0.693,
+          "y": 0.614
+        }
+      }
+    },
+    {
+      "id": "odd-stories",
+      "name": "Odd Stories",
+      "group": "Shops & Markets",
+      "type": "shop",
+      "summary": "Odd Stories is a bookshop located at 100 Roseguard Road in Otari, on the Isle of Kortos. Its proprietor is the human wizard Morlibint.",
+      "url": "https://pathfinderwiki.com/wiki/Odd_Stories",
+      "latlong": [
+        30.7892813,
+        -0.9351722
+      ],
+      "coords": {
+        "otari": {
+          "x": 0.686,
+          "y": 0.437
+        }
+      }
+    },
+    {
+      "id": "otari-mill",
+      "name": "Otari Mill",
+      "group": "Landmarks",
+      "type": "landmark",
+      "summary": "The Otari Mill , also known locally as Giant's Wheel, is one of the Menhemes family's businesses and operates as the main producer of processed lumber in Otari. The sawmill's colloquial name comes from its immense size, which reaches up to 30 feet tall.",
+      "url": "https://pathfinderwiki.com/wiki/Otari_Mill",
+      "latlong": null,
+      "coords": {
+        "otari": {
+          "x": 0.88,
+          "y": 0.597
+        }
+      }
+    },
+    {
+      "id": "rowdy-rockfish",
+      "name": "Rowdy Rockfish",
+      "group": "Taverns & Inns",
+      "type": "tavern",
+      "summary": "The Rowdy Rockfish is a tavern in Otari named for its sign depicting a rockfish poised for battle. Among the town's taverns, this one is characterized by the tranquility and serenity of its atmosphere, created by its owner, Brelda Venkervale.",
+      "url": "https://pathfinderwiki.com/wiki/Rowdy_Rockfish",
+      "latlong": null,
+      "coords": {
+        "otari": {
+          "x": 0.383,
+          "y": 0.532
+        }
+      }
+    },
+    {
+      "id": "stone-ring-pond",
+      "name": "Stone Ring Pond",
+      "group": "Landmarks",
+      "type": "landmark",
+      "summary": "Stone Ring Pond is a small pond surrounded by landmark standing stones and situated on an overlook near Otari. The pond's waters are preternaturally still and reflective, and 24 age-weathered standing stones, each 12 feet high, surround it.",
+      "url": "https://pathfinderwiki.com/wiki/Stone_Ring_Pond",
+      "latlong": null,
+      "coords": {
+        "otari": {
+          "x": 0.481,
+          "y": 0.13
+        }
+      }
+    },
+    {
+      "id": "thirsty-alpaca",
+      "name": "Thirsty Alpaca",
+      "group": "Taverns & Inns",
+      "type": "tavern",
+      "summary": "The Thirsty Alpaca was one of Otari's most popular taverns, but it collapsed recently, burying everyone inside. The townspeople avoid the place, believing it to be haunted, unaware that the collapse was unintentionally caused by kobolds who were digging beneath the building and still live in the area under the rubble.",
+      "url": "https://pathfinderwiki.com/wiki/Thirsty_Alpaca",
+      "latlong": null,
+      "coords": {
+        "otari": {
+          "x": 0.479,
+          "y": 0.428
+        }
+      }
+    },
+    {
+      "id": "wrin-s-wonders",
+      "name": "Wrin's Wonders",
+      "group": "Magic & Alchemy",
+      "type": "magic",
+      "summary": "Wrin's Wonders is an Otari shop that sells found items owned by its owner, Wrin Sivinxi. The shop features an exterior design based on fabrics and wooden pillars that can be opened or closed depending on whether it is sunny or rainy.",
+      "url": "https://pathfinderwiki.com/wiki/Wrin%27s_Wonders",
+      "latlong": null,
+      "coords": {
+        "otari": {
+          "x": 0.687,
+          "y": 0.365
+        }
+      }
+    }
+  ]
+}

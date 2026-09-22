@@ -1,0 +1,60 @@
+{
+  "maps": [
+    {
+      "id": "otari",
+      "name": "Otari",
+      "subtitle": "Your home town on the Isle of Kortos",
+      "width": 6144,
+      "height": 4173,
+      "tile_size": 256,
+      "max_zoom": 5,
+      "tiles": "/static/maps/otari/{z}/{x}/{y}.jpg",
+      "thumb": "/static/maps/otari/thumb.jpg",
+      "pois": "otari_locations.json",
+      "attribution": "",
+      "order": 10
+    },
+    {
+      "id": "kortos",
+      "name": "Isle of Kortos",
+      "subtitle": "Absalom's island and the lands around Otari",
+      "width": 8192,
+      "height": 6554,
+      "tile_size": 256,
+      "max_zoom": 5,
+      "tiles": "/static/maps/kortos/{z}/{x}/{y}.jpg",
+      "thumb": "/static/maps/kortos/thumb.jpg",
+      "pois": "kortos_locations.json",
+      "attribution": "",
+      "order": 15
+    },
+    {
+      "id": "absalom",
+      "name": "Absalom",
+      "subtitle": "The City at the Center of the World",
+      "width": 3193,
+      "height": 4880,
+      "tile_size": 256,
+      "max_zoom": 5,
+      "tiles": "/static/maps/absalom/{z}/{x}/{y}.jpg",
+      "thumb": "/static/maps/absalom/thumb.jpg",
+      "pois": "absalom_locations.json",
+      "attribution": "Map art (c) Paizo Inc. - personal campaign use",
+      "order": 20
+    },
+    {
+      "id": "inner-sea",
+      "name": "The Inner Sea",
+      "subtitle": "Avistan, Garund, and the cradle of the world",
+      "width": 2000,
+      "height": 3143,
+      "tile_size": 256,
+      "max_zoom": 4,
+      "tiles": "/static/maps/inner-sea/{z}/{x}/{y}.jpg",
+      "thumb": "/static/maps/inner-sea/thumb.jpg",
+      "pois": "inner_sea_locations.json",
+      "attribution": "Map by Damien Mammoliti (c) Paizo Inc. - personal campaign use",
+      "order": 30
+    }
+  ]
+}
