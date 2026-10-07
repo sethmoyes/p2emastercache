@@ -6,9 +6,13 @@ A beautiful, simple web app for generating random encounters at the table
 
 from flask import Flask, render_template, jsonify, request, send_file
 import random
+import re
+import subprocess
 import sys
 import os
 import json
+import threading
+import time
 
 # Get the project root directory (2 levels up from this file)
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -20,8 +24,28 @@ from generate_dungeon_turn_v2 import (
     load_json,
     load_markdown
 )
+from generate_merchants import (
+    MERCHANT_CONFIGS,
+    SETTINGS_SCHEMA,
+    merchant_slug,
+    normalize_settings
+)
 
 app = Flask(__name__)
+
+# Where restocked merchants are written. On Fly this is a mounted volume, because
+# a machine's own disk resets to the image every time it stops; locally it is the
+# repo itself, same as running the generator script by hand.
+DATA_DIR = os.environ.get('DATA_DIR') or PROJECT_ROOT
+
+
+def merchant_path(subdir, filename):
+    """A restocked copy in DATA_DIR wins over the one baked into the image."""
+    for root in (DATA_DIR, PROJECT_ROOT):
+        path = os.path.join(root, subdir, filename)
+        if os.path.exists(path):
+            return path
+    return None
 
 # Load data once at startup
 print("Loading dungeon data...")
@@ -694,15 +718,15 @@ def get_merchant(merchant_file):
     if not merchant_file.replace('_', '').isalnum():
         return jsonify({'error': 'Invalid merchant file'}), 400
     
-    merchant_path = os.path.join(PROJECT_ROOT, 'players', f'{merchant_file}.md')
-    
-    if not os.path.exists(merchant_path):
+    path = merchant_path('players', f'{merchant_file}.md')
+
+    if not path:
         return jsonify({'error': 'Merchant not found'}), 404
-    
+
     try:
-        with open(merchant_path, 'r', encoding='utf-8') as f:
+        with open(path, 'r', encoding='utf-8') as f:
             content = f.read()
-        
+
         # Convert markdown to HTML (basic conversion)
         html = markdown_to_html(content)
         
@@ -724,11 +748,16 @@ def get_merchant(merchant_file):
 @app.route('/api/gm-merchants', methods=['GET'])
 def get_gm_merchants():
     """Get list of all GM random merchants"""
-    gm_path = os.path.join(PROJECT_ROOT, 'gm')
-    
+    # Ones shipped in the image plus ones restocked since
+    gm_dirs = {os.path.join(root, 'gm') for root in (DATA_DIR, PROJECT_ROOT)}
+
     try:
         merchants = []
-        for filename in os.listdir(gm_path):
+        filenames = set()
+        for gm_path in gm_dirs:
+            if os.path.isdir(gm_path):
+                filenames.update(os.listdir(gm_path))
+        for filename in filenames:
             if filename.startswith('random_merchant_') and filename.endswith('.md'):
                 # Extract merchant name from filename
                 # Format: random_merchant_1:_name_name.md or random_merchant_2:_name_name.md
@@ -756,15 +785,15 @@ def get_gm_merchant(merchant_file):
     if not all(c in safe_chars for c in merchant_file):
         return jsonify({'error': 'Invalid merchant file'}), 400
     
-    merchant_path = os.path.join(PROJECT_ROOT, 'gm', f'{merchant_file}.md')
-    
-    if not os.path.exists(merchant_path):
+    path = merchant_path('gm', f'{merchant_file}.md')
+
+    if not path:
         return jsonify({'error': 'Merchant not found'}), 404
-    
+
     try:
-        with open(merchant_path, 'r', encoding='utf-8') as f:
+        with open(path, 'r', encoding='utf-8') as f:
             content = f.read()
-        
+
         # Convert markdown to HTML
         html = markdown_to_html(content)
         
@@ -1101,101 +1130,105 @@ def convert_table_to_html(table_lines):
     
     return html
 
-@app.route('/api/generate-merchants', methods=['POST'])
-def generate_merchants_api():
-    """Generate merchants using the generate_merchants.py script"""
-    import subprocess
-    import threading
-    from queue import Queue
-    
-    data = request.json
-    player_level = data.get('player_level', 4)
-    
-    # Validate player level
-    if not isinstance(player_level, int) or player_level < 1 or player_level > 20:
-        return jsonify({'error': 'Player level must be between 1 and 20'}), 400
-    
-    # Path to the script
-    script_path = os.path.join(PROJECT_ROOT, 'bin', 'generators', 'generate_merchants.py')
-    
-    # Run the script as a subprocess
+# ---------------------------------------------------------- Merchant restocking
+
+MERCHANT_SCRIPT = os.path.join(PROJECT_ROOT, 'bin', 'generators', 'generate_merchants.py')
+PROGRESS_LINE = re.compile(r'^\[(\d+)/(\d+)\] Generating (.+?)\.\.\.$')
+
+# The latest restock run. Only one runs at a time, and it lives in this process,
+# which is why gunicorn runs a single worker (see Dockerfile).
+merchant_job = None
+merchant_job_lock = threading.Lock()
+
+
+def run_merchant_job(job):
+    """Run the generator script, recording its output and progress on the job."""
     try:
-        # Change to the project root directory so relative paths work
         process = subprocess.Popen(
-            [sys.executable, script_path, str(player_level)],
+            [sys.executable, '-u', MERCHANT_SCRIPT,
+             '--settings-json', json.dumps(job['settings']),
+             '--output-root', DATA_DIR],
             cwd=PROJECT_ROOT,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
-            bufsize=1
+            encoding='utf-8',
+            errors='replace'
         )
-        
-        # Collect output
-        output_lines = []
         for line in process.stdout:
-            output_lines.append(line.strip())
-        
+            line = line.rstrip()
+            job['log'].append(line)
+            progress = PROGRESS_LINE.match(line)
+            if progress:
+                job['step'], job['total'] = int(progress.group(1)), int(progress.group(2))
+                job['current'] = progress.group(3)
         process.wait()
-        
-        if process.returncode == 0:
-            return jsonify({
-                'success': True,
-                'message': 'Merchants generated successfully!',
-                'output': '\n'.join(output_lines)
-            })
-        else:
-            return jsonify({
-                'success': False,
-                'error': 'Script failed',
-                'output': '\n'.join(output_lines)
-            }), 500
-            
+        job['status'] = 'done' if process.returncode == 0 else 'failed'
     except Exception as e:
-        return jsonify({
-            'success': False,
-            'error': str(e)
-        }), 500
+        job['log'].append(f'ERROR: {e}')
+        job['status'] = 'failed'
+    job['finished'] = time.time()
 
-@app.route('/api/generate-merchants-stream', methods=['GET'])
-def generate_merchants_stream():
-    """Stream merchant generation progress"""
-    import subprocess
-    from flask import Response, stream_with_context
-    
-    player_level = request.args.get('player_level', 4, type=int)
-    
-    # Validate player level
-    if player_level < 1 or player_level > 20:
-        return jsonify({'error': 'Player level must be between 1 and 20'}), 400
-    
-    # Path to the script
-    script_path = os.path.join(PROJECT_ROOT, 'bin', 'generators', 'generate_merchants.py')
-    
-    def generate():
-        try:
-            process = subprocess.Popen(
-                [sys.executable, script_path, '--level', str(player_level)],
-                cwd=PROJECT_ROOT,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                text=True,
-                bufsize=1
-            )
-            
-            for line in process.stdout:
-                yield f"data: {json.dumps({'line': line.strip()})}\n\n"
-            
-            process.wait()
-            
-            if process.returncode == 0:
-                yield f"data: {json.dumps({'done': True, 'success': True})}\n\n"
-            else:
-                yield f"data: {json.dumps({'done': True, 'success': False, 'error': 'Script failed'})}\n\n"
-                
-        except Exception as e:
-            yield f"data: {json.dumps({'done': True, 'success': False, 'error': str(e)})}\n\n"
-    
-    return Response(stream_with_context(generate()), mimetype='text/event-stream')
+
+def merchant_job_view(job, since=0):
+    """The job as the GM page sees it, with log lines from `since` onward."""
+    return {
+        'status': job['status'],
+        'step': job['step'],
+        'total': job['total'],
+        'current': job['current'],
+        'started': job['started'],
+        'finished': job['finished'],
+        'log': job['log'][since:],
+        'next': len(job['log']),
+    }
+
+
+@app.route('/api/merchant-generator', methods=['GET'])
+def merchant_generator_config():
+    """Everything the restock form needs: the settings schema and the shop list."""
+    return jsonify({
+        'schema': SETTINGS_SCHEMA,
+        'merchants': [
+            {'slug': merchant_slug(c['name']), 'name': c['name'], 'specialties': c['specialties']}
+            for c in MERCHANT_CONFIGS
+        ],
+        'job': merchant_job_view(merchant_job) if merchant_job else None,
+    })
+
+
+@app.route('/api/merchant-generator/run', methods=['POST'])
+def start_merchant_job():
+    """Start a restock in the background; the GM page polls the status endpoint."""
+    global merchant_job
+    settings = normalize_settings(request.get_json(silent=True) or {})
+    if not settings['merchants'] and not settings['random_merchants']:
+        return jsonify({'error': 'Pick at least one shop or traveling merchant.'}), 400
+
+    with merchant_job_lock:
+        if merchant_job and merchant_job['status'] == 'running':
+            return jsonify({'error': 'A restock is already running.'}), 409
+        job = {
+            'status': 'running',
+            'settings': settings,
+            'step': 0,
+            'total': len(settings['merchants']) + settings['random_merchants'],
+            'current': None,
+            'started': time.time(),
+            'finished': None,
+            'log': [],
+        }
+        merchant_job = job
+        threading.Thread(target=run_merchant_job, args=(job,), daemon=True).start()
+
+    return jsonify(merchant_job_view(job))
+
+
+@app.route('/api/merchant-generator/status', methods=['GET'])
+def merchant_job_status():
+    if not merchant_job:
+        return jsonify({'status': 'idle'})
+    return jsonify(merchant_job_view(merchant_job, request.args.get('since', 0, type=int)))
 
 @app.route('/api/run-data-integrity', methods=['POST'])
 def run_data_integrity():

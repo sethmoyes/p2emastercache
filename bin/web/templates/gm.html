@@ -221,24 +221,6 @@
                     </button>
                 </div>
 
-                <!-- ALL Merchants Generator -->
-                <div class="bg-gray-700 p-4 rounded-lg">
-                    <h3 class="text-lg font-bold mb-2">🏪 Generate ALL Merchants</h3>
-                    <p class="text-sm text-gray-400 mb-3">Regenerate all Otari merchants with inventory</p>
-                    <input type="number" id="all-merchants-level" placeholder="Party Level (1-20)" min="1" max="20" value="4" 
-                        class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
-                        title="Party level determines max item level for all merchants (party level + 2)">
-                    <button onclick="generateAllMerchants()" id="generate-all-merchants-btn" class="w-full bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-lg transition font-bold">
-                        Generate All Merchants
-                    </button>
-                    <div id="merchant-progress" class="hidden mt-3">
-                        <div class="w-full bg-gray-600 rounded-full h-4 mb-2">
-                            <div id="merchant-progress-bar" class="bg-indigo-600 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
-                        </div>
-                        <p id="merchant-status" class="text-xs text-gray-400 text-center">Starting...</p>
-                    </div>
-                </div>
-
                 <!-- Data Integrity Checker -->
                 <div class="bg-gray-700 p-4 rounded-lg">
                     <h3 class="text-lg font-bold mb-2">🔍 Check Data Integrity</h3>
@@ -329,6 +311,40 @@
         <!-- Generator Output -->
         <div id="generator-output" class="hidden bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500 mb-6">
             <!-- Generator content will be inserted here -->
+        </div>
+
+        <!-- Restock Merchants -->
+        <div class="bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500 mb-6">
+            <button onclick="toggleRestock()" class="w-full flex justify-between items-center hover:bg-gray-700 p-2 rounded transition">
+                <h2 class="text-2xl font-bold">🏪 Restock Merchants</h2>
+                <svg id="restock-arrow" class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            <div id="restock-content" class="hidden mt-4">
+                <p class="text-sm text-gray-400 mb-4">Rolls new inventory for Otari's shops. Players see each shop's new stock as soon as it finishes.</p>
+                <div id="restock-form" class="grid md:grid-cols-2 gap-4 mb-4">
+                    <p class="text-gray-400">Loading settings...</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <button onclick="startRestock()" id="restock-btn" class="flex-1 bg-indigo-600 hover:bg-indigo-700 disabled:bg-gray-600 disabled:cursor-not-allowed px-4 py-3 rounded-lg transition font-bold">
+                        Restock Merchants
+                    </button>
+                    <button onclick="resetRestockForm()" class="bg-gray-600 hover:bg-gray-500 px-4 py-3 rounded-lg transition text-sm">
+                        Reset to defaults
+                    </button>
+                </div>
+                <div id="restock-progress" class="hidden mt-4">
+                    <div class="w-full bg-gray-600 rounded-full h-4 mb-2">
+                        <div id="restock-bar" class="bg-indigo-600 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
+                    </div>
+                    <p id="restock-status" class="text-sm text-gray-300 text-center mb-2"></p>
+                    <details id="restock-log-details" class="text-xs">
+                        <summary class="cursor-pointer text-gray-400 hover:text-gray-300">Show log</summary>
+                        <pre id="restock-log" class="bg-gray-900 p-3 rounded mt-2 max-h-64 overflow-auto whitespace-pre-wrap text-gray-300"></pre>
+                    </details>
+                </div>
+            </div>
         </div>
 
         <!-- Random Merchants -->
@@ -716,98 +732,6 @@
                 </div>
             `;
             output.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        async function generateAllMerchants() {
-            const level = parseInt(document.getElementById('all-merchants-level').value);
-            
-            if (isNaN(level) || level < 1 || level > 20) {
-                alert('Please enter a party level between 1 and 20');
-                return;
-            }
-            
-            const btn = document.getElementById('generate-all-merchants-btn');
-            const progressDiv = document.getElementById('merchant-progress');
-            const progressBar = document.getElementById('merchant-progress-bar');
-            const statusText = document.getElementById('merchant-status');
-            
-            // Disable button and show progress
-            btn.disabled = true;
-            btn.textContent = 'Generating...';
-            progressDiv.classList.remove('hidden');
-            progressBar.style.width = '0%';
-            statusText.textContent = 'Starting merchant generation...';
-            
-            try {
-                // Use EventSource for streaming progress
-                const eventSource = new EventSource(`/api/generate-merchants-stream?player_level=${level}`);
-                
-                let totalLines = 0;
-                let merchantCount = 0;
-                const expectedMerchants = 12; // 10 Otari merchants + 2 random
-                
-                eventSource.onmessage = function(event) {
-                    const data = JSON.parse(event.data);
-                    
-                    if (data.done) {
-                        eventSource.close();
-                        
-                        if (data.success) {
-                            progressBar.style.width = '100%';
-                            statusText.textContent = 'All merchants generated successfully!';
-                            statusText.classList.add('text-green-400');
-                            
-                            setTimeout(() => {
-                                btn.disabled = false;
-                                btn.textContent = 'Generate All Merchants';
-                                progressDiv.classList.add('hidden');
-                                statusText.classList.remove('text-green-400');
-                                alert('Merchants generated successfully! Check the players/ and gm/ directories.');
-                            }, 2000);
-                        } else {
-                            progressBar.style.width = '100%';
-                            progressBar.classList.add('bg-red-600');
-                            statusText.textContent = `Error: ${data.error}`;
-                            statusText.classList.add('text-red-400');
-                            
-                            btn.disabled = false;
-                            btn.textContent = 'Generate All Merchants';
-                        }
-                    } else if (data.line) {
-                        totalLines++;
-                        
-                        // Count merchants being generated
-                        if (data.line.includes('[MERCHANT') || data.line.includes('[RANDOM MERCHANT')) {
-                            merchantCount++;
-                            const progress = (merchantCount / expectedMerchants) * 100;
-                            progressBar.style.width = `${progress}%`;
-                        }
-                        
-                        // Update status with current line
-                        statusText.textContent = data.line;
-                        
-                        // Log to console for debugging
-                        console.log(data.line);
-                    }
-                };
-                
-                eventSource.onerror = function(error) {
-                    eventSource.close();
-                    progressBar.classList.add('bg-red-600');
-                    statusText.textContent = 'Connection error. Check console for details.';
-                    statusText.classList.add('text-red-400');
-                    btn.disabled = false;
-                    btn.textContent = 'Generate All Merchants';
-                    console.error('EventSource error:', error);
-                };
-                
-            } catch (error) {
-                progressBar.classList.add('bg-red-600');
-                statusText.textContent = `Error: ${error.message}`;
-                statusText.classList.add('text-red-400');
-                btn.disabled = false;
-                btn.textContent = 'Generate All Merchants';
-            }
         }
 
         function displayEncounter(event, diceTotal) {
@@ -1632,9 +1556,265 @@
             document.getElementById('gm-merchant-select').value = '';
         }
 
-        // Load merchant list when page loads
+        // ============================================
+        // MERCHANT RESTOCK
+        // ============================================
+        // The form is built from the generator's SETTINGS_SCHEMA, so a new
+        // setting shows up here without touching this page.
+        let restockSchema = [];
+        let restockMerchants = [];
+        let restockLogNext = 0;
+        let restockTimer = null;
+        const RESTOCK_SETTINGS_KEY = 'restockSettings';
+
+        function toggleRestock(open) {
+            const content = document.getElementById('restock-content');
+            const show = open ?? content.classList.contains('hidden');
+            content.classList.toggle('hidden', !show);
+            document.getElementById('restock-arrow').classList.toggle('rotate-180', show);
+        }
+
+        async function loadRestockForm() {
+            try {
+                const response = await fetch('/api/merchant-generator');
+                const data = await response.json();
+                restockSchema = data.schema;
+                restockMerchants = data.merchants;
+                renderRestockForm(savedRestockSettings());
+
+                // Pick up a run that is still going (page reload, another tab)
+                if (data.job && data.job.status === 'running') {
+                    toggleRestock(true);
+                    followRestock();
+                }
+            } catch (error) {
+                document.getElementById('restock-form').innerHTML =
+                    '<p class="text-red-400">Could not load merchant settings.</p>';
+            }
+        }
+
+        function savedRestockSettings() {
+            try {
+                return JSON.parse(localStorage.getItem(RESTOCK_SETTINGS_KEY)) || {};
+            } catch (error) {
+                return {};
+            }
+        }
+
+        function saveRestockSettings(settings) {
+            try {
+                localStorage.setItem(RESTOCK_SETTINGS_KEY, JSON.stringify(settings));
+            } catch (error) {
+                // Storage blocked (private window etc.) - the form just won't remember
+            }
+        }
+
+        function resetRestockForm() {
+            try {
+                localStorage.removeItem(RESTOCK_SETTINGS_KEY);
+            } catch (error) {}
+            renderRestockForm({});
+        }
+
+        function renderRestockForm(values) {
+            const groups = {};
+            restockSchema.forEach(field => {
+                (groups[field.group] = groups[field.group] || []).push(field);
+            });
+            document.getElementById('restock-form').innerHTML = Object.entries(groups).map(([group, fields]) => `
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-bold mb-3">${group}</h3>
+                    ${fields.map(field => restockFieldHTML(field, values[field.key] ?? field.default)).join('')}
+                </div>
+            `).join('');
+        }
+
+        function restockFieldHTML(field, value) {
+            const id = `restock-${field.key}`;
+            const help = field.help ? `<p class="text-xs text-gray-400 mt-1">${field.help}</p>` : '';
+            const inputClass = 'bg-gray-600 text-white px-3 py-2 rounded text-sm';
+
+            if (field.type === 'bool') {
+                return `
+                    <label class="flex items-start gap-2 text-sm mb-3 cursor-pointer">
+                        <input type="checkbox" id="${id}" class="mt-1" ${value ? 'checked' : ''}>
+                        <span>${field.label}${help}</span>
+                    </label>`;
+            }
+            if (field.type === 'int') {
+                return `
+                    <div class="mb-3">
+                        <label for="${id}" class="block text-sm mb-1">${field.label}</label>
+                        <input type="number" id="${id}" min="${field.min}" max="${field.max}" value="${value}" class="w-full ${inputClass}">
+                        ${help}
+                    </div>`;
+            }
+            if (field.type === 'range') {
+                const [low, high] = Array.isArray(value) ? value : field.default;
+                return `
+                    <div class="mb-3">
+                        <span class="block text-sm mb-1">${field.label}</span>
+                        <div class="flex items-center gap-2">
+                            <input type="number" id="${id}-min" aria-label="${field.label}, minimum" min="${field.min}" max="${field.max}" value="${low}" class="w-full ${inputClass}">
+                            <span class="text-gray-400 text-sm">to</span>
+                            <input type="number" id="${id}-max" aria-label="${field.label}, maximum" min="${field.min}" max="${field.max}" value="${high}" class="w-full ${inputClass}">
+                        </div>
+                        ${help}
+                    </div>`;
+            }
+            if (field.type === 'merchants') {
+                const chosen = Array.isArray(value) ? value : field.default;
+                const boxes = restockMerchants.map(merchant => `
+                    <label class="flex items-center gap-2 text-sm cursor-pointer" title="${merchant.specialties}">
+                        <input type="checkbox" name="${id}" value="${merchant.slug}" ${chosen.includes(merchant.slug) ? 'checked' : ''}>
+                        ${merchant.name}
+                    </label>`).join('');
+                return `
+                    <div class="mb-3">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm">${field.label}</span>
+                            <span class="text-xs space-x-3">
+                                <button type="button" onclick="checkAllRestockShops(true)" class="text-blue-400 hover:text-blue-300">All</button>
+                                <button type="button" onclick="checkAllRestockShops(false)" class="text-blue-400 hover:text-blue-300">None</button>
+                            </span>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-1">${boxes}</div>
+                        ${help}
+                    </div>`;
+            }
+            return '';
+        }
+
+        function checkAllRestockShops(checked) {
+            document.querySelectorAll('input[name="restock-merchants"]').forEach(box => { box.checked = checked; });
+        }
+
+        function readRestockForm() {
+            const settings = {};
+            const number = id => parseInt(document.getElementById(id).value, 10);
+            restockSchema.forEach(field => {
+                const id = `restock-${field.key}`;
+                if (field.type === 'bool') {
+                    settings[field.key] = document.getElementById(id).checked;
+                } else if (field.type === 'int') {
+                    settings[field.key] = number(id);
+                } else if (field.type === 'range') {
+                    settings[field.key] = [number(`${id}-min`), number(`${id}-max`)];
+                } else if (field.type === 'merchants') {
+                    settings[field.key] = [...document.querySelectorAll(`input[name="${id}"]:checked`)].map(box => box.value);
+                }
+            });
+            return settings;
+        }
+
+        async function startRestock() {
+            const settings = readRestockForm();
+            if (!settings.merchants.length && !settings.random_merchants) {
+                alert('Pick at least one shop, or create at least one traveling merchant.');
+                return;
+            }
+            saveRestockSettings(settings);
+
+            const btn = document.getElementById('restock-btn');
+            btn.disabled = true;
+            try {
+                const response = await fetch('/api/merchant-generator/run', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(settings)
+                });
+                const data = await response.json();
+                if (!response.ok) {
+                    alert(data.error || 'Could not start the restock.');
+                    btn.disabled = false;
+                    if (response.status === 409) followRestock();  // Show the run that's already going
+                    return;
+                }
+                followRestock();
+            } catch (error) {
+                alert(`Could not start the restock: ${error.message}`);
+                btn.disabled = false;
+            }
+        }
+
+        function followRestock() {
+            restockLogNext = 0;
+            document.getElementById('restock-log').textContent = '';
+            clearTimeout(restockTimer);
+            pollRestock();
+        }
+
+        async function pollRestock() {
+            let job = null;
+            try {
+                const response = await fetch(`/api/merchant-generator/status?since=${restockLogNext}`);
+                job = await response.json();
+            } catch (error) {
+                // Network blip - try again on the next tick
+            }
+
+            if (job && job.status === 'idle') {
+                // The server restarted mid-run (a deploy, or the machine went to sleep)
+                document.getElementById('restock-btn').disabled = false;
+                document.getElementById('restock-btn').textContent = 'Restock Merchants';
+                setRestockStatus('The server restarted before the restock finished. Shops that finished have their new stock; run it again for the rest.', 'text-yellow-400');
+                return;
+            }
+            if (job) showRestockJob(job);
+
+            if (!job || job.status === 'running') {
+                restockTimer = setTimeout(pollRestock, 1500);
+            } else {
+                loadGMMerchantList();  // Pick up new traveling merchants
+            }
+        }
+
+        function showRestockJob(job) {
+            const btn = document.getElementById('restock-btn');
+            const bar = document.getElementById('restock-bar');
+            const log = document.getElementById('restock-log');
+            document.getElementById('restock-progress').classList.remove('hidden');
+
+            if (job.log.length) {
+                const atBottom = log.scrollTop + log.clientHeight >= log.scrollHeight - 4;
+                log.textContent += job.log.join('\n') + '\n';
+                if (atBottom) log.scrollTop = log.scrollHeight;
+            }
+            restockLogNext = job.next;
+
+            const running = job.status === 'running';
+            btn.disabled = running;
+            btn.textContent = running ? 'Restocking...' : 'Restock Merchants';
+            bar.classList.toggle('bg-red-600', job.status === 'failed');
+            bar.classList.toggle('bg-indigo-600', job.status !== 'failed');
+
+            if (running) {
+                const finished = Math.max(0, job.step - 1);
+                bar.style.width = `${job.total ? (finished / job.total) * 100 : 0}%`;
+                setRestockStatus(job.current
+                    ? `Restocking ${job.current} (${job.step} of ${job.total})...`
+                    : 'Loading item and spell data...', 'text-gray-300');
+            } else if (job.status === 'done') {
+                bar.style.width = '100%';
+                const seconds = Math.round(job.finished - job.started);
+                setRestockStatus(`Done in ${seconds}s. Restocked ${job.total} merchant${job.total === 1 ? '' : 's'}.`, 'text-green-400');
+            } else {
+                bar.style.width = '100%';
+                setRestockStatus('The restock failed. The log below shows why.', 'text-red-400');
+                document.getElementById('restock-log-details').open = true;
+            }
+        }
+
+        function setRestockStatus(text, colorClass) {
+            const status = document.getElementById('restock-status');
+            status.textContent = text;
+            status.className = `text-sm text-center mb-2 ${colorClass}`;
+        }
+
+        // Load merchant list and restock form when page loads
         window.addEventListener('DOMContentLoaded', function() {
             loadGMMerchantList();
+            loadRestockForm();
         });
 
         // ============================================

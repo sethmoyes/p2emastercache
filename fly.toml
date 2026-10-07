@@ -21,3 +21,12 @@ primary_region = 'dfw'
   cpu_kind = 'shared'
   cpus = 1
   memory_mb = 1024
+
+# Restocked merchants live on this volume; a machine's own disk resets to the
+# image every time it stops. A volume belongs to one machine, so keep one machine.
+[env]
+  DATA_DIR = '/data'
+
+[mounts]
+  source = 'merchant_data'
+  destination = '/data'
