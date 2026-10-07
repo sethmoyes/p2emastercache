@@ -21,9 +21,11 @@
 | Image | Name | Level | Price | Effect | Link |
 |-------|------|-------|-------|--------|------|
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
 ---
 
@@ -35,23 +37,35 @@
 
 *Study time: 1 hour (common), 5 hours (uncommon), 1 day (rare).*
 
-## Common Spell Scrolls (5)
+## Common Spell Scrolls (11)
 
 | Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |
 |------------|-------|-------|-------|------------|-------|--------|------|
-| SCROLL OF LOSE THE PATH | 1 | 2 gp | 15 | Occult, Primal | 60 | Illusion, Mental, Visual | [View](https://2e.aonprd.com/Spells.aspx?ID=940) |
-| SCROLL OF SLEEP | 1 | 2 gp | 15 | Arcane, Occult | 30 | Enchantment, Incapacitation, Mental | [View](https://2e.aonprd.com/Spells.aspx?ID=288) |
-| SCROLL OF IGNITE FIREWORKS | 2 | 6 gp | 18 | Arcane, Primal | 60 | Evocation, Fire, Sonic | [View](https://2e.aonprd.com/Spells.aspx?ID=928) |
-| SCROLL OF WATER WALK | 2 | 6 gp | 18 | Arcane, Divine, Primal | 0 | Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=371) |
-| SCROLL OF MISDIRECTION | 2 | 6 gp | 18 | Arcane, Occult | 30 | Illusion | [View](https://2e.aonprd.com/Spells.aspx?ID=198) |
+| SCROLL OF SHAPE WOOD | 2 | 6 gp | 18 | Arcane, Primal | 0 | Concentrate, Manipulate, Plant | [View](https://2e.aonprd.com/Spells.aspx?ID=1668) |
+| SCROLL OF BREATHE FIRE | 1 | 2 gp | 15 | Arcane, Primal | Unknown | Concentrate, Fire, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1457) |
+| SCROLL OF SUMMON ELEMENTAL | 2 | 6 gp | 18 | Arcane, Primal, Elemental | 30 | Conjuration | [View](https://2e.aonprd.com/Spells.aspx?ID=320) |
+| SCROLL OF QUICK SORT | 1 | 2 gp | 15 | Arcane, Divine, Occult, Primal | 10 | Transmutation | [View](https://2e.aonprd.com/Spells.aspx?ID=978) |
+| SCROLL OF GOBLIN POX | 1 | 2 gp | 15 | Arcane, Primal | 0 | Concentrate, Disease, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1545) |
+| SCROLL OF GRIM TENDRILS | 1 | 2 gp | 15 | Arcane, Occult | Unknown | Necromancy, Negative, Void | [View](https://2e.aonprd.com/Spells.aspx?ID=141) |
+| SCROLL OF DEAFNESS | 2 | 6 gp | 18 | Arcane, Divine, Occult, Primal | 30 | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1483) |
+| SCROLL OF CAUTERIZE WOUNDS | 2 | 6 gp | 18 | Arcane, Divine, Primal | 60 | Concentrate, Fire, Healing | [View](https://2e.aonprd.com/Spells.aspx?ID=1349) |
+| SCROLL OF VANISHING TRACKS | 1 | 2 gp | 15 | Primal | Unknown | Concentrate, Manipulate | [View](https://2e.aonprd.com/Spells.aspx?ID=1737) |
+| SCROLL OF INFUSE VITALITY | 1 | 2 gp | 15 | Divine | 30 | Concentrate, Manipulate, Vitality | [View](https://2e.aonprd.com/Spells.aspx?ID=1574) |
+| SCROLL OF TELEKINETIC MANEUVER | 2 | 6 gp | 18 | Arcane, Occult | 60 | Attack, Concentrate, Force | [View](https://2e.aonprd.com/Spells.aspx?ID=1717) |
 
 ## Uncommon Spell Scrolls (3)
 
 | Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |
 |------------|-------|-------|-------|------------|-------|--------|------|
-| SCROLL OF GRAVE IMPRESSIONS | 2 | 6 gp | 18 | Divine, Occult | 0 | Necromancy, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=858) |
-| SCROLL OF MIND GAMES | 2 | 6 gp | 18 | Arcane, Occult | 30 | Enchantment, Mental, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=859) |
-| SCROLL OF MAGIC AURA | 1 | 2 gp | 15 | Arcane, Occult | 0 | Illusion, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=178) |
+| SCROLL OF BONE SPRAY | 2 | 6 gp | 18 | Arcane, Divine, Primal | Unknown | Necromancy, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1097) |
+| SCROLL OF ARMOR OF THORN AND CLAW | 1 | 2 gp | 15 | Primal | Unknown | Concentrate, Manipulate, Morph | [View](https://2e.aonprd.com/Spells.aspx?ID=2524) |
+| SCROLL OF DANCING SHIELD | 2 | 6 gp | 18 | Arcane, Divine, Occult, Primal | 60 | Evocation, Uncommon | [View](https://2e.aonprd.com/Spells.aspx?ID=1111) |
+
+## Rare Spell Scrolls (1)
+
+| Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |
+|------------|-------|-------|-------|------------|-------|--------|------|
+| SCROLL OF FAR-FLUNG FETCH | 2 | 6 gp | 18 | Arcane, Divine, Occult | 60 | Manipulate, Rare, Subtle | [View](https://2e.aonprd.com/Spells.aspx?ID=2337) |
 
 ---
 
@@ -88,23 +102,14 @@
 
 # REGULAR ITEMS
 
-## Common Items (13)
+## Common Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Spellcasting (3rd rank) | 0 | 18 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
-| 🖼️ | Spellcasting (5th rank) | 0 | 80 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
-| 🖼️ | Spellcasting (9th rank) | 0 | 1,800 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
-| 🖼️ | Spellcasting (1st rank) | 0 | 3 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
-| 🖼️ | Spellcasting (4th rank) | 0 | 40 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
-| ![Moonlit Spellgun (Minor)](https://2e.aonprd.com/Images/Treasure/Moonlit_Spellgun.webp) | Moonlit Spellgun (Minor) | 2 | 7 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Moonlit%20Spellgun) |
+| 🖼️ | Formula Book (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Formula%20Book) |
 | 🖼️ | Spellcasting (7th rank) | 0 | 360 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
-| 🖼️ | Basic Crafter's Book | 0 | 1 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Basic%20Crafter%27s%20Book) |
 | 🖼️ | Spellcasting (6th rank) | 0 | 160 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
-| ![Spellbook (Blank)](https://2e.aonprd.com/Images/Treasure/Spellbook.webp) | Spellbook (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellbook) |
-| 🖼️ | Spellcasting (8th rank) | 0 | 720 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
-| ![Formula Book (Blank)](https://2e.aonprd.com/Images/Treasure/Formula_Book.webp) | Formula Book (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Formula%20Book) |
-| 🖼️ | Spellcasting (2nd rank) | 0 | 7 gp (plus any cost required to cast the specific spell) | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellcasting) |
+| 🖼️ | Spellbook (Blank) | 0 | 1 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Spellbook) |
 
 ## Uncommon Items (1)
 

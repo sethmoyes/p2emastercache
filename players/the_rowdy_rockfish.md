@@ -22,28 +22,30 @@
 |-------|------|-------|-------|--------|------|
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
+| 🖼️ | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 | 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| 🖼️ | Spell Slot Restoration Potion (Minor) | 1 | 8 gp | Restores one expended 1st-level spell slot | [View](https://2e.aonprd.com/Search.aspx?query=Spell%20Slot%20Restoration%20Potion) |
-| ![Healing Potion (Minor)](https://2e.aonprd.com/Images/Treasure/Healing_Potion.webp) | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
+| 🖼️ | Healing Potion (Minor) | 1 | 4 gp | Restores 1d8 Hit Points | [View](https://2e.aonprd.com/Search.aspx?query=Healing%20Potion) |
 
 ---
 
 # REGULAR ITEMS
 
-## Common Items (3)
+## Common Items (4)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| 🖼️ | Saddlebags | 0 | 2 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Saddlebags) |
-| 🖼️ | Lantern (Hooded) | 0 | 7 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Lantern) |
-| 🖼️ | Waffle Iron (Imprint) | 1 | 2 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Waffle%20Iron) |
+| 🖼️ | Raccoon | 0 | 5 gp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Raccoon) |
+| 🖼️ | Wheel Blades | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Wheel%20Blades) |
+| 🖼️ | Probing Cane | 0 | 5 sp | Common | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Probing%20Cane) |
+| 🖼️ | War Flail | 0 | 2 gp | Common | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=War%20Flail) |
 
-## Uncommon Items (1)
+## Uncommon Items (2)
 
 | Image | Name | Level | Price | Rarity | Category | Type | Link |
 |-------|------|-------|-------|--------|----------|------|------|
-| ![Taw Launcher](https://2e.aonprd.com/Images/Weapons/Taw_Launcher.webp) | Taw Launcher | 0 | 10 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Taw%20Launcher) |
+| 🖼️ | Instant Spy | 2 | 5 gp | Uncommon | Equipment | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Instant%20Spy) |
+| 🖼️ | Slide Pistol | 1 | 16 gp | Uncommon | Weapon | Adventuring | [View](https://2e.aonprd.com/Search.aspx?query=Slide%20Pistol) |
 
 ## Services
 

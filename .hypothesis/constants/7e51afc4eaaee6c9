@@ -1,4 +1,0 @@
-# file: /Users/smoyes/Documents/p2emastercache/bin/generators/event_context.py
-# hypothesis_version: 6.151.8
-
-['hallway', 'healthy', 'injured', 'large_room', 'low_resources', 'outside', 'small_room', 'unknown', 'vertical_space', 'water']
