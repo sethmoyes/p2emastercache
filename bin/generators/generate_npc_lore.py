@@ -213,7 +213,7 @@ def generate_npc_encounter_template(npc):
         'profession': npc['profession'],
         'personality': npc['personality'],
         'setup': random.choice(setups),
-        'readaloud': f'A {npc['personality']} {npc['race'].lower()} {npc['profession'].lower()} greets you. "{random.choice(["Well met, travelers!", "Greetings, friends!", "Hail, adventurers!", "Good day to you!"])}"',
+        'readaloud': f'A {npc["personality"]} {npc["race"].lower()} {npc["profession"].lower()} greets you. "{random.choice(["Well met, travelers!", "Greetings, friends!", "Hail, adventurers!", "Good day to you!"])}"',
         'description': narrative,
         'lore_keywords': ['humanoid', npc['race'], 'NPC', 'social']
     }
