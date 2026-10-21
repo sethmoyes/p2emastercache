@@ -27,10 +27,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from generate_dungeon_turn_v2 import (
     generate_event_for_sum,
-    parse_gauntlight_levels,
-    load_json,
-    load_markdown
+    floor_levels,
+    load_json
 )
+from floor_ecology import find_creature
 from generate_merchants import (
     MERCHANT_CONFIGS,
     SETTINGS_SCHEMA,
@@ -143,11 +143,9 @@ def write_json_atomic(path, data):
 
 # Load data once at startup
 print("Loading dungeon data...")
-gauntlight_path = os.path.join(PROJECT_ROOT, 'etc', 'gauntlight_keep_levels.md')
 creatures_path = os.path.join(PROJECT_ROOT, 'etc', 'creatures.json')
 
-gauntlight_content = load_markdown(gauntlight_path)
-levels_data = parse_gauntlight_levels(gauntlight_content)
+levels_data = floor_levels()
 creatures = load_json(creatures_path)
 print(f"Loaded {len(levels_data)} floors and {len(creatures)} creatures")
 
@@ -514,7 +512,7 @@ def creature_stats_for(event):
     stats = []
     for name in event.get('creatures') or []:
         url = (refs.get(name) or {}).get('aon_url', '').replace('https://2e.aonprd.com', '')
-        creature = creatures_by_url.get(url) or next((c for c in creatures if c['name'] == name), None)
+        creature = creatures_by_url.get(url) or find_creature(creatures, name)
         if not creature:
             continue
         stats.append({

@@ -11,12 +11,12 @@ When two files disagree, this is the order that wins:
 
 1. **`common/campaign-reference/floors/`** - room-by-room reference for every
    floor of Gauntlight Keep (rooms, creatures, DCs, NPCs, cross-floor links),
-   from the book. It beats anything else in the repo, including
-   `etc/gauntlight_keep_levels.md`.
-2. **`etc/floor_ecology.json`** - what actually wanders each floor (creatures,
-   hazards, events), each entry citing its floor doc. The dungeon turn draws
-   COMBAT and most ACTIVE_THREAT events from it. Don't restate floor ecology
-   anywhere else; read it from here.
+   from the book. It beats anything else in the repo, including the older
+   `common/campaign-reference/etc/gauntlight_keep_levels.md`.
+2. **`etc/floor_ecology.json`** - each floor's name and what actually wanders it
+   (creatures, hazards, events), each entry citing its floor doc. The dungeon
+   turn draws floor names, COMBAT and most ACTIVE_THREAT events from it. Don't
+   restate floor ecology anywhere else; read it from here.
 3. **Code defaults** - merchant rules live in `SETTINGS_SCHEMA` in
    `bin/generators/generate_merchants.py`; the dice distribution lives in
    `get_category_from_sum` in `bin/generators/generate_dungeon_turn_v2.py`.
@@ -30,8 +30,11 @@ Data the tools read, in `etc/`:
 - **`dungeon_turn_events.json`** - OPPORTUNITY, COMPLICATION, DILEMMA and
   ACTIVE_THREAT templates. Templates with `"retired"` stay on file but never roll.
 - **`floor_ecology.json`** - see above
-- **`gauntlight_keep_levels.md`** - floor names and themes (narrative only)
-- **`dieties.json`**, **`inner_sea_region.md`**, **`players_guide.md`** - lore
+- **`otari_shops.json`** - who runs each Otari shop
+- **`dieties.json`** - deities (read by the integrity checker)
+
+Lore that isn't data (the Player's Guide, the Inner Sea gazetteer, the older
+floor overview) lives in `common/campaign-reference/etc/`.
 - **`maps.json`**, **`*_locations.json`** - the atlas
 
 ## Generation Rules

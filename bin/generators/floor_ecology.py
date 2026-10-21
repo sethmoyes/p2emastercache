@@ -58,16 +58,49 @@ def creature_xp(level, party_level):
     return CREATURE_XP[diff]
 
 
-def rate_encounter(total_xp, party_size=4):
-    """Name the threat tier whose budget is closest to this total XP."""
+def rate_encounter(total_xp, party_size=4, off_chart=False):
+    """Name the threat tier whose budget is closest to this total XP. A creature
+    more than 4 levels above the party is past the XP table: beyond Extreme."""
+    if off_chart:
+        return 'Beyond Extreme'
     return min(THREAT_BUDGETS, key=lambda threat: abs(encounter_budget(threat, party_size) - total_xp))
 
 
-def _lookup(creatures, name):
-    for creature in creatures:
-        if creature['name'] == name:
-            return creature
-    return None
+THREAT_ORDER = ['Trivial', 'Low', 'Moderate', 'Severe', 'Extreme', 'Beyond Extreme']
+
+
+# Legacy (pre-remaster) stat blocks carry an alignment trait; remaster ones don't
+LEGACY_ALIGNMENTS = {'LG', 'NG', 'CG', 'LN', 'N', 'CN', 'LE', 'NE', 'CE'}
+_index = {}
+
+
+def _aon_id(creature):
+    try:
+        return int(creature.get('url', '').rsplit('=', 1)[1])
+    except (IndexError, ValueError):
+        return 0
+
+
+def preferred(records):
+    """Of several stat blocks with one name, the remaster one (newest on AoN)."""
+    return max(records, key=lambda c: (not LEGACY_ALIGNMENTS & set(c.get('traits', [])), _aon_id(c)))
+
+
+def find_creature(creatures, name):
+    """The stat block for a creature name. creatures.json holds legacy and
+    remaster versions of many creatures under the same name; this campaign
+    uses the remaster, so that one wins."""
+    key = id(creatures)
+    if key not in _index:
+        by_name = {}
+        for creature in creatures:
+            by_name.setdefault(creature['name'], []).append(creature)
+        _index.clear()
+        _index[key] = {n: preferred(records) for n, records in by_name.items()}
+    return _index[key].get(name)
+
+
+_lookup = find_creature
 
 
 def build_roster(entry, creatures, party_level, budget, strict=True, min_ratio=0.5, count_scale=1.0):
@@ -167,7 +200,8 @@ def build_ecology_combat_event(floor_num, floor_data, party_level, creatures, di
 
     main = roster[0][0]
     perception_dc = max(c.get('perception') or 0 for c, _ in roster) + 10
-    rating = rate_encounter(total_xp, party_size)
+    off_chart = any(creature_xp(c['level'], party_level) is None for c, _ in roster)
+    rating = rate_encounter(total_xp, party_size, off_chart)
     summary = ', '.join(f"{n}x {c['name']} (Level {c['level']}, HP {c['hp']}, AC {c['ac']})" for c, n in roster)
 
     if extreme:
@@ -176,6 +210,13 @@ def build_ecology_combat_event(floor_num, floor_data, party_level, creatures, di
             difficulty_note += " Low extreme roll: the party can get the surprise round."
     else:
         difficulty_note = "Standard dungeon-turn encounter."
+
+    # Say so when the floor and the party are badly matched, either way
+    gap = THREAT_ORDER.index(rating) - THREAT_ORDER.index(threat)
+    if gap >= 2:
+        difficulty_note += f" Rated {rating}: this floor's residents outclass the party. Give them a way out."
+    elif gap <= -2:
+        difficulty_note += f" Rated {rating}: the party outclasses this floor; consider letting it pass in a sentence."
 
     return {
         'title': entry['title'],
@@ -199,7 +240,8 @@ def build_ecology_combat_event(floor_num, floor_data, party_level, creatures, di
             }
             for c, _ in roster
         },
-        'difficulty': f"{rating} ({total_xp} XP; {threat} budget is {budget} XP for {party_size} PCs at level {party_level})",
+        'difficulty': (f"{rating} ({'creatures more than 4 levels above the party' if off_chart else f'{total_xp} XP'}; "
+                       f"{threat} budget is {budget} XP for {party_size} PCs at level {party_level})"),
         'difficulty_note': difficulty_note,
         'floor_ecology': floor['ecology'],
         'lore_hook': entry['lore_hook'],

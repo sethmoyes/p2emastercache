@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 """
-Dungeon Turn Encounter Generator V2 - The Fun Version!
+Dungeon turn encounters for Gauntlight Keep.
 
-Creates tension, rewards creativity, and makes the dungeon feel ALIVE.
-50/50 combat vs non-combat split with meaningful choices.
-
-New probability distribution:
+Probability distribution (5d20):
 - Extreme (5-15, 90-100): Always COMBAT (very rare)
 - Non-extreme: 50% NO EVENT, then:
   - Sum <= 44: COMBAT or ACTIVE_THREAT (danger)
@@ -24,49 +21,17 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from event_loader import load_events_from_json
 from template_selector import select_template
-from floor_ecology import build_ecology_combat_event, build_ecology_threat_event, ECOLOGY_THREAT_CHANCE
+from floor_ecology import build_ecology_combat_event, build_ecology_threat_event, ECOLOGY_THREAT_CHANCE, FLOOR_ECOLOGY
 
 def load_json(filename):
     """Load JSON file"""
     with open(filename, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-def load_markdown(filename):
-    """Load markdown file"""
-    with open(filename, 'r', encoding='utf-8') as f:
-        return f.read()
+def floor_levels():
+    """{floor: {'name', 'theme'}} for floors 1-10, from etc/floor_ecology.json."""
+    return {n: {'name': f['name'], 'theme': f['ecology']} for n, f in FLOOR_ECOLOGY.items()}
 
-def parse_gauntlight_levels(content):
-    """Parse gauntlight_keep_levels.md to extract floor information"""
-    levels = {}
-    
-    # Extract each level section
-    level_pattern = r'### Level (\d+): (.+?)\n(.*?)(?=### Level|\n---|\Z)'
-    matches = re.finditer(level_pattern, content, re.DOTALL)
-    
-    for match in matches:
-        level_num = int(match.group(1))
-        level_name = match.group(2).strip()
-        level_content = match.group(3).strip()
-        
-        # Extract theme
-        theme_match = re.search(r'\*\*Theme:\*\* (.+)', level_content)
-        theme = theme_match.group(1) if theme_match else ""
-        
-        # Extract threats
-        threats = []
-        threats_section = re.search(r'\*\*Threats:\*\* (.+)', level_content)
-        if threats_section:
-            threats = [t.strip() for t in threats_section.group(1).split(',')]
-        
-        levels[level_num] = {
-            'name': level_name,
-            'theme': theme,
-            'threats': threats,
-            'content': level_content
-        }
-    
-    return levels
 
 def get_category_from_sum(total, is_extreme=False, allow_no_event=True):
     """
@@ -113,24 +78,8 @@ COMPLICATION_TEMPLATES = LOADED_EVENTS['COMPLICATION']
 DILEMMA_TEMPLATES = LOADED_EVENTS['DILEMMA']
 ACTIVE_THREAT_TEMPLATES = LOADED_EVENTS['ACTIVE_THREAT']
 
-# COMBAT ENCOUNTER TEMPLATES (86-100)
-# These will be generated dynamically based on floor and creatures
-COMBAT_ECOLOGY_TYPES = [
-    "feeding",      # Monsters eating, distracted
-    "fighting",     # Two groups fighting each other
-    "sleeping",     # Resting, can be avoided or ambushed
-    "patrolling",   # Moving through area
-    "working",      # Performing tasks
-    "guarding",     # Stationed at post
-    "hunting",      # Tracking prey
-    "scavenging",   # Picking over remains
-    "ritual",       # Performing ceremony
-    "arguing"       # Internal conflict
-]
-
-
 def generate_opportunity_event(floor_num, floor_data, party_level):
-    """Generate an OPPORTUNITY event (5-25)"""
+    """An OPPORTUNITY event from this floor's templates"""
     template = select_template(OPPORTUNITY_TEMPLATES, floor=floor_num)
     
     # Customize for floor
@@ -138,64 +87,20 @@ def generate_opportunity_event(floor_num, floor_data, party_level):
     event['floor'] = floor_num
     event['floor_name'] = floor_data['name']
     
-    # Add floor-specific flavor
-    if floor_num == 1:
-        event['flavor'] = "Mitflit trinkets scattered nearby suggest they pass through here often."
-    elif floor_num == 2:
-        event['flavor'] = "The musty smell of morlock occupation is strong here."
-    elif floor_num == 3:
-        event['flavor'] = "Dusty books and the smell of old parchment fill the air."
-    elif floor_num == 4:
-        event['flavor'] = "This area feels personal, intimate - Belcorra's private space."
-    elif floor_num == 5:
-        event['flavor'] = "Blood-soaked sand and the echo of past battles."
-    elif floor_num == 6:
-        event['flavor'] = "The clinical smell of alchemical preservatives mixed with rot."
-    elif floor_num == 7:
-        event['flavor'] = "Oppressive heat and the smell of brimstone."
-    elif floor_num == 8:
-        event['flavor'] = "Damp fungal smell and bioluminescent glow."
-    elif floor_num == 9:
-        event['flavor'] = "Wild Darklands cavern, untamed and dangerous."
-    elif floor_num == 10:
-        event['flavor'] = "Reality feels thin here. Ancient and alien."
-    
     return event
 
 def generate_complication_event(floor_num, floor_data, party_level):
-    """Generate a COMPLICATION event (26-45)"""
+    """A COMPLICATION event from this floor's templates"""
     template = select_template(COMPLICATION_TEMPLATES, floor=floor_num)
     
     event = template.copy()
     event['floor'] = floor_num
     event['floor_name'] = floor_data['name']
     
-    # Add floor-specific complications
-    if floor_num == 1:
-        event['flavor'] = "Mitflit graffiti covers the walls - crude drawings of their 'Sky King'."
-    elif floor_num == 2:
-        event['flavor'] = "Morlock claw marks score the surfaces."
-    elif floor_num == 3:
-        event['flavor'] = "Ghoulish scribes have been through here - books disturbed."
-    elif floor_num == 4:
-        event['flavor'] = "Volluk's influence is evident - leech trails on the floor."
-    elif floor_num == 5:
-        event['flavor'] = "Arena sand has drifted into this area."
-    elif floor_num == 6:
-        event['flavor'] = "Seugathi slime trails glisten on the walls."
-    elif floor_num == 7:
-        event['flavor'] = "Infernal runes glow faintly in the darkness."
-    elif floor_num == 8:
-        event['flavor'] = "Bog mummy moans echo distantly."
-    elif floor_num == 9:
-        event['flavor'] = "Multiple faction territories overlap here - dangerous."
-    elif floor_num == 10:
-        event['flavor'] = "Nhimbaloth's presence is palpable."
-    
     return event
 
 def generate_dilemma_event(floor_num, floor_data, party_level):
-    """Generate a DILEMMA event (46-65)"""
+    """A DILEMMA event from this floor's templates"""
     template = select_template(DILEMMA_TEMPLATES, floor=floor_num)
     
     event = template.copy()
@@ -214,7 +119,7 @@ def generate_dilemma_event(floor_num, floor_data, party_level):
 
 
 def generate_active_threat_event(floor_num, floor_data, party_level):
-    """Generate an ACTIVE THREAT event (66-85)"""
+    """An ACTIVE_THREAT: usually a floor hazard or event, otherwise a template"""
     # Most threats come from the floor's own hazards and residents
     if random.random() < ECOLOGY_THREAT_CHANCE:
         event = build_ecology_threat_event(floor_num, floor_data)
@@ -232,402 +137,33 @@ def generate_active_threat_event(floor_num, floor_data, party_level):
     
     return event
 
+def no_residents_event(floor_num, dice_sum):
+    """What a combat roll returns on a floor with no ecology entries."""
+    return {
+        'title': 'No residents listed for this floor',
+        'description': 'Nothing in etc/floor_ecology.json lives here yet. Pick something from the floor doc.',
+        'gm_notes': f'Add creature entries for floor {floor_num} to etc/floor_ecology.json.',
+        'creatures': [],
+        'dice_sum': dice_sum,
+    }
+
+
 def generate_extreme_combat_event(floor_num, floor_data, party_level, creatures, dice_sum, party_size=4):
     """
-    Generate an EXTREME combat encounter for extreme rolls (5-15, 90-100).
-    Drawn from the floor's ecology at a Severe budget (Extreme on a 5 or 100);
-    falls back to random creatures at floor level only if the floor has no ecology.
+    An EXTREME combat encounter for extreme rolls (5-15, 90-100): the floor's
+    ecology at a Severe budget (Extreme on a 5 or 100).
     """
     threat = 'Extreme' if dice_sum in (5, 100) else 'Severe'
-    event = build_ecology_combat_event(floor_num, floor_data, party_level, creatures, dice_sum,
+    return (build_ecology_combat_event(floor_num, floor_data, party_level, creatures, dice_sum,
                                        threat=threat, party_size=party_size, extreme=True)
-    if event:
-        return event
+            or no_residents_event(floor_num, dice_sum))
 
-    # Extreme encounters always use floor level
-    target_level = floor_num
-    difficulty = "EXTREME (Floor Level)"
-    difficulty_note = f"EXTREME ROLL ({dice_sum})! Creatures at floor level {floor_num}!"
-    
-    # Get creatures at floor level
-    level_creatures = [c for c in creatures if c['level'] == target_level]
-    
-    # Filter for valid creatures
-    def is_valid_creature(creature):
-        name = creature.get('name', '')
-        rarity = creature.get('rarity', 'common').lower()
-        
-        if rarity not in ['common', 'uncommon']:
-            return False
-        if len(name) < 3:
-            return False
-        if 'Pathfinder #' in name or ' pg. ' in name or 'Monster Core' in name or 'Bestiary' in name:
-            return False
-        if ',' in name:
-            return False
-        return True
-    
-    level_creatures = [c for c in level_creatures if is_valid_creature(c)]
-    
-    if not level_creatures:
-        # Fallback if no creatures at floor level
-        level_creatures = [c for c in creatures if c['level'] == max(1, party_level)]
-    
-    # Select creatures
-    num_creatures = random.choice([1, 2, 2, 3])  # Weighted toward 2
-    selected_creatures = random.sample(level_creatures, min(num_creatures, len(level_creatures)))
-    
-    creature_names = [c['name'] for c in selected_creatures]
-    
-    # Generate ecology based on floor
-    floor_name = floor_data.get('name', f'Floor {floor_num}')
-    floor_theme = floor_data.get('theme', 'Unknown')
-    
-    ecology_options = [
-        f"These creatures are native to {floor_name}. They know the terrain and use it to their advantage.",
-        f"Drawn by the {floor_theme.lower()}, these creatures are at home in this environment.",
-        f"These are the dominant predators of {floor_name}, perfectly adapted to this floor.",
-        f"Ancient guardians of {floor_name}, these creatures have claimed this territory."
-    ]
-    
-    tactical_options = [
-        "Use terrain to your advantage - look for chokepoints or cover",
-        "Consider retreating to a more favorable position",
-        "Focus fire on one enemy at a time to reduce their action economy",
-        "Use buffs and debuffs - every bonus counts in a deadly fight",
-        "Coordinate attacks for flanking bonuses"
-    ]
-    
-    return {
-        'title': f"EXTREME ENCOUNTER: {', '.join(creature_names)}",
-        'description': f"An extremely dangerous encounter! {num_creatures} powerful creature(s) at floor level {floor_num}.",
-        'difficulty': difficulty,
-        'difficulty_note': difficulty_note,
-        'ecology': random.choice(ecology_options),
-        'creatures': creature_names,
-        'num_creatures': num_creatures,
-        'creature_level': target_level,
-        'tactical_option': random.choice(tactical_options),
-        'avoidable': False,  # Extreme encounters are not avoidable
-        'surprise_available': dice_sum <= 15,  # Low extreme rolls can surprise
-        'gm_notes': f"EXTREME encounter at floor level. This is a deadly fight. Consider allowing creative solutions or retreat options.",
-        'dice_sum': dice_sum,
-        'floor': floor_num
-    }
 
-def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_sum=86, party_size=4):
-    """Generate a COMBAT encounter (86-100) with dungeon ecology
-
-    Drawn from the floor's ecology at a Low budget; the random-creature logic
-    below only runs if the floor has no ecology entries.
-    
-    Dice sum ranges:
-    - 86-94: Standard combat (2 levels below party) - "Low threat"
-    - 95-99: Dangerous combat (at party level) - "Moderate threat"  
-    - 100: EXTREME combat (at floor level) - "DEADLY threat"
-    """
-    event = build_ecology_combat_event(floor_num, floor_data, party_level, creatures, dice_sum,
+def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_sum=50, party_size=4):
+    """A COMBAT encounter from the floor's ecology at a Low budget."""
+    return (build_ecology_combat_event(floor_num, floor_data, party_level, creatures, dice_sum,
                                        threat='Low', party_size=party_size)
-    if event:
-        return event
-
-    # Determine target level and difficulty based on dice sum
-    if dice_sum == 100:
-        # EXTREME: Creatures at floor level (deadly)
-        target_level = floor_num
-        difficulty = "DEADLY (Floor Level)"
-        difficulty_note = "EXTREME ENCOUNTER - Creatures at floor level!"
-    elif dice_sum >= 95:
-        # High roll: Creatures at party level (moderate)
-        target_level = party_level
-        difficulty = "Moderate (Party Level)"
-        difficulty_note = "Dangerous encounter - creatures at your level"
-    else:
-        # Normal combat: 2 levels below party (low)
-        target_level = max(1, party_level - 2)
-        difficulty = "Low (2 levels below party)"
-        difficulty_note = "Standard encounter"
-    
-    # Define floor-appropriate creature traits/types based on gauntlight_keep_levels.md
-    floor_traits = {
-        1: {
-            'keywords': ['mitflit', 'gremlin', 'undead', 'skeleton', 'zombie', 'shambling'],
-            'description': 'Mitflits and basic undead from Belcorra\'s forces'
-        },
-        2: {
-            'keywords': ['morlock', 'humanoid', 'undead', 'degenerate', 'servant'],
-            'description': 'Morlocks worshipping the Ghost Queen and undead servants'
-        },
-        3: {
-            'keywords': ['ghoul', 'undead', 'librarian', 'scribe', 'devil', 'zebub', 'imp'],
-            'description': 'Ghoul librarians (Cult of the Canker) and minor devils'
-        },
-        4: {
-            'keywords': ['drow', 'elf', 'undead', 'velstrac', 'worm', 'leech', 'werewolf'],
-            'description': 'Drow, velstracs, and Belcorra\'s personal servants'
-        },
-        5: {
-            'keywords': ['beast', 'animal', 'lizard', 'grothlut', 'fleshwarp', 'devil'],
-            'description': 'Arena beasts and failed fleshwarp experiments'
-        },
-        6: {
-            'keywords': ['seugathi', 'aberration', 'fleshwarp', 'drider', 'ooze', 'grothlut'],
-            'description': 'Seugathi fleshwarpers and their experiments'
-        },
-        7: {
-            'keywords': ['devil', 'fiend', 'imp', 'erinyes', 'contract', 'infernal', 'denizen', 'leng'],
-            'description': 'Devils and infernal creatures in the prison'
-        },
-        8: {
-            'keywords': ['mummy', 'bog', 'undead', 'bodak', 'gnome', 'svirfneblin', 'gug', 'caligni'],
-            'description': 'Bog mummies (Children of Belcorra) and Darklands creatures'
-        },
-        9: {
-            'keywords': ['drow', 'elf', 'urdefhan', 'caligni', 'darklands', 'duergar', 'xulgath', 'ratfolk', 'spider'],
-            'description': 'Darklands factions: drow, urdefhan, and caligni'
-        },
-        10: {
-            'keywords': ['undead', 'ghost', 'serpentfolk', 'aberration', 'void', 'empty', 'nhimbaloth'],
-            'description': 'Ancient serpentfolk temple and Nhimbaloth\'s servants'
-        }
-    }
-    
-    # Get creatures at target level
-    level_creatures = [c for c in creatures if c['level'] == target_level]
-    
-    # Filter out creatures with bad names (book references, trait lists, etc.)
-    def is_valid_creature(creature):
-        name = creature.get('name', '')
-        rarity = creature.get('rarity', 'common').lower()
-        
-        # Only allow common or uncommon creatures
-        if rarity not in ['common', 'uncommon']:
-            return False
-        
-        # Skip if name is too short
-        if len(name) < 3:
-            return False
-        # Skip book references
-        if 'Pathfinder #' in name or ' pg. ' in name or 'Monster Core' in name or 'Bestiary' in name:
-            return False
-        # Skip if name contains ANY commas (trait lists)
-        if ',' in name:
-            return False
-        # Skip generic single-word names
-        generic_names = ['Undead', 'Demon', 'Devil', 'Dragon', 'Elemental', 'Beast', 'Aberration', 
-                        'Fiend', 'Construct', 'Ooze', 'Plant', 'Fungus', 'Humanoid', 'Animal']
-        if name in generic_names:
-            return False
-        return True
-    
-    level_creatures = [c for c in level_creatures if is_valid_creature(c)]
-    
-    # Prioritize manually enhanced creatures (they have full stats)
-    enhanced_creatures = [c for c in level_creatures if c.get('attacks') and len(c.get('attacks', [])) > 0]
-    if enhanced_creatures:
-        # Use enhanced creatures preferentially
-        level_creatures = enhanced_creatures
-    
-    # Filter by floor-appropriate traits
-    floor_data = floor_traits.get(floor_num, {})
-    floor_keywords = floor_data.get('keywords', [])
-    if floor_keywords and level_creatures:
-        # Check if creature name or traits match floor keywords
-        filtered = []
-        for c in level_creatures:
-            name_lower = c['name'].lower()
-            traits_lower = ' '.join(c.get('traits', [])).lower()
-            creature_type_lower = c.get('creature_type', '').lower()
-            combined = name_lower + ' ' + traits_lower + ' ' + creature_type_lower
-            
-            # Check if any floor keyword appears in creature
-            if any(keyword in combined for keyword in floor_keywords):
-                filtered.append(c)
-        
-        # Use filtered list if we found matches, otherwise use all at level
-        if filtered:
-            floor_creatures = filtered
-        else:
-            floor_creatures = level_creatures
-    else:
-        floor_creatures = level_creatures
-    
-    # Fallback if no creatures at exact level
-    if not floor_creatures:
-        # Try within 1 level
-        floor_creatures = [c for c in creatures if abs(c['level'] - target_level) <= 1]
-        floor_creatures = [c for c in floor_creatures if is_valid_creature(c)]
-        
-        # Apply floor trait filtering again
-        if floor_keywords and floor_creatures:
-            filtered = []
-            for c in floor_creatures:
-                name_lower = c['name'].lower()
-                traits_lower = ' '.join(c.get('traits', [])).lower()
-                combined = name_lower + ' ' + traits_lower
-                if any(keyword in combined for keyword in floor_keywords):
-                    filtered.append(c)
-            if filtered:
-                floor_creatures = filtered
-    
-    if not floor_creatures:
-        # Last resort: any creatures up to target level
-        floor_creatures = [c for c in creatures if c['level'] <= target_level and c['level'] > 0]
-        floor_creatures = [c for c in floor_creatures if is_valid_creature(c)]
-    
-    # For extreme encounters, prefer higher level creatures
-    if dice_sum >= 95 and floor_creatures:
-        # Sort by level descending and take top half
-        floor_creatures.sort(key=lambda x: x['level'], reverse=True)
-        cutoff = max(1, len(floor_creatures) // 2)
-        floor_creatures = floor_creatures[:cutoff]
-    
-    # Select ecology type
-    ecology_type = random.choice(COMBAT_ECOLOGY_TYPES)
-    
-    # Select 1-3 creatures of the SAME type
-    num_creatures = random.randint(1, 3)
-    # Pick one creature type and use it multiple times
-    selected_creature = random.choice(floor_creatures)
-    selected_creatures = [selected_creature]  # Only one type for consistency
-    
-    # Build encounter based on ecology
-    if ecology_type == "feeding":
-        event = {
-            "title": f"{selected_creatures[0]['name']} Feeding",
-            "description": f"You come upon {num_creatures} {selected_creatures[0]['name']}(s) feasting on a fresh corpse. They're completely focused on their meal.",
-            "ecology": "The creatures are distracted by food. Blood and gore everywhere.",
-            "tactical_option": "DC 15 Stealth to sneak past OR surprise round if you attack",
-            "avoidable": True,
-            "surprise_available": True
-        }
-    
-    elif ecology_type == "fighting":
-        creature_a = selected_creatures[0]
-        creature_b = selected_creatures[1] if len(selected_creatures) > 1 else random.choice(floor_creatures)
-        event = {
-            "title": f"Territorial Dispute",
-            "description": f"Two groups are fighting: {creature_a['name']} vs {creature_b['name']}. They're so focused on each other they haven't noticed you.",
-            "ecology": "Monsters fighting each other over territory or resources.",
-            "tactical_option": "Wait for them to weaken each other, join one side, or sneak past (DC 16 Stealth)",
-            "avoidable": True,
-            "surprise_available": True
-        }
-    
-    elif ecology_type == "sleeping":
-        event = {
-            "title": f"Sleeping {selected_creatures[0]['name']}",
-            "description": f"{num_creatures} {selected_creatures[0]['name']}(s) are sleeping in a pile. They're exhausted from a recent patrol.",
-            "ecology": "Creatures need rest too. They're vulnerable but will wake if you're loud.",
-            "tactical_option": "DC 17 Stealth to sneak past OR automatic surprise round if you attack",
-            "avoidable": True,
-            "surprise_available": True
-        }
-
-    
-    elif ecology_type == "patrolling":
-        event = {
-            "title": f"{selected_creatures[0]['name']} Patrol",
-            "description": f"A patrol of {num_creatures} {selected_creatures[0]['name']}(s) is making rounds. They're alert and armed.",
-            "ecology": "Regular patrol route. They'll return this way in 1 hour.",
-            "tactical_option": "DC 18 Stealth to hide OR prepare ambush for surprise round",
-            "avoidable": True,
-            "surprise_available": True
-        }
-    
-    elif ecology_type == "working":
-        event = {
-            "title": f"{selected_creatures[0]['name']} Working",
-            "description": f"{num_creatures} {selected_creatures[0]['name']}(s) are hauling supplies, repairing walls, or performing maintenance. They're distracted by their task.",
-            "ecology": "Monsters have jobs and responsibilities. Not just waiting to fight.",
-            "tactical_option": "DC 16 Stealth to sneak past OR surprise round if you attack",
-            "avoidable": True,
-            "surprise_available": True
-        }
-    
-    elif ecology_type == "guarding":
-        event = {
-            "title": f"{selected_creatures[0]['name']} Guard Post",
-            "description": f"{num_creatures} {selected_creatures[0]['name']}(s) are stationed at a guard post. They're bored but watchful.",
-            "ecology": "Stationed guards. Can be distracted or negotiated with.",
-            "tactical_option": "DC 19 Stealth to sneak past OR DC 18 Deception to distract them",
-            "avoidable": True,
-            "surprise_available": False
-        }
-    
-    elif ecology_type == "hunting":
-        event = {
-            "title": f"{selected_creatures[0]['name']} Hunting Party",
-            "description": f"{num_creatures} {selected_creatures[0]['name']}(s) are tracking prey. They're focused on the trail ahead.",
-            "ecology": "Hunting other creatures (or maybe hunting YOU if you've been loud).",
-            "tactical_option": "DC 17 Stealth to avoid OR follow them to their prey",
-            "avoidable": True,
-            "surprise_available": True
-        }
-    
-    elif ecology_type == "scavenging":
-        event = {
-            "title": f"{selected_creatures[0]['name']} Scavenging",
-            "description": f"{num_creatures} {selected_creatures[0]['name']}(s) are picking through an old battlefield, looking for valuables.",
-            "ecology": "Scavengers cleaning up after past battles. Opportunistic.",
-            "tactical_option": "DC 16 Stealth to sneak past OR they might flee if you're intimidating",
-            "avoidable": True,
-            "surprise_available": True
-        }
-    
-    elif ecology_type == "ritual":
-        event = {
-            "title": f"{selected_creatures[0]['name']} Ritual",
-            "description": f"{num_creatures} {selected_creatures[0]['name']}(s) are performing some kind of ceremony. Chanting, candles, offerings.",
-            "ecology": "Religious or magical ritual. They're deeply focused.",
-            "tactical_option": "DC 15 Stealth to sneak past OR surprise round if you interrupt",
-            "avoidable": True,
-            "surprise_available": True
-        }
-    
-    else:  # arguing
-        event = {
-            "title": f"{selected_creatures[0]['name']} Argument",
-            "description": f"{num_creatures} {selected_creatures[0]['name']}(s) are arguing loudly about something. Voices raised, gestures wild.",
-            "ecology": "Internal conflict. They have disagreements and politics.",
-            "tactical_option": "DC 14 Stealth to sneak past (they're very distracted) OR surprise round",
-            "avoidable": True,
-            "surprise_available": True
-        }
-    
-    # Add combat stats
-    event['creatures'] = [c['name'] for c in selected_creatures]
-    event['num_creatures'] = num_creatures
-    event['creature_level'] = target_level
-    event['floor'] = floor_num
-    event['floor_name'] = floor_data.get('name', f'Floor {floor_num}')
-    event['difficulty'] = difficulty
-    event['difficulty_note'] = difficulty_note
-    event['dice_sum'] = dice_sum
-    
-    # Add floor-specific ecology notes
-    if floor_num == 1:
-        event['floor_ecology'] = "Mitflits are chaotic and disorganized. They worship a rusty helmet as their 'Sky King'."
-    elif floor_num == 2:
-        event['floor_ecology'] = "Morlocks worship Belcorra as the 'Ghost Queen'. They're territorial and aggressive."
-    elif floor_num == 3:
-        event['floor_ecology'] = "Ghouls are stuck in an endless loop: collect flesh, eat flesh, need more flesh."
-    elif floor_num == 4:
-        event['floor_ecology'] = "This is Belcorra's personal floor. Creatures here serve her directly."
-    elif floor_num == 5:
-        event['floor_ecology'] = "Arena creatures are trained for combat. Aggressive and dangerous."
-    elif floor_num == 6:
-        event['floor_ecology'] = "Seugathi are curious researchers. They observe and experiment."
-    elif floor_num == 7:
-        event['floor_ecology'] = "Devils are lawful and organized. They follow strict hierarchies."
-    elif floor_num == 8:
-        event['floor_ecology'] = "Bog mummies are the 'Children of Belcorra' - enthralled deep gnomes."
-    elif floor_num == 9:
-        event['floor_ecology'] = "Multiple factions compete: drow, urdefhan, caligni. Dangerous politics."
-    elif floor_num == 10:
-        event['floor_ecology'] = "Ancient serpentfolk temple. Reality is thin here."
-    
-    return event
+            or no_residents_event(floor_num, dice_sum))
 
 
 def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatures, party_size=4,
@@ -768,8 +304,7 @@ def generate_all_encounters(party_level, max_floor, output_file, party_size=4):
     
     # Load data
     print("Loading data files...")
-    gauntlight_content = load_markdown(os.path.join(SCRIPT_DIR, 'etc', 'gauntlight_keep_levels.md'))
-    levels_data = parse_gauntlight_levels(gauntlight_content)
+    levels_data = floor_levels()
     creatures = load_json(os.path.join(SCRIPT_DIR, 'etc', 'creatures.json'))
     print(f"  Loaded {len(levels_data)} floor definitions")
     print(f"  Loaded {len(creatures)} creatures")
