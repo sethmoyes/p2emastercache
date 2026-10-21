@@ -489,7 +489,7 @@ def get_encounter():
     event = generate_event_for_sum(dice_sum, floor, floor_data, party_level, creatures, party_size,
                                    allow_no_event)
     event['floor'] = floor
-    if event.get('category') == 'COMBAT':
+    if event.get('creature_reference'):
         event['creature_stats'] = creature_stats_for(event)
 
     if data.get('record', True):
@@ -509,8 +509,10 @@ def creature_stats_for(event):
     """Full stat blocks for a combat's creatures. Names repeat across legacy and
     remaster entries, so match the AoN link the event cites when it has one."""
     refs = event.get('creature_reference') or {}
+    # Combat events list creature names; templates describe them in prose ("1d3 Ghouls")
+    names = event['creatures'] if isinstance(event.get('creatures'), list) else list(refs)
     stats = []
-    for name in event.get('creatures') or []:
+    for name in names:
         url = (refs.get(name) or {}).get('aon_url', '').replace('https://2e.aonprd.com', '')
         creature = creatures_by_url.get(url) or find_creature(creatures, name)
         if not creature:

@@ -122,9 +122,10 @@ function encounterCardHTML(event, label = '') {
             ${cardRow('Tactics', event.tactical_option, 'text-yellow-300')}
             ${cardRow('Avoidable', event.avoidable === undefined ? '' : (event.avoidable ? 'Yes' : 'No'), 'text-green-300')}
             ${cardRow('Surprise possible', event.surprise_available === undefined ? '' : (event.surprise_available ? 'Yes' : 'No'), 'text-sky-300')}
-            ${cardRow('Lore hook', event.lore_hook, 'text-amber-300')}
-            ${event.creature_stats && event.creature_stats.length
-                ? `<div class="space-y-2 mt-3">${event.creature_stats.map(creatureBlock).join('')}</div>` : ''}`;
+            ${cardRow('Lore hook', event.lore_hook, 'text-amber-300')}`;
+    }
+    if (event.creature_stats && event.creature_stats.length) {
+        body += `<div class="space-y-2 mt-3">${event.creature_stats.map(creatureBlock).join('')}</div>`;
     }
 
     return `${header}
