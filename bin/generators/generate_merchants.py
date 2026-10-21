@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Unified Otari Merchant Generator
 Generates merchant inventories with images scraped from Google Images
@@ -16,6 +16,42 @@ def load_equipment_json(filename):
     """Load equipment from JSON file"""
     with open(filename, 'r', encoding='utf-8') as f:
         return json.load(f)
+
+
+# equipment.json files almost everything under type "adventuring"; the real
+# kind of item is in item_category. Shops stock by kind.
+KIND_BY_CATEGORY = {
+    'Weapons': 'weapon',
+    'Armor': 'armor', 'Shields': 'armor',
+    'Alchemical Items': 'alchemical', 'Potions': 'alchemical',
+    'Wands': 'magical', 'Staves': 'magical', 'Worn Items': 'magical', 'Held Items': 'magical',
+    'Grimoires': 'magical', 'Spellhearts': 'magical', 'Runes': 'magical', 'Tattoos': 'magical',
+    'Grafts': 'magical',
+}
+# Not things a shop sells
+UNSTOCKED_CATEGORIES = {'Services', 'Structures', 'High-Tech', 'Artifacts', 'Relics',
+                        'Intelligent Items', 'Cursed Items', 'Apex Items', 'Figurehead'}
+
+
+def has_price(price):
+    return bool(price) and str(price).strip() not in ('0', '0 gp', '0 sp', '0 cp', '-', 'N/A')
+
+
+def prepare_equipment(items):
+    """Sellable items, one per name, each with a 'kind' shops can stock by."""
+    seen = set()
+    prepared = []
+    for item in items:
+        if item['name'] in seen or item.get('item_category') in UNSTOCKED_CATEGORIES:
+            continue
+        if not has_price(item.get('price')):
+            continue
+        seen.add(item['name'])
+        kind = KIND_BY_CATEGORY.get(item.get('item_category'))
+        if not kind:
+            kind = item['type'] if item.get('type') in ('weapon', 'armor', 'alchemical', 'magical') else 'adventuring'
+        prepared.append({**item, 'kind': kind})
+    return prepared
 
 def load_spells_json(filename):
     """Load spells from JSON file"""
@@ -119,14 +155,8 @@ def clean_item_name(name):
     return name.strip()
 
 # Default merchant images to cycle through
-DEFAULT_MERCHANT_IMAGES = [
-    "https://2e.aonprd.com/Images/Monsters/Merchant.webp",
-    "https://2e.aonprd.com/Images/Monsters/Guildmaster.webp",
-    "https://i.redd.it/mr6j0g84qplc1.jpeg"
-]
-
-def get_merchant_image(npc_name, merchant_index=0):
-    """Get merchant portrait from PathfinderWiki or use default from cycle"""
+def get_merchant_image(npc_name):
+    """A proprietor's portrait from PathfinderWiki, or None if it has none"""
     try:
         # Extract just the name (before parentheses)
         clean_name = npc_name.split('(')[0].strip()
@@ -179,11 +209,10 @@ def get_merchant_image(npc_name, merchant_index=0):
                             elif src.startswith('/'):
                                 return 'https://pathfinderwiki.com' + src
                             return src
-    except Exception as e:
-        pass  # Silently fail and use default
-    
-    # Return default image from cycle
-    return DEFAULT_MERCHANT_IMAGES[merchant_index % len(DEFAULT_MERCHANT_IMAGES)]
+    except Exception:
+        pass  # No portrait is better than a broken one
+
+    return None
 
 def try_direct_aon_image(item_name):
     """Try to construct direct AoN image URL"""
@@ -312,11 +341,21 @@ def capitalize_field(text):
         return 'N/A'
     return text[0].upper() + text[1:] if len(text) > 0 else text
 
+def potions_for_level(potions, min_level):
+    """Potions at min_level or above; if none (they only come in a few levels),
+    the highest ones below it, so a shop is never left without."""
+    in_band = [p for p in potions if p['level'] >= min_level]
+    if in_band or not potions:
+        return in_band
+    best = max(p['level'] for p in potions)
+    return [p for p in potions if p['level'] == best]
+
+
 def generate_potion_inventory(equipment, player_level, count_range=(3, 6), level_offset=-3):
     """Generate healing potions for merchant
 
     Args:
-        equipment: List of all equipment items
+        equipment: List of all equipment items (already capped at the max item level)
         player_level: Current player level
         count_range: (min, max) number of potions
         level_offset: Minimum potion level relative to player level
@@ -324,29 +363,24 @@ def generate_potion_inventory(equipment, player_level, count_range=(3, 6), level
     Returns:
         List of potions, with at least 1 Spell Slot Restoration Potion
     """
-    # Calculate minimum potion level (player_level + offset, minimum 1)
     min_potion_level = max(1, player_level + level_offset)
-    
-    # Get all healing potions and spell slot restoration potions
-    healing_potions = [e for e in equipment if 'Healing Potion' in e['name'] and e['level'] >= min_potion_level]
-    spell_slot_potions = [e for e in equipment if 'Spell Slot Restoration Potion' in e['name'] and e['level'] >= min_potion_level]
-    
+
+    healing_potions = potions_for_level([e for e in equipment if 'Healing Potion' in e['name']], min_potion_level)
+    spell_slot_potions = potions_for_level([e for e in equipment if 'Spell Slot Restoration Potion' in e['name']], min_potion_level)
+
     num_potions = random.randint(*count_range)
 
     # Always include at least 1 Spell Slot Restoration Potion
     potions = []
     if spell_slot_potions and num_potions > 0:
         potions.append(random.choice(spell_slot_potions))
-    
+
     # Fill remaining slots with random mix of healing and spell slot potions
     all_potions = healing_potions + spell_slot_potions
-    remaining = num_potions - len(potions)
-    
-    if all_potions and remaining > 0:
-        # Sample with replacement to allow duplicates
-        for _ in range(remaining):
+    for _ in range(num_potions - len(potions)):
+        if all_potions:
             potions.append(random.choice(all_potions))
-    
+
     return potions
 
 def generate_merchant_inventory(equipment, categories, num_common, num_uncommon, item_filter=None):
@@ -362,8 +396,8 @@ def generate_merchant_inventory(equipment, categories, num_common, num_uncommon,
     inventory = {'common': [], 'uncommon': [], 'rare': []}
     
     # Filter by categories and rarity (level already filtered in equipment list)
-    common_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'common']
-    uncommon_pool = [e for e in equipment if e['type'] in categories and e['rarity'] == 'uncommon']
+    common_pool = [e for e in equipment if e['kind'] in categories and e['rarity'] == 'common']
+    uncommon_pool = [e for e in equipment if e['kind'] in categories and e['rarity'] == 'uncommon']
     
     # Apply additional filter if provided
     if item_filter:
@@ -381,27 +415,20 @@ def generate_merchant_inventory(equipment, categories, num_common, num_uncommon,
     
     return inventory
 
-def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, spell_inventory=None, rune_inventory=None, potion_inventory=None, output_dir='players', merchant_index=0, filename=None):
-    """Write merchant file with header, proprietor image, and full item details"""
+def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, spell_inventory=None, rune_inventory=None, potion_inventory=None, output_dir='players', portrait=None, filename=None):
+    """Write merchant file with header, proprietor portrait, and full item details"""
     filename = filename or merchant_name.lower().replace(' ', '_').replace("'", '') + '.md'
     filepath = os.path.join(output_dir, filename)
-    
-    # Get merchant image
-    if FETCH_PORTRAITS:
-        print(f"  Fetching merchant portrait...", end=' ')
-        merchant_img = get_merchant_image(proprietor, merchant_index)
-        print(f"OK" if "pathfinderwiki" in merchant_img else "Using default")
-    else:
-        merchant_img = DEFAULT_MERCHANT_IMAGES[merchant_index % len(DEFAULT_MERCHANT_IMAGES)]
 
     # Write to a temp file and swap it in, so the live site never serves a half-written shop
     tmp_path = filepath + '.tmp'
     with open(tmp_path, 'w', encoding='utf-8') as f:
         # Header with proprietor image (small size - 250px)
         f.write(f"# {merchant_name}\n\n")
-        f.write(f"<div align=\"center\">\n\n")
-        f.write(f"<img src=\"{merchant_img}\" alt=\"Proprietor\" width=\"250\">\n\n")
-        f.write(f"</div>\n\n")
+        if portrait:
+            f.write(f"<div align=\"center\">\n\n")
+            f.write(f"<img src=\"{portrait}\" alt=\"{proprietor.split('(')[0].strip()}\" width=\"250\">\n\n")
+            f.write(f"</div>\n\n")
         f.write(f"*{description}*\n\n")
         f.write(f"**Proprietor:** {proprietor}\n\n")
         f.write(f"**Specialties:** {specialties}\n\n")
@@ -411,11 +438,17 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
             f.write("---\n\n")
             f.write("# HEALING POTIONS\n\n")
             f.write("*These potions restore Hit Points or spell slots when consumed.*\n\n")
-            f.write("| Image | Name | Level | Price | Effect | Link |\n")
-            f.write("|-------|------|-------|-------|--------|------|\n")
-            
-            total = len(potion_inventory)
-            for idx, potion in enumerate(potion_inventory, 1):
+            f.write("| Image | Name | Qty | Level | Price | Effect | Link |\n")
+            f.write("|-------|------|-----|-------|-------|--------|------|\n")
+
+            # Identical potions stack into one row
+            counts = {}
+            for potion in potion_inventory:
+                counts.setdefault(potion['name'], [potion, 0])[1] += 1
+            stacked = list(counts.values())
+
+            total = len(stacked)
+            for idx, (potion, qty) in enumerate(stacked, 1):
                 image_url = item_image(potion['name'], f"  [POTION {idx}/{total}] {potion['name'][:50]}")
                 
                 # Fix and capitalize fields
@@ -434,8 +467,8 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
                 link_md = f"[View]({search_url})"
                 
-                f.write(f"| {img_md} | {name} | {level} | {price} | {effect} | {link_md} |\n")
-            
+                f.write(f"| {img_md} | {name} | {qty} | {level} | {price} | {effect} | {link_md} |\n")
+
             f.write("\n")
             f.write("---\n\n")
         
@@ -745,36 +778,33 @@ def merchant_slug(name):
     """File name (without .md) a merchant is written to"""
     return name.lower().replace(' ', '_').replace("'", '')
 
-# The ten Otari shops. Order matters: a shop's position picks its default portrait.
+def named(item, *words):
+    """True if the item's name contains any of these as whole words (plurals too)."""
+    pattern = r'\b(?:' + '|'.join(re.escape(w) for w in words) + r')(?:e?s)?\b'
+    return re.search(pattern, item['name'], re.I) is not None
+
+
+def category(item, *categories):
+    return item.get('item_category') in categories
+
+
+# The ten Otari shops: what each one stocks. Who runs them (proprietor,
+# description, specialties, portrait) lives in etc/otari_shops.json.
 MERCHANT_CONFIGS = [
-    # 1. Otari Market - All types, DOUBLE items
     {
         'name': 'Otari Market',
-        'description': 'Large open-air market with diverse goods',
-        'proprietor': 'Keeleno Lathenar (dour, humorless human merchant)',
-        'specialties': 'All adventuring gear, weapons, armor, and general supplies',
         'categories': ['weapon', 'armor', 'adventuring', 'alchemical', 'magical'],
-        'item_filter': None,  # No restrictions
+        'item_filter': None,
         'double_items': True,  # Market uses the market_* stock settings
         'services': None
     },
-    # 2. Wrin's Wonders - Magical items, spells, scrolls, staffs, spellhearts, runes, alchemical potions
     {
         'name': "Wrin's Wonders",
-        'description': 'Eccentric tiefling-elf oddities merchant and stargazer',
-        'proprietor': 'Wrin Sivinxi (CG female tiefling elf oddities merchant 5)',
-        'specialties': 'Magical items, spells, scrolls, staffs, spellhearts, runes, and alchemical potions',
-        'categories': ['magical', 'alchemical', 'adventuring'],  # Added adventuring for staffs and runes!
+        'categories': ['magical', 'alchemical', 'adventuring'],
         'item_filter': lambda item: (
-            # Check item_category field for Runes
-            item.get('item_category') == 'Runes' or
-            # Check for Staff of X pattern (magical staffs)
-            'staff of' in item['name'].lower() or
-            # Check name for specific magical items
-            any(keyword in item['name'].lower() for keyword in [
-                'scroll', 'spellheart', 'potion', 'elixir',
-                'wand', 'talisman', 'amulet', 'ring', 'cloak', 'boots', 'gloves', 'hat', 'circlet'
-            ])
+            item['kind'] in ('magical', 'alchemical')
+            or category(item, 'Runes', 'Staves', 'Spellhearts', 'Wands')
+            or named(item, 'scroll', 'talisman', 'elixir', 'potion')
         ),
         'double_items': False,
         'sells_spells': True,
@@ -786,23 +816,12 @@ MERCHANT_CONFIGS = [
             "Astrological readings: 5 sp - 5 gp"
         ]
     },
-    # 3. Odd Stories - Books, magical items, runes, spells
     {
         'name': 'Odd Stories',
-        'description': 'Bookshop and scroll emporium',
-        'proprietor': 'Morlibint (NG male gnome bookseller 3)',
-        'specialties': 'Books, scrolls, magical items, runes, and spells',
         'categories': ['magical', 'adventuring'],
         'item_filter': lambda item: (
-            # Check item_category field for Runes
-            item.get('item_category') == 'Runes' or
-            # Check for Staff of X pattern (magical staffs)
-            'staff of' in item['name'].lower() or
-            # Check name for books and magical items
-            any(keyword in item['name'].lower() for keyword in [
-                'book', 'scroll', 'tome', 'manual', 'grimoire', 'spell',
-                'wand', 'talisman'
-            ])
+            category(item, 'Runes', 'Grimoires', 'Staves', 'Wands')
+            or named(item, 'book', 'scroll', 'tome', 'manual', 'grimoire', 'formula', 'journal', 'map', 'ink', 'writing set')
         ),
         'double_items': False,
         'sells_spells': True,
@@ -814,31 +833,26 @@ MERCHANT_CONFIGS = [
             "Research assistance: 5 gp per day"
         ]
     },
-    # 4. Gallentine Deliveries - Service only (no inventory)
     {
         'name': 'Gallentine Deliveries',
-        'description': 'Courier and delivery service',
-        'proprietor': 'Gallentine (N female human courier 2)',
-        'specialties': 'Package delivery, message running, and escort services',
-        'categories': [],
-        'item_filter': None,
+        'categories': ['adventuring'],
+        'item_filter': lambda item: category(item, 'Animals and Gear'),
         'double_items': False,
         'services': [
             "Local delivery (within Otari): 1 sp per package",
             "Regional delivery (to nearby towns): 5 sp - 2 gp depending on distance",
             "Long-distance delivery: Price negotiable (GM discretion)",
-            "Escort services: 5 gp per day",
-            "Rush delivery: Double normal price"
+            "Stabling: 2 sp per day",
+            "Caravan or carriage transport: price negotiable (GM discretion)"
         ]
     },
-    # 5. Blades for Glades - Weapons, armor, and shields ONLY
     {
         'name': 'Blades for Glades',
-        'description': 'Weaponsmith and armorer',
-        'proprietor': 'Jorsk Hinterclaw (LN male dwarf weaponsmith 4)',
-        'specialties': 'Weapons, armor, and shields of all types',
-        'categories': ['weapon', 'armor'],
-        'item_filter': None,  # Category filter is sufficient
+        'categories': ['weapon', 'armor', 'adventuring'],
+        'item_filter': lambda item: (
+            item['kind'] in ('weapon', 'armor')
+            or named(item, 'saw', 'axe', 'hatchet', 'tool', 'crowbar', 'chain', 'piton', 'grappling hook', 'manacle')
+        ),
         'double_items': False,
         'services': [
             "Weapon sharpening: 5 sp",
@@ -847,96 +861,66 @@ MERCHANT_CONFIGS = [
             "Weapon engraving: 1 gp"
         ]
     },
-    # 6. Crow's Casks - Tea, oils, food, beverages, alchemical items (potions)
     {
         'name': "Crow's Casks",
-        'description': 'Tavern specializing in teas, oils, and fine beverages',
-        'proprietor': 'Crow (CN female human tavernkeeper 2)',
-        'specialties': 'Tea, oils, food, beverages, and alchemical potions',
         'categories': ['adventuring', 'alchemical'],
-        'item_filter': lambda item: any(keyword in item['name'].lower() for keyword in [
-            'tea', 'oil', 'food', 'ration', 'meal', 'drink', 'beverage', 'wine', 'ale',
-            'beer', 'mead', 'potion', 'elixir', 'tonic', 'brew'
-        ]),
+        'item_filter': lambda item: (
+            item['kind'] == 'alchemical'
+            or named(item, 'tea', 'oil', 'ration', 'meal', 'wine', 'ale', 'beer', 'mead', 'brew', 'tonic', 'elixir', 'potion')
+        ),
         'double_items': False,
         'services': [
             "Meals: 1 cp (poor) to 1 gp (fine)",
             "Lodging: 3 cp (floor space) to 5 sp (private room)",
-            "Ale/Wine: 1 cp (mug) to 1 sp (bottle)",
+            "Ale/Wine: 1 cp (mug) to 1 sp (bottle); ask about Magiloy's latest experiment",
             "Rumors and information: Free with purchase"
         ]
     },
-    # 7. Crook's Nook - Snares, tattoos, consumables
     {
         'name': "Crook's Nook",
-        'description': 'Seedy tavern dealing in traps and questionable goods',
-        'proprietor': 'Crook (NE male half-orc tavernkeeper 3)',
-        'specialties': 'Snares, tattoos, and consumable items',
-        'categories': ['adventuring', 'alchemical', 'magical'],
-        'item_filter': lambda item: any(keyword in item['name'].lower() for keyword in [
-            'snare', 'trap', 'tattoo', 'potion', 'elixir', 'oil', 'tonic', 'consumable',
-            'bomb', 'poison', 'drug', 'talisman', 'scroll'
-        ]),
+        'categories': ['adventuring', 'alchemical'],
+        'item_filter': lambda item: (
+            category(item, 'Snares')
+            or named(item, "thieves' toolkit", 'thieves', 'lockpick', 'poison', 'caltrop', 'smoke', 'disguise kit', 'manacle', 'grappling hook')
+        ),
         'double_items': False,
         'services': [
-            "Meals: 1 cp (poor quality)",
+            "Meals: seafood, 1 cp to 5 sp",
             "Lodging: 3 cp (floor space) to 3 sp (shared room)",
-            "Ale: 1 cp (watered down)",
-            "Black market contacts: 5-50 gp (GM discretion)"
+            "Ale: 1 cp",
+            "A word with the Osprey Club: price and availability at Yinyasmera's discretion"
         ]
     },
-    # 8. The Rowdy Rockfish - All items EXCEPT weapons/armor/shields
     {
         'name': 'The Rowdy Rockfish',
-        'description': 'Lively tavern and general store',
-        'proprietor': 'Tamily Tanderveil (CG female halfling innkeeper 4)',
-        'specialties': 'General goods, supplies, and adventuring gear (no weapons or armor)',
-        'categories': ['adventuring', 'alchemical', 'magical'],
-        'item_filter': lambda item: not any(keyword in item['name'].lower() for keyword in [
-            'sword', 'axe', 'mace', 'hammer', 'spear', 'bow', 'crossbow', 'dagger', 'knife',
-            'armor', 'shield', 'breastplate', 'chainmail', 'plate', 'helmet', 'gauntlet'
-        ]) and item['type'] not in ['weapon', 'armor'],
+        'categories': ['adventuring'],
+        'item_filter': lambda item: named(item, 'ration', 'meal', 'wine', 'ale', 'beer', 'mead', 'tea', 'waterskin', 'bedroll', 'candle', 'soap'),
         'double_items': False,
         'services': [
             "Meals: 5 cp (square) to 2 gp (fine)",
             "Lodging: 5 cp (bed) to 1 gp (private room with bath)",
             "Ale/Wine: 1 cp (mug) to 5 sp (fine bottle)",
-            "Entertainment: Free nightly performances",
             "Hot bath: 2 cp"
         ]
     },
-    # 9. Otari Fishery - Food and beverages ONLY
     {
         'name': 'Otari Fishery',
-        'description': 'Fresh fish and fishing supplies',
-        'proprietor': 'Lillia Dusklight (NG female human fisher 2)',
-        'specialties': 'Fresh fish, food, and beverages',
         'categories': ['adventuring'],
-        'item_filter': lambda item: any(keyword in item['name'].lower() for keyword in [
-            'fish', 'food', 'ration', 'meal', 'drink', 'beverage', 'water', 'ale', 'wine'
-        ]),
+        'item_filter': lambda item: named(item, 'fish', 'fishing', 'net', 'rope', 'ration', 'waterskin', 'boat', 'oar', 'swim'),
         'double_items': False,
         'services': [
             "Fresh fish: 1 cp - 5 sp depending on type",
-            "Fishing lessons: 5 sp per hour",
-            "Boat rental: 5 sp per day",
+            "Passage on a sailing ship: price by destination (GM discretion)",
+            "Games and snacks on the ground floor, nightly",
             "Net repair: 1 sp"
         ]
     },
-    # 10. Dawnflower Library - Books, scrolls, runes ONLY
     {
         'name': 'Dawnflower Library',
-        'description': 'Temple library and scriptorium',
-        'proprietor': 'Vandy Banderdash (LG female halfling cleric of Sarenrae 5)',
-        'specialties': 'Religious texts, scrolls, and runes',
-        'categories': ['magical', 'adventuring'],
+        'categories': ['magical', 'adventuring', 'alchemical'],
         'item_filter': lambda item: (
-            # Check item_category field for Runes (this is the key fix!)
-            item.get('item_category') == 'Runes' or
-            # Check name for books and scrolls
-            any(keyword in item['name'].lower() for keyword in [
-                'book', 'scroll', 'tome', 'manual', 'text', 'grimoire', 'scripture'
-            ])
+            category(item, 'Runes')
+            or named(item, 'book', 'scroll', 'tome', 'manual', 'scripture', 'religious', 'holy', 'healing', 'antidote', 'antiplague', 'healer')
         ),
         'double_items': False,
         'sells_runes': True,
@@ -949,6 +933,11 @@ MERCHANT_CONFIGS = [
         ]
     }
 ]
+
+with open(os.path.join(PROJECT_ROOT, 'etc', 'otari_shops.json'), 'r', encoding='utf-8') as _f:
+    _SHOP_PEOPLE = json.load(_f)
+for _config in MERCHANT_CONFIGS:
+    _config.update(_SHOP_PEOPLE[merchant_slug(_config['name'])])
 
 TRAVELING = 'Traveling merchants (GM only)'
 
@@ -1034,6 +1023,16 @@ def normalize_settings(raw=None):
         settings[field['key']] = value
     return settings
 
+def shop_portrait(config):
+    """The shop's known portrait, else one looked up by the proprietor's name."""
+    if config.get('portrait') or not FETCH_PORTRAITS:
+        return config.get('portrait')
+    print("  Looking up the proprietor's portrait...", end=' ')
+    found = get_merchant_image(config['proprietor'])
+    print('OK' if found else 'none')
+    return found
+
+
 TRAVELING_FILE = re.compile(r'^traveling_merchant_(\d+)\.md$')
 
 
@@ -1060,7 +1059,7 @@ def generate_all(settings, output_root=PROJECT_ROOT):
     print()
 
     print("Loading equipment...")
-    equipment = load_equipment_json(os.path.join(PROJECT_ROOT, 'etc', 'equipment.json'))
+    equipment = prepare_equipment(load_equipment_json(os.path.join(PROJECT_ROOT, 'etc', 'equipment.json')))
 
     # Filter equipment by max level
     equipment = [e for e in equipment if e['level'] <= max_item_level]
@@ -1111,7 +1110,7 @@ def generate_all(settings, output_root=PROJECT_ROOT):
 
             # Add rare items
             if num_rare:
-                rare_pool = [e for e in equipment if e['type'] in config['categories'] and e['rarity'] == 'rare']
+                rare_pool = [e for e in equipment if e['kind'] in config['categories'] and e['rarity'] == 'rare']
                 # Apply item filter to rare pool too
                 if config.get('item_filter'):
                     rare_pool = [e for e in rare_pool if config['item_filter'](e)]
@@ -1163,7 +1162,7 @@ def generate_all(settings, output_root=PROJECT_ROOT):
             rune_inventory,
             potion_inventory,
             output_dir=players_dir,
-            merchant_index=MERCHANT_CONFIGS.index(config)
+            portrait=shop_portrait(config)
         )
 
     # Generate random merchants for GM
@@ -1224,7 +1223,7 @@ def generate_all(settings, output_root=PROJECT_ROOT):
 
             # Add rare items
             if num_rare > 0:
-                rare_pool = [e for e in equipment if e['type'] in all_categories and e['rarity'] == 'rare']
+                rare_pool = [e for e in equipment if e['kind'] in all_categories and e['rarity'] == 'rare']
                 if rare_pool:
                     inventory['rare'] = random.sample(rare_pool, min(num_rare, len(rare_pool)))
                     print(f"  * Added {len(inventory['rare'])} rare item(s)")
@@ -1251,7 +1250,6 @@ def generate_all(settings, output_root=PROJECT_ROOT):
                 rune_inventory=None,
                 potion_inventory=potion_inventory,
                 output_dir=gm_dir,
-                merchant_index=10 + merchant_num,  # Random merchants cycle portraits after the shops
                 filename=traveling_merchant_filename(merchant_num)
             )
 
