@@ -1,5 +1,5 @@
 {
-  "_about": "Who runs each Otari shop, as players see it. From the Player's Guide and the corrected pages in common/campaign-reference/players/. What each shop stocks is decided in bin/generators/generate_merchants.py (MERCHANT_CONFIGS). portrait is a known-good image URL or null.",
+  "_about": "Who runs each Otari shop, as players see it. From the Player's Guide and the corrected pages in common/campaign-reference/players/. What each shop stocks is decided in avtools/merchants.py (MERCHANT_CONFIGS). portrait is a known-good image URL or null.",
   "otari_market": {
     "description": "Large open-air market with diverse goods",
     "proprietor": "Keeleno Lathenar (dour, humorless human merchant)",

@@ -7,8 +7,7 @@ import tempfile
 import pytest
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-for path in ('bin/web', 'bin/generators', 'bin'):
-    sys.path.insert(0, os.path.join(ROOT, path))
+sys.path.insert(0, ROOT)
 
 # The app reads DATA_DIR at import: point it somewhere disposable first
 os.environ['DATA_DIR'] = tempfile.mkdtemp(prefix='p2e-test-data-')
@@ -25,8 +24,8 @@ def no_network(monkeypatch):
 
 @pytest.fixture(scope='session')
 def app_module():
-    import dungeon_turn_app
-    return dungeon_turn_app
+    from avtools.web import app
+    return app
 
 
 @pytest.fixture

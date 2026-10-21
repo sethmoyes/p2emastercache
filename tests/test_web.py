@@ -4,7 +4,7 @@ import zipfile
 
 import pytest
 
-from render import render_markdown
+from avtools.web.render import render_markdown
 
 
 @pytest.mark.parametrize('url', ['/', '/players', '/players/shop/wrins_wonders', '/players/guide',

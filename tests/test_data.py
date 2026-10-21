@@ -5,9 +5,9 @@ import os
 import pytest
 
 from conftest import ROOT
-from event_validation import validate_event
-from floor_ecology import FLOOR_ECOLOGY, find_creature
-from generate_merchants import MERCHANT_CONFIGS, merchant_slug, prepare_equipment
+from avtools.validation import validate_event
+from avtools.data import find_creature, floor_ecology
+from avtools.merchants import MERCHANT_CONFIGS, merchant_slug, prepare_equipment
 
 
 def load(name):
@@ -58,13 +58,13 @@ def test_every_floor_has_events_of_every_category(floor):
 
 @pytest.mark.parametrize('floor', range(1, 11))
 def test_every_floor_has_ecology_creatures_and_threats(floor):
-    kinds = {e['kind'] for e in FLOOR_ECOLOGY[floor]['entries']}
+    kinds = {e['kind'] for e in floor_ecology()[floor]['entries']}
     assert 'creature' in kinds
     assert kinds & {'hazard', 'event'}
 
 
 def test_every_ecology_creature_exists():
-    for floor in FLOOR_ECOLOGY.values():
+    for floor in floor_ecology().values():
         for entry in floor['entries']:
             names = [entry['creature']] if entry.get('creature') else []
             names += [g['creature'] for g in entry.get('group', []) + entry.get('companions', [])]

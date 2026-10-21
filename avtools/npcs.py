@@ -271,12 +271,7 @@ def test_npc_generation(count=100):
         for issue in issues[:10]:  # Show first 10 issues
             print(f"  - {issue}")
     else:
-        print(f"\n✓ ALL NPCS GENERATED SUCCESSFULLY WITH NO ISSUES!")
-    
-    # Save sample NPCs
-    with open('test_npcs.json', 'w', encoding='utf-8') as f:
-        json.dump(npcs[:20], f, indent=2, ensure_ascii=False)
-    print(f"\nSaved 20 sample NPCs to test_npcs.json for review")
+        print(f"\nOK: ALL NPCS GENERATED SUCCESSFULLY WITH NO ISSUES!")
     
     return len(issues) == 0
 
@@ -285,9 +280,9 @@ if __name__ == "__main__":
     
     if success:
         print(f"\n{'=' * 80}")
-        print("✓ NPC GENERATOR IS READY FOR PRODUCTION USE")
+        print("OK: NPC GENERATOR IS READY FOR PRODUCTION USE")
         print("=" * 80)
     else:
         print(f"\n{'=' * 80}")
-        print("✗ ISSUES DETECTED - NEEDS FIXES")
+        print("X: ISSUES DETECTED - NEEDS FIXES")
         print("=" * 80)

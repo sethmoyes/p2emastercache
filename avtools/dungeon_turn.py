@@ -11,26 +11,15 @@ Probability distribution (5d20):
 """
 
 import random
-import sys
-import json
-import re
-import os
 
-# Add parent directory (bin) to path for event_loader import
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from avtools import data
+from avtools.ecology import build_ecology_combat_event, build_ecology_threat_event, ECOLOGY_THREAT_CHANCE
+from avtools.events import select_template
 
-from event_loader import load_events_from_json
-from template_selector import select_template
-from floor_ecology import build_ecology_combat_event, build_ecology_threat_event, ECOLOGY_THREAT_CHANCE, FLOOR_ECOLOGY
-
-def load_json(filename):
-    """Load JSON file"""
-    with open(filename, 'r', encoding='utf-8') as f:
-        return json.load(f)
 
 def floor_levels():
     """{floor: {'name', 'theme'}} for floors 1-10, from etc/floor_ecology.json."""
-    return {n: {'name': f['name'], 'theme': f['ecology']} for n, f in FLOOR_ECOLOGY.items()}
+    return {n: {'name': f['name'], 'theme': f['ecology']} for n, f in data.floor_ecology().items()}
 
 
 def get_category_from_sum(total, is_extreme=False, allow_no_event=True):
@@ -67,20 +56,9 @@ def get_category_from_sum(total, is_extreme=False, allow_no_event=True):
 
 
 
-# Load events from JSON file
-# Use relative path from script location to work in containers
-SCRIPT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-EVENTS_FILE = os.path.join(SCRIPT_DIR, 'etc', 'dungeon_turn_events.json')
-
-LOADED_EVENTS = load_events_from_json(EVENTS_FILE)
-OPPORTUNITY_TEMPLATES = LOADED_EVENTS['OPPORTUNITY']
-COMPLICATION_TEMPLATES = LOADED_EVENTS['COMPLICATION']
-DILEMMA_TEMPLATES = LOADED_EVENTS['DILEMMA']
-ACTIVE_THREAT_TEMPLATES = LOADED_EVENTS['ACTIVE_THREAT']
-
 def generate_opportunity_event(floor_num, floor_data, party_level):
     """An OPPORTUNITY event from this floor's templates"""
-    template = select_template(OPPORTUNITY_TEMPLATES, floor=floor_num)
+    template = select_template(data.events()['OPPORTUNITY'], floor=floor_num)
     
     # Customize for floor
     event = template.copy()
@@ -91,7 +69,7 @@ def generate_opportunity_event(floor_num, floor_data, party_level):
 
 def generate_complication_event(floor_num, floor_data, party_level):
     """A COMPLICATION event from this floor's templates"""
-    template = select_template(COMPLICATION_TEMPLATES, floor=floor_num)
+    template = select_template(data.events()['COMPLICATION'], floor=floor_num)
     
     event = template.copy()
     event['floor'] = floor_num
@@ -101,7 +79,7 @@ def generate_complication_event(floor_num, floor_data, party_level):
 
 def generate_dilemma_event(floor_num, floor_data, party_level):
     """A DILEMMA event from this floor's templates"""
-    template = select_template(DILEMMA_TEMPLATES, floor=floor_num)
+    template = select_template(data.events()['DILEMMA'], floor=floor_num)
     
     event = template.copy()
     event['floor'] = floor_num
@@ -126,7 +104,7 @@ def generate_active_threat_event(floor_num, floor_data, party_level):
         if event:
             return event
 
-    template = select_template(ACTIVE_THREAT_TEMPLATES, floor=floor_num)
+    template = select_template(data.events()['ACTIVE_THREAT'], floor=floor_num)
     
     event = template.copy()
     event['floor'] = floor_num
@@ -305,7 +283,7 @@ def generate_all_encounters(party_level, max_floor, output_file, party_size=4):
     # Load data
     print("Loading data files...")
     levels_data = floor_levels()
-    creatures = load_json(os.path.join(SCRIPT_DIR, 'etc', 'creatures.json'))
+    creatures = data.creatures()
     print(f"  Loaded {len(levels_data)} floor definitions")
     print(f"  Loaded {len(creatures)} creatures")
     print("")

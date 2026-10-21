@@ -2,7 +2,7 @@
 
 ## Project Overview
 Campaign tools for the Abomination Vaults adventure path, set in Otari: a Flask
-app (`bin/web/dungeon_turn_app.py`) with GM, player and atlas pages, plus the
+app (`avtools/web/app.py`) with GM, player and atlas pages, plus the
 generators behind it. See `README.md` for running, deploying and the CLI tools.
 
 ## Sources of Truth
@@ -18,8 +18,8 @@ When two files disagree, this is the order that wins:
    turn draws floor names, COMBAT and most ACTIVE_THREAT events from it. Don't
    restate floor ecology anywhere else; read it from here.
 3. **Code defaults** - merchant rules live in `SETTINGS_SCHEMA` in
-   `bin/generators/generate_merchants.py`; the dice distribution lives in
-   `get_category_from_sum` in `bin/generators/generate_dungeon_turn_v2.py`.
+   `avtools/merchants.py`; the dice distribution lives in
+   `get_category_from_sum` in `avtools/dungeon_turn.py`.
    This file describes them but the code is authoritative.
 
 Data the tools read, in `etc/`:
@@ -39,7 +39,7 @@ floor overview) lives in `common/campaign-reference/etc/`.
 
 ## Generation Rules
 
-### Merchants (`bin/generators/generate_merchants.py`)
+### Merchants (`avtools/merchants.py`)
 Defaults (all adjustable from the GM page's Restock panel):
 - Shops: 3-15 common, 1-3 uncommon; 2 random shops get a rare item
 - Otari Market: 20-50 common, 5-15 uncommon, 1-3 rare
@@ -50,7 +50,7 @@ Defaults (all adjustable from the GM page's Restock panel):
 - Traveling merchants: written to `gm/traveling_merchant_N.md`; a restock
   replaces the whole set
 
-### Dungeon Turn (`bin/generators/generate_dungeon_turn_v2.py`)
+### Dungeon Turn (`avtools/dungeon_turn.py`, `avtools/ecology.py`)
 - 5d20. Extreme rolls (5-15, 90-100) are always combat at a Severe or Extreme
   budget; they come up about once in 530 rolls.
 - Any other roll: 50% quiet passage; otherwise 5-44 and 63-89 are COMBAT or
@@ -137,8 +137,9 @@ GM can run straight off the card.
 ## File Structure
 
 ```
-bin/web/            Flask app, templates, static assets
-bin/generators/     dungeon turn, floor ecology, merchants, NPCs, hazards
+avtools/            the package: dungeon turn, floor ecology, merchants, NPCs, hazards, data loading
+avtools/web/        Flask app, templates, static assets
+tests/              pytest suite (pip install -r requirements-dev.txt && pytest)
 bin/maps/           atlas tooling
 bin/data_management/ AoN integrity checker
 etc/                data the tools read

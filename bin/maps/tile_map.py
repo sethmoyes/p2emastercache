@@ -23,7 +23,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-TILE_ROOT = ROOT / "bin" / "web" / "static" / "maps"
+TILE_ROOT = ROOT / "avtools" / "web" / "static" / "maps"
 REGISTRY = ROOT / "etc" / "maps.json"
 
 TILE_SIZE = 256

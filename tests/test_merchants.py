@@ -8,7 +8,7 @@ import re
 import pytest
 
 from conftest import ROOT  # noqa: F401
-import generate_merchants as g
+import avtools.merchants as g
 
 
 def restock(root, level, **settings):

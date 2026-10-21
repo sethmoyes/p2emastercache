@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Rendered markdown (shops, traveling merchants, docs); see bin/web/render.py */
+/* Rendered markdown (shops, traveling merchants, docs); see avtools/web/render.py */
 @layer components {
   .md { @apply text-gray-200 leading-relaxed; }
   .md h1 { @apply text-3xl font-bold mt-8 mb-4 text-blue-300; }

@@ -47,4 +47,4 @@ Optional on any event:
 See "Event Writing Philosophy" in `claude.md`. In short: specific creatures
 with real stats, explicit DCs and jar costs, no named enemies as incidental
 encounters, nothing that invents passages or teleports the party into a keyed
-room, and ASCII only. `bin/event_validation.py` checks the structural rules.
+room, and ASCII only. `avtools/validation.py` checks the structural rules.

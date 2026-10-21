@@ -12,6 +12,9 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
+from avtools import data
+from avtools.data import ROOT as PROJECT_ROOT
+
 def load_equipment_json(filename):
     """Load equipment from JSON file"""
     with open(filename, 'r', encoding='utf-8') as f:
@@ -479,7 +482,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 if image_url:
                     img_md = f"![{name}]({image_url})"
                 else:
-                    img_md = "🖼️"
+                    img_md = ""
                 
                 # Create AoN search link
                 search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
@@ -613,7 +616,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                     if image_url:
                         img_md = f"![{name}]({image_url})"
                     else:
-                        img_md = "🖼️"
+                        img_md = ""
                     
                     # Create AoN search link
                     search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
@@ -665,7 +668,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                     if image_url:
                         img_md = f"![{name}]({image_url})"
                     else:
-                        img_md = "🖼️"
+                        img_md = ""
                     
                     # Create AoN search link
                     search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
@@ -704,7 +707,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 if image_url:
                     img_md = f"![{name}]({image_url})"
                 else:
-                    img_md = "🖼️"  # Placeholder icon if no image
+                    img_md = ""  # No image: the renderer drops an empty Image column
                 
                 # Create AoN search link
                 search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
@@ -737,7 +740,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 if image_url:
                     img_md = f"![{name}]({image_url})"
                 else:
-                    img_md = "🖼️"
+                    img_md = ""
                 
                 # Create AoN search link
                 search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
@@ -770,7 +773,7 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 if image_url:
                     img_md = f"![{name}]({image_url})"
                 else:
-                    img_md = "🖼️"
+                    img_md = ""
                 
                 # Create AoN search link
                 search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
@@ -790,7 +793,6 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
     os.replace(tmp_path, filepath)
     print(f"OK Created: {filepath}")
 
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
 def merchant_slug(name):
     """File name (without .md) a merchant is written to"""
@@ -952,10 +954,8 @@ MERCHANT_CONFIGS = [
     }
 ]
 
-with open(os.path.join(PROJECT_ROOT, 'etc', 'otari_shops.json'), 'r', encoding='utf-8') as _f:
-    _SHOP_PEOPLE = json.load(_f)
 for _config in MERCHANT_CONFIGS:
-    _config.update(_SHOP_PEOPLE[merchant_slug(_config['name'])])
+    _config.update(data.shops()[merchant_slug(_config['name'])])
 
 TRAVELING = 'Traveling merchants (GM only)'
 
@@ -1190,7 +1190,7 @@ def generate_all(settings, output_root=PROJECT_ROOT):
         print("="*60)
 
         # Load NPC generator for random merchant names
-        from generate_npc_lore import generate_npc, format_npc_narrative
+        from avtools.npcs import generate_npc, format_npc_narrative
 
         # Simple name lists for random merchants
         first_names = [
@@ -1283,7 +1283,7 @@ def generate_all(settings, output_root=PROJECT_ROOT):
 if __name__ == "__main__":
     import sys
 
-    # Usage: generate_merchants.py [LEVEL] [--level N] [--tm SHOP] [--settings-json JSON] [--output-root DIR]
+    # Usage: python3 -m avtools.merchants [LEVEL] [--level N] [--tm SHOP] [--settings-json JSON] [--output-root DIR]
     raw_settings = {}
     output_root = PROJECT_ROOT
     test_merchant = None  # Test mode: generate only one merchant

@@ -12,7 +12,7 @@ import re
 import markdown
 from bs4 import BeautifulSoup
 
-PLACEHOLDER = re.compile(r'^\s*(?:\U0001F5BC️?)?\s*$')  # empty, or the picture-frame emoji
+PLACEHOLDER = re.compile('^\\s*(?:\U0001F5BC\uFE0F?)?\\s*$')  # empty, or the picture-frame emoji
 
 
 def _drop_placeholder_image_column(table):

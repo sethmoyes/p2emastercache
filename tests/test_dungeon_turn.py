@@ -5,9 +5,9 @@ from fractions import Fraction
 import pytest
 
 from conftest import ROOT  # noqa: F401  (sets up import paths)
-import generate_dungeon_turn_v2 as v2
-from floor_ecology import THREAT_ORDER, creature_xp, rate_encounter
-from template_selector import select_template
+import avtools.dungeon_turn as v2
+from avtools.ecology import THREAT_ORDER, creature_xp, rate_encounter
+from avtools.events import select_template
 
 DANGER = {'COMBAT', 'ACTIVE_THREAT'}
 MIDDLE = {'OPPORTUNITY', 'COMPLICATION', 'DILEMMA'}

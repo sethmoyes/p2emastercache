@@ -7,13 +7,9 @@ Gauntlight. Creature counts are scaled to the party with the PF2e encounter XP
 budget instead of a fixed "2 levels below party" rule.
 """
 
-import json
-import os
 import random
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-ECOLOGY_FILE = os.path.join(PROJECT_ROOT, 'etc', 'floor_ecology.json')
-AON_BASE = 'https://2e.aonprd.com'
+from avtools.data import AON_BASE, find_creature, floor_ecology
 
 # XP per creature by its level relative to the party (Core Rulebook, Table 10-2)
 CREATURE_XP = {-4: 10, -3: 15, -2: 20, -1: 30, 0: 40, 1: 60, 2: 80, 3: 120, 4: 160}
@@ -31,16 +27,6 @@ THREAT_BUDGETS = {
 ECOLOGY_THREAT_CHANCE = 0.7
 
 DEFAULT_MAX_COUNT = 6
-
-
-def load_floor_ecology(path=ECOLOGY_FILE):
-    """Load the per-floor ecology, keyed by floor number."""
-    with open(path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    return {int(floor): floor_data for floor, floor_data in data['floors'].items()}
-
-
-FLOOR_ECOLOGY = load_floor_ecology()
 
 
 def encounter_budget(threat, party_size=4):
@@ -69,40 +55,6 @@ def rate_encounter(total_xp, party_size=4, off_chart=False):
 THREAT_ORDER = ['Trivial', 'Low', 'Moderate', 'Severe', 'Extreme', 'Beyond Extreme']
 
 
-# Legacy (pre-remaster) stat blocks carry an alignment trait; remaster ones don't
-LEGACY_ALIGNMENTS = {'LG', 'NG', 'CG', 'LN', 'N', 'CN', 'LE', 'NE', 'CE'}
-_index = {}
-
-
-def _aon_id(creature):
-    try:
-        return int(creature.get('url', '').rsplit('=', 1)[1])
-    except (IndexError, ValueError):
-        return 0
-
-
-def preferred(records):
-    """Of several stat blocks with one name, the remaster one (newest on AoN)."""
-    return max(records, key=lambda c: (not LEGACY_ALIGNMENTS & set(c.get('traits', [])), _aon_id(c)))
-
-
-def find_creature(creatures, name):
-    """The stat block for a creature name. creatures.json holds legacy and
-    remaster versions of many creatures under the same name; this campaign
-    uses the remaster, so that one wins."""
-    key = id(creatures)
-    if key not in _index:
-        by_name = {}
-        for creature in creatures:
-            by_name.setdefault(creature['name'], []).append(creature)
-        _index.clear()
-        _index[key] = {n: preferred(records) for n, records in by_name.items()}
-    return _index[key].get(name)
-
-
-_lookup = find_creature
-
-
 def build_roster(entry, creatures, party_level, budget, strict=True, min_ratio=0.5, count_scale=1.0):
     """
     Turn an ecology entry into [(creature, count), ...] and its total XP.
@@ -113,10 +65,10 @@ def build_roster(entry, creatures, party_level, budget, strict=True, min_ratio=0
     land between min_ratio and 125% of the budget returns None.
     """
     if 'group' in entry:
-        roster = [(_lookup(creatures, g['creature']), g['count']) for g in entry['group']]
+        roster = [(find_creature(creatures, g['creature']), g['count']) for g in entry['group']]
     else:
-        roster = [(_lookup(creatures, c['creature']), c['count']) for c in entry.get('companions', [])]
-        main = _lookup(creatures, entry['creature'])
+        roster = [(find_creature(creatures, c['creature']), c['count']) for c in entry.get('companions', [])]
+        main = find_creature(creatures, entry['creature'])
         if main is None:
             return None
         companion_xp = sum((creature_xp(c['level'], party_level) or 0) * n for c, n in roster if c)
@@ -155,7 +107,7 @@ def _weighted_choice(options):
 
 def choose_creature_encounter(floor_num, creatures, party_level, threat, party_size=4):
     """Pick a creature entry for this floor that fits the budget, or None if the floor has none."""
-    floor = FLOOR_ECOLOGY.get(floor_num)
+    floor = floor_ecology().get(floor_num)
     if not floor:
         return None
     entries = [e for e in floor['entries'] if e['kind'] == 'creature']
@@ -196,7 +148,7 @@ def build_ecology_combat_event(floor_num, floor_data, party_level, creatures, di
     if not choice:
         return None
     entry, (roster, total_xp), budget = choice
-    floor = FLOOR_ECOLOGY[floor_num]
+    floor = floor_ecology()[floor_num]
 
     main = roster[0][0]
     perception_dc = max(c.get('perception') or 0 for c, _ in roster) + 10
@@ -255,7 +207,7 @@ def build_ecology_combat_event(floor_num, floor_data, party_level, creatures, di
 
 def build_ecology_threat_event(floor_num, floor_data):
     """An ACTIVE_THREAT event from the floor's hazards and events, or None."""
-    floor = FLOOR_ECOLOGY.get(floor_num)
+    floor = floor_ecology().get(floor_num)
     if not floor:
         return None
     entries = [e for e in floor['entries'] if e['kind'] in ('hazard', 'event')]

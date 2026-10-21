@@ -184,7 +184,7 @@ def format_output(hazard):
     output.append("")
     output.append("GM NOTES:")
     for note in hazard['notes']:
-        output.append(f"  • {note}")
+        output.append(f"  - {note}")
     output.append("")
     output.append("=" * 60)
     

@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-Dungeon Turn V2 - Web Interface
-A beautiful, simple web app for generating random encounters at the table
+The campaign web app: the GM's table view, the players' market square, and
+the atlas.
+
+    python3 -m avtools.web.app        # http://localhost:5001
 """
 
 from flask import Flask, render_template, jsonify, request, session, Response, abort
@@ -20,26 +22,18 @@ import threading
 import time
 import zipfile
 
-# Get the project root directory (2 levels up from this file)
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-sys.path.insert(0, os.path.join(PROJECT_ROOT, 'bin', 'generators'))
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-
-from generate_dungeon_turn_v2 import (
-    generate_event_for_sum,
-    floor_levels,
-    load_json
-)
-from floor_ecology import find_creature
-from generate_merchants import (
+from avtools.data import DATA_DIR, ROOT as PROJECT_ROOT, creatures as load_creatures, find_creature
+from avtools.dungeon_turn import generate_event_for_sum, floor_levels
+from avtools.hazards import generate_hazard, format_output
+from avtools.merchants import (
     MERCHANT_CONFIGS,
     SETTINGS_SCHEMA,
     TRAVELING_FILE,
     merchant_slug,
     normalize_settings
 )
-
-from render import render_markdown
+from avtools.npcs import generate_npc, format_npc_narrative, generate_npc_encounter_template
+from avtools.web.render import render_markdown
 
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 4 * 1024 * 1024
@@ -111,11 +105,10 @@ def bad_request(error):
 def server_error(error):
     return jsonify({'error': 'The server hit an error. Check the logs.'}), 500
 
-# Where anything the app writes goes: restocked merchants, map pins, the GM's
-# session (dice jar, history). On Fly this is a mounted volume, because a
-# machine's own disk resets to the image every time it stops; locally it is the
-# repo itself, same as running the generator script by hand.
-DATA_DIR = os.environ.get('DATA_DIR') or PROJECT_ROOT
+# DATA_DIR is where anything the app writes goes: restocked merchants, map
+# pins, the GM's session (dice jar, history). On Fly it's a mounted volume,
+# because a machine's own disk resets to the image every time it stops;
+# locally it's the repo itself, same as running the generator by hand.
 
 
 def data_file(rel):
@@ -143,10 +136,8 @@ def write_json_atomic(path, data):
 
 # Load data once at startup
 print("Loading dungeon data...")
-creatures_path = os.path.join(PROJECT_ROOT, 'etc', 'creatures.json')
-
 levels_data = floor_levels()
-creatures = load_json(creatures_path)
+creatures = load_creatures()
 print(f"Loaded {len(levels_data)} floors and {len(creatures)} creatures")
 
 # --------------------------------------------------------------- GM session
@@ -545,7 +536,6 @@ def creature_stats_for(event):
 def generate_npc_api():
     """Generate a random NPC"""
     try:
-        from generate_npc_lore import generate_npc, format_npc_narrative, generate_npc_encounter_template
         
         npc = generate_npc()
         template = generate_npc_encounter_template(npc)
@@ -601,7 +591,6 @@ def generate_hazard_api():
     level = int_field(json_body(), 'level', -1, 10, 1)
 
     try:
-        from generate_hazard import generate_hazard, format_output
         
         hazard = generate_hazard(level)
         content = format_output(hazard)
@@ -695,7 +684,6 @@ def export_data():
 
 # ---------------------------------------------------------- Merchant restocking
 
-MERCHANT_SCRIPT = os.path.join(PROJECT_ROOT, 'bin', 'generators', 'generate_merchants.py')
 PROGRESS_LINE = re.compile(r'^\[(\d+)/(\d+)\] Generating (.+?)\.\.\.$')
 
 # The latest restock run. Only one runs at a time, and it lives in this process,
@@ -708,7 +696,7 @@ def run_merchant_job(job):
     """Run the generator script, recording its output and progress on the job."""
     try:
         process = subprocess.Popen(
-            [sys.executable, '-u', MERCHANT_SCRIPT,
+            [sys.executable, '-u', '-m', 'avtools.merchants',
              '--settings-json', json.dumps(job['settings']),
              '--output-root', DATA_DIR],
             cwd=PROJECT_ROOT,
