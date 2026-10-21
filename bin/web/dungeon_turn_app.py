@@ -99,6 +99,11 @@ def gm_login():
 def bad_request(error):
     return jsonify({'error': getattr(error, 'description', str(error))}), error.code
 
+
+@app.errorhandler(500)
+def server_error(error):
+    return jsonify({'error': 'The server hit an error. Check the logs.'}), 500
+
 # Where anything the app writes goes: restocked merchants, map pins, the GM's
 # session (dice jar, history). On Fly this is a mounted volume, because a
 # machine's own disk resets to the image every time it stops; locally it is the
@@ -143,8 +148,24 @@ print(f"Loaded {len(levels_data)} floors and {len(creatures)} creatures")
 # The table's running state lives in a file in DATA_DIR, so it survives the
 # machine stopping between rolls and every GM device sees the same jar.
 SESSION_PATH = os.path.join(DATA_DIR, 'state', 'session.json')
-SESSION_DEFAULTS = {'dice_jar': 0, 'history': []}
-HISTORY_KEEP = 50
+SESSION_DEFAULTS = {
+    'floor': 1,
+    'party_level': 4,
+    'party_size': 4,
+    'dice_jar': 0,
+    'prepared_tokens': 0,
+    'history': [],
+}
+# Settable fields and their allowed ranges
+SESSION_FIELDS = {
+    'floor': (1, 10),
+    'party_level': (1, 20),
+    'party_size': (1, 8),
+    'dice_jar': (0, 12),
+    'prepared_tokens': (0, 9),
+}
+JAR_ROLL_AT = 5      # a roll uses up this many dice
+HISTORY_KEEP = 20    # full events, so the GM can reopen them
 session_lock = threading.Lock()
 
 
@@ -154,7 +175,10 @@ def load_session():
             saved = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         saved = {}
-    return {**json.loads(json.dumps(SESSION_DEFAULTS)), **saved}
+    state = {**json.loads(json.dumps(SESSION_DEFAULTS)), **saved}
+    # Older session files kept only a summary per roll
+    state['history'] = [h for h in state['history'] if isinstance(h, dict) and 'event' in h]
+    return state
 
 
 def update_session(change):
@@ -162,9 +186,64 @@ def update_session(change):
     with session_lock:
         state = load_session()
         change(state)
+        for key, (low, high) in SESSION_FIELDS.items():
+            state[key] = max(low, min(high, int(state[key])))
         state['history'] = state['history'][-HISTORY_KEEP:]
         write_json_atomic(SESSION_PATH, state)
         return state
+
+
+def int_field(data, key, low, high, default=None):
+    """An integer from the request body, or a 400 if it's missing or out of range."""
+    from werkzeug.exceptions import BadRequest
+    value = data.get(key, default)
+    try:
+        value = int(value)
+    except (TypeError, ValueError):
+        raise BadRequest(f'{key} must be a whole number')
+    if not low <= value <= high:
+        raise BadRequest(f'{key} must be between {low} and {high}')
+    return value
+
+
+def session_view(state):
+    return {**state, 'roll_at': JAR_ROLL_AT,
+            'floors': {n: levels_data[n]['name'] for n in sorted(levels_data)}}
+
+
+@app.route('/api/session', methods=['GET'])
+def get_session():
+    return jsonify(session_view(load_session()))
+
+
+@app.route('/api/session', methods=['POST'])
+@gm_write
+def change_session():
+    """Body: {"set": {field: value}, "add": {"dice_jar": n, "prepared_tokens": n},
+    "clear_history": true}. Values are clamped to each field's range."""
+    body = json_body()
+    sets = body.get('set') or {}
+    adds = body.get('add') or {}
+    if not isinstance(sets, dict) or not isinstance(adds, dict):
+        return jsonify({'error': 'set and add must be objects'}), 400
+    for key in list(sets) + list(adds):
+        if key not in SESSION_FIELDS:
+            return jsonify({'error': f'unknown field: {key}'}), 400
+    for key, value in sets.items():
+        int_field(sets, key, *SESSION_FIELDS[key])
+    for key in adds:
+        int_field(adds, key, -12, 12)
+
+    def change(state):
+        for key, value in sets.items():
+            state[key] = int(value)
+        for key, value in adds.items():
+            state[key] = state[key] + int(value)
+        if body.get('clear_history'):
+            state['history'] = []
+
+    return jsonify(session_view(update_session(change)))
+
 
 @app.route('/healthz')
 def healthz():
@@ -182,8 +261,14 @@ def players():
 
 @app.route('/gm')
 def gm():
-    """GM tools page (password protected on frontend)"""
+    """The GM's table view: session bar, rolls, encounter card, quick tools"""
     return render_template('gm.html')
+
+
+@app.route('/gm/admin')
+def gm_admin():
+    """Restocking, backups and the test generator"""
+    return render_template('gm_admin.html')
 
 # ---------------------------------------------------------------- Atlas / maps
 
@@ -335,106 +420,75 @@ def api_save_pois(map_id):
 @app.route('/api/encounter', methods=['POST'])
 @gm_write
 def get_encounter():
-    """Generate random encounter for given floor and sum"""
+    """Generate the encounter for a 5d20 total on a floor.
+
+    Floor and party default to the saved session. "use_jar": true spends the
+    jar's dice (the roll came out of the jar); the test generator leaves it off.
+    """
     data = json_body()
-    floor = data.get('floor', 1)
-    dice_sum = data.get('sum')
-    party_level = data.get('party_level', 4)
-    party_size = data.get('party_size', 4)
-    allow_no_event = data.get('allow_no_event', True)
-    
-    # Get floor data
+    state = load_session()
+    floor = int_field(data, 'floor', 1, 10, state['floor'])
+    dice_sum = int_field(data, 'sum', 5, 100)
+    party_level = int_field(data, 'party_level', 1, 20, state['party_level'])
+    party_size = int_field(data, 'party_size', 1, 8, state['party_size'])
+    allow_no_event = bool(data.get('allow_no_event', True))
+
     floor_data = levels_data.get(floor)
     if not floor_data:
         return jsonify({'error': f'Floor {floor} not found'}), 404
-    
-    if not dice_sum:
-        return jsonify({'error': 'Sum required'}), 400
 
     event = generate_event_for_sum(dice_sum, floor, floor_data, party_level, creatures, party_size,
                                    allow_no_event)
-    
-    # If it's a combat encounter, add full creature stats
-    if event.get('category') == 'COMBAT' and event.get('creatures'):
-        creature_names = event.get('creatures', [])
-        creature_stats = []
-        for name in creature_names:
-            # Find creature in database
-            creature = next((c for c in creatures if c['name'] == name), None)
-            if creature:
-                creature_stats.append({
-                    'name': creature['name'],
-                    'level': creature['level'],
-                    'hp': creature.get('hp', 'Unknown'),
-                    'ac': creature.get('ac', 'Unknown'),
-                    'fort': creature.get('fort', ''),
-                    'reflex': creature.get('reflex', ''),
-                    'will': creature.get('will', ''),
-                    'perception': creature.get('perception', ''),
-                    'attacks': creature.get('attacks', []),
-                    'abilities': creature.get('abilities', []),
-                    'skills': creature.get('skills', {}),
-                    'languages': creature.get('languages', []),
-                    'immunities': creature.get('immunities', []),
-                    'resistances': creature.get('resistances', []),
-                    'weaknesses': creature.get('weaknesses', []),
-                    'traits': creature.get('traits', []),
-                    'rarity': creature.get('rarity', 'common'),
-                    'size': creature.get('size', 'Medium'),
-                    'alignment': creature.get('alignment', ''),
-                    'creature_type': creature.get('creature_type', ''),
-                    'url': creature.get('url', ''),
-                    'image': creature.get('image', [''])[0] if creature.get('image') else ''
-                })
-        event['creature_stats'] = creature_stats
-    
-    # Add to history
-    entry = {
-        'floor': floor,
-        'sum': dice_sum,
-        'category': event['category'],
-        'title': event['title'],
-        'time': time.time(),
-    }
-    update_session(lambda state: state['history'].append(entry))
-    
+    event['floor'] = floor
+    if event.get('category') == 'COMBAT':
+        event['creature_stats'] = creature_stats_for(event)
+
+    if data.get('record', True):
+        def change(state):
+            state['history'].append({'time': time.time(), 'event': event})
+            if data.get('use_jar'):
+                state['dice_jar'] = max(0, state['dice_jar'] - JAR_ROLL_AT)
+        update_session(change)
+
     return jsonify(event)
 
-@app.route('/api/dice-jar', methods=['GET'])
-def get_dice_jar():
-    return jsonify({'dice_jar': load_session()['dice_jar']})
+
+creatures_by_url = {c['url']: c for c in creatures if c.get('url')}
 
 
-@app.route('/api/dice-jar', methods=['POST'])
-@gm_write
-def update_dice_jar():
-    """Update dice jar count"""
-    data = json_body()
-    action = data.get('action')
+def creature_stats_for(event):
+    """Full stat blocks for a combat's creatures. Names repeat across legacy and
+    remaster entries, so match the AoN link the event cites when it has one."""
+    refs = event.get('creature_reference') or {}
+    stats = []
+    for name in event.get('creatures') or []:
+        url = (refs.get(name) or {}).get('aon_url', '').replace('https://2e.aonprd.com', '')
+        creature = creatures_by_url.get(url) or next((c for c in creatures if c['name'] == name), None)
+        if not creature:
+            continue
+        stats.append({
+            'name': creature['name'],
+            'level': creature['level'],
+            'hp': creature.get('hp'),
+            'ac': creature.get('ac'),
+            'fort': creature.get('fort', ''),
+            'reflex': creature.get('reflex', ''),
+            'will': creature.get('will', ''),
+            'perception': creature.get('perception', ''),
+            'attacks': creature.get('attacks', []),
+            'abilities': creature.get('abilities', []),
+            'languages': creature.get('languages', []),
+            'immunities': creature.get('immunities', []),
+            'resistances': creature.get('resistances', []),
+            'weaknesses': creature.get('weaknesses', []),
+            'traits': creature.get('traits', []),
+            'rarity': creature.get('rarity', 'common'),
+            'size': creature.get('size', ''),
+            'url': creature.get('url', ''),
+            'image': creature.get('image', [''])[0] if creature.get('image') else '',
+        })
+    return stats
 
-    def change(state):
-        if action == 'add':
-            state['dice_jar'] = min(state['dice_jar'] + 1, 5)
-        elif action == 'reset':
-            state['dice_jar'] = 0
-        elif action == 'set':
-            state['dice_jar'] = max(0, min(int(data.get('value', 0)), 5))
-
-    return jsonify({'dice_jar': update_session(change)['dice_jar']})
-
-
-@app.route('/api/history', methods=['GET'])
-def get_history():
-    """Get roll history"""
-    return jsonify({'history': load_session()['history'][-10:]})  # Last 10 rolls
-
-
-@app.route('/api/clear-history', methods=['POST'])
-@gm_write
-def clear_history():
-    """Clear roll history"""
-    update_session(lambda state: state.update(history=[]))
-    return jsonify({'success': True})
 
 @app.route('/api/generate-npc', methods=['GET'])
 def generate_npc_api():
@@ -472,10 +526,8 @@ def generate_npc_api():
             'content': content
         })
     except Exception as e:
-        return jsonify({
-            'name': 'Error',
-            'content': f'Error generating NPC: {str(e)}'
-        }), 500
+        app.logger.exception('NPC generation failed')
+        return jsonify({'error': f'Could not generate an NPC: {e}'}), 500
 
 # The documents the GM page can open, by id. Nothing outside this list is served.
 GM_DOCS = {
@@ -498,9 +550,8 @@ def get_gm_doc(doc_id):
 @app.route('/api/generate-hazard', methods=['POST'])
 def generate_hazard_api():
     """Generate a random hazard of specified level"""
-    data = request.json
-    level = data.get('level', 1)
-    
+    level = int_field(json_body(), 'level', -1, 10, 1)
+
     try:
         from generate_hazard import generate_hazard, format_output
         
@@ -514,11 +565,8 @@ def generate_hazard_api():
             'hazard': hazard
         })
     except Exception as e:
-        return jsonify({
-            'level': level,
-            'name': 'Error',
-            'content': f'Error generating hazard: {str(e)}'
-        }), 500
+        app.logger.exception('hazard generation failed')
+        return jsonify({'error': f'Could not generate a hazard: {e}'}), 500
 
 @app.route('/api/merchant/<merchant_file>', methods=['GET'])
 def get_merchant(merchant_file):

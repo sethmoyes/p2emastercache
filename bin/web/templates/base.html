@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Abomination Vaults{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    {% block head %}{% endblock %}
+</head>
+<body class="{% block body_class %}min-h-screen bg-gray-900 text-white{% endblock %}">
+    {% block body %}
+    <div class="container mx-auto px-4 py-6 {% block width %}max-w-6xl{% endblock %}">
+        {% block nav %}
+        <nav class="flex flex-wrap items-center gap-2 mb-6 text-sm">
+            <a href="/" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg">&larr; Main menu</a>
+            {% block nav_links %}{% endblock %}
+        </nav>
+        {% endblock %}
+        {% block content %}{% endblock %}
+    </div>
+    {% endblock %}
+    <script src="{{ url_for('static', filename='js/common.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
