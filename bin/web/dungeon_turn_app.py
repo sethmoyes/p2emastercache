@@ -4,10 +4,11 @@ Dungeon Turn V2 - Web Interface
 A beautiful, simple web app for generating random encounters at the table
 """
 
-from flask import Flask, render_template, jsonify, request, session
+from flask import Flask, render_template, jsonify, request, session, Response
 from functools import wraps
 import hashlib
 import hmac
+import io
 import random
 import re
 import secrets
@@ -17,6 +18,7 @@ import os
 import json
 import threading
 import time
+import zipfile
 
 # Get the project root directory (2 levels up from this file)
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -31,6 +33,7 @@ from generate_dungeon_turn_v2 import (
 from generate_merchants import (
     MERCHANT_CONFIGS,
     SETTINGS_SCHEMA,
+    TRAVELING_FILE,
     merchant_slug,
     normalize_settings
 )
@@ -96,19 +99,35 @@ def gm_login():
 def bad_request(error):
     return jsonify({'error': getattr(error, 'description', str(error))}), error.code
 
-# Where restocked merchants are written. On Fly this is a mounted volume, because
-# a machine's own disk resets to the image every time it stops; locally it is the
+# Where anything the app writes goes: restocked merchants, map pins, the GM's
+# session (dice jar, history). On Fly this is a mounted volume, because a
+# machine's own disk resets to the image every time it stops; locally it is the
 # repo itself, same as running the generator script by hand.
 DATA_DIR = os.environ.get('DATA_DIR') or PROJECT_ROOT
 
 
+def data_file(rel):
+    """The newest copy of a data file, on the volume or baked into the image.
+
+    Newest wins both ways: a restock on the server beats the copy in the image,
+    and a copy you regenerated locally and deployed beats an older restock.
+    """
+    candidates = [os.path.join(root, rel) for root in (DATA_DIR, PROJECT_ROOT)]
+    existing = [path for path in candidates if os.path.exists(path)]
+    return max(existing, key=os.path.getmtime) if existing else None
+
+
 def merchant_path(subdir, filename):
-    """A restocked copy in DATA_DIR wins over the one baked into the image."""
-    for root in (DATA_DIR, PROJECT_ROOT):
-        path = os.path.join(root, subdir, filename)
-        if os.path.exists(path):
-            return path
-    return None
+    return data_file(os.path.join(subdir, filename))
+
+
+def write_json_atomic(path, data):
+    """Write to a temp file and swap it in, so a reader never sees half a file."""
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    tmp = f'{path}.tmp'
+    with open(tmp, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, path)
 
 # Load data once at startup
 print("Loading dungeon data...")
@@ -120,9 +139,32 @@ levels_data = parse_gauntlight_levels(gauntlight_content)
 creatures = load_json(creatures_path)
 print(f"Loaded {len(levels_data)} floors and {len(creatures)} creatures")
 
-# Session state (in-memory, resets on restart)
-dice_jar = 0
-roll_history = []
+# --------------------------------------------------------------- GM session
+# The table's running state lives in a file in DATA_DIR, so it survives the
+# machine stopping between rolls and every GM device sees the same jar.
+SESSION_PATH = os.path.join(DATA_DIR, 'state', 'session.json')
+SESSION_DEFAULTS = {'dice_jar': 0, 'history': []}
+HISTORY_KEEP = 50
+session_lock = threading.Lock()
+
+
+def load_session():
+    try:
+        with open(SESSION_PATH, 'r', encoding='utf-8') as f:
+            saved = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        saved = {}
+    return {**json.loads(json.dumps(SESSION_DEFAULTS)), **saved}
+
+
+def update_session(change):
+    """Apply change(state) under the lock and save; returns the new state."""
+    with session_lock:
+        state = load_session()
+        change(state)
+        state['history'] = state['history'][-HISTORY_KEEP:]
+        write_json_atomic(SESSION_PATH, state)
+        return state
 
 @app.route('/healthz')
 def healthz():
@@ -157,13 +199,16 @@ def load_maps():
         return []
 
 
+def poi_file(filename):
+    """A POI file's name, if it is a plain file name listed under etc/."""
+    name = os.path.basename(filename or '')
+    return name if name and name == filename and name.endswith('.json') else None
+
+
 def poi_path(filename):
-    """Resolve a POI file inside etc/, refusing anything that escapes it."""
-    if not filename:
-        return None
-    etc = os.path.join(PROJECT_ROOT, 'etc')
-    full = os.path.abspath(os.path.join(etc, os.path.basename(filename)))
-    return full if full.startswith(etc + os.sep) and os.path.exists(full) else None
+    """The newest copy of a POI file (pins saved on the server, or the repo's)."""
+    name = poi_file(filename)
+    return data_file(os.path.join('etc', name)) if name else None
 
 
 @app.route('/atlas')
@@ -229,14 +274,6 @@ def api_pois(map_id):
 poi_lock = threading.Lock()
 
 
-def write_json_atomic(path, data):
-    """Write to a temp file and swap it in, so a reader never sees half a file."""
-    tmp = f'{path}.tmp'
-    with open(tmp, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-    os.replace(tmp, path)
-
-
 @app.route('/api/pois/<map_id>', methods=['POST'])
 @gm_write
 def api_save_pois(map_id):
@@ -284,7 +321,7 @@ def api_save_pois(map_id):
                 updated += 1
 
         data['count'] = len(data.get('locations', []))
-        write_json_atomic(path, data)
+        write_json_atomic(os.path.join(DATA_DIR, 'etc', poi_file(entry.get('pois'))), data)
 
     only_groups = entry.get('poi_groups')
     scoped = [l for l in data.get('locations', [])
@@ -396,48 +433,51 @@ def get_encounter():
         event['creature_stats'] = creature_stats
     
     # Add to history
-    roll_history.append({
+    entry = {
         'floor': floor,
         'sum': dice_sum,
         'category': event['category'],
-        'title': event['title']
-    })
+        'title': event['title'],
+        'time': time.time(),
+    }
+    update_session(lambda state: state['history'].append(entry))
     
     return jsonify(event)
 
 @app.route('/api/dice-jar', methods=['GET'])
 def get_dice_jar():
-    return jsonify({'dice_jar': dice_jar})
+    return jsonify({'dice_jar': load_session()['dice_jar']})
 
 
 @app.route('/api/dice-jar', methods=['POST'])
 @gm_write
 def update_dice_jar():
     """Update dice jar count"""
-    global dice_jar
     data = json_body()
     action = data.get('action')
 
-    if action == 'add':
-        dice_jar = min(dice_jar + 1, 5)
-    elif action == 'reset':
-        dice_jar = 0
-    elif action == 'set':
-        dice_jar = max(0, min(int(data.get('value', 0)), 5))
+    def change(state):
+        if action == 'add':
+            state['dice_jar'] = min(state['dice_jar'] + 1, 5)
+        elif action == 'reset':
+            state['dice_jar'] = 0
+        elif action == 'set':
+            state['dice_jar'] = max(0, min(int(data.get('value', 0)), 5))
 
-    return jsonify({'dice_jar': dice_jar})
+    return jsonify({'dice_jar': update_session(change)['dice_jar']})
+
 
 @app.route('/api/history', methods=['GET'])
 def get_history():
     """Get roll history"""
-    return jsonify({'history': roll_history[-10:]})  # Last 10 rolls
+    return jsonify({'history': load_session()['history'][-10:]})  # Last 10 rolls
+
 
 @app.route('/api/clear-history', methods=['POST'])
 @gm_write
 def clear_history():
     """Clear roll history"""
-    global roll_history
-    roll_history = []
+    update_session(lambda state: state.update(history=[]))
     return jsonify({'success': True})
 
 @app.route('/api/test-ghoul', methods=['GET'])
@@ -794,72 +834,61 @@ def get_merchant(merchant_file):
     except Exception as e:
         return jsonify({'error': f'Error loading merchant: {str(e)}'}), 500
 
+def traveling_merchant_dir():
+    """The gm/ folder holding the newest set of traveling merchants.
+
+    A restock writes the whole set at once, so the set comes from whichever
+    copy (volume or image) was written last, never a mix of the two.
+    """
+    newest, newest_time = None, -1
+    for root in (DATA_DIR, PROJECT_ROOT):
+        gm_dir = os.path.join(root, 'gm')
+        if not os.path.isdir(gm_dir):
+            continue
+        times = [os.path.getmtime(os.path.join(gm_dir, name))
+                 for name in os.listdir(gm_dir) if TRAVELING_FILE.match(name)]
+        if times and max(times) > newest_time:
+            newest, newest_time = gm_dir, max(times)
+    return newest
+
+
 @app.route('/api/gm-merchants', methods=['GET'])
 def get_gm_merchants():
-    """Get list of all GM random merchants"""
-    # Ones shipped in the image plus ones restocked since
-    gm_dirs = {os.path.join(root, 'gm') for root in (DATA_DIR, PROJECT_ROOT)}
+    """The current traveling merchants, in slot order."""
+    gm_dir = traveling_merchant_dir()
+    merchants = []
+    for name in os.listdir(gm_dir) if gm_dir else []:
+        slot = TRAVELING_FILE.match(name)
+        if not slot:
+            continue
+        path = os.path.join(gm_dir, name)
+        with open(path, 'r', encoding='utf-8') as f:
+            first = f.readline()
+        merchants.append({
+            'file': name[:-3],
+            'slot': int(slot.group(1)),
+            'name': first.lstrip('#').strip() or name[:-3],
+            'updated': os.path.getmtime(path),
+        })
+    merchants.sort(key=lambda m: m['slot'])
+    return jsonify({'merchants': merchants})
 
-    try:
-        merchants = []
-        filenames = set()
-        for gm_path in gm_dirs:
-            if os.path.isdir(gm_path):
-                filenames.update(os.listdir(gm_path))
-        for filename in filenames:
-            if filename.startswith('random_merchant_') and filename.endswith('.md'):
-                # Extract merchant name from filename
-                # Format: random_merchant_1:_name_name.md or random_merchant_2:_name_name.md
-                name_part = filename.replace('random_merchant_', '').replace('.md', '')
-                # Convert to readable name
-                display_name = name_part.replace('_', ' ').replace(':', ' -').title()
-                
-                merchants.append({
-                    'file': filename.replace('.md', ''),
-                    'name': display_name
-                })
-        
-        # Sort by name
-        merchants.sort(key=lambda x: x['name'])
-        
-        return jsonify({'merchants': merchants})
-    except Exception as e:
-        return jsonify({'error': f'Error loading GM merchants: {str(e)}'}), 500
 
 @app.route('/api/gm-merchant/<merchant_file>', methods=['GET'])
 def get_gm_merchant(merchant_file):
-    """Load a GM random merchant markdown file and return as HTML"""
-    # Sanitize filename - allow colons for the random_merchant format
-    safe_chars = set('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_:')
-    if not all(c in safe_chars for c in merchant_file):
-        return jsonify({'error': 'Invalid merchant file'}), 400
-    
-    path = merchant_path('gm', f'{merchant_file}.md')
-
-    if not path:
+    """Load a traveling merchant and return it as HTML"""
+    gm_dir = traveling_merchant_dir()
+    if not gm_dir or not TRAVELING_FILE.match(f'{merchant_file}.md'):
+        return jsonify({'error': 'Merchant not found'}), 404
+    path = os.path.join(gm_dir, f'{merchant_file}.md')
+    if not os.path.exists(path):
         return jsonify({'error': 'Merchant not found'}), 404
 
-    try:
-        with open(path, 'r', encoding='utf-8') as f:
-            content = f.read()
-
-        # Convert markdown to HTML
-        html = markdown_to_html(content)
-        
-        # Extract title from first # heading
-        title_match = content.split('\n')[0]
-        if title_match.startswith('#'):
-            title = title_match.lstrip('#').strip()
-        else:
-            title = merchant_file.replace('_', ' ').replace(':', ' -').title()
-        
-        return jsonify({
-            'title': title,
-            'html': html,
-            'raw': content
-        })
-    except Exception as e:
-        return jsonify({'error': f'Error loading GM merchant: {str(e)}'}), 500
+    with open(path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    first = content.split('\n', 1)[0]
+    title = first.lstrip('#').strip() if first.startswith('#') else merchant_file.replace('_', ' ').title()
+    return jsonify({'title': title, 'html': markdown_to_html(content), 'raw': content})
 
 @app.route('/api/document/<doc_name>', methods=['GET'])
 def get_document(doc_name):
@@ -1178,6 +1207,30 @@ def convert_table_to_html(table_lines):
     html += '</div>'
     
     return html
+
+# ------------------------------------------------------------------ Export
+# What the server has written (restocks, pins, the session), zipped with the
+# same layout as the repo, so `unzip -o export.zip` in the repo root brings it
+# home to be committed.
+EXPORT_GLOBS = [('players', '.md'), ('gm', '.md'), ('etc', '_locations.json'), ('state', '.json')]
+
+
+@app.route('/api/export', methods=['GET'])
+@gm_write
+def export_data():
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, 'w', zipfile.ZIP_DEFLATED) as archive:
+        for folder, suffix in EXPORT_GLOBS:
+            path = os.path.join(DATA_DIR, folder)
+            if not os.path.isdir(path):
+                continue
+            for name in sorted(os.listdir(path)):
+                if name.endswith(suffix):
+                    archive.write(os.path.join(path, name), f'{folder}/{name}')
+    stamp = time.strftime('%Y-%m-%d')
+    return Response(buffer.getvalue(), mimetype='application/zip',
+                    headers={'Content-Disposition': f'attachment; filename="p2e-export-{stamp}.zip"'})
+
 
 # ---------------------------------------------------------- Merchant restocking
 

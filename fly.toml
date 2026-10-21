@@ -29,8 +29,10 @@ primary_region = 'dfw'
   cpus = 1
   memory_mb = 1024
 
-# Restocked merchants live on this volume; a machine's own disk resets to the
-# image every time it stops. A volume belongs to one machine, so keep one machine.
+# Everything the app writes (restocked shops, traveling merchants, map pins, the
+# GM's dice jar and history) lives on this volume; a machine's own disk resets
+# to the image every time it stops. A volume belongs to one machine, so keep one
+# machine. The GM page's "Download backup" zips it for committing to git.
 [env]
   DATA_DIR = '/data'
 

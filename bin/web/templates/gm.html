@@ -248,6 +248,10 @@
                     <button onclick="resetRestockForm()" class="bg-gray-600 hover:bg-gray-500 px-4 py-3 rounded-lg transition text-sm">
                         Reset to defaults
                     </button>
+                    <button onclick="downloadExport()" class="bg-gray-600 hover:bg-gray-500 px-4 py-3 rounded-lg transition text-sm"
+                        title="Zip of everything the server has written (shops, traveling merchants, map pins, the dice jar). Unzip it in the repo root to commit it.">
+                        Download backup
+                    </button>
                 </div>
                 <div id="restock-progress" class="hidden mt-4">
                     <div class="w-full bg-gray-600 rounded-full h-4 mb-2">
@@ -264,10 +268,10 @@
 
         <!-- Random Merchants -->
         <div class="bg-gray-800 rounded-lg p-6 shadow-2xl border border-purple-500 mb-6">
-            <h2 class="text-2xl font-bold mb-4">Random Merchants</h2>
+            <h2 class="text-2xl font-bold mb-4">Traveling Merchants</h2>
             <select id="gm-merchant-select" onchange="loadGMMerchant()" 
                     class="w-full bg-gray-700 text-white px-4 py-3 rounded-lg border-2 border-purple-500 focus:border-pink-500 focus:outline-none text-lg">
-                <option value="">-- Select a random merchant --</option>
+                <option value="">-- Select a traveling merchant --</option>
             </select>
         </div>
 
@@ -1168,7 +1172,8 @@
                 data.merchants.forEach(merchant => {
                     const option = document.createElement('option');
                     option.value = merchant.file;
-                    option.textContent = merchant.name;
+                    const rolled = new Date(merchant.updated * 1000).toLocaleDateString();
+                    option.textContent = `${merchant.name} (rolled ${rolled})`;
                     select.appendChild(option);
                 });
             } catch (error) {
@@ -1460,6 +1465,17 @@
                 setRestockStatus('The restock failed. The log below shows why.', 'text-red-400');
                 document.getElementById('restock-log-details').open = true;
             }
+        }
+
+        async function downloadExport() {
+            const res = await gmFetch('/api/export');
+            if (!res.ok) { alert('Could not download the backup.'); return; }
+            const url = URL.createObjectURL(await res.blob());
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = (res.headers.get('Content-Disposition') || '').match(/filename="(.+)"/)?.[1] || 'p2e-export.zip';
+            link.click();
+            URL.revokeObjectURL(url);
         }
 
         function setRestockStatus(text, colorClass) {

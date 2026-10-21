@@ -381,9 +381,9 @@ def generate_merchant_inventory(equipment, categories, num_common, num_uncommon,
     
     return inventory
 
-def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, spell_inventory=None, rune_inventory=None, potion_inventory=None, output_dir='players', merchant_index=0):
+def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, spell_inventory=None, rune_inventory=None, potion_inventory=None, output_dir='players', merchant_index=0, filename=None):
     """Write merchant file with header, proprietor image, and full item details"""
-    filename = merchant_name.lower().replace(' ', '_').replace("'", '') + '.md'
+    filename = filename or merchant_name.lower().replace(' ', '_').replace("'", '') + '.md'
     filepath = os.path.join(output_dir, filename)
     
     # Get merchant image
@@ -1034,6 +1034,13 @@ def normalize_settings(raw=None):
         settings[field['key']] = value
     return settings
 
+TRAVELING_FILE = re.compile(r'^traveling_merchant_(\d+)\.md$')
+
+
+def traveling_merchant_filename(number):
+    return f'traveling_merchant_{number}.md'
+
+
 def generate_all(settings, output_root=PROJECT_ROOT):
     """Restock the selected Otari shops (players/) and create traveling merchants (gm/)"""
     global FETCH_IMAGES, FETCH_PORTRAITS
@@ -1188,7 +1195,7 @@ def generate_all(settings, output_root=PROJECT_ROOT):
             npc = generate_npc()
             npc_name = f"{random.choice(first_names)} {random.choice(last_names)}"
             npc_background = format_npc_narrative(npc)
-            merchant_name = f"Random Merchant {merchant_num}: {npc_name}"
+            merchant_name = f"Traveling Merchant {merchant_num}: {npc_name}"
 
             # Random specialty
             specialties_pool = [
@@ -1244,8 +1251,16 @@ def generate_all(settings, output_root=PROJECT_ROOT):
                 rune_inventory=None,
                 potion_inventory=potion_inventory,
                 output_dir=gm_dir,
-                merchant_index=10 + merchant_num  # Random merchants cycle portraits after the shops
+                merchant_index=10 + merchant_num,  # Random merchants cycle portraits after the shops
+                filename=traveling_merchant_filename(merchant_num)
             )
+
+        # A restock replaces the whole set of traveling merchants, so drop any
+        # slots past this run's count (and the old random_merchant_* files).
+        for name in os.listdir(gm_dir):
+            slot = TRAVELING_FILE.match(name)
+            if (slot and int(slot.group(1)) > settings['random_merchants']) or name.startswith('random_merchant_'):
+                os.remove(os.path.join(gm_dir, name))
 
     print("\nOK All merchants generated!")
 
