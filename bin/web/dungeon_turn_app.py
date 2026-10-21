@@ -4,7 +4,7 @@ Dungeon Turn V2 - Web Interface
 A beautiful, simple web app for generating random encounters at the table
 """
 
-from flask import Flask, render_template, jsonify, request, session, Response
+from flask import Flask, render_template, jsonify, request, session, Response, abort
 from functools import wraps
 import hashlib
 import hmac
@@ -23,6 +23,7 @@ import zipfile
 # Get the project root directory (2 levels up from this file)
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 sys.path.insert(0, os.path.join(PROJECT_ROOT, 'bin', 'generators'))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from generate_dungeon_turn_v2 import (
     generate_event_for_sum,
@@ -37,6 +38,8 @@ from generate_merchants import (
     merchant_slug,
     normalize_settings
 )
+
+from render import render_markdown
 
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 4 * 1024 * 1024
@@ -71,6 +74,10 @@ def gm_write(view):
             return jsonify({'error': 'GM login required.', 'login': True}), 401
         return view(*args, **kwargs)
     return guarded
+
+
+def is_gm():
+    return session.get('gm') or (not GM_PASSWORD and not ON_FLY)
 
 
 def json_body():
@@ -254,10 +261,54 @@ def index():
     """Landing page with PLAYER and GM buttons"""
     return render_template('landing.html')
 
+def shop_list():
+    shops = []
+    for config in MERCHANT_CONFIGS:
+        slug = merchant_slug(config['name'])
+        path = merchant_path('players', f'{slug}.md')
+        shops.append({
+            'slug': slug,
+            'name': config['name'],
+            'description': config['description'],
+            'proprietor': config['proprietor'],
+            'specialties': config['specialties'],
+            'updated': time.strftime('%b %d', time.localtime(os.path.getmtime(path))) if path else None,
+        })
+    return shops
+
+
+def markdown_page(path):
+    """(title, html) for a markdown file; the title is its first # heading."""
+    with open(path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    first = content.split('\n', 1)[0]
+    if first.startswith('# '):
+        content = content.split('\n', 1)[1] if '\n' in content else ''
+        return first[2:].strip(), render_markdown(content)
+    return None, render_markdown(content)
+
+
 @app.route('/players')
 def players():
-    """Player-facing market square page"""
-    return render_template('players.html')
+    """Player-facing market square: Otari's shops, the town map, the guide"""
+    return render_template('players.html', shops=shop_list(), otari=next(
+        (m for m in load_maps() if m['id'] == 'otari'), None))
+
+
+@app.route('/players/shop/<slug>')
+def player_shop(slug):
+    config = next((c for c in MERCHANT_CONFIGS if merchant_slug(c['name']) == slug), None)
+    path = merchant_path('players', f'{slug}.md') if config else None
+    if not path:
+        abort(404)
+    title, html = markdown_page(path)
+    return render_template('shop.html', title=title or config['name'], html=html)
+
+
+@app.route('/players/guide')
+def player_guide():
+    title, html = markdown_page(os.path.join(PROJECT_ROOT, 'docs', 'DUNGEON_EXPLORATION_GUIDE.md'))
+    return render_template('shop.html', title=title or 'Exploration Guide', html=html)
 
 @app.route('/gm')
 def gm():
@@ -303,7 +354,7 @@ def atlas():
     ?embed=1 hides the page header so the viewer can be framed inside another
     page, such as the players' market square.
     """
-    return render_template('atlas.html', embed=request.args.get('embed') == '1')
+    return render_template('atlas.html', embed=request.args.get('embed') == '1', can_place=is_gm())
 
 
 @app.route('/api/maps', methods=['GET'])
@@ -541,11 +592,8 @@ def get_gm_doc(doc_id):
     rel = GM_DOCS.get(doc_id)
     if not rel:
         return jsonify({'error': 'Document not found'}), 404
-    with open(os.path.join(PROJECT_ROOT, rel), 'r', encoding='utf-8') as f:
-        content = f.read()
-    first = content.split('\n', 1)[0]
-    title = first.lstrip('#').strip() if first.startswith('#') else doc_id.replace('-', ' ').title()
-    return jsonify({'title': title, 'html': markdown_to_html(content)})
+    title, html = markdown_page(os.path.join(PROJECT_ROOT, rel))
+    return jsonify({'title': title or doc_id.replace('-', ' ').title(), 'html': html})
 
 @app.route('/api/generate-hazard', methods=['POST'])
 def generate_hazard_api():
@@ -567,40 +615,6 @@ def generate_hazard_api():
     except Exception as e:
         app.logger.exception('hazard generation failed')
         return jsonify({'error': f'Could not generate a hazard: {e}'}), 500
-
-@app.route('/api/merchant/<merchant_file>', methods=['GET'])
-def get_merchant(merchant_file):
-    """Load a merchant markdown file and return as HTML"""
-    # Sanitize filename
-    if not merchant_file.replace('_', '').isalnum():
-        return jsonify({'error': 'Invalid merchant file'}), 400
-    
-    path = merchant_path('players', f'{merchant_file}.md')
-
-    if not path:
-        return jsonify({'error': 'Merchant not found'}), 404
-
-    try:
-        with open(path, 'r', encoding='utf-8') as f:
-            content = f.read()
-
-        # Convert markdown to HTML (basic conversion)
-        html = markdown_to_html(content)
-        
-        # Extract title from first # heading
-        title_match = content.split('\n')[0]
-        if title_match.startswith('#'):
-            title = title_match.lstrip('#').strip()
-        else:
-            title = merchant_file.replace('_', ' ').title()
-        
-        return jsonify({
-            'title': title,
-            'html': html,
-            'raw': content
-        })
-    except Exception as e:
-        return jsonify({'error': f'Error loading merchant: {str(e)}'}), 500
 
 def traveling_merchant_dir():
     """The gm/ folder holding the newest set of traveling merchants.
@@ -652,329 +666,8 @@ def get_gm_merchant(merchant_file):
     if not os.path.exists(path):
         return jsonify({'error': 'Merchant not found'}), 404
 
-    with open(path, 'r', encoding='utf-8') as f:
-        content = f.read()
-    first = content.split('\n', 1)[0]
-    title = first.lstrip('#').strip() if first.startswith('#') else merchant_file.replace('_', ' ').title()
-    return jsonify({'title': title, 'html': markdown_to_html(content), 'raw': content})
-
-@app.route('/api/document/<doc_name>', methods=['GET'])
-def get_document(doc_name):
-    """Load a documentation file and return as HTML"""
-    # Sanitize filename
-    if not doc_name.replace('_', '').isalnum():
-        return jsonify({'error': 'Invalid document name'}), 400
-    
-    doc_path = os.path.join(PROJECT_ROOT, 'docs', f'{doc_name}.md')
-    
-    if not os.path.exists(doc_path):
-        return jsonify({'error': 'Document not found'}), 404
-    
-    try:
-        with open(doc_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
-        # Convert markdown to HTML
-        html = markdown_to_html(content)
-        
-        # Extract title
-        title_match = content.split('\n')[0]
-        if title_match.startswith('#'):
-            title = title_match.lstrip('#').strip()
-        else:
-            title = doc_name.replace('_', ' ').title()
-        
-        return jsonify({
-            'title': title,
-            'html': html,
-            'raw': content
-        })
-    except Exception as e:
-        return jsonify({'error': f'Error loading document: {str(e)}'}), 500
-
-def markdown_to_html(markdown_text):
-    """Convert markdown to HTML with proper table support"""
-    import re
-
-    # Process tables first (before line breaks)
-    lines = markdown_text.split('\n')
-    result = []
-    in_table = False
-    table_lines = []
-
-    for i, line in enumerate(lines):
-        # Detect table rows (contains |)
-        if '|' in line and line.strip().startswith('|'):
-            if not in_table:
-                in_table = True
-                table_lines = []
-            table_lines.append(line)
-        else:
-            # End of table
-            if in_table:
-                result.append(convert_table_to_html(table_lines))
-                in_table = False
-                table_lines = []
-            result.append(line)
-
-    # Handle table at end of file
-    if in_table:
-        result.append(convert_table_to_html(table_lines))
-
-    html = '\n'.join(result)
-
-    # Headers
-    html = re.sub(r'^# (.+)$', r'<h1 class="text-4xl font-bold mt-8 mb-4 text-blue-400">\1</h1>', html, flags=re.MULTILINE)
-    html = re.sub(r'^## (.+)$', r'<h2 class="text-3xl font-bold mt-6 mb-3 text-purple-400">\1</h2>', html, flags=re.MULTILINE)
-    html = re.sub(r'^### (.+)$', r'<h3 class="text-2xl font-bold mt-4 mb-2 text-pink-400">\1</h3>', html, flags=re.MULTILINE)
-    html = re.sub(r'^#### (.+)$', r'<h4 class="text-xl font-bold mt-3 mb-2 text-white">\1</h4>', html, flags=re.MULTILINE)
-
-    # Horizontal rules
-    html = re.sub(r'^---+$', r'<hr class="my-6 border-gray-600">', html, flags=re.MULTILINE)
-
-    # Bold and italic
-    html = re.sub(r'\*\*(.+?)\*\*', r'<strong class="text-white font-bold">\1</strong>', html)
-    html = re.sub(r'\*(.+?)\*', r'<em class="text-gray-300">\1</em>', html)
-
-
-    # Links
-    html = re.sub(r'\[(.+?)\]\((.+?)\)', r'<a href="\2" class="text-blue-400 hover:text-blue-300 underline" target="_blank">\1</a>', html)
-
-    # Lists
-    lines = html.split('\n')
-    in_list = False
-    result = []
-    for line in lines:
-        if line.strip().startswith('- '):
-            if not in_list:
-                result.append('<ul class="list-disc list-inside ml-4 space-y-1 text-gray-300 mb-4">')
-                in_list = True
-            result.append(f'<li class="ml-4">{line.strip()[2:]}</li>')
-        else:
-            if in_list:
-                result.append('</ul>')
-                in_list = False
-            result.append(line)
-    if in_list:
-        result.append('</ul>')
-    html = '\n'.join(result)
-
-    # Paragraphs (but not for lines that are already HTML)
-    # Enhanced to track HTML blocks that span multiple lines
-    lines = html.split('\n')
-    result = []
-    in_html_block = False
-    html_block_depth = 0
-    in_self_closing_tag = False  # Track if we're inside a self-closing tag like <img>
-
-    # Block-level HTML tags that indicate start of multi-line HTML blocks
-    # Note: 'hr' is excluded because it's self-closing and doesn't create a block
-    block_tags = ['div', 'table', 'button', 'script', 'ul', 'ol', 'thead', 'tbody', 'tr', 'td', 'th']
-    self_closing_tags = ['img']  # Tags that don't have closing tags
-
-    for line in lines:
-        stripped = line.strip()
-
-        # Count opening and closing tags on this line to update depth
-        line_depth_change = 0
-        for tag in block_tags:
-            # Count opening tags
-            line_depth_change += stripped.count(f'<{tag} ') + stripped.count(f'<{tag}>')
-            # Count closing tags
-            line_depth_change -= stripped.count(f'</{tag}>')
-
-        # Handle self-closing tags (like <img>) that span multiple lines
-        for tag in self_closing_tags:
-            if f'<{tag} ' in stripped or f'<{tag}>' in stripped:
-                # Opening a self-closing tag
-                in_self_closing_tag = True
-                line_depth_change += 1
-            if in_self_closing_tag and stripped.endswith('>') and not stripped.endswith('/>'):
-                # Closing the self-closing tag (ends with > but not with />)
-                # Check if this line actually closes the tag by seeing if it has attributes
-                if '=' in stripped or stripped == '>':
-                    in_self_closing_tag = False
-                    line_depth_change -= 1
-
-        # Update depth and block state
-        html_block_depth += line_depth_change
-        if html_block_depth < 0:
-            html_block_depth = 0
-
-        # Determine if we should wrap this line in <p> tags
-        should_wrap = False
-        if stripped:  # Non-empty line
-            # Don't wrap if:
-            # 1. Inside an HTML block (depth > 0)
-            # 2. Line starts with < (single-line HTML or opening tag)
-            # 3. Line ends with > (closing tag or single-line HTML)
-            if html_block_depth == 0 and not stripped.startswith('<') and not stripped.endswith('>'):
-                should_wrap = True
-
-        # Add the line to result
-        if should_wrap:
-            result.append(f'<p class="mb-3 text-gray-300">{line}</p>')
-        else:
-            result.append(line)
-
-        # Update block state based on depth
-        in_html_block = (html_block_depth > 0)
-
-    html = '\n'.join(result)
-
-    return html
-
-def convert_table_to_html(table_lines):
-    """Convert markdown table to HTML table"""
-    import re
-    import uuid
-    
-    if len(table_lines) < 2:
-        return '\n'.join(table_lines)
-    
-    # Parse header
-    header_line = table_lines[0]
-    headers = [cell.strip() for cell in header_line.split('|')[1:-1]]  # Skip first and last empty
-    
-    # Skip separator line (table_lines[1])
-    
-    # Parse rows and collect all items (with and without images)
-    rows = []
-    all_items = []  # Collect all items for the grid view
-    
-    # Find the "Link" column index in headers (similar to how we find "Name" column)
-    link_col_idx = next((i for i, h in enumerate(headers) if h.lower() == 'link'), None)
-    
-    for line in table_lines[2:]:
-        if '|' in line:
-            cells = [cell.strip() for cell in line.split('|')[1:-1]]
-            rows.append(cells)
-    
-    # Build HTML table with controls
-    table_id = f'table-{uuid.uuid4().hex[:8]}'
-    html = '<div class="overflow-x-auto my-6">'
-    
-    # Add control buttons
-    html += f'''
-    <div class="flex gap-2 mb-3">
-        <button onclick="toggleAllImages('{table_id}', true)" 
-                class="text-green-400 hover:text-green-300 text-xs px-3 py-1 border border-green-500 rounded hover:bg-green-900 transition">
-            📖 Expand All Images
-        </button>
-        <button onclick="toggleAllImages('{table_id}', false)" 
-                class="text-red-400 hover:text-red-300 text-xs px-3 py-1 border border-red-500 rounded hover:bg-red-900 transition">
-            📕 Collapse All Images
-        </button>
-        <button onclick="showImageGrid('{table_id}')" 
-                class="text-purple-400 hover:text-purple-300 text-xs px-3 py-1 border border-purple-500 rounded hover:bg-purple-900 transition">
-            🖼️ View All Items (Grid)
-        </button>
-    </div>
-    '''
-    
-    html += f'<table class="min-w-full bg-gray-900 border border-gray-700 rounded-lg merchant-table" id="{table_id}">'
-    
-    # Header
-    html += '<thead class="bg-gray-800">'
-    html += '<tr>'
-    for header in headers:
-        html += f'<th class="px-4 py-3 text-left text-sm font-bold text-purple-400 border-b border-gray-700">{header}</th>'
-    html += '</tr>'
-    html += '</thead>'
-    
-    # Body
-    html += '<tbody>'
-    for i, row in enumerate(rows):
-        bg_class = 'bg-gray-900' if i % 2 == 0 else 'bg-gray-850'
-        row_id = f'row-{uuid.uuid4().hex[:8]}'
-        html += f'<tr class="{bg_class} hover:bg-gray-800 transition" id="{row_id}">'
-        
-        # Extract item name from Name column (clean markdown formatting)
-        # Find the index of the "Name" column in headers
-        name_col_idx = next((i for i, h in enumerate(headers) if h.lower() == 'name'), None)
-        
-        # Extract item name: use Name column if found, fallback to row[1], then 'Unknown Item'
-        if name_col_idx is not None and len(row) > name_col_idx:
-            item_name = row[name_col_idx]
-        elif len(row) > 1:
-            item_name = row[1]
-        else:
-            item_name = 'Unknown Item'
-        
-        # Remove markdown bold (**text**), italic (*text*), and links ([text](url))
-        item_name = re.sub(r'\*\*([^\*]+)\*\*', r'\1', item_name)  # Remove bold
-        item_name = re.sub(r'\*([^\*]+)\*', r'\1', item_name)  # Remove italic
-        item_name = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', item_name)  # Remove links
-        item_name = item_name.strip()
-        
-        # Extract link URL from Link column using regex
-        link_url = None
-        if link_col_idx is not None and len(row) > link_col_idx:
-            link_cell = row[link_col_idx]
-            link_match = re.search(r'\[([^\]]+)\]\(([^\)]+)\)', link_cell)
-            if link_match:
-                link_url = link_match.group(2)  # group(2) is the URL
-        
-        for j, cell in enumerate(row):
-            # Check if this cell contains an image (markdown format: ![alt](url))
-            img_match = re.search(r'!\[([^\]]*)\]\(([^\)]+)\)', cell)
-            
-            if img_match and headers[j].lower() == 'image':
-                # Extract image URL and alt text
-                alt_text = img_match.group(1)
-                img_url = img_match.group(2)
-                
-                # Store item with image for grid view
-                all_items.append({
-                    'name': item_name,
-                    'url': img_url,
-                    'alt': alt_text,
-                    'has_image': True,
-                    'row_index': i,
-                    'link': link_url
-                })
-                
-                # Create button with preloaded hidden image
-                cell_content = f'''
-                    <button onclick="toggleImage('{row_id}')" 
-                            class="toggle-btn text-blue-400 hover:text-blue-300 text-xs px-2 py-1 border border-blue-500 rounded hover:bg-blue-900 transition">
-                        Show Image
-                    </button>
-                    <img src="{img_url}" 
-                         class="hidden max-w-xs h-auto rounded border border-gray-600 mt-2 row-image" 
-                         loading="eager" 
-                         alt="{alt_text}"
-                         data-grid-url="{img_url}"
-                         data-grid-alt="{alt_text}">
-                '''
-                html += f'<td class="px-4 py-3 text-sm text-gray-300 border-b border-gray-700">{cell_content}</td>'
-            elif headers[j].lower() == 'image':
-                # Image column but no image - store item without image for grid view
-                all_items.append({
-                    'name': item_name,
-                    'url': None,
-                    'alt': item_name,
-                    'has_image': False,
-                    'row_index': i,
-                    'link': link_url
-                })
-                html += f'<td class="px-4 py-3 text-sm text-gray-300 border-b border-gray-700">{cell}</td>'
-            else:
-                html += f'<td class="px-4 py-3 text-sm text-gray-300 border-b border-gray-700">{cell}</td>'
-        
-        html += '</tr>'
-    html += '</tbody>'
-    
-    html += '</table>'
-    
-    # Hidden div to store item data for grid view
-    if all_items:
-        import json
-        html += f'<script type="application/json" class="item-grid-data" data-table="{table_id}">{json.dumps(all_items)}</script>'
-    
-    html += '</div>'
-    
-    return html
+    title, html = markdown_page(path)
+    return jsonify({'title': title or merchant_file.replace('_', ' ').title(), 'html': html})
 
 # ------------------------------------------------------------------ Export
 # What the server has written (restocks, pins, the session), zipped with the

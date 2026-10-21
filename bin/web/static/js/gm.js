@@ -184,7 +184,7 @@ $('traveler-select').addEventListener('change', e => {
     // Merchant pages are rendered by the server from our own markdown
     toolOutput(async () => {
         const data = await api(`/api/gm-merchant/${encodeURIComponent(e.target.value)}`);
-        return `<h3 class="text-2xl font-bold mb-3">${esc(data.title)}</h3>${data.html}`;
+        return `<h3 class="text-2xl font-bold mb-3">${esc(data.title)}</h3><div class="md">${data.html}</div>`;
     });
 });
 
@@ -206,7 +206,7 @@ $('doc-select').addEventListener('change', e => {
     if (!e.target.value) { $('tool-output').innerHTML = ''; return; }
     toolOutput(async () => {
         const data = await api(`/api/gm-doc/${encodeURIComponent(e.target.value)}`);
-        return `<div class="bg-gray-900 p-4 rounded">${data.html}</div>`;
+        return `<div class="md bg-gray-900 p-4 rounded"><h1>${esc(data.title)}</h1>${data.html}</div>`;
     });
 });
 

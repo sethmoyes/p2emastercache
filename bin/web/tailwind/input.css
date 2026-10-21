@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rendered markdown (shops, traveling merchants, docs); see bin/web/render.py */
+@layer components {
+  .md { @apply text-gray-200 leading-relaxed; }
+  .md h1 { @apply text-3xl font-bold mt-8 mb-4 text-blue-300; }
+  .md h1:first-child { @apply mt-0; }
+  .md h2 { @apply text-2xl font-bold mt-6 mb-3 text-purple-300; }
+  .md h3 { @apply text-xl font-bold mt-4 mb-2 text-pink-300; }
+  .md h4 { @apply text-lg font-bold mt-3 mb-2; }
+  .md p { @apply mb-3; }
+  .md ul { @apply list-disc ml-6 mb-4 space-y-1; }
+  .md ol { @apply list-decimal ml-6 mb-4 space-y-1; }
+  .md a { @apply text-sky-400 underline hover:text-sky-300; }
+  .md hr { @apply border-gray-700 my-6; }
+  .md em { @apply text-gray-400; }
+  .md strong { @apply text-white; }
+  .md code { @apply bg-gray-900 rounded px-1 text-sm; }
+  .md pre { @apply bg-gray-900 rounded p-3 mb-4 overflow-x-auto text-sm; }
+  .md pre code { @apply p-0; }
+  .md blockquote { @apply border-l-4 border-gray-600 pl-4 text-gray-400 mb-4; }
+  .md img { @apply rounded-lg max-w-full h-auto; }
+  .md div[align="center"] { @apply flex justify-center mb-4; }
+  .md .table-scroll { @apply overflow-x-auto mb-6 rounded-lg border border-gray-700; }
+  .md table { @apply w-full text-sm; }
+  .md thead { @apply bg-gray-900 text-left; }
+  .md th { @apply px-3 py-2 font-semibold text-gray-300 whitespace-nowrap; }
+  .md td { @apply px-3 py-2 border-t border-gray-700 align-top; }
+  .md tbody tr:nth-child(even) { @apply bg-gray-800/60; }
+}

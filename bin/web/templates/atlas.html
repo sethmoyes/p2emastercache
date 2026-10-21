@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <title>Atlas of the Inner Sea</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%97%BA</text></svg>">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='vendor/leaflet/leaflet.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='vendor/markercluster/MarkerCluster.css') }}">
+<script src="{{ url_for('static', filename='vendor/leaflet/leaflet.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/markercluster/leaflet.markercluster.js') }}"></script>
 <style>
   :root { --edge: #11161f; }
   body { background: linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%); }
@@ -117,10 +118,14 @@
               class="bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded-lg text-sm transition">
         Labels
       </button>
+      {% if can_place %}
       <button onclick="togglePlacing()" id="place-btn" title="GM: position pins on the map"
               class="bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded-lg text-sm transition">
         Place pins
       </button>
+      {% else %}
+      <button id="place-btn" class="hidden"></button>
+      {% endif %}
     </div>
   </header>{% endif %}
 
