@@ -58,6 +58,24 @@ def load_spells_json(filename):
     with open(filename, 'r', encoding='utf-8') as f:
         return json.load(f)
 
+
+TRADITIONS = ('Arcane', 'Divine', 'Occult', 'Primal')
+
+
+def prepare_spells(spells):
+    """One record per spell name (the remaster one, newest on AoN), listing only
+    the four magical traditions ("Elemental" is a spell list, not a tradition)."""
+    def aon_id(spell):
+        try:
+            return int(spell.get('url', '').rsplit('=', 1)[1])
+        except (IndexError, ValueError):
+            return 0
+    newest = {}
+    for spell in spells:
+        if spell['name'] not in newest or aon_id(spell) > aon_id(newest[spell['name']]):
+            newest[spell['name']] = spell
+    return [{**s, 'traditions': [t for t in s.get('traditions', []) if t in TRADITIONS]} for s in newest.values()]
+
 def get_spell_price_and_dc(spell_level):
     """Get the price and DC for learning a spell based on its level"""
     price_table = {
@@ -1066,7 +1084,7 @@ def generate_all(settings, output_root=PROJECT_ROOT):
     print(f"  Loaded {len(equipment)} items (level {max_item_level} or below)")
 
     print("Loading spells...")
-    spells = load_spells_json(os.path.join(PROJECT_ROOT, 'etc', 'spells.json'))
+    spells = prepare_spells(load_spells_json(os.path.join(PROJECT_ROOT, 'etc', 'spells.json')))
     print(f"  Loaded {len(spells)} spells")
 
     # Create output directories
