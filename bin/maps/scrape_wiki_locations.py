@@ -10,8 +10,8 @@ Coordinates live in "coords", keyed by map id, because one place can sit on
 several maps at once (a district map and the whole-city map, say) at different
 positions. Each value is a 0-1 fraction of that image.
 
-    python3 bin/scrapers/scrape_wiki_locations.py            # every map
-    python3 bin/scrapers/scrape_wiki_locations.py absalom    # just one
+    python3 bin/maps/scrape_wiki_locations.py            # every map
+    python3 bin/maps/scrape_wiki_locations.py absalom    # just one
 
 Coordinates already present in an existing file are preserved on re-run.
 Wiki text is CC BY-SA 3.0. Pathfinder and Golarion are Paizo Inc. trademarks.

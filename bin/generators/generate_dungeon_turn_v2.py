@@ -22,7 +22,8 @@ import os
 # Add parent directory (bin) to path for event_loader import
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from event_loader import load_events_from_json, ValidationError
+from event_loader import load_events_from_json
+from template_selector import select_template
 from floor_ecology import build_ecology_combat_event, build_ecology_threat_event, ECOLOGY_THREAT_CHANCE
 
 def load_json(filename):
@@ -101,48 +102,16 @@ def get_category_from_sum(total, is_extreme=False, allow_no_event=True):
 
 
 
-def get_creatures_for_floor(creatures, floor_num, party_level):
-    """Get appropriate creatures for this floor (2 levels below party)"""
-    target_level = max(1, party_level - 2)
-    
-    # Filter creatures by level
-    appropriate = [c for c in creatures if c['level'] == target_level]
-    
-    return appropriate if appropriate else creatures
-
 # Load events from JSON file
 # Use relative path from script location to work in containers
 SCRIPT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 EVENTS_FILE = os.path.join(SCRIPT_DIR, 'etc', 'dungeon_turn_events.json')
 
-try:
-    LOADED_EVENTS = load_events_from_json(EVENTS_FILE)
-    OPPORTUNITY_TEMPLATES = LOADED_EVENTS['OPPORTUNITY']
-    COMPLICATION_TEMPLATES = LOADED_EVENTS['COMPLICATION']
-    DILEMMA_TEMPLATES = LOADED_EVENTS['DILEMMA']
-    ACTIVE_THREAT_TEMPLATES = LOADED_EVENTS['ACTIVE_THREAT']
-except FileNotFoundError:
-    print(f"ERROR: Event file not found: {EVENTS_FILE}")
-    print("Please ensure dungeon_turn_events.json exists in etc/ directory")
-    sys.exit(1)
-except json.JSONDecodeError as e:
-    print(f"ERROR: Invalid JSON in {EVENTS_FILE}: {e}")
-    sys.exit(1)
-except ValidationError as e:
-    print(f"ERROR: Invalid event structure: {e}")
-    sys.exit(1)
-
-# OPPORTUNITY EVENT TEMPLATES (5-25)
-# Loaded from JSON file at module initialization
-
-# COMPLICATION EVENT TEMPLATES (26-45)
-# Loaded from JSON file at module initialization
-
-# DILEMMA EVENT TEMPLATES (46-65)
-# Loaded from JSON file at module initialization
-
-# ACTIVE THREAT EVENT TEMPLATES (66-85)
-# Loaded from JSON file at module initialization
+LOADED_EVENTS = load_events_from_json(EVENTS_FILE)
+OPPORTUNITY_TEMPLATES = LOADED_EVENTS['OPPORTUNITY']
+COMPLICATION_TEMPLATES = LOADED_EVENTS['COMPLICATION']
+DILEMMA_TEMPLATES = LOADED_EVENTS['DILEMMA']
+ACTIVE_THREAT_TEMPLATES = LOADED_EVENTS['ACTIVE_THREAT']
 
 # COMBAT ENCOUNTER TEMPLATES (86-100)
 # These will be generated dynamically based on floor and creatures
@@ -160,25 +129,14 @@ COMBAT_ECOLOGY_TYPES = [
 ]
 
 
-def generate_opportunity_event(floor_num, floor_data, party_level, context=None):
+def generate_opportunity_event(floor_num, floor_data, party_level):
     """Generate an OPPORTUNITY event (5-25)"""
-    from event_context import EventContext
-    from template_selector import select_template
-    from context_description import apply_all_context
-    
-    if context is None:
-        context = EventContext()
-    
-    # Select template based on context AND floor
-    template = select_template(OPPORTUNITY_TEMPLATES, context, floor=floor_num)
+    template = select_template(OPPORTUNITY_TEMPLATES, floor=floor_num)
     
     # Customize for floor
     event = template.copy()
     event['floor'] = floor_num
     event['floor_name'] = floor_data['name']
-    
-    # Apply context-aware modifications
-    event = apply_all_context(event, context)
     
     # Add floor-specific flavor
     if floor_num == 1:
@@ -204,24 +162,13 @@ def generate_opportunity_event(floor_num, floor_data, party_level, context=None)
     
     return event
 
-def generate_complication_event(floor_num, floor_data, party_level, context=None):
+def generate_complication_event(floor_num, floor_data, party_level):
     """Generate a COMPLICATION event (26-45)"""
-    from event_context import EventContext
-    from template_selector import select_template
-    from context_description import apply_all_context
-    
-    if context is None:
-        context = EventContext()
-    
-    # Select template based on context AND floor
-    template = select_template(COMPLICATION_TEMPLATES, context, floor=floor_num)
+    template = select_template(COMPLICATION_TEMPLATES, floor=floor_num)
     
     event = template.copy()
     event['floor'] = floor_num
     event['floor_name'] = floor_data['name']
-    
-    # Apply context-aware modifications
-    event = apply_all_context(event, context)
     
     # Add floor-specific complications
     if floor_num == 1:
@@ -247,24 +194,13 @@ def generate_complication_event(floor_num, floor_data, party_level, context=None
     
     return event
 
-def generate_dilemma_event(floor_num, floor_data, party_level, context=None):
+def generate_dilemma_event(floor_num, floor_data, party_level):
     """Generate a DILEMMA event (46-65)"""
-    from event_context import EventContext
-    from template_selector import select_template
-    from context_description import apply_all_context
-    
-    if context is None:
-        context = EventContext()
-    
-    # Select template based on context AND floor
-    template = select_template(DILEMMA_TEMPLATES, context, floor=floor_num)
+    template = select_template(DILEMMA_TEMPLATES, floor=floor_num)
     
     event = template.copy()
     event['floor'] = floor_num
     event['floor_name'] = floor_data['name']
-    
-    # Apply context-aware modifications
-    event = apply_all_context(event, context)
     
     # Add floor-specific context
     if floor_num <= 3:
@@ -277,30 +213,19 @@ def generate_dilemma_event(floor_num, floor_data, party_level, context=None):
     return event
 
 
-def generate_active_threat_event(floor_num, floor_data, party_level, context=None):
+def generate_active_threat_event(floor_num, floor_data, party_level):
     """Generate an ACTIVE THREAT event (66-85)"""
-    from event_context import EventContext
-    from template_selector import select_template
-    from context_description import apply_all_context
-    
-    if context is None:
-        context = EventContext()
-
     # Most threats come from the floor's own hazards and residents
     if random.random() < ECOLOGY_THREAT_CHANCE:
         event = build_ecology_threat_event(floor_num, floor_data)
         if event:
             return event
 
-    # Select template based on context AND floor
-    template = select_template(ACTIVE_THREAT_TEMPLATES, context, floor=floor_num)
+    template = select_template(ACTIVE_THREAT_TEMPLATES, floor=floor_num)
     
     event = template.copy()
     event['floor'] = floor_num
     event['floor_name'] = floor_data['name']
-    
-    # Apply context-aware modifications
-    event = apply_all_context(event, context)
     
     # Add urgency
     event['urgency'] = "IMMEDIATE ACTION REQUIRED! No time to discuss!"
@@ -322,7 +247,7 @@ def generate_extreme_combat_event(floor_num, floor_data, party_level, creatures,
     # Extreme encounters always use floor level
     target_level = floor_num
     difficulty = "EXTREME (Floor Level)"
-    difficulty_note = f"💀 EXTREME ROLL ({dice_sum})! Creatures at floor level {floor_num}!"
+    difficulty_note = f"EXTREME ROLL ({dice_sum})! Creatures at floor level {floor_num}!"
     
     # Get creatures at floor level
     level_creatures = [c for c in creatures if c['level'] == target_level]
@@ -411,7 +336,7 @@ def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_su
         # EXTREME: Creatures at floor level (deadly)
         target_level = floor_num
         difficulty = "DEADLY (Floor Level)"
-        difficulty_note = "⚠️ EXTREME ENCOUNTER - Creatures at floor level!"
+        difficulty_note = "EXTREME ENCOUNTER - Creatures at floor level!"
     elif dice_sum >= 95:
         # High roll: Creatures at party level (moderate)
         target_level = party_level
@@ -705,18 +630,9 @@ def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_su
     return event
 
 
-def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatures, context=None, party_size=4,
+def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatures, party_size=4,
                            allow_no_event=True):
-    """Generate appropriate event based on dice sum with optional context"""
-    from event_context import EventContext
-    
-    # Use default context if none provided (backward compatibility)
-    if context is None:
-        context = EventContext()
-    
-    # Validate context
-    context.validate()
-    
+    """Generate appropriate event based on dice sum"""
     # Check if this is an extreme roll
     is_extreme = dice_sum <= 15 or dice_sum >= 90
     
@@ -737,13 +653,13 @@ def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatur
     if is_extreme and category == "COMBAT":
         event = generate_extreme_combat_event(floor_num, floor_data, party_level, creatures, dice_sum, party_size)
     elif category == "OPPORTUNITY":
-        event = generate_opportunity_event(floor_num, floor_data, party_level, context)
+        event = generate_opportunity_event(floor_num, floor_data, party_level)
     elif category == "COMPLICATION":
-        event = generate_complication_event(floor_num, floor_data, party_level, context)
+        event = generate_complication_event(floor_num, floor_data, party_level)
     elif category == "DILEMMA":
-        event = generate_dilemma_event(floor_num, floor_data, party_level, context)
+        event = generate_dilemma_event(floor_num, floor_data, party_level)
     elif category == "ACTIVE_THREAT":
-        event = generate_active_threat_event(floor_num, floor_data, party_level, context)
+        event = generate_active_threat_event(floor_num, floor_data, party_level)
     else:  # COMBAT (non-extreme)
         event = generate_combat_event(floor_num, floor_data, party_level, creatures, dice_sum, party_size)
     
@@ -830,14 +746,8 @@ def format_event_markdown(event):
     return "\n".join(lines)
 
 
-def generate_all_encounters(party_level, max_floor, output_file, context=None, party_size=4):
-    """Generate comprehensive encounter table for all floors with optional context"""
-    from event_context import EventContext
-    
-    # Use default context if none provided
-    if context is None:
-        context = EventContext()
-    
+def generate_all_encounters(party_level, max_floor, output_file, party_size=4):
+    """Generate comprehensive encounter table for all floors"""
     print(f"=" * 80)
     print(f"DUNGEON TURN GENERATOR V2 - THE FUN VERSION")
     print(f"=" * 80)
@@ -845,18 +755,12 @@ def generate_all_encounters(party_level, max_floor, output_file, context=None, p
     print(f"Floors: 1-{max_floor}")
     print(f"Total Events: {96 * max_floor} (96 sums per floor)")
     print(f"")
-    print(f"Context Settings:")
-    print(f"  Space Type: {context.space_type}")
-    print(f"  Recent Combat: {context.recent_combat}")
-    print(f"  New Area: {context.new_area}")
-    print(f"  Party Status: {context.party_status}")
-    print(f"")
     print(f"New Probability Distribution:")
     print(f"  Extreme (5-15, 90-100): Always COMBAT")
     print(f"  Non-extreme: 50% NO EVENT, then:")
-    print(f"    Sum ≤ 44:  COMBAT or ACTIVE_THREAT (danger)")
+    print(f"    Sum <= 44:  COMBAT or ACTIVE_THREAT (danger)")
     print(f"    Sum 45-62: OPPORTUNITY, COMPLICATION, or DILEMMA (non-combat)")
-    print(f"    Sum ≥ 63:  ACTIVE_THREAT or COMBAT (danger)")
+    print(f"    Sum >= 63:  ACTIVE_THREAT or COMBAT (danger)")
     print(f"")
     print(f"Combat potential: ~37% (ACTIVE THREATS can become combat)")
     print(f"=" * 80)
@@ -864,9 +768,9 @@ def generate_all_encounters(party_level, max_floor, output_file, context=None, p
     
     # Load data
     print("Loading data files...")
-    gauntlight_content = load_markdown('etc/gauntlight_keep_levels.md')
+    gauntlight_content = load_markdown(os.path.join(SCRIPT_DIR, 'etc', 'gauntlight_keep_levels.md'))
     levels_data = parse_gauntlight_levels(gauntlight_content)
-    creatures = load_json('etc/creatures.json')
+    creatures = load_json(os.path.join(SCRIPT_DIR, 'etc', 'creatures.json'))
     print(f"  Loaded {len(levels_data)} floor definitions")
     print(f"  Loaded {len(creatures)} creatures")
     print("")
@@ -893,9 +797,9 @@ def generate_all_encounters(party_level, max_floor, output_file, context=None, p
     lines.append("")
     lines.append("- **Extreme (5-15, 90-100):** Always COMBAT (very rare)")
     lines.append("- **Non-extreme:** 50% chance of NO EVENT, then:")
-    lines.append("  - **Sum ≤ 44:** COMBAT or ACTIVE_THREAT (danger)")
+    lines.append("  - **Sum <= 44:** COMBAT or ACTIVE_THREAT (danger)")
     lines.append("  - **Sum 45-62:** OPPORTUNITY, COMPLICATION, or DILEMMA (non-combat)")
-    lines.append("  - **Sum ≥ 63:** ACTIVE_THREAT or COMBAT (danger)")
+    lines.append("  - **Sum >= 63:** ACTIVE_THREAT or COMBAT (danger)")
     lines.append("")
     lines.append("**Combat Potential:** ~37% (ACTIVE THREATS can escalate to combat)")
     lines.append("")
@@ -934,7 +838,7 @@ def generate_all_encounters(party_level, max_floor, output_file, context=None, p
         
         # Generate all 96 possible sums (5-100)
         for dice_sum in range(5, 101):
-            event = generate_event_for_sum(dice_sum, floor, level_data, party_level, creatures, context, party_size)
+            event = generate_event_for_sum(dice_sum, floor, level_data, party_level, creatures, party_size)
             lines.append(format_event_markdown(event))
         
         print(f"  [OK] Generated 96 events for Floor {floor}")
@@ -959,41 +863,18 @@ def generate_all_encounters(party_level, max_floor, output_file, context=None, p
 def main():
     """Main function"""
     import argparse
-    from event_context import EventContext
-    
+
     parser = argparse.ArgumentParser(description='Generate Dungeon Turn Encounters V2')
     parser.add_argument('--level', type=int, default=4, help='Party level (default: 4)')
     parser.add_argument('--floors', type=int, default=3, help='Number of floors to generate (1 to X)')
     parser.add_argument('--party-size', type=int, default=4, help='Number of PCs, for encounter budgets (default: 4)')
-    parser.add_argument('--output', type=str, default='gm/dungeon_turn_encounters_v2.md', help='Output file path')
-    
-    # Context parameters
-    parser.add_argument('--space-type', type=str, default='unknown',
-                       choices=['hallway', 'large_room', 'small_room', 'outside', 'vertical_space', 'water', 'unknown'],
-                       help='Type of space for event generation (default: unknown)')
-    parser.add_argument('--recent-combat', action='store_true',
-                       help='Party just finished combat')
-    parser.add_argument('--new-area', action='store_true', default=True,
-                       help='Party is in unfamiliar area (default: True)')
-    parser.add_argument('--party-status', type=str, default='healthy',
-                       choices=['healthy', 'injured', 'low_resources'],
-                       help='Current party condition (default: healthy)')
-    
+    parser.add_argument('--output', type=str, default='dungeon_turn_encounters_v2.md', help='Output file path')
     args = parser.parse_args()
-    
-    # Create context from arguments
-    context = EventContext(
-        space_type=args.space_type,
-        recent_combat=args.recent_combat,
-        new_area=args.new_area,
-        party_status=args.party_status
-    )
-    
+
     generate_all_encounters(
         party_level=args.level,
         max_floor=args.floors,
         output_file=args.output,
-        context=context,
         party_size=args.party_size
     )
 
