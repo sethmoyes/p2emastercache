@@ -67,7 +67,7 @@ def parse_gauntlight_levels(content):
     
     return levels
 
-def get_category_from_sum(total, is_extreme=False):
+def get_category_from_sum(total, is_extreme=False, allow_no_event=True):
     """
     Determine event category based on 5d20 sum.
     
@@ -77,13 +77,15 @@ def get_category_from_sum(total, is_extreme=False):
     - 5-44: COMBAT/ACTIVE_THREAT (danger)
     - 45-62: OPPORTUNITIES/COMPLICATIONS/DILEMMAS (middle range)
     - 63-100: ACTIVE_THREAT/COMBAT (danger)
+
+    allow_no_event=False skips the no-event coin flip (used by the test generator).
     """
     # Extreme rolls always generate combat
     if is_extreme:
         return "COMBAT"
     
     # Non-extreme rolls: 50% chance of no event
-    if random.random() < 0.5:
+    if allow_no_event and random.random() < 0.5:
         return "NO_EVENT"
     
     # Distribute remaining events
@@ -703,7 +705,8 @@ def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_su
     return event
 
 
-def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatures, context=None, party_size=4):
+def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatures, context=None, party_size=4,
+                           allow_no_event=True):
     """Generate appropriate event based on dice sum with optional context"""
     from event_context import EventContext
     
@@ -718,7 +721,7 @@ def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatur
     is_extreme = dice_sum <= 15 or dice_sum >= 90
     
     # Get category (with extreme flag and no-event mechanic)
-    category = get_category_from_sum(dice_sum, is_extreme)
+    category = get_category_from_sum(dice_sum, is_extreme, allow_no_event)
     
     # Handle NO_EVENT
     if category == "NO_EVENT":
