@@ -428,7 +428,7 @@ function renderGroups() {
     const placed = pois.filter(p => p.group === g && coordsOf(p).x !== null).length;
     return `
       <label class="flex items-center gap-2 px-2 py-1 rounded hover:bg-gray-800 cursor-pointer text-sm">
-        <input type="checkbox" ${hidden.has(g) ? '' : 'checked'} onchange="toggleGroup('${escAttr(g)}')"
+        <input type="checkbox" ${hidden.has(g) ? '' : 'checked'} data-group="${esc(g)}" onchange="toggleGroup(this.dataset.group)"
                class="accent-blue-500 flex-none">
         <span class="flex-1 truncate">${esc(g)}</span>
         <span class="flex-none text-xs ${placed ? 'text-gray-500' : 'text-amber-500/70'}">${placed}/${n}</span>
@@ -481,7 +481,7 @@ function renderList() {
     const s = styleFor(p.type);
     const unplaced = coordsOf(p).x === null;
     html += `
-      <button onclick="pickFromList('${escAttr(p.id)}')"
+      <button data-id="${esc(p.id)}" onclick="pickFromList(this.dataset.id)"
               class="poi-row w-full text-left flex items-center gap-2 px-2 py-1.5 rounded border border-transparent
                      hover:bg-gray-800 transition ${p.id === selectedId ? 'selected' : ''}">
         <span class="flex-none w-6 h-6 rounded-full flex items-center justify-center text-[11px]"
@@ -541,7 +541,7 @@ function showDetail(poi, fly) {
   }
 
   const link = document.getElementById('d-link');
-  if (poi.url) { link.href = poi.url; link.classList.remove('hidden'); }
+  if (/^https?:\/\//i.test(poi.url || '')) { link.href = poi.url; link.classList.remove('hidden'); }
   else { link.classList.add('hidden'); }
 
   document.getElementById('detail').classList.remove('hidden');
@@ -631,11 +631,24 @@ async function savePlacements() {
 
   status.textContent = 'Saving...';
   try {
-    const res = await fetch('/api/pois/' + current.id, {
+    const request = () => fetch('/api/pois/' + current.id, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ placements: dirty })
     });
+    let res = await request();
+    if (res.status === 401) {
+      // Saving pins needs the GM password.
+      const password = prompt('GM password:');
+      if (password !== null) {
+        const login = await fetch('/api/gm-login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ password })
+        });
+        if (login.ok) res = await request();
+      }
+    }
     const out = await res.json();
     if (!res.ok || out.error) throw new Error(out.error || 'save failed');
 
@@ -668,7 +681,6 @@ function toggleSidebar() {
 
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g,
   c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const escAttr = s => esc(s).replace(/\\/g, '\\\\');
 
 window.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeDetail();

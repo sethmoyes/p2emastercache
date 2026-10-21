@@ -4,9 +4,13 @@ Dungeon Turn V2 - Web Interface
 A beautiful, simple web app for generating random encounters at the table
 """
 
-from flask import Flask, render_template, jsonify, request, send_file
+from flask import Flask, render_template, jsonify, request, session
+from functools import wraps
+import hashlib
+import hmac
 import random
 import re
+import secrets
 import subprocess
 import sys
 import os
@@ -32,6 +36,65 @@ from generate_merchants import (
 )
 
 app = Flask(__name__)
+app.config['MAX_CONTENT_LENGTH'] = 4 * 1024 * 1024
+
+# ------------------------------------------------------------------- GM login
+# Anything that changes shared state (restocks, map pins, the dice jar, roll
+# history) needs the GM password, which lives in the GM_PASSWORD secret. Pages
+# and read-only APIs stay open. Without a password set, writes are open too,
+# which is what you want running locally, but never on Fly.
+GM_PASSWORD = os.environ.get('GM_PASSWORD', '')
+ON_FLY = bool(os.environ.get('FLY_APP_NAME'))
+
+app.secret_key = (os.environ.get('SECRET_KEY')
+                  or (hashlib.sha256(b'p2e-session:' + GM_PASSWORD.encode()).hexdigest() if GM_PASSWORD
+                      else secrets.token_hex(32)))
+app.config.update(
+    SESSION_COOKIE_SAMESITE='Lax',
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SECURE=ON_FLY,
+    PERMANENT_SESSION_LIFETIME=60 * 60 * 24 * 30,
+)
+
+
+def gm_write(view):
+    """Refuse a write unless the GM has logged in (or no password is set locally)."""
+    @wraps(view)
+    def guarded(*args, **kwargs):
+        if not GM_PASSWORD:
+            if ON_FLY:
+                return jsonify({'error': 'GM_PASSWORD is not set on this server.'}), 503
+        elif not session.get('gm'):
+            return jsonify({'error': 'GM login required.', 'login': True}), 401
+        return view(*args, **kwargs)
+    return guarded
+
+
+def json_body():
+    """The request's JSON object. A form or text/plain post (the kind another
+    site can send) is refused, and so is anything that isn't an object."""
+    body = request.get_json(silent=False)
+    if not isinstance(body, dict):
+        from werkzeug.exceptions import BadRequest
+        raise BadRequest('Expected a JSON object.')
+    return body
+
+
+@app.route('/api/gm-login', methods=['POST'])
+def gm_login():
+    password = str(json_body().get('password', ''))
+    if GM_PASSWORD and not hmac.compare_digest(password, GM_PASSWORD):
+        return jsonify({'error': 'Incorrect password'}), 401
+    session.permanent = True
+    session['gm'] = True
+    return jsonify({'success': True})
+
+
+@app.errorhandler(400)
+@app.errorhandler(413)
+@app.errorhandler(415)
+def bad_request(error):
+    return jsonify({'error': getattr(error, 'description', str(error))}), error.code
 
 # Where restocked merchants are written. On Fly this is a mounted volume, because
 # a machine's own disk resets to the image every time it stops; locally it is the
@@ -60,6 +123,10 @@ print(f"Loaded {len(levels_data)} floors and {len(creatures)} creatures")
 # Session state (in-memory, resets on restart)
 dice_jar = 0
 roll_history = []
+
+@app.route('/healthz')
+def healthz():
+    return jsonify({'ok': True, 'commit': os.environ.get('GIT_SHA', 'unknown')})
 
 @app.route('/')
 def index():
@@ -159,12 +226,23 @@ def api_pois(map_id):
     })
 
 
+poi_lock = threading.Lock()
+
+
+def write_json_atomic(path, data):
+    """Write to a temp file and swap it in, so a reader never sees half a file."""
+    tmp = f'{path}.tmp'
+    with open(tmp, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, path)
+
+
 @app.route('/api/pois/<map_id>', methods=['POST'])
+@gm_write
 def api_save_pois(map_id):
     """Persist pin coordinates from the viewer's placement mode.
 
-    Body: {"placements": {"<poi id>": {"x": 0.42, "y": 0.61}, ...},
-           "custom": [ {full poi object}, ... ]}
+    Body: {"placements": {"<poi id>": {"x": 0.42, "y": 0.61} | null, ...}}
     Coordinates are 0-1 fractions of the image, so they survive swapping the
     underlying map image for a higher-resolution one, and are stored under
     coords[<map id>] so one POI file can back several maps.
@@ -177,49 +255,36 @@ def api_save_pois(map_id):
     if not path:
         return jsonify({'error': f'no POI file configured for {map_id}'}), 400
 
-    body = request.get_json(silent=True) or {}
-    placements = body.get('placements') or {}
-    custom = body.get('custom') or []
+    placements = json_body().get('placements') or {}
+    if not isinstance(placements, dict):
+        return jsonify({'error': 'placements must be an object'}), 400
 
-    with open(path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
+    with poi_lock:
+        with open(path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
 
-    updated = 0
-    cleared = 0
-    for loc in data.get('locations', []):
-        if loc['id'] not in placements:
-            continue
-        coords = placements[loc['id']]
-        store = loc.setdefault('coords', {})
-        if coords is None:
-            if store.pop(map_id, None) is not None:
-                cleared += 1
-        else:
-            try:
-                x = min(1.0, max(0.0, float(coords['x'])))
-                y = min(1.0, max(0.0, float(coords['y'])))
-            except (TypeError, ValueError, KeyError):
+        updated = 0
+        cleared = 0
+        for loc in data.get('locations', []):
+            if loc.get('id') not in placements:
                 continue
-            # A hand placement is deliberate, so it is no longer approximate.
-            store[map_id] = {'x': round(x, 6), 'y': round(y, 6)}
-            updated += 1
+            coords = placements[loc['id']]
+            store = loc.setdefault('coords', {})
+            if coords is None:
+                if store.pop(map_id, None) is not None:
+                    cleared += 1
+            else:
+                try:
+                    x = min(1.0, max(0.0, float(coords['x'])))
+                    y = min(1.0, max(0.0, float(coords['y'])))
+                except (TypeError, ValueError, KeyError):
+                    continue
+                # A hand placement is deliberate, so it is no longer approximate.
+                store[map_id] = {'x': round(x, 6), 'y': round(y, 6)}
+                updated += 1
 
-    if custom:
-        known = {l['id'] for l in data.get('locations', [])}
-        for poi in custom:
-            if poi.get('id') and poi['id'] not in known:
-                poi['custom'] = True
-                data.setdefault('locations', []).append(poi)
-                known.add(poi['id'])
-        groups = data.setdefault('groups', [])
-        for poi in custom:
-            if poi.get('group') and poi['group'] not in groups:
-                groups.append(poi['group'])
-
-    data['count'] = len(data.get('locations', []))
-
-    with open(path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+        data['count'] = len(data.get('locations', []))
+        write_json_atomic(path, data)
 
     only_groups = entry.get('poi_groups')
     scoped = [l for l in data.get('locations', [])
@@ -227,7 +292,7 @@ def api_save_pois(map_id):
     placed = sum(1 for l in scoped if (l.get('coords') or {}).get(map_id))
     return jsonify({
         'success': True, 'updated': updated, 'cleared': cleared,
-        'added': len(custom), 'placed': placed, 'total': len(scoped),
+        'placed': placed, 'total': len(scoped),
     })
 
 @app.route('/api/roll', methods=['POST'])
@@ -252,13 +317,14 @@ def get_events():
         return jsonify({'error': str(e)}), 500
 
 @app.route('/api/encounter', methods=['POST'])
+@gm_write
 def get_encounter():
     """Generate random encounter for given floor and sum"""
     # Import EventContext here to avoid circular imports
     sys.path.insert(0, os.path.join(PROJECT_ROOT, 'bin', 'generators'))
     from event_context import EventContext
     
-    data = request.json
+    data = json_body()
     floor = data.get('floor', 1)
     dice_sum = data.get('sum')
     party_level = data.get('party_level', 4)
@@ -339,24 +405,26 @@ def get_encounter():
     
     return jsonify(event)
 
-@app.route('/api/dice-jar', methods=['GET', 'POST'])
-def dice_jar_api():
-    """Get or update dice jar count"""
+@app.route('/api/dice-jar', methods=['GET'])
+def get_dice_jar():
+    return jsonify({'dice_jar': dice_jar})
+
+
+@app.route('/api/dice-jar', methods=['POST'])
+@gm_write
+def update_dice_jar():
+    """Update dice jar count"""
     global dice_jar
-    
-    if request.method == 'POST':
-        data = request.json
-        action = data.get('action')
-        
-        if action == 'add':
-            dice_jar = min(dice_jar + 1, 5)
-        elif action == 'reset':
-            dice_jar = 0
-        elif action == 'set':
-            dice_jar = max(0, min(data.get('value', 0), 5))
-        
-        return jsonify({'dice_jar': dice_jar})
-    
+    data = json_body()
+    action = data.get('action')
+
+    if action == 'add':
+        dice_jar = min(dice_jar + 1, 5)
+    elif action == 'reset':
+        dice_jar = 0
+    elif action == 'set':
+        dice_jar = max(0, min(int(data.get('value', 0)), 5))
+
     return jsonify({'dice_jar': dice_jar})
 
 @app.route('/api/history', methods=['GET'])
@@ -365,6 +433,7 @@ def get_history():
     return jsonify({'history': roll_history[-10:]})  # Last 10 rolls
 
 @app.route('/api/clear-history', methods=['POST'])
+@gm_write
 def clear_history():
     """Clear roll history"""
     global roll_history
@@ -647,46 +716,23 @@ This is the original Dungeon Turn system (V1). For the enhanced system with ecol
         'content': content
     })
 
-@app.route('/api/view-doc', methods=['POST'])
-def view_doc_api():
-    """View a markdown document"""
-    data = request.json
-    doc_path = data.get('path', '')
-    
-    full_path = os.path.join(PROJECT_ROOT, doc_path)
-    
-    if not os.path.exists(full_path):
-        return jsonify({'error': 'Document not found'}), 404
-    
-    with open(full_path, 'r') as f:
-        content = f.read()
-    
-    # Simple markdown to HTML conversion (basic)
-    html = content.replace('\n', '<br>')
-    html = html.replace('# ', '<h1 class="text-3xl font-bold mt-6 mb-4">')
-    html = html.replace('## ', '<h2 class="text-2xl font-bold mt-4 mb-3">')
-    html = html.replace('### ', '<h3 class="text-xl font-bold mt-3 mb-2">')
-    html = html.replace('**', '<strong>')
-    html = html.replace('*', '<em>')
-    
-    title = os.path.basename(doc_path).replace('.md', '').replace('_', ' ').title()
-    
-    return jsonify({
-        'title': title,
-        'html': html,
-        'raw': content
-    })
+# The documents the GM page can open, by id. Nothing outside this list is served.
+GM_DOCS = {
+    'quick-reference': 'gm/DUNGEON_TURN_V2_QUICK_REFERENCE.md',
+    'exploration-guide': 'docs/DUNGEON_EXPLORATION_GUIDE.md',
+}
 
-@app.route('/api/download-doc', methods=['GET'])
-def download_doc_api():
-    """Download a markdown document"""
-    doc_path = request.args.get('path', '')
-    full_path = os.path.join(PROJECT_ROOT, doc_path)
-    
-    if not os.path.exists(full_path):
+
+@app.route('/api/gm-doc/<doc_id>', methods=['GET'])
+def get_gm_doc(doc_id):
+    rel = GM_DOCS.get(doc_id)
+    if not rel:
         return jsonify({'error': 'Document not found'}), 404
-    
-    return send_file(full_path, as_attachment=True)
+    with open(os.path.join(PROJECT_ROOT, rel), 'r', encoding='utf-8') as f:
+        content = f.read()
+    first = content.split('\n', 1)[0]
+    title = first.lstrip('#').strip() if first.startswith('#') else doc_id.replace('-', ' ').title()
+    return jsonify({'title': title, 'html': markdown_to_html(content)})
 
 @app.route('/api/generate-hazard', methods=['POST'])
 def generate_hazard_api():
@@ -1201,10 +1247,11 @@ def merchant_generator_config():
 
 
 @app.route('/api/merchant-generator/run', methods=['POST'])
+@gm_write
 def start_merchant_job():
     """Start a restock in the background; the GM page polls the status endpoint."""
     global merchant_job
-    settings = normalize_settings(request.get_json(silent=True) or {})
+    settings = normalize_settings(json_body())
     if not settings['merchants'] and not settings['random_merchants']:
         return jsonify({'error': 'Pick at least one shop or traveling merchant.'}), 400
 
@@ -1233,192 +1280,6 @@ def merchant_job_status():
         return jsonify({'status': 'idle'})
     return jsonify(merchant_job_view(merchant_job, request.args.get('since', 0, type=int)))
 
-@app.route('/api/run-data-integrity', methods=['POST'])
-def run_data_integrity():
-    """Run data integrity checker"""
-    import subprocess
-    
-    data = request.json
-    data_type = data.get('type', 'equipment')
-    count = data.get('count', 10)
-    fix = data.get('fix', False)
-    
-    script_path = os.path.join(PROJECT_ROOT, 'bin', 'data_management', 'check_data_integrity.py')
-    
-    try:
-        args = [sys.executable, script_path, str(count), data_type]
-        if fix:
-            args.append('--replace')
-        
-        process = subprocess.Popen(
-            args,
-            cwd=PROJECT_ROOT,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True
-        )
-        
-        output_lines = []
-        for line in process.stdout:
-            output_lines.append(line.strip())
-        
-        process.wait()
-        
-        return jsonify({
-            'success': process.returncode == 0,
-            'output': '\n'.join(output_lines[-50:])  # Last 50 lines
-        })
-    except Exception as e:
-        return jsonify({'success': False, 'error': str(e)}), 500
-
-@app.route('/api/scrape-creatures', methods=['POST'])
-def scrape_creatures():
-    """Scrape all creatures from AoN"""
-    import subprocess
-    
-    script_path = os.path.join(PROJECT_ROOT, 'bin', 'scrapers', 'scrape_all_creatures.py')
-    
-    try:
-        process = subprocess.Popen(
-            [sys.executable, script_path],
-            cwd=PROJECT_ROOT,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True
-        )
-        
-        output_lines = []
-        for line in process.stdout:
-            output_lines.append(line.strip())
-        
-        process.wait()
-        
-        return jsonify({
-            'success': process.returncode == 0,
-            'output': '\n'.join(output_lines[-50:])
-        })
-    except Exception as e:
-        return jsonify({'success': False, 'error': str(e)}), 500
-
-@app.route('/api/scrape-creature-lore', methods=['POST'])
-def scrape_creature_lore():
-    """Scrape creature lore from AoN"""
-    import subprocess
-    
-    script_path = os.path.join(PROJECT_ROOT, 'bin', 'scrapers', 'scrape_creature_lore.py')
-    
-    try:
-        process = subprocess.Popen(
-            [sys.executable, script_path],
-            cwd=PROJECT_ROOT,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True
-        )
-        
-        output_lines = []
-        for line in process.stdout:
-            output_lines.append(line.strip())
-        
-        process.wait()
-        
-        return jsonify({
-            'success': process.returncode == 0,
-            'output': '\n'.join(output_lines[-50:])
-        })
-    except Exception as e:
-        return jsonify({'success': False, 'error': str(e)}), 500
-
-@app.route('/api/scrape-spells', methods=['POST'])
-def scrape_spells():
-    """Scrape spells from AoN"""
-    import subprocess
-    
-    script_path = os.path.join(PROJECT_ROOT, 'bin', 'scrapers', 'scrape_spells.py')
-    
-    try:
-        process = subprocess.Popen(
-            [sys.executable, script_path],
-            cwd=PROJECT_ROOT,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True
-        )
-        
-        output_lines = []
-        for line in process.stdout:
-            output_lines.append(line.strip())
-        
-        process.wait()
-        
-        return jsonify({
-            'success': process.returncode == 0,
-            'output': '\n'.join(output_lines[-50:])
-        })
-    except Exception as e:
-        return jsonify({'success': False, 'error': str(e)}), 500
-
-@app.route('/api/expand-encounter-pools', methods=['POST'])
-def expand_encounter_pools():
-    """Expand encounter pools"""
-    import subprocess
-    
-    script_path = os.path.join(PROJECT_ROOT, 'bin', 'data_management', 'expand_encounter_pools.py')
-    
-    try:
-        process = subprocess.Popen(
-            [sys.executable, script_path],
-            cwd=PROJECT_ROOT,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True
-        )
-        
-        output_lines = []
-        for line in process.stdout:
-            output_lines.append(line.strip())
-        
-        process.wait()
-        
-        return jsonify({
-            'success': process.returncode == 0,
-            'output': '\n'.join(output_lines[-50:])
-        })
-    except Exception as e:
-        return jsonify({'success': False, 'error': str(e)}), 500
-
-@app.route('/api/reset-verification', methods=['POST'])
-def reset_verification():
-    """Reset verification dates"""
-    import subprocess
-    
-    data = request.json
-    data_type = data.get('type', 'equipment')
-    
-    script_path = os.path.join(PROJECT_ROOT, 'bin', 'data_management', 'reset_verification_dates.py')
-    
-    try:
-        process = subprocess.Popen(
-            [sys.executable, script_path, data_type],
-            cwd=PROJECT_ROOT,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True
-        )
-        
-        output_lines = []
-        for line in process.stdout:
-            output_lines.append(line.strip())
-        
-        process.wait()
-        
-        return jsonify({
-            'success': process.returncode == 0,
-            'output': '\n'.join(output_lines[-50:])
-        })
-    except Exception as e:
-        return jsonify({'success': False, 'error': str(e)}), 500
-
 if __name__ == '__main__':
     print("\n" + "="*80)
     print("DUNGEON TURN V2 - WEB INTERFACE")
@@ -1427,5 +1288,6 @@ if __name__ == '__main__':
     print("Open your browser to: http://localhost:5001")
     print("\nPress Ctrl+C to stop")
     print("="*80 + "\n")
-    
-    app.run(debug=True, host='0.0.0.0', port=5001)
+
+    # FLASK_DEBUG=1 for the reloader and debugger; it stays on this machine only.
+    app.run(debug=os.environ.get('FLASK_DEBUG') == '1', host='127.0.0.1', port=5001)

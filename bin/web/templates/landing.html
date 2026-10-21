@@ -127,9 +127,18 @@
             document.getElementById('password-error').classList.add('hidden');
         }
 
-        function checkGMPassword() {
+        async function checkGMPassword() {
             const password = document.getElementById('gm-password-input').value;
-            if (password === 'aroden') {
+            let ok = false;
+            try {
+                const res = await fetch('/api/gm-login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ password })
+                });
+                ok = res.ok;
+            } catch (error) {}
+            if (ok) {
                 window.location.href = '/gm';
             } else {
                 document.getElementById('password-error').classList.remove('hidden');

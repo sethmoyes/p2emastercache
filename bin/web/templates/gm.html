@@ -199,10 +199,8 @@
                     <select id="doc-select" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
                         title="Select a document to view">
                         <option value="">Select a document...</option>
-                        <option value="docs/EXTREME_ENCOUNTERS.md">Extreme Encounters Guide</option>
-                        <option value="docs/DUNGEON_TURN_REDESIGN.md">Dungeon Turn Design</option>
-                        <option value="players/DUNGEON_EXPLORATION_GUIDE.md">Player Exploration Guide</option>
-                        <option value="gm/DUNGEON_TURN_V2_QUICK_REFERENCE.md">GM Quick Reference</option>
+                        <option value="quick-reference">GM Quick Reference</option>
+                        <option value="exploration-guide">Player Exploration Guide</option>
                     </select>
                     <button onclick="viewDoc()" class="w-full bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg transition font-bold">
                         View Document
@@ -219,89 +217,6 @@
                     <button onclick="generateHazard()" class="w-full bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg transition font-bold">
                         Generate Hazard
                     </button>
-                </div>
-
-                <!-- Data Integrity Checker -->
-                <div class="bg-gray-700 p-4 rounded-lg">
-                    <h3 class="text-lg font-bold mb-2">🔍 Check Data Integrity</h3>
-                    <p class="text-sm text-gray-400 mb-3">Verify equipment/creatures against AoN</p>
-                    <select id="integrity-type" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
-                        title="Select which type of data to verify against Archives of Nethys">
-                        <option value="equipment">Equipment</option>
-                        <option value="creatures">Creatures</option>
-                        <option value="deities">Deities</option>
-                    </select>
-                    <input type="number" id="integrity-count" placeholder="Items to check (or 'all')" min="1" value="10" 
-                        class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
-                        title="Number of random items to check (use 'all' to check everything - takes a long time!)">
-                    <label class="flex items-center text-sm mb-2" title="Automatically update mismatched items with correct data from AoN">
-                        <input type="checkbox" id="integrity-fix" class="mr-2">
-                        Auto-fix mismatches
-                    </label>
-                    <button onclick="runDataIntegrity()" id="integrity-btn" class="w-full bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-lg transition font-bold">
-                        Check Data
-                    </button>
-                    <p id="integrity-status" class="text-xs text-gray-400 mt-2 hidden"></p>
-                </div>
-
-                <!-- Scrape Creatures -->
-                <div class="bg-gray-700 p-4 rounded-lg">
-                    <h3 class="text-lg font-bold mb-2">🕷️ Scrape Creatures</h3>
-                    <p class="text-sm text-gray-400 mb-3">Update creature database from AoN</p>
-                    <button onclick="scrapeCreatures()" id="scrape-creatures-btn" class="w-full bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-lg transition font-bold"
-                        title="Scrapes ALL creatures from Archives of Nethys - takes several minutes">
-                        Scrape All Creatures
-                    </button>
-                    <p id="scrape-creatures-status" class="text-xs text-gray-400 mt-2 hidden"></p>
-                </div>
-
-                <!-- Scrape Creature Lore -->
-                <div class="bg-gray-700 p-4 rounded-lg">
-                    <h3 class="text-lg font-bold mb-2">📖 Scrape Creature Lore</h3>
-                    <p class="text-sm text-gray-400 mb-3">Update creature lore from AoN</p>
-                    <button onclick="scrapeCreatureLore()" id="scrape-lore-btn" class="w-full bg-amber-600 hover:bg-amber-700 px-4 py-2 rounded-lg transition font-bold"
-                        title="Scrapes creature lore and descriptions from Archives of Nethys">
-                        Scrape Lore
-                    </button>
-                    <p id="scrape-lore-status" class="text-xs text-gray-400 mt-2 hidden"></p>
-                </div>
-
-                <!-- Scrape Spells -->
-                <div class="bg-gray-700 p-4 rounded-lg">
-                    <h3 class="text-lg font-bold mb-2">✨ Scrape Spells</h3>
-                    <p class="text-sm text-gray-400 mb-3">Update spell database from AoN</p>
-                    <button onclick="scrapeSpells()" id="scrape-spells-btn" class="w-full bg-violet-600 hover:bg-violet-700 px-4 py-2 rounded-lg transition font-bold"
-                        title="Scrapes ALL spells from Archives of Nethys - takes several minutes">
-                        Scrape Spells
-                    </button>
-                    <p id="scrape-spells-status" class="text-xs text-gray-400 mt-2 hidden"></p>
-                </div>
-
-                <!-- Expand Encounter Pools -->
-                <div class="bg-gray-700 p-4 rounded-lg">
-                    <h3 class="text-lg font-bold mb-2">🎲 Expand Encounter Pools</h3>
-                    <p class="text-sm text-gray-400 mb-3">Generate expanded encounter pools</p>
-                    <button onclick="expandEncounterPools()" id="expand-pools-btn" class="w-full bg-lime-600 hover:bg-lime-700 px-4 py-2 rounded-lg transition font-bold"
-                        title="Expands encounter pools with additional creatures and variations">
-                        Expand Pools
-                    </button>
-                    <p id="expand-pools-status" class="text-xs text-gray-400 mt-2 hidden"></p>
-                </div>
-
-                <!-- Reset Verification Dates -->
-                <div class="bg-gray-700 p-4 rounded-lg">
-                    <h3 class="text-lg font-bold mb-2">🔄 Reset Verification</h3>
-                    <p class="text-sm text-gray-400 mb-3">Reset AoN verification dates</p>
-                    <select id="reset-type" class="w-full bg-gray-600 text-white px-3 py-2 rounded mb-2 text-sm"
-                        title="Select which data type to reset verification dates for (forces re-checking)">
-                        <option value="equipment">Equipment</option>
-                        <option value="creatures">Creatures</option>
-                        <option value="deities">Deities</option>
-                    </select>
-                    <button onclick="resetVerification()" id="reset-verify-btn" class="w-full bg-rose-600 hover:bg-rose-700 px-4 py-2 rounded-lg transition font-bold">
-                        Reset Dates
-                    </button>
-                    <p id="reset-verify-status" class="text-xs text-gray-400 mt-2 hidden"></p>
                 </div>
 
             </div>
@@ -389,6 +304,24 @@
         let currentFloor = 1;
         let currentDiceJar = 0;
         let partyLevel = 4;
+
+        // Writes (rolls, the jar, history, restocks) need the GM password. If the
+        // server asks for it, prompt once, log in, and retry the request.
+        async function gmFetch(url, options = {}) {
+            let res = await fetch(url, options);
+            if (res.status === 401) {
+                const password = prompt('GM password:');
+                if (password === null) return res;
+                const login = await fetch('/api/gm-login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ password })
+                });
+                if (!login.ok) { alert('Incorrect password'); return res; }
+                res = await fetch(url, options);
+            }
+            return res;
+        }
 
         const floorNames = {
             1: "The Lighthouse (Surface Level)",
@@ -499,7 +432,7 @@
 
                 let encounter;
                 try {
-                    const res = await fetch('/api/encounter', {
+                    const res = await gmFetch('/api/encounter', {
                         method: 'POST',
                         headers: {'Content-Type': 'application/json'},
                         body: JSON.stringify({
@@ -546,7 +479,7 @@
             btn.textContent = '⏳ Generating...';
 
             // Use default context parameters for dice-based generation
-            const encounterResponse = await fetch('/api/encounter', {
+            const encounterResponse = await gmFetch('/api/encounter', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -674,9 +607,9 @@
         }
 
         async function viewDoc() {
-            const docPath = document.getElementById('doc-select').value;
+            const docId = document.getElementById('doc-select').value;
             
-            if (!docPath) {
+            if (!docId) {
                 alert('Please select a document');
                 return;
             }
@@ -685,22 +618,12 @@
             output.innerHTML = '<p class="text-center">Loading document...</p>';
             output.classList.remove('hidden');
             
-            const response = await fetch('/api/view-doc', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ path: docPath })
-            });
+            const response = await fetch(`/api/gm-doc/${docId}`);
             const data = await response.json();
             
             output.innerHTML = `
-                <div class="flex justify-between items-center mb-4">
-                    <h3 class="text-2xl font-bold">📚 ${data.title}</h3>
-                    <a href="/api/download-doc?path=${encodeURIComponent(docPath)}" 
-                       class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm">
-                        Download
-                    </a>
-                </div>
-                <div class="prose prose-invert max-w-none bg-gray-900 p-6 rounded">
+                <h3 class="text-2xl font-bold mb-4">📚 ${data.title}</h3>
+                <div class="max-w-none bg-gray-900 p-6 rounded">
                     ${data.html}
                 </div>
             `;
@@ -991,7 +914,7 @@
         }
 
         async function addDie() {
-            const response = await fetch('/api/dice-jar', {
+            const response = await gmFetch('/api/dice-jar', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ action: 'add' })
@@ -1001,7 +924,7 @@
         }
 
         async function resetJar() {
-            const response = await fetch('/api/dice-jar', {
+            const response = await gmFetch('/api/dice-jar', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ action: 'reset' })
@@ -1053,7 +976,7 @@
         }
 
         async function clearHistory() {
-            await fetch('/api/clear-history', { method: 'POST' });
+            await gmFetch('/api/clear-history', { method: 'POST' });
             updateHistory();
         }
 
@@ -1092,274 +1015,6 @@
                 content.classList.add('hidden');
                 arrow.classList.remove('rotate-180');
             }
-        }
-
-        // Data Integrity Checker
-        async function runDataIntegrity() {
-            const type = document.getElementById('integrity-type').value;
-            const count = document.getElementById('integrity-count').value;
-            const fix = document.getElementById('integrity-fix').checked;
-            const btn = document.getElementById('integrity-btn');
-            const status = document.getElementById('integrity-status');
-            
-            btn.disabled = true;
-            btn.textContent = 'Checking...';
-            status.classList.remove('hidden');
-            status.textContent = 'Running data integrity check...';
-            
-            try {
-                const response = await fetch('/api/run-data-integrity', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ type, count, fix })
-                });
-                const data = await response.json();
-                
-                if (data.success) {
-                    status.textContent = 'Check complete! See output below.';
-                    status.classList.add('text-green-400');
-                    
-                    const output = document.getElementById('generator-output');
-                    output.innerHTML = `
-                        <h3 class="text-2xl font-bold mb-4">🔍 Data Integrity Check - ${type}</h3>
-                        <div class="prose prose-invert max-w-none">
-                            <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded text-sm">${data.output}</pre>
-                        </div>
-                    `;
-                    output.classList.remove('hidden');
-                    output.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                    status.textContent = `Error: ${data.error || 'Check failed'}`;
-                    status.classList.add('text-red-400');
-                }
-            } catch (error) {
-                status.textContent = `Error: ${error.message}`;
-                status.classList.add('text-red-400');
-            }
-            
-            btn.disabled = false;
-            btn.textContent = 'Check Data';
-        }
-
-        // Scrape Creatures
-        async function scrapeCreatures() {
-            const btn = document.getElementById('scrape-creatures-btn');
-            const status = document.getElementById('scrape-creatures-status');
-            
-            if (!confirm('This will scrape ALL creatures from Archives of Nethys. This may take several minutes. Continue?')) {
-                return;
-            }
-            
-            btn.disabled = true;
-            btn.textContent = 'Scraping...';
-            status.classList.remove('hidden');
-            status.textContent = 'Scraping creatures from AoN...';
-            
-            try {
-                const response = await fetch('/api/scrape-creatures', { method: 'POST' });
-                const data = await response.json();
-                
-                if (data.success) {
-                    status.textContent = 'Scraping complete!';
-                    status.classList.add('text-green-400');
-                    
-                    const output = document.getElementById('generator-output');
-                    output.innerHTML = `
-                        <h3 class="text-2xl font-bold mb-4">🕷️ Creature Scraping Complete</h3>
-                        <div class="prose prose-invert max-w-none">
-                            <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded text-sm">${data.output}</pre>
-                        </div>
-                    `;
-                    output.classList.remove('hidden');
-                    output.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                    status.textContent = `Error: ${data.error || 'Scraping failed'}`;
-                    status.classList.add('text-red-400');
-                }
-            } catch (error) {
-                status.textContent = `Error: ${error.message}`;
-                status.classList.add('text-red-400');
-            }
-            
-            btn.disabled = false;
-            btn.textContent = 'Scrape All Creatures';
-        }
-
-        // Scrape Creature Lore
-        async function scrapeCreatureLore() {
-            const btn = document.getElementById('scrape-lore-btn');
-            const status = document.getElementById('scrape-lore-status');
-            
-            if (!confirm('This will scrape creature lore from Archives of Nethys. This may take several minutes. Continue?')) {
-                return;
-            }
-            
-            btn.disabled = true;
-            btn.textContent = 'Scraping...';
-            status.classList.remove('hidden');
-            status.textContent = 'Scraping creature lore...';
-            
-            try {
-                const response = await fetch('/api/scrape-creature-lore', { method: 'POST' });
-                const data = await response.json();
-                
-                if (data.success) {
-                    status.textContent = 'Lore scraping complete!';
-                    status.classList.add('text-green-400');
-                    
-                    const output = document.getElementById('generator-output');
-                    output.innerHTML = `
-                        <h3 class="text-2xl font-bold mb-4">📖 Creature Lore Scraping Complete</h3>
-                        <div class="prose prose-invert max-w-none">
-                            <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded text-sm">${data.output}</pre>
-                        </div>
-                    `;
-                    output.classList.remove('hidden');
-                    output.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                    status.textContent = `Error: ${data.error || 'Scraping failed'}`;
-                    status.classList.add('text-red-400');
-                }
-            } catch (error) {
-                status.textContent = `Error: ${error.message}`;
-                status.classList.add('text-red-400');
-            }
-            
-            btn.disabled = false;
-            btn.textContent = 'Scrape Lore';
-        }
-
-        // Scrape Spells
-        async function scrapeSpells() {
-            const btn = document.getElementById('scrape-spells-btn');
-            const status = document.getElementById('scrape-spells-status');
-            
-            if (!confirm('This will scrape ALL spells from Archives of Nethys. This may take several minutes. Continue?')) {
-                return;
-            }
-            
-            btn.disabled = true;
-            btn.textContent = 'Scraping...';
-            status.classList.remove('hidden');
-            status.textContent = 'Scraping spells from AoN...';
-            
-            try {
-                const response = await fetch('/api/scrape-spells', { method: 'POST' });
-                const data = await response.json();
-                
-                if (data.success) {
-                    status.textContent = 'Spell scraping complete!';
-                    status.classList.add('text-green-400');
-                    
-                    const output = document.getElementById('generator-output');
-                    output.innerHTML = `
-                        <h3 class="text-2xl font-bold mb-4">✨ Spell Scraping Complete</h3>
-                        <div class="prose prose-invert max-w-none">
-                            <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded text-sm">${data.output}</pre>
-                        </div>
-                    `;
-                    output.classList.remove('hidden');
-                    output.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                    status.textContent = `Error: ${data.error || 'Scraping failed'}`;
-                    status.classList.add('text-red-400');
-                }
-            } catch (error) {
-                status.textContent = `Error: ${error.message}`;
-                status.classList.add('text-red-400');
-            }
-            
-            btn.disabled = false;
-            btn.textContent = 'Scrape Spells';
-        }
-
-        // Expand Encounter Pools
-        async function expandEncounterPools() {
-            const btn = document.getElementById('expand-pools-btn');
-            const status = document.getElementById('expand-pools-status');
-            
-            btn.disabled = true;
-            btn.textContent = 'Expanding...';
-            status.classList.remove('hidden');
-            status.textContent = 'Expanding encounter pools...';
-            
-            try {
-                const response = await fetch('/api/expand-encounter-pools', { method: 'POST' });
-                const data = await response.json();
-                
-                if (data.success) {
-                    status.textContent = 'Pools expanded!';
-                    status.classList.add('text-green-400');
-                    
-                    const output = document.getElementById('generator-output');
-                    output.innerHTML = `
-                        <h3 class="text-2xl font-bold mb-4">🎲 Encounter Pools Expanded</h3>
-                        <div class="prose prose-invert max-w-none">
-                            <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded text-sm">${data.output}</pre>
-                        </div>
-                    `;
-                    output.classList.remove('hidden');
-                    output.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                    status.textContent = `Error: ${data.error || 'Expansion failed'}`;
-                    status.classList.add('text-red-400');
-                }
-            } catch (error) {
-                status.textContent = `Error: ${error.message}`;
-                status.classList.add('text-red-400');
-            }
-            
-            btn.disabled = false;
-            btn.textContent = 'Expand Pools';
-        }
-
-        // Reset Verification Dates
-        async function resetVerification() {
-            const type = document.getElementById('reset-type').value;
-            const btn = document.getElementById('reset-verify-btn');
-            const status = document.getElementById('reset-verify-status');
-            
-            if (!confirm(`Reset verification dates for ${type}? This will force re-checking all items.`)) {
-                return;
-            }
-            
-            btn.disabled = true;
-            btn.textContent = 'Resetting...';
-            status.classList.remove('hidden');
-            status.textContent = 'Resetting verification dates...';
-            
-            try {
-                const response = await fetch('/api/reset-verification', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ type })
-                });
-                const data = await response.json();
-                
-                if (data.success) {
-                    status.textContent = 'Verification dates reset!';
-                    status.classList.add('text-green-400');
-                    
-                    const output = document.getElementById('generator-output');
-                    output.innerHTML = `
-                        <h3 class="text-2xl font-bold mb-4">🔄 Verification Dates Reset - ${type}</h3>
-                        <div class="prose prose-invert max-w-none">
-                            <pre class="whitespace-pre-wrap bg-gray-900 p-4 rounded text-sm">${data.output}</pre>
-                        </div>
-                    `;
-                    output.classList.remove('hidden');
-                    output.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                    status.textContent = `Error: ${data.error || 'Reset failed'}`;
-                    status.classList.add('text-red-400');
-                }
-            } catch (error) {
-                status.textContent = `Error: ${error.message}`;
-                status.classList.add('text-red-400');
-            }
-            
-            btn.disabled = false;
-            btn.textContent = 'Reset Dates';
         }
 
         // ============================================
@@ -1720,7 +1375,7 @@
             const btn = document.getElementById('restock-btn');
             btn.disabled = true;
             try {
-                const response = await fetch('/api/merchant-generator/run', {
+                const response = await gmFetch('/api/merchant-generator/run', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(settings)

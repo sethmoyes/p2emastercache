@@ -1,1 +1,13 @@
+# Tile sources are big; only otari.jpg is tracked (force-added)
 etc/maps_src/
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.hypothesis/
+venv/
+.venv/
+.DS_Store
+*.bak
+*.tmp
+junk_items.log
