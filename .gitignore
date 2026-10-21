@@ -11,3 +11,6 @@ venv/
 *.bak
 *.tmp
 junk_items.log
+
+# The GM session (dice jar, roll history) when running locally
+state/
