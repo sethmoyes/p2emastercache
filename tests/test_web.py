@@ -22,8 +22,9 @@ def test_unsafe_routes_are_gone(client, method, url):
 
 
 @pytest.fixture
-def password(app_module, monkeypatch):
-    monkeypatch.setattr(app_module, 'GM_PASSWORD', 'sekrit')
+def password(monkeypatch):
+    from avtools.web import core
+    monkeypatch.setattr(core, 'GM_PASSWORD', 'sekrit')
 
 
 @pytest.mark.parametrize('url,body', [('/api/session', {'add': {'dice_jar': 1}}),
@@ -40,8 +41,9 @@ def test_login_unlocks_writes(client, password):
     assert client.post('/api/session', json={'set': {'dice_jar': 2}}).status_code == 200
 
 
-def test_writes_refused_on_fly_without_a_password(client, app_module, monkeypatch):
-    monkeypatch.setattr(app_module, 'ON_FLY', True)
+def test_writes_refused_on_fly_without_a_password(client, monkeypatch):
+    from avtools.web import core
+    monkeypatch.setattr(core, 'ON_FLY', True)
     assert client.post('/api/session', json={'add': {'dice_jar': 1}}).status_code == 503
 
 
