@@ -27,7 +27,8 @@
           ]
         }
       },
-      "floor": 10
+      "floor": 10,
+      "retired": "Off-book: the cult no longer exists; only cultist specters remain (floor-10, J2). See etc/floor_ecology.json."
     },
     {
       "title": "Abandoned Supplies",
@@ -144,7 +145,8 @@
       "time_cost": "1 action to sneak, 5 minutes to deceive",
       "gm_notes": "Avoids combat encounter with 2 cultists. If deception used, they leave for 30 minutes. Floor 10 specific - Empty Vault cultists.",
       "reward": "Avoid combat, save resources",
-      "floor": 10
+      "floor": 10,
+      "retired": "Off-book: the cult no longer exists; only cultist specters remain (floor-10, J2). See etc/floor_ecology.json."
     },
     {
       "title": "Healing Spring",
@@ -1901,7 +1903,8 @@
             "Armored"
           ]
         }
-      }
+      },
+      "retired": "Off-book: 'Arena Beasts' aren't in Abomination Vaults; Floor 5 is Jafaki's dumping ground for failed experiments (common/campaign-reference/floors/floor-05, Arena Features). See etc/floor_ecology.json."
     },
     {
       "title": "Gladiator's Hidden Cache",
@@ -2081,7 +2084,8 @@
       "time_cost": "20 minutes (add 2 dice)",
       "gm_notes": "Floor 10. Major lore moment. Prophecies hint at final confrontation. Nhimbaloth's influence is dangerous.",
       "reward": "Prophetic knowledge or visions",
-      "floor": 10
+      "floor": 10,
+      "retired": "Off-book: the book leaves the temple's builders unknown (floor-10, background). No serpentfolk."
     },
     {
       "title": "Void Energy Conduit",
@@ -2111,7 +2115,8 @@
       "time_cost": "20 minutes (add 2 dice)",
       "gm_notes": "Floor 10. Major treasure. Serpentfolk artifacts may have plot significance. Guardian is dangerous.",
       "reward": "Ancient treasure",
-      "floor": 10
+      "floor": 10,
+      "retired": "Off-book: the book leaves the temple's builders unknown (floor-10, background). No serpentfolk."
     }
   ],
   "COMPLICATION": [
@@ -4878,7 +4883,8 @@
             "Armored"
           ]
         }
-      }
+      },
+      "retired": "Off-book: 'Arena Beasts' aren't in Abomination Vaults; Floor 5 is Jafaki's dumping ground for failed experiments (common/campaign-reference/floors/floor-05, Arena Features). See etc/floor_ecology.json."
     },
     {
       "title": "Bloodstained Sand Pit",
@@ -6926,7 +6932,8 @@
             "Fanatical"
           ]
         }
-      }
+      },
+      "retired": "Off-book: the cult no longer exists; only cultist specters remain (floor-10, J2). See etc/floor_ecology.json."
     },
     {
       "title": "Cultist Standoff - Diplomacy or Violence",
@@ -6955,7 +6962,8 @@
             "Fanatical"
           ]
         }
-      }
+      },
+      "retired": "Off-book: the cult no longer exists; only cultist specters remain (floor-10, J2). See etc/floor_ecology.json."
     },
     {
       "title": "Cultist Parley - Parley or Combat",
@@ -6984,7 +6992,8 @@
             "Fanatical"
           ]
         }
-      }
+      },
+      "retired": "Off-book: the cult no longer exists; only cultist specters remain (floor-10, J2). See etc/floor_ecology.json."
     },
     {
       "title": "Mitflit Prisoner Dilemma",
@@ -7134,7 +7143,8 @@
             "Intelligent"
           ]
         }
-      }
+      },
+      "retired": "Off-book: 'Arena Beasts' aren't in Abomination Vaults; Floor 5 is Jafaki's dumping ground for failed experiments (common/campaign-reference/floors/floor-05, Arena Features). See etc/floor_ecology.json."
     },
     {
       "title": "Gladiator's Ghost",
@@ -7299,7 +7309,8 @@
       "time_cost": "30 minutes",
       "gm_notes": "Floor 10. Ritual is dangerous but freeing spirits is good. Blessing is permanent.",
       "reward": "Blessing or combat",
-      "floor": 10
+      "floor": 10,
+      "retired": "Off-book: the book leaves the temple's builders unknown (floor-10, background). No serpentfolk."
     },
     {
       "title": "Mitflit King's Crown",
@@ -8608,7 +8619,8 @@
             "Wight Spawn: slain humanoids rise as wights in 1d4 rounds"
           ]
         }
-      }
+      },
+      "retired": "Off-book: Floor 4 has two cairn wights (D12) and corpselight-ridden skeletons (D1), not wight squads or skeleton-guard patrols (floor-04). See etc/floor_ecology.json."
     },
     {
       "title": "Meditation Pavilion - Rest or Press On",
@@ -9286,7 +9298,8 @@
       "time_cost": "1 round to react",
       "gm_notes": "Floor 4 specific. 1 wight + 1d4 skeletons. Still following 500-year-old orders. Religion check invokes Belcorra's authority.",
       "threat_level": "Moderate - can be avoided",
-      "floor": 4
+      "floor": 4,
+      "retired": "Off-book: Floor 4 has two cairn wights (D12) and corpselight-ridden skeletons (D1), not wight squads or skeleton-guard patrols (floor-04). See etc/floor_ecology.json."
     },
     {
       "title": "Ghoul Guardians Coming!",
@@ -9430,7 +9443,8 @@
             "Medium"
           ]
         }
-      }
+      },
+      "retired": "Off-book: Floor 4 has two cairn wights (D12) and corpselight-ridden skeletons (D1), not wight squads or skeleton-guard patrols (floor-04). See etc/floor_ecology.json."
     },
     {
       "title": "Skeleton Guard Patrol Approaching!",
@@ -9462,7 +9476,8 @@
             "Medium"
           ]
         }
-      }
+      },
+      "retired": "Off-book: Floor 4 has two cairn wights (D12) and corpselight-ridden skeletons (D1), not wight squads or skeleton-guard patrols (floor-04). See etc/floor_ecology.json."
     },
     {
       "title": "Incoming Undead Legion!",
@@ -9494,7 +9509,8 @@
             "Medium"
           ]
         }
-      }
+      },
+      "retired": "Off-book: Floor 4 has two cairn wights (D12) and corpselight-ridden skeletons (D1), not wight squads or skeleton-guard patrols (floor-04). See etc/floor_ecology.json."
     },
     {
       "title": "Devil Patrol Enforcing Urevian's Law",
@@ -10363,7 +10379,8 @@
           "hp": 4,
           "ac": 16
         }
-      }
+      },
+      "retired": "Off-book: Floor 4 has two cairn wights (D12) and corpselight-ridden skeletons (D1), not wight squads or skeleton-guard patrols (floor-04). See etc/floor_ecology.json."
     },
     {
       "title": "Ancient Ward Alert Sounding!",
@@ -10394,7 +10411,8 @@
           "hp": 4,
           "ac": 16
         }
-      }
+      },
+      "retired": "Off-book: Floor 4 has two cairn wights (D12) and corpselight-ridden skeletons (D1), not wight squads or skeleton-guard patrols (floor-04). See etc/floor_ecology.json."
     },
     {
       "title": "Ancient Warning System Activated!",
@@ -10419,7 +10437,8 @@
           "hp": 50,
           "ac": 18
         }
-      }
+      },
+      "retired": "Off-book: Floor 4 has two cairn wights (D12) and corpselight-ridden skeletons (D1), not wight squads or skeleton-guard patrols (floor-04). See etc/floor_ecology.json."
     },
     {
       "title": "Ancient Alarm Going Off!",
@@ -10450,7 +10469,8 @@
           "hp": 4,
           "ac": 16
         }
-      }
+      },
+      "retired": "Off-book: Floor 4 has two cairn wights (D12) and corpselight-ridden skeletons (D1), not wight squads or skeleton-guard patrols (floor-04). See etc/floor_ecology.json."
     },
     {
       "title": "Arena Alarm Triggered!",
@@ -10990,7 +11010,8 @@
             "Medium"
           ]
         }
-      }
+      },
+      "retired": "Off-book: Floor 4 has two cairn wights (D12) and corpselight-ridden skeletons (D1), not wight squads or skeleton-guard patrols (floor-04). See etc/floor_ecology.json."
     },
     {
       "title": "Hidden Shadows Attack!",
@@ -11165,7 +11186,8 @@
             "Enraged (starving)"
           ]
         }
-      }
+      },
+      "retired": "Off-book: 'Arena Beasts' aren't in Abomination Vaults; Floor 5 is Jafaki's dumping ground for failed experiments (common/campaign-reference/floors/floor-05, Arena Features). See etc/floor_ecology.json."
     },
     {
       "title": "Bearded Devil Ambush from Pillars!",
@@ -11824,7 +11846,8 @@
             "Medium"
           ]
         }
-      }
+      },
+      "retired": "Off-book: Floor 4 has two cairn wights (D12) and corpselight-ridden skeletons (D1), not wight squads or skeleton-guard patrols (floor-04). See etc/floor_ecology.json."
     },
     {
       "title": "Devil Reinforcements Summoned!",
@@ -11917,7 +11940,8 @@
             "Armored"
           ]
         }
-      }
+      },
+      "retired": "Off-book: 'Arena Beasts' aren't in Abomination Vaults; Floor 5 is Jafaki's dumping ground for failed experiments (common/campaign-reference/floors/floor-05, Arena Features). See etc/floor_ecology.json."
     },
     {
       "title": "Seugathi Reinforcements Arriving!",
@@ -12013,7 +12037,8 @@
             "Medium"
           ]
         }
-      }
+      },
+      "retired": "Off-book: Floor 4 has two cairn wights (D12) and corpselight-ridden skeletons (D1), not wight squads or skeleton-guard patrols (floor-04). See etc/floor_ecology.json."
     },
     {
       "title": "Drider Patrol Alerted!",
@@ -12108,7 +12133,8 @@
             "Fanatical devotion"
           ]
         }
-      }
+      },
+      "retired": "Off-book: the cult no longer exists; only cultist specters remain (floor-10, J2). See etc/floor_ecology.json."
     },
     {
       "title": "More Urdefhan Arrive!",
@@ -12322,7 +12348,8 @@
             "Stampeding"
           ]
         }
-      }
+      },
+      "retired": "Off-book: 'Arena Beasts' aren't in Abomination Vaults; Floor 5 is Jafaki's dumping ground for failed experiments (common/campaign-reference/floors/floor-05, Arena Features). See etc/floor_ecology.json."
     },
     {
       "title": "Arena Trap Activation!",

@@ -23,6 +23,7 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from event_loader import load_events_from_json, ValidationError
+from floor_ecology import build_ecology_combat_event, build_ecology_threat_event, ECOLOGY_THREAT_CHANCE
 
 def load_json(filename):
     """Load JSON file"""
@@ -282,7 +283,13 @@ def generate_active_threat_event(floor_num, floor_data, party_level, context=Non
     
     if context is None:
         context = EventContext()
-    
+
+    # Most threats come from the floor's own hazards and residents
+    if random.random() < ECOLOGY_THREAT_CHANCE:
+        event = build_ecology_threat_event(floor_num, floor_data)
+        if event:
+            return event
+
     # Select template based on context AND floor
     template = select_template(ACTIVE_THREAT_TEMPLATES, context, floor=floor_num)
     
@@ -298,11 +305,18 @@ def generate_active_threat_event(floor_num, floor_data, party_level, context=Non
     
     return event
 
-def generate_extreme_combat_event(floor_num, floor_data, party_level, creatures, dice_sum):
+def generate_extreme_combat_event(floor_num, floor_data, party_level, creatures, dice_sum, party_size=4):
     """
     Generate an EXTREME combat encounter for extreme rolls (5-15, 90-100).
-    These encounters use creatures at dungeon floor level, making them very dangerous.
+    Drawn from the floor's ecology at a Severe budget (Extreme on a 5 or 100);
+    falls back to random creatures at floor level only if the floor has no ecology.
     """
+    threat = 'Extreme' if dice_sum in (5, 100) else 'Severe'
+    event = build_ecology_combat_event(floor_num, floor_data, party_level, creatures, dice_sum,
+                                       threat=threat, party_size=party_size, extreme=True)
+    if event:
+        return event
+
     # Extreme encounters always use floor level
     target_level = floor_num
     difficulty = "EXTREME (Floor Level)"
@@ -374,15 +388,22 @@ def generate_extreme_combat_event(floor_num, floor_data, party_level, creatures,
         'floor': floor_num
     }
 
-def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_sum=86):
+def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_sum=86, party_size=4):
     """Generate a COMBAT encounter (86-100) with dungeon ecology
+
+    Drawn from the floor's ecology at a Low budget; the random-creature logic
+    below only runs if the floor has no ecology entries.
     
     Dice sum ranges:
     - 86-94: Standard combat (2 levels below party) - "Low threat"
     - 95-99: Dangerous combat (at party level) - "Moderate threat"  
     - 100: EXTREME combat (at floor level) - "DEADLY threat"
     """
-    
+    event = build_ecology_combat_event(floor_num, floor_data, party_level, creatures, dice_sum,
+                                       threat='Low', party_size=party_size)
+    if event:
+        return event
+
     # Determine target level and difficulty based on dice sum
     if dice_sum == 100:
         # EXTREME: Creatures at floor level (deadly)
@@ -682,7 +703,7 @@ def generate_combat_event(floor_num, floor_data, party_level, creatures, dice_su
     return event
 
 
-def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatures, context=None):
+def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatures, context=None, party_size=4):
     """Generate appropriate event based on dice sum with optional context"""
     from event_context import EventContext
     
@@ -711,7 +732,7 @@ def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatur
     
     # For extreme rolls, generate combat at dungeon floor level
     if is_extreme and category == "COMBAT":
-        event = generate_extreme_combat_event(floor_num, floor_data, party_level, creatures, dice_sum)
+        event = generate_extreme_combat_event(floor_num, floor_data, party_level, creatures, dice_sum, party_size)
     elif category == "OPPORTUNITY":
         event = generate_opportunity_event(floor_num, floor_data, party_level, context)
     elif category == "COMPLICATION":
@@ -721,7 +742,7 @@ def generate_event_for_sum(dice_sum, floor_num, floor_data, party_level, creatur
     elif category == "ACTIVE_THREAT":
         event = generate_active_threat_event(floor_num, floor_data, party_level, context)
     else:  # COMBAT (non-extreme)
-        event = generate_combat_event(floor_num, floor_data, party_level, creatures, dice_sum)
+        event = generate_combat_event(floor_num, floor_data, party_level, creatures, dice_sum, party_size)
     
     event['sum'] = dice_sum
     event['category'] = category
@@ -741,56 +762,58 @@ def format_event_markdown(event):
     lines.append(f"**Description:** {event['description']}")
     lines.append("")
     
-    # Category-specific formatting
+    # Category-specific formatting. Templates don't all carry every field, so
+    # missing ones are skipped rather than crashing the whole table.
+    def add_fields(fields):
+        for key, label in fields:
+            value = event.get(key)
+            if value:
+                if isinstance(value, list):
+                    value = ', '.join(value)
+                lines.append(f"**{label}:** {value}")
+
     if event['category'] == "OPPORTUNITY":
-        lines.append(f"**Challenge:** {event['challenge']}")
-        lines.append(f"**Success:** {event['success']}")
-        lines.append(f"**Failure:** {event['failure']}")
-        lines.append(f"**Skills:** {', '.join(event['skills'])}")
-        lines.append(f"**Time Cost:** {event['time_cost']}")
-        lines.append(f"**Reward:** {event['reward']}")
-        if 'flavor' in event:
-            lines.append(f"**Floor Flavor:** {event['flavor']}")
-    
+        add_fields([('challenge', 'Challenge'), ('success', 'Success'), ('failure', 'Failure'),
+                    ('skills', 'Skills'), ('time_cost', 'Time Cost'), ('reward', 'Reward'),
+                    ('flavor', 'Floor Flavor')])
+
     elif event['category'] == "COMPLICATION":
-        lines.append(f"**Challenge:** {event['challenge']}")
-        lines.append(f"**Success:** {event['success']}")
-        lines.append(f"**Failure:** {event['failure']}")
-        lines.append(f"**Skills:** {', '.join(event['skills'])}")
-        lines.append(f"**Time Cost:** {event['time_cost']}")
-        lines.append(f"**Consequence:** {event['consequence']}")
-        if 'flavor' in event:
-            lines.append(f"**Floor Flavor:** {event['flavor']}")
-    
+        add_fields([('challenge', 'Challenge'), ('success', 'Success'), ('failure', 'Failure'),
+                    ('skills', 'Skills'), ('time_cost', 'Time Cost'), ('consequence', 'Consequence'),
+                    ('flavor', 'Floor Flavor')])
+
     elif event['category'] == "DILEMMA":
-        lines.append(f"**Choice A:** {event['choice_a']}")
-        if 'choice_b' in event:
-            lines.append(f"**Choice B:** {event['choice_b']}")
-        if 'choice_c' in event:
-            lines.append(f"**Choice C:** {event['choice_c']}")
-        lines.append(f"**Skills:** {', '.join(event['skills'])}")
-        lines.append(f"**Time Cost:** {event['time_cost']}")
-        lines.append(f"**Consequence:** {event['consequence']}")
-        if 'context' in event:
-            lines.append(f"**Context:** {event['context']}")
-    
+        add_fields([('choice_a', 'Choice A'), ('choice_b', 'Choice B'), ('choice_c', 'Choice C'),
+                    ('skills', 'Skills'), ('time_cost', 'Time Cost'), ('consequence', 'Consequence'),
+                    ('context', 'Context')])
+
     elif event['category'] == "ACTIVE_THREAT":
-        lines.append(f"**{event['urgency']}**")
+        lines.append(f"**{event.get('urgency', 'IMMEDIATE ACTION REQUIRED!')}**")
         lines.append("")
-        lines.append(f"**Immediate Action:** {event['immediate_action']}")
-        lines.append(f"**Success:** {event['success']}")
-        lines.append(f"**Failure:** {event['failure']}")
-        lines.append(f"**Skills:** {', '.join(event['skills'])}")
-        lines.append(f"**Threat Level:** {event['threat_level']}")
-    
+        add_fields([('immediate_action', 'Immediate Action'), ('success', 'Success'), ('failure', 'Failure'),
+                    ('skills', 'Skills'), ('threat_level', 'Threat Level')])
+
+    elif event['category'] == "NO_EVENT":
+        pass
+
     else:  # COMBAT
         lines.append(f"**Ecology:** {event['ecology']}")
-        lines.append(f"**Creatures:** {event['num_creatures']}x {', '.join(event['creatures'])} (Level {event['creature_level']})")
+        if 'creature_summary' in event:
+            lines.append(f"**Creatures:** {event['creature_summary']}")
+            refs = event.get('creature_reference', {})
+            links = [f"[{name}]({ref['aon_url']})" for name, ref in refs.items() if ref.get('aon_url')]
+            if links:
+                lines.append(f"**Stat Blocks:** {', '.join(links)}")
+        else:
+            lines.append(f"**Creatures:** {event['num_creatures']}x {', '.join(event['creatures'])} (Level {event['creature_level']})")
         lines.append(f"**Difficulty:** {event['difficulty']}")
         lines.append(f"**Tactical Option:** {event['tactical_option']}")
         lines.append(f"**Avoidable:** {'Yes' if event['avoidable'] else 'No'}")
         lines.append(f"**Surprise Available:** {'Yes' if event['surprise_available'] else 'No'}")
-        lines.append(f"**Floor Ecology:** {event['floor_ecology']}")
+        if 'lore_hook' in event:
+            lines.append(f"**Lore Hook:** {event['lore_hook']}")
+        else:
+            lines.append(f"**Floor Ecology:** {event['floor_ecology']}")
     
     # GM notes for all events
     if 'gm_notes' in event:
@@ -804,7 +827,7 @@ def format_event_markdown(event):
     return "\n".join(lines)
 
 
-def generate_all_encounters(party_level, max_floor, output_file, context=None):
+def generate_all_encounters(party_level, max_floor, output_file, context=None, party_size=4):
     """Generate comprehensive encounter table for all floors with optional context"""
     from event_context import EventContext
     
@@ -849,7 +872,7 @@ def generate_all_encounters(party_level, max_floor, output_file, context=None):
     lines = []
     lines.append("# Dungeon Turn Encounters V2 - Gauntlight Keep")
     lines.append("")
-    lines.append(f"**Party Level:** {party_level}")
+    lines.append(f"**Party Level:** {party_level} ({party_size} PCs)")
     lines.append(f"**Floors Covered:** 1-{max_floor}")
     lines.append(f"**Generated:** {96 * max_floor} events (sums 5-100 for each floor)")
     lines.append("")
@@ -908,7 +931,7 @@ def generate_all_encounters(party_level, max_floor, output_file, context=None):
         
         # Generate all 96 possible sums (5-100)
         for dice_sum in range(5, 101):
-            event = generate_event_for_sum(dice_sum, floor, level_data, party_level, creatures, context)
+            event = generate_event_for_sum(dice_sum, floor, level_data, party_level, creatures, context, party_size)
             lines.append(format_event_markdown(event))
         
         print(f"  [OK] Generated 96 events for Floor {floor}")
@@ -938,6 +961,7 @@ def main():
     parser = argparse.ArgumentParser(description='Generate Dungeon Turn Encounters V2')
     parser.add_argument('--level', type=int, default=4, help='Party level (default: 4)')
     parser.add_argument('--floors', type=int, default=3, help='Number of floors to generate (1 to X)')
+    parser.add_argument('--party-size', type=int, default=4, help='Number of PCs, for encounter budgets (default: 4)')
     parser.add_argument('--output', type=str, default='gm/dungeon_turn_encounters_v2.md', help='Output file path')
     
     # Context parameters
@@ -966,7 +990,8 @@ def main():
         party_level=args.level,
         max_floor=args.floors,
         output_file=args.output,
-        context=context
+        context=context,
+        party_size=args.party_size
     )
 
 if __name__ == "__main__":

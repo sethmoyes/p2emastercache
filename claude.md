@@ -17,6 +17,10 @@ All generation scripts MUST pull from these comprehensive data files:
 - **`expanded_pools.json`** - Expanded encounter pools for various locations
 - **`inner_sea_region.md`** - Golarion world lore and geography
 - **`players_guide.md`** - Player-facing campaign information
+- **`floor_ecology.json`** - What wanders each Gauntlight floor (creatures, hazards, events), grounded in the floor docs below. The dungeon-turn generator draws COMBAT and most ACTIVE_THREAT events from it
+
+### `/common/` - Official Floor Reference
+Copied from the GM's Pathfinder Second Edition Remastered repo (player backstories and table history left out). **`common/campaign-reference/floors/`** has every room, creature, DC and cross-floor link for Floors 1-10, from the book. When it disagrees with other repo files, the floor docs win.
 
 ## Generation Scripts
 
@@ -41,7 +45,7 @@ All generation scripts MUST pull from these comprehensive data files:
   - Flavor events should be TINY environmental details - fragments, traces, small clues
   - NOT major locations or plot points - just hints
   - Creature encounters should reference specific creatures from `creatures.json`
-  - Encounters are 2 levels below party level
+  - Creature encounters come from `floor_ecology.json`, scaled with the PF2e XP budget (Low on normal rolls, Severe/Extreme on extreme rolls; `--party-size` adjusts it)
   - Generate for all floors 1 to X (where X is current floor)
   - Filter out all boss NPCs and unique named entities
   - Hazards vs creatures: sinkholes, traps, wards, manifestations, effects = hazards
@@ -139,12 +143,12 @@ Every floor has its own ecology. Use it:
 - Floor 2: Morlocks (worship Belcorra as "Ghost Queen"), King Graulgust
 - Floor 3: Ghouls (Cult of the Canker), Nhakazarin, seeking "cankerous flesh for golem"
 - Floor 4: Wights, skeletons (Belcorra's ancient guards), Volluk, Voidglutton
-- Floor 5: Arena beasts, Cratonys (feral velstrac), Chafkhem
+- Floor 5: Jafaki's dumping ground for failed experiments (grothluts, shanrigol heaps, gibbering mouther, gibtas, mimics), basilisks, Cratonys (feral velstrac), Chafkhem
 - Floor 6: Seugathi (fleshwarpers), Jafaki, driders, Shadow Malice band, Warped Brew tavern
 - Floor 7: Devils (Urevian's prison), Szek (imp), Ysondkhelir (denizen of Leng), Cynemi
 - Floor 8: Bog mummies (Children of Belcorra), Urthagul (gug with Crimson Lens), caligni cult
 - Floor 9: Drow (Yldaris, Quara), Urdefhan (Khurfel with Emerald Lens), caligni refugees (Galudu)
-- Floor 10: Nhimbaloth cultists, The Lady's Whisper, Belcorra (final boss)
+- Floor 10: Nhimbaloth's temple (the cult is gone; cultist specters, dread wisp 'soul feeders', void-touched chuuls), The Lady's Whisper, Belcorra (final boss)
 
 **STEP 3: Include Complete Stats with References**
 ALWAYS include from creatures.json with links:

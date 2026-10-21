@@ -1,0 +1,63 @@
+filters:
+  or:
+    - file.inFolder("common/compendium")
+    - note.type == "floor"
+    - note.type == "shop"
+properties:
+  note.role:
+    displayName: Role
+  note.floors:
+    displayName: Floors
+  note.otari_area:
+    displayName: Otari area
+views:
+  - type: table
+    name: NPCs
+    filters:
+      and:
+        - note.type == "npc"
+    order:
+      - file.name
+      - role
+      - floors
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Factions, gods & items
+    filters:
+      or:
+        - note.type == "faction"
+        - note.type == "deity"
+        - note.type == "item"
+        - note.type == "place"
+    groupBy:
+      property: type
+      direction: ASC
+    order:
+      - file.name
+      - role
+  - type: table
+    name: Floors
+    filters:
+      and:
+        - note.type == "floor"
+    order:
+      - file.name
+      - floor
+      - rooms
+    sort:
+      - property: floor
+        direction: ASC
+  - type: table
+    name: Otari shops
+    filters:
+      and:
+        - note.type == "shop"
+    order:
+      - file.name
+      - proprietor
+      - otari_area
+    sort:
+      - property: otari_area
+        direction: ASC

@@ -852,7 +852,8 @@
                     <div class="space-y-2 bg-gray-800 p-4 rounded-lg">
                         <p><strong class="text-purple-400">Difficulty:</strong> ${event.difficulty}</p>
                         <p><strong class="text-purple-400">Ecology:</strong> ${event.ecology}</p>
-                        <p><strong class="text-red-400">Creatures:</strong> ${event.num_creatures}x ${event.creatures.join(', ')} (Level ${event.creature_level})</p>
+                        <p><strong class="text-red-400">Creatures:</strong> ${event.creature_summary || `${event.num_creatures}x ${event.creatures.join(', ')} (Level ${event.creature_level})`}</p>
+                        ${event.lore_hook ? `<p><strong class="text-yellow-400">Lore Hook:</strong> ${event.lore_hook}</p>` : ''}
                         <p><strong class="text-yellow-400">Tactical Option:</strong> ${event.tactical_option}</p>
                         <p><strong class="text-green-400">Avoidable:</strong> ${event.avoidable ? 'Yes' : 'No'}</p>
                         <p><strong class="text-blue-400">Surprise Available:</strong> ${event.surprise_available ? 'Yes' : 'No'}</p>

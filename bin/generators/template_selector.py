@@ -13,6 +13,9 @@ import random
 from typing import List, Dict, Any
 from event_context import EventContext
 
+# Chance of drawing from a floor's own templates when it has any
+FLOOR_SPECIFIC_CHANCE = 0.75
+
 
 def is_compatible(template: Dict[str, Any], context: EventContext) -> bool:
     """
@@ -75,7 +78,10 @@ def select_template(
     """
     if not templates:
         raise ValueError("Cannot select from empty template list")
-    
+
+    # Retired templates contradict the floor references in common/; keep them on file but never roll them
+    templates = [t for t in templates if not t.get('retired')] or templates
+
     # Filter by floor first (if specified)
     if floor is not None:
         # Events with floor=0 are generic (appear on all floors)
@@ -84,7 +90,13 @@ def select_template(
     
     # Filter templates by context compatibility
     compatible = [t for t in templates if is_compatible(t, context)]
-    
+
+    # Prefer this floor's own events over generic ones, so the floor's ecology dominates
+    if floor is not None:
+        floor_specific = [t for t in compatible if t.get('floor', 0) == floor]
+        if floor_specific and random.random() < FLOOR_SPECIFIC_CHANCE:
+            return random.choice(floor_specific)
+
     # Select random compatible template, or fallback to any template
     if compatible:
         return random.choice(compatible)

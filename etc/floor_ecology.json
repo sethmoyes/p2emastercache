@@ -1,0 +1,2209 @@
+{
+  "_about": "Dice-jar wandering ecology for each Gauntlight floor. Every entry is grounded in the floor doc it cites (common/campaign-reference/floors/) and every creature name is an exact creatures.json name. The generator builds COMBAT events from 'creature' entries (scaled to the party with the PF2e XP budget) and ACTIVE_THREAT events from 'hazard' and 'event' entries. Named NPCs and bosses are deliberately left out; their kin and minions are not.",
+  "_schema": {
+    "creature entry": "creature (scaled count, capped by max_count) plus optional fixed companions, OR a fixed group of {creature, count}",
+    "hazard/event entry": "immediate_action, success, failure, skills; optional level and consequence",
+    "weight": "relative chance among the entries that fit the encounter budget (book residents 3, kin 2, rare or extreme 1)"
+  },
+  "floors": {
+    "1": {
+      "name": "A Light in the Fog (Gauntlight Ruins)",
+      "floor_doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md",
+      "ecology": "The Mud Licker mitflits squat in the ruins under Boss Skrawng, breeding giant maggots into fly 'war steeds' to raid Otari. Vermin, a pond slurk, a scorpion in the rubble, and Nhimbaloth's lights (corpselights, a flickerwisp, a blood-born mist) share the place. The book says denizens leave their homes: noise draws them, and camps get visited.",
+      "entries": [
+        {
+          "id": "f1-mitflit-grub-squabble",
+          "kind": "creature",
+          "title": "Mud Lickers Fighting Over a Grub",
+          "creature": "Mitflit",
+          "max_count": 5,
+          "weight": 3,
+          "book_source": "A8 (four Mud Lickers sent to gather mushrooms and grubs)",
+          "why_here": "Skrawng sends his mitflits out to forage for mushrooms and grubs, and they bicker the whole way.",
+          "description": "Shrill Undercommon squabbling echoes off wet stone. A knot of blue-gray mitflits is wrestling over a fat, glowing blue grub, and none of them is watching the hall.",
+          "tactics": "They roll Perception for initiative at -2 while they squabble, unless the heroes announce themselves. They hurl darts from range. Any mitflit that runs out of darts or takes damage tries to run to Boss Skrawng (A10) to warn him.",
+          "lore_hook": "'For the Sky King!' A captured mitflit brags that Skrawng will soon ride a giant fly war-steed to rule Otari."
+        },
+        {
+          "id": "f1-maggot-training",
+          "kind": "creature",
+          "title": "Maggot Training Session",
+          "group": [
+            {
+              "creature": "Mitflit",
+              "count": 2
+            },
+            {
+              "creature": "Giant Maggot",
+              "count": 1
+            }
+          ],
+          "weight": 3,
+          "book_source": "A4 (three mitflits training the first giant maggot)",
+          "why_here": "Skrawng ordered the Mud Lickers to train and breed the maggots they found in A5. They hope a trained maggot keeps its training once it matures into a fly.",
+          "description": "Two mitflits are coaxing a pale giant maggot down the corridor with a stick and a dangling scrap of meat, squeaking commands it plainly does not understand.",
+          "tactics": "The maggot lunges at whatever is closest, which may include its handlers. When the mitflits sight the heroes, they send one runner to warn Skrawng.",
+          "lore_hook": "The mitflits call the maggot a 'war steed in training'. Skrawng plans to lead his whole gang mounted on giant flies."
+        },
+        {
+          "id": "f1-loose-maggots",
+          "kind": "creature",
+          "title": "Maggots Bursting From a Carcass",
+          "creature": "Giant Maggot",
+          "max_count": 4,
+          "weight": 2,
+          "book_source": "A5 (giant maggots burst from the frog carcass)",
+          "why_here": "The giant fly in A6 seeds every carcass it finds, and the maggots hatch hungry.",
+          "description": "A bloated frog carcass in a puddle twitches, then splits. Giant maggots spill out, mandibles working, straight toward the nearest warmth.",
+          "tactics": "They attack anything within 10 feet and chase relentlessly, fighting to the death. They Grab with their mandibles, then Gnaw Flesh.",
+          "lore_hook": "Mitflit footprints circle the carcass. Someone has been 'farming' these."
+        },
+        {
+          "id": "f1-giant-fly",
+          "kind": "creature",
+          "title": "A Fly Too Big to Swat",
+          "creature": "Giant Fly",
+          "max_count": 3,
+          "weight": 2,
+          "book_source": "A6 (two giant flies)",
+          "why_here": "A maggot has matured into a fly, and it has no idea it was ever meant to be a war steed.",
+          "description": "A droning buzz grows into a roar. A giant fly with a green-and-blue sheen drops through a hole in the roof, taking you for food.",
+          "tactics": "It darts in and out, using its reaction to fly off when an attack misses it. If two flies meet, they may turn on each other.",
+          "lore_hook": "Any mitflit that sees the flies fight is horrified. These were supposed to be Skrawng's cavalry."
+        },
+        {
+          "id": "f1-slurk-night-hunt",
+          "kind": "creature",
+          "title": "The Slurk's Night Hunt",
+          "creature": "Slurk",
+          "max_count": 1,
+          "weight": 2,
+          "book_source": "A3 (slurk, last survivor of the Stone Scale kobolds)",
+          "why_here": "By day the slurk sleeps in the middle of its pond. At night it flops out to hunt, and loud noises or splashing wake it.",
+          "description": "A wet slap, then another. A bloated, tusked amphibian hauls itself out of the dark water and spits a rope of slime across the path.",
+          "tactics": "It opens with slime squirt to entangle, then gores with its tusks. It never leaves sight of its pond, so pulling back past the water's edge ends the fight. It fights to the death.",
+          "lore_hook": "Mitflits play 'Dodge the Squirt' across the vine over this pond. It's how several of them died."
+        },
+        {
+          "id": "f1-giant-scorpion",
+          "kind": "creature",
+          "title": "Something Moves in the Rubble",
+          "creature": "Giant Scorpion",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "A14 (well-fed giant scorpion)",
+          "why_here": "It crosses rubble without slowing and has been driven from its nook by the noise.",
+          "description": "Stones shift and slide. A giant scorpion as long as a cart rises out of the collapse, stinger arched, pincers clicking.",
+          "tactics": "Pincer to Grab and Constrict, then sting (giant scorpion venom). The book warns it is very dangerous to 1st-level heroes, so let them retreat; it falls back rather than giving chase.",
+          "lore_hook": "Its nook in A14 is littered with the shells of things it has eaten, mitflit gear among them."
+        },
+        {
+          "id": "f1-corpselight",
+          "kind": "creature",
+          "title": "A Corpselight Looking for a Body",
+          "creature": "Corpselight",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "A15 (acolytes of Nhimbaloth harboring corpse lights)",
+          "why_here": "When a corpselight is forced out of its host it goes looking for another corpse. The dead thief at the A15 secret door will do, or a dead hero.",
+          "description": "A greenish light bobs low along the floor. It hesitates over a mossy skeleton, sinks into its ribs, and the bones stand up.",
+          "tactics": "When forced back into wisp form, it uses Claim Corpse on the nearest Small or Medium corpse to return to the fight. Destroy the light, not just the bones.",
+          "lore_hook": "The skeletons it rides wear the rotted robes of Nhimbaloth's acolytes."
+        },
+        {
+          "id": "f1-flickerwisp",
+          "kind": "creature",
+          "title": "Fireflies Over a Hole",
+          "creature": "Flickerwisp",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "A24 (flicker wisp in the rotting ruins)",
+          "why_here": "It feeds on frustration and confusion and drifts toward whoever is having a bad time.",
+          "description": "A rippling ribbon of light, like a cloud of fireflies, dances over rotten boards. The boards don't look as solid as they did a moment ago.",
+          "tactics": "It lures heroes onto weak footing, attacks anyone stuck in mud or fallen through, and uses Consume Confusion. It doesn't retreat even when outmatched.",
+          "lore_hook": "Wisps like this are the eyes of Nhimbaloth, the Empty Death. Belcorra's acolytes revered them."
+        },
+        {
+          "id": "f1-vampiric-mist",
+          "kind": "creature",
+          "title": "Blood Slides Off the Lantern",
+          "creature": "Vampiric Mist",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "A25 (vampiric mist, repeatable once per night after the A11 haunt)",
+          "why_here": "Night only. Once the Blood of Belcorra haunt (A11) has been triggered and beaten, its blood flows down to the lantern and rises as a mist.",
+          "description": "A slick of blood on the stones begins to steam. It lifts into a red fog that smells of copper and reaches for you with wet tendrils.",
+          "tactics": "Its misty tendrils cause persistent bleed and Blood Siphon (DC 20 Fortitude). It attacks at once and fights to the death.",
+          "lore_hook": "This only happens at night, and only after the heroes have faced the Blood of Belcorra haunt."
+        },
+        {
+          "id": "f1-rat-swarm",
+          "kind": "creature",
+          "title": "The Vermin Move",
+          "creature": "Rat Swarm",
+          "max_count": 3,
+          "weight": 2,
+          "book_source": "Floor 1 environmental cues (scuttling vermin, standing water)",
+          "why_here": "The ruins crawl with vermin, and something bigger below has spooked them upward.",
+          "description": "The floor ripples. A carpet of rats pours out of a crack in the wall and flows over your boots in a squealing wave.",
+          "tactics": "A swarm takes area damage poorly and splash and area effects break it up. It flows around blockers and harasses whoever falls behind.",
+          "lore_hook": "Rats this scared are running from something. What is moving down there?"
+        },
+        {
+          "id": "f1-giant-centipede",
+          "kind": "creature",
+          "title": "Vermin Empathy Gone Wrong",
+          "creature": "Giant Centipede",
+          "max_count": 5,
+          "weight": 1,
+          "book_source": "A4 (the Mud Lickers were thinned by 'misjudged vermin empathy')",
+          "why_here": "The Mud Lickers tried to befriend the local vermin. Some of those vermin are still hungry.",
+          "description": "Glossy, many-legged shapes boil out of a mitflit nest of sticks and mud, mandibles dripping.",
+          "tactics": "Swarm the weakest-looking hero. Giant centipede venom: DC 14 Fortitude.",
+          "lore_hook": "A torn mitflit hat sits in the nest. Not every Mud Licker death was the slurk's fault."
+        },
+        {
+          "id": "f1-hz-mudlicker-snare",
+          "kind": "hazard",
+          "title": "Mud Licker Snare",
+          "level": 1,
+          "weight": 2,
+          "book_source": "A3 treasure (spike snare), A7 (caltrop snare components)",
+          "why_here": "The mitflits have been setting snares to 'protect the Sky King's realm'.",
+          "description": "A trip cord, smeared with mud, is strung ankle-high across the path. It's tied to a bundle of sharpened sticks.",
+          "immediate_action": "DC 15 Perception (the lead hero) to spot the cord, then DC 15 Thievery to disarm or step over it.",
+          "success": "You spot and disarm the snare. Nearby mitflit graffiti gives away the direction of their lair (A10).",
+          "failure": "Sharpened sticks whip up: DC 15 basic Reflex, 2d6 piercing. The clatter alerts nearby Mud Lickers: ADD 1 DIE TO JAR.",
+          "skills": [
+            "Perception",
+            "Thievery",
+            "Reflex"
+          ]
+        },
+        {
+          "id": "f1-ev-pixie-voice",
+          "kind": "event",
+          "title": "A 'Pixie' in the Rafters",
+          "weight": 2,
+          "book_source": "A1 (mitflits imitate a pixie voice and push the 'magic pixie mud')",
+          "why_here": "Mitflits can't resist tormenting visitors. They are terrible liars (-1 Deception, and they speak only Undercommon).",
+          "description": "A falsetto voice in Undercommon pipes up from above, welcoming you to 'the parlor', warning you of 'mean bugs' in the keep, and urging you to try the 'magic pixie mud' on the floor.",
+          "immediate_action": "DC 10 Perception or Sense Motive to see through it, or DC 15 Stealth to sneak up on the voice.",
+          "success": "You spot three mitflits giggling in the cobwebs. Scare them off (DC 12 Intimidation) and they flee and drop a dart pouch, or fight them (3 mitflits).",
+          "failure": "Whoever believes it tries the 'pixie mud' (DC 15 Fortitude or sickened 1). The mitflits collapse into giggles and give themselves away.",
+          "skills": [
+            "Perception",
+            "Intimidation",
+            "Stealth"
+          ]
+        },
+        {
+          "id": "f1-hz-rotten-timbers",
+          "kind": "hazard",
+          "title": "Undercut Timbers",
+          "level": 1,
+          "weight": 1,
+          "book_source": "A2 (drawbridge sabotaged by mitflits), A24 (pier collapse)",
+          "why_here": "The mitflits undercut supports so that anything Medium-sized falls into the water.",
+          "description": "Gray, waterlogged boards span a gap over 4-foot-deep black water. The supports underneath have been gnawed or sawed.",
+          "immediate_action": "DC 5 Perception spots the sabotage. Small creatures cross safely. Medium creatures must cross one at a time.",
+          "success": "You cross one at a time, or rig a line. No problem.",
+          "failure": "The boards collapse with a groaning crash. DC 10 Reflex to grab the edge; otherwise you fall into the water and need DC 10 Athletics to climb out. The noise wakes the slurk in A3, which comes to investigate.",
+          "skills": [
+            "Perception",
+            "Reflex",
+            "Athletics"
+          ]
+        },
+        {
+          "id": "f1-ev-kobold-howl",
+          "kind": "event",
+          "title": "Howling From the Old Hall",
+          "weight": 1,
+          "book_source": "A7 (Stone Scale Spirits, level 2 haunt)",
+          "why_here": "The spirits of the Stone Scale kobolds, torn apart in a coup, still churn in their old communal hall.",
+          "description": "A wind that isn't there carries yipping, howling voices and the clatter of a fight long over. For a heartbeat, small spectral shapes whirl in the dark ahead.",
+          "immediate_action": "DC 16 Will against the dread, or DC 16 Religion or Society to recognize kobold death-howls.",
+          "success": "You understand. These are kobold spirits from a coup, not Belcorra's work. Intimidation scares them off, and Religion can lay them to rest when you reach A7.",
+          "failure": "Frightened 1. The howling follows you for a minute: ADD 1 DIE TO JAR as the party hesitates.",
+          "skills": [
+            "Will",
+            "Religion",
+            "Society"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "name": "The Forgotten Dungeon (Servants' Quarters)",
+      "floor_doc": "common/campaign-reference/floors/floor-02-the-forgotten-dungeon.md",
+      "ecology": "King Graulgust's Ghost Queen morlocks scavenge the old servants' level for parts to build traps and ballistae. Belcorra's dead guards still shuffle the graveyard, Volluk's leech experiments linger in the wet halls, and ghouls from Floor 3 come up to harvest morlock flesh. The Gauntlight's power leaks through as ribbons and teleported aberrations.",
+      "entries": [
+        {
+          "id": "f2-skeleton-guards",
+          "kind": "creature",
+          "title": "The Old Guard Still Walks",
+          "creature": "Skeleton Guard",
+          "max_count": 6,
+          "weight": 3,
+          "book_source": "Graveyard (five skeleton guards, scattered, move quickly toward any fight)",
+          "why_here": "Belcorra's dead guards are scattered, never within 30 feet of one another, but they converge on any fight or distraction.",
+          "description": "Bones clatter in the dark ahead. Skeletal guards in rusted scraps of livery turn their empty sockets toward your light and advance in step.",
+          "tactics": "They arrive in ones and twos rather than all at once, so stealth and ranged attacks can thin them out. Mindless: no morale, no talking.",
+          "lore_hook": "Their tabards still bear Belcorra's sigil, a ring of eyes around an empty center."
+        },
+        {
+          "id": "f2-zombie-shamblers",
+          "kind": "creature",
+          "title": "Shamblers Drawn by the Noise",
+          "creature": "Zombie Shambler",
+          "max_count": 4,
+          "weight": 2,
+          "book_source": "Graveyard (three zombie shamblers)",
+          "why_here": "The slow dead follow the noise of the living. They are what's left of Belcorra's servants.",
+          "description": "Wet footsteps drag on stone. Bloated servants in rotted aprons lurch out of a side passage, jaws working.",
+          "tactics": "They Grab, then bite with jaws. They are slow, so the party can outpace them, but they never stop following the noise.",
+          "lore_hook": "One wears a majordomo's key-chain, now empty. These were Belcorra's household staff."
+        },
+        {
+          "id": "f2-morlock-scavengers",
+          "kind": "creature",
+          "title": "Morlock Scavengers Hauling Scrap",
+          "creature": "Morlock Scavenger",
+          "max_count": 4,
+          "weight": 3,
+          "book_source": "B8 (morlock scavengers dragging ballista parts from B21)",
+          "why_here": "The morlocks strip every room for parts for Graulgust's throne and traps.",
+          "description": "Pale, hunched figures grunt under a load of timber and gears, dragging a broken ballista arm toward their lair. They snarl and hiss when they see you.",
+          "tactics": "Scuttling Attack. They fight until only one is left standing, and that one flees to King Graulgust (B12) to warn him.",
+          "lore_hook": "'Ghost Queen will be pleased!' They're building for her return."
+        },
+        {
+          "id": "f2-ghost-queen-morlocks",
+          "kind": "creature",
+          "title": "Morlock Sentries, Distracted",
+          "creature": "Morlock",
+          "max_count": 3,
+          "weight": 3,
+          "book_source": "B9 (two Ghost Queen morlocks tinkering with a clockwork assistant, -2 Initiative)",
+          "why_here": "Graulgust posts sentries, and they would rather tinker than watch.",
+          "description": "Two morlocks crouch over a broken clockwork servant, poking its gears with filthy fingers and arguing in grunts.",
+          "tactics": "They roll initiative at -2 while distracted and flank where possible. Instinctual Tinker. If a fleeing scavenger runs past, they fall back to defend the trap hall (B10).",
+          "lore_hook": "Morlocks worship Belcorra as the Ghost Queen. Mention her and they freeze, unsure whether you're her servants."
+        },
+        {
+          "id": "f2-morlock-tinkerers",
+          "kind": "creature",
+          "title": "Rigging a New Trap",
+          "creature": "Morlock Tinkerer",
+          "max_count": 3,
+          "weight": 1,
+          "book_source": "B10 (the morlocks' scavenged trap gauntlet)",
+          "why_here": "The morlocks keep extending their gauntlet of traps toward Graulgust's throne.",
+          "description": "Morlocks string fresh trip cord between two wall brackets, lashing a spring-loaded spike into place with stolen rope.",
+          "tactics": "They fight from behind their half-built trap. Treat their work area as hazardous terrain: anyone who rushes them risks setting it off.",
+          "lore_hook": "The trap is made from parts of the majordomo's old ceiling traps."
+        },
+        {
+          "id": "f2-morlock-engineers",
+          "kind": "creature",
+          "title": "Engineers Want Prisoners",
+          "creature": "Morlock Engineer",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "B22 (morlock engineers assembling ballistae; try to capture intruders)",
+          "why_here": "Presenting captives to Graulgust would ease his frustration with their endless rebuilds.",
+          "description": "Morlocks with junk-launchers strapped to their arms grin when they see you. 'Gifts for the king,' one hisses.",
+          "tactics": "They prefer projectile launchers from range and try to capture rather than kill: knocked-out heroes are stripped of gear and dragged to the B24 cells.",
+          "lore_hook": "A captured party is offered Graulgust's choice: serve as Lackeys of the Ghost Queen, or be enslaved."
+        },
+        {
+          "id": "f2-grothlut-pet",
+          "kind": "creature",
+          "title": "Graulgust's Pet Wanders",
+          "creature": "Grothlut",
+          "max_count": 1,
+          "weight": 2,
+          "book_source": "B13 (grothlut Graulgust rescued from a cage deeper in the Vaults)",
+          "why_here": "It dotes on the morlocks like a loyal dog and goes looking for them when it hears trouble.",
+          "description": "A shambling heap of fused flesh with a too-human face lumbers out of the dark, moaning, and lurches toward you.",
+          "tactics": "Claws and digestive spew. It attacks anyone but Graulgust and fights to the death.",
+          "lore_hook": "It's a fleshwarp from far below. Who made it, and where?"
+        },
+        {
+          "id": "f2-scalathrax",
+          "kind": "creature",
+          "title": "Teleported by the Beam",
+          "creature": "Scalathrax",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "Arrival (a scalathrax teleported in by the Gauntlight's beam)",
+          "why_here": "The Gauntlight's test-fires pull aberrations across space and drop them in the dungeon.",
+          "description": "A flash of sickly light, and the Gauntlight's glow dies. A spider-like aberration bristling with quills is suddenly among you.",
+          "tactics": "It uses Stealth for initiative, attacks immediately, and fights to the death. Leg quills from range, then jaws with scalathrax venom (DC 21 Fortitude).",
+          "lore_hook": "DC 20 Arcana or Occultism: it was teleported here by the beam. Someone is testing the lighthouse."
+        },
+        {
+          "id": "f2-giant-leeches",
+          "kind": "creature",
+          "title": "Leeches in the Wet Dark",
+          "creature": "Giant Leech",
+          "max_count": 3,
+          "weight": 2,
+          "book_source": "B5 (blood siphon: Volluk made an undead guardian from a giant leech); B19 dripping walls",
+          "why_here": "Volluk Azrinae kept giant leeches for his experiments. Some escaped into the damp halls.",
+          "description": "Something like a wet, rotting log stirs in a puddle and stretches toward your warmth. It's a leech as long as a man.",
+          "tactics": "Grab, then Blood Drain. Amphibious, so it retreats into water.",
+          "lore_hook": "Volluk loved leeches. On Floor 4 you will find out how much."
+        },
+        {
+          "id": "f2-servant-shadow",
+          "kind": "creature",
+          "title": "A Servant's Shadow",
+          "creature": "Shadow",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "B15 (the majordomo, bound as a shadow by loyalty to Belcorra and the Gauntlight's necromantic energy)",
+          "why_here": "The majordomo is not the only servant whose soul the Gauntlight has bound.",
+          "description": "Your torchlight throws one shadow too many. It peels off the wall and reaches for yours.",
+          "tactics": "Incorporeal. Steal Shadow creates shadow spawn. Light and positive energy are your friends.",
+          "lore_hook": "It whispers the household rules: 'Doors shut. Lamps trimmed. The mistress is coming home.'"
+        },
+        {
+          "id": "f2-dream-spiders",
+          "kind": "creature",
+          "title": "Dream Spiders on the Hunt",
+          "creature": "Dream Spider",
+          "max_count": 5,
+          "weight": 1,
+          "book_source": "B30 (the web lurker's lair with dream spiders)",
+          "why_here": "The web lurker in the illusory city keeps dream spiders, and they range out to feed.",
+          "description": "Pale, glassy spiders scuttle across the ceiling, trailing silk that shimmers like a half-remembered dream.",
+          "tactics": "They web from the ceiling, then bite. Dream spider venom: DC 16 Fortitude.",
+          "lore_hook": "Their silk leads back toward the 'ghost city' diorama (B29-B30)."
+        },
+        {
+          "id": "f2-ghoul-raiders",
+          "kind": "creature",
+          "title": "Ghouls Harvesting Morlock",
+          "creature": "Ghoul",
+          "max_count": 4,
+          "weight": 2,
+          "book_source": "C1 stairs; C15 and C18 (ghouls living on ripened morlock flesh)",
+          "why_here": "The Cult of the Canker on Floor 3 lives on morlock flesh, and they come up the stairs to harvest it.",
+          "description": "Robed ghouls drag a dead morlock toward the stairs down, tongues lolling. They stop and look you over the way a butcher looks at a side of beef.",
+          "tactics": "Paralytic claws (DC 15 Fortitude) and ghoul fever. They try to drag a paralyzed victim away rather than finish the fight.",
+          "lore_hook": "'Fresh flesh for the canker!' The morlocks are prey to whatever lives below."
+        },
+        {
+          "id": "f2-hz-spike-launcher",
+          "kind": "hazard",
+          "title": "A New Trip Line",
+          "level": 0,
+          "weight": 2,
+          "book_source": "B10 (spike launchers, level 0, triggered by trip lines 1 ft off the floor)",
+          "why_here": "The morlocks know where their lines are. You don't.",
+          "description": "A nearly invisible cord is stretched a foot above the floor between two wall brackets.",
+          "immediate_action": "DC 14 Perception to spot the trip line, then DC 14 Thievery to cut it safely.",
+          "success": "Disarmed. Its spike is a good piece of scrap to trade with morlocks.",
+          "failure": "A jagged spike launches from the wall (use the B10 spike launcher's strike). The twang carries: ADD 1 DIE TO JAR.",
+          "skills": [
+            "Perception",
+            "Thievery"
+          ]
+        },
+        {
+          "id": "f2-hz-brown-mold",
+          "kind": "hazard",
+          "title": "Moldy 'Roots'",
+          "level": 2,
+          "weight": 1,
+          "book_source": "B20 (brown mold disguised as moldy roots)",
+          "why_here": "Brown mold spreads in the damp, cold corners of the level.",
+          "description": "A tangle of what looks like moldy roots carpets a low stretch of floor. The air above it is strangely cold.",
+          "immediate_action": "DC 16 Nature or Perception to recognize brown mold before stepping in.",
+          "success": "You route around it. Note: fire makes brown mold grow.",
+          "failure": "Someone steps in it. Use the Core Rulebook brown mold hazard; it drains heat as cold damage.",
+          "skills": [
+            "Nature",
+            "Perception"
+          ]
+        },
+        {
+          "id": "f2-hz-ribbon",
+          "kind": "hazard",
+          "title": "The Gauntlight Ribbon Flares",
+          "level": 2,
+          "weight": 1,
+          "book_source": "B35 (the ribbon: 2d6 negative, DC 16 basic Reflex; undead heal)",
+          "why_here": "The Gauntlight's mounting power churns through the dungeon as ribbons of necromantic light.",
+          "description": "A 5-foot burst of churning, colorless light coils in the passage ahead, pulsing in time with something far above.",
+          "immediate_action": "Cross quickly or find another way. A living creature ending its turn in it takes 2d6 negative damage (DC 16 basic Reflex).",
+          "success": "You time your crossing between pulses. No damage.",
+          "failure": "2d6 negative damage. Any undead nearby that step into it regain that much HP.",
+          "skills": [
+            "Reflex",
+            "Occultism"
+          ],
+          "consequence": "Rescuing Lasda Venkervale from D9 makes the ribbons wink out."
+        }
+      ]
+    },
+    "3": {
+      "name": "Cult of the Canker (The Library)",
+      "floor_doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+      "ecology": "Belcorra's old scholars are now the Cult of the Canker: ghouls under High Priestess Nhakazarin who harvest morlocks, monsters and each other to stitch a meat statue of Belcorra. Robed ghouls fetch books and flesh. A gibbering mouther crawls the tunnels hunting bats and rats. Ghosts of scholars and the Gauntlight's ribbons haunt the stacks.",
+      "entries": [
+        {
+          "id": "f3-ghoul-fetchers",
+          "kind": "creature",
+          "title": "Donations for the Canker",
+          "creature": "Ghoul",
+          "max_count": 6,
+          "weight": 3,
+          "book_source": "C11 (robed ghouls fetch books and flesh; ask for 'donations')",
+          "why_here": "Ghouls in pale blue robes run errands between the stacks and the Temple of the Canker.",
+          "description": "Ghouls in long pale-blue robes block the aisle. They lick their lips and look over your 'fleshy bits'. 'Have you come to donate flesh for the canker?'",
+          "tactics": "Paralytic claws (DC 15 Fortitude) and ghoul fever. If a fight lasts more than 4 rounds or is loud, more ghouls come to investigate.",
+          "lore_hook": "A hero who agrees must give up a finger, toe or ear. A ghoul scurries off with it to the Temple (C34)."
+        },
+        {
+          "id": "f3-ghoul-feast",
+          "kind": "creature",
+          "title": "Ghouls Feasting on a Morlock",
+          "creature": "Ghoul",
+          "max_count": 4,
+          "weight": 2,
+          "book_source": "C18 (three ghouls feasting on a morlock)",
+          "why_here": "Ripened morlock flesh is the cult's staple, and they eat wherever they find it.",
+          "description": "Wet tearing sounds. Three ghouls crouch over a dead morlock, faces red to the eyes.",
+          "tactics": "Distracted: the heroes can try for surprise. The first ghoul hurt flees to fetch Aller Rosk, the cult's notary (C19).",
+          "lore_hook": "The morlock's skin is half-covered in a careful tattoo: a portrait of Belcorra."
+        },
+        {
+          "id": "f3-canker-cultists",
+          "kind": "creature",
+          "title": "Cultists at Prayer",
+          "creature": "Canker Cultist",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "C24 (canker cultists worshipping, irate if interrupted)",
+          "why_here": "The cult's priests walk the halls between rites.",
+          "description": "Two ghouls in stained vestments chant over a carried reliquary of rotting meat. They go silent and turn, slowly.",
+          "tactics": "Occult spells, then jaws and claws with paralysis. If anyone damages their relic, they are slowed 1 for a round from the shock and then focus every attack on the blasphemer.",
+          "lore_hook": "DC 20 Religion: they revere the dead gibbering mouther in C24 as holy."
+        },
+        {
+          "id": "f3-cult-work-crew",
+          "kind": "creature",
+          "title": "The High Priestess Would Like a Word",
+          "group": [
+            {
+              "creature": "Canker Cultist",
+              "count": 1
+            },
+            {
+              "creature": "Ghoul",
+              "count": 4
+            }
+          ],
+          "weight": 1,
+          "book_source": "C33 (a canker cultist and four ghouls; offer an 'audience with Nhakazarin' as a ruse)",
+          "why_here": "The cult is repairing rotten shelves and leading 'guests' to their betrayal.",
+          "description": "A canker cultist steps forward with a strained smile. 'Our High Priestess Nhakazarin would grant you an audience.' Four ghouls fan out behind her.",
+          "tactics": "It's a ruse. She has only +3 Deception, will likely fail, get frustrated, and order the attack.",
+          "lore_hook": "Nhakazarin is stitching a 15-foot statue of Belcorra out of decaying meat."
+        },
+        {
+          "id": "f3-ghoul-cultists-arguing",
+          "kind": "creature",
+          "title": "An Argument About Seasoning",
+          "creature": "Canker Cultist",
+          "max_count": 2,
+          "weight": 1,
+          "book_source": "C38 (two ghoul cultists arguing about violet-fungus-ripened meat)",
+          "why_here": "The cult's gourmands have opinions.",
+          "description": "Two cultists bicker loudly over whether flesh ripened by violet fungus tastes better than meat left to rot on its own.",
+          "tactics": "They're distracted enough to miss nearby combat noise. The heroes can sneak past or strike first.",
+          "lore_hook": "'Violet-ripened is for heretics.' The cult has factions even over dinner."
+        },
+        {
+          "id": "f3-gibbering-mouther",
+          "kind": "creature",
+          "title": "The Mouther Is Hunting",
+          "creature": "Gibbering Mouther",
+          "max_count": 1,
+          "weight": 2,
+          "book_source": "C40 (gibbering mouther that crawls the tunnel to C2 to hunt bats and rats)",
+          "why_here": "The book says it periodically crawls out to hunt.",
+          "description": "Dozens of voices babble at once, then a heaving mass of eyes and mouths flows around the corner.",
+          "tactics": "Spittle burns eyes, and its jaws cause bleed and Grab. It doesn't tell heroes from ghouls or morlocks, so a canny party can lure it into the cult.",
+          "lore_hook": "The cult worships a dead mouther (C24). Does it know?"
+        },
+        {
+          "id": "f3-violet-fungus",
+          "kind": "creature",
+          "title": "Seasoning on the Move",
+          "creature": "Violet Fungus",
+          "max_count": 2,
+          "weight": 1,
+          "book_source": "C23 (violet fungi cultivated to season flesh; won't attack ghouls)",
+          "why_here": "The cult's flesh-ripening fungus is half-trained and keeps creeping out of its garden.",
+          "description": "A purple, tentacled stalk shuffles across the floor toward the smell of living meat.",
+          "tactics": "Tentacles inflict violet rot (DC 20 Fortitude). It ignores undead entirely.",
+          "lore_hook": "Its tentacles trail bits of 'seasoned' meat."
+        },
+        {
+          "id": "f3-bat-swarm",
+          "kind": "creature",
+          "title": "Bats Fleeing the Mouther",
+          "creature": "Vampire Bat Swarm",
+          "max_count": 3,
+          "weight": 2,
+          "book_source": "C40 and C2 (the mouther hunts bats and rats in the tunnel)",
+          "why_here": "The tunnel bats are scattered and frantic.",
+          "description": "A shrieking cloud of bats explodes out of a vent and tangles in your hair, biting.",
+          "tactics": "An area attack scatters the swarm. Running is fine: they're fleeing too.",
+          "lore_hook": "Something big is hunting in the tunnels behind them."
+        },
+        {
+          "id": "f3-morlock-runaways",
+          "kind": "creature",
+          "title": "Morlocks Running From the Pot",
+          "creature": "Morlock",
+          "max_count": 3,
+          "weight": 2,
+          "book_source": "C15 and C18 (the cult's morlock flesh supply)",
+          "why_here": "Morlock captives sometimes break loose, and morlock hunters sometimes come down for revenge.",
+          "description": "Panicked morlocks barrel around a bookcase, one still trailing a chain, and freeze when they see you, cornered and desperate.",
+          "tactics": "Cornered and desperate, they fight wildly. If shown a way out, they flee. A Ghost Queen name-drop can turn them into temporary allies.",
+          "lore_hook": "'The hungry dead eat us!' Floor 2 and Floor 3 are at war over flesh."
+        },
+        {
+          "id": "f3-scholar-ghost",
+          "kind": "creature",
+          "title": "A Scholar Who Never Left",
+          "creature": "Ghost Commoner",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "C13 and C36 (scholars who died during the library's gruesome end now haunt it)",
+          "why_here": "Belcorra's scholars died badly here. Some still pace the stacks.",
+          "description": "A translucent scribe drifts between the shelves re-shelving a book that isn't there, then notices you and wails.",
+          "tactics": "Frightful Moan (DC 21 Will). It may stop if the heroes speak kindly of Belcorra's library, and it gets furious if they speak ill of Belcorra.",
+          "lore_hook": "It mutters about the 'canker' and the 'gruesome scheme' the other scholars cooked up."
+        },
+        {
+          "id": "f3-hz-canker-stench",
+          "kind": "hazard",
+          "title": "The Stench of the Canker",
+          "level": 3,
+          "weight": 2,
+          "book_source": "C24 (sickening smell: DC 18 Fortitude or sickened 1; success gives 24-hour immunity)",
+          "why_here": "The smell from the cult's shrine drifts along the halls in the wake of its processions.",
+          "description": "A wave of sweet rot rolls down the corridor, thick enough to taste.",
+          "immediate_action": "Each living creature: DC 18 Fortitude.",
+          "success": "No effect, and immune for 24 hours.",
+          "failure": "Sickened 1. A cult procession is nearby: the next COMBAT roll on this floor is cultists.",
+          "skills": [
+            "Fortitude"
+          ]
+        },
+        {
+          "id": "f3-hz-ribbon",
+          "kind": "hazard",
+          "title": "Ribbon of the Gauntlight",
+          "level": 3,
+          "weight": 1,
+          "book_source": "C15 (ribbon: 4d6 negative, DC 18 basic Reflex; undead heal)",
+          "why_here": "The Gauntlight's power churns through the library. The ghouls use it to heal.",
+          "description": "Colorless light churns in a 5-foot burst between the shelves. Grease-stained cushions are piled around it, a ghoul lounge.",
+          "immediate_action": "A living creature ending its turn in it takes 4d6 negative damage (DC 18 basic Reflex).",
+          "success": "You skirt it. Note that ghouls below half HP will shove each other into it to heal.",
+          "failure": "4d6 negative damage. Any undead in it regain that much.",
+          "skills": [
+            "Reflex",
+            "Occultism"
+          ],
+          "consequence": "Rescuing Lasda from D9 makes the ribbons wink out."
+        },
+        {
+          "id": "f3-hz-rotten-shelves",
+          "kind": "hazard",
+          "title": "Rotten Shelving",
+          "level": 3,
+          "weight": 1,
+          "book_source": "C33 (the cult keeps repairing shelves because the ancient wood is rotten)",
+          "why_here": "Five centuries of damp have rotted the library's great shelves.",
+          "description": "A towering bookcase groans as you pass, its uprights soft with rot.",
+          "immediate_action": "DC 18 Perception to notice the lean in time, then DC 18 Reflex to get clear.",
+          "success": "You dodge the collapse. Among the scattered books is a crumbling volume on Belcorra's necromancy (DC 18 Arcana for a clue).",
+          "failure": "3d6 bludgeoning, and you're pinned (grabbed, Escape DC 18). The crash carries through the stacks: ADD 1 DIE TO JAR.",
+          "skills": [
+            "Perception",
+            "Reflex",
+            "Athletics"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "name": "Long Dream the Dead (Belcorra's Retreat)",
+      "floor_doc": "common/campaign-reference/floors/floor-04-long-dream-the-dead.md",
+      "ecology": "Belcorra's private retreat. No faction holds it; powerful individuals each claim a corner. The Voidglutton, an outer-dimensional horror drawn by echoes of Nhimbaloth, basks in the floor's fear, and its kin feed the same way: corpselights riding the poisoned dinner guests, flickerwisps and will-o'-wisps gorging on terror, and haunted servants. Volluk's leeches, hungry scalathrax, and Belcorra's traitor apprentices as cairn wights round it out. Fungi grow everywhere, and ephemeral spirits close any open door.",
+      "entries": [
+        {
+          "id": "f4-corpselights",
+          "kind": "creature",
+          "title": "The Dinner Guests Get Up",
+          "creature": "Corpselight",
+          "max_count": 3,
+          "weight": 3,
+          "book_source": "D1 (skeletons of poisoned guests hosting corpse lights; wisps flee to D2, D3 or D6 for new corpses)",
+          "why_here": "Belcorra's poisoned guests and murdered servants are havens for corpselights. Whenever one is forced into wisp form, it goes looking for another corpse.",
+          "description": "Skeletons in tattered finery, some still clutching their own throats, lurch out of a doorway. Green light glows behind their ribs.",
+          "tactics": "Destroy a host and the light flees to Claim Corpse on another nearby body and comes back. Smash or consecrate spare corpses to end the cycle.",
+          "lore_hook": "These were guests from an extinct Absalom thieves' guild. Belcorra had her chef poison them all when the Roseguard broke in."
+        },
+        {
+          "id": "f4-flickerwisps",
+          "kind": "creature",
+          "title": "Lights That Feed on Confusion",
+          "creature": "Flickerwisp",
+          "max_count": 3,
+          "weight": 3,
+          "book_source": "D13 (flickerwisps in the altar), D18 (two flickerwisps tormenting Otari's ghost)",
+          "why_here": "Like the Voidglutton, the flickerwisps gorge on the floor's latent terror and confusion.",
+          "description": "Pale lights slither out of cracks in the plaster like eels and drift toward you, pulsing faster as your heartbeat rises.",
+          "tactics": "Consume Confusion. They gang up on whoever is most rattled and harass anyone separated from the group.",
+          "lore_hook": "Otari's ghost (D18) warns of 'the eyes of the Empty Death'. These are those eyes."
+        },
+        {
+          "id": "f4-will-o-wisp",
+          "kind": "creature",
+          "title": "A Will-o'-Wisp Gorging on Terror",
+          "creature": "Will-O'-Wisp",
+          "max_count": 1,
+          "weight": 2,
+          "book_source": "D9 (will-o'-wisp feeding on Lasda's terror), D18",
+          "why_here": "Will-o'-wisps are Nhimbaloth's servants. They drift wherever fear runs thickest.",
+          "description": "For a moment there is nothing, then an angry blue light flares a foot from your face.",
+          "tactics": "It starts invisible, uses Feed on Fear, pursues fleeing foes, and fights to the death.",
+          "lore_hook": "Somewhere on this floor (D9), a man named Lasda is being kept terrified to feed one of these."
+        },
+        {
+          "id": "f4-wisp-pack",
+          "kind": "creature",
+          "title": "The Eyes of the Empty Death",
+          "group": [
+            {
+              "creature": "Will-O'-Wisp",
+              "count": 1
+            },
+            {
+              "creature": "Flickerwisp",
+              "count": 2
+            }
+          ],
+          "weight": 1,
+          "book_source": "D18 (a will-o'-wisp and two flickerwisps)",
+          "why_here": "The wisps that torment Otari Ilvashi's ghost hunt as a pack when they leave him.",
+          "description": "Three lights circle you, one blue and steady, two flickering, and the temperature drops with every pass.",
+          "tactics": "The flickerwisps spread confusion and the will-o'-wisp feeds on the fear. Kill the big one first.",
+          "lore_hook": "The ghost of Otari Ilvashi, the hero who named the town, has been their 'fading victim' for years."
+        },
+        {
+          "id": "f4-scalathrax",
+          "kind": "creature",
+          "title": "Starving Scalathrax",
+          "creature": "Scalathrax",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "D10 (two poorly fed scalathrax that pursue relentlessly)",
+          "why_here": "Poorly fed and relentless, they range out of their room looking for anything warm.",
+          "description": "Quills rattle like dry reeds. A spider-like aberration drops from the ceiling, too thin, mouth working.",
+          "tactics": "They attack on sight and chase relentlessly. Leg quills, then jaws with scalathrax venom (DC 21 Fortitude).",
+          "lore_hook": "Aberrations like these were dragged across space by the Gauntlight's test-fire."
+        },
+        {
+          "id": "f4-brood-leeches",
+          "kind": "creature",
+          "title": "Leech Trails",
+          "creature": "Brood Leech Swarm",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "D8 (Volluk fed himself to a vat of richly prepared leeches)",
+          "why_here": "Volluk's leech stock escapes his vats and slithers through the retreat.",
+          "description": "Glistening trails cross the carpet. At the end of one, the rug heaves, and a mass of fat black leeches spills out from under it.",
+          "tactics": "The swarm flows over the front line. Area damage and fire disperse it.",
+          "lore_hook": "Volluk Azrinae is now a worm-that-walks: thousands of leeches in a roughly drow shape (D8)."
+        },
+        {
+          "id": "f4-giant-leech",
+          "kind": "creature",
+          "title": "Volluk's Breeding Stock",
+          "creature": "Giant Leech",
+          "max_count": 3,
+          "weight": 1,
+          "book_source": "D8 (Volluk's leeches); B5 (Volluk's giant-leech guardian)",
+          "why_here": "Volluk breeds his leeches big.",
+          "description": "Something as long as your arm drops off a chandelier onto a shoulder, and then you see the others.",
+          "tactics": "Grab, then Blood Drain. They're slow out of water.",
+          "lore_hook": "Each is tagged with a tiny brass ring stamped with Volluk's initials."
+        },
+        {
+          "id": "f4-cairn-wights",
+          "kind": "creature",
+          "title": "The Traitor Apprentices Are Awake",
+          "creature": "Cairn Wight",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "D12 (two cairn wights, traitorous apprentices, who pursue relentlessly across the level once roused)",
+          "why_here": "Once their lids pop open, they hunt intruders anywhere on the level.",
+          "description": "Two armored dead in rotted apprentice robes stride toward you, longswords drawn, eyes burning.",
+          "tactics": "Drain life on every hit. Anyone they slay with weapon or claw rises as cairn wight spawn. They never stop pursuing.",
+          "lore_hook": "Belcorra punished these apprentices for betraying her. Their sarcophagi in D12 are carved with the charges."
+        },
+        {
+          "id": "f4-poltergeist",
+          "kind": "creature",
+          "title": "A Servant Still Furious",
+          "creature": "Poltergeist",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "D7 (poltergeist of a servant, racked with indignation); D1 (Belcorra had all the servants murdered)",
+          "why_here": "Belcorra ordered every servant killed the night the Roseguard came. Some of them are still angry.",
+          "description": "A serving tray sails out of the dark and clangs off the wall beside your head. Then the cutlery comes.",
+          "tactics": "It stays invisible and hurls objects with telekinetic maneuvers. It can be put to rest by respectfully disposing of its remains.",
+          "lore_hook": "'She said finish your meal.' The servants remember Belcorra's last courtesy."
+        },
+        {
+          "id": "f4-servant-ghost",
+          "kind": "creature",
+          "title": "The Door-Closer",
+          "creature": "Ghost Commoner",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "Floor 4 features (ephemeral spirits gently shut any door left open over a minute)",
+          "why_here": "The spirits that shut the doors were servants once. One hasn't settled.",
+          "description": "The door you propped open swings quietly shut. Behind it stands a translucent maid, wringing her apron, and she screams.",
+          "tactics": "Frightful Moan (DC 21 Will). It's a ghost, so lay it to rest for good.",
+          "lore_hook": "She's still waiting for the mistress to ring."
+        },
+        {
+          "id": "f4-crawling-hands",
+          "kind": "creature",
+          "title": "Hands From the Altar",
+          "creature": "Crawling Hand Swarm",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "D13 (crawling hands heaped on the altar of Nhimbaloth)",
+          "why_here": "The hands return to the altar when no foes are near. Sometimes they wander out to look for some.",
+          "description": "A dry skittering, like crabs on stone. A carpet of severed hands drags itself across the floor toward you.",
+          "tactics": "The swarm surrounds and strangles. Area damage works well.",
+          "lore_hook": "They come from the upper temple of Nhimbaloth, where the Roseguard icons must go (D13)."
+        },
+        {
+          "id": "f4-slime-mold",
+          "kind": "creature",
+          "title": "Fungus in the Finery",
+          "creature": "Slime Mold",
+          "max_count": 2,
+          "weight": 1,
+          "book_source": "Floor 4 environmental cues (profusions of fungi)",
+          "why_here": "Fungi are taking over the retreat's luxurious rooms.",
+          "description": "A velvet chaise is furred over with gray-green mold. As you pass, the mold slides off it and onto the floor toward you.",
+          "tactics": "Its pseudopod inflicts slime rot (DC 18 Fortitude). It's slow, so fight it or walk away.",
+          "lore_hook": "The rot has spared one portrait, Belcorra's own."
+        },
+        {
+          "id": "f4-ev-voidglutton-hunger",
+          "kind": "event",
+          "title": "The Voidglutton Tastes Your Fear",
+          "weight": 2,
+          "book_source": "D20 (the Voidglutton basks in the latent fears and pains of the dungeon's haunts and ghosts; it roams D20A-D20D)",
+          "why_here": "The Voidglutton never leaves Belcorra's suite, but its appetite reaches farther than its body.",
+          "description": "Every light source dims at once, as if something swallowed it, and you feel watched by something that finds your fear delicious.",
+          "immediate_action": "Each hero: DC 26 Will (the Voidglutton's spell DC).",
+          "success": "You steady yourself. DC 26 Occultism: an outer-dimensional entity is feeding on fear nearby (from D20).",
+          "failure": "Frightened 1 (frightened 2 on a critical failure). Light sources stay dim for 1 minute: ADD 1 DIE TO JAR as you fumble forward.",
+          "skills": [
+            "Will",
+            "Occultism"
+          ],
+          "consequence": "It won't pursue past its own rooms. Mention this foreshadowing when the heroes later meet it in D20."
+        },
+        {
+          "id": "f4-ev-spectral-replay",
+          "kind": "event",
+          "title": "The Retreat As It Was",
+          "weight": 1,
+          "book_source": "Floor 4 environmental cues (spectral visions of rooms as they looked 500 years ago; haunted-house effects)",
+          "why_here": "The retreat remembers itself.",
+          "description": "For a heartbeat the room is new: candles lit, silk on the walls, a servant pouring wine. Then dust and mold rush back in.",
+          "immediate_action": "DC 19 Society or Occultism to read the vision.",
+          "success": "You learn something true about the room's past: who used it and what they did there. The GM picks a clue from the floor doc.",
+          "failure": "Disoriented: frightened 1 for 1 round.",
+          "skills": [
+            "Society",
+            "Occultism"
+          ]
+        },
+        {
+          "id": "f4-ev-doors-close",
+          "kind": "event",
+          "title": "The Doors Shut Themselves",
+          "weight": 1,
+          "book_source": "Floor 4 features (ephemeral spirits gently shut any door left open more than a minute)",
+          "why_here": "The servants' spirits still keep house.",
+          "description": "Behind you, softly, every door you left open swings shut, one after another, down the hall.",
+          "immediate_action": "Was the party relying on an open door for a retreat route or to stay in contact? DC 19 Athletics to wedge doors so they stay open.",
+          "success": "The wedged doors stay open.",
+          "failure": "Anyone separated is cut off for a round. Reopening and checking the doors costs time: ADD 1 DIE TO JAR.",
+          "skills": [
+            "Athletics",
+            "Religion"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "name": "Into the Training Grounds (The Arena)",
+      "floor_doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md",
+      "ecology": "Belcorra's gladiator arena is now Jafaki's dumping ground for failed experiments: grothluts and a gibbering mouther in the shaft, shanrigol heaps rising from discarded flesh, gibtas bounders that wouldn't train, mimics that just moved in. Seugathi and their drider haulers come up to dump or collect specimens. Now and then a fleshwarp is sent to clear the basilisks. The gladiators' bones remember the fighting.",
+      "entries": [
+        {
+          "id": "f5-grothluts",
+          "kind": "creature",
+          "title": "Rejected Experiments",
+          "creature": "Grothlut",
+          "max_count": 4,
+          "weight": 3,
+          "book_source": "E1 (rejected experiments: grothluts lurking around the bends of the shaft)",
+          "why_here": "The seugathi dump failed fleshwarps on this level to keep them out of the way.",
+          "description": "A low, mindless moan rises from the dark, and misshapen figures of fused human flesh shamble into the light.",
+          "tactics": "Claws and digestive spew. They attack as soon as they detect anyone and fight until destroyed. Their moan doesn't affect other grothluts.",
+          "lore_hook": "Grothluts are fleshwarped from humans. Some still wear scraps of Otari clothing."
+        },
+        {
+          "id": "f5-grothlut-mouther",
+          "kind": "creature",
+          "title": "The Shaft's Residents",
+          "group": [
+            {
+              "creature": "Grothlut",
+              "count": 2
+            },
+            {
+              "creature": "Gibbering Mouther",
+              "count": 1
+            }
+          ],
+          "weight": 1,
+          "book_source": "E1 (two grothluts and a gibbering mouther)",
+          "why_here": "The book's E1 trio has drifted out of the shaft room.",
+          "description": "Moaning and gibbering overlap into one awful chorus as two grothluts and a heaving mouther come at you together.",
+          "tactics": "The grothluts are immune to the mouther's gibbering, but the mouther is not immune to their moan. They won't pursue anyone who retreats up stairs.",
+          "lore_hook": "The shaft drops 80 feet, past the laboratories (F1) to the prison level (G1)."
+        },
+        {
+          "id": "f5-gibbering-mouther",
+          "kind": "creature",
+          "title": "A Mouther on the Walkway",
+          "creature": "Gibbering Mouther",
+          "max_count": 1,
+          "weight": 2,
+          "book_source": "E1 (gibbering mouther sprawled near the east door)",
+          "why_here": "A failed experiment with nowhere to be.",
+          "description": "Eyes open all over a puddle of flesh as it notices you, and every mouth starts talking.",
+          "tactics": "Gibbering, spittle that burns eyes, and jaws that Grab. It fights until destroyed.",
+          "lore_hook": "Some of its mouths speak Aklo. One keeps repeating 'perfect soldier'."
+        },
+        {
+          "id": "f5-shanrigol-heaps",
+          "kind": "creature",
+          "title": "The Detritus Gets Up",
+          "creature": "Shanrigol Heap",
+          "max_count": 3,
+          "weight": 3,
+          "book_source": "E3 (three shanrigol heaps); F26 (discarded flesh spontaneously rose as shanrigol heaps)",
+          "why_here": "Jafaki's discarded flesh rises on its own in an arena 'imbued with the essence of death'.",
+          "description": "A pile of offal in the corner twitches, then slides toward you, bones and teeth churning inside it.",
+          "tactics": "Motionless until disturbed, then they all slither forward together. They ooze between bars, so doors and cell bars don't stop them. Sapping Squeeze when grabbed. They fight until destroyed.",
+          "lore_hook": "Jafaki finds them fascinating. In the arena below, a whole heap has grown into a behemoth (F26)."
+        },
+        {
+          "id": "f5-drider-haulers",
+          "kind": "creature",
+          "title": "Driders Dragging a Specimen",
+          "group": [
+            {
+              "creature": "Drider",
+              "count": 1
+            },
+            {
+              "creature": "Shanrigol Heap",
+              "count": 1
+            }
+          ],
+          "weight": 1,
+          "book_source": "F26 (Jafaki had driders drag shanrigol heaps to the E3 holding cells for study)",
+          "why_here": "Jafaki's minions haul specimens up from the arena for study.",
+          "description": "A drider backs down the hall, hauling a chained, writhing heap of flesh on a hook. It sees you and lets go of the chain.",
+          "tactics": "The drider shoots its longbow and fights with glaive and venom. The released heap attacks whoever is nearest, including the drider if it's closer.",
+          "lore_hook": "The heap is tagged with a seugathi glyph and a number: specimen 31."
+        },
+        {
+          "id": "f5-seugathi-dumping",
+          "kind": "creature",
+          "title": "A Seugathi Dumping Waste",
+          "creature": "Seugathi Servant",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "Arena features (Jafaki and the seugathi use this level as a dumping ground)",
+          "why_here": "The seugathi come up from Floor 6 to dispose of their failures.",
+          "description": "A wormlike seugathi glides by, pushing a cart of twitching flesh with its mind, and turns its eyeless head toward you. 'Specimens,' it hums telepathically. 'Unexpected.'",
+          "tactics": "Occult spells and seugathi venom. It would rather observe and capture than kill, and it retreats down the shaft to report.",
+          "lore_hook": "Jafaki is still pursuing the perfect soldier Belcorra asked for centuries ago."
+        },
+        {
+          "id": "f5-basilisk",
+          "kind": "creature",
+          "title": "Statues That Weren't There",
+          "creature": "Basilisk",
+          "max_count": 2,
+          "weight": 1,
+          "book_source": "E10 (mated pair of basilisks nesting among petrified victims)",
+          "why_here": "The basilisks guard their territory and hunt at its edges.",
+          "description": "A morlock frozen in mid-scream, in stone, stands in the hall. Beyond it, something low and eight-legged lifts its head.",
+          "tactics": "Petrifying Gaze (DC 22 Fortitude). Avert your eyes or fight blind. They won't pursue fleeing foes.",
+          "lore_hook": "The seugathi keep sending fleshwarps to clear these two. All of them have become statues."
+        },
+        {
+          "id": "f5-mulventok-cleaner",
+          "kind": "creature",
+          "title": "Sent Up to Kill the Basilisks",
+          "creature": "Mulventok",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "E10 (seugathi occasionally send a fleshwarped creature to clear the basilisks; a petrified mulventok stands there)",
+          "why_here": "Another fleshwarp has been sent to clear E10, and you are in its way.",
+          "description": "A towering fleshwarp with too many joints strides toward the arena concourse, a ring-bladed tamchal chakram spinning in one hand.",
+          "tactics": "Chakram strikes deal extra mental damage. It's single-minded, so heroes who get out of its way (DC 23 Diplomacy or Deception to point it at the basilisks) may be ignored.",
+          "lore_hook": "Its twin stands petrified in E10. Restoring that one is worth XP."
+        },
+        {
+          "id": "f5-specter",
+          "kind": "creature",
+          "title": "Another Abandoned Subject",
+          "creature": "Specter",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "E4 (spectre of a morlock Jafaki amputated and abandoned)",
+          "why_here": "Jafaki leaves subjects to die in agony, and some rise to share it.",
+          "description": "A limbless, translucent shape drags itself through the wall, mouth stretched in a scream with no sound.",
+          "tactics": "Spectral Corruption on its vile touch. It's terrified of operating tables and bright light (sunlight powerlessness).",
+          "lore_hook": "It flinches from the surgical lamps in E4."
+        },
+        {
+          "id": "f5-gibtas-bounders",
+          "kind": "creature",
+          "title": "Bounders Loose",
+          "creature": "Gibtas Bounder",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "E12 (gibtas bounders Jafaki trapped and couldn't mutate or train)",
+          "why_here": "Jafaki gave up on them, and they don't stay put.",
+          "description": "A rubbery, mouth-heavy aberration ricochets off the walls toward you, spitting acid.",
+          "tactics": "Bouncing Slam leaps, and its acid spit splashes. It bounces around the edges of a fight.",
+          "lore_hook": "Jafaki's notes call them 'untrainable, unmutable, uninteresting'."
+        },
+        {
+          "id": "f5-mimics",
+          "kind": "creature",
+          "title": "The Chest in the Corridor",
+          "creature": "Mimic",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "E13 (two mimics, recently arrived)",
+          "why_here": "The mimics are new arrivals still finding their spots.",
+          "description": "An ironbound chest sits in the middle of the hall. It wasn't there an hour ago.",
+          "tactics": "Adhesive: anything that touches it sticks. A DC 20 Perception check notices it's breathing.",
+          "lore_hook": "A gladiator's rusted helmet is stuck to its side."
+        },
+        {
+          "id": "f5-black-pudding",
+          "kind": "creature",
+          "title": "Something Alchemical Is Hungry",
+          "creature": "Black Pudding",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "E22 (alchemically modified black pudding that rouses from torpor and pursues relentlessly)",
+          "why_here": "Jafaki's sludge experiment woke up and followed the smell of living things.",
+          "description": "A wave of black, glistening sludge rolls out of a drain, dissolving the door frame as it comes.",
+          "tactics": "Its corrosive touch ruins weapons and armor. It pursues relentlessly, and splitting it makes more puddings.",
+          "lore_hook": "Glass vials float half-dissolved in it, each with a seugathi label."
+        },
+        {
+          "id": "f5-gladiator-bones",
+          "kind": "creature",
+          "title": "The Gladiators Remember",
+          "creature": "Skeletal Champion",
+          "max_count": 4,
+          "weight": 2,
+          "book_source": "E25 (gladiator bones hold the 'grim memory of death and combat'); Arena features",
+          "why_here": "Hundreds of gladiators died here, and their bones still answer the call to fight.",
+          "description": "Scattered bones rattle and leap together into skeletal gladiators. They salute you with rusted blades.",
+          "tactics": "They fight in formation and give no quarter. A DC 20 Performance salute makes them pause for a round.",
+          "lore_hook": "Belcorra wanted a premier gladiator facility to pick her best soldiers."
+        },
+        {
+          "id": "f5-hz-fungal-rot",
+          "kind": "hazard",
+          "title": "Drifting Spores",
+          "level": 6,
+          "weight": 2,
+          "book_source": "E15 (fungal rot, level 6 disease, each minute with exposed skin)",
+          "why_here": "Spores from the white fungus in the old waiting room drift along the halls.",
+          "description": "Tiny white spores hang in the air like dust motes. Where they land on skin, it itches.",
+          "immediate_action": "DC 22 Nature to recognize the danger, then cover exposed skin. Anyone who doesn't: DC 22 Fortitude.",
+          "success": "You cover up and push through.",
+          "failure": "You contract fungal rot (level 6 disease, see E15).",
+          "skills": [
+            "Nature",
+            "Fortitude"
+          ]
+        },
+        {
+          "id": "f5-hz-rusty-grate",
+          "kind": "hazard",
+          "title": "Rusted Grate Over a Pit",
+          "level": 5,
+          "weight": 1,
+          "book_source": "E2 (rusty grate collapses under any significant weight; DC 20 Athletics to climb the pits)",
+          "why_here": "The arena's pits are covered with grates that have rusted through.",
+          "description": "The floor ahead is an iron grate, flaking orange, over a pit that smells of something below.",
+          "immediate_action": "DC 20 Perception to see how rotten it is. Crossing anyway: DC 20 Reflex.",
+          "success": "You find the solid rim, or test it and step back in time.",
+          "failure": "The grate collapses and you fall into the pit (falling damage). DC 20 Athletics to climb out. The pit may lead down to the laboratories (F2).",
+          "skills": [
+            "Perception",
+            "Reflex",
+            "Athletics"
+          ]
+        },
+        {
+          "id": "f5-ev-strange-tracks",
+          "kind": "event",
+          "title": "Strange Tracks in the Dust",
+          "weight": 1,
+          "book_source": "Arena environmental cues (dust with strange tracks, gouges, bits of broken claw or carapace)",
+          "why_here": "Every masterless horror on this level leaves sign.",
+          "description": "The dust is churned with tracks: some dragged, some hopping, some like a dozen feet at once. Fresh gouges score the wall at shoulder height.",
+          "immediate_action": "DC 20 Survival to read the tracks.",
+          "success": "You know what passed and which way it went. REMOVE 1 DIE FROM JAR by avoiding it, and the next COMBAT roll may be skipped by detouring.",
+          "failure": "You can't make sense of them. No effect.",
+          "skills": [
+            "Survival",
+            "Nature"
+          ]
+        }
+      ]
+    },
+    "6": {
+      "name": "Experiments in Flesh (The Laboratories)",
+      "floor_doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+      "ecology": "Jafaki's seugathi run the fleshwarping labs with drider bodyguards and grothlut guards. Morlocks drink at the Warped Brew waiting their turn to be fleshwarped. Ochre jellies eat the trash, and caged ghasts wait for a chance. Urevian's devils (a barbazu and zebubs) are quietly building a foothold, with zebubs patrolling invisibly. Failures pile up in the arena below and rise as shanrigol heaps.",
+      "entries": [
+        {
+          "id": "f6-seugathi-researcher",
+          "kind": "creature",
+          "title": "A Seugathi Taking Notes",
+          "creature": "Seugathi Servant",
+          "max_count": 2,
+          "weight": 3,
+          "book_source": "F8 (seugathi researcher observing the destrachan); F20 (seugathi observing the behemoth)",
+          "why_here": "Jafaki's researchers wander the labs observing anything that might be a useful specimen.",
+          "description": "A seugathi coils in a doorway, a slate in its tentacles, and begins to take notes on you. 'Continue,' it hums in your mind. 'Behave naturally.'",
+          "tactics": "Psychic spells and venom. It would rather watch something else fight you, so it lures heroes toward other specimens.",
+          "lore_hook": "'Jafaki needs specimens!' Surface dwellers would make fine fleshwarp candidates."
+        },
+        {
+          "id": "f6-grothlut-guards",
+          "kind": "creature",
+          "title": "Grothluts Off Their Chains",
+          "creature": "Grothlut",
+          "max_count": 4,
+          "weight": 2,
+          "book_source": "F1 (grothlut chained to the handrail as a guard)",
+          "why_here": "Guard grothluts slip their chains, or get unchained to go fetch something.",
+          "description": "A broken chain drags behind a moaning, mindless grothlut. Two more follow it.",
+          "tactics": "They're mindless: claws and acid spew, no tactics, no fear.",
+          "lore_hook": "Each has a lab number branded on its back."
+        },
+        {
+          "id": "f6-drider-bodyguards",
+          "kind": "creature",
+          "title": "Drider Bodyguards",
+          "creature": "Drider",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "F20 (two drider bodyguards); F25 (Jafaki's drider)",
+          "why_here": "Driders guard the seugathi and do their hauling.",
+          "description": "Two driders pick their way down the corridor, glaives over their shoulders, escorting an empty cage on wheels.",
+          "tactics": "Longbow volleys, then glaive and venom. They aim to drag a subdued hero back in the cage.",
+          "lore_hook": "Morlocks at the Warped Brew dream of becoming driders."
+        },
+        {
+          "id": "f6-seugathi-escort",
+          "kind": "creature",
+          "title": "The Observation Party",
+          "group": [
+            {
+              "creature": "Seugathi Servant",
+              "count": 1
+            },
+            {
+              "creature": "Drider",
+              "count": 2
+            }
+          ],
+          "weight": 1,
+          "book_source": "F20 (seugathi servant and two drider bodyguards)",
+          "why_here": "Senior researchers travel with an escort.",
+          "description": "A seugathi with a heavy tome glides between two driders. All three stop. The seugathi opens the tome to a fresh page.",
+          "tactics": "The driders screen and the seugathi casts and records. If it falls, the driders retreat to report.",
+          "lore_hook": "The tome is labelled 'Behemoth Growth Observations' (F26)."
+        },
+        {
+          "id": "f6-morlock-hopefuls",
+          "kind": "creature",
+          "title": "Morlocks Waiting for Their Turn",
+          "creature": "Morlock",
+          "max_count": 6,
+          "weight": 2,
+          "book_source": "F11 (Warped Brew morlocks, one complaining how long she's waiting for her fleshwarping; they flee below 10 HP)",
+          "why_here": "Morlocks drift between the Warped Brew and the labs, hoping to be remade.",
+          "description": "A gaggle of drunk morlocks stumbles around the corner, arguing about who gets fleshwarped first. They see surface folk and bristle.",
+          "tactics": "They're all bluster: they flee below 10 HP. Peaceful intent (DC 20 Diplomacy) defuses them. Mentioning Shadow Malice, the band, wins them over fast.",
+          "lore_hook": "'Driders get the best seats at the Brew.' They idolize the band Shadow Malice."
+        },
+        {
+          "id": "f6-ochre-jellies",
+          "kind": "creature",
+          "title": "The Trash Jellies Want Feeding",
+          "creature": "Ochre Jelly",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "F6 (ochre jellies that feed on trash; they expect food and attack if none is offered)",
+          "why_here": "The jellies have learned that things walking toward them bring food.",
+          "description": "A yellow-brown jelly squelches out of a refuse chute and slides eagerly toward you, like a dog at the dinner bell.",
+          "tactics": "Offer it food immediately and it stops to digest. Otherwise it attacks to the death. Its acid harms only flesh.",
+          "lore_hook": "Half-dissolved lab notes float inside it."
+        },
+        {
+          "id": "f6-escaped-ghasts",
+          "kind": "creature",
+          "title": "The Ghasts Got Out",
+          "creature": "Ghast",
+          "max_count": 4,
+          "weight": 2,
+          "book_source": "F21 (four ghasts caged and tortured by Jafaki's minions; freed, they attack any living creature)",
+          "why_here": "One cage latch rusted through.",
+          "description": "The stench arrives first, then ghasts: gaunt, scarred by surgery, and starving.",
+          "tactics": "Stench, paralysis and ghast fever. They attack ANY living creature, so lure them into the seugathi.",
+          "lore_hook": "They're kin to the Cult of the Canker on Floor 3. Jafaki was studying their hunger."
+        },
+        {
+          "id": "f6-zebub-patrol",
+          "kind": "creature",
+          "title": "An Invisible Patrol",
+          "creature": "Zebub",
+          "max_count": 3,
+          "weight": 2,
+          "book_source": "F24 (1-in-3 chance a zebub is invisibly patrolling; it dimension doors back to alert the others)",
+          "why_here": "Urevian's devils are scouting the labs for an incursion.",
+          "description": "A faint buzzing with no visible source circles your head.",
+          "tactics": "Invisible. DC 20 Perception to pinpoint it. If it spots the heroes undetected, it dimension doors away to alert its barbazu: the next COMBAT roll is the devils.",
+          "lore_hook": "'Urevian's law is absolute!' The devils torture any of Jafaki's minions they catch."
+        },
+        {
+          "id": "f6-devil-foothold",
+          "kind": "creature",
+          "title": "Urevian's Incursion Team",
+          "group": [
+            {
+              "creature": "Barbazu",
+              "count": 1
+            },
+            {
+              "creature": "Zebub",
+              "count": 2
+            }
+          ],
+          "weight": 1,
+          "book_source": "F24 (Urevian sent a barbazu and two zebubs to secure a foothold)",
+          "why_here": "The devils are expanding their foothold.",
+          "description": "A bearded devil drags a morlock corpse toward an iron maiden while two fly-bodied zebubs buzz overhead, taking notes.",
+          "tactics": "The barbazu inflicts infernal wounds and Avernal fever (beard). The zebubs go invisible and harass. Devils respect a contract, so DC 23 Diplomacy might buy passage.",
+          "lore_hook": "They're scouting the labs for Urevian's prison (Floor 7)."
+        },
+        {
+          "id": "f6-destrachan",
+          "kind": "creature",
+          "title": "Harmonics Through the Wall",
+          "creature": "Destrachan",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "F9 (destrachan, hungry for fresh meat, pursues fleeing foes)",
+          "why_here": "The seugathi let it out to test its hunting.",
+          "description": "Every crystal in the room hums, then shatters. A blind, beaked aberration steps through the dust, tasting the echoes.",
+          "tactics": "Destructive Harmonics (sonic). It hunts by echolocation, so silence magic hampers it. It pursues relentlessly.",
+          "lore_hook": "A seugathi somewhere is taking notes on how you do."
+        },
+        {
+          "id": "f6-fleshwarp-guard",
+          "kind": "creature",
+          "title": "A Restless Fleshwarp",
+          "creature": "Mulventok",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "F10 (a fleshwarp guard weakened by the devils' infernal malediction; slaughters anyone not escorted by a seugathi)",
+          "why_here": "The guard paces the halls, tense and restless.",
+          "description": "A towering fleshwarp twitches in a doorway, muscles jumping under grafted skin, and screams when it sees you have no seugathi escort.",
+          "tactics": "It fights to the death. DC 23 Occultism reveals the devils' slow curse on it, which the floor-7 wisps are feeding on.",
+          "lore_hook": "Urevian's will-o'-wisps suggested the 'slow curse' so they could feed on its fear."
+        },
+        {
+          "id": "f6-shanrigol-heaps",
+          "kind": "creature",
+          "title": "Flesh From the Arena Pile",
+          "creature": "Shanrigol Heap",
+          "max_count": 3,
+          "weight": 1,
+          "book_source": "F26 (dumped flesh in the arena rises as shanrigol heaps)",
+          "why_here": "The arena floor's flesh pile keeps spawning heaps, and some crawl into the labs.",
+          "description": "A wet trail leads up the stairs from the arena. At its end, a heap of meat and bone rears up.",
+          "tactics": "Grab and Sapping Squeeze. They're slow, so you can outpace them.",
+          "lore_hook": "Jafaki deliberately grew one into a behemoth (F26)."
+        },
+        {
+          "id": "f6-hz-yellow-mold",
+          "kind": "hazard",
+          "title": "Yellow Mold Spores",
+          "level": 8,
+          "weight": 1,
+          "book_source": "F15 (yellow mold hazard)",
+          "why_here": "Yellow mold spreads from F15 wherever the damp reaches.",
+          "description": "A powdery yellow growth coats a doorframe. Brushing it would release a cloud.",
+          "immediate_action": "DC 24 Perception or Nature to notice it before you brush against it.",
+          "success": "You avoid it. Burned or cut away from a distance, it's gone.",
+          "failure": "A spore cloud bursts. Use the Core Rulebook yellow mold hazard (as in F15).",
+          "skills": [
+            "Perception",
+            "Nature",
+            "Fortitude"
+          ]
+        },
+        {
+          "id": "f6-hz-stupor-fumes",
+          "kind": "hazard",
+          "title": "Stupor Fumes",
+          "level": 6,
+          "weight": 1,
+          "book_source": "F4 (Jafaki induced a chemical stupor in the hydras); lab ecology",
+          "why_here": "Jafaki's sedatives are made in bulk, and the lab vents leak.",
+          "description": "A sweet, cloying haze seeps from a vent grille. Your eyelids feel heavy.",
+          "immediate_action": "DC 22 Fortitude for each hero who breathes it. DC 22 Crafting to seal the vent.",
+          "success": "You hold your breath and push through, or seal the vent.",
+          "failure": "Slowed 1 for 1 minute. The party loses time recovering: ADD 1 DIE TO JAR.",
+          "skills": [
+            "Fortitude",
+            "Crafting",
+            "Medicine"
+          ]
+        },
+        {
+          "id": "f6-ev-warped-brew",
+          "kind": "event",
+          "title": "Shadow Malice Is Playing",
+          "weight": 1,
+          "book_source": "F11 and F18 (the Warped Brew and the Shadow Malice band; 1-in-4 chance they're on stage)",
+          "why_here": "When the band plays, the whole floor hears it.",
+          "description": "A wall-shaking din of drums and ratfolk vocals booms down the corridors from the Warped Brew.",
+          "immediate_action": "Use the noise? DC 22 Stealth to move under cover of the music.",
+          "success": "Nobody hears you over the band: REMOVE 1 DIE FROM JAR.",
+          "failure": "No cover. A tipsy morlock wanders out to dance and spots you.",
+          "skills": [
+            "Stealth",
+            "Performance"
+          ]
+        }
+      ]
+    },
+    "7": {
+      "name": "Soul Keepers (The Prison)",
+      "floor_doc": "common/campaign-reference/floors/floor-07-soul-keepers.md",
+      "ecology": "Urevian's devils hold the prison level under strict contract: barbazu soldiers and drill sergeants, fussy zebub quartermasters, erinyes smiths and gate-forgers, a bone devil sentry. They've trained grothluts and other fleshwarps (driders, mulventoks) to fight their own makers. Two will-o'-wisps patrol and kill anything unfriendly. The witchfire's stasis vault holds monsters Urevian wants for his invasion of Otari, and some of them are getting loose. The halls are trapped against invaders.",
+      "entries": [
+        {
+          "id": "f7-barbazu-patrol",
+          "kind": "creature",
+          "title": "A Devil Patrol Demands Your Papers",
+          "creature": "Barbazu",
+          "max_count": 3,
+          "weight": 3,
+          "book_source": "G3, G5, G10 (barbazu soldiers and bodyguards under Urevian)",
+          "why_here": "Urevian's soldiers enforce his law across the level.",
+          "description": "Bearded devils with glaives step into your path. 'Name, purpose, and contract number,' the lead one growls.",
+          "tactics": "Infernal wound with the glaive, Avernal fever from the beard. Devils respect authority: DC 23 Diplomacy or Deception, citing Urevian or a contract, may get the party escorted to him instead of attacked.",
+          "lore_hook": "'Urevian's law is absolute!' Urevian prefers to deal, not fight."
+        },
+        {
+          "id": "f7-grothlut-drill",
+          "kind": "creature",
+          "title": "Drill Practice",
+          "group": [
+            {
+              "creature": "Barbazu",
+              "count": 1
+            },
+            {
+              "creature": "Grothlut",
+              "count": 4
+            }
+          ],
+          "weight": 2,
+          "book_source": "G3 (a barbazu drilling six grothluts, trained to fight against their creators)",
+          "why_here": "The devils are slowly training mindless grothluts with magical bracers that enforce compliance.",
+          "description": "A barbazu barks orders, its bracers glowing, as a squad of grothluts lurches through a ragged drill and turns, as one, to face you.",
+          "tactics": "The devil is immune to the grothluts' moan. They attack as soon as they see intruders. Kill the barbazu and the grothluts lose direction (they wander or turn on each other).",
+          "lore_hook": "Jafaki thinks the devils killed these grothluts. They're being trained to fight the seugathi."
+        },
+        {
+          "id": "f7-zebub-runners",
+          "kind": "creature",
+          "title": "Zebubs on an Errand",
+          "creature": "Zebub",
+          "max_count": 4,
+          "weight": 2,
+          "book_source": "G4 (zebub quartermaster itemizing invasion equipment); G17 (zebubs report to Ysondkhelir through the witchfire's room)",
+          "why_here": "Zebubs carry inventories and reports all over the level.",
+          "description": "A pair of fat, fly-bodied devils buzz past carrying a ledger, arguing about a miscount. They stop dead when they see you.",
+          "tactics": "They go invisible and dimension door to report: if they escape, the next COMBAT roll is barbazu. They're bad fighters but good tattletales.",
+          "lore_hook": "The ledger lists equipment for an invasion of Otari."
+        },
+        {
+          "id": "f7-drider-laborers",
+          "kind": "creature",
+          "title": "Drider Work Crew",
+          "creature": "Drider",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "G4 (four driders doing brute labor and defense); G15 (fleshwarp soldiers)",
+          "why_here": "Urevian uses fleshwarps for labor and muscle.",
+          "description": "Driders hauling crates of hellforged weapons set them down, slowly, and reach for their glaives.",
+          "tactics": "Longbow volleys, then glaive and venom. They defend the cargo.",
+          "lore_hook": "The crates are stamped with an infernal seal. Weapons for the attack on Otari."
+        },
+        {
+          "id": "f7-mulventok-soldiers",
+          "kind": "creature",
+          "title": "Off-Duty Fleshwarp Soldiers",
+          "creature": "Mulventok",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "G15 (the devils' fleshwarp soldiers, mulventoks and driders, who fight to the death)",
+          "why_here": "When not drilling, the devils' fleshwarp soldiers roam the level.",
+          "description": "Mulventoks with chakram blades lounge against a cell wall, then uncoil. Off-duty or not, they've been trained to fight intruders.",
+          "tactics": "Chakram strikes with mental damage. They fight to the death.",
+          "lore_hook": "Jafaki made them. Urevian owns them now."
+        },
+        {
+          "id": "f7-erinys-gate-forger",
+          "kind": "creature",
+          "title": "A Scholar of Extraplanar Law",
+          "creature": "Erinys",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "G7 (twin erinyes 'gate forgers' who will talk shop with summoners); G5 (erinyes smith)",
+          "why_here": "The erinyes leave their forge to fetch notes and argue theory.",
+          "description": "A winged devil with a flaming longsword stalks the hall, muttering about summoning-circle geometry. She whirls on you, furious at the interruption.",
+          "tactics": "Flaming longsword and bow. If she sees a hero summon a creature, she offers to stop and discuss the finer points of extraplanar law.",
+          "lore_hook": "The sisters are trying to turn a summoning circle into a permanent gate to Hell."
+        },
+        {
+          "id": "f7-bone-devil",
+          "kind": "creature",
+          "title": "A Sentry Who Hates the Job",
+          "creature": "Osyluth",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "G6 (a bone devil standing watch, unhappy to be a mere guard but bound by contract)",
+          "why_here": "Bone devils walk the rounds Urevian assigns them.",
+          "description": "A skeletal devil with a scorpion's tail clacks down the corridor, glaring as if you've ruined its day. You have.",
+          "tactics": "Jaws, claws and stinger. It's bound by contract terms, so a clever reading of its orders (DC 26 Society or Diplomacy) might make you 'not its problem'.",
+          "lore_hook": "It complains that Urevian wastes a bone devil on guard duty."
+        },
+        {
+          "id": "f7-wisp-patrol",
+          "kind": "creature",
+          "title": "The Wisp Patrol",
+          "creature": "Will-O'-Wisp",
+          "max_count": 2,
+          "weight": 3,
+          "book_source": "G12 (two will-o'-wisps patrol, killing whatever unfriendly creatures they find)",
+          "why_here": "Urevian assigned them to keep watch. The book says outright that they patrol.",
+          "description": "Two lights bob along the cell block at head height, sweeping each cell like lanterns, then turn toward you.",
+          "tactics": "They're invisible at will, use Feed on Fear, and hunt anything unfriendly to the devils.",
+          "lore_hook": "The devils assume they serve Belcorra. The wisps simply agreed; they've never met her."
+        },
+        {
+          "id": "f7-stasis-chuul",
+          "kind": "creature",
+          "title": "Out of Stasis",
+          "creature": "Chuul",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "G17 (stasis creatures, including a chuul, that Urevian wants for his invasion)",
+          "why_here": "Urevian keeps trying to free the stasis monsters reliably. This time one came loose and got away.",
+          "description": "Water still dripping from its stasis tank, a chuul skitters out of the dark, claws snapping.",
+          "tactics": "Claws to Grab and Constrict, then paralyzing tentacles and mandibles. It's disoriented: it attacks whatever moves.",
+          "lore_hook": "Its shell still glows faintly with stasis magic from G17."
+        },
+        {
+          "id": "f7-stasis-gibtas",
+          "kind": "creature",
+          "title": "Gibtas Bounding Free",
+          "creature": "Gibtas Bounder",
+          "max_count": 3,
+          "weight": 1,
+          "book_source": "G17 (stasis gibtas)",
+          "why_here": "Another of the witchfire's stasis prisoners is loose.",
+          "description": "A rubbery aberration caroms off the walls, spitting acid, maddened after centuries frozen.",
+          "tactics": "Bouncing Slam and acid spit.",
+          "lore_hook": "The witchfire won't bargain with Urevian, so he's been testing ways to free them."
+        },
+        {
+          "id": "f7-stasis-gug",
+          "kind": "creature",
+          "title": "A Gug Out of the Stasis Vault",
+          "creature": "Gug",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "G17 (two stasis gugs); G8 (a gug sent by Belcorra)",
+          "why_here": "Gugs are kin to the Farm level's Urthagul, and one of the stasis gugs is loose.",
+          "description": "Something enormous folds itself through a doorway far too small for it. A vertical mouth opens down the middle of its head.",
+          "tactics": "Its jaws and reach-15 claws. Eerie Flexibility lets it follow you through tight spaces. This is deadly, so run.",
+          "lore_hook": "Gugs serve Belcorra. Another one is here demanding an audience with Urevian (G8)."
+        },
+        {
+          "id": "f7-hz-paralyzing-light",
+          "kind": "hazard",
+          "title": "Paralyzing Light Ward",
+          "level": 8,
+          "weight": 2,
+          "book_source": "G11 (paralyzing light trap, level 8: holds any non-devil in the light and rings an alarm)",
+          "why_here": "Urevian is fortifying the level against invaders, and new wards go up.",
+          "description": "A faint red sheen spills across the corridor floor from a rune in the ceiling.",
+          "immediate_action": "DC 24 Perception to notice the rune before entering the light, then DC 24 Thievery or Arcana to disable it.",
+          "success": "Disabled or bypassed. The rune is a template for the G11 trap.",
+          "failure": "Held in place (use G11's stats) and an alarm rings: ADD 2 DICE TO JAR, and the next COMBAT roll is barbazu responders.",
+          "skills": [
+            "Perception",
+            "Thievery",
+            "Arcana"
+          ]
+        },
+        {
+          "id": "f7-hz-painful-suggestion",
+          "kind": "hazard",
+          "title": "Rune Under the Filth",
+          "level": 8,
+          "weight": 1,
+          "book_source": "G16 (painful suggestion trap, level 8, hidden rune under the filth just past a threshold)",
+          "why_here": "The devils hide wards where prisoners' filth covers them.",
+          "description": "The floor past the doorway is caked in filth. Something underneath glints.",
+          "immediate_action": "DC 24 Perception to spot the hidden rune, then DC 24 Thievery to disable it.",
+          "success": "You step around or disable it.",
+          "failure": "The rune fires (use G16's painful suggestion trap).",
+          "skills": [
+            "Perception",
+            "Thievery"
+          ]
+        },
+        {
+          "id": "f7-hz-forge-heat",
+          "kind": "hazard",
+          "title": "Heat From the Hellforge",
+          "level": 7,
+          "weight": 1,
+          "book_source": "G7 (heat 1d6 fire per round; magma 20d6)",
+          "why_here": "The erinyes' forge vents heat into the nearby halls.",
+          "description": "The air shimmers. Iron grates in the floor glow orange, and the corridor ahead is an oven.",
+          "immediate_action": "Push through (1d6 fire per round for 3 rounds) or detour around it.",
+          "success": "You detour: ADD 1 DIE TO JAR (20 minutes), no damage.",
+          "failure": "You push through and take 3d6 fire total (1d6 per round, no save).",
+          "skills": [
+            "Fortitude",
+            "Survival"
+          ]
+        },
+        {
+          "id": "f7-ev-contract-checkpoint",
+          "kind": "event",
+          "title": "Infernal Checkpoint",
+          "weight": 1,
+          "book_source": "G10 (Urevian deals honestly with draft contract); devil hierarchy",
+          "why_here": "Every devil on this level answers to a contract, and so must you.",
+          "description": "A brass lectern blocks the corridor. On it is an open ledger and a quill made from a feather that's still twitching. A sign reads: 'All persons beyond this point must be registered.'",
+          "immediate_action": "Sign (in blood), forge an entry (DC 24 Deception or Society), or go around.",
+          "success": "A forged or clever entry gets you through, and you learn the devils' patrol schedule: REMOVE 1 DIE FROM JAR.",
+          "failure": "You're now 'registered'. Devils on this level know your names and where you're headed.",
+          "skills": [
+            "Deception",
+            "Society",
+            "Diplomacy"
+          ],
+          "consequence": "Signing your true name means Urevian will expect a meeting (G10)."
+        }
+      ]
+    },
+    "8": {
+      "name": "Decaying Gardens (The Farm)",
+      "floor_doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+      "ecology": "Belcorra's underground farm is a fungal swamp of mist-covered lakes. The Children of Belcorra (deep gnome bog mummies) plod through her order to round up dangerous creatures for her army, under a lazy naga. Chuuls and a krooth rule the lake. Belcorra's will-o'-wisps and dread wisps spy for her from the swamp basins. Caligni cultists worship the gug Urthagul. A dread wraith hunts intruders, and drow from Yldaris scout the gardens. The book has its own lake encounter table (d10), mirrored here.",
+      "entries": [
+        {
+          "id": "f8-lake-chuul",
+          "kind": "creature",
+          "title": "Something Under the Skiff",
+          "creature": "Chuul",
+          "max_count": 2,
+          "weight": 4,
+          "book_source": "H15 lake random encounter table (d10 1-4: one chuul from H14)",
+          "why_here": "Chuuls hunt the whole lake, ambushing prey at the shoreline.",
+          "description": "The mist on the water parts around a pair of claws. A chuul surges up beside the dock, mandibles clicking.",
+          "tactics": "It sneaks up so prey can only flee into the water. Claws Grab and Constrict, then paralyzing tentacles. It flees below 20 HP and doesn't return.",
+          "lore_hook": "Their nest (H14) holds six chuul eggs, which the Children would love to cage."
+        },
+        {
+          "id": "f8-children-skiff",
+          "kind": "creature",
+          "title": "The Children on a Skiff",
+          "group": [
+            {
+              "creature": "Bog Mummy",
+              "count": 4
+            }
+          ],
+          "weight": 2,
+          "book_source": "H15 table (d10 5-6: four Children of Belcorra on a skiff, from H17)",
+          "why_here": "The Children patrol the lake by skiff, rounding up monsters for Belcorra's army.",
+          "description": "A skiff slides out of the mist, poled by four small, mud-caked mummies with the faces of deep gnomes. They stop poling and stare.",
+          "tactics": "Bog rot curse on their fists. They count bogs and mud as home terrain. They're loyal to Belcorra but resent their overseer, so DC 26 Diplomacy invoking 'the Ghost Queen' may make them pause.",
+          "lore_hook": "Belcorra told them to round up the level's dangerous creatures. The naga Vthis was supposed to supervise and hasn't."
+        },
+        {
+          "id": "f8-krooth",
+          "kind": "creature",
+          "title": "A Krooth in the Shallows",
+          "creature": "Krooth",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "H15 table (d10 7: one krooth); H16 (caged krooth)",
+          "why_here": "A lake predator the Children are trying, and failing, to cage.",
+          "description": "A long, toothy amphibian bursts from the shallows, poison dripping from a jutting tooth.",
+          "tactics": "Aquatic Ambush and Poison Tooth. It retreats to deep water when hurt.",
+          "lore_hook": "A broken cage lid floats nearby, from H16."
+        },
+        {
+          "id": "f8-brood-leeches",
+          "kind": "creature",
+          "title": "Leeches in the Reeds",
+          "creature": "Brood Leech Swarm",
+          "max_count": 4,
+          "weight": 1,
+          "book_source": "H15 table (d10 8: two brood leech swarms)",
+          "why_here": "The foul lake breeds leeches.",
+          "description": "The reeds you're wading through are suddenly alive and writhing, and then they're on you.",
+          "tactics": "The swarms engulf anyone in the water. Get out of the water and burn them.",
+          "lore_hook": "The lake's creatures have built a tolerance to the sewer haze. You haven't."
+        },
+        {
+          "id": "f8-wisp-spies",
+          "kind": "creature",
+          "title": "Belcorra's Lanterns",
+          "creature": "Will-O'-Wisp",
+          "max_count": 4,
+          "weight": 2,
+          "book_source": "Belcorra's Wisps; H2 (will-o'-wisps over the basins report to Belcorra telepathically)",
+          "why_here": "Wisps fed by the Empty Vault's swamp keep tabs on the farm for Belcorra.",
+          "description": "Soft lights hover over a brackish basin like decorative lanterns. One drifts closer, and you feel a mind brush yours and move on.",
+          "tactics": "They telepathically report your actions until attacked or until you try to leave, then fight until destroyed.",
+          "lore_hook": "GM: if they report back, run 'Belcorra Attacks!' shortly afterward."
+        },
+        {
+          "id": "f8-dread-wisp",
+          "kind": "creature",
+          "title": "A Dread Wisp at the Basin",
+          "creature": "Dread Wisp",
+          "max_count": 2,
+          "weight": 1,
+          "book_source": "Belcorra's Wisps; H10 (two dread wisps; defeating them triggers Belcorra Attacks!)",
+          "why_here": "Dread wisps can speak with the Empty Vault directly.",
+          "description": "A light the color of a bruise hangs over the swamp water, and your strength drains toward it.",
+          "tactics": "Draining touch that wearies, and Feed on Despair. It attacks anyone but Belcorra and the Children.",
+          "lore_hook": "Destroying it is a message Belcorra will hear."
+        },
+        {
+          "id": "f8-caligni-cultists",
+          "kind": "creature",
+          "title": "Pilgrims of Urthagul",
+          "creature": "Caligni Stalker",
+          "max_count": 6,
+          "weight": 2,
+          "book_source": "H3 (six caligni cultists who believe their death flames empower Urthagul)",
+          "why_here": "Caligni cultists travel between their temple and the gug's island.",
+          "description": "Darkness rolls down the path ahead, and gray, gaunt figures move inside it, chanting a name: 'Urthagul.'",
+          "tactics": "Darkness and obscuring mist at will, then double slices with black smear poison. They fight to the death.",
+          "lore_hook": "Urthagul the gug holds the Crimson Fulcrum Lens (H12)."
+        },
+        {
+          "id": "f8-dread-wraith",
+          "kind": "creature",
+          "title": "The Shadows Over the Water",
+          "creature": "Dread Wraith",
+          "max_count": 1,
+          "weight": 2,
+          "book_source": "H23 (dread wraith lookout that hunts the heroes, eager to make wraith spawn)",
+          "why_here": "Vthis told it to 'handle the problem', so it hunts you.",
+          "description": "The shadows on the water aren't a trick of the mist. One rises, takes shape, and comes for you.",
+          "tactics": "Spectral hand and drain life. It's incorporeal and flies through walls.",
+          "lore_hook": "It serves Vthis, the naga Belcorra trusted to run the farm."
+        },
+        {
+          "id": "f8-puffballs",
+          "kind": "creature",
+          "title": "Red Blooms Drifting Closer",
+          "creature": "Dragon's Blood Puffball",
+          "max_count": 2,
+          "weight": 1,
+          "book_source": "H34 (two dragon blood puffballs that detach and float toward the heroes; explosive end)",
+          "why_here": "Puffballs detach and drift through the fungus gardens.",
+          "description": "A pair of huge red 'flowers' lift off their stalks and float toward you on no wind.",
+          "tactics": "Bloom and spore jet (poison). They follow fleeing heroes and burst explosively when destroyed.",
+          "lore_hook": "Spores drift through the whole garden from these."
+        },
+        {
+          "id": "f8-goliath-spider",
+          "kind": "creature",
+          "title": "Something Above the Crossroads",
+          "creature": "Goliath Spider",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "H35 (goliath spider in a 60-foot ceiling crevasse; already ate two drow scouts)",
+          "why_here": "It hunts the crossroads from above.",
+          "description": "A strand of silk as thick as a rope sways in front of your face. Then the spider drops on it.",
+          "tactics": "Descend on a Web to open, fangs with goliath spider venom. It retreats to the crevasse below 40 HP.",
+          "lore_hook": "The drow at H45 are arguing about whether to fight it."
+        },
+        {
+          "id": "f8-drakauthix",
+          "kind": "creature",
+          "title": "Hooked Tentacles in the Spore Cloud",
+          "creature": "Drakauthix",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "H36 (drakauthix that floats up to reveal hooked tentacles; flees south below 20 HP)",
+          "why_here": "It drifts through the fungus garden on the spore currents.",
+          "description": "A green, bulbous growth rises off the ground on a cloud of spores, unfurling hooked tentacles.",
+          "tactics": "Grab with its tentacles, Reel In, then spore tendrils. It floats away when hurt.",
+          "lore_hook": "If it drifts under the goliath spider's crevasse, the spider kills it."
+        },
+        {
+          "id": "f8-drow-scouts",
+          "kind": "creature",
+          "title": "Yldaris Scouts",
+          "group": [
+            {
+              "creature": "Drow Hunter",
+              "count": 1
+            },
+            {
+              "creature": "Drow Warden",
+              "count": 3
+            }
+          ],
+          "weight": 2,
+          "book_source": "H41 and H45 (drow hunters and wardens from Yldaris scouting the gardens)",
+          "why_here": "Drow from Floor 9 scout the farm, hunting caligni and urdefhan.",
+          "description": "Bowstrings creak in the dark. Drow form a firing line and call out in Undercommon: 'Why do you trespass in Yldaris territory?'",
+          "tactics": "Wardens use hampering slashes and lethargy poison, the hunter a longbow. If the heroes don't attack first, the drow talk: they're intrigued by surface folk.",
+          "lore_hook": "Their leader Quara might use surface dwellers. That's an ally on Floor 9."
+        },
+        {
+          "id": "f8-caged-hulk",
+          "kind": "creature",
+          "title": "Escaped From the Cages",
+          "creature": "Skeletal Hulk",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "H16 (monster cages: chuul, krooth, skeletal hulk, furious and fleeing below half HP)",
+          "why_here": "One of the Children's catches broke out of the H16 cages.",
+          "description": "A towering skeleton, once a huge reptilian humanoid, stalks out of the mist still dragging a length of cage bar.",
+          "tactics": "Broad Swipe hits two foes at once. It's furious at its imprisonment and flees below half HP.",
+          "lore_hook": "The Children will want it back, alive or whatever it is."
+        },
+        {
+          "id": "f8-ev-mist-bank",
+          "kind": "event",
+          "title": "The Mist Rolls In",
+          "weight": 2,
+          "book_source": "H15 lake (mist: -2 Perception, concealed beyond 30 ft, visibility ends ~90 ft)",
+          "why_here": "Foul mist covers the lakes constantly.",
+          "description": "Gray mist rolls off the water and swallows the far shore, then the near one.",
+          "immediate_action": "DC 24 Survival to navigate, or climb to high ground (H11 cliff, H13 pillar, H22 caves) to see over it.",
+          "success": "You hold your course: no time lost.",
+          "failure": "-2 Perception and anything beyond 30 ft is concealed. You wander: ADD 1 DIE TO JAR.",
+          "skills": [
+            "Survival",
+            "Perception"
+          ]
+        },
+        {
+          "id": "f8-ev-foul-water",
+          "kind": "event",
+          "title": "Thirst on the Lake",
+          "weight": 1,
+          "book_source": "H15 hazards (drinking the water: 1-in-6 chance of sewer haze; the blind fish are poisonous)",
+          "why_here": "The lake water and its fish are foul.",
+          "description": "Your waterskins run low. Blind, spiny fish crowd the shallows, and the water looks almost clean.",
+          "immediate_action": "Drink or eat from the lake? DC 24 Survival or Medicine to purify it first.",
+          "success": "Purified. No risk.",
+          "failure": "Each drinker has a 1-in-6 chance of sewer haze. Eating the fish is sickening and also spreads it.",
+          "skills": [
+            "Survival",
+            "Medicine",
+            "Nature"
+          ]
+        },
+        {
+          "id": "f8-ev-soporific-pollen",
+          "kind": "event",
+          "title": "Sweet Pollen on the Air",
+          "weight": 1,
+          "book_source": "H39 (soporific pollen: -1 circumstance to Will saves; the nyth's vine garden)",
+          "why_here": "The nyth's garden pollen drifts through nearby passages.",
+          "description": "A heavy, sweet scent rolls over you. The flowers on the vines nod as if listening.",
+          "immediate_action": "DC 24 Fortitude.",
+          "success": "You shake it off.",
+          "failure": "-1 circumstance penalty to Will saves for 1 hour (olfactory). Something here twists minds (H39).",
+          "skills": [
+            "Fortitude",
+            "Nature"
+          ]
+        }
+      ]
+    },
+    "9": {
+      "name": "On the Hunt (The Hunting Grounds)",
+      "floor_doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md",
+      "ecology": "A Darklands wilderness of fungus forests, crystals and springs where predator and prey both thrive. Drow from Yldaris hunt and patrol. Caligni defend their lodge. Khurfel's urdefhan war camp sends warbands and sacrifice-seekers. A derghodaemon, a gogiteth and puffballs lurk, and the Lady's Whisper commands dread wisps. The book's own Cavern Vast table (d12) is mirrored here.",
+      "entries": [
+        {
+          "id": "f9-drow-hunters",
+          "kind": "creature",
+          "title": "Drow Hunting Party",
+          "creature": "Drow Hunter",
+          "max_count": 3,
+          "weight": 2,
+          "book_source": "I9 (three hunters); Cavern Vast table (drow patrols)",
+          "why_here": "Yldaris's hunters range across the whole cavern.",
+          "description": "Arrows hiss into the fungus beside you, a warning, not a hit. Drow hunters step out with bows drawn: 'You're a long way from the sun.'",
+          "tactics": "Longbow volleys from cover. With Yldaris's trust or an escort, they don't fight. Otherwise they test you, and badly hurt drow flee home.",
+          "lore_hook": "Quara Orshendiel leads Yldaris and might want surface allies against the urdefhan."
+        },
+        {
+          "id": "f9-drow-shootists",
+          "kind": "creature",
+          "title": "Two Drow Shootists",
+          "creature": "Drow Shootist",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "Cavern Vast table (d12 3-4: two drow shootists from I10)",
+          "why_here": "Shootists practice and hunt in pairs.",
+          "description": "Two drow with repeating hand crossbows drop from a fungus cap, competitive grins on their faces.",
+          "tactics": "Distracting Shot and stupor poison. They're fiercely competitive and try to outscore each other.",
+          "lore_hook": "Their bolts are fletched with fungus 'feathers' grown in Yldaris."
+        },
+        {
+          "id": "f9-caligni-defenders",
+          "kind": "creature",
+          "title": "Caligni Defenders",
+          "creature": "Caligni Defender",
+          "max_count": 2,
+          "weight": 1,
+          "book_source": "Cavern Vast table (d12 5: two caligni defenders from I23)",
+          "why_here": "The caligni lodge's defenders scout for food and threats.",
+          "description": "The light dies around you. Out of the darkness two caligni defenders appear, shortbows drawn, poison on the arrowheads.",
+          "tactics": "Darkness, then black smear poison. They want to contain intruders, not chase them deep.",
+          "lore_hook": "Their mage Galudu feeds the lodge with conjured food. They're desperate."
+        },
+        {
+          "id": "f9-urdefhan-warband",
+          "kind": "creature",
+          "title": "Urdefhan Warband",
+          "group": [
+            {
+              "creature": "Urdefhan Death Scout",
+              "count": 2
+            },
+            {
+              "creature": "Urdefhan Lasher",
+              "count": 2
+            }
+          ],
+          "weight": 2,
+          "book_source": "Cavern Vast table (d12 6-7: two death scouts and two lashers from I34)",
+          "why_here": "Khurfel's warbands hunt the cavern for glory and sacrifices.",
+          "description": "Translucent-skinned warriors lope out of the fungus with lashes and bleeding blades. 'For Khurfel! For glory!'",
+          "tactics": "Wicked Bite. Lashers Grab with their lashes. Death scouts throw necrotic bombs. Ferocity: they don't drop at 0 HP easily.",
+          "lore_hook": "Khurfel carries the Emerald Fulcrum Lens."
+        },
+        {
+          "id": "f9-khurfel-war-party",
+          "kind": "creature",
+          "title": "Khurfel's Hunters (Without Khurfel)",
+          "group": [
+            {
+              "creature": "Urdefhan Lasher",
+              "count": 1
+            },
+            {
+              "creature": "Urdefhan Death Scout",
+              "count": 1
+            },
+            {
+              "creature": "Urdefhan Warrior",
+              "count": 4
+            }
+          ],
+          "weight": 1,
+          "book_source": "I34 note (after a retreat, Khurfel leads a lasher, a death scout and four warriors to hunt the heroes)",
+          "why_here": "The war camp sends hunting parties out at random. If the heroes attacked the camp and retreated, it's Khurfel himself (add him).",
+          "description": "Whooping war cries echo across the cavern as a hunting party fans out to cut off your retreat.",
+          "tactics": "The warriors charge, the lasher drags victims, the scout bombs. The warriors break and flee together if their leaders fall.",
+          "lore_hook": "GM: if the party assaulted the war camp and escaped, add Khurfel to this group."
+        },
+        {
+          "id": "f9-urdefhan-sacrifice",
+          "kind": "creature",
+          "title": "Sacrifice-Seekers",
+          "group": [
+            {
+              "creature": "Urdefhan Blood Mage",
+              "count": 1
+            },
+            {
+              "creature": "Urdefhan Tormentor",
+              "count": 3
+            }
+          ],
+          "weight": 1,
+          "book_source": "Cavern Vast table (d12 10: one blood mage and three tormentors from I35)",
+          "why_here": "They need living sacrifices to call a more powerful demon.",
+          "description": "Chanting rolls through the fungus. A scarred blood mage leads three tormentors. They've been looking for someone exactly like you.",
+          "tactics": "Spells (harm, grim tendrils, ray of enfeeblement), Wicked Bite. They try to take a hero alive.",
+          "lore_hook": "Their rite at I35 is meant to summon a greater demon. Whether it works is the GM's call."
+        },
+        {
+          "id": "f9-dread-wisps",
+          "kind": "creature",
+          "title": "Wisps Desperate to Feed",
+          "creature": "Dread Wisp",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "I61-I64 (the Lady's Whisper commands many dread wisps; one 'desperate to feed for the first time in many years')",
+          "why_here": "The Lady's Whisper's wisps roam the Gauntlight's depths.",
+          "description": "A bruise-colored light hangs in the dark ahead, pulsing hungrily.",
+          "tactics": "Draining, wearying touch, and Feed on Despair.",
+          "lore_hook": "They serve the Lady's Whisper, a unique undead tied to Nhimbaloth."
+        },
+        {
+          "id": "f9-bright-walker",
+          "kind": "creature",
+          "title": "A Bright Walker Gets Loose",
+          "creature": "Bright Walker",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "I24 (two Bright Walkers, rare undead caligni, kept calm only by Galudu)",
+          "why_here": "When Galudu is away, the restless walkers drift out of the lodge.",
+          "description": "A burning figure walks an inch above the ground, radiant and furious, lighting the fungus forest gold.",
+          "tactics": "Radiant touch and ray (fire, light). Landbound. It assumes any non-caligni means the lodge is under attack.",
+          "lore_hook": "Galudu can calm it. Bring her or say her name (DC 26 Diplomacy)."
+        },
+        {
+          "id": "f9-gogiteth",
+          "kind": "creature",
+          "title": "Remains on the Trail",
+          "creature": "Gogiteth",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "I48 (bones and viscera from the gogiteth's feeding; it sometimes lurks in the passage to ambush)",
+          "why_here": "It lurks along its feeding trail.",
+          "description": "Bones and torn viscera are strewn across the cave as if a battle just ended. Then something many-legged drops the urdefhan corpse it was eating.",
+          "tactics": "Its jaws give Improved Grab, and Carry Off Prey drags a victim away. Deadly.",
+          "lore_hook": "Even the black dragon Ravirex learned to avoid this thing."
+        },
+        {
+          "id": "f9-puffballs",
+          "kind": "creature",
+          "title": "Reaper-Skull Puffballs",
+          "creature": "Reaper Skull Puffball",
+          "max_count": 2,
+          "weight": 1,
+          "book_source": "I32 (two puffballs)",
+          "why_here": "Puffballs grow throughout the fungus forests.",
+          "description": "A puffball with a skull-shaped cap turns toward you, and tendrils uncurl from its base.",
+          "tactics": "Paralyzing tendrils and a spore cloud (DC 28 basic Fortitude, 4d8 poison).",
+          "lore_hook": "Drow hunters avoid this patch. That's why it's untouched."
+        },
+        {
+          "id": "f9-derghodaemon",
+          "kind": "creature",
+          "title": "Something in the Fog",
+          "creature": "Derghodaemon",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "I31 (a derghodaemon in the Demonic Fog, guarding the urdefhan's hunting grounds; it scuttles out when it hears intruders)",
+          "why_here": "Noise carries to the fog bank at the south end.",
+          "description": "A fog bank rolls out of the south cave, and inside it something with too many arms clicks and scuttles toward the noise.",
+          "tactics": "Claws, swarm spit and divine spells. Its fog's mouths drain life. Deadly.",
+          "lore_hook": "It's one of the two things blocking the caligni's escape routes."
+        },
+        {
+          "id": "f9-hz-ribbon",
+          "kind": "hazard",
+          "title": "The Ribbon at Full Strength",
+          "level": 9,
+          "weight": 1,
+          "book_source": "I28 (ribbon: 9d6 negative, DC 24 basic Reflex)",
+          "why_here": "This deep, the Gauntlight's ribbons are lethal.",
+          "description": "A 5-foot burst of churning, colorless light hums like a struck bell.",
+          "immediate_action": "A living creature ending its turn in it takes 9d6 negative damage (DC 24 basic Reflex). Find a way around it.",
+          "success": "You get around it.",
+          "failure": "9d6 negative damage. Undead in it heal by that much.",
+          "skills": [
+            "Reflex",
+            "Occultism"
+          ]
+        },
+        {
+          "id": "f9-ev-crystal-chime",
+          "kind": "event",
+          "title": "The Crystals Ring",
+          "weight": 2,
+          "book_source": "I40 (pale green crystals that ring in a chain reaction when touched, drawing the predator nesting at I41)",
+          "why_here": "Crystal growths throughout the cavern carry sound a long way.",
+          "description": "Someone brushes a hanging strand of pale green crystal. It rings, and the next one rings, and the next, until the whole shore is singing.",
+          "immediate_action": "DC 26 Acrobatics or Thievery to still the crystals before the chain carries.",
+          "success": "Silence. Nothing heard.",
+          "failure": "Every predator on the lake heard that: ADD 1 DIE TO JAR, and the next COMBAT roll arrives in 2 rounds.",
+          "skills": [
+            "Acrobatics",
+            "Thievery",
+            "Stealth"
+          ]
+        },
+        {
+          "id": "f9-ev-bat-cloud",
+          "kind": "event",
+          "title": "A Thousand Bats",
+          "weight": 1,
+          "book_source": "I42 (hundreds of tiny subterranean bats that swarm heads; they're food for larger creatures)",
+          "why_here": "The bats hunt across the Hunting Grounds, and larger things hunt the bats.",
+          "description": "Hundreds of tiny bats pour out of a cave and swarm around your heads, harmless and deafening.",
+          "immediate_action": "DC 26 Stealth to stay put and let them pass, or DC 26 Nature to read where they're fleeing from.",
+          "success": "You learn which direction the danger is: REMOVE 1 DIE FROM JAR by avoiding it.",
+          "failure": "Whatever hunts the bats is now following them, toward you.",
+          "skills": [
+            "Stealth",
+            "Nature"
+          ]
+        }
+      ]
+    },
+    "10": {
+      "name": "To Draw the Baleful Glare (The Empty Vault)",
+      "floor_doc": "common/campaign-reference/floors/floor-10-to-draw-the-baleful-glare.md",
+      "ecology": "The ancient temple of Nhimbaloth at the bottom of everything. The dead cult's initiates linger as specters. Dread wisps, the 'soul feeders', funnel souls toward the Empty Vault. Void-touched chuuls and an isqulug infestation lurk in the reeds and swamp, and the Outer God's attention presses on anyone carrying a lens. Bound elementals, golems and traps guard the portal chambers.",
+      "entries": [
+        {
+          "id": "f10-soul-feeders",
+          "kind": "creature",
+          "title": "Soul Feeders",
+          "creature": "Dread Wisp",
+          "max_count": 3,
+          "weight": 3,
+          "book_source": "J8 (three dread wisps, 'soul feeders', funneling souls into the Empty Vault); J1-J4 (the Lady's Whisper's shadowing wisps)",
+          "why_here": "The soul feeders can't return to the Empty Vault without more souls, and you have souls.",
+          "description": "Bruise-colored lights rise from the floor in silence and drift toward you like moths to a flame. You feel your soul lean toward them.",
+          "tactics": "Draining, wearying touch, and Feed on Despair. They focus whoever is most despairing.",
+          "lore_hook": "Souls released here flow into the Empty Vault (J20), where Belcorra waits."
+        },
+        {
+          "id": "f10-cultist-specters",
+          "kind": "creature",
+          "title": "Cultists Who Failed the Test",
+          "creature": "Specter",
+          "max_count": 4,
+          "weight": 2,
+          "book_source": "J2 (six cultist specters with ghostly blowguns of ethereal darts; they pass through walls to keep their distance)",
+          "why_here": "Nhimbaloth's long-dead initiates still haunt the temple's galleries.",
+          "description": "Robed figures seep out of the walls with blowguns raised and fire darts made of their own ghostly substance.",
+          "tactics": "Ranged ethereal darts and vile touch (Spectral Corruption). They pass through walls to keep their distance.",
+          "lore_hook": "They failed the Lady's Whisper's initiation. Its trial is still running."
+        },
+        {
+          "id": "f10-voidbracken-chuuls",
+          "kind": "creature",
+          "title": "Void-Touched Chuuls",
+          "creature": "Voidbracken Chuul",
+          "max_count": 2,
+          "weight": 2,
+          "book_source": "J15 (three chuuls imbued with Void Bracken's vile energy, in the toxic swamp)",
+          "why_here": "The temple swamp's void-touched chuuls hunt beyond it.",
+          "description": "A chuul with a shell veined in lightless black rises from fetid water, and its tentacles drip something worse than poison.",
+          "tactics": "Claws to Grab, then draining venom (DC 28 Fortitude). They fight until destroyed.",
+          "lore_hook": "Nhimbaloth's touch has warped even the Darklands' predators."
+        },
+        {
+          "id": "f10-isqulug",
+          "kind": "creature",
+          "title": "The Reeds Writhe",
+          "creature": "Isqulug",
+          "max_count": 1,
+          "weight": 1,
+          "book_source": "J17 (an 'isalo' infestation: a grotesque aberration in the reeds whose larvae came here ages ago; flagged F1, matched to the isqulug)",
+          "why_here": "It's malevolent but has nothing to do with Nhimbaloth. It's just here, and hungry.",
+          "description": "The reeds ahead writhe, and something huge and many-tentacled heaves itself out of them.",
+          "tactics": "Its tentacles inflict isqulugia (larval infestation). Primal spells: entangle, control water.",
+          "lore_hook": "It remembers little about how its larvae came here. The book's caption calls it an 'isalo' (floor doc flag F1)."
+        },
+        {
+          "id": "f10-bodaks",
+          "kind": "creature",
+          "title": "Those Who Glimpsed the Empty Death",
+          "creature": "Bodak",
+          "max_count": 3,
+          "weight": 1,
+          "book_source": "H21 (Children who studied Nhimbaloth's lore were blasted by glimpses of the Outer God and became bodaks); J20 (Nhimbaloth's attention)",
+          "why_here": "Anyone who looks too closely at Nhimbaloth here risks becoming one of these.",
+          "description": "Gray, hairless figures with empty eye sockets turn toward you, and their gaze is death.",
+          "tactics": "Death Gaze. Bodak Spawn: humanoids who die while drained or doomed by one rise as bodaks.",
+          "lore_hook": "This is what Nhimbaloth's uncaring gaze does to mortals."
+        },
+        {
+          "id": "f10-wisp-swarm",
+          "kind": "creature",
+          "title": "Eyes of Nhimbaloth",
+          "creature": "Will-O'-Wisp",
+          "max_count": 6,
+          "weight": 1,
+          "book_source": "Nhimbaloth's wisps throughout the Vaults (D9, G12, H2); the Empty Vault feeds them",
+          "why_here": "The temple of the Empty Death draws wisps the way a lighthouse draws moths.",
+          "description": "A constellation of blue lights opens in the dark like eyes, all at once.",
+          "tactics": "Feed on Fear. Individually weak at this depth; dangerous in numbers.",
+          "lore_hook": "Wisps are Nhimbaloth's eyes. You're being watched."
+        },
+        {
+          "id": "f10-ev-baleful-glare",
+          "kind": "event",
+          "title": "The Baleful Glare",
+          "weight": 2,
+          "book_source": "Floor 8 background (the fulcrum lenses invite Nhimbaloth's uncaring gaze); J11 and J12 (Images of Failure and Powerlessness, level 12)",
+          "why_here": "Down here, Nhimbaloth's attention is close, and it presses hardest on anyone carrying a lens.",
+          "description": "The dark ahead becomes an eye, vast and indifferent. For a moment you see yourself the way it does: small, failed, already forgotten.",
+          "immediate_action": "Each hero: DC 30 Will. Lens-bearers roll twice and take the worse result. Averting your gaze gives +1 to the save.",
+          "success": "You hold onto yourself.",
+          "failure": "Stupefied 1 for 1 hour (stupefied 2 on a critical failure).",
+          "skills": [
+            "Will",
+            "Occultism",
+            "Religion"
+          ]
+        },
+        {
+          "id": "f10-hz-magma-heat",
+          "kind": "hazard",
+          "title": "Heat From the Elemental Pools",
+          "level": 10,
+          "weight": 1,
+          "book_source": "J6 (extremely hot: 2d6 fire every 10 minutes; magma 20d6 per round)",
+          "why_here": "Bound fire elementals have kept the magma pools hot for centuries, and the heat leaks.",
+          "description": "The corridor walls are hot to the touch, and the air shimmers with the glow of magma somewhere close.",
+          "immediate_action": "Push straight through (2d6 fire) or detour.",
+          "success": "You detour: ADD 1 DIE TO JAR, no damage.",
+          "failure": "2d6 fire per hero, and someone brushes a wall: their gear starts smoking.",
+          "skills": [
+            "Fortitude",
+            "Survival"
+          ]
+        },
+        {
+          "id": "f10-hz-stolen-soul-glass",
+          "kind": "hazard",
+          "title": "Shards Underfoot",
+          "level": 10,
+          "weight": 1,
+          "book_source": "J8 (5 piercing per Stride barefoot; Stolen Soul)",
+          "why_here": "The soul feeders' room is carpeted in shards, and they've spread.",
+          "description": "The floor glitters with dark shards that seem to drink the light, and maybe more than light.",
+          "immediate_action": "DC 27 Perception to pick a safe path, or DC 27 Occultism to recognize what the shards hold.",
+          "success": "Safe passage, and you know to keep the shards away from the dead.",
+          "failure": "5 piercing damage per Stride for anyone not well shod. GM: see J8's Stolen Soul.",
+          "skills": [
+            "Perception",
+            "Occultism",
+            "Acrobatics"
+          ]
+        },
+        {
+          "id": "f10-hz-toxic-swamp",
+          "kind": "hazard",
+          "title": "Toxic Water",
+          "level": 10,
+          "weight": 1,
+          "book_source": "J15 (toxic swamp)",
+          "why_here": "The temple's swamp water is poisoned by the void.",
+          "description": "Black water pools across the passage. It smells like nothing at all, which is somehow worse.",
+          "immediate_action": "Wade, or find a way over (DC 27 Athletics or Acrobatics).",
+          "success": "You stay dry.",
+          "failure": "Wading: DC 27 Fortitude or 4d6 poison and sickened 1.",
+          "skills": [
+            "Athletics",
+            "Acrobatics",
+            "Fortitude"
+          ]
+        },
+        {
+          "id": "f10-ev-sunless-garden",
+          "kind": "event",
+          "title": "The Comforting Voice",
+          "weight": 1,
+          "book_source": "I62 and J1-J4 (the Lady's Whisper comforted the fearful with lies about 'resting and departing in peace' before feeding them to the sunless garden)",
+          "why_here": "The Lady's Whisper speaks to the weary down here.",
+          "description": "A gentle voice, very close, tells you you've done enough. You could rest. You could simply put it all down.",
+          "immediate_action": "DC 30 Will, or DC 30 Perception to notice the voice comes from nowhere.",
+          "success": "You recognize the lie. You know the Lady's Whisper is near and testing you.",
+          "failure": "You sit, just for a moment: ADD 1 DIE TO JAR, and you're fatigued until your next rest.",
+          "skills": [
+            "Will",
+            "Perception",
+            "Religion"
+          ]
+        }
+      ]
+    }
+  }
+}
