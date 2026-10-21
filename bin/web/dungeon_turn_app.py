@@ -262,6 +262,8 @@ def get_encounter():
     floor = data.get('floor', 1)
     dice_sum = data.get('sum')
     party_level = data.get('party_level', 4)
+    party_size = data.get('party_size', 4)
+    allow_no_event = data.get('allow_no_event', True)
     
     # Get floor data
     floor_data = levels_data.get(floor)
@@ -290,7 +292,8 @@ def get_encounter():
         return jsonify({'error': f'Invalid context: {str(e)}'}), 400
     
     # Generate event with context
-    event = generate_event_for_sum(dice_sum, floor, floor_data, party_level, creatures, context)
+    event = generate_event_for_sum(dice_sum, floor, floor_data, party_level, creatures, context, party_size,
+                                   allow_no_event)
     
     # If it's a combat encounter, add full creature stats
     if event.get('category') == 'COMBAT' and event.get('creatures'):
