@@ -5,6 +5,16 @@ Campaign tools for the Abomination Vaults adventure path, set in Otari: a Flask
 app (`avtools/web/app.py`) with GM, player and atlas pages, plus the
 generators behind it. See `README.md` for running, deploying and the CLI tools.
 
+## Major Refactor (October 2026)
+
+The repo was restructured in October 2026: the code moved from `bin/` into the
+`avtools` package, the web app was split into blueprints, a test suite was
+added, and a lot of dead code, routes and data were removed. Paths, routes and
+data sources from before then no longer exist. **Read
+`docs/refactor-2026-10.md` before changing anything**: it maps old paths to new
+ones, lists what was removed on purpose, and has the deployment steps that are
+still pending.
+
 ## Sources of Truth
 
 When two files disagree, this is the order that wins:
@@ -74,6 +84,8 @@ Defaults (all adjustable from the GM page's Restock panel):
 ### Documents
 - **NEVER create summary documents** - summarize work in chat only.
 - No SUMMARY.md, STATUS.md, CHANGES.md, or similar files.
+- The one exception is `docs/refactor-2026-10.md`, which the user asked for as
+  a handoff to other agents. Keep it accurate if you change what it describes.
 
 ### Named Enemies
 - Don't use named enemies (Cratonys, Khurfel, Urthagul, and the like) as
