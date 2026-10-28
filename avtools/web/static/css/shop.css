@@ -1,0 +1,349 @@
+/*
+ * Otari shop pages (templates/shop.html). Plain CSS, not Tailwind: every colour
+ * is a custom property the page sets from avtools/web/themes.py, so each shop
+ * restyles the same furniture. Sections:
+ *   1 page and type   2 running head   3 opener   4 toolbar   5 sections
+ *   6 tiles (grid)    7 list view      8 details sheet        9 footer
+ *   10 per-shop ornaments
+ * Function first: 16px text, 44px targets, AA contrast (tests/test_themes.py),
+ * no horizontal page scroll, motion only when the viewer allows it.
+ */
+
+/* ---------------------------------------------------------------- 1 page and type */
+body.shop-page {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+:root { --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif; }
+.shop { --gap: 1rem; }
+.shop a { color: var(--accent); }
+.shop :focus-visible, .sheet :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+.ico { display: block; fill: currentColor; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.opener, .stock, .foot > * { max-width: 64rem; margin-left: auto; margin-right: auto; }
+.toolbar > * { max-width: calc(64rem - 2 * var(--gap)); margin-left: auto; margin-right: auto; }
+html:has(dialog[open]) { overflow: hidden; }
+
+/* The shop's material: header, banners, sheet title and footer all wear it */
+.band {
+    background: linear-gradient(180deg, var(--band2), var(--band));
+    color: var(--band-ink);
+}
+
+/* ---------------------------------------------------------------- 2 running head */
+.runhead {
+    display: flex; align-items: center; justify-content: space-between; gap: .5rem;
+    min-height: 3.25rem; padding: 0 var(--gap);
+    box-shadow: 0 2px 0 var(--trim), 0 4px 0 var(--band), 0 5px 0 var(--trim);
+    position: relative; z-index: 2;
+}
+.runhead a, .runhead button { color: var(--band-ink); font: inherit; font-weight: 600; }
+.runhead-back { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 .25rem; text-decoration: none; }
+.runhead-title {
+    font-family: var(--display), var(--serif); font-weight: var(--display-weight);
+    color: var(--trim); letter-spacing: .14em; text-transform: uppercase; font-size: .9375rem;
+}
+.mode-toggle {
+    min-height: 2.75rem; min-width: 4.5rem; padding: 0 .9rem; border-radius: 999px;
+    background: transparent; border: 1px solid var(--trim); cursor: pointer;
+}
+.mode-dark { display: none; }
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) .mode-dark { display: inline; }
+    :root:not([data-theme="dark"]) .mode-light { display: none; }
+}
+:root[data-theme="light"] .mode-dark { display: inline; }
+:root[data-theme="light"] .mode-light { display: none; }
+
+/* ---------------------------------------------------------------- 3 opener (chapter opener) */
+.opener { text-align: center; padding: 1.5rem var(--gap) 1rem; max-width: 42rem; position: relative; }
+.medallion {
+    width: 5rem; height: 5rem; margin: 0 auto .75rem; border-radius: 50%;
+    display: grid; place-items: center; overflow: hidden;
+    background: radial-gradient(circle at 50% 35%, var(--band2), var(--band));
+    color: var(--trim);
+    box-shadow: 0 0 0 3px var(--trim), 0 0 0 6px var(--bg), 0 0 0 7px var(--trim), 0 8px 24px rgba(0, 0, 0, .35);
+    position: relative;
+}
+.medallion .ico { width: 58%; height: 58%; }
+.medallion img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.tagline {
+    margin: 0; color: var(--accent); font-size: .8125rem; font-weight: 700;
+    letter-spacing: .16em; text-transform: uppercase;
+}
+.opener h1 {
+    margin: .2rem 0 0; color: var(--accent);
+    font-family: var(--display), var(--serif); font-weight: var(--display-weight);
+    font-size: clamp(2.125rem, 9vw, 3.5rem); line-height: 1.05; letter-spacing: .01em;
+    overflow-wrap: anywhere;
+}
+.rule {
+    height: 14px; margin: .6rem auto .8rem; max-width: 18rem; position: relative;
+    background: linear-gradient(90deg, transparent, var(--accent) 22%, var(--accent) 78%, transparent) center / 100% 1px no-repeat;
+}
+.rule span {
+    position: absolute; left: 50%; top: 50%; width: 9px; height: 9px; transform: translate(-50%, -50%) rotate(45deg);
+    background: var(--accent); box-shadow: 0 0 0 3px var(--bg);
+}
+.desc { margin: 0 0 .5rem; font-family: var(--serif); font-style: italic; font-size: 1.0625rem; line-height: 1.4; }
+.keeper { margin: 0 0 .35rem; }
+.keeper .role { color: var(--soft); }
+.sells { margin: 0 auto .35rem; color: var(--soft); font-size: .9375rem; max-width: 34rem; }
+.label { color: var(--accent); font-weight: 700; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; margin-right: .25rem; }
+.stocked { margin: 0; color: var(--soft); font-size: .8125rem; }
+
+/* ---------------------------------------------------------------- 4 toolbar */
+.toolbar {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+    background: var(--bg); padding: .6rem var(--gap) .5rem;
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 6px 16px -10px rgba(0, 0, 0, .45);
+}
+.find input {
+    width: 100%; box-sizing: border-box; min-height: 3rem; padding: 0 1rem;
+    font: inherit; font-size: 1.0625rem; color: var(--ink);
+    background: var(--surface); border: 2px solid var(--soft); border-radius: 12px;
+}
+.find input::placeholder { color: var(--soft); opacity: 1; }
+.find input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent); }
+.toolbar-row { display: flex; align-items: stretch; gap: .5rem; }
+.find { flex: 1; min-width: 0; }
+.jumps {
+    display: flex; gap: .4rem; margin-top: .5rem; overflow-x: auto; scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent);
+    padding-right: 1.5rem;
+}
+.jumps::-webkit-scrollbar { display: none; }
+.jumps a {
+    flex: none; display: inline-flex; align-items: center; gap: .35rem; min-height: 2.75rem; padding: 0 .9rem;
+    border-radius: 999px; border: 1px solid var(--soft); color: var(--ink); background: var(--surface);
+    text-decoration: none; font-weight: 600; font-size: .9375rem;
+}
+.jumps a .n { color: var(--soft); font-weight: 500; font-variant-numeric: tabular-nums; }
+.jumps a[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.jumps a[aria-current="true"] .n { color: var(--on-accent); }
+.jumps a[hidden] { display: none; }
+.views { display: flex; flex: none; border: 2px solid var(--soft); border-radius: 12px; overflow: hidden; }
+.views button {
+    display: grid; place-items: center; min-height: 2.75rem; width: 3rem; padding: 0;
+    background: var(--surface); color: var(--ink); border: 0; cursor: pointer;
+}
+.views svg { width: 1.25rem; height: 1.25rem; fill: currentColor; }
+.views button + button { border-left: 2px solid var(--soft); }
+.views button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
+.match-count { margin: .35rem 0 0; font-size: .875rem; color: var(--soft); }
+.match-count:empty { display: none; }
+
+/* ---------------------------------------------------------------- 5 sections */
+.stock { padding: .5rem var(--gap) 0; }
+.sec { margin-top: 1.75rem; scroll-margin-top: calc(var(--toolbar-h, 8.5rem) + .5rem); }
+.sec[hidden], .group[hidden] { display: none; }
+.banner {
+    margin: 0 0 .75rem; padding: .55rem 2.25rem; border-radius: 4px; text-align: center;
+    font-family: var(--display), var(--serif); font-weight: var(--display-weight);
+    font-size: 1.5rem; line-height: 1.2; letter-spacing: .02em; position: relative;
+    box-shadow: inset 0 1px 0 var(--trim), inset 0 -1px 0 var(--trim), 0 2px 0 var(--band), 0 3px 0 var(--trim);
+}
+.banner::before, .banner::after {
+    content: ""; position: absolute; top: 50%; width: 8px; height: 8px; background: var(--trim);
+    transform: translateY(-50%) rotate(45deg);
+}
+.banner::before { left: .9rem; }
+.banner::after { right: .9rem; }
+.intro { color: var(--soft); font-family: var(--serif); font-size: 1rem; }
+.intro p { margin: 0 0 .5rem; }
+.intro em { font-style: italic; }
+.intro ul { margin: .25rem 0 .75rem 1.25rem; padding: 0; }
+.intro strong { color: var(--ink); }
+.group { margin-top: 1rem; }
+.group h3 {
+    margin: 0 0 .6rem; padding-bottom: .3rem; color: var(--accent);
+    font-family: var(--display), var(--serif); font-weight: var(--display-weight); font-size: 1.25rem;
+    background: linear-gradient(90deg, var(--accent), transparent 70%) bottom left / 100% 2px no-repeat;
+}
+.return { display: flex; gap: 1.25rem; justify-content: flex-end; margin: .75rem 0 0; border-top: 1px solid var(--line); }
+.return a { display: inline-flex; align-items: center; min-height: 2.75rem; font-weight: 600; font-size: .9375rem; }
+.empty { text-align: center; color: var(--soft); padding: 2rem 0; font-size: 1.0625rem; }
+
+/* ---------------------------------------------------------------- 6 tiles (grid view) */
+.items { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(min(10rem, 45%), 1fr)); }
+.item[hidden] { display: none; }
+.tile {
+    display: flex; flex-direction: column; height: 100%; box-sizing: border-box; position: relative;
+    background: var(--surface); color: var(--ink); text-decoration: none;
+    border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+.shop .tile { color: var(--ink); }
+.tile:hover { border-color: var(--accent); }
+.tile:active { transform: scale(.985); }
+.art {
+    position: relative; display: grid; place-items: center; aspect-ratio: 2 / 1; color: var(--accent);
+    background: radial-gradient(circle at 50% 42%, var(--surface2), var(--bg2) 85%);
+}
+.art .ico { width: 34%; height: auto; aspect-ratio: 1; filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .25)); }
+.art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 6%; box-sizing: border-box; }
+.art img ~ .ico { display: none; }
+.name {
+    padding: .55rem .7rem 0; font-weight: 650; font-size: 1rem; line-height: 1.25;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere;
+}
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; padding: .3rem .7rem 0; font-size: .875rem; color: var(--soft); }
+.meta:empty { display: none; }
+.lvl { font-variant-numeric: tabular-nums; }
+.qty {
+    font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums;
+    background: var(--surface2); border: 1px solid var(--line); border-radius: 999px; padding: 0 .45rem;
+}
+.price { margin-top: auto; padding: .45rem .7rem .65rem; font-weight: 750; font-size: 1.0625rem; font-variant-numeric: tabular-nums; }
+/* Rarity: a PF2e trait pill (the word) plus an edge stripe (the glance); common gets neither */
+.pill {
+    display: inline-block; padding: .2rem .4rem; border-radius: 3px; border: 1px solid var(--trim);
+    color: #fff; font-size: .75rem; font-weight: 700; letter-spacing: .06em; line-height: 1.1;
+}
+.pill-uncommon { background: #98513d; }
+.pill-rare { background: #002664; }
+.pill-unique { background: #54166e; }
+.r-uncommon .tile { box-shadow: inset 0 4px 0 #c8693f; }
+.r-rare .tile { box-shadow: inset 0 4px 0 #4f7cff; }
+.r-unique .tile { box-shadow: inset 0 4px 0 #b26bff; }
+
+@media (min-width: 48rem) {
+    .shop { --gap: 1.5rem; }
+    .medallion { width: 8rem; height: 8rem; }
+    .items { grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); }
+    .banner { font-size: 1.75rem; }
+}
+
+/* ---------------------------------------------------------------- 7 list view */
+:root[data-view="list"] .items {
+    display: flex; flex-direction: column; gap: 0;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+}
+:root[data-view="list"] .tile {
+    display: grid; grid-template-columns: 2.75rem 1fr auto; grid-template-areas: "art name price" "art meta price";
+    align-items: center; column-gap: .75rem; row-gap: .1rem; min-height: 3.5rem; padding: .55rem .8rem;
+    border: 0; border-radius: 0; border-top: 1px solid var(--line); background: transparent;
+}
+:root[data-view="list"] .item:first-child .tile { border-top: 0; }
+:root[data-view="list"] .art { grid-area: art; width: 2.75rem; aspect-ratio: 1; border-radius: 8px; }
+:root[data-view="list"] .art .ico { width: 70%; }
+:root[data-view="list"] .name { grid-area: name; padding: 0; -webkit-line-clamp: 2; align-self: end; }
+:root[data-view="list"] .meta { grid-area: meta; padding: 0; align-self: start; }
+:root[data-view="list"] .meta:empty { display: block; }
+:root[data-view="list"] .price { grid-area: price; padding: 0; margin: 0; text-align: right; max-width: 8.5rem; }
+:root[data-view="list"] .r-uncommon .tile { box-shadow: inset 4px 0 0 #c8693f; }
+:root[data-view="list"] .r-rare .tile { box-shadow: inset 4px 0 0 #4f7cff; }
+:root[data-view="list"] .r-unique .tile { box-shadow: inset 4px 0 0 #b26bff; }
+:root[data-view="list"] .tile:active { transform: none; background: var(--surface2); }
+/* Wide screens: two columns of rows, so a price is never far from its name */
+@media (min-width: 56rem) {
+    :root[data-view="list"] .items { display: grid; grid-template-columns: 1fr 1fr; column-gap: 0; }
+    :root[data-view="list"] .item:nth-child(2) .tile { border-top: 0; }
+    :root[data-view="list"] .item:nth-child(even) .tile { border-left: 1px solid var(--line); }
+}
+
+/* ---------------------------------------------------------------- 8 details sheet (a PF2e item block) */
+.sheet {
+    padding: 0; border: 0; width: 100%; max-width: 36rem; box-sizing: border-box;
+    margin: auto auto 0; border-radius: 16px 16px 0 0; max-height: 88vh; max-height: 88dvh; overflow: auto;
+    background: var(--surface2); color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.5;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, .5);
+}
+.sheet::backdrop { background: rgba(0, 0, 0, .62); }
+@media (min-width: 40rem) { .sheet { margin: auto; border-radius: 14px; } }
+@media (prefers-reduced-motion: no-preference) {
+    .sheet[open] { animation: sheet-up .22s cubic-bezier(.2, .8, .3, 1); }
+    @keyframes sheet-up { from { transform: translateY(40%); opacity: 0; } }
+}
+.sheet-bar {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+    padding: .8rem 1rem; position: sticky; top: 0; z-index: 1;
+    box-shadow: 0 2px 0 var(--trim);
+}
+.sheet-bar h2 { margin: 0; font-family: var(--display), var(--serif); font-weight: var(--display-weight); font-size: 1.375rem; line-height: 1.2; overflow-wrap: anywhere; }
+.sheet-level { flex: none; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; font-size: .875rem; color: var(--trim); }
+.sheet-body { padding: 1rem 1rem calc(1rem + env(safe-area-inset-bottom)); }
+.sheet-top { display: flex; gap: 1rem; align-items: center; }
+.art-big { flex: none; width: 5.5rem; aspect-ratio: 1; border-radius: 12px; border: 1px solid var(--line); }
+.art-big .ico { width: 64%; }
+.sheet-pills { margin: 0 0 .25rem; display: flex; flex-wrap: wrap; gap: .35rem; }
+.sheet-price { margin: 0; font-size: 1.5rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.sheet-price .qty { font-size: 1rem; margin-left: .4rem; vertical-align: middle; }
+.facts { margin: 1rem 0 0; padding-top: .6rem; border-top: 1px solid var(--line); }
+.facts div { margin: 0 0 .2rem; }
+.facts dt { display: inline; font-weight: 700; }
+.facts dd { display: inline; margin: 0 0 0 .35rem; }
+.summary { margin: .75rem 0 0; padding-top: .6rem; border-top: 1px solid var(--line); font-family: var(--serif); font-size: 1.0625rem; line-height: 1.55; }
+.summary:empty { display: none; }
+.sheet .aon, .sheet .close {
+    display: flex; align-items: center; justify-content: center; box-sizing: border-box; width: 100%;
+    min-height: 3rem; margin-top: 1rem; border-radius: 12px; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer;
+}
+.sheet .aon { background: var(--accent); color: var(--on-accent); }
+.sheet .close { margin-top: .5rem; background: transparent; color: var(--ink); border: 2px solid var(--soft); }
+
+/* ---------------------------------------------------------------- 9 footer */
+.foot { margin-top: 3rem; text-align: center; }
+.medallion-small { width: 4rem; height: 4rem; margin: 0 auto -2rem; z-index: 1; }
+.foot-band { padding: 2.5rem var(--gap) 1rem; max-width: none; box-shadow: 0 -2px 0 var(--trim), 0 -4px 0 var(--band), 0 -5px 0 var(--trim); }
+.foot-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .25rem 1.5rem; }
+.foot-links a { display: inline-flex; align-items: center; min-height: 2.75rem; color: var(--band-ink); font-weight: 600; }
+.credits { margin: 0 auto; padding: 1rem var(--gap) calc(1.5rem + env(safe-area-inset-bottom)); font-size: .8125rem; color: var(--soft); max-width: 40rem; }
+
+/* ---------------------------------------------------------------- 10 per-shop ornaments
+ * Decoration only: textures stay faint, ornaments sit behind or beside text. */
+
+/* Crow's Casks: oak staves, brass hoops, a barrel-head medallion (Cayden's tankard) */
+[data-shop="crows_casks"] { background: repeating-linear-gradient(90deg, transparent 0 54px, color-mix(in srgb, var(--bg2) 85%, transparent) 54px 57px); }
+[data-shop="crows_casks"] .medallion {
+    background: repeating-radial-gradient(circle at 50% 50%, var(--band2) 0 7px, var(--band) 7px 9px);
+}
+[data-shop="crows_casks"] .opener::before, [data-shop="crows_casks"] .opener::after {
+    content: ""; position: absolute; left: 8%; right: 8%; height: 6px; border-radius: 3px;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--trim) 85%, #fff), var(--trim) 45%, color-mix(in srgb, var(--trim) 55%, #000));
+    opacity: .75;
+}
+[data-shop="crows_casks"] .opener::before { top: .75rem; }
+[data-shop="crows_casks"] .opener::after { bottom: 0; }
+[data-shop="crows_casks"] .banner::before, [data-shop="crows_casks"] .banner::after {
+    width: 10px; height: 10px; border-radius: 50%; transform: translateY(-50%);
+    background: radial-gradient(circle at 35% 35%, #fff6d0, var(--trim) 45%, #6b4a12);
+}
+
+/* Wrin's Wonders: a night sky through the open dome, constellation stars */
+[data-shop="wrins_wonders"] {
+    background:
+        radial-gradient(1.5px 1.5px at 23px 31px, var(--deco), transparent 100%) 0 0 / 97px 89px,
+        radial-gradient(1px 1px at 61px 17px, var(--deco), transparent 100%) 0 0 / 151px 137px,
+        radial-gradient(2px 2px at 113px 83px, color-mix(in srgb, var(--deco) 80%, transparent), transparent 100%) 0 0 / 233px 211px,
+        radial-gradient(1px 1px at 41px 157px, var(--deco), transparent 100%) 0 0 / 307px 263px;
+}
+[data-shop="wrins_wonders"] .opener::before {
+    content: ""; position: absolute; inset: .25rem 4% auto; height: 9rem; pointer-events: none;
+    border: 2px solid var(--line); border-bottom: 0; border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+[data-shop="wrins_wonders"] .rule span { background: transparent; box-shadow: none; transform: translate(-50%, -50%); width: auto; height: auto; color: var(--accent); font-size: 1rem; line-height: 1; }
+[data-shop="wrins_wonders"] .rule span::before { content: "\2726"; }
+[data-shop="wrins_wonders"] .banner::before, [data-shop="wrins_wonders"] .banner::after {
+    content: "\2726"; width: auto; height: auto; background: none; transform: translateY(-50%); color: var(--trim); font-size: .9rem; line-height: 1;
+}
+[data-shop="wrins_wonders"] .medallion { box-shadow: 0 0 0 3px var(--trim), 0 0 0 6px var(--bg), 0 0 0 7px var(--trim), 0 0 36px color-mix(in srgb, var(--deco) 40%, transparent); }
+
+/* Blades for Glades: brushed steel, rivets, forge glow */
+[data-shop="blades_for_glades"] { background: repeating-linear-gradient(180deg, transparent 0 3px, color-mix(in srgb, var(--bg2) 70%, transparent) 3px 4px); }
+[data-shop="blades_for_glades"] .band { background: linear-gradient(180deg, var(--band2), var(--band) 55%, color-mix(in srgb, var(--band) 80%, #000)); }
+[data-shop="blades_for_glades"] .banner::before, [data-shop="blades_for_glades"] .banner::after {
+    width: 9px; height: 9px; border-radius: 50%; transform: translateY(-50%);
+    background: radial-gradient(circle at 35% 35%, #e6e9ed, #8b939d 50%, #3a3f46);
+}
+[data-shop="blades_for_glades"] .banner { box-shadow: inset 0 1px 0 #6b737d, inset 0 -2px 0 var(--trim), 0 2px 0 var(--band), 0 3px 0 #6b737d; }
+[data-shop="blades_for_glades"] .medallion { box-shadow: 0 0 0 3px #8b939d, 0 0 0 6px var(--bg), 0 0 0 7px #6b737d, 0 0 34px color-mix(in srgb, var(--deco) 45%, transparent); }
+[data-shop="blades_for_glades"] .group h3 { background-image: linear-gradient(90deg, var(--deco), transparent 70%); }

@@ -1,37 +1,156 @@
 {% extends 'base.html' %}
-{% block title %}{{ title }} - Otari{% endblock %}
-{% block width %}max-w-5xl{% endblock %}
-{% block nav %}
-<nav class="flex flex-wrap items-center gap-2 mb-6 text-sm">
-    <a href="/players" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg">&larr; Market square</a>
-</nav>
+{# A shop's stock as tiles or a list, in the shop's own theme (avtools/web/themes.py, static/css/shop.css) #}
+{% set icons = url_for('static', filename='icons/icons.svg') %}
+{% macro icon(name, cls='') %}<svg class="ico {{ cls }}" aria-hidden="true" focusable="false"><use href="{{ icons }}#i-{{ name }}"></use></svg>{% endmacro %}
+
+{% block title %}{{ shop.name }} - Otari{% endblock %}
+
+{% block head %}
+<link rel="preload" href="{{ url_for('static', filename='fonts/' ~ theme.file ~ '.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/shop.css') }}">
+<style>
+@font-face { font-family: "{{ theme.font }}"; src: url("{{ url_for('static', filename='fonts/' ~ theme.file ~ '.woff2') }}") format("woff2"); font-weight: {{ theme.weight }}; font-display: swap; }
+:root { --display: "{{ theme.font }}"; --display-weight: {{ theme.weight }}; {{ css_vars(theme.band) }}; {{ css_vars(theme.dark) }}; color-scheme: dark; }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { {{ css_vars(theme.light) }}; color-scheme: light; } }
+:root[data-theme="light"] { {{ css_vars(theme.light) }}; color-scheme: light; }
+</style>
+<script>
+// Before paint: the viewer's light/dark and grid/list choices
+try {
+    var m = localStorage.getItem('shopMode'); if (m) document.documentElement.dataset.theme = m;
+    var v = localStorage.getItem('shopView'); if (v) document.documentElement.dataset.view = v;
+} catch (e) {}
+</script>
 {% endblock %}
 
-{% block content %}
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">{{ title }}</h1>
+{% block body_class %}shop-page{% endblock %}
 
-{% if 'table-scroll' in html %}
-<div class="sticky top-0 z-10 bg-gray-900/95 backdrop-blur py-2 mb-4">
-    <label for="filter" class="sr-only">Filter items</label>
-    <input id="filter" type="search" placeholder="Filter items (name, level, trait...)"
-           class="w-full bg-gray-800 border border-gray-600 focus:border-blue-500 focus:outline-none rounded-lg px-3 py-2">
+{% block body %}
+<div class="shop" data-shop="{{ theme.slug }}">
+
+<header class="runhead band" id="top">
+    <a href="/players" class="runhead-back">&larr; All shops</a>
+    <span class="runhead-title">Otari</span>
+    <button type="button" class="mode-toggle" id="mode-toggle" aria-label="Switch light or dark">
+        <span class="mode-dark">Dark</span><span class="mode-light">Light</span>
+    </button>
+</header>
+
+<section class="opener" aria-labelledby="shop-name">
+    <div class="medallion">
+        {% if shop.portrait %}<img src="{{ shop.portrait }}" alt="{{ proprietor }}" loading="eager">
+        {% else %}{{ icon(theme.crest) }}{% endif %}
+    </div>
+    <p class="tagline">{{ theme.tagline }}</p>
+    <h1 id="shop-name">{{ shop.name }}</h1>
+    <div class="rule" aria-hidden="true"><span></span></div>
+    <p class="desc">{{ shop.description }}</p>
+    <p class="keeper">Kept by <strong>{{ proprietor }}</strong>{% if role %} <span class="role">({{ role }})</span>{% endif %}</p>
+    <p class="sells"><span class="label">Sells</span> {{ shop.specialties }}</p>
+    <p class="stocked">Stocked {{ stocked }}</p>
+</section>
+
+{% if items %}
+<div class="toolbar" id="toolbar">
+    <div class="toolbar-row">
+        <div class="find">
+            <label for="filter" class="sr-only">Find an item</label>
+            <input id="filter" type="search" autocomplete="off" enterkeyhint="search"
+                   placeholder="Find: name, level, trait..." aria-describedby="match-count">
+        </div>
+        <div class="views" role="group" aria-label="Show items as">
+            <button type="button" data-view="grid" aria-pressed="true" aria-label="Grid" title="Grid">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="2" width="7" height="7" rx="1.5"/><rect x="11" y="2" width="7" height="7" rx="1.5"/><rect x="2" y="11" width="7" height="7" rx="1.5"/><rect x="11" y="11" width="7" height="7" rx="1.5"/></svg>
+            </button>
+            <button type="button" data-view="list" aria-pressed="false" aria-label="List" title="List">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="3" width="3.5" height="3.5" rx="1"/><rect x="7.5" y="3.5" width="10.5" height="2.5" rx="1.2"/><rect x="2" y="8.25" width="3.5" height="3.5" rx="1"/><rect x="7.5" y="8.75" width="10.5" height="2.5" rx="1.2"/><rect x="2" y="13.5" width="3.5" height="3.5" rx="1"/><rect x="7.5" y="14" width="10.5" height="2.5" rx="1.2"/></svg>
+            </button>
+        </div>
+    </div>
+    <nav class="jumps" aria-label="Sections">
+        {% for s in sections if s.count %}<a href="#{{ s.id }}" data-section="{{ s.id }}">{{ s.label }} <span class="n">{{ s.count }}</span></a>{% endfor %}
+    </nav>
+    <p id="match-count" class="match-count" aria-live="polite"></p>
 </div>
 {% endif %}
 
-<article class="md">{{ html | safe }}</article>
+<main class="stock" id="stock">
+    {% for s in sections %}
+    <section class="sec" id="{{ s.id }}" data-kind="{{ s.kind }}">
+        <h2 class="banner band"><span>{{ s.title }}</span></h2>
+        {% if s.intro %}<div class="intro">{{ s.intro | safe }}</div>{% endif %}
+        {% for g in s.groups %}
+        <div class="group">
+            {% if g.title %}<h3>{{ g.title }}</h3>{% endif %}
+            {% if g.entries %}
+            <ul class="items" role="list">
+                {% for it in g.entries %}
+                <li class="item r-{{ it.rarity }}" data-search="{{ it.search }}">
+                    <a class="tile" href="{{ it.url }}" target="_blank" rel="noopener" data-i="{{ it.i }}">
+                        <span class="art">
+                            {% if it.image %}<img src="{{ it.image }}" alt="" loading="lazy" decoding="async" onerror="this.remove()">{% endif %}
+                            {{ icon(it.kind) }}
+                        </span>
+                        <span class="name">{{ it.name }}</span>
+                        <span class="meta">
+                            {% if it.level %}<span class="lvl">{{ "Rank" if it.scroll else "Lv" }} {{ it.level }}</span>{% endif %}
+                            {% if it.rarity != 'common' %}<span class="pill pill-{{ it.rarity }}">{{ it.rarity | upper }}</span>{% endif %}
+                            {% if it.qty %}<span class="qty">x{{ it.qty }}</span>{% endif %}
+                        </span>
+                        <span class="price">{{ it.price }}</span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% if g.intro %}<div class="intro">{{ g.intro | safe }}</div>{% endif %}
+        </div>
+        {% endfor %}
+        <p class="return"><a href="#top">Back to top</a><a href="/players">All shops</a></p>
+    </section>
+    {% else %}
+    <p class="empty">Nothing on the shelves right now.</p>
+    {% endfor %}
+    <p class="empty" id="no-match" hidden>Nothing here matches "<span></span>".</p>
+</main>
+
+<footer class="foot">
+    <div class="medallion medallion-small">{{ icon(theme.crest) }}</div>
+    <div class="foot-band band">
+        <nav class="foot-links" aria-label="Leave the shop">
+            <a href="#top">Back to top</a><a href="/players">All shops</a><a href="/atlas">Town map</a>
+        </nav>
+    </div>
+    <p class="credits">{{ shop.name }}, Otari. Item details from <a href="https://2e.aonprd.com" target="_blank" rel="noopener">Archives of Nethys</a>.
+        Item icons by Lorc, Delapouite and others from <a href="https://game-icons.net" target="_blank" rel="noopener">game-icons.net</a> (CC BY 3.0).</p>
+</footer>
+
+</div>
+
+<dialog id="sheet" class="sheet" aria-labelledby="sheet-name">
+    <div class="sheet-bar band">
+        <h2 id="sheet-name"></h2>
+        <span class="sheet-level"></span>
+    </div>
+    <div class="sheet-body">
+        <div class="sheet-top">
+            <span class="art art-big"></span>
+            <div>
+                <p class="sheet-pills"></p>
+                <p class="sheet-price"></p>
+            </div>
+        </div>
+        <dl class="facts"></dl>
+        <p class="summary"></p>
+        <a class="aon" target="_blank" rel="noopener">Read it on Archives of Nethys</a>
+        <button type="button" class="close" id="sheet-close">Close</button>
+    </div>
+</dialog>
+
+<script type="application/json" id="items-data">{{ items | tojson }}</script>
+<script>window.SHOP_ICONS = {{ icons | tojson }};</script>
 {% endblock %}
 
 {% block scripts %}
-<script>
-// Hide table rows that don't match the filter
-const filter = document.getElementById('filter');
-if (filter) {
-    filter.addEventListener('input', () => {
-        const q = filter.value.trim().toLowerCase();
-        document.querySelectorAll('.md tbody tr').forEach(row => {
-            row.hidden = q && !row.textContent.toLowerCase().includes(q);
-        });
-    });
-}
-</script>
+<script src="{{ url_for('static', filename='js/shop.js') }}"></script>
 {% endblock %}

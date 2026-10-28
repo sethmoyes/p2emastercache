@@ -13,7 +13,7 @@ import avtools.merchants as g
 
 def restock(root, level, **settings):
     random.seed(level)
-    settings = g.normalize_settings({'player_level': level, 'fetch_images': False, 'fetch_portraits': False,
+    settings = g.normalize_settings({'player_level': level, 'fetch_portraits': False,
                                      **settings})
     with contextlib.redirect_stdout(io.StringIO()):
         g.generate_all(settings, str(root))
@@ -30,7 +30,7 @@ def test_every_shop_follows_the_rules(tmp_path, level):
     for folder in ('players', 'gm'):
         for name in os.listdir(tmp_path / folder):
             text = (tmp_path / folder / name).read_text()
-            assert 3 <= potion_count(text) <= 6, name
+            assert 9 <= potion_count(text) <= 18, name
             assert 'Spell Slot Restoration' in text, name
             assert '| 0 gp |' not in text, name
 

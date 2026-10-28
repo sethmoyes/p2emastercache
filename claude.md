@@ -11,9 +11,11 @@ The repo was restructured in October 2026: the code moved from `bin/` into the
 `avtools` package, the web app was split into blueprints, a test suite was
 added, and a lot of dead code, routes and data were removed. Paths, routes and
 data sources from before then no longer exist. **Read
-`docs/refactor-2026-10.md` before changing anything**: it maps old paths to new
-ones, lists what was removed on purpose, and has the deployment steps that are
-still pending.
+`.claude/refactor-2026-10.md` before changing anything**: an exhaustive record
+of the review, every change, old-to-new paths, what was removed on purpose,
+known gotchas, and the deployment steps that are still pending. It's
+gitignored, so it exists only on the user's machine; if it's missing, ask the
+user. Handoff prompts for follow-up work live next to it in `.claude/`.
 
 ## Sources of Truth
 
@@ -51,11 +53,11 @@ floor overview) lives in `common/campaign-reference/etc/`.
 
 ### Merchants (`avtools/merchants.py`)
 Defaults (all adjustable from the GM page's Restock panel):
-- Shops: 3-15 common, 1-3 uncommon; 2 random shops get a rare item
-- Otari Market: 20-50 common, 5-15 uncommon, 1-3 rare
+- Shops: 9-45 common, 3-9 uncommon; 6 random shops get a rare item
+- Otari Market: 60-150 common, 15-45 uncommon, 3-9 rare
 - Equipment max level: party level + `item_level_offset` (default 0)
 - Spell max rank: party level
-- Potions: 3-6 per shop at party level - 3 or higher (min level 1), at least
+- Potions: 9-18 per shop at party level - 3 or higher (min level 1), at least
   one Spell Slot Restoration Potion
 - Traveling merchants: written to `gm/traveling_merchant_N.md`; a restock
   replaces the whole set
@@ -84,8 +86,9 @@ Defaults (all adjustable from the GM page's Restock panel):
 ### Documents
 - **NEVER create summary documents** - summarize work in chat only.
 - No SUMMARY.md, STATUS.md, CHANGES.md, or similar files.
-- The one exception is `docs/refactor-2026-10.md`, which the user asked for as
-  a handoff to other agents. Keep it accurate if you change what it describes.
+- The exception is the user-requested agent notes in `.claude/` (gitignored):
+  `.claude/refactor-2026-10.md` and handoff prompts. Keep them accurate if you
+  change what they describe.
 
 ### Named Enemies
 - Don't use named enemies (Cratonys, Khurfel, Urthagul, and the like) as

@@ -3,6 +3,7 @@
 {% block body_class %}min-h-screen bg-gray-900 text-white flex items-center justify-center p-4{% endblock %}
 
 {% block body %}
+{% include '_art.html' %}
 <div class="max-w-4xl w-full">
     <div class="text-center mb-10">
         <h1 class="text-5xl sm:text-6xl font-bold mb-3 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
@@ -47,6 +48,7 @@
 {% endblock %}
 
 {% block scripts %}
+<script src="{{ url_for('static', filename='js/art.js') }}"></script>
 <script>
 const dialog = document.getElementById('gm-dialog');
 document.getElementById('gm-btn').addEventListener('click', () => dialog.showModal());

@@ -3,6 +3,7 @@
 .gitignore
 .dockerignore
 .vscode
+.claude
 venv
 .venv
 common/

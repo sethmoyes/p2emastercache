@@ -1,19 +1,18 @@
 #!/usr/bin/env python3
 """
 Unified Otari Merchant Generator
-Generates merchant inventories with images scraped from Google Images
+Stocks Otari's shops and rolls traveling merchants, written as markdown
 """
 import random
 import re
 import os
-import urllib.parse
 import json
 import requests
 from bs4 import BeautifulSoup
-import time
 
 from avtools import data
 from avtools.data import ROOT as PROJECT_ROOT
+from avtools.items import aon_url
 
 def load_equipment_json(filename):
     """Load equipment from JSON file"""
@@ -163,18 +162,6 @@ def generate_rune_inventory(equipment, max_level, fundamental_range=(2, 3), prop
     
     return inventory
 
-def clean_item_name(name):
-    """Clean item name for search - remove everything after special chars/numbers"""
-    # Remove parentheses and everything inside
-    name = re.sub(r'\([^)]*\)', '', name)
-    # Remove everything after first digit
-    name = re.split(r'\d', name)[0]
-    # Remove special characters except spaces, hyphens, apostrophes
-    name = re.sub(r'[^a-zA-Z\s\'-]', '', name)
-    # Clean up extra spaces
-    name = ' '.join(name.split())
-    return name.strip()
-
 # Default merchant images to cycle through
 def get_merchant_image(npc_name):
     """A proprietor's portrait from PathfinderWiki, or None if it has none"""
@@ -235,97 +222,8 @@ def get_merchant_image(npc_name):
 
     return None
 
-def try_direct_aon_image(item_name):
-    """Try to construct direct AoN image URL"""
-    clean_name = clean_item_name(item_name)
-    
-    # Try common AoN image paths
-    base_url = "https://2e.aonprd.com/Images/"
-    
-    # Create URL-safe name: replace spaces with underscores, remove apostrophes, capitalize words
-    url_name = clean_name.replace("'", "").replace(" ", "_")
-    # Capitalize each word
-    url_name = "_".join(word.capitalize() for word in url_name.split("_"))
-    
-    # Try different category paths
-    categories = [
-        f"Weapons/{url_name}.webp",
-        f"Armor/{url_name}.webp",
-        f"Equipment/{url_name}.webp",
-        f"Items/{url_name}.webp",
-        f"Treasure/{url_name}.webp",
-    ]
-    
-    for category in categories:
-        url = base_url + category
-        try:
-            response = requests.head(url, timeout=2)
-            if response.status_code == 200:
-                return url
-        except:
-            pass
-    
-    return None
-
-def get_image_from_aon(item_name):
-    """Search Google Images for item and return first result URL"""
-    # First try direct AoN URLs
-    direct_url = try_direct_aon_image(item_name)
-    if direct_url:
-        return direct_url
-    
-    try:
-        clean_name = clean_item_name(item_name)
-        # Use the exact query format: "2e.aonprd.com: item name"
-        search_query = f"2e.aonprd.com: {clean_name}"
-        encoded_query = urllib.parse.quote_plus(search_query)
-        
-        # Use Google Images search
-        search_url = f"https://www.google.com/search?q={encoded_query}&tbm=isch"
-        
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-        }
-        
-        response = requests.get(search_url, headers=headers, timeout=10)
-        
-        # Extract first image URL from response
-        # Look for the "ou" (original URL) pattern in Google Images JSON
-        img_pattern = r'"ou":"(https?://[^"]+)"'
-        matches = re.findall(img_pattern, response.text)
-        
-        if matches:
-            # Filter for 2e.aonprd.com images first
-            aon_matches = [m for m in matches if '2e.aonprd.com' in m.lower()]
-            if aon_matches:
-                return aon_matches[0]
-            # Return first match if no AoN images
-            return matches[0]
-        
-        # Fallback: try to find any 2e.aonprd.com image URL directly
-        img_pattern2 = r'https?://2e\.aonprd\.com/[^\s<>"]+?\.(?:jpg|jpeg|png|webp|gif)'
-        matches2 = re.findall(img_pattern2, response.text, re.IGNORECASE)
-        
-        if matches2:
-            return matches2[0]
-            
-    except Exception as e:
-        pass  # Silently fail
-
-    return None
-
-# Image lookups are most of a run's time; settings can turn them off for a fast restock
-FETCH_IMAGES = True
+# Portrait lookups hit PathfinderWiki; settings can turn them off
 FETCH_PORTRAITS = True
-
-def item_image(item_name, label):
-    """Look up an item's image (rate limited), or return None when lookups are off"""
-    if not FETCH_IMAGES:
-        return None
-    image_url = get_image_from_aon(item_name)
-    print(f"{label}... {'OK' if image_url else 'X'}")
-    time.sleep(0.3)  # Rate limiting
-    return image_url
 
 def fix_price(price):
     """Fix malformed prices from source data"""
@@ -436,6 +334,44 @@ def generate_merchant_inventory(equipment, categories, num_common, num_uncommon,
     
     return inventory
 
+def _item_link(name):
+    return f"[View]({aon_url(name)})"
+
+
+def _write_spell_table(f, title, spells):
+    f.write(f"## {title} ({len(spells)})\n\n")
+    f.write("| Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |\n")
+    f.write("|------------|-------|-------|-------|------------|-------|--------|------|\n")
+    for spell in spells:
+        level = spell['level']
+        price, dc = get_spell_price_and_dc(level)
+        traditions = ', '.join(spell.get('traditions', ['N/A']))
+        traits = ', '.join(spell.get('traits', [])[:3]) or 'N/A'
+        url = f"https://2e.aonprd.com{spell['url']}" if spell.get('url') else aon_url(spell['name'], spell=True)
+        f.write(f"| SCROLL OF {spell['name'].upper()} | {level} | {price} | {dc} | {traditions} "
+                f"| {spell.get('range', 'N/A')} | {traits} | [View]({url}) |\n")
+    f.write("\n")
+
+
+def _write_item_table(f, title, items):
+    f.write(f"## {title} ({len(items)})\n\n")
+    f.write("| Name | Level | Price | Rarity | Category | Type | Link |\n")
+    f.write("|------|-------|-------|--------|----------|------|------|\n")
+    for item in items:
+        f.write(f"| {item['name']} | {item['level']} | {fix_price(item['price'])} "
+                f"| {capitalize_field(item['rarity'])} | {capitalize_field(item.get('category', 'N/A'))} "
+                f"| {capitalize_field(item['type'])} | {_item_link(item['name'])} |\n")
+    f.write("\n")
+
+
+def stack(items):
+    """[(item, count)] in first-seen order, identical names counted once"""
+    counts = {}
+    for item in items:
+        counts.setdefault(item['name'], [item, 0])[1] += 1
+    return [tuple(pair) for pair in counts.values()]
+
+
 def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, spell_inventory=None, rune_inventory=None, potion_inventory=None, output_dir='players', portrait=None, filename=None):
     """Write merchant file with header, proprietor portrait, and full item details"""
     filename = filename or merchant_name.lower().replace(' ', '_').replace("'", '') + '.md'
@@ -453,177 +389,44 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
         f.write(f"*{description}*\n\n")
         f.write(f"**Proprietor:** {proprietor}\n\n")
         f.write(f"**Specialties:** {specialties}\n\n")
-        
-        # Potion section (if applicable) - ALWAYS FIRST
+
+        # Potion section (if applicable) - ALWAYS FIRST; identical potions stack into one row
         if potion_inventory:
             f.write("---\n\n")
             f.write("# HEALING POTIONS\n\n")
             f.write("*These potions restore Hit Points or spell slots when consumed.*\n\n")
-            f.write("| Image | Name | Qty | Level | Price | Effect | Link |\n")
-            f.write("|-------|------|-----|-------|-------|--------|------|\n")
-
-            # Identical potions stack into one row
-            counts = {}
-            for potion in potion_inventory:
-                counts.setdefault(potion['name'], [potion, 0])[1] += 1
-            stacked = list(counts.values())
-
-            total = len(stacked)
-            for idx, (potion, qty) in enumerate(stacked, 1):
-                image_url = item_image(potion['name'], f"  [POTION {idx}/{total}] {potion['name'][:50]}")
-                
-                # Fix and capitalize fields
-                name = potion['name']
-                level = potion['level']
-                price = fix_price(potion['price'])
-                effect = potion.get('effect', 'N/A')
-                
-                # Create image markdown
-                if image_url:
-                    img_md = f"![{name}]({image_url})"
-                else:
-                    img_md = ""
-                
-                # Create AoN search link
-                search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
-                link_md = f"[View]({search_url})"
-                
-                f.write(f"| {img_md} | {name} | {qty} | {level} | {price} | {effect} | {link_md} |\n")
-
+            f.write("| Name | Qty | Level | Price | Effect | Link |\n")
+            f.write("|------|-----|-------|-------|--------|------|\n")
+            for potion, qty in stack(potion_inventory):
+                f.write(f"| {potion['name']} | {qty} | {potion['level']} | {fix_price(potion['price'])} "
+                        f"| {potion.get('effect', 'N/A')} | {_item_link(potion['name'])} |\n")
             f.write("\n")
             f.write("---\n\n")
-        
+
         # Spell scrolls section (if applicable)
         if spell_inventory:
             f.write("---\n\n")
             f.write("# SPELL SCROLLS FOR LEARNING\n\n")
             f.write("*These scrolls can be studied with the merchant to permanently learn the spell.*\n\n")
             f.write("*Study time: 1 hour (common), 5 hours (uncommon), 1 day (rare).*\n\n")
-            
-            # Common spells
-            if spell_inventory['common']:
-                f.write(f"## Common Spell Scrolls ({len(spell_inventory['common'])})\n\n")
-                f.write("| Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |\n")
-                f.write("|------------|-------|-------|-------|------------|-------|--------|------|\n")
-                
-                for spell in spell_inventory['common']:
-                    spell_name = f"SCROLL OF {spell['name'].upper()}"
-                    level = spell['level']
-                    price, dc = get_spell_price_and_dc(level)
-                    traditions = ', '.join(spell.get('traditions', ['N/A']))
-                    spell_range = spell.get('range', 'N/A')
-                    traits = ', '.join(spell.get('traits', [])[:3])  # Limit to 3 traits
-                    if not traits:
-                        traits = 'N/A'
-                    
-                    # Create AoN link
-                    if spell.get('url'):
-                        link_md = f"[View](https://2e.aonprd.com{spell['url']})"
-                    else:
-                        search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(spell['name'])}"
-                        link_md = f"[View]({search_url})"
-                    
-                    f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {spell_range} | {traits} | {link_md} |\n")
-                
-                f.write("\n")
-            
-            # Uncommon spells
-            if spell_inventory['uncommon']:
-                f.write(f"## Uncommon Spell Scrolls ({len(spell_inventory['uncommon'])})\n\n")
-                f.write("| Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |\n")
-                f.write("|------------|-------|-------|-------|------------|-------|--------|------|\n")
-                
-                for spell in spell_inventory['uncommon']:
-                    spell_name = f"SCROLL OF {spell['name'].upper()}"
-                    level = spell['level']
-                    price, dc = get_spell_price_and_dc(level)
-                    traditions = ', '.join(spell.get('traditions', ['N/A']))
-                    spell_range = spell.get('range', 'N/A')
-                    traits = ', '.join(spell.get('traits', [])[:3])
-                    if not traits:
-                        traits = 'N/A'
-                    
-                    if spell.get('url'):
-                        link_md = f"[View](https://2e.aonprd.com{spell['url']})"
-                    else:
-                        search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(spell['name'])}"
-                        link_md = f"[View]({search_url})"
-                    
-                    f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {spell_range} | {traits} | {link_md} |\n")
-                
-                f.write("\n")
-            
-            # Rare spells
-            if spell_inventory['rare']:
-                f.write(f"## Rare Spell Scrolls ({len(spell_inventory['rare'])})\n\n")
-                f.write("| Spell Name | Level | Price | DC | Traditions | Range | Traits | Link |\n")
-                f.write("|------------|-------|-------|-------|------------|-------|--------|------|\n")
-                
-                for spell in spell_inventory['rare']:
-                    spell_name = f"SCROLL OF {spell['name'].upper()}"
-                    level = spell['level']
-                    price, dc = get_spell_price_and_dc(level)
-                    traditions = ', '.join(spell.get('traditions', ['N/A']))
-                    spell_range = spell.get('range', 'N/A')
-                    traits = ', '.join(spell.get('traits', [])[:3])
-                    if not traits:
-                        traits = 'N/A'
-                    
-                    if spell.get('url'):
-                        link_md = f"[View](https://2e.aonprd.com{spell['url']})"
-                    else:
-                        search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(spell['name'])}"
-                        link_md = f"[View]({search_url})"
-                    
-                    f.write(f"| {spell_name} | {level} | {price} | {dc} | {traditions} | {spell_range} | {traits} | {link_md} |\n")
-                
-                f.write("\n")
-            
+            for rarity in ('common', 'uncommon', 'rare'):
+                if spell_inventory[rarity]:
+                    _write_spell_table(f, f"{rarity.capitalize()} Spell Scrolls", spell_inventory[rarity])
             f.write("---\n\n")
-        
+
         # Rune section (if applicable)
         if rune_inventory:
             f.write("# RUNES\n\n")
             f.write("*Runes can be etched onto weapons and armor to enhance their properties.*\n\n")
-            
-            # Fundamental weapon runes (always available, 2-3 of each)
+
+            # Fundamental weapon runes (always available, several of each)
             if rune_inventory['fundamental']:
-                # Count quantities
-                rune_counts = {}
-                for rune in rune_inventory['fundamental']:
-                    rune_name = rune['name']
-                    if rune_name not in rune_counts:
-                        rune_counts[rune_name] = {'count': 0, 'rune': rune}
-                    rune_counts[rune_name]['count'] += 1
-                
                 f.write(f"## Fundamental Weapon Runes (Always Available)\n\n")
-                f.write("| Image | Name | Quantity | Level | Price | Rarity | Link |\n")
-                f.write("|-------|------|----------|-------|-------|--------|------|\n")
-                
-                for rune_name, data in rune_counts.items():
-                    rune = data['rune']
-                    quantity = data['count']
-                    
-                    image_url = item_image(rune['name'], f"  [RUNE] {rune['name'][:50]}")
-                    
-                    # Fix and capitalize fields
-                    name = rune['name']
-                    level = rune['level']
-                    price = fix_price(rune['price'])
-                    rarity = capitalize_field(rune['rarity'])
-                    
-                    # Create image markdown
-                    if image_url:
-                        img_md = f"![{name}]({image_url})"
-                    else:
-                        img_md = ""
-                    
-                    # Create AoN search link
-                    search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
-                    link_md = f"[View]({search_url})"
-                    
-                    f.write(f"| {img_md} | {name} | {quantity} | {level} | {price} | {rarity} | {link_md} |\n")
-                
+                f.write("| Name | Quantity | Level | Price | Rarity | Link |\n")
+                f.write("|------|----------|-------|-------|--------|------|\n")
+                for rune, quantity in stack(rune_inventory['fundamental']):
+                    f.write(f"| {rune['name']} | {quantity} | {rune['level']} | {fix_price(rune['price'])} "
+                            f"| {capitalize_field(rune['rarity'])} | {_item_link(rune['name'])} |\n")
                 f.write("\n")
             else:
                 # If no fundamental runes in database, show standard availability
@@ -647,142 +450,26 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                 f.write("- **Reinforcing** (Level 4): 100 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)\n")
                 f.write("- **Greater Reinforcing** (Level 11): 1,400 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)\n")
                 f.write("- **Major Reinforcing** (Level 17): 15,000 gp - [View](https://2e.aonprd.com/Equipment.aspx?ID=2811)\n\n")
-            
-            # Other runes (2-7 random)
+
+            # Other runes
             if rune_inventory['other']:
                 f.write(f"## Property Runes ({len(rune_inventory['other'])})\n\n")
-                f.write("| Image | Name | Level | Price | Rarity | Link |\n")
-                f.write("|-------|------|-------|-------|--------|------|\n")
-                
-                total = len(rune_inventory['other'])
-                for idx, rune in enumerate(rune_inventory['other'], 1):
-                    image_url = item_image(rune['name'], f"  [RUNE {idx}/{total}] {rune['name'][:50]}")
-                    
-                    # Fix and capitalize fields
-                    name = rune['name']
-                    level = rune['level']
-                    price = fix_price(rune['price'])
-                    rarity = capitalize_field(rune['rarity'])
-                    
-                    # Create image markdown
-                    if image_url:
-                        img_md = f"![{name}]({image_url})"
-                    else:
-                        img_md = ""
-                    
-                    # Create AoN search link
-                    search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
-                    link_md = f"[View]({search_url})"
-                    
-                    f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {link_md} |\n")
-                
+                f.write("| Name | Level | Price | Rarity | Link |\n")
+                f.write("|------|-------|-------|--------|------|\n")
+                for rune in rune_inventory['other']:
+                    f.write(f"| {rune['name']} | {rune['level']} | {fix_price(rune['price'])} "
+                            f"| {capitalize_field(rune['rarity'])} | {_item_link(rune['name'])} |\n")
                 f.write("\n")
-            
+
             f.write("---\n\n")
-        
+
         # Regular items section
         if inventory['common'] or inventory['uncommon'] or inventory['rare']:
             f.write("# REGULAR ITEMS\n\n")
-        
-        # Common items
-        if inventory['common']:
-            f.write(f"## Common Items ({len(inventory['common'])})\n\n")
-            f.write("| Image | Name | Level | Price | Rarity | Category | Type | Link |\n")
-            f.write("|-------|------|-------|-------|--------|----------|------|------|\n")
-            
-            total = len(inventory['common'])
-            for idx, item in enumerate(inventory['common'], 1):
-                # Get image URL
-                image_url = item_image(item['name'], f"  [{idx}/{total}] {item['name'][:50]}")
-                
-                # Fix and capitalize fields
-                name = item['name']
-                level = item['level']
-                price = fix_price(item['price'])
-                rarity = capitalize_field(item['rarity'])
-                category = capitalize_field(item.get('category', 'N/A'))
-                item_type = capitalize_field(item['type'])
-                
-                # Create image markdown
-                if image_url:
-                    img_md = f"![{name}]({image_url})"
-                else:
-                    img_md = ""  # No image: the renderer drops an empty Image column
-                
-                # Create AoN search link
-                search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
-                link_md = f"[View]({search_url})"
-                
-                f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} | {link_md} |\n")
-            
-            f.write("\n")
-        
-        # Uncommon items
-        if inventory['uncommon']:
-            f.write(f"## Uncommon Items ({len(inventory['uncommon'])})\n\n")
-            f.write("| Image | Name | Level | Price | Rarity | Category | Type | Link |\n")
-            f.write("|-------|------|-------|-------|--------|----------|------|------|\n")
-            
-            total = len(inventory['uncommon'])
-            for idx, item in enumerate(inventory['uncommon'], 1):
-                # Get image URL
-                image_url = item_image(item['name'], f"  [{idx}/{total}] {item['name'][:50]}")
-                
-                # Fix and capitalize fields
-                name = item['name']
-                level = item['level']
-                price = fix_price(item['price'])
-                rarity = capitalize_field(item['rarity'])
-                category = capitalize_field(item.get('category', 'N/A'))
-                item_type = capitalize_field(item['type'])
-                
-                # Create image markdown
-                if image_url:
-                    img_md = f"![{name}]({image_url})"
-                else:
-                    img_md = ""
-                
-                # Create AoN search link
-                search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
-                link_md = f"[View]({search_url})"
-                
-                f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} | {link_md} |\n")
-            
-            f.write("\n")
-        
-        # Rare items
-        if inventory['rare']:
-            f.write(f"## Rare Items ({len(inventory['rare'])})\n\n")
-            f.write("| Image | Name | Level | Price | Rarity | Category | Type | Link |\n")
-            f.write("|-------|------|-------|-------|--------|----------|------|------|\n")
-            
-            total = len(inventory['rare'])
-            for idx, item in enumerate(inventory['rare'], 1):
-                # Get image URL
-                image_url = item_image(item['name'], f"  [{idx}/{total}] {item['name'][:50]}")
-                
-                # Fix and capitalize fields
-                name = item['name']
-                level = item['level']
-                price = fix_price(item['price'])
-                rarity = capitalize_field(item['rarity'])
-                category = capitalize_field(item.get('category', 'N/A'))
-                item_type = capitalize_field(item['type'])
-                
-                # Create image markdown
-                if image_url:
-                    img_md = f"![{name}]({image_url})"
-                else:
-                    img_md = ""
-                
-                # Create AoN search link
-                search_url = f"https://2e.aonprd.com/Search.aspx?query={urllib.parse.quote(clean_item_name(name))}"
-                link_md = f"[View]({search_url})"
-                
-                f.write(f"| {img_md} | {name} | {level} | {price} | {rarity} | {category} | {item_type} | {link_md} |\n")
-            
-            f.write("\n")
-        
+        for rarity in ('common', 'uncommon', 'rare'):
+            if inventory[rarity]:
+                _write_item_table(f, f"{rarity.capitalize()} Items", inventory[rarity])
+
         # Services section
         if services:
             f.write("## Services\n\n")
@@ -971,49 +658,45 @@ SETTINGS_SCHEMA = [
     {'group': 'Basics', 'key': 'fetch_portraits', 'type': 'bool', 'default': True,
      'label': 'Look up shopkeeper portraits',
      'help': 'Checks PathfinderWiki for each proprietor, falling back to a stock portrait.'},
-    {'group': 'Basics', 'key': 'fetch_images', 'type': 'bool', 'default': False,
-     'label': 'Look up item images',
-     'help': 'Searches the web for every item, which adds several minutes. '
-             'When off, items show a placeholder.'},
     {'group': 'Shops to restock', 'key': 'merchants', 'type': 'merchants',
      'default': [merchant_slug(c['name']) for c in MERCHANT_CONFIGS],
      'label': 'Shops', 'help': 'Unchecked shops keep their current stock.'},
-    {'group': 'Shop stock', 'key': 'common', 'type': 'range', 'default': [3, 15], 'min': 0, 'max': 100,
+    {'group': 'Shop stock', 'key': 'common', 'type': 'range', 'default': [9, 45], 'min': 0, 'max': 150,
      'label': 'Common items per shop'},
-    {'group': 'Shop stock', 'key': 'uncommon', 'type': 'range', 'default': [1, 3], 'min': 0, 'max': 100,
+    {'group': 'Shop stock', 'key': 'uncommon', 'type': 'range', 'default': [3, 9], 'min': 0, 'max': 100,
      'label': 'Uncommon items per shop'},
-    {'group': 'Shop stock', 'key': 'rare_shops', 'type': 'int', 'default': 2, 'min': 0, 'max': 9,
+    {'group': 'Shop stock', 'key': 'rare_shops', 'type': 'int', 'default': 6, 'min': 0, 'max': 10,
      'label': 'Shops that get 1 rare item',
      'help': 'Picked at random from the checked shops. Otari Market rolls its own rares.'},
-    {'group': 'Otari Market', 'key': 'market_common', 'type': 'range', 'default': [20, 50], 'min': 0, 'max': 200,
+    {'group': 'Otari Market', 'key': 'market_common', 'type': 'range', 'default': [60, 150], 'min': 0, 'max': 400,
      'label': 'Common items'},
-    {'group': 'Otari Market', 'key': 'market_uncommon', 'type': 'range', 'default': [5, 15], 'min': 0, 'max': 100,
+    {'group': 'Otari Market', 'key': 'market_uncommon', 'type': 'range', 'default': [15, 45], 'min': 0, 'max': 100,
      'label': 'Uncommon items'},
-    {'group': 'Otari Market', 'key': 'market_rare', 'type': 'range', 'default': [1, 3], 'min': 0, 'max': 20,
+    {'group': 'Otari Market', 'key': 'market_rare', 'type': 'range', 'default': [3, 9], 'min': 0, 'max': 20,
      'label': 'Rare items'},
-    {'group': 'Spells & runes', 'key': 'spells_common', 'type': 'range', 'default': [5, 15], 'min': 0, 'max': 100,
+    {'group': 'Spells & runes', 'key': 'spells_common', 'type': 'range', 'default': [15, 45], 'min': 0, 'max': 100,
      'label': 'Common spell scrolls', 'help': "Wrin's Wonders and Odd Stories."},
-    {'group': 'Spells & runes', 'key': 'spells_uncommon', 'type': 'range', 'default': [3, 5], 'min': 0, 'max': 50,
+    {'group': 'Spells & runes', 'key': 'spells_uncommon', 'type': 'range', 'default': [9, 15], 'min': 0, 'max': 50,
      'label': 'Uncommon spell scrolls'},
     {'group': 'Spells & runes', 'key': 'rare_spell', 'type': 'bool', 'default': True,
      'label': 'One spell shop gets a rare spell'},
-    {'group': 'Spells & runes', 'key': 'fundamental_runes', 'type': 'range', 'default': [2, 3], 'min': 0, 'max': 10,
+    {'group': 'Spells & runes', 'key': 'fundamental_runes', 'type': 'range', 'default': [6, 9], 'min': 0, 'max': 30,
      'label': 'Copies of each fundamental rune',
      'help': "Wrin's Wonders, Odd Stories and Dawnflower Library."},
-    {'group': 'Spells & runes', 'key': 'property_runes', 'type': 'range', 'default': [1, 3], 'min': 0, 'max': 20,
+    {'group': 'Spells & runes', 'key': 'property_runes', 'type': 'range', 'default': [3, 9], 'min': 0, 'max': 20,
      'label': 'Property runes'},
-    {'group': 'Potions', 'key': 'potions', 'type': 'range', 'default': [3, 6], 'min': 0, 'max': 20,
+    {'group': 'Potions', 'key': 'potions', 'type': 'range', 'default': [9, 18], 'min': 0, 'max': 40,
      'label': 'Healing potions per shop', 'help': 'At least one is a Spell Slot Restoration Potion.'},
     {'group': 'Potions', 'key': 'potion_level_offset', 'type': 'int', 'default': -3, 'min': -20, 'max': 5,
      'label': 'Min potion level (party level +)', 'help': 'Never below level 1.'},
     {'group': TRAVELING, 'key': 'random_merchants', 'type': 'int', 'default': 2, 'min': 0, 'max': 10,
      'label': 'Traveling merchants to create',
      'help': 'Added to the Random Merchants list on the GM page. Earlier ones are kept.'},
-    {'group': TRAVELING, 'key': 'random_common', 'type': 'range', 'default': [5, 12], 'min': 0, 'max': 100,
+    {'group': TRAVELING, 'key': 'random_common', 'type': 'range', 'default': [15, 36], 'min': 0, 'max': 150,
      'label': 'Common items'},
-    {'group': TRAVELING, 'key': 'random_uncommon', 'type': 'range', 'default': [1, 4], 'min': 0, 'max': 50,
+    {'group': TRAVELING, 'key': 'random_uncommon', 'type': 'range', 'default': [3, 12], 'min': 0, 'max': 50,
      'label': 'Uncommon items'},
-    {'group': TRAVELING, 'key': 'random_rare', 'type': 'range', 'default': [0, 2], 'min': 0, 'max': 20,
+    {'group': TRAVELING, 'key': 'random_rare', 'type': 'range', 'default': [0, 6], 'min': 0, 'max': 20,
      'label': 'Rare items'},
 ]
 
@@ -1060,8 +743,7 @@ def traveling_merchant_filename(number):
 
 def generate_all(settings, output_root=PROJECT_ROOT):
     """Restock the selected Otari shops (players/) and create traveling merchants (gm/)"""
-    global FETCH_IMAGES, FETCH_PORTRAITS
-    FETCH_IMAGES = settings['fetch_images']
+    global FETCH_PORTRAITS
     FETCH_PORTRAITS = settings['fetch_portraits']
 
     player_level = settings['player_level']
@@ -1073,7 +755,7 @@ def generate_all(settings, output_root=PROJECT_ROOT):
     print(f"Generating merchants for player level {player_level}")
     print(f"  Max item level: {max_item_level}")
     print(f"  Max spell level: {spell_level}")
-    print(f"  Item images: {'on' if FETCH_IMAGES else 'off'}, portraits: {'on' if FETCH_PORTRAITS else 'off'}")
+    print(f"  Portraits: {'on' if FETCH_PORTRAITS else 'off'}")
     print()
 
     print("Loading equipment...")

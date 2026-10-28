@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}{{ title }} - Otari{% endblock %}
+{% block width %}max-w-5xl{% endblock %}
+{% block nav %}
+<nav class="flex flex-wrap items-center gap-2 mb-6 text-sm">
+    <a href="/players" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg">&larr; Market square</a>
+</nav>
+{% endblock %}
+
+{% block content %}
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">{{ title }}</h1>
+
+{% if 'table-scroll' in html %}
+<div class="sticky top-0 z-10 bg-gray-900/95 backdrop-blur py-2 mb-4">
+    <label for="filter" class="sr-only">Filter items</label>
+    <input id="filter" type="search" placeholder="Filter items (name, level, trait...)"
+           class="w-full bg-gray-800 border border-gray-600 focus:border-blue-500 focus:outline-none rounded-lg px-3 py-2">
+</div>
+{% endif %}
+
+<article class="md">{{ html | safe }}</article>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Hide table rows that don't match the filter
+const filter = document.getElementById('filter');
+if (filter) {
+    filter.addEventListener('input', () => {
+        const q = filter.value.trim().toLowerCase();
+        document.querySelectorAll('.md tbody tr').forEach(row => {
+            row.hidden = q && !row.textContent.toLowerCase().includes(q);
+        });
+    });
+}
+</script>
+{% endblock %}
