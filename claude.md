@@ -1,363 +1,165 @@
-# Kiro Project Guidelines - Pathfinder 2e Campaign Tools
+# Pathfinder 2e Campaign Tools - Project Guidelines
 
 ## Project Overview
-This is a Pathfinder 2e campaign management system for the Abomination Vaults adventure path, set in Otari. All scripts and tools should reference the comprehensive data files in the `etc/` directory.
+Campaign tools for the Abomination Vaults adventure path, set in Otari: a Flask
+app (`avtools/web/app.py`) with GM, player and atlas pages, plus the
+generators behind it. See `README.md` for running, deploying and the CLI tools.
 
-## Critical Data Sources (ALWAYS REFERENCE THESE)
+## Major Refactor (October 2026)
 
-### `/etc/` Directory - The Treasure Trove
-All generation scripts MUST pull from these comprehensive data files:
+The repo was restructured in October 2026: the code moved from `bin/` into the
+`avtools` package, the web app was split into blueprints, a test suite was
+added, and a lot of dead code, routes and data were removed. Paths, routes and
+data sources from before then no longer exist. **Read
+`.claude/refactor-2026-10.md` before changing anything**: an exhaustive record
+of the review, every change, old-to-new paths, what was removed on purpose,
+known gotchas, and the deployment steps that are still pending. It's
+gitignored, so it exists only on the user's machine; if it's missing, ask the
+user. Handoff prompts for follow-up work live next to it in `.claude/`.
 
-- **`creatures.json`** - Complete creature database with stats, abilities, and lore for Pathfinder 2e
-- **`equipment.json`** - All items, weapons, armor, potions, and gear with prices and levels
-- **`spells.json`** - Complete spell database with levels, schools, and effects
-- **`gauntlight_keep_levels.md`** - Comprehensive lore for all 10 floors of Gauntlight Keep (Abomination Vaults)
-- **`creature_lore.json`** - Additional creature lore and flavor text
-- **`dieties.json`** - Gods and religious information
-- **`expanded_pools.json`** - Expanded encounter pools for various locations
-- **`inner_sea_region.md`** - Golarion world lore and geography
-- **`players_guide.md`** - Player-facing campaign information
+## Sources of Truth
 
-## Generation Scripts
+When two files disagree, this is the order that wins:
 
-### Merchant Generation (`bin/generate_merchants.py`)
-- Generates merchant inventories for Otari shops
-- References: `equipment.json`, `spells.json`
-- Rules:
-  - Common items: 3-15 per merchant
-  - Uncommon items: 1-3 per merchant
-  - Rare items: 2 random merchants get 1 each
-  - Otari Market gets DOUBLE (6-30 common, 2-6 uncommon)
-  - Equipment max level: player_level + 2
-  - Spell max level: player_level (NOT +2)
-  - Healing potions: 3-6 per merchant, level X-3 minimum (min level 1)
-  - At least 1 MUST be Spell Slot Restoration Potion
+1. **`common/campaign-reference/floors/`** - room-by-room reference for every
+   floor of Gauntlight Keep (rooms, creatures, DCs, NPCs, cross-floor links),
+   from the book. It beats anything else in the repo, including the older
+   `common/campaign-reference/etc/gauntlight_keep_levels.md`.
+2. **`etc/floor_ecology.json`** - each floor's name and what actually wanders it
+   (creatures, hazards, events), each entry citing its floor doc. The dungeon
+   turn draws floor names, COMBAT and most ACTIVE_THREAT events from it. Don't
+   restate floor ecology anywhere else; read it from here.
+3. **Code defaults** - merchant rules live in `SETTINGS_SCHEMA` in
+   `avtools/merchants.py`; the dice distribution lives in
+   `get_category_from_sum` in `avtools/dungeon_turn.py`.
+   This file describes them but the code is authoritative.
 
-### Dungeon Turn Encounters (`bin/generate_dungeon_turn.py`)
-- Generates 5d20 dice jar encounter system for Gauntlight Keep
-- References: `gauntlight_keep_levels.md`, `creatures.json`
-- Rules:
-  - 5d20 probability distribution: 5-35 beneficial, 36-69 flavor (middle 50%), 70-100 threats
-  - Flavor events should be TINY environmental details - fragments, traces, small clues
-  - NOT major locations or plot points - just hints
-  - Creature encounters should reference specific creatures from `creatures.json`
-  - Encounters are 2 levels below party level
-  - Generate for all floors 1 to X (where X is current floor)
-  - Filter out all boss NPCs and unique named entities
-  - Hazards vs creatures: sinkholes, traps, wards, manifestations, effects = hazards
+Data the tools read, in `etc/`:
+- **`creatures.json`** - creature stats (level, HP, AC, attacks, abilities, AoN url).
+  Names repeat across legacy and remaster entries; prefer looking a creature up
+  by its AoN url.
+- **`equipment.json`**, **`spells.json`** - shop stock
+- **`dungeon_turn_events.json`** - OPPORTUNITY, COMPLICATION, DILEMMA and
+  ACTIVE_THREAT templates. Templates with `"retired"` stay on file but never roll.
+- **`floor_ecology.json`** - see above
+- **`otari_shops.json`** - who runs each Otari shop
+- **`dieties.json`** - deities (read by the integrity checker)
 
-### 4d20 Encounter Generation (`bin/generate_4d20_encounters.py`)
-- Generates overland/Fogfen encounters
-- References: `expanded_pools.json`, `creatures.json`
+Lore that isn't data (the Player's Guide, the Inner Sea gazetteer, the older
+floor overview) lives in `common/campaign-reference/etc/`.
+- **`maps.json`**, **`*_locations.json`** - the atlas
+
+## Generation Rules
+
+### Merchants (`avtools/merchants.py`)
+Defaults (all adjustable from the GM page's Restock panel):
+- Shops: 9-45 common, 3-9 uncommon; 6 random shops get a rare item
+- Otari Market: 60-150 common, 15-45 uncommon, 3-9 rare
+- Equipment max level: party level + `item_level_offset` (default 0)
+- Spell max rank: party level
+- Potions: 9-18 per shop at party level - 3 or higher (min level 1), at least
+  one Spell Slot Restoration Potion
+- Traveling merchants: written to `gm/traveling_merchant_N.md`; a restock
+  replaces the whole set
+
+### Dungeon Turn (`avtools/dungeon_turn.py`, `avtools/ecology.py`)
+- 5d20. Extreme rolls (5-15, 90-100) are always combat at a Severe or Extreme
+  budget; they come up about once in 530 rolls.
+- Any other roll: 50% quiet passage; otherwise 5-44 and 63-89 are COMBAT or
+  ACTIVE_THREAT, 45-62 are OPPORTUNITY, COMPLICATION or DILEMMA.
+- Combat comes from `floor_ecology.json`, scaled with the PF2e XP budget (Low on
+  normal rolls) by party level and party size.
+- Boss NPCs and unique named entities never appear as random encounters.
+- Hazards vs creatures: sinkholes, traps, wards, manifestations, effects = hazards.
 
 ## Important Rules
 
 ### Character Encoding
-- Replace Unicode characters (✓/✗) with ASCII (OK/X) to avoid encoding errors on Windows
+- ASCII only in generated text and script output: use OK/X, not check marks, and
+  `<=`/`>=`, not their Unicode forms. Unicode breaks Windows consoles.
 
 ### Data Integrity
-- DO NOT run data integrity scripts - user has them running in other windows
-- Use JSON parsing instead of markdown parsing when possible
+- DO NOT run data integrity scripts - the user has them running in other windows.
+  Check before rewriting `equipment.json`, `creatures.json` or `dieties.json`.
+- Use JSON parsing instead of markdown parsing when possible.
+
+### Documents
+- **NEVER create summary documents** - summarize work in chat only.
+- No SUMMARY.md, STATUS.md, CHANGES.md, or similar files.
+- The exception is the user-requested agent notes in `.claude/` (gitignored):
+  `.claude/refactor-2026-10.md` and handoff prompts. Keep them accurate if you
+  change what they describe.
+
+### Named Enemies
+- Don't use named enemies (Cratonys, Khurfel, Urthagul, and the like) as
+  incidental encounters. They are either already dead from earlier play or need
+  to be met through the adventure's own story. Use them in lore, flavor and GM
+  notes, or when an event specifically leads to meeting them as a designed
+  encounter.
 
 ### Creature Encounters
-- Always reference `creatures.json` for accurate creature stats and abilities
-- Use specific creature names, not generic types
-- Example: "1 Ghoul Stalker (Level 2)" not "1-2x ghouls (Level 2 creatures)"
-
-### Flavor Events Philosophy
-- Should be SMALL discoveries: a single cushion, a tool, a stain, a sound
-- NOT full rooms or major plot points
-- Should prompt questions, not answer them
-- Example GOOD: "A single leech crawls across the floor. Where did it come from?"
-- Example BAD: "A ritual vat filled with thousands of leeches for transformation"
+- Use exact creature names from `creatures.json`, with counts and level:
+  "1d3 Ghouls (Level 1)" not "some ghouls".
+- Every creature reference carries stats copied from `creatures.json` and its
+  AoN url; never invent abilities or stats.
 
 ## Dungeon Turn Mechanics
 
 ### Time and Movement
-- **Moving between floors**: Takes 10 minutes (ADD 1 DIE TO JAR)
-- **Exploring within a floor**: Varies by action (see event time costs)
-- **Resting**: Short rest (10 min) = 1 die, Long rest (1 hour) = 6 dice
+- **Moving between floors**: 10 minutes (ADD 1 DIE TO JAR)
+- **Exploring within a floor**: varies by action (see each event's time cost)
+- **Resting**: short rest (10 min) = 1 die, long rest (1 hour) = 6 dice
 
-### Dice Jar System
-- Roll 5d20 to determine encounter type
-- Each die in jar represents 10 minutes of dungeon time
-- When jar reaches certain thresholds, increase encounter danger
+### Dice Jar
+- Each die in the jar is 10 minutes of dungeon time.
+- Roll 5d20 to see what happens.
 
-### Prepared Tokens (NEW!)
-Some events grant "Prepared" tokens that represent efficient preparation:
-- **How to get**: Choose "preparation" option on tactical advantage events
+### Prepared Tokens
+Some events grant "Prepared" tokens for efficient preparation:
 - **Cost**: ADD 1 DIE TO JAR (10 minutes to prepare)
-- **Benefit**: Next time you would add dice to jar, spend this token to add 1 fewer die (minimum 0)
-- **Example**: You spend 10 min preparing fallback positions (add 1 die, gain token). Later, moving between floors would cost 1 die, but you spend the token and add 0 dice instead.
-- **Tracking**: Mark tokens on character sheets or party tracker
-- **Use case**: When no immediate combat expected, invest time now to save time later
+- **Benefit**: the next time you would add dice, spend the token to add 1 fewer
+  (minimum 0)
 
-This rewards tactical thinking even when combat isn't imminent!
+## Event Writing Philosophy
+
+Generic events ("A creature attacks", "You find supplies") are useless at the
+table: the GM has to improvise everything. Every event should be something the
+GM can run straight off the card.
+
+1. **Know the floor.** Read its floor doc in `common/campaign-reference/floors/`
+   and its entries in `floor_ecology.json`: who lives there, who they serve, what
+   they're doing right now.
+2. **Use real creatures** with stats and AoN links from `creatures.json`.
+3. **Give it faction context.** Every creature serves someone (mitflits and the
+   "Sky King", morlocks and the "Ghost Queen", Jafaki's seugathi, Urevian's
+   devils, Khurfel's urdefhan).
+4. **Make mechanics explicit.** "DC 19 Perception or they get a surprise round",
+   not "they might surprise you". "1d3+1 morlocks arrive in 2 rounds", not "some
+   enemies arrive".
+5. **Make choices cost time.** DILEMMA options say what they do to the jar:
+   "REMOVE 1 DIE", "ADD 1 DIE (20 minutes)", "NO DICE ADDED".
+6. **Write GM notes** with the floor, faction ties, tactics, consequences, and
+   what it hints at.
+7. **Respect the fixed map.** Don't teleport the party into a keyed room; events
+   happen in passing, between rooms.
+
+### Flavor
+- Small discoveries: a single cushion, a tool, a stain, a sound.
+- Not full rooms or major plot points. Prompt questions, don't answer them.
+- GOOD: "A single leech crawls across the floor. Where did it come from?"
+- BAD: "A ritual vat filled with thousands of leeches for transformation"
 
 ## File Structure
 
 ```
-/
-├── bin/                    # Generation scripts
-├── etc/                    # DATA SOURCE - reference these!
-├── gm/                     # GM-facing generated content
-├── players/                # Player-facing location descriptions
-└── kiro.md                 # This file
+avtools/            the package: dungeon turn, floor ecology, merchants, NPCs, hazards, data loading
+avtools/web/        Flask app, templates, static assets
+tests/              pytest suite (pip install -r requirements-dev.txt && pytest)
+bin/maps/           atlas tooling
+bin/data_management/ AoN integrity checker
+etc/                data the tools read
+players/            Otari shop inventories
+gm/                 traveling merchants, GM quick reference, 2d20 overland table
+docs/               player-facing exploration guide
+common/             reference from the GM's campaign repo (floor docs win)
 ```
-
-## Workflow
-1. User requests generation (merchants, encounters, etc.)
-2. Read relevant data from `/etc/` directory
-3. Apply generation rules
-4. Output to appropriate directory (`gm/` or `players/`)
-5. Verify output quality
-
-## Remember
-- The `/etc/` directory is the source of truth
-- Always check what data is available before generating
-- Maintain consistency with existing lore and mechanics
-- Keep flavor text mysterious and discovery-based
-- **NEVER create summary documents** - summarize work in chat only
-- No SUMMARY.md, STATUS.md, CHANGES.md, or similar files
-- User can read chat history for summaries
-
-## Event Generation Philosophy - How to Make Generic Events SPECIFIC
-
-### The Problem with Generic Events
-Generic events like "A creature attacks" or "Enemies approach" are USELESS at the table. They force the GM to improvise everything, break immersion, and waste the goldmine of lore you already have.
-
-### The Solution: Specificity Through Lore Integration
-
-**STEP 1: Read the Lore Files**
-- `gauntlight_keep_levels.md` - Know EVERY floor's theme, factions, NPCs, and ecology
-- `creatures.json` - Know EVERY creature's stats (Level, HP, AC, special abilities)
-- `creature_lore.json` - Know creature behavior and motivations
-
-**STEP 2: Floor-Specific Creatures**
-Every floor has its own ecology. Use it:
-- Floor 1: Mitflits (worship rusty helmet as "Sky King"), Boss Skrawng, giant maggots
-- Floor 2: Morlocks (worship Belcorra as "Ghost Queen"), King Graulgust
-- Floor 3: Ghouls (Cult of the Canker), Nhakazarin, seeking "cankerous flesh for golem"
-- Floor 4: Wights, skeletons (Belcorra's ancient guards), Volluk, Voidglutton
-- Floor 5: Arena beasts, Cratonys (feral velstrac), Chafkhem
-- Floor 6: Seugathi (fleshwarpers), Jafaki, driders, Shadow Malice band, Warped Brew tavern
-- Floor 7: Devils (Urevian's prison), Szek (imp), Ysondkhelir (denizen of Leng), Cynemi
-- Floor 8: Bog mummies (Children of Belcorra), Urthagul (gug with Crimson Lens), caligni cult
-- Floor 9: Drow (Yldaris, Quara), Urdefhan (Khurfel with Emerald Lens), caligni refugees (Galudu)
-- Floor 10: Nhimbaloth cultists, The Lady's Whisper, Belcorra (final boss)
-
-**STEP 3: Include Complete Stats with References**
-ALWAYS include from creatures.json with links:
-- Creature name (exact match from creatures.json)
-- Quantity (dice notation: 1d3, 2d4, etc.)
-- Reference link (AON URL or creatures.json lookup)
-- Quick stats in description for GM convenience
-
-Example: 
-```json
-"creatures": "1d3 Ghouls",
-"creature_reference": {
-  "Ghoul": {
-    "source": "creatures.json",
-    "aon_url": "https://2e.aonprd.com/Monsters.aspx?ID=218",
-    "level": 1,
-    "hp": 20,
-    "ac": 16,
-    "key_abilities": ["Paralytic claws: DC 15 Fort", "Ghoul fever: DC 15 Fort"]
-  }
-}
-```
-
-This allows:
-- GMs to click through to full stat blocks
-- Quick reference without leaving the event
-- Validation that creature exists in creatures.json
-- Easy updates if creature stats change
-
-**STEP 4: Add Faction Context**
-Every creature serves someone or something:
-- Mitflits → Boss Skrawng → "Sky King" (rusty helmet)
-- Morlocks → "Ghost Queen" (Belcorra)
-- Ghouls → Cult of the Canker → Nhakazarin → flesh golem
-- Seugathi → Jafaki → fleshwarping experiments
-- Devils → Urevian → contract enforcement
-- Urdefhan → Khurfel → Emerald Fulcrum Lens
-
-**STEP 5: Add Tactical Flavor**
-Make each encounter feel different:
-- Mitflits: Cowardly, flee if 2+ die, alert Boss Skrawng
-- Morlocks: Swarming (+1 if 2+ adjacent), darkvision 120ft, light-sensitive
-- Ghouls: Paralytic claws (DC 15 Fort), ghoul fever, scent ability
-- Wights: Drain Life (1d6 negative + drained 1), undead immunities
-- Seugathi: Psychic Crush (4d6 mental, DC 24 Will), telepathy 100ft
-- Devils: Respect authority/contracts, immune to fire, beard attack
-- Urdefhan: Wicked Bite (1d8 + 1d4 evil), Ferocity (don't fall at 0 HP)
-
-**STEP 6: Add Lore Hooks**
-Every encounter should hint at the bigger picture:
-- "For Sky King!" → mitflit religion
-- "Ghost Queen hungers!" → morlock worship
-- "Cankerous flesh for the golem!" → Cult of Canker's goal
-- "Jafaki needs specimens!" → seugathi experiments
-- "Urevian's law is absolute!" → devil hierarchy
-- "For Khurfel! For glory!" → urdefhan honor culture
-
-**STEP 7: Named NPCs When Possible**
-Use actual NPCs from the lore:
-- Augrael (ghoulish morlock, tranquil reader)
-- Szek (mischievous imp who locked Chafkhem)
-- Cratonys (feral velstrac, lost her mind)
-- Lallizanx (lazy drider bouncer, reads romance novels)
-- Chafkhem (bossy Osirion wizard from ancient era)
-- Cynemi (tiefling bounty hunter, history with Carman Rajani)
-- Padli (alcoholic caligni, Dulac's second-in-command)
-- Ryta (ratfolk vocalist from Shadow Malice band)
-
-**STEP 8: Explicit Mechanics**
-Never be vague about game mechanics:
-- BAD: "They might surprise you"
-- GOOD: "DC 19 Perception to spot them first, or they get surprise round"
-- BAD: "Some enemies arrive"
-- GOOD: "1d3+1 Morlocks arrive in 2 rounds"
-- BAD: "They're dangerous"
-- GOOD: "Paralytic claws: DC 15 Fort save or paralyzed 1 round"
-
-**STEP 9: Dice Jar Integration**
-For DILEMMA events, always specify:
-- "REMOVE 1 DIE FROM JAR" (fast choice)
-- "ADD 1 DIE TO JAR (takes 20 minutes)" (slow choice)
-- "ADD 2 DICE TO JAR (takes 40 minutes)" (very slow choice)
-- "NO DICE ADDED" (neutral choice)
-
-**STEP 10: GM Notes Are Gold**
-Every event needs GM notes with:
-- Floor number
-- Faction connections
-- Tactical considerations
-- Consequences of choices
-- Lore implications
-
-Example:
-```
-"gm_notes": "Floor 3 specific. Cult of Canker ghouls. Paralytic claws: DC 15 Fort. Ghoul fever: DC 15 Fort. Seeking flesh for golem in Temple of Canker (C34). If Nhimbaloth invoked, they pause - shows deep religious knowledge."
-```
-
-### The Formula That Works
-
-**Generic Event:**
-```json
-{
-  "title": "Enemies Attack!",
-  "description": "Hostile creatures attack you",
-  "creatures": "Some enemies"
-}
-```
-
-**Specific Event:**
-```json
-{
-  "title": "Ghoul Librarian Ambush!",
-  "description": "Ghouls hidden among bookshelves suddenly attack! 'More flesh for the golem!' Claws extended!",
-  "immediate_action": "DC 19 Perception to smell decay, or they attack with surprise",
-  "success": "You smell rot! Roll initiative normally.",
-  "failure": "Hidden attack! 1d3 Ghouls leap out! Paralysis risk!",
-  "creatures": "1d3 Ghouls",
-  "creature_reference": {
-    "Ghoul": {
-      "source": "creatures.json",
-      "aon_url": "https://2e.aonprd.com/Monsters.aspx?ID=218",
-      "level": 1,
-      "hp": 20,
-      "ac": 16,
-      "key_abilities": ["Paralytic claws: DC 15 Fort", "Ghoul fever: DC 15 Fort"]
-    }
-  },
-  "gm_notes": "Floor 3. Paralytic claws: DC 15 Fort or paralyzed 1 round. Ghoul fever: DC 15 Fort or contract disease. Cult of Canker seeks cankerous flesh for flesh golem in Temple (C34)."
-}
-```
-
-### Why This Works
-1. **GM can run it immediately** - all info is there
-2. **Players feel the world** - factions, motivations, lore
-3. **Combat is tactical** - specific abilities matter
-4. **Choices have weight** - consequences are clear
-5. **Lore is integrated** - every encounter teaches something
-6. **Stats are accurate** - pulled from creatures.json
-7. **Floors feel different** - each has unique ecology
-
-### The Creative Process
-1. Pick a generic event title
-2. Ask: "What floor is this for?"
-3. Ask: "What creatures live on that floor?"
-4. Look up their stats in creatures.json
-5. Ask: "What faction do they serve?"
-6. Ask: "What are they doing RIGHT NOW?"
-7. Ask: "What makes this encounter unique?"
-8. Write it like you're describing a movie scene
-9. Add all the mechanical details
-10. Add GM notes connecting to larger story
-
-### Red Flags (Don't Do This)
-- ❌ "A creature" → ✓ "1d3 Ghouls (Level 1, HP 20, AC 16)"
-- ❌ "Enemies" → ✓ "Morlocks from King Graulgust's pack"
-- ❌ "They attack" → ✓ "Paralytic claws: DC 15 Fort or paralyzed"
-- ❌ "Generic guards" → ✓ "Bearded devils enforcing Urevian's law"
-- ❌ "Some danger" → ✓ "Psychic Crush: 4d6 mental, DC 24 Will"
-- ❌ "Split the party" → ✓ "Rush vs Caution: REMOVE 1 DIE or ADD 1 DIE"
-
-### Remember
-The lore files are a GOLD MINE. Every generic event is a missed opportunity to make the dungeon feel alive, connected, and real. Use the lore. Use the stats. Make it specific. Make it sing.
-
----
-
-## Recent Updates
-
-### Dungeon Turn V2 - Extreme Encounters & No-Event Mechanic (Feb 2026)
-
-Major overhaul to the dungeon turn system with new probability distribution:
-
-#### New Event Distribution
-- **Extreme rolls (5-15, 90-100)**: Always generate COMBAT at floor level (deadly!)
-- **Non-extreme rolls**: 50% chance of NO_EVENT (quiet passage)
-- **Low rolls (5-44)**: COMBAT or ACTIVE_THREAT
-- **Middle rolls (45-62)**: OPPORTUNITY, COMPLICATION, or DILEMMA
-- **High rolls (63-100)**: ACTIVE_THREAT or COMBAT
-
-#### Extreme Combat Encounters
-- Use creatures at dungeon floor level (not party level -2)
-- Generate 1-3 creatures from floor-appropriate pool
-- Include floor-specific ecology and tactical notes
-- Mark as unavoidable with special GM notes
-- Low extreme rolls (5-15) can provide surprise rounds
-
-#### Bug Fixes
-- Fixed creature consistency bug where description said "2 Zombie Brute(s)" but creature list included random other creatures (e.g., Nuglub)
-- Now selects ONE creature type and uses it consistently throughout the encounter
-- Changed from `random.sample()` selecting multiple types to `random.choice()` selecting one type
-
-### Dungeon Event Tweaker Integration (Feb 2026)
-
-Added tactical variation system to web interface:
-
-#### Features
-- New "Tweak Event" button on generated encounters
-- Generates 3 spatial variations: Narrow Space, Open Area, Vertical Space
-- Each variation includes:
-  - Adapted positioning and terrain features
-  - Context-specific tactical options
-  - Modified skill checks for the environment
-  - Preserved core encounter elements
-- Copy-to-clipboard functionality for each variation
-- Modal interface with color-coded contexts
-
-#### API Endpoint
-- `/api/tweak` - POST endpoint for generating variations
-- Accepts event data in standard format
-- Returns array of tactical variations
-- Error handling for invalid events
-
-#### Implementation
-- Integrated `dungeon_event_tweaker` module into web app
-- Added modal UI with gradient styling
-- JavaScript functions for displaying and copying variations
-- Keyboard shortcut (ESC) to close modal

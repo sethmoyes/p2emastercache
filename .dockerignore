@@ -1,0 +1,20 @@
+# Only what the web app needs at runtime goes into the image.
+.git
+.gitignore
+.dockerignore
+.vscode
+.claude
+venv
+.venv
+common/
+art/
+etc/maps_src
+etc/*_backup.json
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/.hypothesis
+**/*.bak
+**/.DS_Store
+push.sh
+push.bat

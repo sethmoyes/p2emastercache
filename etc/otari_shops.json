@@ -1,0 +1,63 @@
+{
+  "_about": "Who runs each Otari shop, as players see it. From the Player's Guide and the corrected pages in common/campaign-reference/players/. What each shop stocks is decided in avtools/merchants.py (MERCHANT_CONFIGS). portrait is a known-good image URL or null.",
+  "otari_market": {
+    "description": "Large open-air market with diverse goods",
+    "proprietor": "Keeleno Lathenar (dour, humorless human merchant)",
+    "specialties": "All adventuring gear, weapons, armor, and general supplies",
+    "portrait": null
+  },
+  "wrins_wonders": {
+    "description": "Eccentric tiefling-elf oddities merchant and stargazer",
+    "proprietor": "Wrin Sivinxi (CG female tiefling elf oddities merchant 5)",
+    "specialties": "Magical items, spells, scrolls, staffs, spellhearts, runes, and alchemical potions",
+    "portrait": null
+  },
+  "odd_stories": {
+    "description": "Fiction-loving wizard's bookshop with a three-story stone tower, and Otari's source of textbooks and teaching tools",
+    "proprietor": "Morlibint (LN male human wizard 4)",
+    "specialties": "Books (fanciful fiction and anthologies; his husband, Carlos, curates non-fiction and textbooks), formulas, arcane and occult scrolls, runes, and spellcasting",
+    "portrait": "https://pathfinderwiki.com/w/images/4/41/Morlibint.jpg"
+  },
+  "gallentine_deliveries": {
+    "description": "Courier and delivery service: Otari's post, in town and beyond",
+    "proprietor": "Oloria Gallentine (LN female human ranger 4)",
+    "specialties": "Package and post delivery, stabling, and transportation for caravans or carriages",
+    "portrait": null
+  },
+  "blades_for_glades": {
+    "description": "Smithy for the lumber trade and adventurers alike",
+    "proprietor": "Carman Rajani (LE male human scoundrel 6)",
+    "specialties": "Metal adventuring gear, metal weapons, shields, and armor; saws, axes, and other lumber-trade tools",
+    "portrait": null
+  },
+  "crows_casks": {
+    "description": "Two-story stone tavern and brewery, and a shrine to Cayden Cailean",
+    "proprietor": "Magiloy (CG female tengu brewer 4)",
+    "specialties": "Beverages, meals, alchemical items, potions, oils, and divine scrolls",
+    "portrait": null
+  },
+  "crooks_nook": {
+    "description": "Tavern and inn built as a bridge over the Osprey River: best seafood in town, and the guildhall of the Osprey Club",
+    "proprietor": "Yinyasmera (CN female human smuggler 5)",
+    "specialties": "Beverages, meals, cheap lodging, illicit goods, thieves' gear, snares, and consumable items",
+    "portrait": null
+  },
+  "the_rowdy_rockfish": {
+    "description": "The quietest and quaintest of Otari's taverns",
+    "proprietor": "Brelda Venkervale (LG female dwarf innkeeper 3)",
+    "specialties": "Beverages, meals, and lodging",
+    "portrait": null
+  },
+  "otari_fishery": {
+    "description": "Fishery and pier by day; games, snacks, and entertainment on the ground floor by night",
+    "proprietor": "Tamily Tanderveil (NG female human harbor warden 3)",
+    "specialties": "Beverages, meals, transportation on sailing ships, fresh fish, and fishing supplies",
+    "portrait": null
+  },
+  "dawnflower_library": {
+    "description": "Temple of Sarenrae, library and scriptorium",
+    "proprietor": "Vandy Banderdash (NG female halfling cleric of Sarenrae 5)",
+    "specialties": "Books, healing magic, religious items (including +1 favored weapons of Cayden Cailean, Erastil, Gozreh, and Sarenrae), divine scrolls, and runes",
+    "portrait": "https://pathfinderwiki.com/w/images/6/6f/Vandy_Banderdash.png"
+  }
+}

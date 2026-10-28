@@ -11,7 +11,7 @@
 **Read-Aloud:** A heavy thud shakes dust from the ceiling. A massive silhouette lumbers into view, dragging a crude weapon along the stone. The creature snorts, eyes narrowing as it notices you, and raises its club with a low, eager growl.
 
 **Creature:** Ogre Warrior (Level 3, Common)  
-https://2e.aonprd.com/Monsters.aspx?ID=317
+https://2e.aonprd.com/Monsters.aspx?ID=3118
 
 **GM Notes:** The ogre charges immediately, favoring the largest or most heavily armored PC. It fights brutally but without tactics. Uses Power Attack when it can.
 
@@ -25,7 +25,7 @@ https://2e.aonprd.com/Monsters.aspx?ID=317
 **Read-Aloud:** The stone beneath your feet vibrates faintly. From the shadows, segmented legs scrape against rock as a massive shape unfolds, stinger arching high.
 
 **Creature:** Giant Scorpion (Level 3, Common)  
-https://2e.aonprd.com/Monsters.aspx?ID=356
+https://2e.aonprd.com/Monsters.aspx?ID=3175
 
 **GM Notes:** The scorpion targets isolated PCs and uses its grab to restrain prey. Prioritizes Sting attacks against grabbed targets.
 
@@ -39,7 +39,7 @@ https://2e.aonprd.com/Monsters.aspx?ID=356
 **Read-Aloud:** The corpse's fingers twitch. Its jaw snaps open with a wet crack as it hauls itself upright, eyes burning with unnatural hunger.
 
 **Creature:** Wight (Level 3, Common)  
-https://2e.aonprd.com/Monsters.aspx?ID=413
+https://2e.aonprd.com/Monsters.aspx?ID=3239
 
 **GM Notes:** The wight fights intelligently, attempting to isolate and drain a weakened PC. Uses Drain Life on grabbed targets.
 
@@ -68,8 +68,8 @@ https://2e.aonprd.com/Monsters.aspx?ID=218
 
 **Read-Aloud:** Fine strands brush your skin. Above, something large shifts, dislodging dust as it descends.
 
-**Creature:** Hunting Spider (Level -1, Common)  
-https://2e.aonprd.com/Monsters.aspx?ID=1203
+**Creature:** Hunting Spider (Level 1, Common)  
+https://2e.aonprd.com/Monsters.aspx?ID=4007
 
 **GM Notes:** The spider uses webs to control the battlefield before striking. Attempts to drag prey into web-choked corners. Flees if seriously wounded.
 
@@ -83,7 +83,7 @@ https://2e.aonprd.com/Monsters.aspx?ID=1203
 **Read-Aloud:** The air thickens. A translucent shape fills the passage, its surface rippling as debris drifts inside it.
 
 **Creature:** Gelatinous Cube (Level 3, Common)  
-https://2e.aonprd.com/Monsters.aspx?ID=241
+https://2e.aonprd.com/Monsters.aspx?ID=321
 
 **GM Notes:** The cube advances slowly but relentlessly, punishing careless movement. Engulf is its primary tactic.
 
@@ -126,8 +126,8 @@ https://2e.aonprd.com/Hazards.aspx?ID=4
 
 **Read-Aloud:** The ground ripples as dozens of tiny bodies spill outward, chittering wildly.
 
-**Creature:** Giant Centipede (Level 0, Common)  
-https://2e.aonprd.com/Monsters.aspx?ID=77
+**Creature:** Giant Centipede (Level -1, Common)  
+https://2e.aonprd.com/Monsters.aspx?ID=2875
 
 **GM Notes:** Swarms from multiple directions. Weak individually but dangerous in numbers.
 
@@ -141,7 +141,7 @@ https://2e.aonprd.com/Monsters.aspx?ID=77
 **Read-Aloud:** Bone scrapes stone as a skeletal figure turns toward you, weapon raised in silent command.
 
 **Creature:** Skeleton Guard (Level -1, Common)  
-https://2e.aonprd.com/Monsters.aspx?ID=372
+https://2e.aonprd.com/Monsters.aspx?ID=4004
 
 **GM Notes:** Mindless but follows last orders—patrol and attack intruders. Vulnerable to bludgeoning.
 
@@ -155,7 +155,7 @@ https://2e.aonprd.com/Monsters.aspx?ID=372
 **Read-Aloud:** Bones scrape stone as it lurches forward, arms outstretched.
 
 **Creature:** Zombie Shambler (Level -1, Common)  
-https://2e.aonprd.com/Monsters.aspx?ID=423
+https://2e.aonprd.com/Monsters.aspx?ID=3249
 
 **GM Notes:** Mindless, slow. Grabs and bites. Vulnerable to slashing.
 
@@ -199,7 +199,7 @@ https://2e.aonprd.com/Hazards.aspx?ID=2
 **Read-Aloud:** Squeaking fills the air as dozens of rats pour from the shadows.
 
 **Creature:** Giant Rat (Level -1, Common)  
-https://2e.aonprd.com/Monsters.aspx?ID=346
+https://2e.aonprd.com/Monsters.aspx?ID=3162
 
 **GM Notes:** Nuisance more than threat. Flees if 2+ are killed.
 
@@ -213,7 +213,7 @@ https://2e.aonprd.com/Monsters.aspx?ID=346
 **Read-Aloud:** Tiny shapes skitter across the webs, moving as one.
 
 **Creature:** Spider Swarm (Level 0, Common)  
-https://2e.aonprd.com/Monsters.aspx?ID=386
+https://2e.aonprd.com/Monsters.aspx?ID=3206
 
 **GM Notes:** Swarm tactics. Vulnerable to area damage.
 
@@ -226,8 +226,8 @@ https://2e.aonprd.com/Monsters.aspx?ID=386
 
 **Read-Aloud:** A small reptilian figure peers from behind cover, clutching a sling.
 
-**Creature:** Kobold Scout (Level -1, Common)  
-https://2e.aonprd.com/Monsters.aspx?ID=274
+**Creature:** Kobold Scout (Level 1, Common)  
+https://2e.aonprd.com/NPCs.aspx?ID=3073
 
 **GM Notes:** Skirmisher. Calls for help if not silenced quickly.
 

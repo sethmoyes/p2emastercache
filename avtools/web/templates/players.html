@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}Otari Market Square{% endblock %}
+
+{% block content %}
+{% include '_art.html' %}
+<h1 class="text-3xl sm:text-4xl font-bold mb-1">All Shops</h1>
+<p class="text-gray-400 mb-6">What's for sale in town this week.</p>
+
+<section aria-labelledby="shops-heading" class="mb-8">
+    <h2 id="shops-heading" class="sr-only">Shops</h2>
+    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {% for shop in shops %}
+        <a href="/players/shop/{{ shop.slug }}" class="block bg-gray-800 hover:bg-gray-700 border border-gray-700 hover:border-blue-500 rounded-lg overflow-hidden transition flex flex-col">
+            {% if shop.portrait %}
+            <img src="{{ shop.portrait }}" alt="{{ shop.proprietor_name }}" class="w-full h-40 object-cover object-top" loading="lazy">
+            {% else %}
+            <div class="w-full h-40" role="img" aria-label="{{ shop.name }}" style="height:10rem;display:flex;align-items:center;justify-content:center;font-size:4.5rem;background:linear-gradient(135deg,{{ shop.tint[0] }},{{ shop.tint[1] }})">{{ shop.icon }}</div>
+            {% endif %}
+            <div class="p-4 flex flex-col flex-grow">
+                <div class="flex justify-between items-start gap-2 mb-2">
+                    <h3 class="text-lg font-bold">{{ shop.name }}</h3>
+                    {% if shop.updated %}<span class="text-xs text-gray-400 whitespace-nowrap">Stocked {{ shop.updated }}</span>{% endif %}
+                </div>
+                <p class="text-sm text-gray-300 mb-2">{{ shop.specialties }}</p>
+                <p class="text-xs text-gray-400 mt-auto">{{ shop.proprietor }}</p>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="grid gap-3 sm:grid-cols-2">
+    <a href="/atlas{% if otari %}#otari{% endif %}" class="block bg-gray-800 hover:bg-gray-700 border border-gray-700 hover:border-blue-500 rounded-lg overflow-hidden transition">
+        {% if otari and otari.thumb %}<img src="{{ otari.thumb }}" alt="Map of Otari" class="w-full h-40 object-cover" loading="lazy">{% endif %}
+        <div class="p-4">
+            <h2 class="text-lg font-bold">Town map</h2>
+            <p class="text-sm text-gray-300">Otari, Absalom and the Inner Sea</p>
+        </div>
+    </a>
+    <a href="/players/guide" class="block bg-gray-800 hover:bg-gray-700 border border-gray-700 hover:border-blue-500 rounded-lg p-4 transition">
+        <h2 class="text-lg font-bold">Exploration guide</h2>
+        <p class="text-sm text-gray-300">How time, the dice jar and dungeon turns work</p>
+    </a>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/art.js') }}"></script>
+{% endblock %}

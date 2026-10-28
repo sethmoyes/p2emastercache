@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}Restock & Admin - GM{% endblock %}
+{% block nav_links %}
+<a href="/gm" class="bg-purple-700 hover:bg-purple-600 px-3 py-2 rounded-lg">Back to the table</a>
+{% endblock %}
+
+{% block content %}
+<h1 class="text-3xl font-bold mb-6">Restock &amp; Admin</h1>
+
+<section class="bg-gray-800 border border-gray-700 rounded-lg p-4 mb-6" aria-labelledby="restock-heading">
+    <h2 id="restock-heading" class="text-2xl font-bold mb-1">Restock merchants</h2>
+    <p class="text-sm text-gray-400 mb-4">Rolls new inventory for Otari's shops and a new set of traveling merchants. Players see each shop's new stock as soon as it finishes.</p>
+    <div id="restock-form" class="grid md:grid-cols-2 gap-4 mb-4">
+        <p class="text-gray-400">Loading settings...</p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-2">
+        <button type="button" id="restock-btn" class="flex-1 bg-indigo-600 hover:bg-indigo-700 disabled:bg-gray-600 disabled:cursor-not-allowed px-4 py-3 rounded-lg font-bold">Restock merchants</button>
+        <button type="button" id="restock-reset" class="bg-gray-600 hover:bg-gray-500 px-4 py-3 rounded-lg text-sm">Reset to defaults</button>
+    </div>
+    <div id="restock-progress" class="hidden mt-4">
+        <div class="w-full bg-gray-600 rounded-full h-4 mb-2">
+            <div id="restock-bar" class="bg-indigo-600 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+        <p id="restock-status" class="text-sm text-gray-300 text-center mb-2" aria-live="polite"></p>
+        <details id="restock-log-details" class="text-xs">
+            <summary class="cursor-pointer text-gray-400 hover:text-gray-300">Show log</summary>
+            <pre id="restock-log" class="bg-gray-900 p-3 rounded mt-2 max-h-64 overflow-auto whitespace-pre-wrap text-gray-300"></pre>
+        </details>
+    </div>
+</section>
+
+<section class="bg-gray-800 border border-gray-700 rounded-lg p-4 mb-6" aria-labelledby="backup-heading">
+    <h2 id="backup-heading" class="text-2xl font-bold mb-1">Backup</h2>
+    <p class="text-sm text-gray-400 mb-3">A zip of everything the server has written: shops, traveling merchants, map pins and the session. Unzip it in the repo root (<code>unzip -o</code>) and commit it.</p>
+    <button type="button" id="backup-btn" class="bg-gray-600 hover:bg-gray-500 px-4 py-2 rounded-lg">Download backup</button>
+</section>
+
+<section class="bg-gray-800 border border-gray-700 rounded-lg p-4" aria-labelledby="test-heading">
+    <h2 id="test-heading" class="text-2xl font-bold mb-1">Test the dungeon turn</h2>
+    <p class="text-sm text-gray-400 mb-3">Ten rolls on the session's floor and party, skipping quiet passages. Nothing is recorded and the jar is untouched.</p>
+    <button type="button" id="test-btn" class="bg-gray-600 hover:bg-gray-500 px-4 py-2 rounded-lg">Run 10 test rolls</button>
+    <div id="test-output" class="space-y-4 mt-4"></div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/encounter_card.js') }}"></script>
+<script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+{% endblock %}
