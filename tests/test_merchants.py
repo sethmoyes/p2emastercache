@@ -64,3 +64,28 @@ def test_items_get_a_kind_from_their_category():
         {'name': 'A House', 'type': 'adventuring', 'item_category': 'Structures', 'price': '100 gp', 'level': 0, 'rarity': 'common'},
     ])
     assert [(i['name'], i['kind']) for i in items] == [('Longsword', 'weapon')]
+
+
+def test_talisman_shop_is_closed_unless_opened(tmp_path):
+    restock(tmp_path, 4, random_merchants=0)
+    assert not (tmp_path / 'players' / 'the_knotted_charm.md').exists()
+
+
+@pytest.mark.parametrize('level', [1, 4, 12, 20])
+def test_talisman_shop_opens_with_talismans_in_reach_and_closes_again(tmp_path, level):
+    restock(tmp_path, level, merchants=[], random_merchants=0, talisman_shop=True)
+    path = tmp_path / 'players' / 'the_knotted_charm.md'
+    text = path.read_text()
+    assert os.listdir(tmp_path / 'players') == ['the_knotted_charm.md']
+    rows = re.findall(r'^\| ([^|]+) \| (\d+) \| [^|]+ \| (Common|Uncommon|Rare) \| [^|]+ \| [^|]+ \| \[View\]', text, re.M)
+    assert rows and all(int(row_level) <= level for _, row_level, _ in rows)
+    assert 9 <= potion_count(text) <= 18
+    text.encode('ascii')
+
+    restock(tmp_path, level, merchants=['otari_fishery'], random_merchants=0)
+    assert not path.exists()
+
+
+def test_optional_shops_stay_out_of_the_shop_checklist():
+    assert 'the_knotted_charm' not in g.normalize_settings({'merchants': ['the_knotted_charm']})['merchants']
+    assert 'the_knotted_charm' not in g.REGULAR_SLUGS

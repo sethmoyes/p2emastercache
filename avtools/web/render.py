@@ -61,10 +61,10 @@ def render_markdown(text):
 # a details sheet. It reads old files (with an Image column) and new ones alike.
 
 SECTION_KINDS = [('potion', 'potion', 'Potions'), ('scroll', 'scroll', 'Scrolls'),
-                 ('rune', 'rune', 'Runes')]
+                 ('rune', 'rune', 'Runes'), ('talisman', 'talisman', 'Talismans')]
 RARITIES = ('common', 'uncommon', 'rare', 'unique')
 FACT_COLUMNS = [('dc', 'DC'), ('traditions', 'Traditions'),
-                ('range', 'Range'), ('traits', 'Traits')]
+                ('range', 'Range'), ('traits', 'Traits'), ('affix to', 'Affix to')]
 EMPTY = {'', 'n/a', '-'}
 # Item art older restocks linked on AoN, which no longer serves it (all 404 since 2026-10)
 DEAD_IMAGES = re.compile(r'^https://2e\.aonprd\.com/Images/', re.I)

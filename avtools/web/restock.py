@@ -158,7 +158,7 @@ def merchant_generator_config():
         'schema': SETTINGS_SCHEMA,
         'merchants': [
             {'slug': merchant_slug(c['name']), 'name': c['name'], 'specialties': c['specialties']}
-            for c in MERCHANT_CONFIGS
+            for c in MERCHANT_CONFIGS if not c.get('optional')  # those have their own setting
         ],
         'job': merchant_job_view(merchant_job) if merchant_job else None,
     })
@@ -170,7 +170,8 @@ def start_merchant_job():
     """Start a restock in the background; the GM page polls the status endpoint."""
     global merchant_job
     settings = normalize_settings(json_body())
-    if not settings['merchants'] and not settings['random_merchants']:
+    opened = sum(1 for c in MERCHANT_CONFIGS if c.get('optional') and settings[c['optional']])
+    if not settings['merchants'] and not settings['random_merchants'] and not opened:
         return jsonify({'error': 'Pick at least one shop or traveling merchant.'}), 400
 
     with merchant_job_lock:
@@ -180,7 +181,7 @@ def start_merchant_job():
             'status': 'running',
             'settings': settings,
             'step': 0,
-            'total': len(settings['merchants']) + settings['random_merchants'],
+            'total': len(settings['merchants']) + opened + settings['random_merchants'],
             'current': None,
             'started': time.time(),
             'finished': None,

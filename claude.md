@@ -42,7 +42,11 @@ Data the tools read, in `etc/`:
 - **`dungeon_turn_events.json`** - OPPORTUNITY, COMPLICATION, DILEMMA and
   ACTIVE_THREAT templates. Templates with `"retired"` stay on file but never roll.
 - **`floor_ecology.json`** - see above
-- **`otari_shops.json`** - who runs each Otari shop
+- **`otari_shops.json`** - who runs each Otari shop, and their portrait (their own
+  art, else a fitting Pathfinder NPC's from PathfinderWiki; Wrin's is cropped from
+  the Ruins of Gauntlight cover into `static/art/portraits/`)
+- **`talismans.json`** - talismans and fulu from AoN, for the talisman shop
+  (`bin/data_management/fetch_talismans.py`; `equipment.json` has none)
 - **`dieties.json`** - deities (read by the integrity checker)
 - **`room_encounters.json`** - the creatures in each keyed room (A1-J20), by AoN
   page and count, for the combat tracker. Hand-built from the floor docs' "Creatures
@@ -66,6 +70,13 @@ Defaults (all adjustable from the GM page's Restock panel):
   one Spell Slot Restoration Potion
 - Traveling merchants: written to `gm/traveling_merchant_N.md`; a restock
   replaces the whole set
+- The Knotted Charm (Krev's talisman shop, party 2 only): off by default. With
+  `talisman_shop` on, every restock stocks it (12-24 common, 4-9 uncommon, 0-1
+  rare talismans up to the max item level, plus talisman cords and potions);
+  with it off, a restock deletes its file and `/players` stops listing it. The
+  shop and Ostrin Vael are invented for this campaign, not from the books. Its
+  file is git- and docker-ignored so it only ever exists on the server that
+  opened it.
 
 ### Dungeon Turn (`avtools/dungeon_turn.py`, `avtools/ecology.py`)
 - 5d20. Extreme rolls (5-15, 90-100) are always combat at a Severe or Extreme

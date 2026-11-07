@@ -1,9 +1,11 @@
-# fly.toml app configuration file generated for p2emastercache2 on 2026-06-24T19:25:51Z
+# fly.toml app configuration file generated on 2026-06-24T19:25:51Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
+# Two apps run from this file: p2emastercache and strange-company (pass -a to
+# pick; p2emastercache2 was deleted 2026-11-06). Deploy with --ha=false.
 
-app = 'p2emastercache2'
+app = 'p2emastercache'
 primary_region = 'dfw'
 
 [build]

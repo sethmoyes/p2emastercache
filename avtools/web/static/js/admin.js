@@ -125,7 +125,7 @@ function readRestockForm() {
 
 async function startRestock() {
     const settings = readRestockForm();
-    if (!settings.merchants.length && !settings.random_merchants) {
+    if (!settings.merchants.length && !settings.random_merchants && !settings.talisman_shop) {
         alert('Pick at least one shop, or create at least one traveling merchant.');
         return;
     }

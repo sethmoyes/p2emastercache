@@ -81,3 +81,29 @@ def test_markdown_drops_placeholder_image_columns_and_unsafe_links():
     assert 'javascript:' not in html
     assert 'target="_blank"' in html
     assert 'table-scroll' in html
+
+
+def test_talisman_shop_shows_only_while_open(client, app_module):
+    import contextlib
+    import os
+    import avtools.merchants as g
+    from avtools.web.core import DATA_DIR
+    assert 'The Knotted Charm' not in client.get('/players').get_data(as_text=True)
+    assert client.get('/players/shop/the_knotted_charm').status_code == 404
+
+    settings = g.normalize_settings({'merchants': [], 'random_merchants': 0, 'talisman_shop': True,
+                                     'fetch_portraits': False})
+    with contextlib.redirect_stdout(io.StringIO()):
+        g.generate_all(settings, DATA_DIR)
+    try:
+        assert 'The Knotted Charm' in client.get('/players').get_data(as_text=True)
+        page = client.get('/players/shop/the_knotted_charm').get_data(as_text=True)
+        assert 'Talismans' in page and 'Affix to' in page
+    finally:
+        os.remove(os.path.join(DATA_DIR, 'players', 'the_knotted_charm.md'))
+
+
+def test_restock_form_offers_the_talisman_shop_as_a_setting(client):
+    data = client.get('/api/merchant-generator').get_json()
+    assert 'the_knotted_charm' not in [m['slug'] for m in data['merchants']]
+    assert any(f['key'] == 'talisman_shop' and f['default'] is False for f in data['schema'])

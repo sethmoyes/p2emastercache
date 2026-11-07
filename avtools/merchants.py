@@ -302,6 +302,18 @@ def generate_potion_inventory(equipment, player_level, count_range=(3, 6), level
 
     return potions
 
+def generate_talisman_inventory(talismans, equipment, max_level, common_range, uncommon_range, rare_range):
+    """Talismans (etc/talismans.json) up to max_level, plus the talisman cords that hold them"""
+    in_reach = [t for t in talismans if t['level'] <= max_level]
+    inventory = {}
+    for rarity, count_range in (('common', common_range), ('uncommon', uncommon_range), ('rare', rare_range)):
+        pool = [t for t in in_reach if t['rarity'] == rarity]
+        picked = random.sample(pool, min(random.randint(*count_range), len(pool)))
+        inventory[rarity] = sorted(picked, key=lambda t: (t['level'], t['name']))
+    inventory['cords'] = [e for e in equipment if e['name'].startswith('Talisman Cord')]
+    return inventory
+
+
 def generate_merchant_inventory(equipment, categories, num_common, num_uncommon, item_filter=None):
     """Generate random inventory from equipment filtered by player level
     
@@ -364,6 +376,18 @@ def _write_item_table(f, title, items):
     f.write("\n")
 
 
+def _write_talisman_table(f, title, talismans):
+    f.write(f"## {title} ({len(talismans)})\n\n")
+    f.write("| Name | Level | Price | Rarity | Affix To | Effect | Link |\n")
+    f.write("|------|-------|-------|--------|----------|--------|------|\n")
+    for t in talismans:
+        affix = t['usage'].replace('affixed to ', '') or 'N/A'
+        effect = t['summary'].replace('|', '/') or 'N/A'
+        f.write(f"| {t['name']} | {t['level']} | {t['price']} | {capitalize_field(t['rarity'])} "
+                f"| {affix} | {effect} | [View]({data.AON_BASE}{t['url']}) |\n")
+    f.write("\n")
+
+
 def stack(items):
     """[(item, count)] in first-seen order, identical names counted once"""
     counts = {}
@@ -372,7 +396,7 @@ def stack(items):
     return [tuple(pair) for pair in counts.values()]
 
 
-def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, spell_inventory=None, rune_inventory=None, potion_inventory=None, output_dir='players', portrait=None, filename=None):
+def write_merchant_with_header(merchant_name, description, proprietor, specialties, inventory, services=None, spell_inventory=None, rune_inventory=None, potion_inventory=None, output_dir='players', portrait=None, filename=None, talisman_inventory=None):
     """Write merchant file with header, proprietor portrait, and full item details"""
     filename = filename or merchant_name.lower().replace(' ', '_').replace("'", '') + '.md'
     filepath = os.path.join(output_dir, filename)
@@ -461,6 +485,25 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
                             f"| {capitalize_field(rune['rarity'])} | {_item_link(rune['name'])} |\n")
                 f.write("\n")
 
+            f.write("---\n\n")
+
+        # Talisman section (the talisman shop)
+        if talisman_inventory:
+            f.write("# TALISMANS\n\n")
+            f.write("*Affixing a talisman takes 10 minutes with a repair toolkit; an item holds one talisman "
+                    "at a time, and a talisman is used up when activated.*\n\n")
+            for rarity in ('common', 'uncommon', 'rare'):
+                if talisman_inventory[rarity]:
+                    _write_talisman_table(f, f"{rarity.capitalize()} Talismans", talisman_inventory[rarity])
+            if talisman_inventory['cords']:
+                f.write("## Talisman Cords\n\n")
+                f.write("*Worn cords that hold talismans of their own; see each cord's page for how many.*\n\n")
+                f.write("| Name | Level | Price | Rarity | Link |\n")
+                f.write("|------|-------|-------|--------|------|\n")
+                for cord in talisman_inventory['cords']:
+                    f.write(f"| {cord['name']} | {cord['level']} | {fix_price(cord['price'])} "
+                            f"| {capitalize_field(cord['rarity'])} | {_item_link(cord['name'])} |\n")
+                f.write("\n")
             f.write("---\n\n")
 
         # Regular items section
@@ -638,13 +681,33 @@ MERCHANT_CONFIGS = [
             "Research assistance: Free for worshippers, 2 gp per day for others",
             "Blessings: Donation-based"
         ]
+    },
+    {
+        # Not in the books: Krev's (party 2) talisman shop. Only open while its
+        # setting is on; with it off, a restock closes the shop.
+        'name': 'The Knotted Charm',
+        'categories': [],  # stocks etc/talismans.json, not equipment.json
+        'item_filter': None,
+        'double_items': False,
+        'sells_talismans': True,
+        'optional': 'talisman_shop',
+        'services': [
+            "Affixing a talisman: free with purchase, 1 sp otherwise",
+            "Talismans made to order: the talisman's price, ready in 2 days (GM discretion)",
+            "Identifying a talisman or charm: 1 gp",
+            "Esoterica appraisal: Ostrin will tell you what a curio is good for, for a price (GM discretion)"
+        ]
     }
 ]
 
 for _config in MERCHANT_CONFIGS:
     _config.update(data.shops()[merchant_slug(_config['name'])])
 
+# The shops every restock offers; optional ones open only when their setting is on
+REGULAR_SLUGS = [merchant_slug(c['name']) for c in MERCHANT_CONFIGS if not c.get('optional')]
+
 TRAVELING = 'Traveling merchants (GM only)'
+TALISMANS = "Krev's talisman shop (party 2)"
 
 # Every knob the generator has. The GM page builds its restock form from this list,
 # so a new setting only needs adding here. Ranges are [min, max], rolled per merchant.
@@ -659,7 +722,7 @@ SETTINGS_SCHEMA = [
      'label': 'Look up shopkeeper portraits',
      'help': 'Checks PathfinderWiki for each proprietor, falling back to a stock portrait.'},
     {'group': 'Shops to restock', 'key': 'merchants', 'type': 'merchants',
-     'default': [merchant_slug(c['name']) for c in MERCHANT_CONFIGS],
+     'default': REGULAR_SLUGS,
      'label': 'Shops', 'help': 'Unchecked shops keep their current stock.'},
     {'group': 'Shop stock', 'key': 'common', 'type': 'range', 'default': [9, 45], 'min': 0, 'max': 150,
      'label': 'Common items per shop'},
@@ -698,12 +761,22 @@ SETTINGS_SCHEMA = [
      'label': 'Uncommon items'},
     {'group': TRAVELING, 'key': 'random_rare', 'type': 'range', 'default': [0, 6], 'min': 0, 'max': 20,
      'label': 'Rare items'},
+    {'group': TALISMANS, 'key': 'talisman_shop', 'type': 'bool', 'default': False,
+     'label': 'Open The Knotted Charm',
+     'help': 'For party 2 only. On: every restock restocks it with talismans. Off: a restock closes it '
+             'and players no longer see it.'},
+    {'group': TALISMANS, 'key': 'talisman_common', 'type': 'range', 'default': [12, 24], 'min': 0, 'max': 80,
+     'label': 'Common talismans'},
+    {'group': TALISMANS, 'key': 'talisman_uncommon', 'type': 'range', 'default': [4, 9], 'min': 0, 'max': 40,
+     'label': 'Uncommon talismans'},
+    {'group': TALISMANS, 'key': 'talisman_rare', 'type': 'range', 'default': [0, 1], 'min': 0, 'max': 5,
+     'label': 'Rare talismans'},
 ]
 
 def normalize_settings(raw=None):
     """Fill in defaults and clamp every value to its schema bounds"""
     raw = raw or {}
-    known_merchants = [merchant_slug(c['name']) for c in MERCHANT_CONFIGS]
+    known_merchants = REGULAR_SLUGS
     settings = {}
     for field in SETTINGS_SCHEMA:
         value = raw.get(field['key'], field['default'])
@@ -749,7 +822,9 @@ def generate_all(settings, output_root=PROJECT_ROOT):
     player_level = settings['player_level']
     max_item_level = player_level + settings['item_level_offset']
     spell_level = player_level + settings['spell_level_offset']
-    selected = [c for c in MERCHANT_CONFIGS if merchant_slug(c['name']) in settings['merchants']]
+    selected = [c for c in MERCHANT_CONFIGS if merchant_slug(c['name']) in settings['merchants']
+                or (c.get('optional') and settings[c['optional']])]
+    closed = [c for c in MERCHANT_CONFIGS if c.get('optional') and not settings[c['optional']]]
     total = len(selected) + settings['random_merchants']
 
     print(f"Generating merchants for player level {player_level}")
@@ -774,6 +849,18 @@ def generate_all(settings, output_root=PROJECT_ROOT):
     gm_dir = os.path.join(output_root, 'gm')
     os.makedirs(players_dir, exist_ok=True)
     os.makedirs(gm_dir, exist_ok=True)
+
+    # Optional shops whose setting is off are closed: players stop seeing them
+    for config in closed:
+        path = os.path.join(players_dir, merchant_slug(config['name']) + '.md')
+        if os.path.exists(path):
+            os.remove(path)
+            print(f"  Closed {config['name']}")
+
+    talismans = None
+    if any(c.get('sells_talismans') for c in selected):
+        talismans = load_equipment_json(os.path.join(PROJECT_ROOT, 'etc', 'talismans.json'))['talismans']
+        print(f"  Loaded {len(talismans)} talismans")
 
     # Pick which shops get a rare item (Otari Market rolls its own; service-only shops can't stock one)
     rare_eligible = [c['name'] for c in selected if c['categories'] and not c.get('double_items')]
@@ -845,6 +932,14 @@ def generate_all(settings, output_root=PROJECT_ROOT):
             print(f"  Fundamental runes in stock: {len(rune_inventory['fundamental'])}")
             print(f"  Added {len(rune_inventory['other'])} property runes")
 
+        talisman_inventory = None
+        if config.get('sells_talismans'):
+            talisman_inventory = generate_talisman_inventory(
+                talismans, equipment, max_item_level,
+                settings['talisman_common'], settings['talisman_uncommon'], settings['talisman_rare']
+            )
+            print(f"  Added {sum(len(talisman_inventory[r]) for r in ('common', 'uncommon', 'rare'))} talismans")
+
         # Every merchant stocks healing potions
         potion_inventory = generate_potion_inventory(
             equipment, player_level, settings['potions'], settings['potion_level_offset']
@@ -862,7 +957,8 @@ def generate_all(settings, output_root=PROJECT_ROOT):
             rune_inventory,
             potion_inventory,
             output_dir=players_dir,
-            portrait=shop_portrait(config)
+            portrait=shop_portrait(config),
+            talisman_inventory=talisman_inventory
         )
 
     # Generate random merchants for GM
@@ -1009,5 +1105,8 @@ if __name__ == "__main__":
         print(f"TEST MODE: Only generating {test_merchant}\n")
         raw_settings['merchants'] = [test_merchant]
         raw_settings['random_merchants'] = 0
+        for config in MERCHANT_CONFIGS:
+            if config.get('optional'):
+                raw_settings[config['optional']] = merchant_slug(config['name']) == test_merchant
 
     generate_all(normalize_settings(raw_settings), output_root)

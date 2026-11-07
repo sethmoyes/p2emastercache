@@ -35,6 +35,7 @@ SHOP_ART = {
     'the_rowdy_rockfish': ('\U0001F6CF\uFE0F', ('#7c2d12', '#c2410c')),
     'otari_fishery': ('\U0001F41F', ('#0c4a6e', '#0e7490')),
     'dawnflower_library': ('\u2600\uFE0F', ('#92400e', '#f59e0b')),
+    'the_knotted_charm': ('\U0001F9FF', ('#3b0764', '#0f766e')),
 }
 DEFAULT_ART = ('\U0001F3EA', ('#1f2937', '#4b5563'))
 
@@ -44,6 +45,8 @@ def shop_list():
     for config in MERCHANT_CONFIGS:
         slug = merchant_slug(config['name'])
         path = merchant_path('players', f'{slug}.md')
+        if config.get('optional') and not path:
+            continue  # closed (the GM hasn't opened it with a restock)
         shops.append({
             'slug': slug,
             'name': config['name'],

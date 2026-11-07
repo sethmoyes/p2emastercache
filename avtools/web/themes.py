@@ -91,6 +91,15 @@ THEMES = {
         'light': dict(bg='#f6eee6', bg2='#ecdfd2', surface='#fffcf8', surface2='#fbf3ea', ink='#2b1913',
                       soft='#5e463b', accent='#9a3412', on_accent='#ffffff', line='#d6bfae', deco='#c9907a'),
     },
+    'the_knotted_charm': {
+        'font': 'IM Fell English SC', 'file': 'im-fell-english-sc', 'weight': 400, 'crest': 'talisman',
+        'tagline': 'Knotted, nailed and blessed',
+        'band': dict(band='#2a1235', band2='#45204f', band_ink='#f5ecf7', trim='#7fd1bf'),
+        'dark': dict(bg='#140c18', bg2='#1f1325', surface='#22172a', surface2='#2b1d35', ink='#f1e9f4',
+                     soft='#cbbbd2', accent='#7fd8c4', on_accent='#140c18', line='#4a3555', deco='#3f8f80'),
+        'light': dict(bg='#f1ebf2', bg2='#e3d8e6', surface='#fdfbfd', surface2='#f6f0f7', ink='#1f1426',
+                      soft='#4f3f58', accent='#0f5f55', on_accent='#ffffff', line='#c9b8cf', deco='#8a5d9a'),
+    },
     'otari_fishery': {
         'font': 'Marcellus SC', 'file': 'marcellus-sc', 'weight': 400, 'crest': 'hook',
         'tagline': 'Fresh off the pier',

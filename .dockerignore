@@ -21,3 +21,5 @@ push.bat
 # Local runtime state: the server keeps its own on the volume
 state/
 cache/
+# Party 2's talisman shop: opened per server from the GM restock panel
+players/the_knotted_charm.md

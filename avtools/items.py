@@ -130,7 +130,7 @@ CATEGORY_KINDS = {
     'Assistive Items': 'tools', 'Customizations': 'tools', 'Materials': 'gem', 'Trade Goods': 'coins',
     'Grafts': 'alchemy', 'Potions': 'potion',
 }
-SECTION_KINDS = {'potion': 'potion', 'scroll': 'scroll', 'rune': 'rune'}
+SECTION_KINDS = {'potion': 'potion', 'scroll': 'scroll', 'rune': 'rune', 'talisman': 'talisman'}
 
 
 def item_kind(name, section=None):

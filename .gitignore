@@ -16,6 +16,8 @@ junk_items.log
 state/
 # Stat blocks the combat tracker fetched from the Archives of Nethys
 cache/
+# Party 2's talisman shop exists only once the GM opens it on that server, so never ship one
+players/the_knotted_charm.md
 
 # Agent notes and handoffs (local only)
 .claude/*.md
