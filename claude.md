@@ -53,6 +53,20 @@ Data the tools read, in `etc/`:
   by room" tables (remaster stat block where AoN has one; `as` keeps the book's name;
   `unresolved` lists what AoN lacks or the captions garble). Floor docs win.
 - **`conditions.json`** - PF2e conditions and what each does to a creature's numbers
+- **`pathbuilder_items.json`** - rules text, traits and weapon/armor/shield numbers per
+  item, for the shop pages' Pathbuilder export (`avtools/pathbuilder.py`); built by
+  `bin/data_management/fetch_pathbuilder_items.py` from AoN
+
+### Pathbuilder export (`avtools/pathbuilder.py`)
+- Each shop page's "Add to Pathbuilder" button downloads the picked items (all by
+  default) as a Pathbuilder 2e custom pack: `/players/shop/<slug>/pathbuilder.json`.
+  Importing needs Pathbuilder's paid version; the dialog and `/players/pathbuilder`
+  (`docs/PATHBUILDER_GUIDE.md`) say so.
+- One pack ID for every shop and item IDs from the item's name, so re-importing
+  updates instead of duplicating. Gear is category 8, shields -1, as in community packs.
+- Scroll rules (one use when cast; Learn a Spell for spellbook and familiar casters,
+  spontaneous casters only at level-up or retraining) are worded once in
+  `avtools/items.py` (`SCROLL_CASTING`, `SCROLL_LEARNING`).
 
 Lore that isn't data (the Player's Guide, the Inner Sea gazetteer, the older
 floor overview) lives in `common/campaign-reference/etc/`.

@@ -13,6 +13,19 @@ from functools import lru_cache
 from avtools.data import AON_BASE, etc_path, read_json
 
 
+# How spell scrolls work, rules as written (Player Core: Scrolls; Learn a Spell).
+# Shown on the shop pages and written into Pathbuilder packs.
+SCROLL_CASTING = ("If the spell is on your spell list, you can cast it from the scroll once, using your own "
+                  "spell attack modifier and spell DC. The scroll is then used up. If the spell isn't on your "
+                  "list, you need Trick Magic Item.")
+SCROLL_LEARNING = ("A caster of the spell's tradition can Learn a Spell from the scroll (1 hour, plus materials "
+                   "by the spell's rank) without using the scroll up. Wizards and magi write it into their "
+                   "spellbook; witches teach it to their familiar. Bards, oracles, psychics and sorcerers can't "
+                   "add it to their repertoire on the spot: learning it makes it a choice the next time they add "
+                   "or swap a repertoire spell (at a new level, or by retraining). Clerics and druids can already "
+                   "prepare any common spell of their tradition.")
+
+
 def _read_optional(name):
     try:
         return read_json(etc_path(name))

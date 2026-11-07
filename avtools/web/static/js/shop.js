@@ -75,6 +75,45 @@
         sections.forEach(s => observer.observe(s));
     }
 
+    // ---- Pathbuilder export: pick items, download a custom pack (without the dialog, the button opens the help page)
+    const pb = document.getElementById('pathbuilder');
+    if (pb && typeof pb.showModal === 'function') {
+        const boxes = [...pb.querySelectorAll('input[name="item"]')];
+        const all = document.getElementById('pb-all');
+        const go = document.getElementById('pb-go');
+        const pbCount = document.getElementById('pb-count');
+        function syncPicks() {
+            const picked = boxes.filter(b => b.checked).length;
+            all.checked = picked === boxes.length;
+            all.indeterminate = picked > 0 && picked < boxes.length;
+            pb.querySelectorAll('.pb-sec').forEach(sec => {
+                const own = [...sec.querySelectorAll('input[name="item"]')];
+                const on = own.filter(b => b.checked).length;
+                const toggle = sec.querySelector('.pb-sec-all');
+                toggle.checked = on === own.length;
+                toggle.indeterminate = on > 0 && on < own.length;
+            });
+            pbCount.textContent = `${picked} of ${boxes.length} picked`;
+            go.disabled = picked === 0;
+            go.textContent = picked ? `Download ${picked} item${picked === 1 ? '' : 's'}` : 'Pick at least one item';
+        }
+        all.addEventListener('change', () => { boxes.forEach(b => { b.checked = all.checked; }); syncPicks(); });
+        pb.querySelectorAll('.pb-sec-all').forEach(toggle => toggle.addEventListener('change', () => {
+            toggle.closest('.pb-sec').querySelectorAll('input[name="item"]').forEach(b => { b.checked = toggle.checked; });
+            syncPicks();
+        }));
+        boxes.forEach(b => b.addEventListener('change', syncPicks));
+        syncPicks();
+        document.getElementById('pb-open').addEventListener('click', e => {
+            e.preventDefault();
+            pb.showModal();
+            pb.scrollTop = 0;
+        });
+        document.getElementById('pb-close').addEventListener('click', () => pb.close());
+        pb.addEventListener('click', e => { if (e.target === pb) pb.close(); });
+        pb.querySelector('form').addEventListener('submit', () => setTimeout(() => pb.close(), 0));
+    }
+
     // ---- details sheet
     const sheet = document.getElementById('sheet');
     if (!sheet || typeof sheet.showModal !== 'function') return;  // old browsers follow the AoN link
@@ -90,6 +129,7 @@
         $('.sheet-price').innerHTML = esc(item.price) + (item.qty ? ` <span class="qty">x${item.qty} in stock</span>` : '');
         $('.facts').innerHTML = item.facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('');
         $('.summary').textContent = item.summary || '';
+        $('.scroll-note').hidden = !item.scroll;
         $('.aon').href = item.url;
         sheet.showModal();
         sheet.scrollTop = 0;

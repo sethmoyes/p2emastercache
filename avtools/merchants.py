@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 
 from avtools import data
 from avtools.data import ROOT as PROJECT_ROOT
-from avtools.items import aon_url
+from avtools.items import SCROLL_CASTING, SCROLL_LEARNING, aon_url
 
 def load_equipment_json(filename):
     """Load equipment from JSON file"""
@@ -430,9 +430,9 @@ def write_merchant_with_header(merchant_name, description, proprietor, specialti
         # Spell scrolls section (if applicable)
         if spell_inventory:
             f.write("---\n\n")
-            f.write("# SPELL SCROLLS FOR LEARNING\n\n")
-            f.write("*These scrolls can be studied with the merchant to permanently learn the spell.*\n\n")
-            f.write("*Study time: 1 hour (common), 5 hours (uncommon), 1 day (rare).*\n\n")
+            f.write("# SPELL SCROLLS\n\n")
+            f.write(f"*Casting it: {SCROLL_CASTING}*\n\n")
+            f.write(f"*Learning it: {SCROLL_LEARNING}*\n\n")
             for rarity in ('common', 'uncommon', 'rare'):
                 if spell_inventory[rarity]:
                     _write_spell_table(f, f"{rarity.capitalize()} Spell Scrolls", spell_inventory[rarity])

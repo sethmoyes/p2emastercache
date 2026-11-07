@@ -48,6 +48,16 @@ try {
     <p class="keeper">Kept by <strong>{{ proprietor }}</strong>{% if role %} <span class="role">({{ role }})</span>{% endif %}</p>
     <p class="sells"><span class="label">Sells</span> {{ shop.specialties }}</p>
     <p class="stocked">Stocked {{ stocked }}</p>
+    {% if items %}
+    <p class="pb-row">
+        <a class="pb-open" id="pb-open" href="/players/pathbuilder"
+           title="Download this shop's items as a Pathbuilder 2e custom pack (needs Pathbuilder's paid version)">
+            Add to Pathbuilder <span class="pb-paid-chip">Paid</span>
+        </a>
+        <a class="pb-help" href="/players/pathbuilder" title="What is this? How to import it into Pathbuilder"
+           aria-label="What is the Pathbuilder export?">?</a>
+    </p>
+    {% endif %}
 </section>
 
 {% if items %}
@@ -77,8 +87,14 @@ try {
 <main class="stock" id="stock">
     {% for s in sections %}
     <section class="sec" id="{{ s.id }}" data-kind="{{ s.kind }}">
-        <h2 class="banner band"><span>{{ s.title }}</span></h2>
-        {% if s.intro %}<div class="intro">{{ s.intro | safe }}</div>{% endif %}
+        <h2 class="banner band"><span>{{ 'Spell Scrolls' if s.kind == 'scroll' else s.title }}</span></h2>
+        {% if s.kind == 'scroll' %}
+        {# Older shop files say anyone can "study" a scroll to learn it; these are the actual rules #}
+        <div class="intro scroll-rules">
+            <p><strong>Casting it:</strong> {{ scroll_rules[0] }}</p>
+            <p><strong>Learning it:</strong> {{ scroll_rules[1] }}</p>
+        </div>
+        {% elif s.intro %}<div class="intro">{{ s.intro | safe }}</div>{% endif %}
         {% for g in s.groups %}
         <div class="group">
             {% if g.title %}<h3>{{ g.title }}</h3>{% endif %}
@@ -142,10 +158,52 @@ try {
         </div>
         <dl class="facts"></dl>
         <p class="summary"></p>
+        <div class="scroll-note" hidden>
+            <p><strong>Casting it:</strong> {{ scroll_rules[0] }}</p>
+            <p><strong>Learning it:</strong> {{ scroll_rules[1] }}</p>
+        </div>
         <a class="aon" target="_blank" rel="noopener">Read it on Archives of Nethys</a>
         <button type="button" class="close" id="sheet-close">Close</button>
     </div>
 </dialog>
+
+{% if items %}
+<dialog id="pathbuilder" class="sheet pb" aria-labelledby="pb-title">
+    <form method="post" action="/players/shop/{{ slug }}/pathbuilder.json">
+        <div class="sheet-bar band">
+            <h2 id="pb-title">Add to Pathbuilder 2e</h2>
+        </div>
+        <div class="sheet-body">
+            <p class="pb-paid" role="note"><strong>Paid Pathbuilder only.</strong> Importing this file uses
+                Pathbuilder's Custom Pack feature, which needs the paid version. The web app and the phone app
+                are each unlocked separately, and the free version can't open it.</p>
+            <p class="pb-what">Pick what you bought. You get a custom pack file: import it in Pathbuilder, then
+                add the items to your character like any other gear.
+                <a href="/players/pathbuilder" target="_blank" rel="noopener">How to import it</a></p>
+            <div class="pb-bar">
+                <label class="pb-check pb-all"><input type="checkbox" id="pb-all" checked> All items</label>
+                <span class="pb-count" id="pb-count" aria-live="polite"></span>
+            </div>
+            <div class="pb-list">
+                {% for s in sections if s.count %}
+                <fieldset class="pb-sec">
+                    <legend><label class="pb-check"><input type="checkbox" class="pb-sec-all" checked> {{ s.label }}</label></legend>
+                    {% for g in s.groups %}{% for it in g.entries %}
+                    <label class="pb-check pb-item">
+                        <input type="checkbox" name="item" value="{{ pick_key(it) }}" checked>
+                        <span class="pb-name">{{ "Scroll of " ~ it.name ~ " (Rank " ~ it.level ~ ")" if it.scroll else it.name }}</span>
+                        <span class="pb-price">{{ it.price }}</span>
+                    </label>
+                    {% endfor %}{% endfor %}
+                </fieldset>
+                {% endfor %}
+            </div>
+            <button type="submit" class="pb-go" id="pb-go">Download</button>
+            <button type="button" class="close" id="pb-close">Cancel</button>
+        </div>
+    </form>
+</dialog>
+{% endif %}
 
 <script type="application/json" id="items-data">{{ items | tojson }}</script>
 <script>window.SHOP_ICONS = {{ icons | tojson }};</script>

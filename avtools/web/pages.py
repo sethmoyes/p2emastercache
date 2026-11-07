@@ -1,11 +1,14 @@
 """The site's pages: landing, players' market square and shops, the GM pages."""
 
+import json
 import os
 import time
 
-from flask import Blueprint, abort, jsonify, render_template
+from flask import Blueprint, Response, abort, jsonify, render_template, request
 
+from avtools import items
 from avtools.merchants import MERCHANT_CONFIGS, merchant_slug
+from avtools.pathbuilder import build_pack
 from avtools.web.atlas import load_maps
 from avtools.web.core import PROJECT_ROOT, is_gm, markdown_page, merchant_path
 from avtools.web.render import parse_shop
@@ -69,20 +72,55 @@ def players():
         (m for m in load_maps() if m['id'] == 'otari'), None))
 
 
-@bp.route('/players/shop/<slug>')
-def player_shop(slug):
+def _shop(slug):
+    """(config, path, sections) for a shop with stock on file, else a 404."""
     config = next((c for c in MERCHANT_CONFIGS if merchant_slug(c['name']) == slug), None)
     path = merchant_path('players', f'{slug}.md') if config else None
     if not path:
         abort(404)
     with open(path, 'r', encoding='utf-8') as f:
-        sections = parse_shop(f.read())
+        return config, path, parse_shop(f.read())
+
+
+def _entries(sections):
+    return [item for s in sections for g in s['groups'] for item in g['entries']]
+
+
+@bp.route('/players/shop/<slug>')
+def player_shop(slug):
+    config, path, sections = _shop(slug)
     proprietor, _, role = config['proprietor'].partition('(')
     return render_template(
         'shop.html', shop=config, slug=slug, theme=theme(slug), css_vars=css_vars, sections=sections,
-        proprietor=proprietor.strip(), role=role.rstrip(') ').strip(),
-        items=[item for s in sections for g in s['groups'] for item in g['entries']],
-        stocked=time.strftime('%b %d', time.localtime(os.path.getmtime(path))))
+        proprietor=proprietor.strip(), role=role.rstrip(') ').strip(), items=_entries(sections),
+        pick_key=pick_key, scroll_rules=(items.SCROLL_CASTING, items.SCROLL_LEARNING), stocked=time.strftime('%b %d', time.localtime(os.path.getmtime(path))))
+
+
+def pick_key(item):
+    """What the Pathbuilder form sends for an item: a spell and an item can share a name."""
+    return ('scroll:' if item['scroll'] else 'item:') + item['name']
+
+
+@bp.route('/players/shop/<slug>/pathbuilder.json', methods=['GET', 'POST'])
+def player_shop_pathbuilder(slug):
+    """The shop's items as a Pathbuilder 2e custom pack: all of them, or the ones the form picked.
+    Read-only, so a plain form post is fine here."""
+    _, _, sections = _shop(slug)
+    entries = _entries(sections)
+    if request.method == 'POST':
+        picked = set(request.form.getlist('item'))
+        entries = [item for item in entries if pick_key(item) in picked]
+        if not entries:
+            return jsonify({'error': 'Pick at least one item.'}), 400
+    body = json.dumps(build_pack(entries), indent=1)
+    return Response(body, mimetype='application/json', headers={
+        'Content-Disposition': f'attachment; filename="otari-{slug}-pathbuilder.json"'})
+
+
+@bp.route('/players/pathbuilder')
+def player_pathbuilder_help():
+    title, html = markdown_page(os.path.join(PROJECT_ROOT, 'docs', 'PATHBUILDER_GUIDE.md'))
+    return render_template('doc.html', title=title or 'Pathbuilder', html=html)
 
 
 @bp.route('/players/guide')

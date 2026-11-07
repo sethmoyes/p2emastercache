@@ -7,7 +7,7 @@ import pytest
 from avtools.web.render import render_markdown
 
 
-@pytest.mark.parametrize('url', ['/', '/players', '/players/shop/wrins_wonders', '/players/guide',
+@pytest.mark.parametrize('url', ['/', '/players', '/players/shop/wrins_wonders', '/players/guide', '/players/pathbuilder',
                                  '/gm', '/gm/admin', '/atlas', '/healthz', '/api/maps', '/api/session',
                                  '/api/gm-merchants', '/api/gm-doc/quick-reference', '/api/merchant-generator'])
 def test_pages_load(client, url):
