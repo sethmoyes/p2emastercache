@@ -4,6 +4,10 @@ A small Flask app and a few scripts for running Abomination Vaults out of Otari:
 
 - **GM page** (`/gm`): the dice-jar dungeon turn for Gauntlight Keep, traveling
   merchants, NPC and hazard generators. Restocking and backups are at `/gm/admin`.
+- **Combat tracker** (`/gm/combat`): the party (saved on the server), initiative
+  with fair digital d20s for the monsters, monster HP and conditions. Monsters come
+  from a room code (`A10`), a name search on the Archives of Nethys, or a
+  dungeon-turn roll's "Fight" button.
 - **Players page** (`/players`): Otari's shops and the exploration guide.
 - **Atlas** (`/atlas`): tiled maps of Otari, Absalom, Kortos and the Inner Sea with
   clickable places.
@@ -27,7 +31,9 @@ writes land in the repo itself, so a local restock or pin edit can be committed.
 The app runs under gunicorn with one worker (the restock job and the session
 file lock live in that process) on one machine with a volume mounted at `/data`
 (`DATA_DIR`). Everything the server writes goes to the volume: restocked shops,
-traveling merchants, map pins, and the GM session (dice jar, roll history). When
+traveling merchants, map pins, the GM session (dice jar, roll history), the party
+and the current fight (`state/heroes.json`, `state/combat.json`), and stat blocks
+already fetched from AoN (`cache/aon/`, so a creature loads when AoN is down). When
 a file exists on the volume and in the image, the newer copy wins.
 
 ```bash
@@ -89,7 +95,7 @@ from the event templates in `etc/dungeon_turn_events.json`.
 | `tests/` | The pytest suite |
 | `bin/maps/` | Atlas tooling (tiling, PathfinderWiki places, pin placement) |
 | `bin/data_management/` | The AoN data-integrity checker |
-| `etc/` | Data the tools read: creatures, equipment, spells, events, floor ecology, shops, maps |
+| `etc/` | Data the tools read: creatures, equipment, spells, events, floor ecology, shops, maps, the creatures in each keyed room (`room_encounters.json`) and PF2e conditions (`conditions.json`) |
 | `players/` | Otari shop inventories, as players see them |
 | `gm/` | Traveling merchants, the GM quick reference, the 2d20 overland table |
 | `docs/` | The player-facing exploration guide |

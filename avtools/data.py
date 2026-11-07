@@ -45,6 +45,18 @@ def floor_ecology():
 
 
 @lru_cache(maxsize=None)
+def conditions():
+    """PF2e conditions and what they do to a creature's numbers, keyed by condition key."""
+    return {c['key']: c for c in read_json(etc_path('conditions.json'))['conditions']}
+
+
+@lru_cache(maxsize=None)
+def room_encounters():
+    """The book's keyed rooms that hold creatures, keyed by room code ("A10")."""
+    return read_json(etc_path('room_encounters.json'))['rooms']
+
+
+@lru_cache(maxsize=None)
 def shops():
     """Who runs each Otari shop, keyed by shop slug."""
     return {slug: people for slug, people in read_json(etc_path('otari_shops.json')).items()

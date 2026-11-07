@@ -12,7 +12,7 @@ import secrets
 
 from flask import Flask, jsonify, session
 
-from avtools.web import atlas, core, pages, restock, table
+from avtools.web import atlas, combat, core, pages, restock, table
 from avtools.web.core import json_body
 
 app = Flask(__name__)
@@ -27,7 +27,7 @@ app.config.update(
     PERMANENT_SESSION_LIFETIME=60 * 60 * 24 * 30,
 )
 
-for module in (pages, table, atlas, restock):
+for module in (pages, table, atlas, restock, combat):
     app.register_blueprint(module.bp)
 
 

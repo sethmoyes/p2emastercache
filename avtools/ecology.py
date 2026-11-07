@@ -181,6 +181,8 @@ def build_ecology_combat_event(floor_num, floor_data, party_level, creatures, di
         'num_creatures': sum(n for _, n in roster),
         'creature_level': main['level'],
         'creature_summary': summary,
+        # For the combat tracker: who, by AoN page, and how many
+        'roster': [{'name': c['name'], 'key': c['url'], 'count': n} for c, n in roster if c.get('url')],
         'creature_reference': {
             c['name']: {
                 'source': 'creatures.json',

@@ -12,8 +12,10 @@ venv/
 *.tmp
 junk_items.log
 
-# The GM session (dice jar, roll history) when running locally
+# The GM session (dice jar, roll history), the party and the fight, when running locally
 state/
+# Stat blocks the combat tracker fetched from the Archives of Nethys
+cache/
 
 # Agent notes and handoffs (local only)
 .claude/*.md

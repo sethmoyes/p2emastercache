@@ -44,6 +44,11 @@ Data the tools read, in `etc/`:
 - **`floor_ecology.json`** - see above
 - **`otari_shops.json`** - who runs each Otari shop
 - **`dieties.json`** - deities (read by the integrity checker)
+- **`room_encounters.json`** - the creatures in each keyed room (A1-J20), by AoN
+  page and count, for the combat tracker. Hand-built from the floor docs' "Creatures
+  by room" tables (remaster stat block where AoN has one; `as` keeps the book's name;
+  `unresolved` lists what AoN lacks or the captions garble). Floor docs win.
+- **`conditions.json`** - PF2e conditions and what each does to a creature's numbers
 
 Lore that isn't data (the Player's Guide, the Inner Sea gazetteer, the older
 floor overview) lives in `common/campaign-reference/etc/`.
@@ -148,6 +153,17 @@ GM can run straight off the card.
 - Not full rooms or major plot points. Prompt questions, don't answer them.
 - GOOD: "A single leech crawls across the floor. Where did it come from?"
 - BAD: "A ritual vat filled with thousands of leeches for transformation"
+
+### Combat Tracker (`/gm/combat`, `avtools/combat.py`, `avtools/aon.py`)
+- Rules live in `avtools/combat.py` (`apply(state, op)`); the web layer is
+  `avtools/web/combat.py`. The party and the fight are saved in
+  `DATA_DIR/state/heroes.json` and `state/combat.json`, so they survive deploys.
+- Monster d20s use `secrets.randbelow(20) + 1`: every face exactly 1 in 20. Keep it
+  that way; never `Math.random` or modulo tricks.
+- Ties go to the monsters (PF2e), then the higher modifier; the GM can reorder.
+- Stats come live from AoN's search index (`aon.creature`), cached in
+  `DATA_DIR/cache/aon/`; with AoN down it falls back to the cache, then
+  `creatures.json`. Heroes get initiative only: players track their own HP.
 
 ## File Structure
 

@@ -33,8 +33,12 @@ async function api(url, { method = 'GET', body, raw = false } = {}) {
     }
     if (!res.ok) {
         let message = `${res.status} ${res.statusText}`;
-        try { message = (await res.json()).error || message; } catch (e) {}
-        throw new Error(message);
+        let data = null;
+        try { data = await res.json(); message = data.error || message; } catch (e) {}
+        const error = new Error(message);
+        error.status = res.status;
+        error.data = data;
+        throw error;
     }
     return raw ? res : res.json();
 }

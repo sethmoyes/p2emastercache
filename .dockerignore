@@ -18,3 +18,6 @@ etc/*_backup.json
 **/.DS_Store
 push.sh
 push.bat
+# Local runtime state: the server keeps its own on the volume
+state/
+cache/

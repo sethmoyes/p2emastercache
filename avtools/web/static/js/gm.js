@@ -67,8 +67,21 @@ function renderHistory() {
     }).join('');
 }
 
+let shownEvent = null;
+
 function showEncounter(event, label) {
+    shownEvent = event;
     $('encounter').innerHTML = encounterCardHTML(event, label);
+}
+
+// "Fight" on a card: its creatures join the combat tracker, then open it
+async function fightEvent() {
+    try {
+        await api('/api/combat', { method: 'POST', body: { op: 'add_event', event: shownEvent } });
+        window.location.href = '/gm/combat';
+    } catch (error) {
+        alert(`Could not start the fight: ${error.message}`);
+    }
 }
 
 async function getEncounter(sum, label) {
@@ -133,6 +146,7 @@ $('encounter').addEventListener('click', e => {
     const token = e.target.closest('[data-token-add]');
     if (dice) changeSession({ add: { dice_jar: parseInt(dice.dataset.jarAdd, 10) } });
     if (token) changeSession({ add: { prepared_tokens: parseInt(token.dataset.tokenAdd, 10) } });
+    if (e.target.closest('[data-fight-event]')) fightEvent();
 });
 
 $('history').addEventListener('click', e => {

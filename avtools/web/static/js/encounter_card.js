@@ -127,6 +127,10 @@ function encounterCardHTML(event, label = '') {
     if (event.creature_stats && event.creature_stats.length) {
         body += `<div class="space-y-2 mt-3">${event.creature_stats.map(creatureBlock).join('')}</div>`;
     }
+    // Only on the GM table page, which knows how to start the fight
+    if (typeof fightEvent === 'function' && (event.roster || (event.creature_reference && Object.keys(event.creature_reference).length))) {
+        body += `<button type="button" data-fight-event class="mt-3 bg-red-700 hover:bg-red-600 px-3 py-2 rounded font-semibold">Fight: send to the combat tracker</button>`;
+    }
 
     return `${header}
         ${event.is_extreme ? '<p class="bg-red-800 text-red-100 font-bold text-center rounded-t-lg py-1">EXTREME ROLL</p>' : ''}

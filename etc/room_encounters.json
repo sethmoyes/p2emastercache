@@ -1,0 +1,2821 @@
+{
+ "_about": "Creatures in the book's keyed rooms, for the GM combat tracker (type a room code like A10). Built by hand from each floor doc's 'Creatures by room' table and room text; each creature is its AoN page (key), remaster version where AoN has one. 'as' is who it is in the book; 'unresolved' lists creatures the docs name but AoN doesn't have or the captions garble. The floor docs win if they disagree.",
+ "rooms": {
+  "A1": {
+   "floor": 1,
+   "name": "Damp Entrance",
+   "rating": "Low 1",
+   "creatures": [
+    {
+     "name": "Mitflit",
+     "key": "/Monsters.aspx?ID=3031",
+     "count": 3,
+     "level": -1
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md",
+   "notes": "Mud Lickers; pixie-voice ambush from the drop ceiling."
+  },
+  "A3": {
+   "floor": 1,
+   "name": "Slurk Pond",
+   "rating": "Low 1",
+   "creatures": [
+    {
+     "name": "Slurk",
+     "key": "/Monsters.aspx?ID=3199",
+     "count": 1,
+     "level": 2
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md",
+   "notes": "The Stone Scale kobolds' old guardian."
+  },
+  "A4": {
+   "floor": 1,
+   "name": "Maggot Training Hall",
+   "rating": "Moderate 1",
+   "creatures": [
+    {
+     "name": "Mitflit",
+     "key": "/Monsters.aspx?ID=3031",
+     "count": 3,
+     "level": -1
+    },
+    {
+     "name": "Giant Maggot",
+     "key": "/Monsters.aspx?ID=4401",
+     "count": 1,
+     "level": 0
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md"
+  },
+  "A5": {
+   "floor": 1,
+   "name": "Maggot Stable",
+   "rating": "Low 1",
+   "creatures": [
+    {
+     "name": "Giant Maggot",
+     "key": "/Monsters.aspx?ID=4401",
+     "count": 2,
+     "level": 0
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md",
+   "notes": "Burst out of the frog carcass; fight to the death."
+  },
+  "A6": {
+   "floor": 1,
+   "name": "Fly Pen",
+   "rating": "Moderate 1",
+   "creatures": [
+    {
+     "name": "Giant Fly",
+     "key": "/Monsters.aspx?ID=4402",
+     "count": 2,
+     "level": 1
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md",
+   "notes": "Green-blue fly first, the brown-blue one a round later."
+  },
+  "A8": {
+   "floor": 1,
+   "name": "Sinkhole",
+   "rating": "Moderate 1",
+   "creatures": [
+    {
+     "name": "Mitflit",
+     "key": "/Monsters.aspx?ID=3031",
+     "count": 4,
+     "level": -1
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md",
+   "notes": "-2 Perception for initiative unless the heroes announce themselves."
+  },
+  "A10": {
+   "floor": 1,
+   "name": "Mud Licker Throne Room",
+   "rating": "Severe 1",
+   "creatures": [
+    {
+     "name": "Boss Skrawng",
+     "key": "/NPCs.aspx?ID=4032",
+     "count": 1,
+     "level": 1
+    },
+    {
+     "name": "Giant Solifugid",
+     "key": "/Monsters.aspx?ID=809",
+     "count": 1,
+     "level": 1,
+     "as": "Bite-Bite"
+    },
+    {
+     "name": "Mitflit",
+     "key": "/Monsters.aspx?ID=3031",
+     "count": 2,
+     "level": -1,
+     "as": "Mud Licker minions; the doc gives no count"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md",
+   "notes": "Skrawng hangs back with his blowgun behind the throne."
+  },
+  "A14": {
+   "floor": 1,
+   "name": "Scorpion Kennel",
+   "rating": "Moderate 1",
+   "creatures": [
+    {
+     "name": "Giant Scorpion",
+     "key": "/Monsters.aspx?ID=3175",
+     "count": 1,
+     "level": 3
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md",
+   "notes": "Dangerous at level 1: let it fall back rather than chase."
+  },
+  "A15": {
+   "floor": 1,
+   "name": "Nhimbaloth Shrine",
+   "rating": "Severe 1",
+   "creatures": [
+    {
+     "name": "Corpselight",
+     "key": "/Monsters.aspx?ID=3833",
+     "count": 2,
+     "level": 2,
+     "as": "acolyte skeletons hosting corpse lights"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md",
+   "notes": "A freed corpse light can animate the dead thief."
+  },
+  "A19": {
+   "floor": 1,
+   "name": "Spookywisp",
+   "rating": "Trivial 1",
+   "creatures": [
+    {
+     "name": "Brownie",
+     "key": "/Monsters.aspx?ID=4287",
+     "count": 1,
+     "level": 1,
+     "as": "Tangletop, \"Spookywisp\""
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md",
+   "notes": "Puckish, mostly harmless."
+  },
+  "A23": {
+   "floor": 1,
+   "name": "Lens Workshop",
+   "rating": "Moderate 1",
+   "creatures": [
+    {
+     "name": "Mister Beak",
+     "key": "/NPCs.aspx?ID=4047",
+     "count": 1,
+     "level": 3
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md",
+   "notes": "Volluk's soulbound doll."
+  },
+  "A24": {
+   "floor": 1,
+   "name": "Old Pier",
+   "rating": "Low 1",
+   "creatures": [
+    {
+     "name": "Flickerwisp",
+     "key": "/Monsters.aspx?ID=1036",
+     "count": 1,
+     "level": 2
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md"
+  },
+  "A25": {
+   "floor": 1,
+   "name": "Gauntlight Cupola",
+   "rating": "Moderate 1",
+   "creatures": [
+    {
+     "name": "Vampiric Mist",
+     "key": "/Monsters.aspx?ID=845",
+     "count": 1,
+     "level": 3
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-01-a-light-in-the-fog.md",
+   "notes": "Only after the A11 haunt; once a night."
+  },
+  "B5": {
+   "floor": 2,
+   "name": "Volluk's Machine",
+   "rating": "Moderate 2",
+   "creatures": [
+    {
+     "name": "Bloodsiphon",
+     "key": "/Monsters.aspx?ID=4033",
+     "count": 1,
+     "level": 4
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-02-the-forgotten-dungeon.md",
+   "notes": "Pursues into B1-B4, no farther."
+  },
+  "B8": {
+   "floor": 2,
+   "name": "Servants' Rooms",
+   "rating": "Severe 2",
+   "creatures": [
+    {
+     "name": "Morlock Scavenger",
+     "key": "/Monsters.aspx?ID=1037",
+     "count": 4,
+     "level": 1
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-02-the-forgotten-dungeon.md",
+   "notes": "Fight until one is left; it flees to warn Graulgust in B12."
+  },
+  "B9": {
+   "floor": 2,
+   "name": "Old Office",
+   "rating": "Moderate 2",
+   "creatures": [
+    {
+     "name": "Morlock",
+     "key": "/Monsters.aspx?ID=731",
+     "count": 2,
+     "level": 2
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-02-the-forgotten-dungeon.md",
+   "notes": "Distracted: -2 initiative."
+  },
+  "B12": {
+   "floor": 2,
+   "name": "Graulgust's Throne Room",
+   "rating": "Severe 2",
+   "creatures": [
+    {
+     "name": "Morlock Cultist",
+     "key": "/Monsters.aspx?ID=1039",
+     "count": 1,
+     "level": 4,
+     "as": "Graulgust, king of the Ghost Queen morlocks"
+    },
+    {
+     "name": "Morlock",
+     "key": "/Monsters.aspx?ID=731",
+     "count": 1,
+     "level": 2,
+     "as": "his servant"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-02-the-forgotten-dungeon.md",
+   "notes": "The grothlut from B13 may join."
+  },
+  "B13": {
+   "floor": 2,
+   "name": "Grothlut Den",
+   "rating": "Low 2",
+   "creatures": [
+    {
+     "name": "Grothlut",
+     "key": "/Monsters.aspx?ID=2997",
+     "count": 1,
+     "level": 3
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-02-the-forgotten-dungeon.md",
+   "notes": "Dotes on the morlocks; fights to the death."
+  },
+  "B15": {
+   "floor": 2,
+   "name": "Crypt",
+   "rating": "Moderate 2",
+   "creatures": [
+    {
+     "name": "Shadow",
+     "key": "/Monsters.aspx?ID=3186",
+     "count": 1,
+     "level": 4,
+     "as": "the majordomo"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-02-the-forgotten-dungeon.md",
+   "notes": "Won't pursue beyond B15."
+  },
+  "B19": {
+   "floor": 2,
+   "name": "Flooded Cavern",
+   "rating": "Low 2",
+   "creatures": [
+    {
+     "name": "River Drake",
+     "key": "/Monsters.aspx?ID=2958",
+     "count": 1,
+     "level": 3,
+     "as": "Fresnel Kes"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-02-the-forgotten-dungeon.md"
+  },
+  "B22": {
+   "floor": 2,
+   "name": "Workshop",
+   "rating": "Severe 2",
+   "creatures": [
+    {
+     "name": "Morlock Engineer",
+     "key": "/Monsters.aspx?ID=1038",
+     "count": 2,
+     "level": 3
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-02-the-forgotten-dungeon.md",
+   "notes": "Prefer junk launchers from range; try to capture the heroes."
+  },
+  "B27": {
+   "floor": 2,
+   "name": "Zolazarin's Room",
+   "rating": "Low 2",
+   "creatures": [
+    {
+     "name": "Zebub",
+     "key": "/Monsters.aspx?ID=4325",
+     "count": 1,
+     "level": 3,
+     "as": "Zolazarin"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-02-the-forgotten-dungeon.md",
+   "notes": "A hapless devil janitor; talkative."
+  },
+  "B30": {
+   "floor": 2,
+   "name": "War Room",
+   "rating": "Severe 2",
+   "creatures": [
+    {
+     "name": "Web Lurker",
+     "key": "/Monsters.aspx?ID=407",
+     "count": 1,
+     "level": 3,
+     "as": "Mimnivix"
+    },
+    {
+     "name": "Dream Spider",
+     "key": "/Monsters.aspx?ID=4981",
+     "count": 2,
+     "level": 0,
+     "as": "the doc gives no count"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-02-the-forgotten-dungeon.md",
+   "notes": "Two web lurker nodes (hazards)."
+  },
+  "B31": {
+   "floor": 2,
+   "name": "Reception Room",
+   "rating": "Low 2",
+   "creatures": [
+    {
+     "name": "Skeleton Guard",
+     "key": "/Monsters.aspx?ID=4004",
+     "count": 1,
+     "level": -1,
+     "as": "minor skeleton"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-02-the-forgotten-dungeon.md",
+   "notes": "Takes a round to assemble."
+  },
+  "C1": {
+   "floor": 3,
+   "name": "Visitors' Reading Room",
+   "rating": "Trivial 3",
+   "creatures": [
+    {
+     "name": "Augrael",
+     "key": "/NPCs.aspx?ID=4034",
+     "count": 1,
+     "level": 3
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+   "notes": "Potential ally; calm and cautious."
+  },
+  "C6": {
+   "floor": 3,
+   "name": "Guard Room",
+   "rating": "Low 3",
+   "creatures": [
+    {
+     "name": "Mist Stalker",
+     "key": "/Monsters.aspx?ID=4391",
+     "count": 1,
+     "level": 4
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md"
+  },
+  "C8": {
+   "floor": 3,
+   "name": "Korlok's Post",
+   "rating": "Moderate 3",
+   "creatures": [
+    {
+     "name": "Vordine",
+     "key": "/Monsters.aspx?ID=2906",
+     "count": 1,
+     "level": 5,
+     "as": "barbazu in the book; Korlok"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+   "notes": "Still guarding the post Belcorra gave him."
+  },
+  "C11": {
+   "floor": 3,
+   "name": "Main Library",
+   "rating": "Moderate 3",
+   "creatures": [
+    {
+     "name": "Ghoul Stalker",
+     "key": "/Monsters.aspx?ID=3009",
+     "count": 4,
+     "level": 1,
+     "as": "ghoul in the book; robed library ghouls"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+   "notes": "They talk before they attack."
+  },
+  "C13": {
+   "floor": 3,
+   "name": "Librarian's Workroom",
+   "rating": "Moderate 3",
+   "creatures": [
+    {
+     "name": "Jarelle Kaldrian",
+     "key": "/NPCs.aspx?ID=4035",
+     "count": 1,
+     "level": 5,
+     "as": "the librarian's ghost"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+   "notes": "Hostile only if provoked."
+  },
+  "C15": {
+   "floor": 3,
+   "name": "Gauntlight Reading Room",
+   "rating": "Moderate 3",
+   "creatures": [
+    {
+     "name": "Ghoul Stalker",
+     "key": "/Monsters.aspx?ID=3009",
+     "count": 4,
+     "level": 1,
+     "as": "ghoul in the book; cult ghouls; the doc gives no count"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+   "notes": "Ghouls below half HP step into the ribbon to heal."
+  },
+  "C18": {
+   "floor": 3,
+   "name": "Temporary Bunks",
+   "rating": "Low 3",
+   "creatures": [
+    {
+     "name": "Ghoul Stalker",
+     "key": "/Monsters.aspx?ID=3009",
+     "count": 3,
+     "level": 1,
+     "as": "ghoul in the book"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+   "notes": "The first one hurt flees to C19 for Aller Rosk."
+  },
+  "C19": {
+   "floor": 3,
+   "name": "Scrivener's Workshop",
+   "rating": "Moderate 3",
+   "creatures": [
+    {
+     "name": "Aller Rosk",
+     "key": "/NPCs.aspx?ID=4037",
+     "count": 1,
+     "level": 5
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md"
+  },
+  "C23": {
+   "floor": 3,
+   "name": "Ghoul Garden",
+   "rating": "Low 3",
+   "creatures": [
+    {
+     "name": "Violet Fungus",
+     "key": "/Monsters.aspx?ID=853",
+     "count": 2,
+     "level": 3
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md"
+  },
+  "C24": {
+   "floor": 3,
+   "name": "Canker Shrine",
+   "rating": "Moderate 3",
+   "creatures": [
+    {
+     "name": "Canker Cultist",
+     "key": "/Monsters.aspx?ID=4036",
+     "count": 2,
+     "level": 3
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+   "notes": "Attacking the mouther slows them 1 for a round."
+  },
+  "C27": {
+   "floor": 3,
+   "name": "Belcorra's Reading Room",
+   "rating": "Moderate 3",
+   "creatures": [
+    {
+     "name": "Lurker In Light",
+     "key": "/Monsters.aspx?ID=5035",
+     "count": 1,
+     "level": 5,
+     "as": "Shimmerin"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+   "notes": "Below 20 HP dimension doors away."
+  },
+  "C30": {
+   "floor": 3,
+   "name": "Siege Castle History",
+   "rating": "Severe 3",
+   "creatures": [
+    {
+     "name": "Wood Golem",
+     "key": "/Monsters.aspx?ID=684",
+     "count": 1,
+     "level": 6,
+     "as": "carved like Belcorra"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+   "notes": "Won't leave the room."
+  },
+  "C33": {
+   "floor": 3,
+   "name": "Restricted Collection",
+   "rating": "Severe 3",
+   "creatures": [
+    {
+     "name": "Canker Cultist",
+     "key": "/Monsters.aspx?ID=4036",
+     "count": 1,
+     "level": 3
+    },
+    {
+     "name": "Ghoul Stalker",
+     "key": "/Monsters.aspx?ID=3009",
+     "count": 4,
+     "level": 1,
+     "as": "ghoul in the book"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+   "notes": "Offer an audience with Nhakazarin as a ruse."
+  },
+  "C34": {
+   "floor": 3,
+   "name": "Temple of the Canker",
+   "rating": "Moderate 3",
+   "creatures": [
+    {
+     "name": "Nhakazarin",
+     "key": "/NPCs.aspx?ID=4038",
+     "count": 1,
+     "level": 5
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+   "notes": "High Priestess of the Cult of the Canker."
+  },
+  "C36": {
+   "floor": 3,
+   "name": "Scriptorium",
+   "rating": "Severe 3",
+   "creatures": [
+    {
+     "name": "Chandriu Invisar",
+     "key": "/NPCs.aspx?ID=4039",
+     "count": 1,
+     "level": 6,
+     "as": "ghost"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md"
+  },
+  "C38": {
+   "floor": 3,
+   "name": "Author's Hall",
+   "rating": "Moderate 3",
+   "creatures": [
+    {
+     "name": "Canker Cultist",
+     "key": "/Monsters.aspx?ID=4036",
+     "count": 2,
+     "level": 3,
+     "as": "ghoul cultists"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md"
+  },
+  "C40": {
+   "floor": 3,
+   "name": "Pool",
+   "rating": "Moderate 3",
+   "creatures": [
+    {
+     "name": "Gibbering Mouther",
+     "key": "/Monsters.aspx?ID=227",
+     "count": 1,
+     "level": 5
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-03-cult-of-the-canker.md",
+   "notes": "Attacks anything, ghouls and morlocks too."
+  },
+  "D1": {
+   "floor": 4,
+   "name": "Belcorra's Dining Room",
+   "rating": "Moderate 4",
+   "creatures": [
+    {
+     "name": "Corpselight",
+     "key": "/Monsters.aspx?ID=3833",
+     "count": 4,
+     "level": 2,
+     "as": "skeletal guests hosting corpse lights"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-04-long-dream-the-dead.md",
+   "notes": "A wisp forced out flees to D2, D3 or D6 for a new corpse."
+  },
+  "D7": {
+   "floor": 4,
+   "name": "Disposal Room",
+   "rating": "Low 4",
+   "creatures": [
+    {
+     "name": "Poltergeist",
+     "key": "/Monsters.aspx?ID=3142",
+     "count": 1,
+     "level": 5,
+     "as": "the servant"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-04-long-dream-the-dead.md",
+   "notes": "Invisible until spotted; can't leave the room."
+  },
+  "D8": {
+   "floor": 4,
+   "name": "Lounge",
+   "rating": "Severe 4",
+   "creatures": [
+    {
+     "name": "Volluk Azrinae",
+     "key": "/NPCs.aspx?ID=4042",
+     "count": 1,
+     "level": 7
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-04-long-dream-the-dead.md"
+  },
+  "D9": {
+   "floor": 4,
+   "name": "Lasda's Lament",
+   "rating": "Moderate 4",
+   "creatures": [
+    {
+     "name": "Will-O'-Wisp",
+     "key": "/Monsters.aspx?ID=3240",
+     "count": 1,
+     "level": 6
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-04-long-dream-the-dead.md",
+   "notes": "Lasda can't be rescued until it falls."
+  },
+  "D10": {
+   "floor": 4,
+   "name": "Scalathrax Pen",
+   "rating": "Moderate 4",
+   "creatures": [
+    {
+     "name": "Scalathrax",
+     "key": "/Monsters.aspx?ID=1040",
+     "count": 2,
+     "level": 4
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-04-long-dream-the-dead.md",
+   "notes": "Poorly fed; pursue relentlessly."
+  },
+  "D11": {
+   "floor": 4,
+   "name": "Torture Chamber",
+   "rating": "Moderate 4",
+   "creatures": [
+    {
+     "name": "Evangelist",
+     "key": "/Monsters.aspx?ID=4608",
+     "count": 1,
+     "level": 6,
+     "as": "Vaulgrist, evangelist velstrac"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-04-long-dream-the-dead.md"
+  },
+  "D12": {
+   "floor": 4,
+   "name": "The Ghostwalk",
+   "rating": "Moderate 4",
+   "creatures": [
+    {
+     "name": "Cairn Wight",
+     "key": "/Monsters.aspx?ID=859",
+     "count": 2,
+     "level": 4,
+     "as": "the traitorous apprentices"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-04-long-dream-the-dead.md",
+   "notes": "Pursue across the level."
+  },
+  "D13": {
+   "floor": 4,
+   "name": "Upper Temple of Nhimbaloth",
+   "rating": "Severe 4",
+   "creatures": [
+    {
+     "name": "Crawling Hand",
+     "key": "/Monsters.aspx?ID=2885",
+     "count": 4,
+     "level": -1
+    },
+    {
+     "name": "Flickerwisp",
+     "key": "/Monsters.aspx?ID=1036",
+     "count": 4,
+     "level": 2
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-04-long-dream-the-dead.md",
+   "notes": "Despair: DC 22 Will or frightened 1 on entering."
+  },
+  "D14": {
+   "floor": 4,
+   "name": "Pavilion",
+   "rating": "Severe 4",
+   "creatures": [
+    {
+     "name": "Jaul Mezmin",
+     "key": "/NPCs.aspx?ID=4043",
+     "count": 1,
+     "level": 6
+    },
+    {
+     "name": "Jaul's Wolf",
+     "key": "/NPCs.aspx?ID=4044",
+     "count": 1,
+     "level": 4
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-04-long-dream-the-dead.md"
+  },
+  "D18": {
+   "floor": 4,
+   "name": "Otari's Room",
+   "rating": "Severe 4",
+   "creatures": [
+    {
+     "name": "Will-O'-Wisp",
+     "key": "/Monsters.aspx?ID=3240",
+     "count": 1,
+     "level": 6
+    },
+    {
+     "name": "Flickerwisp",
+     "key": "/Monsters.aspx?ID=1036",
+     "count": 2,
+     "level": 2
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-04-long-dream-the-dead.md",
+   "notes": "Otari's ghost helps the heroes."
+  },
+  "D20": {
+   "floor": 4,
+   "name": "Belcorra's Suite",
+   "rating": "Extreme 4",
+   "creatures": [
+    {
+     "name": "Voidglutton",
+     "key": "/Monsters.aspx?ID=1041",
+     "count": 1,
+     "level": 8
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-04-long-dream-the-dead.md",
+   "notes": "Extreme 4."
+  },
+  "E1": {
+   "floor": 5,
+   "name": "Upper Shaft",
+   "rating": "Moderate 5",
+   "creatures": [
+    {
+     "name": "Grothlut",
+     "key": "/Monsters.aspx?ID=2997",
+     "count": 2,
+     "level": 3
+    },
+    {
+     "name": "Gibbering Mouther",
+     "key": "/Monsters.aspx?ID=227",
+     "count": 1,
+     "level": 5
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md",
+   "notes": "Rejected experiments."
+  },
+  "E2": {
+   "floor": 5,
+   "name": "Large Monster Holding",
+   "rating": "Moderate 5",
+   "creatures": [
+    {
+     "name": "Evangelist",
+     "key": "/Monsters.aspx?ID=4608",
+     "count": 1,
+     "level": 6,
+     "as": "Cratonys"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md",
+   "notes": "Velstrac tetanus (disease 6)."
+  },
+  "E3": {
+   "floor": 5,
+   "name": "Monster Holding",
+   "rating": "Moderate 5",
+   "creatures": [
+    {
+     "name": "Shanrigol Heap",
+     "key": "/Monsters.aspx?ID=1050",
+     "count": 3,
+     "level": 4
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md",
+   "notes": "Ooze between the bars."
+  },
+  "E4": {
+   "floor": 5,
+   "name": "Surgical Suite",
+   "rating": "Moderate 5",
+   "creatures": [
+    {
+     "name": "Specter",
+     "key": "/Monsters.aspx?ID=812",
+     "count": 1,
+     "level": 7,
+     "as": "a mutilated morlock's spectre"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md",
+   "notes": "Still afraid of the operating tables."
+  },
+  "E7": {
+   "floor": 5,
+   "name": "Security Checkpoint",
+   "rating": "Moderate 5",
+   "creatures": [
+    {
+     "name": "Greater Shadow",
+     "key": "/Monsters.aspx?ID=3187",
+     "count": 1,
+     "level": 7,
+     "as": "Seora Phade"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md"
+  },
+  "E9": {
+   "floor": 5,
+   "name": "Elite Viewing Room",
+   "rating": "Moderate 5",
+   "creatures": [
+    {
+     "name": "Poltergeist",
+     "key": "/Monsters.aspx?ID=3142",
+     "count": 2,
+     "level": 5,
+     "as": "the aristocrat siblings"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md"
+  },
+  "E10": {
+   "floor": 5,
+   "name": "Grand Concourse",
+   "rating": "Moderate 5",
+   "creatures": [
+    {
+     "name": "Basilisk",
+     "key": "/Monsters.aspx?ID=2847",
+     "count": 2,
+     "level": 5
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md",
+   "notes": "Lurk among their petrified victims."
+  },
+  "E12": {
+   "floor": 5,
+   "name": "Sentencing Chamber",
+   "rating": "Moderate 5",
+   "creatures": [
+    {
+     "name": "Gibtas Bounder",
+     "key": "/Monsters.aspx?ID=1045",
+     "count": 2,
+     "level": 5
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md",
+   "notes": "A hydra waits below in F4."
+  },
+  "E13": {
+   "floor": 5,
+   "name": "Gladiator Readiness Room",
+   "rating": "Low 5",
+   "creatures": [
+    {
+     "name": "Mimic",
+     "key": "/Monsters.aspx?ID=4475",
+     "count": 2,
+     "level": 4
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md"
+  },
+  "E17": {
+   "floor": 5,
+   "name": "Imprisoned Administrator",
+   "rating": "Severe 5",
+   "creatures": [
+    {
+     "name": "Chafkhem",
+     "key": "/NPCs.aspx?ID=4049",
+     "count": 1,
+     "level": 8
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md",
+   "notes": "Mummy ritualist."
+  },
+  "E22": {
+   "floor": 5,
+   "name": "Sludge-Filled Room",
+   "rating": "Moderate 5",
+   "creatures": [
+    {
+     "name": "Living Tar",
+     "key": "/Monsters.aspx?ID=3128",
+     "count": 1,
+     "level": 7,
+     "as": "black pudding in the book; alchemically modified"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md"
+  },
+  "E25": {
+   "floor": 5,
+   "name": "Gladiators' Mead Hall",
+   "rating": "Moderate 5",
+   "creatures": [
+    {
+     "name": "Bone Gladiator",
+     "key": "/Monsters.aspx?ID=4068",
+     "count": 1,
+     "level": 7
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md"
+  },
+  "E26": {
+   "floor": 5,
+   "name": "Arena Balcony",
+   "rating": "no encounter (see F26)",
+   "creatures": [
+    {
+     "name": "Shanrigol Behemoth",
+     "key": "/Monsters.aspx?ID=1051",
+     "count": 1,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-05-into-the-training-grounds.md",
+   "notes": "Same creature as F26; dormant unless disturbed."
+  },
+  "F1": {
+   "floor": 6,
+   "name": "Central Shaft",
+   "rating": "Low 6",
+   "creatures": [
+    {
+     "name": "Seugathi Servant",
+     "key": "/Monsters.aspx?ID=1048",
+     "count": 1,
+     "level": 6
+    },
+    {
+     "name": "Grothlut",
+     "key": "/Monsters.aspx?ID=2997",
+     "count": 1,
+     "level": 3,
+     "as": "chained to the handrail"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md"
+  },
+  "F3": {
+   "floor": 6,
+   "name": "Rocky Cave",
+   "rating": "Moderate 6",
+   "creatures": [
+    {
+     "name": "Sod Hound",
+     "key": "/Monsters.aspx?ID=2977",
+     "count": 2,
+     "level": 3
+    },
+    {
+     "name": "Living Landslide",
+     "key": "/Monsters.aspx?ID=2978",
+     "count": 1,
+     "level": 5
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+   "notes": "Bound earth elementals; one below 5 HP retreats into the stone. Counts not in the doc."
+  },
+  "F4": {
+   "floor": 6,
+   "name": "Deep Pool",
+   "rating": "Moderate 6",
+   "creatures": [
+    {
+     "name": "Hydra",
+     "key": "/Monsters.aspx?ID=3064",
+     "count": 2,
+     "level": 6
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+   "notes": "Asleep in a chemical stupor (stupefied)."
+  },
+  "F5": {
+   "floor": 6,
+   "name": "Deep End",
+   "rating": "Moderate 6",
+   "creatures": [
+    {
+     "name": "Sarglagon",
+     "key": "/Monsters.aspx?ID=2908",
+     "count": 1,
+     "level": 8,
+     "as": "Urevian's spy (\"slag gagon\" in the captions)"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md"
+  },
+  "F6": {
+   "floor": 6,
+   "name": "Dissection Chamber",
+   "rating": "Low 6",
+   "creatures": [
+    {
+     "name": "Tomb Jelly",
+     "key": "/Monsters.aspx?ID=3127",
+     "count": 2,
+     "level": 5,
+     "as": "ochre jelly in the book"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+   "notes": "Expect food; attack if none comes."
+  },
+  "F8": {
+   "floor": 6,
+   "name": "Observation Gallery",
+   "rating": "Trivial 6 (Severe 6 with F9's destrachan)",
+   "creatures": [
+    {
+     "name": "Seugathi Servant",
+     "key": "/Monsters.aspx?ID=1048",
+     "count": 1,
+     "level": 6,
+     "as": "seugathi researcher"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+   "notes": "Severe 6 together with F9's destrachan."
+  },
+  "F9": {
+   "floor": 6,
+   "name": "Testing Grounds",
+   "rating": "Moderate 6",
+   "creatures": [
+    {
+     "name": "Destrachan",
+     "key": "/Monsters.aspx?ID=605",
+     "count": 1,
+     "level": 8
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md"
+  },
+  "F10": {
+   "floor": 6,
+   "name": "Prisoner Processing",
+   "rating": "Moderate 6",
+   "creatures": [
+    {
+     "name": "Irnakurse",
+     "key": "/Monsters.aspx?ID=2998",
+     "count": 1,
+     "level": 9,
+     "as": "fleshwarp weakened by the devils: consider the weak adjustment"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+   "notes": "Which fleshwarp is unclear in the doc."
+  },
+  "F11": {
+   "floor": 6,
+   "name": "Warped Brew Tavern",
+   "rating": "Moderate 6",
+   "creatures": [
+    {
+     "name": "Drider",
+     "key": "/Monsters.aspx?ID=207",
+     "count": 1,
+     "level": 6,
+     "as": "Lallizanx"
+    },
+    {
+     "name": "Morlock",
+     "key": "/Monsters.aspx?ID=731",
+     "count": 3,
+     "level": 2
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+   "notes": "Vischari arrives in 3 rounds; the Shadow Malice are here 1 time in 4."
+  },
+  "F16": {
+   "floor": 6,
+   "name": "Tavern Office",
+   "rating": "Low 6",
+   "creatures": [
+    {
+     "name": "Vischari",
+     "key": "/NPCs.aspx?ID=4050",
+     "count": 1,
+     "level": 7
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+   "notes": "Urdefhan manager of the Warped Brew."
+  },
+  "F18": {
+   "floor": 6,
+   "name": "Dressing Room",
+   "rating": "Moderate 6",
+   "creatures": [
+    {
+     "name": "Gulzash",
+     "key": "/NPCs.aspx?ID=4051",
+     "count": 1,
+     "level": 4
+    },
+    {
+     "name": "Kragala",
+     "key": "/NPCs.aspx?ID=4052",
+     "count": 1,
+     "level": 4
+    },
+    {
+     "name": "Nox",
+     "key": "/NPCs.aspx?ID=4053",
+     "count": 1,
+     "level": 4
+    },
+    {
+     "name": "Ryta",
+     "key": "/NPCs.aspx?ID=4054",
+     "count": 1,
+     "level": 4
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+   "notes": "The Shadow Malice; they'd rather perform than fight."
+  },
+  "F20": {
+   "floor": 6,
+   "name": "Lower Observation Deck",
+   "rating": "Moderate 6",
+   "creatures": [
+    {
+     "name": "Seugathi Servant",
+     "key": "/Monsters.aspx?ID=1048",
+     "count": 1,
+     "level": 6
+    },
+    {
+     "name": "Drider",
+     "key": "/Monsters.aspx?ID=207",
+     "count": 2,
+     "level": 6
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md"
+  },
+  "F21": {
+   "floor": 6,
+   "name": "Spa",
+   "rating": "Low 6",
+   "creatures": [
+    {
+     "name": "Ghast",
+     "key": "/Monsters.aspx?ID=219",
+     "count": 4,
+     "level": 2
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+   "notes": "Caged; dangerous only to someone pressed against a door."
+  },
+  "F22": {
+   "floor": 6,
+   "name": "Sauna",
+   "rating": "Moderate 6",
+   "creatures": [
+    {
+     "name": "Skulk",
+     "key": "/Monsters.aspx?ID=805",
+     "count": 1,
+     "level": 1,
+     "as": "Meran"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+   "notes": "Sauna heat: -1 circumstance to saves vs fire."
+  },
+  "F24": {
+   "floor": 6,
+   "name": "Torture Chamber",
+   "rating": "Level 6 encounter (rating garbled)",
+   "creatures": [
+    {
+     "name": "Vordine",
+     "key": "/Monsters.aspx?ID=2906",
+     "count": 1,
+     "level": 5,
+     "as": "barbazu in the book"
+    },
+    {
+     "name": "Zebub",
+     "key": "/Monsters.aspx?ID=4325",
+     "count": 2,
+     "level": 3
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+   "notes": "Urevian's foothold team."
+  },
+  "F25": {
+   "floor": 6,
+   "name": "Main Laboratory",
+   "rating": "Severe 6",
+   "creatures": [
+    {
+     "name": "Jafaki",
+     "key": "/NPCs.aspx?ID=4066",
+     "count": 1,
+     "level": 8
+    },
+    {
+     "name": "Drider",
+     "key": "/Monsters.aspx?ID=207",
+     "count": 1,
+     "level": 6
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md",
+   "notes": "A flesh golem may join later."
+  },
+  "F26": {
+   "floor": 6,
+   "name": "Arena Floor",
+   "rating": "Severe 6",
+   "creatures": [
+    {
+     "name": "Shanrigol Behemoth",
+     "key": "/Monsters.aspx?ID=1051",
+     "count": 1,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-06-experiments-in-flesh.md"
+  },
+  "G3": {
+   "floor": 7,
+   "name": "Drill Field",
+   "rating": "Moderate 7",
+   "creatures": [
+    {
+     "name": "Vordine",
+     "key": "/Monsters.aspx?ID=2906",
+     "count": 1,
+     "level": 5,
+     "as": "barbazu in the book"
+    },
+    {
+     "name": "Grothlut",
+     "key": "/Monsters.aspx?ID=2997",
+     "count": 6,
+     "level": 3
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md",
+   "notes": "The grothluts are trained to fight their creators."
+  },
+  "G4": {
+   "floor": 7,
+   "name": "Storage Cells",
+   "rating": "Low 7",
+   "creatures": [
+    {
+     "name": "Zebub",
+     "key": "/Monsters.aspx?ID=4325",
+     "count": 1,
+     "level": 3,
+     "as": "Azvalviganer"
+    },
+    {
+     "name": "Drider",
+     "key": "/Monsters.aspx?ID=207",
+     "count": 4,
+     "level": 6
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md"
+  },
+  "G5": {
+   "floor": 7,
+   "name": "Hellforge",
+   "rating": "Moderate 7",
+   "creatures": [
+    {
+     "name": "Erinys",
+     "key": "/Monsters.aspx?ID=4971",
+     "count": 1,
+     "level": 8,
+     "as": "Barkumuk, the smith"
+    },
+    {
+     "name": "Vordine",
+     "key": "/Monsters.aspx?ID=2906",
+     "count": 1,
+     "level": 5,
+     "as": "barbazu in the book"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md"
+  },
+  "G6": {
+   "floor": 7,
+   "name": "Guard Chamber",
+   "rating": "Moderate 7",
+   "creatures": [
+    {
+     "name": "Osyluth",
+     "key": "/Monsters.aspx?ID=608",
+     "count": 1,
+     "level": 9,
+     "as": "Eagan, bone devil"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md"
+  },
+  "G7": {
+   "floor": 7,
+   "name": "Summoning Chamber",
+   "rating": "Severe 7",
+   "creatures": [
+    {
+     "name": "Erinys",
+     "key": "/Monsters.aspx?ID=4971",
+     "count": 2,
+     "level": 8,
+     "as": "the gate-forger sisters"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md"
+  },
+  "G8": {
+   "floor": 7,
+   "name": "Isolation Chamber",
+   "rating": "Severe 7",
+   "creatures": [
+    {
+     "name": "Gug",
+     "key": "/Monsters.aspx?ID=4431",
+     "count": 1,
+     "level": 10,
+     "as": "Ahah"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md",
+   "notes": "Belcorra's envoy; Urevian avoids her."
+  },
+  "G9": {
+   "floor": 7,
+   "name": "Observation Room",
+   "rating": "no rating",
+   "creatures": [
+    {
+     "name": "Imp",
+     "key": "/Monsters.aspx?ID=3067",
+     "count": 1,
+     "level": 1,
+     "as": "Szek"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md"
+  },
+  "G10": {
+   "floor": 7,
+   "name": "Urevian's Domain",
+   "rating": "Severe 7",
+   "creatures": [
+    {
+     "name": "Urevian",
+     "key": "/NPCs.aspx?ID=4067",
+     "count": 1,
+     "level": 9
+    },
+    {
+     "name": "Vordine",
+     "key": "/Monsters.aspx?ID=2906",
+     "count": 2,
+     "level": 5,
+     "as": "barbazu in the book"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md",
+   "notes": "Urevian stops the barbazu to talk first."
+  },
+  "G12": {
+   "floor": 7,
+   "name": "Arena Walk",
+   "rating": "Low 7",
+   "creatures": [
+    {
+     "name": "Will-O'-Wisp",
+     "key": "/Monsters.aspx?ID=3240",
+     "count": 2,
+     "level": 6
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md"
+  },
+  "G15": {
+   "floor": 7,
+   "name": "Barracks",
+   "rating": "Severe 7",
+   "creatures": [
+    {
+     "name": "Mulventok",
+     "key": "/Monsters.aspx?ID=1044",
+     "count": 2,
+     "level": 7
+    },
+    {
+     "name": "Drider",
+     "key": "/Monsters.aspx?ID=207",
+     "count": 2,
+     "level": 6
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md",
+   "notes": "Four fleshwarp soldiers in all; the split is a guess."
+  },
+  "G17": {
+   "floor": 7,
+   "name": "Stasis Chambers",
+   "rating": "Moderate 7",
+   "creatures": [
+    {
+     "name": "Witchfire",
+     "key": "/Monsters.aspx?ID=860",
+     "count": 1,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md",
+   "notes": "Materializes 3 rounds after anyone enters. Nine creatures sleep in stasis."
+  },
+  "G18": {
+   "floor": 7,
+   "name": "War Room",
+   "rating": "Moderate 7",
+   "creatures": [
+    {
+     "name": "Giant Crawling Hand",
+     "key": "/Monsters.aspx?ID=2886",
+     "count": 1,
+     "level": 5
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md",
+   "unresolved": [
+    "Ysondkhelir (not on AoN)"
+   ]
+  },
+  "G21": {
+   "floor": 7,
+   "name": "The Secret Void",
+   "rating": "Moderate 7",
+   "creatures": [
+    {
+     "name": "Sacuishu",
+     "key": "/NPCs.aspx?ID=4056",
+     "count": 1,
+     "level": 9,
+     "as": "Sacuisha"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-07-soul-keepers.md",
+   "notes": "Will-o'-wisp priestess of Nhimbaloth."
+  },
+  "H2": {
+   "floor": 8,
+   "name": "Hall of Eyes",
+   "rating": "Moderate 8",
+   "creatures": [
+    {
+     "name": "Will-O'-Wisp",
+     "key": "/Monsters.aspx?ID=3240",
+     "count": 4,
+     "level": 6
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "Pose as decorative lights."
+  },
+  "H3": {
+   "floor": 8,
+   "name": "Hazy Shrine",
+   "rating": "Low 8",
+   "creatures": [
+    {
+     "name": "Caligni Hunter",
+     "key": "/Monsters.aspx?ID=2864",
+     "count": 6,
+     "level": 4,
+     "as": "the doc only says \"caligni\""
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "Fight to the death for Urthagul."
+  },
+  "H6": {
+   "floor": 8,
+   "name": "Padli's Chamber",
+   "rating": "Moderate 8",
+   "creatures": [
+    {
+     "name": "Padli",
+     "key": "/NPCs.aspx?ID=4069",
+     "count": 1,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "unresolved": [
+    "his caligni (count not in the doc)"
+   ]
+  },
+  "H8": {
+   "floor": 8,
+   "name": "Dulac's Chambers",
+   "rating": "Moderate 8",
+   "creatures": [
+    {
+     "name": "Dulac",
+     "key": "/NPCs.aspx?ID=4070",
+     "count": 1,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "Dulac will talk; the alp presses the attack.",
+   "unresolved": [
+    "the alp (not on AoN)"
+   ]
+  },
+  "H10": {
+   "floor": 8,
+   "name": "Stairs of Urthagul",
+   "rating": "Severe 8",
+   "creatures": [
+    {
+     "name": "Dread Wisp",
+     "key": "/Monsters.aspx?ID=1384",
+     "count": 2,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "Defeating them triggers Belcorra Attacks!"
+  },
+  "H11": {
+   "floor": 8,
+   "name": "Carrion Ambush",
+   "rating": "Low 8",
+   "creatures": [
+    {
+     "name": "Bog Mummy",
+     "key": "/Monsters.aspx?ID=735",
+     "count": 4,
+     "level": 5,
+     "as": "Children of Belcorra"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "The carrion heap counts as a bog."
+  },
+  "H12": {
+   "floor": 8,
+   "name": "Island Cavern",
+   "rating": "Moderate 8",
+   "creatures": [
+    {
+     "name": "Gug",
+     "key": "/Monsters.aspx?ID=4431",
+     "count": 1,
+     "level": 10,
+     "as": "Urthagul"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "Holds the Crimson Fulcrum Lens."
+  },
+  "H14": {
+   "floor": 8,
+   "name": "Rickety Dock",
+   "rating": "Low 8",
+   "creatures": [
+    {
+     "name": "Chuul",
+     "key": "/Monsters.aspx?ID=81",
+     "count": 2,
+     "level": 7
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "One below 20 HP flees."
+  },
+  "H16": {
+   "floor": 8,
+   "name": "Monster Cages",
+   "rating": "variable 8",
+   "creatures": [
+    {
+     "name": "Chuul",
+     "key": "/Monsters.aspx?ID=81",
+     "count": 1,
+     "level": 7
+    },
+    {
+     "name": "Krooth",
+     "key": "/Monsters.aspx?ID=3076",
+     "count": 1,
+     "level": 8
+    },
+    {
+     "name": "Skeletal Hulk",
+     "key": "/Monsters.aspx?ID=3197",
+     "count": 1,
+     "level": 7
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "Caged; only what the heroes free."
+  },
+  "H17": {
+   "floor": 8,
+   "name": "Dock and Lift",
+   "rating": "Low 8",
+   "creatures": [
+    {
+     "name": "Bog Mummy",
+     "key": "/Monsters.aspx?ID=735",
+     "count": 3,
+     "level": 5,
+     "as": "Children of Belcorra"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "A fourth flees to H19."
+  },
+  "H18": {
+   "floor": 8,
+   "name": "Roper Den",
+   "rating": "Moderate 8",
+   "creatures": [
+    {
+     "name": "Roper",
+     "key": "/Monsters.aspx?ID=353",
+     "count": 1,
+     "level": 10
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md"
+  },
+  "H19": {
+   "floor": 8,
+   "name": "Game Room",
+   "rating": "Moderate 8",
+   "creatures": [
+    {
+     "name": "Bog Mummy",
+     "key": "/Monsters.aspx?ID=735",
+     "count": 3,
+     "level": 5,
+     "as": "Children of Belcorra"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "They avoid disturbing the game."
+  },
+  "H20": {
+   "floor": 8,
+   "name": "Tomb of the Demilich",
+   "rating": "Low 8",
+   "creatures": [
+    {
+     "name": "Elder Child Of Belcorra",
+     "key": "/Monsters.aspx?ID=4071",
+     "count": 1,
+     "level": 9,
+     "as": "Gosalth"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "Would-be demilich."
+  },
+  "H21": {
+   "floor": 8,
+   "name": "Ancients' Caves",
+   "rating": "Severe 8",
+   "creatures": [
+    {
+     "name": "Bodak",
+     "key": "/Monsters.aspx?ID=573",
+     "count": 3,
+     "level": 8
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md"
+  },
+  "H23": {
+   "floor": 8,
+   "name": "Shadowed Dock",
+   "rating": "Low 8",
+   "creatures": [
+    {
+     "name": "War Wraith",
+     "key": "/Monsters.aspx?ID=4618",
+     "count": 1,
+     "level": 9,
+     "as": "dread wraith in the book"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "Lookout for Vthis."
+  },
+  "H24": {
+   "floor": 8,
+   "name": "Mud Room",
+   "rating": "Low 8",
+   "creatures": [
+    {
+     "name": "Bog Mummy",
+     "key": "/Monsters.aspx?ID=735",
+     "count": 4,
+     "level": 5,
+     "as": "Children of Belcorra"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md"
+  },
+  "H25": {
+   "floor": 8,
+   "name": "Naga Lair",
+   "rating": "Low 8",
+   "creatures": [
+    {
+     "name": "Spirit Naga",
+     "key": "/Monsters.aspx?ID=737",
+     "count": 1,
+     "level": 9,
+     "as": "Vthis"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md"
+  },
+  "H27": {
+   "floor": 8,
+   "name": "Shores of Death",
+   "rating": "Extreme 8",
+   "creatures": [
+    {
+     "name": "Froghemoth",
+     "key": "/Monsters.aspx?ID=676",
+     "count": 1,
+     "level": 13,
+     "as": "bog-rotted"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "Extreme 8."
+  },
+  "H32": {
+   "floor": 8,
+   "name": "\"Uninhabited\" Shed",
+   "rating": "Moderate 10 (as heard)",
+   "creatures": [
+    {
+     "name": "Ghonhatine",
+     "key": "/Monsters.aspx?ID=671",
+     "count": 1,
+     "level": 10,
+     "as": "\"gartine\" in the captions"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md"
+  },
+  "H34": {
+   "floor": 8,
+   "name": "Eastern Wilds",
+   "rating": "Moderate 8",
+   "creatures": [
+    {
+     "name": "Dragon's Blood Puffball",
+     "key": "/Monsters.aspx?ID=1380",
+     "count": 2,
+     "level": 8
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md"
+  },
+  "H35": {
+   "floor": 8,
+   "name": "Webbed Crossroads",
+   "rating": "Severe 8",
+   "creatures": [
+    {
+     "name": "Goliath Spider",
+     "key": "/Monsters.aspx?ID=3209",
+     "count": 1,
+     "level": 11
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "Opens by descending on a web; retreats below 40 HP."
+  },
+  "H36": {
+   "floor": 8,
+   "name": "Rounded Wall",
+   "rating": "Low 8",
+   "creatures": [
+    {
+     "name": "Drakauthix",
+     "key": "/Monsters.aspx?ID=158",
+     "count": 1,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md"
+  },
+  "H38": {
+   "floor": 8,
+   "name": "Strange Sentry",
+   "rating": "Trivial 9",
+   "creatures": [
+    {
+     "name": "Medusa",
+     "key": "/Monsters.aspx?ID=3096",
+     "count": 1,
+     "level": 7,
+     "as": "Murmur, feeble-minded"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md"
+  },
+  "H39": {
+   "floor": 8,
+   "name": "Lair of the Dreamer",
+   "rating": "Moderate 8",
+   "creatures": [],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "Soporific pollen: -1 circumstance to Will saves.",
+   "unresolved": [
+    "the nyth (not on AoN)"
+   ]
+  },
+  "H41": {
+   "floor": 8,
+   "name": "Descent to Yldaris",
+   "rating": "Severe 8",
+   "creatures": [
+    {
+     "name": "Drow Hunter",
+     "key": "/Monsters.aspx?ID=1386",
+     "count": 4,
+     "level": 7
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md"
+  },
+  "H42": {
+   "floor": 8,
+   "name": "Spider Guard",
+   "rating": "Trivial 8 (Severe 8 with alerted drow)",
+   "creatures": [
+    {
+     "name": "Hunting Spider",
+     "key": "/Monsters.aspx?ID=4007",
+     "count": 1,
+     "level": 1,
+     "as": "Iribo's trained spider"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md",
+   "notes": "Its whistle brings the drow: Severe 8."
+  },
+  "H44": {
+   "floor": 8,
+   "name": "Observation Post",
+   "rating": "Trivial 8",
+   "creatures": [
+    {
+     "name": "Drow Shootist",
+     "key": "/Monsters.aspx?ID=1387",
+     "count": 1,
+     "level": 8,
+     "as": "Iribo"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md"
+  },
+  "H45": {
+   "floor": 8,
+   "name": "Planning Room",
+   "rating": "Moderate 8",
+   "creatures": [
+    {
+     "name": "Drow Hunter",
+     "key": "/Monsters.aspx?ID=1386",
+     "count": 1,
+     "level": 7,
+     "as": "Nyzuros"
+    },
+    {
+     "name": "Drow Warden",
+     "key": "/Monsters.aspx?ID=1385",
+     "count": 4,
+     "level": 4
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-08-decaying-gardens.md"
+  },
+  "I1": {
+   "floor": 9,
+   "name": "Guarded Intersection",
+   "rating": "Trivial 9",
+   "creatures": [
+    {
+     "name": "Drow Hunter",
+     "key": "/Monsters.aspx?ID=1386",
+     "count": 1,
+     "level": 7,
+     "as": "Rikizlia"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I2": {
+   "floor": 9,
+   "name": "Caravan Staging",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Drow Warden",
+     "key": "/Monsters.aspx?ID=1385",
+     "count": 6,
+     "level": 4,
+     "as": "six drow; the doc doesn't say which"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md",
+   "notes": "Unloading a pack lizard."
+  },
+  "I3": {
+   "floor": 9,
+   "name": "Stable",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Drow Warden",
+     "key": "/Monsters.aspx?ID=1385",
+     "count": 3,
+     "level": 4
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I5": {
+   "floor": 9,
+   "name": "Yldaris Entry",
+   "rating": "Trivial 9",
+   "creatures": [
+    {
+     "name": "Drow Warden",
+     "key": "/Monsters.aspx?ID=1385",
+     "count": 1,
+     "level": 4,
+     "as": "Taklitur"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I6": {
+   "floor": 9,
+   "name": "Watch Chamber",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Drow Shootist",
+     "key": "/Monsters.aspx?ID=1387",
+     "count": 1,
+     "level": 8,
+     "as": "Yrorix"
+    },
+    {
+     "name": "Drow Hunter",
+     "key": "/Monsters.aspx?ID=1386",
+     "count": 2,
+     "level": 7
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I7": {
+   "floor": 9,
+   "name": "Tanieth's Abode",
+   "rating": "Trivial 9",
+   "creatures": [
+    {
+     "name": "Drow Shootist",
+     "key": "/Monsters.aspx?ID=1387",
+     "count": 1,
+     "level": 8,
+     "as": "Tanieth"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I9": {
+   "floor": 9,
+   "name": "Hunters' Quarters",
+   "rating": "Low 9",
+   "creatures": [
+    {
+     "name": "Drow Hunter",
+     "key": "/Monsters.aspx?ID=1386",
+     "count": 3,
+     "level": 7
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I10": {
+   "floor": 9,
+   "name": "Target Practice",
+   "rating": "Low 9",
+   "creatures": [
+    {
+     "name": "Drow Shootist",
+     "key": "/Monsters.aspx?ID=1387",
+     "count": 2,
+     "level": 8
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I11": {
+   "floor": 9,
+   "name": "Shootists' Quarters",
+   "rating": "Low 9",
+   "creatures": [
+    {
+     "name": "Drow Shootist",
+     "key": "/Monsters.aspx?ID=1387",
+     "count": 2,
+     "level": 8
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I12": {
+   "floor": 9,
+   "name": "Warden Barracks",
+   "rating": "Trivial 9 (Severe 9 with Salaisa)",
+   "creatures": [
+    {
+     "name": "Drow Warden",
+     "key": "/Monsters.aspx?ID=1385",
+     "count": 1,
+     "level": 4
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md",
+   "notes": "One per room; Severe with Salaisa."
+  },
+  "I14": {
+   "floor": 9,
+   "name": "Master Warden's Quarters",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Salaisa Malthulas",
+     "key": "/NPCs.aspx?ID=4072",
+     "count": 1,
+     "level": 11
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I15": {
+   "floor": 9,
+   "name": "Common Area",
+   "rating": "Low 9",
+   "creatures": [
+    {
+     "name": "Drow Warden",
+     "key": "/Monsters.aspx?ID=1385",
+     "count": 2,
+     "level": 4
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I16": {
+   "floor": 9,
+   "name": "Kitchen",
+   "rating": "Trivial 9",
+   "creatures": [
+    {
+     "name": "Drow Warden",
+     "key": "/Monsters.aspx?ID=1385",
+     "count": 1,
+     "level": 4
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I17": {
+   "floor": 9,
+   "name": "Great Chamber",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Quara Orshendiel",
+     "key": "/NPCs.aspx?ID=4080",
+     "count": 1,
+     "level": 11
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md",
+   "notes": "A meeting, not a fight."
+  },
+  "I18": {
+   "floor": 9,
+   "name": "Seers' Quarters",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Bhazrade And Klanthor",
+     "key": "/NPCs.aspx?ID=4073",
+     "count": 1,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I22": {
+   "floor": 9,
+   "name": "Great Hall",
+   "rating": "Severe 9",
+   "creatures": [
+    {
+     "name": "Caligni Defender",
+     "key": "/Monsters.aspx?ID=4074",
+     "count": 3,
+     "level": 8
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md",
+   "notes": "A defender knocks to bring I23's caligni."
+  },
+  "I23": {
+   "floor": 9,
+   "name": "Caligni Bunks",
+   "rating": "Low 9",
+   "creatures": [
+    {
+     "name": "Caligni Defender",
+     "key": "/Monsters.aspx?ID=4074",
+     "count": 2,
+     "level": 8
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I24": {
+   "floor": 9,
+   "name": "Strange Dead",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Bright Walker",
+     "key": "/Monsters.aspx?ID=1379",
+     "count": 2,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I26": {
+   "floor": 9,
+   "name": "Galudu's Room",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Galudu",
+     "key": "/NPCs.aspx?ID=4075",
+     "count": 1,
+     "level": 11
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I27": {
+   "floor": 9,
+   "name": "Ladder Base",
+   "rating": "Low 9",
+   "creatures": [],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md",
+   "notes": "Fight anyone to the death.",
+   "unresolved": [
+    "4 \"sister daemons\" (the captions' name; check the book)"
+   ]
+  },
+  "I29": {
+   "floor": 9,
+   "name": "Boathouse",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Elder Child Of Belcorra",
+     "key": "/Monsters.aspx?ID=4071",
+     "count": 1,
+     "level": 9,
+     "as": "Beluthus"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I30": {
+   "floor": 9,
+   "name": "Lizard Run",
+   "rating": "Low 9",
+   "creatures": [],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md",
+   "unresolved": [
+    "4 riding lizards"
+   ]
+  },
+  "I31": {
+   "floor": 9,
+   "name": "The Barrens",
+   "rating": "Severe 9",
+   "creatures": [
+    {
+     "name": "Derghodaemon",
+     "key": "/Monsters.aspx?ID=594",
+     "count": 1,
+     "level": 12
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md",
+   "notes": "Demonic Fog hazard (level 10)."
+  },
+  "I32": {
+   "floor": 9,
+   "name": "Southern Jumble",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Reaper Skull Puffball",
+     "key": "/Monsters.aspx?ID=1381",
+     "count": 2,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I33": {
+   "floor": 9,
+   "name": "Ferocious Displays",
+   "rating": "Low 9",
+   "creatures": [
+    {
+     "name": "Urdefhan Lasher",
+     "key": "/Monsters.aspx?ID=1389",
+     "count": 2,
+     "level": 7
+    },
+    {
+     "name": "Urdefhan Death Scout",
+     "key": "/Monsters.aspx?ID=1388",
+     "count": 2,
+     "level": 6
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I34": {
+   "floor": 9,
+   "name": "Urdefhan War Camp (\"Hoard\")",
+   "rating": "Severe 9",
+   "creatures": [],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md",
+   "notes": "Nearly 20 urdefhan; a third are asleep.",
+   "unresolved": [
+    "~20 urdefhan",
+    "2 \"sister daemons\""
+   ]
+  },
+  "I35": {
+   "floor": 9,
+   "name": "Summoning Cavern",
+   "rating": "Low 9",
+   "creatures": [
+    {
+     "name": "Urdefhan Tormentor",
+     "key": "/Monsters.aspx?ID=4600",
+     "count": 3,
+     "level": 5
+    },
+    {
+     "name": "Urdefhan Blood Mage",
+     "key": "/Monsters.aspx?ID=1390",
+     "count": 1,
+     "level": 8
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I36": {
+   "floor": 9,
+   "name": "The Blood Temple",
+   "rating": "Low 9",
+   "creatures": [
+    {
+     "name": "Urdefhan Tormentor",
+     "key": "/Monsters.aspx?ID=4600",
+     "count": 2,
+     "level": 5
+    },
+    {
+     "name": "Urdefhan Lasher",
+     "key": "/Monsters.aspx?ID=1389",
+     "count": 2,
+     "level": 7
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I37": {
+   "floor": 9,
+   "name": "Khurfel's Tent",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Khurfel",
+     "key": "/NPCs.aspx?ID=4079",
+     "count": 1,
+     "level": 10
+    },
+    {
+     "name": "Urdefhan Tormentor",
+     "key": "/Monsters.aspx?ID=4600",
+     "count": 2,
+     "level": 5
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I38": {
+   "floor": 9,
+   "name": "Guard Post",
+   "rating": "Low 9",
+   "creatures": [
+    {
+     "name": "Urdefhan Lasher",
+     "key": "/Monsters.aspx?ID=1389",
+     "count": 3,
+     "level": 7
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I39": {
+   "floor": 9,
+   "name": "Deadly Lake",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Deepwater Dhuthorex",
+     "key": "/Monsters.aspx?ID=1382",
+     "count": 2,
+     "level": 9,
+     "as": "\"hootherexes\" in the captions"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md",
+   "notes": "Six live in the lake; two investigate at a time."
+  },
+  "I41": {
+   "floor": 9,
+   "name": "Island Nest",
+   "rating": "Severe 9",
+   "creatures": [],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md",
+   "notes": "Below 40 HP it flees.",
+   "unresolved": [
+    "a cathlaj (not on AoN)"
+   ]
+  },
+  "I44": {
+   "floor": 9,
+   "name": "Digger's Cavern",
+   "rating": "Severe 9",
+   "creatures": [
+    {
+     "name": "Shuln",
+     "key": "/Monsters.aspx?ID=3191",
+     "count": 1,
+     "level": 12,
+     "as": "\"shorn\" in the captions"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I47": {
+   "floor": 9,
+   "name": "Corrupted Garden",
+   "rating": "Low 9",
+   "creatures": [
+    {
+     "name": "Ofalth",
+     "key": "/Monsters.aspx?ID=3117",
+     "count": 1,
+     "level": 10,
+     "as": "\"olf alf\" in the captions"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I49": {
+   "floor": 9,
+   "name": "Gogiteth Cave",
+   "rating": "Severe 9",
+   "creatures": [
+    {
+     "name": "Gogiteth",
+     "key": "/Monsters.aspx?ID=3029",
+     "count": 1,
+     "level": 12
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I51": {
+   "floor": 9,
+   "name": "Ravirex's Den",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Adult Bog Dragon",
+     "key": "/Monsters.aspx?ID=4116",
+     "count": 1,
+     "level": 11,
+     "as": "adult black dragon in the book; Ravirex"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I53": {
+   "floor": 9,
+   "name": "Vault Antechamber",
+   "rating": "Low 9 (Severe 9 with Caliddo)",
+   "creatures": [
+    {
+     "name": "Clay Effigy",
+     "key": "/Monsters.aspx?ID=2881",
+     "count": 1,
+     "level": 10,
+     "as": "clay golem in the book; the statue"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md",
+   "notes": "Brings Caliddo: Severe 9."
+  },
+  "I56": {
+   "floor": 9,
+   "name": "Caliddo's Vigil",
+   "rating": "Low 9",
+   "creatures": [
+    {
+     "name": "Graveknight",
+     "key": "/Monsters.aspx?ID=3030",
+     "count": 1,
+     "level": 10,
+     "as": "Caliddo Haruvex"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I61": {
+   "floor": 9,
+   "name": "Hall of Priests",
+   "rating": "Moderate 9",
+   "creatures": [
+    {
+     "name": "Lady's Whisper",
+     "key": "/NPCs.aspx?ID=4076",
+     "count": 1,
+     "level": 11
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I63": {
+   "floor": 9,
+   "name": "Garden of Failures",
+   "rating": "Trivial 9",
+   "creatures": [
+    {
+     "name": "Dread Wisp",
+     "key": "/Monsters.aspx?ID=1384",
+     "count": 1,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "I64": {
+   "floor": 9,
+   "name": "Initiates' Chamber",
+   "rating": "Severe 9",
+   "creatures": [
+    {
+     "name": "Dread Wisp",
+     "key": "/Monsters.aspx?ID=1384",
+     "count": 3,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-09-on-the-hunt.md"
+  },
+  "J2": {
+   "floor": 10,
+   "name": "Poisoning Room",
+   "rating": "Moderate 10",
+   "creatures": [
+    {
+     "name": "Specter",
+     "key": "/Monsters.aspx?ID=812",
+     "count": 6,
+     "level": 7,
+     "as": "cultist specters with ghostly blowguns"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-10-to-draw-the-baleful-glare.md",
+   "notes": "Greater cover in the galleries."
+  },
+  "J5": {
+   "floor": 10,
+   "name": "Level 10 Portal Chamber",
+   "rating": "Moderate 10",
+   "creatures": [
+    {
+     "name": "Stone Bulwark",
+     "key": "/Monsters.aspx?ID=3213",
+     "count": 1,
+     "level": 11,
+     "as": "stone golem in the book"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-10-to-draw-the-baleful-glare.md"
+  },
+  "J6": {
+   "floor": 10,
+   "name": "Crematorium",
+   "rating": "Moderate 10",
+   "creatures": [],
+   "doc": "common/campaign-reference/floors/floor-10-to-draw-the-baleful-glare.md",
+   "notes": "2d6 fire every 10 minutes in the room.",
+   "unresolved": [
+    "bound fire elementals"
+   ]
+  },
+  "J7": {
+   "floor": 10,
+   "name": "Soul Extractors",
+   "rating": "Moderate 10",
+   "creatures": [
+    {
+     "name": "Glass Golem",
+     "key": "/Monsters.aspx?ID=685",
+     "count": 4,
+     "level": 8
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-10-to-draw-the-baleful-glare.md",
+   "notes": "Grim glittering instead of dazzling brilliance."
+  },
+  "J8": {
+   "floor": 10,
+   "name": "Devouring Chamber",
+   "rating": "Severe 10",
+   "creatures": [
+    {
+     "name": "Dread Wisp",
+     "key": "/Monsters.aspx?ID=1384",
+     "count": 3,
+     "level": 9,
+     "as": "soul feeders"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-10-to-draw-the-baleful-glare.md"
+  },
+  "J15": {
+   "floor": 10,
+   "name": "Deadly Swamp",
+   "rating": "Moderate 10",
+   "creatures": [
+    {
+     "name": "Voidbracken Chuul",
+     "key": "/Monsters.aspx?ID=4077",
+     "count": 3,
+     "level": 9
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-10-to-draw-the-baleful-glare.md"
+  },
+  "J16": {
+   "floor": 10,
+   "name": "Perilous Controls",
+   "rating": "Severe 10",
+   "creatures": [
+    {
+     "name": "Dread Dhuthorex",
+     "key": "/Monsters.aspx?ID=1383",
+     "count": 2,
+     "level": 11,
+     "as": "\"dread hues\" in the captions"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-10-to-draw-the-baleful-glare.md"
+  },
+  "J17": {
+   "floor": 10,
+   "name": "Infested Reeds",
+   "rating": "Low 10",
+   "creatures": [
+    {
+     "name": "Isqulug",
+     "key": "/Monsters.aspx?ID=705",
+     "count": 1,
+     "level": 11,
+     "as": "\"isalo\" in the captions"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-10-to-draw-the-baleful-glare.md"
+  },
+  "J18": {
+   "floor": 10,
+   "name": "Maw of the Goddess",
+   "rating": "Low 10",
+   "creatures": [
+    {
+     "name": "Lady's Whisper",
+     "key": "/NPCs.aspx?ID=4076",
+     "count": 1,
+     "level": 11
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-10-to-draw-the-baleful-glare.md",
+   "notes": "Only if not yet defeated."
+  },
+  "J19": {
+   "floor": 10,
+   "name": "Passage to the Depths",
+   "rating": "Severe 10",
+   "creatures": [
+    {
+     "name": "Gogiteth",
+     "key": "/Monsters.aspx?ID=3029",
+     "count": 1,
+     "level": 12,
+     "as": "crab-like pit predator; the doc guesses gogiteth"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-10-to-draw-the-baleful-glare.md",
+   "notes": "Arrives in 2 rounds."
+  },
+  "J20": {
+   "floor": 10,
+   "name": "The Empty Vault",
+   "rating": "Extreme 10",
+   "creatures": [
+    {
+     "name": "Belcorra Haruvex",
+     "key": "/NPCs.aspx?ID=4078",
+     "count": 1,
+     "level": 12
+    },
+    {
+     "name": "Dread Wisp",
+     "key": "/Monsters.aspx?ID=1384",
+     "count": 1,
+     "level": 9,
+     "as": "soul feeder; 3 if unfed"
+    }
+   ],
+   "doc": "common/campaign-reference/floors/floor-10-to-draw-the-baleful-glare.md",
+   "notes": "The final battle: Extreme 10."
+  }
+ }
+}

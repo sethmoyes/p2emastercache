@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block title %}Combat - GM{% endblock %}
+{% block width %}max-w-7xl{% endblock %}
+{% block nav_links %}
+<a href="/gm" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg">Dungeon turn</a>
+<a href="/gm/admin" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg">Restock &amp; admin</a>
+{% endblock %}
+
+{% block content %}
+<!-- Turn bar: the round, whose turn it is, and the buttons that run the fight -->
+<section id="turn-bar" aria-label="Turn" class="sticky top-0 z-20 bg-gray-900/95 backdrop-blur border border-purple-700 rounded-lg p-3 mb-4 flex flex-wrap items-center gap-2">
+    <h1 class="text-2xl font-bold mr-2">Combat</h1>
+    <p id="round-status" class="flex-1 min-w-0 text-lg text-gray-300" aria-live="polite"></p>
+    <button type="button" id="roll-btn" class="bg-red-700 hover:bg-red-600 px-3 py-2 rounded font-semibold" title="R">Roll monster initiative</button>
+    <button type="button" id="next-btn" class="bg-purple-700 hover:bg-purple-600 px-4 py-2 rounded font-bold" title="N">Start combat</button>
+    <button type="button" id="undo-btn" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded disabled:bg-gray-800 disabled:text-gray-600 disabled:cursor-not-allowed" title="U">Undo</button>
+    <button type="button" id="present-btn" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded" title="P">Show order</button>
+    <button type="button" id="end-btn" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded">End</button>
+    <button type="button" id="new-btn" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded">New fight</button>
+</section>
+
+<div id="turn-notes" aria-live="polite"></div>
+
+<!-- The order as the flash cards go on the GM screen -->
+<ol id="order-strip" class="flex flex-wrap gap-2 mb-4" aria-label="Initiative order"></ol>
+
+<div class="grid lg:grid-cols-3 gap-4">
+    <aside class="space-y-4 lg:order-last">
+        <section class="bg-gray-800 border border-gray-700 rounded-lg p-3" aria-labelledby="add-heading">
+            <h2 id="add-heading" class="font-bold mb-2">Add monsters</h2>
+            <label for="search" class="sr-only">Room code or creature name</label>
+            <input id="search" type="search" autocomplete="off" placeholder="Room (A10), or a name: 3 morlock"
+                   class="w-full bg-gray-900 border border-gray-600 rounded px-2 py-2">
+            <label class="flex items-center gap-2 text-sm text-gray-300 mt-2">
+                <input id="group-default" type="checkbox" checked>
+                One initiative for 3 or more of a kind
+            </label>
+            <p id="search-source" class="text-xs text-gray-500 mt-1"></p>
+            <div id="search-results" class="mt-2 space-y-2 max-h-[32rem] overflow-auto" aria-live="polite"></div>
+        </section>
+
+        <section class="bg-gray-800 border border-gray-700 rounded-lg p-3" aria-labelledby="rolls-heading">
+            <h2 id="rolls-heading" class="font-bold mb-2">From recent dungeon-turn rolls</h2>
+            <ol id="recent-fights" class="space-y-1 text-sm"></ol>
+        </section>
+
+        <details id="party-panel" class="bg-gray-800 border border-gray-700 rounded-lg p-3">
+            <summary class="font-bold cursor-pointer">Party <span id="party-count" class="text-gray-400 font-normal"></span></summary>
+            <p class="text-xs text-gray-400 mt-2">Saved on the server. Unticked heroes sit out the next fight.</p>
+            <ul id="hero-list" class="space-y-2 mt-2"></ul>
+            <form id="hero-form" class="flex gap-2 mt-3">
+                <label for="hero-name" class="sr-only">Hero name</label>
+                <input id="hero-name" placeholder="Hero name" maxlength="40" class="flex-1 min-w-0 bg-gray-900 border border-gray-600 rounded px-2 py-2">
+                <label for="hero-player" class="sr-only">Player</label>
+                <input id="hero-player" placeholder="Player" maxlength="40" class="w-24 bg-gray-900 border border-gray-600 rounded px-2 py-2">
+                <button type="submit" class="bg-emerald-700 hover:bg-emerald-600 px-3 rounded">Add</button>
+            </form>
+        </details>
+    </aside>
+
+    <main class="lg:col-span-2 space-y-3">
+        <section id="hero-init" class="hidden bg-gray-800 border border-sky-700 rounded-lg p-3" aria-labelledby="hero-init-heading">
+            <h2 id="hero-init-heading" class="font-bold mb-1">Call the heroes</h2>
+            <p class="text-xs text-gray-400 mb-2">Type each result and press Enter to move to the next hero.</p>
+            <div id="hero-init-list" class="grid sm:grid-cols-2 gap-2"></div>
+        </section>
+        <ol id="order" class="space-y-3" aria-label="Combatants"></ol>
+    </main>
+</div>
+
+<!-- Full-screen order, to read out or copy onto the cards -->
+<dialog id="present" class="bg-gray-900 text-white rounded-lg p-6 w-full max-w-3xl backdrop:bg-black/80">
+    <div class="flex justify-between items-center mb-4">
+        <h2 class="text-2xl font-bold">Initiative order</h2>
+        <button type="button" id="present-close" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded">Close</button>
+    </div>
+    <ol id="present-list" class="space-y-2"></ol>
+</dialog>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/combat.js') }}"></script>
+{% endblock %}
